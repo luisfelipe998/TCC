@@ -1,14 +1,15 @@
 # Paper Log — TCC: Classificação de Padrões de Ebulição por Wavelet e ML
 
-**Última atualização:** 2026-05-19
+**Última atualização:** 2026-05-27
 **Legenda:** CRITICAL = citação obrigatória no texto | HIGH = recomendado | MEDIUM = complementar | DISCARD = descartado
 
 ---
 
-## PDFs disponíveis localmente (assets/) — 23 arquivos
+## PDFs disponíveis localmente (assets/) — 29 arquivos
 
 | Arquivo | Bib key | Relevância | Descrição |
 |---------|---------|-----------|-----------|
+| `grinsted2004-wavelet-coherence-geophysical.pdf` | `grinsted2004` | **CRITICAL** | Grinsted, Moore & Jevrejeva (2004) Nonlinear Proc. Geophys. — define formalmente a WCO clássica com operador de suavização S[·] (Eq. 8); fonte correta para eq:wco-classica. Também usa λwt ≈ 1,03s para conversão escala→frequência (Morlet ω₀=6). DOI: 10.5194/npg-11-561-2004 |
 | `dias2025-knn-flow-pattern.pdf` | `dias2025knn` | **CRITICAL** | Dias et al. (2025) kNN k=15 + 93 features (3 stat + 72 GLCM + 18 DWT) em microtubo 1mm isobutano UNISINOS, 10-fold CV, 87% acc. Paper-base do TCC. DOI: 10.1016/j.ijmultiphaseflow.2024.105122 |
 | `dias2025-cnn-flow-boiling.pdf` | `dias2025cnn` | **CRITICAL** | Dias et al. (2025) CNN ResNet50 para mesmos padrões de escoamento, 93% acc. Comparativo direto com abordagem proposta. DOI: 10.1016/j.aitf.2025.100015 |
 | `deoliveira2021-flow-patterns-pressure-drop.pdf` | `deoliveira2021` | **CRITICAL** | de Oliveira et al. (2021) IJMF — análise de padrões de escoamento e flutuações de queda de pressão durante flow boiling; mesmo grupo UNISINOS. DOI: 10.1016/j.ijmultiphaseflow.2021.103793 |
@@ -32,6 +33,11 @@
 | `masiukiewicz2021-flow-pattern-narrow-channel.pdf` | `masiukiewicz2021` | **MEDIUM** | Masiukiewicz & Anweiler (2021) Energies — estereologia para avaliação de padrões em canal retangular estreito. DOI: 10.3390/en14113180 |
 | `ruizdiaz2024-transformer-flow-pattern-vertical.pdf` | `ruizdiaz2024` | **MEDIUM** | Ruiz-Díaz et al. (2024) Inventions — transformer neural network para padrões em tubulação vertical óleo-água. Vertical: diferente do setup. DOI: 10.3390/inventions9010015 |
 | `zhang2024-arxiv-flow-pattern-vertical-bp.pdf` | `zhang2024bp` | **MEDIUM** | Zhang et al. (2024) arXiv — BP neural network para padrões em tubo vertical. Metodologia simples; vertical. arXiv: 2410.13906 |
+| `cheng2023-flow-patterns-microchannels.pdf` | `cheng2023` | **HIGH** | Cheng & Xia (2023) ETFS — revisão abrangente de padrões de escoamento bifásico gás-líquido em microcanais; define critério de microescala Co < 0,5 (Kew & Cornwell). **ATENÇÃO: TCC cita Co > 0,5 — desigualdade invertida.** DOI: 10.1016/j.expthermflusci.2022.110726 |
+| `mallat2009-wavelet-tour-signal-processing.pdf` | `mallat2009` | **CRITICAL** | Mallat (2009) "A Wavelet Tour of Signal Processing, 3ª ed." — referência para DWT: banco de filtros h[n]/g[n] (Fig. 7.12, Seção 7.3) e complexidade O(N) (Seção 7.3.1). Texto legível via pdftotext. ISBN: 978-0-12-374370-1 |
+| `tan2015-oil-water-wavelet-sensors.pdf` | `tan2015` | **HIGH** | Tan et al. (2015) CES — escoamento óleo-água com sensor condutividade/capacitância + análise wavelet. **ATENÇÃO: TCC afirma "DWT" e "energia por nível" — o artigo usa CWT + LWE (coeficientes Wn/an). A "robustez a variações de velocidade" não é afirmada no artigo.** DOI: 10.1016/j.ces.2015.04.046 |
+| `hobold2018-ml-boiling-regimes.pdf` | `hobold2018` | **HIGH** | Hobold & da Silva (2018) IJHMT — **pool boiling** (NOT flow boiling), DSLR 30 Hz, SVM + ANN, 98.8% acc (direto) / 94.3% (indireto). **ATENÇÃO: TCC afirma "sinais de temperatura" — artigo usa apenas imagens; temperatura só para rotulagem, não como feature.** DOI: 10.1016/j.ijheatmasstransfer.2018.04.156 |
+| `sun2012-wavelet-entropy-flow-patterns.pdf` | `sun2012` | **HIGH** | Sun et al. (2012) MST — ar-água, tubo 50 mm (macrocanal), DWT db4 7 níveis, entropia norma coef. d4, 4 padrões, >95% acc. Sensor: flutuações de pressão através de bluff body (vortex). DOI: 10.1088/0957-0233/23/12/125301 |
 
 ---
 
@@ -47,18 +53,15 @@
 | `deoliveira2016` | de Oliveira et al. | 2016 | Flow boiling of R-600a in 2.6mm: heat transfer | **HIGH** — mesmo grupo UNISINOS, R600a em mini-canal | 10.1016/j.ijrefrig.2016.08.001 |
 | `deoliveira2017` | de Oliveira et al. | 2017 | R-600a flow boiling: pressure drop | **HIGH** — mesmo grupo UNISINOS | 10.1016/j.ijrefrig.2017.08.004 |
 | `seal2021` | Seal et al. | 2021 | Machine learning classification of in-tube condensation flow patterns | **HIGH** — ML para padrões de condensação; metodologia comparável | 10.1016/j.ijmultiphaseflow.2021.103755 |
-| `cheng2023` | Cheng, Xia | 2023 | Flow patterns and flow pattern maps for adiabatic and diabatic gas-liquid two-phase flow in microchannels: fundamentals, mechanisms and applications | **HIGH** — review compreensivo de mapas de padrões em microcanais | 10.1016/j.expthermflusci.2023.110988 |
+| `cheng2023` | Cheng, Xia | 2023 | Flow patterns and flow pattern maps for adiabatic and diabatic gas-liquid two-phase flow in microchannels | **HIGH** (PDF local disponível) — ver tabela acima | 10.1016/j.expthermflusci.2023.110988 |
 
 ### Pilar 2: DSP e wavelet para escoamento
 
 | ID bib | Autores | Ano | Título resumido | Relevância | DOI |
 |--------|---------|-----|----------------|-----------|-----|
-| `sun2012` | Sun, Chen, Gong | 2012 | Classification of gas–liquid flow patterns by norm entropy of wavelet decomposed pressure fluctuations | **CRITICAL** — DWT em flutuações de pressão para classificar padrões | 10.1088/0957-0233/23/12/125301 |
-| `tan2015` | Tan, Li, Dai, Dong | 2015 | Characterization of oil–water two-phase pipe flow with combined conductivity/capacitance sensor and wavelet analysis | **HIGH** — wavelet para caracterização de escoamento bifásico; citado por deoliveira2021 e dias2025knn | 10.1016/j.ces.2015.04.046 |
 | `wei2020` | Wei et al. | 2020 | Gas-liquid two-phase flow pattern identification from multi-scale entropy | **HIGH** — entropia multiescala como feature para classificação | 10.1016/j.ces.2020.115504 |
-| `daubechies1990` | Daubechies | 1990 | The Wavelet Transform, Time-Frequency Localization and Signal Analysis | **CRITICAL** — artigo fundacional da DWT com wavelets Daubechies | 10.1109/18.57199 |
+| `daubechies1990` | Daubechies | 1990 | The Wavelet Transform, Time-Frequency Localization and Signal Analysis | **HIGH** — artigo fundacional da DWT com wavelets Daubechies | 10.1109/18.57199 |
 | `nguyen2010` | Nguyen, Euh, Song | 2010 | An application of the wavelet analysis technique for the objective discrimination of two-phase flow patterns | **HIGH** — uso de wavelet para discriminação objetiva de padrões bifásicos (IJMF 2010) | 10.1016/j.ijmultiphaseflow.2010.04.007 |
-| `hobold2018` | Hobold, da Silva | 2018 | Machine learning classification of boiling regimes with low speed, direct and indirect visualization | **CRITICAL** — ML + wavelet + vídeo de baixa velocidade para regimes de ebulição; metodologia mais próxima deste TCC | 10.1016/j.ijheatmasstransfer.2018.04.156 |
 
 ### Pilar 3: ML para classificação de padrões
 
@@ -95,8 +98,8 @@
 
 | Pilar | CRITICAL (local) | CRITICAL (sem PDF) | HIGH local | HIGH sem PDF | Total |
 |-------|-----------------|-------------------|------------|-------------|-------|
-| Padrões de escoamento | deoliveira2021, deoliveira2019 | wojtan2005, revellin2006 | schmid2022, brunton2020 | saisorn2008, deoliveira2016/17, seal2021, cheng2023 | 10 |
-| DSP / Wavelet | torrence1998, schuck2019 | sun2012, daubechies1990 | morshed2020 | tan2015, wei2020, nguyen2010, hobold2018 | 9 |
+| Padrões de escoamento | deoliveira2021, deoliveira2019 | wojtan2005, revellin2006 | schmid2022, brunton2020, cheng2023 | saisorn2008, deoliveira2016/17, seal2021 | 10 |
+| DSP / Wavelet | torrence1998, schuck2019, mallat2009 | — | morshed2020, tan2015, sun2012, hobold2018 | wei2020, nguyen2010, daubechies1990 | 10 |
 | ML classificação | dias2025-knn, dias2025-cnn, he2016resnet | — | qiao2023, brunton2020, alzubaidi2021, suh2021 | zhang2020, seal2021 | 9 |
 | GLCM / textura | lofstedt2019 | haralick1973 | — | — | 2 |
 | kNN / classificadores | cunningham2022 | — | yang2023 | — | 2 |
