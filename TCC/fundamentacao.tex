@@ -56,13 +56,10 @@ Esses dados constituem a base experimental que será utilizada neste trabalho.
 
 \citeonline{dias2025knn} e \citeonline{dias2025cnn} utilizaram imagens da seção de
 visualização do mesmo arranjo para desenvolver classificadores automáticos dos cinco
-padrões de escoamento. A base de dados consistiu em 26 vídeos (5.200 quadros) capturados
-com câmera de alta velocidade, convertidos para escala de cinza com equalização de
-histograma. \citeonline{dias2025knn} atingiram 87\% de acurácia com o algoritmo $k$NN e
-\citeonline{dias2025cnn} alcançaram 93\% com rede neural convolucional (melhor \textit{fold};
-média de 88{,}1\% nas dez dobras de validação cruzada). Ambos os trabalhos
-confirmam que as imagens do arranjo contêm informação suficiente para discriminar os
-padrões, mas dependem da câmera de alta velocidade para a aquisição.
+padrões de escoamento a partir de 26 vídeos capturados com câmera de alta velocidade.
+Ambos os trabalhos confirmam que as imagens do arranjo contêm informação suficiente para
+discriminar os padrões, mas a abordagem depende da câmera de alta velocidade para a
+aquisição, limitação que motiva a busca por descritores baseados nos sensores já instalados.
 
 Outros estudos mostram que a mesma sequência de padrões se repete em diferentes fluidos
 e geometrias, com deslocamento dos limiares de transição. \citeonline{schmid2022} mapearam
@@ -152,7 +149,9 @@ para identificar padrões de escoamento a partir de imagens ou sinais de sensore
 como $k$-Vizinhos Mais Próximos ($k$NN), máquinas de vetores de suporte (SVM), redes
 neurais artificiais e redes neurais convolucionais (CNN) foram aplicados a diferentes
 arranjos experimentais e fluidos \cite{brunton2020,yang2023}, com resultados que
-frequentemente atingem ou superam 87\% de acurácia \cite{dias2025knn,dias2025cnn,sun2012}.
+frequentemente atingem ou superam 87\% de acurácia, embora os resultados variem
+conforme o arranjo experimental, o sensor e o fluido de trabalho
+\cite{dias2025knn,dias2025cnn,sun2012}.
 \citeonline{yang2023}, em revisão sobre visão computacional e ML aplicados a microcanais
 e transferência de calor por ebulição, apontam a identificação automática de padrões como
 uma das aplicações mais promissoras dessa combinação tecnológica.
@@ -169,12 +168,12 @@ A viabilidade de classificar padrões de escoamento a partir de sinais de sensor
 recorrer a imagens, foi demonstrada em diferentes contextos. \citeonline{sun2012} aplicaram
 decomposição \textit{wavelet} e entropia de norma sobre flutuações de pressão diferencial
 em escoamento bifásico ar-água horizontal (tubo de 50\,mm), obtendo taxa de identificação
-de 95\% para quatro padrões. \citeonline{hobold2018} classificaram regimes de ebulição em
-piscina (\textit{pool boiling}) a partir exclusivamente de imagens de câmera convencional
-de baixa velocidade (30\,Hz), incluindo modo de visualização indireta onde apenas as bolhas
-ascendentes são visíveis sem o aquecedor no campo visual, demonstrando que o aprendizado de
-máquina pode operar com equipamentos de baixo custo quando imagens de alta velocidade não
-estão disponíveis. \citeonline{tan2015} combinaram sensores de condutância e capacitância
+de 95\% para quatro padrões. \citeonline{hobold2018} classificaram regimes de ebulição em piscina (\textit{pool
+boiling}), contexto distinto da ebulição convectiva em microcanais, a partir
+exclusivamente de imagens de câmera convencional de baixa velocidade (30\,Hz), incluindo
+modo de visualização indireta onde apenas as bolhas ascendentes são visíveis sem o aquecedor
+no campo visual, demonstrando que o aprendizado de máquina pode operar com equipamentos de
+baixo custo quando imagens de alta velocidade não estão disponíveis. \citeonline{tan2015} combinaram sensores de condutância e capacitância
 com análise por CWT em tubo de 50\,mm e mostraram que os coeficientes de energia
 \textit{wavelet} local (LWE) discriminam regimes de escoamento óleo-água, com a ressalva
 de que a distribuição observada é específica para o arranjo e os fluidos utilizados. Em conjunto,
@@ -239,7 +238,8 @@ antes de recircular \cite{deoliveira2021}.
 \paragraph{Pré-aquecedor e seção de teste.}
 O pré-aquecedor (PH) e a seção de teste (TS) são tubos horizontais de aço inoxidável com
 diâmetro interno de 1,0\,mm, aquecidos por efeito Joule com aplicação direta de corrente
-elétrica controlada por fonte de tensão. O PH tem comprimento total de 515\,mm (440\,mm
+elétrica controlada por fonte de corrente contínua (SORENSEN\texttrademark{} DCS~8-125E).
+O PH tem comprimento total de 515\,mm (440\,mm
 aquecidos) e estabelece a condição termodinâmica na entrada da TS. A TS tem comprimento
 total de 366\,mm (265\,mm aquecidos); ao longo desse percurso, o título de vapor $x$ evolui
 desde a entrada subcoolida até condições de escoamento totalmente bifásico, permitindo
@@ -442,8 +442,9 @@ complexo conjugado. O fator $1/\sqrt{a}$ normaliza a amplitude da \textit{wavele
 em todas as escalas, garantindo que os coeficientes sejam comparáveis entre si
 independentemente da escala analisada. Escalas grandes correspondem a baixas frequências;
 escalas pequenas correspondem a altas frequências. Para a \textit{wavelet} de Morlet com
-$\omega_0 = 6$, o período de Fourier equivalente é $\lambda \approx 1{,}03\,a$, de modo que
-a frequência característica se relaciona à escala por $f \approx 1/(1{,}03\,a\,\delta t)$
+$\omega_0 = 6$, o período de Fourier equivalente é $\lambda \approx 1{,}03\,a$ (relação
+específica para este valor de $\omega_0$ \cite{torrence1998,grinsted2004}), de modo que a
+frequência característica se relaciona à escala por $f \approx 1/(1{,}03\,a\,\delta t)$
 \cite{torrence1998,grinsted2004}.
 
 O resultado é um escalonograma (\textit{scalogram}): um mapa bidimensional que mostra
@@ -481,11 +482,10 @@ A \textit{wavelet} de Morlet complexa é a mais utilizada em análise de sinais 
 \noindent
 em que $\pi^{-1/4}$ normaliza a energia. O parâmetro $\omega_0$ controla o equilíbrio
 entre resolução temporal e espectral: valores menores aumentam a resolução temporal às
-custas da resolução em frequência. O valor $\omega_0 = 6$ satisfaz a condição de admissibilidade da \textit{wavelet}
-\cite{torrence1998}; a escolha definitiva para a formulação
-de \citeonline{schuck2019} será definida na implementação do TCC~II. Por ser complexa, a
-\textit{wavelet} de Morlet preserva a fase do sinal, o que é indispensável para calcular
-a coerência entre dois sinais \cite{torrence1998}.
+custas da resolução em frequência. O valor $\omega_0 = 6$ satisfaz a condição de
+admissibilidade da \textit{wavelet} \cite{torrence1998} e é adotado neste trabalho. Por
+ser complexa, a \textit{wavelet} de Morlet preserva a fase do sinal, o que é
+indispensável para calcular a coerência entre dois sinais \cite{torrence1998}.
 
 Nas bordas da série temporal, os coeficientes da CWT são afetados pelo preenchimento
 implícito com zeros e não devem ser interpretados. Essa região é delimitada pelo chamado
@@ -632,8 +632,10 @@ em que $\widetilde{P}_y(a) = |W_{R_{yy}}(a, 0)|$ é calculado de forma análoga 
 
 Na WCO alternativa, o denominador é calculado em $b = 0$ (onde o WPS atinge o máximo),
 enquanto o numerador ainda varia com $b$, que passa a representar o atraso
-(\textit{lag}) entre os sinais em vez da posição temporal. O resultado é um espectro de
-coerência em função de escala e atraso, estável por construção. A vantagem é que não há compromisso entre resolução e
+(\textit{lag}) $\tau$ da correlação cruzada $R_{xy}(\tau)$ em vez da posição temporal
+absoluta do sinal: $b = 0$ no denominador corresponde ao pico da autocorrelação (atraso
+nulo), e $b = \tau$ no numerador varre os diferentes atrasos entre os dois sinais. O
+resultado é um espectro de coerência em função de escala e atraso, estável por construção. A vantagem é que não há compromisso entre resolução e
 estabilidade estatística; a limitação é que a informação temporal é perdida em favor de
 uma estimativa espectral mais confiável.
 
@@ -662,7 +664,8 @@ O \autoref{qua:wco-comparativo} sintetiza as diferenças entre as duas formulaç
       Não — denominador fixo garante estabilidade por construção \\
     Variável de saída &
       $\gamma_{xy}(a,b)$ — função de escala \textbf{e} posição temporal &
-      $\widetilde{\gamma}_{xy}(a)$ — função de escala \textbf{e} atraso \\
+      $\widetilde{\gamma}_{xy}(a)$ — função apenas de escala (atraso é parâmetro interno
+      da correlação cruzada, não dimensão explícita da saída) \\
     Informação preservada &
       Localização temporal dos acoplamentos &
       Espectro de acoplamento por atraso (\textit{lag}) \\
