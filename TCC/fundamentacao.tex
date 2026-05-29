@@ -50,17 +50,9 @@ sistematizados em função do parâmetro adimensional $\beta$, que resume o efei
 do título de vapor e do fluxo mássico sobre a distribuição das fases. Além do sensor
 óptico, o arranjo foi instrumentado com um transdutor de pressão diferencial (PD) de
 10\,kHz, permitindo a aquisição simultânea de ambos os sinais a 1\,kHz. A análise por
-CWT revelou frequências características distintas em cada padrão: o sinal de pressão do
-\textit{slug} apresentou energia predominante abaixo de 1\,Hz, com pico em torno de
-2{,}8\,Hz no sensor óptico e componentes adicionais em 8, 12, 23 e 32\,Hz geradas pelas bolhas
-dispersas entre os bolsões; o \textit{plug} gerou flutuações regulares entre 0{,}5 e
-1\,Hz no sinal de pressão; o \textit{churn} produziu flutuações irregulares de baixa
-energia no sinal de pressão e de maior energia no sensor óptico; e o padrão anular não
-apresentou frequências características no sinal de pressão, enquanto o sensor óptico
-manteve energia entre 2 e 16\,Hz. O comportamento caótico foi confirmado nos sinais do
-sensor óptico por expoente de Lyapunov (LLE > 0 em todos os padrões); os sinais de pressão
-diferencial apresentaram LLEs negativos no \textit{churn} e no padrão anular \cite{deoliveira2021}. Esses dados
-constituem a base experimental que será utilizada neste trabalho.
+CWT confirmou que cada padrão apresenta assinaturas espectrais distintas no PD e no OS,
+com faixas de frequência características descritas em detalhe na \autoref{sec:padroes}.
+Esses dados constituem a base experimental que será utilizada neste trabalho.
 
 \citeonline{dias2025knn} e \citeonline{dias2025cnn} utilizaram imagens da seção de
 visualização do mesmo arranjo para desenvolver classificadores automáticos dos cinco
@@ -190,6 +182,11 @@ esses trabalhos indicam que sinais temporais de sensores já instalados contêm 
 suficiente para classificar padrões, desde que os descritores extraídos capturem as
 diferenças espectrais entre eles.
 
+A literatura revisada aponta, portanto, dois requisitos técnicos para este trabalho:
+compreender a fenomenologia dos padrões de escoamento no arranjo do LETEF e dominar
+a formulação matemática da coerência \textit{wavelet} alternativa que será empregada
+como descritor. As próximas seções apresentam esses fundamentos.
+
 % =========================================================
 \section{Bases Teóricas}\label{sec:bases}
 % =========================================================
@@ -225,18 +222,8 @@ A transição entre padrões depende do balanço entre forças de inércia, tens
 e cisalhamento. Em microcanais horizontais, a ausência de estratificação gravitacional
 elimina os padrões estratificados presentes em tubulações maiores; os padrões
 predominantes são os intermitentes (\textit{plug}, \textit{slug}, \textit{churn}) e o
-anular \cite{deoliveira2021,cheng2023}.
-
-Do ponto de vista dos sinais, cada padrão gera flutuações características no transdutor de
-pressão diferencial e no sensor óptico. O \textit{plug} gera oscilações regulares entre
-0{,}5 e 1\,Hz no sinal de pressão. O \textit{slug} produz componentes espectrais distintas
-nos dois canais: o sinal de pressão concentra energia abaixo de 1\,Hz, enquanto o sensor
-óptico apresenta pico em torno de 2{,}8\,Hz com harmônicos de maior frequência. O
-\textit{churn} produz flutuações irregulares de baixa energia no sinal de pressão (abaixo
-de 8\,Hz) e flutuações de maior energia no sensor óptico (entre 15 e 28\,Hz). O padrão
-anular não apresenta frequências características no sinal de pressão, mas o sensor óptico
-mantém energia entre 2 e 16\,Hz \cite{deoliveira2021}. Essa diversidade espectral justifica
-o uso da transformada \textit{wavelet} para analisar e extrair características desses sinais.
+anular \cite{deoliveira2021,cheng2023}. As assinaturas espectrais de cada padrão nos
+sinais do PD e do OS são descritas em detalhe na \autoref{sec:padroes}.
 
 \subsubsection{Arranjo Experimental}\label{sec:arranjo}
 
@@ -391,6 +378,19 @@ de escoamento, não incluindo o anular liso.
 Os sinais do sensor óptico e do transdutor de pressão diferencial nas bordas das faixas
 de $\beta$ são particularmente ambíguos \cite{deoliveira2021}, o que representa um desafio
 central para qualquer método de identificação automática baseado nos sinais do arranjo.
+
+Do ponto de vista espectral, cada padrão gera flutuações características no PD e no OS.
+O \textit{plug} gera oscilações regulares entre 0{,}5 e 1\,Hz no sinal de pressão.
+O \textit{slug} produz componentes espectrais distintas nos dois canais: o sinal de pressão
+concentra energia abaixo de 1\,Hz, enquanto o sensor óptico apresenta pico em torno de
+2{,}8\,Hz com harmônicos de maior frequência. O \textit{churn} produz flutuações
+irregulares de baixa energia no sinal de pressão (abaixo de 8\,Hz) e flutuações de maior
+energia no sensor óptico (entre 15 e 28\,Hz). O padrão anular não apresenta frequências
+características no sinal de pressão, mas o sensor óptico mantém energia persistente entre
+2 e 16\,Hz \cite{deoliveira2021}. Essa diversidade espectral — com PD e OS capturando
+faixas complementares para cada padrão — é justamente o que motiva o uso da transformada
+\textit{wavelet} e, em especial, da coerência entre os dois canais como descritor de
+classificação.
 
 % ---------------------------------------------------------
 \subsection{Transformada \textit{Wavelet}}\label{sec:wavelet}
