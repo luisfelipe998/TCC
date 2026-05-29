@@ -1,10 +1,11 @@
 \chapter{Metodologia}\label{cap:metodologia}
 
 Este capítulo descreve a abordagem proposta para investigar a aplicabilidade da coerência
-\textit{wavelet} alternativa de \citeonline{schuck2019} como ferramenta de análise e
-caracterização dos padrões de escoamento bifásico no arranjo experimental do LETEF.
+\textit{wavelet} alternativa de \citeonline{schuck2019} como ferramenta de caracterização
+dos padrões de escoamento bifásico no arranjo experimental do LETEF.
 A \autoref{sec:met-visao} apresenta uma visão geral do método proposto; as seções
-seguintes detalham cada etapa do \textit{pipeline} de processamento.
+seguintes descrevem os dados, o pré-processamento, o cálculo da coerência e a análise
+das assinaturas espectrais.
 
 % =========================================================
 \section{Visão geral do método proposto}\label{sec:met-visao}
@@ -13,14 +14,19 @@ seguintes detalham cada etapa do \textit{pipeline} de processamento.
 A abordagem proposta consiste em calcular a coerência \textit{wavelet} alternativa
 $\widetilde{\gamma}_{xy}(a)$ entre os sinais do transdutor de pressão diferencial (PD)
 e do sensor óptico (OS), adquiridos simultaneamente no arranjo experimental do LETEF,
-e investigar se as curvas resultantes constituem assinaturas espectrais características
-de cada padrão de escoamento. A hipótese central é que o acoplamento espectral entre os
-dois sinais, expresso por $\widetilde{\gamma}_{xy}(a)$ em função da escala, varia
-sistematicamente de um padrão para outro, refletindo a dinâmica distinta da interface
-líquido-vapor em cada regime.
+e verificar se as curvas resultantes constituem assinaturas espectrais características
+e distinguíveis para cada padrão de escoamento. A hipótese central é que o acoplamento
+espectral entre os dois sinais, expresso por $\widetilde{\gamma}_{xy}(a)$ em função da
+escala, varia sistematicamente de um padrão para outro, refletindo a dinâmica distinta
+da interface líquido-vapor em cada regime.
 
-O \textit{pipeline} proposto é composto pelas seguintes etapas, detalhadas nas seções
-subsequentes:
+O método não pressupõe um classificador automático: o objetivo é demonstrar que as
+assinaturas de coerência são suficientemente distintas para permitir a identificação
+visual ou por inspeção de métricas espectrais simples. Caso as assinaturas demonstrem
+separabilidade adequada, a incorporação de um classificador automático está prevista
+como extensão natural no TCC\,II.
+
+O \textit{pipeline} proposto é composto pelas seguintes etapas:
 
 \begin{enumerate}
   \item pré-processamento dos sinais;
@@ -28,7 +34,7 @@ subsequentes:
   \item aplicação da CWT nas funções de correlação e obtenção de
         $\widetilde{P}_x(a)$, $\widetilde{P}_y(a)$ e $\widetilde{C}_{xy}(a)$;
   \item cálculo da coerência \textit{wavelet} alternativa $\widetilde{\gamma}_{xy}(a)$;
-  \item extração de métricas espectrais por escala e análise comparativa entre padrões.
+  \item análise das assinaturas espectrais por padrão de escoamento.
 \end{enumerate}
 
 % =========================================================
@@ -45,7 +51,7 @@ bolha dispersa, \textit{plug}, \textit{slug}, \textit{churn}, anular ondulado e 
 Para cada ensaio, o padrão de escoamento foi previamente identificado por análise visual
 das imagens da câmera de alta velocidade na seção de visualização, conforme descrito por
 \citeonline{deoliveira2021}. Essa identificação prévia constitui o rótulo de referência
-que será utilizado para verificar se as assinaturas de coerência \textit{wavelet}
+que será utilizado para avaliar se as assinaturas de coerência \textit{wavelet}
 correspondem a cada padrão.
 
 % =========================================================
@@ -58,14 +64,17 @@ etapas de pré-processamento:
 \begin{enumerate}
   \item \textbf{Remoção da média}: subtrair o valor médio de cada sinal para eliminar
         componentes de corrente contínua que não carregam informação sobre a dinâmica
-        do escoamento;
+        do escoamento e garantir que a autocorrelação seja bem definida;
   \item \textbf{Normalização}: dividir cada sinal pelo seu desvio padrão, tornando as
-        amplitudes comparáveis entre ensaios com diferentes condições de operação;
-  \item \textbf{Verificação de estacionaridade}: calcular o coeficiente de variação
-        em janelas sucessivas para confirmar que as hipóteses da formulação alternativa
-        de \citeonline{schuck2019}, que pressupõe processos estacionários, são
-        razoavelmente satisfeitas para cada ensaio.
+        amplitudes comparáveis entre ensaios com diferentes condições de operação e
+        evitando que variações de amplitude entre padrões contaminem a estimativa de
+        coerência.
 \end{enumerate}
+
+A formulação alternativa de \citeonline{schuck2019} pressupõe processos estacionários.
+Essa hipótese é razoável para os ensaios de \citeonline{deoliveira2021}, uma vez que
+cada registro de 8\,s foi coletado com $G$ e $q''$ fixos, em condição de regime
+estabelecido, conforme o protocolo experimental descrito na \autoref{sec:arranjo}.
 
 % =========================================================
 \section{Cálculo da coerência \textit{wavelet} alternativa}\label{sec:met-wco}
@@ -81,9 +90,9 @@ são as seguintes:
         temporais pré-processadas, para defasagens $\tau$ de $-T/2$ a $T/2$, em que
         $T = 8\,\text{s}$ é a duração do ensaio;
   \item \textbf{CWT das funções de correlação}: aplicar a CWT de Morlet complexa
-        ($\omega_0 = 6$ \cite{torrence1998}) a cada função de correlação, avaliada em $b = 0$, sobre uma
-        grade logarítmica de escalas cobrindo a faixa de frequência relevante para os
-        padrões de escoamento ($\sim$\,0{,}1 a 100\,Hz);
+        ($\omega_0 = 6$ \cite{torrence1998}) a cada função de correlação, avaliada em
+        $b = 0$, sobre uma grade logarítmica de escalas cobrindo a faixa de frequência
+        relevante para os padrões de escoamento;
   \item \textbf{Espectros alternativos}: calcular
         $\widetilde{P}_x(a) = |W_{R_{xx}}(a,0)|$,
         $\widetilde{P}_y(a) = |W_{R_{yy}}(a,0)|$ e
@@ -94,37 +103,40 @@ são as seguintes:
         de cada escala.
 \end{enumerate}
 
-A implementação será realizada em Python, utilizando as bibliotecas
-\textit{NumPy} e \textit{SciPy} para os cálculos de correlação e da CWT.
-Os parâmetros da \textit{wavelet}-mãe (especificamente o valor de $\omega_0$) e o
-espaçamento da grade de escalas serão validados preliminarmente com sinais sintéticos
-de frequência e fase conhecidas, seguindo o procedimento de validação descrito por
-\citeonline{schuck2019}.
+A implementação será realizada em Python, com uso das bibliotecas \textit{NumPy} e
+\textit{SciPy} para os cálculos de correlação e da CWT. Antes da aplicação aos dados
+reais, a implementação será validada com sinais sintéticos de frequência, fase e razão
+sinal-ruído controladas, seguindo o procedimento descrito por \citeonline{schuck2019},
+para confirmar que as equações estão corretamente implementadas e que o método recupera
+os resultados esperados.
 
 % =========================================================
-\section{Extração de métricas espectrais e análise comparativa}\label{sec:met-analise}
+\section{Análise das assinaturas espectrais}\label{sec:met-analise}
 % =========================================================
 
-Para cada ensaio, a curva $\widetilde{\gamma}_{xy}(a)$ resultante será analisada
-por meio das seguintes métricas espectrais, calculadas por faixa de frequência:
+Para cada padrão de escoamento, as curvas $\widetilde{\gamma}_{xy}(a)$ de todos os
+ensaios correspondentes serão sobrepostas em um mesmo gráfico, permitindo avaliar
+visualmente a consistência intra-padrão e a separação inter-padrão. A análise será
+complementada por duas métricas espectrais simples extraídas de cada curva:
 
 \begin{enumerate}
-  \item \textbf{Coerência média por faixa}: valor médio de $\widetilde{\gamma}_{xy}$
-        em faixas de frequência pré-definidas com base nas características espectrais
-        de cada padrão, conforme descritas por \citeonline{deoliveira2021};
   \item \textbf{Frequência de pico}: escala $a^*$ em que $\widetilde{\gamma}_{xy}(a)$
-        é máximo, e a frequência característica correspondente $f^* \approx 1/(1{,}03\,a^*\,\delta t)$
-        \cite{torrence1998,grinsted2004};
-  \item \textbf{Largura espectral}: extensão da região em que
-        $\widetilde{\gamma}_{xy}(a) \geq 0{,}5$, medida em oitavas de escala, como
-        indicador da seletividade espectral do acoplamento.
+        é máximo e a frequência característica correspondente
+        $f^* \approx 1/(1{,}03\,a^*\,\delta t)$ \cite{torrence1998,grinsted2004},
+        indicando em que escala espectral o acoplamento entre PD e OS é mais intenso;
+  \item \textbf{Coerência máxima}: valor de pico $\widetilde{\gamma}_{xy}(a^*)$,
+        como indicador da força do acoplamento entre os dois sinais no padrão analisado.
 \end{enumerate}
 
-A análise comparativa consistirá em superpor as curvas $\widetilde{\gamma}_{xy}(a)$
-de todos os ensaios de cada padrão e verificar a consistência intra-padrão e a
-separação inter-padrão. Mapas de coerência média por faixa de frequência em função
-dos parâmetros experimentais ($G$, $q''$) permitirão avaliar a robustez das
-assinaturas em relação às variações de condição de operação.
+Para verificar a consistência temporal das assinaturas, cada ensaio de 8\,s será
+também analisado em duas janelas temporais subsequentes, calculando-se
+$\widetilde{\gamma}_{xy}(a)$ separadamente para cada janela. A duração de cada janela
+será definida na implementação do TCC\,II com base nos critérios de resolução espectral
+e de comprimento mínimo necessário para uma estimativa estável das funções de
+autocorrelação e correlação cruzada. Assinaturas semelhantes entre as duas janelas de
+um mesmo ensaio reforçam a estabilidade do padrão e a validade da hipótese de
+estacionaridade; diferenças acentuadas podem indicar transição de padrão durante o
+ensaio, situação especialmente relevante para ensaios nas bordas das faixas de $\beta$.
 
 % =========================================================
 \section{Cronograma do TCC II}\label{sec:cronograma}
@@ -137,7 +149,7 @@ TCC II, com entrega prevista para novembro de 2026.
   \centering
   \caption{Cronograma de atividades do TCC II.}
   \label{qua:cronograma}
-  \begin{tabular}{clccccc}
+  \begin{tabular}{cp{7cm}ccccc}
     \hline
     \multirow{2}{*}{\textbf{Etapa}} &
     \multirow{2}{*}{\textbf{Atividade}} &
@@ -148,7 +160,7 @@ TCC II, com entrega prevista para novembro de 2026.
     1 & Implementação da WCO alternativa em Python              & $\bullet$ & $\bullet$ & & & \\
     2 & Validação com sinais sintéticos                         & & $\bullet$ & $\bullet$ & & \\
     3 & Aplicação aos dados do LETEF (PD e OS)                  & & & $\bullet$ & $\bullet$ & \\
-    4 & Extração de métricas espectrais e análise comparativa   & & & & $\bullet$ & $\bullet$ \\
+    4 & Análise das assinaturas espectrais por padrão           & & & & $\bullet$ & $\bullet$ \\
     5 & Escrita do relatório final (TCC II)                     & & & $\bullet$ & $\bullet$ & $\bullet$ \\
     6 & Revisão com orientador e ajustes finais                 & & & & & $\bullet$ \\
     \hline
@@ -157,12 +169,11 @@ TCC II, com entrega prevista para novembro de 2026.
 \end{quadro}
 
 A etapa~1 compreende a implementação das equações da formulação alternativa de
-\citeonline{schuck2019} (autocorrelação, correlação cruzada e CWT das funções de
-correlação) e a criação de um ambiente de testes reprodutível em Python. A etapa~2
-consiste na geração de sinais sintéticos com frequência, fase e razão sinal-ruído
-controladas para verificar que a implementação recupera corretamente os resultados
-reportados por \citeonline{schuck2019}. As etapas~3 e~4 constituem o núcleo do trabalho:
-aplicação do método aos dados reais do LETEF, extração das métricas espectrais e
-análise comparativa das assinaturas de coerência entre os seis padrões de escoamento.
-A escrita (etapa~5) ocorre em paralelo com as etapas de aplicação e análise, e a
-etapa~6 concentra a revisão final com o orientador para submissão em novembro de 2026.
+\citeonline{schuck2019} em Python e a criação de um ambiente de testes reprodutível.
+A etapa~2 consiste na validação com sinais sintéticos de parâmetros controlados, para
+confirmar que a implementação recupera corretamente os resultados reportados por
+\citeonline{schuck2019}. As etapas~3 e~4 constituem o núcleo do trabalho: aplicação
+do método aos dados reais do LETEF, análise das assinaturas de coerência e avaliação
+da separabilidade entre os seis padrões de escoamento. A escrita (etapa~5) ocorre em
+paralelo com as etapas de análise, e a etapa~6 concentra a revisão final com o
+orientador para submissão em novembro de 2026.
