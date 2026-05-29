@@ -1,56 +1,53 @@
 \chapter{Introdução}\label{cap:introducao}
 
-O crescimento contínuo da densidade de potência em sistemas eletrônicos --- como
-processadores de alto desempenho, equipamentos de data centers e dispositivos de
-eletrônica de potência --- tem gerado uma demanda crescente por tecnologias de
-resfriamento mais eficientes e compactas. O escoamento bifásico com mudança de fase em
-microcanais se destaca como uma das soluções mais promissoras para esse problema, pois
-combina elevados coeficientes de transferência de calor com pequenas dimensões físicas
-\cite{cheng2023}. Nesse tipo de escoamento, o fluido refrigerante percorre um canal de
-diâmetro reduzido enquanto passa do estado líquido para o vapor, absorvendo grandes
-quantidades de calor por unidade de área.
+A densidade de potência em sistemas eletrônicos cresce de forma contínua em processadores
+de alto desempenho, data centers e dispositivos de eletrônica de potência, pressionando o
+desenvolvimento de tecnologias de resfriamento mais eficientes e compactas. O escoamento
+bifásico com mudança de fase em microcanais é uma das alternativas mais promissoras para
+esse problema: combina elevados coeficientes de transferência de calor com pequenas
+dimensões físicas \cite{cheng2023}, e o fluido refrigerante absorve grandes quantidades de
+calor por unidade de área enquanto percorre o canal e passa do estado líquido para o vapor.
 
-Um aspecto central para o controle e a otimização desses sistemas é a identificação do
-padrão de escoamento --- a configuração geométrica assumida pelas fases líquida e vapor
-dentro do canal. Padrões como bolha dispersa, \textit{plug}, \textit{slug}, \textit{churn} e anular
-ondulado apresentam comportamentos térmicos e hidrodinâmicos distintos, e cada um deles
-exige estratégias diferentes de operação para maximizar a eficiência da transferência de
-calor \cite{deoliveira2021}. A identificação manual desses padrões, feita por análise visual
-de imagens de câmera de alta velocidade, é subjetiva e impraticável em condições reais de
-operação, o que motiva o desenvolvimento de métodos automáticos de classificação.
+Para o controle e a otimização desses sistemas, é necessário identificar o padrão de
+escoamento, isto é, a configuração geométrica assumida pelas fases líquida e vapor dentro
+do canal. Padrões como bolha dispersa, \textit{plug}, \textit{slug}, \textit{churn} e
+anular ondulado apresentam comportamentos térmicos e hidrodinâmicos distintos que exigem
+estratégias diferentes de operação \cite{cheng2023,deoliveira2021}. A identificação manual por
+análise visual de imagens de câmera de alta velocidade é subjetiva e impraticável em
+condições reais \cite{dias2025knn}, o que motiva o desenvolvimento de métodos automáticos
+de classificação.
 
-Estudos recentes realizados no arranjo experimental do Laboratório de Estudos Térmicos e Fluidodinâmicos (LETEF) da UNISINOS, com isobutano (R600a)
-em microtubo horizontal de 1\,mm de diâmetro, mostraram a viabilidade de classificar
-automaticamente os padrões de escoamento. \citeonline{deoliveira2021} realizaram um estudo
-experimental abrangente nesse arranjo com análise por transformada \textit{wavelet} contínua
-(CWT), caracterizando as assinaturas espectrais de cada padrão nos sinais dos sensores.
+No Laboratório de Estudos Térmicos e Fluidodinâmicos (LETEF) da UNISINOS, estudos
+recentes com isobutano (R600a) em microtubo horizontal de 1\,mm mostraram a viabilidade
+dessa classificação automática. \citeonline{deoliveira2021} realizaram um estudo
+experimental abrangente com análise por transformada \textit{wavelet} contínua (CWT),
+caracterizando as frequências características de cada padrão nos sinais dos sensores.
 \citeonline{dias2025knn} e \citeonline{dias2025cnn} desenvolveram classificadores baseados
-em imagens da seção de visualização, atingindo 87\% e 93\% de acurácia, respectivamente.
-Esses trabalhos estabelecem o contexto experimental, mas dependem da câmera de alta velocidade
-para aquisição das imagens --- equipamento de custo elevado que nem sempre está disponível em
-aplicações industriais.
+em imagens da seção de visualização, atingindo 87\% e 93\% de acurácia (melhor \textit{fold};
+média de 88{,}1\% nas dez dobras), respectivamente.
+Esses trabalhos dependem, porém, da câmera de alta velocidade para aquisição das imagens,
+equipamento de custo elevado que nem sempre está disponível em aplicações industriais.
 
-O arranjo experimental já conta, no entanto, com dois sinais continuamente disponíveis
-durante a operação: o sinal do transdutor de pressão diferencial (PD) e o sinal do sensor
-óptico (OS), construído com LED e resistor dependente de luz (LDR) para detectar a variação de luminosidade
-causada pela interface líquido-vapor \cite{deoliveira2021}. \citeonline{deoliveira2021}
-demonstraram que esses sinais contêm frequências características associadas a cada padrão
-de escoamento, identificáveis por análise com a transformada \textit{wavelet} contínua
-(CWT). Os espectros de potência \textit{wavelet} dos dois sinais apresentam padrões de
-energia distintos para cada regime: o PD e o OS respondem ao mesmo evento físico --- a
-passagem de uma estrutura de vapor --- a partir de perspectivas de medição diferentes,
-de modo que o acoplamento espectral entre eles carrega informação sobre a dinâmica do
-escoamento que não está contida em nenhum dos dois sinais isoladamente. Essa relação
-espectral, medida pela coerência \textit{wavelet} (WCO), pode ser explorada como
-descritor para classificação automática dos padrões, dispensando o uso da câmera.
+O arranjo experimental dispõe, no entanto, de dois sinais continuamente disponíveis: o
+sinal do transdutor de pressão diferencial (PD) e o sinal do sensor óptico (OS),
+construído com LED e resistor dependente de luz (LDR) para detectar a variação de
+luminosidade causada pela interface líquido-vapor \cite{deoliveira2021}. Esses sinais
+contêm frequências características associadas a cada padrão de escoamento, identificáveis
+por CWT \cite{deoliveira2021}. O PD e o OS respondem ao mesmo evento físico, a passagem
+de uma estrutura de vapor, a partir de perspectivas de medição diferentes; o acoplamento
+espectral entre eles carrega informação sobre a dinâmica do escoamento que não está
+contida em nenhum dos dois sinais isoladamente. Essa relação espectral, medida pela
+coerência \textit{wavelet} (WCO), pode ser explorada como descritor para classificação
+automática dos padrões sem uso da câmera.
 
-\citeonline{schuck2019} propuseram uma formulação alternativa para o cálculo da WCO, na
-qual a transformada é aplicada às funções de autocorrelação e correlação cruzada dos sinais
+\citeonline{schuck2019} propuseram uma formulação alternativa para o cálculo da WCO em
+que a transformada é aplicada às funções de autocorrelação e correlação cruzada dos sinais
 em vez de ser aplicada diretamente a eles. Essa abordagem elimina a necessidade de
 suavização espectral exigida pela definição clássica \cite{torrence1998}, tornando a
-coerência mais robusta ao ruído de aquisição e mais fácil de interpretar. Até o momento,
-essa formulação não foi aplicada ao problema de identificação de padrões de escoamento
-bifásico, o que representa a lacuna que este trabalho se propõe a preencher.
+coerência não trivialmente unitária e mais robusta à presença de transientes não
+correlacionados \cite{schuck2019}. Essa formulação não foi aplicada ao problema de
+identificação de padrões de escoamento bifásico, o que representa a lacuna que este
+trabalho se propõe a preencher.
 
 \section{Objetivo Geral}
 

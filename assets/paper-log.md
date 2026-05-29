@@ -38,6 +38,7 @@
 | `tan2015-oil-water-wavelet-sensors.pdf` | `tan2015` | **HIGH** | Tan et al. (2015) CES — escoamento óleo-água com sensor condutividade/capacitância + análise wavelet. **ATENÇÃO: TCC afirma "DWT" e "energia por nível" — o artigo usa CWT + LWE (coeficientes Wn/an). A "robustez a variações de velocidade" não é afirmada no artigo.** DOI: 10.1016/j.ces.2015.04.046 |
 | `hobold2018-ml-boiling-regimes.pdf` | `hobold2018` | **HIGH** | Hobold & da Silva (2018) IJHMT — **pool boiling** (NOT flow boiling), DSLR 30 Hz, SVM + ANN, 98.8% acc (direto) / 94.3% (indireto). **ATENÇÃO: TCC afirma "sinais de temperatura" — artigo usa apenas imagens; temperatura só para rotulagem, não como feature.** DOI: 10.1016/j.ijheatmasstransfer.2018.04.156 |
 | `sun2012-wavelet-entropy-flow-patterns.pdf` | `sun2012` | **HIGH** | Sun et al. (2012) MST — ar-água, tubo 50 mm (macrocanal), DWT db4 7 níveis, entropia norma coef. d4, 4 padrões, >95% acc. Sensor: flutuações de pressão através de bluff body (vortex). DOI: 10.1088/0957-0233/23/12/125301 |
+| `nguyen2010-wavelet-flow-pattern-discrimination.pdf` | `nguyen2010` | **HIGH** | Nguyen, Euh & Song (2010) IJMF — CWT aplicada a sinais de fração de vazio (Impedance Void Meter, IVM) para discriminação objetiva de padrões bifásicos ar-água em tubo vertical de 80 mm (KAERI). Define "local wavelet energy coefficient" e "effective scale" como critérios de identificação. Padrões identificados: bubbly discreto, clustered/cap bubbly, slug, churn. **Antecedente mais direto da abordagem por CWT para discriminação de padrões proposta neste TCC.** Citado por deoliveira2021 e deoliveira2019. PDF legível via pdftotext. DOI: 10.1016/j.ijmultiphaseflow.2010.04.007 |
 
 ---
 
@@ -61,7 +62,6 @@
 |--------|---------|-----|----------------|-----------|-----|
 | `wei2020` | Wei et al. | 2020 | Gas-liquid two-phase flow pattern identification from multi-scale entropy | **HIGH** — entropia multiescala como feature para classificação | 10.1016/j.ces.2020.115504 |
 | `daubechies1990` | Daubechies | 1990 | The Wavelet Transform, Time-Frequency Localization and Signal Analysis | **HIGH** — artigo fundacional da DWT com wavelets Daubechies | 10.1109/18.57199 |
-| `nguyen2010` | Nguyen, Euh, Song | 2010 | An application of the wavelet analysis technique for the objective discrimination of two-phase flow patterns | **HIGH** — uso de wavelet para discriminação objetiva de padrões bifásicos (IJMF 2010) | 10.1016/j.ijmultiphaseflow.2010.04.007 |
 
 ### Pilar 3: ML para classificação de padrões
 
@@ -99,7 +99,7 @@
 | Pilar | CRITICAL (local) | CRITICAL (sem PDF) | HIGH local | HIGH sem PDF | Total |
 |-------|-----------------|-------------------|------------|-------------|-------|
 | Padrões de escoamento | deoliveira2021, deoliveira2019 | wojtan2005, revellin2006 | schmid2022, brunton2020, cheng2023 | saisorn2008, deoliveira2016/17, seal2021 | 10 |
-| DSP / Wavelet | torrence1998, schuck2019, mallat2009 | — | morshed2020, tan2015, sun2012, hobold2018 | wei2020, nguyen2010, daubechies1990 | 10 |
+| DSP / Wavelet | torrence1998, schuck2019, mallat2009 | — | morshed2020, tan2015, sun2012, hobold2018, nguyen2010 | wei2020, daubechies1990 | 10 |
 | ML classificação | dias2025-knn, dias2025-cnn, he2016resnet | — | qiao2023, brunton2020, alzubaidi2021, suh2021 | zhang2020, seal2021 | 9 |
 | GLCM / textura | lofstedt2019 | haralick1973 | — | — | 2 |
 | kNN / classificadores | cunningham2022 | — | yang2023 | — | 2 |
