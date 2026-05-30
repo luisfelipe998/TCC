@@ -20,12 +20,6 @@ espectral entre os dois sinais, expresso por $\widetilde{\gamma}_{xy}(a)$ em fun
 escala, varia sistematicamente de um padrão para outro, refletindo a dinâmica distinta
 da interface líquido-vapor em cada regime.
 
-O método não pressupõe um classificador automático: o objetivo é demonstrar que as
-assinaturas de coerência são suficientemente distintas para permitir a identificação
-visual ou por inspeção de métricas espectrais simples. Caso as assinaturas demonstrem
-separabilidade adequada, a incorporação de um classificador automático está prevista
-como extensão natural no TCC\,II.
-
 O \textit{pipeline} proposto é composto pelas seguintes etapas:
 
 \begin{enumerate}
@@ -142,7 +136,7 @@ complementada por duas métricas espectrais simples extraídas de cada curva:
 Para verificar a consistência temporal das assinaturas, cada ensaio de 8\,s será
 também analisado em duas janelas temporais subsequentes, calculando-se
 $\widetilde{\gamma}_{xy}(a)$ separadamente para cada janela. A duração de cada janela
-será definida na implementação do TCC\,II com base nos critérios de resolução espectral
+será definida na implementação deste trabalho com base nos critérios de resolução espectral
 e de comprimento mínimo necessário para uma estimativa estável das funções de
 autocorrelação e correlação cruzada. Assinaturas semelhantes entre as duas janelas de
 um mesmo ensaio reforçam a estabilidade do padrão e a validade da hipótese de
@@ -150,15 +144,15 @@ estacionaridade; diferenças acentuadas podem indicar transição de padrão dur
 ensaio, situação especialmente relevante para ensaios nas bordas das faixas de $\beta$.
 
 % =========================================================
-\section{Cronograma do TCC II}\label{sec:cronograma}
+\section{Cronograma}\label{sec:cronograma}
 % =========================================================
 
 O \autoref{qua:cronograma} apresenta o cronograma previsto para o desenvolvimento do
-TCC II, com entrega prevista para novembro de 2026.
+trabalho, com entrega prevista para novembro de 2026.
 
 \begin{quadro}[htb]
   \centering
-  \caption{Cronograma de atividades do TCC II.}
+  \caption{Cronograma de atividades.}
   \label{qua:cronograma}
   \begin{tabular}{cp{7cm}ccccc}
     \hline
@@ -172,7 +166,7 @@ TCC II, com entrega prevista para novembro de 2026.
     2 & Validação com sinais sintéticos                         & & $\bullet$ & $\bullet$ & & \\
     3 & Aplicação aos dados do LETEF (PD e OS)                  & & & $\bullet$ & $\bullet$ & \\
     4 & Análise das assinaturas espectrais por padrão           & & & & $\bullet$ & $\bullet$ \\
-    5 & Escrita do relatório final (TCC II)                     & & & $\bullet$ & $\bullet$ & $\bullet$ \\
+    5 & Escrita do relatório final                                  & & & $\bullet$ & $\bullet$ & $\bullet$ \\
     6 & Revisão com orientador e ajustes finais                 & & & & & $\bullet$ \\
     \hline
   \end{tabular}
