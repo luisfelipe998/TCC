@@ -1,7 +1,7 @@
 \chapter{Introdução}\label{cap:introducao}
 
 A densidade de potência em sistemas eletrônicos cresce de forma contínua em processadores
-de alto desempenho, data centers e dispositivos de eletrônica de potência, pressionando o
+de alto desempenho, \textit{data centers} e dispositivos de eletrônica de potência, pressionando o
 desenvolvimento de tecnologias de resfriamento mais eficientes e compactas. O escoamento
 bifásico com mudança de fase em microcanais é uma das alternativas mais promissoras para
 esse problema: combina elevados coeficientes de transferência de calor com pequenas
@@ -20,7 +20,7 @@ de classificação.
 No Laboratório de Estudos Térmicos e Fluidodinâmicos (LETEF) da UNISINOS, estudos
 recentes com isobutano (R600a) em microtubo horizontal de 1\,mm mostraram a viabilidade
 dessa classificação automática. \citeonline{deoliveira2021} realizaram um estudo
-experimental abrangente com análise por transformada \textit{wavelet} contínua (CWT),
+experimental abrangente com análise por transformada \textit{Wavelet} contínua (CWT),
 caracterizando as frequências características de cada padrão nos sinais dos sensores.
 \citeonline{dias2025knn} e \citeonline{dias2025cnn} desenvolveram classificadores baseados
 em imagens da seção de visualização, atingindo 87\% e 93\% de acurácia (melhor \textit{fold};
@@ -37,7 +37,7 @@ por CWT \cite{deoliveira2021}. O PD e o OS respondem ao mesmo evento físico, a 
 de uma estrutura de vapor, a partir de perspectivas de medição diferentes; o acoplamento
 espectral entre eles carrega informação sobre a dinâmica do escoamento que não está
 contida em nenhum dos dois sinais isoladamente. Essa relação espectral, medida pela
-coerência \textit{wavelet} (WCO), pode ser explorada como descritor para classificação
+coerência \textit{Wavelet} (WCO), pode ser explorada como descritor para classificação
 automática dos padrões sem uso da câmera.
 
 \citeonline{schuck2019} propuseram uma formulação alternativa para o cálculo da WCO em
@@ -51,8 +51,8 @@ trabalho se propõe a preencher.
 
 \section{Objetivo Geral}
 
-Propor um método de identificação automática dos padrões de escoamento bifásico no arranjo
-experimental do LETEF com base na análise de coerência \textit{wavelet} entre o sinal
+Propor um método de classificação automática dos padrões de escoamento bifásico no arranjo
+experimental do LETEF com base na análise de coerência \textit{Wavelet} entre o sinal
 do transdutor de pressão diferencial e o sinal do sensor óptico, utilizando a formulação
 alternativa de \citeonline{schuck2019}.
 
@@ -60,12 +60,12 @@ alternativa de \citeonline{schuck2019}.
 
 \begin{itemize}
   \item Revisar a literatura sobre padrões de escoamento bifásico em microcanais e sobre
-  métodos de identificação automática baseados em sinais;
-  \item Apresentar a fundamentação teórica da transformada \textit{wavelet} contínua, do
-  espectro de potência (WPS), do espectro cruzado (WCS) e da coerência \textit{wavelet}
+  métodos de classificação automática baseados em sinais;
+  \item Apresentar a fundamentação teórica da transformada \textit{Wavelet} contínua, do
+  espectro de potência (WPS), do espectro cruzado (WCS) e da coerência \textit{Wavelet}
   (WCO), com ênfase na formulação alternativa de \citeonline{schuck2019};
   \item Descrever a metodologia para extração das assinaturas espectrais de coerência
-  \textit{wavelet} a partir dos sinais PD e OS do arranjo experimental e sua aplicação
+  \textit{Wavelet} a partir dos sinais PD e OS do arranjo experimental e sua aplicação
   à classificação dos padrões de escoamento.
 \end{itemize}
 
@@ -74,7 +74,7 @@ alternativa de \citeonline{schuck2019}.
 Este trabalho está organizado em quatro capítulos. O \autoref{cap:fundamentacao} apresenta
 a revisão bibliográfica e as bases teóricas que fundamentam a metodologia proposta:
 fenomenologia dos padrões de escoamento bifásico em microcanais e formulação matemática das
-transformadas \textit{wavelet} contínua, do espectro de potência, do espectro cruzado e da
-coerência \textit{wavelet} nas formulações clássica e alternativa. O capítulo seguinte descreve a metodologia proposta, detalhando o arranjo experimental, o
-pipeline de processamento dos sinais e a estratégia de avaliação do método. O último
+transformadas \textit{Wavelet} contínua, do espectro de potência, do espectro cruzado e da
+coerência \textit{Wavelet} nas formulações clássica e alternativa. O capítulo seguinte descreve a metodologia proposta, detalhando o arranjo experimental, o
+\textit{pipeline} de processamento dos sinais e a estratégia de avaliação do método. O último
 capítulo apresenta o cronograma previsto para o desenvolvimento do TCC II.

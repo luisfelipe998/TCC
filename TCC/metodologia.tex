@@ -1,7 +1,7 @@
 \chapter{Metodologia}\label{cap:metodologia}
 
 Este capítulo descreve a abordagem proposta para investigar a aplicabilidade da coerência
-\textit{wavelet} alternativa de \citeonline{schuck2019} como ferramenta de caracterização
+\textit{Wavelet} alternativa de \citeonline{schuck2019} como ferramenta de caracterização
 dos padrões de escoamento bifásico no arranjo experimental do LETEF.
 A \autoref{sec:met-visao} apresenta uma visão geral do método proposto; as seções
 seguintes descrevem os dados, o pré-processamento, o cálculo da coerência e a análise
@@ -11,7 +11,7 @@ das assinaturas espectrais.
 \section{Visão geral do método proposto}\label{sec:met-visao}
 % =========================================================
 
-A abordagem proposta consiste em calcular a coerência \textit{wavelet} alternativa
+A abordagem proposta consiste em calcular a coerência \textit{Wavelet} alternativa
 $\widetilde{\gamma}_{xy}(a)$ entre os sinais do transdutor de pressão diferencial (PD)
 e do sensor óptico (OS), adquiridos simultaneamente no arranjo experimental do LETEF,
 e verificar se as curvas resultantes constituem assinaturas espectrais características
@@ -33,7 +33,7 @@ O \textit{pipeline} proposto é composto pelas seguintes etapas:
   \item cálculo das funções de autocorrelação e correlação cruzada;
   \item aplicação da CWT nas funções de correlação e obtenção de
         $\widetilde{P}_x(a)$, $\widetilde{P}_y(a)$ e $\widetilde{C}_{xy}(a)$;
-  \item cálculo da coerência \textit{wavelet} alternativa $\widetilde{\gamma}_{xy}(a)$;
+  \item cálculo da coerência \textit{Wavelet} alternativa $\widetilde{\gamma}_{xy}(a)$;
   \item análise das assinaturas espectrais por padrão de escoamento.
 \end{enumerate}
 
@@ -43,7 +43,7 @@ A \autoref{fig:pipeline} resume esquematicamente o fluxo de processamento propos
   \centering
   \includegraphics[width=0.55\textwidth]{figuras/pipeline-wco}
   \caption{Fluxograma do método proposto para caracterização dos padrões de escoamento
-           por coerência \textit{wavelet} alternativa.}
+           por coerência \textit{Wavelet} alternativa.}
   \label{fig:pipeline}
   \fonte{Elaborado pelo autor.}
 \end{figure}
@@ -62,7 +62,7 @@ bolha dispersa, \textit{plug}, \textit{slug}, \textit{churn}, anular ondulado e 
 Para cada ensaio, o padrão de escoamento foi previamente identificado por análise visual
 das imagens da câmera de alta velocidade na seção de visualização, conforme descrito por
 \citeonline{deoliveira2021}. Essa identificação prévia constitui o rótulo de referência
-que será utilizado para avaliar se as assinaturas de coerência \textit{wavelet}
+que será utilizado para avaliar se as assinaturas de coerência \textit{Wavelet}
 correspondem a cada padrão.
 
 % =========================================================
@@ -73,10 +73,10 @@ Antes de calcular as funções de correlação, cada série temporal passará pe
 etapas de pré-processamento:
 
 \begin{enumerate}
-  \item \textbf{Remoção da média}: subtrair o valor médio de cada sinal para eliminar
+  \item Remoção da média: subtrair o valor médio de cada sinal para eliminar
         componentes de corrente contínua que não carregam informação sobre a dinâmica
         do escoamento e garantir que a autocorrelação seja bem definida;
-  \item \textbf{Normalização}: dividir cada sinal pelo seu desvio padrão, tornando as
+  \item Normalização: dividir cada sinal pelo seu desvio padrão, tornando as
         amplitudes comparáveis entre ensaios com diferentes condições de operação e
         evitando que variações de amplitude entre padrões contaminem a estimativa de
         coerência.
@@ -88,27 +88,27 @@ cada registro de 8\,s foi coletado com $G$ e $q''$ fixos, em condição de regim
 estabelecido, conforme o protocolo experimental descrito na \autoref{sec:arranjo}.
 
 % =========================================================
-\section{Cálculo da coerência \textit{wavelet} alternativa}\label{sec:met-wco}
+\section{Cálculo da coerência \textit{Wavelet} alternativa}\label{sec:met-wco}
 % =========================================================
 
-O cálculo da coerência \textit{wavelet} alternativa seguirá a formulação de
+O cálculo da coerência \textit{Wavelet} alternativa seguirá a formulação de
 \citeonline{schuck2019}, conforme descrita na \autoref{sec:wps-wcs-wco}. As etapas
 são as seguintes:
 
 \begin{enumerate}
-  \item \textbf{Autocorrelação e correlação cruzada}: calcular numericamente
+  \item Autocorrelação e correlação cruzada: calcular numericamente
         $R_{xx}(\tau)$, $R_{yy}(\tau)$ e $R_{xy}(\tau)$ a partir das séries
         temporais pré-processadas, para defasagens $\tau$ de $-T/2$ a $T/2$, em que
         $T = 8\,\text{s}$ é a duração do ensaio;
-  \item \textbf{CWT das funções de correlação}: aplicar a CWT de Morlet complexa
+  \item CWT das funções de correlação: aplicar a CWT de Morlet complexa
         ($\omega_0 = 6$ \cite{torrence1998}) a cada função de correlação, avaliada em
         $b = 0$, sobre uma grade logarítmica de escalas cobrindo a faixa de frequência
         relevante para os padrões de escoamento;
-  \item \textbf{Espectros alternativos}: calcular
+  \item Espectros alternativos: calcular
         $\widetilde{P}_x(a) = |W_{R_{xx}}(a,0)|$,
         $\widetilde{P}_y(a) = |W_{R_{yy}}(a,0)|$ e
         $\widetilde{C}_{xy}(a) = |W_{R_{xy}}(a,0)|$;
-  \item \textbf{Coerência por escala}: obter
+  \item Coerência por escala: obter
         $\widetilde{\gamma}_{xy}(a) = \widetilde{C}_{xy}(a)^2\,/\,[\widetilde{P}_x(a)\cdot\widetilde{P}_y(a)]$,
         resultando em uma curva de coerência em função da frequência característica
         de cada escala.
@@ -131,11 +131,11 @@ visualmente a consistência intra-padrão e a separação inter-padrão. A anál
 complementada por duas métricas espectrais simples extraídas de cada curva:
 
 \begin{enumerate}
-  \item \textbf{Frequência de pico}: escala $a^*$ em que $\widetilde{\gamma}_{xy}(a)$
+  \item Frequência de pico: escala $a^*$ em que $\widetilde{\gamma}_{xy}(a)$
         é máximo e a frequência característica correspondente
         $f^* \approx 1/(1{,}03\,a^*\,\delta t)$ \cite{torrence1998,grinsted2004},
         indicando em que escala espectral o acoplamento entre PD e OS é mais intenso;
-  \item \textbf{Coerência máxima}: valor de pico $\widetilde{\gamma}_{xy}(a^*)$,
+  \item Coerência máxima: valor de pico $\widetilde{\gamma}_{xy}(a^*)$,
         como indicador da força do acoplamento entre os dois sinais no padrão analisado.
 \end{enumerate}
 
