@@ -101,11 +101,12 @@ são as seguintes:
   \item Espectros alternativos: calcular
         $\widetilde{P}_x(a) = |W_{R_{xx}}(a,0)|$,
         $\widetilde{P}_y(a) = |W_{R_{yy}}(a,0)|$ e
-        $\widetilde{C}_{xy}(a) = |W_{R_{xy}}(a,0)|$;
+        $\widetilde{C}_{xy}(a) = |W_{R_{xy}}(a,0)|$
+        conforme as \autoref{eq:wps-alt} e \autoref{eq:wcs-alt};
   \item Coerência por escala: obter
-        $\widetilde{\gamma}_{xy}(a) = \widetilde{C}_{xy}(a)^2\,/\,[\widetilde{P}_x(a)\cdot\widetilde{P}_y(a)]$,
-        resultando em uma curva de coerência em função da frequência característica
-        de cada escala.
+        $\widetilde{\gamma}_{xy}(a) = \widetilde{C}_{xy}(a)^2\,/\,[\widetilde{P}_x(a)\cdot\widetilde{P}_y(a)]$
+        (\autoref{eq:wco-alt}), resultando em uma curva de coerência em função da frequência
+        característica de cada escala.
 \end{enumerate}
 
 A implementação será realizada em Python, com uso das bibliotecas \textit{NumPy} e
@@ -142,6 +143,101 @@ autocorrelação e correlação cruzada. Assinaturas semelhantes entre as duas j
 um mesmo ensaio reforçam a estabilidade do padrão e a validade da hipótese de
 estacionaridade; diferenças acentuadas podem indicar transição de padrão durante o
 ensaio, situação especialmente relevante para ensaios nas bordas das faixas de $\beta$.
+
+% =========================================================
+\section{Aplicação passo a passo das equações: ensaio de \textit{slug}}\label{sec:met-exemplo}
+% =========================================================
+
+Para tornar concreto o encadeamento das equações, esta seção percorre as cinco etapas do
+\textit{pipeline} aplicadas a um ensaio de \textit{slug} coletado a
+$G = 510\,\text{kg/(m}^2\text{s)}$ \cite{deoliveira2021}.
+
+\paragraph{Entrada.}
+Os sinais $x[n] = \text{PD}[n]$ e $y[n] = \text{OS}[n]$ consistem em $N = 8.000$
+amostras adquiridas simultaneamente a $f_s = 1\,\text{kHz}$, logo $\delta t = 1\,\text{ms}$.
+Após a remoção da média e a normalização pelo desvio padrão
+(\autoref{sec:met-preproc}), tem-se $\bar{x} = \bar{y} = 0$ e
+$\sigma_x = \sigma_y = 1$.
+
+\paragraph{Passo~1 — Autocorrelação e correlação cruzada
+(\autoref{eq:autocorr} e \autoref{eq:crosscorr}).}
+A versão discreta da \autoref{eq:autocorr} é:
+
+\begin{equation}\label{eq:autocorr-disc}
+  R_{xx}[m] = \sum_{n=0}^{N-1-|m|} x[n]\,x[n+m],
+  \qquad m = -(N{-}1), \ldots, N{-}1.
+\end{equation}
+
+\noindent
+A correlação cruzada é discretizada de forma análoga a partir da \autoref{eq:crosscorr}:
+
+\begin{equation}\label{eq:crosscorr-disc}
+  R_{xy}[m] = \sum_{n=0}^{N-1-|m|} x[n]\,y[n+m],
+  \qquad m = -(N{-}1), \ldots, N{-}1.
+\end{equation}
+
+\noindent
+Para o padrão \textit{slug}, $R_{xy}[m]$ apresenta um pico deslocado de $m^* > 0$,
+indicando que o OS responde ligeiramente após o PD à mesma passagem de bolsão de vapor.
+
+\paragraph{Passo~2 — CWT das funções de correlação
+(\autoref{eq:wps-alt} e \autoref{eq:wcs-alt}).}
+A CWT de Morlet complexa ($\omega_0 = 6$, \cite{torrence1998}) é aplicada a
+$R_{xx}[\tau]$, $R_{yy}[\tau]$ e $R_{xy}[\tau]$ em $b = 0$
+(atraso nulo do domínio da transformada, que corresponde ao ponto de referência
+das funções de correlação). Para uma escala $a_k$, o coeficiente é:
+
+\begin{equation}\label{eq:cwt-disc}
+  W_{R_{xx}}(a_k,\, 0) = \frac{\delta\tau}{\sqrt{a_k}}
+  \sum_{m=-(N{-}1)}^{N{-}1}
+  R_{xx}[m]\,\psi^*\!\!\left(\frac{-m\,\delta\tau}{a_k}\right),
+\end{equation}
+
+\noindent
+em que $\delta\tau = \delta t = 1\,\text{ms}$ é o passo de amostragem e
+$\psi(u) = e^{-0{,}5u^2} e^{j\omega_0 u}$ é a \textit{Wavelet} de Morlet
+(\autoref{sec:cwt}). A operação é aplicada a $R_{xx}$, $R_{yy}$ e $R_{xy}$,
+produzindo os coeficientes $W_{R_{xx}}(a_k,0)$, $W_{R_{yy}}(a_k,0)$ e
+$W_{R_{xy}}(a_k,0)$ para cada escala $a_k$ da grade. A relação
+$f_k \approx 1/(1{,}03\,a_k\,\delta t)$ \cite{torrence1998,grinsted2004}
+converte cada escala em frequência equivalente. Espera-se que os coeficientes
+apresentem amplitude elevada nas escalas correspondentes à faixa espectral
+do \textit{slug} — em torno de 2,8\,Hz no sinal OS \cite{deoliveira2021} —,
+onde a atividade das funções de correlação é mais intensa.
+
+\paragraph{Passo~3 — Espectros alternativos (\autoref{eq:wps-alt} e \autoref{eq:wcs-alt}).}
+Aplicando as \autoref{eq:wps-alt} e \autoref{eq:wcs-alt} aos coeficientes do Passo~2,
+obtêm-se $\widetilde{P}_x(a_k)$, $\widetilde{P}_y(a_k)$ e $\widetilde{C}_{xy}(a_k)$
+— uma tripla de valores reais não negativos para cada escala $a_k$.
+Espera-se que $\widetilde{P}_x$ e $\widetilde{P}_y$ apresentem picos nas faixas
+espectrais características de cada sensor para o padrão \textit{slug}, e que
+$\widetilde{C}_{xy}$ seja elevado nas escalas em que os dois sinais variam de
+forma correlacionada.
+
+\paragraph{Passo~4 — Coerência alternativa (\autoref{eq:wco-alt}).}
+Aplicando a \autoref{eq:wco-alt} aos espectros do Passo~3, obtém-se a curva
+$\widetilde{\gamma}_{xy}(f)$ com valores em $[0, 1]$ para cada frequência
+equivalente $f_k$. Espera-se que o \textit{slug} produza
+coerência elevada na faixa em que PD e OS respondem conjuntamente à passagem
+periódica dos bolsões de vapor — conforme descrito na \autoref{sec:padroes} —,
+refletindo o acoplamento entre os dois sensores naquele regime. O procedimento
+é repetido para todas as escalas da grade, produzindo a curva completa
+$\widetilde{\gamma}_{xy}(f)$.
+
+\paragraph{Passo~5 — Extração das métricas espectrais (\autoref{sec:met-analise}).}
+A partir da curva completa $\widetilde{\gamma}_{xy}(f)$, identificam-se:
+(i)~a frequência de pico $f^* = \arg\max_f\, \widetilde{\gamma}_{xy}(f)$,
+que se espera compatível com a faixa espectral do \textit{slug} descrita na
+\autoref{sec:padroes}; e
+(ii)~a coerência máxima $\widetilde{\gamma}_{xy}(f^*)$, como indicador da força
+do acoplamento entre PD e OS no padrão analisado.
+
+Esses dois escalares constituem a assinatura espectral do ensaio. Ao sobrepor as
+curvas de todos os ensaios classificados como \textit{slug}, avalia-se a
+repetibilidade intra-padrão. Ao comparar as curvas de diferentes padrões, avalia-se
+a separabilidade inter-padrão — critério central deste trabalho para determinar se
+$\widetilde{\gamma}_{xy}(f)$ pode substituir a câmera de alta velocidade como
+instrumento de identificação de padrões de escoamento bifásico.
 
 % =========================================================
 \section{Cronograma}\label{sec:cronograma}
