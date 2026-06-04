@@ -463,7 +463,7 @@ preenchimento com zeros necessário para o cálculo introduz descontinuidades na
 extremidades e, à medida que se avança para escalas maiores, reduz artificialmente a
 amplitude dos coeficientes próximos às bordas \cite{torrence1998}. A região afetada é
 delimitada pelo cone de influência, definido por \citeonline{torrence1998} como a área
-do plano $(a, b)$ onde os efeitos de borda se tornam significativos — especificamente,
+do plano $(a, b)$ onde os efeitos de borda se tornam significativos, especificamente
 onde a potência \textit{Wavelet} associada a uma descontinuidade na borda decai a
 $e^{-2}$ do valor original.
 
@@ -497,7 +497,7 @@ Regiões de alto $P_x$ indicam quando e em que frequência o sinal tem atividade
 Integrado no tempo, o WPS aproxima-se do espectro de Fourier clássico \cite{torrence1998}.
 
 O sensor óptico (OS) e o transdutor de pressão diferencial (PD) respondem ao mesmo
-evento físico — a passagem de uma estrutura de vapor — a partir de perspectivas distintas:
+evento físico, a passagem de uma estrutura de vapor, a partir de perspectivas distintas:
 o PD captura flutuações de pressão integradas ao longo da seção de teste, enquanto o OS
 registra a variação local de transmitância óptica na interface líquido-vapor. As
 \autoref{fig:scalogram-slug} e \autoref{fig:scalogram-churn} mostram os escalogramas do
@@ -609,10 +609,15 @@ da autocorrelação de um processo estacionário fornece a sua densidade espectr
 a CWT de $R_{xx}(\tau)$ avaliada em $b = 0$ recupera uma medida espectral equivalente na
 base \textit{Wavelet} \cite{schuck2019}.
 
+O espectro de potência alternativo do PD $\widetilde{P}_x(a)$ é definido como:
+
 \begin{equation}\label{eq:wps-alt}
   \widetilde{P}_x(a) = \left|W_{R_{xx}}(a,\, 0)\right| = \left|\frac{1}{\sqrt{a}}
   \int_{-\infty}^{\infty} R_{xx}(\tau)\, \psi^*\!\left(\frac{\tau}{a}\right) d\tau\right|,
 \end{equation}
+
+\noindent
+e o espectro cruzado alternativo PD--OS $\widetilde{C}_{xy}(a)$ como:
 
 \begin{equation}\label{eq:wcs-alt}
   \widetilde{C}_{xy}(a) = \left|W_{R_{xy}}(a,\, 0)\right| = \left|\frac{1}{\sqrt{a}}
@@ -620,7 +625,7 @@ base \textit{Wavelet} \cite{schuck2019}.
 \end{equation}
 
 \noindent
-e a coerência alternativa é calculada sem precisar de suavização:
+e a coerência \textit{Wavelet} alternativa $\widetilde{\gamma}_{xy}(a)$ é calculada sem precisar de suavização:
 
 \begin{equation}\label{eq:wco-alt}
   \widetilde{\gamma}_{xy}(a) = \frac{\widetilde{C}_{xy}(a)^2}
@@ -628,7 +633,7 @@ e a coerência alternativa é calculada sem precisar de suavização:
 \end{equation}
 
 \noindent
-em que $\widetilde{P}_y(a) = |W_{R_{yy}}(a, 0)|$ é calculado de forma análoga à
+em que o espectro de potência alternativo do OS $\widetilde{P}_y(a) = |W_{R_{yy}}(a, 0)|$ é calculado de forma análoga à
 \autoref{eq:wps-alt}.
 
 Na WCO alternativa, $b$ no numerador representa o atraso (\textit{lag}) $\tau$ da

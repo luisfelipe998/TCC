@@ -91,19 +91,20 @@ são as seguintes:
 
 \begin{enumerate}
   \item Autocorrelação e correlação cruzada: calcular numericamente
-        $R_{xx}(\tau)$, $R_{yy}(\tau)$ e $R_{xy}(\tau)$ a partir das séries
+        a autocorrelação do PD $R_{xx}(\tau)$, a autocorrelação do OS $R_{yy}(\tau)$ e
+        a correlação cruzada PD--OS $R_{xy}(\tau)$ a partir das séries
         temporais pré-processadas, para defasagens $\tau$ de $-T/2$ a $T/2$, em que
         $T = 8\,\text{s}$ é a duração do ensaio;
   \item CWT das funções de correlação: aplicar a CWT de Morlet complexa
-        ($\omega_0 = 6$ \cite{torrence1998}) a cada função de correlação, avaliada em
+        ($\omega_0 = 6$, conforme \autoref{sec:cwt}) a cada função de correlação, avaliada em
         $b = 0$, sobre uma grade logarítmica de escalas cobrindo a faixa de frequência
         relevante para os padrões de escoamento;
   \item Espectros alternativos: calcular
-        $\widetilde{P}_x(a) = |W_{R_{xx}}(a,0)|$,
-        $\widetilde{P}_y(a) = |W_{R_{yy}}(a,0)|$ e
-        $\widetilde{C}_{xy}(a) = |W_{R_{xy}}(a,0)|$
+        o espectro de potência alternativo do PD $\widetilde{P}_x(a) = |W_{R_{xx}}(a,0)|$,
+        o espectro de potência alternativo do OS $\widetilde{P}_y(a) = |W_{R_{yy}}(a,0)|$ e
+        o espectro cruzado alternativo PD--OS $\widetilde{C}_{xy}(a) = |W_{R_{xy}}(a,0)|$
         conforme as \autoref{eq:wps-alt} e \autoref{eq:wcs-alt};
-  \item Coerência por escala: obter
+  \item Coerência por escala: obter a coerência \textit{Wavelet} alternativa
         $\widetilde{\gamma}_{xy}(a) = \widetilde{C}_{xy}(a)^2\,/\,[\widetilde{P}_x(a)\cdot\widetilde{P}_y(a)]$
         (\autoref{eq:wco-alt}), resultando em uma curva de coerência em função da frequência
         característica de cada escala.
@@ -165,7 +166,8 @@ $\sigma_x = \sigma_y = 1$.
 \subsection{Passo~1 — Autocorrelação e correlação cruzada}\label{sec:met-exemplo-p1}
 % ---------------------------------------------------------
 
-A versão discreta da \autoref{eq:autocorr} é:
+A versão discreta da \autoref{eq:autocorr} é a função de autocorrelação $R_{xx}[m]$
+do sinal PD:
 
 \begin{equation}\label{eq:autocorr-disc}
   R_{xx}[m] = \sum_{n=0}^{N-1-|m|} x[n]\,x[n+m],
@@ -173,7 +175,8 @@ A versão discreta da \autoref{eq:autocorr} é:
 \end{equation}
 
 \noindent
-A correlação cruzada é discretizada de forma análoga a partir da \autoref{eq:crosscorr}:
+A função de correlação cruzada $R_{xy}[m]$ entre PD e OS é discretizada de forma
+análoga a partir da \autoref{eq:crosscorr}:
 
 \begin{equation}\label{eq:crosscorr-disc}
   R_{xy}[m] = \sum_{n=0}^{N-1-|m|} x[n]\,y[n+m],
@@ -182,14 +185,17 @@ A correlação cruzada é discretizada de forma análoga a partir da \autoref{eq
 
 \noindent
 Para o padrão \textit{slug}, $R_{xy}[m]$ apresenta um pico deslocado de $m^* > 0$,
-indicando que o OS responde ligeiramente após o PD à mesma passagem de bolsão de vapor.
+em que $m^*$ é a defasagem de pico, isto é, o número de amostras de atraso entre
+OS e PD, indicando que o OS responde ligeiramente após o PD à mesma passagem de
+bolsão de vapor.
 
 % ---------------------------------------------------------
 \subsection{Passo~2 — CWT das funções de correlação}\label{sec:met-exemplo-p2}
 % ---------------------------------------------------------
 
-A CWT de Morlet complexa ($\omega_0 = 6$, \cite{torrence1998}) é aplicada a
-$R_{xx}[\tau]$, $R_{yy}[\tau]$ e $R_{xy}[\tau]$ em $b = 0$
+A CWT de Morlet complexa ($\omega_0 = 6$, conforme \autoref{sec:cwt}) é aplicada às funções de
+autocorrelação do PD $R_{xx}[\tau]$, de autocorrelação do OS $R_{yy}[\tau]$ e de
+correlação cruzada PD--OS $R_{xy}[\tau]$, avaliadas em $b = 0$
 (atraso nulo do domínio da transformada, que corresponde ao ponto de referência
 das funções de correlação). Para uma escala $a_k$, o coeficiente é:
 
@@ -202,9 +208,10 @@ das funções de correlação). Para uma escala $a_k$, o coeficiente é:
 \noindent
 em que $\delta\tau = \delta t = 1\,\text{ms}$ é o passo de amostragem e
 $\psi(u) = e^{-0{,}5u^2} e^{j\omega_0 u}$ é a \textit{Wavelet} de Morlet
-(\autoref{sec:cwt}). A operação é aplicada a $R_{xx}$, $R_{yy}$ e $R_{xy}$,
-produzindo os coeficientes $W_{R_{xx}}(a_k,0)$, $W_{R_{yy}}(a_k,0)$ e
-$W_{R_{xy}}(a_k,0)$ para cada escala $a_k$ da grade. A relação
+(\autoref{sec:cwt}). A operação é aplicada às três funções de correlação,
+produzindo, para cada escala $a_k$ da grade, os coeficientes da CWT: o coeficiente
+da autocorrelação do PD $W_{R_{xx}}(a_k,0)$, o coeficiente da autocorrelação do OS
+$W_{R_{yy}}(a_k,0)$ e o coeficiente da correlação cruzada PD--OS $W_{R_{xy}}(a_k,0)$. A relação
 $f_k \approx 1/(1{,}03\,a_k\,\delta t)$ \cite{torrence1998,grinsted2004}
 converte cada escala em frequência equivalente. Espera-se que os coeficientes
 apresentem amplitude elevada nas escalas correspondentes à faixa espectral
@@ -216,8 +223,9 @@ onde a atividade das funções de correlação é mais intensa.
 % ---------------------------------------------------------
 
 Aplicando as \autoref{eq:wps-alt} e \autoref{eq:wcs-alt} aos coeficientes do
-\autoref{sec:met-exemplo-p2}, obtêm-se $\widetilde{P}_x(a_k)$,
-$\widetilde{P}_y(a_k)$ e $\widetilde{C}_{xy}(a_k)$:
+\autoref{sec:met-exemplo-p2}, obtêm-se: o espectro de potência alternativo do PD,
+$\widetilde{P}_x(a_k)$; o espectro de potência alternativo do OS, $\widetilde{P}_y(a_k)$;
+e o espectro cruzado alternativo entre PD e OS, $\widetilde{C}_{xy}(a_k)$,
 uma tripla de valores reais não negativos para cada escala $a_k$.
 Espera-se que $\widetilde{P}_x$ e $\widetilde{P}_y$ apresentem picos nas faixas
 espectrais características de cada sensor para o padrão \textit{slug}, e que
@@ -229,8 +237,9 @@ forma correlacionada.
 % ---------------------------------------------------------
 
 Aplicando a \autoref{eq:wco-alt} aos espectros do \autoref{sec:met-exemplo-p3},
-obtém-se a curva $\widetilde{\gamma}_{xy}(f)$ com valores em $[0, 1]$ para cada
-frequência equivalente $f_k$. Espera-se que o \textit{slug} produza
+obtém-se a coerência \textit{Wavelet} alternativa $\widetilde{\gamma}_{xy}(f)$,
+uma curva com valores em $[0, 1]$ que expressa, para cada frequência $f_k$, o grau
+de acoplamento entre PD e OS naquela escala. Espera-se que o \textit{slug} produza
 coerência elevada na faixa em que PD e OS respondem conjuntamente à passagem
 periódica dos bolsões de vapor, conforme descrito na \autoref{sec:padroes},
 refletindo o acoplamento entre os dois sensores naquele regime. O procedimento
@@ -241,12 +250,13 @@ $\widetilde{\gamma}_{xy}(f)$.
 \subsection{Passo~5 — Extração das métricas espectrais}\label{sec:met-exemplo-p5}
 % ---------------------------------------------------------
 
-A partir da curva completa $\widetilde{\gamma}_{xy}(f)$, identificam-se:
-(i)~a frequência de pico $f^* = \arg\max_f\, \widetilde{\gamma}_{xy}(f)$,
+A partir da curva completa de coerência $\widetilde{\gamma}_{xy}(f)$, identificam-se:
+(i)~a frequência de pico $f^*$, isto é, a frequência para a qual a coerência é máxima
+($\widetilde{\gamma}_{xy}(f^*) = \max_f\, \widetilde{\gamma}_{xy}(f)$),
 que se espera compatível com a faixa espectral do \textit{slug} descrita na
 \autoref{sec:padroes}; e
 (ii)~a coerência máxima $\widetilde{\gamma}_{xy}(f^*)$, como indicador da força
-do acoplamento entre PD e OS no padrão analisado.
+do acoplamento espectral entre PD e OS no padrão analisado.
 
 Esses dois escalares constituem a assinatura espectral do ensaio. Ao sobrepor as
 curvas de todos os ensaios classificados como \textit{slug}, avalia-se a
