@@ -36,7 +36,10 @@ contêm frequências características associadas a cada padrão de escoamento, i
 por CWT \cite{deoliveira2021}. O PD e o OS respondem ao mesmo evento físico, a passagem
 de uma estrutura de vapor, a partir de perspectivas de medição diferentes; o acoplamento
 espectral entre eles carrega informação sobre a dinâmica do escoamento que não está
-contida em nenhum dos dois sinais isoladamente. Essa relação espectral, medida pela
+contida em nenhum dos dois sinais isoladamente. O trabalho de \citeonline{deoliveira2021} 
+já utilizou o espectro de potência \textit{Wavelet} de cada sensor individualmente para caracterizar 
+os padrões; a coerência entre eles captura adicionalmente o grau de sincronismo espectral, revelando 
+como os dois sensores respondem conjuntamente a cada regime. Essa relação espectral, medida pela
 coerência \textit{Wavelet} (WCO), pode ser explorada como descritor para classificação
 automática dos padrões sem uso da câmera.
 
@@ -51,7 +54,8 @@ trabalho se propõe a preencher.
 
 \section{Objetivo Geral}
 
-Investigar a aplicabilidade da coerência \textit{Wavelet} como descritor dos padrões de escoamento bifásico no arranjo
+Investigar a aplicabilidade da coerência \textit{Wavelet} como descritor dos padrões de
+escoamento bifásico no arranjo
 experimental do LETEF, calculada entre o sinal
 do transdutor de pressão diferencial e o sinal do sensor óptico, utilizando a formulação
 alternativa de \citeonline{schuck2019}.
@@ -75,6 +79,7 @@ Este trabalho está organizado em quatro capítulos. O \autoref{cap:fundamentaca
 a revisão bibliográfica e as bases teóricas que fundamentam a metodologia proposta:
 fenomenologia dos padrões de escoamento bifásico em microcanais e formulação matemática das
 transformadas \textit{Wavelet} contínua, do espectro de potência, do espectro cruzado e da
-coerência \textit{Wavelet} nas formulações clássica e alternativa. O capítulo seguinte descreve a metodologia proposta, detalhando o arranjo experimental, o
+coerência \textit{Wavelet} nas formulações clássica e alternativa. O capítulo seguinte
+descreve a metodologia proposta, detalhando o arranjo experimental, o
 \textit{pipeline} de processamento dos sinais e a estratégia de avaliação do método. O último
 capítulo apresenta o cronograma previsto para o desenvolvimento do trabalho.

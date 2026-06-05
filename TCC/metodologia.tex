@@ -15,10 +15,10 @@ A abordagem proposta consiste em calcular a coerência \textit{Wavelet} alternat
 $\widetilde{\gamma}_{xy}(a)$ entre os sinais do transdutor de pressão diferencial (PD)
 e do sensor óptico (OS), adquiridos simultaneamente no arranjo experimental do LETEF,
 e verificar se as curvas resultantes constituem assinaturas espectrais características
-e distinguíveis para cada padrão de escoamento. A hipótese central é que o acoplamento
-espectral entre os dois sinais, expresso por $\widetilde{\gamma}_{xy}(a)$ em função da
-escala, varia sistematicamente de um padrão para outro, refletindo a dinâmica distinta
-da interface líquido-vapor em cada regime.
+e distinguíveis para cada padrão de escoamento. A hipótese a investigar é se o
+acoplamento espectral entre os dois sinais, expresso por $\widetilde{\gamma}_{xy}(a)$
+em função da escala, varia sistematicamente de um padrão para outro, refletindo a
+dinâmica distinta da interface líquido-vapor em cada regime.
 
 O \textit{pipeline} proposto é composto pelas seguintes etapas:
 
@@ -70,10 +70,10 @@ etapas de pré-processamento:
   \item Remoção da média: subtrair o valor médio de cada sinal para eliminar
         componentes de corrente contínua que não carregam informação sobre a dinâmica
         do escoamento e garantir que a autocorrelação seja bem definida;
-  \item Normalização: dividir cada sinal pelo seu desvio padrão, tornando as
-        amplitudes comparáveis entre ensaios com diferentes condições de operação e
-        evitando que variações de amplitude entre padrões contaminem a estimativa de
-        coerência.
+  \item Normalização: dividir cada sinal pelo seu desvio padrão, garantindo variância
+        unitária e tornando as funções de correlação comparáveis entre ensaios com
+        diferentes condições operacionais — requisito implícito na formulação de
+        \citeonline{schuck2019}, que assume processos de variância bem definida.
 \end{enumerate}
 
 A formulação alternativa de \citeonline{schuck2019} pressupõe processos estacionários.
@@ -87,18 +87,19 @@ estabelecido, conforme o protocolo experimental descrito na \autoref{sec:arranjo
 
 O cálculo da coerência \textit{Wavelet} alternativa seguirá a formulação de
 \citeonline{schuck2019}, conforme descrita na \autoref{sec:wps-wcs-wco}. As etapas
-são as seguintes:
+serão as seguintes:
 
 \begin{enumerate}
   \item Autocorrelação e correlação cruzada: calcular numericamente
         a autocorrelação do PD $R_{xx}(\tau)$, a autocorrelação do OS $R_{yy}(\tau)$ e
         a correlação cruzada PD--OS $R_{xy}(\tau)$ a partir das séries
-        temporais pré-processadas, para defasagens $\tau$ de $-T/2$ a $T/2$, em que
-        $T = 8\,\text{s}$ é a duração do ensaio;
+        temporais pré-processadas, para defasagens $\tau$ de $-(N-1)$ a $N-1$ amostras,
+        em que $N = 8.000$ é o comprimento do ensaio;
   \item CWT das funções de correlação: aplicar a CWT de Morlet complexa
         ($\omega_0 = 6$, conforme \autoref{sec:cwt}) a cada função de correlação, avaliada em
-        $b = 0$, sobre uma grade logarítmica de escalas cobrindo a faixa de frequência
-        relevante para os padrões de escoamento;
+        $b = 0$, sobre uma grade logarítmica de escalas cobrindo a faixa de 0,1\,Hz
+        a 200\,Hz, que engloba as frequências características de todos os padrões de
+        escoamento identificados por \citeonline{deoliveira2021};
   \item Espectros alternativos: calcular
         o espectro de potência alternativo do PD $\widetilde{P}_x(a) = |W_{R_{xx}}(a,0)|$,
         o espectro de potência alternativo do OS $\widetilde{P}_y(a) = |W_{R_{yy}}(a,0)|$ e
@@ -144,6 +145,13 @@ autocorrelação e correlação cruzada. Assinaturas semelhantes entre as duas j
 um mesmo ensaio reforçam a estabilidade do padrão e a validade da hipótese de
 estacionaridade; diferenças acentuadas podem indicar transição de padrão durante o
 ensaio, situação especialmente relevante para ensaios nas bordas das faixas de $\beta$.
+
+Esta análise tem caráter exploratório: não se define limiar de separabilidade a priori.
+A avaliação será qualitativa, com base na consistência intra-padrão e na separação
+visual das curvas $\widetilde{\gamma}_{xy}(f)$ entre os diferentes padrões de
+escoamento, com o objetivo de determinar se a coerência \textit{Wavelet} alternativa
+constitui um descritor viável para a identificação dos padrões sem uso da
+câmera de alta velocidade.
 
 % =========================================================
 \section{Aplicação passo a passo das equações: ensaio de \textit{slug}}\label{sec:met-exemplo}
@@ -261,9 +269,7 @@ do acoplamento espectral entre PD e OS no padrão analisado.
 Esses dois escalares constituem a assinatura espectral do ensaio. Ao sobrepor as
 curvas de todos os ensaios classificados como \textit{slug}, avalia-se a
 repetibilidade intra-padrão. Ao comparar as curvas de diferentes padrões, avalia-se
-a separabilidade inter-padrão, sendo este o critério central deste trabalho para
-determinar se $\widetilde{\gamma}_{xy}(f)$ pode substituir a câmera de alta velocidade
-como instrumento de identificação de padrões de escoamento bifásico.
+a separabilidade inter-padrão.
 
 % =========================================================
 \section{Cronograma}\label{sec:cronograma}

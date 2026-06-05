@@ -1,6 +1,6 @@
 \chapter{Fundamentação Teórica}\label{cap:fundamentacao}
 
-Este capítulo reúne os conceitos necessários para entender o que este trabalho propõe e
+Reúnem-se neste capítulo os conceitos necessários para entender o que este trabalho propõe e
 como ele se insere no que já foi feito na área. A \autoref{sec:revisao} percorre a
 literatura sobre padrões de escoamento bifásico e sobre o uso da transformada
 \textit{Wavelet} em sinais de escoamento. A \autoref{sec:bases} apresenta os fundamentos
@@ -27,10 +27,10 @@ velocidade do fluido. Em diâmetros reduzidos como os usados neste trabalho, a t
 superficial domina sobre a gravidade, o que altera tanto quais padrões aparecem quanto as
 condições em que se formam \cite{cheng2023}.
 
-Os padrões mais comuns em microcanais horizontais com fluidos refrigerantes são: bolha
-dispersa, \textit{plug}, \textit{slug}, \textit{churn}, anular ondulado e anular liso.
-Cada um tem aparência visual característica e gera frequências distintas tanto no
-transdutor de pressão diferencial quanto no sensor óptico, permitindo identificar o
+Os padrões mais comuns em microcanais horizontais com fluidos refrigerantes são: 
+\textit{bolha dispersa}, \textit{plug}, \textit{slug}, \textit{churn}, \textit{anular ondulado} 
+e \textit{anular liso}. Cada um tem aparência visual característica e gera frequências distintas 
+tanto no transdutor de pressão diferencial quanto no sensor óptico, permitindo identificar o
 padrão por análise espectral dos sinais \cite{deoliveira2021}.
 
 \citeonline{deoliveira2019} investigaram as séries temporais do sensor óptico durante a
@@ -147,7 +147,8 @@ No arranjo experimental descrito por \citeonline{deoliveira2021}, \citeonline{di
 classificaram cinco padrões de escoamento a partir de imagens da câmera de alta velocidade
 com o classificador $k$NN, atingindo 87\% de acurácia. \citeonline{dias2025cnn} estenderam
 esse trabalho com uma rede neural convolucional baseada na arquitetura ResNet50, alcançando
-93\% no melhor \textit{fold} (média de 88{,}1\% nas dez dobras) sobre o mesmo conjunto de dados. A limitação comum a ambos é a dependência da câmera
+93\% no melhor \textit{fold} (média de 88{,}1\% nas dez dobras) sobre o mesmo conjunto de dados.
+A limitação comum a ambos é a dependência da câmera
 de alta velocidade, o que motiva explorar descritores obtidos diretamente dos sinais dos
 sensores já instalados no arranjo, que é o objetivo central deste trabalho.
 
@@ -192,8 +193,9 @@ fenômeno chamado de \textit{dryout} \cite{cheng2023}.
 Em tubos com diâmetro da ordem de 1\,mm, a força da tensão superficial domina sobre a
 gravidade, o que altera quais padrões de escoamento aparecem e em que condições. Esse
 efeito é medido pelo número de confinamento $Co = \sqrt{\sigma / [g(\rho_l - \rho_v)
-D_h^2]}$, em que $\sigma$ é a tensão superficial, $\rho_l$ e $\rho_v$ são as massas
-específicas do líquido e do vapor e $D_h$ é o diâmetro hidráulico. Quando $Co < 0{,}5$,
+D_h^2]}$, em que $\sigma$ é a tensão superficial, $g$ é a aceleração gravitacional,
+$\rho_l$ e $\rho_v$ são as massas específicas do líquido e do vapor e $D_h$ é o
+diâmetro hidráulico. Quando $Co < 0{,}5$,
 o canal é considerado microescala e o confinamento geométrico passa a influenciar
 significativamente o mapa de padrões \cite{cheng2023}. O fluido de trabalho do arranjo
 experimental estudado neste trabalho é o isobutano (R600a), utilizado a 27\textdegree{}C
@@ -306,15 +308,15 @@ $\beta$, definido como:
 
 \noindent
 em que $S_{(o\text{-}TS)}$ é a razão de deslizamento entre as fases na saída da seção de
-teste, $Bo = q''_{TS}/(G\,i_{lv})$ é o número de ebulição, $G$ é o fluxo mássico e $i_{lv}$
-é o calor latente de vaporização. O parâmetro $\beta$ condensa em um único escalar os
+teste, $Bo = q''_{TS}/(G\,i_{lv})$ é o número de ebulição, $G$ é o fluxo mássico e
+$i_{lv}$ é o calor latente de vaporização. O parâmetro $\beta$ condensa em um único escalar os
 efeitos de velocidade superficial de cada fase, fração de vazio, título de vapor, fluxo
 de calor e fluxo mássico \cite{deoliveira2021}. As faixas de $\beta$ em que cada padrão
 ocorre, estabelecidas por \citeonline{deoliveira2021} a partir das imagens da câmera de
 alta velocidade (Tabela~2 do artigo), constituem o rótulo de referência que este trabalho
 utilizará para associar cada ensaio ao seu padrão correspondente.
 
-\textbf{Bolha dispersa} (\textit{dispersed bubble}): ocorre em baixo título de vapor e
+\textbf{\textit{Bolha dispersa}} (\textit{dispersed bubble}): ocorre em baixo título de vapor e
 alto fluxo mássico ($\beta < 0{,}5$), com queda de pressão média de 9{,}44\,kPa
 \cite{deoliveira2021}. Pequenas bolhas esféricas ficam dispersas na fase líquida, com
 diâmetro menor que o tubo. O sinal de pressão diferencial apresenta múltiplos picos entre 6 e
@@ -325,7 +327,8 @@ sinais apresentam comportamento intermitente ao longo do tempo quando analisados
 \textbf{\textit{Plug}}: aparece para $0{,}5 \leq \beta < 10$, principalmente em baixos
 fluxos de calor \cite{deoliveira2021}. As bolhas crescem e assumem forma cilíndrica, com
 diâmetro próximo ao do tubo e comprimento maior que o diâmetro, motivo pelo qual esse padrão
-também é chamado de \textit{elongated bubble flow} \cite{deoliveira2021}. Entre os \textit{plugs}, o líquido continua sem bolhas dispersas.
+também é chamado de \textit{elongated bubble flow} \cite{deoliveira2021}.
+Entre os \textit{plugs}, o líquido continua sem bolhas dispersas.
 O sinal de pressão diferencial oscila entre 0{,}5 e 1\,Hz de forma bastante regular.
 
 \textbf{\textit{Slug}}: formado pelo coalescimento de \textit{plugs} com o aumento do título de
@@ -340,10 +343,12 @@ e 0{,}463 no sinal de pressão diferencial \cite{deoliveira2021}.
 \textbf{\textit{Churn}}: regime de transição entre \textit{slug} e anular ($25 \leq \beta < 152$),
 com título de vapor entre 0{,}35 e 0{,}62 \cite{deoliveira2021}. A interface fica
 turbulenta e jatos de vapor desestabilizam o escoamento. A velocidade de deslizamento
-entre as fases varia de 1{,}40 a 2{,}34. O sinal de pressão diferencial apresenta frequências de baixa energia abaixo de 8\,Hz, enquanto o sensor óptico exibe flutuações de maior energia entre 15 e 28\,Hz, o que torna esse padrão o mais difícil de discriminar
+entre as fases varia de 1{,}40 a 2{,}34. O sinal de pressão diferencial apresenta
+frequências de baixa energia abaixo de 8\,Hz, enquanto o sensor óptico exibe flutuações
+de maior energia entre 15 e 28\,Hz, o que torna esse padrão o mais difícil de discriminar
 dos padrões adjacentes por análise espectral.
 
-\textbf{Anular ondulado} (\textit{wavy annular}): observado para $152 \leq \beta < 519$.
+\textbf{\textit{Anular ondulado}} (\textit{wavy annular}): observado para $152 \leq \beta < 519$.
 O vapor ocupa o centro do tubo e o líquido forma um filme na parede, com ondas capilares
 se propagando na direção do escoamento \cite{deoliveira2021,dias2025knn}. O sinal de
 pressão diferencial não apresenta frequências características identificáveis pela CWT,
@@ -351,7 +356,7 @@ enquanto o sensor óptico mantém energia persistente entre 2 e 16\,Hz, gerada p
 dinâmica das ondas capilares na interface. As flutuações de pressão apresentam expoente
 de Hurst abaixo de 0{,}5, indicando comportamento anti-persistente \cite{deoliveira2021}.
 
-\textbf{Anular liso} (\textit{smooth annular}): ocorre para $\beta \geq 519$, em condições
+\textbf{\textit{Anular liso}} (\textit{smooth annular}): ocorre para $\beta \geq 519$, em condições
 extremas de baixo fluxo mássico com alto fluxo de calor \cite{deoliveira2021}. A interface
 entre o filme líquido e o núcleo de vapor torna-se lisa e o sinal óptico apresenta
 amplitudes muito baixas. \citeonline{dias2025knn} limitaram a classificação a cinco padrões
@@ -642,6 +647,11 @@ denominador é fixo em $b = 0$, que corresponde ao pico da autocorrelação. O r
 é um espectro de coerência em função de escala e atraso, estável por construção. A
 vantagem é que não há compromisso entre resolução e estabilidade estatística; a
 limitação é que a informação de quando o acoplamento ocorre é perdida.
+Essa escolha reflete um balanço intencional: a CWT foi introduzida para capturar 
+a variação temporal do conteúdo espectral dos sinais, mas a WCO alternativa abre 
+mão dessa localização em favor de uma estimativa de coerência estatisticamente estável. 
+Tal troca é justificável quando o ensaio é coletado em regime estabelecido e a hipótese 
+de estacionaridade é razoável.
 
 O \autoref{qua:wco-comparativo} sintetiza as diferenças entre as duas formulações.
 
@@ -690,8 +700,9 @@ frequência dominante mesmo em baixa relação sinal-ruído e na presença de ev
 correlacionados, resultado que a formulação clássica não consegue sem suavização intensa.
 
 Essa robustez ao ruído é importante para este trabalho: os sinais do arranjo experimental
-estão sujeitos a ruídos eletrônicos e perturbações mecânicas. A hipótese central deste trabalho é que a WCO alternativa de \citeonline{schuck2019},
-calculada entre esses dois sinais, gera assinaturas espectrais, a distribuição de
-$\widetilde{\gamma}$ por escala, que são características de cada padrão de escoamento e
-podem caracterizar os padrões de escoamento, dispensando a câmera de alta
-velocidade e baseando-se exclusivamente nos sensores já instalados no arranjo.
+estão sujeitos a ruídos eletrônicos e perturbações mecânicas. A hipótese central deste trabalho 
+é que a WCO alternativa de \citeonline{schuck2019}, calculada entre esses dois sinais, gera 
+assinaturas espectrais, isto é, curvas de $\widetilde{\gamma}$ por escala, que se espera 
+sejam distinguíveis entre os diferentes padrões de escoamento e possam ser usadas para 
+caracterizá-los, dispensando a câmera de alta velocidade e baseando-se exclusivamente nos sensores 
+já instalados no arranjo.
