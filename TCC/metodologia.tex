@@ -48,7 +48,7 @@ A \autoref{fig:pipeline} resume esquematicamente o fluxo de processamento propos
 
 Os dados utilizados neste trabalho são as séries temporais dos sinais PD e OS coletados
 por \citeonline{deoliveira2021} no arranjo experimental do LETEF, descrito na
-\autoref{sec:arranjo}. Cada ensaio consiste em 8.000 amostras (8\,s a 1\,kHz) adquiridas
+\autoref{sec:arranjo}. O fluido estudado é o isobutano (R600a), utilizado a 27\textdegree{}C de temperatura de saturação. Cada ensaio consiste em 8.000 amostras (8\,s a 1\,kHz) adquiridas
 simultaneamente para uma combinação específica de fluxo mássico $G$ e fluxo de calor $q''$,
 abrangendo as seis condições de padrão de escoamento identificadas naquele trabalho:
 bolha dispersa, \textit{plug}, \textit{slug}, \textit{churn}, anular ondulado e anular liso.
@@ -72,14 +72,15 @@ etapas de pré-processamento:
         do escoamento e garantir que a autocorrelação seja bem definida;
   \item Normalização: dividir cada sinal pelo seu desvio padrão, garantindo variância
         unitária e tornando as funções de correlação comparáveis entre ensaios com
-        diferentes condições operacionais, requisito implícito na formulação de
-        \citeonline{schuck2019}, que assume processos de variância bem definida.
+        diferentes condições operacionais. A formulação de \citeonline{schuck2019}
+        pressupõe que os sinais sejam realizações de processos estacionários, hipótese
+        sob a qual as funções de auto e correlação cruzada estão bem definidas.
 \end{enumerate}
 
 A formulação alternativa de \citeonline{schuck2019} pressupõe processos estacionários.
 Essa hipótese é razoável para os ensaios de \citeonline{deoliveira2021}, uma vez que
 cada registro de 8\,s foi coletado com $G$ e $q''$ fixos, em condição de regime
-estabelecido, conforme o protocolo experimental descrito na \autoref{sec:arranjo}.
+estabelecido (estacionário), conforme o protocolo experimental descrito na \autoref{sec:arranjo}.
 
 % =========================================================
 \section{Cálculo da coerência \textit{Wavelet} alternativa}\label{sec:met-wco}

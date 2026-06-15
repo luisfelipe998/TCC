@@ -82,12 +82,12 @@ que lidam com sinais não estacionários.
 
 Um antecedente direto da abordagem proposta neste trabalho foi desenvolvido por
 \citeonline{nguyen2010}, que aplicaram a CWT a sinais de fração de vazio em escoamento
-bifásico vertical ar-água em tubo de 80\,mm (laboratório KAERI, Coreia). A partir dos
-coeficientes da CWT, os autores extraíram descritores espectrais que discriminam os
-regimes de bolha dispersa, \textit{slug} e \textit{churn}, mostrando que a CWT captura
-características locais dos sinais, como a amplitude e a escala dominante das estruturas
-de vazio, que métodos baseados em FFT não conseguem representar adequadamente
-\cite{nguyen2010}.
+bifásico vertical ar-água em tubo de 80\,mm (laboratório KAERI, Coreia). Os autores
+mostraram que descritores derivados dos coeficientes da CWT discriminam quatro
+sub-regimes (\textit{discrete bubbly}, \textit{clustered/cap bubbly}, \textit{slug} e
+\textit{churn}). A separação entre os dois primeiros, em particular, ilustra como a
+CWT captura características locais dos sinais que a FFT não representa
+adequadamente \cite{nguyen2010}.
 
 No contexto de escoamentos bifásicos em microcanais, \citeonline{deoliveira2019}
 analisaram as séries temporais do sensor óptico durante a ebulição convectiva de
@@ -147,8 +147,8 @@ No arranjo experimental descrito por \citeonline{deoliveira2021}, \citeonline{di
 classificaram cinco padrões de escoamento a partir de imagens da câmera de alta velocidade
 com o classificador $k$NN, atingindo 87\% de acurácia. \citeonline{dias2025cnn} estenderam
 esse trabalho com uma rede neural convolucional baseada na arquitetura ResNet50, alcançando
-93\% no melhor \textit{fold} (média de 88{,}1\% nas dez dobras) sobre o mesmo conjunto de dados.
-A limitação comum a ambos é a dependência da câmera
+93\% no melhor \textit{fold} (média de 88{,}1\% nos dez \textit{folds}) sobre o mesmo conjunto 
+de dados. A limitação comum a ambos é a dependência da câmera
 de alta velocidade, o que motiva explorar descritores obtidos diretamente dos sinais dos
 sensores já instalados no arranjo, que é o objetivo central deste trabalho.
 
@@ -187,8 +187,9 @@ de diâmetro reduzido. Quando a temperatura da parede supera localmente o ponto 
 saturação, bolhas de vapor começam a se formar, e conforme o fluido avança no canal e
 continua absorvendo calor, a proporção de vapor aumenta progressivamente. Essa proporção é
 descrita pelo título de vapor $x$, definido como a razão entre a vazão mássica de vapor e
-a vazão total. Em títulos muito altos, o filme líquido na parede pode secar completamente,
-fenômeno chamado de \textit{dryout} \cite{cheng2023}.
+a vazão total. Em títulos elevados, o filme líquido na parede pode secar, expondo a
+parede ao vapor. Esse fenômeno, conhecido como \textit{dryout}, segue a transição do
+regime anular após o fluxo crítico de calor \cite{cheng2023}.
 
 Em tubos com diâmetro da ordem de 1\,mm, a força da tensão superficial domina sobre a
 gravidade, o que altera quais padrões de escoamento aparecem e em que condições. Esse
@@ -197,9 +198,9 @@ D_h^2]}$, em que $\sigma$ é a tensão superficial, $g$ é a aceleração gravit
 $\rho_l$ e $\rho_v$ são as massas específicas do líquido e do vapor e $D_h$ é o
 diâmetro hidráulico. Quando $Co < 0{,}5$,
 o canal é considerado microescala e o confinamento geométrico passa a influenciar
-significativamente o mapa de padrões \cite{cheng2023}. O fluido de trabalho do arranjo
-experimental estudado neste trabalho é o isobutano (R600a), utilizado a 27\textdegree{}C
-de temperatura de saturação \cite{deoliveira2021}.
+significativamente o mapa de padrões \cite{cheng2023}. 
+
+
 
 A transição entre padrões depende do balanço entre forças de inércia, tensão superficial
 e cisalhamento. Em microcanais horizontais, a ausência de estratificação gravitacional
@@ -214,7 +215,7 @@ O arranjo experimental utilizado neste trabalho foi desenvolvido no Laboratório
 Térmicos e Fluidodinâmicos (LETEF) da UNISINOS para investigar ebulição convectiva, queda
 de pressão e padrões de escoamento em microcanais \cite{deoliveira2019,deoliveira2021}.
 O circuito opera em malha fechada com controle independente de fluxo mássico e de fluxo de
-calor, conforme esquematizado na \autoref{fig:arranjo-experimental}. O fluido refrigerante
+calor, conforme esquematizado na \autoref{fig:arranjo-experimental}. O fluido refrigerante (R600a)
 percorre, em sequência, uma bomba de engrenagem magnética, um \textit{subcooler}, um medidor de
 vazão mássico tipo Coriolis, o pré-aquecedor (PH), a seção de teste (TS) e a seção de
 visualização (VS), retornando ao condensador e ao reservatório antes de recircular
@@ -244,7 +245,8 @@ são registrados visualmente e o sensor óptico é posicionado \cite{deoliveira2
 
 \paragraph{Sensor óptico (OS).}
 Para a análise temporal dos padrões de escoamento, foi construído um sensor óptico (OS)
-baseado na variação de luminosidade causada pela interface líquido-vapor \cite{deoliveira2019}.
+que detecta a refração e a variação de luminosidade da luz na interface
+líquido-vapor \cite{deoliveira2019}.
 Um LED de alta luminosidade ilumina o tubo transversalmente; um resistor dependente de luz
 (LDR) no lado oposto detecta a variação de transmitância óptica causada pela passagem das
 fases. A variação de resistência do LDR é convertida em tensão por um circuito com filtro
@@ -313,7 +315,7 @@ $i_{lv}$ é o calor latente de vaporização. O parâmetro $\beta$ condensa em u
 efeitos de velocidade superficial de cada fase, fração de vazio, título de vapor, fluxo
 de calor e fluxo mássico \cite{deoliveira2021}. As faixas de $\beta$ em que cada padrão
 ocorre, estabelecidas por \citeonline{deoliveira2021} a partir das imagens da câmera de
-alta velocidade (Tabela~2 do artigo), constituem o rótulo de referência que este trabalho
+alta velocidade, constituem o rótulo de referência que este trabalho
 utilizará para associar cada ensaio ao seu padrão correspondente.
 
 \textbf{\textit{Bolha dispersa}} (\textit{dispersed bubble}): ocorre em baixo título de vapor e
@@ -329,32 +331,34 @@ fluxos de calor \cite{deoliveira2021}. As bolhas crescem e assumem forma cilínd
 diâmetro próximo ao do tubo e comprimento maior que o diâmetro, motivo pelo qual esse padrão
 também é chamado de \textit{elongated bubble flow} \cite{deoliveira2021}.
 Entre os \textit{plugs}, o líquido continua sem bolhas dispersas.
-O sinal de pressão diferencial oscila entre 0{,}5 e 1\,Hz de forma bastante regular.
+O sinal de pressão diferencial oscila entre 0{,}5 e 1\,Hz; o sensor óptico varia entre 2 e 16\,Hz.
 
 \textbf{\textit{Slug}}: formado pelo coalescimento de \textit{plugs} com o aumento do título de
-vapor ($10 \leq \beta < 25$). Alterna seções de líquido e bolsões de vapor que preenchem
-toda a seção do tubo \cite{dias2025knn,deoliveira2021}. A interface é instável e libera
+vapor, ocupando a faixa $10 \leq \beta < 25$ \cite{deoliveira2021}. Alterna seções de
+líquido e bolsões de vapor que preenchem toda a seção do tubo
+\cite{dias2025knn,deoliveira2021}. A interface é instável e libera
 pequenas bolhas dispersas no líquido entre os bolsões. O sinal de pressão diferencial concentra
 energia abaixo de 1\,Hz; o sensor óptico apresenta pico em torno de 2{,}8\,Hz com
 componentes adicionais acima de 8\,Hz, geradas pelas bolhas dispersas intercaladas.
 A natureza caótica foi confirmada com expoentes de Lyapunov entre 0{,}261
-e 0{,}463 no sinal de pressão diferencial \cite{deoliveira2021}.
+e 0{,}463 no PD e entre 0{,}413 e 4{,}362 no OS \cite{deoliveira2021}.
 
 \textbf{\textit{Churn}}: regime de transição entre \textit{slug} e anular ($25 \leq \beta < 152$),
-com título de vapor entre 0{,}35 e 0{,}62 \cite{deoliveira2021}. A interface fica
+com título de vapor entre 0{,}35 e 0{,}62. A interface fica
 turbulenta e jatos de vapor desestabilizam o escoamento. A velocidade de deslizamento
 entre as fases varia de 1{,}40 a 2{,}34. O sinal de pressão diferencial apresenta
 frequências de baixa energia abaixo de 8\,Hz, enquanto o sensor óptico exibe flutuações
-de maior energia entre 15 e 28\,Hz, o que torna esse padrão o mais difícil de discriminar
-dos padrões adjacentes por análise espectral.
+de maior energia entre 15 e 28\,Hz \cite{deoliveira2021}.
+
 
 \textbf{\textit{Anular ondulado}} (\textit{wavy annular}): observado para $152 \leq \beta < 519$.
-O vapor ocupa o centro do tubo e o líquido forma um filme na parede, com ondas capilares
-se propagando na direção do escoamento \cite{deoliveira2021,dias2025knn}. O sinal de
-pressão diferencial não apresenta frequências características identificáveis pela CWT,
-enquanto o sensor óptico mantém energia persistente entre 2 e 16\,Hz, gerada pela
-dinâmica das ondas capilares na interface. As flutuações de pressão apresentam expoente
-de Hurst abaixo de 0{,}5, indicando comportamento anti-persistente \cite{deoliveira2021}.
+O vapor ocupa o centro do tubo e o líquido forma um filme na parede
+\cite{dias2025knn,deoliveira2021}, sobre o qual deslizam ondas frontais na interface
+líquido-vapor \cite{deoliveira2021}. O sinal de pressão diferencial não apresenta
+frequências características identificáveis pela CWT, enquanto o sensor óptico mantém
+energia persistente entre 2 e 16\,Hz, gerada pela dinâmica dessas ondas na interface.
+As flutuações de pressão apresentam expoente de Hurst abaixo de 0{,}5, indicando
+comportamento anti-persistente \cite{deoliveira2021}.
 
 \textbf{\textit{Anular liso}} (\textit{smooth annular}): ocorre para $\beta \geq 519$, em condições
 extremas de baixo fluxo mássico com alto fluxo de calor \cite{deoliveira2021}. A interface
@@ -372,14 +376,15 @@ de escoamento, não incluindo o anular liso.
   \fonte{Adaptado de \citeonline{dias2025knn}.}
 \end{figure}
 
-Os sinais do sensor óptico e do transdutor de pressão diferencial nas bordas das faixas
-de $\beta$ são particularmente ambíguos \cite{deoliveira2021}, o que representa um desafio
-central para qualquer método de análise ou classificação baseado nos sinais do arranjo.
-
-Essa diversidade espectral, com PD e OS capturando
+As transições entre padrões adjacentes, como entre \textit{plug} e \textit{slug},
+ocorrem em faixas estreitas de razão de deslizamento e fração de vazio
+\cite{deoliveira2021}, o que dificulta a classificação automática nas vizinhanças
+das bordas das faixas de $\beta$. Essa diversidade espectral, com PD e OS capturando
 faixas complementares para cada padrão \cite{deoliveira2021}, é justamente o que motiva
 o uso da transformada \textit{Wavelet} e, em especial, da coerência entre os dois canais
 como descritor de classificação.
+
+
 
 % ---------------------------------------------------------
 \subsection{Transformada \textit{Wavelet}}\label{sec:wavelet}
@@ -565,7 +570,7 @@ O WCS mede a relação entre dois sinais $x$ e $y$ no domínio tempo-escala:
 O WCS é o análogo \textit{Wavelet} da covariância espectral entre dois sinais: enquanto o WPS
 de um sinal indica quando e em que escala ele tem energia, o WCS indica quando e em
 que escala os dois sinais têm energia simultaneamente e com qual defasagem
-\cite{torrence1998}. Por ser um número complexo, seu módulo mede a força da relação
+\cite{torrence1998,grinsted2004}. Por ser um número complexo, seu módulo mede a força da relação
 entre PD e OS em cada escala e instante, enquanto a fase indica o atraso temporal
 entre eles, isto é, com que antecedência o PD responde a um evento em relação ao OS,
 ou vice-versa.
@@ -583,7 +588,7 @@ em que $S[\cdot]$ é um operador de suavização em tempo e em escala \cite{grin
 indica que os dois sinais são completamente coerentes naquela frequência e instante;
 $\gamma = 0$ indica ausência de relação linear \cite{torrence1998}.
 
-\paragraph{Limitação da definição clássica e formulação alternativa de Schuck e Bodmann.}
+\paragraph{Limitação da definição clássica e formulação alternativa de Transformadas \textit{Wavelet} de Schuck e Bodmann.}
 
 A suavização $S[\cdot]$ na \autoref{eq:wco-classica} é necessária porque, sem ela, a
 estimativa de coerência para uma única realização do sinal colapsa para 1 em toda escala.
