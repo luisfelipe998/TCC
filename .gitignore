@@ -1,4 +1,12 @@
 /.claude/
 *.zip
 
+__pycache__/
+
 src/data/
+old
+oldest
+/revisao-citacoes-v2.md
+/todo.md
+
+/src2
