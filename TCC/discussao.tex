@@ -1,0 +1,82 @@
+\chapter{Análise e Discussão}\label{cap:discussao}
+
+Este capítulo interpreta os resultados do \autoref{cap:resultados} e os situa em relação à
+literatura. A discussão organiza-se em torno de três pontos: a leitura dos campos de coerência e de
+potência obtidos, a comparação do método executado com os trabalhos anteriores no mesmo arranjo e na
+análise espectral de padrões de escoamento, e as limitações que delimitam o alcance das conclusões.
+
+% =========================================================
+\section{Interpretação dos campos obtidos}\label{sec:disc-interpretacao}
+% =========================================================
+
+A coerência \textit{Wavelet} alternativa foi adotada como descritor principal, na expectativa de que
+o acoplamento espectral entre dois ensaios de um mesmo padrão se manifestasse como uma banda de
+coerência elevada nos comprimentos de onda característicos daquele padrão. Os campos obtidos, porém,
+apresentaram coerência baixa e irregular no atraso nulo, sem uma banda estável que acompanhasse a
+faixa dominante do espectro de potência. Uma leitura consistente com esse comportamento é a de que
+dois ensaios distintos de um mesmo padrão, ainda que reproduzam o mesmo tipo de estrutura de
+escoamento, não compartilham uma fase espacial comum: por serem realizações turbulentas
+independentes, coletadas em instantes e condições microscopicamente distintas, o alinhamento entre
+as estruturas de um ensaio e as do outro não se mantém ao longo do percurso. Como a coerência mede a
+constância da relação de fase entre os dois sinais em cada escala, a ausência de uma fase espacial
+comum reduz a coerência avaliada no atraso nulo, mesmo quando os dois ensaios têm energia espectral
+concentrada na mesma faixa de comprimento de onda.
+
+O perfil de potência média $|\text{WPS}|$ descreveu os padrões de forma mais consistente justamente
+porque não depende da relação de fase entre os ensaios. O espectro de potência resume a distribuição
+de energia de cada ensaio por comprimento de onda, uma grandeza que se mostrou reprodutível dentro de
+cada padrão. Essa observação alinha-se ao uso de descritores espectrais escalares por ensaio na
+literatura de identificação de padrões de escoamento. \citeonline{nguyen2010} aplicaram a
+transformada \textit{Wavelet} contínua a sinais de fração de vazio e extraíram o coeficiente de
+energia \textit{Wavelet} local e a escala efetiva como critérios objetivos de discriminação dos
+padrões, e \citeonline{sun2012} identificaram padrões gás-líquido pela entropia dos coeficientes da
+decomposição \textit{Wavelet} das flutuações de pressão. Em ambos os casos, o descritor que separa os
+padrões deriva da distribuição de energia espectral do próprio sinal, e não de uma medida de fase
+relativa entre sinais, o que é coerente com o desempenho comparativamente melhor do perfil de
+potência média observado neste trabalho. A hipótese de estacionariedade sobre a qual a formulação de
+\citeonline{schuck2019} se apoia permanece necessária tanto para o espectro de potência quanto para a
+coerência; a diferença de desempenho entre os dois descritores diz respeito à dependência de fase, e
+não à validade da hipótese.
+
+% =========================================================
+\section{Comparação com a literatura}\label{sec:disc-literatura}
+% =========================================================
+
+O trabalho de \citeonline{deoliveira2021}, conduzido no mesmo arranjo experimental do LETEF,
+caracterizou os padrões de escoamento aplicando a transformada \textit{Wavelet} contínua aos sinais
+dos sensores no domínio do tempo e extraindo as frequências características de cada padrão. A
+abordagem executada neste trabalho difere daquela em dois aspectos: o domínio de análise, que passou
+do tempo para o espaço, com o sinal reconstruído do panorama das imagens em vez dos sinais dos
+sensores; e o descritor, que passou do espectro de potência de um sinal individual para a coerência
+alternativa entre pares de ensaios. A parte do método que mais se aproximou dos resultados daquele
+trabalho foi justamente o perfil de potência média, que, assim como a caracterização de
+\citeonline{deoliveira2021}, resume a energia espectral de cada ensaio, agora em função do
+comprimento de onda espacial.
+
+Em relação à formulação clássica da coerência \textit{Wavelet} \cite{torrence1998,grinsted2004}, a
+formulação alternativa de \citeonline{schuck2019} dispensa a suavização no plano tempo-escala. Na
+definição clássica, a coerência é construída a partir de espectros cruzados suavizados, e a
+suavização é o que impede que a medida seja trivialmente unitária, funcionando como um coeficiente de
+correlação localizado no plano tempo-frequência \cite{grinsted2004}. A formulação alternativa
+substitui essa suavização pelo cálculo sobre as funções de correlação avaliadas no atraso nulo. A
+aplicação dessa formulação a sinais espaciais de brilho, no contexto de identificação de padrões de
+escoamento bifásico, não havia sido reportada, e os resultados aqui obtidos indicam que o
+comportamento da coerência alternativa entre ensaios distintos merece cautela: o descritor foi
+sensível à ausência de fase espacial comum entre realizações independentes, ponto que a literatura
+clássica trata pela suavização e que a variante de \citeonline{schuck2019} trata de outra forma.
+
+% =========================================================
+\section{Limitações}\label{sec:disc-limitacoes}
+% =========================================================
+
+Três limitações delimitam o alcance dos resultados. A primeira é o número reduzido de ensaios por
+padrão: apenas \textit{churn} e anular ondulado dispõem de ensaios suficientes para sustentar uma
+leitura de repetibilidade, enquanto \textit{plug}, \textit{slug} e \textit{slug}--\textit{churn} têm
+poucos ensaios e foram examinados de forma ilustrativa. A segunda é a possível influência das
+condições operacionais: como cada ensaio foi coletado sob uma combinação específica de fluxo mássico
+e fluxo de calor, a variação da assinatura espectral entre padrões pode estar parcialmente associada
+à variação dessas condições, e a separação entre o efeito do padrão e o efeito das condições
+operacionais não foi isolada. A terceira é o desempenho da coerência alternativa aquém do esperado
+como descritor discriminante, discutido na \autoref{sec:disc-interpretacao}, que deslocou o peso da
+caracterização para o perfil de potência média. A quantificação estatística formal dessas leituras,
+por fim, não foi executada e permanece como encaminhamento no \autoref{cap:conclusao}.

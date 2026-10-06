@@ -1,43 +1,56 @@
 \chapter{Metodologia}\label{cap:metodologia}
 
-Este capítulo descreve a abordagem proposta para investigar a aplicabilidade da coerência
+Este capítulo descreve a abordagem adotada para investigar a aplicabilidade da coerência
 \textit{Wavelet} alternativa de \citeonline{schuck2019} como ferramenta de caracterização
 dos padrões de escoamento bifásico no arranjo experimental do LETEF.
-A \autoref{sec:met-visao} apresenta uma visão geral do método proposto; as seções
-seguintes descrevem os dados, o pré-processamento, o cálculo da coerência e a análise
-das assinaturas espectrais.
+Em vez de utilizar os sinais dos sensores no domínio do tempo, o método construiu, para
+cada ensaio, um sinal unidimensional de brilho no domínio \textit{espacial}, obtido a
+partir de um panorama reconstruído das imagens da câmera de alta velocidade, e aplicou a
+formulação de \citeonline{schuck2019} a pares desses sinais.
+A \autoref{sec:met-visao} apresenta uma visão geral do método; as seções seguintes
+descrevem os dados, o pré-processamento, o cálculo da coerência e a análise das
+assinaturas espectrais, comparando os campos WPS, WCS e WCO entre ensaios de um mesmo
+padrão (repetibilidade intra-padrão) e entre padrões distintos (separação inter-padrão).
 
 % =========================================================
 \section{Visão geral do método proposto}\label{sec:met-visao}
 % =========================================================
 
-A abordagem proposta consiste em calcular a coerência \textit{Wavelet} alternativa
-$\widetilde{\gamma}_{xy}(a)$ entre os sinais do transdutor de pressão diferencial (PD)
-e do sensor óptico (OS), adquiridos simultaneamente no arranjo experimental do LETEF,
-e verificar se as curvas resultantes constituem assinaturas espectrais características
-e distinguíveis para cada padrão de escoamento. A hipótese a investigar é se o
-acoplamento espectral entre os dois sinais, expresso por $\widetilde{\gamma}_{xy}(a)$
-em função da escala, varia sistematicamente de um padrão para outro, refletindo a
-dinâmica distinta da interface líquido-vapor em cada regime.
+A abordagem consiste em calcular a coerência \textit{Wavelet} alternativa
+$\widetilde{\gamma}_{xy}(a)$ entre dois sinais espaciais de brilho $x$ e $y$, cada um
+extraído do panorama reconstruído de um ensaio, e verificar se as assinaturas espectrais
+resultantes são reprodutíveis dentro de um mesmo padrão de escoamento e distinguíveis
+entre padrões distintos. Os dois sinais comparados são \textit{dois ensaios} (\textit{runs}):
+no modo intra-padrão, dois ensaios do mesmo padrão, para avaliar a repetibilidade; no modo
+inter-padrão, ensaios de padrões diferentes, para avaliar a separação. A hipótese investigada
+é se a estrutura espectral do acoplamento, expressa por $\widetilde{\gamma}_{xy}(a)$ em
+função da escala, se mantém consistente entre ensaios de um mesmo padrão e varia
+sistematicamente de um padrão para outro, refletindo a dinâmica distinta da interface
+líquido-vapor em cada regime. A coerência $\widetilde{\gamma}_{xy}(a)$ é o descritor
+principal; o perfil de potência média $|\text{WPS}|$ por comprimento de onda complementa
+a análise.
 
-O \textit{pipeline} proposto é composto pelas seguintes etapas:
+O \textit{pipeline} é composto pelas seguintes etapas:
 
 \begin{enumerate}
+  \item construção do sinal espacial de brilho a partir do panorama de cada ensaio;
   \item pré-processamento dos sinais;
-  \item cálculo das funções de autocorrelação e correlação cruzada;
+  \item cálculo da autocorrelação de cada ensaio e da correlação cruzada entre os dois
+        ensaios;
   \item aplicação da CWT nas funções de correlação e obtenção de
-        $\widetilde{P}_x(a)$, $\widetilde{P}_y(a)$ e $\widetilde{C}_{xy}(a)$;
-  \item cálculo da coerência \textit{Wavelet} alternativa $\widetilde{\gamma}_{xy}(a)$;
-  \item análise das assinaturas espectrais por padrão de escoamento.
+        $\widetilde{P}_x(a)$, $\widetilde{P}_y(a)$, $\widetilde{C}_{xy}(a)$ e da coerência
+        alternativa $\widetilde{\gamma}_{xy}(a)$ no atraso nulo;
+  \item análise das assinaturas espectrais (campos WCO e WCS e perfil de potência média)
+        por padrão de escoamento, nos modos intra-padrão e inter-padrão.
 \end{enumerate}
 
-A \autoref{fig:pipeline} resume esquematicamente o fluxo de processamento proposto.
+A \autoref{fig:pipeline} resume esquematicamente o fluxo de processamento.
 
 \begin{figure}[htb]
   \centering
   \includegraphics[width=0.55\textwidth]{figuras/pipeline-wco}
-  \caption{Fluxograma do método proposto para caracterização dos padrões de escoamento
-           por coerência \textit{Wavelet} alternativa.}
+  \caption{Fluxograma do método para caracterização dos padrões de escoamento
+           por coerência \textit{Wavelet} alternativa a partir de sinais espaciais de brilho.}
   \label{fig:pipeline}
   \fonte{Elaborado pelo autor.}
 \end{figure}
@@ -46,165 +59,227 @@ A \autoref{fig:pipeline} resume esquematicamente o fluxo de processamento propos
 \section{Dados experimentais}\label{sec:met-dados}
 % =========================================================
 
-Os dados utilizados neste trabalho são as séries temporais dos sinais PD e OS coletados
-por \citeonline{deoliveira2021} no arranjo experimental do LETEF, descrito na
-\autoref{sec:arranjo}. O fluido estudado é o isobutano (R600a), utilizado a 27\textdegree{}C de temperatura de saturação. Cada ensaio consiste em 8.000 amostras (8\,s a 1\,kHz) adquiridas
-simultaneamente para uma combinação específica de fluxo mássico $G$ e fluxo de calor $q''$,
-abrangendo as seis condições de padrão de escoamento identificadas naquele trabalho:
-bolha dispersa, \textit{plug}, \textit{slug}, \textit{churn}, anular ondulado e anular liso.
+Os dados utilizados neste trabalho são os quadros (\textit{frames}) da câmera de alta
+velocidade registrados por \citeonline{deoliveira2021} no arranjo experimental do LETEF,
+descrito na \autoref{sec:arranjo}. O fluido estudado é o isobutano (R600a), a
+27\textdegree{}C de temperatura de saturação. Cada ensaio corresponde a uma sequência de
+501 quadros de $1016 \times 80$ pixels, registrados na seção de visualização para uma
+combinação específica de fluxo mássico $G$ e fluxo de calor $q''$, abrangendo as seis
+condições de padrão de escoamento identificadas naquele trabalho: bolha dispersa,
+\textit{plug}, \textit{slug}, \textit{churn}, anular ondulado e anular liso.
+
+A partir de cada sequência de quadros, reconstruiu-se um panorama do escoamento. Para cada
+par de quadros consecutivos mediu-se o deslocamento horizontal do escoamento por correlação
+cruzada dos perfis de brilho médios da banda central do tubo; costurou-se, então, uma tira
+central de cada quadro na posição medida, formando uma imagem panorâmica cuja largura é o
+deslocamento acumulado ao longo do ensaio. O panorama bidimensional foi colapsado em um
+sinal unidimensional pela média das colunas, em duas variantes: a média das linhas 20 a 59
+(núcleo do escoamento, denominada \textit{cropped}) e a linha central 40 (\textit{center}).
+No sinal resultante, uma amostra corresponde a um pixel de percurso do escoamento no tubo:
+trata-se, portanto, de um sinal puramente \textit{espacial}, sem eixo de tempo nem
+frequência de amostragem associada.
+
+A escolha do domínio espacial em vez do domínio do tempo decorre do número de amostras
+disponível. No domínio do tempo, cada ensaio dispõe de apenas 501 quadros; a série temporal
+efetivamente reamostrada usada como contraparte neste trabalho reduz-se a cerca de 287
+amostras. Já o panorama espacial reconstruído contém, conforme o ensaio, de algumas centenas
+a mais de vinte mil pixels de percurso, situando-se tipicamente na faixa de milhares de
+amostras (por exemplo, os ensaios de \textit{churn} analisados têm entre 7\,584 e 9\,586
+pixels). O sinal espacial oferece, assim, uma ou duas ordens de grandeza mais amostras do
+que a série temporal, o que se traduz em maior resolução espectral e na ausência de um teto
+de Nyquist atrelado à taxa de quadros da câmera, condição vantajosa para a estimativa das
+funções de correlação exigidas pela formulação de \citeonline{schuck2019}.
 
 Para cada ensaio, o padrão de escoamento foi previamente identificado por análise visual
 das imagens da câmera de alta velocidade na seção de visualização, conforme descrito por
 \citeonline{deoliveira2021}. Essa identificação prévia constitui o rótulo de referência
-que será utilizado para avaliar se as assinaturas de coerência \textit{Wavelet}
-correspondem a cada padrão.
+utilizado para avaliar se as assinaturas de coerência \textit{Wavelet} correspondem a cada
+padrão. Entre os padrões, apenas o \textit{churn} ($n = 10$) e o anular ondulado ($n = 9$)
+dispõem de ensaios suficientes para sustentar a análise de repetibilidade intra-padrão; os
+demais (\textit{plug}, \textit{slug} e \textit{slug}--\textit{churn}) têm $n \leq 4$ e são
+tratados de forma ilustrativa.
+
+A comparação foi feita em dois modos, ambos restritos aos cinco padrões com pelo menos dois
+ensaios (\textit{churn}, com dez ensaios; anular ondulado, com nove; \textit{plug}, com quatro;
+\textit{slug}, com três; e \textit{slug}--\textit{churn}, com dois), que somam vinte e oito
+ensaios. Os padrões com um único ensaio (bolha dispersa, anular liso e \textit{plug}--\textit{slug})
+ficaram de fora por não formarem pares. No modo intra-padrão, avaliaram-se todas
+as combinações de dois ensaios de um mesmo padrão, o que dá noventa e um pares (quarenta e cinco
+de \textit{churn}, trinta e seis de anular ondulado, seis de \textit{plug}, três de \textit{slug}
+e um de \textit{slug}--\textit{churn}). No modo inter-padrão, formaram-se os pares de ensaios de
+padrões distintos, ou seja, o produto cartesiano dos ensaios de cada par de padrões, chegando-se
+a duzentos e oitenta e sete pares de ensaios repartidos pelas dez combinações possíveis dos cinco
+padrões. A ordem dentro de cada par define apenas qual ensaio entra como primeiro sinal
+(prioridade \textit{churn}, anular ondulado e, para os demais, ordem alfabética); como a coerência
+é definida por escala, essa ordem não altera seu valor. Ambos os modos empregam o cálculo de
+coerência \textit{Wavelet} alternativa descrito nas seções seguintes, diferindo apenas na regra de
+emparelhamento dos ensaios.
 
 % =========================================================
 \section{Pré-processamento dos sinais}\label{sec:met-preproc}
 % =========================================================
 
-Antes de calcular as funções de correlação, cada série temporal passará pelas seguintes
+Antes de calcular as funções de correlação, cada sinal espacial passou pelas seguintes
 etapas de pré-processamento:
 
 \begin{enumerate}
-  \item Remoção da média: subtrair o valor médio de cada sinal para eliminar
-        componentes de corrente contínua que não carregam informação sobre a dinâmica
-        do escoamento e garantir que a autocorrelação seja bem definida;
-  \item Normalização: dividir cada sinal pelo seu desvio padrão, garantindo variância
-        unitária e tornando as funções de correlação comparáveis entre ensaios com
-        diferentes condições operacionais. A formulação de \citeonline{schuck2019}
-        pressupõe que os sinais sejam realizações de processos estacionários, hipótese
-        sob a qual as funções de auto e correlação cruzada estão bem definidas.
+  \item Remoção de tendência: subtração de uma tendência linear ajustada ao sinal, para
+        eliminar derivas de baixa frequência introduzidas por variações lentas de
+        iluminação e pela costura do panorama, que não carregam informação sobre a
+        morfologia do escoamento;
+  \item Remoção da média: subtração do valor médio, eliminando a componente contínua e
+        garantindo que a autocorrelação seja bem definida;
+  \item Normalização: divisão pelo desvio padrão amostral, garantindo variância unitária
+        e tornando as funções de correlação comparáveis entre ensaios com diferentes
+        condições operacionais. A formulação de \citeonline{schuck2019} pressupõe que os
+        sinais sejam realizações de processos estacionários, hipótese sob a qual as funções
+        de auto e correlação cruzada estão bem definidas.
 \end{enumerate}
 
 A formulação alternativa de \citeonline{schuck2019} pressupõe processos estacionários.
-Essa hipótese é razoável para os ensaios de \citeonline{deoliveira2021}, uma vez que
-cada registro de 8\,s foi coletado com $G$ e $q''$ fixos, em condição de regime
-estabelecido (estacionário), conforme o protocolo experimental descrito na \autoref{sec:arranjo}.
+No domínio espacial, essa hipótese equivale à homogeneidade estatística do panorama ao
+longo do eixo de percurso: como cada ensaio de \citeonline{deoliveira2021} foi coletado com
+$G$ e $q''$ fixos, em regime estabelecido, o padrão de escoamento mantém-se estatisticamente
+uniforme ao longo do trecho reconstruído, conforme o protocolo experimental descrito na
+\autoref{sec:arranjo}.
 
 % =========================================================
 \section{Cálculo da coerência \textit{Wavelet} alternativa}\label{sec:met-wco}
 % =========================================================
 
-O cálculo da coerência \textit{Wavelet} alternativa seguirá a formulação de
-\citeonline{schuck2019}, conforme descrita na \autoref{sec:wps-wcs-wco}. As etapas
-serão as seguintes:
+O cálculo da coerência \textit{Wavelet} alternativa seguiu a formulação de
+\citeonline{schuck2019}, conforme descrita na \autoref{sec:wps-wcs-wco}. As etapas foram
+as seguintes:
 
 \begin{enumerate}
-  \item Autocorrelação e correlação cruzada: calcular numericamente
-        a autocorrelação do PD $R_{xx}(\tau)$, a autocorrelação do OS $R_{yy}(\tau)$ e
-        a correlação cruzada PD--OS $R_{xy}(\tau)$ a partir das séries
-        temporais pré-processadas, para defasagens $\tau$ de $-(N-1)$ a $N-1$ amostras,
-        em que $N = 8.000$ é o comprimento do ensaio;
-  \item CWT das funções de correlação: aplicar a CWT de Morlet complexa
-        ($\omega_0 = 6$, conforme \autoref{sec:cwt}) a cada função de correlação, avaliada em
-        $b = 0$, sobre uma grade logarítmica de escalas cobrindo a faixa de 0,1\,Hz
-        a 200\,Hz, que engloba as frequências características de todos os padrões de
-        escoamento identificados por \citeonline{deoliveira2021};
-  \item Espectros alternativos: calcular
-        o espectro de potência alternativo do PD $\widetilde{P}_x(a) = |W_{R_{xx}}(a,0)|$,
-        o espectro de potência alternativo do OS $\widetilde{P}_y(a) = |W_{R_{yy}}(a,0)|$ e
-        o espectro cruzado alternativo PD--OS $\widetilde{C}_{xy}(a) = |W_{R_{xy}}(a,0)|$
-        conforme as \autoref{eq:wps-alt} e \autoref{eq:wcs-alt};
-  \item Coerência por escala: obter a coerência \textit{Wavelet} alternativa
+  \item Autocorrelação e correlação cruzada: calcularam-se numericamente a autocorrelação
+        do primeiro ensaio $R_{xx}(\tau)$, a autocorrelação do segundo ensaio
+        $R_{yy}(\tau)$ e a correlação cruzada entre os dois ensaios $R_{xy}(\tau)$ a partir
+        dos sinais espaciais pré-processados, para defasagens $\tau$ de $-(N-1)$ a $N-1$
+        pixels, em que $N$ é o comprimento do sinal (variável de um ensaio para outro, da
+        ordem de milhares de pixels), com normalização enviesada, dividindo cada soma por
+        $N$;
+  \item CWT das funções de correlação: aplicou-se a CWT de \textit{Wavelet} de Morlet
+        complexa a cada função de correlação, avaliada em $b = 0$, sobre uma grade
+        logarítmica de 200 escalas cobrindo comprimentos de onda de 50 a 3\,000 pixels,
+        faixa escolhida para englobar as estruturas espaciais características dos padrões
+        de escoamento. A realização concreta empregou a \textit{Wavelet} \texttt{cmor2.0-0.9549}
+        da biblioteca \textit{PyWavelets} (largura de banda 2,0 e frequência central
+        0,9549), conforme detalhado na \autoref{sec:met-wco-morlet};
+  \item Espectros alternativos: calcularam-se o espectro de potência alternativo do
+        primeiro ensaio $\widetilde{P}_x(a) = |W_{R_{xx}}(a,0)|$, o do segundo ensaio
+        $\widetilde{P}_y(a) = |W_{R_{yy}}(a,0)|$ e o espectro cruzado alternativo
+        $\widetilde{C}_{xy}(a) = |W_{R_{xy}}(a,0)|$, conforme as \autoref{eq:wps-alt} e
+        \autoref{eq:wcs-alt};
+  \item Coerência por escala: obteve-se a coerência \textit{Wavelet} alternativa
         $\widetilde{\gamma}_{xy}(a) = \widetilde{C}_{xy}(a)^2\,/\,[\widetilde{P}_x(a)\cdot\widetilde{P}_y(a)]$
-        (\autoref{eq:wco-alt}), resultando em uma curva de coerência em função da frequência
-        característica de cada escala.
+        (\autoref{eq:wco-alt}), avaliada no atraso nulo, resultando em uma curva de
+        coerência em função do comprimento de onda de cada escala.
 \end{enumerate}
 
-A implementação será realizada em Python, com uso das bibliotecas \textit{NumPy} e
-\textit{SciPy} para os cálculos de correlação e da CWT. Antes da aplicação aos dados
-reais, a implementação será validada com sinais sintéticos de frequência, fase e razão
-sinal-ruído controladas, seguindo o procedimento descrito por \citeonline{schuck2019},
-para confirmar que as equações estão corretamente implementadas e que o método recupera
-os resultados esperados.
+A implementação foi realizada em Python, com as bibliotecas \textit{NumPy} e \textit{SciPy}
+para os cálculos de correlação e \textit{PyWavelets} (\textit{pywt}) para a CWT. Antes da
+aplicação aos dados reais, a implementação foi validada com sinais sintéticos de frequência,
+fase e razão sinal-ruído controladas, seguindo o procedimento descrito por
+\citeonline{schuck2019}, para confirmar que as equações estão corretamente implementadas e
+que o método recupera os resultados esperados.
+
+\subsection{Parametrização da \textit{Wavelet} de Morlet}\label{sec:met-wco-morlet}
+
+A moldura teórica da \autoref{sec:cwt} descreve a \textit{Wavelet} de Morlet complexa pela
+frequência central adimensional $\omega_0 = 6$. A implementação usou a \textit{Wavelet}
+complexa de Morlet \texttt{cmor2.0-0.9549} do \textit{PyWavelets}, cujos parâmetros de
+largura de banda (2,0) e de frequência central (0,9549) definem a realização discreta
+concreta dessa família. A conversão entre escala $a$ e comprimento de onda $\lambda$ segue
+a frequência central da \textit{Wavelet}, obtida por \texttt{pywt.central\_frequency}, de
+modo que cada escala da grade corresponde a um comprimento de onda em pixels. Todas as
+grandezas espectrais deste capítulo são, portanto, expressas em comprimento de onda (pixels),
+e não em frequência temporal.
 
 % =========================================================
 \section{Análise das assinaturas espectrais}\label{sec:met-analise}
 % =========================================================
 
-Para cada padrão de escoamento, as curvas $\widetilde{\gamma}_{xy}(a)$ de todos os
-ensaios correspondentes serão sobrepostas em um mesmo gráfico, permitindo avaliar
-visualmente a consistência intra-padrão e a separação inter-padrão. A análise será
-complementada por duas métricas espectrais simples extraídas de cada curva:
+Para cada padrão de escoamento, os campos de coerência $\widetilde{\gamma}_{xy}(a)$ e de
+espectro cruzado $\widetilde{C}_{xy}(a)$ de pares de ensaios foram comparados entre si,
+permitindo avaliar visualmente a consistência intra-padrão e a separação inter-padrão. A
+coerência alternativa é o descritor principal da análise. Como leitura complementar,
+extraiu-se de cada ensaio o perfil de potência média $|\text{WPS}|$ em função do comprimento
+de onda, isto é, a média do módulo dos coeficientes da CWT da autocorrelação ao longo dos
+atrasos, que resume em uma curva os comprimentos de onda em que a energia espectral do
+ensaio se concentra:
 
 \begin{enumerate}
-  \item Frequência de pico: escala $a^*$ em que $\widetilde{\gamma}_{xy}(a)$
-        é máximo e a frequência característica correspondente
-        $f^* \approx 1/(1{,}03\,a^*\,\delta t)$ \cite{torrence1998,grinsted2004},
-        indicando em que escala espectral o acoplamento entre PD e OS é mais intenso;
-  \item Coerência máxima: valor de pico $\widetilde{\gamma}_{xy}(a^*)$,
-        como indicador da força do acoplamento entre os dois sinais no padrão analisado.
+  \item Comprimento de onda dominante: escala $a^*$ em que o perfil de potência média
+        $|\text{WPS}|$ é máximo, indicando o comprimento de onda característico das
+        estruturas espaciais do padrão analisado;
+  \item Coerência máxima: valor de pico $\widetilde{\gamma}_{xy}(a^*)$, como indicador da
+        similaridade da estrutura espectral entre os dois ensaios comparados.
 \end{enumerate}
 
-Para verificar a consistência temporal das assinaturas, cada ensaio de 8\,s será
-também analisado em duas janelas temporais subsequentes, calculando-se
-$\widetilde{\gamma}_{xy}(a)$ separadamente para cada janela. A duração de cada janela
-será definida na implementação deste trabalho com base nos critérios de resolução espectral
-e de comprimento mínimo necessário para uma estimativa estável das funções de
-autocorrelação e correlação cruzada. Assinaturas semelhantes entre as duas janelas de
-um mesmo ensaio reforçam a estabilidade do padrão e a validade da hipótese de
-estacionaridade; diferenças acentuadas podem indicar transição de padrão durante o
-ensaio, situação especialmente relevante para ensaios nas bordas das faixas de $\beta$.
-
 Esta análise tem caráter exploratório: não se define limiar de separabilidade a priori.
-A avaliação será qualitativa, com base na consistência intra-padrão e na separação
-visual das curvas $\widetilde{\gamma}_{xy}(f)$ entre os diferentes padrões de
-escoamento, com o objetivo de determinar se a coerência \textit{Wavelet} alternativa
-constitui um descritor viável para a identificação dos padrões sem uso da
-câmera de alta velocidade.
+A avaliação é qualitativa, baseada na consistência dos campos $\widetilde{\gamma}_{xy}(a)$
+e dos perfis de potência média entre ensaios de um mesmo padrão (repetibilidade
+intra-padrão) e na distinção desses campos entre padrões diferentes (separação
+inter-padrão), com o objetivo de determinar se a coerência \textit{Wavelet} alternativa
+constitui um descritor viável para a caracterização dos padrões de escoamento. A repetibilidade
+intra-padrão foi verificada sobre os noventa e um pares de ensaios de mesmo padrão, e a separação
+inter-padrão sobre os duzentos e oitenta e sete pares de ensaios de padrões distintos.
 
 % =========================================================
-\section{Aplicação passo a passo das equações: ensaio de \textit{slug}}\label{sec:met-exemplo}
+\section{Aplicação passo a passo das equações: ensaio de \textit{churn}}\label{sec:met-exemplo}
 % =========================================================
 
 Para tornar concreto o encadeamento das equações, esta seção percorre as cinco etapas do
-\textit{pipeline} aplicadas a um ensaio de \textit{slug} \cite{deoliveira2021}.
+\textit{pipeline} aplicadas a dois ensaios de \textit{churn}.
 
 % ---------------------------------------------------------
 \subsection{Entrada}\label{sec:met-exemplo-entrada}
 % ---------------------------------------------------------
 
-Os sinais $x[n] = \text{PD}[n]$ e $y[n] = \text{OS}[n]$ consistem em $N = 8.000$
-amostras adquiridas simultaneamente a $f_s = 1\,\text{kHz}$, logo $\delta t = 1\,\text{ms}$.
-Após a remoção da média e a normalização pelo desvio padrão
-(\autoref{sec:met-preproc}), tem-se $\bar{x} = \bar{y} = 0$ e
-$\sigma_x = \sigma_y = 1$.
+Os sinais espaciais $x[n]$ e $y[n]$ correspondem a dois ensaios distintos classificados
+como \textit{churn}, extraídos da variante \textit{cropped} do panorama (média das linhas
+20 a 59). Os dois ensaios têm 9\,586 e 8\,829 pixels de percurso; como o cálculo emparelha
+os sinais pelo menor comprimento, adotou-se $N = 8\,829$ amostras espaciais, com passo de
+1 pixel. Após a remoção de tendência, da média e a normalização pelo desvio padrão
+(\autoref{sec:met-preproc}), tem-se $\bar{x} = \bar{y} = 0$ e $\sigma_x = \sigma_y = 1$.
 
 % ---------------------------------------------------------
 \subsection{Passo~1 — Autocorrelação e correlação cruzada}\label{sec:met-exemplo-p1}
 % ---------------------------------------------------------
 
 A versão discreta da \autoref{eq:autocorr} é a função de autocorrelação $R_{xx}[m]$
-do sinal PD:
+do primeiro ensaio, com normalização enviesada:
 
 \begin{equation}\label{eq:autocorr-disc}
-  R_{xx}[m] = \sum_{n=0}^{N-1-|m|} x[n]\,x[n+m],
+  R_{xx}[m] = \frac{1}{N}\sum_{n=0}^{N-1-|m|} x[n]\,x[n+m],
   \qquad m = -(N{-}1), \ldots, N{-}1.
 \end{equation}
 
 \noindent
-A função de correlação cruzada $R_{xy}[m]$ entre PD e OS é discretizada de forma
+A função de correlação cruzada $R_{xy}[m]$ entre os dois ensaios é discretizada de forma
 análoga a partir da \autoref{eq:crosscorr}:
 
 \begin{equation}\label{eq:crosscorr-disc}
-  R_{xy}[m] = \sum_{n=0}^{N-1-|m|} x[n]\,y[n+m],
+  R_{xy}[m] = \frac{1}{N}\sum_{n=0}^{N-1-|m|} x[n]\,y[n+m],
   \qquad m = -(N{-}1), \ldots, N{-}1.
 \end{equation}
 
 \noindent
-Para o padrão \textit{slug}, $R_{xy}[m]$ apresenta um pico deslocado de $m^* > 0$,
-em que $m^*$ é a defasagem de pico, isto é, o número de amostras de atraso entre
-OS e PD, indicando que o OS responde ligeiramente após o PD à mesma passagem de
-bolsão de vapor.
+O atraso $m$ é medido em pixels. Um eventual pico de $R_{xy}[m]$ em $m^* \neq 0$ reflete um
+deslocamento de fase espacial entre os dois ensaios, e não uma relação de causa e efeito:
+por serem realizações turbulentas independentes do mesmo padrão, os dois sinais não
+compartilham uma fase espacial comum, de modo que a informação relevante está na estrutura
+espectral das funções de correlação, não na posição do pico.
 
 % ---------------------------------------------------------
 \subsection{Passo~2 — CWT das funções de correlação}\label{sec:met-exemplo-p2}
 % ---------------------------------------------------------
 
-A CWT de Morlet complexa ($\omega_0 = 6$, conforme \autoref{sec:cwt}) é aplicada às funções de
-autocorrelação do PD $R_{xx}[\tau]$, de autocorrelação do OS $R_{yy}[\tau]$ e de
-correlação cruzada PD--OS $R_{xy}[\tau]$, avaliadas em $b = 0$
+A CWT de \textit{Wavelet} de Morlet complexa (\autoref{sec:cwt}; realização
+\texttt{cmor2.0-0.9549}, conforme \autoref{sec:met-wco-morlet}) é aplicada às funções de
+autocorrelação do primeiro ensaio $R_{xx}[\tau]$, de autocorrelação do segundo ensaio
+$R_{yy}[\tau]$ e de correlação cruzada entre os dois $R_{xy}[\tau]$, avaliadas em $b = 0$
 (atraso nulo do domínio da transformada, que corresponde ao ponto de referência
 das funções de correlação). Para uma escala $a_k$, o coeficiente é:
 
@@ -215,99 +290,53 @@ das funções de correlação). Para uma escala $a_k$, o coeficiente é:
 \end{equation}
 
 \noindent
-em que $\delta\tau = \delta t = 1\,\text{ms}$ é o passo de amostragem e
-$\psi(u) = e^{-0{,}5u^2} e^{j\omega_0 u}$ é a \textit{Wavelet} de Morlet
-(\autoref{sec:cwt}). A operação é aplicada às três funções de correlação,
-produzindo, para cada escala $a_k$ da grade, os coeficientes da CWT: o coeficiente
-da autocorrelação do PD $W_{R_{xx}}(a_k,0)$, o coeficiente da autocorrelação do OS
-$W_{R_{yy}}(a_k,0)$ e o coeficiente da correlação cruzada PD--OS $W_{R_{xy}}(a_k,0)$. A relação
-$f_k \approx 1/(1{,}03\,a_k\,\delta t)$ \cite{torrence1998,grinsted2004}
-converte cada escala em frequência equivalente. Espera-se que os coeficientes
-apresentem amplitude elevada nas escalas correspondentes à faixa espectral
-do \textit{slug}, em torno de 2,8\,Hz no sinal OS \cite{deoliveira2021},
-onde a atividade das funções de correlação é mais intensa.
+em que $\delta\tau = 1\,\text{px}$ é o passo espacial e
+$\psi(u)$ é a \textit{Wavelet} de Morlet complexa (\autoref{sec:cwt}). A operação é
+aplicada às três funções de correlação, produzindo, para cada escala $a_k$ da grade, os
+coeficientes da CWT: $W_{R_{xx}}(a_k,0)$, $W_{R_{yy}}(a_k,0)$ e $W_{R_{xy}}(a_k,0)$. Cada
+escala $a_k$ corresponde a um comprimento de onda $\lambda_k$ em pixels, obtido pela
+frequência central da \textit{Wavelet} (\autoref{sec:met-wco-morlet}). A amplitude dos
+coeficientes reflete a atividade das funções de correlação em cada comprimento de onda,
+realçando as escalas associadas às estruturas espaciais do \textit{churn}.
 
 % ---------------------------------------------------------
 \subsection{Passo~3 — Espectros alternativos}\label{sec:met-exemplo-p3}
 % ---------------------------------------------------------
 
 Aplicando as \autoref{eq:wps-alt} e \autoref{eq:wcs-alt} aos coeficientes do
-\autoref{sec:met-exemplo-p2}, obtêm-se: o espectro de potência alternativo do PD,
-$\widetilde{P}_x(a_k)$; o espectro de potência alternativo do OS, $\widetilde{P}_y(a_k)$;
-e o espectro cruzado alternativo entre PD e OS, $\widetilde{C}_{xy}(a_k)$,
-uma tripla de valores reais não negativos para cada escala $a_k$.
-Espera-se que $\widetilde{P}_x$ e $\widetilde{P}_y$ apresentem picos nas faixas
-espectrais características de cada sensor para o padrão \textit{slug}, e que
-$\widetilde{C}_{xy}$ seja elevado nas escalas em que os dois sinais variam de
-forma correlacionada.
+\autoref{sec:met-exemplo-p2}, obtêm-se: o espectro de potência alternativo do primeiro
+ensaio, $\widetilde{P}_x(a_k)$; o do segundo ensaio, $\widetilde{P}_y(a_k)$; e o espectro
+cruzado alternativo entre os dois, $\widetilde{C}_{xy}(a_k)$, uma tripla de valores reais
+não negativos para cada escala $a_k$. Os espectros $\widetilde{P}_x$ e $\widetilde{P}_y$
+descrevem a distribuição de energia de cada ensaio por comprimento de onda, enquanto
+$\widetilde{C}_{xy}$ quantifica a energia conjunta dos dois sinais em cada escala.
 
 % ---------------------------------------------------------
 \subsection{Passo~4 — Coerência alternativa}\label{sec:met-exemplo-p4}
 % ---------------------------------------------------------
 
 Aplicando a \autoref{eq:wco-alt} aos espectros do \autoref{sec:met-exemplo-p3},
-obtém-se a coerência \textit{Wavelet} alternativa $\widetilde{\gamma}_{xy}(f)$,
-uma curva com valores em $[0, 1]$ que expressa, para cada frequência $f_k$, o grau
-de acoplamento entre PD e OS naquela escala. Espera-se que o \textit{slug} produza
-coerência elevada na faixa em que PD e OS respondem conjuntamente à passagem
-periódica dos bolsões de vapor, conforme descrito na \autoref{sec:padroes},
-refletindo o acoplamento entre os dois sensores naquele regime. O procedimento
-é repetido para todas as escalas da grade, produzindo a curva completa
-$\widetilde{\gamma}_{xy}(f)$.
+obtém-se a coerência \textit{Wavelet} alternativa $\widetilde{\gamma}_{xy}(a)$,
+uma curva com valores em $[0, 1]$ que expressa, para cada comprimento de onda $\lambda_k$,
+o grau de similaridade da estrutura espectral entre os dois ensaios naquela escala, no
+atraso nulo. O valor em cada escala indica o grau de acoplamento espectral entre os dois
+ensaios naquele comprimento de onda, assumindo valor próximo da unidade quando as estruturas
+espaciais se manifestam de forma consistente entre os ensaios. O procedimento é repetido para
+todas as escalas da grade, produzindo a curva completa $\widetilde{\gamma}_{xy}(a)$.
 
 % ---------------------------------------------------------
 \subsection{Passo~5 — Extração das métricas espectrais}\label{sec:met-exemplo-p5}
 % ---------------------------------------------------------
 
-A partir da curva completa de coerência $\widetilde{\gamma}_{xy}(f)$, identificam-se:
-(i)~a frequência de pico $f^*$, isto é, a frequência para a qual a coerência é máxima
-($\widetilde{\gamma}_{xy}(f^*) = \max_f\, \widetilde{\gamma}_{xy}(f)$),
-que se espera compatível com a faixa espectral do \textit{slug} descrita na
+A partir da curva completa de coerência $\widetilde{\gamma}_{xy}(a)$ e do perfil de
+potência média $|\text{WPS}|$, identificam-se:
+(i)~o comprimento de onda dominante $\lambda^*$, isto é, a escala em que o perfil de
+potência média é máximo, associado às estruturas espaciais do padrão descritas na
 \autoref{sec:padroes}; e
-(ii)~a coerência máxima $\widetilde{\gamma}_{xy}(f^*)$, como indicador da força
-do acoplamento espectral entre PD e OS no padrão analisado.
+(ii)~a coerência máxima $\widetilde{\gamma}_{xy}(a^*)$, como indicador da similaridade da
+estrutura espectral entre os dois ensaios comparados.
 
-Esses dois escalares constituem a assinatura espectral do ensaio. Ao sobrepor as
-curvas de todos os ensaios classificados como \textit{slug}, avalia-se a
-repetibilidade intra-padrão. Ao comparar as curvas de diferentes padrões, avalia-se
+Essas grandezas constituem a assinatura espectral do par de ensaios. Ao comparar os campos
+de coerência e os perfis de potência de vários ensaios classificados como \textit{churn},
+avalia-se a repetibilidade intra-padrão. Ao comparar ensaios de padrões diferentes, avalia-se
 a separabilidade inter-padrão.
-
-% =========================================================
-\section{Cronograma}\label{sec:cronograma}
-% =========================================================
-
-O \autoref{qua:cronograma} apresenta o cronograma previsto para o desenvolvimento do
-trabalho, com entrega prevista para novembro de 2026.
-
-\begin{quadro}[htb]
-  \centering
-  \caption{Cronograma de atividades.}
-  \label{qua:cronograma}
-  \begin{tabular}{cp{7cm}ccccc}
-    \hline
-    \multirow{2}{*}{\textbf{Etapa}} &
-    \multirow{2}{*}{\textbf{Atividade}} &
-    \multicolumn{5}{c}{\textbf{Mês (2026)}} \\
-    \cline{3-7}
-    & & \textbf{Jul} & \textbf{Ago} & \textbf{Set} & \textbf{Out} & \textbf{Nov} \\
-    \hline
-    1 & Implementação da WCO alternativa em Python              & $\bullet$ & $\bullet$ & & & \\
-    2 & Validação com sinais sintéticos                         & & $\bullet$ & $\bullet$ & & \\
-    3 & Aplicação aos dados do LETEF (PD e OS)                  & & & $\bullet$ & $\bullet$ & \\
-    4 & Análise das assinaturas espectrais por padrão           & & & & $\bullet$ & $\bullet$ \\
-    5 & Escrita do relatório final                                  & & & $\bullet$ & $\bullet$ & $\bullet$ \\
-    6 & Revisão com orientador e ajustes finais                 & & & & & $\bullet$ \\
-    \hline
-  \end{tabular}
-  \fonte{Elaborado pelo autor.}
-\end{quadro}
-
-A etapa~1 compreende a implementação das equações da formulação alternativa de
-\citeonline{schuck2019} em Python e a criação de um ambiente de testes reprodutível.
-A etapa~2 consiste na validação com sinais sintéticos de parâmetros controlados, para
-confirmar que a implementação recupera corretamente os resultados reportados por
-\citeonline{schuck2019}. As etapas~3 e~4 constituem o núcleo do trabalho: aplicação
-do método aos dados reais do LETEF, análise das assinaturas de coerência e avaliação
-da separabilidade entre os seis padrões de escoamento. A escrita (etapa~5) ocorre em
-paralelo com as etapas de análise, e a etapa~6 concentra a revisão final com o
-orientador para submissão em novembro de 2026.

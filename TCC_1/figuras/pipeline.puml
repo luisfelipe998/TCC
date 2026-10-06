@@ -1,0 +1,35 @@
+@startuml pipeline-wco
+skinparam ArrowColor #333333
+skinparam ActivityBorderColor #555555
+skinparam ActivityBackgroundColor #F0F0F0
+skinparam ActivityStartColor #333333
+skinparam ActivityEndColor #333333
+skinparam Padding 10
+skinparam RoundCorner 8
+skinparam shadowing false
+skinparam defaultFontSize 12
+
+start
+
+:Sinais dos sensores PD e OS
+(arranjo experimental LETEF);
+
+:Pré-processamento
+(remoção da média e normalização);
+
+:Cálculo das funções de autocorrelação
+e correlação cruzada;
+
+:Cálculo da coerência wavelet alternativa
+(formulação Schuck e Bodmann, 2019);
+
+:Análise das assinaturas espectrais
+(sobreposição de curvas por padrão,
+frequência de pico e coerência máxima);
+
+:Identificação do padrão de escoamento
+(bolha, plug, slug, churn, anular);
+
+stop
+
+@enduml

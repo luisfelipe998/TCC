@@ -1,0 +1,204 @@
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+% \pretextual
+
+% ---
+% Capa
+% ---
+\imprimircapa
+% ---
+
+% ---
+% Folha de rosto
+% (o * indica que haverá a ficha bibliográfica)
+% ---
+%\imprimirfolhaderosto*
+\imprimirfolhaderosto
+% ---
+
+
+
+% ---
+% Agradecimentos
+% ---
+\begin{agradecimentos}
+Agradeço aos meus pais, Simone e Joel, pelo amor incondicional, pela educação que me
+formou como pessoa e pelo apoio em cada etapa da minha trajetória acadêmica. Sem a base
+que construíram, este trabalho não seria possível.
+
+À minha namorada Karolline, pelo companheirismo constante, pela paciência nos momentos
+de ausência e pelo incentivo que nunca faltou nos momentos mais difíceis deste trabalho.
+Sua presença tornou essa jornada mais leve e significativa.
+
+Ao meu orientador, pela disponibilidade, pelas orientações precisas e pela confiança
+depositada neste trabalho.
+
+Aos professores do curso de Engenharia da Computação da UNISINOS, pelos ensinamentos que
+fundamentam esta e todas as demais etapas da minha formação.
+
+A todos que, de alguma forma, contribuíram para que eu chegasse até aqui, meu sincero
+agradecimento.
+\end{agradecimentos}
+% ---
+
+
+% ---
+% RESUMOS
+% ---
+
+% resumo em português
+\setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
+\begin{resumo}
+O escoamento bifásico com mudança de fase em microcanais é uma das tecnologias de
+resfriamento mais promissoras para sistemas eletrônicos de alta densidade de potência.
+A identificação do padrão de escoamento --- bolha dispersa, \textit{plug}, \textit{slug},
+\textit{churn} ou anular --- é essencial para o controle e a otimização desses sistemas,
+pois cada regime apresenta comportamento térmico e hidrodinâmico distinto. Os métodos
+automáticos de classificação existentes para o arranjo experimental do Laboratório de
+Estudos Térmicos e Fluidodinâmicos (LETEF) da UNISINOS dependem de câmera de alta
+velocidade, equipamento de custo elevado e disponibilidade limitada em aplicações
+industriais. Este trabalho propõe um método de identificação dos padrões de escoamento
+baseado exclusivamente nos sinais do transdutor de pressão diferencial (PD) e do sensor
+óptico (OS), ambos já instalados no arranjo experimental, sem necessidade de aquisição de
+imagens. O método fundamenta-se na formulação alternativa da coerência \textit{wavelet}
+(WCO) proposta por Schuck e Bodmann (2019), na qual a transformada \textit{wavelet}
+contínua é aplicada às funções de autocorrelação e de correlação cruzada dos sinais em
+vez de ser aplicada diretamente a eles. Essa abordagem elimina a necessidade de
+suavização espectral exigida pela definição clássica, produzindo uma estimativa de
+coerência em função apenas da escala e mais robusta ao ruído. A hipótese central é que
+a curva de coerência \textit{wavelet} alternativa $\widetilde{\gamma}_{xy}(a)$, calculada
+entre os sinais PD e OS, apresenta assinaturas espectrais características e discriminantes
+para cada padrão de escoamento. A metodologia proposta compreende o pré-processamento dos
+sinais, o cálculo da WCO alternativa, a extração de métricas espectrais por faixa de
+frequência e a análise comparativa das assinaturas entre os cinco padrões identificados
+por \mbox{de Oliveira et al. (2021)} nos ensaios com isobutano (R600a) em microtubo
+horizontal de 1\,mm de diâmetro. A implementação e validação do método estão previstas
+para o TCC\,II, com entrega em novembro de 2026.
+
+ \textbf{Palavras-chave}: escoamento bifásico. microcanais. transformada \textit{wavelet} contínua. coerência \textit{wavelet}. identificação de padrões de escoamento. processamento de sinais.
+\end{resumo}
+
+% resumo em inglês
+\begin{resumo}[Abstract]
+ \begin{otherlanguage*}{english}
+Two-phase flow with phase change in microchannels is one of the most promising cooling
+technologies for high power-density electronic systems. Identifying the flow
+pattern --- dispersed bubble, plug, slug, churn, or annular --- is essential for the
+control and optimization of such systems, as each regime exhibits distinct thermal and
+hydrodynamic behavior. Existing automatic classification methods for the experimental
+setup of the Thermal and Fluid Dynamics Laboratory (LETEF) at UNISINOS rely on a
+high-speed camera, a costly instrument with limited availability in industrial
+applications. This work proposes a flow pattern identification method based exclusively
+on signals from the differential pressure transducer (PD) and the optical sensor (OS),
+both already installed in the experimental rig, without requiring image acquisition. The
+method is grounded in the alternative wavelet coherence (WCO) formulation proposed by
+Schuck and Bodmann (2019), in which the continuous wavelet transform is applied to the
+autocorrelation and cross-correlation functions of the signals rather than to the signals
+directly. This approach eliminates the spectral smoothing required by the classical
+definition, yielding a coherence estimate that depends only on scale and is more robust
+to noise. The central hypothesis is that the alternative wavelet coherence curve
+$\widetilde{\gamma}_{xy}(a)$, computed between the PD and OS signals, produces
+characteristic and discriminant spectral signatures for each flow pattern. The proposed
+methodology comprises signal pre-processing, computation of the alternative WCO,
+extraction of spectral metrics per frequency band, and comparative analysis of the
+signatures across the five flow patterns identified by de Oliveira et al. (2021) in
+experiments with isobutane (R600a) in a horizontal 1\,mm microtube. Implementation and
+validation of the method are planned for the second part of this work, with submission
+scheduled for November 2026.
+
+   \vspace{\onelineskip}
+
+   \noindent
+   \textbf{Keywords}: two-phase flow. microchannels. continuous wavelet transform. wavelet coherence. flow pattern identification. signal processing.
+ \end{otherlanguage*}
+\end{resumo}
+
+
+% ---
+% inserir lista de ilustrações
+% ---
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
+% ---
+
+% ---
+% inserir lista de quadros
+% ---
+\pdfbookmark[0]{\listofquadrosname}{loq}
+\listofquadros*
+\cleardoublepage
+% ---
+
+% ---
+% inserir lista de tabelas
+% (comentado: não há tabelas no TCC I — apenas quadros e figuras)
+% ---
+%\pdfbookmark[0]{\listtablename}{lot}
+%\listoftables*
+%\cleardoublepage
+% ---
+
+% ---
+% inserir lista de abreviaturas e siglas
+% ---
+\begin{siglas}
+  \item[CNN] Rede Neural Convolucional (\textit{Convolutional Neural Network})
+  \item[CWT] Transformada Wavelet Contínua (\textit{Continuous Wavelet Transform})
+  \item[DWT] Transformada Wavelet Discreta (\textit{Discrete Wavelet Transform})
+  \item[FFT] Transformada Rápida de Fourier (\textit{Fast Fourier Transform})
+  \item[LDR] Resistor Dependente de Luz (\textit{Light Dependent Resistor})
+  \item[LED] Diodo Emissor de Luz (\textit{Light Emitting Diode})
+  \item[LETEF] Laboratório de Estudos Térmicos e Fluidodinâmicos
+  \item[LWE] Coeficiente de Energia Wavelet Local (\textit{Local Wavelet Energy coefficient})
+  \item[ML] Aprendizado de Máquina (\textit{Machine Learning})
+  \item[OS] Sensor Óptico (\textit{Optical Sensor})
+  \item[PD] Transdutor de Pressão Diferencial
+  \item[PH] Pré-aquecedor (\textit{Pre-Heater})
+  \item[PSD] Densidade Espectral de Potência (\textit{Power Spectral Density})
+  \item[SNR] Relação Sinal-Ruído (\textit{Signal-to-Noise Ratio})
+  \item[SVM] Máquina de Vetores de Suporte (\textit{Support Vector Machine})
+  \item[TCC] Trabalho de Conclusão de Curso
+  \item[TS] Seção de Teste (\textit{Test Section})
+  \item[VS] Seção de Visualização (\textit{Visualization Section})
+  \item[WCO] Coerência Wavelet (\textit{Wavelet Coherence})
+  \item[WCS] Espectro Cruzado Wavelet (\textit{Wavelet Cross Spectrum})
+  \item[WPS] Espectro de Potência Wavelet (\textit{Wavelet Power Spectrum})
+\end{siglas}
+% ---
+
+% ---
+% inserir lista de símbolos
+% ---
+\begin{simbolos}
+  % --- Quantidades espectrais ---
+  \item[$W_x(a,b)$] Coeficiente da CWT do sinal $x$ na escala $a$ e posição $b$
+  \item[$P_x(a,b)$] Espectro de potência wavelet clássico do sinal $x$
+  \item[$C_{xy}(a,b)$] Espectro cruzado wavelet clássico entre os sinais $x$ e $y$
+  \item[$\gamma_{xy}(a,b)$] Coerência wavelet clássica entre os sinais $x$ e $y$
+  \item[$R_{xx}(\tau)$] Função de autocorrelação do sinal $x$
+  \item[$R_{xy}(\tau)$] Função de correlação cruzada entre os sinais $x$ e $y$
+  \item[$\widetilde{P}_x(a)$] Espectro de potência wavelet alternativo do sinal $x$
+  \item[$\widetilde{C}_{xy}(a)$] Espectro cruzado wavelet alternativo entre $x$ e $y$
+  \item[$\widetilde{\gamma}_{xy}(a)$] Coerência wavelet alternativa entre $x$ e $y$
+  % --- Variáveis termofluidodinâmicas ---
+  \item[$\beta$] Parâmetro adimensional de identificação do padrão de escoamento
+  \item[$G$] Fluxo mássico [kg\,m$^{-2}$\,s$^{-1}$]
+  \item[$q''$] Fluxo de calor [kW\,m$^{-2}$]
+  \item[$Co$] Número de confinamento
+  \item[$\sigma$] Tensão superficial [N\,m$^{-1}$]
+  \item[$\rho_l$] Massa específica do líquido [kg\,m$^{-3}$]
+  \item[$\rho_v$] Massa específica do vapor [kg\,m$^{-3}$]
+  \item[$D_h$] Diâmetro hidráulico [m]
+  \item[$i_{lv}$] Calor latente de vaporização [J\,kg$^{-1}$]
+\end{simbolos}
+% ---
+
+% ---
+% inserir o sumario
+% ---
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+% ---

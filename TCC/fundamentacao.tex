@@ -1,12 +1,12 @@
 \chapter{Fundamentação Teórica}\label{cap:fundamentacao}
 
-Reúnem-se neste capítulo os conceitos necessários para entender o que este trabalho propõe e
+Reúnem-se neste capítulo os conceitos necessários para entender o que este trabalho realizou e
 como ele se insere no que já foi feito na área. A \autoref{sec:revisao} percorre a
 literatura sobre padrões de escoamento bifásico e sobre o uso da transformada
 \textit{Wavelet} em sinais de escoamento. A \autoref{sec:bases} apresenta os fundamentos
 teóricos que sustentam a metodologia: o comportamento do escoamento bifásico em
 microcanais e a formulação matemática das transformadas \textit{Wavelet}, incluindo a
-formulação alternativa de coerência que será aplicada neste trabalho.
+formulação alternativa de coerência aplicada neste trabalho.
 
 % =========================================================
 \section{Revisão Bibliográfica}\label{sec:revisao}
@@ -50,7 +50,7 @@ permitindo a aquisição simultânea de ambos os sinais. A análise por CWT conf
 cada padrão apresenta assinaturas espectrais distintas no PD e no OS, com faixas de
 frequência características descritas em detalhe na \autoref{sec:padroes}. Os parâmetros
 experimentais completos estão listados na \autoref{qua:params-exp}.
-Esses dados constituem a base experimental que será utilizada neste trabalho.
+Esses dados constituem a base experimental utilizada neste trabalho.
 
 \citeonline{dias2025knn} e \citeonline{dias2025cnn} desenvolveram classificadores
 automáticos para os padrões do mesmo arranjo a partir de imagens de câmera de alta
@@ -80,7 +80,7 @@ o espectro cruzado (WCS) e discute as limitações do estimador clássico de coe
 \textit{Wavelet} (WCO). Esse trabalho tornou-se referência em diversas áreas da engenharia
 que lidam com sinais não estacionários.
 
-Um antecedente direto da abordagem proposta neste trabalho foi desenvolvido por
+Um antecedente direto da abordagem adotada neste trabalho foi desenvolvido por
 \citeonline{nguyen2010}, que aplicaram a CWT a sinais de fração de vazio em escoamento
 bifásico vertical ar-água em tubo de 80\,mm (laboratório KAERI, Coreia). Os autores
 mostraram que descritores derivados dos coeficientes da CWT discriminam quatro
@@ -123,9 +123,11 @@ sinais, não a posição temporal absoluta. O resultado é uma estimativa espect
 interpretável como indicador de acoplamento entre dois sinais em função da escala e do
 atraso. Os autores validaram a abordagem com sinais sintéticos em presença de ruído e
 mostraram que o método detecta corretamente atrasos e frequências dominantes mesmo em
-baixa relação sinal-ruído. A aplicação dessa formulação aos sinais do arranjo da UNISINOS,
-especificamente à relação entre o sinal óptico e o sinal de pressão diferencial
-coletados por \citeonline{deoliveira2021}, é a proposta central deste trabalho.
+baixa relação sinal-ruído. Neste trabalho, essa formulação foi aplicada a sinais
+espaciais de brilho reconstruídos a partir do panorama das imagens da câmera de alta
+velocidade coletadas por \citeonline{deoliveira2021}, comparando ensaios de um mesmo
+padrão de escoamento, para avaliar a repetibilidade, e ensaios de padrões distintos, para
+avaliar a separação.
 
 % ---------------------------------------------------------
 \subsection{Aprendizado de máquina para classificação de padrões de escoamento}\label{sec:rev-ml}
@@ -148,32 +150,35 @@ classificaram cinco padrões de escoamento a partir de imagens da câmera de alt
 com o classificador $k$NN, atingindo 87\% de acurácia. \citeonline{dias2025cnn} estenderam
 esse trabalho com uma rede neural convolucional baseada na arquitetura ResNet50, alcançando
 93\% no melhor \textit{fold} (média de 88{,}1\% nos dez \textit{folds}) sobre o mesmo conjunto 
-de dados. A limitação comum a ambos é a dependência da câmera
-de alta velocidade, o que motiva explorar descritores obtidos diretamente dos sinais dos
-sensores já instalados no arranjo, que é o objetivo central deste trabalho.
+de dados. Ambos os classificadores dependem de rotulagem manual das imagens e operam
+diretamente sobre os quadros, o que motiva explorar um descritor espectral objetivo,
+derivado por análise \textit{Wavelet}, capaz de caracterizar os padrões de forma
+complementar a essas abordagens.
 
-A viabilidade de classificar padrões de escoamento a partir de sinais de sensores, sem
-recorrer a imagens, foi demonstrada em diferentes contextos. \citeonline{sun2012} aplicaram
+A capacidade da análise espectral por \textit{Wavelet} de discriminar padrões de
+escoamento a partir de sinais unidimensionais foi demonstrada em diferentes contextos.
+\citeonline{sun2012} aplicaram
 decomposição \textit{Wavelet} e entropia de norma sobre flutuações de pressão diferencial
 em escoamento bifásico ar-água horizontal (tubo de 50\,mm), obtendo taxa de identificação
 de 95\% para quatro padrões. \citeonline{tan2015} combinaram sensores de condutância e
 capacitância com análise por CWT em tubo de 50\,mm e mostraram que os coeficientes de
 energia \textit{Wavelet} local (LWE) discriminam regimes de escoamento óleo-água, com a
 ressalva de que a distribuição observada é específica para o arranjo e os fluidos
-utilizados. Esses trabalhos indicam que sinais temporais de sensores já instalados contêm
+utilizados. Esses trabalhos indicam que sinais unidimensionais contêm
 informação suficiente para classificar padrões, desde que os descritores extraídos capturem
-as diferenças espectrais entre eles.
+as diferenças espectrais entre eles, o que fundamenta a aplicação da análise \textit{Wavelet}
+aos sinais espaciais unidimensionais adotados neste trabalho.
 
 A literatura revisada aponta, portanto, dois requisitos técnicos para este trabalho:
 compreender a fenomenologia dos padrões de escoamento no arranjo do LETEF e dominar
-a formulação matemática da coerência \textit{Wavelet} alternativa que será empregada
+a formulação matemática da coerência \textit{Wavelet} alternativa empregada
 como descritor. As próximas seções apresentam esses fundamentos.
 
 % =========================================================
 \section{Bases Teóricas}\label{sec:bases}
 % =========================================================
 
-Esta seção apresenta os conceitos teóricos que embasam a metodologia proposta, cobrindo
+Esta seção apresenta os conceitos teóricos que embasam a metodologia adotada, cobrindo
 a fenomenologia do escoamento bifásico em microcanais e a formulação matemática das
 transformadas \textit{Wavelet} utilizadas, incluindo a formulação alternativa de coerência
 de \citeonline{schuck2019}.
@@ -268,9 +273,10 @@ geradas por todos os padrões de escoamento estudados.
 
 \paragraph{Aquisição e parâmetros experimentais.}
 O OS e o PD são adquiridos \textit{simultaneamente} a 1\,kHz, com 8.000 amostras por
-ensaio (8\,s por condição de operação), o que é necessário para o cálculo da
-coerência \textit{Wavelet} entre os dois canais \cite{deoliveira2021}. Os parâmetros dos ensaios de referência estão
-resumidos na \autoref{qua:params-exp}.
+ensaio (8\,s por condição de operação) \cite{deoliveira2021}. Em paralelo, os padrões são
+registrados na seção de visualização por uma câmera de alta velocidade, cujas sequências de
+quadros constituem os dados efetivamente utilizados neste trabalho. Os parâmetros dos
+ensaios de referência estão resumidos na \autoref{qua:params-exp}.
 
 \begin{quadro}[htb]
   \centering
@@ -292,9 +298,10 @@ resumidos na \autoref{qua:params-exp}.
   \fonte{\citeonline{deoliveira2021}.}
 \end{quadro}
 
-As séries temporais do OS e do PD coletadas simultaneamente para cada condição de fluxo
-mássico e fluxo de calor constituem os dados a serem utilizados neste trabalho para o
-cálculo da coerência \textit{Wavelet} alternativa.
+As sequências de quadros da câmera de alta velocidade registradas para cada condição de
+fluxo mássico e fluxo de calor constituem os dados utilizados neste trabalho: delas se
+reconstrói o sinal espacial de brilho sobre o qual se calcula a coerência \textit{Wavelet}
+alternativa, conforme detalhado no \autoref{cap:metodologia}.
 
 \subsubsection{Padrões de escoamento e suas características}\label{sec:padroes}
 
@@ -315,8 +322,8 @@ $i_{lv}$ é o calor latente de vaporização. O parâmetro $\beta$ condensa em u
 efeitos de velocidade superficial de cada fase, fração de vazio, título de vapor, fluxo
 de calor e fluxo mássico \cite{deoliveira2021}. As faixas de $\beta$ em que cada padrão
 ocorre, estabelecidas por \citeonline{deoliveira2021} a partir das imagens da câmera de
-alta velocidade, constituem o rótulo de referência que este trabalho
-utilizará para associar cada ensaio ao seu padrão correspondente.
+alta velocidade, constituem o rótulo de referência utilizado neste trabalho
+para associar cada ensaio ao seu padrão correspondente.
 
 \textbf{\textit{Bolha dispersa}} (\textit{dispersed bubble}): ocorre em baixo título de vapor e
 alto fluxo mássico ($\beta < 0{,}5$), com queda de pressão média de 9{,}44\,kPa
@@ -381,8 +388,8 @@ ocorrem em faixas estreitas de razão de deslizamento e fração de vazio
 \cite{deoliveira2021}, o que dificulta a classificação automática nas vizinhanças
 das bordas das faixas de $\beta$. Essa diversidade espectral, com PD e OS capturando
 faixas complementares para cada padrão \cite{deoliveira2021}, é justamente o que motiva
-o uso da transformada \textit{Wavelet} e, em especial, da coerência entre os dois canais
-como descritor de classificação.
+o uso da transformada \textit{Wavelet} e, em especial, da coerência \textit{Wavelet}
+alternativa como descritor de padrões de escoamento.
 
 
 
@@ -487,7 +494,7 @@ $\mathcal{O}(N)$ para um sinal de $N$ amostras. O resultado é uma decomposiçã
 em múltiplas resoluções: cada nível da decomposição captura uma faixa de frequência
 diferente, do mais fino ao mais grosseiro. A DWT é apresentada aqui por completude
 e por sua presença em trabalhos correlatos \cite{morshed2020,dias2025knn}; a
-metodologia deste trabalho empregará exclusivamente a CWT, conforme formulação
+metodologia deste trabalho empregou exclusivamente a CWT, conforme formulação
 de \citeonline{schuck2019}.
 
 \subsubsection{Espectro de Potência, Espectro Cruzado e Coerência \textit{Wavelet}}\label{sec:wps-wcs-wco}
@@ -531,9 +538,8 @@ espectral dos dois canais \cite{deoliveira2021}.
   \centering
   \includegraphics[width=0.85\textwidth]{figuras/deoliveira2021-fig17-churn-pd}
   \caption{Padrão \textit{churn} — escalograma do WPS do sinal de pressão diferencial
-           ($G = 510\,\text{kg/(m}^2\text{s)}$): energia dispersa em baixas frequências
-           com amplitude reduzida em comparação ao \textit{slug}, tornando este o padrão
-           mais difícil de discriminar por análise espectral.}
+           ($G = 510\,\text{kg/(m}^2\text{s)}$): energia predominante em baixas frequências
+           (abaixo de 8\,Hz) e de baixa amplitude no sinal de pressão diferencial.}
   \label{fig:scalogram-churn}
   \fonte{Adaptado de \citeonline{deoliveira2021}.}
 \end{figure}
@@ -571,9 +577,9 @@ O WCS é o análogo \textit{Wavelet} da covariância espectral entre dois sinais
 de um sinal indica quando e em que escala ele tem energia, o WCS indica quando e em
 que escala os dois sinais têm energia simultaneamente e com qual defasagem
 \cite{torrence1998,grinsted2004}. Por ser um número complexo, seu módulo mede a força da relação
-entre PD e OS em cada escala e instante, enquanto a fase indica o atraso temporal
-entre eles, isto é, com que antecedência o PD responde a um evento em relação ao OS,
-ou vice-versa.
+entre os dois sinais $x$ e $y$ em cada escala e instante, enquanto a fase indica o
+deslocamento entre eles, isto é, com que antecedência um dos sinais responde a um
+evento em relação ao outro.
 
 \paragraph{Coerência Wavelet (WCO).}
 A WCO é a versão normalizada do WCS, com valores entre 0 e 1:
@@ -619,7 +625,7 @@ da autocorrelação de um processo estacionário fornece a sua densidade espectr
 a CWT de $R_{xx}(\tau)$ avaliada em $b = 0$ recupera uma medida espectral equivalente na
 base \textit{Wavelet} \cite{schuck2019}.
 
-O espectro de potência alternativo do PD $\widetilde{P}_x(a)$ é definido como:
+O espectro de potência alternativo do sinal $x$, $\widetilde{P}_x(a)$, é definido como:
 
 \begin{equation}\label{eq:wps-alt}
   \widetilde{P}_x(a) = \left|W_{R_{xx}}(a,\, 0)\right| = \left|\frac{1}{\sqrt{a}}
@@ -627,7 +633,7 @@ O espectro de potência alternativo do PD $\widetilde{P}_x(a)$ é definido como:
 \end{equation}
 
 \noindent
-e o espectro cruzado alternativo PD--OS $\widetilde{C}_{xy}(a)$ como:
+e o espectro cruzado alternativo entre $x$ e $y$, $\widetilde{C}_{xy}(a)$, como:
 
 \begin{equation}\label{eq:wcs-alt}
   \widetilde{C}_{xy}(a) = \left|W_{R_{xy}}(a,\, 0)\right| = \left|\frac{1}{\sqrt{a}}
@@ -643,7 +649,7 @@ e a coerência \textit{Wavelet} alternativa $\widetilde{\gamma}_{xy}(a)$ é calc
 \end{equation}
 
 \noindent
-em que o espectro de potência alternativo do OS $\widetilde{P}_y(a) = |W_{R_{yy}}(a, 0)|$ é calculado de forma análoga à
+em que o espectro de potência alternativo do sinal $y$, $\widetilde{P}_y(a) = |W_{R_{yy}}(a, 0)|$, é calculado de forma análoga à
 \autoref{eq:wps-alt}.
 
 Na WCO alternativa, $b$ no numerador representa o atraso (\textit{lag}) $\tau$ da
@@ -704,10 +710,11 @@ processos (500 amostras de defasagem) e que a WCO alternativa identifica a escal
 frequência dominante mesmo em baixa relação sinal-ruído e na presença de eventos não
 correlacionados, resultado que a formulação clássica não consegue sem suavização intensa.
 
-Essa robustez ao ruído é importante para este trabalho: os sinais do arranjo experimental
-estão sujeitos a ruídos eletrônicos e perturbações mecânicas. A hipótese central deste trabalho 
-é que a WCO alternativa de \citeonline{schuck2019}, calculada entre esses dois sinais, gera 
-assinaturas espectrais, isto é, curvas de $\widetilde{\gamma}$ por escala, que se espera 
-sejam distinguíveis entre os diferentes padrões de escoamento e possam ser usadas para 
-caracterizá-los, dispensando a câmera de alta velocidade e baseando-se exclusivamente nos sensores 
-já instalados no arranjo.
+Essa robustez ao ruído é importante para este trabalho: os sinais espaciais reconstruídos
+estão sujeitos a variações de iluminação e a artefatos de costura do panorama. A hipótese
+central deste trabalho é que a WCO alternativa de \citeonline{schuck2019}, calculada entre
+sinais espaciais de brilho reconstruídos do panorama das imagens, gera assinaturas
+espectrais, isto é, campos de $\widetilde{\gamma}$ por escala, que se espera sejam
+reprodutíveis entre ensaios de um mesmo padrão de escoamento (repetibilidade intra-padrão) e
+distinguíveis entre padrões diferentes (separação inter-padrão), podendo assim ser usadas
+para caracterizá-los.

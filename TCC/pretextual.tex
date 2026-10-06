@@ -53,30 +53,28 @@ agradecimento.
 O escoamento bifásico com mudança de fase em microcanais é uma das tecnologias de
 resfriamento mais promissoras para sistemas eletrônicos de alta densidade de potência.
 A identificação do padrão de escoamento --- bolha dispersa, \textit{plug}, \textit{slug},
-\textit{churn} ou anular --- é essencial para o controle e a otimização desses sistemas,
-pois cada regime apresenta comportamento térmico e hidrodinâmico distinto. Os métodos
-automáticos de classificação existentes para o arranjo experimental do Laboratório de
-Estudos Térmicos e Fluidodinâmicos (LETEF) da UNISINOS dependem de câmera de alta
-velocidade, equipamento de custo elevado e disponibilidade limitada em aplicações
-industriais. Este trabalho propõe um método de identificação dos padrões de escoamento
-baseado exclusivamente nos sinais do transdutor de pressão diferencial (PD) e do sensor
-óptico (OS), ambos já instalados no arranjo experimental, sem necessidade de aquisição de
-imagens. O método fundamenta-se na formulação alternativa da coerência \textit{wavelet}
-(WCO) proposta por Schuck e Bodmann (2019), na qual a transformada \textit{wavelet}
-contínua é aplicada às funções de autocorrelação e de correlação cruzada dos sinais em
-vez de ser aplicada diretamente a eles. Essa abordagem elimina a necessidade de
-suavização espectral exigida pela definição clássica, produzindo uma estimativa de
-coerência em função apenas da escala e mais robusta ao ruído. A hipótese central é que
-a curva de coerência \textit{wavelet} alternativa $\widetilde{\gamma}_{xy}(a)$, calculada
-entre os sinais PD e OS, apresenta assinaturas espectrais características e discriminantes
-para cada padrão de escoamento. A metodologia proposta compreende o pré-processamento dos
-sinais, o cálculo da WCO alternativa, a extração de métricas espectrais por faixa de
-frequência e a análise comparativa das assinaturas entre os cinco padrões identificados
-por \mbox{de Oliveira et al. (2021)} nos ensaios com isobutano (R600a) em microtubo
-horizontal de 1\,mm de diâmetro. A implementação e validação do método estão previstas
-para o TCC\,II, com entrega em novembro de 2026.
+\textit{churn}, anular ondulado ou anular liso --- é essencial para o controle e a
+otimização desses sistemas, pois cada regime apresenta comportamento térmico e hidrodinâmico
+distinto. Este trabalho investigou um método de caracterização dos padrões de escoamento
+baseado na formulação alternativa da coerência \textit{wavelet} (WCO) proposta por Schuck e
+Bodmann (2019), na qual a transformada \textit{wavelet} contínua é aplicada às funções de
+autocorrelação e de correlação cruzada dos sinais em vez de ser aplicada diretamente a
+eles. Essa abordagem elimina a necessidade de suavização espectral exigida pela definição
+clássica, produzindo uma estimativa de coerência em função apenas da escala e mais robusta
+ao ruído. Em vez dos sinais dos sensores no domínio do tempo, o método utilizou sinais
+unidimensionais de brilho no domínio \textit{espacial}, reconstruídos a partir de um
+panorama das imagens da câmera de alta velocidade, escolha que fornece uma ou duas ordens de
+grandeza mais amostras por ensaio e, portanto, maior resolução espectral. A hipótese central
+é que a coerência \textit{wavelet} alternativa $\widetilde{\gamma}_{xy}(a)$, calculada entre
+dois ensaios, apresenta assinaturas espectrais reprodutíveis dentro de um mesmo padrão
+(repetibilidade intra-padrão) e distinguíveis entre padrões diferentes (separação
+inter-padrão). A metodologia compreendeu a reconstrução do panorama, o pré-processamento dos
+sinais, o cálculo da WCO alternativa e a análise comparativa dos campos de coerência e do
+perfil de potência média entre os seis padrões identificados por
+\mbox{de Oliveira et al. (2021)} nos ensaios com isobutano (R600a) em microtubo horizontal
+de 1\,mm de diâmetro.
 
- \textbf{Palavras-chave}: escoamento bifásico. microcanais. transformada \textit{wavelet} contínua. coerência \textit{wavelet}. identificação de padrões de escoamento. processamento de sinais.
+ \textbf{Palavras-chave}: escoamento bifásico. microcanais. transformada \textit{wavelet} contínua. coerência \textit{wavelet}. domínio espacial. reconstrução panorâmica. identificação de padrões de escoamento.
 \end{resumo}
 
 % resumo em inglês
@@ -84,33 +82,30 @@ para o TCC\,II, com entrega em novembro de 2026.
  \begin{otherlanguage*}{english}
 Two-phase flow with phase change in microchannels is one of the most promising cooling
 technologies for high power-density electronic systems. Identifying the flow
-pattern --- dispersed bubble, plug, slug, churn, or annular --- is essential for the
-control and optimization of such systems, as each regime exhibits distinct thermal and
-hydrodynamic behavior. Existing automatic classification methods for the experimental
-setup of the Thermal and Fluid Dynamics Laboratory (LETEF) at UNISINOS rely on a
-high-speed camera, a costly instrument with limited availability in industrial
-applications. This work proposes a flow pattern identification method based exclusively
-on signals from the differential pressure transducer (PD) and the optical sensor (OS),
-both already installed in the experimental rig, without requiring image acquisition. The
-method is grounded in the alternative wavelet coherence (WCO) formulation proposed by
-Schuck and Bodmann (2019), in which the continuous wavelet transform is applied to the
+pattern --- dispersed bubble, plug, slug, churn, wavy annular, or smooth annular --- is
+essential for the control and optimization of such systems, as each regime exhibits distinct
+thermal and hydrodynamic behavior. This work investigated a flow pattern characterization
+method grounded in the alternative wavelet coherence (WCO) formulation proposed by Schuck
+and Bodmann (2019), in which the continuous wavelet transform is applied to the
 autocorrelation and cross-correlation functions of the signals rather than to the signals
 directly. This approach eliminates the spectral smoothing required by the classical
 definition, yielding a coherence estimate that depends only on scale and is more robust
-to noise. The central hypothesis is that the alternative wavelet coherence curve
-$\widetilde{\gamma}_{xy}(a)$, computed between the PD and OS signals, produces
-characteristic and discriminant spectral signatures for each flow pattern. The proposed
-methodology comprises signal pre-processing, computation of the alternative WCO,
-extraction of spectral metrics per frequency band, and comparative analysis of the
-signatures across the five flow patterns identified by de Oliveira et al. (2021) in
-experiments with isobutane (R600a) in a horizontal 1\,mm microtube. Implementation and
-validation of the method are planned for the second part of this work, with submission
-scheduled for November 2026.
+to noise. Instead of the sensor signals in the time domain, the method used
+one-dimensional brightness signals in the \textit{spatial} domain, reconstructed from a
+panorama of the high-speed camera images, a choice that provides one to two orders of
+magnitude more samples per run and thus higher spectral resolution. The central hypothesis
+is that the alternative wavelet coherence $\widetilde{\gamma}_{xy}(a)$, computed between two
+runs, produces spectral signatures that are reproducible within a given flow pattern
+(intra-pattern repeatability) and distinguishable between different patterns (inter-pattern
+separation). The methodology comprised panorama reconstruction, signal pre-processing,
+computation of the alternative WCO, and comparative analysis of the coherence fields and the
+mean power profile across the six flow patterns identified by de Oliveira et al. (2021) in
+experiments with isobutane (R600a) in a horizontal 1\,mm microtube.
 
    \vspace{\onelineskip}
 
    \noindent
-   \textbf{Keywords}: two-phase flow. microchannels. continuous wavelet transform. wavelet coherence. flow pattern identification. signal processing.
+   \textbf{Keywords}: two-phase flow. microchannels. continuous wavelet transform. wavelet coherence. spatial domain. panorama reconstruction. flow pattern identification.
  \end{otherlanguage*}
 \end{resumo}
 

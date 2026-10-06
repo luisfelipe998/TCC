@@ -23,25 +23,24 @@ dessa classificação automática. \citeonline{deoliveira2021} realizaram um est
 experimental abrangente com análise por transformada \textit{Wavelet} contínua (CWT),
 caracterizando as frequências características de cada padrão nos sinais dos sensores.
 \citeonline{dias2025knn} e \citeonline{dias2025cnn} desenvolveram classificadores baseados
-em imagens da seção de visualização, atingindo 87\% e 93\% de acurácia (melhor \textit{fold};
-média de 88{,}1\% nas dez dobras), respectivamente.
+em imagens da seção de visualização: o modelo $k$NN atingiu 87\% de acurácia média de teste
+nas dez dobras, enquanto a rede CNN alcançou 93\% no melhor \textit{fold} e média de
+88{,}1\% nas dez dobras.
 Esses trabalhos dependem, porém, da câmera de alta velocidade para aquisição das imagens,
 equipamento de custo elevado que nem sempre está disponível em aplicações industriais.
 
-O arranjo experimental dispõe, no entanto, de dois sinais continuamente disponíveis: o
-sinal do transdutor de pressão diferencial (PD) e o sinal do sensor óptico (OS),
-construído com LED e resistor dependente de luz (LDR) para detectar a variação de
-luminosidade causada pela interface líquido-vapor \cite{deoliveira2021}. Esses sinais
-contêm frequências características associadas a cada padrão de escoamento, identificáveis
-por CWT \cite{deoliveira2021}. O PD e o OS respondem ao mesmo evento físico, a passagem
-de uma estrutura de vapor, a partir de perspectivas de medição diferentes; o acoplamento
-espectral entre eles carrega informação sobre a dinâmica do escoamento que não está
-contida em nenhum dos dois sinais isoladamente. O trabalho de \citeonline{deoliveira2021} 
-já utilizou o espectro de potência \textit{Wavelet} de cada sensor individualmente para caracterizar 
-os padrões; a coerência entre eles captura adicionalmente o grau de sincronismo espectral, revelando 
-como os dois sensores respondem conjuntamente a cada regime. Essa relação espectral, medida pela
-coerência \textit{Wavelet} (WCO), pode ser explorada como descritor para classificação
-automática dos padrões sem uso da câmera.
+O trabalho de \citeonline{deoliveira2021} caracterizou os padrões de escoamento
+aplicando a transformada \textit{Wavelet} contínua aos sinais dos sensores no domínio do
+tempo, extraindo o espectro de potência \textit{Wavelet} de cada sensor individualmente.
+A formulação alternativa de coerência \textit{Wavelet}, no entanto, nunca foi aplicada à
+caracterização desses padrões, e tampouco explorou-se um domínio \textit{espacial} derivado
+das imagens da câmera. As sequências de quadros da câmera de alta velocidade contêm, além
+da informação visual, a estrutura espacial do escoamento ao longo do tubo, que pode ser
+reconstruída em um único sinal unidimensional de brilho pela costura das imagens em um
+panorama. Esse sinal espacial oferece uma ou duas ordens de grandeza mais amostras do que a
+série temporal disponível por ensaio, o que aumenta a resolução espectral e remove o teto de
+Nyquist associado à taxa de quadros da câmera, condição favorável à estimativa das funções
+de correlação sobre as quais a formulação alternativa se apoia.
 
 \citeonline{schuck2019} propuseram uma formulação alternativa para o cálculo da WCO em
 que a transformada é aplicada às funções de autocorrelação e correlação cruzada dos sinais
@@ -49,16 +48,16 @@ em vez de ser aplicada diretamente a eles. Essa abordagem elimina a necessidade 
 suavização espectral exigida pela definição clássica \cite{torrence1998}, tornando a
 coerência não trivialmente unitária e mais robusta à presença de transientes não
 correlacionados \cite{schuck2019}. Essa formulação não foi aplicada ao problema de
-identificação de padrões de escoamento bifásico, o que representa a lacuna que este
-trabalho se propõe a preencher.
+identificação de padrões de escoamento bifásico, tampouco a sinais espaciais derivados do
+panorama das imagens, o que representa a lacuna que este trabalho se propõe a preencher.
 
 \section{Objetivo Geral}
 
 Investigar a aplicabilidade da coerência \textit{Wavelet} como descritor dos padrões de
-escoamento bifásico no arranjo
-experimental do LETEF, calculada entre o sinal
-do transdutor de pressão diferencial e o sinal do sensor óptico, utilizando a formulação
-alternativa de \citeonline{schuck2019}.
+escoamento bifásico no arranjo experimental do LETEF, calculada sobre sinais espaciais de
+brilho reconstruídos a partir do panorama das imagens, utilizando a formulação alternativa
+de \citeonline{schuck2019}, e avaliando a repetibilidade intra-padrão e a separação
+inter-padrão das assinaturas espectrais resultantes.
 
 \section{Objetivos Específicos}
 
@@ -69,17 +68,23 @@ alternativa de \citeonline{schuck2019}.
   espectro de potência (WPS), do espectro cruzado (WCS) e da coerência \textit{Wavelet}
   (WCO), com ênfase na formulação alternativa de \citeonline{schuck2019};
   \item Descrever a metodologia para extração das assinaturas espectrais de coerência
-  \textit{Wavelet} a partir dos sinais PD e OS do arranjo experimental e sua aplicação
-  à classificação dos padrões de escoamento.
+  \textit{Wavelet} a partir dos sinais espaciais de brilho reconstruídos do panorama das
+  imagens do arranjo experimental e sua aplicação à caracterização dos padrões de
+  escoamento.
 \end{itemize}
 
 \section{Organização do Trabalho}
 
-Este trabalho está organizado em quatro capítulos. O \autoref{cap:fundamentacao} apresenta
-a revisão bibliográfica e as bases teóricas que fundamentam a metodologia proposta:
-fenomenologia dos padrões de escoamento bifásico em microcanais e formulação matemática das
-transformadas \textit{Wavelet} contínua, do espectro de potência, do espectro cruzado e da
-coerência \textit{Wavelet} nas formulações clássica e alternativa. O capítulo seguinte
-descreve a metodologia proposta, detalhando o arranjo experimental, o
-\textit{pipeline} de processamento dos sinais e a estratégia de avaliação do método. O último
-capítulo apresenta o cronograma previsto para o desenvolvimento do trabalho.
+Este trabalho está organizado em cinco capítulos, além desta introdução. O
+\autoref{cap:fundamentacao} apresenta a revisão bibliográfica e as bases teóricas que
+fundamentam a metodologia: fenomenologia dos padrões de escoamento bifásico em microcanais e
+formulação matemática das transformadas \textit{Wavelet} contínua, do espectro de potência, do
+espectro cruzado e da coerência \textit{Wavelet} nas formulações clássica e alternativa. O
+\autoref{cap:metodologia} descreve a metodologia, detalhando o arranjo experimental, a
+reconstrução do panorama, o \textit{pipeline} de processamento dos sinais espaciais e a
+estratégia de avaliação do método. O \autoref{cap:resultados} relata os resultados obtidos nas
+campanhas intra-padrão e inter-padrão, com os campos de potência e de coerência e os perfis de
+potência média. O \autoref{cap:discussao} interpreta esses resultados, compara-os com a
+literatura e expõe as limitações do trabalho. Por fim, o \autoref{cap:conclusao} sintetiza as
+contribuições, discute o atendimento aos objetivos e aponta os encaminhamentos para trabalhos
+futuros.

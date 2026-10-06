@@ -1,0 +1,63 @@
+\chapter{Conclusão}\label{cap:conclusao}
+
+Este trabalho investigou a aplicabilidade da coerência \textit{Wavelet} alternativa de Schuck e
+Bodmann como descritor dos padrões de escoamento bifásico no arranjo experimental do LETEF,
+calculada sobre sinais espaciais de brilho reconstruídos do panorama das imagens da câmera de alta
+velocidade, em vez dos sinais dos sensores no domínio do tempo. As seções a seguir sintetizam o que
+foi realizado e obtido, discutem o atendimento aos objetivos e apontam os encaminhamentos para
+trabalhos futuros.
+
+% =========================================================
+\section{Síntese do trabalho}\label{sec:conc-sintese}
+% =========================================================
+
+Implementou-se o cálculo da coerência \textit{Wavelet} alternativa a partir das funções de
+autocorrelação e correlação cruzada de pares de sinais espaciais, com a transformada \textit{Wavelet}
+contínua de Morlet complexa avaliada no atraso nulo, e aplicou-se o método a duas campanhas: a
+intra-padrão, sobre os noventa e um pares de ensaios de um mesmo padrão, e a inter-padrão, sobre os
+duzentos e oitenta e sete pares de ensaios de padrões distintos. As duas campanhas geraram os campos
+de potência, de espectro cruzado e de coerência, além dos perfis de potência média por comprimento
+de onda, para cada par de ensaios e nas duas variantes do sinal espacial.
+
+Os resultados mostraram que a coerência \textit{Wavelet} alternativa, tomada como descritor
+principal, não descreveu os padrões de escoamento com a precisão esperada: os campos de coerência no
+atraso nulo apresentaram-se baixos e irregulares, mesmo entre ensaios de um mesmo padrão. A
+caracterização mais consistente veio do perfil de potência média, que concentrou a energia espectral
+de cada ensaio em uma faixa de comprimento de onda reprodutível dentro de cada padrão, e foi essa
+leitura que melhor evidenciou a repetibilidade intra-padrão. Na comparação inter-padrão, as faixas
+dominantes de \textit{churn} e de anular ondulado apresentaram-se parcialmente sobrepostas, de modo
+que a separação entre esses padrões mostrou-se sutil.
+
+% =========================================================
+\section{Atendimento aos objetivos}\label{sec:conc-objetivos}
+% =========================================================
+
+O objetivo geral, investigar a aplicabilidade da coerência \textit{Wavelet} alternativa como
+descritor dos padrões de escoamento a partir de sinais espaciais de brilho, foi cumprido: o método
+foi implementado, validado com sinais sintéticos e aplicado às duas campanhas sobre os ensaios do
+arranjo do LETEF, e sua adequação foi avaliada quanto à repetibilidade intra-padrão e à separação
+inter-padrão. A resposta obtida foi que a coerência alternativa, nesse arranjo e com esses sinais,
+tem poder discriminante limitado, ao passo que o perfil de potência média se mostrou o descritor
+mais promissor.
+
+Os objetivos específicos também foram atendidos: revisou-se a literatura sobre padrões de escoamento
+em microcanais e sobre a análise espectral de sinais para sua caracterização; apresentou-se a
+fundamentação teórica da transformada \textit{Wavelet} contínua, do espectro de potência, do
+espectro cruzado e da coerência nas formulações clássica e alternativa; e descreveu-se a metodologia
+de reconstrução do panorama, de pré-processamento e de cálculo da coerência a partir dos sinais
+espaciais, aplicada e documentada com os resultados das duas campanhas.
+
+% =========================================================
+\section{Trabalhos futuros}\label{sec:conc-futuros}
+% =========================================================
+
+O encaminhamento mais imediato será a quantificação estatística das leituras qualitativas obtidas.
+Um teste de permutação que tome o ensaio como unidade de replicação poderá avaliar formalmente se a
+distância entre assinaturas espectrais separa os padrões além do esperado ao acaso, respeitando a
+dependência entre pares que compartilham o mesmo ensaio. Antes da comparação, um branqueamento dos
+espectros de potência poderá remover a componente comum de fundo e realçar as diferenças entre
+padrões. Será igualmente necessário controlar a influência das condições operacionais, avaliando se a
+separação observada persiste quando o fluxo mássico e o fluxo de calor são mantidos comparáveis entre
+os padrões. Por fim, a validação do método com sinais sintéticos de fase e razão sinal-ruído
+controladas poderá ser ampliada, de modo a delimitar em que condições a coerência alternativa
+recupera o acoplamento esperado, esclarecendo os limites observados neste trabalho.

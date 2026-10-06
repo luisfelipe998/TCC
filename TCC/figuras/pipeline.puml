@@ -4,31 +4,41 @@ skinparam ActivityBorderColor #555555
 skinparam ActivityBackgroundColor #F0F0F0
 skinparam ActivityStartColor #333333
 skinparam ActivityEndColor #333333
-skinparam Padding 10
 skinparam RoundCorner 8
 skinparam shadowing false
 skinparam defaultFontSize 12
 
 start
 
-:Sinais dos sensores PD e OS
-(arranjo experimental LETEF);
+:Frames da câmera de alta velocidade
+(501 quadros 1016x80 px, arranjo LETEF);
+
+:Reconstrução do panorama e sinal
+espacial de brilho 1D de cada ensaio
+(1 amostra = 1 pixel de percurso);
 
 :Pré-processamento
-(remoção da média e normalização);
+(remoção de tendência linear,
+remoção da média, normalização);
 
-:Cálculo das funções de autocorrelação
-e correlação cruzada;
+:Autocorrelação de cada ensaio (Rxx, Ryy)
+e correlação cruzada entre os dois ensaios (Rxy);
 
-:Cálculo da coerência wavelet alternativa
-(formulação Schuck e Bodmann, 2019);
+:CWT das funções de correlação em b = 0
+(formulação Schuck e Bodmann, 2019)
+-> WPS, WCS e coerência alternativa;
 
 :Análise das assinaturas espectrais
-(sobreposição de curvas por padrão,
-frequência de pico e coerência máxima);
+(campos WCO/WCS e perfil de potência média |WPS|
+por comprimento de onda);
 
-:Identificação do padrão de escoamento
-(bolha, plug, slug, churn, anular);
+if (Modo de comparação) then (intra-padrão)
+  :Repetibilidade
+  (dois ensaios do mesmo padrão);
+else (inter-padrão)
+  :Separação
+  (ensaios de padrões distintos);
+endif
 
 stop
 

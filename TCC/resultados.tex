@@ -1,0 +1,199 @@
+\chapter{Resultados}\label{cap:resultados}
+
+Este capítulo relata os resultados obtidos com a aplicação da coerência \textit{Wavelet}
+alternativa de \citeonline{schuck2019} aos sinais espaciais de brilho reconstruídos do panorama
+das imagens, conforme a metodologia descrita no \autoref{cap:metodologia}. A apresentação segue a
+ordem do \textit{pipeline}: primeiro os sinais espaciais reconstruídos, depois os campos de
+espectro de potência (WPS) e o perfil de potência média por padrão, em seguida os campos de
+coerência (WCO), e por fim as duas leituras comparativas visadas pelo trabalho, a repetibilidade
+intra-padrão e a separação inter-padrão. A avaliação é qualitativa, baseada na inspeção dos campos
+gerados; a quantificação estatística formal não integra este capítulo, conforme registrado na
+\autoref{sec:res-limite-estat}.
+
+% =========================================================
+\section{Campanhas executadas}\label{sec:res-visao}
+% =========================================================
+
+O cálculo da coerência \textit{Wavelet} alternativa foi executado em duas campanhas
+complementares sobre os ensaios elegíveis descritos na \autoref{sec:met-dados}. A campanha
+intra-padrão cobriu os noventa e um pares de ensaios de um mesmo padrão, e a campanha inter-padrão
+cobriu os duzentos e oitenta e sete pares de ensaios de padrões distintos. As duas campanhas
+empregaram o mesmo cálculo, diferindo apenas na regra de emparelhamento dos ensaios.
+
+Para cada par de ensaios, o processamento produziu os campos de espectro de potência
+$\widetilde{P}_x(a)$ e $\widetilde{P}_y(a)$ de cada ensaio, o campo de espectro cruzado
+$\widetilde{C}_{xy}(a)$ e o campo de coerência $\widetilde{\gamma}_{xy}(a)$, além dos perfis de
+potência média $|\text{WPS}|$ por comprimento de onda. Cada par foi processado nas duas variantes
+do sinal espacial descritas na \autoref{sec:met-dados}: a variante \textit{cropped}, obtida pela
+média das linhas 20 a 59 do panorama, e a variante \textit{center}, obtida da linha central 40.
+As figuras deste capítulo referem-se à variante \textit{cropped}, que reúne o núcleo do escoamento.
+
+% =========================================================
+\section{Sinais espaciais reconstruídos}\label{sec:res-sinais}
+% =========================================================
+
+Os sinais espaciais de brilho reconstruídos do panorama apresentaram-se como séries de milhares de
+amostras por ensaio, com uma amostra por pixel de percurso do escoamento no tubo. Após a remoção de
+tendência, da média e a normalização pelo desvio padrão, cada sinal ficou centrado em zero e com
+variância unitária, expresso em unidades de desvio padrão. A \autoref{fig:res-sinais} mostra os
+sinais de dois ensaios de \textit{churn}, sobrepostos no painel inferior. O brilho oscila ao longo
+do eixo de percurso sem tendência residual, refletindo a passagem sucessiva das estruturas do
+escoamento pela seção de visualização.
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=0.92\textwidth]{figuras/v8-churn-churn-signals}
+  \caption{Sinais espaciais de brilho de dois ensaios de \textit{churn}, na variante
+           \textit{cropped} (média das linhas 20 a 59 do panorama), após pré-processamento.
+           Painéis superior e central: cada ensaio isoladamente; painel inferior: os dois sinais
+           sobrepostos, em unidades de desvio padrão, ao longo da posição em pixels.}
+  \label{fig:res-sinais}
+  \fonte{Elaborado pelo autor.}
+\end{figure}
+
+% =========================================================
+\section{Espectro de potência e perfil de potência média}\label{sec:res-wps}
+% =========================================================
+
+Os campos de espectro de potência $\widetilde{P}_x(a)$ e $\widetilde{P}_y(a)$, obtidos da CWT das
+funções de autocorrelação de cada ensaio, concentraram sua energia em uma faixa de comprimento de
+onda bem delimitada. Nos ensaios de \textit{churn} e de anular ondulado, essa concentração situou-se
+na região de centenas de pixels de comprimento de onda, com o perfil de potência média
+$|\text{WPS}|$ exibindo um máximo pronunciado nessa faixa e caindo para os comprimentos de onda mais
+curtos e mais longos. Os painéis superiores da \autoref{fig:res-wps} mostram esse comportamento para
+dois ensaios de \textit{churn}: os campos WPS apresentam um lóbulo central de magnitude elevada em
+torno do atraso nulo, e os perfis de potência média ao lado exibem o pico correspondente na mesma
+faixa de comprimento de onda.
+
+Essa faixa dominante mostrou-se a característica mais estável dos campos obtidos. O perfil de
+potência média resumiu em uma única curva o comprimento de onda em que a energia espectral de cada
+ensaio se concentra, e foi essa curva que apresentou o comportamento mais regular e mais fácil de
+comparar entre ensaios, tanto na inspeção intra-padrão quanto na inter-padrão descritas adiante.
+
+Para cada ensaio elegível, extraiu-se o comprimento de onda dominante $\lambda^*$, definido na
+\autoref{sec:met-analise} como a posição do máximo do perfil de potência média $|\text{WPS}|$
+na variante \textit{cropped}. O \autoref{quad:res-lambda} reúne a faixa de $\lambda^*$ observada em
+cada padrão. Os ensaios de anular ondulado concentraram o máximo de potência na faixa mais estreita,
+entre cerca de 350 e 570 pixels (mediana em torno de 490 pixels), ao passo que os de \textit{churn}
+mantiveram o máximo majoritariamente entre cerca de 430 e 790 pixels (mediana em torno de 630
+pixels), com um ensaio isolado deslocado para comprimentos de onda mais longos. Os padrões com
+poucos ensaios apresentaram dispersão maior: \textit{plug} espalhou-se entre cerca de 220 e 710
+pixels, enquanto \textit{slug} e \textit{slug}--\textit{churn} espalharam-se por uma faixa ampla,
+chegando ao limite superior da grade de comprimentos de onda em um dos ensaios, o que reflete tanto
+o número reduzido de amostras quanto a proximidade do cone de influência nesses casos.
+
+\begin{quadro}[htb]
+  \centering
+  \caption{Comprimento de onda dominante $\lambda^*$ (máximo do perfil de potência média
+           $|\text{WPS}|$) por padrão, na variante \textit{cropped}, para os ensaios elegíveis
+           de cada padrão.}
+  \label{quad:res-lambda}
+  \begin{tabular}{l c c c}
+    \hline
+    \textbf{Padrão} & \textbf{Ensaios} & \textbf{Faixa de $\lambda^*$ (px)} & \textbf{Mediana (px)} \\
+    \hline
+    \textit{Churn}                      & 10 & 434--1264 & 629 \\
+    Anular ondulado                     &  9 & 353--567  & 491 \\
+    \textit{Plug}                       &  4 & 220--711  & 550 \\
+    \textit{Slug}                       &  3 & 682--1213 & 711 \\
+    \textit{Slug}--\textit{churn}       &  2 & 910--3000 & --- \\
+    \hline
+  \end{tabular}
+  \fonte{Elaborado pelo autor.}
+\end{quadro}
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=\textwidth]{figuras/v8-churn-churn-wavelet}
+  \caption{Campos espectrais de um par de ensaios de \textit{churn} (variante \textit{cropped}).
+           Linha superior: espectro de potência $\widetilde{P}_x$ e $\widetilde{P}_y$ de cada
+           ensaio, com o respectivo perfil de potência média $|\text{WPS}|$ ao lado. Linha central:
+           espectro cruzado $\widetilde{C}_{xy}$. Linha inferior: coerência
+           $\widetilde{\gamma}_{xy}$. Eixo vertical em comprimento de onda (pixels); eixo horizontal
+           em atraso (pixels); a região sob o cone de influência aparece sombreada.}
+  \label{fig:res-wps}
+  \fonte{Elaborado pelo autor.}
+\end{figure}
+
+% =========================================================
+\section{Campo de coerência \textit{Wavelet} alternativa}\label{sec:res-wco}
+% =========================================================
+
+O campo de coerência $\widetilde{\gamma}_{xy}(a)$, descritor principal deste trabalho, foi obtido
+para todos os pares das duas campanhas. Na inspeção dos campos, a coerência avaliada no atraso nulo
+apresentou-se em geral baixa e irregular ao longo dos comprimentos de onda, mesmo entre ensaios de
+um mesmo padrão. Os valores de coerência mais altos concentraram-se junto às bordas do campo e nos
+comprimentos de onda mais longos, região próxima ao cone de influência, onde a estimativa é menos
+confiável. A linha inferior da \autoref{fig:res-wps} ilustra esse comportamento para o par de
+ensaios de \textit{churn}: o campo de coerência permanece escuro na maior parte da faixa de
+comprimentos de onda em torno do atraso nulo, sem uma banda de coerência elevada que acompanhe a
+faixa dominante identificada nos perfis de potência média.
+
+Esse resultado indica que a coerência \textit{Wavelet} alternativa, tomada no atraso nulo entre
+pares de ensaios, não descreveu os padrões de escoamento com a precisão esperada para o arranjo e os
+sinais utilizados. A caracterização mais consistente veio do perfil de potência média
+$|\text{WPS}|$, cujo comportamento é retomado nas comparações a seguir.
+
+% =========================================================
+\section{Repetibilidade intra-padrão}\label{sec:res-intra}
+% =========================================================
+
+Na campanha intra-padrão, os campos de vários pares de ensaios de um mesmo padrão foram comparados
+entre si. Os perfis de potência média $|\text{WPS}|$ dos ensaios de anular ondulado apresentaram o
+comprimento de onda dominante na faixa mais concentrada entre os padrões, conforme o
+\autoref{quad:res-lambda}, indicando que a posição do máximo de potência é a característica mais
+reprodutível desse padrão. Os ensaios de \textit{churn} mantiveram o máximo na mesma ordem de
+grandeza de um ensaio para outro, porém com dispersão maior, incluindo um ensaio com o máximo
+deslocado para comprimentos de onda mais longos. Em ambos os padrões, a posição do máximo de potência
+repetiu-se de forma mais evidente do que qualquer característica do campo de coerência. Os padrões
+com menos ensaios (\textit{plug}, \textit{slug} e \textit{slug}--\textit{churn}) foram examinados de
+forma ilustrativa, por disporem de poucos pares, e exibiram dispersão ainda maior do comprimento de
+onda dominante.
+
+O campo de coerência $\widetilde{\gamma}_{xy}(a)$, por sua vez, não reproduziu essa regularidade:
+entre pares de ensaios de um mesmo padrão a coerência no atraso nulo permaneceu baixa e sem uma banda
+estável, de modo que a repetibilidade intra-padrão ficou muito mais evidente no perfil de potência
+média do que no campo de coerência.
+
+% =========================================================
+\section{Separação inter-padrão}\label{sec:res-inter}
+% =========================================================
+
+Na campanha inter-padrão, os campos de pares de ensaios de padrões distintos foram comparados para
+verificar se as assinaturas espectrais se distinguem de um padrão para outro. A
+\autoref{fig:res-inter} mostra um par formado por um ensaio de \textit{churn} e um de anular
+ondulado. Os perfis de potência média dos dois ensaios apresentaram faixas dominantes parcialmente
+sobrepostas, na mesma ordem de comprimento de onda, de modo que a separação entre os dois padrões
+por esse descritor mostrou-se sutil. Essa sobreposição é coerente com as faixas de comprimento de
+onda dominante do \autoref{quad:res-lambda}: a faixa do anular ondulado está contida na faixa mais
+ampla do \textit{churn}, de modo que o comprimento de onda dominante, isoladamente, não separa os
+dois padrões, apenas desloca a mediana de um em relação ao outro. O campo de coerência no atraso
+nulo, novamente baixo e irregular, não forneceu uma distinção nítida entre os padrões.
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=\textwidth]{figuras/v8_1-churn-annular-wavelet}
+  \caption{Campos espectrais de um par inter-padrão, um ensaio de \textit{churn} e um de anular
+           ondulado (variante \textit{cropped}). Mesma disposição de painéis da
+           \autoref{fig:res-wps}. Os perfis de potência média apresentam faixas dominantes
+           parcialmente sobrepostas entre os dois padrões.}
+  \label{fig:res-inter}
+  \fonte{Elaborado pelo autor.}
+\end{figure}
+
+% Placeholders para figuras adicionais que o autor venha a selecionar:
+% \begin{figure}[htb]\centering\includegraphics[width=\textwidth]{figuras/ARQUIVO}
+%   \caption{...}\label{fig:res-...}\fonte{Elaborado pelo autor.}\end{figure}
+
+% =========================================================
+\section{Alcance da avaliação}\label{sec:res-limite-estat}
+% =========================================================
+
+A avaliação apresentada neste capítulo teve caráter exploratório e qualitativo, baseada na inspeção
+visual dos campos de potência, de espectro cruzado e de coerência e dos perfis de potência média,
+sem a definição de um limiar de separabilidade nem a aplicação de um teste estatístico formal. O
+número reduzido de ensaios por padrão, com destaque para os padrões de \textit{plug}, \textit{slug}
+e \textit{slug}--\textit{churn}, limitou o alcance de qualquer quantificação de significância a
+partir dos pares disponíveis. A formalização estatística da repetibilidade intra-padrão e da
+separação inter-padrão não foi executada neste trabalho e é retomada como encaminhamento no
+\autoref{cap:conclusao}.
