@@ -37,7 +37,12 @@
 \usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
 \usepackage{color}				% Controle das cores
 \usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{amsmath}			% Ambientes e comandos matemáticos (\text, align, etc.)
 \usepackage{microtype} 			% para melhorias de justificação
+\usepackage{seqsplit}			% permite quebra de sequências longas (identificadores)
+% Permite quebra de linha dentro de identificadores em fonte monoespaçada
+% (ex.: cmor2.0-0.9549), evitando que ultrapassem a margem direita.
+\newcommand{\codigo}[1]{\texttt{\seqsplit{#1}}}
 % ---
 		
 % ---
@@ -55,6 +60,18 @@
 % ---
 %\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
 \usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+
+% ---
+% Ajuste da colocação de floats: mantém figuras mais próximas de onde são
+% referenciadas, aceitando maior área de float por página e mais floats por página.
+% ---
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.7}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.75}
 
 % --- late
 % CONFIGURAÇÕES DE PACOTES

@@ -54,7 +54,7 @@ Esses dados constituem a base experimental utilizada neste trabalho.
 
 \citeonline{dias2025knn} e \citeonline{dias2025cnn} desenvolveram classificadores
 automáticos para os padrões do mesmo arranjo a partir de imagens de câmera de alta
-velocidade; os detalhes e resultados estão discutidos na \autoref{sec:rev-ml}.
+velocidade. Os detalhes e resultados estão discutidos na \autoref{sec:rev-ml}.
 
 Outros estudos mostram que a mesma sequência de padrões se repete em diferentes fluidos
 e geometrias, com deslocamento dos limiares de transição. \citeonline{schmid2022} mapearam
@@ -75,7 +75,7 @@ comportamento espectral varia ao longo do tempo conforme o padrão de escoamento
 
 \citeonline{torrence1998} apresentaram um guia prático de análise \textit{Wavelet} contínua
 para séries temporais, com ênfase no espectro de potência \textit{Wavelet} (WPS) e em
-métodos para avaliar a significância estatística dos resultados; o artigo também introduz
+métodos para avaliar a significância estatística dos resultados. O artigo também introduz
 o espectro cruzado (WCS) e discute as limitações do estimador clássico de coerência
 \textit{Wavelet} (WCO). Esse trabalho tornou-se referência em diversas áreas da engenharia
 que lidam com sinais não estacionários.
@@ -116,7 +116,7 @@ utilizados (tubo de 50\,mm, óleo branco e água).
 \citeonline{schuck2019} propuseram uma formulação alternativa para o cálculo do WPS, do
 WCS e da WCO: em vez de aplicar a transformada diretamente aos sinais, aplica-se às
 funções de autocorrelação e correlação cruzada. Essa mudança elimina a necessidade de
-suavização espectral exigida pela definição clássica \cite{torrence1998}; em contrapartida,
+suavização espectral exigida pela definição clássica \cite{torrence1998}. Em contrapartida,
 o denominador da coerência é fixo (calculado em $b = 0$, onde o WPS é máximo), enquanto o
 numerador ainda varia com $b$, que agora representa o atraso (\textit{lag}) entre os
 sinais, não a posição temporal absoluta. O resultado é uma estimativa espectral estável,
@@ -209,7 +209,7 @@ significativamente o mapa de padrões \cite{cheng2023}.
 
 A transição entre padrões depende do balanço entre forças de inércia, tensão superficial
 e cisalhamento. Em microcanais horizontais, a ausência de estratificação gravitacional
-elimina os padrões estratificados presentes em tubulações maiores; os padrões
+elimina os padrões estratificados presentes em tubulações maiores. Os padrões
 predominantes são os intermitentes (\textit{plug}, \textit{slug}, \textit{churn}) e o
 anular \cite{deoliveira2021,cheng2023}. As assinaturas espectrais de cada padrão nos
 sinais do PD e do OS são descritas em detalhe na \autoref{sec:padroes}.
@@ -242,7 +242,7 @@ diâmetro interno de 1,0\,mm, aquecidos por efeito Joule com aplicação direta 
 elétrica controlada por fonte de corrente contínua (SORENSEN\texttrademark{} DCS~8-125E).
 O PH tem comprimento total de 515\,mm (440\,mm
 aquecidos) e estabelece a condição termodinâmica na entrada da TS. A TS tem comprimento
-total de 366\,mm (265\,mm aquecidos); ao longo desse percurso, o título de vapor $x$ evolui
+total de 366\,mm (265\,mm aquecidos). Ao longo desse percurso, o título de vapor $x$ evolui
 desde a entrada subcoolida até condições de escoamento totalmente bifásico, permitindo
 observar diferentes padrões em uma única seção aquecida. A jusante da TS há uma seção de
 visualização (VS) de tubo de vidro com 136\,mm e mesmo diâmetro interno, onde os padrões
@@ -252,7 +252,7 @@ são registrados visualmente e o sensor óptico é posicionado \cite{deoliveira2
 Para a análise temporal dos padrões de escoamento, foi construído um sensor óptico (OS)
 que detecta a refração e a variação de luminosidade da luz na interface
 líquido-vapor \cite{deoliveira2019}.
-Um LED de alta luminosidade ilumina o tubo transversalmente; um resistor dependente de luz
+Um LED de alta luminosidade ilumina o tubo transversalmente. Um resistor dependente de luz
 (LDR) no lado oposto detecta a variação de transmitância óptica causada pela passagem das
 fases. A variação de resistência do LDR é convertida em tensão por um circuito com filtro
 passa-baixas de quarta ordem e amplificador operacional OPA\,4227, e o sinal é adquirido
@@ -329,7 +329,7 @@ para associar cada ensaio ao seu padrão correspondente.
 alto fluxo mássico ($\beta < 0{,}5$), com queda de pressão média de 9{,}44\,kPa
 \cite{deoliveira2021}. Pequenas bolhas esféricas ficam dispersas na fase líquida, com
 diâmetro menor que o tubo. O sinal de pressão diferencial apresenta múltiplos picos entre 6 e
-100\,Hz; o sensor óptico exibe energia entre 4 e 35\,Hz \cite{deoliveira2021}. Ambos os
+100\,Hz. O sensor óptico exibe energia entre 4 e 35\,Hz \cite{deoliveira2021}. Ambos os
 sinais apresentam comportamento intermitente ao longo do tempo quando analisados por
 \textit{Wavelet}.
 
@@ -338,14 +338,14 @@ fluxos de calor \cite{deoliveira2021}. As bolhas crescem e assumem forma cilínd
 diâmetro próximo ao do tubo e comprimento maior que o diâmetro, motivo pelo qual esse padrão
 também é chamado de \textit{elongated bubble flow} \cite{deoliveira2021}.
 Entre os \textit{plugs}, o líquido continua sem bolhas dispersas.
-O sinal de pressão diferencial oscila entre 0{,}5 e 1\,Hz; o sensor óptico varia entre 2 e 16\,Hz.
+O sinal de pressão diferencial oscila entre 0{,}5 e 1\,Hz. O sensor óptico varia entre 2 e 16\,Hz.
 
 \textbf{\textit{Slug}}: formado pelo coalescimento de \textit{plugs} com o aumento do título de
 vapor, ocupando a faixa $10 \leq \beta < 25$ \cite{deoliveira2021}. Alterna seções de
 líquido e bolsões de vapor que preenchem toda a seção do tubo
 \cite{dias2025knn,deoliveira2021}. A interface é instável e libera
 pequenas bolhas dispersas no líquido entre os bolsões. O sinal de pressão diferencial concentra
-energia abaixo de 1\,Hz; o sensor óptico apresenta pico em torno de 2{,}8\,Hz com
+energia abaixo de 1\,Hz. O sensor óptico apresenta pico em torno de 2{,}8\,Hz com
 componentes adicionais acima de 8\,Hz, geradas pelas bolhas dispersas intercaladas.
 A natureza caótica foi confirmada com expoentes de Lyapunov entre 0{,}261
 e 0{,}463 no PD e entre 0{,}413 e 4{,}362 no OS \cite{deoliveira2021}.
@@ -401,7 +401,7 @@ A transformada \textit{Wavelet} decompõe um sinal em componentes localizados ao
 tempo no tempo e na frequência. A diferença em relação à transformada de Fourier é
 fundamental: enquanto Fourier informa quais frequências existem no sinal, a
 \textit{Wavelet} informa quando essas frequências ocorrem. Isso é feito com funções-base
-chamadas \textit{Wavelets}-mãe, oscilatórias e de duração limitada; ao escalar e deslocar
+chamadas \textit{Wavelets}-mãe, oscilatórias e de duração limitada. Ao escalar e deslocar
 essa função pelo sinal, obtém-se uma representação que adapta automaticamente a resolução:
 alta resolução temporal em altas frequências, boa resolução em frequência nas escalas
 baixas \cite{torrence1998}. Essa adaptatividade é justamente o que se precisa para analisar
@@ -441,7 +441,7 @@ por \cite{torrence1998}:
 em que $a > 0$ é o parâmetro de escala, $b$ é a posição no tempo e $(\cdot)^*$ é o
 complexo conjugado. O fator $1/\sqrt{a}$ normaliza a amplitude da \textit{Wavelet}-mãe
 em todas as escalas, garantindo que os coeficientes sejam comparáveis entre si
-independentemente da escala analisada. Escalas grandes correspondem a baixas frequências;
+independentemente da escala analisada. Escalas grandes correspondem a baixas frequências.
 escalas pequenas correspondem a altas frequências. Para a \textit{Wavelet} de Morlet com
 $\omega_0 = 6$, o período de Fourier equivalente é $\lambda \approx 1{,}03\,a$ (relação
 específica para este valor de $\omega_0$ \cite{torrence1998,grinsted2004}), de modo que a
@@ -453,7 +453,7 @@ onde e quando o sinal tem energia significativa em cada frequência. A diferenç
 ao espectrograma de Fourier com janela deslizante está na resolução: naquele, a janela
 tem comprimento fixo $T$, de modo que eventos rápidos e lentos são analisados com a mesma
 resolução temporal \cite{torrence1998}. Na CWT, a janela se adapta automaticamente: para
-escalas pequenas (altas frequências), ela é estreita e captura bem eventos curtos; para
+escalas pequenas (altas frequências), ela é estreita e captura bem eventos curtos. Para
 escalas grandes (baixas frequências), ela se alarga e captura melhor a periodicidade de
 eventos lentos \cite{torrence1998}. Nos sinais de escoamento bifásico, onde o \textit{slug}
 gera pulsos rápidos e o anular gera variações lentas e persistentes, essa adaptatividade
@@ -475,15 +475,6 @@ admissibilidade da \textit{Wavelet} \cite{torrence1998} e é adotado neste traba
 ser complexa, a \textit{Wavelet} de Morlet preserva a fase do sinal, o que é
 indispensável para calcular a coerência entre dois sinais \cite{torrence1998}.
 
-Nas bordas da série temporal, os coeficientes da CWT não são confiáveis: o
-preenchimento com zeros necessário para o cálculo introduz descontinuidades nas
-extremidades e, à medida que se avança para escalas maiores, reduz artificialmente a
-amplitude dos coeficientes próximos às bordas \cite{torrence1998}. A região afetada é
-delimitada pelo cone de influência, definido por \citeonline{torrence1998} como a área
-do plano $(a, b)$ onde os efeitos de borda se tornam significativos, especificamente
-onde a potência \textit{Wavelet} associada a uma descontinuidade na borda decai a
-$e^{-2}$ do valor original.
-
 \subsubsection{Transformada Wavelet Discreta (DWT)}\label{sec:dwt}
 
 A DWT é uma versão discreta e computacionalmente eficiente da análise por
@@ -493,7 +484,7 @@ permite uma implementação por banco de filtros com custo computacional
 $\mathcal{O}(N)$ para um sinal de $N$ amostras. O resultado é uma decomposição
 em múltiplas resoluções: cada nível da decomposição captura uma faixa de frequência
 diferente, do mais fino ao mais grosseiro. A DWT é apresentada aqui por completude
-e por sua presença em trabalhos correlatos \cite{morshed2020,dias2025knn}; a
+e por sua presença em trabalhos correlatos \cite{morshed2020,dias2025knn}. A
 metodologia deste trabalho empregou exclusivamente a CWT, conforme formulação
 de \citeonline{schuck2019}.
 
@@ -518,7 +509,7 @@ evento físico, a passagem de uma estrutura de vapor, a partir de perspectivas d
 o PD captura flutuações de pressão integradas ao longo da seção de teste, enquanto o OS
 registra a variação local de transmitância óptica na interface líquido-vapor. As
 \autoref{fig:scalogram-slug} e \autoref{fig:scalogram-churn} mostram os escalogramas do
-WPS do PD para os padrões \textit{slug} e \textit{churn}; as
+WPS do PD para os padrões \textit{slug} e \textit{churn}. As
 \autoref{fig:scalogram-slug-os} e \autoref{fig:scalogram-churn-os} mostram os correspondentes
 para o OS. Fica evidente que, para os mesmos padrões, os WPS do OS concentram energia em
 faixas de frequência sistematicamente mais altas que o PD, confirmando a complementaridade
@@ -591,7 +582,7 @@ A WCO é a versão normalizada do WCS, com valores entre 0 e 1:
 
 \noindent
 em que $S[\cdot]$ é um operador de suavização em tempo e em escala \cite{grinsted2004}. Um valor $\gamma = 1$
-indica que os dois sinais são completamente coerentes naquela frequência e instante;
+indica que os dois sinais são completamente coerentes naquela frequência e instante.
 $\gamma = 0$ indica ausência de relação linear \cite{torrence1998}.
 
 \paragraph{Limitação da definição clássica e formulação alternativa de Transformadas \textit{Wavelet} de Schuck e Bodmann.}
@@ -653,10 +644,10 @@ em que o espectro de potência alternativo do sinal $y$, $\widetilde{P}_y(a) = |
 \autoref{eq:wps-alt}.
 
 Na WCO alternativa, $b$ no numerador representa o atraso (\textit{lag}) $\tau$ da
-correlação cruzada $R_{xy}(\tau)$, não a posição temporal absoluta do sinal; o
+correlação cruzada $R_{xy}(\tau)$, não a posição temporal absoluta do sinal. O
 denominador é fixo em $b = 0$, que corresponde ao pico da autocorrelação. O resultado
 é um espectro de coerência em função de escala e atraso, estável por construção. A
-vantagem é que não há compromisso entre resolução e estabilidade estatística; a
+vantagem é que não há compromisso entre resolução e estabilidade estatística. A
 limitação é que a informação de quando o acoplamento ocorre é perdida.
 Essa escolha reflete um balanço intencional: a CWT foi introduzida para capturar 
 a variação temporal do conteúdo espectral dos sinais, mas a WCO alternativa abre 
@@ -696,7 +687,7 @@ O \autoref{qua:wco-comparativo} sintetiza as diferenças entre as duas formulaç
       Espectro de acoplamento por atraso (\textit{lag}) \\
     Limitação principal &
       Compromisso entre resolução tempo-escala e estabilidade estatística &
-      Perde a localização temporal; válida apenas para processos estacionários \\
+      Perde a localização temporal, válida apenas para processos estacionários \\
     \hline
   \end{tabular}
   \fonte{Elaborado pelo autor com base em \citeonline{torrence1998}, \citeonline{grinsted2004}

@@ -1,0 +1,108 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Brunton, Noack e Koumoutsakos 2020]{brunton2020}
+\abntrefinfo{Brunton, Noack e Koumoutsakos}{BRUNTON; NOACK; KOUMOUTSAKOS}{2020}
+{BRUNTON, S.~L.; NOACK, B.~R.; KOUMOUTSAKOS, P. Machine learning for fluid
+  mechanics.
+\emph{Annual Review of Fluid Mechanics}, v.~52, n.~1, p. 477--508, 2020.}
+
+\bibitem[Cheng e Xia 2023]{cheng2023}
+\abntrefinfo{Cheng e Xia}{CHENG; XIA}{2023}
+{CHENG, L.; XIA, G. Flow patterns and flow pattern maps for adiabatic and
+  diabatic gas liquid two-phase flow in microchannels: fundamentals, mechanisms
+  and applications.
+\emph{Experimental Thermal and Fluid Science}, v.~148, p. 110988, 2023.}
+
+\bibitem[Dias et al. 2025]{dias2025knn}
+\abntrefinfo{Dias et al.}{DIAS et al.}{2025a}
+{DIAS, L.~S. et al. Classification of two-phase flow pattern in microtubes by
+  image processing and machine learning.
+\emph{International Journal of Multiphase Flow}, v.~185, p. 105122, 2025.}
+
+\bibitem[Dias et al. 2025]{dias2025cnn}
+\abntrefinfo{Dias et al.}{DIAS et al.}{2025b}
+{DIAS, L.~S. et al. Convolutional neural network for flow boiling patterns
+  classification.
+\emph{AI Thermal Fluids}, v.~4, p. 100015, 2025.}
+
+\bibitem[Grinsted, Moore e Jevrejeva 2004]{grinsted2004}
+\abntrefinfo{Grinsted, Moore e Jevrejeva}{GRINSTED; MOORE; JEVREJEVA}{2004}
+{GRINSTED, A.; MOORE, J.~C.; JEVREJEVA, S. Application of the cross wavelet
+  transform and wavelet coherence to geophysical time series.
+\emph{Nonlinear Processes in Geophysics}, v.~11, n.~5/6, p. 561--566, 2004.}
+
+\bibitem[Mallat 2009]{mallat2009}
+\abntrefinfo{Mallat}{MALLAT}{2009}
+{MALLAT, S. \emph{A Wavelet Tour of Signal Processing: The Sparse Way}. 3. ed.
+  Burlington, MA: Academic Press, 2009.
+ISBN 978-0-12-374370-1.}
+
+\bibitem[Morshed et al. 2020]{morshed2020}
+\abntrefinfo{Morshed et al.}{MORSHED et al.}{2020}
+{MORSHED, M. et al. Flow regime, slug frequency and wavelet analysis of
+  {Air/Newtonian} and {Air/non-Newtonian} two-phase flow.
+\emph{Applied Sciences}, v.~10, n.~9, p.~3272, 2020.}
+
+\bibitem[Nguyen, Euh e Song 2010]{nguyen2010}
+\abntrefinfo{Nguyen, Euh e Song}{NGUYEN; EUH; SONG}{2010}
+{NGUYEN, V.~T.; EUH, D.~J.; SONG, C.-H. An application of the wavelet analysis
+  technique for the objective discrimination of two-phase flow patterns.
+\emph{International Journal of Multiphase Flow}, v.~36, n.~9, p. 755--768,
+  2010.}
+
+\bibitem[Oliveira et al. 2019]{deoliveira2019}
+\abntrefinfo{Oliveira et al.}{OLIVEIRA et al.}{2019}
+{OLIVEIRA, J.~D. de et al. Nonlinear analysis of characteristic frequencies and
+  chaotic behavior of flow patterns during flow boiling of hydrocarbons in a
+  small channel.
+\emph{International Journal of Multiphase Flow}, v.~114, p. 240--257, 2019.}
+
+\bibitem[Oliveira et al. 2021]{deoliveira2021}
+\abntrefinfo{Oliveira et al.}{OLIVEIRA et al.}{2021}
+{OLIVEIRA, J.~D. de et al. On the nature of flow patterns and pressure drop
+  fluctuations during flow boiling.
+\emph{International Journal of Multiphase Flow}, v.~144, p. 103793, 2021.}
+
+\bibitem[Schmid et al. 2022]{schmid2022}
+\abntrefinfo{Schmid et al.}{SCHMID et al.}{2022}
+{SCHMID, D. et al. Flow pattern observations and flow pattern map for adiabatic
+  two-phase flow of carbon dioxide in vertical upward and downward direction.
+\emph{Experimental Thermal and Fluid Science}, v.~131, p. 110526, 2022.}
+
+\bibitem[Schuck e Bodmann 2019]{schuck2019}
+\abntrefinfo{Schuck e Bodmann}{SCHUCK; BODMANN}{2019}
+{SCHUCK, A.; BODMANN, B. E.~J. On the development of an alternative proposition
+  of cross wavelet analysis for transient discrimination problems. In:
+  \emph{Integral Methods in Science and Engineering}. [S.l.]: Springer
+  International Publishing, 2019. p. 409--423.}
+
+\bibitem[Sun, Chen e Gong 2012]{sun2012}
+\abntrefinfo{Sun, Chen e Gong}{SUN; CHEN; GONG}{2012}
+{SUN, Z.; CHEN, Y.; GONG, H. Classification of gas--liquid flow patterns by the
+  norm entropy of wavelet decomposed pressure fluctuations across a bluff body.
+\emph{Measurement Science and Technology}, v.~23, n.~12, p. 125301, 2012.}
+
+\bibitem[Tan et al. 2015]{tan2015}
+\abntrefinfo{Tan et al.}{TAN et al.}{2015}
+{TAN, C. et al. Characterization of oil--water two-phase pipe flow with a
+  combined conductivity/capacitance sensor and wavelet analysis.
+\emph{Chemical Engineering Science}, v.~134, p. 153--168, 2015.}
+
+\bibitem[Torrence e Compo 1998]{torrence1998}
+\abntrefinfo{Torrence e Compo}{TORRENCE; COMPO}{1998}
+{TORRENCE, C.; COMPO, G.~P. A practical guide to wavelet analysis.
+\emph{Bulletin of the American Meteorological Society}, v.~79, n.~1, p. 61--78,
+  1998.}
+
+\bibitem[Yang et al. 2023]{yang2023}
+\abntrefinfo{Yang et al.}{YANG et al.}{2023}
+{YANG, B. et al. Computer vision and machine learning methods for heat transfer
+  and fluid flow in complex structural microchannels: A review.
+\emph{Energies}, v.~16, n.~3, p.~1500, 2023.}
+
+\end{thebibliography}

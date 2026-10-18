@@ -3,10 +3,16 @@
 
 __pycache__/
 
-src/data/
+src
 old
 oldest
-/revisao-citacoes-v2.md
 /todo.md
 
-/src2
+src2/data_processed
+src2/v1
+src2/v2
+src2/v2_old
+src2/v3
+src2/v4
+
+src2
