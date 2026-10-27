@@ -1,7 +1,24 @@
 # Paper Log — TCC: Classificação de Padrões de Ebulição por Wavelet e ML
 
-**Última atualização:** 2026-05-28
+**Última atualização:** 2026-10-18
 **Legenda:** CRITICAL = citação obrigatória no texto | HIGH = recomendado | MEDIUM = complementar | DISCARD = descartado
+
+---
+
+## Validação das análises v11 (fração de vazio) e v12 (velocidades superficiais) — 2026-10-18
+
+Busca bibliográfica (rede de citações dos assets + busca livre) para validar as análises v11/v12.
+**Veredito geral:** v12 fortemente suportada; v11 suportada nas conclusões relativas (ordenação plug<slug<churn; sobreposição churn≈anular; legitimidade do limiar Otsu), mas **os valores absolutos de α divergem** da literatura (correlações reportam α maior pois embutem deslizamento) — reportar α de v11 como métrica **relativa/óptica**, não como fração de área absoluta.
+
+**Já cobertos pelos assets existentes (não baixar):** `deoliveira2021` (αh homogêneo, correlação Xu–Fang, S, Bo eq.18, velocidades de fase — sustenta F1, G2, G4), `dias2025knn` ("void fraction increases from slug to churn"; eqs. jl=G(1−x)/ρl, jv=Gx/ρv; sobreposição churn≈anular — sustenta F1, F2, F3, G2, G3), `cheng2023` (mapas Jg×Jl, def. velocidade superficial e Bo — sustenta G1). Mandhane 1974 NÃO encontrado em OA e NÃO necessário (G1 já coberto por cheng2023 + Revellin–Thome).
+
+### PDFs NOVOS baixados nesta sessão (3 arquivos) — não estavam em assets/
+
+| Arquivo | Bib key | Relevância | Descrição |
+|---------|---------|-----------|-----------|
+| `otsu1979-threshold-selection.pdf` | `otsu1979` | **CRITICAL (v11)** | Otsu (1979) IEEE Trans. SMC 9(1):62–66 — "A Threshold Selection Method from Gray-Level Histograms". Método canônico de limiarização automática (discriminante) usado em v11 para classificar gás (escuro) × líquido (claro). DOI: 10.1109/TSMC.1979.4310076 |
+| `schepperle2024-cv-void-fraction-microchannel.pdf` | `schepperle2024` | **HIGH (v11)** | Schepperle, Junaid & Woias (2024) Sensors 24(11):3363 — determinação de regimes de escoamento e **fração de vazio por visão computacional (limiarização adaptativa→segmentação binária)** em ebulição convectiva em microcanal. Validação direta e no mesmo domínio para F3/F4; define α = fração da **área** da seção ocupada por vapor. Gold OA. DOI: 10.3390/s24113363 |
+| `driftflux2023-void-horizontal-intermittent.pdf` | `driftflux2023` | **MEDIUM (v12)** | "Improved Drift Flux Void Fraction Model for Horizontal Gas-liquid Intermittent Flow" (2023) J. Applied Fluid Mechanics 16(7):1499–1510 — revisa homogêneo×drift-flux (C₀, v_gj), define Vsg/Vsl, afirma que o modelo homogêneo "neglects the slippage… doesn't give reliable results" (sustenta G3/G4 e o enquadramento intermitente plug/slug de F5); carrega a origem Zuber & Findlay (1965). DOI: 10.47176/jafm.16.07.1693 |
 
 ---
 
