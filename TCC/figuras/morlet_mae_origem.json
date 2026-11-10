@@ -1,0 +1,34 @@
+{
+  "kind": "Analytical illustration, not experimental data",
+  "equation_label": "eq:morlet",
+  "formula": "psi(t) = pi^(-1/4) * exp(-t^2/2) * exp(1j*6*t)",
+  "omega0": 6.0,
+  "zero_mean_correction": false,
+  "scale": 1.0,
+  "position": 0.0,
+  "coordinate": "dimensionless t",
+  "plot_domain": [
+    -4.0,
+    4.0
+  ],
+  "samples": 4001,
+  "plotted_components": [
+    "real part of psi(t)",
+    "imaginary part of psi(t)"
+  ],
+  "plotted_arrays_sha256_float64_little_endian": {
+    "coordinate": "60fe22ed3d37179d40a91c3d8210709c8833a3c75b04ae9c82608f0759e6fbfc",
+    "real": "ee04c4905535511eb4aea3f0343056b03f09fb2fffea1b59ceae96895393261c",
+    "imaginary": "be3c86acb4556f004c9d7c97f71fe3c06d1c8684c93bc2a49c5574cc928e2abe"
+  },
+  "energy_integral_on_minus8_plus8": 1.0,
+  "source_equation_sha256": "8753ca9a0f06cc7876b3e70ece449c1dc5e90d72e0bb2d71d0e0a22469aa3cf0",
+  "analysis_implementation": "src2/v16_spatial2_18_71/scripts/wavelet_core.py",
+  "analysis_implementation_sha256": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc",
+  "script": "TCC/figuras/morlet_mae.py",
+  "script_sha256": "5064f86ef4e7fdc571f3621d59fbd6c736de67c233410b8fdc9205fa644eb98b",
+  "outputs": {
+    "TCC/figuras/morlet_mae.pdf": "504634e67a9c02e031a8ad5252d46472ce99f600870ef3ff496b7407dec4f32e",
+    "TCC/figuras/morlet_mae.png": "9451ecfb9d69fe419dac3b4b6a9c9c9dc996c15e2676b1a3be2f31f630d52907"
+  }
+}

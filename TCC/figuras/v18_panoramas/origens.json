@@ -1,0 +1,205 @@
+{
+  "generator": {
+    "arquivo": "TCC/figuras/v18_panoramas/gerar_panoramas.py",
+    "sha256": "4a4297d1a1fc156591f2ba56df5f155d5e64f9f54a056c28ccd55390267d266e"
+  },
+  "reproduction": "python3 -B TCC/figuras/v18_panoramas/gerar_panoramas.py",
+  "purpose": "Four complete panorama and signal illustrations for section 4.2.",
+  "selection": "First acquisition of each already selected within-pattern pair for plug, slug, churn and wavy annular. Illustration only, with no additional statistical selection criterion.",
+  "historical_layout_reference": {
+    "arquivo": "src2/v16_spatial2_18_71/scripts/figuras.py",
+    "sha256": "91f0b5d306a29910a2416ce0269efc3627b55cad80950b10a25d58c76da6c087"
+  },
+  "numerical_data_recomputed": false,
+  "existing_inputs_and_manifests_unchanged": true,
+  "input_hashes": {
+    "src2/v18_montagem_18_71/02_wavelet/intermediario/aquisicoes.json": "c61deda38a80f6e083fa04d42e3d4deb643b00c4cc891067d972ebaef458c1bf",
+    "src2/v18_montagem_18_71/02_wavelet/resumo_tcc.json": "9b603cccaa93d814a20c7a1ab17395d32dfc89f264d3e7bf608944e55d2f7afb",
+    "src2/v18_montagem_18_71/01_panoramas/manifesto.json": "dad45203bc7b39e4114a08944d793cf8637420dd3a2e4e7273310c231beca5e1",
+    "src2/v16_spatial2_18_71/scripts/figuras.py": "91f0b5d306a29910a2416ce0269efc3627b55cad80950b10a25d58c76da6c087",
+    "src2/v18_montagem_18_71/02_wavelet/manifesto.json": "550fe8b9d46b98ccb3787e10236f6bc16343a36203900fe0d333adf839b30d4f",
+    "src2/v18_montagem_18_71/01_panoramas/wavelet/m05q01_001/panorama.png": "de172fb99e7381405b8edb10a54833e39cc2ae8a3ebaf8dc2bdd82ed6ad27509",
+    "src2/v18_montagem_18_71/02_wavelet/intermediario/entradas/m05q01_001.npz": "402c5f02bdf4d252b80a3a7cfbbb1bbd4aced656ece98b1344aa40b014581174",
+    "src2/v18_montagem_18_71/02_wavelet/intermediario/individuais/m05q01_001.npz": "b969983e463682c374a8fddbd86a69727d459467509d0e30e98fbbd1ac7eef26",
+    "src2/v18_montagem_18_71/02_wavelet/intermediario/individuais/m05q01_001.json": "291b67d213d37ea396a61c16a069b13ac9c3d98ccb5b594c378a9a7e7dd15f0f",
+    "src2/v18_montagem_18_71/01_panoramas/wavelet/m04q01_001/panorama.png": "393d8e37f5b977134b18a0e40612e66cbe99ebcddd6595389038b2f0ed702e54",
+    "src2/v18_montagem_18_71/02_wavelet/intermediario/entradas/m04q01_001.npz": "2146fc45a7835d1173b1f7483c8e8a7445321287ef34f9d6f528cc6d91311798",
+    "src2/v18_montagem_18_71/02_wavelet/intermediario/individuais/m04q01_001.npz": "8ff5b4e99bc2358125f5883192d3c8067569ee0638eb79b384ec4846df1112cd",
+    "src2/v18_montagem_18_71/02_wavelet/intermediario/individuais/m04q01_001.json": "c91a6264fd9afec18e798331910dd118ba12bf50677173cba91a2d0d2e7f6931",
+    "src2/v18_montagem_18_71/01_panoramas/wavelet/m04q20_001/panorama.png": "f5e73c4ea3db76bf1cb008de7244bf573fada60669c18606928dc67833caa744",
+    "src2/v18_montagem_18_71/02_wavelet/intermediario/entradas/m04q20_001.npz": "fd023730154e99f00cf92a679071588090b542955e9f7b17580438e89de1d5f7",
+    "src2/v18_montagem_18_71/02_wavelet/intermediario/individuais/m04q20_001.npz": "67a64d5b465e7be0e9f781ec9725b26f5f6fa7fe9e4b61e29ff7c8f4bfc20f27",
+    "src2/v18_montagem_18_71/02_wavelet/intermediario/individuais/m04q20_001.json": "116797615169a06e06f9bd3845b8205c26140d7b98ff2b662b96f1f230b7e73a",
+    "src2/v18_montagem_18_71/01_panoramas/wavelet/m06q40_001/panorama.png": "f8eaf72700063ae1361262de85d62151c9cc8845903a8002927c5a92e7289d25",
+    "src2/v18_montagem_18_71/02_wavelet/intermediario/entradas/m06q40_001.npz": "173d18f0ba7162757c7edc84226cb41626486a30f1b01ac8ce6ea2d091303d53",
+    "src2/v18_montagem_18_71/02_wavelet/intermediario/individuais/m06q40_001.npz": "d68f7bbc20389e44e041677445ac85942b4cf6db6eee2cf18ad3c80c194e4dc0",
+    "src2/v18_montagem_18_71/02_wavelet/intermediario/individuais/m06q40_001.json": "ebae0445984cef5fd08cf752922934d1b20ea5dae940e9fb53064f844f50d554"
+  },
+  "figures": [
+    {
+      "arquivo": "TCC/figuras/v18_panoramas/plug_m05q01_001.png",
+      "sha256": "e569bb010670daf9614f60a76d3868740d9dfa760694a52aed32a104a017555e",
+      "pattern": "plug",
+      "display_pattern": "Plug",
+      "run": "m05q01_001",
+      "full_length_px": 5914,
+      "layout": {
+        "dimensions_px": [
+          1813,
+          1237
+        ],
+        "dpi": 300,
+        "insertion_width_cm": 16,
+        "insertion_height_cm": 10.909321578127228,
+        "minimum_font_at_insertion_pt": 10.423934540876177,
+        "no_notes_or_observations": true,
+        "full_arrays_plotted_without_decimation": true
+      },
+      "inputs": [
+        {
+          "arquivo": "src2/v18_montagem_18_71/01_panoramas/wavelet/m05q01_001/panorama.png",
+          "sha256": "de172fb99e7381405b8edb10a54833e39cc2ae8a3ebaf8dc2bdd82ed6ad27509"
+        },
+        {
+          "arquivo": "src2/v18_montagem_18_71/02_wavelet/intermediario/entradas/m05q01_001.npz",
+          "sha256": "402c5f02bdf4d252b80a3a7cfbbb1bbd4aced656ece98b1344aa40b014581174"
+        },
+        {
+          "arquivo": "src2/v18_montagem_18_71/02_wavelet/intermediario/individuais/m05q01_001.npz",
+          "sha256": "b969983e463682c374a8fddbd86a69727d459467509d0e30e98fbbd1ac7eef26"
+        }
+      ],
+      "verification": {
+        "raw_equal_to_rows_18_through_71_mean": true,
+        "prepared_loaded_unchanged_from_current_individual_npz": true,
+        "plotted_arrays_identical_to_loaded_inputs": true,
+        "png_integrity_verified": true
+      }
+    },
+    {
+      "arquivo": "TCC/figuras/v18_panoramas/slug_m04q01_001.png",
+      "sha256": "deb9842b4d67d94d4876dc01d381994e1c96d51a71e94e5b52c844309f2e5c8f",
+      "pattern": "slug",
+      "display_pattern": "Slug",
+      "run": "m04q01_001",
+      "full_length_px": 5071,
+      "layout": {
+        "dimensions_px": [
+          1813,
+          1237
+        ],
+        "dpi": 300,
+        "insertion_width_cm": 16,
+        "insertion_height_cm": 10.909321578127228,
+        "minimum_font_at_insertion_pt": 10.423934540876177,
+        "no_notes_or_observations": true,
+        "full_arrays_plotted_without_decimation": true
+      },
+      "inputs": [
+        {
+          "arquivo": "src2/v18_montagem_18_71/01_panoramas/wavelet/m04q01_001/panorama.png",
+          "sha256": "393d8e37f5b977134b18a0e40612e66cbe99ebcddd6595389038b2f0ed702e54"
+        },
+        {
+          "arquivo": "src2/v18_montagem_18_71/02_wavelet/intermediario/entradas/m04q01_001.npz",
+          "sha256": "2146fc45a7835d1173b1f7483c8e8a7445321287ef34f9d6f528cc6d91311798"
+        },
+        {
+          "arquivo": "src2/v18_montagem_18_71/02_wavelet/intermediario/individuais/m04q01_001.npz",
+          "sha256": "8ff5b4e99bc2358125f5883192d3c8067569ee0638eb79b384ec4846df1112cd"
+        }
+      ],
+      "verification": {
+        "raw_equal_to_rows_18_through_71_mean": true,
+        "prepared_loaded_unchanged_from_current_individual_npz": true,
+        "plotted_arrays_identical_to_loaded_inputs": true,
+        "png_integrity_verified": true
+      }
+    },
+    {
+      "arquivo": "TCC/figuras/v18_panoramas/churn_m04q20_001.png",
+      "sha256": "bf99c9a026a33a37010b628d659344d92b035e7d9ab1a2c4dd853fe93fba4c8e",
+      "pattern": "churn",
+      "display_pattern": "Churn",
+      "run": "m04q20_001",
+      "full_length_px": 9324,
+      "layout": {
+        "dimensions_px": [
+          1841,
+          1237
+        ],
+        "dpi": 300,
+        "insertion_width_cm": 16,
+        "insertion_height_cm": 10.747040763650524,
+        "minimum_font_at_insertion_pt": 10.268874065737482,
+        "no_notes_or_observations": true,
+        "full_arrays_plotted_without_decimation": true
+      },
+      "inputs": [
+        {
+          "arquivo": "src2/v18_montagem_18_71/01_panoramas/wavelet/m04q20_001/panorama.png",
+          "sha256": "f5e73c4ea3db76bf1cb008de7244bf573fada60669c18606928dc67833caa744"
+        },
+        {
+          "arquivo": "src2/v18_montagem_18_71/02_wavelet/intermediario/entradas/m04q20_001.npz",
+          "sha256": "fd023730154e99f00cf92a679071588090b542955e9f7b17580438e89de1d5f7"
+        },
+        {
+          "arquivo": "src2/v18_montagem_18_71/02_wavelet/intermediario/individuais/m04q20_001.npz",
+          "sha256": "67a64d5b465e7be0e9f781ec9725b26f5f6fa7fe9e4b61e29ff7c8f4bfc20f27"
+        }
+      ],
+      "verification": {
+        "raw_equal_to_rows_18_through_71_mean": true,
+        "prepared_loaded_unchanged_from_current_individual_npz": true,
+        "plotted_arrays_identical_to_loaded_inputs": true,
+        "png_integrity_verified": true
+      }
+    },
+    {
+      "arquivo": "TCC/figuras/v18_panoramas/wavy_annular_m06q40_001.png",
+      "sha256": "db9d7ad1644f4abbf1c45c2168f5315adb721e33a88dcd6bd04f67265bbc068a",
+      "pattern": "wavy annular",
+      "display_pattern": "Anular ondulado",
+      "run": "m06q40_001",
+      "full_length_px": 14722,
+      "layout": {
+        "dimensions_px": [
+          1813,
+          1237
+        ],
+        "dpi": 300,
+        "insertion_width_cm": 16,
+        "insertion_height_cm": 10.909321578127228,
+        "minimum_font_at_insertion_pt": 10.423934540876177,
+        "no_notes_or_observations": true,
+        "full_arrays_plotted_without_decimation": true
+      },
+      "inputs": [
+        {
+          "arquivo": "src2/v18_montagem_18_71/01_panoramas/wavelet/m06q40_001/panorama.png",
+          "sha256": "f8eaf72700063ae1361262de85d62151c9cc8845903a8002927c5a92e7289d25"
+        },
+        {
+          "arquivo": "src2/v18_montagem_18_71/02_wavelet/intermediario/entradas/m06q40_001.npz",
+          "sha256": "173d18f0ba7162757c7edc84226cb41626486a30f1b01ac8ce6ea2d091303d53"
+        },
+        {
+          "arquivo": "src2/v18_montagem_18_71/02_wavelet/intermediario/individuais/m06q40_001.npz",
+          "sha256": "d68f7bbc20389e44e041677445ac85942b4cf6db6eee2cf18ad3c80c194e4dc0"
+        }
+      ],
+      "verification": {
+        "raw_equal_to_rows_18_through_71_mean": true,
+        "prepared_loaded_unchanged_from_current_individual_npz": true,
+        "plotted_arrays_identical_to_loaded_inputs": true,
+        "png_integrity_verified": true
+      }
+    }
+  ],
+  "runtime": {
+    "python": "3.13.2",
+    "numpy": "2.3.4",
+    "matplotlib": "3.10.7"
+  }
+}

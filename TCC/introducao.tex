@@ -1,90 +1,93 @@
 \chapter{Introdução}\label{cap:introducao}
 
-A densidade de potência em sistemas eletrônicos cresce de forma contínua em processadores
-de alto desempenho, \textit{data centers} e dispositivos de eletrônica de potência, pressionando o
-desenvolvimento de tecnologias de resfriamento mais eficientes e compactas. O escoamento
-bifásico com mudança de fase em microcanais é uma das alternativas mais promissoras para
-esse problema: combina elevados coeficientes de transferência de calor com pequenas
-dimensões físicas \cite{cheng2023}, e o fluido refrigerante absorve grandes quantidades de
+A dissipação de calor em dispositivos eletrônicos compactos motiva o
+desenvolvimento de tecnologias de resfriamento eficientes. O escoamento
+bifásico com mudança de fase em microcanais é uma alternativa para essa
+aplicação: permite dissipar elevados fluxos de calor em pequenas
+áreas \cite{cheng2023}, e o fluido refrigerante absorve grandes quantidades de
 calor por unidade de área enquanto percorre o canal e passa do estado líquido para o vapor.
 
 Para o controle e a otimização desses sistemas, é necessário identificar o padrão de
 escoamento, isto é, a configuração geométrica assumida pelas fases líquida e vapor dentro
 do canal. Padrões como bolha dispersa, \textit{plug}, \textit{slug}, \textit{churn} e
-anular ondulado apresentam comportamentos térmicos e hidrodinâmicos distintos que exigem
-estratégias diferentes de operação \cite{cheng2023,deoliveira2021}. A identificação dos padrões por
+anular ondulado apresentam comportamentos térmicos e hidrodinâmicos distintos, relevantes
+para avaliar a transferência de calor e a queda de pressão \cite{cheng2023,deoliveira2021}. A identificação dos padrões por
 inspeção visual de imagens de câmera de alta velocidade é subjetiva e depende
 do observador \cite{dias2025knn}, o que motiva o desenvolvimento de métodos
 automáticos de classificação.
 
-No Laboratório de Estudos Térmicos e Fluidodinâmicos (LETEF) da UNISINOS, estudos
-recentes com isobutano (R600a) em microtubo horizontal de 1\,mm mostraram a viabilidade
-dessa classificação automática. \citeonline{deoliveira2021} realizaram um estudo
-experimental abrangente com análise por transformada \textit{Wavelet} contínua (CWT),
-caracterizando as frequências características de cada padrão nos sinais dos sensores.
-\citeonline{dias2025knn} e \citeonline{dias2025cnn} desenvolveram classificadores baseados
-em imagens da seção de visualização: o modelo $k$NN atingiu 87\% de acurácia média de teste
-nas dez dobras, enquanto a rede CNN alcançou 93\% no melhor \textit{fold} e média de
-88{,}1\% nas dez dobras.
-Esses trabalhos dependem, porém, da câmera de alta velocidade para aquisição das imagens,
-equipamento de custo elevado que nem sempre está disponível em aplicações industriais.
+No Laboratório de Estudos Térmicos e Fluidodinâmicos (LETEF) da UNISINOS,
+\citeonline{deoliveira2021} caracterizam os padrões de isobutano (R600a) em microtubo
+horizontal de 1\,mm pela transformada \textit{Wavelet} contínua (CWT) das séries
+temporais de pressão diferencial e do sensor óptico. \citeonline{dias2025knn} e
+\citeonline{dias2025cnn} apresentam classificadores baseados em imagens da seção
+de visualização. Esses estudos motivam a investigação de descritores que permitem examinar quais
+características das imagens se repetem entre ensaios de um mesmo padrão.
 
-O trabalho de \citeonline{deoliveira2021} caracterizou os padrões de escoamento
-aplicando a transformada \textit{Wavelet} contínua aos sinais dos sensores no domínio do
-tempo, extraindo o espectro de potência \textit{Wavelet} de cada sensor individualmente.
-A formulação alternativa de coerência \textit{Wavelet}, no entanto, nunca foi aplicada à
-caracterização desses padrões, e tampouco explorou-se um domínio \textit{espacial} derivado
-das imagens da câmera. As sequências de quadros da câmera de alta velocidade contêm, além
-da informação visual, a estrutura espacial do escoamento ao longo do tubo, que pode ser
-reconstruída em um único sinal unidimensional de brilho pela costura das imagens em um
-panorama. Esse sinal espacial oferece uma ou duas ordens de grandeza mais amostras do que a
-série temporal disponível por ensaio, o que aumenta a resolução espectral e remove o teto de
-Nyquist associado à taxa de quadros da câmera, condição favorável à estimativa das funções
-de correlação sobre as quais a formulação alternativa se apoia.
+Neste trabalho, adota-se o domínio espacial reconstruído para investigar a organização
+das variações de intensidade ao longo dos panoramas e comparar suas escalas entre ensaios.
+Um panorama é uma imagem alongada formada pela junção de tiras verticais retiradas
+do centro de quadros consecutivos da câmera. A largura de cada tira depende da
+defasagem estimada entre as imagens. Desse modo, reúnem-se partes de vários
+instantes em uma única imagem, detalhada na \autoref{sec:met-extracao}.
+Do panorama, extrai-se um sinal unidimensional: cada amostra representa a
+intensidade média das linhas 18 a 71 de uma coluna. Assim, descrevem-se variações
+em função da posição em pixels, enquanto uma
+análise temporal descreve variações em função do tempo. A montagem reúne observações
+feitas em instantes distintos. Portanto, o panorama não representa uma fotografia
+instantânea do escoamento. O eixo reconstruído não é calibrado em unidades físicas,
+e seus comprimentos de onda não são convertidos em frequências temporais ou dimensões
+de bolhas. A câmera permanece necessária para a aquisição.
 
-\citeonline{schuck2019} propuseram uma formulação alternativa para o cálculo da WCO em
+\citeonline{schuck2019} apresentam uma formulação alternativa para o cálculo da
+coerência \textit{Wavelet} (WCO) em
 que a transformada é aplicada às funções de autocorrelação e correlação cruzada dos sinais
 em vez de ser aplicada diretamente a eles. Essa abordagem elimina a necessidade de
-suavização espectral exigida pela definição clássica \cite{torrence1998}, tornando a
-coerência não trivialmente unitária e mais robusta à presença de transientes não
-correlacionados \cite{schuck2019}. Essa formulação não foi aplicada ao problema de
-identificação de padrões de escoamento bifásico, tampouco a sinais espaciais derivados do
-panorama das imagens, o que representa a lacuna que este trabalho se propõe a preencher.
+suavização espectral exigida pela definição clássica \cite{torrence1998,grinsted2004}. A questão
+investigada é se a forma dos perfis de potência dos sinais reconstruídos apresenta
+maior semelhança entre ensaios do mesmo padrão do que entre padrões distintos.
+Os mapas de coerência complementam essa comparação pela leitura das associações
+entre sinais em função da escala e do atraso e por resumos numéricos de cada par.
+A avaliação é descritiva e não pressupõe que
+correlação elevada demonstre identidade do padrão.
 
+Como complemento, examinam-se a fração de vazio estimada a partir de máscaras de
+gás e a densidade de transições dessas máscaras ao longo dos panoramas. A primeira
+resume a ocupação geométrica estimada, enquanto a segunda registra a alternância espacial
+entre regiões segmentadas. Essas informações auxiliam a interpretação dos perfis
+wavelet, que descrevem as escalas das variações de intensidade. A combinação de
+informações espectrais e de fração de vazio encontra um antecedente em
+\citeonline{nguyen2010}. Neste trabalho, a estimativa óptica depende de hipóteses
+geométricas e da segmentação, sem constituir uma medição volumétrica calibrada.
+
+% =========================================================
 \section{Objetivo Geral}
+% =========================================================
 
-Investigar a aplicabilidade da coerência \textit{Wavelet} como descritor dos padrões de
-escoamento bifásico no arranjo experimental do LETEF, calculada sobre sinais espaciais de
-brilho reconstruídos a partir do panorama das imagens, utilizando a formulação alternativa
-de \citeonline{schuck2019}, e avaliando a repetibilidade intra-padrão e a separação
-inter-padrão das assinaturas espectrais resultantes.
+O objetivo geral desse trabalho é analisar as semelhanças e diferenças entre
+ensaios de um mesmo padrão de escoamento bifásico e de padrões distintos no
+arranjo experimental do LETEF, a partir da representação \textit{Wavelet} dos
+sinais espaciais extraídos dos panoramas. A análise se concentra na comparação
+dos perfis de potência pelo coeficiente de Pearson $r$, na interpretação dos
+mapas e nos resumos de coerência, com apoio das medidas ópticas de ocupação estimada
+e alternância espacial das fases.
 
+% =========================================================
 \section{Objetivos Específicos}
+% =========================================================
 
 \begin{itemize}
-  \item Revisar a literatura sobre padrões de escoamento bifásico em microcanais e sobre
-  métodos de análise espectral de sinais para caracterização de padrões de escoamento.
-  \item Apresentar a fundamentação teórica da transformada \textit{Wavelet} contínua, do
-  espectro de potência (WPS), do espectro cruzado (WCS) e da coerência \textit{Wavelet}
-  (WCO), com ênfase na formulação alternativa de \citeonline{schuck2019}.
-  \item Descrever a metodologia para extração das assinaturas espectrais de coerência
-  \textit{Wavelet} a partir dos sinais espaciais de brilho reconstruídos do panorama das
-  imagens do arranjo experimental e sua aplicação à caracterização dos padrões de
-  escoamento.
+  \item Interpretar os mapas de potência, espectro cruzado e coerência
+  \textit{Wavelet} em exemplos de pares do mesmo padrão e de padrões distintos,
+  considerando o comprimento de onda e o atraso em pixels, e quantificar
+  a coerência wavelet de cada par por seus valores mínimos, médios, medianos e máximos.
+  \item Comparar a semelhança da forma dos perfis espectrais dentro de cada padrão
+  e entre padrões distintos pelo coeficiente de Pearson $r$, considerando
+  mínimos, médias, medianas, máximos e a sobreposição das distribuições.
+  \item Examinar a complementaridade entre os resultados wavelet, a estimativa
+  óptica de fração de vazio e a densidade espacial de transições das máscaras
+  de gás, comparando as medidas dos mesmos ensaios.
+  \item Delimitar a interpretação dos resultados a partir da qualidade dos
+  panoramas, das condições de aquisição e das hipóteses adotadas no
+  pré-processamento e nas análises.
 \end{itemize}
-
-\section{Organização do Trabalho}
-
-Este trabalho está organizado em cinco capítulos, além desta introdução. O
-\autoref{cap:fundamentacao} apresenta a revisão bibliográfica e as bases teóricas que
-fundamentam a metodologia: fenomenologia dos padrões de escoamento bifásico em microcanais e
-formulação matemática das transformadas \textit{Wavelet} contínua, do espectro de potência, do
-espectro cruzado e da coerência \textit{Wavelet} nas formulações clássica e alternativa. O
-\autoref{cap:metodologia} descreve a metodologia, detalhando o arranjo experimental, a
-reconstrução do panorama, o \textit{pipeline} de processamento dos sinais espaciais e a
-estratégia de avaliação do método. O \autoref{cap:resultados} relata os resultados obtidos nas
-campanhas intra-padrão e inter-padrão, com os campos de potência e de coerência e os perfis de
-potência média. O \autoref{cap:discussao} interpreta esses resultados, compara-os com a
-literatura e expõe as limitações do trabalho. Por fim, o \autoref{cap:conclusao} sintetiza as
-contribuições, discute o atendimento aos objetivos e aponta os encaminhamentos para trabalhos
-futuros.

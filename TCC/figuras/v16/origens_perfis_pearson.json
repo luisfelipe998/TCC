@@ -1,0 +1,273 @@
+{
+  "finalidade": "Esclarecer os rótulos dos perfis usados na comparação pelo coeficiente de Pearson r.",
+  "script": {
+    "arquivo": "TCC/figuras/v16/gerar_perfis_pearson.py",
+    "sha256": "9c95de92e958f1cb13a6e54bed9c140428fa9a05e0e54e9ae511eac5da4ed2fb"
+  },
+  "entradas": [
+    {
+      "arquivo": "src2/v16_spatial2_18_71/04_estatistica/dados/perfis_espectrais.csv",
+      "sha256": "9d2d559fe64663fcf5d1d5ddaeb04d4046ac2d2cab2b5b465f1a7138607f886e"
+    },
+    {
+      "arquivo": "src2/v16_spatial2_18_71/intermediario/descritores.npz",
+      "sha256": "0dfc11ab274a60c3e3b10ed01c4cb38ffb1f7b30b0ffdeda15509afca880879e"
+    },
+    {
+      "arquivo": "src2/v16_spatial2_18_71/scripts/estatistica.py",
+      "sha256": "bcae69735e663e6e044b8e2ad4097ce812b02466c2569938bc4b4ac23c48f5fc"
+    },
+    {
+      "arquivo": "src2/v16_spatial2_18_71/scripts/figuras.py",
+      "sha256": "91f0b5d306a29910a2416ce0269efc3627b55cad80950b10a25d58c76da6c087"
+    },
+    {
+      "arquivo": "TCC/figuras/v16/perfis_comparados.png",
+      "sha256": "d50f5f9b8d0b37cf697bca019f5b5ecd4a1f491ce8d274cce5d42a0abaacb927"
+    },
+    {
+      "arquivo": "TCC/figuras/v16/origens.json",
+      "sha256": "e86fd00b72cd862b418a2585e9e669f2b11932bd1c2e18f242167172233fefc6"
+    }
+  ],
+  "saida": {
+    "arquivo": "TCC/figuras/v16/perfis_espectrais_pearson.png",
+    "sha256": "1cd98aca7a3b013222378cde1fc2d93c2134b57222ae32982a4bbc63f22cd03e"
+  },
+  "substitui_no_texto": "TCC/figuras/v16/perfis_comparados.png",
+  "figura_original_preservada": {
+    "origem": "src2/v16_spatial2_18_71/04_estatistica/perfis_comparados.png",
+    "destino": "TCC/figuras/v16/perfis_comparados.png",
+    "sha256": "d50f5f9b8d0b37cf697bca019f5b5ecd4a1f491ce8d274cce5d42a0abaacb927"
+  },
+  "algoritmo_de_apresentacao": "Adaptado da função render de scripts/estatistica.py. Estilo de scripts/figuras.py.",
+  "reprocessamento_cientifico": false,
+  "colunas_utilizadas": [
+    "ensaio",
+    "padrao",
+    "lambda_px",
+    "wps_zero",
+    "descritor_unitario"
+  ],
+  "coluna_esquerda": "wps_zero dividido pelo máximo de cada ensaio, apenas para exibição",
+  "coluna_direita": "descritor_unitario lido diretamente do CSV, sem nova transformação",
+  "linhas_finas": "26 ensaios na mesma ordem e com as mesmas cores da figura original",
+  "linhas_espessas": "Mediana ponto a ponto de cada padrão, como na figura original",
+  "grupos": [
+    {
+      "padrao_original": "churn",
+      "rotulo": "churn",
+      "cor": "#d34a33",
+      "ensaios_na_ordem": [
+        "m03q05_001",
+        "m04q10_001",
+        "m04q20_001",
+        "m05q10_001",
+        "m05q20_001",
+        "m05q40_001",
+        "m06q10_001",
+        "m06q20_001",
+        "m07q20_001",
+        "m07q40_001"
+      ],
+      "paineis": [
+        {
+          "coluna": 0,
+          "valores_sha256_float64_le": "39c1cb4439c4ae1803c434b6822aa7f4c8f69f5319ebca2ae2f743f4a40b48e2",
+          "mediana_sha256_float64_le": "420d6161aec97240ff7fcd176b4bfb7218a6f0c19dd6765dd322631cc847893d",
+          "limites_x": [
+            50.0,
+            3000.0
+          ],
+          "limites_y": [
+            -0.0259451521203254,
+            1.0488545310533488
+          ]
+        },
+        {
+          "coluna": 1,
+          "valores_sha256_float64_le": "ddd0f63dbfc2bb2573aac8d6149a883994ba67eb7f13a9da1ad8ecc3e52a0bdc",
+          "mediana_sha256_float64_le": "f8166547922b7da9a5e60ae4ad457c5d92fdf38bd6bdc5d485ef05e288e4a120",
+          "limites_x": [
+            50.0,
+            3000.0
+          ],
+          "limites_y": [
+            -0.2053009028725171,
+            0.15641721928793303
+          ]
+        }
+      ]
+    },
+    {
+      "padrao_original": "wavy annular",
+      "rotulo": "Anular ondulado",
+      "cor": "#2377b4",
+      "ensaios_na_ordem": [
+        "m03q10_001",
+        "m03q20_001",
+        "m03q40_001",
+        "m04q40_001",
+        "m04q80_001",
+        "m05q80_001",
+        "m06q40_001",
+        "m06q80_001",
+        "m07q80_001"
+      ],
+      "paineis": [
+        {
+          "coluna": 0,
+          "valores_sha256_float64_le": "0039070a490dc56b912f935447c23a54f7ede1c219479f4ad55ddf78451ca64f",
+          "mediana_sha256_float64_le": "a2d07ab5a6994432add750bf772781373dc2876bb22d737a734ff18ab505e426",
+          "limites_x": [
+            50.0,
+            3000.0
+          ],
+          "limites_y": [
+            -0.036625750807178725,
+            1.049363130990818
+          ]
+        },
+        {
+          "coluna": 1,
+          "valores_sha256_float64_le": "1021441dd93a26f1cb747f19d7eb2d22fb93ed658e8ff8643e11fa88b8c3b2f0",
+          "mediana_sha256_float64_le": "e5dd7a7a58e2b4b4daae65f39cbffe5417d121effd380d7e696768ec00291af5",
+          "limites_x": [
+            50.0,
+            3000.0
+          ],
+          "limites_y": [
+            -0.22805377489443351,
+            0.12718538597714094
+          ]
+        }
+      ]
+    },
+    {
+      "padrao_original": "plug",
+      "rotulo": "plug",
+      "cor": "#328652",
+      "ensaios_na_ordem": [
+        "m05q01_001",
+        "m06q01_001",
+        "m07q05_001"
+      ],
+      "paineis": [
+        {
+          "coluna": 0,
+          "valores_sha256_float64_le": "78ad9b8d1b669eee66a8682224d028962fcabe3b597c26970660e937a98d4262",
+          "mediana_sha256_float64_le": "d687b9161032881df5199bab359a053dd67d92cf511f2f6355ed2094df71e0fd",
+          "limites_x": [
+            50.0,
+            3000.0
+          ],
+          "limites_y": [
+            -0.02932021911915323,
+            1.0490152485294835
+          ]
+        },
+        {
+          "coluna": 1,
+          "valores_sha256_float64_le": "365a0e8e2476d7485b121dc7364d942edda5dd515d98d657600e6f4dd92f29f7",
+          "mediana_sha256_float64_le": "1242afae09dc97203ace8b78e1ecdd75705d2996879292b2df03cfcceb5778a6",
+          "limites_x": [
+            50.0,
+            3000.0
+          ],
+          "limites_y": [
+            -0.18136209777758278,
+            0.13036212809415085
+          ]
+        }
+      ]
+    },
+    {
+      "padrao_original": "slug",
+      "rotulo": "slug",
+      "cor": "#9466ac",
+      "ensaios_na_ordem": [
+        "m04q01_001",
+        "m05q05_001",
+        "m06q05_001"
+      ],
+      "paineis": [
+        {
+          "coluna": 0,
+          "valores_sha256_float64_le": "651404b4ff88a902462d7fb60a92d86a089966a4fe24c852d1466fc981c9709d",
+          "mediana_sha256_float64_le": "62fe8ca5519d7a32e528986f8bf8b2d76c102230d175437b4705a356bdbaa660",
+          "limites_x": [
+            50.0,
+            3000.0
+          ],
+          "limites_y": [
+            -0.024017282159328603,
+            1.0487627277218727
+          ]
+        },
+        {
+          "coluna": 1,
+          "valores_sha256_float64_le": "ca1cb6bd2d8e7525a08997d1976bcc14c1d703ed1fe0a1ef675431eb8463472f",
+          "mediana_sha256_float64_le": "d5e692132e64afd2854ff458390974019ca2b8198b9c7be051a702dbeed84163",
+          "limites_x": [
+            50.0,
+            3000.0
+          ],
+          "limites_y": [
+            -0.19499720609998356,
+            0.13951273263647002
+          ]
+        }
+      ]
+    },
+    {
+      "padrao_original": "dispersed bubble",
+      "rotulo": "Bolhas dispersas",
+      "cor": "#b0851c",
+      "ensaios_na_ordem": [
+        "m07q01_001"
+      ],
+      "paineis": [
+        {
+          "coluna": 0,
+          "valores_sha256_float64_le": "2bdcbcab2307be553fca424c5f9e3b6c752046d03532fad8d16566f0529102b7",
+          "mediana_sha256_float64_le": "2bdcbcab2307be553fca424c5f9e3b6c752046d03532fad8d16566f0529102b7",
+          "limites_x": [
+            50.0,
+            3000.0
+          ],
+          "limites_y": [
+            -0.04384480771060059,
+            1.0497068956052666
+          ]
+        },
+        {
+          "coluna": 1,
+          "valores_sha256_float64_le": "75ec21c9f1bd8f6b08b379f727205fddc253f850267828a131330a1dd37958a3",
+          "mediana_sha256_float64_le": "75ec21c9f1bd8f6b08b379f727205fddc253f850267828a131330a1dd37958a3",
+          "limites_x": [
+            50.0,
+            3000.0
+          ],
+          "limites_y": [
+            -0.24650023750894834,
+            0.14247737456751827
+          ]
+        }
+      ]
+    }
+  ],
+  "wavelengths_sha256_float64_le": "e500f9bb3c6b197cea36021c8b7bfecabe8879e2d4a5a3876ab8a76d5c33fe96",
+  "largura_insercao_cm": 16,
+  "fonte_minima_inserida_pt": 9.462772105580514,
+  "bibliotecas": {
+    "numpy": "2.3.4",
+    "matplotlib": "3.10.7"
+  },
+  "verificacoes": [
+    "5200 linhas de CSV, 26 ensaios e 200 comprimentos de onda por ensaio",
+    "Ordem de ensaios e valores do CSV idênticos aos do NPZ original",
+    "Todos os perfis foram desenhados com os valores originais",
+    "Grupos, cores, medianas, limites e disposição dos painéis preservados",
+    "CSV, NPZ, scripts da run, figura anterior e origens.json mantidos com SHA-256 idêntico"
+  ]
+}

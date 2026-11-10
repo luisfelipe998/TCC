@@ -23,15 +23,9 @@ que justifica o trabalho.
 Quando um fluido evapora dentro de um tubo de pequeno diâmetro, as duas fases não formam
 uma mistura uniforme. Líquido e vapor se organizam em configurações geométricas distintas,
 os chamados padrões de escoamento, que mudam conforme a quantidade de vapor presente e a
-velocidade do fluido. Em diâmetros reduzidos como os usados neste trabalho, a tensão
-superficial domina sobre a gravidade, o que altera tanto quais padrões aparecem quanto as
-condições em que se formam \cite{cheng2023}.
-
-Os padrões mais comuns em microcanais horizontais com fluidos refrigerantes são: 
-\textit{bolha dispersa}, \textit{plug}, \textit{slug}, \textit{churn}, \textit{anular ondulado} 
-e \textit{anular liso}. Cada um tem aparência visual característica e gera frequências distintas 
-tanto no transdutor de pressão diferencial quanto no sensor óptico, permitindo identificar o
-padrão por análise espectral dos sinais \cite{deoliveira2021}.
+velocidade do fluido. À medida que o diâmetro diminui, os efeitos de confinamento e a
+importância relativa da tensão superficial aumentam, alterando os padrões e as
+condições de transição \cite{cheng2023}.
 
 \citeonline{deoliveira2019} investigaram as séries temporais do sensor óptico durante a
 ebulição convectiva de hidrocarbonetos (R-600a, R-290 e R-1270) em tubo horizontal
@@ -45,141 +39,114 @@ frequências características distintas associadas à morfologia da interface l�
 \citeonline{deoliveira2021} realizaram um estudo experimental mais amplo no mesmo arranjo,
 com isobutano (R600a), identificando seis padrões de escoamento cujos intervalos de
 ocorrência foram sistematizados em função do parâmetro adimensional $\beta$. Além do
-sensor óptico, o arranjo foi instrumentado com um transdutor de pressão diferencial (PD),
-permitindo a aquisição simultânea de ambos os sinais. A análise por CWT confirmou que
-cada padrão apresenta assinaturas espectrais distintas no PD e no OS, com faixas de
-frequência características descritas em detalhe na \autoref{sec:padroes}. Os parâmetros
-experimentais completos estão listados na \autoref{qua:params-exp}.
-Esses dados constituem a base experimental utilizada neste trabalho.
+sensor óptico (OS), analisaram-se as flutuações do transdutor de pressão diferencial
+(PD), já presente no arranjo de 2019. A aquisição simultânea permitiu comparar
+respostas complementares: a análise por transformada \textit{Wavelet} contínua (CWT)
+identificou frequências características
+em diversas condições, mas não uma assinatura exclusiva de cada padrão em ambos
+os sensores. Essas respostas são descritas na \autoref{sec:padroes}. Os parâmetros
+experimentais completos estão listados no \autoref{qua:params-exp}.
+Esse estudo fornece a descrição do arranjo experimental considerado neste trabalho.
+A análise CWT utilizou um algoritmo adaptado de \citeonline{torrence1998},
+conforme explicitado no artigo de \citeonline{deoliveira2021}.
 
-\citeonline{dias2025knn} e \citeonline{dias2025cnn} desenvolveram classificadores
-automáticos para os padrões do mesmo arranjo a partir de imagens de câmera de alta
-velocidade. Os detalhes e resultados estão discutidos na \autoref{sec:rev-ml}.
-
-Outros estudos mostram que a mesma sequência de padrões se repete em diferentes fluidos
-e geometrias, com deslocamento dos limiares de transição. \citeonline{schmid2022} mapearam
-os padrões do CO\textsubscript{2} em tubo vertical (diâmetro de 8\,mm) e
-verificaram as mesmas transições bolha-\textit{slug}, \textit{slug}-\textit{churn} e
-\textit{churn}-anular, reforçando a generalidade dos fenômenos observados no arranjo
-experimental deste trabalho.
+\citeonline{schmid2022} mapearam padrões de escoamento adiabático de
+CO\textsubscript{2} em tubo vertical de 8\,mm, nas direções ascendente e
+descendente. O estudo mostrou a influência do título de vapor, do fluxo mássico
+e da direção do escoamento sobre os padrões observados. Esses resultados
+ressaltam a necessidade de considerar as condições de cada arranjo ao comparar
+mapas de padrões com os de ebulição horizontal de R600a deste trabalho.
 
 % ---------------------------------------------------------
 \subsection{Análise por transformada \textit{Wavelet} em escoamentos bifásicos}\label{sec:rev-wavelet}
 % ---------------------------------------------------------
 
-A transformada \textit{Wavelet} permite identificar simultaneamente \textit{quando} e
-\textit{em que frequência} determinado evento ocorre num sinal, o que a torna muito mais
-adequada do que a transformada de Fourier para sinais de escoamento bifásico, cujo
-comportamento espectral varia ao longo do tempo conforme o padrão de escoamento evolui
-\cite{torrence1998}.
-
 \citeonline{torrence1998} apresentaram um guia prático de análise \textit{Wavelet} contínua
 para séries temporais, com ênfase no espectro de potência \textit{Wavelet} (WPS) e em
 métodos para avaliar a significância estatística dos resultados. O artigo também introduz
 o espectro cruzado (WCS) e discute as limitações do estimador clássico de coerência
-\textit{Wavelet} (WCO). Esse trabalho tornou-se referência em diversas áreas da engenharia
-que lidam com sinais não estacionários.
+\textit{Wavelet} (WCO). A localização em tempo e frequência complementa o espectro
+de Fourier global quando o conteúdo espectral varia ao longo do registro.
 
 Um antecedente direto da abordagem adotada neste trabalho foi desenvolvido por
 \citeonline{nguyen2010}, que aplicaram a CWT a sinais de fração de vazio em escoamento
 bifásico vertical ar-água em tubo de 80\,mm (laboratório KAERI, Coreia). Os autores
-mostraram que descritores derivados dos coeficientes da CWT discriminam quatro
-sub-regimes (\textit{discrete bubbly}, \textit{clustered/cap bubbly}, \textit{slug} e
-\textit{churn}). A separação entre os dois primeiros, em particular, ilustra como a
-CWT captura características locais dos sinais que a FFT não representa
-adequadamente \cite{nguyen2010}.
+combinaram a energia efetiva da CWT, a razão entre o comprimento efetivo estimado
+da estrutura gasosa e o diâmetro do tubo, usando a escala efetiva e a velocidade de propagação,
+e a fração de vazio média.
+Com esses critérios, distinguiram quatro sub-regimes: \textit{discrete bubbly},
+\textit{clustered/cap bubbly}, \textit{slug} e \textit{churn}. O resultado
+mostra a utilidade de combinar descritores locais da CWT com informações
+físicas do escoamento.
 
-No contexto de escoamentos bifásicos em microcanais, \citeonline{deoliveira2019}
-analisaram as séries temporais do sensor óptico durante a ebulição convectiva de
-hidrocarbonetos no arranjo experimental da UNISINOS por meio de transformada de Fourier e
-de métricas não-lineares, incluindo expoente de Lyapunov, expoente de Hurst e retratos de
-fase. Os autores observaram que a morfologia da interface líquido-vapor gera assinaturas
-espectrais distintas para cada padrão e que esses sinais exibem comportamento caótico
-mensurável. \citeonline{deoliveira2021} introduziram a CWT na análise dos sinais do mesmo
-arranjo, acrescentando o transdutor de pressão diferencial como segundo canal de medição,
-seguindo a abordagem de representação temporal de energia proposta por
-\citeonline{nguyen2010}. Os resultados confirmaram que o WPS do sinal óptico e o WPS do
-sinal de pressão apresentam regiões de energia dominante em faixas de frequência distintas
-para cada padrão, com o PD dominado por baixas frequências e o OS por frequências mais
-altas associadas à morfologia da interface.
-
-\citeonline{morshed2020} aplicaram pacotes de decomposição \textit{Wavelet} discreta (base
-Daubechies db4) a sinais de pressão em escoamentos bifásicos ar/água e ar/fluido
-não-newtoniano e mostraram que a entropia da norma \textit{Wavelet} permite distinguir os
-regimes bolha, bolha-elongada e \textit{slug}. \citeonline{tan2015} combinaram sensores de
+\citeonline{morshed2020} aplicaram decomposição por pacotes \textit{Wavelet}
+com base db4 a sinais de pressão em escoamentos ar-água e ar-solução de
+goma xantana. A entropia de norma evidenciou características dos regimes de
+bolhas, de transição entre bolhas e bolhas alongadas e de \textit{slug}, com
+limitações de resolução e resposta em frequência do sensor.
+\citeonline{tan2015} combinaram sensores de
 condutância e capacitância com análise por transformada \textit{Wavelet} contínua (CWT) e
 demonstraram que os coeficientes de energia \textit{Wavelet} local (LWE) constituem
-descritores discriminativos entre regimes de escoamento óleo-água, embora os autores
+descritores das estruturas e transições do escoamento óleo-água, embora os autores
 ressaltem que a distribuição característica obtida é específica para o arranjo e fluidos
 utilizados (tubo de 50\,mm, óleo branco e água).
 
+\citeonline{sun2012} aplicaram decomposição \textit{Wavelet} e entropia de norma
+sobre flutuações de pressão diferencial em escoamento bifásico ar-água horizontal
+(tubo de 50\,mm). Os mapas combinaram a entropia de norma média com a vazão mássica
+total ou com a fração volumétrica de gás calculada a partir das vazões das fases.
+Obtiveram taxas globais de identificação de 98{,}0\% e 95{,}9\%, respectivamente,
+para quatro padrões. Nessa avaliação,
+pontos sobre as fronteiras receberam meio erro. Esses antecedentes motivam a
+investigação de descritores espectrais, cuja capacidade de distinguir padrões
+precisou ser examinada nos próprios dados de intensidade de imagem desse trabalho.
+
+No arranjo do LETEF, \citeonline{dias2025knn}
+classificaram cinco padrões de escoamento a partir de imagens da câmera de alta velocidade
+com o classificador $k$-vizinhos mais próximos ($k$NN), atingindo 87\% de acurácia
+média de teste nas dez dobras da validação cruzada. As imagens foram representadas
+por 93 atributos, incluindo 18 obtidos pela transformada \textit{Wavelet} discreta
+(DWT) Daubechies db2 em dois níveis, que separou componentes de aproximação e
+de detalhe das imagens.
+\citeonline{dias2025cnn} estenderam
+esse trabalho com uma rede neural convolucional (CNN) baseada na arquitetura ResNet50,
+alcançando 93\% na melhor dobra e média de 88{,}1\% nas dez dobras sobre o mesmo
+conjunto de dados. Na CNN, os quadros foram fornecidos à rede. Ambos utilizaram
+imagens rotuladas. Assim, a contribuição investigada nesse estudo foi a representação
+espacial dos panoramas e sua comparação por espectros e coerência, complementando
+trabalhos que já empregavam atributos \textit{Wavelet}.
+
 \citeonline{schuck2019} propuseram uma formulação alternativa para o cálculo do WPS, do
 WCS e da WCO: em vez de aplicar a transformada diretamente aos sinais, aplica-se às
-funções de autocorrelação e correlação cruzada. Essa mudança elimina a necessidade de
-suavização espectral exigida pela definição clássica \cite{torrence1998}. Em contrapartida,
-o denominador da coerência é fixo (calculado em $b = 0$, onde o WPS é máximo), enquanto o
-numerador ainda varia com $b$, que agora representa o atraso (\textit{lag}) entre os
-sinais, não a posição temporal absoluta. O resultado é uma estimativa espectral estável,
-interpretável como indicador de acoplamento entre dois sinais em função da escala e do
-atraso. Os autores validaram a abordagem com sinais sintéticos em presença de ruído e
-mostraram que o método detecta corretamente atrasos e frequências dominantes mesmo em
-baixa relação sinal-ruído. Neste trabalho, essa formulação foi aplicada a sinais
-espaciais de brilho reconstruídos a partir do panorama das imagens da câmera de alta
-velocidade coletadas por \citeonline{deoliveira2021}, comparando ensaios de um mesmo
-padrão de escoamento, para avaliar a repetibilidade, e ensaios de padrões distintos, para
-avaliar a separação.
+funções de autocorrelação e correlação cruzada. O resultado representa a relação
+entre os sinais em função da escala e do atraso, com o denominador da coerência
+calculado no atraso nulo $b = 0$. Os fundamentos e limites dessa formulação são apresentados
+na \autoref{sec:wps-wcs-wco}. Neste trabalho, ela foi aplicada aos sinais espaciais
+reconstruídos para comparar ensaios de um mesmo padrão e de padrões distintos.
 
-% ---------------------------------------------------------
-\subsection{Aprendizado de máquina para classificação de padrões de escoamento}\label{sec:rev-ml}
-% ---------------------------------------------------------
+% =========================================================
+\subsection{Fração de vazio por processamento de imagens}\label{sec:rev-fracao-vazio}
+% =========================================================
 
-Nas últimas décadas, o aprendizado de máquina tornou-se uma abordagem amplamente utilizada
-para identificar padrões de escoamento a partir de imagens ou sinais de sensores. Métodos
-como $k$-Vizinhos Mais Próximos ($k$NN), máquinas de vetores de suporte (SVM), redes
-neurais artificiais e redes neurais convolucionais (CNN) foram aplicados a diferentes
-arranjos experimentais e fluidos \cite{brunton2020,yang2023}, com resultados que
-frequentemente atingem ou superam 87\% de acurácia, embora os resultados variem
-conforme o arranjo experimental, o sensor e o fluido de trabalho
-\cite{dias2025knn,dias2025cnn,sun2012}.
-\citeonline{yang2023}, em revisão sobre visão computacional e ML aplicados a microcanais
-e transferência de calor por ebulição, apontam a identificação automática de padrões como
-uma das aplicações mais promissoras dessa combinação tecnológica.
+\citeonline{schepperle2024} segmentaram imagens de ebulição de água em um
+microcanal retangular de 0{,}5\,mm de profundidade e 1{,}5\,mm de largura.
+A segmentação separou regiões de líquido e vapor por meio de limiarização,
+detecção de contornos e comparação com uma imagem de referência contendo
+somente líquido. A fração calculada pelos autores correspondeu à proporção
+de pixels identificados como vapor na imagem segmentada. O procedimento
+fornece um antecedente para identificar as regiões de fase, mas sua geometria
+difere da seção circular do tubo considerado nesse trabalho.
 
-No arranjo experimental descrito por \citeonline{deoliveira2021}, \citeonline{dias2025knn}
-classificaram cinco padrões de escoamento a partir de imagens da câmera de alta velocidade
-com o classificador $k$NN, atingindo 87\% de acurácia. \citeonline{dias2025cnn} estenderam
-esse trabalho com uma rede neural convolucional baseada na arquitetura ResNet50, alcançando
-93\% no melhor \textit{fold} (média de 88{,}1\% nos dez \textit{folds}) sobre o mesmo conjunto 
-de dados. Ambos os classificadores dependem de rotulagem manual das imagens e operam
-diretamente sobre os quadros, o que motiva explorar um descritor espectral objetivo,
-derivado por análise \textit{Wavelet}, capaz de caracterizar os padrões de forma
-complementar a essas abordagens.
-
-A capacidade da análise espectral por \textit{Wavelet} de discriminar padrões de
-escoamento a partir de sinais unidimensionais foi demonstrada em diferentes contextos.
-\citeonline{sun2012} aplicaram
-decomposição \textit{Wavelet} e entropia de norma sobre flutuações de pressão diferencial
-em escoamento bifásico ar-água horizontal (tubo de 50\,mm), obtendo taxa de identificação
-de 95\% para quatro padrões. \citeonline{tan2015} combinaram sensores de condutância e
-capacitância com análise por CWT em tubo de 50\,mm e mostraram que os coeficientes de
-energia \textit{Wavelet} local (LWE) discriminam regimes de escoamento óleo-água, com a
-ressalva de que a distribuição observada é específica para o arranjo e os fluidos
-utilizados. Esses trabalhos indicam que sinais unidimensionais contêm
-informação suficiente para classificar padrões, desde que os descritores extraídos capturem
-as diferenças espectrais entre eles, o que fundamenta a aplicação da análise \textit{Wavelet}
-aos sinais espaciais unidimensionais adotados neste trabalho.
-
-A literatura revisada aponta, portanto, dois requisitos técnicos para este trabalho:
-compreender a fenomenologia dos padrões de escoamento no arranjo do LETEF e dominar
-a formulação matemática da coerência \textit{Wavelet} alternativa empregada
-como descritor. As próximas seções apresentam esses fundamentos.
+A literatura revisada fundamenta a descrição dos padrões no arranjo do LETEF,
+a formulação da coerência \textit{Wavelet} alternativa e a análise complementar
+das regiões de vapor nas imagens. As próximas seções apresentam esses conceitos.
 
 % =========================================================
 \section{Bases Teóricas}\label{sec:bases}
 % =========================================================
 
 Esta seção apresenta os conceitos teóricos que embasam a metodologia adotada, cobrindo
-a fenomenologia do escoamento bifásico em microcanais e a formulação matemática das
+a fenomenologia do escoamento bifásico em microcanais, a fração de vazio e a formulação matemática das
 transformadas \textit{Wavelet} utilizadas, incluindo a formulação alternativa de coerência
 de \citeonline{schuck2019}.
 
@@ -188,30 +155,39 @@ de \citeonline{schuck2019}.
 % ---------------------------------------------------------
 
 Na ebulição convectiva em microcanais, um fluido líquido é aquecido ao percorrer um canal
-de diâmetro reduzido. Quando a temperatura da parede supera localmente o ponto de
-saturação, bolhas de vapor começam a se formar, e conforme o fluido avança no canal e
-continua absorvendo calor, a proporção de vapor aumenta progressivamente. Essa proporção é
-descrita pelo título de vapor $x$, definido como a razão entre a vazão mássica de vapor e
-a vazão total. Em títulos elevados, o filme líquido na parede pode secar, expondo a
-parede ao vapor. Esse fenômeno, conhecido como \textit{dryout}, segue a transição do
-regime anular após o fluxo crítico de calor \cite{cheng2023}.
+de diâmetro reduzido. O aquecimento pode promover a nucleação e o crescimento de
+bolhas. Com a evaporação, aumenta a participação do vapor na vazão mássica
+ao longo do canal. Essa participação é descrita pelo título de vapor $x$,
+definido como a razão entre a vazão mássica de vapor e a vazão mássica total.
+A relação com a fração de vazio é apresentada na \autoref{sec:fracao-vazio}.
+Em títulos elevados, o filme líquido na parede pode secar, expondo a
+parede ao vapor. A secagem do filme, denominada \textit{dryout}, e as instabilidades
+do escoamento integram os fenômenos considerados na caracterização de padrões de
+ebulição em microcanais \cite{cheng2023}.
 
-Em tubos com diâmetro da ordem de 1\,mm, a força da tensão superficial domina sobre a
-gravidade, o que altera quais padrões de escoamento aparecem e em que condições. Esse
-efeito é medido pelo número de confinamento $Co = \sqrt{\sigma / [g(\rho_l - \rho_v)
-D_h^2]}$, em que $\sigma$ é a tensão superficial, $g$ é a aceleração gravitacional,
-$\rho_l$ e $\rho_v$ são as massas específicas do líquido e do vapor e $D_h$ é o
-diâmetro hidráulico. Quando $Co < 0{,}5$,
-o canal é considerado microescala e o confinamento geométrico passa a influenciar
-significativamente o mapa de padrões \cite{cheng2023}. 
+O efeito relativo da tensão superficial e da gravidade pode ser expresso pelo
+número de confinamento $Co$ \cite{cheng2023}:
+
+\begin{equation}\label{eq:confinamento}
+  Co=\frac{1}{D_h}\sqrt{\frac{\sigma}{g(\rho_l-\rho_v)}}.
+\end{equation}
+
+\noindent
+A tensão superficial $\sigma$, a aceleração gravitacional $g$, as massas
+específicas do líquido $\rho_l$ e do vapor $\rho_v$ e o diâmetro hidráulico $D_h$
+determinam essa razão adimensional. Para o mesmo fluido e estado termodinâmico,
+a redução do diâmetro aumenta o número de confinamento $Co$. A revisão de
+\citeonline{cheng2023} reúne diferentes critérios de transição entre escalas.
+Neste trabalho, não se adotou um limiar universal do número de confinamento
+para classificar o canal.
 
 
 
 A transição entre padrões depende do balanço entre forças de inércia, tensão superficial
-e cisalhamento. Em microcanais horizontais, a ausência de estratificação gravitacional
-elimina os padrões estratificados presentes em tubulações maiores. Os padrões
-predominantes são os intermitentes (\textit{plug}, \textit{slug}, \textit{churn}) e o
-anular \cite{deoliveira2021,cheng2023}. As assinaturas espectrais de cada padrão nos
+e cisalhamento. Nos ensaios em microtubo horizontal considerados na literatura deste
+trabalho, foram observados padrões de bolhas, intermitentes
+(\textit{plug}, \textit{slug}, \textit{churn}) e anulares
+\cite{deoliveira2021,cheng2023}. As assinaturas espectrais de cada padrão nos
 sinais do PD e do OS são descritas em detalhe na \autoref{sec:padroes}.
 
 \subsubsection{Arranjo Experimental}\label{sec:arranjo}
@@ -223,17 +199,21 @@ O circuito opera em malha fechada com controle independente de fluxo mássico e 
 calor, conforme esquematizado na \autoref{fig:arranjo-experimental}. O fluido refrigerante (R600a)
 percorre, em sequência, uma bomba de engrenagem magnética, um \textit{subcooler}, um medidor de
 vazão mássico tipo Coriolis, o pré-aquecedor (PH), a seção de teste (TS) e a seção de
-visualização (VS), retornando ao condensador e ao reservatório antes de recircular
-\cite{deoliveira2021}.
+visualização (VS). Após a VS, o fluido retorna ao condensador e ao vaso de líquido
+antes de recircular. O reservatório de refrigerante é conectado entre esses componentes
+e auxilia no controle da pressão \cite{deoliveira2021}.
 
 \begin{figure}[htb]
   \centering
-  \includegraphics[width=0.85\textwidth]{figuras/deoliveira2021-fig1-arranjo}
-  \caption{Esquema do arranjo experimental do LETEF: loop fechado com bomba de engrenagem
-           magnética, \textit{subcooler}, medidor Coriolis, pré-aquecedor (PH), seção de teste (TS),
-           seção de visualização (VS), condensador e reservatório.}
+  \begin{minipage}{0.85\textwidth}
+  \caption{Arranjo experimental do LETEF.}
   \label{fig:arranjo-experimental}
+  \includegraphics[width=\linewidth]{figuras/deoliveira2021-fig1-arranjo}
   \fonte{Adaptado de \citeonline{deoliveira2021}.}
+  \nota{Esquema do arranjo experimental do LETEF: loop fechado com bomba de engrenagem
+           magnética, \textit{subcooler}, medidor Coriolis, pré-aquecedor (PH), seção de teste (TS),
+           seção de visualização (VS), condensador, vaso de líquido e reservatório.}
+  \end{minipage}
 \end{figure}
 
 \paragraph{Pré-aquecedor e seção de teste.}
@@ -242,9 +222,8 @@ diâmetro interno de 1,0\,mm, aquecidos por efeito Joule com aplicação direta 
 elétrica controlada por fonte de corrente contínua (SORENSEN\texttrademark{} DCS~8-125E).
 O PH tem comprimento total de 515\,mm (440\,mm
 aquecidos) e estabelece a condição termodinâmica na entrada da TS. A TS tem comprimento
-total de 366\,mm (265\,mm aquecidos). Ao longo desse percurso, o título de vapor $x$ evolui
-desde a entrada subcoolida até condições de escoamento totalmente bifásico, permitindo
-observar diferentes padrões em uma única seção aquecida. A jusante da TS há uma seção de
+total de 366\,mm (265\,mm aquecidos). O aquecimento permite estabelecer diferentes
+condições de ebulição na saída da TS. A jusante da TS há uma seção de
 visualização (VS) de tubo de vidro com 136\,mm e mesmo diâmetro interno, onde os padrões
 são registrados visualmente e o sensor óptico é posicionado \cite{deoliveira2019,deoliveira2021}.
 
@@ -259,27 +238,27 @@ passa-baixas de quarta ordem e amplificador operacional OPA\,4227, e o sinal é 
 pelo módulo NI\,6009 via LabVIEW\,2013. O sensor é posicionado no início da VS, registrando
 as condições da saída da TS. Por responder ao que passa pelo feixe do LED em um dado instante, 
 o OS captura eventos locais e rápidos associados à morfologia da interface: a passagem de 
-cada bolha ou frente de vapor gera um pulso distinto no sinal \cite{deoliveira2021}.
+bolhas e frentes de vapor modifica o sinal. Em condições com muitas interfaces,
+as respostas ópticas podem se sobrepor \cite{deoliveira2021}.
 
 \paragraph{Transdutor de pressão diferencial (PD).}
 A queda de pressão na TS é medida pelo transdutor ABB\texttrademark{} 600T, com frequência
-de resposta de 10\,kHz \cite{deoliveira2021}. Diferentemente do OS, o PD integra a queda
-de pressão ao longo de toda a extensão da seção de teste: ele não vê uma bolha isolada,
-mas sim o efeito acumulado de todas as estruturas presentes na TS simultaneamente. Isso
-resulta em flutuações mais lentas e de menor frequência, pois variações locais se somam
-e se cancelam parcialmente ao longo do tubo \cite{deoliveira2021}. Esse transdutor,
-conectado ao módulo NI\,9171, captura com resolução temporal suficiente as flutuações
-geradas por todos os padrões de escoamento estudados.
+de resposta de 10\,kHz \cite{deoliveira2021}. O PD mede a diferença de pressão ao
+longo da seção de teste, enquanto o OS observa a transmissão óptica na seção de
+visualização. Nos ensaios relatados, as frequências características do PD foram
+geralmente menores que as do OS \cite{deoliveira2021}. Essa diferença observada
+não equivale a uma limitação da frequência nominal de resposta do transdutor.
 
 \paragraph{Aquisição e parâmetros experimentais.}
 O OS e o PD são adquiridos \textit{simultaneamente} a 1\,kHz, com 8.000 amostras por
-ensaio (8\,s por condição de operação) \cite{deoliveira2021}. Em paralelo, os padrões são
+ensaio (8\,s por condição de operação) \cite{deoliveira2021}. Os padrões também são
 registrados na seção de visualização por uma câmera de alta velocidade, cujas sequências de
 quadros constituem os dados efetivamente utilizados neste trabalho. Os parâmetros dos
-ensaios de referência estão resumidos na \autoref{qua:params-exp}.
+ensaios de referência estão resumidos no \autoref{qua:params-exp}.
 
 \begin{quadro}[htb]
   \centering
+  \begin{threeparttable}
   \caption{Parâmetros experimentais dos ensaios de \citeonline{deoliveira2021}.}
   \label{qua:params-exp}
   \begin{tabular}{ll}
@@ -296,6 +275,7 @@ ensaios de referência estão resumidos na \autoref{qua:params-exp}.
     \hline
   \end{tabular}
   \fonte{\citeonline{deoliveira2021}.}
+  \end{threeparttable}
 \end{quadro}
 
 As sequências de quadros da câmera de alta velocidade registradas para cada condição de
@@ -307,7 +287,8 @@ alternativa, conforme detalhado no \autoref{cap:metodologia}.
 
 Os padrões de escoamento observados no microtubo de 1\,mm com isobutano R600a são
 descritos a seguir com base em \citeonline{deoliveira2021} e \citeonline{dias2025knn},
-na sequência que ocorre quando se aumenta o título de vapor com fluxo mássico fixo.
+das configurações com bolhas dispersas às configurações anulares. As faixas adimensionais
+e espectrais apresentadas correspondem às condições investigadas nesses estudos.
 \citeonline{deoliveira2021} associaram cada padrão a uma faixa do parâmetro adimensional
 $\beta$, definido como:
 
@@ -316,49 +297,57 @@ $\beta$, definido como:
 \end{equation}
 
 \noindent
-em que $S_{(o\text{-}TS)}$ é a razão de deslizamento entre as fases na saída da seção de
-teste, $Bo = q''_{TS}/(G\,i_{lv})$ é o número de ebulição, $G$ é o fluxo mássico e
-$i_{lv}$ é o calor latente de vaporização. O parâmetro $\beta$ condensa em um único escalar os
-efeitos de velocidade superficial de cada fase, fração de vazio, título de vapor, fluxo
-de calor e fluxo mássico \cite{deoliveira2021}. As faixas de $\beta$ em que cada padrão
-ocorre, estabelecidas por \citeonline{deoliveira2021} a partir das imagens da câmera de
-alta velocidade, constituem o rótulo de referência utilizado neste trabalho
-para associar cada ensaio ao seu padrão correspondente.
+em que a razão de deslizamento entre as fases na saída da seção de teste
+$S_{(o\text{-}TS)}$ é calculada pela razão entre as velocidades médias do vapor e do líquido.
+O número de ebulição $Bo = q''_{TS}/(G\,i_{lv})$ relaciona o fluxo de calor
+$q''_{TS}$ ao fluxo mássico $G$ e ao calor latente de vaporização $i_{lv}$.
+O parâmetro adimensional $\beta$ combina, portanto, o deslizamento entre as
+fases e o efeito do aquecimento \cite{deoliveira2021}. As faixas do parâmetro adimensional $\beta$ em que cada padrão
+ocorre foram estabelecidas por \citeonline{deoliveira2021} com apoio das imagens da
+câmera de alta velocidade. Neste trabalho, utilizaram-se os padrões da classificação
+manual dos ensaios, sem recalcular o parâmetro adimensional $\beta$ para atribuir classes.
 
-\textbf{\textit{Bolha dispersa}} (\textit{dispersed bubble}): ocorre em baixo título de vapor e
-alto fluxo mássico ($\beta < 0{,}5$), com queda de pressão média de 9{,}44\,kPa
+\textbf{\textit{Bolha dispersa}} (\textit{dispersed bubble}): ocorre em baixo título de vapor $x$ e
+alto fluxo mássico, com parâmetro adimensional $\beta < 0{,}5$
 \cite{deoliveira2021}. Pequenas bolhas esféricas ficam dispersas na fase líquida, com
 diâmetro menor que o tubo. O sinal de pressão diferencial apresenta múltiplos picos entre 6 e
 100\,Hz. O sensor óptico exibe energia entre 4 e 35\,Hz \cite{deoliveira2021}. Ambos os
 sinais apresentam comportamento intermitente ao longo do tempo quando analisados por
 \textit{Wavelet}.
 
-\textbf{\textit{Plug}}: aparece para $0{,}5 \leq \beta < 10$, principalmente em baixos
+\textbf{\textit{Plug}}: aparece na faixa $0{,}5 \leq \beta < 10$ do parâmetro adimensional, principalmente em baixos
 fluxos de calor \cite{deoliveira2021}. As bolhas crescem e assumem forma cilíndrica, com
 diâmetro próximo ao do tubo e comprimento maior que o diâmetro, motivo pelo qual esse padrão
 também é chamado de \textit{elongated bubble flow} \cite{deoliveira2021}.
-Entre os \textit{plugs}, o líquido continua sem bolhas dispersas.
+Nos ensaios relatados, também ocorreram bolhas dispersas de forma intermitente
+entre os \textit{plugs} \cite{deoliveira2021}.
 O sinal de pressão diferencial oscila entre 0{,}5 e 1\,Hz. O sensor óptico varia entre 2 e 16\,Hz.
 
 \textbf{\textit{Slug}}: formado pelo coalescimento de \textit{plugs} com o aumento do título de
-vapor, ocupando a faixa $10 \leq \beta < 25$ \cite{deoliveira2021}. Alterna seções de
-líquido e bolsões de vapor que preenchem toda a seção do tubo
+vapor $x$ e da fração de vazio $\alpha$ nas condições investigadas, ocupando a faixa
+$10 \leq \beta < 25$ do parâmetro adimensional \cite{deoliveira2021}. Alterna seções de
+líquido e bolsões alongados de vapor com diâmetro próximo ao do tubo
 \cite{dias2025knn,deoliveira2021}. A interface é instável e libera
-pequenas bolhas dispersas no líquido entre os bolsões. O sinal de pressão diferencial concentra
-energia abaixo de 1\,Hz. O sensor óptico apresenta pico em torno de 2{,}8\,Hz com
-componentes adicionais acima de 8\,Hz, geradas pelas bolhas dispersas intercaladas.
+pequenas bolhas dispersas no líquido entre os bolsões. O estudo relatou predominância
+de baixas frequências no PD. Para o fluxo mássico $G=510\,\text{kg/(m}^2\text{s)}$, os autores
+relataram no OS um pico em 2{,}8\,Hz e componentes próximas de 8, 12, 23 e 32\,Hz,
+atribuídas à passagem de bolhas dispersas entre os \textit{slugs}. Essas faixas
+variaram com o fluxo mássico.
 A natureza caótica foi confirmada com expoentes de Lyapunov entre 0{,}261
 e 0{,}463 no PD e entre 0{,}413 e 4{,}362 no OS \cite{deoliveira2021}.
 
-\textbf{\textit{Churn}}: regime de transição entre \textit{slug} e anular ($25 \leq \beta < 152$),
-com título de vapor entre 0{,}35 e 0{,}62. A interface fica
-turbulenta e jatos de vapor desestabilizam o escoamento. A velocidade de deslizamento
+\textbf{\textit{Churn}}: regime de transição entre \textit{slug} e anular, com parâmetro adimensional
+na faixa $25 \leq \beta < 152$, título de vapor $x$ entre 0{,}35 e 0{,}62 e fração de vazio $\alpha$
+entre 0{,}61 e 0{,}85 nas condições do estudo. A maior velocidade do vapor foi associada
+à presença de jatos e a instabilidades na interface. A razão de deslizamento
 entre as fases varia de 1{,}40 a 2{,}34. O sinal de pressão diferencial apresenta
-frequências de baixa energia abaixo de 8\,Hz, enquanto o sensor óptico exibe flutuações
-de maior energia entre 15 e 28\,Hz \cite{deoliveira2021}.
+frequências predominantes de baixa energia em 8\,Hz ou menos. No sensor óptico,
+observaram-se componentes de baixa frequência e componentes mais altas, entre
+15 e 28\,Hz, associadas pelos autores ao aumento do fluxo mássico \cite{deoliveira2021}.
 
 
-\textbf{\textit{Anular ondulado}} (\textit{wavy annular}): observado para $152 \leq \beta < 519$.
+\textbf{\textit{Anular ondulado}} (\textit{wavy annular}): observado na faixa
+$152 \leq \beta < 519$ do parâmetro adimensional.
 O vapor ocupa o centro do tubo e o líquido forma um filme na parede
 \cite{dias2025knn,deoliveira2021}, sobre o qual deslizam ondas frontais na interface
 líquido-vapor \cite{deoliveira2021}. O sinal de pressão diferencial não apresenta
@@ -367,70 +356,143 @@ energia persistente entre 2 e 16\,Hz, gerada pela dinâmica dessas ondas na inte
 As flutuações de pressão apresentam expoente de Hurst abaixo de 0{,}5, indicando
 comportamento anti-persistente \cite{deoliveira2021}.
 
-\textbf{\textit{Anular liso}} (\textit{smooth annular}): ocorre para $\beta \geq 519$, em condições
+\textbf{\textit{Anular liso}} (\textit{smooth annular}): ocorre com parâmetro adimensional $\beta \geq 519$, em condições
 extremas de baixo fluxo mássico com alto fluxo de calor \cite{deoliveira2021}. A interface
-entre o filme líquido e o núcleo de vapor torna-se lisa e o sinal óptico apresenta
-amplitudes muito baixas. \citeonline{dias2025knn} limitaram a classificação a cinco padrões
+entre o filme líquido e o núcleo de vapor torna-se lisa.
+\citeonline{dias2025knn} limitaram a classificação a cinco padrões
 de escoamento, não incluindo o anular liso.
 
 \begin{figure}[htb]
   \centering
-  \includegraphics[width=0.90\textwidth]{figuras/dias2025knn-fig4-padroes}
-  \caption{Amostras de imagens dos cinco padrões de escoamento observados no arranjo
+  \begin{minipage}{0.90\textwidth}
+  \caption{Padrões de escoamento observados no LETEF.}
+  \label{fig:padroes-escoamento}
+  \includegraphics[width=\linewidth]{figuras/dias2025knn-fig4-padroes}
+  \fonte{Adaptado de \citeonline{dias2025knn}.}
+  \nota{Amostras de imagens dos cinco padrões de escoamento observados no arranjo
            experimental do LETEF: (a) bolha dispersa, (b) \textit{plug}, (c) \textit{slug},
            (d) \textit{churn} e (e) anular ondulado.}
-  \label{fig:padroes-escoamento}
-  \fonte{Adaptado de \citeonline{dias2025knn}.}
+  \end{minipage}
 \end{figure}
 
-As transições entre padrões adjacentes, como entre \textit{plug} e \textit{slug},
-ocorrem em faixas estreitas de razão de deslizamento e fração de vazio
-\cite{deoliveira2021}, o que dificulta a classificação automática nas vizinhanças
-das bordas das faixas de $\beta$. Essa diversidade espectral, com PD e OS capturando
-faixas complementares para cada padrão \cite{deoliveira2021}, é justamente o que motiva
-o uso da transformada \textit{Wavelet} e, em especial, da coerência \textit{Wavelet}
-alternativa como descritor de padrões de escoamento.
+Na transição de \textit{plug} para \textit{slug}, o estudo relatou razão de
+deslizamento superior a 1{,}3 e fração de vazio $\alpha$ próxima de 0{,}65
+\cite{deoliveira2021}. Esses valores caracterizam o arranjo investigado.
+As diferenças entre as respostas espectrais do PD e do OS
+\cite{deoliveira2021} motivam investigar representações \textit{Wavelet}.
+A utilidade da coerência alternativa para os panoramas foi avaliada nesse estudo.
 
 
+
+% =========================================================
+\subsection{Título de vapor, fração de vazio e representação das fases}\label{sec:fracao-vazio}
+% =========================================================
+
+Enquanto o título de vapor $x$ caracteriza a participação do vapor na vazão
+mássica, a fração de vazio $\alpha$ expressa a parcela do volume da mistura ocupada
+pela fase gasosa. Em escoamento líquido-vapor, essa definição pode ser escrita
+como \cite{masiukiewicz2021}:
+
+\begin{equation}\label{eq:fracao-vazio-volume}
+  \alpha=\frac{V_v}{V_v+V_l}.
+\end{equation}
+
+\noindent
+O volume de vapor $V_v$ e o volume de líquido $V_l$ se referem à mesma região
+de observação. A fração de vazio $\alpha$ é adimensional: o valor zero
+representa somente líquido, e o valor um, somente vapor.
+
+Para relacionar as duas grandezas no escoamento, considera-se a fração de
+área ocupada pelo vapor em uma seção transversal, equivalente à fração de
+volume em uma fatia de espessura infinitesimal nessa posição. A razão de
+deslizamento $S=u_v/u_l$ utiliza as velocidades médias de cada fase na
+mesma seção. Reescrevendo a relação entre a razão de deslizamento $S$, o título
+de vapor $x$ e a fração de vazio $\alpha$ empregada por
+\citeonline{deoliveira2021}, obtém-se, para títulos de vapor no intervalo $0<x<1$:
+
+\begin{equation}\label{eq:titulo-fracao-vazio}
+  x=\frac{\dot m_v}{\dot m_v+\dot m_l},
+  \qquad
+  \alpha=\left[1+\frac{1-x}{x}\frac{\rho_v}{\rho_l}S\right]^{-1}.
+\end{equation}
+
+\noindent
+As vazões mássicas $\dot m_v$ e $\dot m_l$, as massas específicas $\rho_v$
+e $\rho_l$ e as velocidades $u_v$ e $u_l$ correspondem ao vapor e ao líquido,
+respectivamente. Assim, o título de vapor $x$ e a fração de vazio $\alpha$ não são sinônimos: sua relação depende
+das massas específicas e do deslizamento. Mesmo na hipótese homogênea,
+com velocidades iguais e razão de deslizamento $S=1$, as diferenças de massa específica impedem
+identificar numericamente as duas frações. A relação se refere a grandezas
+avaliadas na mesma seção e não autoriza converter diretamente uma média
+óptica do panorama em título de vapor.
+
+No arranjo de referência, \citeonline{deoliveira2021} calcularam o título
+local pelo balanço de entalpia e estimaram a fração de vazio por uma
+correlação da literatura. Portanto, os valores do título de vapor $x$ e da fração de vazio $\alpha$ citados
+na \autoref{sec:padroes} resultaram de procedimentos distintos e não
+constituíram duas denominações para uma mesma medida.
+
+Na análise de imagens, uma máscara binária atribui cada pixel a uma das
+fases. A contagem desses pixels fornece uma proporção de área na projeção
+observada, como no procedimento de \citeonline{schepperle2024}.
+Uma projeção lateral, porém, não informa diretamente a extensão da fase
+na profundidade do tubo. A conversão das larguras observadas em áreas de
+seções circulares exige uma hipótese geométrica adicional, explicitada na
+metodologia. Assim, a estimativa obtida por esse procedimento permanece
+condicionada à geometria assumida e à identificação das interfaces.
+Os valores de fração de vazio relatados na literatura não foram empregados
+como calibração das estimativas obtidas nesse trabalho.
+
+A fração média, isoladamente, não determina a forma ou a distribuição das
+estruturas de gás. \citeonline{masiukiewicz2021} destacaram essa limitação ao
+combinar a fração volumétrica com parâmetros de tamanho, distribuição e
+superfície interfacial. Na análise por \textit{Wavelet},
+\citeonline{nguyen2010} também utilizaram a fração de vazio média junto ao
+coeficiente de energia wavelet local efetiva na identificação de bolhas discretas
+e de casos de \textit{churn}. Esses antecedentes motivam examinar
+descritores complementares: a estimativa de fração de vazio resume a
+ocupação de vapor, as transições da máscara descrevem as alternâncias
+espaciais detectadas e os perfis \textit{Wavelet} caracterizam a distribuição
+das variações de intensidade por escala. Essa relação conceitual não
+transforma o sinal de intensidade em uma medição calibrada de fração de vazio.
 
 % ---------------------------------------------------------
 \subsection{Transformada \textit{Wavelet}}\label{sec:wavelet}
 % ---------------------------------------------------------
 
-A transformada \textit{Wavelet} decompõe um sinal em componentes localizados ao mesmo
-tempo no tempo e na frequência. A diferença em relação à transformada de Fourier é
-fundamental: enquanto Fourier informa quais frequências existem no sinal, a
-\textit{Wavelet} informa quando essas frequências ocorrem. Isso é feito com funções-base
-chamadas \textit{Wavelets}-mãe, oscilatórias e de duração limitada. Ao escalar e deslocar
-essa função pelo sinal, obtém-se uma representação que adapta automaticamente a resolução:
-alta resolução temporal em altas frequências, boa resolução em frequência nas escalas
-baixas \cite{torrence1998}. Essa adaptatividade é justamente o que se precisa para analisar
-sinais de escoamento bifásico, cujo comportamento muda ao longo do tempo conforme o padrão
-de escoamento varia. A \autoref{qua:wavelet-fourier} compara as duas transformadas.
+A transformada \textit{Wavelet} permite examinar como o conteúdo de um sinal
+varia ao longo do tempo. Enquanto o espectro de Fourier global resume as
+frequências presentes no registro completo, a análise wavelet localiza essas
+componentes no sinal. Para isso, utiliza versões dilatadas e deslocadas de uma
+função oscilatória localizada, a wavelet mãe. Escalas pequenas favorecem a
+localização de variações rápidas. Escalas grandes permitem distinguir melhor
+componentes de baixa frequência \cite{torrence1998}. Essa propriedade permite
+examinar variações locais nos sinais de escoamento bifásico.
+O \autoref{qua:wavelet-fourier} compara as duas transformadas.
 
 \begin{quadro}[htb]
   \centering
+  \begin{threeparttable}
   \caption{Comparação entre a transformada de Fourier e a transformada \textit{Wavelet}.}
   \label{qua:wavelet-fourier}
   \begin{tabular}{lll}
     \hline
-    \textbf{Característica}       & \textbf{Fourier}     & \textbf{Wavelet}               \\
+    \textbf{Característica}       & \textbf{Fourier global} & \textbf{Wavelet contínua}   \\
     \hline
-    Resolução temporal            & Nula                 & Alta (para eventos curtos)     \\
-    Resolução em frequência       & Alta                 & Adaptativa                     \\
     Localização temporal          & Não                  & Sim                            \\
-    Sinais estacionários          & Ideal                & Funciona                       \\
-    Sinais não-estacionários      & Inadequada           & Adequada                       \\
-    Pergunta respondida           & Quais frequências?   & Quando as frequências ocorrem? \\
+    Informação principal          & Espectro global      & Conteúdo por tempo e escala    \\
+    Janela de análise              & Registro completo    & Duração variável com a escala  \\
+    Variação ao longo do tempo     & Não localizada       & Representada no mapa           \\
     \hline
   \end{tabular}
   \fonte{Adaptado de \citeonline{torrence1998}.}
+  \end{threeparttable}
 \end{quadro}
 
 \subsubsection{Transformada Wavelet Contínua (CWT)}\label{sec:cwt}
 
 A CWT de um sinal $x(t)$ em relação à \textit{Wavelet}-mãe $\psi$ é definida
-por \cite{torrence1998}:
+na forma integral por \cite{schuck2019}:
 
 \begin{equation}\label{eq:cwt}
   W(a, b) = \frac{1}{\sqrt{a}} \int_{-\infty}^{\infty} x(t)\,
@@ -438,124 +500,137 @@ por \cite{torrence1998}:
 \end{equation}
 
 \noindent
-em que $a > 0$ é o parâmetro de escala, $b$ é a posição no tempo e $(\cdot)^*$ é o
-complexo conjugado. O fator $1/\sqrt{a}$ normaliza a amplitude da \textit{Wavelet}-mãe
-em todas as escalas, garantindo que os coeficientes sejam comparáveis entre si
-independentemente da escala analisada. Escalas grandes correspondem a baixas frequências.
-escalas pequenas correspondem a altas frequências. Para a \textit{Wavelet} de Morlet com
-$\omega_0 = 6$, o período de Fourier equivalente é $\lambda \approx 1{,}03\,a$ (relação
-específica para este valor de $\omega_0$ \cite{torrence1998,grinsted2004}), de modo que a
-frequência característica se relaciona à escala por $f \approx 1/(1{,}03\,a\,\delta t)$
-\cite{torrence1998,grinsted2004}.
+O coeficiente wavelet $W(a,b)$ quantifica a resposta do sinal à wavelet na escala $a$
+e na posição $b$. A escala $a>0$ controla a duração da função de análise,
+enquanto a posição $b$ determina onde ela é centrada no sinal. A integral reúne os
+produtos entre o sinal e a conjugada complexa dessa função. O fator
+$1/\sqrt{a}$ preserva a energia da wavelet ao variar a escala.
+Escalas grandes correspondem a baixas frequências, e escalas pequenas,
+a altas frequências. A adaptação ao domínio espacial
+e a conversão das escalas em comprimentos de onda são descritas na
+\autoref{sec:met-wco-morlet}.
 
-O resultado é um escalograma (\textit{scalogram}): um mapa bidimensional que mostra
-onde e quando o sinal tem energia significativa em cada frequência. A diferença em relação
-ao espectrograma de Fourier com janela deslizante está na resolução: naquele, a janela
-tem comprimento fixo $T$, de modo que eventos rápidos e lentos são analisados com a mesma
-resolução temporal \cite{torrence1998}. Na CWT, a janela se adapta automaticamente: para
-escalas pequenas (altas frequências), ela é estreita e captura bem eventos curtos. Para
-escalas grandes (baixas frequências), ela se alarga e captura melhor a periodicidade de
-eventos lentos \cite{torrence1998}. Nos sinais de escoamento bifásico, onde o \textit{slug}
-gera pulsos rápidos e o anular gera variações lentas e persistentes, essa adaptatividade
-é essencial. Exemplos de escalogramas dos padrões \textit{slug} e \textit{churn} para os
-dois canais do arranjo experimental (\autoref{fig:scalogram-slug} a
-\autoref{fig:scalogram-churn-os}) estão apresentados ao final da \autoref{sec:padroes}.
+O escalograma permite visualizar como o conteúdo do sinal varia ao longo do
+tempo e entre escalas \cite{torrence1998}. Exemplos dos padrões
+\textit{slug} e \textit{churn} para os dois canais do arranjo experimental
+(\autoref{fig:scalogram-slug} a \autoref{fig:scalogram-churn-os}) estão apresentados
+na \autoref{sec:wps-wcs-wco}.
 
-A \textit{Wavelet} de Morlet complexa é a mais utilizada em análise de sinais físicos:
+A \textit{Wavelet} de Morlet complexa combina oscilações com uma envoltória
+gaussiana e pode ser escrita na forma aproximada
+\cite{torrence1998,schuck2019}:
 
 \begin{equation}\label{eq:morlet}
   \psi(t) = \pi^{-1/4}\, e^{-t^2/2}\, e^{j\omega_0 t},
 \end{equation}
 
 \noindent
-em que $\pi^{-1/4}$ normaliza a energia. O parâmetro $\omega_0$ controla o equilíbrio
-entre resolução temporal e espectral: valores menores aumentam a resolução temporal às
-custas da resolução em frequência. O valor $\omega_0 = 6$ satisfaz a condição de
-admissibilidade da \textit{Wavelet} \cite{torrence1998} e é adotado neste trabalho. Por
-ser complexa, a \textit{Wavelet} de Morlet preserva a fase do sinal, o que é
-indispensável para calcular a coerência entre dois sinais \cite{torrence1998}.
+em que a coordenada $t$ é adimensional, a unidade imaginária é $j=\sqrt{-1}$ e
+o fator $\pi^{-1/4}$ normaliza a energia.
+Neste trabalho, adotou-se a frequência angular central adimensional
+$\omega_0=6$ nessa forma aproximada
+\cite{schuck2019}. Por ser complexa, a Morlet fornece coeficientes com módulo
+e fase, permitindo estudar a relação entre dois sinais \cite{torrence1998}.
+A \autoref{fig:morlet-mae} apresenta suas partes real e imaginária, cujas
+oscilações diminuem em amplitude ao se afastarem da origem.
 
-\subsubsection{Transformada Wavelet Discreta (DWT)}\label{sec:dwt}
-
-A DWT é uma versão discreta e computacionalmente eficiente da análise por
-\textit{Wavelet} \cite{mallat2009}. Em vez de varrer continuamente todas as escalas
-e posições como na CWT, ela restringe essa varredura a uma grade diádica, o que
-permite uma implementação por banco de filtros com custo computacional
-$\mathcal{O}(N)$ para um sinal de $N$ amostras. O resultado é uma decomposição
-em múltiplas resoluções: cada nível da decomposição captura uma faixa de frequência
-diferente, do mais fino ao mais grosseiro. A DWT é apresentada aqui por completude
-e por sua presença em trabalhos correlatos \cite{morshed2020,dias2025knn}. A
-metodologia deste trabalho empregou exclusivamente a CWT, conforme formulação
-de \citeonline{schuck2019}.
+\begin{figure}[htbp]
+  \centering
+  \caption{Wavelet mãe de Morlet complexa utilizada na análise.}
+  \label{fig:morlet-mae}
+  \includegraphics[width=\textwidth]{figuras/morlet_mae.pdf}
+  \fonte{Elaborado pelo autor a partir da \autoref{eq:morlet}.}
+  \nota{Partes real e
+  imaginária da wavelet mãe de Morlet, com frequência angular central
+  adimensional $\omega_0=6$, escala $a=1$ e posição $b=0$.
+  A coordenada $t$ e a amplitude são adimensionais.}
+\end{figure}
 
 \subsubsection{Espectro de Potência, Espectro Cruzado e Coerência \textit{Wavelet}}\label{sec:wps-wcs-wco}
 
-A partir dos coeficientes da CWT, é possível calcular três medidas espectrais que descrevem
-o sinal individualmente ou a relação entre dois sinais \cite{torrence1998}.
+A partir da CWT, o espectro de potência descreve as componentes de cada sinal,
+o espectro cruzado reúne informações de dois sinais e a coerência quantifica
+sua associação por uma medida normalizada \cite{torrence1998}.
 
 \paragraph{Espectro de Potência Wavelet (WPS).}
-O WPS mostra como a energia do sinal $x$ se distribui ao longo do tempo e das escalas
-de frequência:
+O WPS descreve a distribuição da potência do sinal $x$ entre posições e escalas:
 
 \begin{equation}\label{eq:wps}
   P_x(a, b) = |W_x(a, b)|^2.
 \end{equation}
 
-Regiões de alto $P_x$ indicam quando e em que frequência o sinal tem atividade intensa.
-Integrado no tempo, o WPS aproxima-se do espectro de Fourier clássico \cite{torrence1998}.
+Valores elevados da potência wavelet $P_x(a,b)$ localizam componentes com maior potência
+na escala $a$ e na posição $b$.
+A média temporal do WPS fornece o espectro \textit{Wavelet} global, comparável a
+uma versão suavizada do espectro de Fourier \cite{torrence1998}.
 
-O sensor óptico (OS) e o transdutor de pressão diferencial (PD) respondem ao mesmo
-evento físico, a passagem de uma estrutura de vapor, a partir de perspectivas distintas:
-o PD captura flutuações de pressão integradas ao longo da seção de teste, enquanto o OS
-registra a variação local de transmitância óptica na interface líquido-vapor. As
-\autoref{fig:scalogram-slug} e \autoref{fig:scalogram-churn} mostram os escalogramas do
-WPS do PD para os padrões \textit{slug} e \textit{churn}. As
-\autoref{fig:scalogram-slug-os} e \autoref{fig:scalogram-churn-os} mostram os correspondentes
-para o OS. Fica evidente que, para os mesmos padrões, os WPS do OS concentram energia em
-faixas de frequência sistematicamente mais altas que o PD, confirmando a complementaridade
-espectral dos dois canais \cite{deoliveira2021}.
+O transdutor de pressão diferencial (PD) mede a diferença de pressão entre as
+extremidades da seção de teste, enquanto o sensor óptico (OS) registra a variação
+local de luminosidade na seção de visualização. A
+\autoref{fig:scalogram-slug} e a \autoref{fig:scalogram-churn} mostram os escalogramas
+do WPS do PD para \textit{slug} e \textit{churn}. A \autoref{fig:scalogram-slug-os}
+e a \autoref{fig:scalogram-churn-os} apresentam os correspondentes do OS.
+Esses exemplos permitem comparar dois padrões pelo mesmo sensor e as respostas
+dos dois sensores a um mesmo padrão. Os mapas apresentam distribuições diferentes
+de energia e componentes em faixas sobrepostas. O estudo relatou, em geral,
+frequências características menores no PD do que no OS \cite{deoliveira2021}.
 
 \begin{figure}[htb]
   \centering
-  \includegraphics[width=0.85\textwidth]{figuras/deoliveira2021-fig13-slug-pd}
-  \caption{Padrão \textit{slug} — escalograma do WPS do sinal de pressão diferencial
-           ($G = 510\,\text{kg/(m}^2\text{s)}$): energia concentrada abaixo de 1\,Hz,
-           com componentes adicionais em torno de 2{,}8\,Hz no sensor óptico.}
+  \begin{minipage}{0.85\textwidth}
+  \caption{WPS da pressão diferencial no padrão \textit{slug}.}
   \label{fig:scalogram-slug}
+  \includegraphics[width=\linewidth]{figuras/deoliveira2021-fig13-slug-pd}
   \fonte{Adaptado de \citeonline{deoliveira2021}.}
+  \nota{Padrão \textit{slug}:
+           (a) trecho do sinal de pressão diferencial para o fluxo mássico $G=760\,\text{kg/(m}^2\text{s)}$.
+           Escalogramas e perfis de potência média para os fluxos mássicos (b) $G=510\,\text{kg/(m}^2\text{s)}$
+           e (c) $G=760\,\text{kg/(m}^2\text{s)}$.}
+  \end{minipage}
 \end{figure}
 
 \begin{figure}[htb]
   \centering
-  \includegraphics[width=0.85\textwidth]{figuras/deoliveira2021-fig17-churn-pd}
-  \caption{Padrão \textit{churn} — escalograma do WPS do sinal de pressão diferencial
-           ($G = 510\,\text{kg/(m}^2\text{s)}$): energia predominante em baixas frequências
-           (abaixo de 8\,Hz) e de baixa amplitude no sinal de pressão diferencial.}
-  \label{fig:scalogram-churn}
-  \fonte{Adaptado de \citeonline{deoliveira2021}.}
-\end{figure}
-
-\begin{figure}[htb]
-  \centering
-  \includegraphics[width=0.85\textwidth]{figuras/deoliveira2021-fig14-slug-os}
-  \caption{Padrão \textit{slug} — escalograma do WPS do sensor óptico
-           ($G = 510\,\text{kg/(m}^2\text{s)}$): pico dominante em torno de 2{,}8\,Hz
-           com harmônicos em frequências acima de 8\,Hz, gerados pelas bolhas dispersas
-           intercaladas entre os bolsões de vapor.}
+  \begin{minipage}{0.85\textwidth}
+  \caption{WPS do sensor óptico no padrão \textit{slug}.}
   \label{fig:scalogram-slug-os}
+  \includegraphics[width=\linewidth]{figuras/deoliveira2021-fig14-slug-os}
   \fonte{Adaptado de \citeonline{deoliveira2021}.}
+  \nota{Padrão \textit{slug}:
+           (a) trecho do sinal do sensor óptico para o fluxo mássico $G=760\,\text{kg/(m}^2\text{s)}$.
+           Escalogramas e perfis de potência média para os fluxos mássicos (b) $G=510\,\text{kg/(m}^2\text{s)}$
+           e (c) $G=760\,\text{kg/(m}^2\text{s)}$.}
+  \end{minipage}
 \end{figure}
 
 \begin{figure}[htb]
   \centering
-  \includegraphics[width=0.85\textwidth]{figuras/deoliveira2021-fig18-churn-os}
-  \caption{Padrão \textit{churn} — escalograma do WPS do sensor óptico
-           ($G = 510\,\text{kg/(m}^2\text{s)}$): energia concentrada entre 15 e 28\,Hz,
-           faixa significativamente mais alta do que a observada no sinal de pressão
-           diferencial do mesmo padrão (abaixo de 8\,Hz).}
-  \label{fig:scalogram-churn-os}
+  \begin{minipage}{0.85\textwidth}
+  \caption{WPS da pressão diferencial no padrão \textit{churn}.}
+  \label{fig:scalogram-churn}
+  \includegraphics[width=\linewidth]{figuras/deoliveira2021-fig17-churn-pd}
   \fonte{Adaptado de \citeonline{deoliveira2021}.}
+  \nota{Padrão \textit{churn}:
+           (a) trecho do sinal de pressão diferencial para o fluxo mássico $G=510\,\text{kg/(m}^2\text{s)}$.
+           Escalogramas e perfis de potência média para os fluxos mássicos (b) $G=510\,\text{kg/(m}^2\text{s)}$
+           e (c) $G=760\,\text{kg/(m}^2\text{s)}$.}
+  \end{minipage}
 \end{figure}
+
+\begin{figure}[htb]
+  \centering
+  \begin{minipage}{0.85\textwidth}
+  \caption{WPS do sensor óptico no padrão \textit{churn}.}
+  \label{fig:scalogram-churn-os}
+  \includegraphics[width=\linewidth]{figuras/deoliveira2021-fig18-churn-os}
+  \fonte{Adaptado de \citeonline{deoliveira2021}.}
+  \nota{Padrão \textit{churn}:
+           (a) trecho do sinal do sensor óptico. Escalogramas e perfis de potência média
+           para os fluxos mássicos (b) $G=510\,\text{kg/(m}^2\text{s)}$ e (c) $G=760\,\text{kg/(m}^2\text{s)}$.
+           A identificação dos painéis segue as letras exibidas na imagem.}
+  \end{minipage}
+\end{figure}
+
 
 \paragraph{Espectro Cruzado Wavelet (WCS).}
 O WCS mede a relação entre dois sinais $x$ e $y$ no domínio tempo-escala:
@@ -564,148 +639,136 @@ O WCS mede a relação entre dois sinais $x$ e $y$ no domínio tempo-escala:
   C_{xy}(a, b) = W_x(a, b) \cdot W_y^*(a, b).
 \end{equation}
 
-O WCS é o análogo \textit{Wavelet} da covariância espectral entre dois sinais: enquanto o WPS
-de um sinal indica quando e em que escala ele tem energia, o WCS indica quando e em
-que escala os dois sinais têm energia simultaneamente e com qual defasagem
-\cite{torrence1998,grinsted2004}. Por ser um número complexo, seu módulo mede a força da relação
-entre os dois sinais $x$ e $y$ em cada escala e instante, enquanto a fase indica o
-deslocamento entre eles, isto é, com que antecedência um dos sinais responde a um
-evento em relação ao outro.
+O produto combina os coeficientes dos dois sinais na mesma escala e posição.
+Seu módulo destaca regiões de potência comum, e sua fase descreve a defasagem
+relativa entre as componentes \cite{torrence1998,grinsted2004}.
+Como o WCS ainda depende das amplitudes dos sinais, potência comum elevada
+não equivale, por si só, a coerência elevada. A conversão da diferença de
+fase em atraso temporal depende da frequência analisada \cite{grinsted2004}.
 
 \paragraph{Coerência Wavelet (WCO).}
-A WCO é a versão normalizada do WCS, com valores entre 0 e 1:
+A coerência wavelet clássica $\gamma_{xy}$ é uma medida quadrática de associação,
+com valores entre 0 e 1 quando o denominador é positivo:
 
 \begin{equation}\label{eq:wco-classica}
-  \gamma_{xy}(a, b) = \frac{|S\bigl[C_{xy}(a, b)\bigr]|^2}
-                           {S\bigl[P_x(a, b)\bigr] \cdot S\bigl[P_y(a, b)\bigr]},
+  \gamma_{xy}(a, b) = \frac{|S\bigl[a^{-1}C_{xy}(a, b)\bigr]|^2}
+                           {S\bigl[a^{-1}P_x(a, b)\bigr] \cdot S\bigl[a^{-1}P_y(a, b)\bigr]},
 \end{equation}
 
 \noindent
-em que $S[\cdot]$ é um operador de suavização em tempo e em escala \cite{grinsted2004}. Um valor $\gamma = 1$
-indica que os dois sinais são completamente coerentes naquela frequência e instante.
-$\gamma = 0$ indica ausência de relação linear \cite{torrence1998}.
+A normalização compara o espectro cruzado com as potências individuais dos
+sinais. A suavização $S[\cdot]$ reúne informações vizinhas em tempo e escala,
+após a ponderação dos espectros pelo inverso da escala $a^{-1}$ \cite{grinsted2004}.
+A coerência clássica $\gamma_{xy}$ próxima de 1 indica forte associação na
+vizinhança analisada, enquanto a coerência clássica próxima de zero indica pequena
+associação linear nessa representação \cite{grinsted2004}.
 
-\paragraph{Limitação da definição clássica e formulação alternativa de Transformadas \textit{Wavelet} de Schuck e Bodmann.}
+\paragraph{Formulação alternativa de Schuck e Bodmann.}
 
-A suavização $S[\cdot]$ na \autoref{eq:wco-classica} é necessária porque, sem ela, a
-estimativa de coerência para uma única realização do sinal colapsa para 1 em toda escala.
-O motivo é algébrico: quando se calcula a coerência a partir de um único par de realizações,
-o numerador $|W_x \cdot W_y^*|^2$ e o denominador $|W_x|^2 \cdot |W_y|^2$ se tornam
-idênticos por construção, independentemente de qualquer relação entre os sinais
-\cite{torrence1998}. A suavização rompe essa identidade ao misturar informação de
-instantes ou escalas vizinhos, mas ao custo de reduzir a resolução tempo-escala e
-comprometer a capacidade de localizar quando e em que frequência os sinais estão
-relacionados.
+Sem a suavização da \autoref{eq:wco-classica}, a coerência calculada diretamente de
+um único par de transformadas é unitária onde o denominador não se anula, pois
+$|W_xW_y^*|^2=|W_x|^2|W_y|^2$. Essa identidade algébrica independe da relação
+física entre os sinais \cite{torrence1998}. A suavização evita essa degeneração,
+mas combina informações vizinhas em tempo e escala \cite{grinsted2004}.
 
-\citeonline{schuck2019} propuseram uma forma alternativa de contornar esse problema.
-Em vez de aplicar a CWT diretamente aos sinais $x(t)$ e $y(t)$, aplica-se às suas
-funções de autocorrelação $R_{xx}(\tau)$ e de correlação cruzada $R_{xy}(\tau)$:
+\citeonline{schuck2019} formularam uma alternativa baseada na CWT das funções de
+correlação. Para processos estacionários, definiram a autocorrelação e a correlação
+cruzada pela esperança matemática:
 
 \begin{equation}\label{eq:autocorr}
-  R_{xx}(\tau) = \int_{-\infty}^{\infty} x(t)\, x(t + \tau)\, dt,
+  R_{xx}(\tau)=\operatorname{E}\{x(t+\tau)x^*(t)\},
 \end{equation}
 
 \begin{equation}\label{eq:crosscorr}
-  R_{xy}(\tau) = \int_{-\infty}^{\infty} x(t)\, y(t + \tau)\, dt.
+  R_{xy}(\tau)=\operatorname{E}\{x(t+\tau)y^*(t)\}.
 \end{equation}
 
 \noindent
-A CWT é então calculada nessas funções no ponto $b = 0$ (atraso nulo). A justificativa
-vem de uma analogia com o teorema de Wiener-Khinchin: assim como a transformada de Fourier
-da autocorrelação de um processo estacionário fornece a sua densidade espectral de potência,
-a CWT de $R_{xx}(\tau)$ avaliada em $b = 0$ recupera uma medida espectral equivalente na
-base \textit{Wavelet} \cite{schuck2019}.
+A autocorrelação $R_{xx}(\tau)$ compara um sinal com uma versão deslocada
+de si mesmo, enquanto a correlação cruzada $R_{xy}(\tau)$ compara dois sinais
+separados pelo atraso $\tau$. Em ambos os casos, calcula-se a média estatística
+$\operatorname{E}\{\cdot\}$ dos produtos entre as amostras, usando a conjugada
+complexa do segundo fator. Sob a hipótese de estacionariedade, essas funções
+dependem do atraso, sem depender da origem temporal $t$ \cite{schuck2019}.
 
-O espectro de potência alternativo do sinal $x$, $\widetilde{P}_x(a)$, é definido como:
+Neste trabalho, estimaram-se as correlações a partir de um registro de cada
+sinal. Aplicou-se então a CWT a essas funções ao longo do eixo de atrasos,
+seguindo a formulação de \citeonline{schuck2019}:
 
 \begin{equation}\label{eq:wps-alt}
-  \widetilde{P}_x(a) = \left|W_{R_{xx}}(a,\, 0)\right| = \left|\frac{1}{\sqrt{a}}
-  \int_{-\infty}^{\infty} R_{xx}(\tau)\, \psi^*\!\left(\frac{\tau}{a}\right) d\tau\right|,
+  \widetilde P_x(a,b)=\left|W_{\widehat R_{xx}}(a,b)\right|,
+  \qquad
+  \widetilde P_y(a,b)=\left|W_{\widehat R_{yy}}(a,b)\right|,
 \end{equation}
-
-\noindent
-e o espectro cruzado alternativo entre $x$ e $y$, $\widetilde{C}_{xy}(a)$, como:
 
 \begin{equation}\label{eq:wcs-alt}
-  \widetilde{C}_{xy}(a) = \left|W_{R_{xy}}(a,\, 0)\right| = \left|\frac{1}{\sqrt{a}}
-  \int_{-\infty}^{\infty} R_{xy}(\tau)\, \psi^*\!\left(\frac{\tau}{a}\right) d\tau\right|,
+  \widetilde C_{xy}(a,b)=W_{\widehat R_{xy}}(a,b),
 \end{equation}
-
-\noindent
-e a coerência \textit{Wavelet} alternativa $\widetilde{\gamma}_{xy}(a)$ é calculada sem precisar de suavização:
 
 \begin{equation}\label{eq:wco-alt}
-  \widetilde{\gamma}_{xy}(a) = \frac{\widetilde{C}_{xy}(a)^2}
-                                    {\widetilde{P}_x(a) \cdot \widetilde{P}_y(a)},
+  \widetilde\gamma_{xy}(a,b)=
+  \frac{|\widetilde C_{xy}(a,b)|^2}
+       {\widetilde P_x(a,0)\,\widetilde P_y(a,0)}.
 \end{equation}
 
 \noindent
-em que o espectro de potência alternativo do sinal $y$, $\widetilde{P}_y(a) = |W_{R_{yy}}(a, 0)|$, é calculado de forma análoga à
-\autoref{eq:wps-alt}.
+As autocorrelações estimadas $\widehat R_{xx}$ e $\widehat R_{yy}$ descrevem
+a relação de cada sinal com suas versões deslocadas. A CWT separa essas
+relações por escala, e seu módulo fornece os campos de potência alternativa
+$\widetilde P_x$ e $\widetilde P_y$. A correlação cruzada estimada
+$\widehat R_{xy}$ relaciona os dois sinais. Sua CWT fornece o espectro cruzado complexo
+$\widetilde C_{xy}$. Esse campo conserva módulo e fase. A coerência utiliza
+apenas seu módulo ao quadrado, normalizado pelas potências individuais
+\cite{schuck2019}.
 
-Na WCO alternativa, $b$ no numerador representa o atraso (\textit{lag}) $\tau$ da
-correlação cruzada $R_{xy}(\tau)$, não a posição temporal absoluta do sinal. O
-denominador é fixo em $b = 0$, que corresponde ao pico da autocorrelação. O resultado
-é um espectro de coerência em função de escala e atraso, estável por construção. A
-vantagem é que não há compromisso entre resolução e estabilidade estatística. A
-limitação é que a informação de quando o acoplamento ocorre é perdida.
-Essa escolha reflete um balanço intencional: a CWT foi introduzida para capturar 
-a variação temporal do conteúdo espectral dos sinais, mas a WCO alternativa abre 
-mão dessa localização em favor de uma estimativa de coerência estatisticamente estável. 
-Tal troca é justificável quando o ensaio é coletado em regime estabelecido e a hipótese 
-de estacionaridade é razoável.
+Com a Morlet adotada, o máximo do campo de potência em cada escala ocorre no
+atraso nulo. Por isso, as potências $\widetilde P_x(a,0)$ e
+$\widetilde P_y(a,0)$ fornecem a referência de normalização da coerência na
+\autoref{eq:wco-alt}. O campo cruzado é avaliado nos diferentes
+atrasos $b$, permitindo examinar a associação entre os sinais à medida que
+um é deslocado em relação ao outro. Assim, o mapa descreve escala e atraso
+relativo, sem localizar o instante original de ocorrência de um evento
+\cite{schuck2019}. Na aplicação deste trabalho, os atrasos foram expressos
+em pixels do panorama reconstruído.
 
-O \autoref{qua:wco-comparativo} sintetiza as diferenças entre as duas formulações.
+A formulação pressupõe processos estacionários e depende das correlações
+estimadas a partir dos registros disponíveis. A aplicação da CWT a essas
+correlações dispensa a suavização da definição clássica, mas mantém a
+incerteza associada à estimação \cite{schuck2019}. O procedimento discreto
+adotado neste trabalho é apresentado na \autoref{sec:met-wco}.
+
+O \autoref{qua:wco-comparativo} resume as diferenças relevantes para a leitura
+dos mapas.
 
 \begin{quadro}[htb]
   \centering
-  \caption{Comparação entre a formulação clássica e a formulação alternativa da coerência
+  \begin{threeparttable}
+  \caption{Comparação entre as formulações clássica e alternativa da coerência
            \textit{Wavelet}.}
   \label{qua:wco-comparativo}
-  \begin{tabular}{p{3.5cm}p{5.0cm}p{5.0cm}}
+  \begin{tabular}{p{3.1cm}p{5.1cm}p{5.1cm}}
     \hline
-    \textbf{Aspecto} & \textbf{WCO Clássica \cite{torrence1998,grinsted2004}} & \textbf{WCO Alternativa \cite{schuck2019}} \\
+    \textbf{Aspecto} & \textbf{Clássica} & \textbf{Alternativa} \\
     \hline
-    Entrada da CWT &
-      Sinais $x(t)$ e $y(t)$ diretamente &
-      Funções de correlação $R_{xx}(\tau)$, $R_{yy}(\tau)$, $R_{xy}(\tau)$ \\
-    Espectro de potência &
-      $P_x(a,b) = |W_x(a,b)|^2$ — varia com tempo $b$ &
-      $\widetilde{P}_x(a) = |W_{R_{xx}}(a,0)|$ — fixo em $b=0$ \\
-    Espectro cruzado &
-      $C_{xy}(a,b) = W_x(a,b)\cdot W_y^*(a,b)$ &
-      $\widetilde{C}_{xy}(a) = |W_{R_{xy}}(a,0)|$ \\
-    Necessidade de suavização &
-      Sim — $S[\cdot]$ obrigatória para evitar coerência trivialmente unitária &
-      Não — denominador fixo garante estabilidade por construção \\
-    Variável de saída &
-      $\gamma_{xy}(a,b)$ — função de escala e posição temporal &
-      $\widetilde{\gamma}_{xy}(a)$ — função apenas de escala (atraso é parâmetro interno
-      da correlação cruzada, não dimensão explícita da saída) \\
-    Informação preservada &
-      Localização temporal dos acoplamentos &
-      Espectro de acoplamento por atraso (\textit{lag}) \\
-    Limitação principal &
-      Compromisso entre resolução tempo-escala e estabilidade estatística &
-      Perde a localização temporal, válida apenas para processos estacionários \\
+    Entrada da CWT & Sinais diretamente & Funções de correlação estimadas \\
+    Potência & $|W_x(a,b)|^2$ & $|W_{\widehat R_{xx}}(a,b)|$ \\
+    Espectro cruzado & $W_x(a,b)W_y^*(a,b)$ & $W_{\widehat R_{xy}}(a,b)$ \\
+    Normalização & Espectros suavizados em tempo e escala & Potências no atraso nulo da mesma escala \\
+    Coordenada $b$ & Posição no sinal & Atraso da correlação \\
+    Interpretação & Associação localizada no tempo & Associação por escala e atraso \\
     \hline
   \end{tabular}
-  \fonte{Elaborado pelo autor com base em \citeonline{torrence1998}, \citeonline{grinsted2004}
-         e \citeonline{schuck2019}.}
+  \fonte{Elaborado pelo autor com base em \citeonline{torrence1998},
+         \citeonline{grinsted2004} e \citeonline{schuck2019}.}
+  \end{threeparttable}
 \end{quadro}
 
-\citeonline{schuck2019} validaram a abordagem com sinais sintéticos compostos por pulsos
-gaussianos modulados com ruído gaussiano adicionado (razão sinal-ruído de 5\,dB), e
-mostraram que o espectro cruzado alternativo localiza corretamente o atraso entre dois
-processos (500 amostras de defasagem) e que a WCO alternativa identifica a escala de
-frequência dominante mesmo em baixa relação sinal-ruído e na presença de eventos não
-correlacionados, resultado que a formulação clássica não consegue sem suavização intensa.
-
-Essa robustez ao ruído é importante para este trabalho: os sinais espaciais reconstruídos
-estão sujeitos a variações de iluminação e a artefatos de costura do panorama. A hipótese
-central deste trabalho é que a WCO alternativa de \citeonline{schuck2019}, calculada entre
-sinais espaciais de brilho reconstruídos do panorama das imagens, gera assinaturas
-espectrais, isto é, campos de $\widetilde{\gamma}$ por escala, que se espera sejam
-reprodutíveis entre ensaios de um mesmo padrão de escoamento (repetibilidade intra-padrão) e
-distinguíveis entre padrões diferentes (separação inter-padrão), podendo assim ser usadas
-para caracterizá-los.
+\citeonline{schuck2019} avaliaram a formulação com pulsos gaussianos modulados,
+ruído gaussiano e razão sinal-ruído de 5\,dB, impondo atraso de 500 amostras entre
+eventos. Nos exemplos apresentados, a formulação alternativa permitiu identificar
+o atraso e a escala dos transientes mesmo com eventos adicionais não
+correlacionados. Esses testes utilizaram sinais sintéticos com atraso conhecido.
+A aplicação aos panoramas exigiu uma avaliação própria, pois a junção de tiras
+de quadros pode introduzir descontinuidades nas emendas e alterar o sinal de
+intensidade analisado. Essas condições de reconstrução foram consideradas no
+procedimento descrito no \autoref{cap:metodologia}.

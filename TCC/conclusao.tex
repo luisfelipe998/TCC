@@ -1,62 +1,44 @@
 \chapter{Conclusão}\label{cap:conclusao}
 
-Este trabalho investigou a aplicabilidade da coerência \textit{Wavelet} alternativa de Schuck e
-Bodmann como descritor dos padrões de escoamento bifásico no arranjo experimental do LETEF,
-calculada sobre sinais espaciais de brilho reconstruídos do panorama das imagens da câmera de alta
-velocidade, em vez dos sinais dos sensores no domínio do tempo.
+Este trabalho comparou ensaios de um mesmo padrão de escoamento e de padrões
+distintos por meio da análise wavelet dos sinais espaciais dos panoramas.
+Foram analisados 26 ensaios de cinco padrões do LETEF, em 325 pares.
 
-Implementou-se o cálculo da coerência \textit{Wavelet} alternativa a partir das funções de
-autocorrelação e correlação cruzada de pares de sinais espaciais, com a transformada \textit{Wavelet}
-contínua de Morlet complexa avaliada no atraso nulo, e aplicou-se o método a duas campanhas: a
-intra-padrão, sobre os noventa e um pares de ensaios de um mesmo padrão, e a inter-padrão, sobre os
-duzentos e oitenta e sete pares de ensaios de padrões distintos. As duas campanhas geraram os campos
-de potência, de espectro cruzado e de coerência, além dos perfis de potência média por comprimento
-de onda, para cada par de ensaios e nas duas variantes do sinal espacial.
+No conjunto analisado, os perfis de potência wavelet foram mais semelhantes,
+em média, entre ensaios do mesmo padrão. A média do coeficiente de Pearson
+$r$ foi de $0{,}7642$ dentro dos padrões e de $0{,}5814$ entre padrões.
+Entretanto, a sobreposição das distribuições e os coeficientes elevados
+entre padrões diferentes mostraram que essa semelhança não foi exclusiva
+dos ensaios de um mesmo padrão.
 
-Os resultados mostraram que a coerência \textit{Wavelet} alternativa, tomada como descritor
-principal, não descreveu os padrões de escoamento com a precisão esperada: os campos de coerência no
-atraso nulo apresentaram-se baixos e irregulares, mesmo entre ensaios de um mesmo padrão. A
-caracterização mais consistente veio do perfil de potência média, que concentrou a energia espectral
-de cada ensaio em uma faixa de comprimento de onda reprodutível dentro de cada padrão, e foi essa
-leitura que melhor evidenciou a repetibilidade intra-padrão. Na comparação inter-padrão, as faixas
-dominantes de \textit{churn} e de anular ondulado apresentaram-se parcialmente sobrepostas, de modo
-que a separação entre esses padrões mostrou-se sutil. A repetibilidade do perfil de potência média
-foi quantificada por um teste de permutação sobre a matriz de distâncias entre ensaios, tomando o
-ensaio como unidade de replicação, estendido aos quatro padrões com mais de dois ensaios
-(\textit{churn}, anular ondulado, \textit{plug} e \textit{slug}). O teste confirmou uma separação
-fraca a moderada, porém real ($R$ de ANOSIM global igual a $0{,}20$, com $p = 0{,}030$ sob a
-estratificação melhor condicionada por fluxo mássico), persistente ao controle das condições
-operacionais, conforme detalhado na \autoref{sec:res-limite-estat}. A leitura par-a-par mostrou que o
-anular ondulado é o padrão mais distinto, separando-se bem dos regimes mais lentos, ao passo que
-\textit{churn} e \textit{plug} se mostraram praticamente indistinguíveis por este descritor. Trata-se
-de um ``ar de família'' modesto, perceptível mas longe de uma separação nítida, consistente com a
-sobreposição observada entre as faixas dominantes dos padrões mais próximos.
+O mapa do exemplo entre padrões distintos também mostrou coerência wavelet
+elevada em determinadas escalas e atrasos. Para cada par, calculou-se a
+coerência wavelet média em todas as escalas e atrasos do mapa. A média desses
+valores, com igual peso por par, foi de $0{,}0874$ entre padrões e de
+$0{,}0607$ dentro do mesmo padrão. Assim, a maior semelhança dos perfis dentro
+dos padrões não se repetiu nas médias de coerência wavelet. Os mapas
+utilizaram trechos de igual comprimento dentro de cada par, mas os intervalos
+de atraso variaram entre pares. O coeficiente de Pearson $r$ comparou
+perfis dos panoramas completos.
 
-O objetivo geral, investigar a aplicabilidade da coerência \textit{Wavelet} alternativa como
-descritor dos padrões de escoamento a partir de sinais espaciais de brilho, foi cumprido: o método
-foi implementado, validado com sinais sintéticos e aplicado às duas campanhas sobre os ensaios do
-arranjo do LETEF, e sua adequação foi avaliada quanto à repetibilidade intra-padrão e à separação
-inter-padrão. A resposta obtida foi que a coerência alternativa, nesse arranjo e com esses sinais,
-tem poder discriminante limitado, ao passo que o perfil de potência média se mostrou o descritor
-mais promissor. Os objetivos específicos também foram atendidos: revisou-se a literatura sobre
-padrões de escoamento em microcanais e sobre a análise espectral de sinais para sua caracterização.
-Apresentou-se a fundamentação teórica da transformada \textit{Wavelet} contínua, do espectro de
-potência, do espectro cruzado e da coerência nas formulações clássica e alternativa. Descreveu-se
-a metodologia de reconstrução do panorama, de pré-processamento e de cálculo da coerência a partir
-dos sinais espaciais, aplicada e documentada com os resultados das duas campanhas.
+A análise óptica complementou a comparação espectral nos 25 ensaios
+elegíveis pelo critério de saturação. No par de
+\textit{churn}, perfis semelhantes coexistiram com diferenças na fração de
+vazio estimada e na densidade de transições. Esta descreveu a alternância
+entre regiões marcadas como gás e os demais pixels da imagem. O único ensaio
+de bolhas dispersas e as medianas do grupo anular mostraram que poucas transições
+puderam acompanhar frações de vazio estimadas muito diferentes.
 
-A quantificação estatística das leituras qualitativas, apontada como encaminhamento imediato, foi
-conduzida ainda neste trabalho para a repetibilidade do perfil de potência média e é relatada na
-\autoref{sec:res-limite-estat}. O controle das condições
-operacionais pode ser aprofundado: embora a estratificação por fluxo mássico e as correlações
-pequenas da distância espectral com as duas condições operacionais indiquem que a separação não é
-mero reflexo da condição de operação, a ausência de réplicas verdadeiras do mesmo padrão sob
-condições comparáveis impede isolar por completo o efeito do padrão do efeito das condições; um
-projeto experimental com tais réplicas o permitiria de forma mais conclusiva. A repetibilidade
-\emph{espacial} dos regimes intermitentes mais lentos, como \textit{plug} e \textit{slug}, já foi
-quantificada neste trabalho, ainda que com a ressalva do número reduzido de ensaios; o que permanece
-em aberto é a análise de sua dinâmica \emph{temporal}, que exigiria filmagens mais longas, capazes de
-rebaixar a menor frequência resolvível abaixo das frequências características desses padrões, além de
-um número maior de ensaios por padrão para firmar a separação par-a-par. Por fim, a validação do método com sinais sintéticos de fase e
-razão sinal-ruído controladas poderá ser ampliada, de modo a delimitar em que condições a coerência
-alternativa recupera o acoplamento esperado, esclarecendo os limites observados neste trabalho.
+A avaliação permaneceu descritiva, sem testes de significância estatística
+ou avaliação de classificação. Cada ensaio participou de várias comparações,
+e alguns padrões tiveram poucos registros. A análise não separou os efeitos
+do padrão de escoamento daqueles ligados às condições de operação e aquisição.
+A fração de vazio estimada dependeu da segmentação e da
+hipótese de seções gasosas circulares, sem calibração volumétrica independente.
+O efeito das diferenças de montagem entre as análises não foi quantificado.
+
+Como trabalhos futuros, recomenda-se ampliar o conjunto de aquisições
+independentes, controlar as condições de operação e aquisição, uniformizar
+a montagem dos panoramas nas duas análises e validar a fração de vazio
+estimada com medições independentes. A combinação dos descritores poderá
+ser avaliada em classificadores, separando os ensaios de treinamento e teste.

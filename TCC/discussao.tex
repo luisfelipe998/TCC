@@ -1,138 +1,271 @@
 \chapter{Análise e Discussão}\label{cap:discussao}
 
-Este capítulo interpreta os resultados do \autoref{cap:resultados} e os situa em relação à
-literatura. A discussão organiza-se em torno de três pontos: a leitura dos campos de coerência e de
-potência obtidos, a comparação do método executado com os trabalhos anteriores no mesmo arranjo e na
-análise espectral de padrões de escoamento, e as limitações que delimitam o alcance das conclusões.
+Neste capítulo, interpretaram-se a similaridade espectral medida pelo coeficiente
+de Pearson $r$ e os campos de coerência wavelet, considerando as limitações das
+entradas e sua relação com a literatura. A análise wavelet tomou como referência as
+26 aquisições e todos os 325 pares do \autoref{cap:resultados}. Incorporou-se,
+de forma complementar, a interpretação das máscaras e das medidas ópticas
+dos 25 ensaios elegíveis.
 
 % =========================================================
-\section{Interpretação dos campos obtidos}\label{sec:disc-interpretacao}
+\section{Interpretação da similaridade espectral e dos campos de coerência}\label{sec:disc-interpretacao}
 % =========================================================
 
-A coerência \textit{Wavelet} alternativa foi adotada como descritor principal, na expectativa de que
-o acoplamento espectral entre dois ensaios de um mesmo padrão se manifestasse como uma banda de
-coerência elevada nos comprimentos de onda característicos daquele padrão. Os campos obtidos, porém,
-apresentaram coerência baixa e irregular no atraso nulo, sem uma banda estável que acompanhasse a
-faixa dominante do espectro de potência. Uma leitura consistente com esse comportamento é a de que
-dois ensaios distintos de um mesmo padrão, ainda que reproduzam o mesmo tipo de estrutura de
-escoamento, não compartilham uma fase espacial comum: por serem realizações turbulentas
-independentes, coletadas em instantes e condições microscopicamente distintas, o alinhamento entre
-as estruturas de um ensaio e as do outro não se mantém ao longo do percurso. Como a coerência mede a
-constância da relação de fase entre os dois sinais em cada escala, a ausência de uma fase espacial
-comum reduz a coerência avaliada no atraso nulo, mesmo quando os dois ensaios têm energia espectral
-concentrada na mesma faixa de comprimento de onda.
+Os ensaios do mesmo padrão apresentaram, em média, perfis espectrais mais
+semelhantes. O coeficiente de Pearson $r$ comparou a forma dos perfis de
+potência no atraso zero, conforme a \autoref{eq:met-pearson}. Um coeficiente
+elevado indicou que os aumentos e as reduções de potência ocorreram em
+comprimentos de onda semelhantes, sem exigir a mesma amplitude de potência.
+Como cada perfil resumiu o sinal completo, essa semelhança também não
+exigiu estruturas nas mesmas posições dos panoramas.
 
-O perfil de potência média $|\text{WPS}|$ descreveu os padrões de forma mais consistente justamente
-porque não depende da relação de fase entre os ensaios. Em termos simples, a coerência exige que os
-dois ensaios ``andem em fase'', isto é, que suas estruturas espaciais estejam alinhadas ao longo do
-percurso. Realizações turbulentas independentes não têm esse alinhamento, e por isso a coerência no
-atraso nulo é baixa. O perfil de potência, por outro lado, olha apenas quanta energia há em cada
-tamanho de estrutura, grandeza que não depende de alinhamento e que se mostrou reprodutível dentro
-de cada padrão. Foi sobre essa distribuição de energia por comprimento de onda que recaiu a
-quantificação estatística da \autoref{sec:res-limite-estat}, com o coeficiente $R = 0{,}20$ para os
-quatro padrões em conjunto. A leitura par-a-par daquela seção torna o quadro mais informativo: o
-anular ondulado é o padrão mais distinto, separando-se bem dos regimes mais lentos, ao passo que
-\textit{churn} e \textit{plug} são praticamente indistinguíveis por este descritor, e \textit{churn}
-e anular ondulado mantêm separação apenas fraca. Ou seja, a repetibilidade intra-padrão existe e é
-mensurável, mas a separação inter-padrão é desigual, concentrada no contraste entre o filme anular
-rápido e os regimes intermitentes lentos. Essa observação alinha-se ao uso de descritores espectrais
-escalares por ensaio na literatura de identificação de padrões de escoamento. \citeonline{nguyen2010} aplicaram a
-transformada \textit{Wavelet} contínua a sinais de fração de vazio e extraíram o coeficiente de
-energia \textit{Wavelet} local e a escala efetiva como critérios objetivos de discriminação dos
-padrões, e \citeonline{sun2012} identificaram padrões gás-líquido pela entropia dos coeficientes da
-decomposição \textit{Wavelet} das flutuações de pressão. Em ambos os casos, o descritor que separa os
-padrões deriva da distribuição de energia espectral do próprio sinal, e não de uma medida de fase
-relativa entre sinais, o que é coerente com o desempenho comparativamente melhor do perfil de
-potência média observado neste trabalho. A hipótese de estacionariedade sobre a qual a formulação de
-\citeonline{schuck2019} se apoia permanece necessária tanto para o espectro de potência quanto para a
-coerência. A diferença de desempenho entre os dois descritores diz respeito à dependência de fase, e
-não à validade da hipótese.
+A média do coeficiente de Pearson $r$ foi de $0{,}7642$ dentro dos padrões
+e de $0{,}5814$ entre padrões, conforme a \autoref{sec:res-limite-estat}.
+Essa tendência não se repetiu em todas as combinações:
+a média entre \textit{churn} e \textit{plug}, $0{,}8117$, superou a média
+interna de \textit{churn}, $0{,}7684$. A proximidade entre as formas dos
+perfis também ocorreu entre padrões diferentes, em acordo com a
+sobreposição das distribuições apresentada nos Resultados.
+
+A coerência wavelet acrescentou a comparação dos dois sinais por
+comprimento de onda e atraso, isto é, pelo deslocamento relativo usado
+na comparação. Seus mapas permitiram observar em quais escalas e
+deslocamentos houve maior associação entre os trechos analisados.
+
+No par anular da \autoref{fig:res-wps-annular}, o coeficiente de Pearson
+$r=0{,}9883$ coexistiu com coerência wavelet máxima de $0{,}3660$.
+Assim, perfis de forma próxima não implicaram valores de coerência
+próximos de um entre os trechos comparados. Os procedimentos examinaram
+propriedades distintas e também utilizaram entradas de extensões diferentes:
+panoramas completos para os perfis e trechos de comprimento comum para os
+mapas, conforme a \autoref{sec:met-preproc}.
+
+Para comparar os grupos, cada par contribuiu com a média de seu mapa de
+coerência wavelet, reunindo todas as escalas e todos os atrasos. A média
+desses valores foi maior entre padrões, $0{,}0874$, que dentro deles,
+$0{,}0607$. Portanto, a coerência wavelet média não acompanhou a maior
+semelhança intrapadrão observada pelo coeficiente de Pearson $r$.
+Essa comparação incluiu mapas com diferentes extensões de atraso,
+determinadas pelo comprimento dos sinais. Dar o mesmo peso a cada par
+não igualou esses intervalos. O resultado descreveu os mapas na configuração
+adotada. Não se determinou se a extensão dos sinais contribuiu para essa diferença.
+
+O único ensaio de bolhas dispersas foi comparado individualmente com os
+25 ensaios dos demais padrões. As quatro combinações entre bolhas dispersas
+e os demais padrões apresentaram as maiores médias de coerência wavelet e
+médias negativas do coeficiente de Pearson $r$. Como todas envolveram a
+mesma aquisição de bolhas dispersas, esse comportamento não pôde ser
+generalizado para o padrão.
+
+No par entre \textit{slug} e anular ondulado da \autoref{fig:res-inter},
+observou-se coerência wavelet elevada em determinadas combinações de
+comprimento de onda e atraso. Essa associação também ocorreu, portanto,
+entre ensaios classificados em padrões diferentes. O exemplo foi selecionado
+pelo maior máximo entre os 238 pares interpadrões e ilustrou uma ocorrência
+da amostra, sem representar o comportamento típico dessas comparações.
+
+% =========================================================
+\section{Complementaridade entre as medidas ópticas e espectrais}\label{sec:disc-void}
+% =========================================================
+
+A estimativa condicional de fração de vazio $\widehat\alpha_{\mathrm{opt}}$
+descreveu a parcela da seção do tubo atribuída ao gás, em média ao longo
+do panorama. Essa estimativa utilizou as larguras identificadas na máscara
+e a hipótese de seções gasosas circulares, conforme a \autoref{sec:met-geometria-optica}.
+A densidade de transições $F$ descreveu as mudanças entre pixels marcados
+como gás e os demais pixels ao longo das linhas da máscara. Essas duas
+medidas acrescentaram informações de ocupação estimada e alternância
+espacial à comparação espectral.
+
+Os exemplos da \autoref{tab:disc-void-wavelet} retomaram os pares já apresentados
+na \autoref{fig:res-wps} e na \autoref{fig:res-wps-annular}, selecionados pelo
+maior coeficiente de Pearson $r$ de cada padrão. A tabela reuniu esse
+coeficiente e as medidas ópticas dos dois ensaios de cada par.
+
+\begin{table}[htbp]
+  \centering
+  \begin{threeparttable}
+  \caption{Comparação complementar de medidas ópticas e espectrais nos mesmos pares de aquisições.}
+  \label{tab:disc-void-wavelet}
+  \small
+  \begin{tabular}{p{3.1cm} c c c}
+    \hline
+    \textbf{Padrão e par} &
+    \shortstack{\textbf{Coeficiente de}\\\textbf{Pearson $r$}} &
+    \shortstack{\textbf{Estimativa condicional}\\\textbf{de fração de vazio $\widehat\alpha_{\mathrm{opt}}$}} &
+    \shortstack{\textbf{Densidade de}\\\textbf{transições $1\,000F$}}\\
+    \hline
+    \textit{Churn}: m05q40 / m06q20 & 0,9572 & 0,8919 / 0,7871 & 7,306 / 12,418\\
+    Anular ondulado: m03q20 / m04q80 & 0,9883 & 0,9987 / 0,9971 & 0,115 / 0,210\\
+    \hline
+  \end{tabular}
+  \fonte{Elaborado pelo autor a partir dos resultados das duas análises.
+  Os valores ópticos seguiram a ordem dos ensaios indicada em cada par.
+  A densidade de transições $1\,000F$ foi expressa por mil pares de pixels vizinhos.}
+  \end{threeparttable}
+\end{table}
+
+No par de \textit{churn}, a elevada semelhança entre os perfis espectrais
+coexistiu com diferenças na fração de vazio estimada
+$\widehat\alpha_{\mathrm{opt}}$ e na densidade de transições $F$.
+Assim, a proximidade dos perfis não significou igualdade nas medidas ópticas.
+A leitura conjunta acrescentou informações sobre os ensaios que o
+coeficiente de Pearson $r$, isoladamente, não expressou. No par anular,
+a elevada semelhança espectral acompanhou estimativas condicionais de fração
+de vazio $\widehat\alpha_{\mathrm{opt}}$ próximas de um e baixas densidades
+de transições $F$.
+
+A leitura conjunta das duas medidas ópticas também foi importante.
+Na \autoref{tab:res-void}, o único ensaio de bolhas dispersas apresentou
+fração de vazio estimada de $0{,}0023$ e densidade de transições por mil
+pares de pixels de $2{,}563$. Nos oito ensaios anulares elegíveis, as medianas foram de
+$0{,}9653$ e $2{,}180$, respectivamente. Poucas transições coexistiram,
+assim, com ocupações estimadas muito diferentes. A densidade de transições
+$F$ descreveu a alternância da máscara, enquanto a fração de vazio estimada
+$\widehat\alpha_{\mathrm{opt}}$ descreveu a ocupação segundo o modelo geométrico.
+
+Na análise por máscaras, a elevada estimativa condicional de fração de vazio
+$\widehat\alpha_{\mathrm{opt}}$ e a baixa densidade de transições $F$ do grupo anular foram
+compatíveis com longas regiões marcadas como gás. Valores próximos de um
+também puderam incluir filmes líquidos não resolvidos ou sombras
+incorporadas à máscara. Como os dois eixos da
+\autoref{fig:res-void-transicoes} derivaram da mesma máscara, o gráfico não
+constituiu validação independente da fração volumétrica real.
+
+O uso de uma referência líquida e da detecção de contornos encontrou
+apoio metodológico em \citeonline{schepperle2024}. Nesse estudo, a referência
+foi uma imagem obtida em condição adiabática com apenas líquido. Aqui, ela foi
+inferida de trechos dos próprios panoramas. Além disso, a geometria retangular
+daquele canal diferiu do tubo circular deste trabalho. A semelhança de
+procedimentos sustentou a exploração da segmentação, mas não forneceu uma
+calibração volumétrica para estas imagens nem eliminou as hipóteses geométricas
+da estimativa condicional.
 
 % =========================================================
 \section{Comparação com a literatura}\label{sec:disc-literatura}
 % =========================================================
 
-O trabalho de \citeonline{deoliveira2021}, conduzido no mesmo arranjo experimental do LETEF,
-caracterizou os padrões de escoamento aplicando a transformada \textit{Wavelet} contínua aos sinais
-dos sensores no domínio do tempo e extraindo as frequências características de cada padrão. A
-abordagem executada neste trabalho difere daquela em dois aspectos: o domínio de análise passou
-do tempo para o espaço, com o sinal reconstruído do panorama das imagens em vez dos sinais dos
-sensores, e o descritor passou do espectro de potência de um sinal individual para a coerência
-alternativa entre pares de ensaios. A parte do método que mais se aproximou dos resultados daquele
-trabalho foi justamente o perfil de potência média, que, assim como a caracterização de
-\citeonline{deoliveira2021}, resume a energia espectral de cada ensaio, agora em função do
-comprimento de onda espacial.
+O \autoref{quad:disc-literatura} comparou os procedimentos e as informações
+obtidas neste estudo com os de trabalhos que utilizaram transformadas wavelet
+ou classificação por imagens. As diferenças entre os sinais analisados e os
+objetivos de avaliação impediram comparar diretamente seus valores numéricos.
 
-Uma comparação direta das faixas é limitada pela diferença de domínio: o descritor deste trabalho é
-o comprimento de onda dominante $\lambda^*$ em pixels do sinal espacial, ao passo que
-\citeonline{deoliveira2021} reportam bandas de frequência em hertz do sinal do sensor óptico, a saber,
-2 a 16\,Hz para o \textit{plug}, uma assinatura multibanda de 2,8 a 32\,Hz para o \textit{slug}, 15 a
-28\,Hz para o \textit{churn} e 2 a 20\,Hz para o anular. Grandezas em unidades distintas (espaço e
-frequência temporal) não admitem equivalência numérica direta, mas a ordenação relativa dos padrões é
-coerente entre as duas abordagens: assim como as bandas de \textit{churn} e anular de
-\citeonline{deoliveira2021} são largas e parcialmente sobrepostas, as faixas de $\lambda^*$ desses
-dois padrões no \autoref{quad:res-lambda} também se sobrepõem, com a faixa do anular contida na faixa
-mais ampla do \textit{churn}, o que é consistente com o baixo valor de $R$ par-a-par entre esses dois
-padrões. A separação par-a-par mais forte, por sua vez, ocorre entre o anular ondulado e os regimes
-intermitentes mais lentos (\textit{slug} e \textit{plug}), em acordo com a diferença física entre o
-filme fino rápido na parede e os pistões ou golfadas de gás, cujas estruturas espaciais são
-visivelmente distintas. Essa concordância qualitativa reforça que a sobreposição observada
-entre \textit{churn} e anular reflete uma proximidade física real das estruturas, e não um artefato
-do descritor espacial.
+\begin{quadro}[htbp]
+  \centering
+  \begin{threeparttable}
+  \caption{Relação entre os antecedentes bibliográficos e a análise executada.}
+  \label{quad:disc-literatura}
+  \small
+  \begin{tabular}{p{0.22\textwidth} p{0.33\textwidth} p{0.35\textwidth}}
+    \hline
+    \textbf{Referência} & \textbf{Procedimento reportado} & \textbf{Relação com este trabalho}\\
+    \hline
+    \citeonline{nguyen2010} &
+    Combinaram descritores da CWT, fração de vazio média e razão entre o
+    comprimento estimado das estruturas gasosas e o diâmetro do tubo. &
+    Motivaram a leitura conjunta de informações espectrais e de ocupação.
+    Neste trabalho, os exemplos mostraram que perfis de potência semelhantes
+    puderam acompanhar medidas ópticas distintas.\\
+    \hline
+    \citeonline{sun2012} &
+    Relacionaram a entropia de norma da pressão à vazão mássica total ou à
+    fração volumétrica de gás calculada das vazões das fases. &
+    Relacionaram descritores wavelet aos padrões de escoamento, com outra
+    grandeza medida e outro descritor.\\
+    \hline
+    \citeonline{deoliveira2021} &
+    Analisaram por CWT séries temporais do sensor óptico e de pressão diferencial. &
+    Ofereceram um antecedente no mesmo arranjo experimental. Aqui, as escalas
+    descreveram variações na coordenada reconstruída dos panoramas.\\
+    \hline
+    \citeonline{dias2025knn} e \citeonline{dias2025cnn} &
+    Classificaram imagens com kNN e atributos que incluíram DWT, e com
+    ResNet50, respectivamente. &
+    Avaliaram a previsão dos padrões. Neste trabalho, caracterizaram-se
+    as semelhanças e diferenças entre ensaios já rotulados.\\
+    \hline
+  \end{tabular}
+  \fonte{Elaborado pelo autor a partir das referências indicadas.}
+  \end{threeparttable}
+\end{quadro}
 
-Em relação à formulação clássica da coerência \textit{Wavelet} \cite{torrence1998,grinsted2004}, a
-formulação alternativa de \citeonline{schuck2019} dispensa a suavização no plano tempo-escala. Na
-definição clássica, a coerência é construída a partir de espectros cruzados suavizados, e a
-suavização é o que impede que a medida seja trivialmente unitária, funcionando como um coeficiente de
-correlação localizado no plano tempo-frequência \cite{grinsted2004}. A formulação alternativa
-substitui essa suavização pelo cálculo sobre as funções de correlação avaliadas no atraso nulo. A
-aplicação dessa formulação a sinais espaciais de brilho, no contexto de identificação de padrões de
-escoamento bifásico, não havia sido reportada, e os resultados aqui obtidos indicam que o
-comportamento da coerência alternativa entre ensaios distintos merece cautela: o descritor foi
-sensível à ausência de fase espacial comum entre realizações independentes, ponto que a literatura
-clássica trata pela suavização e que a variante de \citeonline{schuck2019} trata de outra forma.
+No par anular, a elevada semelhança dos perfis de potência não foi acompanhada
+por valores de coerência wavelet próximos de um. As medidas ópticas também
+revelaram diferenças de ocupação estimada e de alternância espacial no par
+de \textit{churn}, que também apresentou elevada semelhança espectral. A contribuição dessa leitura conjunta
+foi explicitar essas diferenças nos ensaios analisados, além da proximidade
+entre as formas dos perfis.
 
 % =========================================================
-\section{Limitações}\label{sec:disc-limitacoes}
+\section{Limitações do estudo}\label{sec:disc-limitacoes}
 % =========================================================
 
-O alcance dos resultados é delimitado por um conjunto de limitações. A primeira é a natureza da
-quantificação estatística: o coeficiente $R$ obtido deve ser lido como medida de tamanho de efeito,
-e não como teste inferencial forte. Com vinte e seis ensaios, quatro padrões e um único ensaio por
-combinação de condições operacionais, não há réplicas verdadeiras, pois ensaios de um mesmo padrão
-são pontos operacionais distintos que compartilham o mesmo rótulo de regime. Os valores de $p$ são
-propositalmente modestos pela limitação do número de arranjos de permutação possíveis, e toda a
-leitura é propriedade do descritor espectral reconstruído, e não uma afirmação sobre a física do
-escoamento. O resultado tampouco constitui um classificador: quantifica a repetibilidade de uma
-assinatura, não a atribuição de um ensaio novo a um padrão.
+O \autoref{quad:disc-limites} reuniu as limitações da análise. Os pares de
+\textit{churn} e anular ondulado somaram 81 das 87 comparações intrapadrão,
+de modo que a média desse conjunto refletiu principalmente esses dois grupos.
+Além disso, cada aquisição participou de vários pares, que não constituíram
+observações independentes. A avaliação permaneceu descritiva, sem testes de
+significância estatística ou estimativa de acurácia de classificação.
 
-A segunda limitação é o número reduzido de ensaios dos padrões intermitentes: \textit{plug} (quatro
-ensaios) e \textit{slug} (três) são grupos pequenos, de modo que os coeficientes $R$ par-a-par que os
-envolvem, em especial o par \textit{plug}--\textit{slug}, apoiado em poucos pares de ensaios, são
-grosseiros e instáveis. Os seis coeficientes par-a-par têm caráter exploratório e não constituem uma
-família de testes com correção de múltiplas comparações. O \textit{slug}--\textit{churn}, com apenas
-dois ensaios, ficou fora da quantificação.
+\begin{quadro}[htbp]
+  \centering
+  \begin{threeparttable}
+  \caption{Limitações observadas e consequências para a interpretação.}
+  \label{quad:disc-limites}
+  \small
+  \begin{tabular}{p{0.40\textwidth} p{0.52\textwidth}}
+    \hline
+    \textbf{Condição observada} & \textbf{Consequência}\\
+    \hline
+    Três ensaios de \textit{plug}, três de \textit{slug} e um de bolhas dispersas &
+    As médias dos grupos pequenos dependeram de poucas aquisições.
+    O único ensaio de bolhas dispersas não permitiu estimar a variabilidade
+    entre aquisições desse padrão.\\
+    \hline
+    Pares com aquisições compartilhadas e escalas correlacionadas &
+    Nem os 325 pares nem as 200 escalas corresponderam a réplicas independentes.\\
+    \hline
+    Extensões de 3094 a 22831 px e faixa espectral fixa de 50 a 3000 px &
+    A extensão do menor panorama equivaleu a apenas 1,03 vezes o maior
+    comprimento de onda analisado, limitando a leitura das maiores escalas.
+    As médias de coerência wavelet também incluíram atrasos com pequena
+    sobreposição dos sinais.\\
+    \hline
+    Montagem por deslocamentos ópticos e ausência de calibração longitudinal do panorama &
+    Os pixels descreveram a coordenada reconstruída. Não se mediram
+    diretamente dimensões físicas de bolhas ou velocidades de fase.\\
+    \hline
+    Tempos de exposição e taxas de aquisição diferentes &
+    A padronização de intensidade não eliminou possíveis diferenças
+    de borramento, resposta óptica e saturação dos níveis de cinza.\\
+    \hline
+    Condições operacionais distintas entre aquisições &
+    Não se isolou experimentalmente o efeito do padrão dos efeitos
+    das condições de operação e aquisição.\\
+    \hline
+    Máscaras e geometria sem calibração volumétrica independente &
+    A estimativa condicional de fração de vazio $\widehat\alpha_{\mathrm{opt}}$ dependeu
+    da segmentação, da refração e da hipótese de seções circulares.
+    O limite de 20\% de pixels saturados foi um critério de exclusão dos
+    resumos ópticos, sem validar a estimativa dos panoramas admitidos.\\
+    \hline
+  \end{tabular}
+  \fonte{Elaborado pelo autor a partir das condições de aquisição e dos procedimentos de análise.}
+  \end{threeparttable}
+\end{quadro}
 
-A terceira limitação diz respeito à influência das condições operacionais. Como cada ensaio foi
-coletado sob uma combinação específica de fluxo mássico e fluxo de calor, a variação da assinatura
-espectral entre padrões poderia estar associada à variação dessas condições. A quantificação da
-\autoref{sec:res-limite-estat} controlou esses fatores por estratificação e, com os quatro padrões,
-mostrou que o efeito do padrão predomina sobre as duas condições operacionais: conforme o
-\autoref{quad:res-confound}, tanto a diferença de fluxo de calor quanto a de fluxo mássico apresentam
-correlação pequena com a distância espectral, menor em magnitude que o efeito do próprio padrão. Na
-ausência de réplicas verdadeiras, porém, o efeito do padrão e o das condições operacionais não ficam
-inteiramente isolados.
+\FloatBarrier
+Os achados espectrais se referiram à faixa de extração e ao preparo dos
+sinais adotados na análise principal. O preparo não garantiu a estacionariedade,
+isto é, a manutenção das propriedades estatísticas ao longo do sinal,
+pressuposta pela formulação baseada em correlações na
+\autoref{sec:met-preproc}.
 
-A quarta limitação é temporal e condiciona a interpretação dos padrões intermitentes. A
-quantificação estatística opera no \emph{domínio espacial}, sobre o panorama reconstruído em pixels,
-e nesse domínio a repetibilidade de \textit{plug} e \textit{slug} é mensurável. A dinâmica
-\emph{temporal} desses regimes, no entanto, permanece fora de alcance: cada ensaio dispõe de
-quinhentas e uma imagens em janelas de cerca de cento a cento e trinta milésimos de segundo, o que
-fixa a menor frequência resolvível em torno de dez a quatorze hertz, acima das frequências
-características dos regimes intermitentes mais lentos, abaixo de cerca de três hertz. Uma análise da
-assinatura \emph{temporal} de \textit{plug} e \textit{slug} exigiria filmagens mais longas e fica,
-por construção, fora da janela observável deste trabalho.
+A análise não comparou o desempenho das representações espacial e temporal
+nem demonstrou superioridade do domínio espacial ou independência em relação
+à velocidade do escoamento. Também não se compararam os descritores wavelet
+entre as duas formas de montagem: os panoramas espectrais utilizaram a
+substituição de coluna nas emendas, nas condições da \autoref{sec:met-extracao},
+e os ópticos preservaram os pixels das tiras originais. O efeito dessa
+diferença permaneceu sem quantificação.
 
-A quinta limitação é o desempenho da coerência alternativa aquém do esperado como descritor
-discriminante, discutido na \autoref{sec:disc-interpretacao}, que deslocou o peso da caracterização
-para o perfil de potência média, sobre o qual recaiu a quantificação estatística.

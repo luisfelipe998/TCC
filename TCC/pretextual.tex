@@ -27,11 +27,11 @@ Agradeço aos meus pais, Simone e Joel, pelo amor incondicional, pela educação
 formou como pessoa e pelo apoio em cada etapa da minha trajetória acadêmica. Sem a base
 que construíram, este trabalho não seria possível.
 
-À minha namorada Karolline, pelo companheirismo constante, pela paciência nos momentos
+À minha namorada, Karolline, pelo companheirismo constante, pela paciência nos momentos
 de ausência e pelo incentivo que nunca faltou nos momentos mais difíceis deste trabalho.
 Sua presença tornou essa jornada mais leve e significativa.
 
-Ao meu orientador, pela disponibilidade, pelas orientações precisas e pela confiança
+Ao meu orientador, Jean Schmith, pela disponibilidade, pelas orientações precisas e pela confiança
 depositada neste trabalho.
 
 Aos professores do curso de Engenharia da Computação da UNISINOS, pelos ensinamentos que
@@ -50,62 +50,70 @@ agradecimento.
 % resumo em português
 \setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
 \begin{resumo}
-O escoamento bifásico com mudança de fase em microcanais é uma das tecnologias de
-resfriamento mais promissoras para sistemas eletrônicos de alta densidade de potência.
-A identificação do padrão de escoamento, a saber, bolha dispersa, \textit{plug}, \textit{slug},
-\textit{churn}, anular ondulado ou anular liso, é essencial para o controle e a
-otimização desses sistemas, pois cada regime apresenta comportamento térmico e hidrodinâmico
-distinto. Este trabalho investigou um método de caracterização dos padrões de escoamento
-baseado na formulação alternativa da coerência \textit{wavelet} (WCO) proposta por Schuck e
-Bodmann (2019), na qual a transformada \textit{wavelet} contínua é aplicada às funções de
-autocorrelação e de correlação cruzada dos sinais em vez de ser aplicada diretamente a
-eles. Essa abordagem elimina a necessidade de suavização espectral exigida pela definição
-clássica, produzindo uma estimativa de coerência em função apenas da escala e mais robusta
-ao ruído. Em vez dos sinais dos sensores no domínio do tempo, o método utilizou sinais
-unidimensionais de brilho no domínio \textit{espacial}, reconstruídos a partir de um
-panorama das imagens da câmera de alta velocidade, escolha que fornece uma ou duas ordens de
-grandeza mais amostras por ensaio e, portanto, maior resolução espectral. A hipótese central
-é que a coerência \textit{wavelet} alternativa $\widetilde{\gamma}_{xy}(a)$, calculada entre
-dois ensaios, apresenta assinaturas espectrais reprodutíveis dentro de um mesmo padrão
-(repetibilidade intra-padrão) e distinguíveis entre padrões diferentes (separação
-inter-padrão). A metodologia compreendeu a reconstrução do panorama, o pré-processamento dos
-sinais, o cálculo da WCO alternativa e a análise comparativa dos campos de coerência e do
-perfil de potência média entre os seis padrões identificados por
-\mbox{de Oliveira et al. (2021)} nos ensaios com isobutano (R600a) em microtubo horizontal
-de 1\,mm de diâmetro.
+Investigou-se a caracterização de padrões de escoamento bifásico com isobutano em
+microtubo horizontal de 1\,mm por meio de sinais de intensidade extraídos de panoramas
+de imagens. Analisaram-se 26 ensaios de cinco padrões, formando 87 pares do mesmo padrão
+e 238 de padrões diferentes. Extraiu-se a intensidade média por coluna em uma faixa dos panoramas.
+Os sinais foram invertidos, tiveram a tendência linear removida e foram normalizados. Aplicou-se a transformada
+\textit{wavelet} contínua de Morlet às funções de correlação para obter os
+espectros de potência e cruzado e a coerência
+wavelet alternativa. Comparou-se diretamente a forma dos perfis de potência no atraso
+zero dos panoramas completos pelo coeficiente de Pearson $r$. Os mapas de coerência wavelet
+utilizaram os trechos iniciais de comprimento comum dos sinais.
+Examinaram-se visualmente exemplos selecionados e resumiu-se cada mapa por seus
+valores mínimos, médios, medianos e máximos.
+Compararam-se também as coerências wavelet médias dos pares dentro e entre padrões.
+O coeficiente de Pearson $r$
+apresentou média de $0{,}7642$ dentro dos padrões e de $0{,}5814$ entre padrões,
+indicando maior semelhança espectral média interna, acompanhada de sobreposição das
+distribuições. A média das coerências médias dos pares foi de $0{,}0607$
+dentro dos padrões e de $0{,}0874$ entre padrões, apresentando comportamento
+distinto de Pearson. Em análise complementar, estimaram-se a
+fração de vazio e a densidade espacial de transições a partir de máscaras de gás,
+nas mesmas 54 linhas utilizadas na análise wavelet. Foram elegíveis 25 ensaios, após a exclusão
+de um registro saturado. O anular apresentou a maior mediana da fração de vazio
+estimada e a menor mediana da densidade de transições. Essas medidas apoiaram a interpretação
+dos descritores espectrais. A estimativa de fração de vazio permaneceu sem calibração
+volumétrica independente. Os pares compartilharam aquisições e os grupos tiveram números
+diferentes de ensaios. A avaliação permaneceu descritiva, sem testes de
+significância estatística ou estimativa de acurácia de classificação.
 
- \textbf{Palavras-chave}: escoamento bifásico. microcanais. transformada \textit{wavelet} contínua. coerência \textit{wavelet}. domínio espacial. reconstrução panorâmica. identificação de padrões de escoamento.
+ \textbf{Palavras-chave}: escoamento bifásico. microcanais. transformada \textit{wavelet} contínua. coerência \textit{wavelet}. fração de vazio. identificação de padrões de escoamento.
 \end{resumo}
 
 % resumo em inglês
 \begin{resumo}[Abstract]
  \begin{otherlanguage*}{english}
-Two-phase flow with phase change in microchannels is one of the most promising cooling
-technologies for high power-density electronic systems. Identifying the flow
-pattern, namely dispersed bubble, plug, slug, churn, wavy annular, or smooth annular, is
-essential for the control and optimization of such systems, as each regime exhibits distinct
-thermal and hydrodynamic behavior. This work investigated a flow pattern characterization
-method grounded in the alternative wavelet coherence (WCO) formulation proposed by Schuck
-and Bodmann (2019), in which the continuous wavelet transform is applied to the
-autocorrelation and cross-correlation functions of the signals rather than to the signals
-directly. This approach eliminates the spectral smoothing required by the classical
-definition, yielding a coherence estimate that depends only on scale and is more robust
-to noise. Instead of the sensor signals in the time domain, the method used
-one-dimensional brightness signals in the \textit{spatial} domain, reconstructed from a
-panorama of the high-speed camera images, a choice that provides one to two orders of
-magnitude more samples per run and thus higher spectral resolution. The central hypothesis
-is that the alternative wavelet coherence $\widetilde{\gamma}_{xy}(a)$, computed between two
-runs, produces spectral signatures that are reproducible within a given flow pattern
-(intra-pattern repeatability) and distinguishable between different patterns (inter-pattern
-separation). The methodology comprised panorama reconstruction, signal pre-processing,
-computation of the alternative WCO, and comparative analysis of the coherence fields and the
-mean power profile across the six flow patterns identified by de Oliveira et al. (2021) in
-experiments with isobutane (R600a) in a horizontal 1\,mm microtube.
+Two-phase flow patterns of isobutane in a horizontal 1\,mm microtube were investigated
+using intensity signals extracted from image panoramas. Twenty-six acquisitions from
+five patterns were analyzed, yielding 87 within-pattern and 238 between-pattern pairs.
+The mean intensity per column within a panorama band was extracted, followed by intensity inversion,
+linear detrending and normalization. The Morlet continuous wavelet transform was applied to correlation
+functions to obtain the power and cross
+spectra and alternative wavelet coherence. The shapes of zero-lag power profiles from full
+panoramas were compared directly using Pearson's correlation coefficient $r$. Wavelet
+coherence maps used equal-length initial segments of the signals.
+Selected examples were examined visually, and every map was summarized by its
+minimum, mean, median, and maximum values.
+Mean wavelet coherence per pair was also compared within and between patterns.
+Mean Pearson's correlation coefficient $r$ was 0.7642 within patterns and 0.5814 between
+patterns, indicating greater mean within-pattern spectral similarity, with overlapping
+distributions. The average of pairwise mean coherence values was 0.0607 within
+patterns and 0.0874 between patterns, showing a different pattern from Pearson's
+correlation. A complementary analysis estimated void fraction and
+spatial transition density from gas masks over the same 54 rows used in the wavelet analysis.
+Twenty-five acquisitions were eligible after excluding one saturated record.
+The annular pattern exhibited the highest median estimated void fraction and the lowest
+median transition density. These measures supported the interpretation of
+spectral descriptors. The void fraction estimate lacked independent volumetric calibration.
+Pairs shared acquisitions, and groups had different numbers of acquisitions.
+The evaluation remained descriptive, without statistical significance testing
+or estimation of classification accuracy.
 
    \vspace{\onelineskip}
 
    \noindent
-   \textbf{Keywords}: two-phase flow. microchannels. continuous wavelet transform. wavelet coherence. spatial domain. panorama reconstruction. flow pattern identification.
+   \textbf{Keywords}: two-phase flow. microchannels. continuous wavelet transform. wavelet coherence. void fraction. flow pattern identification.
  \end{otherlanguage*}
 \end{resumo}
 
@@ -128,11 +136,10 @@ experiments with isobutane (R600a) in a horizontal 1\,mm microtube.
 
 % ---
 % inserir lista de tabelas
-% (comentado: não há tabelas no TCC I — apenas quadros e figuras)
 % ---
-%\pdfbookmark[0]{\listtablename}{lot}
-%\listoftables*
-%\cleardoublepage
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\cleardoublepage
 % ---
 
 % ---
@@ -142,20 +149,16 @@ experiments with isobutane (R600a) in a horizontal 1\,mm microtube.
   \item[CNN] Rede Neural Convolucional (\textit{Convolutional Neural Network})
   \item[CWT] Transformada Wavelet Contínua (\textit{Continuous Wavelet Transform})
   \item[DWT] Transformada Wavelet Discreta (\textit{Discrete Wavelet Transform})
-  \item[ECDF] Função de Distribuição Acumulada Empírica (\textit{Empirical Cumulative Distribution Function})
   \item[FFT] Transformada Rápida de Fourier (\textit{Fast Fourier Transform})
   \item[LDR] Resistor Dependente de Luz (\textit{Light Dependent Resistor})
   \item[LED] Diodo Emissor de Luz (\textit{Light Emitting Diode})
   \item[LETEF] Laboratório de Estudos Térmicos e Fluidodinâmicos
   \item[LWE] Coeficiente de Energia Wavelet Local (\textit{Local Wavelet Energy coefficient})
-  \item[ML] Aprendizado de Máquina (\textit{Machine Learning})
   \item[OS] Sensor Óptico (\textit{Optical Sensor})
   \item[PD] Transdutor de Pressão Diferencial
   \item[PH] Pré-aquecedor (\textit{Pre-Heater})
   \item[PSD] Densidade Espectral de Potência (\textit{Power Spectral Density})
   \item[SNR] Relação Sinal-Ruído (\textit{Signal-to-Noise Ratio})
-  \item[SVM] Máquina de Vetores de Suporte (\textit{Support Vector Machine})
-  \item[TCC] Trabalho de Conclusão de Curso
   \item[TS] Seção de Teste (\textit{Test Section})
   \item[VS] Seção de Visualização (\textit{Visualization Section})
   \item[WCO] Coerência Wavelet (\textit{Wavelet Coherence})
@@ -172,13 +175,28 @@ experiments with isobutane (R600a) in a horizontal 1\,mm microtube.
   \item[$W_x(a,b)$] Coeficiente da CWT do sinal $x$ na escala $a$ e posição $b$
   \item[$P_x(a,b)$] Espectro de potência wavelet clássico do sinal $x$
   \item[$C_{xy}(a,b)$] Espectro cruzado wavelet clássico entre os sinais $x$ e $y$
-  \item[$\gamma_{xy}(a,b)$] Coerência wavelet clássica entre os sinais $x$ e $y$
+  \item[$\gamma_{xy}(a,b)$] Coerência wavelet clássica quadrática entre os sinais $x$ e $y$
   \item[$R_{xx}(\tau)$] Função de autocorrelação do sinal $x$
   \item[$R_{xy}(\tau)$] Função de correlação cruzada entre os sinais $x$ e $y$
-  \item[$\widetilde{P}_x(a)$] Espectro de potência wavelet alternativo do sinal $x$
-  \item[$\widetilde{C}_{xy}(a)$] Espectro cruzado wavelet alternativo entre $x$ e $y$
-  \item[$\widetilde{\gamma}_{xy}(a)$] Coerência wavelet alternativa entre $x$ e $y$
+  \item[$\widetilde{P}_x(a,b)$] Campo de potência wavelet alternativo do sinal $x$
+  \item[$\widetilde{C}_{xy}(a,b)$] Espectro cruzado wavelet alternativo entre os sinais $x$ e $y$
+  \item[$\widetilde{\gamma}_{xy}(a,b)$] Coerência wavelet alternativa entre os sinais $x$ e $y$
+  \item[$\lambda_k$] Comprimento de onda espacial na escala $k$ [px]
+  \item[$P_{ik}$] Potência alternativa no atraso nulo do ensaio $i$ na escala $k$
+  \item[$M_{ik}$] Potência alternativa média nos atrasos do ensaio $i$ na escala $k$
+  \item[$r_{ij}$] Coeficiente de Pearson entre os perfis de potência dos ensaios $i$ e $j$
+  % --- Descritores ópticos complementares ---
+  \item[$\alpha$] Fração volumétrica de vazio
+  \item[$\widehat\alpha_{\mathrm{opt}}$] Estimativa óptica condicional de fração de vazio, média nas colunas
+  \item[$\widehat\alpha_{\mathrm{opt},j}$] Fração de vazio estimada na coluna $j$
+  \item[$d_{ij}$] Largura radial do intervalo de gás $i$ na coluna $j$ [px]
+  \item[$D_{\mathrm{px}}$] Diâmetro interno adotado na análise das máscaras [px]
+  \item[$H$, $W$] Número de linhas e número de colunas da máscara, respectivamente
+  \item[$N_{\mathrm{trans}}$] Número de mudanças de valor entre pixels vizinhos na mesma linha da máscara
+  \item[$F$] Densidade espacial de transições da máscara por par de pixels vizinhos
   % --- Variáveis termofluidodinâmicas ---
+  \item[$x$] Título de vapor, razão entre a vazão mássica de vapor e a vazão mássica total
+  \item[$S$] Razão de deslizamento entre as velocidades médias do vapor e do líquido
   \item[$\beta$] Parâmetro adimensional de identificação do padrão de escoamento
   \item[$G$] Fluxo mássico [kg\,m$^{-2}$\,s$^{-1}$]
   \item[$q''$] Fluxo de calor [kW\,m$^{-2}$]

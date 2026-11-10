@@ -1,18 +1,46 @@
-/.claude/
-*.zip
+# macOS metadata
+.DS_Store
+._*
 
+# Python bytecode, virtual environments, and notebook checkpoints
 __pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
 
-src
-old
-oldest
+# LaTeX build output
+/TCC/dist/
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.lol
+*.loq
+*.lot
+*.nav
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+/TCC/*.log
+/TCC/*.out
+
+# Local tools, audits, and working notes
+/.claude/
+/auditorias/
 /todo.md
 
-src2/data_processed
-src2/v1
-src2/v2
-src2/v2_old
-src2/v3
-src2/v4
+# Archived code and previous thesis version
+/src1/
+/src2/
+/old/
+/oldest/
+/TCC_1/
 
-src2
+# Compressed archives
+*.zip

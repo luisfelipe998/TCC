@@ -1,0 +1,69 @@
+{
+  "alpha_coluna_ilustrada": 0.12208504801097396,
+  "alpha_media_mascara": 0.05086877000457248,
+  "arredondamento_figura": "A fração de vazio estimada na coluna e a densidade de transições são exibidas com quatro casas decimais e sinal de aproximação. Dados salvos conservam a precisão calculada.",
+  "centros_circulos_px_relativos_ao_centro_tubo": [
+    [
+      0.0,
+      11.0
+    ],
+    [
+      0.0,
+      -11.0
+    ]
+  ],
+  "coluna_ilustrada_indice_base_zero": 2,
+  "dados_experimentais": false,
+  "densidade_transicoes_mascara": 0.1750841750841751,
+  "diametro_interno_tubo_arranjo_mm": 1.0,
+  "diametro_tubo_px": 54,
+  "diametros_gas_px": [
+    16,
+    10
+  ],
+  "dimensoes_cm": [
+    16.0,
+    12.0
+  ],
+  "estimador": "Soma das áreas circulares de gás dividida pela área circular do tubo, equivalente à soma dos quadrados das razões entre diâmetros.",
+  "fonte_minima_pt": 8.5,
+  "fracao_pixels_gas_coluna_nao_usada_como_alpha": 0.48148148148148145,
+  "hipotese": "Cada intervalo vertical corresponde a uma seção circular. As duas seções estimadas não se sobrepõem e estão contidas no círculo do tubo.",
+  "interpretacao_dimensoes": "O tubo do arranjo possui diâmetro interno de 1 mm. O exemplo sintético adota 54 pixels para sua representação radial. Essa associação esquemática não fornece calibração óptica dos pixels experimentais.",
+  "intervalos_gas_inicio_inclusivo_fim_exclusivo": [
+    [
+      8,
+      24
+    ],
+    [
+      33,
+      43
+    ]
+  ],
+  "linha_ilustrada_indice_base_zero": 18,
+  "mascara_shape": [
+    54,
+    12
+  ],
+  "painel_a": "Máscara completa com coluna destacada; extração dos dois intervalos; estimativa por seções circulares dentro do tubo circular; razão entre as áreas; indicação da média posterior entre colunas.",
+  "painel_b": "A mesma máscara com linha destacada; sequência binária correspondente, quatro fronteiras de mudança e onze pares vizinhos; agregação das contagens nas 54 linhas da máscara.",
+  "pares_linha_ilustrada": 11,
+  "pares_mascara": 594,
+  "representacao_mascara": "A máscara inteira de 54 por 12 células é mostrada nos dois painéis, com ampliação anisotrópica para leitura. A coluna e a linha destacadas correspondem aos índices 2 e 18, respectivamente, em base zero; esses índices não aparecem nos rótulos da figura. Desenho sem escala física.",
+  "segmentacao_executada": false,
+  "sha256": {
+    "gerar_medidas_opticas.py": "af19a247b43ceb59450c4cd714cb2d78a89d8c1f5f1751d1ee3175e661190d7d",
+    "medidas_opticas.pdf": "4122fbd024183adc577946d5433ec79fda327d74d89985459ff08cdf9f32d1e5",
+    "medidas_opticas.png": "dca04160192b71f781d5a7818c31e7dde18f6b026d0312d89a1fa02ea39db5b0",
+    "medidas_opticas_dados.npz": "d7f362deb9edf30211a896040d08d287d4558b6a75c7e1912759f9da73bd898b"
+  },
+  "tipo": "esquema didático com máscara binária sintética pronta",
+  "titulo": "Leitura da máscara: áreas e transições (exemplo sintético)",
+  "transicoes_linha_ilustrada": 4,
+  "transicoes_mascara": 104,
+  "versoes": {
+    "matplotlib": "3.10.7",
+    "numpy": "2.3.4",
+    "python": "3.13.2"
+  }
+}

@@ -1,0 +1,869 @@
+{
+  "execucao": "src2/v18_montagem_18_71",
+  "script": {
+    "arquivo": "src2/v18_montagem_18_71/scripts/gerar_figuras_wavelet.py",
+    "sha256": "5a93fedbfffee00bb240306785ba0a74339a89a3f0106cbd7f9d2848de52c536"
+  },
+  "fontes_historicas_preservadas": [
+    {
+      "arquivo": "src2/v16_spatial2_18_71/scripts/figuras.py",
+      "sha256": "91f0b5d306a29910a2416ce0269efc3627b55cad80950b10a25d58c76da6c087"
+    },
+    {
+      "arquivo": "src2/v16_spatial2_18_71/scripts/estatistica.py",
+      "sha256": "bcae69735e663e6e044b8e2ad4097ce812b02466c2569938bc4b4ac23c48f5fc"
+    },
+    {
+      "arquivo": "src2/v16_spatial2_18_71/scripts/wavelet_core.py",
+      "sha256": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc"
+    },
+    {
+      "arquivo": "TCC/figuras/v16/gerar_perfis_pearson.py",
+      "sha256": "9c95de92e958f1cb13a6e54bed9c140428fa9a05e0e54e9ae511eac5da4ed2fb"
+    },
+    {
+      "arquivo": "TCC/figuras/v16/gerar_figuras_sem_escore.py",
+      "sha256": "d5ce3b9ea7364c1c55cbb7b88ea4fad5be5cbf163901e4df9c4db6393dc22f38"
+    }
+  ],
+  "desenho_perfis": {
+    "arquivo": "TCC/figuras/v16/gerar_perfis_pearson.py",
+    "sha256": "9c95de92e958f1cb13a6e54bed9c140428fa9a05e0e54e9ae511eac5da4ed2fb",
+    "linhas_desenho": [
+      71,
+      147
+    ]
+  },
+  "desenho_distribuicoes": {
+    "arquivo": "TCC/figuras/v16/gerar_figuras_sem_escore.py",
+    "sha256": "d5ce3b9ea7364c1c55cbb7b88ea4fad5be5cbf163901e4df9c4db6393dc22f38",
+    "linhas_desenho": [
+      61,
+      114
+    ]
+  },
+  "mesma_apresentacao": true,
+  "dados_recalculados": true,
+  "criterio_intra": "maior Pearson de cada padrão com pelo menos dois ensaios",
+  "criterio_inter": "maior coerência pontual dos 238 pares interpadrões",
+  "figuras": [
+    {
+      "origem": {
+        "arquivo": "src2/v18_montagem_18_71/02_wavelet/01_panoramas/plug_m05q01_001.png",
+        "sha256": "cdd0ca3e8f31d61263f3ff0ccfdf95627e0127f21b365b71de1d346e2b5ba9e7"
+      },
+      "destino": {
+        "arquivo": "TCC/figuras/v18_wavelet/plug_m05q01_001.png",
+        "sha256": "cdd0ca3e8f31d61263f3ff0ccfdf95627e0127f21b365b71de1d346e2b5ba9e7"
+      },
+      "tipo": "panorama",
+      "ensaio": "m05q01_001",
+      "entradas": [
+        {
+          "arquivo": "src2/v18_montagem_18_71/01_panoramas/wavelet/m05q01_001/panorama.png",
+          "sha256": "de172fb99e7381405b8edb10a54833e39cc2ae8a3ebaf8dc2bdd82ed6ad27509"
+        },
+        {
+          "arquivo": "src2/v18_montagem_18_71/02_wavelet/intermediario/individuais/m05q01_001.npz",
+          "sha256": "b969983e463682c374a8fddbd86a69727d459467509d0e30e98fbbd1ac7eef26"
+        }
+      ]
+    },
+    {
+      "origem": {
+        "arquivo": "src2/v18_montagem_18_71/02_wavelet/01_panoramas/dispersed_bubble_m07q01_001.png",
+        "sha256": "b17551f7a6b51c99a3065e50b858581c85aa3dbe6cc29b1c322e564c9dc3045f"
+      },
+      "destino": {
+        "arquivo": "TCC/figuras/v18_wavelet/dispersed_bubble_m07q01_001.png",
+        "sha256": "b17551f7a6b51c99a3065e50b858581c85aa3dbe6cc29b1c322e564c9dc3045f"
+      },
+      "tipo": "panorama",
+      "ensaio": "m07q01_001",
+      "entradas": [
+        {
+          "arquivo": "src2/v18_montagem_18_71/01_panoramas/wavelet/m07q01_001/panorama.png",
+          "sha256": "cfa09f8e1b7f95a36b33f1bde0faf3b2c005006fb24fa25c3045fdfec437fc37"
+        },
+        {
+          "arquivo": "src2/v18_montagem_18_71/02_wavelet/intermediario/individuais/m07q01_001.npz",
+          "sha256": "3d9421521608ae8bc172b451172891aa73050b68ad5dc8271e431a01941e80c5"
+        }
+      ]
+    },
+    {
+      "origem": {
+        "arquivo": "src2/v18_montagem_18_71/02_wavelet/02_wavelets/churn_m04q20_001_m07q40_001.png",
+        "sha256": "27e1385de1d7e161a83e69a8bf725a0cbb598765984aa84eb14f6f2b0d0c4303"
+      },
+      "destino": {
+        "arquivo": "TCC/figuras/v18_wavelet/churn_m04q20_001_m07q40_001.png",
+        "sha256": "27e1385de1d7e161a83e69a8bf725a0cbb598765984aa84eb14f6f2b0d0c4303"
+      },
+      "tipo": "intra",
+      "ensaio_x": "m04q20_001",
+      "ensaio_y": "m07q40_001",
+      "pearson_r": 0.9668690352756103,
+      "wco_maxima": 0.6271289512132621,
+      "comprimento_comum": 9324,
+      "entradas": [
+        {
+          "arquivo": "src2/v18_montagem_18_71/02_wavelet/intermediario/pares/m04q20_001__m07q40_001.npz",
+          "sha256": "2140a9a6655de5d53c9e1480584d7ca64b337813b80b10659fe5fd0aa2b58e1f"
+        }
+      ]
+    },
+    {
+      "origem": {
+        "arquivo": "src2/v18_montagem_18_71/02_wavelet/02_wavelets/wavy_annular_m06q40_001_m07q80_001.png",
+        "sha256": "badf3a8a2e3a058a1ded0da086b088ec7e872666d8f49378ac588aa6b79af70a"
+      },
+      "destino": {
+        "arquivo": "TCC/figuras/v18_wavelet/wavy_annular_m06q40_001_m07q80_001.png",
+        "sha256": "badf3a8a2e3a058a1ded0da086b088ec7e872666d8f49378ac588aa6b79af70a"
+      },
+      "tipo": "intra",
+      "ensaio_x": "m06q40_001",
+      "ensaio_y": "m07q80_001",
+      "pearson_r": 0.9899033795874617,
+      "wco_maxima": 0.7619247979832993,
+      "comprimento_comum": 14722,
+      "entradas": [
+        {
+          "arquivo": "src2/v18_montagem_18_71/02_wavelet/intermediario/pares/m06q40_001__m07q80_001.npz",
+          "sha256": "8edc42fab55e40fec4d386ce4cb7667a0222e99cb37ef5472d74d8c6432dcdeb"
+        }
+      ]
+    },
+    {
+      "origem": {
+        "arquivo": "src2/v18_montagem_18_71/02_wavelet/02_wavelets/plug_m05q01_001_m06q01_001.png",
+        "sha256": "df418b0012dcfc67ac4c38dd82aa09c154766093ff9c50c316618ee8f7078bfd"
+      },
+      "destino": {
+        "arquivo": "TCC/figuras/v18_wavelet/plug_m05q01_001_m06q01_001.png",
+        "sha256": "df418b0012dcfc67ac4c38dd82aa09c154766093ff9c50c316618ee8f7078bfd"
+      },
+      "tipo": "intra",
+      "ensaio_x": "m05q01_001",
+      "ensaio_y": "m06q01_001",
+      "pearson_r": 0.9670106895283039,
+      "wco_maxima": 0.7675579495337019,
+      "comprimento_comum": 5914,
+      "entradas": [
+        {
+          "arquivo": "src2/v18_montagem_18_71/02_wavelet/intermediario/pares/m05q01_001__m06q01_001.npz",
+          "sha256": "5665e83201b568914ddf4261df05d160e490333f2873471b7ae876c1e1835c8e"
+        }
+      ]
+    },
+    {
+      "origem": {
+        "arquivo": "src2/v18_montagem_18_71/02_wavelet/02_wavelets/slug_m04q01_001_m05q05_001.png",
+        "sha256": "c2882652ade64fd02984f6ab7ad053d14f47a2619f187968920c62ec6b81bcec"
+      },
+      "destino": {
+        "arquivo": "TCC/figuras/v18_wavelet/slug_m04q01_001_m05q05_001.png",
+        "sha256": "c2882652ade64fd02984f6ab7ad053d14f47a2619f187968920c62ec6b81bcec"
+      },
+      "tipo": "intra",
+      "ensaio_x": "m04q01_001",
+      "ensaio_y": "m05q05_001",
+      "pearson_r": 0.9305036779046109,
+      "wco_maxima": 0.9108913205717519,
+      "comprimento_comum": 5071,
+      "entradas": [
+        {
+          "arquivo": "src2/v18_montagem_18_71/02_wavelet/intermediario/pares/m04q01_001__m05q05_001.npz",
+          "sha256": "0adace8eef63a1d699abc48e848362dd47e13b865b1f2ee00be51ae40f09a73f"
+        }
+      ]
+    },
+    {
+      "origem": {
+        "arquivo": "src2/v18_montagem_18_71/02_wavelet/03_wavelets_inter/slug_wavy_annular_m04q01_001_m05q80_001.png",
+        "sha256": "c126f83f98e69bca13e56238a79bc58c430bfa63e2a030744c7f4f47762d7372"
+      },
+      "destino": {
+        "arquivo": "TCC/figuras/v18_wavelet/slug_wavy_annular_m04q01_001_m05q80_001.png",
+        "sha256": "c126f83f98e69bca13e56238a79bc58c430bfa63e2a030744c7f4f47762d7372"
+      },
+      "tipo": "inter",
+      "ensaio_x": "m04q01_001",
+      "ensaio_y": "m05q80_001",
+      "pearson_r": 0.9036459984597198,
+      "wco_maxima": 0.9936204510965982,
+      "comprimento_comum": 5071,
+      "entradas": [
+        {
+          "arquivo": "src2/v18_montagem_18_71/02_wavelet/intermediario/pares/m04q01_001__m05q80_001.npz",
+          "sha256": "2e1362ecf732884dbd375c11b7399805fa20e8641c62d4fa7f8d7239758a8018"
+        }
+      ]
+    },
+    {
+      "origem": {
+        "arquivo": "src2/v18_montagem_18_71/02_wavelet/04_estatistica/matriz_pearson_todos.png",
+        "sha256": "24db5f09ef97e0babb56a260132145142b28526daf3a7cd7717f765016c97273"
+      },
+      "destino": {
+        "arquivo": "TCC/figuras/v18_wavelet/matriz_pearson_todos.png",
+        "sha256": "24db5f09ef97e0babb56a260132145142b28526daf3a7cd7717f765016c97273"
+      },
+      "tipo": "matriz_pearson",
+      "entradas": [
+        {
+          "arquivo": "src2/v18_montagem_18_71/02_wavelet/intermediario/descritores.npz",
+          "sha256": "8793cd47a5e35a567f7b0bae7eeb73568b22c33c6133e23ab64a5b0c9f083df1"
+        }
+      ]
+    },
+    {
+      "origem": {
+        "arquivo": "src2/v18_montagem_18_71/02_wavelet/04_estatistica/perfis_espectrais_pearson.png",
+        "sha256": "2eb0417a127dd15c8cf400e0400aad1581aa8fadb619712d670adbf98a03be5c"
+      },
+      "destino": {
+        "arquivo": "TCC/figuras/v18_wavelet/perfis_espectrais_pearson.png",
+        "sha256": "2eb0417a127dd15c8cf400e0400aad1581aa8fadb619712d670adbf98a03be5c"
+      },
+      "tipo": "perfis",
+      "apresentacao": {
+        "grupos": [
+          {
+            "padrao_original": "churn",
+            "rotulo": "churn",
+            "cor": "#d34a33",
+            "ensaios_na_ordem": [
+              "m03q05_001",
+              "m04q10_001",
+              "m04q20_001",
+              "m05q10_001",
+              "m05q20_001",
+              "m05q40_001",
+              "m06q10_001",
+              "m06q20_001",
+              "m07q20_001",
+              "m07q40_001"
+            ],
+            "paineis": [
+              {
+                "coluna": 0,
+                "valores_sha256_float64_le": "ed2471bafec159acdf21b46477dc70f449404dd425172d6f5134949d005a6635",
+                "mediana_sha256_float64_le": "6092634b7336b465ef657bb2b0bc3cc87343965df9e547f945a673653617ae4d",
+                "limites_x": [
+                  50.0,
+                  3000.0
+                ],
+                "limites_y": [
+                  -0.02250268069140604,
+                  1.048690603842448
+                ]
+              },
+              {
+                "coluna": 1,
+                "valores_sha256_float64_le": "6543f9b7761a45dbe05a774571d1a09d6e6791799ab09bf44ddc692ecf8f9ac1",
+                "mediana_sha256_float64_le": "b731357cae0e167f94e449674abde320542b07e712eda4257e36c2dafd36ee60",
+                "limites_x": [
+                  50.0,
+                  3000.0
+                ],
+                "limites_y": [
+                  -0.20677462897056378,
+                  0.15810787764339715
+                ]
+              }
+            ]
+          },
+          {
+            "padrao_original": "wavy annular",
+            "rotulo": "Anular ondulado",
+            "cor": "#2377b4",
+            "ensaios_na_ordem": [
+              "m03q10_001",
+              "m03q20_001",
+              "m03q40_001",
+              "m04q40_001",
+              "m04q80_001",
+              "m05q80_001",
+              "m06q40_001",
+              "m06q80_001",
+              "m07q80_001"
+            ],
+            "paineis": [
+              {
+                "coluna": 0,
+                "valores_sha256_float64_le": "5188466f1dfc5d9605fc44ab0d353ef1c4e352db8c7a9f17750b32e42b51c9d0",
+                "mediana_sha256_float64_le": "784144f4de8741859fff79b6807086e8f7776efc89d73fb02c9f7f7364378480",
+                "limites_x": [
+                  50.0,
+                  3000.0
+                ],
+                "limites_y": [
+                  -0.0366687824723982,
+                  1.0493651801177333
+                ]
+              },
+              {
+                "coluna": 1,
+                "valores_sha256_float64_le": "8c3b4cdeddc9715ba00b2c005ecf4ca593f5ce8089646f0e8dbd7a39fb97fe5e",
+                "mediana_sha256_float64_le": "a71eaec74e0b6b96dd92f7bfcad6ab6b7a148859aa6cbe4315a308bd15d22a2e",
+                "limites_x": [
+                  50.0,
+                  3000.0
+                ],
+                "limites_y": [
+                  -0.23628352088465537,
+                  0.13008307429315155
+                ]
+              }
+            ]
+          },
+          {
+            "padrao_original": "plug",
+            "rotulo": "plug",
+            "cor": "#328652",
+            "ensaios_na_ordem": [
+              "m05q01_001",
+              "m06q01_001",
+              "m07q05_001"
+            ],
+            "paineis": [
+              {
+                "coluna": 0,
+                "valores_sha256_float64_le": "ca67692c2b192c859a766e8a12fed4994782cc4209c97db8fca2fc90c233750b",
+                "mediana_sha256_float64_le": "6a34f5f8529a74ec60b60aae6107bbe8a6bbfc4f51ecca3cc603bef9019d8265",
+                "limites_x": [
+                  50.0,
+                  3000.0
+                ],
+                "limites_y": [
+                  -0.02939562823888061,
+                  1.0490188394399467
+                ]
+              },
+              {
+                "coluna": 1,
+                "valores_sha256_float64_le": "134ed3f9c6970b9f423695c7f2748ad3ff1612e85143e1cbb6ec9406c3ae1d3f",
+                "mediana_sha256_float64_le": "b81fe875aac188f786de419353859697869264b6b7b20a364c64c0c7b90e6922",
+                "limites_x": [
+                  50.0,
+                  3000.0
+                ],
+                "limites_y": [
+                  -0.17985293453646564,
+                  0.1293716235782333
+                ]
+              }
+            ]
+          },
+          {
+            "padrao_original": "slug",
+            "rotulo": "slug",
+            "cor": "#9466ac",
+            "ensaios_na_ordem": [
+              "m04q01_001",
+              "m05q05_001",
+              "m06q05_001"
+            ],
+            "paineis": [
+              {
+                "coluna": 0,
+                "valores_sha256_float64_le": "9527e14e502c7aa18d10e2333a84f4071656a296d9f457b1b85ebb3d6435e0da",
+                "mediana_sha256_float64_le": "31eca57811c4ee211d3323b481e0ce4ed50a501b2f88f8f802db8d81c42e2138",
+                "limites_x": [
+                  50.0,
+                  3000.0
+                ],
+                "limites_y": [
+                  -0.023240043802692945,
+                  1.0487257163715569
+                ]
+              },
+              {
+                "coluna": 1,
+                "valores_sha256_float64_le": "04ae47977b0949bdd26a08fa76b043eedda17179419a80da8f245d0c915525fc",
+                "mediana_sha256_float64_le": "a6ea9055e715504c88f9c50b8e49c76c5ee82156cd0fb7d3eaa5d445f4633560",
+                "limites_x": [
+                  50.0,
+                  3000.0
+                ],
+                "limites_y": [
+                  -0.19325344992450047,
+                  0.13962460958399875
+                ]
+              }
+            ]
+          },
+          {
+            "padrao_original": "dispersed bubble",
+            "rotulo": "Bolhas dispersas",
+            "cor": "#b0851c",
+            "ensaios_na_ordem": [
+              "m07q01_001"
+            ],
+            "paineis": [
+              {
+                "coluna": 0,
+                "valores_sha256_float64_le": "8ded62cca7f661221800601fc3fa0e0607a97d9d60b7a14fd9cdfb2709e14092",
+                "mediana_sha256_float64_le": "8ded62cca7f661221800601fc3fa0e0607a97d9d60b7a14fd9cdfb2709e14092",
+                "limites_x": [
+                  50.0,
+                  3000.0
+                ],
+                "limites_y": [
+                  -0.04407284411824878,
+                  1.0497177544818215
+                ]
+              },
+              {
+                "coluna": 1,
+                "valores_sha256_float64_le": "ee383c76b54c4785017282a73d5a6d578605c993b582ed56c063a2efb5d3c968",
+                "mediana_sha256_float64_le": "ee383c76b54c4785017282a73d5a6d578605c993b582ed56c063a2efb5d3c968",
+                "limites_x": [
+                  50.0,
+                  3000.0
+                ],
+                "limites_y": [
+                  -0.22683667193004742,
+                  0.14081079432061824
+                ]
+              }
+            ]
+          }
+        ],
+        "fonte_minima_inserida_pt": 9.462772105580514
+      },
+      "entradas": [
+        {
+          "arquivo": "src2/v18_montagem_18_71/02_wavelet/04_estatistica/dados/perfis_espectrais.csv",
+          "sha256": "e6b873571d97994cd85f31768fef939478c245ebcd6abcd2a5338471ab3ed9a3"
+        },
+        {
+          "arquivo": "src2/v18_montagem_18_71/02_wavelet/intermediario/descritores.npz",
+          "sha256": "8793cd47a5e35a567f7b0bae7eeb73568b22c33c6133e23ab64a5b0c9f083df1"
+        }
+      ]
+    },
+    {
+      "origem": {
+        "arquivo": "src2/v18_montagem_18_71/02_wavelet/04_estatistica/correlacoes_dentro_entre_pearson.png",
+        "sha256": "e966b7c6c29dcc3732ad57eaf46d17368f86bd0ec4ef5e3c4cb9161c87f017f2"
+      },
+      "destino": {
+        "arquivo": "TCC/figuras/v18_wavelet/correlacoes_dentro_entre_pearson.png",
+        "sha256": "e966b7c6c29dcc3732ad57eaf46d17368f86bd0ec4ef5e3c4cb9161c87f017f2"
+      },
+      "tipo": "distribuicoes",
+      "apresentacao": {
+        "resumos": {
+          "intra": {
+            "pares": 87,
+            "media": 0.8758820013290258,
+            "primeiro_quartil": 0.8069381193724079,
+            "terceiro_quartil": 0.9519432938486374,
+            "semente_disposicao_horizontal": 2719
+          },
+          "inter": {
+            "pares": 238,
+            "media": 0.8112702846073296,
+            "primeiro_quartil": 0.7687929774840201,
+            "terceiro_quartil": 0.9262073167399411,
+            "semente_disposicao_horizontal": 2720
+          }
+        },
+        "fonte_minima_inserida_pt": 9.517379277992221
+      },
+      "entradas": [
+        {
+          "arquivo": "src2/v18_montagem_18_71/02_wavelet/04_estatistica/dados/pares_pearson_wco.csv",
+          "sha256": "44e32971f49a5ab5d8c63bb099b414944c029d52ac716a81c8513e5b77ac9733"
+        }
+      ]
+    }
+  ],
+  "layouts": [
+    {
+      "arquivo": "01_panoramas/plug_m05q01_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.174729274937615,
+      "fonte_minima_inserida_pt": 9.345199669817369,
+      "titulo": "plug · m05q01_001 · panorama de 5.914 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal normalizado"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    },
+    {
+      "arquivo": "01_panoramas/dispersed_bubble_m07q01_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.174729274937615,
+      "fonte_minima_inserida_pt": 9.345199669817369,
+      "titulo": "dispersed bubble · m07q01_001 · panorama de 3.094 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal normalizado"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    },
+    {
+      "arquivo": "02_wavelets/churn_m04q20_001_m07q40_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 22.952932934208004,
+      "fonte_minima_inserida_pt": 8.18444283853729,
+      "titulo": "churn · m04q20_001 × m07q40_001 · 9.324 px",
+      "titulos_paineis": [
+        "A - m04q20_001 · prefixo 0–9323 px",
+        "B - m07q40_001 · prefixo 0–9323 px",
+        "Sinais normalizados",
+        "Espectro de potência wavelet (WPS) · A",
+        "",
+        "Potência média",
+        "Espectro de potência wavelet (WPS) · B",
+        "",
+        "Potência média",
+        "Espectro cruzado wavelet (WCS) · módulo",
+        "",
+        "Coerência wavelet (WCO)",
+        ""
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Lag (px)",
+        "",
+        "u.a.",
+        "Lag (px)",
+        "",
+        "u.a.",
+        "Lag (px)",
+        "",
+        "Lag (px)",
+        ""
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Altura do\npanorama (px)",
+        "Sinal (σ)",
+        "Comprimento de onda\nλ (px)",
+        "",
+        "",
+        "Comprimento de onda\nλ (px)",
+        "",
+        "",
+        "Comprimento de onda\nλ (px)",
+        "",
+        "Comprimento de onda\nλ (px)",
+        ""
+      ]
+    },
+    {
+      "arquivo": "02_wavelets/wavy_annular_m06q40_001_m07q80_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 22.952932934208004,
+      "fonte_minima_inserida_pt": 8.18444283853729,
+      "titulo": "wavy annular · m06q40_001 × m07q80_001 · 14.722 px",
+      "titulos_paineis": [
+        "A - m06q40_001 · prefixo 0–14721 px",
+        "B - m07q80_001 · prefixo 0–14721 px",
+        "Sinais normalizados",
+        "Espectro de potência wavelet (WPS) · A",
+        "",
+        "Potência média",
+        "Espectro de potência wavelet (WPS) · B",
+        "",
+        "Potência média",
+        "Espectro cruzado wavelet (WCS) · módulo",
+        "",
+        "Coerência wavelet (WCO)",
+        ""
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Lag (px)",
+        "",
+        "u.a.",
+        "Lag (px)",
+        "",
+        "u.a.",
+        "Lag (px)",
+        "",
+        "Lag (px)",
+        ""
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Altura do\npanorama (px)",
+        "Sinal (σ)",
+        "Comprimento de onda\nλ (px)",
+        "",
+        "",
+        "Comprimento de onda\nλ (px)",
+        "",
+        "",
+        "Comprimento de onda\nλ (px)",
+        "",
+        "Comprimento de onda\nλ (px)",
+        ""
+      ]
+    },
+    {
+      "arquivo": "02_wavelets/plug_m05q01_001_m06q01_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 22.952932934208004,
+      "fonte_minima_inserida_pt": 8.18444283853729,
+      "titulo": "plug · m05q01_001 × m06q01_001 · 5.914 px",
+      "titulos_paineis": [
+        "A - m05q01_001 · prefixo 0–5913 px",
+        "B - m06q01_001 · prefixo 0–5913 px",
+        "Sinais normalizados",
+        "Espectro de potência wavelet (WPS) · A",
+        "",
+        "Potência média",
+        "Espectro de potência wavelet (WPS) · B",
+        "",
+        "Potência média",
+        "Espectro cruzado wavelet (WCS) · módulo",
+        "",
+        "Coerência wavelet (WCO)",
+        ""
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Lag (px)",
+        "",
+        "u.a.",
+        "Lag (px)",
+        "",
+        "u.a.",
+        "Lag (px)",
+        "",
+        "Lag (px)",
+        ""
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Altura do\npanorama (px)",
+        "Sinal (σ)",
+        "Comprimento de onda\nλ (px)",
+        "",
+        "",
+        "Comprimento de onda\nλ (px)",
+        "",
+        "",
+        "Comprimento de onda\nλ (px)",
+        "",
+        "Comprimento de onda\nλ (px)",
+        ""
+      ]
+    },
+    {
+      "arquivo": "02_wavelets/slug_m04q01_001_m05q05_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 22.952932934208004,
+      "fonte_minima_inserida_pt": 8.18444283853729,
+      "titulo": "slug · m04q01_001 × m05q05_001 · 5.071 px",
+      "titulos_paineis": [
+        "A - m04q01_001 · prefixo 0–5070 px",
+        "B - m05q05_001 · prefixo 0–5070 px",
+        "Sinais normalizados",
+        "Espectro de potência wavelet (WPS) · A",
+        "",
+        "Potência média",
+        "Espectro de potência wavelet (WPS) · B",
+        "",
+        "Potência média",
+        "Espectro cruzado wavelet (WCS) · módulo",
+        "",
+        "Coerência wavelet (WCO)",
+        ""
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Lag (px)",
+        "",
+        "u.a.",
+        "Lag (px)",
+        "",
+        "u.a.",
+        "Lag (px)",
+        "",
+        "Lag (px)",
+        ""
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Altura do\npanorama (px)",
+        "Sinal (σ)",
+        "Comprimento de onda\nλ (px)",
+        "",
+        "",
+        "Comprimento de onda\nλ (px)",
+        "",
+        "",
+        "Comprimento de onda\nλ (px)",
+        "",
+        "Comprimento de onda\nλ (px)",
+        ""
+      ]
+    },
+    {
+      "arquivo": "03_wavelets_inter/slug_wavy_annular_m04q01_001_m05q80_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 22.952932934208004,
+      "fonte_minima_inserida_pt": 8.18444283853729,
+      "titulo": "slug × wavy annular · m04q01_001 × m05q80_001 · 5.071 px",
+      "titulos_paineis": [
+        "A - m04q01_001 · prefixo 0–5070 px",
+        "B - m05q80_001 · prefixo 0–5070 px",
+        "Sinais normalizados",
+        "Espectro de potência wavelet (WPS) · A",
+        "",
+        "Potência média",
+        "Espectro de potência wavelet (WPS) · B",
+        "",
+        "Potência média",
+        "Espectro cruzado wavelet (WCS) · módulo",
+        "",
+        "Coerência wavelet (WCO)",
+        ""
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Lag (px)",
+        "",
+        "u.a.",
+        "Lag (px)",
+        "",
+        "u.a.",
+        "Lag (px)",
+        "",
+        "Lag (px)",
+        ""
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Altura do\npanorama (px)",
+        "Sinal (σ)",
+        "Comprimento de onda\nλ (px)",
+        "",
+        "",
+        "Comprimento de onda\nλ (px)",
+        "",
+        "",
+        "Comprimento de onda\nλ (px)",
+        "",
+        "Comprimento de onda\nλ (px)",
+        ""
+      ]
+    },
+    {
+      "arquivo": "04_estatistica/matriz_pearson_todos.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 20.999934788408147,
+      "fonte_minima_inserida_pt": 9.522666240740005,
+      "titulo": "Correlação de Pearson · panoramas completos\n26 ensaios · λ de 50 a 3.000 px",
+      "titulos_paineis": [
+        "",
+        ""
+      ],
+      "rotulos_x": [
+        "Ensaio",
+        "Pearson r"
+      ],
+      "rotulos_y": [
+        "Ensaio",
+        ""
+      ],
+      "ensaios_x": [
+        "m03q05",
+        "m04q10",
+        "m04q20",
+        "m05q10",
+        "m05q20",
+        "m05q40",
+        "m06q10",
+        "m06q20",
+        "m07q20",
+        "m07q40",
+        "m03q10",
+        "m03q20",
+        "m03q40",
+        "m04q40",
+        "m04q80",
+        "m05q80",
+        "m06q40",
+        "m06q80",
+        "m07q80",
+        "m05q01",
+        "m06q01",
+        "m07q05",
+        "m04q01",
+        "m05q05",
+        "m06q05",
+        "m07q01"
+      ],
+      "ensaios_y": [
+        "m03q05",
+        "m04q10",
+        "m04q20",
+        "m05q10",
+        "m05q20",
+        "m05q40",
+        "m06q10",
+        "m06q20",
+        "m07q20",
+        "m07q40",
+        "m03q10",
+        "m03q20",
+        "m03q40",
+        "m04q40",
+        "m04q80",
+        "m05q80",
+        "m06q40",
+        "m06q80",
+        "m07q80",
+        "m05q01",
+        "m06q01",
+        "m07q05",
+        "m04q01",
+        "m05q05",
+        "m06q05",
+        "m07q01"
+      ],
+      "rotulos_sem_sobreposicao": true
+    }
+  ],
+  "arquivos_entrada_nao_modificados": true,
+  "verificacoes": "Coeficientes, potências, correlações e máscaras de validade conferidos na execução. Curvas de perfis e pontos da distribuição conferidos contra os arrays lidos."
+}

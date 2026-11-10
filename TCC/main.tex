@@ -29,6 +29,10 @@
 
 \usepackage{unisinos} % Necessário para customização para padrão da universidade
 
+% Conserva as margens verticais sem arredondar a altura do bloco de texto.
+\setulmarginsandblock{3cm}{2cm}{*}
+\checkandfixthelayout[fixed]
+
 % ---
 % Pacotes básicos 
 % ---
@@ -50,6 +54,8 @@
 % ---
 \usepackage{lipsum}				% para geração de dummy text
 \usepackage{multirow}			% células com múltiplas linhas em tabelas
+\usepackage{placeins}             % barreiras pontuais para preservar a sequência dos elementos
+\usepackage{threeparttable}       % títulos e fontes na largura natural de tabelas e quadros
 % ---
 
 \usepackage{helvet}                         % Configuração da fonte padronizada no documento
@@ -72,6 +78,34 @@
 \renewcommand{\bottomfraction}{0.7}
 \renewcommand{\textfraction}{0.1}
 \renewcommand{\floatpagefraction}{0.75}
+\setlength{\floatsep}{18pt plus 2pt minus 2pt}
+\setlength{\textfloatsep}{18pt plus 2pt minus 2pt}
+\setlength{\intextsep}{18pt plus 2pt minus 2pt}
+% Evita uma linha isolada de parágrafo no início ou no final da página.
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+
+% Identificação em 12 pt e espaço simples. Fontes e notas usam os 10 pt
+% de \ABNTEXfontereduzida, sem alterar a tipografia do texto principal.
+\captionnamefont{\normalfont\normalsize}
+\captiontitlefont{\normalfont\normalsize}
+\captionstyle[\raggedright]{\raggedright}
+\setlength{\abovecaptionskip}{0pt}
+\setlength{\belowcaptionskip}{6pt}
+\setfloatadjustment{figure}{\centering\SingleSpacing*\setlength{\parskip}{0pt}}
+\setfloatadjustment{table}{\centering\SingleSpacing*\setlength{\parskip}{0pt}}
+\newsavebox{\tccfigurebox} % conserva a largura efetiva das imagens limitadas pela altura
+\newlength{\tccmaxdepth}
+\newlength{\tccoutputdepth}
+\NewCommandCopy{\tccfonte}{\fonte}
+\renewcommand{\fonte}[2][\fontename]{%
+  \begingroup
+    \SingleSpacing*
+    \setlength{\abovecaptionskip}{6pt}%
+    \setlength{\belowcaptionskip}{0pt}%
+    \tccfonte[#1]{#2}%
+  \endgroup}
 
 % --- late
 % CONFIGURAÇÕES DE PACOTES
@@ -140,10 +174,12 @@
 % --- 
 
 % ---
-% Posiciona figuras e tabelas no topo da página quando adicionadas sozinhas
-% em um página em branco. Ver https://github.com/abntex/abntex2/issues/170
+% Nas páginas de elementos flutuantes, conserva um intervalo regular entre
+% os blocos e deixa a sobra vertical no final, sem esticar os intervalos.
 \makeatletter
-\setlength{\@fptop}{5pt} % Set distance from top of page to first float
+\setlength{\@fptop}{0pt}
+\setlength{\@fpsep}{18pt}
+\setlength{\@fpbot}{0pt plus 1fil}
 \makeatother
 % ---
 
@@ -159,7 +195,7 @@
 \newlistentry{quadro}{loq}{0}
 
 % configurações para atender às regras da ABNT
-\setfloatadjustment{quadro}{\centering}
+\setfloatadjustment{quadro}{\centering\SingleSpacing*\setlength{\parskip}{0pt}}
 \counterwithout{quadro}{chapter}
 \renewcommand{\cftquadroname}{\quadroname\space} 
 \renewcommand*{\cftquadroaftersnum}{\hfill--\hfill}
@@ -202,6 +238,15 @@
 % ELEMENTOS TEXTUAIS
 % ----------------------------------------------------------
 \textual
+\flushbottom
+\setlength{\parskip}{0.2cm plus 1pt minus 1pt}
+% Inclui a profundidade da última linha no limite inferior da página.
+\setlength{\tccmaxdepth}{\maxdepth}
+\makeatletter
+\setlength{\tccoutputdepth}{\@maxdepth}
+\maxdepth=0pt
+\@maxdepth=0pt
+\makeatother
 
 \include{introducao}
 
@@ -211,6 +256,12 @@
 
 \include{resultados}
 
+\raggedbottom
+\setlength{\parskip}{0.2cm}
+\setlength{\maxdepth}{\tccmaxdepth}
+\makeatletter
+\setlength{\@maxdepth}{\tccoutputdepth}
+\makeatother
 \include{discussao}
 
 \include{conclusao}

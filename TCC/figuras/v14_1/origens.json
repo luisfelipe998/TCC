@@ -1,0 +1,122 @@
+{
+  "source_run": "src2/v14.1_new_voidfraction",
+  "figures": [
+    {
+      "file": "TCC/figuras/v14_1/panorama_phase_masks.png",
+      "source": "src2/v14.1_new_voidfraction/figures/void_fraction/panorama_phase_masks.png",
+      "sha256": "f194f706bdf88dd5b0ab5c999639d010507518286b239eaff80b298bd943e92f",
+      "unchanged_copy": false,
+      "source_sha256": "441ec664a7b64862be6582abc83ca8689255889cc4abf31f402f5f1b5f311394",
+      "presentation_only": true,
+      "change": {
+        "old_title": "Panorama original (primeiros ≤2.500 px)",
+        "new_title": "Panorama corrigido (primeiros ≤2.500 px)",
+        "segmentation_recomputed": false,
+        "data_and_crops_unchanged": true
+      },
+      "generator": {
+        "file": "TCC/figuras/v14_1/gerar_painel_mascaras.py",
+        "sha256": "de36f4d69b793b3b64424ac0edc9e63e25b7bb35da4afe851514c401fcb21f7d"
+      },
+      "source_rendering_script": {
+        "file": "src2/v14.1_new_voidfraction/scripts/panorama_void_alternatives.py",
+        "sha256": "68e7d0b7ea4f37a6a4ea474f68e440510a2887ef960a258dd52aa92faa6658f2",
+        "lines": [
+          250,
+          265
+        ]
+      },
+      "inputs": [
+        {
+          "run": "m07q01_001",
+          "panorama": {
+            "file": "src2/v14.1_new_voidfraction/intermediate/reconstructed_inputs/m07q01_001/__panorama_v11.png",
+            "sha256": "b7a6a30f7ce6a1b76da2c700707faa7fd1bb8a781df52516673d9f63c4f6c775"
+          },
+          "mask": {
+            "file": "src2/v14.1_new_voidfraction/intermediate/phase_masks/m07q01_001_mask.png",
+            "sha256": "4a99affde9da9a278b595851e947670ff2b57c877f4a39fe1e3a5d5f760ad85c"
+          }
+        },
+        {
+          "run": "m06q01_001",
+          "panorama": {
+            "file": "src2/v14.1_new_voidfraction/intermediate/reconstructed_inputs/m06q01_001/__panorama_v11.png",
+            "sha256": "06fe2cdaacb818c42765777292033d85d7bb9b3d2239794e3a9c1305e35cae32"
+          },
+          "mask": {
+            "file": "src2/v14.1_new_voidfraction/intermediate/phase_masks/m06q01_001_mask.png",
+            "sha256": "5c2e661490e04e9767835d2ecaf472288e89485674c4ca3a7950840554a7573a"
+          }
+        },
+        {
+          "run": "m06q05_001",
+          "panorama": {
+            "file": "src2/v14.1_new_voidfraction/intermediate/reconstructed_inputs/m06q05_001/__panorama_v11.png",
+            "sha256": "606e8eb20956441d21de7cb885ab62b741e24c2d9fa4eb18099518c959ee7058"
+          },
+          "mask": {
+            "file": "src2/v14.1_new_voidfraction/intermediate/phase_masks/m06q05_001_mask.png",
+            "sha256": "157c106b6593b93930a4323b289ea05e9997194aefeee128361ed5c63e1e7810"
+          }
+        },
+        {
+          "run": "m06q20_001",
+          "panorama": {
+            "file": "src2/v14.1_new_voidfraction/intermediate/reconstructed_inputs/m06q20_001/__panorama_v11.png",
+            "sha256": "85d15a46fccb1e5c96864fad17f116220ff353a3aea25b0c50cebcfa62c61a44"
+          },
+          "mask": {
+            "file": "src2/v14.1_new_voidfraction/intermediate/phase_masks/m06q20_001_mask.png",
+            "sha256": "e821a8b91835d2ea1f273d51729d5f54916885228464eeaf906a85b68539310d"
+          }
+        },
+        {
+          "run": "m06q80_001",
+          "panorama": {
+            "file": "src2/v14.1_new_voidfraction/intermediate/reconstructed_inputs/m06q80_001/__panorama_v11.png",
+            "sha256": "d6c6946effd1161b4e26f4c70878ffa62f4ba05ce38a503cee8274488ab7b16e"
+          },
+          "mask": {
+            "file": "src2/v14.1_new_voidfraction/intermediate/phase_masks/m06q80_001_mask.png",
+            "sha256": "eb1e260a5bd1ee8aa3932c6271f523d89a63dce901db44f1d931b050546fac33"
+          }
+        }
+      ],
+      "rendering": {
+        "matplotlib": "3.10.7",
+        "numpy": "2.3.4",
+        "dpi": 180,
+        "size_pixels": [
+          2700,
+          1800
+        ],
+        "first_columns": 2500,
+        "mask_opacity": 0.42
+      },
+      "verification": {
+        "original_title_pixels_identical_to_source": true,
+        "changed_pixels": 7194,
+        "changed_bbox_xyxy_exclusive": [
+          414,
+          90,
+          1045,
+          119
+        ],
+        "allowed_title_bbox_xyxy_exclusive": [
+          409,
+          83,
+          1049,
+          124
+        ],
+        "changed_pixels_outside_title": 0
+      }
+    },
+    {
+      "file": "TCC/figuras/v14_1/void_fraction_vs_flip_rate.png",
+      "source": "src2/v14.1_new_voidfraction/figures/void_fraction/void_fraction_vs_flip_rate.png",
+      "sha256": "5b1fcc8ba9570361375a08853b0dabf2b3d7ae4f9a4e8b2acbea43e78812cf76",
+      "unchanged_copy": true
+    }
+  ]
+}

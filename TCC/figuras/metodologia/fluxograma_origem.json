@@ -1,0 +1,164 @@
+{
+  "tipo": "esquema do procedimento executado, sem dados experimentais",
+  "dimensoes_cm": [
+    16,
+    11.5
+  ],
+  "fonte_pt": 9.2,
+  "nos": [
+    {
+      "id": "quadros",
+      "texto": "Quadros das aquisições",
+      "grupo": "input"
+    },
+    {
+      "id": "espectral",
+      "texto": "Panoramas da análise espectral\nMédia de intensidade por coluna",
+      "grupo": "input"
+    },
+    {
+      "id": "optico",
+      "texto": "Panoramas da análise óptica\nJustaposição direta das tiras",
+      "grupo": "optical"
+    },
+    {
+      "id": "completo",
+      "texto": "Sinal completo\nPreparação",
+      "grupo": "individual"
+    },
+    {
+      "id": "corte",
+      "texto": "Dois sinais\nCorte no menor comprimento\nPreparação",
+      "grupo": "pair"
+    },
+    {
+      "id": "mascara",
+      "texto": "Segmentação\nMáscara de gás inferido",
+      "grupo": "optical"
+    },
+    {
+      "id": "auto_cwt",
+      "texto": "Autocorrelação\nCWT",
+      "grupo": "individual"
+    },
+    {
+      "id": "correlacoes_cwt",
+      "texto": "Duas autocorrelações\nCorrelação cruzada\nCWT",
+      "grupo": "pair"
+    },
+    {
+      "id": "optica_medidas",
+      "texto": "Fração de vazio estimada\nDensidade de transições",
+      "grupo": "optical"
+    },
+    {
+      "id": "perfil",
+      "texto": "Perfil de potência\nno atraso zero",
+      "grupo": "individual"
+    },
+    {
+      "id": "mapas",
+      "texto": "Mapas de potência,\nespectro cruzado e coerência",
+      "grupo": "pair"
+    },
+    {
+      "id": "optica_resumos",
+      "texto": "Resumos por ensaio\ne padrão",
+      "grupo": "optical"
+    },
+    {
+      "id": "pearson",
+      "texto": "Coeficiente de Pearson\nResumos dentro\ne entre padrões",
+      "grupo": "individual"
+    },
+    {
+      "id": "leitura_mapas",
+      "texto": "Leitura dos mapas\nResumos da coerência",
+      "grupo": "pair"
+    },
+    {
+      "id": "interpretacao",
+      "texto": "Interpretação conjunta dos resultados",
+      "grupo": "output"
+    }
+  ],
+  "arestas": [
+    [
+      "quadros",
+      "espectral"
+    ],
+    [
+      "quadros",
+      "optico"
+    ],
+    [
+      "espectral",
+      "completo"
+    ],
+    [
+      "espectral",
+      "corte"
+    ],
+    [
+      "optico",
+      "mascara"
+    ],
+    [
+      "completo",
+      "auto_cwt"
+    ],
+    [
+      "corte",
+      "correlacoes_cwt"
+    ],
+    [
+      "mascara",
+      "optica_medidas"
+    ],
+    [
+      "auto_cwt",
+      "perfil"
+    ],
+    [
+      "correlacoes_cwt",
+      "mapas"
+    ],
+    [
+      "optica_medidas",
+      "optica_resumos"
+    ],
+    [
+      "perfil",
+      "pearson"
+    ],
+    [
+      "mapas",
+      "leitura_mapas"
+    ],
+    [
+      "pearson",
+      "interpretacao"
+    ],
+    [
+      "leitura_mapas",
+      "interpretacao"
+    ],
+    [
+      "optica_resumos",
+      "interpretacao"
+    ]
+  ],
+  "criterios": [
+    "Panoramas espectrais e ópticos são versões distintas da mesma montagem.",
+    "Nos pares, o corte antecede a preparação.",
+    "A CWT é aplicada às correlações.",
+    "Pearson usa perfis dos sinais completos.",
+    "WCO usa as correlações dos trechos comuns, sem receber o descritor completo de Pearson.",
+    "A análise óptica parte da máscara de gás inferido."
+  ],
+  "script_sha256": "ca917e82211be358963c27b08b09282c4f99cdabde5191cfd9abd83be832d4b3",
+  "arquivos_sha256": {
+    "fluxograma.pdf": "857823164ecb749fac967d9001209d8a8bd9b1eb9a5daa00fb3e527b37717f2d",
+    "fluxograma.png": "6eb71a0268ee1f799e8b7f31c9c1acf4fd582a502217bd4e737e6c9f75cd6126"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "purpose": "Exemplo real e didático do panorama e de sua máscara óptica já calculada; não valida a segmentação.",
+  "source_version": "v18_montagem_18_71",
+  "run_id": "m06q01_001",
+  "pattern": "plug",
+  "eligible_pure_unsaturated": true,
+  "input_shape_height_width": [
+    80,
+    7786
+  ],
+  "crop_rows_start_stop_exclusive": [
+    18,
+    72
+  ],
+  "crop_columns_start_stop_exclusive": [
+    0,
+    520
+  ],
+  "crop_shape_height_width": [
+    54,
+    520
+  ],
+  "crop_selection": "Primeiras 520 colunas do ensaio m06q01_001, incluindo uma estrutura alongada e região adjacente; recorte ilustrativo, sem otimizar concordância de segmentação.",
+  "mask_decoding": "PNG monocromático: 255 = gás inferido (1), 0 = demais pixels (0).",
+  "display": {
+    "width_cm": 16.0,
+    "height_cm": 6.4,
+    "grayscale_range": [
+      0,
+      255
+    ],
+    "contrast_stretching": false,
+    "interpolation": "nearest",
+    "aspect": "equal",
+    "gas_color": "#247b9b",
+    "other_color": "#e4e7e9"
+  },
+  "segmentation_executed": false,
+  "pixel_editing": false,
+  "inputs_sha256_before": {
+    "src2/v18_montagem_18_71/01_panoramas/optica/m06q01_001/panorama.png": "72956875541a66e19957920e571eb1cfe65502143cc1f26be71daf7ba635d74d",
+    "src2/v18_montagem_18_71/03_optica/intermediate/phase_masks/m06q01_001_mask.png": "38a6d4c34573a3cd9dbb813e5637378f88cbc5e73a0a8b8ccb4c4f38db4e22da",
+    "src2/v18_montagem_18_71/03_optica/results/void_fraction/void_fraction_flip_plot_data.csv": "d9dcb95c1f63dcfb31e66e7735a1fef868c46b886fb0759cd0310521ef5826c1"
+  },
+  "inputs_sha256_after": {
+    "src2/v18_montagem_18_71/01_panoramas/optica/m06q01_001/panorama.png": "72956875541a66e19957920e571eb1cfe65502143cc1f26be71daf7ba635d74d",
+    "src2/v18_montagem_18_71/03_optica/intermediate/phase_masks/m06q01_001_mask.png": "38a6d4c34573a3cd9dbb813e5637378f88cbc5e73a0a8b8ccb4c4f38db4e22da",
+    "src2/v18_montagem_18_71/03_optica/results/void_fraction/void_fraction_flip_plot_data.csv": "d9dcb95c1f63dcfb31e66e7735a1fef868c46b886fb0759cd0310521ef5826c1"
+  },
+  "checks": {
+    "inputs_unchanged": true,
+    "same_crop_for_both_panels": true,
+    "mask_only_0_or_255": true,
+    "mask_empty_outside_rows_18_72": true,
+    "saved_arrays_match_source_pixels": true,
+    "eligible_and_unsaturated": true
+  },
+  "outputs_sha256": {
+    "exemplo_mascara.pdf": "82ccdfc3c066a6424c644f0ecfb8e5e38317e3844c0c3eb6bbcc99e3e62caf6d",
+    "exemplo_mascara.png": "f8160da96dc05b6735b5ad8adac066788757ddd74ed6cc09b11c63e5a268fa8f",
+    "exemplo_mascara_dados.npz": "697d0a728dfcef2196fceb38169ad5f7b399d3f6fa16e0f4f294dda31f32432d"
+  },
+  "script_sha256": "ae88f56fe79f9bba24ac53aa3cd7b4ad261762bf2356a82a7488a152d826ae4e",
+  "versions": {
+    "python": "3.13.2",
+    "numpy": "2.3.4",
+    "matplotlib": "3.10.7",
+    "pillow": "12.0.0"
+  }
+}

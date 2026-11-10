@@ -1,684 +1,623 @@
 \chapter{Resultados}\label{cap:resultados}
 
-Este capítulo relata os resultados obtidos com a aplicação da coerência \textit{Wavelet}
-alternativa de \citeonline{schuck2019} aos sinais espaciais de brilho reconstruídos do panorama
-das imagens, conforme a metodologia descrita no \autoref{cap:metodologia}. A apresentação segue a
-ordem do \textit{pipeline}: primeiro os sinais espaciais reconstruídos, depois os campos de
-espectro de potência (WPS) e o perfil de potência média por padrão, em seguida os campos de
-coerência (WCO), e por fim as duas leituras comparativas visadas pelo trabalho, a repetibilidade
-intra-padrão e a separação inter-padrão. A inspeção dos campos é qualitativa. A
-\autoref{sec:res-limite-estat} complementa essa leitura com a quantificação estatística da
-repetibilidade do perfil de potência média para os quatro padrões com mais de dois ensaios.
+Neste capítulo, apresentaram-se os resultados da análise espacial dos panoramas,
+conforme o \autoref{cap:metodologia}. Foram examinados os sinais, os campos
+wavelet e o coeficiente de Pearson $r$ entre descritores espectrais individuais.
+As comparações reuniram os perfis individuais e os resumos dos mapas de coerência wavelet.
+Na \autoref{sec:res-void}, acrescentaram-se os resultados ópticos complementares,
+com a estimativa condicional de fração de vazio e a densidade espacial de transições.
 
 % =========================================================
-\section{Campanhas de processamento intra e inter-padrão}\label{sec:res-visao}
+\section{Caracterização dos ensaios analisados}\label{sec:res-visao}
 % =========================================================
 
-O cálculo da coerência \textit{Wavelet} alternativa foi executado em duas campanhas
-complementares sobre os ensaios elegíveis descritos na \autoref{sec:met-dados}. A campanha
-intra-padrão cobriu os noventa e um pares de ensaios de um mesmo padrão, e a campanha inter-padrão
-cobriu os duzentos e oitenta e sete pares de ensaios de padrões distintos. As duas campanhas
-empregaram o mesmo cálculo, diferindo apenas na regra de emparelhamento dos ensaios: a campanha
-intra-padrão compara dois ensaios do \textit{mesmo} padrão, para verificar se a assinatura
-espectral \textit{se repete}, e a inter-padrão compara ensaios de padrões \textit{diferentes},
-para verificar se a assinatura \textit{distingue} um padrão do outro.
+Analisaram-se 26 ensaios: dez de \textit{churn}, nove de anular ondulado, três de
+\textit{plug}, três de \textit{slug} e um de bolhas dispersas.
+A \autoref{tab:res-ensaios} reuniu a identificação e a extensão dos panoramas.
 
-Para cada par de ensaios, o processamento produziu os campos de espectro de potência
-$\widetilde{P}_x(a)$ e $\widetilde{P}_y(a)$ de cada ensaio, o campo de espectro cruzado
-$\widetilde{C}_{xy}(a)$ e o campo de coerência $\widetilde{\gamma}_{xy}(a)$, além dos perfis de
-potência média $|\text{WPS}|$ por comprimento de onda. Cada par foi processado nas duas variantes
-do sinal espacial descritas na \autoref{sec:met-dados}: a variante \textit{cropped}, obtida pela
-média das linhas 20 a 59 do panorama, e a variante \textit{center}, obtida da linha central 40.
-As figuras deste capítulo referem-se à variante \textit{cropped}, que reúne o núcleo do escoamento.
-
-O \autoref{quad:res-ensaios} relaciona todos os ensaios processados, com o padrão rotulado, o
-nível de fluxo mássico $G$ e de fluxo de calor $q$ de cada ponto operacional e o comprimento $N$ do
-sinal espacial, igual à largura do panorama reconstruído em pixels. O comprimento varia de alguns
-milhares a mais de vinte mil pixels, acompanhando a velocidade do escoamento: ensaios de regime
-rápido percorrem a seção de visualização em menos quadros e produzem panoramas mais curtos, ao
-passo que ensaios de regime mais lento produzem panoramas mais longos. Os ensaios de regime anular
-ondulado concentram-se nos comprimentos mais longos, e os intermitentes (\textit{plug} e
-\textit{slug}), nos mais curtos.
-
-\begin{quadro}[htb]
+\begin{table}[!htbp]
   \centering
-  \caption{Ensaios processados, por padrão, com o nível de fluxo mássico $G$ e de fluxo de calor
-           $q$ do ponto operacional e o comprimento $N$ do sinal espacial (largura do panorama
-           reconstruído, em pixels, na variante \textit{cropped}).}
-  \label{quad:res-ensaios}
-  \begin{tabular}{l l c c r}
+  \begin{threeparttable}
+  \caption{Ensaios incluídos e extensão dos panoramas completos.}
+  \label{tab:res-ensaios}
+  \small
+  \renewcommand{\arraystretch}{0.98}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}r l l r@{}}
     \hline
-    \textbf{Ensaio} & \textbf{Padrão} & \textbf{$G$} & \textbf{$q$} & \textbf{$N$ (px)} \\
+    \textbf{Nº} & \textbf{Ensaio} & \textbf{Padrão} & \textbf{Extensão (px)}\\
     \hline
-    m03q05 & \textit{Churn} & 3 &  5 &  9586 \\
-    m04q10 & \textit{Churn} & 4 & 10 &  8829 \\
-    m04q20 & \textit{Churn} & 4 & 20 &  9344 \\
-    m05q10 & \textit{Churn} & 5 & 10 &  7001 \\
-    m05q20 & \textit{Churn} & 5 & 20 &  7391 \\
-    m05q40 & \textit{Churn} & 5 & 40 &  9937 \\
-    m06q10 & \textit{Churn} & 6 & 10 &  7584 \\
-    m06q20 & \textit{Churn} & 6 & 20 & 10044 \\
-    m07q20 & \textit{Churn} & 7 & 20 &  8255 \\
-    m07q40 & \textit{Churn} & 7 & 40 & 10349 \\
+    1 & m03q05 & \textit{Churn} & 9237\\
+    2 & m04q10 & \textit{Churn} & 8894\\
+    3 & m04q20 & \textit{Churn} & 9324\\
+    4 & m05q10 & \textit{Churn} & 7058\\
+    5 & m05q20 & \textit{Churn} & 7411\\
+    6 & m05q40 & \textit{Churn} & 9873\\
+    7 & m06q10 & \textit{Churn} & 7615\\
+    8 & m06q20 & \textit{Churn} & 10025\\
+    9 & m07q20 & \textit{Churn} & 8289\\
+    10 & m07q40 & \textit{Churn} & 10313\\
     \hline
-    m03q10 & Anular ondulado & 3 & 10 & 14224 \\
-    m03q20 & Anular ondulado & 3 & 20 & 23079 \\
-    m03q40 & Anular ondulado & 3 & 40 & 20743 \\
-    m04q40 & Anular ondulado & 4 & 40 & 14960 \\
-    m04q80 & Anular ondulado & 4 & 80 & 22636 \\
-    m05q80 & Anular ondulado & 5 & 80 & 17524 \\
-    m06q40 & Anular ondulado & 6 & 40 & 14772 \\
-    m06q80 & Anular ondulado & 6 & 80 & 18665 \\
-    m07q80 & Anular ondulado & 7 & 80 & 16658 \\
+    11 & m03q10 & Anular ondulado & 13789\\
+    12 & m03q20 & Anular ondulado & 22831\\
+    13 & m03q40 & Anular ondulado & 19204\\
+    14 & m04q40 & Anular ondulado & 14477\\
+    15 & m04q80 & Anular ondulado & 22533\\
+    16 & m05q80 & Anular ondulado & 17500\\
+    17 & m06q40 & Anular ondulado & 14722\\
+    18 & m06q80 & Anular ondulado & 18664\\
+    19 & m07q80 & Anular ondulado & 16656\\
     \hline
-    m05q01    & \textit{Plug} & 5 &  1 & 5940 \\
-    m05q05\_2 & \textit{Plug} & 5 &  5 & 4510 \\
-    m06q01    & \textit{Plug} & 6 &  1 & 7798 \\
-    m07q05    & \textit{Plug} & 7 &  5 & 7358 \\
+    20 & m05q01 & \textit{Plug} & 5914\\
+    21 & m06q01 & \textit{Plug} & 7786\\
+    22 & m07q05 & \textit{Plug} & 7337\\
+    23 & m04q01 & \textit{Slug} & 5071\\
+    24 & m05q05 & \textit{Slug} & 6295\\
+    25 & m06q05 & \textit{Slug} & 7747\\
+    26 & m07q01 & Bolhas dispersas & 3094\\
     \hline
-    m04q01    & \textit{Slug} & 4 & 1 & 5071 \\
-    m05q05\_1 & \textit{Slug} & 5 & 5 & 6323 \\
-    m06q05    & \textit{Slug} & 6 & 5 & 7787 \\
-    \hline
-    m04q05 & \textit{Slug}--\textit{churn} & 4 &  5 & 5460 \\
-    m07q10 & \textit{Slug}--\textit{churn} & 7 & 10 & 9101 \\
-    \hline
-  \end{tabular}
-  \fonte{Elaborado pelo autor.}
-\end{quadro}
+  \end{tabular*}
+  \fonte{Elaborado pelo autor a partir dos ensaios analisados.}
+  \end{threeparttable}
+\end{table}
 
+As combinações entre ensaios totalizaram 325 pares, sendo 87 do mesmo padrão
+e 238 de padrões diferentes. A numeração da tabela seguiu a ordem dos ensaios
+na matriz do coeficiente de Pearson $r$.
+
+O coeficiente de Pearson $r$ comparou descritores calculados com os panoramas
+completos. Nos mapas wavelet de cada par, utilizaram-se os trechos iniciais
+dos dois sinais, limitados ao comprimento do menor.
+
+\FloatBarrier
 % =========================================================
-\section{Panoramas reconstruídos por padrão}\label{sec:res-panorama}
+\section{Panoramas e sinais espaciais}\label{sec:res-panorama}\label{sec:res-sinais}
 % =========================================================
 
-Antes de descrever os sinais e os campos espectrais, convém observar a imagem que lhes dá origem.
-O \textit{panorama} de cada ensaio é a reconstrução espacial descrita na
-\autoref{sec:met-dados}: uma tira de altíssima razão de aspecto, costurada quadro a quadro, em que
-o eixo horizontal corresponde à posição ao longo do percurso do escoamento no tubo e cada coluna
-registra o brilho naquela posição. O sinal espacial de brilho analisado adiante é extraído
-diretamente desse panorama, pela média das linhas 20 a 59 na variante \textit{cropped}. Observar o
-panorama ajuda a reconhecer, de forma visual e direta, a textura característica de cada padrão
-antes de reduzi-la a uma curva unidimensional.
+A sequência da \autoref{fig:res-panorama-plug} à
+\autoref{fig:res-panorama-anular} apresentou exemplos de \textit{plug},
+\textit{slug}, \textit{churn} e anular ondulado. Em cada figura, os três painéis
+compartilharam a posição horizontal, expressa em pixels do panorama.
+As linhas sobre a imagem delimitaram a faixa de extração, entre as linhas
+18 e 71. O painel central mostrou a intensidade média de cada coluna dessa
+faixa, com valores menores nos trechos mais escuros.
 
-A \autoref{fig:res-panorama-plug} e a \autoref{fig:res-panorama-slug} mostram os panoramas de
-\textit{plug} e de \textit{slug}. Nos dois padrões, intermitentes, o escoamento alterna bolhas
-alongadas discretas com grandes trechos de líquido entre elas, de modo que o panorama exibe
-estruturas claras bem espaçadas sobre um fundo mais uniforme. A distinção entre \textit{plug} e
-\textit{slug} é gradual: as bolhas do \textit{slug} são mais longas e mais frequentes do que as do
-\textit{plug}. A \autoref{fig:res-panorama-churn} mostra o panorama de \textit{churn}, de aparência
-densa e desorganizada, sem estruturas discretas bem definidas, refletindo o caráter agitado e
-caótico desse regime. A \autoref{fig:res-panorama-annular} mostra o panorama de anular ondulado,
-em que um filme contínuo recobre a parede e a interface apresenta uma ondulação fina e regular ao
-longo de todo o percurso, textura visualmente mais homogênea do que a do \textit{churn}.
+O painel inferior apresentou o sinal preparado para a análise wavelet.
+A inversão da intensidade, a remoção da tendência linear e a padronização
+colocaram o sinal em torno de zero, com desvio padrão unitário, conforme a
+\autoref{sec:met-preproc}. Assim, a curva inferior mostrou as variações de
+intensidade na escala adotada para a comparação entre ensaios.
 
-A comparação visual entre os quatro panoramas revela que os padrões se distinguem sobretudo pela
-\textit{escala} e pela \textit{regularidade} das estruturas, e não por uma forma facilmente
-descritível a olho. Os regimes intermitentes (\textit{plug} e \textit{slug}) apresentam estruturas
-grandes e espaçadas; \textit{churn} apresenta estruturas pequenas e desorganizadas; e o anular
-ondulado apresenta uma ondulação fina e repetitiva. Essa observação qualitativa antecipa o
-resultado central do capítulo: a característica que separa os padrões é a distribuição de energia
-por comprimento de onda, quantificada no espectro de potência da \autoref{sec:res-wps}, e não a
-forma bruta do sinal unidimensional dela derivado.
-
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
   \centering
-  \includegraphics[width=\textwidth]{figuras/v8-panorama-plug}
-  \caption{Trecho inicial do panorama espacial reconstruído de um ensaio de \textit{plug}
-           (primeiras 900 colunas, de um total de 5940). O eixo horizontal corresponde à posição
-           ao longo do percurso do escoamento; bolhas alongadas discretas alternam-se com trechos
-           de líquido mais uniformes.}
+  \sbox{\tccfigurebox}{\includegraphics[width=\textwidth,height=0.39\textheight,keepaspectratio]{figuras/v18_panoramas/plug_m05q01_001.png}}
+  \begin{minipage}{\wd\tccfigurebox}
+  \caption{Panorama completo e sinais de \textit{plug}, ensaio m05q01.}
   \label{fig:res-panorama-plug}
+  \usebox{\tccfigurebox}
   \fonte{Elaborado pelo autor.}
+  \end{minipage}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
   \centering
-  \includegraphics[width=\textwidth]{figuras/v8-panorama-slug}
-  \caption{Trecho inicial do panorama espacial reconstruído de um ensaio de \textit{slug}
-           (primeiras 900 colunas, de um total de 5071). As bolhas alongadas são mais longas e
-           mais frequentes do que no \textit{plug}, mantido o fundo de líquido entre elas.}
+  \sbox{\tccfigurebox}{\includegraphics[width=\textwidth,height=0.39\textheight,keepaspectratio]{figuras/v18_panoramas/slug_m04q01_001.png}}
+  \begin{minipage}{\wd\tccfigurebox}
+  \caption{Panorama completo e sinais de \textit{slug}, ensaio m04q01.}
   \label{fig:res-panorama-slug}
+  \usebox{\tccfigurebox}
   \fonte{Elaborado pelo autor.}
+  \end{minipage}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
   \centering
-  \includegraphics[width=\textwidth]{figuras/v8-panorama-churn}
-  \caption{Trecho inicial do panorama espacial reconstruído de um ensaio de \textit{churn}
-           (primeiras 900 colunas, de um total de 9586). A textura é densa e desorganizada, sem
-           estruturas discretas bem definidas, refletindo o caráter agitado do regime.}
+  \sbox{\tccfigurebox}{\includegraphics[width=\textwidth,height=0.39\textheight,keepaspectratio]{figuras/v18_panoramas/churn_m04q20_001.png}}
+  \begin{minipage}{\wd\tccfigurebox}
+  \caption{Panorama completo e sinais de \textit{churn}, ensaio m04q20.}
   \label{fig:res-panorama-churn}
+  \usebox{\tccfigurebox}
   \fonte{Elaborado pelo autor.}
+  \end{minipage}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
   \centering
-  \includegraphics[width=\textwidth]{figuras/v8-panorama-annular}
-  \caption{Trecho inicial do panorama espacial reconstruído de um ensaio de anular ondulado
-           (primeiras 900 colunas, de um total de 23079). Um filme contínuo recobre a parede e a
-           interface exibe uma ondulação fina e regular ao longo do percurso.}
-  \label{fig:res-panorama-annular}
+  \sbox{\tccfigurebox}{\includegraphics[width=\textwidth,height=0.39\textheight,keepaspectratio]{figuras/v18_panoramas/wavy_annular_m06q40_001.png}}
+  \begin{minipage}{\wd\tccfigurebox}
+  \caption{Panorama completo e sinais de anular ondulado, ensaio m06q40.}
+  \label{fig:res-panorama-anular}
+  \usebox{\tccfigurebox}
   \fonte{Elaborado pelo autor.}
+  \end{minipage}
 \end{figure}
+
+No exemplo de \textit{plug}, os trechos escuros alongados alternaram com
+intervalos claros, formando patamares na curva de intensidade média.
+No ensaio de \textit{slug}, observaram-se intervalos de extensões desiguais e
+variações dentro dos trechos alongados. O exemplo de \textit{churn} apresentou
+textura irregular, acompanhada por oscilações de alturas e espaçamentos variados.
+No ensaio anular, a região central permaneceu contínua, com ondulações ao longo
+do panorama e picos recorrentes no sinal preparado.
 
 % =========================================================
-\section{Sinais espaciais reconstruídos}\label{sec:res-sinais}
+\section{Campos espectrais nas comparações intrapadrão}\label{sec:res-wps}
 % =========================================================
 
-Os sinais espaciais de brilho reconstruídos do panorama apresentaram-se como séries de milhares de
-amostras por ensaio, com uma amostra por pixel de percurso do escoamento no tubo. Após a remoção de
-tendência, da média e a normalização pelo desvio padrão, cada sinal ficou centrado em zero e com
-variância unitária, expresso em unidades de desvio padrão. A \autoref{fig:res-sinais} mostra os
-sinais de dois ensaios de \textit{churn}, sobrepostos no painel inferior. O brilho oscila ao longo
-do eixo de percurso sem tendência residual, refletindo a passagem sucessiva das estruturas do
-escoamento pela seção de visualização.
+Para ilustrar as comparações dentro de cada padrão com pelo menos dois ensaios,
+selecionou-se o par com maior coeficiente de Pearson $r$ entre os perfis
+espectrais, conforme a \autoref{sec:met-pearson}. Essa escolha destacou a
+maior semelhança entre as formas dos perfis de cada padrão.
+A \autoref{tab:res-exemplos} identificou esses quatro pares e seus resultados.
+Os mapas utilizaram os trechos iniciais dos dois sinais, com comprimento
+igual ao do menor sinal de cada par, preparados após o corte.
+A coluna ``Trecho usado nos mapas'' informou esse comprimento, em pixels.
+O coeficiente de Pearson $r$ foi calculado
+com os descritores dos panoramas completos.
 
-A mesma reconstrução foi obtida para os demais padrões, ilustrada nas
-\autoref{fig:res-sinais-annular}, \autoref{fig:res-sinais-plug} e \autoref{fig:res-sinais-slug} para
-anular ondulado, \textit{plug} e \textit{slug}, respectivamente. Os ensaios de \textit{plug} e de
-\textit{slug} foram reconstruídos e analisados mesmo dispondo de poucos ensaios, quatro e três,
-respectivamente, de modo que a sua inclusão tem caráter ilustrativo; essa limitação de amostragem é
-retomada na discussão. Em
-unidades de desvio padrão, os sinais crus dos quatro padrões têm aparência semelhante, uma oscilação
-irregular em torno de zero, sem que a inspeção direta do sinal no tempo revele qual padrão o
-originou. A característica que distingue os padrões não está na forma bruta do sinal, mas na
-distribuição de energia por comprimento de onda, examinada no espectro de potência da
-\autoref{sec:res-wps}.
-
-\begin{figure}[htbp]
+\begin{table}[!htbp]
   \centering
-  \includegraphics[width=0.92\textwidth]{figuras/v8-churn-churn-signals}
-  \caption{Sinais espaciais de brilho de dois ensaios de \textit{churn}, na variante
-           \textit{cropped} (média das linhas 20 a 59 do panorama), após pré-processamento.
-           Painéis superior e central: cada ensaio isoladamente. Painel inferior: os dois sinais
-           sobrepostos, em unidades de desvio padrão, ao longo da posição em pixels.}
-  \label{fig:res-sinais}
+  \begin{threeparttable}
+  \caption{Pares com maior coeficiente de Pearson em cada padrão.}
+  \label{tab:res-exemplos}
+  \small
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l l r r@{}}
+    \hline
+    \textbf{Padrão} & \textbf{Par de ensaios} &
+    \shortstack{\textbf{Trecho usado nos}\\\textbf{mapas (pixels)}} &
+    \shortstack{\textbf{Coeficiente}\\\textbf{de Pearson $r$}}\\
+    \hline
+    \textit{Churn} & m05q40 / m06q20 & 9873 & 0,9572\\
+    Anular ondulado & m03q20 / m04q80 & 22533 & 0,9883\\
+    \textit{Plug} & m05q01 / m06q01 & 5914 & 0,9401\\
+    \textit{Slug} & m04q01 / m05q05 & 5071 & 0,8246\\
+    \hline
+  \end{tabular*}
   \fonte{Elaborado pelo autor.}
-\end{figure}
+  \end{threeparttable}
+\end{table}
 
-\begin{figure}[htbp]
+A \autoref{fig:res-wps}, a \autoref{fig:res-wps-annular},
+a \autoref{fig:res-wps-plug} e a \autoref{fig:res-wps-slug} reuniram os panoramas,
+os sinais preparados, os espectros de potência wavelet (WPS), o módulo do
+espectro cruzado wavelet (WCS) e a coerência wavelet (WCO) de cada par.
+Nos mapas, o eixo horizontal indicou o atraso da correlação, ou seja, o
+deslocamento usado para comparar os sinais. O eixo vertical indicou o
+comprimento de onda $\lambda$, em pixels. As cores mais claras indicaram
+valores maiores, conforme a escala ao lado de cada mapa.
+Para apresentação, reduziu-se o número de colunas exibidas, preservando as
+200 escalas, o atraso zero e as extremidades dos mapas. Os resumos de
+potência e de coerência wavelet foram calculados nos campos completos.
+
+As curvas laterais resumiram a potência média sobre todos os atrasos dos
+trechos comparados.
+Os descritores do coeficiente de Pearson $r$, apresentados na
+\autoref{sec:res-intra}, foram extraídos no atraso zero dos mapas de potência
+calculados com os panoramas completos.
+
+A \autoref{tab:res-intra}, na seção seguinte, reuniu as estatísticas do
+coeficiente de Pearson $r$ de todos os pares de cada padrão. Os resumos
+da coerência dos mapas foram apresentados na \autoref{sec:res-wco}.
+
+\begin{figure}[p]
   \centering
-  \includegraphics[width=0.92\textwidth]{figuras/v8-annular-signals}
-  \caption{Sinais espaciais de brilho de dois ensaios de anular ondulado, na variante
-           \textit{cropped}. Mesma disposição de painéis da \autoref{fig:res-sinais}.}
-  \label{fig:res-sinais-annular}
-  \fonte{Elaborado pelo autor.}
-\end{figure}
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.92\textwidth]{figuras/v8-plug-signals}
-  \caption{Sinais espaciais de brilho de dois ensaios de \textit{plug}, na variante
-           \textit{cropped}. Mesma disposição de painéis da \autoref{fig:res-sinais}.}
-  \label{fig:res-sinais-plug}
-  \fonte{Elaborado pelo autor.}
-\end{figure}
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.92\textwidth]{figuras/v8-slug-signals}
-  \caption{Sinais espaciais de brilho de dois ensaios de \textit{slug}, na variante
-           \textit{cropped}. Mesma disposição de painéis da \autoref{fig:res-sinais}.}
-  \label{fig:res-sinais-slug}
-  \fonte{Elaborado pelo autor.}
-\end{figure}
-
-% =========================================================
-\section{Espectro de potência e perfil de potência média}\label{sec:res-wps}
-% =========================================================
-
-Os campos de espectro de potência $\widetilde{P}_x(a)$ e $\widetilde{P}_y(a)$, obtidos da CWT das
-funções de autocorrelação de cada ensaio, concentraram sua energia em uma faixa de comprimento de
-onda bem delimitada. Em termos simples, a \textit{autocorrelação} mede o quanto o sinal de um
-ensaio se parece consigo mesmo quando deslocado ao longo do percurso, revelando os tamanhos de
-estrutura (comprimentos de onda) que se repetem no escoamento. A formulação de
-\citeonline{schuck2019} parte dessas funções de correlação, e não do sinal bruto. O
-\textit{espectro de potência} resultante indica quanta energia o padrão concentra em cada tamanho
-de estrutura, e o \textit{perfil de potência média} $|\text{WPS}|$ resume essa informação em uma
-única curva, cujo máximo aponta o comprimento de onda dominante do padrão. Nos ensaios de
-\textit{churn} e de anular ondulado, essa concentração situou-se
-na região de centenas de pixels de comprimento de onda, com o perfil de potência média
-$|\text{WPS}|$ exibindo um máximo pronunciado nessa faixa e caindo para os comprimentos de onda mais
-curtos e mais longos. Os painéis superiores da \autoref{fig:res-wps} mostram esse comportamento para
-dois ensaios de \textit{churn}: os campos WPS apresentam um lóbulo central de magnitude elevada em
-torno do atraso nulo, e os perfis de potência média ao lado exibem o pico correspondente na mesma
-faixa de comprimento de onda.
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=\textwidth]{figuras/v8-churn-churn-wavelet}
-  \caption{Campos espectrais de um par de ensaios de \textit{churn} (variante \textit{cropped}).
-           Linha superior: espectro de potência $\widetilde{P}_x$ e $\widetilde{P}_y$ de cada
-           ensaio, com o respectivo perfil de potência média $|\text{WPS}|$ ao lado. Linha central:
-           espectro cruzado $\widetilde{C}_{xy}$. Linha inferior: coerência
-           $\widetilde{\gamma}_{xy}$. Eixo vertical em comprimento de onda (pixels), eixo horizontal
-           em atraso (pixels).}
+  \sbox{\tccfigurebox}{\includegraphics[width=\textwidth,height=0.87\textheight,keepaspectratio]{figuras/v18_pearson_direto/churn_m05q40_001_m06q20_001.png}}
+  \begin{minipage}{\wd\tccfigurebox}
+  \caption[Par intrapadrão de \textit{churn}, m05q40 e m06q20, com coeficiente de Pearson $r=0{,}9572$.]{Par intrapadrão de \textit{churn}, m05q40 e m06q20, com coeficiente de Pearson $r=0{,}9572$.
+  Coerência wavelet: mínima $1{,}46\times10^{-9}$, média $0{,}0632$,
+  mediana $0{,}0154$ e máxima $0{,}8326$.}
   \label{fig:res-wps}
+  \usebox{\tccfigurebox}
   \fonte{Elaborado pelo autor.}
+  \end{minipage}
 \end{figure}
 
-Essa faixa dominante mostrou-se a característica mais estável dos campos obtidos. O perfil de
-potência média resumiu em uma única curva o comprimento de onda em que a energia espectral de cada
-ensaio se concentra, e foi essa curva que apresentou o comportamento mais regular e mais fácil de
-comparar entre ensaios, tanto na inspeção intra-padrão quanto na inter-padrão descritas adiante.
-
-Para cada ensaio elegível, extraiu-se o comprimento de onda dominante $\lambda^*$, definido na
-\autoref{sec:met-analise} como a posição do máximo do perfil de potência média $|\text{WPS}|$
-na variante \textit{cropped}. O \autoref{quad:res-lambda} reúne a faixa de $\lambda^*$ observada em
-cada padrão. Os ensaios de anular ondulado concentraram o máximo de potência na faixa mais estreita,
-entre cerca de 350 e 570 pixels (mediana em torno de 490 pixels), ao passo que os de \textit{churn}
-mantiveram o máximo majoritariamente entre cerca de 430 e 790 pixels (mediana em torno de 630
-pixels), com um ensaio isolado deslocado para comprimentos de onda mais longos. Os padrões com
-poucos ensaios apresentaram dispersão maior: \textit{plug} espalhou-se entre cerca de 220 e 710
-pixels, enquanto \textit{slug} e \textit{slug}--\textit{churn} espalharam-se por uma faixa ampla,
-chegando ao limite superior da grade de comprimentos de onda em um dos ensaios, o que reflete o
-número reduzido de amostras desses padrões.
-
-\begin{quadro}[htb]
+\begin{figure}[p]
   \centering
-  \caption{Comprimento de onda dominante $\lambda^*$ (máximo do perfil de potência média
-           $|\text{WPS}|$) por padrão, na variante \textit{cropped}, para os ensaios elegíveis
-           de cada padrão. A coluna ``Coerência'' resume a leitura qualitativa da coerência no
-           atraso nulo.}
-  \label{quad:res-lambda}
-  \begin{tabular}{l c c c c}
-    \hline
-    \textbf{Padrão} & \textbf{Ensaios} & \textbf{Faixa de $\lambda^*$ (px)} & \textbf{Mediana (px)} & \textbf{Coerência} \\
-    \hline
-    \textit{Churn}                      & 10 & 434--1264 & 629 & baixa/irregular \\
-    Anular ondulado                     &  9 & 353--567  & 491 & baixa/irregular \\
-    \textit{Plug}                       &  4 & 220--711  & 550 & baixa/irregular \\
-    \textit{Slug}                       &  3 & 682--1213 & 711 & baixa/irregular \\
-    \textit{Slug}--\textit{churn}       &  2 & 910--3000 & --- & baixa/irregular \\
-    \hline
-  \end{tabular}
-  \fonte{Elaborado pelo autor.}
-\end{quadro}
-
-Os demais padrões apresentaram o mesmo arranjo de campos, deslocando apenas a posição da faixa
-dominante. A \autoref{fig:res-wps-annular} mostra o par de anular ondulado, cujo perfil de potência
-média concentra o máximo na faixa mais estreita e mais curta entre os padrões, em torno de 490
-pixels. A \autoref{fig:res-wps-plug} e a \autoref{fig:res-wps-slug} mostram os pares de \textit{plug}
-e de \textit{slug}, com o máximo mais disperso e deslocado para comprimentos de onda mais longos,
-coerente com o número reduzido de ensaios registrado no \autoref{quad:res-lambda}. Em todos os casos,
-a linha inferior de coerência permaneceu escura na maior parte da faixa, sem uma banda que
-acompanhasse o máximo de potência, comportamento retomado na \autoref{sec:res-wco}.
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=\textwidth]{figuras/v8-annular-wavelet}
-  \caption{Campos espectrais de um par de ensaios de anular ondulado (variante \textit{cropped}).
-           Mesma disposição de painéis da \autoref{fig:res-wps}. O perfil de potência média
-           concentra o máximo na faixa mais estreita e curta entre os padrões.}
+  \sbox{\tccfigurebox}{\includegraphics[width=\textwidth,height=0.87\textheight,keepaspectratio]{figuras/v18_pearson_direto/wavy_annular_m03q20_001_m04q80_001.png}}
+  \begin{minipage}{\wd\tccfigurebox}
+  \caption[Par intrapadrão de anular ondulado, m03q20 e m04q80, com coeficiente de Pearson $r=0{,}9883$.]{Par intrapadrão de anular ondulado, m03q20 e m04q80, com coeficiente de Pearson $r=0{,}9883$.
+  Coerência wavelet: mínima $1{,}78\times10^{-11}$, média $0{,}0282$,
+  mediana $0{,}0075$ e máxima $0{,}3660$.}
   \label{fig:res-wps-annular}
+  \usebox{\tccfigurebox}
   \fonte{Elaborado pelo autor.}
+  \end{minipage}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}[p]
   \centering
-  \includegraphics[width=\textwidth]{figuras/v8-plug-wavelet}
-  \caption{Campos espectrais de um par de ensaios de \textit{plug} (variante \textit{cropped}).
-           Mesma disposição de painéis da \autoref{fig:res-wps}.}
+  \sbox{\tccfigurebox}{\includegraphics[width=\textwidth,height=0.87\textheight,keepaspectratio]{figuras/v18_pearson_direto/plug_m05q01_001_m06q01_001.png}}
+  \begin{minipage}{\wd\tccfigurebox}
+  \caption[Par intrapadrão de \textit{plug}, m05q01 e m06q01, com coeficiente de Pearson $r=0{,}9401$.]{Par intrapadrão de \textit{plug}, m05q01 e m06q01, com coeficiente de Pearson $r=0{,}9401$.
+  Coerência wavelet: mínima $1{,}86\times10^{-8}$, média $0{,}0926$,
+  mediana $0{,}0309$ e máxima $0{,}7676$.}
   \label{fig:res-wps-plug}
+  \usebox{\tccfigurebox}
   \fonte{Elaborado pelo autor.}
+  \end{minipage}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}[p]
   \centering
-  \includegraphics[width=\textwidth]{figuras/v8-slug-wavelet}
-  \caption{Campos espectrais de um par de ensaios de \textit{slug} (variante \textit{cropped}).
-           Mesma disposição de painéis da \autoref{fig:res-wps}.}
+  \sbox{\tccfigurebox}{\includegraphics[width=\textwidth,height=0.87\textheight,keepaspectratio]{figuras/v18_pearson_direto/slug_m04q01_001_m05q05_001.png}}
+  \begin{minipage}{\wd\tccfigurebox}
+  \caption[Par intrapadrão de \textit{slug}, m04q01 e m05q05, com coeficiente de Pearson $r=0{,}8246$.]{Par intrapadrão de \textit{slug}, m04q01 e m05q05, com coeficiente de Pearson $r=0{,}8246$.
+  Coerência wavelet: mínima $1{,}10\times10^{-9}$, média $0{,}1388$,
+  mediana $0{,}0421$ e máxima $0{,}9109$.}
   \label{fig:res-wps-slug}
+  \usebox{\tccfigurebox}
   \fonte{Elaborado pelo autor.}
+  \end{minipage}
 \end{figure}
 
 % =========================================================
-\section{Campo de coerência \textit{Wavelet} alternativa}\label{sec:res-wco}
+\FloatBarrier
+\section{Perfis espectrais e similaridade intrapadrão}\label{sec:res-intra}
 % =========================================================
 
-O campo de coerência $\widetilde{\gamma}_{xy}(a)$, descritor principal deste trabalho, foi obtido
-para todos os pares das duas campanhas. Antes de descrever o que se observou, convém explicar o
-que cada campo representa. O \textit{espectro cruzado} (WCS) mede a energia que os dois ensaios
-têm em comum em cada tamanho de estrutura. A \textit{coerência} (WCO), derivada dele, varia de
-zero a um e indica o quanto os dois ensaios ``andam juntos'' em cada comprimento de onda, no
-atraso nulo. A expectativa era de que dois ensaios de um mesmo padrão, por compartilharem o mesmo
-tipo de estrutura, apresentassem coerência elevada na faixa dominante. Na inspeção dos campos, a
-coerência avaliada no atraso nulo
-apresentou-se em geral baixa e irregular ao longo dos comprimentos de onda, mesmo entre ensaios de
-um mesmo padrão. Os valores de coerência mais altos concentraram-se nos comprimentos de onda
-mais longos, nos quais a largura finita do campo abrange poucos períodos espaciais e a coerência
-fica mal determinada. Por isso, a coerência elevada observada nessa região de ondas longas não
-constitui evidência de acoplamento entre os ensaios. A linha inferior da \autoref{fig:res-wps} ilustra esse comportamento para o par de
-ensaios de \textit{churn}: o campo de coerência permanece escuro na maior parte da faixa de
-comprimentos de onda em torno do atraso nulo, sem uma banda de coerência elevada que acompanhe a
-faixa dominante identificada nos perfis de potência média.
+A \autoref{fig:res-perfis} apresentou os perfis de potência wavelet no atraso
+zero dos 26 ensaios, agrupados por padrão. Cada perfil reuniu a potência nos
+mesmos 200 comprimentos de onda, distribuídos logaritmicamente entre 50 e
+3\,000 pixels, a partir do sinal do panorama completo.
+Os picos indicaram os comprimentos de onda com maior resposta espectral.
+Esses foram os perfis comparados diretamente pelo coeficiente de Pearson $r$,
+conforme a \autoref{sec:met-pearson}.
 
-Esse resultado indica que a coerência \textit{Wavelet} alternativa, tomada no atraso nulo entre
-pares de ensaios, não descreveu os padrões de escoamento com a precisão esperada para o arranjo e os
-sinais utilizados. A caracterização mais consistente veio do perfil de potência média
-$|\text{WPS}|$, cujo comportamento é retomado nas comparações a seguir.
+Para facilitar a comparação visual das formas, dividiu-se cada perfil pelo
+próprio máximo. Em cada painel, as linhas finas representaram esses perfis
+normalizados, e a linha espessa mostrou sua mediana em cada comprimento de
+onda. Essa mudança de escala preservou a posição dos picos e o coeficiente
+de Pearson $r$, calculado diretamente com os valores originais de potência.
+Os perfis de m03q40 e m06q05 foram identificados por linhas tracejadas e
+legendas nos respectivos painéis.
 
-% =========================================================
-\section{Repetibilidade intra-padrão}\label{sec:res-intra}
-% =========================================================
+Os três perfis de \textit{plug} apresentaram formas próximas. Em \textit{slug},
+o perfil de m06q05 concentrou sua maior resposta em comprimentos de onda mais
+longos que os dos outros dois ensaios. No anular ondulado, o perfil de m03q40
+se destacou no sentido oposto, com maior resposta em comprimentos de onda
+menores. Esse ensaio apresentou a menor média do coeficiente de Pearson $r$
+com os demais anulares, $0{,}3275$. A saturação observada nessa aquisição
+foi uma ressalva de qualidade, sem estabelecer uma causa única para a
+diferença espectral.
 
-Na campanha intra-padrão, os campos de vários pares de ensaios de um mesmo padrão foram comparados
-entre si. Os perfis de potência média $|\text{WPS}|$ dos ensaios de anular ondulado apresentaram o
-comprimento de onda dominante na faixa mais concentrada entre os padrões, conforme o
-\autoref{quad:res-lambda}, indicando que a posição do máximo de potência é a característica mais
-reprodutível desse padrão. Os ensaios de \textit{churn} mantiveram o máximo na mesma ordem de
-grandeza de um ensaio para outro, porém com dispersão maior, incluindo um ensaio com o máximo
-deslocado para comprimentos de onda mais longos. Em ambos os padrões, a posição do máximo de potência
-repetiu-se de forma mais evidente do que qualquer característica do campo de coerência. Os padrões
-com menos ensaios (\textit{plug}, \textit{slug} e \textit{slug}--\textit{churn}) foram examinados de
-forma ilustrativa, por disporem de poucos pares, e exibiram dispersão ainda maior do comprimento de
-onda dominante, conforme os campos das \autoref{fig:res-wps-plug} e \autoref{fig:res-wps-slug}.
+A \autoref{tab:res-intra} reuniu o mínimo, a média, a mediana e o máximo
+dos coeficientes de Pearson $r$ dentro de cada padrão. Cada par contribuiu
+com um único coeficiente.
 
-O campo de coerência $\widetilde{\gamma}_{xy}(a)$, por sua vez, não reproduziu essa regularidade:
-entre pares de ensaios de um mesmo padrão a coerência no atraso nulo permaneceu baixa e sem uma banda
-estável, de modo que a repetibilidade intra-padrão ficou muito mais evidente no perfil de potência
-média do que no campo de coerência.
-
-% =========================================================
-\section{Separação inter-padrão}\label{sec:res-inter}
-% =========================================================
-
-Na campanha inter-padrão, os campos de pares de ensaios de padrões distintos foram comparados para
-verificar se as assinaturas espectrais se distinguem de um padrão para outro. A
-\autoref{fig:res-inter} mostra um par formado por um ensaio de \textit{churn} e um de anular
-ondulado. Os perfis de potência média dos dois ensaios apresentaram faixas dominantes parcialmente
-sobrepostas, na mesma ordem de comprimento de onda, de modo que a separação entre os dois padrões
-por esse descritor mostrou-se sutil. Essa sobreposição é coerente com as faixas de comprimento de
-onda dominante do \autoref{quad:res-lambda}: a faixa do anular ondulado está contida na faixa mais
-ampla do \textit{churn}, de modo que o comprimento de onda dominante, isoladamente, não separa os
-dois padrões, apenas desloca a mediana de um em relação ao outro. Os ensaios intermitentes de
-\textit{plug} e de \textit{slug}, examinados de forma ilustrativa por disporem de poucos ensaios,
-situam o comprimento de onda dominante em valores em geral mais longos e mais dispersos do que os
-de anular ondulado, coerente com estruturas maiores e mais espaçadas; essa leitura, porém, apoia-se
-em um número reduzido de ensaios e não sustenta uma separação inter-padrão firme. O campo de
-coerência no atraso nulo, novamente baixo e irregular, não forneceu uma distinção nítida entre os
-padrões.
-
-\begin{figure}[htbp]
+\begin{figure}[p]
   \centering
-  \includegraphics[width=\textwidth]{figuras/v8_1-churn-annular-wavelet}
-  \caption{Campos espectrais de um par inter-padrão, um ensaio de \textit{churn} e um de anular
-           ondulado (variante \textit{cropped}). Mesma disposição de painéis da
-           \autoref{fig:res-wps}. Os perfis de potência média apresentam faixas dominantes
-           parcialmente sobrepostas entre os dois padrões.}
+  \sbox{\tccfigurebox}{\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{figuras/v18_pearson_direto/perfis_espectrais_pearson.png}}
+  \begin{minipage}{\wd\tccfigurebox}
+  \caption{Perfis de potência wavelet no atraso zero por padrão de escoamento.}
+  \label{fig:res-perfis}
+  \usebox{\tccfigurebox}
+  \fonte{Elaborado pelo autor.}
+  \end{minipage}
+\end{figure}
+
+\begin{table}[htbp]
+  \centering
+  \begin{threeparttable}
+  \caption{Estatísticas intrapadrão do coeficiente de Pearson $r$.}
+  \label{tab:res-intra}
+  \small
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l r r r r r r@{}}
+    \hline
+    \textbf{Padrão} & \textbf{Ensaios} & \textbf{Pares} &
+    \textbf{Mínimo} & \textbf{Média} & \textbf{Mediana} & \textbf{Máximo}\\
+    \hline
+    \textit{Churn} & 10 & 45 & 0,3746 & 0,7684 & 0,7974 & 0,9572\\
+    Anular ondulado & 9 & 36 & $-0{,}0088$ & 0,7651 & 0,8811 & 0,9883\\
+    \textit{Plug} & 3 & 3 & 0,8703 & 0,9020 & 0,8955 & 0,9401\\
+    \textit{Slug} & 3 & 3 & 0,4049 & 0,5540 & 0,4325 & 0,8246\\
+    Bolhas dispersas & 1 & 0 & --- & --- & --- & ---\\
+    \hline
+  \end{tabular*}
+  \fonte{Elaborado pelo autor a partir das comparações por padrão de escoamento.}
+  \end{threeparttable}
+\end{table}
+
+O maior coeficiente de Pearson $r$ médio ocorreu em \textit{plug}, em acordo
+com a proximidade das três curvas. \textit{Churn} e anular ondulado apresentaram
+médias próximas, mas a mediana foi maior no anular. Nesse grupo, os
+coeficientes variaram de $-0{,}0088$ a $0{,}9883$, mostrando diferenças
+entre seus pares. \textit{Slug} teve a menor média e a menor mediana entre
+os padrões com mais de um ensaio. Para bolhas dispersas, o único registro
+não permitiu calcular estatísticas intrapadrão.
+
+% =========================================================
+\FloatBarrier
+\section{Similaridade espectral entre padrões}\label{sec:res-inter}
+% =========================================================
+
+A \autoref{fig:res-pearson} reuniu os coeficientes de Pearson $r$ dos 26 ensaios.
+As faixas coloridas e as letras da legenda identificaram os cinco padrões
+nos dois eixos. As linhas brancas separaram os grupos na ordem da
+\autoref{tab:res-ensaios}.
+Os blocos sobre a diagonal corresponderam aos pares do mesmo padrão. Os demais
+blocos, aos pares entre padrões. A diagonal unitária comparou cada descritor
+consigo mesmo e foi excluída dos resumos. Houve coeficientes de Pearson $r$
+elevados em ambos os tipos de bloco. A linha e a coluna de m03q40 e as de
+m07q01 apresentaram valores menores em diversas comparações.
+
+\begin{figure}[p]
+  \centering
+  \sbox{\tccfigurebox}{\includegraphics[width=\textwidth,height=0.88\textheight,keepaspectratio]{figuras/v18_pearson_direto/matriz_pearson_todos.png}}
+  \begin{minipage}{\wd\tccfigurebox}
+  \caption{Matriz do coeficiente de Pearson $r$ entre os descritores dos panoramas completos.}
+  \label{fig:res-pearson}
+  \usebox{\tccfigurebox}
+  \fonte{Elaborado pelo autor.}
+  \end{minipage}
+\end{figure}
+
+A \autoref{tab:res-inter} detalhou as quatro estatísticas do coeficiente de
+Pearson $r$ nas dez combinações entre padrões. O coeficiente
+de Pearson $r$ médio entre \textit{churn} e \textit{plug} foi $0{,}8117$,
+superior à média intrapadrão de \textit{churn}, $0{,}7684$. As comparações com
+bolhas dispersas apresentaram médias negativas do coeficiente de Pearson $r$,
+mas envolveram sempre a mesma aquisição desse padrão. Assim, essa diferença
+descreveu um registro particular, sem estimar a variabilidade de bolhas dispersas.
+
+\begin{table}[htbp]
+  \centering
+  \begin{threeparttable}
+  \caption{Estatísticas do coeficiente de Pearson $r$ nas comparações entre padrões.}
+  \label{tab:res-inter}
+  \small
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l r r r r r@{}}
+    \hline
+    \textbf{Combinação} & \textbf{Pares} &
+    \textbf{Mínimo} & \textbf{Média} & \textbf{Mediana} & \textbf{Máximo}\\
+    \hline
+    \textit{Churn} / anular ondulado & 90 & $-0{,}0614$ & 0,7240 & 0,7841 & 0,9770\\
+    \textit{Churn} / \textit{plug} & 30 & 0,5124 & 0,8117 & 0,8253 & 0,9776\\
+    \textit{Churn} / \textit{slug} & 30 & 0,1458 & 0,5417 & 0,5569 & 0,9036\\
+    \textit{Churn} / bolhas dispersas & 10 & $-0{,}2041$ & $-0{,}0056$ & $-0{,}0875$ & 0,3121\\
+    Anular ondulado / \textit{plug} & 27 & $-0{,}1823$ & 0,6800 & 0,7844 & 0,9716\\
+    Anular ondulado / \textit{slug} & 27 & $-0{,}4968$ & 0,3577 & 0,4168 & 0,7770\\
+    Anular ondulado / bolhas dispersas & 9 & $-0{,}2668$ & $-0{,}0334$ & $-0{,}1606$ & 0,6255\\
+    \textit{Plug} / \textit{slug} & 9 & 0,4019 & 0,7023 & 0,6802 & 0,9338\\
+    \textit{Plug} / bolhas dispersas & 3 & $-0{,}1787$ & $-0{,}1568$ & $-0{,}1532$ & $-0{,}1384$\\
+    \textit{Slug} / bolhas dispersas & 3 & $-0{,}5129$ & $-0{,}2962$ & $-0{,}3220$ & $-0{,}0536$\\
+    \hline
+  \end{tabular*}
+  \fonte{Elaborado pelo autor a partir das comparações por padrão de escoamento.}
+  \end{threeparttable}
+\end{table}
+
+% =========================================================
+\section{Coerência wavelet entre os ensaios}\label{sec:res-wco}
+% =========================================================
+
+Para cada um dos 325 pares, obtiveram-se o mínimo, a média, a mediana e o
+máximo da coerência wavelet no mapa completo, considerando todas as escalas
+e todos os atrasos. Esses quatro resumos acompanharam as legendas dos pares
+intrapadrão ilustrados na \autoref{sec:res-wps} e do exemplo interpadrões
+da \autoref{fig:res-inter}.
+
+No par anular, o coeficiente de Pearson $r$
+foi de $0{,}9883$, enquanto a coerência wavelet média foi de $0{,}0282$ e a máxima,
+de $0{,}3660$. A semelhança entre as formas dos perfis de potência não foi
+acompanhada por coerência elevada no mapa desse par.
+
+O par interpadrões m04q01, de \textit{slug}, e m05q80, de anular ondulado,
+foi escolhido pelo maior máximo de coerência entre os 238 pares de padrões
+diferentes. Na \autoref{fig:res-inter}, esse máximo atingiu $0{,}9936$,
+e a média do mapa foi de $0{,}1320$.
+O coeficiente de Pearson $r$ entre os perfis completos foi de $0{,}4514$.
+
+\begin{figure}[p]
+  \centering
+  \sbox{\tccfigurebox}{\includegraphics[width=\textwidth,height=0.87\textheight,keepaspectratio]{figuras/v18_pearson_direto/slug_wavy_annular_m04q01_001_m05q80_001.png}}
+  \begin{minipage}{\wd\tccfigurebox}
+  \caption[Comparação pontual entre \textit{slug}, m04q01, e anular ondulado, m05q80.]{Comparação pontual entre \textit{slug}, m04q01, e anular ondulado, m05q80.
+  Coerência wavelet: mínima $3{,}34\times10^{-10}$, média $0{,}1320$,
+  mediana $0{,}0437$ e máxima $0{,}9936$.}
   \label{fig:res-inter}
+  \usebox{\tccfigurebox}
   \fonte{Elaborado pelo autor.}
+  \end{minipage}
 \end{figure}
 
-As combinações entre padrões foram inspecionadas de forma sistemática, abrangendo os duzentos e
-oitenta e sete pares formados pelo produto dos ensaios de cada par de padrões (\textit{churn},
-anular ondulado, \textit{plug}, \textit{slug} e \textit{slug}--\textit{churn}). O comportamento
-ilustrado na \autoref{fig:res-inter} repetiu-se nas demais combinações: a coerência no atraso nulo
-manteve-se baixa e irregular, sem distinção nítida entre padrões, e as faixas dominantes de
-$\lambda^*$ apresentaram apenas sobreposição parcial. Cada par foi registrado como figura no
-conjunto de resultados, o que assegura a rastreabilidade da inspeção visual, embora não se tenham
-extraído descritores numéricos por par.
+Para comparar todos os pares, utilizou-se a coerência wavelet média de cada
+mapa. A \autoref{tab:res-wco-combinacoes} apresentou a distribuição dessas
+médias nas 14 combinações com dados, com o mesmo peso para cada par.
+Assim, o máximo nessa tabela correspondeu à maior média de um mapa
+dentro da combinação, e não ao maior valor pontual de coerência.
 
-A quantificação da separação entre padrões em nível de ensaio é apresentada na
-\autoref{sec:res-limite-estat}, em que a matriz de distância espectral e o teste ANOSIM fornecem a
-evidência estatística correspondente. Ela abrange os quatro padrões com mais de dois ensaios
-(\textit{churn}, anular ondulado, \textit{plug} e \textit{slug}); o \textit{slug}--\textit{churn},
-com apenas dois ensaios, permaneceu de caráter ilustrativo.
+\begin{table}[htbp]
+  \centering
+  \begin{threeparttable}
+  \caption{Distribuição da coerência wavelet média por combinação de padrões.}
+  \label{tab:res-wco-combinacoes}
+  \small
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l r r r r r@{}}
+    \hline
+    \textbf{Combinação} & \textbf{Pares} & \textbf{Mínimo} &
+    \textbf{Média} & \textbf{Mediana} & \textbf{Máximo}\\
+    \hline
+    \textit{Churn} / \textit{churn} & 45 & 0,0470 & 0,0742 & 0,0742 & 0,0988\\
+    Anular ondulado / anular ondulado & 36 & 0,0281 & 0,0376 & 0,0373 & 0,0459\\
+    \textit{Plug} / \textit{plug} & 3 & 0,0773 & 0,0841 & 0,0823 & 0,0926\\
+    \textit{Slug} / \textit{slug} & 3 & 0,0932 & 0,1137 & 0,1091 & 0,1388\\
+    \hline
+    \textit{Churn} / anular ondulado & 90 & 0,0457 & 0,0686 & 0,0679 & 0,1101\\
+    \textit{Churn} / \textit{plug} & 30 & 0,0602 & 0,0811 & 0,0784 & 0,1140\\
+    \textit{Churn} / \textit{slug} & 30 & 0,0707 & 0,0912 & 0,0899 & 0,1292\\
+    \textit{Churn} / bolhas dispersas & 10 & 0,1324 & 0,1676 & 0,1671 & 0,2037\\
+    Anular ondulado / \textit{plug} & 27 & 0,0490 & 0,0845 & 0,0822 & 0,1211\\
+    Anular ondulado / \textit{slug} & 27 & 0,0646 & 0,0931 & 0,0880 & 0,1320\\
+    Anular ondulado / bolhas dispersas & 9 & 0,1189 & 0,1428 & 0,1386 & 0,1741\\
+    \textit{Plug} / \textit{slug} & 9 & 0,0689 & 0,0917 & 0,0866 & 0,1244\\
+    \textit{Plug} / bolhas dispersas & 3 & 0,1333 & 0,1448 & 0,1489 & 0,1524\\
+    \textit{Slug} / bolhas dispersas & 3 & 0,1339 & 0,1477 & 0,1386 & 0,1707\\
+    \hline
+  \end{tabular*}
+  \fonte{Elaborado pelo autor a partir de uma média de coerência por par.}
+  \end{threeparttable}
+\end{table}
+
+Entre as comparações intrapadrão, \textit{slug} apresentou a maior média
+de coerência, $0{,}1137$, e anular ondulado, a menor, $0{,}0376$.
+As quatro combinações com bolhas dispersas tiveram médias superiores às
+das demais combinações, mas envolveram sempre o único ensaio desse padrão.
+Essas medidas resumiram os mapas completos, cuja extensão de atrasos
+dependeu do comprimento dos sinais comparados.
 
 % =========================================================
-\section{Quantificação estatística da repetibilidade}\label{sec:res-limite-estat}
+\section{Comparação global entre pares}\label{sec:res-limite-estat}
 % =========================================================
 
-A leitura qualitativa dos campos foi complementada por uma quantificação estatística da
-repetibilidade do descritor espectral, destinada a medir objetivamente o quanto ensaios de um mesmo
-padrão de escoamento se parecem entre si em comparação com ensaios de padrões diferentes. Essa
-quantificação confirma e dimensiona o que a inspeção visual já indicava: a semelhança intra-padrão
-existe, mas é sutil --- não uma distinção evidente, como a que separa duas classes de objetos
-claramente distintas, e sim uma semelhança modesta, do tipo que se percebe entre dois exemplares
-aparentados, com um ``ar de família'' acompanhado de considerável variação dentro de cada grupo. A
-análise abrangeu os quatro padrões com mais de dois ensaios, \textit{churn} (dez ensaios), anular
-ondulado (nove), \textit{plug} (quatro) e \textit{slug} (três), totalizando vinte e seis ensaios; o
-\textit{slug}--\textit{churn}, com apenas dois ensaios, ficou de fora por não sustentar uma leitura
-de grupo. As subseções a seguir apresentam, de forma didática, o propósito de cada etapa, o
-resultado esperado e o que de fato se obteve.
+A \autoref{tab:res-global} reuniu os 87 pares do mesmo padrão e os 238
+pares de padrões diferentes. Cada par contribuiu com um coeficiente de
+Pearson $r$ e uma média de coerência wavelet, com peso igual nos resumos.
 
-% ---------------------------------------------------------
-\subsection{Métrica de distância espectral entre ensaios}\label{sec:res-estat-distancia}
-% ---------------------------------------------------------
+\begin{table}[htbp]
+  \centering
+  \begin{threeparttable}
+  \caption{Estatísticas globais do coeficiente de Pearson e da coerência wavelet média dos pares.}
+  \label{tab:res-global}
+  \small
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l l r r r r r@{}}
+    \hline
+    \textbf{Medida} & \textbf{Tipo de par} & \textbf{Pares} & \textbf{Mínimo} &
+    \textbf{Média} & \textbf{Mediana} & \textbf{Máximo}\\
+    \hline
+    Pearson $r$ & Intrapadrão & 87 & $-0{,}0088$ & 0,7642 & 0,8188 & 0,9883\\
+    Pearson $r$ & Interpadrões & 238 & $-0{,}5129$ & 0,5814 & 0,6912 & 0,9776\\
+    Coerência média & Intrapadrão & 87 & 0,0281 & 0,0607 & 0,0636 & 0,1388\\
+    Coerência média & Interpadrões & 238 & 0,0457 & 0,0874 & 0,0795 & 0,2037\\
+    \hline
+  \end{tabular*}
+  \fonte{Elaborado pelo autor a partir dos 325 pares de ensaios.}
+  \end{threeparttable}
+\end{table}
 
-O descritor submetido à análise não foi o campo de coerência, mas o perfil de potência média
-$|\text{WPS}|$ por ensaio, que foi a característica mais reprodutível identificada na inspeção dos
-campos. Para cada ensaio tomou-se o perfil de potência média na coluna de atraso nulo, branqueado
-por escala pela remoção do decaimento espectral comum de fundo, de modo que o descritor retenha a
-\emph{forma} do espectro, isto é, em quais tamanhos de estrutura a energia se concentra, e não a sua
-amplitude bruta. Para que todos os ensaios tenham o mesmo comprimento, as séries foram truncadas ao
-tamanho do menor ensaio de \textit{churn}. Por essa razão, o descritor usado aqui difere do perfil
-de potência média de sinal completo que originou o comprimento de onda dominante $\lambda^*$ do
-\autoref{quad:res-lambda}, cujos valores não devem ser lidos como entrada direta do teste.
+\begin{samepage}
+A média do coeficiente de Pearson $r$ foi maior nos pares do mesmo padrão,
+com diferença de $0{,}1828$. Sua mediana também foi maior nesse grupo.
+Para a coerência wavelet média dos mapas, ocorreu o sentido oposto: tanto a média
+quanto a mediana foram maiores nos pares de padrões diferentes.
+A \autoref{fig:res-distribuicoes} apresentou as duas distribuições,
+com um ponto por par. As caixas delimitaram os 50\% centrais dos valores,
+a linha interna indicou a mediana e o losango, a média. As hastes se
+estenderam do mínimo ao máximo. Os valores das tabelas foram arredondados
+somente para apresentação.
 
-A semelhança entre dois ensaios foi medida pela \emph{correlação de Pearson} entre seus perfis: um
-número que resume o quanto duas curvas sobem e descem juntas, próximo de um quando têm a mesma forma
-e próximo de zero quando não guardam relação. A partir dela define-se a \emph{distância} entre dois
-ensaios $i$ e $j$ como um menos essa correlação,
-
-\begin{equation}\label{eq:dist-pearson}
-  d_{ij} = 1 - \rho(\mathbf{z}_i, \mathbf{z}_j),
-\end{equation}
-
-\noindent em que $\mathbf{z}_i$ e $\mathbf{z}_j$ são os perfis de potência branqueados dos dois
-ensaios e $\rho$ é a correlação de Pearson entre eles. Em termos do cálculo, $\rho$ compara os dois
-perfis frequência a frequência: para cada frequência verifica se os dois ensaios estão
-simultaneamente acima ou abaixo da sua própria energia média e, somando essas concordâncias ao longo
-de todo o espectro, resume em um único número se as duas curvas sobem e descem em sintonia. Vale
-próximo de um quando os perfis têm picos e vales nas mesmas frequências (mesma forma espectral), em
-torno de zero quando não há relação entre eles e torna-se negativo quando têm formas opostas --- um
-com pico onde o outro tem vale ---, caso em que a distância da \autoref{eq:dist-pearson} ultrapassa a
-unidade. Por depender apenas da forma relativa das curvas, e não de sua amplitude bruta, $\rho$ é
-insensível à escala de energia de cada ensaio. Assim, ensaios de forma idêntica têm distância
-nula e ensaios sem relação têm distância próxima de um. Calculando essa distância para todos os pares
-obtém-se uma matriz de distâncias entre os vinte e seis ensaios, representada no
-\autoref{fig:res-dmatrix}. Nela, os blocos na diagonal reúnem os ensaios de um mesmo padrão. A
-predominância de tons mais claros (menor distância) nesses blocos, em relação aos blocos fora da
-diagonal, é a manifestação visual da semelhança intra-padrão que a análise quantifica. Chama a
-atenção um ensaio de \textit{plug} (o ensaio 21) cujas linha e coluna são escuras em quase toda a
-extensão: sua assinatura espectral é atípica, anticorrelacionada com a da maioria dos demais
-ensaios. Trata-se de variação real desse ensaio, mantida na análise e não removida, e explica em
-parte por que o grupo \textit{plug} é internamente heterogêneo.
+\end{samepage}
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.78\textwidth]{figuras/v8-estat-dmatrix}
-  \caption{Matriz de distância espectral ($1$ menos a correlação de Pearson entre os perfis de
-           potência branqueados) entre os vinte e seis ensaios, ordenados por padrão
-           (\textit{churn}, ensaios 1 a 10; anular ondulado, 11 a 19; \textit{plug}, 20 a 23;
-           \textit{slug}, 24 a 26). Cores mais claras indicam ensaios mais parecidos; as linhas
-           brancas separam os quatro padrões, e os blocos na diagonal correspondem a pares de um
-           mesmo padrão. A cruz escura no ensaio 21 (um \textit{plug}) assinala um ensaio de
-           assinatura atípica, anticorrelacionado com quase todos os demais.}
-  \label{fig:res-dmatrix}
+  \sbox{\tccfigurebox}{\includegraphics[width=\textwidth]{figuras/v18_resumos/distribuicoes_pearson_coerencia.pdf}}
+  \begin{minipage}{\wd\tccfigurebox}
+  \caption{Distribuições do coeficiente de Pearson e da coerência wavelet média dos pares.}
+  \label{fig:res-distribuicoes}
+  \usebox{\tccfigurebox}
   \fonte{Elaborado pelo autor.}
+  \end{minipage}
 \end{figure}
 
-% ---------------------------------------------------------
-\subsection{Teste de similaridade entre grupos (ANOSIM)}\label{sec:res-estat-anosim}
-% ---------------------------------------------------------
+As distribuições intrapadrão e interpadrões apresentaram sobreposição nas
+duas medidas. Valores elevados do coeficiente de Pearson $r$ também
+ocorreram entre padrões diferentes, e as maiores médias de coerência não
+se restringiram aos pares do mesmo padrão.
 
-Sobre a matriz de distâncias aplicou-se o coeficiente $R$ de ANOSIM, um teste simples de
-comparação entre grupos. Ele ordena todas as $M = \binom{n}{2}$ distâncias da menor para a maior,
-atribuindo a cada uma um posto, e compara o posto médio das distâncias ``mesmo padrão'' com o das
-distâncias ``padrões diferentes'' por meio do coeficiente
+Os resultados wavelet foram descritivos, sem valores de significância estatística ou
+estimativa de acurácia de classificação. Os 325 pares da análise principal
+compartilharam as mesmas 26 aquisições, sem constituir observações independentes.
 
-\begin{equation}\label{eq:anosim-r}
-  R = \frac{\bar{r}_{\text{entre}} - \bar{r}_{\text{dentro}}}{M/2},
-\end{equation}
+% =========================================================
+\section{Estimativa óptica de fração de vazio e transições espaciais}\label{sec:res-void}
+% =========================================================
 
-\noindent em que $\bar{r}_{\text{entre}}$ e $\bar{r}_{\text{dentro}}$ são os postos médios das
-distâncias entre padrões distintos e dentro de um mesmo padrão, respectivamente, e $M = \binom{n}{2}$
-é o número total de pares de distâncias entre os $n$ ensaios.
+Na análise óptica, utilizaram-se exclusivamente as linhas 18 a 71 dos
+panoramas, conforme a \autoref{sec:met-void}. Dos 26 registros
+selecionados, 25 atenderam ao critério de saturação. O ensaio anular
+\codigo{m03q40\_001} apresentou $25{,}23\%$ dos pixels com intensidade 255
+nessa faixa, acima do limite de $20\%$. Ele permaneceu na análise wavelet,
+mas foi excluído das estatísticas ópticas. Essa distinção explicou a presença
+de oito ensaios anulares na \autoref{tab:res-void}, em comparação com nove na
+análise principal.
 
-O cálculo dos dois postos médios parte de uma única ordenação e segue três passos:
-
-\begin{enumerate}
-  \item \textbf{Ranquear.} Todas as $M$ distâncias da matriz são ordenadas em conjunto, sem
-        distinguir sua natureza: a menor recebe o posto $1$, a seguinte o posto $2$, e assim por
-        diante até a maior, que recebe o posto $M$.
-  \item \textbf{Rotular.} Cada par é então classificado conforme os ensaios que o compõem ---
-        ``mesmo padrão'', quando ambos pertencem ao mesmo regime, ou ``padrões diferentes'', caso
-        contrário.
-  \item \textbf{Comparar.} Calcula-se a média dos \emph{postos} (não das distâncias) em cada grupo,
-        obtendo $\bar{r}_{\text{dentro}}$ e $\bar{r}_{\text{entre}}$, e toma-se a diferença entre as
-        duas.
-\end{enumerate}
-
-\noindent Por operar sobre postos, e não sobre os valores absolutos das distâncias, o coeficiente é
-insensível à escala da métrica. A diferença $\bar{r}_{\text{entre}} - \bar{r}_{\text{dentro}}$ mede,
-então, o quanto os pares de mesmo padrão se concentram entre as menores distâncias da matriz: se os
-ensaios de um mesmo regime forem sistematicamente os mais próximos, esses pares ocupam os postos
-baixos, $\bar{r}_{\text{dentro}}$ fica pequeno e a diferença torna-se positiva; se o rótulo não tiver
-relação com a distância, os dois postos médios se igualam e a diferença se anula. O denominador
-$M/2$ é apenas o fator que normaliza essa diferença para o intervalo $[-1, 1]$, correspondendo ao
-valor máximo que o numerador pode assumir sob separação perfeita.
-
-O coeficiente $R$ vale próximo de zero quando os dois grupos são indistinguíveis e próximo
-de um quando os ensaios de um mesmo padrão são sistematicamente mais próximos entre si do que os de
-padrões diferentes. Esperava-se um valor alto, caso os padrões se separassem bem pelo descritor
-espectral. O valor observado, tomando os quatro padrões em conjunto, foi $R = 0{,}20$, indicando que
-ensaios de um mesmo padrão são, em média, apenas \emph{modestamente} mais próximos entre si do que
-ensaios de padrões distintos. Esse valor é coerente com o \autoref{fig:res-estat-ecdf}, que mostra as
-distribuições acumuladas empíricas (ECDF) das distâncias intra-padrão e inter-padrão. A ECDF é a
-curva que, para cada valor de distância no eixo horizontal, informa a fração de pares de ensaios
-com distância menor ou igual a esse valor, de modo que a curva deslocada para a esquerda indica
-distâncias sistematicamente menores. A curva intra-padrão situa-se de forma consistente à esquerda
-da inter-padrão, com as distâncias de mesmo padrão sistematicamente menores, embora o deslocamento
-entre as duas curvas seja pequeno.
+A \autoref{fig:res-mascaras-void} apresentou, de cima para baixo, bolhas dispersas
+(m07q01), \textit{plug} (m06q01), \textit{slug} (m06q05), \textit{churn} (m06q20)
+e anular ondulado (m06q80). À esquerda, mostraram-se os panoramas.
+À direita, as regiões azuis identificaram o gás inferido pela segmentação,
+incluindo o interior dos contornos preenchidos, sem constituir medição independente
+do volume de vapor. Os recortes mostraram apenas os primeiros 2\,500 pixels.
+As medidas utilizaram a extensão completa de cada panorama elegível.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.82\textwidth]{figuras/v8-estat-ecdf}
-  \caption{Distribuição acumulada (ECDF) das distâncias espectrais entre ensaios: dentro de um
-           mesmo padrão (\textit{intra}, noventa pares) e entre padrões distintos (\textit{inter},
-           duzentos e trinta e cinco pares). A curva intra-padrão, deslocada para a esquerda,
-           traduz a separação sutil quantificada por $R = 0{,}20$.}
-  \label{fig:res-estat-ecdf}
-  \fonte{Elaborado pelo autor.}
+  \sbox{\tccfigurebox}{\includegraphics[width=\textwidth,height=0.78\textheight,keepaspectratio]{figuras/v18_optica/panorama_phase_masks.png}}
+  \begin{minipage}{\wd\tccfigurebox}
+  \caption{Panoramas e máscaras de gás inferido nos cinco padrões.}
+  \label{fig:res-mascaras-void}
+  \usebox{\tccfigurebox}
+  \fonte{Elaborado pelo autor a partir dos panoramas e das máscaras.}
+  \end{minipage}
 \end{figure}
 
-Com quatro padrões, um único coeficiente global esconde quais padrões de fato se separam. Por isso
-calculou-se também o $R$ de ANOSIM para cada um dos seis pares de padrões, restringindo a matriz aos
-dois grupos de cada vez. O \autoref{quad:res-anosim-pares} reúne esses valores. A leitura par-a-par
-revela uma estrutura clara: o anular ondulado é o padrão mais distinto, separando-se bem de todos os
-regimes mais lentos, com o maior $R$ de todos frente ao \textit{slug} ($0{,}52$) e separação clara
-frente ao \textit{plug} ($0{,}32$). O \textit{slug} é o padrão intermitente que mais contrasta, tanto
-com o anular quanto com o \textit{churn} ($0{,}22$). Em contrapartida, \textit{churn} e \textit{plug}
-são praticamente indistinguíveis por este descritor ($R = 0{,}03$), e a separação entre \textit{churn}
-e anular ondulado permanece fraca ($0{,}18$), reproduzindo o valor já observado quando apenas esses
-dois padrões eram comparados. O par \textit{plug}--\textit{slug} ($0{,}11$) apoia-se em poucos pares
-de ensaios e deve ser lido com cautela.
+A \autoref{tab:res-void} reuniu as medianas da estimativa condicional de fração
+de vazio $\widehat\alpha_{\mathrm{opt}}$ e da densidade de transições $1\,000F$, definidas na
+\autoref{eq:met-void} e na \autoref{eq:met-flips}. Cada aquisição contribuiu com
+um valor de cada medida, com igual peso nos resumos por padrão. A densidade
+de transições $1\,000F$ foi apresentada por mil pares de pixels vizinhos.
 
-\begin{quadro}[htb]
+\begin{table}[htbp]
   \centering
-  \caption{Coeficiente $R$ de ANOSIM par-a-par entre os quatro padrões, calculado restringindo a
-           matriz de distância aos dois grupos de cada par.}
-  \label{quad:res-anosim-pares}
-  \begin{tabular}{@{}p{0.40\textwidth} c c p{0.28\textwidth}@{}}
+  \begin{threeparttable}
+  \caption{Medianas das medidas ópticas no limiar de segmentação 0,70.}
+  \label{tab:res-void}
+  \small
+  \begin{tabular}{l c c c}
     \hline
-    \textbf{Par de padrões} & \textbf{$R$} & \textbf{Pares} & \textbf{Leitura} \\
+    \textbf{Padrão} & \textbf{Ensaios} &
+    \shortstack{\textbf{Estimativa condicional}\\\textbf{de fração de vazio $\widehat\alpha_{\mathrm{opt}}$}} &
+    \shortstack{\textbf{Densidade de}\\\textbf{transições $1\,000F$}}\\
     \hline
-    anular ondulado $\times$ \textit{slug}  & $0{,}52$ & 66  & separação mais forte \\
-    anular ondulado $\times$ \textit{plug}  & $0{,}32$ & 78  & separação clara \\
-    \textit{churn} $\times$ \textit{slug}   & $0{,}22$ & 78  & separação moderada \\
-    \textit{churn} $\times$ anular ondulado & $0{,}18$ & 171 & fraca \\
-    \textit{plug} $\times$ \textit{slug}    & $0{,}11$ & 21  & fraca, $n$ pequeno \\
-    \textit{churn} $\times$ \textit{plug}   & $0{,}03$ & 91  & praticamente indistinguíveis \\
+    Bolhas dispersas & 1 & 0,0023 & 2,563\\
+    \textit{Plug} & 3 & 0,5702 & 9,133\\
+    \textit{Slug} & 3 & 0,5713 & 9,153\\
+    \textit{Churn} & 10 & 0,7810 & 11,901\\
+    Anular ondulado & 8 & 0,9653 & 2,180\\
     \hline
   \end{tabular}
-  \fonte{Elaborado pelo autor.}
-\end{quadro}
+  \fonte{Elaborado pelo autor a partir dos resumos por padrão da análise óptica.}
+  \end{threeparttable}
+\end{table}
 
-% ---------------------------------------------------------
-\subsection{Significância por teste de permutação}\label{sec:res-estat-permuta}
-% ---------------------------------------------------------
+\FloatBarrier
+As medianas de \textit{plug} e \textit{slug} ficaram próximas nas duas medidas.
+\textit{Churn} apresentou a maior mediana da densidade de transições
+$1\,000F$, enquanto o anular ondulado apresentou a maior mediana da fração
+de vazio estimada $\widehat\alpha_{\mathrm{opt}}$ e a menor mediana de
+transições entre os grupos analisados.
 
-Para avaliar se um $R$ dessa magnitude poderia surgir por acaso, construiu-se uma ``régua do
-acaso'' por reamostragem: embaralham-se os rótulos de padrão entre os ensaios e recalcula-se $R$
-para cada reatribuição, obtendo a distribuição de valores que o coeficiente assumiria se os rótulos
-não guardassem relação com a semelhança espectral. Sob essas reatribuições aleatórias o coeficiente
-distribui-se em torno de zero, com percentil noventa e cinco em torno de $0{,}18$, de modo que o
-valor observado de $0{,}20$ situa-se logo acima dessa régua, indicando uma separação modesta, com
-considerável sobreposição entre os grupos.
+Na \autoref{fig:res-void-transicoes}, cada ponto representou uma aquisição e
+as estrelas indicaram as médias por padrão, diferentemente das medianas da tabela.
+As regiões coloridas foram envoltórias convexas, isto é, os menores polígonos
+convexos que contiveram os pontos dos grupos com pelo menos três aquisições.
+Essas regiões descreveram a amostra, sem representar fronteiras de classificação.
+Os eixos reuniram a estimativa condicional de fração de vazio
+$\widehat\alpha_{\mathrm{opt}}$ e a densidade de transições $1\,000F$ (\textit{flip-rate}),
+expressa por 1\,000 pares de pixels vizinhos.
+As envoltórias de \textit{plug} e \textit{slug} apresentaram interseção,
+assim como as de \textit{churn} e anular ondulado.
+O único ponto de bolhas dispersas não permitiu estimar a variabilidade desse padrão.
 
-O embaralhamento, porém, não pode ser totalmente livre. Cada ensaio foi coletado sob uma combinação
-de fluxo de calor e fluxo mássico, e essas condições acompanham o padrão na grade experimental. Se
-os rótulos fossem embaralhados sem restrição, confundir-se-ia o efeito do padrão com o efeito da
-condição de operação. Por isso as reatribuições foram permitidas apenas \emph{dentro} de estratos de
-condição semelhante, controlando um fator operacional de cada vez --- uma estratificação por fluxo
-de calor e, separadamente, uma por fluxo mássico. A estratificação por fluxo de calor é mal
-condicionada, pois com quatro padrões vários de seus estratos ficam puros ou quase puros em padrão,
-deixando pouco a permutar, e forneceu $p = 0{,}019$ apenas como linha de comparação. A estratificação
-por fluxo mássico, melhor condicionada por misturar os quatro padrões em seus estratos centrais, é a
-referência honesta e forneceu $p = 0{,}030$. Sem controle algum de condição, o valor seria $p =
-0{,}017$. O \autoref{quad:res-anosim} reúne esses valores.
-
-\begin{quadro}[htb]
+\begin{figure}[htbp]
   \centering
-  \caption{Resumo do teste de repetibilidade (ANOSIM sobre a matriz de distância espectral, quatro
-           padrões).}
-  \label{quad:res-anosim}
-  \begin{tabular}{@{}p{0.46\textwidth} c p{0.34\textwidth}@{}}
-    \hline
-    \textbf{Grandeza} & \textbf{Valor} & \textbf{Leitura} \\
-    \hline
-    $R$ de ANOSIM global (observado)            & $0{,}20$  & separação fraca a moderada, porém real \\
-    $p$ — estrat. por fluxo mássico             & $0{,}030$ & bem condicionado, referência \\
-    $p$ — estrat. por fluxo de calor            & $0{,}019$ & mal condicionado (estratos puros) \\
-    $p$ — sem estratificação                    & $0{,}017$ & contexto, sem controle de confusão \\
-    percentil 95 de $R$ sob rótulos embaralhados & $\approx 0{,}18$ & régua do acaso \\
-    \hline
-  \end{tabular}
-  \fonte{Elaborado pelo autor.}
-\end{quadro}
+  \sbox{\tccfigurebox}{\includegraphics[width=\textwidth]{figuras/v18_optica/void_fraction_vs_flip_rate.png}}
+  \begin{minipage}{\wd\tccfigurebox}
+  \caption{Estimativa condicional de fração de vazio e densidade espacial de transições.}
+  \label{fig:res-void-transicoes}
+  \usebox{\tccfigurebox}
+  \fonte{Elaborado pelo autor, análise óptica com limiar de segmentação 0,70.}
+  \end{minipage}
+\end{figure}
 
-% ---------------------------------------------------------
-\subsection{Controle de fatores de confusão operacionais}\label{sec:res-estat-confound}
-% ---------------------------------------------------------
-
-Uma preocupação legítima é que a semelhança medida fosse apenas reflexo de ensaios coletados em
-condições próximas, e não do padrão em si. Dois ensaios podem ter assinaturas parecidas simplesmente
-por terem sido coletados a fluxos de calor ou de massa semelhantes, independentemente do regime de
-escoamento. Para separar esses efeitos, mediu-se, sobre todos os pares de ensaios, o quanto a
-distância espectral entre dois ensaios acompanha a diferença de cada condição operacional e o quanto
-acompanha o fato de pertencerem ou não ao mesmo padrão. Se a distância crescesse junto com a
-diferença de fluxo de calor, a ``semelhança'' seria mera proximidade operacional; se diminuísse
-quando os dois ensaios compartilham o padrão, o efeito seria do próprio padrão. O
-\autoref{quad:res-confound} sintetiza essas comparações. As três correlações são todas de magnitude
-pequena --- a mais forte, a do padrão, responde por cerca de $2\%$ da variância das distâncias
-($r^2 \approx 0{,}02$) ---, de modo que nenhum dos fatores explica a maior parte da variação. Vale
-notar, ainda, que as duas primeiras linhas comparam a distância com variáveis \emph{contínuas}
-(diferenças de fluxo), ao passo que a terceira a compara com um indicador \emph{binário} (mesmo
-padrão ou não); por isso as três magnitudes não são diretamente comparáveis em escala, e a leitura
-abaixo é qualitativa, não um ranqueamento numérico estrito. Ainda assim, a diferença de fluxo de
-calor e a de fluxo mássico apresentam correlação pequena com a distância, afastando a hipótese de
-que a semelhança seja proximidade operacional, enquanto o efeito de pertencer ao mesmo padrão é o de
-maior magnitude dos três e tem o sinal esperado (pares de um mesmo padrão são mais próximos). Com os
-quatro padrões, portanto, o efeito do padrão prevalece sobre os dois fatores operacionais, embora de
-forma modesta --- um quadro mais limpo do que o observado quando apenas dois padrões eram
-comparados.
-
-\begin{quadro}[htb]
-  \centering
-  \caption{Relação entre a distância espectral e os fatores que acompanham o padrão (correlação de
-           Pearson sobre todos os pares de ensaios). As duas primeiras linhas usam diferenças
-           contínuas de condição; a terceira, um indicador binário de mesmo padrão --- as
-           magnitudes, todas pequenas, não são diretamente comparáveis em escala.}
-  \label{quad:res-confound}
-  \begin{tabular}{@{}p{0.40\textwidth} c p{0.40\textwidth}@{}}
-    \hline
-    \textbf{Fator comparado à distância} & \textbf{Correlação} & \textbf{Interpretação} \\
-    \hline
-    diferença de fluxo de calor $|\Delta q|$ & $-0{,}10$ & semelhança não é proximidade em $q$ \\
-    diferença de fluxo mássico $|\Delta m|$   & $-0{,}05$ & efeito de $m$ pequeno sobre a distância \\
-    pertencer ao mesmo padrão                 & $-0{,}14$ & efeito do padrão, modesto porém o maior \\
-    \hline
-  \end{tabular}
-  \fonte{Elaborado pelo autor.}
-\end{quadro}
+\FloatBarrier
+A interpretação conjunta das medidas ópticas e espectrais e das limitações
+das entradas foi desenvolvida no \autoref{cap:discussao}.
