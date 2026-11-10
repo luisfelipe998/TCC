@@ -1,0 +1,3574 @@
+{
+  "purpose": "Legacy reproducibility and dataset-scope audit; not physical validation",
+  "coolprop_version": "8.0.0",
+  "properties": {
+    "rho_l": 548.131160603092,
+    "rho_g": 9.649731786620363,
+    "h_lv": 326707.52821966686,
+    "sigma": 0.009781959836699631
+  },
+  "original_source_hashes": {
+    "v12/velocity_map_v12.py": "3df7678ef9a5cc06ad0a3163b06d89904df2fb9e6bb07827110b3e168b2f31ec",
+    "v12.1/velocity_map_v12_1.py": "60c6bd0ea7da75004c8a9c59bc1d9087a31d0731c6c88edca440dc92dbf73070",
+    "v12/velocity_table_v12.md": "b21bef89fef4d370889826db76bdf7e0b110d27074074bd2f6bae2724f19dd2a",
+    "v12.1/velocity_table_v12_1.md": "5d88013b16aa83ab2287fde29d73e7de4568ac30aa5d795e031f1f0cf6066495"
+  },
+  "original_sources_unchanged": true,
+  "original_internal_check_messages": {
+    "v12": [
+      "A=7.854e-07 m²; mdot(m05)=0.503 g/s  [ok]",
+      "x_out: m03q80=0.683 (máx), m07q01=0.0036 (mín)  [ok]",
+      "x monotônico ↑ com q″ (G fixo)  [ok]",
+      "Jg idêntico entre runs de mesmo q″ (cancelamento de G)  [ok]",
+      "ensaios: {'bubble': 1, 'plug': 3, 'slug': 4, 'churn': 10, 'wavy annular': 10} (total 28); descartados 3  [ok]"
+    ],
+    "v12.1": [
+      "herdado v12: x_out(m03q80)=0.683; ensaios={'bubble': 1, 'plug': 3, 'slug': 4, 'churn': 10, 'wavy annular': 10} (28)  [ok]",
+      "0 < α < 1 em todos os 28 ensaios  [ok]",
+      "α monotônico ↑ com x (G fixo)  [ok]",
+      "S ≥ 1 em todos (28 finitos; máx=5.89)  [ok]",
+      "uv ≥ jv e ul ≥ jl em todos  [ok]",
+      "α anular ∈ [0.738; 0.954], mediana=0.886 (lit. deoliveira2021 0,86–0,99; piso baixo = x_in=0 herdado)  [ok]"
+    ]
+  },
+  "independent_max_absolute_difference": {
+    "x": 2.220446049250313e-16,
+    "Jg": 1.0658141036401503e-14,
+    "Jl": 2.220446049250313e-16,
+    "alpha": 2.220446049250313e-16,
+    "uv": 1.0658141036401503e-14,
+    "ul": 9.769962616701378e-15,
+    "S": 6.217248937900877e-15
+  },
+  "cross_version_max_absolute_difference": {
+    "x": 0.0,
+    "Jg": 0.0,
+    "Jl": 0.0
+  },
+  "stored_table_comparisons": {
+    "v12/velocity_table_v12.md": {
+      "rows": 28,
+      "numeric_cells_checked": 84,
+      "all_match_displayed_precision": true,
+      "summary_numeric_cells_checked": 40
+    },
+    "v12.1/velocity_table_v12_1.md": {
+      "rows": 28,
+      "numeric_cells_checked": 196,
+      "all_match_displayed_precision": true,
+      "summary_numeric_cells_checked": 50
+    }
+  },
+  "selected_runs": [
+    "m03q05_001",
+    "m03q10_001",
+    "m03q20_001",
+    "m03q40_001",
+    "m04q01_001",
+    "m04q10_001",
+    "m04q20_001",
+    "m04q40_001",
+    "m04q80_001",
+    "m05q01_001",
+    "m05q05_001",
+    "m05q10_001",
+    "m05q20_001",
+    "m05q40_001",
+    "m05q80_001",
+    "m06q01_001",
+    "m06q05_001",
+    "m06q10_001",
+    "m06q20_001",
+    "m06q40_001",
+    "m06q80_001",
+    "m07q01_001",
+    "m07q05_001",
+    "m07q20_001",
+    "m07q40_001",
+    "m07q80_001"
+  ],
+  "excluded_runs": [
+    {
+      "run": "m03q01_001",
+      "marker_label": "plug-slug",
+      "reason": "dual classification"
+    },
+    {
+      "run": "m03q80_001",
+      "marker_label": "smooth annular",
+      "reason": "smooth annular"
+    },
+    {
+      "run": "m04q05_001",
+      "marker_label": "slug-churn",
+      "reason": "dual classification"
+    },
+    {
+      "run": "m05q05_002",
+      "marker_label": "dispersed bubbles",
+      "reason": "explicit acquisition exclusion"
+    },
+    {
+      "run": "m07q10_001",
+      "marker_label": "slug-churn",
+      "reason": "dual classification"
+    }
+  ],
+  "legacy_pattern_statistics": {
+    "bubble": {
+      "n": 1,
+      "x": {
+        "min": 0.0036454967611100207,
+        "max": 0.0036454967611100207,
+        "mean": 0.0036454967611100207,
+        "median": 0.0036454967611100207
+      },
+      "Jg": {
+        "min": 0.33622614484337304,
+        "max": 0.33622614484337304,
+        "mean": 0.33622614484337304,
+        "median": 0.33622614484337304
+      },
+      "Jl": {
+        "min": 1.6177797790348976,
+        "max": 1.6177797790348976,
+        "mean": 1.6177797790348976,
+        "median": 1.6177797790348976
+      },
+      "alpha": {
+        "min": 0.1447833631817589,
+        "max": 0.1447833631817589,
+        "mean": 0.1447833631817589,
+        "median": 0.1447833631817589
+      },
+      "uv": {
+        "min": 2.3222705803655055,
+        "max": 2.3222705803655055,
+        "mean": 2.3222705803655055,
+        "median": 2.3222705803655055
+      },
+      "ul": {
+        "min": 1.8916607902457394,
+        "max": 1.8916607902457394,
+        "mean": 1.8916607902457394,
+        "median": 1.8916607902457394
+      },
+      "S": {
+        "min": 1.227635838486575,
+        "max": 1.227635838486575,
+        "mean": 1.227635838486575,
+        "median": 1.227635838486575
+      }
+    },
+    "plug": {
+      "n": 3,
+      "x": {
+        "min": 0.00426906857551042,
+        "max": 0.018227483805550105,
+        "mean": 0.009188690438159716,
+        "median": 0.005069518933418623
+      },
+      "Jg": {
+        "min": 0.33622614484337304,
+        "max": 1.6811307242168654,
+        "mean": 0.7845276713012038,
+        "median": 0.33622614484337304
+      },
+      "Jl": {
+        "min": 1.161684563202007,
+        "max": 1.594103021714127,
+        "mean": 1.3787992839059762,
+        "median": 1.3806102668017946
+      },
+      "alpha": {
+        "min": 0.16349183302144604,
+        "max": 0.44312977147841986,
+        "mean": 0.26408644564658046,
+        "median": 0.18563773243987544
+      },
+      "uv": {
+        "min": 1.8111950648409818,
+        "max": 3.7937661435116086,
+        "mean": 2.5538309848311678,
+        "median": 2.056531746140913
+      },
+      "ul": {
+        "min": 1.4264960564571338,
+        "max": 2.8626113231915244,
+        "mean": 1.9798506119678894,
+        "median": 1.65044445625501
+      },
+      "S": {
+        "min": 1.2460472319119102,
+        "max": 1.3252816101076341,
+        "mean": 1.2803366433049792,
+        "median": 1.269681087895393
+      }
+    },
+    "slug": {
+      "n": 4,
+      "x": {
+        "min": 0.006361749249780233,
+        "max": 0.025347594667093118,
+        "mean": 0.01960057036537964,
+        "median": 0.02334646877232261
+      },
+      "Jg": {
+        "min": 0.33622614484337304,
+        "max": 1.6811307242168654,
+        "mean": 1.3449045793734924,
+        "median": 1.6811307242168654
+      },
+      "Jl": {
+        "min": 0.924515050968904,
+        "max": 1.356933509481024,
+        "mean": 1.1393660430531,
+        "median": 1.1380078058812364
+      },
+      "alpha": {
+        "min": 0.21757430845890957,
+        "max": 0.5124513854944007,
+        "mean": 0.429777510769861,
+        "median": 0.4945421745630668
+      },
+      "uv": {
+        "min": 1.5453393703736473,
+        "max": 3.5270970589348063,
+        "mean": 2.908392236423302,
+        "median": 3.2805662581923767
+      },
+      "ul": {
+        "min": 1.18160109127801,
+        "max": 2.5926996069470025,
+        "mean": 2.1106462850292447,
+        "median": 2.3341422209459832
+      },
+      "S": {
+        "min": 1.3078350906922582,
+        "max": 1.4054697390559285,
+        "mean": 1.3697925346338558,
+        "median": 1.3829326543936182
+      }
+    },
+    "churn": {
+      "n": 10,
+      "x": {
+        "min": 0.0426906857551042,
+        "max": 0.20278075733674494,
+        "mean": 0.09352113515197287,
+        "median": 0.07914565336620441
+      },
+      "Jg": {
+        "min": 1.6811307242168654,
+        "max": 13.449045793734923,
+        "mean": 6.556409824445775,
+        "median": 6.7245228968674615
+      },
+      "Jl": {
+        "min": 0.6636687814150305,
+        "max": 1.5053151817612378,
+        "mean": 1.092315939586738,
+        "median": 1.0788159125793104
+      },
+      "alpha": {
+        "min": 0.612762856620405,
+        "max": 0.8478098158248527,
+        "mean": 0.7297521991622218,
+        "median": 0.736531348038304
+      },
+      "uv": {
+        "min": 2.7435258290439983,
+        "max": 16.472115346042056,
+        "mean": 8.582204494940743,
+        "median": 8.58863530418542
+      },
+      "ul": {
+        "min": 1.7138562061038116,
+        "max": 7.5571181948639605,
+        "mean": 4.4110196168778995,
+        "median": 4.274719701976849
+      },
+      "S": {
+        "min": 1.5033309920055558,
+        "max": 2.593620436710611,
+        "mean": 1.8656442797665678,
+        "median": 1.7403275451203286
+      }
+    },
+    "wavy annular": {
+      "n": 10,
+      "x": {
+        "min": 0.0853813715102084,
+        "max": 0.6830509720816672,
+        "mean": 0.3253619967250296,
+        "median": 0.31658261346481764
+      },
+      "Jg": {
+        "min": 3.3622614484337308,
+        "max": 26.898091587469846,
+        "mean": 18.49243796638552,
+        "median": 20.173568690602384
+      },
+      "Jl": {
+        "min": 0.219729581650584,
+        "max": 1.1501638219496808,
+        "mean": 0.6942734894417492,
+        "median": 0.6638697509277296
+      },
+      "alpha": {
+        "min": 0.7375737757259613,
+        "max": 0.9541021130925822,
+        "mean": 0.8717033087303255,
+        "median": 0.886075855439552
+      },
+      "uv": {
+        "min": 4.558542560877257,
+        "max": 30.528169434652796,
+        "mean": 20.69537753248383,
+        "median": 22.17780781915019
+      },
+      "ul": {
+        "min": 2.4161946334370015,
+        "max": 9.672628938615183,
+        "mean": 5.874832090496204,
+        "median": 5.717874663863949
+      },
+      "S": {
+        "min": 1.8866619840111127,
+        "max": 5.888853807690017,
+        "mean": 3.445133651882191,
+        "median": 3.3302833659237527
+      }
+    }
+  },
+  "selected_pattern_statistics": {
+    "bubble": {
+      "n": 1,
+      "x": {
+        "min": 0.0036454967611100207,
+        "max": 0.0036454967611100207,
+        "mean": 0.0036454967611100207,
+        "median": 0.0036454967611100207
+      },
+      "Jg": {
+        "min": 0.33622614484337304,
+        "max": 0.33622614484337304,
+        "mean": 0.33622614484337304,
+        "median": 0.33622614484337304
+      },
+      "Jl": {
+        "min": 1.6177797790348976,
+        "max": 1.6177797790348976,
+        "mean": 1.6177797790348976,
+        "median": 1.6177797790348976
+      },
+      "alpha": {
+        "min": 0.1447833631817589,
+        "max": 0.1447833631817589,
+        "mean": 0.1447833631817589,
+        "median": 0.1447833631817589
+      },
+      "uv": {
+        "min": 2.3222705803655055,
+        "max": 2.3222705803655055,
+        "mean": 2.3222705803655055,
+        "median": 2.3222705803655055
+      },
+      "ul": {
+        "min": 1.8916607902457394,
+        "max": 1.8916607902457394,
+        "mean": 1.8916607902457394,
+        "median": 1.8916607902457394
+      },
+      "S": {
+        "min": 1.227635838486575,
+        "max": 1.227635838486575,
+        "mean": 1.227635838486575,
+        "median": 1.227635838486575
+      }
+    },
+    "plug": {
+      "n": 3,
+      "x": {
+        "min": 0.00426906857551042,
+        "max": 0.018227483805550105,
+        "mean": 0.009188690438159716,
+        "median": 0.005069518933418623
+      },
+      "Jg": {
+        "min": 0.33622614484337304,
+        "max": 1.6811307242168654,
+        "mean": 0.7845276713012038,
+        "median": 0.33622614484337304
+      },
+      "Jl": {
+        "min": 1.161684563202007,
+        "max": 1.594103021714127,
+        "mean": 1.3787992839059762,
+        "median": 1.3806102668017946
+      },
+      "alpha": {
+        "min": 0.16349183302144604,
+        "max": 0.44312977147841986,
+        "mean": 0.26408644564658046,
+        "median": 0.18563773243987544
+      },
+      "uv": {
+        "min": 1.8111950648409818,
+        "max": 3.7937661435116086,
+        "mean": 2.5538309848311678,
+        "median": 2.056531746140913
+      },
+      "ul": {
+        "min": 1.4264960564571338,
+        "max": 2.8626113231915244,
+        "mean": 1.9798506119678894,
+        "median": 1.65044445625501
+      },
+      "S": {
+        "min": 1.2460472319119102,
+        "max": 1.3252816101076341,
+        "mean": 1.2803366433049792,
+        "median": 1.269681087895393
+      }
+    },
+    "slug": {
+      "n": 3,
+      "x": {
+        "min": 0.006361749249780233,
+        "max": 0.025347594667093118,
+        "mean": 0.017684895598141816,
+        "median": 0.0213453428775521
+      },
+      "Jg": {
+        "min": 0.33622614484337304,
+        "max": 1.6811307242168654,
+        "mean": 1.2328291977590347,
+        "median": 1.6811307242168654
+      },
+      "Jl": {
+        "min": 0.924515050968904,
+        "max": 1.356933509481024,
+        "mean": 1.1398187887770548,
+        "median": 1.1380078058812364
+      },
+      "alpha": {
+        "min": 0.21757430845890957,
+        "max": 0.5124513854944007,
+        "mean": 0.40221955252834773,
+        "median": 0.47663296363173285
+      },
+      "uv": {
+        "min": 1.5453393703736473,
+        "max": 3.5270970589348063,
+        "mean": 2.7843342291669435,
+        "median": 3.2805662581923767
+      },
+      "ul": {
+        "min": 1.18160109127801,
+        "max": 2.5926996069470025,
+        "mean": 2.0361476397236653,
+        "median": 2.3341422209459832
+      },
+      "S": {
+        "min": 1.3078350906922582,
+        "max": 1.4054697390559285,
+        "mean": 1.3579001331598317,
+        "median": 1.3603955697313082
+      }
+    },
+    "churn": {
+      "n": 10,
+      "x": {
+        "min": 0.0426906857551042,
+        "max": 0.20278075733674494,
+        "mean": 0.09352113515197287,
+        "median": 0.07914565336620441
+      },
+      "Jg": {
+        "min": 1.6811307242168654,
+        "max": 13.449045793734923,
+        "mean": 6.556409824445775,
+        "median": 6.7245228968674615
+      },
+      "Jl": {
+        "min": 0.6636687814150305,
+        "max": 1.5053151817612378,
+        "mean": 1.092315939586738,
+        "median": 1.0788159125793104
+      },
+      "alpha": {
+        "min": 0.612762856620405,
+        "max": 0.8478098158248527,
+        "mean": 0.7297521991622218,
+        "median": 0.736531348038304
+      },
+      "uv": {
+        "min": 2.7435258290439983,
+        "max": 16.472115346042056,
+        "mean": 8.582204494940743,
+        "median": 8.58863530418542
+      },
+      "ul": {
+        "min": 1.7138562061038116,
+        "max": 7.5571181948639605,
+        "mean": 4.4110196168778995,
+        "median": 4.274719701976849
+      },
+      "S": {
+        "min": 1.5033309920055558,
+        "max": 2.593620436710611,
+        "mean": 1.8656442797665678,
+        "median": 1.7403275451203286
+      }
+    },
+    "wavy annular": {
+      "n": 9,
+      "x": {
+        "min": 0.0853813715102084,
+        "max": 0.5089399399824186,
+        "mean": 0.28561877724095874,
+        "median": 0.2916397408888017
+      },
+      "Jg": {
+        "min": 3.3622614484337308,
+        "max": 26.898091587469846,
+        "mean": 17.558476452931703,
+        "median": 13.449045793734923
+      },
+      "Jl": {
+        "min": 0.4564971548582888,
+        "max": 1.1501638219496808,
+        "mean": 0.7470005903074342,
+        "median": 0.6936666670913919
+      },
+      "alpha": {
+        "min": 0.7375737757259613,
+        "max": 0.9264565239337721,
+        "mean": 0.8625478860234082,
+        "median": 0.881090877232147
+      },
+      "uv": {
+        "min": 4.558542560877257,
+        "max": 30.528169434652796,
+        "mean": 19.862414261533697,
+        "median": 16.16356866726536
+      },
+      "ul": {
+        "min": 2.4161946334370015,
+        "max": 9.672628938615183,
+        "mean": 5.995662628317792,
+        "median": 6.2126393573270455
+      },
+      "S": {
+        "min": 1.8866619840111127,
+        "max": 4.673263621416114,
+        "mean": 3.173609190125766,
+        "median": 3.156139828002486
+      }
+    }
+  },
+  "selected_runs_recomputed": [
+    {
+      "run": "m03q05_001",
+      "pattern": "churn",
+      "G": 380,
+      "q_kW_m2": 5,
+      "x": 0.0426906857551042,
+      "Jg": 1.6811307242168654,
+      "Jl": 0.6636687814150305,
+      "alpha": 0.612762856620405,
+      "uv": 2.7435258290439983,
+      "ul": 1.7138562061038116,
+      "S": 1.600791139462617,
+      "heating_power_W": 4.162610266006476
+    },
+    {
+      "run": "m03q10_001",
+      "pattern": "wavy annular",
+      "G": 380,
+      "q_kW_m2": 10,
+      "x": 0.0853813715102084,
+      "Jg": 3.3622614484337308,
+      "Jl": 0.6340728347640673,
+      "alpha": 0.7375737757259613,
+      "uv": 4.558542560877257,
+      "ul": 2.4161946334370015,
+      "S": 1.8866619840111127,
+      "heating_power_W": 8.325220532012953
+    },
+    {
+      "run": "m03q20_001",
+      "pattern": "wavy annular",
+      "G": 380,
+      "q_kW_m2": 20,
+      "x": 0.1707627430204168,
+      "Jg": 6.7245228968674615,
+      "Jl": 0.5748809414621412,
+      "alpha": 0.8263305464181507,
+      "uv": 8.137812314957833,
+      "ul": 3.3102018207894206,
+      "S": 2.4584036731081,
+      "heating_power_W": 16.650441064025905
+    },
+    {
+      "run": "m03q40_001",
+      "pattern": "wavy annular",
+      "G": 380,
+      "q_kW_m2": 40,
+      "x": 0.3415254860408336,
+      "Jg": 13.449045793734923,
+      "Jl": 0.4564971548582888,
+      "alpha": 0.891060833646957,
+      "uv": 15.093296984775234,
+      "ul": 4.1903859754066985,
+      "S": 3.6018870513020826,
+      "heating_power_W": 33.30088212805181
+    },
+    {
+      "run": "m04q01_001",
+      "pattern": "slug",
+      "G": 510,
+      "q_kW_m2": 1,
+      "x": 0.006361749249780233,
+      "Jg": 0.33622614484337304,
+      "Jl": 0.924515050968904,
+      "alpha": 0.21757430845890957,
+      "uv": 1.5453393703736473,
+      "ul": 1.18160109127801,
+      "S": 1.3078350906922582,
+      "heating_power_W": 0.8325220532012952
+    },
+    {
+      "run": "m04q10_001",
+      "pattern": "churn",
+      "G": 510,
+      "q_kW_m2": 10,
+      "x": 0.06361749249780232,
+      "Jg": 3.3622614484337308,
+      "Jl": 0.8712423469971704,
+      "alpha": 0.6952941041099158,
+      "uv": 4.835739910002468,
+      "ul": 2.8592894287528043,
+      "S": 1.6912383410278873,
+      "heating_power_W": 8.325220532012953
+    },
+    {
+      "run": "m04q20_001",
+      "pattern": "churn",
+      "G": 510,
+      "q_kW_m2": 20,
+      "x": 0.12723498499560465,
+      "Jg": 6.7245228968674615,
+      "Jl": 0.8120504536952443,
+      "alpha": 0.7963830097890013,
+      "uv": 8.44383018498737,
+      "ul": 3.988127183560443,
+      "S": 2.117241952511918,
+      "heating_power_W": 16.650441064025905
+    },
+    {
+      "run": "m04q40_001",
+      "pattern": "wavy annular",
+      "G": 510,
+      "q_kW_m2": 40,
+      "x": 0.2544699699912093,
+      "Jg": 13.449045793734923,
+      "Jl": 0.6936666670913919,
+      "alpha": 0.8671927891577293,
+      "uv": 15.508714973053983,
+      "ul": 5.223109970400851,
+      "S": 2.9692491754799786,
+      "heating_power_W": 33.30088212805181
+    },
+    {
+      "run": "m04q80_001",
+      "pattern": "wavy annular",
+      "G": 510,
+      "q_kW_m2": 80,
+      "x": 0.5089399399824186,
+      "Jg": 26.898091587469846,
+      "Jl": 0.4568990938836871,
+      "alpha": 0.9264565239337721,
+      "uv": 29.033301501574467,
+      "ul": 6.2126393573270455,
+      "S": 4.673263621416114,
+      "heating_power_W": 66.60176425610362
+    },
+    {
+      "run": "m05q01_001",
+      "pattern": "plug",
+      "G": 640,
+      "q_kW_m2": 1,
+      "x": 0.005069518933418623,
+      "Jg": 0.33622614484337304,
+      "Jl": 1.161684563202007,
+      "alpha": 0.18563773243987544,
+      "uv": 1.8111950648409818,
+      "ul": 1.4264960564571338,
+      "S": 1.269681087895393,
+      "heating_power_W": 0.8325220532012952
+    },
+    {
+      "run": "m05q05_001",
+      "pattern": "slug",
+      "G": 640,
+      "q_kW_m2": 5,
+      "x": 0.025347594667093118,
+      "Jg": 1.6811307242168654,
+      "Jl": 1.1380078058812364,
+      "alpha": 0.5124513854944007,
+      "uv": 3.2805662581923767,
+      "ul": 2.3341422209459832,
+      "S": 1.4054697390559285,
+      "heating_power_W": 4.162610266006476
+    },
+    {
+      "run": "m05q10_001",
+      "pattern": "churn",
+      "G": 640,
+      "q_kW_m2": 10,
+      "x": 0.050695189334186236,
+      "Jg": 3.3622614484337308,
+      "Jl": 1.1084118592302734,
+      "alpha": 0.6582037626390146,
+      "uv": 5.108237964111624,
+      "ul": 3.2429024608004475,
+      "S": 1.5752055530065974,
+      "heating_power_W": 8.325220532012953
+    },
+    {
+      "run": "m05q20_001",
+      "pattern": "churn",
+      "G": 640,
+      "q_kW_m2": 20,
+      "x": 0.10139037866837247,
+      "Jg": 6.7245228968674615,
+      "Jl": 1.0492199659283472,
+      "alpha": 0.7699740962178887,
+      "uv": 8.733440423383469,
+      "ul": 4.561312220393255,
+      "S": 1.9146771809079346,
+      "heating_power_W": 16.650441064025905
+    },
+    {
+      "run": "m05q40_001",
+      "pattern": "churn",
+      "G": 640,
+      "q_kW_m2": 40,
+      "x": 0.20278075733674494,
+      "Jg": 13.449045793734923,
+      "Jl": 0.9308361793244948,
+      "alpha": 0.8478098158248527,
+      "uv": 15.863281531660556,
+      "ul": 6.116269484589405,
+      "S": 2.593620436710611,
+      "heating_power_W": 33.30088212805181
+    },
+    {
+      "run": "m05q80_001",
+      "pattern": "wavy annular",
+      "G": 640,
+      "q_kW_m2": 80,
+      "x": 0.4055615146734899,
+      "Jg": 26.898091587469846,
+      "Jl": 0.6940686061167901,
+      "alpha": 0.9074712765716432,
+      "uv": 29.640708507148315,
+      "ul": 7.501115117557996,
+      "S": 3.9515069483159606,
+      "heating_power_W": 66.60176425610362
+    },
+    {
+      "run": "m06q01_001",
+      "pattern": "plug",
+      "G": 760,
+      "q_kW_m2": 1,
+      "x": 0.00426906857551042,
+      "Jg": 0.33622614484337304,
+      "Jl": 1.3806102668017946,
+      "alpha": 0.16349183302144604,
+      "uv": 2.056531746140913,
+      "ul": 1.65044445625501,
+      "S": 1.2460472319119102,
+      "heating_power_W": 0.8325220532012952
+    },
+    {
+      "run": "m06q05_001",
+      "pattern": "slug",
+      "G": 760,
+      "q_kW_m2": 5,
+      "x": 0.0213453428775521,
+      "Jg": 1.6811307242168654,
+      "Jl": 1.356933509481024,
+      "alpha": 0.47663296363173285,
+      "uv": 3.5270970589348063,
+      "ul": 2.5926996069470025,
+      "S": 1.3603955697313082,
+      "heating_power_W": 4.162610266006476
+    },
+    {
+      "run": "m06q10_001",
+      "pattern": "churn",
+      "G": 760,
+      "q_kW_m2": 10,
+      "x": 0.0426906857551042,
+      "Jg": 3.3622614484337308,
+      "Jl": 1.327337562830061,
+      "alpha": 0.6275581427712327,
+      "uv": 5.357689143489283,
+      "ul": 3.5638785949205545,
+      "S": 1.5033309920055558,
+      "heating_power_W": 8.325220532012953
+    },
+    {
+      "run": "m06q20_001",
+      "pattern": "churn",
+      "G": 760,
+      "q_kW_m2": 20,
+      "x": 0.0853813715102084,
+      "Jg": 6.7245228968674615,
+      "Jl": 1.2681456695281346,
+      "alpha": 0.7477099331685455,
+      "uv": 8.993491457805268,
+      "ul": 5.026538244073379,
+      "S": 1.7892018365540518,
+      "heating_power_W": 16.650441064025905
+    },
+    {
+      "run": "m06q40_001",
+      "pattern": "wavy annular",
+      "G": 760,
+      "q_kW_m2": 40,
+      "x": 0.1707627430204168,
+      "Jg": 13.449045793734923,
+      "Jl": 1.1497618829242824,
+      "alpha": 0.8320591863461491,
+      "uv": 16.16356866726536,
+      "ul": 6.84623265726281,
+      "S": 2.3609435256510416,
+      "heating_power_W": 33.30088212805181
+    },
+    {
+      "run": "m06q80_001",
+      "pattern": "wavy annular",
+      "G": 760,
+      "q_kW_m2": 80,
+      "x": 0.3415254860408336,
+      "Jg": 26.898091587469846,
+      "Jl": 0.9129943097165776,
+      "alpha": 0.8936951651781633,
+      "uv": 30.09761340949803,
+      "ul": 8.588455184063122,
+      "S": 3.5044269038450193,
+      "heating_power_W": 66.60176425610362
+    },
+    {
+      "run": "m07q01_001",
+      "pattern": "bubble",
+      "G": 890,
+      "q_kW_m2": 1,
+      "x": 0.0036454967611100207,
+      "Jg": 0.33622614484337304,
+      "Jl": 1.6177797790348976,
+      "alpha": 0.1447833631817589,
+      "uv": 2.3222705803655055,
+      "ul": 1.8916607902457394,
+      "S": 1.227635838486575,
+      "heating_power_W": 0.8325220532012952
+    },
+    {
+      "run": "m07q05_001",
+      "pattern": "plug",
+      "G": 890,
+      "q_kW_m2": 5,
+      "x": 0.018227483805550105,
+      "Jg": 1.6811307242168654,
+      "Jl": 1.594103021714127,
+      "alpha": 0.44312977147841986,
+      "uv": 3.7937661435116086,
+      "ul": 2.8626113231915244,
+      "S": 1.3252816101076341,
+      "heating_power_W": 4.162610266006476
+    },
+    {
+      "run": "m07q20_001",
+      "pattern": "churn",
+      "G": 890,
+      "q_kW_m2": 20,
+      "x": 0.07290993522220042,
+      "Jg": 6.7245228968674615,
+      "Jl": 1.5053151817612378,
+      "alpha": 0.7253527629080625,
+      "uv": 9.27069315888135,
+      "ul": 5.480904150720938,
+      "S": 1.6914532536866054,
+      "heating_power_W": 16.650441064025905
+    },
+    {
+      "run": "m07q40_001",
+      "pattern": "churn",
+      "G": 890,
+      "q_kW_m2": 40,
+      "x": 0.14581987044440084,
+      "Jg": 13.449045793734923,
+      "Jl": 1.3869313951573854,
+      "alpha": 0.816473507573299,
+      "uv": 16.472115346042056,
+      "ul": 7.5571181948639605,
+      "S": 2.1796821117918985,
+      "heating_power_W": 33.30088212805181
+    },
+    {
+      "run": "m07q80_001",
+      "pattern": "wavy annular",
+      "G": 890,
+      "q_kW_m2": 80,
+      "x": 0.2916397408888017,
+      "Jg": 26.898091587469846,
+      "Jl": 1.1501638219496808,
+      "alpha": 0.881090877232147,
+      "uv": 30.528169434652796,
+      "ul": 9.672628938615183,
+      "S": 3.156139828002486,
+      "heating_power_W": 66.60176425610362
+    }
+  ],
+  "conservation_max_absolute_residuals": {
+    "mass_flux_kg_m2_s": 1.1368683772161603e-13,
+    "gas_phase_flux_m_s": 2.220446049250313e-16,
+    "liquid_phase_flux_m_s": 1.1102230246251565e-16
+  },
+  "literature_range_overlap": {
+    "plug": {
+      "n": 3,
+      "inside_reported_literature_range": 2,
+      "literature_range": [
+        0.042,
+        0.29
+      ],
+      "note": "Range overlap is not validation"
+    },
+    "churn": {
+      "n": 10,
+      "inside_reported_literature_range": 10,
+      "literature_range": [
+        0.61,
+        0.85
+      ],
+      "note": "Range overlap is not validation"
+    },
+    "wavy annular": {
+      "n": 9,
+      "inside_reported_literature_range": 6,
+      "literature_range": [
+        0.86,
+        0.99
+      ],
+      "note": "Range overlap is not validation"
+    }
+  },
+  "src2_workbook_inventory": [
+    {
+      "file": "data_processed/m03q05_001/__dados_center_v13.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 9587,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m03q05_001/__dados_cropped_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 9587,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m03q05_001/__dados_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 9587,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m03q05_001/__timeseries_v9.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 402,
+          "columns": 4,
+          "first_row": [
+            "time_s",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 9,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m03q10_001/__dados_center_v13.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 14225,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m03q10_001/__dados_cropped_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 14225,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m03q10_001/__dados_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 14225,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m03q10_001/__timeseries_v9.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 402,
+          "columns": 4,
+          "first_row": [
+            "time_s",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 9,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m03q20_001/__dados_center_v13.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 23080,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m03q20_001/__dados_cropped_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 23080,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m03q20_001/__dados_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 23080,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m03q20_001/__timeseries_v9.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 502,
+          "columns": 4,
+          "first_row": [
+            "time_s",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 9,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m03q40_001/__dados_center_v13.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 20744,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m03q40_001/__dados_cropped_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 20744,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m03q40_001/__dados_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 20744,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m03q40_001/__timeseries_v9.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 502,
+          "columns": 4,
+          "first_row": [
+            "time_s",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 9,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m04q01_001/__dados_center_v13.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 5072,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m04q01_001/__dados_cropped_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 5072,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m04q01_001/__dados_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 5072,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m04q01_001/__timeseries_v9.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 288,
+          "columns": 4,
+          "first_row": [
+            "time_s",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 9,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m04q10_001/__dados_center_v13.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 8830,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m04q10_001/__dados_cropped_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 8830,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m04q10_001/__dados_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 8830,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m04q10_001/__timeseries_v9.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 402,
+          "columns": 4,
+          "first_row": [
+            "time_s",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 9,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m04q20_001/__dados_center_v13.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 9345,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m04q20_001/__dados_cropped_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 9345,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m04q20_001/__dados_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 9345,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m04q20_001/__timeseries_v9.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 402,
+          "columns": 4,
+          "first_row": [
+            "time_s",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 9,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m04q40_001/__dados_center_v13.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 14961,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m04q40_001/__dados_cropped_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 14961,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m04q40_001/__dados_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 14961,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m04q40_001/__timeseries_v9.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 402,
+          "columns": 4,
+          "first_row": [
+            "time_s",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 9,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m04q80_001/__dados_center_v13.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 22637,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m04q80_001/__dados_cropped_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 22637,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m04q80_001/__dados_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 22637,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m04q80_001/__timeseries_v9.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 402,
+          "columns": 4,
+          "first_row": [
+            "time_s",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 9,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m05q01_001/__dados_center_v13.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 5941,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m05q01_001/__dados_cropped_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 5941,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m05q01_001/__dados_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 5941,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m05q01_001/__timeseries_v9.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 288,
+          "columns": 4,
+          "first_row": [
+            "time_s",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 9,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m05q05_001/__dados_center_v13.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 6324,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m05q05_001/__dados_cropped_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 6324,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m05q05_001/__dados_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 6324,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m05q05_001/__timeseries_v9.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 288,
+          "columns": 4,
+          "first_row": [
+            "time_s",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 9,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m05q10_001/__dados_center_v13.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 7002,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m05q10_001/__dados_cropped_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 7002,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m05q10_001/__dados_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 7002,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m05q10_001/__timeseries_v9.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 288,
+          "columns": 4,
+          "first_row": [
+            "time_s",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 9,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m05q20_001/__dados_center_v13.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 7392,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m05q20_001/__dados_cropped_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 7392,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m05q20_001/__dados_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 7392,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m05q20_001/__timeseries_v9.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 288,
+          "columns": 4,
+          "first_row": [
+            "time_s",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 9,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m05q40_001/__dados_center_v13.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 9938,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m05q40_001/__dados_cropped_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 9938,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m05q40_001/__dados_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 9938,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m05q40_001/__timeseries_v9.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 288,
+          "columns": 4,
+          "first_row": [
+            "time_s",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 9,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m05q80_001/__dados_center_v13.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 17525,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m05q80_001/__dados_cropped_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 17525,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m05q80_001/__dados_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 17525,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m05q80_001/__timeseries_v9.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 288,
+          "columns": 4,
+          "first_row": [
+            "time_s",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 9,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m06q01_001/__dados_center_v13.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 7799,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m06q01_001/__dados_cropped_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 7799,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m06q01_001/__dados_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 7799,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m06q01_001/__timeseries_v9.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 288,
+          "columns": 4,
+          "first_row": [
+            "time_s",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 9,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m06q05_001/__dados_center_v13.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 7788,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m06q05_001/__dados_cropped_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 7788,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m06q05_001/__dados_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 7788,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m06q05_001/__timeseries_v9.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 288,
+          "columns": 4,
+          "first_row": [
+            "time_s",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 9,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m06q10_001/__dados_center_v13.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 7585,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m06q10_001/__dados_cropped_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 7585,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m06q10_001/__dados_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 7585,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m06q10_001/__timeseries_v9.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 288,
+          "columns": 4,
+          "first_row": [
+            "time_s",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 9,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m06q20_001/__dados_center_v13.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 10045,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m06q20_001/__dados_cropped_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 10045,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m06q20_001/__dados_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 10045,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m06q20_001/__timeseries_v9.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 288,
+          "columns": 4,
+          "first_row": [
+            "time_s",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 9,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m06q40_001/__dados_center_v13.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 14773,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m06q40_001/__dados_cropped_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 14773,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m06q40_001/__dados_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 14773,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m06q40_001/__timeseries_v9.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 288,
+          "columns": 4,
+          "first_row": [
+            "time_s",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 9,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m06q80_001/__dados_center_v13.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 18666,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m06q80_001/__dados_cropped_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 18666,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m06q80_001/__dados_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 18666,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m06q80_001/__timeseries_v9.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 288,
+          "columns": 4,
+          "first_row": [
+            "time_s",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 9,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m07q01_001/__dados_center_v13.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 3172,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m07q01_001/__dados_cropped_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 3172,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m07q01_001/__dados_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 3172,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m07q01_001/__timeseries_v9.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 288,
+          "columns": 4,
+          "first_row": [
+            "time_s",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 9,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m07q05_001/__dados_center_v13.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 7359,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m07q05_001/__dados_cropped_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 7359,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m07q05_001/__dados_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 7359,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m07q05_001/__timeseries_v9.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 288,
+          "columns": 4,
+          "first_row": [
+            "time_s",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 9,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m07q20_001/__dados_center_v13.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 8256,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m07q20_001/__dados_cropped_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 8256,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m07q20_001/__dados_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 8256,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m07q20_001/__timeseries_v9.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 288,
+          "columns": 4,
+          "first_row": [
+            "time_s",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 9,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m07q40_001/__dados_center_v13.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 10350,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m07q40_001/__dados_cropped_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 10350,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m07q40_001/__dados_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 10350,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m07q40_001/__timeseries_v9.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 288,
+          "columns": 4,
+          "first_row": [
+            "time_s",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 9,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m07q80_001/__dados_center_v13.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 16659,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m07q80_001/__dados_cropped_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 16659,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m07q80_001/__dados_v11.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 16659,
+          "columns": 4,
+          "first_row": [
+            "position_px",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 6,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data_processed/m07q80_001/__timeseries_v9.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet",
+          "rows": 288,
+          "columns": 4,
+          "first_row": [
+            "time_s",
+            "Voltage_0",
+            "Voltage_1",
+            "Voltage_2"
+          ]
+        },
+        {
+          "name": "metadata",
+          "rows": 9,
+          "columns": 2,
+          "first_row": [
+            "key",
+            "value"
+          ]
+        }
+      ]
+    }
+  ],
+  "physical_accuracy": "Not identifiable without matched quality/phase-velocity references; original mass-flow signals are documented separately by massflow_audit.py"
+}

@@ -1,0 +1,278 @@
+[
+  {
+    "run": "m07q01_001",
+    "pattern": "dispersed bubbles",
+    "fps": 7000.0,
+    "frames": 501,
+    "first_last_duration_s": 0.07142857142857142,
+    "contact_frame_indices": [
+      200,
+      202,
+      204,
+      206,
+      208,
+      210
+    ],
+    "contact_relative_times_s": [
+      0.0,
+      0.00028571428571428574,
+      0.0005714285714285715,
+      0.0008571428571428571,
+      0.001142857142857143,
+      0.0014285714285714286
+    ],
+    "mean_core_fraction_ge250": 0.0,
+    "raw_dimensions": [
+      80,
+      1016
+    ],
+    "xt_rows": [
+      20,
+      60
+    ],
+    "xt_interpolation": "nearest",
+    "brightness_range": [
+      0,
+      255
+    ],
+    "sequence_sha256": {
+      "ImgA000200.jpg": "e89d11d1ae18bc28c7cd386d1e4a47e09840db3e281b6fe0462406697a19e658",
+      "ImgA000202.jpg": "5e6b25048c1f336574a0411965075138c7c54e828bf84d0a8ed723fcadc4efd5",
+      "ImgA000204.jpg": "d4942de15334baa23cd1c24baa3b738d49211d90bd8717cb8e4ea53b126d8934",
+      "ImgA000206.jpg": "c073f78633a4d6d238cc9af046af5ab1fd0c4bd0cf1223f6fc9717c366076599",
+      "ImgA000208.jpg": "d43015ac35a3d28cb6fc10fb7b2b500b1fbaa01a9cb14467b7cef5b540f31470",
+      "ImgA000210.jpg": "7ef024d4fe412c25bd06e1585592793016b1fbff15779fe76f7e53cae8027dc0"
+    },
+    "description": "Selected visual examples; no segmentation, motion fitting, or phase-velocity inference."
+  },
+  {
+    "run": "m05q01_001",
+    "pattern": "plug",
+    "fps": 7000.0,
+    "frames": 501,
+    "first_last_duration_s": 0.07142857142857142,
+    "contact_frame_indices": [
+      200,
+      202,
+      204,
+      206,
+      208,
+      210
+    ],
+    "contact_relative_times_s": [
+      0.0,
+      0.00028571428571428574,
+      0.0005714285714285715,
+      0.0008571428571428571,
+      0.001142857142857143,
+      0.0014285714285714286
+    ],
+    "mean_core_fraction_ge250": 1.1640105615540572e-05,
+    "raw_dimensions": [
+      80,
+      1016
+    ],
+    "xt_rows": [
+      20,
+      60
+    ],
+    "xt_interpolation": "nearest",
+    "brightness_range": [
+      0,
+      255
+    ],
+    "sequence_sha256": {
+      "ImgA000200.jpg": "c60fe7ba03e0b5b260d70a446a08d64e7a8dd7a71024510dc4ca9c333b360be4",
+      "ImgA000202.jpg": "1ee0d8162dacb64c0942532d1665e59054d19098a9fa9ec5933f672c0c2537c2",
+      "ImgA000204.jpg": "24dcd56392377f8095d61483a2c4e9a93b434e4ddecaf36680ef5294d5395fed",
+      "ImgA000206.jpg": "94b4537eb458a614d07d4979fd5b90b7bac54882a2dac5f4ec065cc31181951e",
+      "ImgA000208.jpg": "ac0f2fbccc51a036bf41c03c0b48eb808c3e34f2ea9bc4af518e64c4d4f028c2",
+      "ImgA000210.jpg": "a154ae38f798f5b6bf134c9be5bf86561810c6e448b50d69eb60791affb1858b"
+    },
+    "description": "Selected visual examples; no segmentation, motion fitting, or phase-velocity inference."
+  },
+  {
+    "run": "m05q05_001",
+    "pattern": "slug",
+    "fps": 7000.0,
+    "frames": 501,
+    "first_last_duration_s": 0.07142857142857142,
+    "contact_frame_indices": [
+      200,
+      202,
+      204,
+      206,
+      208,
+      210
+    ],
+    "contact_relative_times_s": [
+      0.0,
+      0.00028571428571428574,
+      0.0005714285714285715,
+      0.0008571428571428571,
+      0.001142857142857143,
+      0.0014285714285714286
+    ],
+    "mean_core_fraction_ge250": 2.5539472236629105e-06,
+    "raw_dimensions": [
+      80,
+      1016
+    ],
+    "xt_rows": [
+      20,
+      60
+    ],
+    "xt_interpolation": "nearest",
+    "brightness_range": [
+      0,
+      255
+    ],
+    "sequence_sha256": {
+      "ImgA000200.jpg": "9b6e9e7c4383fb8624aef02dcfa5858267f3756adf9fdd2f044750b0115324a6",
+      "ImgA000202.jpg": "96f9d3098db8177a68b15d230f8e76644a00035475a492612778f0d8d4a81c23",
+      "ImgA000204.jpg": "faf9dc1c80c59c9da3913ff79ab2d83ed25ac89eeaaa012788b5e983df5b4840",
+      "ImgA000206.jpg": "fff759e78c2301569117138d6947a1485df6c26b511b612b3c49b40996e0426e",
+      "ImgA000208.jpg": "31e1a7c20811ad7b6388974d4ca766b3c28d88e6bc631534347feb855a33c905",
+      "ImgA000210.jpg": "492f3db4f16c261792e61f36f4f0ae15dfd363496a64c926a9e704a49cc73d0a"
+    },
+    "description": "Selected visual examples; no segmentation, motion fitting, or phase-velocity inference."
+  },
+  {
+    "run": "m05q20_001",
+    "pattern": "churn",
+    "fps": 7000.0,
+    "frames": 501,
+    "first_last_duration_s": 0.07142857142857142,
+    "contact_frame_indices": [
+      200,
+      202,
+      204,
+      206,
+      208,
+      210
+    ],
+    "contact_relative_times_s": [
+      0.0,
+      0.00028571428571428574,
+      0.0005714285714285715,
+      0.0008571428571428571,
+      0.001142857142857143,
+      0.0014285714285714286
+    ],
+    "mean_core_fraction_ge250": 2.013689157118833e-06,
+    "raw_dimensions": [
+      80,
+      1016
+    ],
+    "xt_rows": [
+      20,
+      60
+    ],
+    "xt_interpolation": "nearest",
+    "brightness_range": [
+      0,
+      255
+    ],
+    "sequence_sha256": {
+      "ImgA000200.jpg": "138fde21f492aac24b8c38dde9dd9195c3905ead04dfc59e8661694de4dfc1b3",
+      "ImgA000202.jpg": "120141984b28a193b820907bc7f92de13ddd043311559b0ca587aaeb515f5eb8",
+      "ImgA000204.jpg": "4d1ca43e8fa5878308193b59fcd5ab41eca6aa76402536437866d3ec8d468145",
+      "ImgA000206.jpg": "ac8ae8f1c3e20004c3692f91f816cedeaae046c3ba5a1c2a37757ff2f87a345e",
+      "ImgA000208.jpg": "25dbed8a0892e277109b495846757600011dda3a59587b3ac52f26f237dd882a",
+      "ImgA000210.jpg": "c9fdfe716c1fd5b649abd89fd7eaed70e3671b8fb05a812dbd0cac833c1b4210"
+    },
+    "description": "Selected visual examples; no segmentation, motion fitting, or phase-velocity inference."
+  },
+  {
+    "run": "m04q80_001",
+    "pattern": "wavy annular",
+    "fps": 5000.0,
+    "frames": 501,
+    "first_last_duration_s": 0.1,
+    "contact_frame_indices": [
+      200,
+      202,
+      204,
+      206,
+      208,
+      210
+    ],
+    "contact_relative_times_s": [
+      0.0,
+      0.0004,
+      0.0008,
+      0.0012,
+      0.0016,
+      0.002
+    ],
+    "mean_core_fraction_ge250": 0.04051301923711632,
+    "raw_dimensions": [
+      80,
+      1016
+    ],
+    "xt_rows": [
+      20,
+      60
+    ],
+    "xt_interpolation": "nearest",
+    "brightness_range": [
+      0,
+      255
+    ],
+    "sequence_sha256": {
+      "ImgA000200.jpg": "51c1ba27fb622525d19386538ba32f4e7e1b996e4a3c3159c719fbf70796aa44",
+      "ImgA000202.jpg": "1a1970267cebded70725f03cc3b877d82e43f446ab6ea948237b0ff10c397cab",
+      "ImgA000204.jpg": "418aad96908afe620f81bc07c9ad4d1825ed08f50466fcb79ff76e9a1a3c37fe",
+      "ImgA000206.jpg": "cbb3f5938543618abf7fe803feb818b6bf4d7dbd279ca567179618bdc3456c04",
+      "ImgA000208.jpg": "ccdf72c545b15d8e8166c31c99c19853eff3a1126a0124f2bd10e194f2151fb9",
+      "ImgA000210.jpg": "03885fd2616a8cff15cebf536d60caea9321c1da77f91e71a109388b32fd2ca1"
+    },
+    "description": "Selected visual examples; no segmentation, motion fitting, or phase-velocity inference."
+  },
+  {
+    "run": "m03q40_001",
+    "pattern": "wavy annular",
+    "fps": 4000.0,
+    "frames": 501,
+    "first_last_duration_s": 0.125,
+    "contact_frame_indices": [
+      200,
+      202,
+      204,
+      206,
+      208,
+      210
+    ],
+    "contact_relative_times_s": [
+      0.0,
+      0.0005,
+      0.001,
+      0.0015,
+      0.002,
+      0.0025
+    ],
+    "mean_core_fraction_ge250": 0.2384445184434281,
+    "raw_dimensions": [
+      80,
+      1016
+    ],
+    "xt_rows": [
+      20,
+      60
+    ],
+    "xt_interpolation": "nearest",
+    "brightness_range": [
+      0,
+      255
+    ],
+    "sequence_sha256": {
+      "ImgA000200.jpg": "c715c8d0eec6245ba57b23c5e1fe810ad775de8dab28a5fcf646842b47517002",
+      "ImgA000202.jpg": "d5c9da34ea30097dcd96560cf0b742283224fc9a4be2804105ef7479e644cec5",
+      "ImgA000204.jpg": "d5383d0919de67645739f6feb05c6a2af6d42e8460e19280b10b1953767b3d73",
+      "ImgA000206.jpg": "f2c5e64b1f4675355c243b42fdfa1b50c1b04afcc12af31d2443287121825d25",
+      "ImgA000208.jpg": "79a4a2b5df143cb236258292149784c50b1032d6124d170d9e555a5b482b5fcb",
+      "ImgA000210.jpg": "900883937016d813cc32607d7257cf02e2f0fb5d6521cf83123445b905bb34aa"
+    },
+    "description": "Selected visual examples; no segmentation, motion fitting, or phase-velocity inference."
+  }
+]

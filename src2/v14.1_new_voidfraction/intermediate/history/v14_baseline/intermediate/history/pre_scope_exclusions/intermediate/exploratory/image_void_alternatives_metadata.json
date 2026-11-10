@@ -1,0 +1,10 @@
+{
+  "n_frames_sampled": 120,
+  "axial_step": 8,
+  "diameter_candidates_px": [
+    56.0,
+    60.0,
+    64.0
+  ],
+  "interpretation": "Optical proxy/conditional geometric reconstruction; not calibrated physical void"
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-10-24T23:03:46.926558+00:00",
+  "replicates_requested": 199,
+  "replicates_completed": 199,
+  "cohort_pairs_per_replicate": 186,
+  "tests": 6,
+  "elapsed_seconds": 481.1423699169827,
+  "spectrum_error_before_redetrending": 4.2226929687750324e-16,
+  "relative_spectrum_change_after_redetrending_median": 0.042678191004420746,
+  "relative_spectrum_change_after_redetrending_q95": 0.1644797190154305,
+  "relative_spectrum_change_after_redetrending_max": 0.47202513080410424,
+  "interpretation": "Modelo de fases aproximado com espectros estimados nos dados e novo detrending; não é teste de rótulos, não prova ausência de informação, generalização ou causalidade. IC descreve erro Monte Carlo da cauda, não incerteza populacional."
+}

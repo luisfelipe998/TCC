@@ -1,0 +1,121 @@
+Âncoras principal: 100/830
+Âncoras principal: 200/830
+Âncoras principal: 300/830
+Âncoras principal: 400/830
+Âncoras principal: 500/830
+Âncoras principal: 600/830
+Âncoras principal: 700/830
+Âncoras principal: 800/830
+Âncoras principal: 104.0 s
+Âncoras faixa30_49: 100/830
+Âncoras faixa30_49: 200/830
+Âncoras faixa30_49: 300/830
+Âncoras faixa30_49: 400/830
+Âncoras faixa30_49: 500/830
+Âncoras faixa30_49: 600/830
+Âncoras faixa30_49: 700/830
+Âncoras faixa30_49: 800/830
+Âncoras faixa30_49: 87.3 s
+Âncoras somente_media: 100/830
+Âncoras somente_media: 200/830
+Âncoras somente_media: 300/830
+Âncoras somente_media: 400/830
+Âncoras somente_media: 500/830
+Âncoras somente_media: 600/830
+Âncoras somente_media: 700/830
+Âncoras somente_media: 800/830
+Âncoras somente_media: 85.9 s
+Âncoras centros_menos_mais16: 100/830
+Âncoras centros_menos_mais16: 200/830
+Âncoras centros_menos_mais16: 300/830
+Âncoras centros_menos_mais16: 400/830
+Âncoras centros_menos_mais16: 500/830
+Âncoras centros_menos_mais16: 600/830
+Âncoras centros_menos_mais16: 700/830
+Âncoras centros_menos_mais16: 800/830
+Âncoras centros_menos_mais16: 87.8 s
+Âncoras centros_mais_menos16: 100/830
+Âncoras centros_mais_menos16: 200/830
+Âncoras centros_mais_menos16: 300/830
+Âncoras centros_mais_menos16: 400/830
+Âncoras centros_mais_menos16: 500/830
+Âncoras centros_mais_menos16: 600/830
+Âncoras centros_mais_menos16: 700/830
+Âncoras centros_mais_menos16: 800/830
+Âncoras centros_mais_menos16: 90.6 s
+Âncoras detector_sigma12: 100/830
+Âncoras detector_sigma12: 200/830
+Âncoras detector_sigma12: 300/830
+Âncoras detector_sigma12: 400/830
+Âncoras detector_sigma12: 500/830
+Âncoras detector_sigma12: 600/830
+Âncoras detector_sigma12: 700/830
+Âncoras detector_sigma12: 800/830
+Âncoras detector_sigma12: 168.6 s
+Âncoras detector_sigma20: 100/830
+Âncoras detector_sigma20: 200/830
+Âncoras detector_sigma20: 300/830
+Âncoras detector_sigma20: 400/830
+Âncoras detector_sigma20: 500/830
+Âncoras detector_sigma20: 600/830
+Âncoras detector_sigma20: 700/830
+Âncoras detector_sigma20: 800/830
+Âncoras detector_sigma20: 364.0 s
+Âncoras v5_mesmos_segmentos: 100/830
+Âncoras v5_mesmos_segmentos: 200/830
+Âncoras v5_mesmos_segmentos: 300/830
+Âncoras v5_mesmos_segmentos: 400/830
+Âncoras v5_mesmos_segmentos: 500/830
+Âncoras v5_mesmos_segmentos: 600/830
+Âncoras v5_mesmos_segmentos: 700/830
+Âncoras v5_mesmos_segmentos: 800/830
+Âncoras v5_mesmos_segmentos: 519.5 s
+Fixos faixa30_49: 150/513
+Fixos faixa30_49: 300/513
+Fixos faixa30_49: 450/513
+Fixos faixa30_49: 207.8 s
+Fixos somente_media: 150/513
+Fixos somente_media: 300/513
+Fixos somente_media: 450/513
+Fixos somente_media: 183.3 s
+Fixos v5_mesmos_segmentos: 150/513
+Fixos v5_mesmos_segmentos: 300/513
+Fixos v5_mesmos_segmentos: 450/513
+Fixos v5_mesmos_segmentos: 269.5 s
+Traceback (most recent call last):
+  File "/Users/i521862/Documents/personal/unisinos/TCC/src2/v16.2_wco_eventos/scripts/run_texture_analysis.py", line 94, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/i521862/Documents/personal/unisinos/TCC/src2/v16.2_wco_eventos/scripts/run_texture_analysis.py", line 89, in main
+    meta['etapas'][name]=fun();(OUT/'execucao.json').write_text(json.dumps(meta,indent=2,ensure_ascii=False)+'\n')
+                         ~~~^^
+  File "/Users/i521862/Documents/personal/unisinos/TCC/src2/v16.2_wco_eventos/scripts/run_texture_analysis.py", line 87, in <lambda>
+    for name,fun in [('anchors',lambda:anchors(signals)),('fixed',lambda:fixed(inv,signals)),('diagnostics',lambda:diagnostics(signals))]:
+                                                                                                                   ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/i521862/Documents/personal/unisinos/TCC/src2/v16.2_wco_eventos/scripts/run_texture_analysis.py", line 71, in diagnostics
+    k=spec(r,'principal');m,s,_,_=ev.pair(k,k)
+                                  ~~~~~~~^^^^^
+  File "/Users/i521862/Documents/personal/unisinos/TCC/src2/v16.2_wco_eventos/scripts/texture_common.py", line 72, in pair
+    x,wxx,a=self.auto(kx);y,wyy,b=self.auto(ky)
+            ~~~~~~~~~^^^^
+  File "/Users/i521862/Documents/personal/unisinos/TCC/src2/v16.2_wco_eventos/scripts/texture_common.py", line 61, in auto
+    w,a=transform_correlation(correlation(x,x),LAM,engine='morlet')
+        ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/i521862/Documents/personal/unisinos/TCC/src2/v16.2_wco_eventos/scripts/wavelet_core.py", line 70, in transform_correlation
+    return morlet_cwt(r, scales), scales
+           ~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/i521862/Documents/personal/unisinos/TCC/src2/v16.2_wco_eventos/scripts/wavelet_core.py", line 63, in morlet_cwt
+    out[j] = ifft(xf*h)[:len(x)]
+             ~~~~^^^^^^
+  File "/Users/i521862/.pyenv/versions/3.13.2/lib/python3.13/site-packages/scipy/fft/_backend.py", line 29, in __ua_function__
+    return fn(*args, **kwargs)
+  File "/Users/i521862/.pyenv/versions/3.13.2/lib/python3.13/site-packages/scipy/fft/_basic_backend.py", line 85, in ifft
+    return _execute_1D('ifft', _duccfft.ifft, x, n=n, axis=axis, norm=norm,
+                       overwrite_x=overwrite_x, workers=workers, plan=plan)
+  File "/Users/i521862/.pyenv/versions/3.13.2/lib/python3.13/site-packages/scipy/fft/_basic_backend.py", line 32, in _execute_1D
+    return duccfft_func(x, n=n, axis=axis, norm=norm,
+                          overwrite_x=overwrite_x, workers=workers, plan=plan)
+  File "/Users/i521862/.pyenv/versions/3.13.2/lib/python3.13/site-packages/scipy/fft/_duccfft/basic.py", line 31, in c2c
+    return pfft.c2c(tmp, (axis,), forward, norm, out, workers)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

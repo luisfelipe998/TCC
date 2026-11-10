@@ -1,0 +1,9 @@
+{
+  "synthetic": true,
+  "frames": 21,
+  "known_velocity_px_frame": 0.0,
+  "original_tracker_accepted": true,
+  "recovered_velocity_px_frame": 0.0,
+  "motion_resolved_filter_accepts": false,
+  "interpretation": "A stationary segmented square is trackable; it is not evidence of material transport."
+}

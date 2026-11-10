@@ -1,0 +1,54 @@
+{
+  "purpose": "Validate inferred-reference appearance against visually liquid patches; references are sensitivity alternatives, not independent physical calibration",
+  "results": [
+    {
+      "run": "m07q01_001",
+      "automatic3plug": 0.001835996355863905,
+      "manual_liquid_m06q01_001_455_515": 0.001854129436910894,
+      "manual_liquid_m05q05_002_505_540": 0.0018399383300045549,
+      "manual_liquid_m07q01_001_180_250": 0.0018673569501384071
+    },
+    {
+      "run": "m05q05_002",
+      "automatic3plug": 0.3078460211874846,
+      "manual_liquid_m06q01_001_455_515": 0.31056836659275683,
+      "manual_liquid_m05q05_002_505_540": 0.3084417344173441,
+      "manual_liquid_m07q01_001_180_250": 0.3123344419807834
+    },
+    {
+      "run": "m06q01_001",
+      "automatic3plug": 0.4655481818699952,
+      "manual_liquid_m06q01_001_455_515": 0.46743271066655273,
+      "manual_liquid_m05q05_002_505_540": 0.4652474281154712,
+      "manual_liquid_m07q01_001_180_250": 0.47090215439856375
+    },
+    {
+      "run": "m06q05_001",
+      "automatic3plug": 0.4756132371616512,
+      "manual_liquid_m06q01_001_455_515": 0.4782846410684474,
+      "manual_liquid_m05q05_002_505_540": 0.47845265613629556,
+      "manual_liquid_m07q01_001_180_250": 0.4816795085826805
+    },
+    {
+      "run": "m06q20_001",
+      "automatic3plug": 0.6499715695384752,
+      "manual_liquid_m06q01_001_455_515": 0.6524206546749858,
+      "manual_liquid_m05q05_002_505_540": 0.6429836497190141,
+      "manual_liquid_m07q01_001_180_250": 0.6563375315279438
+    },
+    {
+      "run": "m06q80_001",
+      "automatic3plug": 0.7526505938030181,
+      "manual_liquid_m06q01_001_455_515": 0.753952034407834,
+      "manual_liquid_m05q05_002_505_540": 0.7490841890644999,
+      "manual_liquid_m07q01_001_180_250": 0.7557151829032355
+    },
+    {
+      "run": "m03q20_001",
+      "automatic3plug": 0.780092147262302,
+      "manual_liquid_m06q01_001_455_515": 0.7800946507406926,
+      "manual_liquid_m05q05_002_505_540": 0.7801149915026168,
+      "manual_liquid_m07q01_001_180_250": 0.7801211900188244
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "sources_checked": 70,
+  "sources_unchanged": true,
+  "a1_independent_leave_one_out_max_error": 0.0,
+  "mean_power_temporal_max_error": 2.220446049250313e-16,
+  "ari_independent_max_error": 0.0,
+  "valid_window_pairs": 75,
+  "weighting_replicates": 10000,
+  "condition_memberships_verified": true,
+  "q_arrangements": [
+    200,
+    9
+  ],
+  "mq_arrangements": [
+    1,
+    1
+  ]
+}

@@ -1,0 +1,7 @@
+run,pattern,erosion_radius,gas_candidate_px_s,liquid_candidate_px_s,both_finite,gas_optical_supported,liquid_optical_supported,pair_optical_supported,gas_reasons,liquid_reasons,material_pair_identified
+m04q80_001,wavy annular,3,-231231.12945336793,nan,False,False,False,False,ambiguous_peak,insufficient_phase_area;no_raw_phase_texture;undefined_correlation;lag_or_texture_inconsistency;block_inconsistency;ambiguous_peak;null_not_separated,False
+m04q80_001,wavy annular,1,-231214.03420677726,nan,False,False,False,False,ambiguous_peak,insufficient_phase_area;undefined_correlation;lag_or_texture_inconsistency;block_inconsistency;ambiguous_peak;null_not_separated,False
+m05q01_001,plug,3,-64785.80097633769,-81459.12213524789,True,False,False,False,lag_or_texture_inconsistency,ambiguous_peak,False
+m05q01_001,plug,1,-70482.31506547463,-83213.86101338828,True,True,True,True,,,False
+m07q01_001,dispersed bubbles,3,-47676.24144642516,-44648.758060746055,True,False,True,False,insufficient_phase_area;block_inconsistency;ambiguous_peak;null_not_separated,,False
+m07q01_001,dispersed bubbles,1,-45683.658447235975,-44276.45661810492,True,False,True,False,ambiguous_peak;null_not_separated,,False

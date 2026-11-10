@@ -1,0 +1,45 @@
+{
+  "source_method": "v16_biased",
+  "n_pairs": 87,
+  "n_runs": 25,
+  "n_scales": 200,
+  "patterns": {
+    "churn": {
+      "runs": 10,
+      "pairs": 45
+    },
+    "wavy annular": {
+      "runs": 9,
+      "pairs": 36
+    },
+    "plug": {
+      "runs": 3,
+      "pairs": 3
+    },
+    "slug": {
+      "runs": 3,
+      "pairs": 3
+    }
+  },
+  "distance_definition": "(1 - signed Pearson r) / 2",
+  "color_limits": [
+    0,
+    1
+  ],
+  "minimum_pair_n_px": 5071,
+  "maximum_pair_n_px": 22636,
+  "pearson_r_min": 0.5210651478566891,
+  "pearson_r_max": 0.9892235900895443,
+  "distance_min": 0.005388204955227849,
+  "distance_max": 0.23946742607165544,
+  "distance_median": 0.053081638179388935,
+  "excluded_eligible_without_pair": [
+    {
+      "run": "m07q01_001",
+      "pattern": "dispersed bubbles"
+    }
+  ],
+  "uncomputed_off_diagonal_cells": 426,
+  "diagonal": "identidade; não é um par experimental",
+  "interpretation": "Similaridade intrapadrão; sem comparação entre padrões."
+}

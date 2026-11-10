@@ -1,0 +1,27 @@
+{
+  "all_runs": 31,
+  "pattern_counts": {
+    "plug-slug": 1,
+    "churn": 10,
+    "wavy annular": 9,
+    "smooth annular": 1,
+    "slug": 3,
+    "slug-churn": 2,
+    "plug": 3,
+    "dispersed bubbles": 2
+  },
+  "pure_unsaturated_runs": 26,
+  "pure_unsaturated_counts": {
+    "churn": 10,
+    "wavy annular": 8,
+    "slug": 3,
+    "plug": 3,
+    "dispersed bubbles": 2
+  },
+  "pure_unsaturated_without_m07q01": 25,
+  "independently_reproduced_runs": 31,
+  "max_flip_rate_absolute_error": 0.0,
+  "independent_threshold_implementation": "vectorized cumulative histogram variance",
+  "complement_and_spatial_reversal_invariance": "passed on all 31 panoramas",
+  "data_role": "original folder markers retained; no relabeling; panorama read-only"
+}

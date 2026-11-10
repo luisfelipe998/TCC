@@ -1,0 +1,313 @@
+run,pattern,fps,erosion_radius,phase,method,signed_px_s,signed_px_frame,optical_supported,accepted_blocks,accepted_intervals,available_intervals,material_phase_identified,reason
+m03q05_001,churn,5000.0,3,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q05_001,churn,5000.0,3,gas_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q05_001,churn,5000.0,3,gas_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q05_001,churn,5000.0,3,liquid_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q05_001,churn,5000.0,3,liquid_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q05_001,churn,5000.0,3,liquid_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q05_001,churn,5000.0,1,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q05_001,churn,5000.0,1,gas_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q05_001,churn,5000.0,1,gas_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q05_001,churn,5000.0,1,liquid_candidate,raw,-125899.43502268099,-25.179887004536198,False,2,165,495,False,fewer_than_5_of_6_blocks
+m03q05_001,churn,5000.0,1,liquid_candidate,fixed_background,-164589.21805191413,-32.917843610382825,False,2,166,495,False,fewer_than_5_of_6_blocks
+m03q05_001,churn,5000.0,1,liquid_candidate,interface_distance,-135723.726515301,-27.1447453030602,False,1,83,495,False,fewer_than_5_of_6_blocks
+m03q10_001,wavy annular,5000.0,3,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q10_001,wavy annular,5000.0,3,gas_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q10_001,wavy annular,5000.0,3,gas_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q10_001,wavy annular,5000.0,3,liquid_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q10_001,wavy annular,5000.0,3,liquid_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q10_001,wavy annular,5000.0,3,liquid_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q10_001,wavy annular,5000.0,1,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q10_001,wavy annular,5000.0,1,gas_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q10_001,wavy annular,5000.0,1,gas_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q10_001,wavy annular,5000.0,1,liquid_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q10_001,wavy annular,5000.0,1,liquid_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q10_001,wavy annular,5000.0,1,liquid_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q20_001,wavy annular,4000.0,3,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q20_001,wavy annular,4000.0,3,gas_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q20_001,wavy annular,4000.0,3,gas_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q20_001,wavy annular,4000.0,3,liquid_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q20_001,wavy annular,4000.0,3,liquid_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q20_001,wavy annular,4000.0,3,liquid_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q20_001,wavy annular,4000.0,1,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q20_001,wavy annular,4000.0,1,gas_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q20_001,wavy annular,4000.0,1,gas_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q20_001,wavy annular,4000.0,1,liquid_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q20_001,wavy annular,4000.0,1,liquid_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q20_001,wavy annular,4000.0,1,liquid_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q40_001,wavy annular,4000.0,3,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q40_001,wavy annular,4000.0,3,gas_candidate,fixed_background,-212161.05459566577,-53.040263648916444,False,1,82,495,False,fewer_than_5_of_6_blocks
+m03q40_001,wavy annular,4000.0,3,gas_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q40_001,wavy annular,4000.0,3,liquid_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q40_001,wavy annular,4000.0,3,liquid_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q40_001,wavy annular,4000.0,3,liquid_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q40_001,wavy annular,4000.0,1,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q40_001,wavy annular,4000.0,1,gas_candidate,fixed_background,-212122.9624033594,-53.03074060083985,False,1,82,495,False,fewer_than_5_of_6_blocks
+m03q40_001,wavy annular,4000.0,1,gas_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q40_001,wavy annular,4000.0,1,liquid_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q40_001,wavy annular,4000.0,1,liquid_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m03q40_001,wavy annular,4000.0,1,liquid_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q01_001,slug,7000.0,3,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q01_001,slug,7000.0,3,gas_candidate,fixed_background,-45518.79586503334,-6.5026851235761916,True,6,495,495,False,
+m04q01_001,slug,7000.0,3,gas_candidate,interface_distance,-41350.37868856913,-5.907196955509876,True,5,412,495,False,
+m04q01_001,slug,7000.0,3,liquid_candidate,raw,-112988.89145586385,-16.14127020798055,False,3,247,495,False,fewer_than_5_of_6_blocks
+m04q01_001,slug,7000.0,3,liquid_candidate,fixed_background,-111024.70870650804,-15.860672672358291,False,1,82,495,False,fewer_than_5_of_6_blocks
+m04q01_001,slug,7000.0,3,liquid_candidate,interface_distance,-108474.85977834549,-15.49640853976364,False,4,329,495,False,fewer_than_5_of_6_blocks
+m04q01_001,slug,7000.0,1,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q01_001,slug,7000.0,1,gas_candidate,fixed_background,-46762.23532992084,-6.680319332845834,True,6,495,495,False,
+m04q01_001,slug,7000.0,1,gas_candidate,interface_distance,-41990.34216212638,-5.998620308875196,True,5,412,495,False,
+m04q01_001,slug,7000.0,1,liquid_candidate,raw,-110936.80925666295,-15.848115608094707,False,4,329,495,False,fewer_than_5_of_6_blocks
+m04q01_001,slug,7000.0,1,liquid_candidate,fixed_background,-112859.30638469447,-16.122758054956353,False,2,164,495,False,fewer_than_5_of_6_blocks
+m04q01_001,slug,7000.0,1,liquid_candidate,interface_distance,-109825.79722273073,-15.689399603247248,False,4,329,495,False,fewer_than_5_of_6_blocks
+m04q10_001,churn,5000.0,3,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q10_001,churn,5000.0,3,gas_candidate,fixed_background,-82613.78821657436,-16.522757643314872,False,4,330,495,False,fewer_than_5_of_6_blocks
+m04q10_001,churn,5000.0,3,gas_candidate,interface_distance,-79293.26521103078,-15.858653042206157,False,3,247,495,False,fewer_than_5_of_6_blocks
+m04q10_001,churn,5000.0,3,liquid_candidate,raw,-117985.38392652893,-23.597076785305784,False,2,166,495,False,fewer_than_5_of_6_blocks
+m04q10_001,churn,5000.0,3,liquid_candidate,fixed_background,-112915.94692231799,-22.583189384463598,False,1,83,495,False,fewer_than_5_of_6_blocks
+m04q10_001,churn,5000.0,3,liquid_candidate,interface_distance,-111089.42694714628,-22.217885389429256,False,2,166,495,False,fewer_than_5_of_6_blocks
+m04q10_001,churn,5000.0,1,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q10_001,churn,5000.0,1,gas_candidate,fixed_background,-83229.93744938413,-16.645987489876827,False,4,330,495,False,fewer_than_5_of_6_blocks
+m04q10_001,churn,5000.0,1,gas_candidate,interface_distance,-80679.3061702529,-16.13586123405058,False,4,330,495,False,fewer_than_5_of_6_blocks
+m04q10_001,churn,5000.0,1,liquid_candidate,raw,-113381.01134566174,-22.676202269132347,False,3,247,495,False,fewer_than_5_of_6_blocks
+m04q10_001,churn,5000.0,1,liquid_candidate,fixed_background,-109411.7539504038,-21.88235079008076,False,3,247,495,False,fewer_than_5_of_6_blocks
+m04q10_001,churn,5000.0,1,liquid_candidate,interface_distance,-113553.63105102272,-22.710726210204545,False,3,247,495,False,fewer_than_5_of_6_blocks
+m04q20_001,churn,5000.0,3,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q20_001,churn,5000.0,3,gas_candidate,fixed_background,-88453.45989455032,-17.690691978910063,False,2,164,495,False,fewer_than_5_of_6_blocks
+m04q20_001,churn,5000.0,3,gas_candidate,interface_distance,-81333.60685448395,-16.26672137089679,False,4,330,495,False,fewer_than_5_of_6_blocks
+m04q20_001,churn,5000.0,3,liquid_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q20_001,churn,5000.0,3,liquid_candidate,fixed_background,-122348.93081260887,-24.469786162521775,False,1,83,495,False,fewer_than_5_of_6_blocks
+m04q20_001,churn,5000.0,3,liquid_candidate,interface_distance,-123278.381817842,-24.6556763635684,False,2,165,495,False,fewer_than_5_of_6_blocks
+m04q20_001,churn,5000.0,1,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q20_001,churn,5000.0,1,gas_candidate,fixed_background,-89344.40480450256,-17.868880960900512,False,2,164,495,False,fewer_than_5_of_6_blocks
+m04q20_001,churn,5000.0,1,gas_candidate,interface_distance,-81764.07192778314,-16.352814385556627,False,4,330,495,False,fewer_than_5_of_6_blocks
+m04q20_001,churn,5000.0,1,liquid_candidate,raw,-113399.7052745694,-22.67994105491388,False,1,83,495,False,fewer_than_5_of_6_blocks
+m04q20_001,churn,5000.0,1,liquid_candidate,fixed_background,-116830.86551017239,-23.366173102034477,False,1,83,495,False,fewer_than_5_of_6_blocks
+m04q20_001,churn,5000.0,1,liquid_candidate,interface_distance,-114494.42125038168,-22.898884250076335,False,2,165,495,False,fewer_than_5_of_6_blocks
+m04q40_001,wavy annular,5000.0,3,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q40_001,wavy annular,5000.0,3,gas_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q40_001,wavy annular,5000.0,3,gas_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q40_001,wavy annular,5000.0,3,liquid_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q40_001,wavy annular,5000.0,3,liquid_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q40_001,wavy annular,5000.0,3,liquid_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q40_001,wavy annular,5000.0,1,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q40_001,wavy annular,5000.0,1,gas_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q40_001,wavy annular,5000.0,1,gas_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q40_001,wavy annular,5000.0,1,liquid_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q40_001,wavy annular,5000.0,1,liquid_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q40_001,wavy annular,5000.0,1,liquid_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q80_001,wavy annular,5000.0,3,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q80_001,wavy annular,5000.0,3,gas_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q80_001,wavy annular,5000.0,3,gas_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q80_001,wavy annular,5000.0,3,liquid_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q80_001,wavy annular,5000.0,3,liquid_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q80_001,wavy annular,5000.0,3,liquid_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q80_001,wavy annular,5000.0,1,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q80_001,wavy annular,5000.0,1,gas_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q80_001,wavy annular,5000.0,1,gas_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q80_001,wavy annular,5000.0,1,liquid_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q80_001,wavy annular,5000.0,1,liquid_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m04q80_001,wavy annular,5000.0,1,liquid_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m05q01_001,plug,7000.0,3,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m05q01_001,plug,7000.0,3,gas_candidate,fixed_background,-69229.70441196431,-9.889957773137759,False,3,246,495,False,fewer_than_5_of_6_blocks
+m05q01_001,plug,7000.0,3,gas_candidate,interface_distance,-54772.826330210075,-7.824689475744297,False,1,83,495,False,fewer_than_5_of_6_blocks
+m05q01_001,plug,7000.0,3,liquid_candidate,raw,-81878.28582278691,-11.696897974683845,False,3,248,495,False,fewer_than_5_of_6_blocks
+m05q01_001,plug,7000.0,3,liquid_candidate,fixed_background,-83960.64583802648,-11.994377976860926,False,2,165,495,False,fewer_than_5_of_6_blocks
+m05q01_001,plug,7000.0,3,liquid_candidate,interface_distance,-81474.35958964335,-11.639194227091908,False,3,248,495,False,fewer_than_5_of_6_blocks
+m05q01_001,plug,7000.0,1,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m05q01_001,plug,7000.0,1,gas_candidate,fixed_background,-73602.9701115059,-10.514710015929413,False,3,246,495,False,fewer_than_5_of_6_blocks
+m05q01_001,plug,7000.0,1,gas_candidate,interface_distance,-57039.62290714827,-8.148517558164038,False,1,83,495,False,fewer_than_5_of_6_blocks
+m05q01_001,plug,7000.0,1,liquid_candidate,raw,-82692.13029325039,-11.813161470464342,True,6,495,495,False,
+m05q01_001,plug,7000.0,1,liquid_candidate,fixed_background,-82878.03065847378,-11.839718665496255,True,6,495,495,False,
+m05q01_001,plug,7000.0,1,liquid_candidate,interface_distance,-82032.9005307145,-11.71898579010207,True,6,495,495,False,
+m05q05_001,slug,7000.0,3,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m05q05_001,slug,7000.0,3,gas_candidate,fixed_background,-65788.76960078433,-9.398395657254905,False,4,329,495,False,fewer_than_5_of_6_blocks
+m05q05_001,slug,7000.0,3,gas_candidate,interface_distance,-64085.39446616765,-9.155056352309664,True,5,412,495,False,
+m05q05_001,slug,7000.0,3,liquid_candidate,raw,-92778.82394303814,-13.254117706148305,False,2,164,495,False,fewer_than_5_of_6_blocks
+m05q05_001,slug,7000.0,3,liquid_candidate,fixed_background,-91608.61511434059,-13.08694501633437,True,6,495,495,False,
+m05q05_001,slug,7000.0,3,liquid_candidate,interface_distance,-92314.9502505469,-13.187850035792414,False,1,82,495,False,fewer_than_5_of_6_blocks
+m05q05_001,slug,7000.0,1,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m05q05_001,slug,7000.0,1,gas_candidate,fixed_background,-71433.65027257841,-10.204807181796916,True,5,412,495,False,
+m05q05_001,slug,7000.0,1,gas_candidate,interface_distance,-67239.60868852762,-9.605658384075374,True,5,412,495,False,
+m05q05_001,slug,7000.0,1,liquid_candidate,raw,-91577.47579298314,-13.082496541854734,True,5,413,495,False,
+m05q05_001,slug,7000.0,1,liquid_candidate,fixed_background,-91956.79201818405,-13.136684574026292,True,6,495,495,False,
+m05q05_001,slug,7000.0,1,liquid_candidate,interface_distance,-90840.0708596847,-12.977152979954957,True,5,413,495,False,
+m05q10_001,churn,7000.0,3,gas_candidate,raw,-87525.72528313141,-12.503675040447344,False,3,246,495,False,fewer_than_5_of_6_blocks
+m05q10_001,churn,7000.0,3,gas_candidate,fixed_background,-85760.43670697334,-12.25149095813905,True,6,495,495,False,
+m05q10_001,churn,7000.0,3,gas_candidate,interface_distance,-83900.32781384562,-11.98576111626366,True,6,495,495,False,
+m05q10_001,churn,7000.0,3,liquid_candidate,raw,-128894.70608485647,-18.413529440693782,False,4,330,495,False,fewer_than_5_of_6_blocks
+m05q10_001,churn,7000.0,3,liquid_candidate,fixed_background,-131285.43631538615,-18.75506233076945,True,5,413,495,False,
+m05q10_001,churn,7000.0,3,liquid_candidate,interface_distance,-129577.76448322258,-18.51110921188894,False,4,330,495,False,fewer_than_5_of_6_blocks
+m05q10_001,churn,7000.0,1,gas_candidate,raw,-89521.06241220745,-12.788723201743922,False,3,247,495,False,fewer_than_5_of_6_blocks
+m05q10_001,churn,7000.0,1,gas_candidate,fixed_background,-86646.6707652232,-12.378095823603314,True,6,495,495,False,
+m05q10_001,churn,7000.0,1,gas_candidate,interface_distance,-84670.36917170028,-12.095767024528612,True,6,495,495,False,
+m05q10_001,churn,7000.0,1,liquid_candidate,raw,-123743.00341138296,-17.67757191591185,True,5,413,495,False,
+m05q10_001,churn,7000.0,1,liquid_candidate,fixed_background,-125750.31598741535,-17.96433085534505,True,5,413,495,False,
+m05q10_001,churn,7000.0,1,liquid_candidate,interface_distance,-123684.01209779792,-17.669144585399703,True,5,413,495,False,
+m05q20_001,churn,7000.0,3,gas_candidate,raw,-95996.94708625003,-13.713849583750005,False,3,248,495,False,fewer_than_5_of_6_blocks
+m05q20_001,churn,7000.0,3,gas_candidate,fixed_background,-96560.26071889894,-13.794322959842704,True,5,413,495,False,
+m05q20_001,churn,7000.0,3,gas_candidate,interface_distance,-91645.24922383043,-13.092178460547203,True,6,495,495,False,
+m05q20_001,churn,7000.0,3,liquid_candidate,raw,-125058.74802642867,-17.865535432346952,False,3,247,495,False,fewer_than_5_of_6_blocks
+m05q20_001,churn,7000.0,3,liquid_candidate,fixed_background,-128410.13395349857,-18.344304850499796,False,2,165,495,False,fewer_than_5_of_6_blocks
+m05q20_001,churn,7000.0,3,liquid_candidate,interface_distance,-123007.12356343634,-17.57244622334805,False,4,329,495,False,fewer_than_5_of_6_blocks
+m05q20_001,churn,7000.0,1,gas_candidate,raw,-96872.65446545836,-13.838950637922622,False,3,248,495,False,fewer_than_5_of_6_blocks
+m05q20_001,churn,7000.0,1,gas_candidate,fixed_background,-97394.80335232399,-13.913543336046285,True,5,413,495,False,
+m05q20_001,churn,7000.0,1,gas_candidate,interface_distance,-92387.87683866773,-13.198268119809676,True,6,495,495,False,
+m05q20_001,churn,7000.0,1,liquid_candidate,raw,-121923.25401246468,-17.41760771606638,True,5,412,495,False,
+m05q20_001,churn,7000.0,1,liquid_candidate,fixed_background,-120328.94752541416,-17.189849646487737,False,3,246,495,False,fewer_than_5_of_6_blocks
+m05q20_001,churn,7000.0,1,liquid_candidate,interface_distance,-125268.80436324881,-17.895543480464116,False,4,330,495,False,fewer_than_5_of_6_blocks
+m05q40_001,churn,7000.0,3,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m05q40_001,churn,7000.0,3,gas_candidate,fixed_background,-130011.43904317499,-18.57306272045357,True,5,412,495,False,
+m05q40_001,churn,7000.0,3,gas_candidate,interface_distance,-126455.6259443952,-18.065089420627885,True,6,495,495,False,
+m05q40_001,churn,7000.0,3,liquid_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m05q40_001,churn,7000.0,3,liquid_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m05q40_001,churn,7000.0,3,liquid_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m05q40_001,churn,7000.0,1,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m05q40_001,churn,7000.0,1,gas_candidate,fixed_background,-130721.07480144395,-18.674439257349135,True,5,412,495,False,
+m05q40_001,churn,7000.0,1,gas_candidate,interface_distance,-127047.86160469045,-18.14969451495578,True,6,495,495,False,
+m05q40_001,churn,7000.0,1,liquid_candidate,raw,-156164.13936078927,-22.30916276582704,False,4,331,495,False,fewer_than_5_of_6_blocks
+m05q40_001,churn,7000.0,1,liquid_candidate,fixed_background,-160796.34974168811,-22.970907105955444,False,2,166,495,False,fewer_than_5_of_6_blocks
+m05q40_001,churn,7000.0,1,liquid_candidate,interface_distance,-154534.26832538986,-22.076324046484267,True,5,413,495,False,
+m05q80_001,wavy annular,7000.0,3,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m05q80_001,wavy annular,7000.0,3,gas_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m05q80_001,wavy annular,7000.0,3,gas_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m05q80_001,wavy annular,7000.0,3,liquid_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m05q80_001,wavy annular,7000.0,3,liquid_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m05q80_001,wavy annular,7000.0,3,liquid_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m05q80_001,wavy annular,7000.0,1,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m05q80_001,wavy annular,7000.0,1,gas_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m05q80_001,wavy annular,7000.0,1,gas_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m05q80_001,wavy annular,7000.0,1,liquid_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m05q80_001,wavy annular,7000.0,1,liquid_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m05q80_001,wavy annular,7000.0,1,liquid_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m06q01_001,plug,7000.0,3,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m06q01_001,plug,7000.0,3,gas_candidate,fixed_background,-74573.1135839809,-10.6533019405687,False,4,330,495,False,fewer_than_5_of_6_blocks
+m06q01_001,plug,7000.0,3,gas_candidate,interface_distance,-72125.99744214289,-10.303713920306128,True,5,413,495,False,
+m06q01_001,plug,7000.0,3,liquid_candidate,raw,-111263.36807534809,-15.89476686790687,True,5,413,495,False,
+m06q01_001,plug,7000.0,3,liquid_candidate,fixed_background,-112314.19564099089,-16.044885091570126,True,6,495,495,False,
+m06q01_001,plug,7000.0,3,liquid_candidate,interface_distance,-112889.5507021942,-16.12707867174203,False,3,248,495,False,fewer_than_5_of_6_blocks
+m06q01_001,plug,7000.0,1,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m06q01_001,plug,7000.0,1,gas_candidate,fixed_background,-82936.58298097795,-11.84808328299685,False,4,330,495,False,fewer_than_5_of_6_blocks
+m06q01_001,plug,7000.0,1,gas_candidate,interface_distance,-74374.07033954572,-10.624867191363675,True,5,413,495,False,
+m06q01_001,plug,7000.0,1,liquid_candidate,raw,-112795.7504699866,-16.113678638569514,True,6,495,495,False,
+m06q01_001,plug,7000.0,1,liquid_candidate,fixed_background,-113229.8110920532,-16.175687298864744,True,6,495,495,False,
+m06q01_001,plug,7000.0,1,liquid_candidate,interface_distance,-111832.27295668559,-15.976038993812226,True,6,495,495,False,
+m06q05_001,slug,7000.0,3,gas_candidate,raw,-75405.64460508002,-10.772234943582859,False,2,165,495,False,fewer_than_5_of_6_blocks
+m06q05_001,slug,7000.0,3,gas_candidate,fixed_background,-75857.83396465446,-10.836833423522066,True,6,495,495,False,
+m06q05_001,slug,7000.0,3,gas_candidate,interface_distance,-74098.15302908594,-10.585450432726562,True,6,495,495,False,
+m06q05_001,slug,7000.0,3,liquid_candidate,raw,-125164.94731061824,-17.88070675865975,False,1,83,495,False,fewer_than_5_of_6_blocks
+m06q05_001,slug,7000.0,3,liquid_candidate,fixed_background,-121313.6954531137,-17.330527921873387,False,4,330,495,False,fewer_than_5_of_6_blocks
+m06q05_001,slug,7000.0,3,liquid_candidate,interface_distance,-124778.56073900312,-17.825508677000446,False,1,83,495,False,fewer_than_5_of_6_blocks
+m06q05_001,slug,7000.0,1,gas_candidate,raw,-76271.69728568394,-10.895956755097705,False,2,165,495,False,fewer_than_5_of_6_blocks
+m06q05_001,slug,7000.0,1,gas_candidate,fixed_background,-77297.68423244386,-11.042526318920551,True,6,495,495,False,
+m06q05_001,slug,7000.0,1,gas_candidate,interface_distance,-75135.2228658149,-10.733603266544986,True,6,495,495,False,
+m06q05_001,slug,7000.0,1,liquid_candidate,raw,-125985.014608402,-17.997859229771713,False,3,248,495,False,fewer_than_5_of_6_blocks
+m06q05_001,slug,7000.0,1,liquid_candidate,fixed_background,-123511.57504974325,-17.644510721391892,True,6,495,495,False,
+m06q05_001,slug,7000.0,1,liquid_candidate,interface_distance,-124416.00037166596,-17.773714338809423,False,3,248,495,False,fewer_than_5_of_6_blocks
+m06q10_001,churn,7000.0,3,gas_candidate,raw,-89548.45704980374,-12.792636721400534,False,4,330,495,False,fewer_than_5_of_6_blocks
+m06q10_001,churn,7000.0,3,gas_candidate,fixed_background,-86397.53284518965,-12.34250469216995,True,5,412,495,False,
+m06q10_001,churn,7000.0,3,gas_candidate,interface_distance,-86213.38897043576,-12.316198424347965,True,6,495,495,False,
+m06q10_001,churn,7000.0,3,liquid_candidate,raw,-151222.4536710774,-21.603207667296772,False,4,330,495,False,fewer_than_5_of_6_blocks
+m06q10_001,churn,7000.0,3,liquid_candidate,fixed_background,-159519.81589857355,-22.788545128367648,False,2,166,495,False,fewer_than_5_of_6_blocks
+m06q10_001,churn,7000.0,3,liquid_candidate,interface_distance,-151571.7613430182,-21.653108763288316,True,5,412,495,False,
+m06q10_001,churn,7000.0,1,gas_candidate,raw,-96137.28025241432,-13.733897178916331,False,2,165,495,False,fewer_than_5_of_6_blocks
+m06q10_001,churn,7000.0,1,gas_candidate,fixed_background,-87425.5205149443,-12.489360073563473,True,5,412,495,False,
+m06q10_001,churn,7000.0,1,gas_candidate,interface_distance,-87135.25607829656,-12.447893725470937,True,6,495,495,False,
+m06q10_001,churn,7000.0,1,liquid_candidate,raw,-147361.19135865758,-21.051598765522513,False,4,330,495,False,fewer_than_5_of_6_blocks
+m06q10_001,churn,7000.0,1,liquid_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m06q10_001,churn,7000.0,1,liquid_candidate,interface_distance,-147481.74677226422,-21.068820967466316,False,4,330,495,False,fewer_than_5_of_6_blocks
+m06q20_001,churn,7000.0,3,gas_candidate,raw,-129761.77119015166,-18.53739588430738,False,3,247,495,False,fewer_than_5_of_6_blocks
+m06q20_001,churn,7000.0,3,gas_candidate,fixed_background,-128070.24413473217,-18.295749162104595,True,5,412,495,False,
+m06q20_001,churn,7000.0,3,gas_candidate,interface_distance,-127655.14774720329,-18.236449678171898,True,6,495,495,False,
+m06q20_001,churn,7000.0,3,liquid_candidate,raw,-180563.58271706317,-25.794797531009024,False,1,82,495,False,fewer_than_5_of_6_blocks
+m06q20_001,churn,7000.0,3,liquid_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m06q20_001,churn,7000.0,3,liquid_candidate,interface_distance,-178110.34782567824,-25.44433540366832,False,4,330,495,False,fewer_than_5_of_6_blocks
+m06q20_001,churn,7000.0,1,gas_candidate,raw,-131096.69608850524,-18.728099441215033,False,1,82,495,False,fewer_than_5_of_6_blocks
+m06q20_001,churn,7000.0,1,gas_candidate,fixed_background,-128747.23294367298,-18.39246184909614,True,5,412,495,False,
+m06q20_001,churn,7000.0,1,gas_candidate,interface_distance,-128254.4665755877,-18.322066653655387,True,6,495,495,False,
+m06q20_001,churn,7000.0,1,liquid_candidate,raw,-156775.62668175806,-22.396518097394008,False,2,164,495,False,fewer_than_5_of_6_blocks
+m06q20_001,churn,7000.0,1,liquid_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m06q20_001,churn,7000.0,1,liquid_candidate,interface_distance,-158374.66116041713,-22.624951594345305,False,4,331,495,False,fewer_than_5_of_6_blocks
+m06q40_001,wavy annular,7000.0,3,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m06q40_001,wavy annular,7000.0,3,gas_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m06q40_001,wavy annular,7000.0,3,gas_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m06q40_001,wavy annular,7000.0,3,liquid_candidate,raw,-221077.9381596669,-31.582562594238127,False,1,82,495,False,fewer_than_5_of_6_blocks
+m06q40_001,wavy annular,7000.0,3,liquid_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m06q40_001,wavy annular,7000.0,3,liquid_candidate,interface_distance,-218213.0365288398,-31.173290932691398,False,1,82,495,False,fewer_than_5_of_6_blocks
+m06q40_001,wavy annular,7000.0,1,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m06q40_001,wavy annular,7000.0,1,gas_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m06q40_001,wavy annular,7000.0,1,gas_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m06q40_001,wavy annular,7000.0,1,liquid_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m06q40_001,wavy annular,7000.0,1,liquid_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m06q40_001,wavy annular,7000.0,1,liquid_candidate,interface_distance,-201927.71010324365,-28.846815729034805,False,1,82,495,False,fewer_than_5_of_6_blocks
+m06q80_001,wavy annular,7000.0,3,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m06q80_001,wavy annular,7000.0,3,gas_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m06q80_001,wavy annular,7000.0,3,gas_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m06q80_001,wavy annular,7000.0,3,liquid_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m06q80_001,wavy annular,7000.0,3,liquid_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m06q80_001,wavy annular,7000.0,3,liquid_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m06q80_001,wavy annular,7000.0,1,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m06q80_001,wavy annular,7000.0,1,gas_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m06q80_001,wavy annular,7000.0,1,gas_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m06q80_001,wavy annular,7000.0,1,liquid_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m06q80_001,wavy annular,7000.0,1,liquid_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m06q80_001,wavy annular,7000.0,1,liquid_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m07q01_001,dispersed bubbles,7000.0,3,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m07q01_001,dispersed bubbles,7000.0,3,gas_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m07q01_001,dispersed bubbles,7000.0,3,gas_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m07q01_001,dispersed bubbles,7000.0,3,liquid_candidate,raw,-44690.880814918295,-6.384411544988328,False,3,247,495,False,fewer_than_5_of_6_blocks
+m07q01_001,dispersed bubbles,7000.0,3,liquid_candidate,fixed_background,-42745.784336606564,-6.106540619515223,True,6,495,495,False,
+m07q01_001,dispersed bubbles,7000.0,3,liquid_candidate,interface_distance,-43649.21895954335,-6.235602708506193,False,4,330,495,False,fewer_than_5_of_6_blocks
+m07q01_001,dispersed bubbles,7000.0,1,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m07q01_001,dispersed bubbles,7000.0,1,gas_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m07q01_001,dispersed bubbles,7000.0,1,gas_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m07q01_001,dispersed bubbles,7000.0,1,liquid_candidate,raw,-44867.8330893935,-6.409690441341929,False,2,165,495,False,fewer_than_5_of_6_blocks
+m07q01_001,dispersed bubbles,7000.0,1,liquid_candidate,fixed_background,-42537.78758923211,-6.07682679846173,True,6,495,495,False,
+m07q01_001,dispersed bubbles,7000.0,1,liquid_candidate,interface_distance,-40905.035379826535,-5.843576482832362,True,6,495,495,False,
+m07q05_001,plug,7000.0,3,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m07q05_001,plug,7000.0,3,gas_candidate,fixed_background,-74555.8124822243,-10.650830354603471,False,4,330,495,False,fewer_than_5_of_6_blocks
+m07q05_001,plug,7000.0,3,gas_candidate,interface_distance,-74045.78469169511,-10.57796924167073,True,6,495,495,False,
+m07q05_001,plug,7000.0,3,liquid_candidate,raw,-105979.17759488325,-15.13988251355475,False,1,82,495,False,fewer_than_5_of_6_blocks
+m07q05_001,plug,7000.0,3,liquid_candidate,fixed_background,-105529.57543804833,-15.075653634006903,True,5,413,495,False,
+m07q05_001,plug,7000.0,3,liquid_candidate,interface_distance,-105299.56768213096,-15.042795383161566,False,1,82,495,False,fewer_than_5_of_6_blocks
+m07q05_001,plug,7000.0,1,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m07q05_001,plug,7000.0,1,gas_candidate,fixed_background,-76808.18376735282,-10.972597681050402,False,3,248,495,False,fewer_than_5_of_6_blocks
+m07q05_001,plug,7000.0,1,gas_candidate,interface_distance,-76310.94068109528,-10.901562954442182,True,6,495,495,False,
+m07q05_001,plug,7000.0,1,liquid_candidate,raw,-105966.86454020334,-15.138123505743335,True,5,413,495,False,
+m07q05_001,plug,7000.0,1,liquid_candidate,fixed_background,-106350.88632102877,-15.192983760146966,True,6,495,495,False,
+m07q05_001,plug,7000.0,1,liquid_candidate,interface_distance,-104747.61020553765,-14.963944315076807,False,4,330,495,False,fewer_than_5_of_6_blocks
+m07q20_001,churn,7000.0,3,gas_candidate,raw,-101789.70791367584,-14.541386844810834,True,5,413,495,False,
+m07q20_001,churn,7000.0,3,gas_candidate,fixed_background,-99951.19637145284,-14.278742338778978,True,6,495,495,False,
+m07q20_001,churn,7000.0,3,gas_candidate,interface_distance,-98483.93953456206,-14.069134219223152,True,6,495,495,False,
+m07q20_001,churn,7000.0,3,liquid_candidate,raw,-138943.26354751462,-19.849037649644945,True,5,412,495,False,
+m07q20_001,churn,7000.0,3,liquid_candidate,fixed_background,-144191.82627315447,-20.598832324736353,True,5,413,495,False,
+m07q20_001,churn,7000.0,3,liquid_candidate,interface_distance,-138059.65944392947,-19.722808491989923,True,5,412,495,False,
+m07q20_001,churn,7000.0,1,gas_candidate,raw,-102866.83245828388,-14.69526177975484,True,5,413,495,False,
+m07q20_001,churn,7000.0,1,gas_candidate,fixed_background,-100973.88026340971,-14.42484003762996,True,6,495,495,False,
+m07q20_001,churn,7000.0,1,gas_candidate,interface_distance,-99377.13854196895,-14.196734077424136,True,6,495,495,False,
+m07q20_001,churn,7000.0,1,liquid_candidate,raw,-134286.61478772308,-19.18380211253187,True,5,412,495,False,
+m07q20_001,churn,7000.0,1,liquid_candidate,fixed_background,-136019.38609332082,-19.431340870474404,True,5,412,495,False,
+m07q20_001,churn,7000.0,1,liquid_candidate,interface_distance,-133859.98989500158,-19.12285569928594,True,5,412,495,False,
+m07q40_001,churn,7000.0,3,gas_candidate,raw,-134194.64804948942,-19.170664007069917,True,5,413,495,False,
+m07q40_001,churn,7000.0,3,gas_candidate,fixed_background,-133925.37793830017,-19.132196848328597,True,6,495,495,False,
+m07q40_001,churn,7000.0,3,gas_candidate,interface_distance,-131907.53530253767,-18.84393361464824,True,6,495,495,False,
+m07q40_001,churn,7000.0,3,liquid_candidate,raw,-159952.40231975153,-22.850343188535934,True,6,495,495,False,
+m07q40_001,churn,7000.0,3,liquid_candidate,fixed_background,-165299.79043343393,-23.614255776204846,False,1,83,495,False,fewer_than_5_of_6_blocks
+m07q40_001,churn,7000.0,3,liquid_candidate,interface_distance,-158149.2078166206,-22.592743973802943,False,4,331,495,False,fewer_than_5_of_6_blocks
+m07q40_001,churn,7000.0,1,gas_candidate,raw,-135163.19809878082,-19.30902829982583,True,5,413,495,False,
+m07q40_001,churn,7000.0,1,gas_candidate,fixed_background,-134838.24678759844,-19.262606683942636,True,6,495,495,False,
+m07q40_001,churn,7000.0,1,gas_candidate,interface_distance,-132682.3923614704,-18.954627480210057,True,6,495,495,False,
+m07q40_001,churn,7000.0,1,liquid_candidate,raw,-150042.21296153692,-21.434601851648132,False,2,165,495,False,fewer_than_5_of_6_blocks
+m07q40_001,churn,7000.0,1,liquid_candidate,fixed_background,-152946.2535274179,-21.849464789631128,False,2,166,495,False,fewer_than_5_of_6_blocks
+m07q40_001,churn,7000.0,1,liquid_candidate,interface_distance,-151989.0243271282,-21.712717761018315,False,3,247,495,False,fewer_than_5_of_6_blocks
+m07q80_001,wavy annular,7000.0,3,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m07q80_001,wavy annular,7000.0,3,gas_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m07q80_001,wavy annular,7000.0,3,gas_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m07q80_001,wavy annular,7000.0,3,liquid_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m07q80_001,wavy annular,7000.0,3,liquid_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m07q80_001,wavy annular,7000.0,3,liquid_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m07q80_001,wavy annular,7000.0,1,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m07q80_001,wavy annular,7000.0,1,gas_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m07q80_001,wavy annular,7000.0,1,gas_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m07q80_001,wavy annular,7000.0,1,liquid_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m07q80_001,wavy annular,7000.0,1,liquid_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m07q80_001,wavy annular,7000.0,1,liquid_candidate,interface_distance,-214946.80636895844,-30.706686624136918,False,3,247,495,False,fewer_than_5_of_6_blocks

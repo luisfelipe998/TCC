@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "formula_controls": {
+    "status": "PASS",
+    "known_pearson_minus_one_zero_one": true,
+    "constant_descriptor_rejected": true,
+    "positive_affine_invariance": true,
+    "prepare_vs_independent_ols_max_error": 1.1973755320582313e-13,
+    "autocorrelation_vs_literal_sum_max_error": 4.440892098500626e-16,
+    "scale_conversion_checked": true,
+    "residual_scale_invariance_checked": true,
+    "scope": "Controles sintéticos, separados dos resultados experimentais."
+  },
+  "matrix_checks": {
+    "common": {
+      "numpy_max_abs_error": 1.5543122344752192e-15,
+      "scipy_max_abs_error": 9.992007221626409e-16,
+      "minimum_eigenvalue": 1.0842414836727451e-05,
+      "finite_cells": 676,
+      "symmetric": true,
+      "unit_diagonal": true,
+      "positive_semidefinite_within_tolerance": true
+    },
+    "full": {
+      "numpy_max_abs_error": 1.887379141862766e-15,
+      "scipy_max_abs_error": 1.1102230246251565e-15,
+      "minimum_eigenvalue": 1.4565687680202083e-06,
+      "finite_cells": 676,
+      "symmetric": true,
+      "unit_diagonal": true,
+      "positive_semidefinite_within_tolerance": true
+    }
+  },
+  "images_checked": 26,
+  "raw_arrays_exact": true,
+  "common_profiles_vs_fft_checked": 26,
+  "source_profiles_checked": 52,
+  "max_profile_fft_relative_l2": 2.2368400421542176e-16,
+  "n_unique_pairs": 325,
+  "n_intra_pairs": 87,
+  "n_inter_pairs": 238,
+  "missing_matrix_cells": 0,
+  "source_files_unchanged": true,
+  "panorama_reconstruction_reexecuted": false,
+  "method_plan_sha256": "078c51c6dc3881c96e38166ca58636eb6916c210aef523352ba6cbc30c4e981d"
+}

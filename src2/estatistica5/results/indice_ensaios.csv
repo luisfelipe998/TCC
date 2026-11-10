@@ -1,0 +1,26 @@
+number,run,pattern
+1,m03q05_001,churn
+2,m04q10_001,churn
+3,m04q20_001,churn
+4,m05q10_001,churn
+5,m05q20_001,churn
+6,m05q40_001,churn
+7,m06q10_001,churn
+8,m06q20_001,churn
+9,m07q20_001,churn
+10,m07q40_001,churn
+11,m03q10_001,wavy annular
+12,m03q20_001,wavy annular
+13,m03q40_001,wavy annular
+14,m04q40_001,wavy annular
+15,m04q80_001,wavy annular
+16,m05q80_001,wavy annular
+17,m06q40_001,wavy annular
+18,m06q80_001,wavy annular
+19,m07q80_001,wavy annular
+20,m05q01_001,plug
+21,m06q01_001,plug
+22,m07q05_001,plug
+23,m04q01_001,slug
+24,m05q05_001,slug
+25,m06q05_001,slug

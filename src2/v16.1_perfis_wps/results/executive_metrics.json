@@ -1,0 +1,102 @@
+{
+  "conclusao": "A comparação de formas de WPS alternativa foi mais útil para ordenar pares neste conjunto que o escore WCO herdado. O ganho é interno e descritivo; não demonstramos melhora robusta e geral de classificação entre condições experimentais.",
+  "base": "v16_spatial2_18_71",
+  "linhas": [
+    18,
+    71
+  ],
+  "aquisicoes": 26,
+  "pares_intra": 87,
+  "pares_entre": 238,
+  "principal": {
+    "pares_intra": 87.0,
+    "pares_entre": 238.0,
+    "grupos_intra": 4.0,
+    "grupos_entre": 10.0,
+    "A_pares": 0.7649473582536462,
+    "A_balanceada": 0.8163467078189304,
+    "media_intra": 0.163245173410983,
+    "media_entre": 0.2318683561874658,
+    "media_intra_balanceada": 0.171026925006817,
+    "media_entre_balanceada": 0.2819351548303916
+  },
+  "referencia_wco": {
+    "pares_intra": 87.0,
+    "pares_entre": 238.0,
+    "grupos_intra": 4.0,
+    "grupos_entre": 10.0,
+    "A_pares": 0.2146237805467014,
+    "A_balanceada": 0.3074300411522634,
+    "media_intra": 0.1876506051890902,
+    "media_entre": 0.2635387180883637,
+    "media_intra_balanceada": 0.249002234989979,
+    "media_entre_balanceada": 0.3133244463456249
+  },
+  "efeitos": [
+    {
+      "metodo": "wps_principal",
+      "referencia": "wco_v16_18_71",
+      "delta_A_pares": 0.5503235777069448,
+      "delta_A_balanceada": 0.5089166666666669,
+      "variacao_relativa_A_pares_pct": 256.41314131413145,
+      "variacao_relativa_A_balanceada_pct": 165.5390165382737
+    },
+    {
+      "metodo": "wps_principal",
+      "referencia": "wco_v5_20_59",
+      "delta_A_pares": 0.5017869216652178,
+      "delta_A_balanceada": 0.5254938271604941,
+      "variacao_relativa_A_pares_pct": 190.6771884749496,
+      "variacao_relativa_A_balanceada_pct": 180.67341329777267
+    },
+    {
+      "metodo": "wps_prefixo_par",
+      "referencia": "wco_v16_18_71",
+      "delta_A_pares": 0.5236163430889598,
+      "delta_A_balanceada": 0.47323868312757217,
+      "variacao_relativa_A_pares_pct": 243.96939693969406,
+      "variacao_relativa_A_balanceada_pct": 153.93377997603926
+    },
+    {
+      "metodo": "v5_prefixo_par",
+      "referencia": "wco_v5_18_71",
+      "delta_A_pares": 0.5248720177726263,
+      "delta_A_balanceada": 0.4736316872427985,
+      "variacao_relativa_A_pares_pct": 243.13199105145412,
+      "variacao_relativa_A_balanceada_pct": 152.7679378800574
+    },
+    {
+      "metodo": "wps_principal",
+      "referencia": "v5_mesmas_escalas",
+      "delta_A_pares": -0.00014488554042313417,
+      "delta_A_balanceada": -8.899176954724197e-05,
+      "variacao_relativa_A_pares_pct": -0.018937002903685052,
+      "variacao_relativa_A_balanceada_pct": -0.010900034086225308
+    }
+  ],
+  "bolhas_sem_replica": true,
+  "exclusao_descritiva_bolhas": {
+    "metodo": "wps_principal",
+    "aquisicao_retirada": "m07q01_001",
+    "pares_intra": 87,
+    "pares_entre": 213,
+    "grupos_intra": 4,
+    "grupos_entre": 6,
+    "A_pares": 0.7422697102153148,
+    "A_balanceada": 0.7138906035665298,
+    "media_intra": 0.163245173410983,
+    "media_entre": 0.2176732744000359,
+    "media_intra_balanceada": 0.171026925006817,
+    "media_entre_balanceada": 0.2214569560819622
+  },
+  "limitacoes": [
+    "Pares dependentes",
+    "Avaliação interna previamente explorada",
+    "Sensibilidade ao comprimento e à posição",
+    "Uma aquisição de bolhas dispersas",
+    "Três aquisições de plug e de slug",
+    "Condições operacionais e comprimentos associados aos rótulos",
+    "Reconstrução espacial sem validação física independente"
+  ],
+  "metrica": "A é concordância de ordenação, não acurácia nem WCO"
+}

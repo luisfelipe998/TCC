@@ -1,0 +1,93 @@
+{
+  "started_utc": "2026-10-23T19:47:20.762288+00:00",
+  "python_executable": "/Users/i521862/.pyenv/versions/3.13.2/bin/python3",
+  "include_exploratory": true,
+  "status": "failed",
+  "stages": [
+    {
+      "script": "scripts/panorama_void_alternatives.py",
+      "log": "intermediate/history/before_final_adversarial_corrections/logs/panorama_void_alternatives.log",
+      "elapsed_seconds": 15.684252542007016,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/phase_mask_flip_analysis.py",
+      "log": "intermediate/history/before_final_adversarial_corrections/logs/phase_mask_flip_analysis.log",
+      "elapsed_seconds": 6.250443083001301,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/raw_flip_analysis.py",
+      "log": "intermediate/history/before_final_adversarial_corrections/logs/raw_flip_analysis.log",
+      "elapsed_seconds": 47.774468540999806,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/spatial_flip_sensitivity.py",
+      "log": "intermediate/history/before_final_adversarial_corrections/logs/spatial_flip_sensitivity.log",
+      "elapsed_seconds": 3.9765145829878747,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/inventory_and_legacy_audit.py",
+      "log": "intermediate/history/before_final_adversarial_corrections/logs/inventory_and_legacy_audit.log",
+      "elapsed_seconds": 0.36864612498902716,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/pattern_identification.py",
+      "log": "intermediate/history/before_final_adversarial_corrections/logs/pattern_identification.log",
+      "elapsed_seconds": 7.591810874990188,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/silhouette_pattern_identification.py",
+      "log": "intermediate/history/before_final_adversarial_corrections/logs/silhouette_pattern_identification.log",
+      "elapsed_seconds": 4.843933958007256,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/adversarial_review.py",
+      "log": "intermediate/history/before_final_adversarial_corrections/logs/adversarial_review.log",
+      "elapsed_seconds": 2.6605011660140008,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/image_void_alternatives.py",
+      "log": "intermediate/history/before_final_adversarial_corrections/logs/image_void_alternatives.log",
+      "elapsed_seconds": 13.442707791022258,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/final_verification.py",
+      "log": "intermediate/history/before_final_adversarial_corrections/logs/final_verification.log",
+      "elapsed_seconds": 0.8870747500041034,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/summary_figures.py",
+      "log": "intermediate/history/before_final_adversarial_corrections/logs/summary_figures.log",
+      "elapsed_seconds": 0.8521608749870211,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/write_summary.py",
+      "log": "intermediate/history/before_final_adversarial_corrections/logs/write_summary.log",
+      "elapsed_seconds": 0.667753374989843,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/post_regeneration_adversarial.py",
+      "log": "intermediate/history/before_final_adversarial_corrections/logs/post_regeneration_adversarial.log",
+      "elapsed_seconds": 2.1963695420126896,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/verify_layout.py",
+      "log": "intermediate/history/before_final_adversarial_corrections/logs/verify_layout.log",
+      "elapsed_seconds": 0.13040383299812675,
+      "returncode": 1
+    }
+  ],
+  "finished_utc": "2026-10-23T19:49:08.100971+00:00"
+}

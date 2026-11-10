@@ -1,0 +1,24 @@
+[AVISO] corr(shift_mean, n_samples) = 1.0000 — são a MESMA variável de velocidade;
+        a banda de costura (A3) é colinear com comprimento/velocidade/padrão.
+
+  churn         n=10  m̄=5.20  q̄=19.50  n_samples̄=8832
+  wavy annular  n= 9  m̄=4.56  q̄=52.22  n_samples̄=18140
+
+
+[A1] (principal: cropped, banda-completa)
+  ANOSIM R (observado)          = 0.1770
+  p estratificado por q (exato) = 0.0200  (n_arranjos=200; p mínimo=0.0050)
+  p não-estratificado (5000 MC) = 0.0072
+  -> efeito-tamanho DESCRITIVO, NÃO teste inferencial forte (q prediz padrão)
+
+[A2] ECDF distâncias (figura: a2_ecdf.png)
+  intra      n= 81  mediana=0.098
+  inter viz  n= 36  mediana=0.159
+  inter dist n= 54  mediana=0.135
+  -> a coesão intra é a cauda esquerda deste ECDF (subsome C1)
+
+[A3] Robustez — mesmo ANOSIM R em 4 condições:
+  cropped  banda-completa   R=0.1770  (escalas mascaradas=0)
+  cropped  banda-mascarada  R=0.1770  (escalas mascaradas=0)
+  center   banda-completa   R=0.1791  (escalas mascaradas=0)
+  center   banda-mascarada  R=0.1791  (escalas mascaradas=0)

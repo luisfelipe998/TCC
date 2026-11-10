@@ -1,0 +1,75 @@
+{
+  "started_utc": "2026-10-23T18:36:26.656379+00:00",
+  "python_executable": "/Users/i521862/.pyenv/versions/3.13.2/bin/python3",
+  "include_exploratory": true,
+  "status": "passed",
+  "stages": [
+    {
+      "script": "scripts/panorama_void_alternatives.py",
+      "log": "intermediate/logs/panorama_void_alternatives.log",
+      "elapsed_seconds": 15.98285445800866,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/phase_mask_flip_analysis.py",
+      "log": "intermediate/logs/phase_mask_flip_analysis.log",
+      "elapsed_seconds": 7.032178916997509,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/raw_flip_analysis.py",
+      "log": "intermediate/logs/raw_flip_analysis.log",
+      "elapsed_seconds": 56.38961704200483,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/spatial_flip_sensitivity.py",
+      "log": "intermediate/logs/spatial_flip_sensitivity.log",
+      "elapsed_seconds": 4.242437416978646,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/inventory_and_legacy_audit.py",
+      "log": "intermediate/logs/inventory_and_legacy_audit.log",
+      "elapsed_seconds": 0.3611790410068352,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/pattern_identification.py",
+      "log": "intermediate/logs/pattern_identification.log",
+      "elapsed_seconds": 8.314197874977253,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/silhouette_pattern_identification.py",
+      "log": "intermediate/logs/silhouette_pattern_identification.log",
+      "elapsed_seconds": 4.829565291001927,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/adversarial_review.py",
+      "log": "intermediate/logs/adversarial_review.log",
+      "elapsed_seconds": 3.147690750018228,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/image_void_alternatives.py",
+      "log": "intermediate/logs/image_void_alternatives.log",
+      "elapsed_seconds": 14.981668874999741,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/final_verification.py",
+      "log": "intermediate/logs/final_verification.log",
+      "elapsed_seconds": 0.5349860419810284,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/write_summary.py",
+      "log": "intermediate/logs/write_summary.log",
+      "elapsed_seconds": 0.07346562499878928,
+      "returncode": 0
+    }
+  ],
+  "finished_utc": "2026-10-23T18:38:22.565438+00:00"
+}

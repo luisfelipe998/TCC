@@ -1,0 +1,443 @@
+{
+  "n_runs": 25,
+  "included_runs": [
+    "m03q05_001",
+    "m03q10_001",
+    "m03q20_001",
+    "m04q01_001",
+    "m04q10_001",
+    "m04q20_001",
+    "m04q40_001",
+    "m04q80_001",
+    "m05q01_001",
+    "m05q05_001",
+    "m05q10_001",
+    "m05q20_001",
+    "m05q40_001",
+    "m05q80_001",
+    "m06q01_001",
+    "m06q05_001",
+    "m06q10_001",
+    "m06q20_001",
+    "m06q40_001",
+    "m06q80_001",
+    "m07q01_001",
+    "m07q05_001",
+    "m07q20_001",
+    "m07q40_001",
+    "m07q80_001"
+  ],
+  "scope": {
+    "policy": "Five single-pattern classes; wavy annular only; m05q05_002 excluded",
+    "allowed_patterns": [
+      "dispersed bubbles",
+      "plug",
+      "slug",
+      "churn",
+      "wavy annular"
+    ],
+    "explicitly_excluded_acquisitions": [
+      "m05q05_002"
+    ],
+    "source_acquisitions": 31,
+    "selected_acquisitions": 26,
+    "selected_runs": [
+      "m03q05_001",
+      "m03q10_001",
+      "m03q20_001",
+      "m03q40_001",
+      "m04q01_001",
+      "m04q10_001",
+      "m04q20_001",
+      "m04q40_001",
+      "m04q80_001",
+      "m05q01_001",
+      "m05q05_001",
+      "m05q10_001",
+      "m05q20_001",
+      "m05q40_001",
+      "m05q80_001",
+      "m06q01_001",
+      "m06q05_001",
+      "m06q10_001",
+      "m06q20_001",
+      "m06q40_001",
+      "m06q80_001",
+      "m07q01_001",
+      "m07q05_001",
+      "m07q20_001",
+      "m07q40_001",
+      "m07q80_001"
+    ],
+    "selected_pattern_counts": {
+      "churn": 10,
+      "wavy annular": 9,
+      "slug": 3,
+      "plug": 3,
+      "dispersed bubbles": 1
+    },
+    "excluded_acquisitions": [
+      {
+        "run": "m03q01_001",
+        "supplied_pattern": "plug-slug",
+        "reason": "Compound pattern label excluded by user"
+      },
+      {
+        "run": "m03q80_001",
+        "supplied_pattern": "smooth annular",
+        "reason": "Smooth annular excluded; only wavy annular retained"
+      },
+      {
+        "run": "m04q05_001",
+        "supplied_pattern": "slug-churn",
+        "reason": "Compound pattern label excluded by user"
+      },
+      {
+        "run": "m05q05_002",
+        "supplied_pattern": "dispersed bubbles",
+        "reason": "Acquisition excluded by user: m05q05_002"
+      },
+      {
+        "run": "m07q10_001",
+        "supplied_pattern": "slug-churn",
+        "reason": "Compound pattern label excluded by user"
+      }
+    ],
+    "statistical_rule": "Selected acquisitions with core saturation fraction <= 0.20",
+    "scope_does_not_relabel_inputs": true
+  },
+  "class_counts": {
+    "dispersed bubbles": 1,
+    "plug": 3,
+    "slug": 3,
+    "churn": 10,
+    "wavy annular": 8
+  },
+  "features": [
+    "conditional_alpha_visible_mean",
+    "center_gas_duty",
+    "mask_pixel_flip_rate53",
+    "center_flip_rate",
+    "visible_width_std_over_D",
+    "gas_interval_mean_length_over_D",
+    "center_longest_gas_interval_fraction"
+  ],
+  "lumen_diameter_px": 53.0,
+  "boundary_source": "User-confirmed full tube interior on 2026-10-23: Python slice 18:71, rows 18 through 70, 53 pixel cells. Optical profile minima are not used as lumen boundaries. Refraction mapping remains uncalibrated.",
+  "fixed_reference_candidates": [
+    "m05q01_001",
+    "m06q01_001",
+    "m07q05_001"
+  ],
+  "unique_fold_templates": 4,
+  "results": [
+    {
+      "model": "centroid",
+      "validation": "leave_one_run_out",
+      "accuracy": 0.6,
+      "balanced_accuracy": 0.5116666666666666,
+      "recall_by_pattern": {
+        "dispersed bubbles": 0.0,
+        "plug": 1.0,
+        "slug": 0.3333333333333333,
+        "churn": 0.6,
+        "wavy annular": 0.625
+      },
+      "confusion_true_rows_pred_columns": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          6,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          5
+        ]
+      ]
+    },
+    {
+      "model": "knn1",
+      "validation": "leave_one_run_out",
+      "accuracy": 0.64,
+      "balanced_accuracy": 0.44333333333333336,
+      "recall_by_pattern": {
+        "dispersed bubbles": 0.0,
+        "plug": 0.6666666666666666,
+        "slug": 0.0,
+        "churn": 0.8,
+        "wavy annular": 0.75
+      },
+      "confusion_true_rows_pred_columns": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          8,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          6
+        ]
+      ]
+    },
+    {
+      "model": "knn3",
+      "validation": "leave_one_run_out",
+      "accuracy": 0.6,
+      "balanced_accuracy": 0.3716666666666667,
+      "recall_by_pattern": {
+        "dispersed bubbles": 0.0,
+        "plug": 0.3333333333333333,
+        "slug": 0.0,
+        "churn": 0.9,
+        "wavy annular": 0.625
+      },
+      "confusion_true_rows_pred_columns": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          9,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          5
+        ]
+      ]
+    },
+    {
+      "model": "centroid",
+      "validation": "leave_one_mass_flux_out",
+      "accuracy": 0.52,
+      "balanced_accuracy": 0.425,
+      "recall_by_pattern": {
+        "dispersed bubbles": 0.0,
+        "plug": 0.6666666666666666,
+        "slug": 0.3333333333333333,
+        "churn": 0.5,
+        "wavy annular": 0.625
+      },
+      "confusion_true_rows_pred_columns": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          5,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          5
+        ]
+      ]
+    },
+    {
+      "model": "knn1",
+      "validation": "leave_one_mass_flux_out",
+      "accuracy": 0.68,
+      "balanced_accuracy": 0.46333333333333326,
+      "recall_by_pattern": {
+        "dispersed bubbles": 0.0,
+        "plug": 0.6666666666666666,
+        "slug": 0.0,
+        "churn": 0.9,
+        "wavy annular": 0.75
+      },
+      "confusion_true_rows_pred_columns": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          9,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          6
+        ]
+      ]
+    },
+    {
+      "model": "knn3",
+      "validation": "leave_one_mass_flux_out",
+      "accuracy": 0.64,
+      "balanced_accuracy": 0.485,
+      "recall_by_pattern": {
+        "dispersed bubbles": 0.0,
+        "plug": 1.0,
+        "slug": 0.0,
+        "churn": 0.8,
+        "wavy annular": 0.625
+      },
+      "confusion_true_rows_pred_columns": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          8,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          5
+        ]
+      ]
+    }
+  ],
+  "segmentation_source_sha256": "68e7d0b7ea4f37a6a4ea474f68e440510a2887ef960a258dd52aa92faa6658f2",
+  "all_heldout_reference_exclusions_passed": true,
+  "folds_with_absent_training_classes": {
+    "leave_one_run_out": 1,
+    "leave_one_mass_flux_out": 5
+  },
+  "absent_training_class_policy": "Fit only observed training classes; retain all test acquisitions. An absent class cannot be predicted.",
+  "geometry_and_censoring_checks_passed": true
+}

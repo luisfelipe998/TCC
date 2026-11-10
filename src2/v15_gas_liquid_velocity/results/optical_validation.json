@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "primary_pair_arithmetic_verified": 13000,
+  "preferred_candidate_pair_arithmetic_verified": 13000,
+  "preferred_candidate_passing_pairs_recomputed": 7528,
+  "preferred_candidate_run_medians_and_iqr_recomputed": 26,
+  "preferred_candidate_quality_flags_and_coverage_recomputed": true,
+  "sensitivity_rows_verified": 936,
+  "preferred_runs_passing_coverage_and_saturation": 17,
+  "independent_bruteforce_ncc_peak_matches": true,
+  "independent_bruteforce_test_signed_integer_shift_px": 37
+}

@@ -1,0 +1,5 @@
+# Current task: centroids in the primary scatter
+
+User requests the center of mass of each pattern in figures/void_fraction/void_fraction_vs_flip_rate.png. Root implements the arithmetic mean of the plotted acquisition coordinates, equal weight per acquisition. Only the primary scatter receives stars; saved input measurements and selection stay unchanged. The n=1 bubble centroid coincides with its observation and must not be artificially shifted. Means differ from the executive-summary table medians; explain this briefly in both captions.
+
+centroid_review agent: read-only independent review. Compute each centroid directly from original per-run void and flip CSVs, applying the established eligibility; compare to the generated primary_chart_centroids in summary_chart_checks.json once present. Confirm no excluded/saturated acquisition contributes, equal acquisition weights and no polygon-area centroid. No edits to scripts or outputs. Save findings and computed values to centroid_review.md in this directory. Root edits the chart generator, bilingual summary text and existing post-writing checks, and runs regeneration. Do not run the pipeline yourself.

@@ -1,0 +1,45 @@
+32 On the Development of an Alternative Proposition of Cross Wavelet Analysis 411
+
+the estimation errors of them are well established. But, as said before, they were
+developed for stationary processes. Thus, it seems that the definitions of CWA
+derived from CWT revealed to be a more appropriate tool to analyze non-stationary
+stochastic processes.
+
+Let x(t) be a square integrable time series from a stochastic process x, the CWT
+of x(t) is given by [Da92, AnFtAl04]
+
+1% —(t-b
+W,(b,a) = al xv (=) dt (32.4)
+
+where y(t) is the mother wavelet function used, the “overline” indicates the
+complex conjugate of the function, a € RR. a > 0 is the scale variable and b € R is
+the time translation variable. The W, (b, a) can be performed also in the frequency
+domain,
+
+W.(b,a) = va f- X(w)¥ (awe! do, (32.5)
+
+where X (w) and Y (w) are the Fourier transforms of x(t) and y(t), respectively.
+
+The Wy(b, a) is obtained upon substituting x(t) by y(t) in (32.4). The usual
+mother wavelet used for CWA is the Morlet wavelet, described by [AnEtAl04,
+ToCo98, MaKu04]
+
+Vator) = 7 4e-P/2 eivot, (32.6)
+
+where ¢ and wo are dimensionless.
+Its Fourier transform is given by
+
+Prpor(@) = 1 V4e(@—e0)"/2, (32.7)
+This wavelet is not admissible (admissibility means fy |W (c)|/|w|dw < oo ) but
+for practical purposes, for wo > 5.5 it can be considered [AnEtA104]. The Morlet
+wavelet is usually chosen for CWA because being a complex function, it provides
+
+complex functions for its CWTs, as in Fourier analysis. Also, its scale a is easily
+related with the Fourier frequency f [ToCo98] by
+
+I/f = 4na/(wo + 2+ 08). (2.8)
+The scalogram of the CWT is defined as [RiF192]
+
+|W(b, a)? = WO, a) WO, a) (32.9)
+
+bardo.bodmann@ufrgs.br

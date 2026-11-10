@@ -1,0 +1,415 @@
+{
+  "status": "complete",
+  "runtime_s": 100.38144187498256,
+  "counts_supported": {
+    "blocks10": 20,
+    "blocks20": 18,
+    "blocks5": 19,
+    "highpass32_blocks10": 17,
+    "highpass8_blocks10": 7,
+    "raw_blocks10": 19
+  },
+  "source_profiles": "/Users/i521862/Documents/personal/unisinos/TCC/src2/v15.1_gas_liquid_velocity/intermediate/annular_profiles.npz",
+  "source_profiles_sha256": "729a070503730eeec6362cef43d8bed70fcaceb6abfa2c39b2c4cdaddefdf6df",
+  "script_sha256": "8896efead61f34795130328c73dd40f98f55b078a6d5a0e0959a80564ec19534",
+  "sampled_native_profile_verification": [
+    {
+      "run": "m03q05_001",
+      "native_frames": 501,
+      "checked_frames": [
+        0,
+        250,
+        500
+      ],
+      "max_float32_profile_difference": 7.227847447666136e-06
+    },
+    {
+      "run": "m03q10_001",
+      "native_frames": 501,
+      "checked_frames": [
+        0,
+        250,
+        500
+      ],
+      "max_float32_profile_difference": 7.227847447666136e-06
+    },
+    {
+      "run": "m03q20_001",
+      "native_frames": 501,
+      "checked_frames": [
+        0,
+        250,
+        500
+      ],
+      "max_float32_profile_difference": 7.227847447666136e-06
+    },
+    {
+      "run": "m03q40_001",
+      "native_frames": 501,
+      "checked_frames": [
+        0,
+        250,
+        500
+      ],
+      "max_float32_profile_difference": 7.227847447666136e-06
+    },
+    {
+      "run": "m04q01_001",
+      "native_frames": 501,
+      "checked_frames": [
+        0,
+        250,
+        500
+      ],
+      "max_float32_profile_difference": 7.227847447666136e-06
+    },
+    {
+      "run": "m04q10_001",
+      "native_frames": 501,
+      "checked_frames": [
+        0,
+        250,
+        500
+      ],
+      "max_float32_profile_difference": 7.227847447666136e-06
+    },
+    {
+      "run": "m04q20_001",
+      "native_frames": 501,
+      "checked_frames": [
+        0,
+        250,
+        500
+      ],
+      "max_float32_profile_difference": 7.227847447666136e-06
+    },
+    {
+      "run": "m04q40_001",
+      "native_frames": 501,
+      "checked_frames": [
+        0,
+        250,
+        500
+      ],
+      "max_float32_profile_difference": 7.227847447666136e-06
+    },
+    {
+      "run": "m04q80_001",
+      "native_frames": 501,
+      "checked_frames": [
+        0,
+        250,
+        500
+      ],
+      "max_float32_profile_difference": 7.227847447666136e-06
+    },
+    {
+      "run": "m05q01_001",
+      "native_frames": 501,
+      "checked_frames": [
+        0,
+        250,
+        500
+      ],
+      "max_float32_profile_difference": 7.227847447666136e-06
+    },
+    {
+      "run": "m05q05_001",
+      "native_frames": 501,
+      "checked_frames": [
+        0,
+        250,
+        500
+      ],
+      "max_float32_profile_difference": 6.935813217978648e-06
+    },
+    {
+      "run": "m05q10_001",
+      "native_frames": 501,
+      "checked_frames": [
+        0,
+        250,
+        500
+      ],
+      "max_float32_profile_difference": 3.613923723833068e-06
+    },
+    {
+      "run": "m05q20_001",
+      "native_frames": 501,
+      "checked_frames": [
+        0,
+        250,
+        500
+      ],
+      "max_float32_profile_difference": 3.613923723833068e-06
+    },
+    {
+      "run": "m05q40_001",
+      "native_frames": 501,
+      "checked_frames": [
+        0,
+        250,
+        500
+      ],
+      "max_float32_profile_difference": 3.613923723833068e-06
+    },
+    {
+      "run": "m05q80_001",
+      "native_frames": 501,
+      "checked_frames": [
+        0,
+        250,
+        500
+      ],
+      "max_float32_profile_difference": 3.613923723833068e-06
+    },
+    {
+      "run": "m06q01_001",
+      "native_frames": 501,
+      "checked_frames": [
+        0,
+        250,
+        500
+      ],
+      "max_float32_profile_difference": 7.227847447666136e-06
+    },
+    {
+      "run": "m06q05_001",
+      "native_frames": 501,
+      "checked_frames": [
+        0,
+        250,
+        500
+      ],
+      "max_float32_profile_difference": 7.227847447666136e-06
+    },
+    {
+      "run": "m06q10_001",
+      "native_frames": 501,
+      "checked_frames": [
+        0,
+        250,
+        500
+      ],
+      "max_float32_profile_difference": 7.227847447666136e-06
+    },
+    {
+      "run": "m06q20_001",
+      "native_frames": 501,
+      "checked_frames": [
+        0,
+        250,
+        500
+      ],
+      "max_float32_profile_difference": 7.227847447666136e-06
+    },
+    {
+      "run": "m06q40_001",
+      "native_frames": 501,
+      "checked_frames": [
+        0,
+        250,
+        500
+      ],
+      "max_float32_profile_difference": 3.613923723833068e-06
+    },
+    {
+      "run": "m06q80_001",
+      "native_frames": 501,
+      "checked_frames": [
+        0,
+        250,
+        500
+      ],
+      "max_float32_profile_difference": 3.613923723833068e-06
+    },
+    {
+      "run": "m07q01_001",
+      "native_frames": 501,
+      "checked_frames": [
+        0,
+        250,
+        500
+      ],
+      "max_float32_profile_difference": 6.935813217978648e-06
+    },
+    {
+      "run": "m07q05_001",
+      "native_frames": 501,
+      "checked_frames": [
+        0,
+        250,
+        500
+      ],
+      "max_float32_profile_difference": 6.935813217978648e-06
+    },
+    {
+      "run": "m07q20_001",
+      "native_frames": 501,
+      "checked_frames": [
+        0,
+        250,
+        500
+      ],
+      "max_float32_profile_difference": 3.613923723833068e-06
+    },
+    {
+      "run": "m07q40_001",
+      "native_frames": 501,
+      "checked_frames": [
+        0,
+        250,
+        500
+      ],
+      "max_float32_profile_difference": 3.613923723833068e-06
+    },
+    {
+      "run": "m07q80_001",
+      "native_frames": 501,
+      "checked_frames": [
+        0,
+        250,
+        500
+      ],
+      "max_float32_profile_difference": 3.613923723833068e-06
+    }
+  ],
+  "seed": 20261024,
+  "null_repeats_per_block": 9,
+  "controls": [
+    {
+      "control": "known_shift_with_clipping",
+      "truth_px_frame": -35.0,
+      "upper_clipped_fraction": 0.0,
+      "estimate_px_frame": -34.999978187671815,
+      "absolute_error_px_frame": 2.1812328185433216e-05,
+      "supported_blocks": 5,
+      "blocks": 5,
+      "within_declared_error": true
+    },
+    {
+      "control": "known_shift_with_clipping",
+      "truth_px_frame": -35.0,
+      "upper_clipped_fraction": 0.2,
+      "estimate_px_frame": -34.99985958816431,
+      "absolute_error_px_frame": 0.0001404118356873596,
+      "supported_blocks": 5,
+      "blocks": 5,
+      "within_declared_error": true
+    },
+    {
+      "control": "known_shift_with_clipping",
+      "truth_px_frame": -35.0,
+      "upper_clipped_fraction": 0.5,
+      "estimate_px_frame": -34.99988988034568,
+      "absolute_error_px_frame": 0.00011011965432317083,
+      "supported_blocks": 5,
+      "blocks": 5,
+      "within_declared_error": true
+    },
+    {
+      "control": "known_shift_with_clipping",
+      "truth_px_frame": -35.0,
+      "upper_clipped_fraction": 0.8,
+      "estimate_px_frame": -34.999785290422025,
+      "absolute_error_px_frame": 0.00021470957797475876,
+      "supported_blocks": 5,
+      "blocks": 5,
+      "within_declared_error": true
+    },
+    {
+      "control": "known_shift_with_clipping",
+      "truth_px_frame": -13.4,
+      "upper_clipped_fraction": 0.0,
+      "estimate_px_frame": -13.395643961872782,
+      "absolute_error_px_frame": 0.004356038127218298,
+      "supported_blocks": 5,
+      "blocks": 5,
+      "within_declared_error": true
+    },
+    {
+      "control": "known_shift_with_clipping",
+      "truth_px_frame": -13.4,
+      "upper_clipped_fraction": 0.2,
+      "estimate_px_frame": -13.393574511997286,
+      "absolute_error_px_frame": 0.006425488002713919,
+      "supported_blocks": 5,
+      "blocks": 5,
+      "within_declared_error": true
+    },
+    {
+      "control": "known_shift_with_clipping",
+      "truth_px_frame": -13.4,
+      "upper_clipped_fraction": 0.5,
+      "estimate_px_frame": -13.390186232808952,
+      "absolute_error_px_frame": 0.009813767191047873,
+      "supported_blocks": 5,
+      "blocks": 5,
+      "within_declared_error": true
+    },
+    {
+      "control": "known_shift_with_clipping",
+      "truth_px_frame": -13.4,
+      "upper_clipped_fraction": 0.8,
+      "estimate_px_frame": -13.384845803578822,
+      "absolute_error_px_frame": 0.015154196421178767,
+      "supported_blocks": 5,
+      "blocks": 5,
+      "within_declared_error": true
+    },
+    {
+      "control": "known_shift_with_clipping",
+      "truth_px_frame": 22.75,
+      "upper_clipped_fraction": 0.0,
+      "estimate_px_frame": 22.75578381975727,
+      "absolute_error_px_frame": 0.005783819757269271,
+      "supported_blocks": 5,
+      "blocks": 5,
+      "within_declared_error": true
+    },
+    {
+      "control": "known_shift_with_clipping",
+      "truth_px_frame": 22.75,
+      "upper_clipped_fraction": 0.2,
+      "estimate_px_frame": 22.75872869083567,
+      "absolute_error_px_frame": 0.00872869083567096,
+      "supported_blocks": 5,
+      "blocks": 5,
+      "within_declared_error": true
+    },
+    {
+      "control": "known_shift_with_clipping",
+      "truth_px_frame": 22.75,
+      "upper_clipped_fraction": 0.5,
+      "estimate_px_frame": 22.763370691598688,
+      "absolute_error_px_frame": 0.013370691598687756,
+      "supported_blocks": 5,
+      "blocks": 5,
+      "within_declared_error": true
+    },
+    {
+      "control": "known_shift_with_clipping",
+      "truth_px_frame": 22.75,
+      "upper_clipped_fraction": 0.8,
+      "estimate_px_frame": 22.770750616806833,
+      "absolute_error_px_frame": 0.020750616806832767,
+      "supported_blocks": 5,
+      "blocks": 5,
+      "within_declared_error": true
+    },
+    {
+      "control": "static",
+      "supported": false,
+      "reasons": "texture;weak_peak;search_boundary;shuffle;lag2;reverse;x160;x320"
+    },
+    {
+      "control": "constant",
+      "supported": false,
+      "reasons": "texture;weak_peak;search_boundary;shuffle;lag2;reverse;x160;x320"
+    }
+  ],
+  "scope": 26,
+  "phase_material_pairs": 0,
+  "interpretation": "Interval-weighted mean optical propagation over jointly supported blocks; walls averaged equally; no phase-material identification",
+  "note": "Block/null/support checks are empirical consistency gates, not confidence intervals or experimental accuracy."
+}

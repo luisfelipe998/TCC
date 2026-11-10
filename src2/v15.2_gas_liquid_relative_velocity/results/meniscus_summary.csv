@@ -1,0 +1,79 @@
+run,pattern,fps,threshold,group,accepted_tracks,unique_intervals,observed_blocks,median_px_frame,median_px_s,q25_px_s,q75_px_s,interval_weighted_median_px_s,strict_tracks,strict_median_px_s,supported
+m03q05_001,churn,5000.0,0.6,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q05_001,churn,5000.0,0.7,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q05_001,churn,5000.0,0.8,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q10_001,wavy annular,5000.0,0.6,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q10_001,wavy annular,5000.0,0.7,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q10_001,wavy annular,5000.0,0.8,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q20_001,wavy annular,4000.0,0.6,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q20_001,wavy annular,4000.0,0.7,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q20_001,wavy annular,4000.0,0.8,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q40_001,wavy annular,4000.0,0.6,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q40_001,wavy annular,4000.0,0.7,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q40_001,wavy annular,4000.0,0.8,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q01_001,slug,7000.0,0.6,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q01_001,slug,7000.0,0.7,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q01_001,slug,7000.0,0.8,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q10_001,churn,5000.0,0.6,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q10_001,churn,5000.0,0.7,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q10_001,churn,5000.0,0.8,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q20_001,churn,5000.0,0.6,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q20_001,churn,5000.0,0.7,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q20_001,churn,5000.0,0.8,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q40_001,wavy annular,5000.0,0.6,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q40_001,wavy annular,5000.0,0.7,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q40_001,wavy annular,5000.0,0.8,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q80_001,wavy annular,5000.0,0.6,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q80_001,wavy annular,5000.0,0.7,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q80_001,wavy annular,5000.0,0.8,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q01_001,plug,7000.0,0.6,large,1,5,1,-11.657142857142857,-81600.0,-81600.0,-81600.0,-81600.0,1,-81600.0,False
+m05q01_001,plug,7000.0,0.7,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q01_001,plug,7000.0,0.8,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q05_001,slug,7000.0,0.6,large,1,16,1,-12.055147058823529,-84386.0294117647,-84386.0294117647,-84386.0294117647,-84386.0294117647,1,-84386.0294117647,False
+m05q05_001,slug,7000.0,0.7,large,3,14,1,-12.057575757575757,-84403.0303030303,-84763.63636363637,-82851.51515151514,-84403.0303030303,3,-84403.0303030303,False
+m05q05_001,slug,7000.0,0.8,large,5,37,2,-12.142857142857142,-85000.0,-93630.30303030302,-84500.0,-93630.30303030302,5,-85000.0,False
+m05q10_001,churn,7000.0,0.6,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q10_001,churn,7000.0,0.7,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q10_001,churn,7000.0,0.8,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q20_001,churn,7000.0,0.6,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q20_001,churn,7000.0,0.7,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q20_001,churn,7000.0,0.8,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q40_001,churn,7000.0,0.6,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q40_001,churn,7000.0,0.7,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q40_001,churn,7000.0,0.8,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q80_001,wavy annular,7000.0,0.6,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q80_001,wavy annular,7000.0,0.7,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q80_001,wavy annular,7000.0,0.8,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q01_001,plug,7000.0,0.6,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q01_001,plug,7000.0,0.7,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q01_001,plug,7000.0,0.8,large,2,16,2,-16.284902597402596,-113994.31818181816,-116184.65909090909,-111803.97727272726,-109613.63636363635,2,-113994.31818181816,False
+m06q05_001,slug,7000.0,0.6,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q05_001,slug,7000.0,0.7,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q05_001,slug,7000.0,0.8,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q10_001,churn,7000.0,0.6,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q10_001,churn,7000.0,0.7,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q10_001,churn,7000.0,0.8,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q20_001,churn,7000.0,0.6,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q20_001,churn,7000.0,0.7,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q20_001,churn,7000.0,0.8,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q40_001,wavy annular,7000.0,0.6,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q40_001,wavy annular,7000.0,0.7,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q40_001,wavy annular,7000.0,0.8,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q80_001,wavy annular,7000.0,0.6,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q80_001,wavy annular,7000.0,0.7,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q80_001,wavy annular,7000.0,0.8,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q01_001,dispersed bubbles,7000.0,0.6,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q01_001,dispersed bubbles,7000.0,0.7,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q01_001,dispersed bubbles,7000.0,0.8,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q05_001,plug,7000.0,0.6,large,4,138,3,-15.491312217194569,-108439.18552036198,-109355.34862196626,-106683.72711846977,-108908.91402714932,4,-108439.18552036198,True
+m07q05_001,plug,7000.0,0.7,large,2,56,3,-15.293476082740789,-107054.33257918552,-108018.99886877828,-106089.66628959276,-108983.66515837105,2,-107054.33257918552,False
+m07q05_001,plug,7000.0,0.8,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q20_001,churn,7000.0,0.6,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q20_001,churn,7000.0,0.7,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q20_001,churn,7000.0,0.8,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q40_001,churn,7000.0,0.6,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q40_001,churn,7000.0,0.7,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q40_001,churn,7000.0,0.8,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q80_001,wavy annular,7000.0,0.6,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q80_001,wavy annular,7000.0,0.7,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q80_001,wavy annular,7000.0,0.8,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False

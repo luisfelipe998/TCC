@@ -1,0 +1,62 @@
+Perfis por aquisição 1/26: m03q05_001; 0.7 s
+Perfis por aquisição 2/26: m03q10_001; 1.4 s
+Perfis por aquisição 3/26: m03q20_001; 2.5 s
+Perfis por aquisição 4/26: m03q40_001; 3.4 s
+Perfis por aquisição 5/26: m04q01_001; 3.9 s
+Perfis por aquisição 6/26: m04q10_001; 4.4 s
+Perfis por aquisição 7/26: m04q20_001; 5.1 s
+Perfis por aquisição 8/26: m04q40_001; 6.0 s
+Perfis por aquisição 9/26: m04q80_001; 7.3 s
+Perfis por aquisição 10/26: m05q01_001; 7.8 s
+Perfis por aquisição 11/26: m05q05_001; 8.3 s
+Perfis por aquisição 12/26: m05q10_001; 8.8 s
+Perfis por aquisição 13/26: m05q20_001; 9.3 s
+Perfis por aquisição 14/26: m05q40_001; 9.9 s
+Perfis por aquisição 15/26: m05q80_001; 10.7 s
+Perfis por aquisição 16/26: m06q01_001; 11.3 s
+Perfis por aquisição 17/26: m06q05_001; 11.8 s
+Perfis por aquisição 18/26: m06q10_001; 12.3 s
+Perfis por aquisição 19/26: m06q20_001; 12.9 s
+Perfis por aquisição 20/26: m06q40_001; 13.6 s
+Perfis por aquisição 21/26: m06q80_001; 14.5 s
+Perfis por aquisição 22/26: m07q01_001; 15.0 s
+Perfis por aquisição 23/26: m07q05_001; 15.6 s
+Perfis por aquisição 24/26: m07q20_001; 16.2 s
+Perfis por aquisição 25/26: m07q40_001; 17.0 s
+Perfis por aquisição 26/26: m07q80_001; 18.0 s
+Prefixos por par 1/325; 2 perfis; 19.6 s
+Prefixos por par 26/325; 41 perfis; 26.0 s
+Prefixos por par 51/325; 70 perfis; 33.3 s
+Prefixos por par 76/325; 101 perfis; 40.8 s
+Prefixos por par 101/325; 126 perfis; 47.5 s
+Prefixos por par 126/325; 151 perfis; 53.2 s
+Prefixos por par 151/325; 176 perfis; 59.5 s
+Prefixos por par 176/325; 201 perfis; 66.4 s
+Prefixos por par 201/325; 226 perfis; 73.0 s
+Prefixos por par 226/325; 251 perfis; 78.4 s
+Prefixos por par 251/325; 276 perfis; 84.5 s
+Prefixos por par 276/325; 301 perfis; 91.4 s
+Prefixos por par 301/325; 326 perfis; 98.0 s
+                metodo  A_pares  A_balanceada
+         wps_principal 0.764947      0.816347
+           wps_cosseno 0.734618      0.808577
+          wps_integral 0.763112      0.805555
+       wps_conservador 0.703033      0.769866
+      media_lags_todos 0.700087      0.776909
+        media_lags_coi 0.702888      0.762634
+media_lags_conservador 0.622332      0.707649
+            faixa30_49 0.721337      0.771942
+            faixa20_59 0.650053      0.727101
+         somente_media 0.766396      0.814493
+            v5_nominal 0.767604      0.820401
+     v5_mesmas_escalas 0.765092      0.816436
+            inicio3171 0.723317      0.757682
+            centro3171 0.663576      0.745641
+               fim3171 0.718922      0.817730
+       wps_prefixo_par 0.738240      0.780669
+        v5_prefixo_par 0.740751      0.783665
+         wco_v16_18_71 0.214624      0.307430
+          wco_v5_18_71 0.215879      0.310033
+          wco_v5_20_59 0.263160      0.290853
+         wco_v16_20_59 0.261905      0.287465
+Concluído em 105.5 s

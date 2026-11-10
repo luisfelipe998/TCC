@@ -1,0 +1,18 @@
+{
+  "data_utc": "2026-10-25T05:13:18.378156+00:00",
+  "natureza": "Diagnósticos posteriores aos resultados principais e motivados pela revisão adversarial; não pré-registro nem validação externa.",
+  "escopo": "Somente comparações intrapadrão nos diagnósticos de parceiros e costura; cálculo principal entre padrões permanece preservado.",
+  "testes": {
+    "parceiros": "Todos os pares admissíveis equivalentes/compatíveis e distintos de plug, slug, churn e anular; 100 sementes consecutivas após a semente original, com o mesmo limite 12/2 de pares; média por par de aquisições.",
+    "costuras": "Retirar somente o feather original, preservando deslocamentos, recortes, âncoras e parceiros. Todos os pares intrapadrão selecionados, incluindo polaridades, e 261 fixos principais.",
+    "nulo": "40 pares independentes de AR(1), phi=0,95, 8192 pontos após 1024 de aquecimento, semente 20261026; intensidade média128, desvio20; detector e seleção completos; até2 pares de mínimos compatíveis versus3 posições fixas."
+  },
+  "estimativa": "3–6 minutos de cálculo; benchmark frio 0,148s/par; relatórios separados.",
+  "scripts_sha256": {
+    "adversarial_diagnostics.py": "baa5ebe0f880e4472b72d0226f4be4ac9f41af125e6b9165be9759d7c866953c",
+    "adversarial_anchor_audit.py": "f6bff1680a98bd999bbb864f0cb44cab5a08804a81b6591d90cd85b272c7cbf5",
+    "adversarial_math_audit.py": "f56e29119f98e654a6a6cf5733e8269f277af3b5b47f1c0206ffb006f92bd381",
+    "adversarial_data_audit.py": "a47ebda43020498d66e35f2fdb6e8394989f0b97ae11174373d0f09347d5e57d"
+  },
+  "restricoes": "Não substituir resultados principais, não reescolher parâmetro por maior WCO, não tratar percentis de sementes como intervalo de confiança, não chamar o modelo sintético de teste calibrado para os dados."
+}

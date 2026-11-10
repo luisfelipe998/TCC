@@ -1,0 +1,128 @@
+{
+  "interpretation": "Equation/table consistency diagnostics only. Neither experimental accuracy nor a calibration of our records.",
+  "CoolProp_version": "8.0.0",
+  "fluid": "R600a",
+  "T_K": 300.15,
+  "rho_l_kg_m3": 548.131160603092,
+  "rho_g_kg_m3": 9.649731786620363,
+  "sigma_N_m": 0.009781959836699631,
+  "h_lv_J_kg": 326707.52821966686,
+  "deoliveira2021_churn_range_check": {
+    "source": "Section 4.4, PDF p.17; Eq.17, PDF p.14",
+    "printed_x_range": [
+      0.35,
+      0.62
+    ],
+    "printed_alpha_range": [
+      0.61,
+      0.85
+    ],
+    "printed_S_range": [
+      1.4,
+      2.34
+    ],
+    "alpha_implied_by_x_and_S_min": 0.9289317339425982,
+    "alpha_implied_by_x_and_S_max": 0.9851187545344706,
+    "minimum_S_from_printed_x_and_alpha": 5.397544985342562
+  },
+  "dias2025knn_table2_check_at_stated_G516_T27C": [
+    {
+      "pattern": "bubbles small",
+      "printed_x": 0.012,
+      "printed_alpha": 0.36,
+      "RA_alpha": 0.3392207356316581,
+      "printed_jl_m_s": 0.93,
+      "calculated_jl_m_s": 0.930083959173337,
+      "printed_jg_m_s": 0.7,
+      "calculated_jg_m_s": 0.6416758659121895
+    },
+    {
+      "pattern": "bubbles larger",
+      "printed_x": 0.025,
+      "printed_alpha": 0.5,
+      "RA_alpha": 0.5044202271638971,
+      "printed_jl_m_s": 0.91,
+      "calculated_jl_m_s": 0.9178460123421087,
+      "printed_jg_m_s": 1.8,
+      "calculated_jg_m_s": 1.3368247206503947
+    },
+    {
+      "pattern": "plug",
+      "printed_x": 0.056,
+      "printed_alpha": 0.68,
+      "RA_alpha": 0.672828110492811,
+      "printed_jl_m_s": 0.88,
+      "calculated_jl_m_s": 0.8886632160522572,
+      "printed_jg_m_s": 2.4,
+      "calculated_jg_m_s": 2.994487374256884
+    },
+    {
+      "pattern": "slug",
+      "printed_x": 0.076,
+      "printed_alpha": 0.73,
+      "RA_alpha": 0.7249666808277511,
+      "printed_jl_m_s": 0.86,
+      "calculated_jl_m_s": 0.8698356055426756,
+      "printed_jg_m_s": 3.5,
+      "calculated_jg_m_s": 4.0639471507772
+    },
+    {
+      "pattern": "churn",
+      "printed_x": 0.22,
+      "printed_alpha": 0.85,
+      "RA_alpha": 0.8541030554839124,
+      "printed_jl_m_s": 0.76,
+      "calculated_jl_m_s": 0.734276809873687,
+      "printed_jg_m_s": 10.5,
+      "calculated_jg_m_s": 11.764057541723473
+    },
+    {
+      "pattern": "wavy annular",
+      "printed_x": 0.3,
+      "printed_alpha": 0.88,
+      "RA_alpha": 0.8815039007835007,
+      "printed_jl_m_s": 0.73,
+      "calculated_jl_m_s": 0.6589663678353601,
+      "printed_jg_m_s": 11.7,
+      "calculated_jg_m_s": 16.041896647804734
+    }
+  ],
+  "Xu_Fang_secondary_source_Froude_check": [
+    {
+      "nominal_G_kg_m2_s": 380,
+      "Fr_lo": 48.99245496232577,
+      "exceeds_secondary_source_Fr145_max": false
+    },
+    {
+      "nominal_G_kg_m2_s": 510,
+      "Fr_lo": 88.24748985942475,
+      "exceeds_secondary_source_Fr145_max": false
+    },
+    {
+      "nominal_G_kg_m2_s": 640,
+      "Fr_lo": 138.97028776017063,
+      "exceeds_secondary_source_Fr145_max": false
+    },
+    {
+      "nominal_G_kg_m2_s": 760,
+      "Fr_lo": 195.9698198493031,
+      "exceeds_secondary_source_Fr145_max": true
+    },
+    {
+      "nominal_G_kg_m2_s": 890,
+      "Fr_lo": 268.74600814167763,
+      "exceeds_secondary_source_Fr145_max": true
+    }
+  ],
+  "rho_g_over_rho_l": 0.017604786007792472,
+  "source_hashes_sha256": {
+    "extracts/deoliveira2019.txt": "d9aec96494734e1e9af5945c79e76ba580618e427a360fb45203d518049ad2c4",
+    "extracts/deoliveira2021.txt": "fba237c70d8549b2b83da673ee22ebeef372dbef69d708c58441de592ea32f81",
+    "extracts/dias2024.txt": "e29602bca73866f167041066e9255c4b6f381347c234c846ab936dc4b9c50602",
+    "extracts/dias2025knn.txt": "e531bb28784f7bd85d715966c30291e33e8b30ae8572cdce1a8a335f14a0e971",
+    "extracts/driftflux2023.txt": "5416f800927c934f85a75afbdd973f8213e7aca6dc5fb65bf6bed4cba61e34fd",
+    "extracts/fluids_source_commit.json": "0264e531af148261bc03e591bacd82cc16379c364dc115fda396b79fed7907ab",
+    "extracts/fluids_two_phase_voidage.py": "a8bb8fb71f37e66b59f2e210034181e899e5d23708d6adbd67b2fded83d8db9a",
+    "extracts/xufang2014_openalex.json": "722328d3633eb806476f906638a1c7d5d761326520ce795d79e3c337d7eaa213"
+  }
+}

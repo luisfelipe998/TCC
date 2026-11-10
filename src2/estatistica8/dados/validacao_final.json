@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "sources_unchanged": 479,
+  "source_reference": "src2/estatistica7/scripts/core.py",
+  "source_reference_sha256": "60e17e9305db6ca84e6978fa4bada7c99e5d525544862b4f7bd6da2d1e56d455",
+  "configurations_checked": 252,
+  "max_silhouette_error": 1.249000902703301e-16,
+  "combined_neighbor_independent": 0.95,
+  "probability_tails_checked": 1008,
+  "geometry_rejected": [
+    "kernel_area_middle",
+    "kernel_area_long"
+  ],
+  "python": "3.13.2",
+  "numpy": "2.3.4",
+  "pandas": "2.3.3",
+  "scipy": "1.18.0",
+  "matplotlib": "3.10.7",
+  "elapsed_s": 7.19591916698846
+}

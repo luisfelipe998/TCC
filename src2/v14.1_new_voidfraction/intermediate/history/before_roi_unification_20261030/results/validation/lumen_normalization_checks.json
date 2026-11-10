@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "selected_acquisitions": 26,
+  "current_masks_checked": 26,
+  "corrected_input_hashes_checked": 26,
+  "confirmed_lumen_rows": [
+    18,
+    71
+  ],
+  "lumen_diameter_px": 53,
+  "full_lumen_maximum": 1,
+  "alpha_scale_factor": 1.2815948736205054,
+  "max_rescaling_error": 2.220446049250313e-16,
+  "boundary_source": "User-confirmed full tube interior on 2026-10-23: Python slice 18:71, rows 18 through 70, 53 pixel cells. Optical profile minima are not used as lumen boundaries. Refraction mapping remains uncalibrated.",
+  "segmentation_source_sha256": "68e7d0b7ea4f37a6a4ea474f68e440510a2887ef960a258dd52aa92faa6658f2",
+  "geometry_source_sha256": "05f36daaca877d1d80f3f6c992d403a1382978e81293b9649532e00e5e4dce3b",
+  "failures": [],
+  "interpretation": "D53 is unchanged between v14 and v14.1. D60 is only an algebraic control on each current mask; masks and flip rates may change because the panorama input changed."
+}

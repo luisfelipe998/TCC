@@ -1,0 +1,182 @@
+{
+  "status": "pilot",
+  "script_sha256": "84aed22baa0d9acedea2a58948eca2ac3ad6b8e110723ee06e9a24175db25e8c",
+  "runtime_s": 7.777917125000386,
+  "inputs": [
+    {
+      "run": "m03q10_001",
+      "pattern": "wavy annular",
+      "fps": 5000.0,
+      "frames": 501,
+      "duration_s": 0.1,
+      "ordered_image_sha256": "b8749ab4845d30cd4b03433549ab6b62facd29cb69ffc1ae0987ae7f2360b6e3",
+      "config_sha256": "eddb2fe0571049ea61ee7a35e0e1a4f60d0b335d5bf0a3bc48923eb42d17a6f7",
+      "mii_sha256": "52a9ed60b0563b7c6bca3af1b6237f577cf3ade80e2bcb1b2b27cfe62fb2cd82"
+    },
+    {
+      "run": "m06q80_001",
+      "pattern": "wavy annular",
+      "fps": 7000.0,
+      "frames": 501,
+      "duration_s": 0.07142857142857142,
+      "ordered_image_sha256": "685df3e5a31cc3855caba2f2cebc5eaa60f9dbebb0928a44233133568e0084d3",
+      "config_sha256": "4ffb448b6e5ab24b298ad799e7fe95fe32ed4b57bc4325539fe3e92338fde130",
+      "mii_sha256": "e041a98f4b90a50d98c1f376e7b1f0a0f31748733b054c595c0cd9a96b3da239"
+    }
+  ],
+  "synthetic_controls": {
+    "known_translations": [
+      {
+        "test": "known_translation",
+        "truth_px_frame": -35.0,
+        "lag": 1,
+        "estimate_px_frame": -35.00004380110018,
+        "error_px_frame": 4.3801100183316066e-05
+      },
+      {
+        "test": "known_translation",
+        "truth_px_frame": -35.0,
+        "lag": 2,
+        "estimate_px_frame": -35.00007901398058,
+        "error_px_frame": 7.901398058152154e-05
+      },
+      {
+        "test": "known_translation",
+        "truth_px_frame": -35.0,
+        "lag": 4,
+        "estimate_px_frame": -35.00013050033475,
+        "error_px_frame": 0.0001305003347482625
+      },
+      {
+        "test": "known_translation",
+        "truth_px_frame": -17.3,
+        "lag": 1,
+        "estimate_px_frame": -17.294475284248254,
+        "error_px_frame": 0.005524715751747067
+      },
+      {
+        "test": "known_translation",
+        "truth_px_frame": -17.3,
+        "lag": 2,
+        "estimate_px_frame": -17.302342699052982,
+        "error_px_frame": 0.002342699052981345
+      },
+      {
+        "test": "known_translation",
+        "truth_px_frame": -17.3,
+        "lag": 4,
+        "estimate_px_frame": -17.29882008900656,
+        "error_px_frame": 0.0011799109934393925
+      },
+      {
+        "test": "known_translation",
+        "truth_px_frame": 23.75,
+        "lag": 1,
+        "estimate_px_frame": 23.755851960602662,
+        "error_px_frame": 0.005851960602662132
+      },
+      {
+        "test": "known_translation",
+        "truth_px_frame": 23.75,
+        "lag": 2,
+        "estimate_px_frame": 23.749796395129934,
+        "error_px_frame": 0.0002036048700659876
+      },
+      {
+        "test": "known_translation",
+        "truth_px_frame": 23.75,
+        "lag": 4,
+        "estimate_px_frame": 23.750002350941845,
+        "error_px_frame": 2.3509418447531516e-06
+      }
+    ],
+    "constant_rejected": true,
+    "static_background_rejected": true,
+    "direct_pearson_difference": 6.938893903907228e-18
+  },
+  "roi_half_open": {
+    "core": [
+      35,
+      54
+    ],
+    "upper_inner": [
+      24,
+      35
+    ],
+    "lower_inner": [
+      54,
+      65
+    ],
+    "upper_outer": [
+      18,
+      29
+    ],
+    "lower_outer": [
+      60,
+      71
+    ]
+  },
+  "annular_edge_search": {
+    "upper": [
+      22,
+      42
+    ],
+    "lower": [
+      45,
+      67
+    ],
+    "smoothing_sigma_y": 0.8,
+    "smoothing_sigma_x": 1.2
+  },
+  "correlation": {
+    "source_x": [
+      240,
+      776
+    ],
+    "search_px": [
+      -240,
+      240
+    ],
+    "lags": [
+      1,
+      2,
+      4
+    ],
+    "preprocessing": "Subtract 501-frame mean at each axial profile coordinate",
+    "pair_gates": {
+      "peak": 0.6,
+      "competitor_margin": 0.03,
+      "competitor_exclusion_px": 5,
+      "texture_gray": 1.0,
+      "texture_edge_px": 0.25
+    }
+  },
+  "ensemble_gates": {
+    "min_texture_pairs": 250,
+    "min_peak": 0.1,
+    "shuffle_repeats": 19,
+    "min_peak_above_max_shuffle": 0.03,
+    "lag_tolerance": "max(2 px/frame,20% of lag1 speed)",
+    "min_agreeing_blocks": 4,
+    "blocks": 5,
+    "max_region_saturation": 0.2,
+    "min_absolute_speed_px_frame": 1.0,
+    "max_edge_boundary_or_weak_fraction": 0.2,
+    "upper_lower_tolerance": "max(2 px/frame,25% of mean wall speed)"
+  },
+  "limitations": [
+    "The gates are feasibility diagnostics, not accuracy levels or significance tests.",
+    "Core and near-wall labels are spatial, not material phase labels.",
+    "Upper/lower edge coordinates track selected brightness gradients, not validated film thickness.",
+    "Ensemble peaks can favor the dominant coherent optical structure and suppress minority motion.",
+    "ROI, temporal averaging, search window and rapid deformation limit representativeness.",
+    "The same interfaces can influence core and wall profiles; agreement is not phase independence."
+  ],
+  "counts": {
+    "runs": 2,
+    "annular": 2,
+    "regions": 14,
+    "supported_regions": 4,
+    "eligible_spatial_pairs": 0
+  }
+}

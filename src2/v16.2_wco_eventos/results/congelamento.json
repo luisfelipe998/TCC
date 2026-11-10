@@ -1,0 +1,14 @@
+{
+  "data_utc": "2026-10-24T23:02:17.772690+00:00",
+  "sha256": {
+    "config.json": "ca14a2d3fc1eefc4892d211d8e649fb951e48c7db25c93ce7a215e0f4ef88c54",
+    "PROTOCOL.md": "d88060d8ee69ee9cdcb6427f17f8a40bc69cb71cf98bf98fff94325c89f3ebe5",
+    "results/catalogo_eventos.csv": "3466d4cc4bef1dcd4f4095b6adeb000c699f584d74c99db80d4923e98e1dba66",
+    "results/revisao_visual.csv": "6babddeed439979bcd490e5cf323de98c6b091c75439b977258ca5b354638e84",
+    "results/pares_candidatos.csv": "e3efbc656e03de305eb565966ccf30a83a8d2bee6705a91fde97c9017c7212e3",
+    "results/pares_eventos.csv": "61111ac92d91c42b78adead0b29af824da05617cc90189f6aeb5311667ec2a8d",
+    "results/segmentos_fixos.csv": "02087c5fc55922ab56b24f4c12a4daea6c95976ef3d4b4f11ea71752631cbc48",
+    "scripts/catalog_events.py": "07a56fd8019ebb3aa9f979f05030437f5d45f5d7df64e21b79ed85c7d0e70bc7",
+    "scripts/wavelet_core.py": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc"
+  }
+}

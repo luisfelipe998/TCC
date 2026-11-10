@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "counts": {
+    "pair_texture_float32": 221408,
+    "lag_counts": 1776,
+    "lag_median_float32": 444,
+    "ensemble_peak_float32": 1776,
+    "direct_ensemble_points": 1772,
+    "direct_individual_peak": 444,
+    "null_maxima": 444,
+    "direct_null_peak": 78,
+    "region_motion_summary": 888,
+    "additional_differences": 888,
+    "region_gate_checks": 148,
+    "spatial_pair": 156
+  },
+  "max_absolute_differences": {
+    "pair_texture_float32": 1.906839074194977e-06,
+    "lag_counts": 1.1102230246251565e-16,
+    "lag_median_float32": 1.8894544169256733e-06,
+    "ensemble_peak_float32": 0.00018439506311551668,
+    "direct_ensemble_points": 2.9786130117948062e-08,
+    "direct_individual_peak": 2.965284906508714e-08,
+    "null_maxima": 0.0,
+    "direct_null_peak": 3.0531133177191805e-16,
+    "region_motion_summary": 5.820766091346741e-11,
+    "additional_differences": 7.16093850883226e-15,
+    "spatial_pair": 1.4551915228366852e-11
+  },
+  "regions": 148,
+  "baseline_supported_regions": 99,
+  "final_supported_regions": 93,
+  "baseline_spatial_pairs": 10,
+  "final_spatial_pairs": 10,
+  "direct_null_region_lags": 78,
+  "input_sha256": {
+    "results/annular_region_summary.csv": "c150b4b9f196d137e82b07982cb272026deb2068885a471348c5fa79b9741f5f",
+    "results/annular_lag_summary.csv": "b8764d6578e757478d53e140051bb55cedf28572a162ba00a3d85cf2aa617139",
+    "results/annular_block_summary.csv": "171f6a10cc1307eada4e3c73146c9d2410f1b6cfb3d4536f4821064a94085d6a",
+    "results/annular_null_trials.csv": "439fa51c42e6fa4a06497850d251c0e461ac77641e6648c9161748b21c6ff2c6",
+    "results/annular_additional_checks.csv": "d9ccfdd3eb9c678bcb7405c59618c1ba804bf1489eb8c5a0df2ed6cbd7ce3de9",
+    "results/annular_spatial_pairs.csv": "bab347844ed356111d865f6983c828bedd32a29ddf520b2aca62cc647c3bb4af",
+    "results/scenario_inventory.csv": "cd462d58c268a085d588d2010a91f59f3a39133ce8218e77eff5b599e37c7c19",
+    "results/annular_metadata.json": "d20dc2ad15c31d4ec143dbc8a07584b94f352f35141fa6ff0252d4978da787b5",
+    "intermediate/annular_profiles.npz": "729a070503730eeec6362cef43d8bed70fcaceb6abfa2c39b2c4cdaddefdf6df",
+    "results/annular_pair_results.npz": "2a2f2206199c2dbfc356823efa9cd76384f5da0a5a2c42a7495018bf9a3a1277"
+  },
+  "verifier_sha256": "e7a60221ef5f5fc20d41c59f74c0e32f5e51078c21b88c7b0447c4df667e6ee9",
+  "independence": "No generator imported. Direct centered Pearson products verify ensemble peak neighborhoods for every region/lag and sampled individual/null peaks; gates and summaries independently reconstructed.",
+  "limitation": "Validates saved arithmetic and specified support gates. It does not validate material identity, calibrated m/s, the entire correlation surface independently, or physical measurement accuracy."
+}

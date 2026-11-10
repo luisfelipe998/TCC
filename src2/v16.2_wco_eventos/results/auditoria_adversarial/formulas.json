@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "data_utc": "2026-10-25T05:11:03.016191+00:00",
+  "comparacoes_independentes": [
+    {
+      "etapa": "etapa1",
+      "padrao": "plug",
+      "pair_id": "m05q01_001_E002__m06q01_001_E004",
+      "erro_CWT_soma_direta": 4.443249296581012e-15,
+      "erro_WCO_soma_direta": 2.9976021664879227e-15,
+      "erro_escore_salvo": 0.0,
+      "erro_troca_xy": 2.886579864025407e-15,
+      "erro_padding": 3.202372833989377e-15
+    },
+    {
+      "etapa": "etapa1",
+      "padrao": "plug",
+      "pair_id": "m06q01_001_E011__m07q05_001_E013",
+      "erro_CWT_soma_direta": 4.440892098500626e-15,
+      "erro_WCO_soma_direta": 2.3314683517128287e-15,
+      "erro_escore_salvo": 4.163336342344337e-16,
+      "erro_troca_xy": 1.7798229048217483e-15,
+      "erro_padding": 1.831026719408895e-15
+    },
+    {
+      "etapa": "etapa1",
+      "padrao": "slug",
+      "pair_id": "m04q01_001_E002__m05q05_001_E004",
+      "erro_CWT_soma_direta": 5.342231548240642e-15,
+      "erro_WCO_soma_direta": 2.9976021664879227e-15,
+      "erro_escore_salvo": 1.1102230246251565e-16,
+      "erro_troca_xy": 2.288783399261119e-15,
+      "erro_padding": 2.6697343572326224e-15
+    },
+    {
+      "etapa": "etapa1",
+      "padrao": "slug",
+      "pair_id": "m05q05_001_E008__m06q05_001_E007",
+      "erro_CWT_soma_direta": 2.2644195468014707e-15,
+      "erro_WCO_soma_direta": 1.5543122344752192e-15,
+      "erro_escore_salvo": 5.551115123125783e-17,
+      "erro_troca_xy": 1.1411052692018427e-15,
+      "erro_padding": 1.159106867033638e-15
+    },
+    {
+      "etapa": "extensao",
+      "padrao": "churn",
+      "pair_id": "m03q05_001_MAX01637__m04q10_001_MIN03417",
+      "erro_CWT_soma_direta": 2.9790409838967277e-15,
+      "erro_WCO_soma_direta": 1.4432899320127035e-15,
+      "erro_escore_salvo": 2.7755575615628914e-16,
+      "erro_troca_xy": 1.9860273225978185e-15,
+      "erro_padding": 1.7772239894833365e-15
+    },
+    {
+      "etapa": "extensao",
+      "padrao": "churn",
+      "pair_id": "m07q20_001_MIN05678__m07q40_001_MIN07538",
+      "erro_CWT_soma_direta": 1.818360945611186e-15,
+      "erro_WCO_soma_direta": 1.4432899320127035e-15,
+      "erro_escore_salvo": 2.7755575615628914e-17,
+      "erro_troca_xy": 8.082545620880531e-16,
+      "erro_padding": 7.71185559270127e-16
+    },
+    {
+      "etapa": "extensao",
+      "padrao": "wavy annular",
+      "pair_id": "m03q10_001_MAX02837__m04q40_001_MIN08529",
+      "erro_CWT_soma_direta": 5.402578411571407e-15,
+      "erro_WCO_soma_direta": 3.774758283725532e-15,
+      "erro_escore_salvo": 5.551115123125783e-17,
+      "erro_troca_xy": 2.845724904160528e-15,
+      "erro_padding": 2.7465400791133423e-15
+    },
+    {
+      "etapa": "extensao",
+      "padrao": "wavy annular",
+      "pair_id": "m06q80_001_MIN16737__m07q80_001_MIN03433",
+      "erro_CWT_soma_direta": 4.4449552947394325e-15,
+      "erro_WCO_soma_direta": 1.4432899320127035e-15,
+      "erro_escore_salvo": 5.551115123125783e-17,
+      "erro_troca_xy": 1.3325567187647329e-15,
+      "erro_padding": 1.3608726004012153e-15
+    }
+  ],
+  "escalas_por_comparacao": 5,
+  "lags_CWT_por_comparacao": 7,
+  "lags_WCO_por_comparacao": 65,
+  "v11_deslocamento_real_direita_7_retorna": -7,
+  "fase_legado": {
+    "erro_relativo_sem_conjugar": 1.4131600468845826,
+    "erro_relativo_conjugando": 0.005190168079700691,
+    "nota": "A discretização PyWavelets também introduz assimetrias; a fase legada refletida não representa a convenção complexa principal."
+  },
+  "relacao_enviesado_nao_enviesado_erro": 5.551115123125783e-17,
+  "ensemble_fases_opostas": {
+    "modulo_media_complexa": 0.0,
+    "media_modulos": 2.23606797749979
+  },
+  "fonte": "../../assets/schuck-bardo-wavelet-coherence.pdf; páginas impressas 411, 413 e 414, conferidas visualmente",
+  "fonte_sha256": "8a052388ebb12e36611b80cd2684a813155b8f6d9c13d92ad2415b9dad9108f2",
+  "limite": "Conferência numérica e formal do estimador finito declarado. Não valida estacionariedade, validade física do panorama ou inferência populacional."
+}

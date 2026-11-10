@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "tracks": 5862,
+  "opportunities": 5200,
+  "summary_rows": 104,
+  "ratio_rows": 52,
+  "numeric_checks": 20330,
+  "maximum_difference": 1.4210854715202004e-14,
+  "all_source_and_target_phase_memberships_verified": true,
+  "accepted_track_totals": {
+    "64": {
+      "gas_candidate": 994,
+      "liquid_candidate": 95
+    },
+    "32": {
+      "gas_candidate": 774,
+      "liquid_candidate": 96
+    }
+  },
+  "eligible_ratios": 0,
+  "scope": "Reconstructs eroded mask membership and stored acceptance/summary arithmetic; does not validate phase identity or independently recompute all correlation surfaces."
+}

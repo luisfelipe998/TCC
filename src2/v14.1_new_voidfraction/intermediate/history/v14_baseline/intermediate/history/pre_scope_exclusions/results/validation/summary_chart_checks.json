@@ -1,0 +1,515 @@
+{
+  "passed": true,
+  "source_inputs": [
+    {
+      "artifact": "results/void_fraction/panorama_void_per_run.csv",
+      "sha256": "82a2d70f9a71977938670d72e4e1ee29af194fc26079ab97ce6fc2785ed5b9ef"
+    },
+    {
+      "artifact": "results/flip_rate/phase_mask_flip_per_run.csv",
+      "sha256": "3b8f43b4bb643f9e351cc859bd27362afa7ce67377e6b59580a09d3c57a5d14a"
+    },
+    {
+      "artifact": "results/validation/data_inventory.csv",
+      "sha256": "5241d034e190f1ece4864d63c478b64d48289217c55a38b0765f3c3c00cd7b50"
+    },
+    {
+      "artifact": "results/validation/adversarial_checks.json",
+      "sha256": "96b192bf45f3134c4de4a773d38bee3eb233f1ae6a809ac76a6db191dd02ca33"
+    }
+  ],
+  "script_sha256": "a4b2867eabb763f788b2d051ba18ab82f3147c4e9c730f9dfacb300d81a0a2cd",
+  "checks": {
+    "joined_acquisitions": 31,
+    "unique_supplied_patterns": 8,
+    "pattern_counts_all_shown": {
+      "plug-slug": 1,
+      "churn": 10,
+      "wavy annular": 9,
+      "smooth annular": 1,
+      "slug": 3,
+      "slug-churn": 2,
+      "plug": 3,
+      "dispersed bubbles": 2
+    },
+    "eligible_pure_unsaturated": 26,
+    "saturated_acquisitions": [
+      "m03q01_001",
+      "m03q40_001",
+      "m03q80_001"
+    ],
+    "unsaturated_transition_acquisitions": [
+      "m04q05_001",
+      "m07q10_001"
+    ],
+    "any_radial_crop_touch_acquisitions": 30,
+    "all_columns_touch_crop_acquisitions": [
+      "m03q20_001",
+      "m03q40_001",
+      "m03q80_001",
+      "m04q80_001"
+    ],
+    "max_pixel_rate_count_denominator_error": 0.0,
+    "max_center_rate_count_denominator_error": 0.0,
+    "labels_match_void_phase_and_inventory": true,
+    "saturation_eligibility_and_widths_match_inventory": true,
+    "entry_plus_exit_equals_center_flip_count": true
+  },
+  "axis_definitions": {
+    "x": "Saved conditional_circle_alpha_spatial_mean; spatial mean of separate circular gas-width areas divided by 60-pixel apparent diameter squared.",
+    "primary_y": "1000 \u00d7 saved candidate_pixel_flip_rate = 1000 \u00d7 candidate_pixel_flip_count / [53 \u00d7 (panorama_width\u22121)].",
+    "secondary_y": "Saved center_candidate_flips_per1000px = 1000 \u00d7 center_candidate_flip_count / (panorama_width\u22121), at image row 40.",
+    "sampling": "Neighboring panorama columns; spatial phase alternation, not temporal event frequency.",
+    "default_crop": "Image rows 18:71; 53 rows; apparent diameter 60 pixels; conditional ceiling (53/60)^2."
+  },
+  "default_crop_ceiling": 0.7802777777777777,
+  "saturation_threshold": 0.2,
+  "shading": "Observed convex hulls of eligible pure-pattern points, at least three non-collinear observations. No bubble hull, transition hull or classifier boundaries.",
+  "primary_chart_hulls": {
+    "dispersed bubbles": {
+      "eligible_runs": [
+        "m05q05_002",
+        "m07q01_001"
+      ],
+      "polygon_vertex_runs": [],
+      "shaded": false
+    },
+    "plug": {
+      "eligible_runs": [
+        "m05q01_001",
+        "m06q01_001",
+        "m07q05_001"
+      ],
+      "polygon_vertex_runs": [
+        "m07q05_001",
+        "m05q01_001",
+        "m06q01_001"
+      ],
+      "shaded": true
+    },
+    "slug": {
+      "eligible_runs": [
+        "m04q01_001",
+        "m05q05_001",
+        "m06q05_001"
+      ],
+      "polygon_vertex_runs": [
+        "m05q05_001",
+        "m04q01_001",
+        "m06q05_001"
+      ],
+      "shaded": true
+    },
+    "churn": {
+      "eligible_runs": [
+        "m03q05_001",
+        "m04q10_001",
+        "m04q20_001",
+        "m05q10_001",
+        "m05q20_001",
+        "m05q40_001",
+        "m06q10_001",
+        "m06q20_001",
+        "m07q20_001",
+        "m07q40_001"
+      ],
+      "polygon_vertex_runs": [
+        "m07q20_001",
+        "m06q10_001",
+        "m04q20_001",
+        "m03q05_001",
+        "m05q40_001",
+        "m07q40_001"
+      ],
+      "shaded": true
+    },
+    "wavy annular": {
+      "eligible_runs": [
+        "m03q10_001",
+        "m03q20_001",
+        "m04q40_001",
+        "m04q80_001",
+        "m05q80_001",
+        "m06q40_001",
+        "m06q80_001",
+        "m07q80_001"
+      ],
+      "polygon_vertex_runs": [
+        "m06q40_001",
+        "m07q80_001",
+        "m04q40_001",
+        "m03q20_001",
+        "m04q80_001",
+        "m05q80_001"
+      ],
+      "shaded": true
+    },
+    "smooth annular": {
+      "eligible_runs": [],
+      "polygon_vertex_runs": [],
+      "shaded": false
+    },
+    "plug-slug": {
+      "eligible_runs": [],
+      "polygon_vertex_runs": [],
+      "shaded": false
+    },
+    "slug-churn": {
+      "eligible_runs": [],
+      "polygon_vertex_runs": [],
+      "shaded": false
+    }
+  },
+  "center_chart_hulls": {
+    "dispersed bubbles": {
+      "eligible_runs": [
+        "m05q05_002",
+        "m07q01_001"
+      ],
+      "polygon_vertex_runs": [],
+      "shaded": false
+    },
+    "plug": {
+      "eligible_runs": [
+        "m05q01_001",
+        "m06q01_001",
+        "m07q05_001"
+      ],
+      "polygon_vertex_runs": [
+        "m07q05_001",
+        "m05q01_001",
+        "m06q01_001"
+      ],
+      "shaded": true
+    },
+    "slug": {
+      "eligible_runs": [
+        "m04q01_001",
+        "m05q05_001",
+        "m06q05_001"
+      ],
+      "polygon_vertex_runs": [
+        "m05q05_001",
+        "m04q01_001",
+        "m06q05_001"
+      ],
+      "shaded": true
+    },
+    "churn": {
+      "eligible_runs": [
+        "m03q05_001",
+        "m04q10_001",
+        "m04q20_001",
+        "m05q10_001",
+        "m05q20_001",
+        "m05q40_001",
+        "m06q10_001",
+        "m06q20_001",
+        "m07q20_001",
+        "m07q40_001"
+      ],
+      "polygon_vertex_runs": [
+        "m07q20_001",
+        "m05q10_001",
+        "m04q10_001",
+        "m04q20_001",
+        "m03q05_001",
+        "m07q40_001"
+      ],
+      "shaded": true
+    },
+    "wavy annular": {
+      "eligible_runs": [
+        "m03q10_001",
+        "m03q20_001",
+        "m04q40_001",
+        "m04q80_001",
+        "m05q80_001",
+        "m06q40_001",
+        "m06q80_001",
+        "m07q80_001"
+      ],
+      "polygon_vertex_runs": [
+        "m06q40_001",
+        "m07q80_001",
+        "m04q40_001",
+        "m03q20_001"
+      ],
+      "shaded": true
+    },
+    "smooth annular": {
+      "eligible_runs": [],
+      "polygon_vertex_runs": [],
+      "shaded": false
+    },
+    "plug-slug": {
+      "eligible_runs": [],
+      "polygon_vertex_runs": [],
+      "shaded": false
+    },
+    "slug-churn": {
+      "eligible_runs": [],
+      "polygon_vertex_runs": [],
+      "shaded": false
+    }
+  },
+  "crop_sensitivity": [
+    {
+      "run": "m07q01_001",
+      "supplied_pattern": "dispersed bubbles",
+      "crop_widths_px": [
+        50,
+        53,
+        57,
+        60
+      ],
+      "conditional_alpha_values": [
+        0.0016983776586425592,
+        0.001835996355863905,
+        0.0019039735099337747,
+        0.0019185150145415045
+      ],
+      "crop_row_intervals": [
+        [
+          20,
+          70
+        ],
+        [
+          18,
+          71
+        ],
+        [
+          16,
+          73
+        ],
+        [
+          15,
+          75
+        ]
+      ]
+    },
+    {
+      "run": "m05q05_002",
+      "supplied_pattern": "dispersed bubbles",
+      "crop_widths_px": [
+        50,
+        53,
+        57,
+        60
+      ],
+      "conditional_alpha_values": [
+        0.2993932618871643,
+        0.3078460211874846,
+        0.30995257452574526,
+        0.31167227149544224
+      ],
+      "crop_row_intervals": [
+        [
+          20,
+          70
+        ],
+        [
+          18,
+          71
+        ],
+        [
+          16,
+          73
+        ],
+        [
+          15,
+          75
+        ]
+      ]
+    },
+    {
+      "run": "m06q01_001",
+      "supplied_pattern": "plug",
+      "crop_widths_px": [
+        50,
+        53,
+        57,
+        60
+      ],
+      "conditional_alpha_values": [
+        0.44258873357841044,
+        0.4655481818699952,
+        0.47751414180274143,
+        0.4776081117665498
+      ],
+      "crop_row_intervals": [
+        [
+          20,
+          70
+        ],
+        [
+          18,
+          71
+        ],
+        [
+          16,
+          73
+        ],
+        [
+          15,
+          75
+        ]
+      ]
+    },
+    {
+      "run": "m06q05_001",
+      "supplied_pattern": "slug",
+      "crop_widths_px": [
+        50,
+        53,
+        57,
+        60
+      ],
+      "conditional_alpha_values": [
+        0.4583548792146455,
+        0.4756132371616512,
+        0.48298806415250495,
+        0.4833242726481458
+      ],
+      "crop_row_intervals": [
+        [
+          20,
+          70
+        ],
+        [
+          18,
+          71
+        ],
+        [
+          16,
+          73
+        ],
+        [
+          15,
+          75
+        ]
+      ]
+    },
+    {
+      "run": "m06q20_001",
+      "supplied_pattern": "churn",
+      "crop_widths_px": [
+        50,
+        53,
+        57,
+        60
+      ],
+      "conditional_alpha_values": [
+        0.6126298453471394,
+        0.6499715695384752,
+        0.6793442187707421,
+        0.6858445340501792
+      ],
+      "crop_row_intervals": [
+        [
+          20,
+          70
+        ],
+        [
+          18,
+          71
+        ],
+        [
+          16,
+          73
+        ],
+        [
+          15,
+          75
+        ]
+      ]
+    },
+    {
+      "run": "m06q80_001",
+      "supplied_pattern": "wavy annular",
+      "crop_widths_px": [
+        50,
+        53,
+        57,
+        60
+      ],
+      "conditional_alpha_values": [
+        0.6830769116290146,
+        0.7526505938030181,
+        0.8191730511652827,
+        0.8582433848260262
+      ],
+      "crop_row_intervals": [
+        [
+          20,
+          70
+        ],
+        [
+          18,
+          71
+        ],
+        [
+          16,
+          73
+        ],
+        [
+          15,
+          75
+        ]
+      ]
+    },
+    {
+      "run": "m03q20_001",
+      "supplied_pattern": "wavy annular",
+      "crop_widths_px": [
+        50,
+        53,
+        57,
+        60
+      ],
+      "conditional_alpha_values": [
+        0.6944372950878867,
+        0.780092147262302,
+        0.8974583917077091,
+        0.9800868032988144
+      ],
+      "crop_row_intervals": [
+        [
+          20,
+          70
+        ],
+        [
+          18,
+          71
+        ],
+        [
+          16,
+          73
+        ],
+        [
+          15,
+          75
+        ]
+      ]
+    }
+  ],
+  "limits": [
+    "Visible optical/geometric estimates are not independently calibrated absolute gas-volume fractions.",
+    "Saturated points are shown but excluded from descriptive hulls; transitions retain supplied labels.",
+    "Radial crop clipping differs from saturated intensity and can censor annular estimates.",
+    "Both axes derive from the same mask and are not independent validation.",
+    "Filled gas envelopes can hide liquid fragments; center-row flips can miss off-center bubbles.",
+    "Saved crop perturbations are heuristic alternatives, not physical confidence intervals."
+  ],
+  "outputs": [
+    "figures/void_fraction/void_fraction_vs_flip_rate.png",
+    "figures/void_fraction/void_fraction_vs_flip_rate.svg",
+    "figures/void_fraction/void_fraction_vs_center_flips.png",
+    "figures/void_fraction/void_fraction_vs_center_flips.svg",
+    "figures/void_fraction/void_crop_sensitivity.png",
+    "figures/void_fraction/void_crop_sensitivity.svg",
+    "results/void_fraction/void_fraction_flip_plot_data.csv",
+    "results/validation/summary_chart_checks.json"
+  ],
+  "saved_csv_json_inputs_unchanged_during_chart_generation": true
+}

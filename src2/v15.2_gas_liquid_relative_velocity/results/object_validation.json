@@ -1,0 +1,21 @@
+{
+  "controls": {
+    "known_translation_error": 0.0,
+    "reversal_error": 0.0,
+    "growth_rejected": true,
+    "equal_competitors_rejected": true,
+    "empty_image_has_no_tracks": true,
+    "interpretation": "Arithmetic and screening controls; not experimental validation."
+  },
+  "elapsed_s": 205.36494550001225,
+  "recordings": 26,
+  "frames_per_run": 501,
+  "thresholds": [
+    0.6,
+    0.7,
+    0.8
+  ],
+  "script_sha256": "1b7336a7a1a1a770730c1748ca74c6739b65d0b5ed80a1d40f98169fca102537",
+  "detector_sha256": "a63db1153e6f73d334ffce09416ab2794d8a360f5474f27aa48c6b9e9c098933",
+  "reference_sha256": "56bb4dd607596d310507e34f537e66012e75c95d5cd0d654de9ba048e2a8d13d"
+}

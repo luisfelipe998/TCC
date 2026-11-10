@@ -1,0 +1,68 @@
+[AVISO] corr(shift_mean, n_samples) = 1.0000 — mesma variável de velocidade.
+
+  churn         n=10  m̄=5.20  q̄=19.50  n_samples̄=8832
+  wavy annular  n= 9  m̄=4.56  q̄=52.22  n_samples̄=18140
+  plug          n= 4  m̄=5.75  q̄=3.00  n_samples̄=6402
+  slug          n= 3  m̄=5.00  q̄=3.67  n_samples̄=6394
+
+[A0] matriz de distância 26x26 salva em v8-estat-dmatrix.png (ordem: churn, anular, plug, slug)
+
+[A1] ANOSIM R GLOBAL (4 grupos: churn, anular, plug, slug)
+  R de Clarke (observado)              = 0.2041
+  p q-estratificado (EXATO, 18000 arr.)  = 0.0190  (R_max=0.3138; rank=341; p_min=5.56e-05)
+  p m-estratificado (MC 50000; 108,864,000 arr.)  = 0.0298  (R_max=0.4165; p95_nulo=0.178)
+  p não-estratificado (MC 50000)          = 0.0170  (R_max=0.4647)
+  -> q-estrat é MAL condicionada (estratos quase puros — ver A4); a m-estrat é a
+     referência (nenhum estrato puro). Efeito-tamanho DESCRITIVO, não teste forte.
+
+[A1b] R de Clarke PAR-A-PAR (submatriz de cada par de padrões)
+      quais padrões se separam de quais; n_pares = C(n_i+n_j, 2)
+  churn          × anular ondulado  R=+0.177  (n_pares=171)
+  churn          × plug            R=+0.028  (n_pares=91)
+  churn          × slug            R=+0.218  (n_pares=78)
+  anular ondulado × plug            R=+0.320  (n_pares=78)
+  anular ondulado × slug            R=+0.523  (n_pares=66)
+  plug           × slug            R=+0.111  (n_pares=21)  (n pequeno)
+  NOTA: R>0 ⇒ os dois padrões separam; R≈0 ⇒ indistinguíveis pelo descritor.
+        Pares com plug(4)/slug(3) repousam em <30 distâncias → ler com cautela
+        (R par-a-par instável para grupos minúsculos; sem correção de múltiplas
+         comparações — 6 pares são exploratórios, não família de testes).
+
+[A2] ECDF distâncias (figura: v8-estat-ecdf.png)
+  grupo        n     mediana   média
+  intra       90     0.098     0.166
+  inter      235     0.153     0.249
+  corr(D, |Δq|)        = -0.099   (proximidade de ponto operacional em q)
+  corr(D, |Δm|)        = -0.053   (efeito/confound de fluxo mássico)
+  corr(D, mesmo padrão)= -0.143   (efeito de padrão)
+
+[A4] Condicionamento dos estratos (por que m é a referência)
+  estratos por fluxo de calor q:
+    1.0  {SL=1, PL=2}  [misto]
+    5.0  {CH=1, SL=2, PL=2}  [misto]
+    10.0 {AO=1, CH=3}  [quase-puro]
+    20.0 {AO=1, CH=4}  [quase-puro]
+    40.0 {AO=3, CH=2}  [misto]
+    80.0 {AO=4}  [PURO]
+    -> 3 de 6 estratos puros/quase-puros
+  estratos por fluxo mássico m:
+    3.0  {CH=1, AO=3}  [quase-puro]
+    4.0  {SL=1, CH=2, AO=2}  [misto]
+    5.0  {PL=2, SL=1, CH=3, AO=1}  [misto]
+    6.0  {PL=1, SL=1, CH=2, AO=2}  [misto]
+    7.0  {PL=1, CH=2, AO=1}  [misto]
+    -> 1 de 5 estratos puros/quase-puros
+  VEREDITO: q ordena quase perfeitamente os padrões (plug/slug em q baixo, churn médio,
+            anular alto) → 3/6 estratos de q puros/quase-puros ⇒ a estratificação por q
+            remove quase todo o sinal de padrão (MAL condicionada). m mistura ≥3 padrões
+            em cada estrato (1/5 puros) ⇒ m-estratificação é a leitura confiável.
+
+[A3'] Robustez ao artefato de costura — R GLOBAL em piso50 (λ≥50px, principal) vs
+      piso10 (λ≥10px, inclui a banda λ≈shift que o piso50 exclui):
+  cropped   R(piso50)=0.2041   R(piso10)=0.2915   Δ=+0.0875
+  center    R(piso50)=0.3203   R(piso10)=0.3499   Δ=+0.0296
+  energia média na banda de costura (cropped, piso10) = 0.9% do |WPS b=0|
+  VEREDITO: R sobe (0.204→0.292) ao incluir pequena escala, MAS a banda de costura
+            carrega energia ínfima (0.9%) e não é o pico → a subida NÃO é o artefato
+            de costura; vem de conteúdo difuso de pequena escala colinear com
+            velocidade/comprimento (confound). piso50 = leitura CONSERVADORA.

@@ -1,0 +1,43 @@
+{
+  "reason": "Move threshold legend away from data; add optimizer-free polygon checks. Rerun only affected comparison/report/verification stages.",
+  "status": "passed",
+  "started_utc": "2026-10-24T22:40:24.898333+00:00",
+  "stages": [
+    {
+      "script": "scripts/compare_versions.py",
+      "sha256": "489004423d6074915e00a6005a8428d75ec2933f3af28c276ba1a96543006df4",
+      "returncode": 0,
+      "elapsed_seconds": 4.089926541986642,
+      "log": "intermediate/logs/compare_versions.final_review.log"
+    },
+    {
+      "script": "scripts/write_summary.py",
+      "sha256": "7bd0b59ea7ba3ad977233e7e496b78620c2887af350100ad3d8bff39da0ef4b9",
+      "returncode": 0,
+      "elapsed_seconds": 0.5836256670008879,
+      "log": "intermediate/logs/write_summary.final_review.log"
+    },
+    {
+      "script": "scripts/seam_adversarial.py",
+      "sha256": "2a3f418a09ff01219edb8aa567ee16a8da56c089238c0a6f08f316b303d2f17b",
+      "returncode": 0,
+      "elapsed_seconds": 27.706535291014006,
+      "log": "intermediate/logs/seam_adversarial.final_review.log"
+    },
+    {
+      "script": "scripts/post_regeneration_adversarial.py",
+      "sha256": "7ad556adee8942f3411060a5197863fbf1ae5743da17e027baa6b88f98717dc2",
+      "returncode": 0,
+      "elapsed_seconds": 5.563791583001148,
+      "log": "intermediate/logs/post_regeneration_adversarial.final_review.log"
+    },
+    {
+      "script": "scripts/verify_layout.py",
+      "sha256": "3eb9b2e96f3d801bba72a112bf0adcba7cc9a711f3fc49b38826282dd5af538b",
+      "returncode": 0,
+      "elapsed_seconds": 5.651364707999164,
+      "log": "intermediate/logs/verify_layout.final_review.log"
+    }
+  ],
+  "finished_utc": "2026-10-24T22:41:08.498307+00:00"
+}

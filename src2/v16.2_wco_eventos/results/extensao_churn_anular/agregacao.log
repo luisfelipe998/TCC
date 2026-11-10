@@ -1,0 +1,46 @@
+{
+  "ancoras": 152,
+  "minimos": 76,
+  "maximos": 76,
+  "aquisicoes": 19,
+  "pares_ancoras": 830,
+  "comparacoes_planejadas": 6640,
+  "comparacoes_calculadas": 6625,
+  "comparacoes_nao_estimaveis": 15,
+  "comparacoes_fixos": 2052,
+  "ancoras_em_mistura": 10,
+  "ancoras_com_sobreposicao": 143,
+  "ancoras_com_outros_marcos": 120,
+  "minimos_com_sobreposicao": 70,
+  "minimos_com_outros_marcos": 60,
+  "minimos_em_mistura": 3,
+  "contextos_com_deslocamentos_nao_positivos": 2,
+  "costuras_contexto_min": 38,
+  "costuras_contexto_max": 162,
+  "invalidas_denominador": 0,
+  "erro_equacao_maximo": 0.0,
+  "maximo_wco": 1.0061569942141135,
+  "minimo_wco": 9.259254976876652e-13,
+  "maximo_wco_morlet": 0.9986783748386814,
+  "maximo_wco_v5": 1.0061569942141135,
+  "mapas_ancorados_v5_acima_1": 2,
+  "mapas_fixos_v5_acima_1": 1,
+  "ausencias_por_variante": {
+    "detector_sigma20": 15
+  },
+  "criterios_descritivos": {
+    "margem": 0.05,
+    "cobertura": 0.6666666666666666
+  },
+  "status": "PASS"
+}
+ variante       classe          comparador  ancoras  controle  diferenca  diferenca_conservador  pares_aquisicoes  fracao_positiva    minimo   maximo
+principal        churn               fixos 0.240315  0.212007   0.028308               0.025336                45         0.644444 -0.153238 0.226515
+principal        churn   minimos_distintos 0.249774  0.229557   0.020218               0.017954                29         0.551724 -0.121644 0.210681
+principal        churn polaridades_opostas 0.240315  0.217376   0.022939               0.029291                45         0.577778 -0.148690 0.211347
+principal        entre               fixos 0.241296  0.209212   0.032085               0.022896                89         0.719101 -0.088384 0.208487
+principal        entre   minimos_distintos 0.233744  0.234178  -0.000434              -0.002043                46         0.456522 -0.154557 0.156407
+principal        entre polaridades_opostas 0.241296  0.225627   0.015669               0.021392                89         0.595506 -0.114212 0.195529
+principal wavy annular               fixos 0.224964  0.220523   0.004441               0.004086                34         0.558824 -0.184458 0.114664
+principal wavy annular   minimos_distintos 0.211342  0.235151  -0.023809              -0.011291                13         0.461538 -0.142015 0.075200
+principal wavy annular polaridades_opostas 0.224964  0.215876   0.009088               0.009932                34         0.647059 -0.113450 0.084170

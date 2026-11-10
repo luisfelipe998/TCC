@@ -1,0 +1,174 @@
+{
+  "passed": true,
+  "n_selected": 26,
+  "n_eligible": 25,
+  "primary_threshold": 0.7,
+  "lumen_rows": [
+    18,
+    71
+  ],
+  "diameter_px": 53,
+  "changed_alpha_runs": 26,
+  "changed_flip_runs": 25,
+  "max_absolute_alpha_change": 0.0009758055469663018,
+  "max_absolute_F1000_change": 0.5273742164839392,
+  "min_relative_flip_change_percent": -7.2552447552447585,
+  "max_relative_flip_change_percent": 6.76328502415458,
+  "max_absolute_alpha_change_frozen_reference": 0.001307100307241904,
+  "native_temporal_fields_unchanged": [
+    "n_native_frames",
+    "native_camera_fps",
+    "frame_index_step",
+    "effective_native_sample_hz",
+    "elapsed_s",
+    "sample_exposure_window_s",
+    "raw_otsu_threshold",
+    "raw_x508_flip_count",
+    "raw_x508_n_comparisons",
+    "raw_x508_flip_rate",
+    "raw_x508_flip_hz_per_pixel",
+    "raw_5probe_flip_count",
+    "raw_5probe_n_comparisons",
+    "raw_5probe_flip_rate",
+    "raw_5probe_flip_hz_per_pixel",
+    "raw_dark_occupancy",
+    "raw_shuffle_expected_rate",
+    "raw_rate_over_shuffle",
+    "raw_flip_share_intensity_change_le5",
+    "raw_core_saturation_fraction",
+    "raw_station_rate_min",
+    "raw_station_rate_max",
+    "raw_spatial_median3_flip_rate",
+    "raw_shuffled_flip_rate"
+  ],
+  "group_medians": [
+    {
+      "pattern": "dispersed bubbles",
+      "n": 1,
+      "alpha_v14": 0.001768204847710411,
+      "alpha_v141": 0.0017158884376130739,
+      "F1000_v14": 2.4641390393428964,
+      "F1000_v141": 2.630795785965121
+    },
+    {
+      "pattern": "plug",
+      "n": 3,
+      "alpha_v14": 0.5931380475555297,
+      "alpha_v141": 0.5932635007597954,
+      "F1000_v14": 9.730399452135678,
+      "F1000_v141": 9.628763844826628
+    },
+    {
+      "pattern": "slug",
+      "n": 3,
+      "alpha_v14": 0.6062947881250725,
+      "alpha_v141": 0.6066557241411975,
+      "F1000_v14": 10.41884285484054,
+      "F1000_v141": 10.066673431503046
+    },
+    {
+      "pattern": "churn",
+      "n": 10,
+      "alpha_v14": 0.8226214404358909,
+      "alpha_v141": 0.8226815435915975,
+      "F1000_v14": 11.19010973471768,
+      "F1000_v141": 11.22252886387904
+    },
+    {
+      "pattern": "wavy annular",
+      "n": 8,
+      "alpha_v14": 0.9834264588651169,
+      "alpha_v141": 0.9834652500981415,
+      "F1000_v14": 1.132855347038008,
+      "F1000_v141": 1.1267333582268684
+    }
+  ],
+  "threshold_hull_intersections": [
+    {
+      "condition": "v14",
+      "threshold": 0.6,
+      "overlap_pairs": "[[\"plug\", \"slug\"], [\"churn\", \"wavy annular\"]]",
+      "plug_slug_intersect": true,
+      "churn_annular_intersect": true,
+      "n_acquisitions": 25
+    },
+    {
+      "condition": "v14",
+      "threshold": 0.65,
+      "overlap_pairs": "[[\"plug\", \"slug\"], [\"churn\", \"wavy annular\"]]",
+      "plug_slug_intersect": true,
+      "churn_annular_intersect": true,
+      "n_acquisitions": 25
+    },
+    {
+      "condition": "v14",
+      "threshold": 0.7,
+      "overlap_pairs": "[[\"churn\", \"wavy annular\"]]",
+      "plug_slug_intersect": false,
+      "churn_annular_intersect": true,
+      "n_acquisitions": 25
+    },
+    {
+      "condition": "v14",
+      "threshold": 0.75,
+      "overlap_pairs": "[[\"churn\", \"wavy annular\"]]",
+      "plug_slug_intersect": false,
+      "churn_annular_intersect": true,
+      "n_acquisitions": 25
+    },
+    {
+      "condition": "v14",
+      "threshold": 0.8,
+      "overlap_pairs": "[[\"plug\", \"slug\"]]",
+      "plug_slug_intersect": true,
+      "churn_annular_intersect": false,
+      "n_acquisitions": 25
+    },
+    {
+      "condition": "v14.1",
+      "threshold": 0.6,
+      "overlap_pairs": "[[\"plug\", \"slug\"], [\"churn\", \"wavy annular\"]]",
+      "plug_slug_intersect": true,
+      "churn_annular_intersect": true,
+      "n_acquisitions": 25
+    },
+    {
+      "condition": "v14.1",
+      "threshold": 0.65,
+      "overlap_pairs": "[[\"plug\", \"slug\"], [\"churn\", \"wavy annular\"]]",
+      "plug_slug_intersect": true,
+      "churn_annular_intersect": true,
+      "n_acquisitions": 25
+    },
+    {
+      "condition": "v14.1",
+      "threshold": 0.7,
+      "overlap_pairs": "[[\"churn\", \"wavy annular\"]]",
+      "plug_slug_intersect": false,
+      "churn_annular_intersect": true,
+      "n_acquisitions": 25
+    },
+    {
+      "condition": "v14.1",
+      "threshold": 0.75,
+      "overlap_pairs": "[[\"plug\", \"slug\"], [\"churn\", \"wavy annular\"]]",
+      "plug_slug_intersect": true,
+      "churn_annular_intersect": true,
+      "n_acquisitions": 25
+    },
+    {
+      "condition": "v14.1",
+      "threshold": 0.8,
+      "overlap_pairs": "[[\"plug\", \"slug\"], [\"churn\", \"wavy annular\"]]",
+      "plug_slug_intersect": true,
+      "churn_annular_intersect": true,
+      "n_acquisitions": 25
+    }
+  ],
+  "fixed_classifier_comparisons": 12,
+  "fixed_classifiers_improved": 1,
+  "fixed_classifiers_worsened": 4,
+  "fixed_classifiers_unchanged": 7,
+  "effect": "The column-order defect is removed. Numerical changes do not establish better segmentation, physical void accuracy or classification.",
+  "threshold_sensitivity": "All five existing thresholds are reported; 0.70 remains primary. No setting is selected for better separation."
+}

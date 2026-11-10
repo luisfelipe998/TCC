@@ -1,0 +1,35 @@
+Catálogo m03q05_001: 68 candidatos, 8 selecionados
+Catálogo m03q10_001: 77 candidatos, 8 selecionados
+Catálogo m03q20_001: 99 candidatos, 8 selecionados
+Catálogo m03q40_001: 102 candidatos, 8 selecionados
+Catálogo m04q10_001: 47 candidatos, 8 selecionados
+Catálogo m04q20_001: 60 candidatos, 8 selecionados
+Catálogo m04q40_001: 75 candidatos, 8 selecionados
+Catálogo m04q80_001: 132 candidatos, 8 selecionados
+Catálogo m05q10_001: 37 candidatos, 8 selecionados
+Catálogo m05q20_001: 50 candidatos, 8 selecionados
+Catálogo m05q40_001: 57 candidatos, 8 selecionados
+Catálogo m05q80_001: 87 candidatos, 8 selecionados
+Catálogo m06q10_001: 48 candidatos, 8 selecionados
+Catálogo m06q20_001: 57 candidatos, 8 selecionados
+Catálogo m06q40_001: 73 candidatos, 8 selecionados
+Catálogo m06q80_001: 97 candidatos, 8 selecionados
+Catálogo m07q20_001: 52 candidatos, 8 selecionados
+Catálogo m07q40_001: 67 candidatos, 8 selecionados
+Catálogo m07q80_001: 80 candidatos, 8 selecionados
+{
+  "data_utc": "2026-10-24T23:57:11.110542+00:00",
+  "candidatos": 1365,
+  "ancoras": 152,
+  "pares_candidatos": 8208,
+  "pares_selecionados": 830,
+  "grupos": {
+    "entre / minimos_compativeis": 178,
+    "entre / minimos_distintos": 79,
+    "entre / polaridades_opostas": 180,
+    "intra / minimos_compativeis": 156,
+    "intra / minimos_distintos": 75,
+    "intra / polaridades_opostas": 162
+  },
+  "segundos": 20.403774915990653
+}

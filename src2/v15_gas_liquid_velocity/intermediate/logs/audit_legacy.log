@@ -1,0 +1,15 @@
+{
+  "artifact": "/Users/i521862/Documents/personal/unisinos/TCC/src2/v15_gas_liquid_velocity/results/validation/legacy_audit.json",
+  "original_rows": 28,
+  "selected_rows": 26,
+  "excluded_rows": 5,
+  "max_independent_difference": 1.0658141036401503e-14,
+  "original_sources_unchanged": true,
+  "selected_pattern_counts": {
+    "bubble": 1,
+    "plug": 3,
+    "slug": 3,
+    "churn": 10,
+    "wavy annular": 9
+  }
+}

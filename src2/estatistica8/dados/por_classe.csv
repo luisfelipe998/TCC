@@ -1,0 +1,1729 @@
+condition,scope,metric,pattern,silhouette,neighbor
+ancora,quatro_padroes,wco_global_max,churn,-0.3494646185471087,0.40000000000000002
+ancora,quatro_padroes,wco_global_max,wavy annular,-0.14296354912924164,0.33333333333333331
+ancora,quatro_padroes,wco_global_max,plug,-0.21690207655428609,0
+ancora,quatro_padroes,wco_global_max,slug,-0.40364278663663028,0
+ancora,quatro_padroes,wco_zero_weighted,churn,-0.087148408589043422,0.10000000000000001
+ancora,quatro_padroes,wco_zero_weighted,wavy annular,-0.05460069472798703,0.44444444444444442
+ancora,quatro_padroes,wco_zero_weighted,plug,0.059397007004466207,0.66666666666666663
+ancora,quatro_padroes,wco_zero_weighted,slug,-0.073542014258102972,0
+ancora,quatro_padroes,wco_scale_peak_weighted,churn,-0.14368316271499149,0.29999999999999999
+ancora,quatro_padroes,wco_scale_peak_weighted,wavy annular,-0.11921399132674419,0.44444444444444442
+ancora,quatro_padroes,wco_scale_peak_weighted,plug,-0.065404731042688152,0
+ancora,quatro_padroes,wco_scale_peak_weighted,slug,-0.03187595201399155,0
+ancora,quatro_padroes,wco_scale_peak_power05,churn,-0.15712518603606163,0.10000000000000001
+ancora,quatro_padroes,wco_scale_peak_power05,wavy annular,-0.12364572785773136,0.44444444444444442
+ancora,quatro_padroes,wco_scale_peak_power05,plug,-0.06377961818566999,0
+ancora,quatro_padroes,wco_scale_peak_power05,slug,-0.02708912017293506,0
+ancora,quatro_padroes,wco_common_lag_peak,churn,-0.11991579393046317,0
+ancora,quatro_padroes,wco_common_lag_peak,wavy annular,-0.088267276641371614,0.44444444444444442
+ancora,quatro_padroes,wco_common_lag_peak,plug,-0.010420895843176847,0
+ancora,quatro_padroes,wco_common_lag_peak,slug,-0.056034341027608604,0
+ancora,quatro_padroes,wco_map_mean,churn,-0.011354548175233436,0.29999999999999999
+ancora,quatro_padroes,wco_map_mean,wavy annular,-0.0073284674175176168,0.44444444444444442
+ancora,quatro_padroes,wco_map_mean,plug,-0.0061019761411506375,0
+ancora,quatro_padroes,wco_map_mean,slug,-0.0094562986219401731,0
+ancora,quatro_padroes,wco_map_mean_weighted,churn,-0.036453185555630291,0.10000000000000001
+ancora,quatro_padroes,wco_map_mean_weighted,wavy annular,-0.028521881691635484,0.44444444444444442
+ancora,quatro_padroes,wco_map_mean_weighted,plug,-0.0069038740333004318,0
+ancora,quatro_padroes,wco_map_mean_weighted,slug,-0.0091048835764873676,0
+ancora,quatro_padroes,wco_lag_q90_weighted,churn,-0.11626375397085768,0.20000000000000001
+ancora,quatro_padroes,wco_lag_q90_weighted,wavy annular,-0.094191929695366425,0.55555555555555558
+ancora,quatro_padroes,wco_lag_q90_weighted,plug,-0.042392493046611385,0
+ancora,quatro_padroes,wco_lag_q90_weighted,slug,-0.028359157623268887,0
+ancora,quatro_padroes,wco_area05_weighted,churn,-0.038737256961241875,0.20000000000000001
+ancora,quatro_padroes,wco_area05_weighted,wavy annular,-0.031731723499399178,0.55555555555555558
+ancora,quatro_padroes,wco_area05_weighted,plug,-0.021925109475926602,0
+ancora,quatro_padroes,wco_area05_weighted,slug,-0.0078202676039409186,0
+ancora,quatro_padroes,wco_mean_short,churn,-0.00011082302390545561,0.5
+ancora,quatro_padroes,wco_mean_short,wavy annular,-0.0029388984066132558,0.33333333333333331
+ancora,quatro_padroes,wco_mean_short,plug,-0.0021115285085950342,0
+ancora,quatro_padroes,wco_mean_short,slug,-0.0019350479154093593,0
+ancora,quatro_padroes,wco_mean_middle,churn,-0.017953987941606041,0.5
+ancora,quatro_padroes,wco_mean_middle,wavy annular,-0.012694900261122584,0.22222222222222221
+ancora,quatro_padroes,wco_mean_middle,plug,-0.013126501225935887,0
+ancora,quatro_padroes,wco_mean_middle,slug,-0.023224995493040995,0
+ancora,quatro_padroes,wco_mean_long,churn,-0.083588864346983718,0.29999999999999999
+ancora,quatro_padroes,wco_mean_long,wavy annular,-0.043851147252104344,0.33333333333333331
+ancora,quatro_padroes,wco_mean_long,plug,-0.047501555701063264,0
+ancora,quatro_padroes,wco_mean_long,slug,-0.036726471102294725,0
+ancora,quatro_padroes,wco_common_peak_short,churn,-0.016826706662393297,0.5
+ancora,quatro_padroes,wco_common_peak_short,wavy annular,-0.014922588041181748,0.44444444444444442
+ancora,quatro_padroes,wco_common_peak_short,plug,-0.055365878048113305,0
+ancora,quatro_padroes,wco_common_peak_short,slug,-0.016877493385285117,0
+ancora,quatro_padroes,wco_common_peak_middle,churn,-0.12373795185246803,0.20000000000000001
+ancora,quatro_padroes,wco_common_peak_middle,wavy annular,-0.10002260640628086,0.22222222222222221
+ancora,quatro_padroes,wco_common_peak_middle,plug,-0.03441106510976475,0
+ancora,quatro_padroes,wco_common_peak_middle,slug,-0.10669793008624284,0
+ancora,quatro_padroes,wco_common_peak_long,churn,-0.33124412325780461,0.59999999999999998
+ancora,quatro_padroes,wco_common_peak_long,wavy annular,-0.18473220847335287,0.33333333333333331
+ancora,quatro_padroes,wco_common_peak_long,plug,-0.1973533710479434,0
+ancora,quatro_padroes,wco_common_peak_long,slug,-0.12954687954343683,0
+ancora,quatro_padroes,wco_central_mean,churn,-0.029021060844444974,0.29999999999999999
+ancora,quatro_padroes,wco_central_mean,wavy annular,-0.029232021974149494,0.33333333333333331
+ancora,quatro_padroes,wco_central_mean,plug,0.030174033027121207,0.66666666666666663
+ancora,quatro_padroes,wco_central_mean,slug,-0.042098876636533576,0
+ancora,quatro_padroes,self_area,churn,-0.10546035634599696,0.20000000000000001
+ancora,quatro_padroes,self_area,wavy annular,-0.087350356558812708,0.55555555555555558
+ancora,quatro_padroes,self_area,plug,-0.099184410664139869,0
+ancora,quatro_padroes,self_area,slug,-0.0096474808457158012,0
+ancora,quatro_padroes,self_width,churn,-0.11422125931733344,0.10000000000000001
+ancora,quatro_padroes,self_width,wavy annular,-0.17347275301102325,0.1111111111111111
+ancora,quatro_padroes,self_width,plug,-0.0032307413321493866,0
+ancora,quatro_padroes,self_width,slug,-0.10888176333198313,0
+ancora,quatro_padroes,self_bands,churn,-0.1883790692554585,0.59999999999999998
+ancora,quatro_padroes,self_bands,wavy annular,-0.22711809202363462,0.22222222222222221
+ancora,quatro_padroes,self_bands,plug,-0.24382431450430855,0
+ancora,quatro_padroes,self_bands,slug,-0.10931571392398416,0
+ancora,quatro_padroes,kernel_area_full,churn,-0.084771050470980214,0.29999999999999999
+ancora,quatro_padroes,kernel_area_full,wavy annular,-0.08617640887598893,0.33333333333333331
+ancora,quatro_padroes,kernel_area_full,plug,-0.038689528273371111,0
+ancora,quatro_padroes,kernel_area_full,slug,-0.07535310148295761,0
+ancora,quatro_padroes,kernel_area_short,churn,-0.020665337492314223,0.59999999999999998
+ancora,quatro_padroes,kernel_area_short,wavy annular,-0.067943073481909144,0.33333333333333331
+ancora,quatro_padroes,kernel_area_short,plug,-0.0098294663272553515,0
+ancora,quatro_padroes,kernel_area_short,slug,-0.01412332132679559,0
+ancora,quatro_padroes,kernel_zero,churn,-0.015019178036163271,0.29999999999999999
+ancora,quatro_padroes,kernel_zero,wavy annular,-0.014644278464936997,0.33333333333333331
+ancora,quatro_padroes,kernel_zero,plug,0.016174007777898576,0.66666666666666663
+ancora,quatro_padroes,kernel_zero,slug,-0.022064056264308272,0
+ancora,quatro_padroes,wps_pearson,churn,-0.20437396035006744,0.40000000000000002
+ancora,quatro_padroes,wps_pearson,wavy annular,0.18554956585377319,0.66666666666666663
+ancora,quatro_padroes,wps_pearson,plug,-0.24404931220475412,0
+ancora,quatro_padroes,wps_pearson,slug,-0.0084346996572832594,0
+ancora,quatro_padroes,wps_hellinger,churn,0.091875218714593282,0.69999999999999996
+ancora,quatro_padroes,wps_hellinger,wavy annular,-0.27528154243695679,0.22222222222222221
+ancora,quatro_padroes,wps_hellinger,plug,-0.21067002534165183,0
+ancora,quatro_padroes,wps_hellinger,slug,-0.056649267864083107,0
+ancora,quatro_padroes,wps_wasserstein,churn,0.18918152667873747,0.80000000000000004
+ancora,quatro_padroes,wps_wasserstein,wavy annular,-0.41340324924578542,0.44444444444444442
+ancora,quatro_padroes,wps_wasserstein,plug,-0.28839211565182715,0
+ancora,quatro_padroes,wps_wasserstein,slug,-0.21120012305115674,0
+ancora,quatro_padroes,wps_log_peak,churn,-0.34137170279635076,0.25
+ancora,quatro_padroes,wps_log_peak,wavy annular,-0.11499281980163693,0.22222222222222221
+ancora,quatro_padroes,wps_log_peak,plug,-0.14663508713583637,0
+ancora,quatro_padroes,wps_log_peak,slug,-0.43930903876090682,0
+ancora,quatro_padroes,wps_slope,churn,0.31210663139144501,0.40000000000000002
+ancora,quatro_padroes,wps_slope,wavy annular,-0.53576572975496706,0.22222222222222221
+ancora,quatro_padroes,wps_slope,plug,-0.12280915203446253,0.66666666666666663
+ancora,quatro_padroes,wps_slope,slug,-0.31888497855530695,0
+ancora,quatro_padroes,wps_width,churn,0.27035475104064516,0.76666666666666661
+ancora,quatro_padroes,wps_width,wavy annular,-0.10128976548187708,0.3888888888888889
+ancora,quatro_padroes,wps_width,plug,-0.50214145278707922,0
+ancora,quatro_padroes,wps_width,slug,-0.16636177337931782,0
+ancora,quatro_padroes,wps_trio,churn,0.035789332757280648,0.69999999999999996
+ancora,quatro_padroes,wps_trio,wavy annular,-0.12583086578637898,0.44444444444444442
+ancora,quatro_padroes,wps_trio,plug,-0.16761944014458938,0
+ancora,quatro_padroes,wps_trio,slug,-0.32844311930794073,0
+ancora,quatro_padroes,mean_power_pearson,churn,-0.17154420706157231,0.29999999999999999
+ancora,quatro_padroes,mean_power_pearson,wavy annular,0.1552704371550655,0.77777777777777779
+ancora,quatro_padroes,mean_power_pearson,plug,-0.23647259512420138,0
+ancora,quatro_padroes,mean_power_pearson,slug,-0.047956891306657153,0
+ancora,quatro_padroes,mean_power_hellinger,churn,-0.052049653038200992,0.59999999999999998
+ancora,quatro_padroes,mean_power_hellinger,wavy annular,-0.23512399795066566,0.1111111111111111
+ancora,quatro_padroes,mean_power_hellinger,plug,-0.19014668733571813,0
+ancora,quatro_padroes,mean_power_hellinger,slug,-0.058901146198356076,0
+ancora,quatro_padroes,mean_power_wasserstein,churn,0.037366253234273068,0.59999999999999998
+ancora,quatro_padroes,mean_power_wasserstein,wavy annular,-0.36700561890534639,0.22222222222222221
+ancora,quatro_padroes,mean_power_wasserstein,plug,-0.2405422708851673,0
+ancora,quatro_padroes,mean_power_wasserstein,slug,-0.17142573049839738,0
+ancora,quatro_padroes,mean_power_log_peak,churn,-0.41842303089706451,0.14999999999999999
+ancora,quatro_padroes,mean_power_log_peak,wavy annular,-0.14596518301015779,0.27777777777777779
+ancora,quatro_padroes,mean_power_log_peak,plug,-0.29243949416512222,0
+ancora,quatro_padroes,mean_power_log_peak,slug,0.099647902099237295,0
+ancora,quatro_padroes,mean_power_slope,churn,0.25457077312992377,0.5
+ancora,quatro_padroes,mean_power_slope,wavy annular,-0.51830042940874543,0.33333333333333331
+ancora,quatro_padroes,mean_power_slope,plug,-0.032746340378565358,0.66666666666666663
+ancora,quatro_padroes,mean_power_slope,slug,-0.38093598643939153,0
+ancora,quatro_padroes,mean_power_width,churn,-0.26697973053722379,0.40000000000000002
+ancora,quatro_padroes,mean_power_width,wavy annular,-0.24754744948705593,0.44444444444444442
+ancora,quatro_padroes,mean_power_width,plug,-0.13531481866722003,0
+ancora,quatro_padroes,mean_power_width,slug,-0.37027598250424631,0
+ancora,quatro_padroes,mean_power_trio,churn,-0.11265998430533186,0.5
+ancora,quatro_padroes,mean_power_trio,wavy annular,-0.18817981645624179,0.22222222222222221
+ancora,quatro_padroes,mean_power_trio,plug,-0.13231876413415822,0
+ancora,quatro_padroes,mean_power_trio,slug,-0.059149020303350612,0
+ancora,churn_annular,wco_global_max,churn,-0.049994543966658152,0.5
+ancora,churn_annular,wco_global_max,wavy annular,0.029919928922704293,0.44444444444444442
+ancora,churn_annular,wco_zero_weighted,churn,-0.046102953658700173,0.10000000000000001
+ancora,churn_annular,wco_zero_weighted,wavy annular,-0.018751104434336634,0.44444444444444442
+ancora,churn_annular,wco_scale_peak_weighted,churn,-0.040745831072987355,0.40000000000000002
+ancora,churn_annular,wco_scale_peak_weighted,wavy annular,-0.0039046727638131912,0.44444444444444442
+ancora,churn_annular,wco_scale_peak_power05,churn,-0.056036967535620097,0.20000000000000001
+ancora,churn_annular,wco_scale_peak_power05,wavy annular,-0.0070079533003210154,0.44444444444444442
+ancora,churn_annular,wco_common_lag_peak,churn,-0.056589240033755442,0
+ancora,churn_annular,wco_common_lag_peak,wavy annular,-0.010832562064658019,0.44444444444444442
+ancora,churn_annular,wco_map_mean,churn,-0.0032176810592564041,0.5
+ancora,churn_annular,wco_map_mean,wavy annular,0.00040427147039631494,0.55555555555555558
+ancora,churn_annular,wco_map_mean_weighted,churn,-0.012931966248870001,0.10000000000000001
+ancora,churn_annular,wco_map_mean_weighted,wavy annular,-0.00018962669775117848,0.66666666666666663
+ancora,churn_annular,wco_lag_q90_weighted,churn,-0.042621609254696137,0.29999999999999999
+ancora,churn_annular,wco_lag_q90_weighted,wavy annular,0.0030089195824969939,0.66666666666666663
+ancora,churn_annular,wco_area05_weighted,churn,-0.01258183463972753,0.29999999999999999
+ancora,churn_annular,wco_area05_weighted,wavy annular,0.0002200511148248769,0.66666666666666663
+ancora,churn_annular,wco_mean_short,churn,0.0016529989855452183,0.69999999999999996
+ancora,churn_annular,wco_mean_short,wavy annular,-0.0017310140069998171,0.55555555555555558
+ancora,churn_annular,wco_mean_middle,churn,-0.0078495489359902866,0.5
+ancora,churn_annular,wco_mean_middle,wavy annular,-0.0012657823749977588,0.33333333333333331
+ancora,churn_annular,wco_mean_long,churn,-0.011152400717178344,0.5
+ancora,churn_annular,wco_mean_long,wavy annular,0.02855130230732093,0.55555555555555558
+ancora,churn_annular,wco_common_peak_short,churn,-0.0053476947366031145,0.5
+ancora,churn_annular,wco_common_peak_short,wavy annular,-0.0050720753780496902,0.55555555555555558
+ancora,churn_annular,wco_common_peak_middle,churn,-0.033617935080991666,0.29999999999999999
+ancora,churn_annular,wco_common_peak_middle,wavy annular,-0.034887411564290066,0.22222222222222221
+ancora,churn_annular,wco_common_peak_long,churn,-0.092213620522312995,0.69999999999999996
+ancora,churn_annular,wco_common_peak_long,wavy annular,0.14229555246181871,0.33333333333333331
+ancora,churn_annular,wco_central_mean,churn,-0.013224291495898346,0.40000000000000002
+ancora,churn_annular,wco_central_mean,wavy annular,-0.016855606189373897,0.33333333333333331
+ancora,churn_annular,self_area,churn,0.03401190105309241,0.20000000000000001
+ancora,churn_annular,self_area,wavy annular,-0.011856631403968523,0.55555555555555558
+ancora,churn_annular,self_width,churn,0.072085192616140617,0.5
+ancora,churn_annular,self_width,wavy annular,-0.091844272388901929,0.55555555555555558
+ancora,churn_annular,self_bands,churn,0.16399670825361251,0.5
+ancora,churn_annular,self_bands,wavy annular,-0.15798482870349786,0.1111111111111111
+ancora,churn_annular,kernel_area_full,churn,-0.0032195634230740592,0.40000000000000002
+ancora,churn_annular,kernel_area_full,wavy annular,-0.023021470330898113,0.33333333333333331
+ancora,churn_annular,kernel_area_short,churn,0.041084337758128357,0.80000000000000004
+ancora,churn_annular,kernel_area_short,wavy annular,-0.039002518866606294,0.44444444444444442
+ancora,churn_annular,kernel_zero,churn,-0.0073590622893901139,0.40000000000000002
+ancora,churn_annular,kernel_zero,wavy annular,-0.0088176965147987382,0.33333333333333331
+ancora,churn_annular,wps_pearson,churn,-0.1857841511708804,0.5
+ancora,churn_annular,wps_pearson,wavy annular,0.26167158300193077,0.66666666666666663
+ancora,churn_annular,wps_hellinger,churn,0.24548486204603975,0.69999999999999996
+ancora,churn_annular,wps_hellinger,wavy annular,-0.069243747755366847,0.55555555555555558
+ancora,churn_annular,wps_wasserstein,churn,0.32062392852188748,0.80000000000000004
+ancora,churn_annular,wps_wasserstein,wavy annular,-0.053813334809787255,0.66666666666666663
+ancora,churn_annular,wps_log_peak,churn,-0.14191640770204084,0.45000000000000001
+ancora,churn_annular,wps_log_peak,wavy annular,0.076143821096483488,0.31481481481481477
+ancora,churn_annular,wps_slope,churn,0.48607162722560771,0.40000000000000002
+ancora,churn_annular,wps_slope,wavy annular,-0.13155907984726511,0.44444444444444442
+ancora,churn_annular,wps_width,churn,0.41505167728819015,0.90000000000000002
+ancora,churn_annular,wps_width,wavy annular,0.45450152479418243,0.72222222222222221
+ancora,churn_annular,wps_trio,churn,0.20931216702387245,0.90000000000000002
+ancora,churn_annular,wps_trio,wavy annular,0.22484345388809135,0.66666666666666663
+ancora,churn_annular,mean_power_pearson,churn,-0.15197017140224345,0.40000000000000002
+ancora,churn_annular,mean_power_pearson,wavy annular,0.23094707915047202,0.77777777777777779
+ancora,churn_annular,mean_power_hellinger,churn,0.14544993229538611,0.59999999999999998
+ancora,churn_annular,mean_power_hellinger,wavy annular,-0.10928975297237173,0.33333333333333331
+ancora,churn_annular,mean_power_wasserstein,churn,0.23988103746078532,0.69999999999999996
+ancora,churn_annular,mean_power_wasserstein,wavy annular,-0.14509473633324307,0.55555555555555558
+ancora,churn_annular,mean_power_log_peak,churn,0.073899442291049888,0.45000000000000001
+ancora,churn_annular,mean_power_log_peak,wavy annular,-0.00055091720892050085,0.27777777777777779
+ancora,churn_annular,mean_power_slope,churn,0.42918839309697815,0.5
+ancora,churn_annular,mean_power_slope,wavy annular,-0.13404448571244831,0.44444444444444442
+ancora,churn_annular,mean_power_width,churn,0.098334861153627398,0.56666666666666665
+ancora,churn_annular,mean_power_width,wavy annular,0.27716271444415808,0.66666666666666663
+ancora,churn_annular,mean_power_trio,churn,0.17649063358920269,0.69999999999999996
+ancora,churn_annular,mean_power_trio,wavy annular,0.11581717275743839,0.66666666666666663
+ancora,plug_slug,wco_global_max,plug,-0.13550554652568816,0
+ancora,plug_slug,wco_global_max,slug,-0.32000053115224475,0.33333333333333331
+ancora,plug_slug,wco_zero_weighted,plug,0.059397007004466207,0.66666666666666663
+ancora,plug_slug,wco_zero_weighted,slug,-0.041328472116755936,0.33333333333333331
+ancora,plug_slug,wco_scale_peak_weighted,plug,-0.038469523245568411,0.66666666666666663
+ancora,plug_slug,wco_scale_peak_weighted,slug,0.0031855690030946474,0.33333333333333331
+ancora,plug_slug,wco_scale_peak_power05,plug,-0.039476092022591863,0.66666666666666663
+ancora,plug_slug,wco_scale_peak_power05,slug,0.010854306712930259,0.33333333333333331
+ancora,plug_slug,wco_common_lag_peak,plug,0.017398684344636373,0.66666666666666663
+ancora,plug_slug,wco_common_lag_peak,slug,-0.002565081454783793,0.33333333333333331
+ancora,plug_slug,wco_map_mean,plug,-0.003779747796647507,0.33333333333333331
+ancora,plug_slug,wco_map_mean,slug,-0.0057374712163800468,0.33333333333333331
+ancora,plug_slug,wco_map_mean_weighted,plug,-0.0069038740333004318,0.66666666666666663
+ancora,plug_slug,wco_map_mean_weighted,slug,-0.0091048835764873676,0
+ancora,plug_slug,wco_lag_q90_weighted,plug,-0.037330858076506497,0.33333333333333331
+ancora,plug_slug,wco_lag_q90_weighted,slug,-0.0077675987166007819,0
+ancora,plug_slug,wco_area05_weighted,plug,-0.017040299453237109,0.33333333333333331
+ancora,plug_slug,wco_area05_weighted,slug,0.00021961273614507179,0
+ancora,plug_slug,wco_mean_short,plug,0.0016091207626760743,0.66666666666666663
+ancora,plug_slug,wco_mean_short,slug,0.00078801283615034811,0
+ancora,plug_slug,wco_mean_middle,plug,-0.0041119222845209221,0.66666666666666663
+ancora,plug_slug,wco_mean_middle,slug,-0.0090026644951086403,0.33333333333333331
+ancora,plug_slug,wco_mean_long,plug,-0.047501555701063264,0
+ancora,plug_slug,wco_mean_long,slug,-0.036726471102294725,0.33333333333333331
+ancora,plug_slug,wco_common_peak_short,plug,-0.0097264938158622746,0
+ancora,plug_slug,wco_common_peak_short,slug,0.018599510602018216,0.33333333333333331
+ancora,plug_slug,wco_common_peak_middle,plug,0.039243347879885683,0.66666666666666663
+ancora,plug_slug,wco_common_peak_middle,slug,-0.020383683878723229,0.33333333333333331
+ancora,plug_slug,wco_common_peak_long,plug,-0.1973533710479434,0
+ancora,plug_slug,wco_common_peak_long,slug,-0.12954687954343683,0.66666666666666663
+ancora,plug_slug,wco_central_mean,plug,0.036746575776398324,0.66666666666666663
+ancora,plug_slug,wco_central_mean,slug,-0.015452876705936515,0.33333333333333331
+ancora,plug_slug,self_area,plug,-0.099184410664139869,0
+ancora,plug_slug,self_area,slug,-0.0096474808457158012,0
+ancora,plug_slug,self_width,plug,0.017962740425926407,0.66666666666666663
+ancora,plug_slug,self_width,slug,-0.10888176333198313,0
+ancora,plug_slug,self_bands,plug,-0.24382431450430855,0.33333333333333331
+ancora,plug_slug,self_bands,slug,-0.10931571392398416,0.33333333333333331
+ancora,plug_slug,kernel_area_full,plug,-0.018634318004985443,0.33333333333333331
+ancora,plug_slug,kernel_area_full,slug,-0.059729245571383906,0.33333333333333331
+ancora,plug_slug,kernel_area_short,plug,0.027860103288059424,0.33333333333333331
+ancora,plug_slug,kernel_area_short,slug,0.0064708760757427675,0
+ancora,plug_slug,kernel_zero,plug,0.019803019073270096,0.66666666666666663
+ancora,plug_slug,kernel_zero,slug,-0.0078756427059192436,0.33333333333333331
+ancora,plug_slug,wps_pearson,plug,-0.16110864681324422,0
+ancora,plug_slug,wps_pearson,slug,0.062305280740969297,0.33333333333333331
+ancora,plug_slug,wps_hellinger,plug,-0.21067002534165183,0
+ancora,plug_slug,wps_hellinger,slug,-0.056649267864083107,0
+ancora,plug_slug,wps_wasserstein,plug,-0.26261961155766028,0
+ancora,plug_slug,wps_wasserstein,slug,-0.21120012305115674,0
+ancora,plug_slug,wps_log_peak,plug,0.089629745444145967,0.66666666666666663
+ancora,plug_slug,wps_log_peak,slug,-0.36303474466483071,0
+ancora,plug_slug,wps_slope,plug,-0.026125600941492171,0.66666666666666663
+ancora,plug_slug,wps_slope,slug,-0.31888497855530695,0
+ancora,plug_slug,wps_width,plug,-0.37666188426590236,0
+ancora,plug_slug,wps_width,slug,0.068878833584716595,0.66666666666666663
+ancora,plug_slug,wps_trio,plug,-0.13091284907989884,0
+ancora,plug_slug,wps_trio,slug,-0.28471799900082645,0
+ancora,plug_slug,mean_power_pearson,plug,-0.13987109277581181,0
+ancora,plug_slug,mean_power_pearson,slug,0.069468698871835557,0.33333333333333331
+ancora,plug_slug,mean_power_hellinger,plug,-0.19014668733571813,0
+ancora,plug_slug,mean_power_hellinger,slug,-0.058901146198356076,0
+ancora,plug_slug,mean_power_wasserstein,plug,-0.2405422708851673,0
+ancora,plug_slug,mean_power_wasserstein,slug,-0.17142573049839738,0
+ancora,plug_slug,mean_power_log_peak,plug,-0.066514541924379389,0.66666666666666663
+ancora,plug_slug,mean_power_log_peak,slug,0.099647902099237295,0
+ancora,plug_slug,mean_power_slope,plug,0.069710294231208295,0.66666666666666663
+ancora,plug_slug,mean_power_slope,slug,-0.38093598643939153,0
+ancora,plug_slug,mean_power_width,plug,0.10847606499780506,0
+ancora,plug_slug,mean_power_width,slug,-0.22474026821853221,0.33333333333333331
+ancora,plug_slug,mean_power_trio,plug,-0.039507825264883355,0
+ancora,plug_slug,mean_power_trio,slug,-0.044740435155296659,0
+ancora,churn_plug,wco_global_max,churn,-0.25812116807549423,0.80000000000000004
+ancora,churn_plug,wco_global_max,plug,0.1020502738803669,0
+ancora,churn_plug,wco_zero_weighted,churn,0.0032501445951784724,0.80000000000000004
+ancora,churn_plug,wco_zero_weighted,plug,0.10526962661244497,0.66666666666666663
+ancora,churn_plug,wco_scale_peak_weighted,churn,-0.076634668646976642,0.69999999999999996
+ancora,churn_plug,wco_scale_peak_weighted,plug,0.0096525357689185576,0
+ancora,churn_plug,wco_scale_peak_power05,churn,-0.083847009756172514,0.69999999999999996
+ancora,churn_plug,wco_scale_peak_power05,plug,0.013391246991340604,0
+ancora,churn_plug,wco_common_lag_peak,churn,-0.062177455981291554,0.5
+ancora,churn_plug,wco_common_lag_peak,plug,0.036877974689811945,0.33333333333333331
+ancora,churn_plug,wco_map_mean,churn,-0.0054056731723316469,0.69999999999999996
+ancora,churn_plug,wco_map_mean,plug,-0.00092076430305150817,0
+ancora,churn_plug,wco_map_mean_weighted,churn,-0.027754451200363749,0.40000000000000002
+ancora,churn_plug,wco_map_mean_weighted,plug,0.012688185032819191,0
+ancora,churn_plug,wco_lag_q90_weighted,churn,-0.070084730250857499,0.69999999999999996
+ancora,churn_plug,wco_lag_q90_weighted,plug,0.026171428456549833,0
+ancora,churn_plug,wco_area05_weighted,churn,-0.022318225997717975,0.59999999999999998
+ancora,churn_plug,wco_area05_weighted,plug,0.0065656889301315179,0
+ancora,churn_plug,wco_mean_short,churn,0.00084228846806985204,0.69999999999999996
+ancora,churn_plug,wco_mean_short,plug,-0.0016270299699313508,0
+ancora,churn_plug,wco_mean_middle,churn,-0.0039180214463482577,0.80000000000000004
+ancora,churn_plug,wco_mean_middle,plug,-0.0076697958582469172,0
+ancora,churn_plug,wco_mean_long,churn,-0.06432022600005334,0.5
+ancora,churn_plug,wco_mean_long,plug,0.053213799251628634,0
+ancora,churn_plug,wco_common_peak_short,churn,0.013183036803358136,1
+ancora,churn_plug,wco_common_peak_short,plug,-0.035291599742043336,0.33333333333333331
+ancora,churn_plug,wco_common_peak_middle,churn,-0.041112367502232162,0.69999999999999996
+ancora,churn_plug,wco_common_peak_middle,plug,-0.014883960201832908,0
+ancora,churn_plug,wco_common_peak_long,churn,-0.23382025219418884,0.80000000000000004
+ancora,churn_plug,wco_common_peak_long,plug,0.27497369168122204,0
+ancora,churn_plug,wco_central_mean,churn,0.033527140366408345,1
+ancora,churn_plug,wco_central_mean,plug,0.048084294671816068,0.66666666666666663
+ancora,churn_plug,self_area,churn,-0.086029609356124248,0.40000000000000002
+ancora,churn_plug,self_area,plug,-0.030998353448778788,0
+ancora,churn_plug,self_width,churn,-0.089990475975215048,0.5
+ancora,churn_plug,self_width,plug,0.050729449591605025,0.33333333333333331
+ancora,churn_plug,self_bands,churn,-0.13377767171710508,1
+ancora,churn_plug,self_bands,plug,0.078197227503098252,0
+ancora,churn_plug,kernel_area_full,churn,-0.050329505307542766,0.69999999999999996
+ancora,churn_plug,kernel_area_full,plug,-0.00039143619573520777,0
+ancora,churn_plug,kernel_area_short,churn,-0.0090584032641492403,0.69999999999999996
+ancora,churn_plug,kernel_area_short,plug,-0.0053648655566084736,0
+ancora,churn_plug,kernel_zero,churn,0.017932768589333771,1
+ancora,churn_plug,kernel_zero,plug,0.025087393388079984,0.66666666666666663
+ancora,churn_plug,wps_pearson,churn,0.0060754296435863494,0.80000000000000004
+ancora,churn_plug,wps_pearson,plug,-0.0056704585675157277,0
+ancora,churn_plug,wps_hellinger,churn,0.11553927462366698,0.90000000000000002
+ancora,churn_plug,wps_hellinger,plug,0.10917319876486893,0
+ancora,churn_plug,wps_wasserstein,churn,0.20761428479598174,0.80000000000000004
+ancora,churn_plug,wps_wasserstein,plug,0.23088805421951253,0.33333333333333331
+ancora,churn_plug,wps_log_peak,churn,-0.29751483105346005,0.59999999999999998
+ancora,churn_plug,wps_log_peak,plug,0.017191626203252871,0
+ancora,churn_plug,wps_slope,churn,0.32041026696151886,0.80000000000000004
+ancora,churn_plug,wps_slope,plug,0.29691689613695288,0.66666666666666663
+ancora,churn_plug,wps_width,churn,0.28048988617578063,0.76666666666666661
+ancora,churn_plug,wps_width,plug,0.019441439500723301,0.33333333333333331
+ancora,churn_plug,wps_trio,churn,0.050037060628546834,0.80000000000000004
+ancora,churn_plug,wps_trio,plug,0.11932137941824268,0.33333333333333331
+ancora,churn_plug,mean_power_pearson,churn,-0.017234828188781706,0.59999999999999998
+ancora,churn_plug,mean_power_pearson,plug,-0.075158962336132271,0
+ancora,churn_plug,mean_power_hellinger,churn,0.0026262846416521797,0.80000000000000004
+ancora,churn_plug,mean_power_hellinger,plug,0.047037288302010795,0
+ancora,churn_plug,mean_power_wasserstein,churn,0.083467671618095957,0.69999999999999996
+ancora,churn_plug,mean_power_wasserstein,plug,0.1943951707519406,0
+ancora,churn_plug,mean_power_log_peak,churn,-0.22011167554505845,0.59999999999999998
+ancora,churn_plug,mean_power_log_peak,plug,-0.12322273642377378,0
+ancora,churn_plug,mean_power_slope,churn,0.26896529385149576,0.80000000000000004
+ancora,churn_plug,mean_power_slope,plug,0.31767626367783047,0.66666666666666663
+ancora,churn_plug,mean_power_width,churn,-0.038024720647264601,0.86666666666666659
+ancora,churn_plug,mean_power_width,plug,0.31420936833219509,0.16666666666666666
+ancora,churn_plug,mean_power_trio,churn,-0.02803957248031471,0.69999999999999996
+ancora,churn_plug,mean_power_trio,plug,0.16694660683089871,0
+ancora,churn_slug,wco_global_max,churn,-0.10908355483742815,0.59999999999999998
+ancora,churn_slug,wco_global_max,slug,0.031959165302028282,0
+ancora,churn_slug,wco_zero_weighted,churn,0.012331949059438217,0.69999999999999996
+ancora,churn_slug,wco_zero_weighted,slug,0.016507090356775177,0.33333333333333331
+ancora,churn_slug,wco_scale_peak_weighted,churn,-0.064514549995066284,0.59999999999999998
+ancora,churn_slug,wco_scale_peak_weighted,slug,0.065194758495981664,0.33333333333333331
+ancora,churn_slug,wco_scale_peak_power05,churn,-0.076841795714596942,0.59999999999999998
+ancora,churn_slug,wco_scale_peak_power05,slug,0.070519235630093921,0.33333333333333331
+ancora,churn_slug,wco_common_lag_peak,churn,-0.0350309075688119,0.5
+ancora,churn_slug,wco_common_lag_peak,slug,0.045355283453492455,0.33333333333333331
+ancora,churn_slug,wco_map_mean,churn,-0.0027538055591814414,0.80000000000000004
+ancora,churn_slug,wco_map_mean,slug,-0.00014508918133021779,0
+ancora,churn_slug,wco_map_mean_weighted,churn,-0.023191333403269017,0.69999999999999996
+ancora,churn_slug,wco_map_mean_weighted,slug,0.014948334588235968,0
+ancora,churn_slug,wco_lag_q90_weighted,churn,-0.067923457259523951,0.5
+ancora,churn_slug,wco_lag_q90_weighted,slug,0.056889136048653061,0.33333333333333331
+ancora,churn_slug,wco_area05_weighted,churn,-0.019245639514098363,0.59999999999999998
+ancora,churn_slug,wco_area05_weighted,slug,0.026708345867170451,0
+ancora,churn_slug,wco_mean_short,churn,0.0022382149382229018,0.90000000000000002
+ancora,churn_slug,wco_mean_short,slug,-0.0010502927482637793,0
+ancora,churn_slug,wco_mean_middle,churn,0.0013156098848359458,0.80000000000000004
+ancora,churn_slug,wco_mean_middle,slug,-0.0072220266353544664,0
+ancora,churn_slug,wco_mean_long,churn,-0.069379981185967665,0.5
+ancora,churn_slug,wco_mean_long,slug,0.058950120547391814,0.33333333333333331
+ancora,churn_slug,wco_common_peak_short,churn,0.013674100031514019,0.90000000000000002
+ancora,churn_slug,wco_common_peak_short,slug,-0.0071349554690854121,0
+ancora,churn_slug,wco_common_peak_middle,churn,0.01824722888923527,0.80000000000000004
+ancora,churn_slug,wco_common_peak_middle,slug,-0.01619073165402693,0
+ancora,churn_slug,wco_common_peak_long,churn,-0.24767512902815048,0.80000000000000004
+ancora,churn_slug,wco_common_peak_long,slug,0.28367630912540792,0
+ancora,churn_slug,wco_central_mean,churn,0.033986873190829936,0.90000000000000002
+ancora,churn_slug,wco_central_mean,slug,-0.0024298046770875603,0
+ancora,churn_slug,self_area,churn,-0.062351894601653732,0.5
+ancora,churn_slug,self_area,slug,0.083781234581307998,0
+ancora,churn_slug,self_width,churn,-0.033765071809152412,0.5
+ancora,churn_slug,self_width,slug,-0.021201203359415648,0
+ancora,churn_slug,self_bands,churn,-0.11919288822425003,0.90000000000000002
+ancora,churn_slug,self_bands,slug,0.22902157223197628,0.33333333333333331
+ancora,churn_slug,kernel_area_full,churn,-0.021316262634816584,0.69999999999999996
+ancora,churn_slug,kernel_area_full,slug,-0.010291248983073943,0
+ancora,churn_slug,kernel_area_short,churn,0.012048896812234509,0.90000000000000002
+ancora,churn_slug,kernel_area_short,slug,-0.0048261324263505307,0
+ancora,churn_slug,kernel_zero,churn,0.018466042062265955,0.90000000000000002
+ancora,churn_slug,kernel_zero,slug,-0.0017547696875671534,0
+ancora,churn_slug,wps_pearson,churn,-0.035986858627410218,0.69999999999999996
+ancora,churn_slug,wps_pearson,slug,0.1930638900725169,0
+ancora,churn_slug,wps_hellinger,churn,0.14077469858358932,0.90000000000000002
+ancora,churn_slug,wps_hellinger,slug,0.27840840271900019,0.33333333333333331
+ancora,churn_slug,wps_wasserstein,churn,0.25078541916828218,0.80000000000000004
+ancora,churn_slug,wps_wasserstein,slug,0.31267322450046686,0.33333333333333331
+ancora,churn_slug,wps_log_peak,churn,-0.032818053252879446,0.5
+ancora,churn_slug,wps_log_peak,slug,-0.23759538920354095,0
+ancora,churn_slug,wps_slope,churn,0.41423826705630507,0.80000000000000004
+ancora,churn_slug,wps_slope,slug,0.24370224749942918,0.33333333333333331
+ancora,churn_slug,wps_width,churn,0.28239595694008102,0.90000000000000002
+ancora,churn_slug,wps_width,slug,0.36237593052109079,0.66666666666666663
+ancora,churn_slug,wps_trio,churn,0.15276307326037308,0.90000000000000002
+ancora,churn_slug,wps_trio,slug,0.058143645642393604,0
+ancora,churn_slug,mean_power_pearson,churn,-0.035014487707230521,0.59999999999999998
+ancora,churn_slug,mean_power_pearson,slug,0.12467828975390134,0.33333333333333331
+ancora,churn_slug,mean_power_hellinger,churn,0.0090902282557971496,0.90000000000000002
+ancora,churn_slug,mean_power_hellinger,slug,0.19707886166962565,0.33333333333333331
+ancora,churn_slug,mean_power_wasserstein,churn,0.10907908290085955,0.90000000000000002
+ancora,churn_slug,mean_power_wasserstein,slug,0.25695847113164566,0.66666666666666663
+ancora,churn_slug,mean_power_log_peak,churn,-0.1370595688909037,0.59999999999999998
+ancora,churn_slug,mean_power_log_peak,slug,0.15364245602603702,0
+ancora,churn_slug,mean_power_slope,churn,0.39343702613838527,0.80000000000000004
+ancora,churn_slug,mean_power_slope,slug,0.15777124425369168,0.33333333333333331
+ancora,churn_slug,mean_power_width,churn,-0.17355801042329896,0.66666666666666663
+ancora,churn_slug,mean_power_width,slug,-0.12333711152445025,0
+ancora,churn_slug,mean_power_trio,churn,0.025268920041468503,0.69999999999999996
+ancora,churn_slug,mean_power_trio,slug,0.21816695751507298,0
+ancora,annular_plug,wco_global_max,wavy annular,0.02110387045157959,0.77777777777777779
+ancora,annular_plug,wco_global_max,plug,0.32916057956844136,0
+ancora,annular_plug,wco_zero_weighted,wavy annular,0.03674968304549945,1
+ancora,annular_plug,wco_zero_weighted,plug,0.11092931276824171,0.66666666666666663
+ancora,annular_plug,wco_scale_peak_weighted,wavy annular,-0.01993343223242559,0.88888888888888884
+ancora,annular_plug,wco_scale_peak_weighted,plug,0.03627443952721441,0
+ancora,annular_plug,wco_scale_peak_power05,wavy annular,-0.016470322869775417,0.88888888888888884
+ancora,annular_plug,wco_scale_peak_power05,plug,0.03921767654464315,0
+ancora,annular_plug,wco_common_lag_peak,wavy annular,5.158913946634842e-05,0.88888888888888884
+ancora,annular_plug,wco_common_lag_peak,plug,0.05539794792242899,0.33333333333333331
+ancora,annular_plug,wco_map_mean,wavy annular,0.002143815805726128,0.66666666666666663
+ancora,annular_plug,wco_map_mean,plug,0.0031169580157052938,0
+ancora,annular_plug,wco_map_mean_weighted,wavy annular,-0.010928108858490028,0.66666666666666663
+ancora,annular_plug,wco_map_mean_weighted,plug,0.016853218399886852,0
+ancora,annular_plug,wco_lag_q90_weighted,wavy annular,-0.01706805644224936,0.88888888888888884
+ancora,annular_plug,wco_lag_q90_weighted,plug,0.037074740111879591,0
+ancora,annular_plug,wco_area05_weighted,wavy annular,-0.0022097766043328699,0.88888888888888884
+ancora,annular_plug,wco_area05_weighted,plug,0.014363236107508517,0
+ancora,annular_plug,wco_mean_short,wavy annular,-0.0019089735808017587,0.44444444444444442
+ancora,annular_plug,wco_mean_short,plug,-0.00099479504139896729,0
+ancora,annular_plug,wco_mean_middle,wavy annular,0.0086274941763555876,0.66666666666666663
+ancora,annular_plug,wco_mean_middle,plug,-0.0014747340467260867,0
+ancora,annular_plug,wco_mean_long,wavy annular,-0.013036600910180596,0.88888888888888884
+ancora,annular_plug,wco_mean_long,plug,0.068083481436023732,0
+ancora,annular_plug,wco_common_peak_short,wavy annular,-0.0026815656090990758,0.77777777777777779
+ancora,annular_plug,wco_common_peak_short,plug,-0.051317618188843922,0.33333333333333331
+ancora,annular_plug,wco_common_peak_middle,wavy annular,0.018183563142971915,0.88888888888888884
+ancora,annular_plug,wco_common_peak_middle,plug,0.048608704979344608,0.66666666666666663
+ancora,annular_plug,wco_common_peak_long,wavy annular,0.0087392113515204206,0.77777777777777779
+ancora,annular_plug,wco_common_peak_long,plug,0.29082975994797516,0
+ancora,annular_plug,wco_central_mean,wavy annular,0.033772309710169729,1
+ancora,annular_plug,wco_central_mean,plug,0.051205665331203999,0.66666666666666663
+ancora,annular_plug,self_area,wavy annular,-0.065411178848580359,0.66666666666666663
+ancora,annular_plug,self_area,plug,0.033186349826467648,0
+ancora,annular_plug,self_width,wavy annular,-0.15593608507225648,0.44444444444444442
+ancora,annular_plug,self_width,plug,0.13822270306488957,0
+ancora,annular_plug,self_bands,wavy annular,-0.15937652068061073,0.55555555555555558
+ancora,annular_plug,self_bands,plug,0.32306964618445222,0
+ancora,annular_plug,kernel_area_full,wavy annular,-0.02928645818187775,0.66666666666666663
+ancora,annular_plug,kernel_area_full,plug,0.042571466372070793,0
+ancora,annular_plug,kernel_area_short,wavy annular,-0.059847483861239267,0.44444444444444442
+ancora,annular_plug,kernel_area_short,plug,0.023669989881133252,0
+ancora,annular_plug,kernel_zero,wavy annular,0.018593234648360261,1
+ancora,annular_plug,kernel_zero,plug,0.027010348255600641,0.66666666666666663
+ancora,annular_plug,wps_pearson,wavy annular,0.26162729932985529,0.88888888888888884
+ancora,annular_plug,wps_pearson,plug,-0.17977402074745033,0
+ancora,annular_plug,wps_hellinger,wavy annular,-0.17669141732031265,0.44444444444444442
+ancora,annular_plug,wps_hellinger,plug,0.17788573558252038,0
+ancora,annular_plug,wps_wasserstein,wavy annular,-0.27937707676646384,0.77777777777777779
+ancora,annular_plug,wps_wasserstein,plug,0.25216920830931661,0
+ancora,annular_plug,wps_log_peak,wavy annular,-0.10119392774187533,0.72222222222222221
+ancora,annular_plug,wps_log_peak,plug,-0.073096980567230199,0
+ancora,annular_plug,wps_slope,wavy annular,-0.30834592286543039,0.77777777777777779
+ancora,annular_plug,wps_slope,plug,0.42749696531563836,0.66666666666666663
+ancora,annular_plug,wps_width,wavy annular,0.11904855239078874,0.55555555555555558
+ancora,annular_plug,wps_width,plug,-0.28418938307030356,0
+ancora,annular_plug,wps_trio,wavy annular,-0.10728070584822677,0.66666666666666663
+ancora,annular_plug,wps_trio,plug,-0.066192846900390082,0
+ancora,annular_plug,mean_power_pearson,wavy annular,0.23912764408746265,0.88888888888888884
+ancora,annular_plug,mean_power_pearson,plug,-0.18392495293533606,0
+ancora,annular_plug,mean_power_hellinger,wavy annular,-0.14945242095570455,0.77777777777777779
+ancora,annular_plug,mean_power_hellinger,plug,0.16347811639832016,0
+ancora,annular_plug,mean_power_wasserstein,wavy annular,-0.25230656889731556,0.33333333333333331
+ancora,annular_plug,mean_power_wasserstein,plug,0.30876723741934869,0
+ancora,annular_plug,mean_power_log_peak,wavy annular,-0.11159775841903818,0.66666666666666663
+ancora,annular_plug,mean_power_log_peak,plug,0.033531072211126695,0
+ancora,annular_plug,mean_power_slope,wavy annular,-0.30220930870327117,0.88888888888888884
+ancora,annular_plug,mean_power_slope,plug,0.42897188033408939,0.66666666666666663
+ancora,annular_plug,mean_power_width,wavy annular,-0.19176742704036723,0.72222222222222221
+ancora,annular_plug,mean_power_width,plug,-0.018229760006073625,0
+ancora,annular_plug,mean_power_trio,wavy annular,-0.17676664035545814,0.55555555555555558
+ancora,annular_plug,mean_power_trio,plug,0.12151341105931102,0
+ancora,annular_slug,wco_global_max,wavy annular,-0.070388739712809109,0.66666666666666663
+ancora,annular_slug,wco_global_max,slug,-0.10754405524392148,0
+ancora,annular_slug,wco_zero_weighted,wavy annular,0.023496657317173614,0.88888888888888884
+ancora,annular_slug,wco_zero_weighted,slug,-0.0013073933745211448,0
+ancora,annular_slug,wco_scale_peak_weighted,wavy annular,-0.076378815710100134,0.66666666666666663
+ancora,annular_slug,wco_scale_peak_weighted,slug,0.016799253183255106,0
+ancora,annular_slug,wco_scale_peak_power05,wavy annular,-0.078274361441583271,0.66666666666666663
+ancora,annular_slug,wco_scale_peak_power05,slug,0.021710092513989015,0
+ancora,annular_slug,wco_common_lag_peak,wavy annular,-0.049894734014605202,0.77777777777777779
+ancora,annular_slug,wco_common_lag_peak,slug,-0.014416373822875786,0
+ancora,annular_slug,wco_map_mean,wavy annular,-0.0022396298668286869,0.77777777777777779
+ancora,annular_slug,wco_map_mean,slug,-0.0032521152017581166,0
+ancora,annular_slug,wco_map_mean_weighted,wavy annular,-0.018015208160677035,0.88888888888888884
+ancora,annular_slug,wco_map_mean_weighted,slug,0.0075570541558055019,0
+ancora,annular_slug,wco_lag_q90_weighted,wavy annular,-0.063049977462433432,0.66666666666666663
+ancora,annular_slug,wco_lag_q90_weighted,slug,0.017062203898575976,0
+ancora,annular_slug,wco_area05_weighted,wavy annular,-0.019964593590194177,0.88888888888888884
+ancora,annular_slug,wco_area05_weighted,slug,0.01342128702954404,0
+ancora,annular_slug,wco_mean_short,wavy annular,-0.00023271506521812892,0.88888888888888884
+ancora,annular_slug,wco_mean_short,slug,-0.00014112533286812941,0
+ancora,annular_slug,wco_mean_middle,wavy annular,-0.00017393044134909961,0.88888888888888884
+ancora,annular_slug,wco_mean_middle,slug,-0.015251739021669248,0
+ancora,annular_slug,wco_mean_long,wavy annular,-0.035737021080302349,0.66666666666666663
+ancora,annular_slug,wco_mean_long,slug,0.056807001063281348,0
+ancora,annular_slug,wco_common_peak_short,wavy annular,0.014730726942620308,1
+ancora,annular_slug,wco_common_peak_short,slug,-0.0064826505340991178,0.33333333333333331
+ancora,annular_slug,wco_common_peak_middle,wavy annular,-0.035436930008355287,0.77777777777777779
+ancora,annular_slug,wco_common_peak_middle,slug,-0.068763080078794572,0
+ancora,annular_slug,wco_common_peak_long,wavy annular,-0.13794405813009253,0.44444444444444442
+ancora,annular_slug,wco_common_peak_long,slug,0.23173185164158708,0
+ancora,annular_slug,wco_central_mean,wavy annular,0.029868431670706408,1
+ancora,annular_slug,wco_central_mean,slug,-0.0036889513472042751,0
+ancora,annular_slug,self_area,wavy annular,-0.060528751525386074,0.66666666666666663
+ancora,annular_slug,self_area,slug,0.12864377690257031,0
+ancora,annular_slug,self_width,wavy annular,-0.091132563483542803,0.66666666666666663
+ancora,annular_slug,self_width,slug,0.083437485142330736,0
+ancora,annular_slug,self_bands,wavy annular,-0.16960564326159602,0.77777777777777779
+ancora,annular_slug,self_bands,slug,0.41366863450741986,0.33333333333333331
+ancora,annular_slug,kernel_area_full,wavy annular,-0.043593433935449288,0.66666666666666663
+ancora,annular_slug,kernel_area_full,slug,-0.013369178558077947,0
+ancora,annular_slug,kernel_area_short,wavy annular,-0.03292322489506503,0.88888888888888884
+ancora,annular_slug,kernel_area_short,slug,0.028680686141623547,0
+ancora,annular_slug,kernel_zero,wavy annular,0.016432631722492722,1
+ancora,annular_slug,kernel_zero,slug,-0.0025180162742281915,0
+ancora,annular_slug,wps_pearson,wavy annular,0.19807398007546168,1
+ancora,annular_slug,wps_pearson,slug,-0.00691451353975842,0
+ancora,annular_slug,wps_hellinger,wavy annular,-0.17727030240826791,0.44444444444444442
+ancora,annular_slug,wps_hellinger,slug,0.31230661418214517,0
+ancora,annular_slug,wps_wasserstein,wavy annular,-0.27003722750361336,0.66666666666666663
+ancora,annular_slug,wps_wasserstein,slug,0.29649430844023711,0
+ancora,annular_slug,wps_log_peak,wavy annular,0.11215990841616701,0.61111111111111116
+ancora,annular_slug,wps_log_peak,slug,-0.2658630372563322,0
+ancora,annular_slug,wps_slope,wavy annular,-0.30310822076626021,0.55555555555555558
+ancora,annular_slug,wps_slope,slug,0.23621490381717947,0
+ancora,annular_slug,wps_width,wavy annular,-0.10128976548187708,0.61111111111111116
+ancora,annular_slug,wps_width,slug,-0.095160846246188799,0
+ancora,annular_slug,wps_trio,wavy annular,-0.051156937746634733,0.77777777777777779
+ancora,annular_slug,wps_trio,slug,-0.1525677834227078,0
+ancora,annular_slug,mean_power_pearson,wavy annular,0.17087514121692141,0.88888888888888884
+ancora,annular_slug,mean_power_pearson,slug,-0.047956891306657153,0
+ancora,annular_slug,mean_power_hellinger,wavy annular,-0.14574451809053351,0.55555555555555558
+ancora,annular_slug,mean_power_hellinger,slug,0.29111476950663345,0
+ancora,annular_slug,mean_power_wasserstein,wavy annular,-0.23751224208840307,0.66666666666666663
+ancora,annular_slug,mean_power_wasserstein,slug,0.3677853881157202,0
+ancora,annular_slug,mean_power_log_peak,wavy annular,0.12462780847510208,0.72222222222222221
+ancora,annular_slug,mean_power_log_peak,slug,0.41362251509284215,0.33333333333333331
+ancora,annular_slug,mean_power_slope,wavy annular,-0.25749372398209169,0.66666666666666663
+ancora,annular_slug,mean_power_slope,slug,0.13057319343249896,0
+ancora,annular_slug,mean_power_width,wavy annular,0.12729249701652409,0.72222222222222221
+ancora,annular_slug,mean_power_width,slug,-0.06199389974703421,0
+ancora,annular_slug,mean_power_trio,wavy annular,0.043714443536902854,0.77777777777777779
+ancora,annular_slug,mean_power_trio,slug,0.2916484705060654,0.66666666666666663
+desloc_m64,quatro_padroes,wco_global_max,churn,-0.35567491587626793,0.59999999999999998
+desloc_m64,quatro_padroes,wco_global_max,wavy annular,-0.18033182642472145,0.55555555555555558
+desloc_m64,quatro_padroes,wco_global_max,plug,0.0019920248977804977,0
+desloc_m64,quatro_padroes,wco_global_max,slug,-0.39003621654953102,0
+desloc_m64,quatro_padroes,wco_zero_weighted,churn,-0.067759130696097722,0.10000000000000001
+desloc_m64,quatro_padroes,wco_zero_weighted,wavy annular,-0.044088649866003395,0.33333333333333331
+desloc_m64,quatro_padroes,wco_zero_weighted,plug,0.052148664885891365,0.66666666666666663
+desloc_m64,quatro_padroes,wco_zero_weighted,slug,-0.06563880997785583,0
+desloc_m64,quatro_padroes,wco_scale_peak_weighted,churn,-0.1102713433917601,0
+desloc_m64,quatro_padroes,wco_scale_peak_weighted,wavy annular,-0.070885316396551462,0.44444444444444442
+desloc_m64,quatro_padroes,wco_scale_peak_weighted,plug,-0.04449762944049776,0.33333333333333331
+desloc_m64,quatro_padroes,wco_scale_peak_weighted,slug,-0.042019590548888631,0
+desloc_m64,quatro_padroes,wco_scale_peak_power05,churn,-0.12287001784377097,0
+desloc_m64,quatro_padroes,wco_scale_peak_power05,wavy annular,-0.066851498805461401,0.55555555555555558
+desloc_m64,quatro_padroes,wco_scale_peak_power05,plug,-0.044589085472988711,0.33333333333333331
+desloc_m64,quatro_padroes,wco_scale_peak_power05,slug,-0.047254563660528305,0
+desloc_m64,quatro_padroes,wco_common_lag_peak,churn,-0.11155093491333859,0
+desloc_m64,quatro_padroes,wco_common_lag_peak,wavy annular,-0.056877829924163854,0.33333333333333331
+desloc_m64,quatro_padroes,wco_common_lag_peak,plug,-0.010860944675692282,0.66666666666666663
+desloc_m64,quatro_padroes,wco_common_lag_peak,slug,-0.086237424444390684,0
+desloc_m64,quatro_padroes,wco_map_mean,churn,-0.0080667659884175198,0.40000000000000002
+desloc_m64,quatro_padroes,wco_map_mean,wavy annular,-0.0065030809499091562,0.1111111111111111
+desloc_m64,quatro_padroes,wco_map_mean,plug,-0.00593952735845005,0
+desloc_m64,quatro_padroes,wco_map_mean,slug,-0.010524331674351942,0
+desloc_m64,quatro_padroes,wco_map_mean_weighted,churn,-0.02872938825051416,0.29999999999999999
+desloc_m64,quatro_padroes,wco_map_mean_weighted,wavy annular,-0.022378767632509143,0.55555555555555558
+desloc_m64,quatro_padroes,wco_map_mean_weighted,plug,-0.01000593398642032,0
+desloc_m64,quatro_padroes,wco_map_mean_weighted,slug,-0.015018686640227428,0
+desloc_m64,quatro_padroes,wco_lag_q90_weighted,churn,-0.088856414247906926,0.10000000000000001
+desloc_m64,quatro_padroes,wco_lag_q90_weighted,wavy annular,-0.059225704371998172,0.44444444444444442
+desloc_m64,quatro_padroes,wco_lag_q90_weighted,plug,-0.032109551637651383,0.33333333333333331
+desloc_m64,quatro_padroes,wco_lag_q90_weighted,slug,-0.040658430929364567,0
+desloc_m64,quatro_padroes,wco_area05_weighted,churn,-0.024127811541077328,0.10000000000000001
+desloc_m64,quatro_padroes,wco_area05_weighted,wavy annular,-0.020525951884170376,0.44444444444444442
+desloc_m64,quatro_padroes,wco_area05_weighted,plug,-0.019676841458403121,0.33333333333333331
+desloc_m64,quatro_padroes,wco_area05_weighted,slug,-0.011266701826277861,0
+desloc_m64,quatro_padroes,wco_mean_short,churn,-0.00012419003637522736,0.80000000000000004
+desloc_m64,quatro_padroes,wco_mean_short,wavy annular,-0.002019672952552566,0.44444444444444442
+desloc_m64,quatro_padroes,wco_mean_short,plug,-0.0014192737074380584,0
+desloc_m64,quatro_padroes,wco_mean_short,slug,-0.0017795235540674509,0
+desloc_m64,quatro_padroes,wco_mean_middle,churn,-0.012064312906787713,0.5
+desloc_m64,quatro_padroes,wco_mean_middle,wavy annular,-0.010517503257471814,0.22222222222222221
+desloc_m64,quatro_padroes,wco_mean_middle,plug,-0.013047293381857221,0
+desloc_m64,quatro_padroes,wco_mean_middle,slug,-0.023275179432821692,0
+desloc_m64,quatro_padroes,wco_mean_long,churn,-0.073982242996180933,0.10000000000000001
+desloc_m64,quatro_padroes,wco_mean_long,wavy annular,-0.047065559945404588,0.22222222222222221
+desloc_m64,quatro_padroes,wco_mean_long,plug,-0.027700823571668438,0
+desloc_m64,quatro_padroes,wco_mean_long,slug,-0.054675327253160488,0
+desloc_m64,quatro_padroes,wco_common_peak_short,churn,-0.024734080019041725,0.40000000000000002
+desloc_m64,quatro_padroes,wco_common_peak_short,wavy annular,-0.022561623126642751,0.44444444444444442
+desloc_m64,quatro_padroes,wco_common_peak_short,plug,-0.020752878038387542,0.33333333333333331
+desloc_m64,quatro_padroes,wco_common_peak_short,slug,0.0079274630086688166,0
+desloc_m64,quatro_padroes,wco_common_peak_middle,churn,-0.093713251989675367,0.20000000000000001
+desloc_m64,quatro_padroes,wco_common_peak_middle,wavy annular,-0.075131813086101451,0.44444444444444442
+desloc_m64,quatro_padroes,wco_common_peak_middle,plug,0.0012136947789503731,0
+desloc_m64,quatro_padroes,wco_common_peak_middle,slug,-0.13093058907913566,0
+desloc_m64,quatro_padroes,wco_common_peak_long,churn,-0.33274138247761542,0.69999999999999996
+desloc_m64,quatro_padroes,wco_common_peak_long,wavy annular,-0.1501226959445516,0.33333333333333331
+desloc_m64,quatro_padroes,wco_common_peak_long,plug,-0.084818414522059696,0
+desloc_m64,quatro_padroes,wco_common_peak_long,slug,-0.20592147096771296,0
+desloc_m64,quatro_padroes,wco_central_mean,churn,-0.022970767462931634,0.10000000000000001
+desloc_m64,quatro_padroes,wco_central_mean,wavy annular,-0.029509522893153024,0.22222222222222221
+desloc_m64,quatro_padroes,wco_central_mean,plug,0.023970570619430392,0.66666666666666663
+desloc_m64,quatro_padroes,wco_central_mean,slug,-0.032791141900987468,0
+desloc_m64,quatro_padroes,self_area,churn,-0.11427257072534924,0.29999999999999999
+desloc_m64,quatro_padroes,self_area,wavy annular,-0.13122473058297041,0.22222222222222221
+desloc_m64,quatro_padroes,self_area,plug,0.060138301631365,0.33333333333333331
+desloc_m64,quatro_padroes,self_area,slug,-0.15114034898317438,0
+desloc_m64,quatro_padroes,self_width,churn,-0.13861148324466785,0
+desloc_m64,quatro_padroes,self_width,wavy annular,-0.17364996432289737,0.44444444444444442
+desloc_m64,quatro_padroes,self_width,plug,0.11561161343749428,0.66666666666666663
+desloc_m64,quatro_padroes,self_width,slug,-0.17344466787027216,0
+desloc_m64,quatro_padroes,self_bands,churn,-0.21400264511385991,0.29999999999999999
+desloc_m64,quatro_padroes,self_bands,wavy annular,-0.22312419495864891,0.33333333333333331
+desloc_m64,quatro_padroes,self_bands,plug,0.00072358734279111736,0
+desloc_m64,quatro_padroes,self_bands,slug,-0.35192682735966252,0
+desloc_m64,quatro_padroes,kernel_area_full,churn,-0.066841210352931058,0.29999999999999999
+desloc_m64,quatro_padroes,kernel_area_full,wavy annular,-0.077403859221414795,0.1111111111111111
+desloc_m64,quatro_padroes,kernel_area_full,plug,-0.02846803677490144,0
+desloc_m64,quatro_padroes,kernel_area_full,slug,-0.080951043262322789,0
+desloc_m64,quatro_padroes,kernel_area_short,churn,-0.035437279972759438,0.59999999999999998
+desloc_m64,quatro_padroes,kernel_area_short,wavy annular,-0.058157805910653865,0.22222222222222221
+desloc_m64,quatro_padroes,kernel_area_short,plug,0.0070411186806751081,0
+desloc_m64,quatro_padroes,kernel_area_short,slug,-0.0039825753491322738,0
+desloc_m64,quatro_padroes,kernel_zero,churn,-0.012271096501208731,0.10000000000000001
+desloc_m64,quatro_padroes,kernel_zero,wavy annular,-0.015078100228975183,0.22222222222222221
+desloc_m64,quatro_padroes,kernel_zero,plug,0.012980462915608997,0.66666666666666663
+desloc_m64,quatro_padroes,kernel_zero,slug,-0.016967554333490977,0
+desloc_m64,quatro_padroes,wps_pearson,churn,-0.21790237112672597,0.40000000000000002
+desloc_m64,quatro_padroes,wps_pearson,wavy annular,0.18880394502458397,0.66666666666666663
+desloc_m64,quatro_padroes,wps_pearson,plug,-0.2377622139143524,0
+desloc_m64,quatro_padroes,wps_pearson,slug,-0.0049001287403022007,0
+desloc_m64,quatro_padroes,wps_hellinger,churn,0.066043460640063098,0.59999999999999998
+desloc_m64,quatro_padroes,wps_hellinger,wavy annular,-0.24176843640714824,0.33333333333333331
+desloc_m64,quatro_padroes,wps_hellinger,plug,-0.27054466931892934,0
+desloc_m64,quatro_padroes,wps_hellinger,slug,-0.055417558628761472,0
+desloc_m64,quatro_padroes,wps_wasserstein,churn,0.13306035156891305,0.80000000000000004
+desloc_m64,quatro_padroes,wps_wasserstein,wavy annular,-0.41806459234022741,0.55555555555555558
+desloc_m64,quatro_padroes,wps_wasserstein,plug,-0.42299656213390341,0
+desloc_m64,quatro_padroes,wps_wasserstein,slug,-0.055039060828948515,0
+desloc_m64,quatro_padroes,wps_log_peak,churn,-0.37425368680304211,0.28333333333333333
+desloc_m64,quatro_padroes,wps_log_peak,wavy annular,-0.07980597364216388,0.3888888888888889
+desloc_m64,quatro_padroes,wps_log_peak,plug,-0.2680006013339345,0
+desloc_m64,quatro_padroes,wps_log_peak,slug,-0.38995707562959048,0
+desloc_m64,quatro_padroes,wps_slope,churn,0.26814255336117465,0.69999999999999996
+desloc_m64,quatro_padroes,wps_slope,wavy annular,-0.52976304814825692,0.22222222222222221
+desloc_m64,quatro_padroes,wps_slope,plug,-0.35597764270851218,0
+desloc_m64,quatro_padroes,wps_slope,slug,-0.208388665058752,0
+desloc_m64,quatro_padroes,wps_width,churn,0.095077703566166766,0.80000000000000004
+desloc_m64,quatro_padroes,wps_width,wavy annular,-0.13299649638533237,0.44444444444444442
+desloc_m64,quatro_padroes,wps_width,plug,-0.49149911816578545,0
+desloc_m64,quatro_padroes,wps_width,slug,-0.14107744107744177,0
+desloc_m64,quatro_padroes,wps_trio,churn,-0.061643651828058754,0.69999999999999996
+desloc_m64,quatro_padroes,wps_trio,wavy annular,-0.096276692814318166,0.33333333333333331
+desloc_m64,quatro_padroes,wps_trio,plug,-0.23843068095757167,0
+desloc_m64,quatro_padroes,wps_trio,slug,-0.25922459179538171,0
+desloc_m64,quatro_padroes,mean_power_pearson,churn,-0.17258759926916717,0.40000000000000002
+desloc_m64,quatro_padroes,mean_power_pearson,wavy annular,0.17483649621872752,0.77777777777777779
+desloc_m64,quatro_padroes,mean_power_pearson,plug,-0.13738125091908954,0
+desloc_m64,quatro_padroes,mean_power_pearson,slug,-0.081701649422109487,0
+desloc_m64,quatro_padroes,mean_power_hellinger,churn,-0.02492167692619917,0.59999999999999998
+desloc_m64,quatro_padroes,mean_power_hellinger,wavy annular,-0.18955350831258092,0.33333333333333331
+desloc_m64,quatro_padroes,mean_power_hellinger,plug,-0.20023144250987457,0
+desloc_m64,quatro_padroes,mean_power_hellinger,slug,-0.16280866194520072,0
+desloc_m64,quatro_padroes,mean_power_wasserstein,churn,0.041095406850136504,0.69999999999999996
+desloc_m64,quatro_padroes,mean_power_wasserstein,wavy annular,-0.35075312806229408,0.55555555555555558
+desloc_m64,quatro_padroes,mean_power_wasserstein,plug,-0.34391619332469175,0
+desloc_m64,quatro_padroes,mean_power_wasserstein,slug,-0.12294147109378058,0
+desloc_m64,quatro_padroes,mean_power_log_peak,churn,-0.32986483273100109,0.40000000000000002
+desloc_m64,quatro_padroes,mean_power_log_peak,wavy annular,0.012666951386746764,0.22222222222222221
+desloc_m64,quatro_padroes,mean_power_log_peak,plug,-0.35943875566842731,0
+desloc_m64,quatro_padroes,mean_power_log_peak,slug,-0.19553680606505353,0
+desloc_m64,quatro_padroes,mean_power_slope,churn,0.24906281057582841,0.69999999999999996
+desloc_m64,quatro_padroes,mean_power_slope,wavy annular,-0.51053523339376994,0.33333333333333331
+desloc_m64,quatro_padroes,mean_power_slope,plug,-0.22538121692430998,0
+desloc_m64,quatro_padroes,mean_power_slope,slug,-0.31081450513918968,0
+desloc_m64,quatro_padroes,mean_power_width,churn,-0.34524026239138816,0.69999999999999996
+desloc_m64,quatro_padroes,mean_power_width,wavy annular,-0.15667070556698459,0.61111111111111116
+desloc_m64,quatro_padroes,mean_power_width,plug,0.048528765920067031,0
+desloc_m64,quatro_padroes,mean_power_width,slug,-0.43154432186690012,0
+desloc_m64,quatro_padroes,mean_power_trio,churn,-0.063008577795895776,0.69999999999999996
+desloc_m64,quatro_padroes,mean_power_trio,wavy annular,-0.054173463534977241,0.44444444444444442
+desloc_m64,quatro_padroes,mean_power_trio,plug,-0.18249964708352903,0
+desloc_m64,quatro_padroes,mean_power_trio,slug,-0.27050121862641407,0
+desloc_m64,churn_annular,wco_global_max,churn,-0.055868207109334579,0.59999999999999998
+desloc_m64,churn_annular,wco_global_max,wavy annular,-0.048013921752712282,0.55555555555555558
+desloc_m64,churn_annular,wco_zero_weighted,churn,-0.041257445871369557,0.10000000000000001
+desloc_m64,churn_annular,wco_zero_weighted,wavy annular,-0.024486826340005142,0.33333333333333331
+desloc_m64,churn_annular,wco_scale_peak_weighted,churn,-0.040397349359113849,0.20000000000000001
+desloc_m64,churn_annular,wco_scale_peak_weighted,wavy annular,-0.0060678620820303394,0.44444444444444442
+desloc_m64,churn_annular,wco_scale_peak_power05,churn,-0.056029079735510509,0.20000000000000001
+desloc_m64,churn_annular,wco_scale_peak_power05,wavy annular,-0.0040956225224644876,0.55555555555555558
+desloc_m64,churn_annular,wco_common_lag_peak,churn,-0.059391403156898559,0.10000000000000001
+desloc_m64,churn_annular,wco_common_lag_peak,wavy annular,-0.013576777031451735,0.33333333333333331
+desloc_m64,churn_annular,wco_map_mean,churn,-0.0029064595611169321,0.40000000000000002
+desloc_m64,churn_annular,wco_map_mean,wavy annular,-0.0013264866405362894,0.1111111111111111
+desloc_m64,churn_annular,wco_map_mean_weighted,churn,-0.011004886407034146,0.29999999999999999
+desloc_m64,churn_annular,wco_map_mean_weighted,wavy annular,-9.4961934119860389e-05,0.55555555555555558
+desloc_m64,churn_annular,wco_lag_q90_weighted,churn,-0.038334420030064868,0.29999999999999999
+desloc_m64,churn_annular,wco_lag_q90_weighted,wavy annular,-0.00016214190829139387,0.44444444444444442
+desloc_m64,churn_annular,wco_area05_weighted,churn,-0.0081450569571599098,0.20000000000000001
+desloc_m64,churn_annular,wco_area05_weighted,wavy annular,-0.0026452990701815535,0.44444444444444442
+desloc_m64,churn_annular,wco_mean_short,churn,0.0018286583956719151,0.80000000000000004
+desloc_m64,churn_annular,wco_mean_short,wavy annular,-0.0011474993813075057,0.44444444444444442
+desloc_m64,churn_annular,wco_mean_middle,churn,-0.0066442121224080473,0.5
+desloc_m64,churn_annular,wco_mean_middle,wavy annular,-0.0032851047159310133,0.22222222222222221
+desloc_m64,churn_annular,wco_mean_long,churn,-0.014514511784212069,0.20000000000000001
+desloc_m64,churn_annular,wco_mean_long,wavy annular,0.011780833260351429,0.22222222222222221
+desloc_m64,churn_annular,wco_common_peak_short,churn,-0.004626872453208624,0.5
+desloc_m64,churn_annular,wco_common_peak_short,wavy annular,-0.0080699577349929701,0.55555555555555558
+desloc_m64,churn_annular,wco_common_peak_middle,churn,-0.038571927684768581,0.29999999999999999
+desloc_m64,churn_annular,wco_common_peak_middle,wavy annular,-0.035798900019540378,0.44444444444444442
+desloc_m64,churn_annular,wco_common_peak_long,churn,-0.084498688955207679,0.90000000000000002
+desloc_m64,churn_annular,wco_common_peak_long,wavy annular,0.091906780036849892,0.44444444444444442
+desloc_m64,churn_annular,wco_central_mean,churn,-0.010774359070885264,0.10000000000000001
+desloc_m64,churn_annular,wco_central_mean,wavy annular,-0.022138858098070299,0.22222222222222221
+desloc_m64,churn_annular,self_area,churn,-0.0085090171751936346,0.40000000000000002
+desloc_m64,churn_annular,self_area,wavy annular,-0.016392173395472751,0.33333333333333331
+desloc_m64,churn_annular,self_width,churn,0.007846925719135733,0.20000000000000001
+desloc_m64,churn_annular,self_width,wavy annular,-0.054302308359652482,0.44444444444444442
+desloc_m64,churn_annular,self_bands,churn,0.03849617105665111,0.5
+desloc_m64,churn_annular,self_bands,wavy annular,-0.04603526219320158,0.33333333333333331
+desloc_m64,churn_annular,kernel_area_full,churn,-0.0082294104491948579,0.40000000000000002
+desloc_m64,churn_annular,kernel_area_full,wavy annular,-0.029154053177435808,0.1111111111111111
+desloc_m64,churn_annular,kernel_area_short,churn,0.020187343636751596,0.69999999999999996
+desloc_m64,churn_annular,kernel_area_short,wavy annular,-0.013835215492619402,0.44444444444444442
+desloc_m64,churn_annular,kernel_zero,churn,-0.0063352521842499135,0.10000000000000001
+desloc_m64,churn_annular,kernel_zero,wavy annular,-0.011719752057163564,0.22222222222222221
+desloc_m64,churn_annular,wps_pearson,churn,-0.19352467120124525,0.5
+desloc_m64,churn_annular,wps_pearson,wavy annular,0.2970239425215016,0.77777777777777779
+desloc_m64,churn_annular,wps_hellinger,churn,0.21096911066875648,0.69999999999999996
+desloc_m64,churn_annular,wps_hellinger,wavy annular,-0.040289372759274633,0.55555555555555558
+desloc_m64,churn_annular,wps_wasserstein,churn,0.26754766635694321,0.80000000000000004
+desloc_m64,churn_annular,wps_wasserstein,wavy annular,-0.053231794784826585,0.88888888888888884
+desloc_m64,churn_annular,wps_log_peak,churn,-0.28412899114005474,0.5
+desloc_m64,churn_annular,wps_log_peak,wavy annular,0.23503952827601418,0.3888888888888889
+desloc_m64,churn_annular,wps_slope,churn,0.44210538430524826,0.69999999999999996
+desloc_m64,churn_annular,wps_slope,wavy annular,-0.10927792260059273,0.44444444444444442
+desloc_m64,churn_annular,wps_width,churn,0.36995070625467152,0.80000000000000004
+desloc_m64,churn_annular,wps_width,wavy annular,0.46450650409233379,0.77777777777777779
+desloc_m64,churn_annular,wps_trio,churn,0.11297421261509695,0.80000000000000004
+desloc_m64,churn_annular,wps_trio,wavy annular,0.27134292309012648,0.77777777777777779
+desloc_m64,churn_annular,mean_power_pearson,churn,-0.15872778969285128,0.5
+desloc_m64,churn_annular,mean_power_pearson,wavy annular,0.25720895908662911,0.77777777777777779
+desloc_m64,churn_annular,mean_power_hellinger,churn,0.126099342347119,0.69999999999999996
+desloc_m64,churn_annular,mean_power_hellinger,wavy annular,-0.080459874566104345,0.44444444444444442
+desloc_m64,churn_annular,mean_power_wasserstein,churn,0.23572410656194281,0.80000000000000004
+desloc_m64,churn_annular,mean_power_wasserstein,wavy annular,-0.13527733569268949,0.66666666666666663
+desloc_m64,churn_annular,mean_power_log_peak,churn,0.056155006908814954,0.5
+desloc_m64,churn_annular,mean_power_log_peak,wavy annular,0.049197757894188385,0.22222222222222221
+desloc_m64,churn_annular,mean_power_slope,churn,0.42527731067418584,0.69999999999999996
+desloc_m64,churn_annular,mean_power_slope,wavy annular,-0.12580549217402442,0.44444444444444442
+desloc_m64,churn_annular,mean_power_width,churn,0.023120573516987576,0.69999999999999996
+desloc_m64,churn_annular,mean_power_width,wavy annular,0.21884426327848522,0.66666666666666663
+desloc_m64,churn_annular,mean_power_trio,churn,0.14092053512121178,0.59999999999999998
+desloc_m64,churn_annular,mean_power_trio,wavy annular,0.13140332483341163,0.44444444444444442
+desloc_m64,plug_slug,wco_global_max,plug,0.029368276601717907,0
+desloc_m64,plug_slug,wco_global_max,slug,-0.33395321226210167,0
+desloc_m64,plug_slug,wco_zero_weighted,plug,0.052148664885891365,0.66666666666666663
+desloc_m64,plug_slug,wco_zero_weighted,slug,-0.028929606226556107,0.33333333333333331
+desloc_m64,plug_slug,wco_scale_peak_weighted,plug,-0.030658657011428392,0.66666666666666663
+desloc_m64,plug_slug,wco_scale_peak_weighted,slug,0.0024606654024150704,0
+desloc_m64,plug_slug,wco_scale_peak_power05,plug,-0.032221852109585447,0.66666666666666663
+desloc_m64,plug_slug,wco_scale_peak_power05,slug,0.0075090432049045195,0
+desloc_m64,plug_slug,wco_common_lag_peak,plug,-0.0024101448561284025,0.66666666666666663
+desloc_m64,plug_slug,wco_common_lag_peak,slug,-0.022517141055749354,0.33333333333333331
+desloc_m64,plug_slug,wco_map_mean,plug,-0.0042887955194238249,0.33333333333333331
+desloc_m64,plug_slug,wco_map_mean,slug,-0.0088656495271612051,0.33333333333333331
+desloc_m64,plug_slug,wco_map_mean_weighted,plug,-0.01000593398642032,0.33333333333333331
+desloc_m64,plug_slug,wco_map_mean_weighted,slug,-0.015018686640227428,0
+desloc_m64,plug_slug,wco_lag_q90_weighted,plug,-0.03120422751691115,0.66666666666666663
+desloc_m64,plug_slug,wco_lag_q90_weighted,slug,-0.017542166364879958,0
+desloc_m64,plug_slug,wco_area05_weighted,plug,-0.019676841458403121,0.33333333333333331
+desloc_m64,plug_slug,wco_area05_weighted,slug,-0.0024353409852524658,0
+desloc_m64,plug_slug,wco_mean_short,plug,0.0016110377329867902,0.33333333333333331
+desloc_m64,plug_slug,wco_mean_short,slug,0.00072090115717939995,0.33333333333333331
+desloc_m64,plug_slug,wco_mean_middle,plug,-0.0079481833930351107,0.66666666666666663
+desloc_m64,plug_slug,wco_mean_middle,slug,-0.013824077583426027,0
+desloc_m64,plug_slug,wco_mean_long,plug,-0.027700823571668438,0
+desloc_m64,plug_slug,wco_mean_long,slug,-0.054675327253160488,0.33333333333333331
+desloc_m64,plug_slug,wco_common_peak_short,plug,-0.001775478588447555,0.66666666666666663
+desloc_m64,plug_slug,wco_common_peak_short,slug,0.034277046527267874,0.66666666666666663
+desloc_m64,plug_slug,wco_common_peak_middle,plug,0.04549111796722264,0.66666666666666663
+desloc_m64,plug_slug,wco_common_peak_middle,slug,-0.026474994795317296,0
+desloc_m64,plug_slug,wco_common_peak_long,plug,-0.084818414522059696,0
+desloc_m64,plug_slug,wco_common_peak_long,slug,-0.16577124988667549,0
+desloc_m64,plug_slug,wco_central_mean,plug,0.033000949841256552,0.66666666666666663
+desloc_m64,plug_slug,wco_central_mean,slug,-0.0081468160575778482,0.33333333333333331
+desloc_m64,plug_slug,self_area,plug,0.060138301631365,0.66666666666666663
+desloc_m64,plug_slug,self_area,slug,-0.15114034898317438,0
+desloc_m64,plug_slug,self_width,plug,0.11561161343749428,1
+desloc_m64,plug_slug,self_width,slug,-0.17344466787027216,0
+desloc_m64,plug_slug,self_bands,plug,0.00072358734279111736,0
+desloc_m64,plug_slug,self_bands,slug,-0.35192682735966252,0
+desloc_m64,plug_slug,kernel_area_full,plug,-0.014397725888845509,0.66666666666666663
+desloc_m64,plug_slug,kernel_area_full,slug,-0.080628968683261013,0
+desloc_m64,plug_slug,kernel_area_short,plug,0.031726971207504708,0.33333333333333331
+desloc_m64,plug_slug,kernel_area_short,slug,0.0088248579349580886,0.33333333333333331
+desloc_m64,plug_slug,kernel_zero,plug,0.018063049974647652,0.66666666666666663
+desloc_m64,plug_slug,kernel_zero,slug,-0.0038182123960101475,0.33333333333333331
+desloc_m64,plug_slug,wps_pearson,plug,-0.18821970463745527,0
+desloc_m64,plug_slug,wps_pearson,slug,0.059385179376455245,0.33333333333333331
+desloc_m64,plug_slug,wps_hellinger,plug,-0.27054466931892934,0
+desloc_m64,plug_slug,wps_hellinger,slug,-0.055417558628761472,0
+desloc_m64,plug_slug,wps_wasserstein,plug,-0.3721552643771619,0
+desloc_m64,plug_slug,wps_wasserstein,slug,-0.055039060828948515,0
+desloc_m64,plug_slug,wps_log_peak,plug,-0.038427060815120033,0.5
+desloc_m64,plug_slug,wps_log_peak,slug,-0.32560990017130403,0
+desloc_m64,plug_slug,wps_slope,plug,-0.25298460306244741,0
+desloc_m64,plug_slug,wps_slope,slug,-0.208388665058752,0
+desloc_m64,plug_slug,wps_width,plug,-0.36190476190476201,0
+desloc_m64,plug_slug,wps_width,slug,0.084848484848485728,0.33333333333333331
+desloc_m64,plug_slug,wps_trio,plug,-0.22613954373623021,0
+desloc_m64,plug_slug,wps_trio,slug,-0.23125116104918222,0
+desloc_m64,plug_slug,mean_power_pearson,plug,-0.091052208039558005,0
+desloc_m64,plug_slug,mean_power_pearson,slug,-0.019091442195976794,0.33333333333333331
+desloc_m64,plug_slug,mean_power_hellinger,plug,-0.20023144250987457,0
+desloc_m64,plug_slug,mean_power_hellinger,slug,-0.16280866194520072,0
+desloc_m64,plug_slug,mean_power_wasserstein,plug,-0.34391619332469175,0
+desloc_m64,plug_slug,mean_power_wasserstein,slug,-0.12294147109378058,0
+desloc_m64,plug_slug,mean_power_log_peak,plug,-0.35652436586879066,0
+desloc_m64,plug_slug,mean_power_log_peak,slug,-0.14447297627781899,0
+desloc_m64,plug_slug,mean_power_slope,plug,-0.10256048980033071,0.33333333333333331
+desloc_m64,plug_slug,mean_power_slope,slug,-0.31081450513918968,0
+desloc_m64,plug_slug,mean_power_width,plug,0.096837944664028022,0.16666666666666666
+desloc_m64,plug_slug,mean_power_width,slug,-0.42942791975050004,0
+desloc_m64,plug_slug,mean_power_trio,plug,-0.18249964708352903,0
+desloc_m64,plug_slug,mean_power_trio,slug,-0.27050121862641407,0
+desloc_m64,churn_plug,wco_global_max,churn,-0.25427528966419133,1
+desloc_m64,churn_plug,wco_global_max,plug,0.24212092003546096,0
+desloc_m64,churn_plug,wco_zero_weighted,churn,0.021066284442514249,0.69999999999999996
+desloc_m64,churn_plug,wco_zero_weighted,plug,0.093082363233291054,0.66666666666666663
+desloc_m64,churn_plug,wco_scale_peak_weighted,churn,-0.040961465788926878,0.59999999999999998
+desloc_m64,churn_plug,wco_scale_peak_weighted,plug,0.015832945727617394,0.33333333333333331
+desloc_m64,churn_plug,wco_scale_peak_power05,churn,-0.044443904187867235,0.59999999999999998
+desloc_m64,churn_plug,wco_scale_peak_power05,plug,0.017794473114706357,0.33333333333333331
+desloc_m64,churn_plug,wco_common_lag_peak,churn,-0.034370755080321704,0.59999999999999998
+desloc_m64,churn_plug,wco_common_lag_peak,plug,0.029214847255692997,0.66666666666666663
+desloc_m64,churn_plug,wco_map_mean,churn,-0.0044392382482829097,0.80000000000000004
+desloc_m64,churn_plug,wco_map_mean,plug,-0.00061273004735238918,0.33333333333333331
+desloc_m64,churn_plug,wco_map_mean_weighted,churn,-0.024050802332236141,0.59999999999999998
+desloc_m64,churn_plug,wco_map_mean_weighted,plug,0.011803255146654375,0.33333333333333331
+desloc_m64,churn_plug,wco_lag_q90_weighted,churn,-0.048343687986453089,0.59999999999999998
+desloc_m64,churn_plug,wco_lag_q90_weighted,plug,0.02276027076995803,0.33333333333333331
+desloc_m64,churn_plug,wco_area05_weighted,churn,-0.010851698840451835,0.69999999999999996
+desloc_m64,churn_plug,wco_area05_weighted,plug,0.0012152405986679434,0.33333333333333331
+desloc_m64,churn_plug,wco_mean_short,churn,0.0020957368172862824,0.90000000000000002
+desloc_m64,churn_plug,wco_mean_short,plug,-2.0264260537607708e-05,0
+desloc_m64,churn_plug,wco_mean_middle,churn,-0.0029834113211869399,0.90000000000000002
+desloc_m64,churn_plug,wco_mean_middle,plug,-0.0087235352525376203,0.33333333333333331
+desloc_m64,churn_plug,wco_mean_long,churn,-0.066380857235530569,0.69999999999999996
+desloc_m64,churn_plug,wco_mean_long,plug,0.054078990104217212,0
+desloc_m64,churn_plug,wco_common_peak_short,churn,0.027655289791759304,0.80000000000000004
+desloc_m64,churn_plug,wco_common_peak_short,plug,-0.0044523095123954288,0.33333333333333331
+desloc_m64,churn_plug,wco_common_peak_middle,churn,0.0059306000906106902,0.69999999999999996
+desloc_m64,churn_plug,wco_common_peak_middle,plug,0.013170861592132779,0
+desloc_m64,churn_plug,wco_common_peak_long,churn,-0.26758209358820279,0.90000000000000002
+desloc_m64,churn_plug,wco_common_peak_long,plug,0.17547529663461084,0
+desloc_m64,churn_plug,wco_central_mean,churn,0.039889346048060055,0.90000000000000002
+desloc_m64,churn_plug,wco_central_mean,plug,0.038281093673024201,0.66666666666666663
+desloc_m64,churn_plug,self_area,churn,-0.09660761342165268,0.59999999999999998
+desloc_m64,churn_plug,self_area,plug,0.21894366118385963,0.33333333333333331
+desloc_m64,churn_plug,self_width,churn,-0.12609174118576591,0.40000000000000002
+desloc_m64,churn_plug,self_width,plug,0.21234155053785983,0.66666666666666663
+desloc_m64,churn_plug,self_bands,churn,-0.18476305056479467,0.59999999999999998
+desloc_m64,churn_plug,self_bands,plug,0.33340738653417712,0
+desloc_m64,churn_plug,kernel_area_full,churn,-0.046277567235625545,0.80000000000000004
+desloc_m64,churn_plug,kernel_area_full,plug,0.013530449413340619,0
+desloc_m64,churn_plug,kernel_area_short,churn,-0.012458179374346259,0.69999999999999996
+desloc_m64,churn_plug,kernel_area_short,plug,0.041274543285123734,0.33333333333333331
+desloc_m64,churn_plug,kernel_zero,churn,0.021229066705067069,0.90000000000000002
+desloc_m64,churn_plug,kernel_zero,plug,0.020159780855490257,0.66666666666666663
+desloc_m64,churn_plug,wps_pearson,churn,0.013040471448753277,0.80000000000000004
+desloc_m64,churn_plug,wps_pearson,plug,0.045725321076588527,0
+desloc_m64,churn_plug,wps_hellinger,churn,0.084011334062666518,0.69999999999999996
+desloc_m64,churn_plug,wps_hellinger,plug,0.10549776071230942,0
+desloc_m64,churn_plug,wps_wasserstein,churn,0.16677380083178556,0.80000000000000004
+desloc_m64,churn_plug,wps_wasserstein,plug,0.14045962695177758,0.33333333333333331
+desloc_m64,churn_plug,wps_log_peak,churn,-0.31831126384481229,0.55000000000000004
+desloc_m64,churn_plug,wps_log_peak,plug,0.10947532000163603,0
+desloc_m64,churn_plug,wps_slope,churn,0.28196516478702816,0.90000000000000002
+desloc_m64,churn_plug,wps_slope,plug,0.18141283150808429,0.33333333333333331
+desloc_m64,churn_plug,wps_width,churn,0.11937113005076534,0.90000000000000002
+desloc_m64,churn_plug,wps_width,plug,-0.061428571428571978,0
+desloc_m64,churn_plug,wps_trio,churn,-0.053527938569493873,0.69999999999999996
+desloc_m64,churn_plug,wps_trio,plug,0.08306047154630275,0
+desloc_m64,churn_plug,mean_power_pearson,churn,0.0090620593383591106,0.80000000000000004
+desloc_m64,churn_plug,mean_power_pearson,plug,0.10440849030934907,0
+desloc_m64,churn_plug,mean_power_hellinger,churn,0.00082650776969663204,0.69999999999999996
+desloc_m64,churn_plug,mean_power_hellinger,plug,0.14023531515787238,0
+desloc_m64,churn_plug,mean_power_wasserstein,churn,0.087368988765741423,0.80000000000000004
+desloc_m64,churn_plug,mean_power_wasserstein,plug,0.17798594742415275,0.33333333333333331
+desloc_m64,churn_plug,mean_power_log_peak,churn,-0.035636116828500965,0.69999999999999996
+desloc_m64,churn_plug,mean_power_log_peak,plug,-0.046705827560394202,0
+desloc_m64,churn_plug,mean_power_slope,churn,0.2541006414635214,0.80000000000000004
+desloc_m64,churn_plug,mean_power_slope,plug,0.21232531045327266,0.33333333333333331
+desloc_m64,churn_plug,mean_power_width,churn,-0.2965720803057495,0.80000000000000004
+desloc_m64,churn_plug,mean_power_width,plug,0.42769996887643913,0.66666666666666663
+desloc_m64,churn_plug,mean_power_trio,churn,-0.020030833980283727,0.80000000000000004
+desloc_m64,churn_plug,mean_power_trio,plug,0.2666254688219763,0
+desloc_m64,churn_slug,wco_global_max,churn,-0.082488952491158549,0.80000000000000004
+desloc_m64,churn_slug,wco_global_max,slug,-0.012378894010041705,0
+desloc_m64,churn_slug,wco_zero_weighted,churn,0.017685304362996097,0.69999999999999996
+desloc_m64,churn_slug,wco_zero_weighted,slug,0.012287631009101399,0.33333333333333331
+desloc_m64,churn_slug,wco_scale_peak_weighted,churn,-0.061536173071978242,0.59999999999999998
+desloc_m64,churn_slug,wco_scale_peak_weighted,slug,0.021787350359934874,0.33333333333333331
+desloc_m64,churn_slug,wco_scale_peak_power05,churn,-0.070594044994724506,0.59999999999999998
+desloc_m64,churn_slug,wco_scale_peak_power05,slug,0.022866524771496921,0.33333333333333331
+desloc_m64,churn_slug,wco_common_lag_peak,churn,-0.047517645246571219,0.40000000000000002
+desloc_m64,churn_slug,wco_common_lag_peak,slug,-0.0064184091661850474,0.33333333333333331
+desloc_m64,churn_slug,wco_map_mean,churn,-0.0018817976251532885,0.90000000000000002
+desloc_m64,churn_slug,wco_map_mean,slug,-0.0026273041470171918,0
+desloc_m64,churn_slug,wco_map_mean_weighted,churn,-0.021095629437245991,0.69999999999999996
+desloc_m64,churn_slug,wco_map_mean_weighted,slug,0.0095186972387763646,0
+desloc_m64,churn_slug,wco_lag_q90_weighted,churn,-0.059796949418137568,0.5
+desloc_m64,churn_slug,wco_lag_q90_weighted,slug,0.020695468886199695,0.33333333333333331
+desloc_m64,churn_slug,wco_area05_weighted,churn,-0.015188513590422901,0.59999999999999998
+desloc_m64,churn_slug,wco_area05_weighted,slug,0.013811013839696039,0
+desloc_m64,churn_slug,wco_mean_short,churn,0.0024483299114361175,0.90000000000000002
+desloc_m64,churn_slug,wco_mean_short,slug,-0.00055474960411611629,0
+desloc_m64,churn_slug,wco_mean_middle,churn,0.0022400769165472458,0.80000000000000004
+desloc_m64,churn_slug,wco_mean_middle,slug,-0.0093633727285470907,0
+desloc_m64,churn_slug,wco_mean_long,churn,-0.065165852929786758,0.59999999999999998
+desloc_m64,churn_slug,wco_mean_long,slug,0.030520941314996244,0
+desloc_m64,churn_slug,wco_common_peak_short,churn,0.0067734596649970027,0.80000000000000004
+desloc_m64,churn_slug,wco_common_peak_short,slug,0.0097769458355709497,0.33333333333333331
+desloc_m64,churn_slug,wco_common_peak_middle,churn,0.0018906477941871738,0.5
+desloc_m64,churn_slug,wco_common_peak_middle,slug,-0.06956737142633948,0
+desloc_m64,churn_slug,wco_common_peak_long,churn,-0.14993167551862333,0.90000000000000002
+desloc_m64,churn_slug,wco_common_peak_long,slug,0.19941724221808746,0
+desloc_m64,churn_slug,wco_central_mean,churn,0.037402720341998298,0.90000000000000002
+desloc_m64,churn_slug,wco_central_mean,slug,-0.004780059714167173,0
+desloc_m64,churn_slug,self_area,churn,-0.039604001300163991,0.59999999999999998
+desloc_m64,churn_slug,self_area,slug,0.075755233718389672,0
+desloc_m64,churn_slug,self_width,churn,-0.071941050766191283,0.29999999999999999
+desloc_m64,churn_slug,self_width,slug,-0.020525122797476116,0
+desloc_m64,churn_slug,self_bands,churn,-0.052880690922193961,0.69999999999999996
+desloc_m64,churn_slug,self_bands,slug,0.097503134783584453,0
+desloc_m64,churn_slug,kernel_area_full,churn,-0.014950557185680752,0.80000000000000004
+desloc_m64,churn_slug,kernel_area_full,slug,-0.023265969320571622,0
+desloc_m64,churn_slug,kernel_area_short,churn,-0.0038767320407080497,0.80000000000000004
+desloc_m64,churn_slug,kernel_area_short,slug,0.028311447631686193,0
+desloc_m64,churn_slug,kernel_zero,churn,0.020082449334015852,0.90000000000000002
+desloc_m64,churn_slug,kernel_zero,slug,-0.0027278594711294042,0
+desloc_m64,churn_slug,wps_pearson,churn,-0.077987523871001038,0.69999999999999996
+desloc_m64,churn_slug,wps_pearson,slug,0.2142960226304623,0
+desloc_m64,churn_slug,wps_hellinger,churn,0.086135914767521138,0.90000000000000002
+desloc_m64,churn_slug,wps_hellinger,slug,0.32036633478196297,0.33333333333333331
+desloc_m64,churn_slug,wps_wasserstein,churn,0.17403156250711274,0.80000000000000004
+desloc_m64,churn_slug,wps_wasserstein,slug,0.42775111723546894,0.33333333333333331
+desloc_m64,churn_slug,wps_log_peak,churn,-0.21208131180580314,0.59999999999999998
+desloc_m64,churn_slug,wps_log_peak,slug,-0.097718412192097259,0
+desloc_m64,churn_slug,wps_slope,churn,0.33496165912886966,0.90000000000000002
+desloc_m64,churn_slug,wps_slope,slug,0.3308289363591535,0.33333333333333331
+desloc_m64,churn_slug,wps_width,churn,0.13616896133932474,0.80000000000000004
+desloc_m64,churn_slug,wps_width,slug,0.3658744831158634,0.33333333333333331
+desloc_m64,churn_slug,wps_trio,churn,0.017805542427637246,0.80000000000000004
+desloc_m64,churn_slug,wps_trio,slug,0.14902740676017748,0
+desloc_m64,churn_slug,mean_power_pearson,churn,-0.03314712813583931,0.69999999999999996
+desloc_m64,churn_slug,mean_power_pearson,slug,0.13523549505093377,0
+desloc_m64,churn_slug,mean_power_hellinger,churn,0.014656716396425257,0.80000000000000004
+desloc_m64,churn_slug,mean_power_hellinger,slug,0.1952301483085371,0
+desloc_m64,churn_slug,mean_power_wasserstein,churn,0.080567066445052377,0.90000000000000002
+desloc_m64,churn_slug,mean_power_wasserstein,slug,0.37727745997636192,0.66666666666666663
+desloc_m64,churn_slug,mean_power_log_peak,churn,-0.13545953527631804,0.69999999999999996
+desloc_m64,churn_slug,mean_power_log_peak,slug,0.075534561236370035,0
+desloc_m64,churn_slug,mean_power_slope,churn,0.35893789532705889,0.69999999999999996
+desloc_m64,churn_slug,mean_power_slope,slug,0.20169051084598688,0.33333333333333331
+desloc_m64,churn_slug,mean_power_width,churn,-0.23328495103771796,0.84999999999999998
+desloc_m64,churn_slug,mean_power_width,slug,-0.01138283382935811,0
+desloc_m64,churn_slug,mean_power_trio,churn,0.011256658651982682,0.69999999999999996
+desloc_m64,churn_slug,mean_power_trio,slug,0.20606264869835692,0
+desloc_m64,annular_plug,wco_global_max,wavy annular,-0.1509784075862709,0.77777777777777779
+desloc_m64,annular_plug,wco_global_max,plug,0.2804871107864696,0
+desloc_m64,annular_plug,wco_zero_weighted,wavy annular,0.025750139049812392,1
+desloc_m64,annular_plug,wco_zero_weighted,plug,0.078847810618421429,0.66666666666666663
+desloc_m64,annular_plug,wco_scale_peak_weighted,wavy annular,0.0031874185510345171,0.88888888888888884
+desloc_m64,annular_plug,wco_scale_peak_weighted,plug,0.026092079703483862,0.33333333333333331
+desloc_m64,annular_plug,wco_scale_peak_power05,wavy annular,0.011603236093126698,0.88888888888888884
+desloc_m64,annular_plug,wco_scale_peak_power05,plug,0.022595813339150655,0.33333333333333331
+desloc_m64,annular_plug,wco_common_lag_peak,wavy annular,0.0093530625414184679,0.88888888888888884
+desloc_m64,annular_plug,wco_common_lag_peak,plug,0.025748885703977376,0.66666666666666663
+desloc_m64,annular_plug,wco_map_mean,wavy annular,-0.0018937018403291581,0.55555555555555558
+desloc_m64,annular_plug,wco_map_mean,plug,0.0003914465430832556,0
+desloc_m64,annular_plug,wco_map_mean_weighted,wavy annular,-0.01272614517124826,0.77777777777777779
+desloc_m64,annular_plug,wco_map_mean_weighted,plug,0.01222083611818865,0
+desloc_m64,annular_plug,wco_lag_q90_weighted,wavy annular,-0.0076591221201070874,0.88888888888888884
+desloc_m64,annular_plug,wco_lag_q90_weighted,plug,0.025104930705114405,0.33333333333333331
+desloc_m64,annular_plug,wco_area05_weighted,wavy annular,0.00098054989735971501,0.77777777777777779
+desloc_m64,annular_plug,wco_area05_weighted,plug,0.0075224580932231194,0.33333333333333331
+desloc_m64,annular_plug,wco_mean_short,wavy annular,-0.00039550544536828277,0.77777777777777779
+desloc_m64,annular_plug,wco_mean_short,plug,0.0004673771167974376,0
+desloc_m64,annular_plug,wco_mean_middle,wavy annular,0.0019919601978309761,0.77777777777777779
+desloc_m64,annular_plug,wco_mean_middle,plug,-0.0070064328430251496,0
+desloc_m64,annular_plug,wco_mean_long,wavy annular,-0.040970870494209971,0.66666666666666663
+desloc_m64,annular_plug,wco_mean_long,plug,0.054683151052205864,0
+desloc_m64,annular_plug,wco_common_peak_short,wavy annular,0.017832402447546192,1
+desloc_m64,annular_plug,wco_common_peak_short,plug,-0.011792871565142464,0.33333333333333331
+desloc_m64,annular_plug,wco_common_peak_middle,wavy annular,0.035610341935133821,0.88888888888888884
+desloc_m64,annular_plug,wco_common_peak_middle,plug,0.038515426393876694,0.66666666666666663
+desloc_m64,annular_plug,wco_common_peak_long,wavy annular,-0.068628331849890367,0.77777777777777779
+desloc_m64,annular_plug,wco_common_peak_long,plug,0.15540819880809673,0
+desloc_m64,annular_plug,wco_central_mean,wavy annular,0.024092203749756784,1
+desloc_m64,annular_plug,wco_central_mean,plug,0.031820764221464397,0.66666666666666663
+desloc_m64,annular_plug,self_area,wavy annular,-0.11447991462584538,0.55555555555555558
+desloc_m64,annular_plug,self_area,plug,0.20935908680544266,0.33333333333333331
+desloc_m64,annular_plug,self_width,wavy annular,-0.16234635551656063,0.55555555555555558
+desloc_m64,annular_plug,self_width,plug,0.22919347133844445,0.66666666666666663
+desloc_m64,annular_plug,self_bands,wavy annular,-0.21100240595043518,0.77777777777777779
+desloc_m64,annular_plug,self_bands,plug,0.37403368029342959,0.33333333333333331
+desloc_m64,annular_plug,kernel_area_full,wavy annular,-0.045556707427405987,0.66666666666666663
+desloc_m64,annular_plug,kernel_area_full,plug,0.034988377209136161,0
+desloc_m64,annular_plug,kernel_area_short,wavy annular,-0.040916705169337625,0.44444444444444442
+desloc_m64,annular_plug,kernel_area_short,plug,0.046839803302396128,0
+desloc_m64,annular_plug,kernel_zero,wavy annular,0.013381117060300769,1
+desloc_m64,annular_plug,kernel_zero,plug,0.017145920740465708,0.66666666666666663
+desloc_m64,annular_plug,wps_pearson,wavy annular,0.2720678268874,0.88888888888888884
+desloc_m64,annular_plug,wps_pearson,plug,-0.17360046800583326,0
+desloc_m64,annular_plug,wps_hellinger,wavy annular,-0.14307054807737005,0.66666666666666663
+desloc_m64,annular_plug,wps_hellinger,plug,0.1738503730541493,0
+desloc_m64,annular_plug,wps_wasserstein,wavy annular,-0.23062917911581662,0.77777777777777779
+desloc_m64,annular_plug,wps_wasserstein,plug,0.16500706582772856,0
+desloc_m64,annular_plug,wps_log_peak,wavy annular,-0.066291079099872086,0.88888888888888884
+desloc_m64,annular_plug,wps_log_peak,plug,-0.20142246250146081,0
+desloc_m64,annular_plug,wps_slope,wavy annular,-0.30800454111306513,0.66666666666666663
+desloc_m64,annular_plug,wps_slope,plug,0.24682473041795142,0
+desloc_m64,annular_plug,wps_width,wavy annular,0.16550349191360891,0.66666666666666663
+desloc_m64,annular_plug,wps_width,plug,-0.16113199665831246,0
+desloc_m64,annular_plug,wps_trio,wavy annular,-0.05787284880891129,0.66666666666666663
+desloc_m64,annular_plug,wps_trio,plug,-0.11776908473949366,0
+desloc_m64,annular_plug,mean_power_pearson,wavy annular,0.23335443934831523,0.77777777777777779
+desloc_m64,annular_plug,mean_power_pearson,plug,-0.089261995724508006,0
+desloc_m64,annular_plug,mean_power_hellinger,wavy annular,-0.11702346864109048,0.66666666666666663
+desloc_m64,annular_plug,mean_power_hellinger,plug,0.23467832715309525,0.33333333333333331
+desloc_m64,annular_plug,mean_power_wasserstein,wavy annular,-0.20781965402350011,0.66666666666666663
+desloc_m64,annular_plug,mean_power_wasserstein,plug,0.31158846342150115,0
+desloc_m64,annular_plug,mean_power_log_peak,wavy annular,0.25180595603133993,1
+desloc_m64,annular_plug,mean_power_log_peak,plug,0.22067768954909975,0.33333333333333331
+desloc_m64,annular_plug,mean_power_slope,wavy annular,-0.3013204429860098,0.77777777777777779
+desloc_m64,annular_plug,mean_power_slope,plug,0.29840803076693784,0
+desloc_m64,annular_plug,mean_power_width,wavy annular,-0.1477371488947341,0.72222222222222221
+desloc_m64,annular_plug,mean_power_width,plug,0.29018251487959018,0.16666666666666666
+desloc_m64,annular_plug,mean_power_trio,wavy annular,0.029376028619014498,0.88888888888888884
+desloc_m64,annular_plug,mean_power_trio,plug,0.28239332516431875,0.66666666666666663
+desloc_m64,annular_slug,wco_global_max,wavy annular,-0.073951233311015566,0.66666666666666663
+desloc_m64,annular_slug,wco_global_max,slug,-0.07609196367775739,0
+desloc_m64,annular_slug,wco_zero_weighted,wavy annular,0.030132815446268932,0.88888888888888884
+desloc_m64,annular_slug,wco_zero_weighted,slug,0.0041375887766163339,0
+desloc_m64,annular_slug,wco_scale_peak_weighted,wavy annular,-0.045555139774411814,0.66666666666666663
+desloc_m64,annular_slug,wco_scale_peak_weighted,slug,0.0044513331882871142,0
+desloc_m64,annular_slug,wco_scale_peak_power05,wavy annular,-0.040656841840391561,0.66666666666666663
+desloc_m64,annular_slug,wco_scale_peak_power05,slug,0.0026422659089963183,0
+desloc_m64,annular_slug,wco_common_lag_peak,wavy annular,-0.027364675389616559,0.77777777777777779
+desloc_m64,annular_slug,wco_common_lag_peak,slug,-0.032915301600859467,0
+desloc_m64,annular_slug,wco_map_mean,wavy annular,-0.0022876708295060926,0.77777777777777779
+desloc_m64,annular_slug,wco_map_mean,slug,-0.0045846050664180215,0
+desloc_m64,annular_slug,wco_map_mean_weighted,wavy annular,-0.013714389229721145,0.88888888888888884
+desloc_m64,annular_slug,wco_map_mean_weighted,slug,0.0060662139089895858,0
+desloc_m64,annular_slug,wco_lag_q90_weighted,wavy annular,-0.04062881846200924,0.77777777777777779
+desloc_m64,annular_slug,wco_lag_q90_weighted,slug,0.0026125261716314352,0
+desloc_m64,annular_slug,wco_area05_weighted,wavy annular,-0.011016268982853801,0.88888888888888884
+desloc_m64,annular_slug,wco_area05_weighted,slug,0.012476688243502723,0
+desloc_m64,annular_slug,wco_mean_short,wavy annular,0.00025249063852429113,0.66666666666666663
+desloc_m64,annular_slug,wco_mean_short,slug,0.00022241610480999753,0
+desloc_m64,annular_slug,wco_mean_middle,wavy annular,-9.4090345509453983e-06,0.88888888888888884
+desloc_m64,annular_slug,wco_mean_middle,slug,-0.014890719511264068,0
+desloc_m64,annular_slug,wco_mean_long,wavy annular,-0.039422038700715714,0.66666666666666663
+desloc_m64,annular_slug,wco_mean_long,slug,0.029989140468977233,0
+desloc_m64,annular_slug,wco_common_peak_short,wavy annular,0.0084135868109712908,0.88888888888888884
+desloc_m64,annular_slug,wco_common_peak_short,slug,0.014822803263165161,0.33333333333333331
+desloc_m64,annular_slug,wco_common_peak_middle,wavy annular,-0.0060413023542524869,0.77777777777777779
+desloc_m64,annular_slug,wco_common_peak_middle,slug,-0.081564174146064691,0
+desloc_m64,annular_slug,wco_common_peak_long,wavy annular,-0.089698679370256135,0.66666666666666663
+desloc_m64,annular_slug,wco_common_peak_long,slug,0.10178715866846592,0
+desloc_m64,annular_slug,wco_central_mean,wavy annular,0.029328975882068602,1
+desloc_m64,annular_slug,wco_central_mean,slug,-0.0025522098604836194,0
+desloc_m64,annular_slug,self_area,wavy annular,-0.052568213491865134,0.66666666666666663
+desloc_m64,annular_slug,self_area,slug,0.068622065682018493,0
+desloc_m64,annular_slug,self_width,wavy annular,-0.077685218244167534,0.77777777777777779
+desloc_m64,annular_slug,self_width,slug,0.032660310178524492,0
+desloc_m64,annular_slug,self_bands,wavy annular,-0.12803432415196883,0.88888888888888884
+desloc_m64,annular_slug,self_bands,slug,0.12183726312931135,0
+desloc_m64,annular_slug,kernel_area_full,wavy annular,-0.039184139138563084,0.66666666666666663
+desloc_m64,annular_slug,kernel_area_full,slug,-0.025560548124916049,0
+desloc_m64,annular_slug,kernel_area_short,wavy annular,-0.030397087087231885,0.66666666666666663
+desloc_m64,annular_slug,kernel_area_short,slug,0.03533152969103473,0.33333333333333331
+desloc_m64,annular_slug,kernel_zero,wavy annular,0.015982893447451844,1
+desloc_m64,annular_slug,kernel_zero,slug,-0.0017196806095176459,0
+desloc_m64,annular_slug,wps_pearson,wavy annular,0.19395017348683702,1
+desloc_m64,annular_slug,wps_pearson,slug,-0.0049001287403022007,0
+desloc_m64,annular_slug,wps_hellinger,wavy annular,-0.16881334045783283,0.55555555555555558
+desloc_m64,annular_slug,wps_hellinger,slug,0.34636224748517064,0
+desloc_m64,annular_slug,wps_wasserstein,wavy annular,-0.28303414193656118,0.66666666666666663
+desloc_m64,annular_slug,wps_wasserstein,slug,0.39999521594909782,0
+desloc_m64,annular_slug,wps_log_peak,wavy annular,0.11293710052635908,0.66666666666666663
+desloc_m64,annular_slug,wps_log_peak,slug,-0.26920767125445566,0
+desloc_m64,annular_slug,wps_slope,wavy annular,-0.32595230083072435,0.55555555555555558
+desloc_m64,annular_slug,wps_slope,slug,0.27688866448268279,0
+desloc_m64,annular_slug,wps_width,wavy annular,-0.12945863016089876,0.55555555555555558
+desloc_m64,annular_slug,wps_width,slug,-0.012037037037037781,0
+desloc_m64,annular_slug,wps_trio,wavy annular,-0.064186957027512079,0.55555555555555558
+desloc_m64,annular_slug,wps_trio,slug,-0.11148785458453851,0
+desloc_m64,annular_slug,mean_power_pearson,wavy annular,0.18652130154967017,0.88888888888888884
+desloc_m64,annular_slug,mean_power_pearson,slug,-0.060086871148554565,0
+desloc_m64,annular_slug,mean_power_hellinger,wavy annular,-0.1185239651353726,0.55555555555555558
+desloc_m64,annular_slug,mean_power_hellinger,slug,0.2713721595408613,0
+desloc_m64,annular_slug,mean_power_wasserstein,wavy annular,-0.23324478205529267,0.77777777777777779
+desloc_m64,annular_slug,mean_power_wasserstein,slug,0.47213377294891973,0
+desloc_m64,annular_slug,mean_power_log_peak,wavy annular,0.16985465664393573,0.88888888888888884
+desloc_m64,annular_slug,mean_power_log_peak,slug,0.3363036059638575,0.33333333333333331
+desloc_m64,annular_slug,mean_power_slope,wavy annular,-0.27143868259461423,0.66666666666666663
+desloc_m64,annular_slug,mean_power_slope,slug,0.15982805305032483,0
+desloc_m64,annular_slug,mean_power_width,wavy annular,0.001718297721317812,0.66666666666666663
+desloc_m64,annular_slug,mean_power_width,slug,-0.027943321763546764,0
+desloc_m64,annular_slug,mean_power_trio,wavy annular,0.03409845801296657,0.88888888888888884
+desloc_m64,annular_slug,mean_power_trio,slug,0.23403942622894905,0.66666666666666663
+desloc_p64,quatro_padroes,wco_global_max,churn,-0.37547300546679319,0.40000000000000002
+desloc_p64,quatro_padroes,wco_global_max,wavy annular,-0.20445570860574092,0.55555555555555558
+desloc_p64,quatro_padroes,wco_global_max,plug,-0.14691761150245009,0
+desloc_p64,quatro_padroes,wco_global_max,slug,-0.41041748447192927,0.33333333333333331
+desloc_p64,quatro_padroes,wco_zero_weighted,churn,-0.093788631940860151,0
+desloc_p64,quatro_padroes,wco_zero_weighted,wavy annular,-0.067672373490095458,0.33333333333333331
+desloc_p64,quatro_padroes,wco_zero_weighted,plug,0.1019554604531312,0.66666666666666663
+desloc_p64,quatro_padroes,wco_zero_weighted,slug,-0.064710644947656049,0
+desloc_p64,quatro_padroes,wco_scale_peak_weighted,churn,-0.14207091493377727,0
+desloc_p64,quatro_padroes,wco_scale_peak_weighted,wavy annular,-0.13825043173484686,0.44444444444444442
+desloc_p64,quatro_padroes,wco_scale_peak_weighted,plug,0.020572883003648595,0.33333333333333331
+desloc_p64,quatro_padroes,wco_scale_peak_weighted,slug,0.026976281034256516,0
+desloc_p64,quatro_padroes,wco_scale_peak_power05,churn,-0.15947949352928786,0
+desloc_p64,quatro_padroes,wco_scale_peak_power05,wavy annular,-0.14710522679247434,0.44444444444444442
+desloc_p64,quatro_padroes,wco_scale_peak_power05,plug,0.035652140843856157,0.33333333333333331
+desloc_p64,quatro_padroes,wco_scale_peak_power05,slug,0.027067005036497265,0
+desloc_p64,quatro_padroes,wco_common_lag_peak,churn,-0.1189400604691951,0
+desloc_p64,quatro_padroes,wco_common_lag_peak,wavy annular,-0.10819610895555185,0.33333333333333331
+desloc_p64,quatro_padroes,wco_common_lag_peak,plug,0.05428498753800496,0.66666666666666663
+desloc_p64,quatro_padroes,wco_common_lag_peak,slug,-0.032596412858837583,0
+desloc_p64,quatro_padroes,wco_map_mean,churn,-0.011160378620824916,0.59999999999999998
+desloc_p64,quatro_padroes,wco_map_mean,wavy annular,-0.013057139599828824,0.1111111111111111
+desloc_p64,quatro_padroes,wco_map_mean,plug,0.0012670893135144072,0
+desloc_p64,quatro_padroes,wco_map_mean,slug,-0.0066219709224024535,0
+desloc_p64,quatro_padroes,wco_map_mean_weighted,churn,-0.037992949816280243,0.29999999999999999
+desloc_p64,quatro_padroes,wco_map_mean_weighted,wavy annular,-0.037029745424290356,0.44444444444444442
+desloc_p64,quatro_padroes,wco_map_mean_weighted,plug,0.0060902676355097498,0.33333333333333331
+desloc_p64,quatro_padroes,wco_map_mean_weighted,slug,-0.0015416334559921064,0
+desloc_p64,quatro_padroes,wco_lag_q90_weighted,churn,-0.12121833000933058,0.10000000000000001
+desloc_p64,quatro_padroes,wco_lag_q90_weighted,wavy annular,-0.1145046602816303,0.55555555555555558
+desloc_p64,quatro_padroes,wco_lag_q90_weighted,plug,0.018946835728797167,0.33333333333333331
+desloc_p64,quatro_padroes,wco_lag_q90_weighted,slug,0.011920344491531126,0
+desloc_p64,quatro_padroes,wco_area05_weighted,churn,-0.042626684088912126,0.29999999999999999
+desloc_p64,quatro_padroes,wco_area05_weighted,wavy annular,-0.038602189821006619,0.33333333333333331
+desloc_p64,quatro_padroes,wco_area05_weighted,plug,-0.001639038708053581,0.33333333333333331
+desloc_p64,quatro_padroes,wco_area05_weighted,slug,0.0015608111228070209,0
+desloc_p64,quatro_padroes,wco_mean_short,churn,-0.00046657131659631843,0.40000000000000002
+desloc_p64,quatro_padroes,wco_mean_short,wavy annular,-0.0031867660958743156,0.44444444444444442
+desloc_p64,quatro_padroes,wco_mean_short,plug,-0.0010181042374263372,0
+desloc_p64,quatro_padroes,wco_mean_short,slug,-0.0023779695011863608,0
+desloc_p64,quatro_padroes,wco_mean_middle,churn,-0.015349400326473906,0.5
+desloc_p64,quatro_padroes,wco_mean_middle,wavy annular,-0.023654785343388326,0.22222222222222221
+desloc_p64,quatro_padroes,wco_mean_middle,plug,-0.0024157338872238545,0
+desloc_p64,quatro_padroes,wco_mean_middle,slug,-0.015973724078879946,0
+desloc_p64,quatro_padroes,wco_mean_long,churn,-0.090326550989591886,0.29999999999999999
+desloc_p64,quatro_padroes,wco_mean_long,wavy annular,-0.061863457205202116,0.33333333333333331
+desloc_p64,quatro_padroes,wco_mean_long,plug,-0.04279851937258871,0
+desloc_p64,quatro_padroes,wco_mean_long,slug,-0.03613211715513278,0.33333333333333331
+desloc_p64,quatro_padroes,wco_common_peak_short,churn,-0.0073564391189997694,0.59999999999999998
+desloc_p64,quatro_padroes,wco_common_peak_short,wavy annular,-0.02738841580465887,0.44444444444444442
+desloc_p64,quatro_padroes,wco_common_peak_short,plug,-0.015713375187388318,0.33333333333333331
+desloc_p64,quatro_padroes,wco_common_peak_short,slug,0.015608042474455616,0
+desloc_p64,quatro_padroes,wco_common_peak_middle,churn,-0.11776322662127778,0.20000000000000001
+desloc_p64,quatro_padroes,wco_common_peak_middle,wavy annular,-0.12613806548406661,0.33333333333333331
+desloc_p64,quatro_padroes,wco_common_peak_middle,plug,0.033666991958815042,0.33333333333333331
+desloc_p64,quatro_padroes,wco_common_peak_middle,slug,-0.089293461928495632,0
+desloc_p64,quatro_padroes,wco_common_peak_long,churn,-0.32805723680605448,0.69999999999999996
+desloc_p64,quatro_padroes,wco_common_peak_long,wavy annular,-0.30121259938399814,0.44444444444444442
+desloc_p64,quatro_padroes,wco_common_peak_long,plug,-0.11641052922283092,0
+desloc_p64,quatro_padroes,wco_common_peak_long,slug,-0.071058560712639093,0
+desloc_p64,quatro_padroes,wco_central_mean,churn,-0.029470977399564481,0.29999999999999999
+desloc_p64,quatro_padroes,wco_central_mean,wavy annular,-0.037634979872309175,0.33333333333333331
+desloc_p64,quatro_padroes,wco_central_mean,plug,0.066774498282697256,0.66666666666666663
+desloc_p64,quatro_padroes,wco_central_mean,slug,-0.036287574792397581,0
+desloc_p64,quatro_padroes,self_area,churn,-0.060241975700521366,0.29999999999999999
+desloc_p64,quatro_padroes,self_area,wavy annular,-0.12293091985099726,0.22222222222222221
+desloc_p64,quatro_padroes,self_area,plug,-0.078665857478637496,0
+desloc_p64,quatro_padroes,self_area,slug,-0.056611317655169024,0
+desloc_p64,quatro_padroes,self_width,churn,-0.080016707590406952,0.40000000000000002
+desloc_p64,quatro_padroes,self_width,wavy annular,-0.16218165765462197,0.1111111111111111
+desloc_p64,quatro_padroes,self_width,plug,-0.055741483909548105,0
+desloc_p64,quatro_padroes,self_width,slug,-0.032014968831796678,0
+desloc_p64,quatro_padroes,self_bands,churn,-0.11482925251082972,0.29999999999999999
+desloc_p64,quatro_padroes,self_bands,wavy annular,-0.31638481115787764,0
+desloc_p64,quatro_padroes,self_bands,plug,-0.25904289079166393,0
+desloc_p64,quatro_padroes,self_bands,slug,-0.12700936969738669,0
+desloc_p64,quatro_padroes,kernel_area_full,churn,-0.085191967862358858,0.20000000000000001
+desloc_p64,quatro_padroes,kernel_area_full,wavy annular,-0.11816202160550961,0
+desloc_p64,quatro_padroes,kernel_area_full,plug,0.011437271807276808,0
+desloc_p64,quatro_padroes,kernel_area_full,slug,-0.038775332669031749,0
+desloc_p64,quatro_padroes,kernel_area_short,churn,-0.030874710561250851,0.80000000000000004
+desloc_p64,quatro_padroes,kernel_area_short,wavy annular,-0.059169581988114284,0.22222222222222221
+desloc_p64,quatro_padroes,kernel_area_short,plug,0.001614859695511555,0
+desloc_p64,quatro_padroes,kernel_area_short,slug,-0.015177624428256256,0
+desloc_p64,quatro_padroes,kernel_zero,churn,-0.014796010334021637,0.29999999999999999
+desloc_p64,quatro_padroes,kernel_zero,wavy annular,-0.01892792694640065,0.33333333333333331
+desloc_p64,quatro_padroes,kernel_zero,plug,0.036487095566239282,0.66666666666666663
+desloc_p64,quatro_padroes,kernel_zero,slug,-0.019017015895645206,0
+desloc_p64,quatro_padroes,wps_pearson,churn,-0.18282281156448907,0.59999999999999998
+desloc_p64,quatro_padroes,wps_pearson,wavy annular,0.13797794265628177,0.55555555555555558
+desloc_p64,quatro_padroes,wps_pearson,plug,-0.19234245431279187,0
+desloc_p64,quatro_padroes,wps_pearson,slug,0.01100323860931283,0.33333333333333331
+desloc_p64,quatro_padroes,wps_hellinger,churn,0.12413636548377664,0.80000000000000004
+desloc_p64,quatro_padroes,wps_hellinger,wavy annular,-0.29852228520238339,0.33333333333333331
+desloc_p64,quatro_padroes,wps_hellinger,plug,-0.17901752766441517,0
+desloc_p64,quatro_padroes,wps_hellinger,slug,0.014439518479874838,0
+desloc_p64,quatro_padroes,wps_wasserstein,churn,0.26504172564793632,0.80000000000000004
+desloc_p64,quatro_padroes,wps_wasserstein,wavy annular,-0.44269914414039097,0.33333333333333331
+desloc_p64,quatro_padroes,wps_wasserstein,plug,-0.23542453937065333,0
+desloc_p64,quatro_padroes,wps_wasserstein,slug,-0.22975612418756639,0
+desloc_p64,quatro_padroes,wps_log_peak,churn,-0.41661468501575538,0.050000000000000003
+desloc_p64,quatro_padroes,wps_log_peak,wavy annular,-0.16755813377255865,0.22222222222222221
+desloc_p64,quatro_padroes,wps_log_peak,plug,-0.087581227366172618,0
+desloc_p64,quatro_padroes,wps_log_peak,slug,-0.45614787958646835,0
+desloc_p64,quatro_padroes,wps_slope,churn,0.46853689136418197,0.69999999999999996
+desloc_p64,quatro_padroes,wps_slope,wavy annular,-0.56991240809781085,0.22222222222222221
+desloc_p64,quatro_padroes,wps_slope,plug,-0.027517455806904373,0.66666666666666663
+desloc_p64,quatro_padroes,wps_slope,slug,-0.32783188944446917,0
+desloc_p64,quatro_padroes,wps_width,churn,0.18217945521734827,0.66666666666666663
+desloc_p64,quatro_padroes,wps_width,wavy annular,-0.16517317673734258,0.41666666666666669
+desloc_p64,quatro_padroes,wps_width,plug,-0.49440665154950808,0
+desloc_p64,quatro_padroes,wps_width,slug,-0.046769853377403685,0
+desloc_p64,quatro_padroes,wps_trio,churn,0.077869899610120974,0.69999999999999996
+desloc_p64,quatro_padroes,wps_trio,wavy annular,-0.17685474728292949,0.22222222222222221
+desloc_p64,quatro_padroes,wps_trio,plug,-0.17233886433011936,0
+desloc_p64,quatro_padroes,wps_trio,slug,-0.2732786384155812,0
+desloc_p64,quatro_padroes,mean_power_pearson,churn,-0.14222299133260369,0.5
+desloc_p64,quatro_padroes,mean_power_pearson,wavy annular,0.12754626167318167,0.66666666666666663
+desloc_p64,quatro_padroes,mean_power_pearson,plug,-0.15716578916797219,0
+desloc_p64,quatro_padroes,mean_power_pearson,slug,-0.11187556153939092,0
+desloc_p64,quatro_padroes,mean_power_hellinger,churn,-0.018436334538227843,0.59999999999999998
+desloc_p64,quatro_padroes,mean_power_hellinger,wavy annular,-0.26054780840821973,0.1111111111111111
+desloc_p64,quatro_padroes,mean_power_hellinger,plug,-0.15273223433220498,0
+desloc_p64,quatro_padroes,mean_power_hellinger,slug,0.033093315734106961,0
+desloc_p64,quatro_padroes,mean_power_wasserstein,churn,0.099045042019519247,0.69999999999999996
+desloc_p64,quatro_padroes,mean_power_wasserstein,wavy annular,-0.39661515861907959,0.33333333333333331
+desloc_p64,quatro_padroes,mean_power_wasserstein,plug,-0.14770294688276323,0
+desloc_p64,quatro_padroes,mean_power_wasserstein,slug,-0.19277530762390449,0
+desloc_p64,quatro_padroes,mean_power_log_peak,churn,-0.41771051832738965,0.10000000000000001
+desloc_p64,quatro_padroes,mean_power_log_peak,wavy annular,-0.36569668310064007,0.14814814814814814
+desloc_p64,quatro_padroes,mean_power_log_peak,plug,-0.23271238227700106,0
+desloc_p64,quatro_padroes,mean_power_log_peak,slug,0.17472391255352951,0
+desloc_p64,quatro_padroes,mean_power_slope,churn,0.41318933694711768,0.59999999999999998
+desloc_p64,quatro_padroes,mean_power_slope,wavy annular,-0.5606096446228076,0.22222222222222221
+desloc_p64,quatro_padroes,mean_power_slope,plug,0.056496914485882503,0.33333333333333331
+desloc_p64,quatro_padroes,mean_power_slope,slug,-0.39033253492491915,0
+desloc_p64,quatro_padroes,mean_power_width,churn,-0.17958694157756924,0.29999999999999999
+desloc_p64,quatro_padroes,mean_power_width,wavy annular,-0.16625670713297155,0.092592592592592587
+desloc_p64,quatro_padroes,mean_power_width,plug,-0.30452674897119203,0
+desloc_p64,quatro_padroes,mean_power_width,slug,-0.38643504185299998,0
+desloc_p64,quatro_padroes,mean_power_trio,churn,0.029211656091912001,0.59999999999999998
+desloc_p64,quatro_padroes,mean_power_trio,wavy annular,-0.29832515038826812,0.1111111111111111
+desloc_p64,quatro_padroes,mean_power_trio,plug,-0.14444638613701977,0
+desloc_p64,quatro_padroes,mean_power_trio,slug,-0.073928733735307089,0
+desloc_p64,churn_annular,wco_global_max,churn,-0.052188280202077296,0.69999999999999996
+desloc_p64,churn_annular,wco_global_max,wavy annular,0.090409797791158777,0.66666666666666663
+desloc_p64,churn_annular,wco_zero_weighted,churn,-0.049341454856858813,0.20000000000000001
+desloc_p64,churn_annular,wco_zero_weighted,wavy annular,-0.025063925830163813,0.33333333333333331
+desloc_p64,churn_annular,wco_scale_peak_weighted,churn,-0.038061773380776362,0.20000000000000001
+desloc_p64,churn_annular,wco_scale_peak_weighted,wavy annular,-0.0069728677214343747,0.55555555555555558
+desloc_p64,churn_annular,wco_scale_peak_power05,churn,-0.053417670300538955,0.20000000000000001
+desloc_p64,churn_annular,wco_scale_peak_power05,wavy annular,-0.014015996969402224,0.55555555555555558
+desloc_p64,churn_annular,wco_common_lag_peak,churn,-0.054865958019446805,0
+desloc_p64,churn_annular,wco_common_lag_peak,wavy annular,-0.018935737763360546,0.33333333333333331
+desloc_p64,churn_annular,wco_map_mean,churn,-0.0037189426679069015,0.69999999999999996
+desloc_p64,churn_annular,wco_map_mean,wavy annular,-0.0024541255608840455,0.33333333333333331
+desloc_p64,churn_annular,wco_map_mean_weighted,churn,-0.012868079648879444,0.40000000000000002
+desloc_p64,churn_annular,wco_map_mean_weighted,wavy annular,-0.0046768008996842308,0.77777777777777779
+desloc_p64,churn_annular,wco_lag_q90_weighted,churn,-0.042596726121342153,0.29999999999999999
+desloc_p64,churn_annular,wco_lag_q90_weighted,wavy annular,-0.0041818219161240105,0.66666666666666663
+desloc_p64,churn_annular,wco_area05_weighted,churn,-0.014294608457636939,0.40000000000000002
+desloc_p64,churn_annular,wco_area05_weighted,wavy annular,0.00095801812344624752,0.66666666666666663
+desloc_p64,churn_annular,wco_mean_short,churn,0.0014444259776713571,0.69999999999999996
+desloc_p64,churn_annular,wco_mean_short,wavy annular,-0.0018461814104517968,0.55555555555555558
+desloc_p64,churn_annular,wco_mean_middle,churn,-0.003755944781888329,0.5
+desloc_p64,churn_annular,wco_mean_middle,wavy annular,-0.0086995205879040732,0.33333333333333331
+desloc_p64,churn_annular,wco_mean_long,churn,-0.043412095215347772,0.59999999999999998
+desloc_p64,churn_annular,wco_mean_long,wavy annular,0.037568926223253661,0.66666666666666663
+desloc_p64,churn_annular,wco_common_peak_short,churn,0.0014523877401789412,0.59999999999999998
+desloc_p64,churn_annular,wco_common_peak_short,wavy annular,-0.01453949566418526,0.44444444444444442
+desloc_p64,churn_annular,wco_common_peak_middle,churn,-0.023609381629737015,0.20000000000000001
+desloc_p64,churn_annular,wco_common_peak_middle,wavy annular,-0.041447081621418573,0.44444444444444442
+desloc_p64,churn_annular,wco_common_peak_long,churn,-0.13120474128625509,0.90000000000000002
+desloc_p64,churn_annular,wco_common_peak_long,wavy annular,0.11921108273989055,0.44444444444444442
+desloc_p64,churn_annular,wco_central_mean,churn,-0.013724002492279039,0.29999999999999999
+desloc_p64,churn_annular,wco_central_mean,wavy annular,-0.02304164781333792,0.33333333333333331
+desloc_p64,churn_annular,self_area,churn,0.045788794384598749,0.59999999999999998
+desloc_p64,churn_annular,self_area,wavy annular,-0.064812719552218859,0.33333333333333331
+desloc_p64,churn_annular,self_width,churn,0.043166015532623857,0.40000000000000002
+desloc_p64,churn_annular,self_width,wavy annular,-0.081659151108415109,0.44444444444444442
+desloc_p64,churn_annular,self_bands,churn,0.11146405960243071,0.29999999999999999
+desloc_p64,churn_annular,self_bands,wavy annular,-0.18906898507175873,0.1111111111111111
+desloc_p64,churn_annular,kernel_area_full,churn,-0.017554910207125126,0.5
+desloc_p64,churn_annular,kernel_area_full,wavy annular,-0.026174970862135924,0.1111111111111111
+desloc_p64,churn_annular,kernel_area_short,churn,0.018545974691414644,1
+desloc_p64,churn_annular,kernel_area_short,wavy annular,-0.026459958448201315,0.44444444444444442
+desloc_p64,churn_annular,kernel_zero,churn,-0.0070679388788809803,0.29999999999999999
+desloc_p64,churn_annular,kernel_zero,wavy annular,-0.012021557320120401,0.33333333333333331
+desloc_p64,churn_annular,wps_pearson,churn,-0.16007942981880585,0.69999999999999996
+desloc_p64,churn_annular,wps_pearson,wavy annular,0.2297002006285089,0.55555555555555558
+desloc_p64,churn_annular,wps_hellinger,churn,0.26496055684495373,0.80000000000000004
+desloc_p64,churn_annular,wps_hellinger,wavy annular,-0.087753479743351029,0.55555555555555558
+desloc_p64,churn_annular,wps_wasserstein,churn,0.3844329064850171,0.90000000000000002
+desloc_p64,churn_annular,wps_wasserstein,wavy annular,-0.06417585994159275,0.66666666666666663
+desloc_p64,churn_annular,wps_log_peak,churn,-0.20889160544906674,0.28333333333333333
+desloc_p64,churn_annular,wps_log_peak,wavy annular,0.15141131238555397,0.22222222222222221
+desloc_p64,churn_annular,wps_slope,churn,0.58864698153111072,0.69999999999999996
+desloc_p64,churn_annular,wps_slope,wavy annular,-0.11339740446680012,0.44444444444444442
+desloc_p64,churn_annular,wps_width,churn,0.37102401505333649,0.66666666666666663
+desloc_p64,churn_annular,wps_width,wavy annular,0.34390068384521044,0.66666666666666663
+desloc_p64,churn_annular,wps_trio,churn,0.22676439662160011,0.80000000000000004
+desloc_p64,churn_annular,wps_trio,wavy annular,0.19313669709072778,0.77777777777777779
+desloc_p64,churn_annular,mean_power_pearson,churn,-0.13660535411354063,0.5
+desloc_p64,churn_annular,mean_power_pearson,wavy annular,0.18003009851573609,0.66666666666666663
+desloc_p64,churn_annular,mean_power_hellinger,churn,0.16340707707999402,0.59999999999999998
+desloc_p64,churn_annular,mean_power_hellinger,wavy annular,-0.13010213837052687,0.33333333333333331
+desloc_p64,churn_annular,mean_power_wasserstein,churn,0.28337134788004026,0.69999999999999996
+desloc_p64,churn_annular,mean_power_wasserstein,wavy annular,-0.16460859164274799,0.55555555555555558
+desloc_p64,churn_annular,mean_power_log_peak,churn,0.10856910649027762,0.25
+desloc_p64,churn_annular,mean_power_log_peak,wavy annular,-0.17281674637898436,0.14814814814814814
+desloc_p64,churn_annular,mean_power_slope,churn,0.54884640134284346,0.59999999999999998
+desloc_p64,churn_annular,mean_power_slope,wavy annular,-0.13554067042656934,0.55555555555555558
+desloc_p64,churn_annular,mean_power_width,churn,0.12787400876391081,0.59999999999999998
+desloc_p64,churn_annular,mean_power_width,wavy annular,0.23198802010092778,0.57407407407407396
+desloc_p64,churn_annular,mean_power_trio,churn,0.24799103604726938,0.59999999999999998
+desloc_p64,churn_annular,mean_power_trio,wavy annular,0.034761101008553591,0.55555555555555558
+desloc_p64,plug_slug,wco_global_max,plug,-0.076353778161616023,0
+desloc_p64,plug_slug,wco_global_max,slug,-0.29362565549971048,0.66666666666666663
+desloc_p64,plug_slug,wco_zero_weighted,plug,0.1019554604531312,0.66666666666666663
+desloc_p64,plug_slug,wco_zero_weighted,slug,-0.034788881284348476,0.33333333333333331
+desloc_p64,plug_slug,wco_scale_peak_weighted,plug,0.037689610784031387,0.66666666666666663
+desloc_p64,plug_slug,wco_scale_peak_weighted,slug,0.070163113597470073,0.33333333333333331
+desloc_p64,plug_slug,wco_scale_peak_power05,plug,0.049807209901114674,0.66666666666666663
+desloc_p64,plug_slug,wco_scale_peak_power05,slug,0.077257055670678462,0.33333333333333331
+desloc_p64,plug_slug,wco_common_lag_peak,plug,0.075257490085287482,0.66666666666666663
+desloc_p64,plug_slug,wco_common_lag_peak,slug,0.02321317898304812,0.33333333333333331
+desloc_p64,plug_slug,wco_map_mean,plug,0.0027677528282362435,0.66666666666666663
+desloc_p64,plug_slug,wco_map_mean,slug,-0.0012180244414921328,0.33333333333333331
+desloc_p64,plug_slug,wco_map_mean_weighted,plug,0.0060902676355097498,0.66666666666666663
+desloc_p64,plug_slug,wco_map_mean_weighted,slug,-0.0011281085505057071,0
+desloc_p64,plug_slug,wco_lag_q90_weighted,plug,0.020578587463206677,0.66666666666666663
+desloc_p64,plug_slug,wco_lag_q90_weighted,slug,0.041268612082617347,0.33333333333333331
+desloc_p64,plug_slug,wco_area05_weighted,plug,-0.0006508125791994876,0.66666666666666663
+desloc_p64,plug_slug,wco_area05_weighted,slug,0.01104038777837244,0.33333333333333331
+desloc_p64,plug_slug,wco_mean_short,plug,0.002708213530686543,0.66666666666666663
+desloc_p64,plug_slug,wco_mean_short,slug,0.0014722425106881484,0.66666666666666663
+desloc_p64,plug_slug,wco_mean_middle,plug,0.008715668361157421,0.66666666666666663
+desloc_p64,plug_slug,wco_mean_middle,slug,0.0004369284477930985,0.33333333333333331
+desloc_p64,plug_slug,wco_mean_long,plug,-0.04279851937258871,0
+desloc_p64,plug_slug,wco_mean_long,slug,-0.03613211715513278,0.66666666666666663
+desloc_p64,plug_slug,wco_common_peak_short,plug,0.029023246593213387,0.66666666666666663
+desloc_p64,plug_slug,wco_common_peak_short,slug,0.050491316459660575,0.66666666666666663
+desloc_p64,plug_slug,wco_common_peak_middle,plug,0.10641304622776949,0.66666666666666663
+desloc_p64,plug_slug,wco_common_peak_middle,slug,0.0022625947380812868,0.33333333333333331
+desloc_p64,plug_slug,wco_common_peak_long,plug,-0.11641052922283092,0
+desloc_p64,plug_slug,wco_common_peak_long,slug,-0.051715202036920392,0.66666666666666663
+desloc_p64,plug_slug,wco_central_mean,plug,0.070899896941071863,0.66666666666666663
+desloc_p64,plug_slug,wco_central_mean,slug,-0.013483693506553209,0.33333333333333331
+desloc_p64,plug_slug,self_area,plug,-0.078665857478637496,0
+desloc_p64,plug_slug,self_area,slug,-0.056611317655169024,0.33333333333333331
+desloc_p64,plug_slug,self_width,plug,-0.025154193588563269,0.66666666666666663
+desloc_p64,plug_slug,self_width,slug,-0.014267201854539164,0.33333333333333331
+desloc_p64,plug_slug,self_bands,plug,-0.25904289079166393,0
+desloc_p64,plug_slug,self_bands,slug,-0.12700936969738669,0.33333333333333331
+desloc_p64,plug_slug,kernel_area_full,plug,0.019144807199641234,0.66666666666666663
+desloc_p64,plug_slug,kernel_area_full,slug,-0.005732548128862619,0.33333333333333331
+desloc_p64,plug_slug,kernel_area_short,plug,0.041507799597446847,0.66666666666666663
+desloc_p64,plug_slug,kernel_area_short,slug,0.019218729240714182,0.33333333333333331
+desloc_p64,plug_slug,kernel_zero,plug,0.038838618207211711,0.66666666666666663
+desloc_p64,plug_slug,kernel_zero,slug,-0.0069899773158495727,0.33333333333333331
+desloc_p64,plug_slug,wps_pearson,plug,-0.10445232311946701,0.33333333333333331
+desloc_p64,plug_slug,wps_pearson,slug,0.15611271134334903,1
+desloc_p64,plug_slug,wps_hellinger,plug,-0.17901752766441517,0
+desloc_p64,plug_slug,wps_hellinger,slug,0.014439518479874838,0
+desloc_p64,plug_slug,wps_wasserstein,plug,-0.22619951328403834,0
+desloc_p64,plug_slug,wps_wasserstein,slug,-0.22975612418756639,0
+desloc_p64,plug_slug,wps_log_peak,plug,0.15227854582693351,0.66666666666666663
+desloc_p64,plug_slug,wps_log_peak,slug,-0.38634730978589876,0
+desloc_p64,plug_slug,wps_slope,plug,0.037887284058997821,0.66666666666666663
+desloc_p64,plug_slug,wps_slope,slug,-0.32783188944446917,0
+desloc_p64,plug_slug,wps_width,plug,-0.43696145124716496,0
+desloc_p64,plug_slug,wps_width,slug,0.17214040829047886,0.33333333333333331
+desloc_p64,plug_slug,wps_trio,plug,-0.15845723974119999,0
+desloc_p64,plug_slug,wps_trio,slug,-0.24915726056504606,0
+desloc_p64,plug_slug,mean_power_pearson,plug,-0.059571818641763093,0.66666666666666663
+desloc_p64,plug_slug,mean_power_pearson,slug,0.058260204045575748,0.66666666666666663
+desloc_p64,plug_slug,mean_power_hellinger,plug,-0.15273223433220498,0.66666666666666663
+desloc_p64,plug_slug,mean_power_hellinger,slug,0.033093315734106961,0
+desloc_p64,plug_slug,mean_power_wasserstein,plug,-0.14770294688276323,0
+desloc_p64,plug_slug,mean_power_wasserstein,slug,-0.18894752127013226,0
+desloc_p64,plug_slug,mean_power_log_peak,plug,-0.03506515889183185,0.66666666666666663
+desloc_p64,plug_slug,mean_power_log_peak,slug,0.17472391255352951,0
+desloc_p64,plug_slug,mean_power_slope,plug,0.11827001858142401,0.33333333333333331
+desloc_p64,plug_slug,mean_power_slope,slug,-0.39033253492491915,0
+desloc_p64,plug_slug,mean_power_width,plug,-0.05772297404241869,0.16666666666666666
+desloc_p64,plug_slug,mean_power_width,slug,-0.13972431077694672,0.33333333333333331
+desloc_p64,plug_slug,mean_power_trio,plug,-0.060695091420536897,0
+desloc_p64,plug_slug,mean_power_trio,slug,-0.03157968058718106,0
+desloc_p64,churn_plug,wco_global_max,churn,-0.27888484420513515,0.80000000000000004
+desloc_p64,churn_plug,wco_global_max,plug,0.15541119289488586,0
+desloc_p64,churn_plug,wco_zero_weighted,churn,-0.021453425448780018,0.59999999999999998
+desloc_p64,churn_plug,wco_zero_weighted,plug,0.13352401654985888,0.66666666666666663
+desloc_p64,churn_plug,wco_scale_peak_weighted,churn,-0.078720747069451244,0.5
+desloc_p64,churn_plug,wco_scale_peak_weighted,plug,0.072031947350683731,0.66666666666666663
+desloc_p64,churn_plug,wco_scale_peak_power05,churn,-0.092739386617709571,0.5
+desloc_p64,churn_plug,wco_scale_peak_power05,plug,0.085938090573257672,0.33333333333333331
+desloc_p64,churn_plug,wco_common_lag_peak,churn,-0.06746980608253049,0.5
+desloc_p64,churn_plug,wco_common_lag_peak,plug,0.085720759734368213,0.66666666666666663
+desloc_p64,churn_plug,wco_map_mean,churn,-0.0052424299012658829,0.80000000000000004
+desloc_p64,churn_plug,wco_map_mean,plug,0.0044987085754979571,0.33333333333333331
+desloc_p64,churn_plug,wco_map_mean_weighted,churn,-0.028842961491946671,0.40000000000000002
+desloc_p64,churn_plug,wco_map_mean_weighted,plug,0.021593546602786201,0.33333333333333331
+desloc_p64,churn_plug,wco_lag_q90_weighted,churn,-0.072096595732570504,0.5
+desloc_p64,churn_plug,wco_lag_q90_weighted,plug,0.066209316795551129,0.33333333333333331
+desloc_p64,churn_plug,wco_area05_weighted,churn,-0.023681775265252357,0.5
+desloc_p64,churn_plug,wco_area05_weighted,plug,0.019975637543178274,0.66666666666666663
+desloc_p64,churn_plug,wco_mean_short,churn,0.0013477981081577968,0.80000000000000004
+desloc_p64,churn_plug,wco_mean_short,plug,-0.00042953070536368561,0
+desloc_p64,churn_plug,wco_mean_middle,churn,-0.0033386752622374853,0.90000000000000002
+desloc_p64,churn_plug,wco_mean_middle,plug,0.00064521280616853854,0
+desloc_p64,churn_plug,wco_mean_long,churn,-0.069061690231485506,0.59999999999999998
+desloc_p64,churn_plug,wco_mean_long,plug,0.072689368165528442,0.66666666666666663
+desloc_p64,churn_plug,wco_common_peak_short,churn,0.02759116786113398,0.80000000000000004
+desloc_p64,churn_plug,wco_common_peak_short,plug,0.0097402749708281871,0.66666666666666663
+desloc_p64,churn_plug,wco_common_peak_middle,churn,-0.057437191655638965,0.59999999999999998
+desloc_p64,churn_plug,wco_common_peak_middle,plug,0.040496496495978453,0.33333333333333331
+desloc_p64,churn_plug,wco_common_peak_long,churn,-0.18181320296733167,0.90000000000000002
+desloc_p64,churn_plug,wco_common_peak_long,plug,0.32565021377353093,0
+desloc_p64,churn_plug,wco_central_mean,churn,0.02156029384527235,0.80000000000000004
+desloc_p64,churn_plug,wco_central_mean,plug,0.078771041725769236,0.66666666666666663
+desloc_p64,churn_plug,self_area,churn,-0.04820530257744475,0.69999999999999996
+desloc_p64,churn_plug,self_area,plug,-0.041247704993292514,0
+desloc_p64,churn_plug,self_width,churn,-0.041434205554212157,0.69999999999999996
+desloc_p64,churn_plug,self_width,plug,-0.0097120965305403789,0
+desloc_p64,churn_plug,self_bands,churn,-0.097098279569258483,0.90000000000000002
+desloc_p64,churn_plug,self_bands,plug,0.18773401581026519,0.66666666666666663
+desloc_p64,churn_plug,kernel_area_full,churn,-0.043303267902894932,0.59999999999999998
+desloc_p64,churn_plug,kernel_area_full,plug,0.041187600036256287,0.33333333333333331
+desloc_p64,churn_plug,kernel_area_short,churn,-0.0067265703056412236,0.90000000000000002
+desloc_p64,churn_plug,kernel_area_short,plug,0.016743015452941021,0
+desloc_p64,churn_plug,kernel_zero,churn,0.011782003671458461,0.80000000000000004
+desloc_p64,churn_plug,kernel_zero,plug,0.042253793150521024,0.66666666666666663
+desloc_p64,churn_plug,wps_pearson,churn,0.030618160765521728,0.80000000000000004
+desloc_p64,churn_plug,wps_pearson,plug,-0.0016689716586677343,0
+desloc_p64,churn_plug,wps_hellinger,churn,0.14854157169861498,0.80000000000000004
+desloc_p64,churn_plug,wps_hellinger,plug,0.10339780798529007,0.33333333333333331
+desloc_p64,churn_plug,wps_wasserstein,churn,0.27992009586538258,0.80000000000000004
+desloc_p64,churn_plug,wps_wasserstein,plug,0.27069750544608356,0.33333333333333331
+desloc_p64,churn_plug,wps_log_peak,churn,-0.38318549738096036,0.45000000000000001
+desloc_p64,churn_plug,wps_log_peak,plug,0.15892094017094086,0
+desloc_p64,churn_plug,wps_slope,churn,0.47127224743265661,0.90000000000000002
+desloc_p64,churn_plug,wps_slope,plug,0.3857420979724851,0.66666666666666663
+desloc_p64,churn_plug,wps_width,churn,0.32876933025799066,0.80000000000000004
+desloc_p64,churn_plug,wps_width,plug,-0.0098973157989559746,0.33333333333333331
+desloc_p64,churn_plug,wps_trio,churn,0.087841414837378368,0.80000000000000004
+desloc_p64,churn_plug,wps_trio,plug,0.1364494826554295,0.33333333333333331
+desloc_p64,churn_plug,mean_power_pearson,churn,0.028285955191144109,0.80000000000000004
+desloc_p64,churn_plug,mean_power_pearson,plug,-0.050604487798859919,0
+desloc_p64,churn_plug,mean_power_hellinger,churn,0.052283785035182898,0.80000000000000004
+desloc_p64,churn_plug,mean_power_hellinger,plug,0.036848646492502475,0.33333333333333331
+desloc_p64,churn_plug,mean_power_wasserstein,churn,0.1373661662045951,0.80000000000000004
+desloc_p64,churn_plug,mean_power_wasserstein,plug,0.25205912853090817,0.33333333333333331
+desloc_p64,churn_plug,mean_power_log_peak,churn,-0.22056471281659093,0.59999999999999998
+desloc_p64,churn_plug,mean_power_log_peak,plug,-0.086573022578319128,0
+desloc_p64,churn_plug,mean_power_slope,churn,0.41886982829910774,0.90000000000000002
+desloc_p64,churn_plug,mean_power_slope,plug,0.41235370319996739,0.66666666666666663
+desloc_p64,churn_plug,mean_power_width,churn,0.065396731679626285,0.65000000000000002
+desloc_p64,churn_plug,mean_power_width,plug,0.054997386499402022,0
+desloc_p64,churn_plug,mean_power_trio,churn,0.085039617906780315,0.80000000000000004
+desloc_p64,churn_plug,mean_power_trio,plug,0.131765105120936,0
+desloc_p64,churn_slug,wco_global_max,churn,-0.10569405033859307,0.69999999999999996
+desloc_p64,churn_slug,wco_global_max,slug,0.011367010369882524,0.33333333333333331
+desloc_p64,churn_slug,wco_zero_weighted,churn,-0.0034073979227394356,0.80000000000000004
+desloc_p64,churn_slug,wco_zero_weighted,slug,0.018929593522399861,0
+desloc_p64,churn_slug,wco_scale_peak_weighted,churn,-0.069839415981772957,0.59999999999999998
+desloc_p64,churn_slug,wco_scale_peak_weighted,slug,0.11473417116102824,0.33333333333333331
+desloc_p64,churn_slug,wco_scale_peak_power05,churn,-0.084136736851493282,0.5
+desloc_p64,churn_slug,wco_scale_peak_power05,slug,0.12109403821149904,0.33333333333333331
+desloc_p64,churn_slug,wco_common_lag_peak,churn,-0.044817417706008458,0.59999999999999998
+desloc_p64,churn_slug,wco_common_lag_peak,slug,0.05907302997850513,0.33333333333333331
+desloc_p64,churn_slug,wco_map_mean,churn,-0.0035392131357818704,0.80000000000000004
+desloc_p64,churn_slug,wco_map_mean,slug,0.0022914194898707402,0
+desloc_p64,churn_slug,wco_map_mean_weighted,churn,-0.023734001719501088,0.5
+desloc_p64,churn_slug,wco_map_mean_weighted,slug,0.019585636062196762,0
+desloc_p64,churn_slug,wco_lag_q90_weighted,churn,-0.075265720562901178,0.5
+desloc_p64,churn_slug,wco_lag_q90_weighted,slug,0.08463330899647703,0.33333333333333331
+desloc_p64,churn_slug,wco_area05_weighted,churn,-0.024125254880870167,0.59999999999999998
+desloc_p64,churn_slug,wco_area05_weighted,slug,0.031500841444638224,0
+desloc_p64,churn_slug,wco_mean_short,churn,0.0015059424118507177,0.80000000000000004
+desloc_p64,churn_slug,wco_mean_short,slug,-0.0015153338577474495,0
+desloc_p64,churn_slug,wco_mean_middle,churn,0.001300007548859233,0.80000000000000004
+desloc_p64,churn_slug,wco_mean_middle,slug,-0.0030762814753270001,0
+desloc_p64,churn_slug,wco_mean_long,churn,-0.075153896982581445,0.29999999999999999
+desloc_p64,churn_slug,wco_mean_long,slug,0.072133991040002829,0.33333333333333331
+desloc_p64,churn_slug,wco_common_peak_short,churn,0.023676030621335355,0.80000000000000004
+desloc_p64,churn_slug,wco_common_peak_short,slug,0.027967211452599321,0
+desloc_p64,churn_slug,wco_common_peak_middle,churn,0.011247694683529381,0.90000000000000002
+desloc_p64,churn_slug,wco_common_peak_middle,slug,-0.0040135649276881111,0
+desloc_p64,churn_slug,wco_common_peak_long,churn,-0.26835192686105225,0.69999999999999996
+desloc_p64,churn_slug,wco_common_peak_long,slug,0.28312035112347728,0
+desloc_p64,churn_slug,wco_central_mean,churn,0.027502368455190211,1
+desloc_p64,churn_slug,wco_central_mean,slug,0.0018065509037174497,0
+desloc_p64,churn_slug,self_area,churn,-0.022890513331530287,0.5
+desloc_p64,churn_slug,self_area,slug,0.0090678786030267914,0
+desloc_p64,churn_slug,self_width,churn,-0.032594374581059529,0.59999999999999998
+desloc_p64,churn_slug,self_width,slug,0.0077570426038954254,0
+desloc_p64,churn_slug,self_bands,churn,-0.076060521911922904,0.90000000000000002
+desloc_p64,churn_slug,self_bands,slug,0.32643496047341575,0.33333333333333331
+desloc_p64,churn_slug,kernel_area_full,churn,-0.040291870347260852,0.80000000000000004
+desloc_p64,churn_slug,kernel_area_full,slug,0.023700824092668969,0
+desloc_p64,churn_slug,kernel_area_short,churn,-0.0034768168202404326,0.80000000000000004
+desloc_p64,churn_slug,kernel_area_short,slug,-0.0017655690107025316,0
+desloc_p64,churn_slug,kernel_zero,churn,0.015428781648720705,1
+desloc_p64,churn_slug,kernel_zero,slug,0.00042477549534047113,0
+desloc_p64,churn_slug,wps_pearson,churn,-0.044683731918358477,0.80000000000000004
+desloc_p64,churn_slug,wps_pearson,slug,0.20300931613820658,0.33333333333333331
+desloc_p64,churn_slug,wps_hellinger,churn,0.16072554717962154,0.90000000000000002
+desloc_p64,churn_slug,wps_hellinger,slug,0.29338758278869248,0.33333333333333331
+desloc_p64,churn_slug,wps_wasserstein,churn,0.33071180564973346,0.90000000000000002
+desloc_p64,churn_slug,wps_wasserstein,slug,0.31577491470277935,0
+desloc_p64,churn_slug,wps_log_peak,churn,-0.11880402566612396,0.59999999999999998
+desloc_p64,churn_slug,wps_log_peak,slug,-0.18670024349151351,0
+desloc_p64,churn_slug,wps_slope,churn,0.54672455250941243,0.90000000000000002
+desloc_p64,churn_slug,wps_slope,slug,0.35443486225466053,0.33333333333333331
+desloc_p64,churn_slug,wps_width,churn,0.18217945521734827,0.86666666666666659
+desloc_p64,churn_slug,wps_width,slug,0.36935668761209067,0.66666666666666663
+desloc_p64,churn_slug,wps_trio,churn,0.1515469085239558,0.90000000000000002
+desloc_p64,churn_slug,wps_trio,slug,0.11164081871898519,0.33333333333333331
+desloc_p64,churn_slug,mean_power_pearson,churn,-0.0054658967555153426,0.69999999999999996
+desloc_p64,churn_slug,mean_power_pearson,slug,0.048438583767484687,0.33333333333333331
+desloc_p64,churn_slug,mean_power_hellinger,churn,0.027040737034886492,0.80000000000000004
+desloc_p64,churn_slug,mean_power_hellinger,slug,0.21364198499327211,0
+desloc_p64,churn_slug,mean_power_wasserstein,churn,0.16969041888987882,0.90000000000000002
+desloc_p64,churn_slug,mean_power_wasserstein,slug,0.21792486068321659,0
+desloc_p64,churn_slug,mean_power_log_peak,churn,-0.14688393614343917,0.66666666666666663
+desloc_p64,churn_slug,mean_power_log_peak,slug,0.20974235104670069,0.1111111111111111
+desloc_p64,churn_slug,mean_power_slope,churn,0.52070319377834473,0.90000000000000002
+desloc_p64,churn_slug,mean_power_slope,slug,0.26276196849863381,0.33333333333333331
+desloc_p64,churn_slug,mean_power_width,churn,-0.10920377211545258,0.55000000000000004
+desloc_p64,churn_slug,mean_power_width,slug,-0.22308221534227882,0
+desloc_p64,churn_slug,mean_power_trio,churn,0.11576743830365377,0.80000000000000004
+desloc_p64,churn_slug,mean_power_trio,slug,0.19087755273427179,0.33333333333333331
+desloc_p64,annular_plug,wco_global_max,wavy annular,-0.021530018099530715,1
+desloc_p64,annular_plug,wco_global_max,plug,0.25765021108272229,0.33333333333333331
+desloc_p64,annular_plug,wco_zero_weighted,wavy annular,0.015898334000236276,0.88888888888888884
+desloc_p64,annular_plug,wco_zero_weighted,plug,0.14685665665005063,0.66666666666666663
+desloc_p64,annular_plug,wco_scale_peak_weighted,wavy annular,-0.040174783084299032,0.77777777777777779
+desloc_p64,annular_plug,wco_scale_peak_weighted,plug,0.085661351651420248,0.33333333333333331
+desloc_p64,annular_plug,wco_scale_peak_power05,wavy annular,-0.04381096500726591,0.77777777777777779
+desloc_p64,annular_plug,wco_scale_peak_power05,plug,0.10201734272958453,0.33333333333333331
+desloc_p64,annular_plug,wco_common_lag_peak,wavy annular,-0.03429558638192913,0.66666666666666663
+desloc_p64,annular_plug,wco_common_lag_peak,plug,0.086188796090060193,0.66666666666666663
+desloc_p64,annular_plug,wco_map_mean,wavy annular,-0.0032602812608871928,0.66666666666666663
+desloc_p64,annular_plug,wco_map_mean,plug,0.0052875116890615742,0
+desloc_p64,annular_plug,wco_map_mean_weighted,wavy annular,-0.018049194115618648,0.55555555555555558
+desloc_p64,annular_plug,wco_map_mean_weighted,plug,0.024417969540223312,0.33333333333333331
+desloc_p64,annular_plug,wco_lag_q90_weighted,wavy annular,-0.036503206329338754,0.77777777777777779
+desloc_p64,annular_plug,wco_lag_q90_weighted,plug,0.068330749825531292,0.33333333333333331
+desloc_p64,annular_plug,wco_area05_weighted,wavy annular,-0.0063427754223081296,0.66666666666666663
+desloc_p64,annular_plug,wco_area05_weighted,plug,0.022713101194248242,0.33333333333333331
+desloc_p64,annular_plug,wco_mean_short,wavy annular,-0.0016462802381477153,0.77777777777777779
+desloc_p64,annular_plug,wco_mean_short,plug,-0.0001366947696441911,0
+desloc_p64,annular_plug,wco_mean_middle,wavy annular,-0.0010615768048313069,0.77777777777777779
+desloc_p64,annular_plug,wco_mean_middle,plug,0.0077824970650320902,0
+desloc_p64,annular_plug,wco_mean_long,wavy annular,-0.034044171712432431,0.77777777777777779
+desloc_p64,annular_plug,wco_mean_long,plug,0.033272743484312771,0.33333333333333331
+desloc_p64,annular_plug,wco_common_peak_short,wavy annular,-0.012652232375116194,0.77777777777777779
+desloc_p64,annular_plug,wco_common_peak_short,plug,-0.015713375187388318,0.33333333333333331
+desloc_p64,annular_plug,wco_common_peak_middle,wavy annular,-0.026544089082695,0.66666666666666663
+desloc_p64,annular_plug,wco_common_peak_middle,plug,0.088125690566347684,0.66666666666666663
+desloc_p64,annular_plug,wco_common_peak_long,wavy annular,-0.050524526009913667,0.88888888888888884
+desloc_p64,annular_plug,wco_common_peak_long,plug,0.24281180144391287,0.33333333333333331
+desloc_p64,annular_plug,wco_central_mean,wavy annular,0.021226073803115034,0.88888888888888884
+desloc_p64,annular_plug,wco_central_mean,plug,0.086914138848640618,0.66666666666666663
+desloc_p64,annular_plug,self_area,wavy annular,-0.085151632813963554,0.44444444444444442
+desloc_p64,annular_plug,self_area,plug,0.028896157380933329,0
+desloc_p64,annular_plug,self_width,wavy annular,-0.12026004785222495,0.44444444444444442
+desloc_p64,annular_plug,self_width,plug,0.030063745861460048,0
+desloc_p64,annular_plug,self_bands,wavy annular,-0.23503555024031661,0.77777777777777779
+desloc_p64,annular_plug,self_bands,plug,0.32211990399930668,0.33333333333333331
+desloc_p64,annular_plug,kernel_area_full,wavy annular,-0.046910616636705829,0.66666666666666663
+desloc_p64,annular_plug,kernel_area_full,plug,0.049661818861836876,0
+desloc_p64,annular_plug,kernel_area_short,wavy annular,-0.04376559041239915,0.66666666666666663
+desloc_p64,annular_plug,kernel_area_short,plug,0.023971055880835892,0
+desloc_p64,annular_plug,kernel_zero,wavy annular,0.01202932504496676,0.88888888888888884
+desloc_p64,annular_plug,kernel_zero,plug,0.047201919697570559,0.66666666666666663
+desloc_p64,annular_plug,wps_pearson,wavy annular,0.25878048001064846,1
+desloc_p64,annular_plug,wps_pearson,plug,-0.13631613966227807,0
+desloc_p64,annular_plug,wps_hellinger,wavy annular,-0.18636494687803076,0.77777777777777779
+desloc_p64,annular_plug,wps_hellinger,plug,0.17793577587706458,0
+desloc_p64,annular_plug,wps_wasserstein,wavy annular,-0.30906976519057455,0.88888888888888884
+desloc_p64,annular_plug,wps_wasserstein,plug,0.3002602289680445,0
+desloc_p64,annular_plug,wps_log_peak,wavy annular,-0.15433995847583251,0.66666666666666663
+desloc_p64,annular_plug,wps_log_peak,plug,-0.012611095944427766,0
+desloc_p64,annular_plug,wps_slope,wavy annular,-0.32678760563324949,0.77777777777777779
+desloc_p64,annular_plug,wps_slope,plug,0.50290861144830468,0.66666666666666663
+desloc_p64,annular_plug,wps_width,wavy annular,0.11553739136341459,0.61111111111111116
+desloc_p64,annular_plug,wps_width,plug,-0.30922146636432202,0
+desloc_p64,annular_plug,wps_trio,wavy annular,-0.14798507405957684,0.66666666666666663
+desloc_p64,annular_plug,wps_trio,plug,-0.043921261573536395,0
+desloc_p64,annular_plug,mean_power_pearson,wavy annular,0.23598694009856466,1
+desloc_p64,annular_plug,mean_power_pearson,plug,-0.12938099712198739,0
+desloc_p64,annular_plug,mean_power_hellinger,wavy annular,-0.15649538826492287,0.66666666666666663
+desloc_p64,annular_plug,mean_power_hellinger,plug,0.14151316399224609,0
+desloc_p64,annular_plug,mean_power_wasserstein,wavy annular,-0.27974691142933467,0.55555555555555558
+desloc_p64,annular_plug,mean_power_wasserstein,plug,0.35476705614105536,0
+desloc_p64,annular_plug,mean_power_log_peak,wavy annular,-0.28090002502578076,0.55555555555555558
+desloc_p64,annular_plug,mean_power_log_peak,plug,0.10287057820554389,0
+desloc_p64,annular_plug,mean_power_slope,wavy annular,-0.32291905918431646,0.77777777777777779
+desloc_p64,annular_plug,mean_power_slope,plug,0.52420766675855357,0.66666666666666663
+desloc_p64,annular_plug,mean_power_width,wavy annular,-0.098059985821496165,0.57407407407407396
+desloc_p64,annular_plug,mean_power_width,plug,-0.22496570644718583,0
+desloc_p64,annular_plug,mean_power_trio,wavy annular,-0.242044374259726,0.55555555555555558
+desloc_p64,annular_plug,mean_power_trio,plug,0.09349710382439759,0
+desloc_p64,annular_slug,wco_global_max,wavy annular,-0.16563761356289489,0.77777777777777779
+desloc_p64,annular_slug,wco_global_max,slug,-0.28207606421219755,0.66666666666666663
+desloc_p64,annular_slug,wco_zero_weighted,wavy annular,0.0082206379933952387,0.88888888888888884
+desloc_p64,annular_slug,wco_zero_weighted,slug,0.0050228081098767545,0
+desloc_p64,annular_slug,wco_scale_peak_weighted,wavy annular,-0.09156311378079024,0.77777777777777779
+desloc_p64,annular_slug,wco_scale_peak_weighted,slug,0.065324458484846068,0
+desloc_p64,annular_slug,wco_scale_peak_power05,wavy annular,-0.097227041858924126,0.77777777777777779
+desloc_p64,annular_slug,wco_scale_peak_power05,slug,0.074357209106261299,0
+desloc_p64,annular_slug,wco_common_lag_peak,wavy annular,-0.066416585762869004,0.77777777777777779
+desloc_p64,annular_slug,wco_common_lag_peak,slug,0.00018663543573925931,0
+desloc_p64,annular_slug,wco_map_mean,wavy annular,-0.0080599630515017038,0.44444444444444442
+desloc_p64,annular_slug,wco_map_mean,slug,-0.0035205269335448638,0
+desloc_p64,annular_slug,wco_map_mean_weighted,wavy annular,-0.024814353566813278,0.88888888888888884
+desloc_p64,annular_slug,wco_map_mean_weighted,slug,0.010534230530420942,0
+desloc_p64,annular_slug,wco_lag_q90_weighted,wavy annular,-0.078872420127196891,0.77777777777777779
+desloc_p64,annular_slug,wco_lag_q90_weighted,slug,0.046106262573235669,0
+desloc_p64,annular_slug,wco_area05_weighted,wavy annular,-0.025550482806335439,0.88888888888888884
+desloc_p64,annular_slug,wco_area05_weighted,slug,0.015225280167287152,0
+desloc_p64,annular_slug,wco_mean_short,wavy annular,-0.00072356160817841275,0.77777777777777779
+desloc_p64,annular_slug,wco_mean_short,slug,-0.00045379987778137125,0
+desloc_p64,annular_slug,wco_mean_middle,wavy annular,-0.010220591404221336,0.77777777777777779
+desloc_p64,annular_slug,wco_mean_middle,slug,-0.0097398840618637527,0
+desloc_p64,annular_slug,wco_mean_long,wavy annular,-0.056091418546358955,0.44444444444444442
+desloc_p64,annular_slug,wco_mean_long,slug,0.016626809609987747,0.33333333333333331
+desloc_p64,annular_slug,wco_common_peak_short,wavy annular,0.0041621844430531447,1
+desloc_p64,annular_slug,wco_common_peak_short,slug,0.023611112079135327,0.33333333333333331
+desloc_p64,annular_slug,wco_common_peak_middle,wavy annular,-0.04919255286084772,0.77777777777777779
+desloc_p64,annular_slug,wco_common_peak_middle,slug,-0.050911664064137642,0
+desloc_p64,annular_slug,wco_common_peak_long,wavy annular,-0.25008304820801808,0.55555555555555558
+desloc_p64,annular_slug,wco_common_peak_long,slug,0.15373891984981422,0
+desloc_p64,annular_slug,wco_central_mean,wavy annular,0.016233700960047708,1
+desloc_p64,annular_slug,wco_central_mean,slug,-0.00077438227894174405,0
+desloc_p64,annular_slug,self_area,wavy annular,-0.067645813845580494,0.55555555555555558
+desloc_p64,annular_slug,self_area,slug,0.072395463569171911,0
+desloc_p64,annular_slug,self_width,wavy annular,-0.08298375665051641,0.66666666666666663
+desloc_p64,annular_slug,self_width,slug,0.080398194722248684,0
+desloc_p64,annular_slug,self_bands,wavy annular,-0.22934316367934926,0.66666666666666663
+desloc_p64,annular_slug,self_bands,slug,0.42647236076634104,0.33333333333333331
+desloc_p64,annular_slug,kernel_area_full,wavy annular,-0.082309312536519103,0.33333333333333331
+desloc_p64,annular_slug,kernel_area_full,slug,-0.011804367074855215,0
+desloc_p64,annular_slug,kernel_area_short,wavy annular,-0.033878752417687369,0.66666666666666663
+desloc_p64,annular_slug,kernel_area_short,slug,0.012291203310888288,0
+desloc_p64,annular_slug,kernel_zero,wavy annular,0.0092756928162976236,1
+desloc_p64,annular_slug,kernel_zero,slug,-0.00093292315167611362,0
+desloc_p64,annular_slug,wps_pearson,wavy annular,0.15204981629926753,0.88888888888888884
+desloc_p64,annular_slug,wps_pearson,slug,0.01100323860931283,0.33333333333333331
+desloc_p64,annular_slug,wps_hellinger,wavy annular,-0.20466101314299934,0.66666666666666663
+desloc_p64,annular_slug,wps_hellinger,slug,0.32389879296298246,0
+desloc_p64,annular_slug,wps_wasserstein,wavy annular,-0.28830714120662931,0.55555555555555558
+desloc_p64,annular_slug,wps_wasserstein,slug,0.30206591101592567,0
+desloc_p64,annular_slug,wps_log_peak,wavy annular,0.10872983256342181,0.61111111111111116
+desloc_p64,annular_slug,wps_log_peak,slug,-0.26765197713653671,0
+desloc_p64,annular_slug,wps_slope,wavy annular,-0.33019163753405295,0.55555555555555558
+desloc_p64,annular_slug,wps_slope,slug,0.28836738716308541,0
+desloc_p64,annular_slug,wps_width,wavy annular,-0.14497927943094543,0.69444444444444442
+desloc_p64,annular_slug,wps_width,slug,0.018934904862944742,0.1111111111111111
+desloc_p64,annular_slug,wps_trio,wavy annular,-0.11133972134162357,0.66666666666666663
+desloc_p64,annular_slug,wps_trio,slug,-0.095163308290641305,0
+desloc_p64,annular_slug,mean_power_pearson,wavy annular,0.14807905305292454,0.88888888888888884
+desloc_p64,annular_slug,mean_power_pearson,slug,-0.11187556153939092,0
+desloc_p64,annular_slug,mean_power_hellinger,wavy annular,-0.16725234100970182,0.55555555555555558
+desloc_p64,annular_slug,mean_power_hellinger,slug,0.30440224560933044,0
+desloc_p64,annular_slug,mean_power_wasserstein,wavy annular,-0.24824029771191281,0.66666666666666663
+desloc_p64,annular_slug,mean_power_wasserstein,slug,0.3369710851879848,0
+desloc_p64,annular_slug,mean_power_log_peak,wavy annular,-0.10022610593451518,0.83333333333333337
+desloc_p64,annular_slug,mean_power_log_peak,slug,0.4303285094354477,0
+desloc_p64,annular_slug,mean_power_slope,wavy annular,-0.29400162226546439,0.55555555555555558
+desloc_p64,annular_slug,mean_power_slope,slug,0.22650632031793783,0
+desloc_p64,annular_slug,mean_power_width,wavy annular,0.13507361625473988,0.66666666666666663
+desloc_p64,annular_slug,mean_power_width,slug,-0.097495876443246976,0
+desloc_p64,annular_slug,mean_power_trio,wavy annular,-0.10672327770902806,0.44444444444444442
+desloc_p64,annular_slug,mean_power_trio,slug,0.22557567425990346,0

@@ -1,0 +1,17 @@
+{
+  "quadratura_erro_funcao_linear_log": 7.105427357601002e-15,
+  "soma_massas_erro": 0.0,
+  "amplitude_perfil_erro": 9.614813431917819e-17,
+  "perfis_degenerados_rejeitados": 4,
+  "lag_atraso_100": -100,
+  "H_componentes_100_500": 0.9731346871909643,
+  "H_amplitude_sinal": 1.5491351992167468e-15,
+  "fases_distintas": {
+    "H": 0.022221771128084388,
+    "escore_WCO": 0.2044757282264809,
+    "WCO_zero_ponderada": 0.0560821578729019,
+    "erro_espectros_circulares": 7.105427357601002e-15,
+    "nota": "Espectros circulares iguais antes do preparo; WPS linear com bordas e detrend pode diferir."
+  },
+  "status": "PASS"
+}

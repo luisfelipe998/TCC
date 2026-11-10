@@ -1,0 +1,15 @@
+{
+  "pearson_vs_scipy_max_abs_error": 2.220446049250313e-16,
+  "constant_descriptor_rejected": true,
+  "anosim_auc_ties_and_perfect_separation": "PASS",
+  "permanova_vs_univariate_anova_and_distance_identity": "PASS",
+  "enumeration_exact_tail_and_holm": "PASS",
+  "log_linear_residual_orthogonality_and_scale_conversion": "PASS",
+  "correlation_biased_vs_literal_sum_max_error": 9.71445146547012e-17,
+  "correlation_unbiased_vs_literal_sum_max_error": 2.248201624865942e-15,
+  "zero_lag_direct_sum_vs_v16_fft_max_error": 4.163336342344337e-17,
+  "morlet_time_convolution_vs_fft_max_error": 5.773159728050814e-15,
+  "known_100_px_sinusoid_ridge_px": 99.95127303732987,
+  "status": "PASS",
+  "scope": "Controles sintéticos de fórmulas, sem resultados experimentais."
+}

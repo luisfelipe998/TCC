@@ -1,0 +1,9 @@
+case,method,phase,prescribed_texture_px_frame,interface_px_frame,estimate_px_frame,error_px_frame,accepted_blocks,optical_supported
+interface_12_and_independent_interior_textures,raw,gas_candidate,-17.3,12,-17.283630675354768,0.016369324645232552,6,True
+interface_12_and_independent_interior_textures,raw,liquid_candidate,-7.4,12,-7.386267179365225,0.013732820634775322,6,True
+interface_12_and_independent_interior_textures,fixed_background,gas_candidate,-17.3,12,-17.279137678908658,0.020862321091343006,6,True
+interface_12_and_independent_interior_textures,fixed_background,liquid_candidate,-7.4,12,-7.385776322869981,0.014223677130019041,6,True
+interface_12_and_independent_interior_textures,interface_distance,gas_candidate,-17.3,12,-17.284125253969798,0.015874746030203113,6,True
+interface_12_and_independent_interior_textures,interface_distance,liquid_candidate,-7.4,12,-7.3878444485271615,0.012155551472838866,6,True
+time_reversal,interface_distance,gas_candidate,17.3,-12,17.2841290527713,0.015870947228702192,6,True
+time_reversal,interface_distance,liquid_candidate,7.4,-12,7.387837625285676,0.012162374714324464,6,True

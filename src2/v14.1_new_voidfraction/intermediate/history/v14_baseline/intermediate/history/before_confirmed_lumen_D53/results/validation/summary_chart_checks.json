@@ -1,0 +1,597 @@
+{
+  "passed": true,
+  "schema_version": 2,
+  "figure_language": "pt-BR",
+  "source_inputs": [
+    {
+      "artifact": "results/void_fraction/panorama_void_per_run.csv",
+      "sha256": "59be09c355b13703ee15aea50800e547fcaeec05d1781c852fc52388652bf356"
+    },
+    {
+      "artifact": "results/flip_rate/phase_mask_flip_per_run.csv",
+      "sha256": "9e7d88ebbb47925a65f03fa22c2bb9f232a427d127717109b138b3f24192db8a"
+    },
+    {
+      "artifact": "results/validation/data_inventory.csv",
+      "sha256": "953ed2a733616c49b1d1464902fbafa5adb08e2f4dfe75354f4e85791c63c915"
+    },
+    {
+      "artifact": "results/validation/adversarial_checks.json",
+      "sha256": "a9dca8c6aaf670ef88f28a416387b324a8bde9dcc2965710e2d25edf5c26d525"
+    }
+  ],
+  "script_sha256": "e5d7a9cdc4324fabffb01a2e25c7fc93b49a819efbf662e19e36439a1857aced",
+  "checks": {
+    "joined_acquisitions": 26,
+    "unique_supplied_patterns": 5,
+    "pattern_counts_retained": {
+      "churn": 10,
+      "wavy annular": 9,
+      "slug": 3,
+      "plug": 3,
+      "dispersed bubbles": 1
+    },
+    "pattern_counts_displayed": {
+      "churn": 10,
+      "wavy annular": 8,
+      "slug": 3,
+      "plug": 3,
+      "dispersed bubbles": 1
+    },
+    "displayed_acquisitions": 25,
+    "displayed_runs": [
+      "m03q05_001",
+      "m03q10_001",
+      "m03q20_001",
+      "m04q01_001",
+      "m04q10_001",
+      "m04q20_001",
+      "m04q40_001",
+      "m04q80_001",
+      "m05q01_001",
+      "m05q05_001",
+      "m05q10_001",
+      "m05q20_001",
+      "m05q40_001",
+      "m05q80_001",
+      "m06q01_001",
+      "m06q05_001",
+      "m06q10_001",
+      "m06q20_001",
+      "m06q40_001",
+      "m06q80_001",
+      "m07q01_001",
+      "m07q05_001",
+      "m07q20_001",
+      "m07q40_001",
+      "m07q80_001"
+    ],
+    "excluded_from_scatter_runs": [
+      "m03q40_001"
+    ],
+    "eligible_pure_unsaturated": 25,
+    "saturated_acquisitions": [
+      "m03q40_001"
+    ],
+    "unsaturated_transition_acquisitions": [],
+    "any_radial_crop_touch_acquisitions": 25,
+    "all_columns_touch_crop_acquisitions": [
+      "m03q20_001",
+      "m03q40_001",
+      "m04q80_001"
+    ],
+    "max_pixel_rate_count_denominator_error": 0.0,
+    "max_center_rate_count_denominator_error": 0.0,
+    "labels_match_void_phase_and_inventory": true,
+    "saturation_eligibility_and_widths_match_inventory": true,
+    "entry_plus_exit_equals_center_flip_count": true
+  },
+  "dataset_scope": {
+    "policy": "Five single-pattern classes; wavy annular only; m05q05_002 excluded",
+    "allowed_patterns": [
+      "dispersed bubbles",
+      "plug",
+      "slug",
+      "churn",
+      "wavy annular"
+    ],
+    "explicitly_excluded_acquisitions": [
+      "m05q05_002"
+    ],
+    "source_acquisitions": 31,
+    "selected_acquisitions": 26,
+    "selected_runs": [
+      "m03q05_001",
+      "m03q10_001",
+      "m03q20_001",
+      "m03q40_001",
+      "m04q01_001",
+      "m04q10_001",
+      "m04q20_001",
+      "m04q40_001",
+      "m04q80_001",
+      "m05q01_001",
+      "m05q05_001",
+      "m05q10_001",
+      "m05q20_001",
+      "m05q40_001",
+      "m05q80_001",
+      "m06q01_001",
+      "m06q05_001",
+      "m06q10_001",
+      "m06q20_001",
+      "m06q40_001",
+      "m06q80_001",
+      "m07q01_001",
+      "m07q05_001",
+      "m07q20_001",
+      "m07q40_001",
+      "m07q80_001"
+    ],
+    "selected_pattern_counts": {
+      "churn": 10,
+      "wavy annular": 9,
+      "slug": 3,
+      "plug": 3,
+      "dispersed bubbles": 1
+    },
+    "excluded_acquisitions": [
+      {
+        "run": "m03q01_001",
+        "supplied_pattern": "plug-slug",
+        "reason": "Compound pattern label excluded by user"
+      },
+      {
+        "run": "m03q80_001",
+        "supplied_pattern": "smooth annular",
+        "reason": "Smooth annular excluded; only wavy annular retained"
+      },
+      {
+        "run": "m04q05_001",
+        "supplied_pattern": "slug-churn",
+        "reason": "Compound pattern label excluded by user"
+      },
+      {
+        "run": "m05q05_002",
+        "supplied_pattern": "dispersed bubbles",
+        "reason": "Acquisition excluded by user: m05q05_002"
+      },
+      {
+        "run": "m07q10_001",
+        "supplied_pattern": "slug-churn",
+        "reason": "Compound pattern label excluded by user"
+      }
+    ],
+    "statistical_rule": "Selected acquisitions with core saturation fraction <= 0.20",
+    "scope_does_not_relabel_inputs": true
+  },
+  "scatter_selection": {
+    "displayed_runs": [
+      "m03q05_001",
+      "m03q10_001",
+      "m03q20_001",
+      "m04q01_001",
+      "m04q10_001",
+      "m04q20_001",
+      "m04q40_001",
+      "m04q80_001",
+      "m05q01_001",
+      "m05q05_001",
+      "m05q10_001",
+      "m05q20_001",
+      "m05q40_001",
+      "m05q80_001",
+      "m06q01_001",
+      "m06q05_001",
+      "m06q10_001",
+      "m06q20_001",
+      "m06q40_001",
+      "m06q80_001",
+      "m07q01_001",
+      "m07q05_001",
+      "m07q20_001",
+      "m07q40_001",
+      "m07q80_001"
+    ],
+    "excluded_runs": [
+      {
+        "run": "m03q40_001",
+        "reason": "unsupported_saturation"
+      }
+    ],
+    "csv_retains_all_selected_acquisitions": true,
+    "plotted_flag_column": "plotted",
+    "same_selection_for_both_scatter_charts": true
+  },
+  "axis_definitions": {
+    "x": "Saved conditional_circle_alpha_spatial_mean; spatial mean of separate circular gas-width areas divided by 60-pixel apparent diameter squared.",
+    "primary_y": "1000 \u00d7 saved candidate_pixel_flip_rate = 1000 \u00d7 candidate_pixel_flip_count / [53 \u00d7 (panorama_width\u22121)].",
+    "secondary_y": "Saved center_candidate_flips_per1000px = 1000 \u00d7 center_candidate_flip_count / (panorama_width\u22121), at fixed image row y=40; the column name is retained for compatibility and does not establish the physical tube center.",
+    "sampling": "Neighboring panorama columns; spatial phase alternation, not temporal event frequency.",
+    "default_crop": "Image rows 18:71; 53 rows; apparent diameter 60 pixels; conditional ceiling (53/60)^2."
+  },
+  "default_crop_ceiling": 0.7802777777777777,
+  "saturation_threshold": 0.2,
+  "scatter_crop_ceiling_drawn": false,
+  "shading": "Observed convex hulls of displayed eligible pure-pattern points, at least three non-collinear observations. No singleton-bubble hull or classifier boundaries. Saturated acquisitions are omitted from scatter points and hulls.",
+  "primary_chart_hulls": {
+    "dispersed bubbles": {
+      "eligible_runs": [
+        "m07q01_001"
+      ],
+      "polygon_vertex_runs": [],
+      "shaded": false
+    },
+    "plug": {
+      "eligible_runs": [
+        "m05q01_001",
+        "m06q01_001",
+        "m07q05_001"
+      ],
+      "polygon_vertex_runs": [
+        "m07q05_001",
+        "m05q01_001",
+        "m06q01_001"
+      ],
+      "shaded": true
+    },
+    "slug": {
+      "eligible_runs": [
+        "m04q01_001",
+        "m05q05_001",
+        "m06q05_001"
+      ],
+      "polygon_vertex_runs": [
+        "m05q05_001",
+        "m04q01_001",
+        "m06q05_001"
+      ],
+      "shaded": true
+    },
+    "churn": {
+      "eligible_runs": [
+        "m03q05_001",
+        "m04q10_001",
+        "m04q20_001",
+        "m05q10_001",
+        "m05q20_001",
+        "m05q40_001",
+        "m06q10_001",
+        "m06q20_001",
+        "m07q20_001",
+        "m07q40_001"
+      ],
+      "polygon_vertex_runs": [
+        "m07q20_001",
+        "m06q10_001",
+        "m04q20_001",
+        "m03q05_001",
+        "m05q40_001",
+        "m07q40_001"
+      ],
+      "shaded": true
+    },
+    "wavy annular": {
+      "eligible_runs": [
+        "m03q10_001",
+        "m03q20_001",
+        "m04q40_001",
+        "m04q80_001",
+        "m05q80_001",
+        "m06q40_001",
+        "m06q80_001",
+        "m07q80_001"
+      ],
+      "polygon_vertex_runs": [
+        "m06q40_001",
+        "m07q80_001",
+        "m04q40_001",
+        "m03q20_001",
+        "m05q80_001"
+      ],
+      "shaded": true
+    }
+  },
+  "center_chart_hulls": {
+    "dispersed bubbles": {
+      "eligible_runs": [
+        "m07q01_001"
+      ],
+      "polygon_vertex_runs": [],
+      "shaded": false
+    },
+    "plug": {
+      "eligible_runs": [
+        "m05q01_001",
+        "m06q01_001",
+        "m07q05_001"
+      ],
+      "polygon_vertex_runs": [
+        "m07q05_001",
+        "m05q01_001",
+        "m06q01_001"
+      ],
+      "shaded": true
+    },
+    "slug": {
+      "eligible_runs": [
+        "m04q01_001",
+        "m05q05_001",
+        "m06q05_001"
+      ],
+      "polygon_vertex_runs": [
+        "m05q05_001",
+        "m06q05_001",
+        "m04q01_001"
+      ],
+      "shaded": true
+    },
+    "churn": {
+      "eligible_runs": [
+        "m03q05_001",
+        "m04q10_001",
+        "m04q20_001",
+        "m05q10_001",
+        "m05q20_001",
+        "m05q40_001",
+        "m06q10_001",
+        "m06q20_001",
+        "m07q20_001",
+        "m07q40_001"
+      ],
+      "polygon_vertex_runs": [
+        "m07q20_001",
+        "m05q10_001",
+        "m04q10_001",
+        "m04q20_001",
+        "m03q05_001",
+        "m07q40_001"
+      ],
+      "shaded": true
+    },
+    "wavy annular": {
+      "eligible_runs": [
+        "m03q10_001",
+        "m03q20_001",
+        "m04q40_001",
+        "m04q80_001",
+        "m05q80_001",
+        "m06q40_001",
+        "m06q80_001",
+        "m07q80_001"
+      ],
+      "polygon_vertex_runs": [
+        "m06q40_001",
+        "m07q80_001",
+        "m04q40_001",
+        "m03q20_001"
+      ],
+      "shaded": true
+    }
+  },
+  "crop_sensitivity": [
+    {
+      "run": "m07q01_001",
+      "supplied_pattern": "dispersed bubbles",
+      "crop_widths_px": [
+        50,
+        53,
+        57,
+        60
+      ],
+      "conditional_alpha_values": [
+        0.0010603910438347524,
+        0.0013796909492273732,
+        0.001712130768422159,
+        0.0019185150145415045
+      ],
+      "crop_row_intervals": [
+        [
+          20,
+          70
+        ],
+        [
+          18,
+          71
+        ],
+        [
+          16,
+          73
+        ],
+        [
+          15,
+          75
+        ]
+      ]
+    },
+    {
+      "run": "m06q01_001",
+      "supplied_pattern": "plug",
+      "crop_widths_px": [
+        50,
+        53,
+        57,
+        60
+      ],
+      "conditional_alpha_values": [
+        0.43984622125331285,
+        0.46281243766207864,
+        0.4750826778946169,
+        0.4772106095580063
+      ],
+      "crop_row_intervals": [
+        [
+          20,
+          70
+        ],
+        [
+          18,
+          71
+        ],
+        [
+          16,
+          73
+        ],
+        [
+          15,
+          75
+        ]
+      ]
+    },
+    {
+      "run": "m06q05_001",
+      "supplied_pattern": "slug",
+      "crop_widths_px": [
+        50,
+        53,
+        57,
+        60
+      ],
+      "conditional_alpha_values": [
+        0.45596960033103606,
+        0.4730783499564802,
+        0.48113279968037903,
+        0.48258828817259547
+      ],
+      "crop_row_intervals": [
+        [
+          20,
+          70
+        ],
+        [
+          18,
+          71
+        ],
+        [
+          16,
+          73
+        ],
+        [
+          15,
+          75
+        ]
+      ]
+    },
+    {
+      "run": "m06q20_001",
+      "supplied_pattern": "churn",
+      "crop_widths_px": [
+        50,
+        53,
+        57,
+        60
+      ],
+      "conditional_alpha_values": [
+        0.6096044625868402,
+        0.6467047491039427,
+        0.6762238373379353,
+        0.6830176667109165
+      ],
+      "crop_row_intervals": [
+        [
+          20,
+          70
+        ],
+        [
+          18,
+          71
+        ],
+        [
+          16,
+          73
+        ],
+        [
+          15,
+          75
+        ]
+      ]
+    },
+    {
+      "run": "m06q80_001",
+      "supplied_pattern": "wavy annular",
+      "crop_widths_px": [
+        50,
+        53,
+        57,
+        60
+      ],
+      "conditional_alpha_values": [
+        0.6825585171295058,
+        0.7519873798255798,
+        0.818113105336786,
+        0.8575148822811562
+      ],
+      "crop_row_intervals": [
+        [
+          20,
+          70
+        ],
+        [
+          18,
+          71
+        ],
+        [
+          16,
+          73
+        ],
+        [
+          15,
+          75
+        ]
+      ]
+    },
+    {
+      "run": "m03q20_001",
+      "supplied_pattern": "wavy annular",
+      "crop_widths_px": [
+        50,
+        53,
+        57,
+        60
+      ],
+      "conditional_alpha_values": [
+        0.6944372950878867,
+        0.780092147262302,
+        0.8974426486801373,
+        0.9800328581538773
+      ],
+      "crop_row_intervals": [
+        [
+          20,
+          70
+        ],
+        [
+          18,
+          71
+        ],
+        [
+          16,
+          73
+        ],
+        [
+          15,
+          75
+        ]
+      ]
+    }
+  ],
+  "limits": [
+    "Visible optical/geometric estimates are not independently calibrated absolute gas-volume fractions.",
+    "Only the selected five single patterns are analyzed; saturation-unsupported acquisitions remain in the provenance CSV and are omitted from both scatter charts.",
+    "Radial crop clipping differs from saturated intensity and can censor annular estimates.",
+    "Both axes derive from the same mask and are not independent validation.",
+    "Filled gas envelopes can hide liquid fragments; fixed-row flips can miss bubbles outside that row.",
+    "Saved crop perturbations are heuristic alternatives, not physical confidence intervals."
+  ],
+  "outputs": [
+    "figures/void_fraction/void_fraction_vs_flip_rate.png",
+    "figures/void_fraction/void_fraction_vs_flip_rate.svg",
+    "figures/void_fraction/void_fraction_vs_center_flips.png",
+    "figures/void_fraction/void_fraction_vs_center_flips.svg",
+    "figures/void_fraction/void_crop_sensitivity.png",
+    "figures/void_fraction/void_crop_sensitivity.svg",
+    "results/void_fraction/void_fraction_flip_plot_data.csv",
+    "results/validation/summary_chart_checks.json"
+  ],
+  "saved_csv_json_inputs_unchanged_during_chart_generation": true
+}

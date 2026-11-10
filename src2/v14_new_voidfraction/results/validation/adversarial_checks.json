@@ -1,0 +1,457 @@
+{
+  "estimator_sha256": "a63db1153e6f73d334ffce09416ab2794d8a360f5474f27aa48c6b9e9c098933",
+  "basis": "Retained src2 panoramas only; internal visual checks on data used to develop the detector, not untouched validation",
+  "dataset_scope": {
+    "policy": "Five single-pattern classes; wavy annular only; m05q05_002 excluded",
+    "allowed_patterns": [
+      "dispersed bubbles",
+      "plug",
+      "slug",
+      "churn",
+      "wavy annular"
+    ],
+    "explicitly_excluded_acquisitions": [
+      "m05q05_002"
+    ],
+    "source_acquisitions": 31,
+    "selected_acquisitions": 26,
+    "selected_runs": [
+      "m03q05_001",
+      "m03q10_001",
+      "m03q20_001",
+      "m03q40_001",
+      "m04q01_001",
+      "m04q10_001",
+      "m04q20_001",
+      "m04q40_001",
+      "m04q80_001",
+      "m05q01_001",
+      "m05q05_001",
+      "m05q10_001",
+      "m05q20_001",
+      "m05q40_001",
+      "m05q80_001",
+      "m06q01_001",
+      "m06q05_001",
+      "m06q10_001",
+      "m06q20_001",
+      "m06q40_001",
+      "m06q80_001",
+      "m07q01_001",
+      "m07q05_001",
+      "m07q20_001",
+      "m07q40_001",
+      "m07q80_001"
+    ],
+    "selected_pattern_counts": {
+      "churn": 10,
+      "wavy annular": 9,
+      "slug": 3,
+      "plug": 3,
+      "dispersed bubbles": 1
+    },
+    "excluded_acquisitions": [
+      {
+        "run": "m03q01_001",
+        "supplied_pattern": "plug-slug",
+        "reason": "Compound pattern label excluded by user"
+      },
+      {
+        "run": "m03q80_001",
+        "supplied_pattern": "smooth annular",
+        "reason": "Smooth annular excluded; only wavy annular retained"
+      },
+      {
+        "run": "m04q05_001",
+        "supplied_pattern": "slug-churn",
+        "reason": "Compound pattern label excluded by user"
+      },
+      {
+        "run": "m05q05_002",
+        "supplied_pattern": "dispersed bubbles",
+        "reason": "Acquisition excluded by user: m05q05_002"
+      },
+      {
+        "run": "m07q10_001",
+        "supplied_pattern": "slug-churn",
+        "reason": "Compound pattern label excluded by user"
+      }
+    ],
+    "statistical_rule": "Selected acquisitions with core saturation fraction <= 0.20",
+    "scope_does_not_relabel_inputs": true
+  },
+  "lumen_geometry": {
+    "rows": [
+      18,
+      71
+    ],
+    "n_rows": 53,
+    "diameter_px": 53.0,
+    "boundary_source": "User-confirmed full tube interior on 2026-10-23: Python slice 18:71, rows 18 through 70, 53 pixel cells. Optical profile minima are not used as lumen boundaries. Refraction mapping remains uncalibrated.",
+    "full_lumen_maximum": 1.0
+  },
+  "crop_protocol": "Remove known-interior rows while D remains 53 px; no outside-lumen extension is a physical gas-area alternative",
+  "segmentation_rerun_per_internal_crop": true,
+  "anchors": [
+    {
+      "run": "m07q01_001",
+      "x_interval": [
+        180,
+        250
+      ],
+      "y_interval": [
+        24,
+        65
+      ],
+      "visual_anchor": "liquid, held-out run",
+      "gas_mask_fraction": 0.0,
+      "gas_fraction_at_gates_060_065_070_075_080": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "accepted_center_fraction": 0.0
+    },
+    {
+      "run": "m07q01_001",
+      "x_interval": [
+        580,
+        650
+      ],
+      "y_interval": [
+        24,
+        65
+      ],
+      "visual_anchor": "liquid, held-out run",
+      "gas_mask_fraction": 0.0,
+      "gas_fraction_at_gates_060_065_070_075_080": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "accepted_center_fraction": 0.0
+    },
+    {
+      "run": "m06q01_001",
+      "x_interval": [
+        455,
+        515
+      ],
+      "y_interval": [
+        24,
+        65
+      ],
+      "visual_anchor": "liquid plug gap",
+      "gas_mask_fraction": 0.0,
+      "gas_fraction_at_gates_060_065_070_075_080": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "accepted_center_fraction": 0.0
+    },
+    {
+      "run": "m06q01_001",
+      "x_interval": [
+        150,
+        300
+      ],
+      "y_interval": [
+        30,
+        55
+      ],
+      "visual_anchor": "gas body",
+      "gas_mask_fraction": 1.0,
+      "gas_fraction_at_gates_060_065_070_075_080": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "accepted_center_fraction": 1.0
+    }
+  ],
+  "manual_liquid_reference_sensitivity": [
+    {
+      "run": "m07q01_001",
+      "conditional_alpha_by_reference": {
+        "automatic_three_plug_reference": 0.001768204847710411,
+        "manual_liquid_m06q01_001_455_515": 0.0017829118213643828,
+        "manual_liquid_m07q01_001_180_250": 0.0017939139848612475
+      }
+    },
+    {
+      "run": "m06q01_001",
+      "conditional_alpha_by_reference": {
+        "automatic_three_plug_reference": 0.5931380475555297,
+        "manual_liquid_m06q01_001_455_515": 0.5956173461789867,
+        "manual_liquid_m07q01_001_180_250": 0.5993873793163457
+      }
+    },
+    {
+      "run": "m06q05_001",
+      "conditional_alpha_by_reference": {
+        "automatic_three_plug_reference": 0.6062947881250725,
+        "manual_liquid_m06q01_001_455_515": 0.609420187720559,
+        "manual_liquid_m07q01_001_180_250": 0.6137934795891483
+      }
+    },
+    {
+      "run": "m06q20_001",
+      "conditional_alpha_by_reference": {
+        "automatic_three_plug_reference": 0.828813491197648,
+        "manual_liquid_m06q01_001_455_515": 0.8318918297405264,
+        "manual_liquid_m07q01_001_180_250": 0.8367395279921069
+      }
+    },
+    {
+      "run": "m06q80_001",
+      "conditional_alpha_by_reference": {
+        "automatic_three_plug_reference": 0.9637431710117789,
+        "manual_liquid_m06q01_001_455_515": 0.9655513729405033,
+        "manual_liquid_m07q01_001_180_250": 0.967827837448361
+      }
+    },
+    {
+      "run": "m03q20_001",
+      "conditional_alpha_by_reference": {
+        "automatic_three_plug_reference": 0.9997620968829788,
+        "manual_liquid_m06q01_001_455_515": 0.9997653053280503,
+        "manual_liquid_m07q01_001_180_250": 0.9997993179308534
+      }
+    }
+  ],
+  "crop_sensitivity": [
+    {
+      "run": "m07q01_001",
+      "crop_variants": {
+        "(20, 70)": {
+          "conditional_alpha": 0.0013589917258117156,
+          "maximum_column_alpha": 0.1153435386258455,
+          "analytic_crop_ceiling": 0.8899964400142399,
+          "included_lumen_rows": 50,
+          "removed_lumen_rows": 3,
+          "is_full_lumen": false
+        },
+        "(19, 70)": {
+          "conditional_alpha": 0.001768204847710411,
+          "maximum_column_alpha": 0.12851548593805626,
+          "analytic_crop_ceiling": 0.9259522961908152,
+          "included_lumen_rows": 51,
+          "removed_lumen_rows": 2,
+          "is_full_lumen": false
+        },
+        "(19, 71)": {
+          "conditional_alpha": 0.001768204847710411,
+          "maximum_column_alpha": 0.12851548593805626,
+          "analytic_crop_ceiling": 0.9626201495194019,
+          "included_lumen_rows": 52,
+          "removed_lumen_rows": 1,
+          "is_full_lumen": false
+        },
+        "(18, 71)": {
+          "conditional_alpha": 0.001768204847710411,
+          "maximum_column_alpha": 0.12851548593805626,
+          "analytic_crop_ceiling": 1.0,
+          "included_lumen_rows": 53,
+          "removed_lumen_rows": 0,
+          "is_full_lumen": true
+        }
+      }
+    },
+    {
+      "run": "m06q01_001",
+      "crop_variants": {
+        "(20, 70)": {
+          "conditional_alpha": 0.5637046623395963,
+          "maximum_column_alpha": 0.8899964400142399,
+          "analytic_crop_ceiling": 0.8899964400142399,
+          "included_lumen_rows": 50,
+          "removed_lumen_rows": 3,
+          "is_full_lumen": false
+        },
+        "(19, 70)": {
+          "conditional_alpha": 0.5737289120604995,
+          "maximum_column_alpha": 0.9259522961908152,
+          "analytic_crop_ceiling": 0.9259522961908152,
+          "included_lumen_rows": 51,
+          "removed_lumen_rows": 2,
+          "is_full_lumen": false
+        },
+        "(19, 71)": {
+          "conditional_alpha": 0.5877678925806482,
+          "maximum_column_alpha": 0.9626201495194019,
+          "analytic_crop_ceiling": 0.9626201495194019,
+          "included_lumen_rows": 52,
+          "removed_lumen_rows": 1,
+          "is_full_lumen": false
+        },
+        "(18, 71)": {
+          "conditional_alpha": 0.5931380475555297,
+          "maximum_column_alpha": 1.0,
+          "analytic_crop_ceiling": 1.0,
+          "included_lumen_rows": 53,
+          "removed_lumen_rows": 0,
+          "is_full_lumen": true
+        }
+      }
+    },
+    {
+      "run": "m06q05_001",
+      "crop_variants": {
+        "(20, 70)": {
+          "conditional_alpha": 0.5843683023110465,
+          "maximum_column_alpha": 0.8899964400142399,
+          "analytic_crop_ceiling": 0.8899964400142399,
+          "included_lumen_rows": 50,
+          "removed_lumen_rows": 3,
+          "is_full_lumen": false
+        },
+        "(19, 70)": {
+          "conditional_alpha": 0.5920431415230805,
+          "maximum_column_alpha": 0.9259522961908152,
+          "analytic_crop_ceiling": 0.9259522961908152,
+          "included_lumen_rows": 51,
+          "removed_lumen_rows": 2,
+          "is_full_lumen": false
+        },
+        "(19, 71)": {
+          "conditional_alpha": 0.6025129832959543,
+          "maximum_column_alpha": 0.9626201495194019,
+          "analytic_crop_ceiling": 0.9626201495194019,
+          "included_lumen_rows": 52,
+          "removed_lumen_rows": 1,
+          "is_full_lumen": false
+        },
+        "(18, 71)": {
+          "conditional_alpha": 0.6062947881250725,
+          "maximum_column_alpha": 1.0,
+          "analytic_crop_ceiling": 1.0,
+          "included_lumen_rows": 53,
+          "removed_lumen_rows": 0,
+          "is_full_lumen": true
+        }
+      }
+    },
+    {
+      "run": "m06q20_001",
+      "crop_variants": {
+        "(20, 70)": {
+          "conditional_alpha": 0.7812659541874776,
+          "maximum_column_alpha": 0.8899964400142399,
+          "analytic_crop_ceiling": 0.8899964400142399,
+          "included_lumen_rows": 50,
+          "removed_lumen_rows": 3,
+          "is_full_lumen": false
+        },
+        "(19, 70)": {
+          "conditional_alpha": 0.794996568321174,
+          "maximum_column_alpha": 0.9259522961908152,
+          "analytic_crop_ceiling": 0.9259522961908152,
+          "included_lumen_rows": 51,
+          "removed_lumen_rows": 2,
+          "is_full_lumen": false
+        },
+        "(19, 71)": {
+          "conditional_alpha": 0.819604314175336,
+          "maximum_column_alpha": 0.9626201495194019,
+          "analytic_crop_ceiling": 0.9626201495194019,
+          "included_lumen_rows": 52,
+          "removed_lumen_rows": 1,
+          "is_full_lumen": false
+        },
+        "(18, 71)": {
+          "conditional_alpha": 0.828813491197648,
+          "maximum_column_alpha": 1.0,
+          "analytic_crop_ceiling": 1.0,
+          "included_lumen_rows": 53,
+          "removed_lumen_rows": 0,
+          "is_full_lumen": true
+        }
+      }
+    },
+    {
+      "run": "m06q80_001",
+      "crop_variants": {
+        "(20, 70)": {
+          "conditional_alpha": 0.8747634964991885,
+          "maximum_column_alpha": 0.8899964400142399,
+          "analytic_crop_ceiling": 0.8899964400142399,
+          "included_lumen_rows": 50,
+          "removed_lumen_rows": 3,
+          "is_full_lumen": false
+        },
+        "(19, 70)": {
+          "conditional_alpha": 0.9039162036761978,
+          "maximum_column_alpha": 0.9259522961908152,
+          "analytic_crop_ceiling": 0.9259522961908152,
+          "included_lumen_rows": 51,
+          "removed_lumen_rows": 2,
+          "is_full_lumen": false
+        },
+        "(19, 71)": {
+          "conditional_alpha": 0.9376210197275471,
+          "maximum_column_alpha": 0.9626201495194019,
+          "analytic_crop_ceiling": 0.9626201495194019,
+          "included_lumen_rows": 52,
+          "removed_lumen_rows": 1,
+          "is_full_lumen": false
+        },
+        "(18, 71)": {
+          "conditional_alpha": 0.9637431710117789,
+          "maximum_column_alpha": 1.0,
+          "analytic_crop_ceiling": 1.0,
+          "included_lumen_rows": 53,
+          "removed_lumen_rows": 0,
+          "is_full_lumen": true
+        }
+      }
+    },
+    {
+      "run": "m03q20_001",
+      "crop_variants": {
+        "(20, 70)": {
+          "conditional_alpha": 0.8899872774355255,
+          "maximum_column_alpha": 0.8899964400142399,
+          "analytic_crop_ceiling": 0.8899964400142399,
+          "included_lumen_rows": 50,
+          "removed_lumen_rows": 3,
+          "is_full_lumen": false
+        },
+        "(19, 70)": {
+          "conditional_alpha": 0.9259429485095005,
+          "maximum_column_alpha": 0.9259522961908152,
+          "analytic_crop_ceiling": 0.9259522961908152,
+          "included_lumen_rows": 51,
+          "removed_lumen_rows": 2,
+          "is_full_lumen": false
+        },
+        "(19, 71)": {
+          "conditional_alpha": 0.962412202173194,
+          "maximum_column_alpha": 0.9626201495194019,
+          "analytic_crop_ceiling": 0.9626201495194019,
+          "included_lumen_rows": 52,
+          "removed_lumen_rows": 1,
+          "is_full_lumen": false
+        },
+        "(18, 71)": {
+          "conditional_alpha": 0.9997620968829788,
+          "maximum_column_alpha": 1.0,
+          "analytic_crop_ceiling": 1.0,
+          "included_lumen_rows": 53,
+          "removed_lumen_rows": 0,
+          "is_full_lumen": true
+        }
+      }
+    }
+  ],
+  "disconnected_paired_acceptances_in_slug_gap_x300_560": [],
+  "limits": "Selected phase interiors are not an unbiased segmentation test set or volumetric calibration; crop variants remove known lumen rows and are not alternative diameters or confidence intervals"
+}

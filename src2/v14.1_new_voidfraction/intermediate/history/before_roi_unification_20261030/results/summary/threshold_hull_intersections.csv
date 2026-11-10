@@ -1,0 +1,11 @@
+condition,threshold,overlap_pairs,plug_slug_intersect,churn_annular_intersect,n_acquisitions
+v14,0.6,"[[""plug"", ""slug""], [""churn"", ""wavy annular""]]",True,True,25
+v14,0.65,"[[""plug"", ""slug""], [""churn"", ""wavy annular""]]",True,True,25
+v14,0.7,"[[""churn"", ""wavy annular""]]",False,True,25
+v14,0.75,"[[""churn"", ""wavy annular""]]",False,True,25
+v14,0.8,"[[""plug"", ""slug""]]",True,False,25
+v14.1,0.6,"[[""plug"", ""slug""], [""churn"", ""wavy annular""]]",True,True,25
+v14.1,0.65,"[[""plug"", ""slug""], [""churn"", ""wavy annular""]]",True,True,25
+v14.1,0.7,"[[""churn"", ""wavy annular""]]",False,True,25
+v14.1,0.75,"[[""plug"", ""slug""], [""churn"", ""wavy annular""]]",True,True,25
+v14.1,0.8,"[[""plug"", ""slug""], [""churn"", ""wavy annular""]]",True,True,25

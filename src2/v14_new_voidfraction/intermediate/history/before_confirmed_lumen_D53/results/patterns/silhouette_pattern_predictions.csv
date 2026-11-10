@@ -1,0 +1,151 @@
+run,truth,prediction,correct,model,validation,n_training_runs,training_present_patterns,training_absent_patterns,test_pattern_has_training_examples,reference_training_runs,test_conditional_alpha_visible
+m03q05_001,churn,wavy annular,False,centroid,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7535527215615366
+m03q05_001,churn,wavy annular,False,knn1,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7535527215615366
+m03q05_001,churn,churn,True,knn3,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7535527215615366
+m03q10_001,wavy annular,wavy annular,True,centroid,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.777090187945257
+m03q10_001,wavy annular,wavy annular,True,knn1,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.777090187945257
+m03q10_001,wavy annular,wavy annular,True,knn3,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.777090187945257
+m03q20_001,wavy annular,wavy annular,True,centroid,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.780092147262302
+m03q20_001,wavy annular,wavy annular,True,knn1,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.780092147262302
+m03q20_001,wavy annular,wavy annular,True,knn3,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.780092147262302
+m04q01_001,slug,plug,False,centroid,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.5498963057910998
+m04q01_001,slug,slug,True,knn1,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.5498963057910998
+m04q01_001,slug,slug,True,knn3,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.5498963057910998
+m04q10_001,churn,churn,True,centroid,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.6906902442707744
+m04q10_001,churn,churn,True,knn1,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.6906902442707744
+m04q10_001,churn,churn,True,knn3,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.6906902442707744
+m04q20_001,churn,wavy annular,False,centroid,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.704488263413242
+m04q20_001,churn,churn,True,knn1,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.704488263413242
+m04q20_001,churn,churn,True,knn3,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.704488263413242
+m04q40_001,wavy annular,wavy annular,True,centroid,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7658182375222817
+m04q40_001,wavy annular,wavy annular,True,knn1,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7658182375222817
+m04q40_001,wavy annular,wavy annular,True,knn3,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7658182375222817
+m04q80_001,wavy annular,wavy annular,True,centroid,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7797588035773891
+m04q80_001,wavy annular,wavy annular,True,knn1,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7797588035773891
+m04q80_001,wavy annular,wavy annular,True,knn3,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7797588035773891
+m05q01_001,plug,plug,True,centroid,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m06q01_001;m07q05_001,0.4972529461279461
+m05q01_001,plug,plug,True,knn1,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m06q01_001;m07q05_001,0.4972529461279461
+m05q01_001,plug,plug,True,knn3,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m06q01_001;m07q05_001,0.4972529461279461
+m05q05_001,slug,plug,False,centroid,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.4069268719138243
+m05q05_001,slug,plug,False,knn1,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.4069268719138243
+m05q05_001,slug,plug,False,knn3,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.4069268719138243
+m05q10_001,churn,churn,True,centroid,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.5945091970988272
+m05q10_001,churn,churn,True,knn1,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.5945091970988272
+m05q10_001,churn,churn,True,knn3,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.5945091970988272
+m05q20_001,churn,churn,True,centroid,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.6370417098874006
+m05q20_001,churn,churn,True,knn1,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.6370417098874006
+m05q20_001,churn,churn,True,knn3,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.6370417098874006
+m05q40_001,churn,wavy annular,False,centroid,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7267869242896918
+m05q40_001,churn,churn,True,knn1,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7267869242896918
+m05q40_001,churn,churn,True,knn3,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7267869242896918
+m05q80_001,wavy annular,wavy annular,True,centroid,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7688733863400037
+m05q80_001,wavy annular,churn,False,knn1,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7688733863400037
+m05q80_001,wavy annular,churn,False,knn3,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7688733863400037
+m06q01_001,plug,slug,False,centroid,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m07q05_001,0.46329318771194894
+m06q01_001,plug,plug,True,knn1,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m07q05_001,0.46329318771194894
+m06q01_001,plug,slug,False,knn3,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m07q05_001,0.46329318771194894
+m06q05_001,slug,slug,True,centroid,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.4730783499564802
+m06q05_001,slug,churn,False,knn1,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.4730783499564802
+m06q05_001,slug,churn,False,knn3,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.4730783499564802
+m06q10_001,churn,slug,False,centroid,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.537878574777309
+m06q10_001,churn,churn,True,knn1,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.537878574777309
+m06q10_001,churn,churn,True,knn3,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.537878574777309
+m06q20_001,churn,churn,True,centroid,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.6467047491039427
+m06q20_001,churn,churn,True,knn1,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.6467047491039427
+m06q20_001,churn,churn,True,knn3,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.6467047491039427
+m06q40_001,wavy annular,churn,False,centroid,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7185700424226014
+m06q40_001,wavy annular,wavy annular,True,knn1,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7185700424226014
+m06q40_001,wavy annular,churn,False,knn3,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7185700424226014
+m06q80_001,wavy annular,churn,False,centroid,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7519873798255798
+m06q80_001,wavy annular,churn,False,knn1,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7519873798255798
+m06q80_001,wavy annular,churn,False,knn3,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7519873798255798
+m07q01_001,dispersed bubbles,plug,False,centroid,leave_one_run_out,24,plug;slug;churn;wavy annular,dispersed bubbles,False,m05q01_001;m06q01_001;m07q05_001,0.0013796909492273732
+m07q01_001,dispersed bubbles,plug,False,knn1,leave_one_run_out,24,plug;slug;churn;wavy annular,dispersed bubbles,False,m05q01_001;m06q01_001;m07q05_001,0.0013796909492273732
+m07q01_001,dispersed bubbles,plug,False,knn3,leave_one_run_out,24,plug;slug;churn;wavy annular,dispersed bubbles,False,m05q01_001;m06q01_001;m07q05_001,0.0013796909492273732
+m07q05_001,plug,plug,True,centroid,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001,0.3705152366283108
+m07q05_001,plug,slug,False,knn1,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001,0.3705152366283108
+m07q05_001,plug,slug,False,knn3,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001,0.3705152366283108
+m07q20_001,churn,slug,False,centroid,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.5103964600578774
+m07q20_001,churn,churn,True,knn1,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.5103964600578774
+m07q20_001,churn,churn,True,knn3,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.5103964600578774
+m07q40_001,churn,churn,True,centroid,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.6335698832952191
+m07q40_001,churn,churn,True,knn1,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.6335698832952191
+m07q40_001,churn,churn,True,knn3,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.6335698832952191
+m07q80_001,wavy annular,churn,False,centroid,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7225463240885263
+m07q80_001,wavy annular,wavy annular,True,knn1,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7225463240885263
+m07q80_001,wavy annular,wavy annular,True,knn3,leave_one_run_out,24,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7225463240885263
+m03q05_001,churn,wavy annular,False,centroid,leave_one_mass_flux_out,22,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7535527215615366
+m03q05_001,churn,wavy annular,False,knn1,leave_one_mass_flux_out,22,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7535527215615366
+m03q05_001,churn,churn,True,knn3,leave_one_mass_flux_out,22,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7535527215615366
+m03q10_001,wavy annular,wavy annular,True,centroid,leave_one_mass_flux_out,22,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.777090187945257
+m03q10_001,wavy annular,wavy annular,True,knn1,leave_one_mass_flux_out,22,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.777090187945257
+m03q10_001,wavy annular,wavy annular,True,knn3,leave_one_mass_flux_out,22,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.777090187945257
+m03q20_001,wavy annular,wavy annular,True,centroid,leave_one_mass_flux_out,22,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.780092147262302
+m03q20_001,wavy annular,wavy annular,True,knn1,leave_one_mass_flux_out,22,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.780092147262302
+m03q20_001,wavy annular,wavy annular,True,knn3,leave_one_mass_flux_out,22,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.780092147262302
+m04q01_001,slug,plug,False,centroid,leave_one_mass_flux_out,20,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.5498963057910998
+m04q01_001,slug,slug,True,knn1,leave_one_mass_flux_out,20,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.5498963057910998
+m04q01_001,slug,slug,True,knn3,leave_one_mass_flux_out,20,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.5498963057910998
+m04q10_001,churn,wavy annular,False,centroid,leave_one_mass_flux_out,20,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.6906902442707744
+m04q10_001,churn,churn,True,knn1,leave_one_mass_flux_out,20,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.6906902442707744
+m04q10_001,churn,wavy annular,False,knn3,leave_one_mass_flux_out,20,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.6906902442707744
+m04q20_001,churn,wavy annular,False,centroid,leave_one_mass_flux_out,20,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.704488263413242
+m04q20_001,churn,churn,True,knn1,leave_one_mass_flux_out,20,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.704488263413242
+m04q20_001,churn,churn,True,knn3,leave_one_mass_flux_out,20,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.704488263413242
+m04q40_001,wavy annular,wavy annular,True,centroid,leave_one_mass_flux_out,20,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7658182375222817
+m04q40_001,wavy annular,wavy annular,True,knn1,leave_one_mass_flux_out,20,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7658182375222817
+m04q40_001,wavy annular,wavy annular,True,knn3,leave_one_mass_flux_out,20,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7658182375222817
+m04q80_001,wavy annular,wavy annular,True,centroid,leave_one_mass_flux_out,20,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7797588035773891
+m04q80_001,wavy annular,wavy annular,True,knn1,leave_one_mass_flux_out,20,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7797588035773891
+m04q80_001,wavy annular,wavy annular,True,knn3,leave_one_mass_flux_out,20,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m06q01_001;m07q05_001,0.7797588035773891
+m05q01_001,plug,plug,True,centroid,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m06q01_001;m07q05_001,0.4972529461279461
+m05q01_001,plug,plug,True,knn1,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m06q01_001;m07q05_001,0.4972529461279461
+m05q01_001,plug,plug,True,knn3,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m06q01_001;m07q05_001,0.4972529461279461
+m05q05_001,slug,plug,False,centroid,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m06q01_001;m07q05_001,0.40831417927495745
+m05q05_001,slug,plug,False,knn1,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m06q01_001;m07q05_001,0.40831417927495745
+m05q05_001,slug,plug,False,knn3,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m06q01_001;m07q05_001,0.40831417927495745
+m05q10_001,churn,churn,True,centroid,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m06q01_001;m07q05_001,0.5959564903426494
+m05q10_001,churn,churn,True,knn1,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m06q01_001;m07q05_001,0.5959564903426494
+m05q10_001,churn,churn,True,knn3,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m06q01_001;m07q05_001,0.5959564903426494
+m05q20_001,churn,churn,True,centroid,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m06q01_001;m07q05_001,0.639352854071769
+m05q20_001,churn,churn,True,knn1,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m06q01_001;m07q05_001,0.639352854071769
+m05q20_001,churn,churn,True,knn3,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m06q01_001;m07q05_001,0.639352854071769
+m05q40_001,churn,churn,True,centroid,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m06q01_001;m07q05_001,0.7278360336788434
+m05q40_001,churn,churn,True,knn1,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m06q01_001;m07q05_001,0.7278360336788434
+m05q40_001,churn,churn,True,knn3,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m06q01_001;m07q05_001,0.7278360336788434
+m05q80_001,wavy annular,wavy annular,True,centroid,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m06q01_001;m07q05_001,0.7697453967891653
+m05q80_001,wavy annular,churn,False,knn1,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m06q01_001;m07q05_001,0.7697453967891653
+m05q80_001,wavy annular,churn,False,knn3,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m06q01_001;m07q05_001,0.7697453967891653
+m06q01_001,plug,slug,False,centroid,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m07q05_001,0.46329318771194894
+m06q01_001,plug,plug,True,knn1,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m07q05_001,0.46329318771194894
+m06q01_001,plug,plug,True,knn3,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m07q05_001,0.46329318771194894
+m06q05_001,slug,slug,True,centroid,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m07q05_001,0.47437898634476267
+m06q05_001,slug,churn,False,knn1,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m07q05_001,0.47437898634476267
+m06q05_001,slug,churn,False,knn3,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m07q05_001,0.47437898634476267
+m06q10_001,churn,slug,False,centroid,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m07q05_001,0.5382078132325364
+m06q10_001,churn,churn,True,knn1,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m07q05_001,0.5382078132325364
+m06q10_001,churn,churn,True,knn3,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m07q05_001,0.5382078132325364
+m06q20_001,churn,churn,True,centroid,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m07q05_001,0.645127688172043
+m06q20_001,churn,churn,True,knn1,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m07q05_001,0.645127688172043
+m06q20_001,churn,churn,True,knn3,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m07q05_001,0.645127688172043
+m06q40_001,wavy annular,churn,False,centroid,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m07q05_001,0.7162389242410568
+m06q40_001,wavy annular,wavy annular,True,knn1,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m07q05_001,0.7162389242410568
+m06q40_001,wavy annular,churn,False,knn3,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m07q05_001,0.7162389242410568
+m06q80_001,wavy annular,churn,False,centroid,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m07q05_001,0.7507330714051851
+m06q80_001,wavy annular,churn,False,knn1,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m07q05_001,0.7507330714051851
+m06q80_001,wavy annular,churn,False,knn3,leave_one_mass_flux_out,19,dispersed bubbles;plug;slug;churn;wavy annular,,True,m05q01_001;m07q05_001,0.7507330714051851
+m07q01_001,dispersed bubbles,plug,False,centroid,leave_one_mass_flux_out,20,plug;slug;churn;wavy annular,dispersed bubbles,False,m05q01_001;m06q01_001,0.0013821437331371104
+m07q01_001,dispersed bubbles,slug,False,knn1,leave_one_mass_flux_out,20,plug;slug;churn;wavy annular,dispersed bubbles,False,m05q01_001;m06q01_001,0.0013821437331371104
+m07q01_001,dispersed bubbles,plug,False,knn3,leave_one_mass_flux_out,20,plug;slug;churn;wavy annular,dispersed bubbles,False,m05q01_001;m06q01_001,0.0013821437331371104
+m07q05_001,plug,plug,True,centroid,leave_one_mass_flux_out,20,plug;slug;churn;wavy annular,dispersed bubbles,True,m05q01_001;m06q01_001,0.3705152366283108
+m07q05_001,plug,slug,False,knn1,leave_one_mass_flux_out,20,plug;slug;churn;wavy annular,dispersed bubbles,True,m05q01_001;m06q01_001,0.3705152366283108
+m07q05_001,plug,plug,True,knn3,leave_one_mass_flux_out,20,plug;slug;churn;wavy annular,dispersed bubbles,True,m05q01_001;m06q01_001,0.3705152366283108
+m07q20_001,churn,slug,False,centroid,leave_one_mass_flux_out,20,plug;slug;churn;wavy annular,dispersed bubbles,True,m05q01_001;m06q01_001,0.5094635574399354
+m07q20_001,churn,churn,True,knn1,leave_one_mass_flux_out,20,plug;slug;churn;wavy annular,dispersed bubbles,True,m05q01_001;m06q01_001,0.5094635574399354
+m07q20_001,churn,slug,False,knn3,leave_one_mass_flux_out,20,plug;slug;churn;wavy annular,dispersed bubbles,True,m05q01_001;m06q01_001,0.5094635574399354
+m07q40_001,churn,churn,True,centroid,leave_one_mass_flux_out,20,plug;slug;churn;wavy annular,dispersed bubbles,True,m05q01_001;m06q01_001,0.6333599864721229
+m07q40_001,churn,churn,True,knn1,leave_one_mass_flux_out,20,plug;slug;churn;wavy annular,dispersed bubbles,True,m05q01_001;m06q01_001,0.6333599864721229
+m07q40_001,churn,churn,True,knn3,leave_one_mass_flux_out,20,plug;slug;churn;wavy annular,dispersed bubbles,True,m05q01_001;m06q01_001,0.6333599864721229
+m07q80_001,wavy annular,churn,False,centroid,leave_one_mass_flux_out,20,plug;slug;churn;wavy annular,dispersed bubbles,True,m05q01_001;m06q01_001,0.719297684796094
+m07q80_001,wavy annular,wavy annular,True,knn1,leave_one_mass_flux_out,20,plug;slug;churn;wavy annular,dispersed bubbles,True,m05q01_001;m06q01_001,0.719297684796094
+m07q80_001,wavy annular,wavy annular,True,knn3,leave_one_mass_flux_out,20,plug;slug;churn;wavy annular,dispersed bubbles,True,m05q01_001;m06q01_001,0.719297684796094

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "numeric_checks": 30522,
+  "tracks": 5862,
+  "opportunities": 5200,
+  "phase_summaries": 104,
+  "ratios": 52,
+  "phase_masks_checked_with_independent_minimum_filter": true,
+  "material_phase_identity_validated": false,
+  "source_selection_note": "Saved source geometry, nonoverlap and texture gates checked; source texture ranking is specified by the analysis implementation."
+}

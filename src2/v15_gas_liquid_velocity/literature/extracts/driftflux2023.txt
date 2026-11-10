@@ -1,0 +1,1015 @@
+Journal of Applied Fluid Mechanics, Vol. 16, No. 7, pp. 1499-1510, 2023.
+Available online at www.jafmonline.net, ISSN 1735-3572, EISSN 1735-3645.
+https://doi.org/10.47176/jafm.16.07.1693
+
+
+
+ Improved Drift Flux Void Fraction Model for Horizontal
+             Gas-liquid Intermittent Flow
+                                   A. Zeghloul 1,2† and A. Al-Sarkhi 3
+      1 Faculty of Mechanical and Process Engineering, University of Sciences and Technology Houari
+
+                     Boumediene, BP 32 El Alia, Bab Ezzouar, Algiers 16111, Algeria
+                  2
+                  Polytechnic National School, BP 182, El Harrach, Algiers 16200, Algeria
+ 3 Department of Mechanical Engineering, Center for Integrated Petroleum Research, King Fahd University
+
+                         of Petroleum and Minerals, Dhahran 31261, Saudi Arabia
+
+                        †Corresponding Author Email: ammar.zeghloul@g.enp.edu.dz
+
+                            (Received December 3, 2022; accepted March 9, 2023)
+
+                                                  ABSTRACT
+
+Drift Flux model is widely used in literature to predict void fraction in two-phase gas-liquid flow. Drift flux
+model has been used for all flow regimes. The distribution parameter implemented in the model is very crucial
+for the accuracy of the model. A new distribution parameter was developed in this paper as a function of two
+dimensionless parameters and flow regime (slug or plug). The new model showed a superior predicted void
+fraction accuracy over all available models in literature. In this paper, the influence of the flow regimes was
+implemented in the formulation of the drift flux model distribution parameter for the first time in literature. The
+drift velocity was found to be negligible in the horizontal configuration. The proposed model was validated
+using unbiased data from literature from different sources and for a wide range of liquid viscosity from water
+up to high viscosity oil (600 cP) and pipe diameter from 19 mm up to 152 mm. The mean relative absolute error
+of the proposed model using all data bank is around 16% while the least error model available in literature is
+around 19%. Moreover, the most recent models of Rassame and Hibiki (2018) and Kong et al. (2018b) give
+33% and 50%, respectively.
+
+Keywords: Gas-liquid Two-phase flow; Void fraction; Drift Flux; Plug and Slug flow; Horizontal
+configuration.
+
+                                               NOMENCLATURE
+
+       A     cross sectional area of the pipe
+                                                             n       number of samples
+       C0    distribution parameter
+                                                             Q       volumetric flow rate of the fluid
+       C∞    asymptotic value of the distribution
+                                                             Vgr     drift velocity parameter
+              parameter
+                                                             Vsg     gas superficial velocity
+       D     pipe diameter
+                                                             Vsl     liquid superficial velocity
+       Dh    hydraulic equivalent diameter
+                                                             xi      absolute error normalized by the
+       g     gravitational acceleration
+                                                                     measured value
+       HL    liquid holdup
+       Greek Letters
+       α       void fraction                                 ρ       average density of the fluid
+       σ       surface tension                               µ       dynamic viscosity
+       Non-Dimensional Numbers
+       Re    Reynolds number                                 Fr      Froude number
+       Subscripts
+       g     gas                                             m       mixture
+       l     liquid                                          TP      two-phase flow
+       Superscripts
+       +     non-dimensional quantity
+       Abbreviations
+       ABE mean relative absolute error                      DFM Drift-Flux Model
+       RMS Root Mean Square                                  TFM Two-Fluid Model
+A. Zeghloul and A. Al-Sarkhi / JAFM, Vol. 16, No. 7, pp. 1499-1510, 2023.
+
+     1.    INTRODUCTION                                             2018b), (Hibiki 2019), (Dong et al. 2020). After
+                                                                    thorough review of the existing void fraction models
+Two-phase flows can be seen in various industrial                   and analysing their prediction through a
+devices such as production and transportation of gas                confrontation with an experimental database
+and oil in petroleum and gas industry, heat                         collected from the open literature, Woldesemayat
+exchangers and nuclear reactors.                                    and Ghajar (2007) proposed a void fraction model
+                                                                    based on DFM. This model considers the effect of
+Analysing the available two-phase flow models                       phasic superficial velocities, the physical properties
+reveals the followings: the homogenous model,                       of the two phases, the working pressure as well the
+neglects the slippage between phases, and it doesn’t                diameter and the inclination of the pipe.
+give reliable results. The Two-Fluid Model (TFM) is
+based on separate mass, momentum, and energy                        França and Lahey (1992) were the first to apply the
+conservation equations for each phase. Additional                   DFM to horizontal pipe. The study was carried out
+terms (in form of closer relationships) due to the                  using 19 mm ID pipe and air-water mixture. The
+phase interactions are needed in these equations                    experimental measurements of void fraction,
+because the flowing phases are dependent of each                    obtained using quick-closing valves, for stratified,
+another. The Drift-Flux Model (DFM) differs from                    plug, slug and annular flows were evaluated using
+TFM by replacing the interaction terms by the                       DFM analysis. It was found that the standard variable
+mixture momentum equation specifying the relative                   Vg and Vm can be used to correlate the void fraction
+motion between phases. This simplification gives the                for plug and slug flow. In other hand, α/(1-α) and β
+DFM many advantages such as being continuous,                       =Vsg/Vm are more suitable for segregated regime. It
+differentiable and relatively easy to compute (Shi et               was also reported that the distribution parameters and
+al. 2005).                                                          drift velocity are constant and dependant of the flow
+                                                                    regime. Lamari (2001) and Kong et al. (2018b) also
+The DFM is widely used to predict the one-                          proposed a void fraction correlation in which the two
+dimensional (or area-averaged) gas void fraction, α,                drift-flux parameters are constant and flow regime
+or the liquid holdup, HL. The two parameters refer to               dependant. Based on the work of Fabre and Liné
+the ratio of the gas phase volume and liquid phase                  (1992), Choi et al. (2012) correlated the distribution
+volume fraction, respectively, to the two-phase                     coefficient with mixture Reynolds number. Rassame
+mixture volume at a given time. Thus, the void                      and Hibiki (2018) examined the existing DFM
+fraction and liquid holdup are related by the equation              models for horizontal pipes. The authors concluded
+α + HL = 1. In the present work, the terminology void               that the distribution coefficient is flow-regime-
+fraction is used, since it is the most popular. The void            dependent constant in most of them, which implies
+fraction is one of the most important parameters to                 that the distribution parameter doesn’t include the
+characterize the gas-liquid two-phase flow. It is used              effect of physical properties and the dynamic of the
+to calculate the two-phase flow mixture density and                 flow. From the performed statement, Rassame and
+viscosity and the average velocities of the two                     Hibiki (2018) proposed a flow regime independent
+phases. In the DFM, the void fraction is given as a                 drift-flux model to predict the void fraction based on
+function of two drift-flux parameters which are the                 the model of Ishii (1977). Using a collected database
+distribution parameter, C0, and the drift velocity, Vgd.            composed of 566 data points, the authors correlated
+The latter parameter refers to the relative velocity                the distribution parameter with the densities of the
+between gas phase and mixture, while distribution                   two phases and the ratio of non-dimensional
+parameters characterize the concentration profile of                superficial gas velocity to non-dimensional mixture
+void fraction on the cross-section pipe, or the effect              volumetric flux. The mean drift velocity was
+of local phase distribution and velocity on area-                   considered equal to zero by the authors as there is no
+averaged void fraction. The two parameters can be                   gravitational acceleration in the horizontal direction.
+obtained from the measurements of local void                        For validation purpose, Rassame and Hibiki (2018)
+fraction and gas and liquid velocities distributions.               assessed the performance of the proposed model, as
+The DFM was originally introduced by Zuber and                      well as the model of Chexal et al. (1992), with the
+Findley (1965), the authors applied it to a vertical                collected database. It was found that most of void
+upward two-phase flow. The authors have also                        fraction measurements were predicted within about
+proposed a simple technique to estimate the                         ±20% uncertainty. Considering this performance,
+distribution parameter and drift velocity through                   which is similar to those given by the model of
+presenting the data using Vg-Vm plane, where Vm and                 Chexal et al. (1992), and the simplicity of the
+Vg refers respectively to mixture and gas velocities,               proposed model comparatively to the latter, the
+respectively. If the collected data give a linear fit, the          performance of the developed model was considered
+slope and the intercept point represent the                         excellent by Rassame and Hibiki (2018). In their
+                                                                    study, the authors also studied the prediction level of
+distribution parameter and drift velocity,
+respectively.                                                       their model for different flow regimes. The mean
+                                                                    absolute relative errors were found equal to 13.8%,
+Ishii (1977) proposed a model to calculate the two                  5.34%, 3.89%, 0.074% and 37.8%, for stratified
+drift-flux parameters for different vertical upward                 smooth (SS), stratified wavy (SW), annular flow
+flow regimes such as bubbly, slug, churn and                        with dispersed liquid droplets (AD), dispersed
+annular. Through the years, different drift flux void               bubble (DB), and intermittent flow (I) respectively.
+fraction models were proposed for different channel                 For the intermittent flow, if the data collected for Vm
+configuration, flow direction, or a specific flow                   ≤ 3 m/s are not considered, the mean absolute relative
+regime, (Hibiki and Ishii 2003a), (Kong et al.                      errors decreases to 16.6%. The same behaviour was
+
+
+                                                             1500
+A. Zeghloul and A. Al-Sarkhi / JAFM, Vol. 16, No. 7, pp. 1499-1510, 2023.
+
+observed with the model of Chexal et al. (1992).                Banerjee 2017), (Sassi et al. 2022). In plug flow, the
+Rassame and Hibiki (2018) have made an                          liquid slugs are free or carried out small quantities of
+assumption that the insufficient measurement                    gas bubbles and the interface liquid slugs/elongated
+accuracy is the reason behind the discrepancy for this          bubbles are laminar (Fig. 1 (a)). Increasing of
+range of mixture velocity. As mentioned above, this             superficial gas velocities induce an increment of gas
+behaviour was not reported for bubbly flow data.                bubbles presence inside the liquid slugs, and thus a
+Considering that void fraction values are generally             transition to slug flow, as shown in Fig. 1 (b).
+smaller in this flow regime compare to the
+intermittent flow (Ghajar 2020), (Kong et al. 2018b),           Recently, Arabi et al. (2021) have demonstrated that
+and thus, more sensible to the strong uncertainties,            the hydrodynamic parameters are different for plug
+this explanation is questionable.                               and slug flows.
+
+As mentioned above, Rassame and Hibiki (2018)                   The present paper aims to improve the drift flux void
+correlated the distribution parameter with all                  fraction model developed by Rassame and Hibiki
+collected data, and thus by including the intermittent          (2018) for horizontal plug and slug gas-liquid two-
+flow with other flow regimes data. Also doubts may              phase flows. in order to achieve this goal, i.e. given
+arise concerning this approach. Indeed, the                     an approval void fraction model, the parameters that
+intermittent flow, regardless of the pipe inclination,          is influencing the void fraction in the intermittent
+has specific features, including his intermittent               plug and slug two-phase flow have been
+nature and chaotic behaviour, that distinguishes it             investigated. Therefore, within the one-dimensional
+from other flow regimes (Fabre and Liné 1992),                  drift-flux study, the impacts of the flow pattern, the
+(Mohmmed et al. 2021). The existence of different               pipe geometry, the physical proprieties of the two
+shapes of the intermittent flow, called sub-regimes             fluids and the inlet flow conditions (liquid and gas
+add more difficulties to this flow, (Thaker and                 velocity) were considered. The predicted void
+Banerjee 2015), (Arabi et al. 2020a, b), (Arabi et al.          fraction performance of the proposed model is
+2021). It also exists drift flux models when the                compared with those of different void fraction drift
+authors have correlated the two drift-flux parameters           flux models including the correlation of Rassame and
+of the intermittent flow separately from other flow             Hibiki (2018) and showed better performance.
+regimes. This is the case for the model of Hibiki and
+Ishii (2003a) for vertical upward flow and those of                  2.    BACKGROUND       ON      DFM
+França and Lahey (1992), Lamari (2001) and Kong                            FORMULATION AND REVIEW OF
+et al. (2018b) for horizontal pipe.                                        EXISTING DFM CORRELATIONS
+In all DFM models developed for horizontal
+intermittent flow, the authors have considered both             2.1 Theoretical Background
+drift flux parameters as constant. A visualization of           The concept of "drift velocity" was first developed
+void fraction profile collected by Kong et al. (2018b)          by Zuber and Findley (1965) in order to account the
+using four-sensor conductivity probe technique for              difference in velocity between the two phases. The
+different liquid and gas superficial velocities,                local drift velocity, Vgr, is described as the result of
+depicted in Fig. 1 (a) and (b), respectively,                   the difference in gas velocity, Vg, and the volumetric
+demonstrates that both gas and liquid superficial               flux of the mixture, Vm. The local drift velocity is
+velocities influence the distribution of void fraction          expressed as:
+along the pipe cross-section. Thus, it seems
+important to consider the effect of flow conditions in           Vgr = Vg - Vm                                   (1)
+the distribution parameter.
+                                                                By including the mean area cross-section "< >" and
+                                                                the mean weighted void fraction area "<< >>":
+               aylor                        aylor                          1
+               ubble                        ubble                <f>=        ∫ f dA                              (2)
+                                                                           A f
+                           i uid plug
+                                          i uid film
+                                                                                     1
+                                                                                          α f dA
+ a   lug configuration
+                                                                            < αf >   A ∫f
+                                                                 ≪f≫=              =                             (3)
+                                                                            < αf >    1
+                                                                                           α dA
+      aylor                             aylor                                        A ∫f
+      ubble                             ubble
+                   ispersed
+                                                                The average of equation (1) over a whole flow
+                  bubbles i uid slug    i uid film
+                                                                channel yields the following unidimensional drift
+                                                                flow model:
+     lug configuration
+ Fig. 1. Examples of (a) plug and (b) slug flows.                Vg = C0 Vm + Vgr                                (4)
+                                                                The gas velocity, Vg, is given by Eq. (5).
+                                                                          Vsg
+In horizontal configuration, the intermittent flow is            Vg =                                            (5)
+                                                                           α
+traditionally divided into two different sub-regimes
+namely plug and slug flows, (Kong et al. 2018a),                where Vsg is the superficial gas velocity and α is the
+(Arabi et al. 2020a), (Arabi et al. 2021), (Thaker and          average void fraction.
+
+
+
+                                                         1501
+A. Zeghloul and A. Al-Sarkhi / JAFM, Vol. 16, No. 7, pp. 1499-1510, 2023.
+
+The volumetric flow of the mixture, or mixture                   2.3 Distribution   Parameter                 of     the
+velocity, Vm, is the sum of the gas and liquid                       Horizontally Oriented Pipe
+superficial velocities (Eq. (6)).
+                                                                 In order to consider the influence of the inertial force,
+ Vm = Vsg + Vsl                                 (6)              Ishii (Ishii 1977) proposed the following equation of
+                                                                 the distribution parameter.
+By combining Eq. (4) and (5), a global drift flow
+model equation for predicting the void fraction                                      ρg
+becomes:                                                          C0 = C∞ - (C∞ - 1)√                              (8)
+                                                                                      ρl
+
+          Vsg                                                    where C∞ is an asymptotic value of the distribution
+ α=                                             (7)
+      C0 Vm + Vgr                                                parameter, ρg and ρl are the gas and liquid densities.
+                                                                 However, the shape of the Eq. (8) ensures that the
+Considering Eq. (7) for calculating the void fraction,           distribution parameter approximates unity when the
+both distribution parameter, C0, and the drift velocity          density ratio is close to 1. By combining Eq. (4) and
+Vgr are needed. However, such parameters are not                 (8) with the assumption of the drift velocity Vgr = 0,
+always attainable. some authors such as Zuber and                the asymptotic value of the distribution parameter is
+Findley (1965), Hibiki and Ishii (2001), Rassame and             expressed as:
+Hibiki (2018) suggested an alternative approach to
+estimate these two parameters by taking into account                       Vg ρg
+the linear relationship between Vm and Vg as stated                          -√
+                                                                           Vm ρl
+in the Eq. (4). The distribution parameter and the
+                                                                  C∞ =                                             (9)
+drift velocity represent the slope and y-intercept of                         ρg
+Vm and Vg plot, respectively. Nevertheless, a                              1-√
+                                                                               ρl
+calculation of the uncertainty must be involved in
+this method where both the distribution parameter
+and the drift velocity are calculated. The accuracy of           The main challenge raised in Eq. (9) is the prediction
+one parameter, e.g., C0, has a direct impact on the              of the gas velocity, which is directly dependent on
+second, e.g., Vgr. If the measurements are made                  the void fraction (Eq. (5)). Thus, an appropriate
+under a wide test conditions range of gas and liquid             prediction of the asymptotic value of the distribution
+superficial velocities, i.e., more than one two-phase            parameter is required to resolve the issue.
+flow regime, it is hard to accurately estimate the
+distribution parameter and the drift velocity using Vm                3.    EXPERIMENTAL    DATABASE                     IN
+and Vg plot. Therefore, any attempt to model the                            HORIZONTAL TWO-PHASE FLOW
+distribution parameter and the drift velocity should
+take into consideration the nature of the flow pattern.          Similar to the work of Rassame and Hibiki (2018),
+                                                                 this study will be performed using a collected
+                                                                 database from the open literature to be unbiased. The
+                                                                 detail of 367 void fraction measurements collected
+2.3 Existing Gas-liquid two-phase drift-flux                     from six data sources are summarised in Table 2. To
+    models in The Literature                                     the best knowledge of the authors, the latter (367)
+The available drift-flow correlations that have been             data are those obtained during studies of horizontal
+developed so far to estimate the void fraction will be           intermittent gas-liquid flows by distinguishing
+presented/discussed in this section. Table 1 presents            between the plug and slug flows. The fluid system,
+the available drift-flux correlations to predict the             pipe diameter, number of data and the range of
+void fraction. As discussed in section 1, some models            superficial gas and liquid velocities are also given in
+are also independent with respect to the flow                    Table 2. These experiments were carried out using
+conditions and/or phases properties. Additionally,               air-water, air-light refined machine oil, air-high
+the drift-flux correlations can be flow regime                   viscosity oil (up to 600 cP) and air-silicone oil. The
+dependant or independent. It’s worth noting that only            pipe diameters ranges of the database are between 19
+independent flow regime or the ones developed for                and 152.4 mm, and thus referring to Lu et al. (2018),
+the intermittent flow correlations, such as that of              includes moderate (10 mm < ID < 100 mm) and large
+Silva et al. (2011), are reported in the table. In               (ID>100 mm) diameter pipes.
+addition to the later, the correlations of França and            The collected experimental database are plotted on
+Lahey (1992), Lamari (2001), Rassame and Hibiki                  the flow pattern map of Mandhane et al. (1974),
+(2018) and Kong et al. (2018b) are the only ones that            which is considered as one of the reference flow
+have been developed from an experimental database                pattern maps for horizontal gas-liquid two-phase
+collected only using horizontal pipes. We can remark             flow. Figure 2 (a) displays test conditions for the air-
+that the models of Ishii (1977), Clark and Flemmer               water mixture. From this figure, one can observe that
+(1986), Gomez et al. (2000) and Choi et al. (2012)               all data are located in intermittent flow, i.e., the plug
+consider the void fraction as input parameter in the             and the slug flow. We can also report that, the
+equation of the drift flux parameters, which                     transition line of the flow pattern map between plug
+complicates the calculation of the void fraction                 and slug flow matches well with the experimental
+(Dong et al. 2020).                                              data for both flow configurations. Figure 2 (b)
+                                                                 depicts the test conditions for the air-silicone oil and
+                                                                 air-oil mixtures, which corresponds to the data of
+
+
+                                                          1502
+A. Zeghloul and A. Al-Sarkhi / JAFM, Vol. 16, No. 7, pp. 1499-1510, 2023.
+
+ Table 1 Existing drift-flux correlations developed for (vertical / horizontal) gas-liquid two-phase flow
+  Author                            C0                                                  Vgr
+  Zuber                                                                                          0.25
+    and                                                                                 gσ∆ρ
+                                   1.2                                            1.53 ( 2 )
+ Findlay                                                                                 ρl
+  (1965)
+ Rouhani                                                0.25
+                                                g ρ2                                             0.25
+    and        For: α ≤ 0.1       1 + 0.2(1-x) ( 2l )                                   gσ∆ρ
+                                                 G                                1.18 ( 2 )
+ Axelsson                                                                                ρl
+  (1970)       For: α > 0.1             1 + 0.2(1-x)
+  Mattar
+    and
+                                   1.3                                                  0.7
+ Gregory
+  (1974)
+ Greskovi
+  ch and
+                                    1                                       0.671√g (sin θ)0.263
+  Cooper
+  (1975)
+                                             ρg                                                           0.25
+   Ishii                                                                                 gσ∆ρ
+                     1.2 - 0.2 (1-exp(-18α))√                             (C0 -1)Vm +√2 ( 2 )
+  (1977)                                      ρl                                          ρl
+ Clark and                                                                                       0.25
+                                                                                        gσ∆ρ
+ Flemmer                  0.934 (1+1.42α)                                         1.53 ( 2 )
+  (1986)                                                                                 ρl
+  Beattie
+    and                                                                                  g ∆ρ
+                  1+ 2.6 √(0.0716 Re-0.237 +0.008)                                  0.35√
+ Sugawara                                                                                 ρl
+  (1986)
+                                                                                           ρg -0.157 gσ∆ρ 0.25
+                                                                       *             0.03 ( )         ( 2 )
+                                                               For:    h ≤ 40              ρl            ρl
+                                                                                                  -0.562
+                                                                                              Nul
+ Kataoka                                 ρg
+ and Ishii                     1.2 - 0.2√                                                  ρg -0.157 gσ∆ρ 0.25
+                                          ρl                           *             0.92 ( )         ( 2 )
+  (1987)                                                       For:    h > 40              ρl            ρl
+                                                                                              Nul -0.562
+                                                                                                                        0.5
+                                                                  *
+                                                                  h=    h ⁄√σ⁄g∆ρ          Nul = μl ⁄(ρl σ√σ⁄g∆ρ)
+ França
+    and                       1.0 (Plug flow)                                     0.16 (Plug flow)
+  Lahey                       1.2 (Slug flow)                                     -0.20 (Slug flow)
+  (1992)
+ Mishima
+    and
+                      1.2 + 0.51 exp(-0.691 )                                            0
+  Hibiki
+  (1996)
+                                                                                         0.25
+ Gomez et                                                                        gσ∆ρ
+                                   1.15                                   1.53 (        ) √1-α sin θ
+ al. (2000)                                                                        ρl 2
+ Lamari                    0.98 (Plug flow)                                     0.068 (Plug flow)
+  (2001)                   1.06 (Slug flow)                                     0.991 (Slug flow)
+ Woldese                             ρg 0.1                                                               0.25
+                                                                                  g σ (1+ cos θ )∆ρ
+  mayat                     Vsl ρl
+                                    ( )
+                                                Vsg                       2.9 [                    ]
+    and                [1+ ( )                ]( )                                      ρl 2
+  Ghajar                    Vsg                 Vm                                              ( atm)
+  (2007)                                                                        1.22(1+ sin θ)     sys
+
+
+ Da Silva
+   et al.                          1.18                                                 0.34
+  (2011)
+                               2
+                                       +
+                          1+(Re⁄1000)2                                                                   0.25
+  Choi et                                                                                 gσ∆ρ
+                    1.2 - 0.2√ρg ⁄ρl (1-exp(-18α))                     0.024 cos θ +1.60 ( 2 )                  sin θ
+ al. (2012)                                                                                ρl
+                              1+(1000⁄Re)2
+
+
+
+
+                                                      1503
+A. Zeghloul and A. Al-Sarkhi / JAFM, Vol. 16, No. 7, pp. 1499-1510, 2023.
+
+                              +
+                       (Vsg )
+               For 0 ≤        < 0.9
+                       (Vm )+
+                                            +       1.50
+                                (Vsg )
+               0.8exp {0.815 (           )                 }-
+                               0.9(Vm )+
+                                                +    1.50
+                                       (Vsg )                      ρg
+  Rassame      [0.8exp {0.815 (                 )           } -1] √
+     and                              0.9(Vm )+                     ρl
+                                                                                                      0
+   Hibiki                         +
+   (2018)                 (Vsg )
+               For 0.9 ≤          ≤1
+                          (Vm )+
+                                       +
+                           -8.08(Vsg )
+                         (               + 9.08) +
+                              (Vm )+
+                                            +
+                                  (Vsg )       ρg
+                           8.08 (       +
+                                          -1) √
+                                  (Vm )         ρl
+  Kong et                    0.77 (Plug flow)
+                                                                                              0.16 (Plug flow)
+    al.                      0.98 (Slug flow)
+                                                                                              -0.10 (Slug flow)
+  (2018b)
+
+
+                                       Table 2 Details of the collected database.
+
+            Authors                     Fluids                  Pipe ID [mm]            Vsl [m/s]         Vsg [m/s]    No of Data
+    Kokal and Stanislav
+                                        Air-Oil              25.8, 51.2 and 76.3        0.03-3.0       0.05-15.30          224
+           (1989)
+  França and Lahey (1992)             Air-Water                       19                0.20-1.49       0.13-2.35           37
+    Gokcal et al. (2008)                Oil-Air                      50.8               0.01-1.75         0-20              32
+                                          Air-
+  Abdulkadir et al. (2018)                                               67             0.05-0.38       0.05-0.94           32
+                                      Silicone oil
+       Kong (2018)                    Air-Water                 38.1 and 101.6           1.0-4.0        0.25-5.23           13
+     Kong et al. (2018b)              Air-Water                      50.8                2.0-3.0        0.12-2.38           07
+     Dang et al. (2018)               Air-Water                      152                0.69-2.97       0.06-9.22           54
+
+
+Abdulkadir et al. (2018) and Kokal and Stanislav                          figure that the experimental data in the intermittent
+(1989), respectively. The air-silicone oil data, i.e.,                    flow regime, i.e., plug and slug flow, are in clear
+the "empty" and "solid" symbols, do not match with                        linear alignment with some degree of deviation. This
+the "plug" and "slug" regions respectively. The air                       finding was already reported for horizontal
+and oil data are well bounded by the transition line                      intermittent flow in the literature (França and Lahey
+of plug/slug and do not meet with the transition line                     (1992), Abdulkadir et al. (2018), Rassame and
+of stratified/slug. In fact, unlike the air-water                         Hibiki (2018), Kong et al. (2018b), Arabi et al.
+combination, a slower superficial velocity for the                        (2021). For each flow pattern, a linear fit, with the
+liquid is needed to establish the intermittent flow,                      assumption of Vgr = 0, was applied to the whole
+i.e., the plug and the slug flow, in the air-oil                          database. The obtained fit equation is also depicted
+combination. Such a performance has been reported                         in Fig. 3 (a) and (b).
+by Andritsos et al. (1989).
+                                                                          The correlation proposed by Lamari (2001) denoted
+                                                                          by a dashed red line appears to underestimate the
+     4.   RESULTS AND DISCUSSION                                          experimental data for the plug flow (Fig. 3 (a)) and
+                                                                          fairly well predicted of the slug flow data (Fig. 3 (b)).
+4.1 Assessment of the drift flow formulation                              While the correlation of França and Lahey (1992) fits
+    in horizontal configuration                                           well with the experimental data for the slug flow
+                                                                          (Fig. 3 (b)) and underestimates the data points for the
+In this section, the concept introduced by Zuber and                      plug flow (Fig. 3 (a)). Comparatively to existing
+Findley (1965) that is expressed in Eq. (4) has been                      ones, it appears clearly that the correlation of
+assessed in order to investigate the relation between                     Rassame and Hibiki (2018) is the one that shows the
+the gas velocity and the volumetric flux of the                           best prediction. The latter correlation turned out to be
+mixture, also to confirm the assumption of the                            identical to the obtained fits for the slug flow and
+negligible value of drift velocity, Vgr, in horizontal                    slightly different to the proposed correlation for plug
+intermittent two-phase flow.                                              flow. A great dispersion of the data is observed on
+The collected database is represented using the Vg-                       both sides of the two proposed linear fit equations.
+Vm plane in Fig. 3. Following the recommendation                          This behaviour can be explained by the fact that
+of Arabi et al. (2021), we have represented the data                      the gathered data were acquired for various fluid
+of plug and slug flow separately. It appears from the
+
+
+                                                                  1504
+A. Zeghloul and A. Al-Sarkhi / JAFM, Vol. 16, No. 7, pp. 1499-1510, 2023.
+
+                                                                             10
+                                                                                                           Dispersed u            le
+
+
+
+
+                                          i uid superficial velocity m/s
+                                                                                                                                                       lu
+                                                                                                                                                       lu
+                                                                                 1
+                                                                                                                                                              ong (38.1mm)
+                                                                                                                        lu
+                                                                                                  lu                                                          ong (101.6mm)
+                                                                                                                                                              ong et al. (50.8mm)
+                                                                                                                                              nnular
+                                                                            0.1                                                                               ang et al. (152mm)
+                                                                                                                                                             Fran a and ahey (19mm)
+                                                                                                 tratified                             av
+
+
+                                                                           0.01
+                                                                                     0.1                       1                       10
+                                                                                                Gas superficial velocity m/s
+               (a)
+                                                                           10
+                                                                                                       Dispersed u           le
+
+
+
+
+                     i uid superficial velocity m/s
+                                                                                                                                                     lu
+                                                                                       lu                                                            lu
+                                                                            1
+                                                                                                                                                          Abdul adir et al. (67mm)
+                                                                                                                                                            o al and tanislav (25.8mm)
+                                                                                                                             lu                             o al and tanislav (51.2mm)
+                                                                                                                                            nnular
+                                                                           0.1                                                                              o al and tanislav (76.3mm)
+                                                                                                                                                          Go cal (50.8mm)
+                                                                                                                                  av
+                                                                                                  tratified
+                                                            0.01
+                                                                0.03                                 0.3                3                   30
+                                                                                            Gas superficial velocity (m/s)
+               (b)
+ Fig. 2. Experimental test conditions of the collected data, plotted in the flow maps of Mandhane et al.
+                 (1974). (a) air-water mixture. (b) air-silicone oil and air-oil mixtures.
+
+                                                           5
+                                                                                                                                                       ong (2018)
+                                                                                                                                                       ong et al. (2018b)
+
+
+
+
+              Gas velocity, Vg m/s
+                                                           4                                                                                          Abdul adir et al. (2018)
+                                                                                                                                                        ang et al. (2019)
+                                                           3                                                                                          Fran a and ahey (1992)
+                                                                                                                                                       o al and tanislav (1987)
+                                                                                                                                                      Go cal et al. (2008)
+                                                           2                                                                                           ong et al. (2018b)
+                                                                                                                                                      Vg=1.25
+                                                                                                                                                      V         Vm
+                                                           1                                                                                          Fran a and ahey (1992) corr.
+                                                                                                                                                       amari (2001) corr.
+                                                                                                                                                      Rassame and Hibi i (2018) corr.
+                                                           0
+                                                                            0               1              2        3              4             5
+                                                            Volumetric flux of the mixture, V m m/s
+               (a) Plug flow
+
+                                                                           20
+                                                                                                                                                      ong (2018)
+                                                                                                                                                      ong et al. (2018b)
+
+
+
+
+                      Gas velocity, Vg m/s
+                                                                                                                                                     Abdul adir et al. (2018)
+                                                                           15                                                                          ang et al. (2019)
+                                                                                                                                                     Fran a and ahey (1992)
+                                                                                                                                                      o al and tanislav (1987)
+                                                                           10                                                                        Go cal et al. (2008)
+                                                                                                                                                      ong et al. (2018b)
+                                                                                                                                                     Vg=1.20 Vmm
+                                                                                                                                                     V
+                                                                            5                                                                        Fran a and ahey (1992) corr.
+                                                                                                                                                      amari (2001) corr.
+                                                                                                                                                     Rassame and Hibi i (2018) corr.
+                                                                            0
+                                                                                 0               5             10            15               20
+                                                                           Volumetric flux of the mixture, V m m/s
+                      (b) Slug flow
+                             Fig. 3. Gas velocity versus volumetric flux of the mixture.
+
+
+                                                                                                                              1505
+A. Zeghloul and A. Al-Sarkhi / JAFM, Vol. 16, No. 7, pp. 1499-1510, 2023.
+
+mixture, different diameters and important range of              the plug and slugs flow which reflects by the
+phase superficial velocities, as mentioned in Table 2.           existence of strong fluctuations in void fraction time
+                                                                 series Abdulkadir et al. (2016). Thus, it seems
+These reported findings, using the experimental                  challenging to hold the asymptotic distribution
+(collected) database, allow us to confirm firstly that           parameter to a well-defined shape. However, the best
+the assumption to consider the drift velocity equal to           fitting curve of the asymptotic distribution parameter
+zero is valid. In addition, they highlight the need to           was found to have a power-liked behavior. The two
+develop a drift flux model which considers the                   fitting curves for the plug and the slug, depicted in
+physical properties of the two fluids, the pipe                  the figures, behave in the same way. Nevertheless, a
+diameter as well the flow parameters.                            small difference has been detected between both of
+                                                                 them, which confirm the statement made in section
+                                                                 3.1. Thus, to achieve the maximum accuracy, both
+4.2 Development of New Drift-Flux                                two-phase flow configurations i.e., plug and slug
+    Correlation for Horizontal Flow                              flow should be correlated independently.
+This section emphases on the prediction of the                   By considering Ishii's approach and all previous
+distributed parameter, C0. The latter is directly                insights, the asymptotic distribution parameter, C∞,
+related to the asymptotic value of the distribution              must be a function of (Vsg)+/(Vm)+ and ReTP. The
+parameter, C∞, in Eq. (8). The first step is to perform          Froude number of the mixture, FrM, is not included,
+a thorough analysis of the variables that is
+influencing the asymptotic value of the distribution
+parameter, C∞. This analysis allows to evaluate the              -                                                       ong (2018)
+                                                                                                         7               ong et al. (2018b)
+effect of the inertial and viscous forces of the two-
+
+
+
+
+                                                                 Asymptotic distribution parameter, C
+                                                                                                                        Abdul adir et al. (2018)              lug curve fitting
+                                                                                                                         ang et al. (2018)
+phase flow. These two parameters are directly set in                                                                    Fran a and ahey (1992)
+                                                                                                                                                              lug curve fitting
+
+the two-phase mixture Froude number and the two-                                                                         o al and tanislav (1989)
+                                                                                                                        Go cal et al. (2008)
+phase Reynolds number which are defined as                                                                        lu
+                                                                                                                  lu
+follows.
+          Vm       ρl
+ Frm =         √ρ - ρ
+          √g     l    g                         (10)
+          Vm ρl                                                                                         0.7
+ Re   =                                                                                                       0             0.2            0.4        0.6             0.8               1
+            μl                                  (11)                                                                                Ratio of (V G)+ / (V )+ -
+
+On the other hand, the ratio of the dimensionless                (a)
+                                                                 -
+superficial velocity of the gas to the dimensionless                                                      7
+                                                                                                                         ong (2018)
+                                                                                                                         ong et al. (2018b)
+
+
+
+
+                                                                 Asymptotic distribution parameter, C
+volumetric flux of the mixture should also be                                                                           Abdul adir et al. (2018)               lug curve fitting
+                                                                                                                         ang et al. (2018)                     lug curve fitting
+evaluated, as suggested by Hibiki and Ishii (2003b).                                                                    Fran a and ahey (1992)
+                                               +                                                                         o al and tanislav (1989)
+The dimensionless superficial velocity, (Vsg ) , of                                                                     Go cal et al. (2008)
+
+the gas and the volumetric flux of the mixture,                                                                    lu
+                                                                                                                   lu
+(Vm )+ , are expressed by Eq. (12) and (13),
+respectively.
+      +          Vsg
+ (Vsg ) =              0.25
+             ∆ρ g σ
+            ( 2 )                              (12)                                                     0.7
+               ρl                                                                                             0.1                            1                            10
+                                                                                                                              ixture Froude number, Fr         -
+                 Vm
+ (Vm )+ =              0.25
+                                                                 (b)
+             ∆ρ g σ                            (13)              -
+            ( 2 )                                                                                                                                            ong (2018)
+               ρl                                                                                             7                                              ong et al. (2018b)
+
+
+
+
+                                                                 Asymptotic distribution parameter, C
+                                                                                                                             lug curve fitting              Abdul adir et al. (2018)
+                                                                                                                             lug curve fitting               ang et al. (2018)
+where Δρ is the difference between liquid and gas                                                                                                           Fran a and ahey (1992)
+densities, g is the gravitational acceleration and σ is                                                                                                      o al and tanislav (1989)
+                                                                                                                                                            Go cal et al. (2008)
+the surface tension.                                                                                                                                lu
+                                                                                                                                                    lu
+Figure 4 (a) to (c), illustrates the plots of the
+asymptotic distribution parameter, C∞, as function of
+the velocity ratio (Vsg)+/(Vm)+, the mixture Froude
+number, Frm , and the two-phase Reynolds number,
+Re , respectively. The open symbols indicate the                                                         0.7
+                                                                                                                                           103
+experimental data for plug flow while solid symbols                                                               10        1002
+                                                                                                                            10            1000      10000
+                                                                                                                                                     104           100000
+                                                                                                                                                                     105          1000000
+                                                                                                                                                                                    106
+
+
+are those representing slug flow. It can be seen from                                                                     wo-phase Reynolds number, Re                -
+this figure that the asymptotic distribution parameter           (c)
+data tends to increase slightly with the velocity ratio                                 Fig. 4. Relationship between the asymptotic
+(Vsg)+/(Vm)+, and slightly decreases with the mixture                                 distribution parameter C∞, and (a) the ratio of
+Froude number, Frm , and the two-phase Reynolds                                        (Vsg)+/(Vm)+; (b) the mixture Froude number
+number, Re . The scattering of the experimental                                         FrM; (c) Two-phase Reynolds number ReTP.
+data can be explained by the intermittent nature of
+
+
+                                                          1506
+A. Zeghloul and A. Al-Sarkhi / JAFM, Vol. 16, No. 7, pp. 1499-1510, 2023.
+
+                  2                                                                                                                                                          0.07546
+                                                                       + 20                                                                        Vsg μl
+                                                                                                          C∞ = 3.08479 [                                                 ]                          (16)
+-                1.8
+                                                                               - 20
+                                                                                                                                                  V2m               ρl
+                 1.6
+
+
+
+xperimental, C
+                                                                                                    For Slug flow:
+                 1.4
+                                                                                                                                                                             0.097585
+                                                                                                                                                   Vsg μl
+                 1.2                                                                                      C∞ = 3.69352 [                                                 ]                          (17)
+                                                                                                                                                  V2m               ρl
+                  1
+                                                                                                    After substituting the correlation of the asymptotic
+                 0.8
+                       0.8   1          1.2         1.4         1.6          1.8       2
+                                                                                                    distribution parameter C∞ into equation (Eq. (8)),
+                                         Calculated, C           -                                  The resulting formulation of the distribution
+(a) Plug flow                                                                                       parameter for a gas-liquid two-phase flow in a
+                 1.8                                                                                horizontal pipe becomes:
+                                                                      + 20
+-                1.6                                                                                For Plug flow:
+                                                                        - 20                                                                                        0.075
+                                                                                                                                                 Vsg μl
+
+
+xperimental, C
+                 1.4
+                                                                                                          C0 = 3.084 [                                          ]              -
+                                                                                                                                             V2m         ρl
+                 1.2
+                                                                                                                                                                                                        (18)
+                                                                                                                                                            0.075            ρg
+                  1                                                                                                                        Vsg μl
+                                                                                                          [(3.084 [                                     ]            ) - 1] √
+                 0.8                                                                                                                       V2m     ρl                         ρl
+                       0.8       1            1.2         1.4           1.6            1.8
+                                        Calculated, C            -                                  For Slug flow:
+(b) Slug flow                                                                                                                                                       0.097
+  Fig. 5. Comparison between the experimental                                                                                                    Vsg μl
+                                                                                                          C0 = 3.693 [                                          ]              -
+    and the new correlation of the asymptotic                                                                                                V2m         ρl
+            distribution parameter C∞.
+                                                                                                                                                                0.097            ρg                     (19)
+                                                                                                                                            Vsg μl
+as inertial forces are already considered in the Ishii's                                                      [(3.693 [                                     ]            ) - 1] √
+                                                                                                                                           V2m      ρl                            ρl
+equation, as it appears in Eq. (8), and the
+gravitational forces are negligible in the case of                                                  Figure 7 shows the ratio between the theoretical and
+horizontal configuration. In addition, the power law                                                experimental void fraction as a function of the
+form of the proposed correlation must be followed                                                   experimental void fraction data. The circular and
+for the distinct flow regimes plug and slug.                                                        triangular symbols indicate the ratio calculated by
+The following correlations of the asymptotic                                                        the new proposed correlation and the ones of
+distribution parameter, C∞, are proposed.                                                           Rassame and Hibiki, respectively. As can be seen in
+                                                                                                    this figure, both correlations show comparable
+For Plug flow:                                                                                      predictive ability for a small range of the void
+                                          +                0.07546                                  fraction, i.e., 0.4 ≤ αExp. ≤ 0.6. However, the
+                      (Vsg ) ⁄(Vm )+                                                                intermittent plug-and-slug flow is the most persistent
+       C∞ = 3.08479 [                ]
+                           Re                                                         (14)          configuration in the horizontal two-phase flow, and
+                                                                                                    the spectrum of the void fraction corresponding to
+For Slug flow:                                                                                      this kind of flow configuration exceeds the
+                                                           0.097585                                 boundaries of 0.4 ≤ αExp. ≤ 0.6. Furthermore, the
+                                          +
+                                     (Vsg ) ⁄(Vm )+                                                 majority of the data derived from the new correlation
+       C∞ = 3.69352 [                               ]                                               are located around unity and within the dashed lines
+                                          Re                                          (15)
+                                                                                                    that indicates a deviation of ± 20 %. The correlation
+Figure 5 depicts a comparison between the
+experimental asymptotic distribution parameter, C∞,
+which was derived by using Eq. (9), and the                                                                                      10
+                                                                                                                                                                New Correlation
+
+
+
+                                                                                                     heoretical / xperimental
+calculated asymptotic distribution parameter
+                                                                                                                                                                Rassame and Hibi i (2018) correlation
+obtained from the new correlations (Eq. (14) and
+(15)). In Fig. 5 (a) and (b), the experimental data for
+                                                                                                                                                                                                    +20
+plug and slug flow shows good agreement with the
+                                                                                                                                  1
+
+
+                                                                                                    void fraction, he. / xp. -
+proposed new correlations. Most of data are found to
+                                                                                                                                                                                                    -20
+be near to the diagonal line (45° line), i.e., within the
+dashed lines which denotes a deviation of ± 20 %.
+Thus showing, the accuracy of the proposed
+correlation.                                                                                                                     0.1
+                                                                                                                                       0           0.2                   0.4            0.6   0.8          1
+By combining equations (11), (12) and (13) into                                                                                                  xperimental void fraction,                         -
+                                                                                                                                                                                              xp.
+equations (14) and (15). The equations of asymptotic                                                     Fig. 6. Descriptive performance of the new
+distribution parameter, C∞, can be arranged as                                                         proposed correlation and those of Rassame and
+follows:                                                                                                   Hibiki (2018) correlation for all tested
+For Plug flow:                                                                                                       experimental data.
+
+
+                                                                                             1507
+ A. Zeghloul and A. Al-Sarkhi / JAFM, Vol. 16, No. 7, pp. 1499-1510, 2023.
+
+ of Rassame and Hibiki (2018) tends to overestimate                an admissible deviation was attained for Silva et al.
+ and underestimate the measurement in the ranges of                (2011) correlation, which is consistent with the close
+ 0.4 > αExp and αExp > 0.6, respectively. This plot                results for (RMS) and (ABE) to the proposed
+ demonstrates that the proposed correlation surpasses              correlation. While the remaining tested correlations
+ the model of Rassame and Hibiki (2018).                           were found to be less effective in the prediction of
+                                                                   the experimental data. Furthermore, the most tested
+ It is worthy to remember that the correlation of                  correlations from the literature as well as the newly
+ Rassame and Hibiki considers only the ratio                       proposed correlation seems to work more accurately
+ (Vsg)+/(Vm)+ as a variable parameter and ignores the              in slug flow than in plug flow, as confirmed by the
+ impact of the two-phase flow pattern.                             obtained (RMS) and (ABE) results corresponding to
+ Additionally, the prediction given by the proposed                the two flow configurations. It is worth noticing that
+ correlation is also compared with those obtained by               less than 25% deviation error may be regarded as
+ various existing void fraction drift-flux models. In              very interesting values for two-phase flow.
+ order to perform this comparison, two statistical
+                                                                        5.    CONCLUSION
+ parameters were used. The first is the root mean
+ square (RMS) and the second is the mean relative
+ absolute error (ABE), which are calculated through                New proposed model for the distribution parameters
+ the equations (20) to (22) (Zeghloul et al. 2020).                in drift flux model was developed and showed a
+                                                                   superior accuracy over all available models in
+                      n
+                                                                   literature. The model was developed in a notion to
+                                                 2
+             1    αi,calculated -αi,measured                       improve the model of Rassame and Hibiki (2018)
+  R        =√ ∑ [                            ]                     and turned to have the best accuracy when it is
+             n           αi,measured                 (20)
+                  i=0                                              compared to 9 available models for the distribution
+                                                                   parameters. The proposed model was validated using
+          |αi,calculated - αi,measured |                           unbiased experimental data bank from different
+   xi =
+                   αi,measured                       (21)          resources available in literature covering wide range
+                  n
+                                                                   of pipe diameter up to 152 mm and viscosity up to
+            1                                                      600 cP. The main conclusions of the present work
+  A        = ∑ xi                                    (22)          can be summarized in the following two points:
+            n
+                 i=0
+
+ Where αi,calculated is the predicted void fraction, αi,               1)    The drift flux model is reformulated for
+ measured is the experimental void fraction and n, is the                    plug and slug flow separately for the first
+ number of data.                                                             time in literature.
+                                                                       2)    The asymptotic distribution parameter, C∞,
+ Table 3 provides a synthesis of the computed RMS                            which is very crucial for the drift flux model
+ and ABE results for various void fraction drift flux                        was found to be a function of two
+ correlations (i.e. Mattar and Gregory (1974),                               dimensionless        parameters,       namely,
+ Greskovich and Cooper (1975), França and Lahey                              (Vsg)+/(Vm)+ and ReTP and the flow regime
+ (1992), Mishima and Hibiki (1996), Lamari (2001),                           (whether plug or slug).
+ Woldesemayat and Ghajar (2007), Da Silva et al.                       3)    The proposed model showed more accurate
+ (2011), Rassame and Hibiki (2018) and Kong et al.                           results than all available models.
+ (2018b)) as well the developed one. For each model,                   4)    The new model results in a mean relative
+ the two statistical parameters are given for each flow                      absolute error for all data bank of around
+ pattern data as well for the whole database.                                16% while the closest model (Da Silva et al.
+ Considering Table 3, it appears that the new                                (2011)) gives around 19% and the most
+ proposed drift flux correlation yields to the smallest                      recent models of Rassame and Hibiki
+ deviations, which match the total (RMS) and (ABE)                           (2018) and Kong et al. (2018b) give 33%
+ values of 23% and 16%, respectively. Furthermore,                           and 50%, respectively.
+
+
+
+
+                            Table 3 Values of RMS and ABE (%) for two-phase Void fraction.
+                                                   Plug                     Slug                           Total
+                  Author
+                                              RMS       ABE            RMS       ABE             RMS             ABE
+       New correlation*                     23.87%* 16.49%*          28.63%* 16.91%*           26.30%*         16.70%*
+  Mattar and Gregory (1974)                  41.90%    38.22%         29.61%    26.01%          36.43%          32.27%
+ Greskovich and Cooper (1975)                59.74%    49.09%         59.46%    43.00%          59.83%          46.12%
+   França and Lahey (1992)                   31.04%    24.80%         56.43%    35.25%          45.23%          29.89%
+  Mishima and Hibiki (1996)                  31.87%    25.84%         30.72%    27.86%          31.31%          26.83%
+        Lamari (2001)                        44.70%    38.57%         30.67%    23.49%          38.50%          31.22%
+Woldesemayat and Ghajar (2007)               36.08%    24.27%         45.66%    25.18%          41.03%          24.72%
+     Da Silva et al. (2011)                  27.39%    18.88%         31.15%    20.24%          29.28%          19.54%
+  Rassame and Hibiki (2018)                  50.15%    39.37%         42.58%    27.16%          46.62%          33.42%
+      Kong et al. (2018b)                    51.41%    47.34%         73.14%    54.75%          62.94%          50.95%
+
+
+
+                                                            1508
+A. Zeghloul and A. Al-Sarkhi / JAFM, Vol. 16, No. 7, pp. 1499-1510, 2023.
+
+                                                                       Experimental study of vertical and horizontal
+REFERENCES                                                             two-phase pipe flow through double 90 degree
+                                                                       elbows. International Journal of Heat and
+Abdulkadir, M., V. Hernandez-Perez, C. A. Kwatia,                      Mass Transfer 120, 861-869.
+     and B. J. Azzopardi (2018). Interrogating flow
+     development and phase distribution in vertical              Dong, C., S. Rassame, L. Zhang and T. Hibiki
+     and horizontal pipes using advanced                              (2020). Drift-flux correlation for upward two-
+     instrumentation.    Chemical      Engineering                    phase flow in inclined pipes. Chemical
+     Science 186, 152-167.                                            Engineering Science 213.
+
+Abdulkadir, M., V. Hernandez-Perez, I. S. Lowndes,               Fabre, J. and A. Liné 1992. Modeling of Two-Phase
+     B. J. Azzopardi and E. Sam-Mbomah (2016).                          Slug Flow. Annual Review of Fluid Mechanics
+     Experimental study of the hydrodynamic                             24, 21-46.
+     behaviour of slug flow in a horizontal pipe.                França, F. and R. T. Lahey (1992). The use of drift-
+     Chemical Engineering Science 156, 147-161.                        flux techniques for the analysis of horizontal
+Andritsos, N., L. Williams and T. J. Hanratty (1989).                  two-phase flows. International Journal of
+      Effect of liquid viscosity on the stratified-slug                Multiphase Flow 18, 787-801.
+      transition in horizontal pipe flow.                        Ghajar, A. J. (2020). Two-Phase Gas-Liquid Flow in
+      International Journal of Multiphase Flow 15,                     Pipes With Different Orientations, 1st ed. ed.
+      877-892.                                                         Springer, Switzerland.
+Arabi, A., A. Azzi, R. Kadi, A. Al-Sarkhi and B.                 Gokcal, B., Q. Wang, H. Q. Zhang and C. Sarica
+      Hewakandamby         (2021).       Empirical                    (2008). Effects of high oil viscosity on oil/gas
+      modelization of intermittent gas/liquid flow                    flow behavior in horizontal pipes. SPE
+      hydrodynamic parameters: the importance of                      Projects, Facilities & Construction 3, 1-11.
+      distinguishing between plug and slug flows.
+      SPE Production & Operations 36, 703-720.                   Gomez, L. E., O. Shoham, Z. Schmidt, R. N. Chokshi
+                                                                      and T. Northug (2000). Unified mechanistic
+Arabi, A., Y. Salhi, Y. Zenati, E. K. Si-Ahmed and                    model for steady-state two-phase flow:
+      J. Legrand (2020a). On gas-liquid intermittent                  horizontal to vertical upward flow. SPE
+      flow in a horizontal pipe: Influence of sub-                    Journal 5, 339-350.
+      regime on slug frequency. Chemical
+      Engineering Science 211.                                   Greskovich, E. J. and W. T. Cooper (1975).
+                                                                       Correlation and prediction of gas-liquid
+Arabi, A., K. Ragui, Y. Salhi and A. Filali (2020b).                   holdups in inclined upflows. AIChE Journal
+      Slug frequency for a gas-liquid plug flow:                       21, 1189-1192.
+      Review and development of a new correlation.
+      International Communications in Heat and                   Hibiki, T. (2019). One-dimensional drift-flux
+      Mass Transfer 118.                                               correlations for two-phase flow in medium-
+                                                                       size      channels.    Experimental    and
+Beattie, D. R. H. and S. Sugawara (1986). Steam-                       Computational Multiphase Flow 1, 85-100.
+       water void fraction for vertical upflow in a
+       73.9 mm pipe. International Journal of                    Hibiki, T. and M. Ishii (2001). Distribution
+       Multiphase Flow 12, 641-653.                                    parameter and drift velocity of drift-flux
+                                                                       model in bubbly flow. International Journal
+Chexal, B., G. Lellouche, J. Horowitz and J. Healzer                   of Heat and Mass Transfer 45, 707-721.
+     (1992). A void fraction correlation for
+     generalized applications. Progress in Nuclear               Hibiki, T. and M. Ishii (2003a). One-dimensional
+     Energy 27, 255-295.                                               drift-flux model and constitutive equations for
+                                                                       relative motion between phases in various
+Choi, J., E. Pereyra, C. Sarica, C. Park and J. M.                     two-phase flow regimes. International
+      Kang (2012). An efficient drift-flux closure                     Journal of Heat and Mass Transfer 46, 4935-
+      relationship to estimate liquid holdups of gas-                  4948.
+      liquid two-phase flow in pipes. Energies 5,
+      5294-5306.                                                 Hibiki, T. and M. Ishii (2003b). One-dimensional
+                                                                       drift–flux model for two-phase flow in a large
+Clark, N. and R. Flemmer (1986). The effect of                         diameter pipe. International Journal of Heat
+      varying gas voidage distributions on average                     and Mass Transfer 46, 1773-1790.
+      holdup in vertical bubble flow. International
+      Journal of Multiphase Flow 12, 299-302.                    Ishii, M. (1977). One-Dimensional Drift-Flux Model
+                                                                        and Constitutive Equations for Relative
+Da Silva, M. J., U. H. De Helmholtz, Z. Dresden-                        Motion Between Phases in Various Two-
+      Rossendorf, C. E. F. Do Amaral and R. E. M.                       Phase Flow Regimes. Argonne Natl. Lab., IL,
+      Morales (2011). Experimental investigation                        USA.
+      of horizontal gas-liquid slug flow by means of
+      wire-mesh sensor. Journal of the Brazilian                 Kataoka, I. and M. Ishii (1987). Drift flux model for
+      Society of Mechanical Sciences and                               large diameter pipe and new correlation for
+      Engineering 33, 234-242.                                         pool void fraction. International Journal of
+                                                                       Heat and Mass Transfer 30, 1927-1939.
+Dang, Z., Z. Yang, X. Yang and M. Ishii (2018).
+
+
+                                                          1509
+A. Zeghloul and A. Al-Sarkhi / JAFM, Vol. 16, No. 7, pp. 1499-1510, 2023.
+
+Kokal, S. L. and J. F. Stanislav (1989). An                         phase flow in horizontal pipes: Past, presents,
+      experimental study of two-phase flow in                       and future directives. Chemical Engineering
+      slightly inclined pipes—I. Flow patterns.                     Science 238, 116611.
+      Chemical Engineering Science 44, 665-679.
+                                                              Rassame, S. and T. Hibiki (2018). Drift-flux
+Kong, R. (2018). Characterization of Horizontal Air-               correlation for gas-liquid two-phase flow in a
+      Water Two-Phase Flow in Different Pipe                       horizontal pipe. International Journal of Heat
+      Sizes. Open Access Diss. Purdue University,                  and Mass Transfer 69, 33-42.
+      West Lafayette, Indiana.
+                                                              Rouhani, S. Z. and E. Axelsson (1970). Calculation
+Kong, R., A. Rau, S. Kim, S. Bajorek, K. Tien and                  of void volume fraction in the subcooled and
+      C. Hoxie (2018a). Experimental study of                      quality boiling regions. International Journal
+      horizontal air-water plug-to-slug transition                 of Heat and Mass Transfer 13, 383-393.
+      flow in different pipe sizes. International
+      Journal of Heat and Mass Transfer 123, 1005-            Sassi, P., G. Fernández, Y. Stiriba and J. Pallarès
+      1020.                                                          (2022). Effect of solid particles on the slug
+                                                                     frequency, bubble velocity and bubble length
+Kong, R., Q. Zhu, S. Kim, M. Ishii, S. Bajorek, K.                   of intermittent gas–liquid two-phase flows in
+      Tien and C. Hoxie (2018b). Void fraction                       horizontal pipelines. International Journal of
+      prediction and one-dimensional drift-flux                      Multiphase Flow 149, 103985.
+      analysis for horizontal two-phase flow in
+      different pipe sizes. Experimental Thermal              Shi, H., J. A. Holmes, L. J. Durlofsky, K. Aziz, L. R.
+      and Fluid Science 99, 433-445.                                Diaz Teran Ortegon, B. Alkaya and G. Oddie
+                                                                    (2005). Drift-flux modeling of two-phase flow
+Lamari, M. L. (2001). An Experimental Investigation                 in wellbores. SPE Journal 10, 24-33.
+     of Two-Phase (Air-Water) Flow Regimes in a
+     Horizontal Tube at Near Atmospheric                      Thaker, J. and J. Banerjee (2015). Characterization
+     Conditions. The Ottawa-Carleton Institute for                 of two-phase slug flow sub-regimes using
+     Mechanical and Aerospace Engineering,                         flow visualization. Journal of Petroleum
+     Ottawa, Ontario.                                              Science and Engineering 135, 561-576.
+
+Lu, C., R. Kong, S. Qiao, J. Larimer, S. Kim, S.              Thaker, J. and J. Banerjee (2017). Transition of plug
+      Bajorek, K. Tien and C. Hoxie (2018).                        to slug flow and associated fluid dynamics.
+      Frictional pressure drop analysis for                        International Journal of Multiphase Flow 91,
+      horizontal and vertical air-water two-phase                  63-75.
+      flows in different pipe sizes. Nuclear                  Woldesemayat, M. A. and A. J. Ghajar (2007).
+      Engineering and Design 332, 147-161.                         Comparison of void fraction correlations for
+Mandhane, J. M., G. A. Gregory and K. Aziz (1974).                 different flow patterns in horizontal and
+     A flow pattern map for gas—liquid flow in                     upward inclined pipes. International Journal
+     horizontal pipes. International Journal of                    of Multiphase Flow 4, 347-370.
+     Multiphase Flow 1, 537-553.                              Zeghloul, A., A. Messilem, N. Ghendour, A. Al-
+Mattar, L. and G. A Gregory, (1974). Air-Oil Slug                   sarkhi, A. Azzi and A. Hasan (2020).
+      Flow in An Upward-Inclined Pipe - 1: Slug                     Theoretical     study    and     experimental
+      Velocity, Holdup and Pressure Gradient.                       measurement of the gas liquid two-phase flow
+      Journal of Canadian Petroleum Technology                      through a vertical Venturi meter. Proceedings
+      13, 69-76.                                                    of the Institution of Mechanical Engineers,
+                                                                    Part C: Journal of Mechanical Engineering
+Mishima, K. and T. Hibiki (1996). Some                              Science 0, 1-18.
+     characteristics of air-water two-phase flow in
+     small diameter vertical tubes. International             Zuber, N. and J. A. Findlay (1965). Average
+     Journal of Multiphase Flow 22, 703-712.                      volumetric concentration in two-phase flow
+                                                                  systems. ASME Journal of Heat and Mass
+Mohmmed, A. O., H. H. Al-Kayiem and A. B.                         Transfer 87, 453-468.
+    Osman (2021). Investigations on the slug two-
+
+
+
+
+                                                       1510
+

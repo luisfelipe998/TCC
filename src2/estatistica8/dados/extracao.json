@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "ensaios": 25,
+  "pares": 300,
+  "condicoes": 3,
+  "snapshots_sha256": 479,
+  "tempo_s": 22.615546041022753,
+  "max_auto_error": 1.0547118733938987e-14,
+  "max_cross_error": 1.7763568394002505e-15
+}

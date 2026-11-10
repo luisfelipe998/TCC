@@ -1,0 +1,98 @@
+{
+  "status": "passed",
+  "scope_count": 26,
+  "excluded": [
+    "m03q01_001",
+    "m03q80_001",
+    "m04q05_001",
+    "m05q05_002",
+    "m07q10_001"
+  ],
+  "scenarios": [
+    "saturated_inlet",
+    "subcool_1K",
+    "subcool_2K",
+    "subcool_5K",
+    "subcool_10K",
+    "inlet_quality_0.01",
+    "inlet_quality_0.05",
+    "Tsat_25C",
+    "Tsat_29C",
+    "net_heat_90pct",
+    "recorded_flow_mean",
+    "recorded_flow_median",
+    "recorded_flow_trimmed10"
+  ],
+  "models": [
+    "homogeneous",
+    "rouhani_axelsson",
+    "xu_fang_literal_2021",
+    "xu_fang_fluids"
+  ],
+  "experiment_rows": 1352,
+  "numeric_cells_compared": 19632,
+  "summary_cells_compared": 1200,
+  "narrative_numeric_cells_compared": 441,
+  "reviewed_narrative_sha256": {
+    "findings/conditional_model_summary.md": "e4587d64c09b4552d4cfc919957c35306575bfa362a452431bf3c4e966fa9bb5",
+    "findings/velocity_results.md": "46710aef2573c84bad30d6aa950665ef57f60980b75d035336fab94a389ef55e",
+    "findings/method_comparison.md": "f2af85a7f9d2ab8f859d666ce60097155311e62cd7141f310d392cd8c0f3512c"
+  },
+  "max_absolute_differences": {
+    "G_kg_m2_s": 0.0,
+    "q_kw_m2": 0.0,
+    "temperature_c": 0.0,
+    "rho_l": 0.0,
+    "rho_g": 1.7763568394002505e-15,
+    "inlet_equilibrium_quality": 8.239936510889834e-17,
+    "quality_increment": 2.220446049250313e-16,
+    "x_eq": 2.7755575615628914e-16,
+    "Fr_lo": 1.1368683772161603e-13,
+    "Jg": 1.7763568394002505e-14,
+    "Jl": 4.440892098500626e-16,
+    "alpha": 2.942091015256665e-15,
+    "ug": 2.1316282072803006e-14,
+    "ul": 2.4868995751603507e-13,
+    "slip": 2.042810365310288e-14
+  },
+  "mass_flow_from_phase_fields_max_residual_kg_s": 1.6263032587282567e-18,
+  "full_enthalpy_balance_max_residual_W": 4.263256414560601e-14,
+  "legacy_RA_max_absolute_difference": 1.7763568394002505e-14,
+  "hybrid_rows": 78,
+  "hybrid_supported_rows": 75,
+  "inverse_RA_max_void_fraction_residual": 8.039291454764452e-12,
+  "invalid_two_phase_acquisitions_by_scenario": {
+    "subcool_1K": 4,
+    "subcool_2K": 4,
+    "subcool_5K": 7,
+    "subcool_10K": 12
+  },
+  "recorded_G_Jg_invariance_max_difference": {
+    "mean": 1.4210854715202004e-14,
+    "median": 1.865174681370263e-14,
+    "trimmed10": 1.0658141036401503e-14
+  },
+  "secondary_source": {
+    "file": "literature/extracts/fluids_two_phase_voidage.py",
+    "sha256": "a8bb8fb71f37e66b59f2e210034181e899e5d23708d6adbd67b2fded83d8db9a",
+    "functions": [
+      "homogeneous",
+      "Xu_Fang_voidage"
+    ],
+    "gravity_explicitly_overridden_m_s2": 9.81,
+    "evaluation": "Only the two inspected AST function definitions were executed; full source not imported"
+  },
+  "reviewed_input_sha256": {
+    "results/thermodynamic_sensitivity.csv": "c9c80560886825b5a64d5076034cd63ec0b35b577257738b9c8f0e871dc55172",
+    "results/conditional_velocities_per_run.csv": "34766b7f9f63a283e2493bd7e5d7fb8f875cf856242dec1654ed5ccd36d33cd9",
+    "results/recorded_flow_conditional_velocities_per_run.csv": "8c9274264fbbec18acae8008c49b7d4699e172b8c6ee5111770eb2201301caa2",
+    "results/conditional_velocities_by_pattern.csv": "6388032aab2fb24fb7527c0ef7c04b2d96b266eae04bf0ceb496088d95913520",
+    "results/recorded_flow_conditional_velocities_by_pattern.csv": "ceb5240eca2e3787e3651a5bfdb1d8c43444048268a0accfc4e257f4b4cfe4cb",
+    "results/sensitivity_relative_to_baseline.csv": "2c620000f6ffbc4f07c9dff38c04419e95edb975af515b85273fa59c6c433b7c",
+    "results/closure_spread.csv": "bd7e5f65b50e739e1378afb0f1a02107de6460d3629f072a5b8bc1edb3ea1828",
+    "results/image_alpha_diagnostics.csv": "28b29da5d6b3dae690203e11aa75c7cb60f4d36fb73a7bee4819ee9977752a5f",
+    "scripts/model_comparison.py": "5e02e8a3558cd51bee36aba753870444f25b39d279d63eabe0584965b6e749a7"
+  },
+  "minor_metadata_notes": [],
+  "limitation": "Arithmetic and model implementation verified; no independent experimental phase-velocity accuracy identified"
+}

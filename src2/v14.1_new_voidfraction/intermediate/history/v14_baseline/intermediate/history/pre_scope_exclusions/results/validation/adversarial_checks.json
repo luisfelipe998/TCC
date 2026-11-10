@@ -1,0 +1,376 @@
+{
+  "estimator_sha256": "0d1ddf2d1222fe6677d52733626ea5205f23b2a8edf3e3b39be5d750fa82d70c",
+  "basis": "Saved src2 panoramas only; visual anchors selected independently of threshold tuning",
+  "anchors": [
+    {
+      "run": "m07q01_001",
+      "x_interval": [
+        180,
+        250
+      ],
+      "y_interval": [
+        24,
+        65
+      ],
+      "visual_anchor": "liquid, held-out run",
+      "gas_mask_fraction": 0.0,
+      "gas_fraction_at_gates_060_065_070_075_080": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "accepted_center_fraction": 0.0
+    },
+    {
+      "run": "m07q01_001",
+      "x_interval": [
+        580,
+        650
+      ],
+      "y_interval": [
+        24,
+        65
+      ],
+      "visual_anchor": "liquid, held-out run",
+      "gas_mask_fraction": 0.0,
+      "gas_fraction_at_gates_060_065_070_075_080": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "accepted_center_fraction": 0.0
+    },
+    {
+      "run": "m06q01_001",
+      "x_interval": [
+        455,
+        515
+      ],
+      "y_interval": [
+        24,
+        65
+      ],
+      "visual_anchor": "liquid plug gap",
+      "gas_mask_fraction": 0.0,
+      "gas_fraction_at_gates_060_065_070_075_080": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "accepted_center_fraction": 0.0
+    },
+    {
+      "run": "m06q01_001",
+      "x_interval": [
+        150,
+        300
+      ],
+      "y_interval": [
+        30,
+        55
+      ],
+      "visual_anchor": "gas body",
+      "gas_mask_fraction": 1.0,
+      "gas_fraction_at_gates_060_065_070_075_080": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "accepted_center_fraction": 1.0
+    },
+    {
+      "run": "m05q05_002",
+      "x_interval": [
+        505,
+        540
+      ],
+      "y_interval": [
+        24,
+        65
+      ],
+      "visual_anchor": "liquid, held-out run",
+      "gas_mask_fraction": 0.0,
+      "gas_fraction_at_gates_060_065_070_075_080": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "accepted_center_fraction": 0.0
+    },
+    {
+      "run": "m05q05_002",
+      "x_interval": [
+        580,
+        610
+      ],
+      "y_interval": [
+        30,
+        55
+      ],
+      "visual_anchor": "gas body, held-out run",
+      "gas_mask_fraction": 1.0,
+      "gas_fraction_at_gates_060_065_070_075_080": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "accepted_center_fraction": 1.0
+    }
+  ],
+  "manual_liquid_reference_sensitivity": [
+    {
+      "run": "m07q01_001",
+      "conditional_alpha_by_reference": {
+        "automatic_three_plug_reference": 0.001835996355863905,
+        "manual_liquid_m06q01_001_455_515": 0.001854129436910894,
+        "manual_liquid_m05q05_002_505_540": 0.0018399383300045549,
+        "manual_liquid_m07q01_001_180_250": 0.0018673569501384071
+      }
+    },
+    {
+      "run": "m05q05_002",
+      "conditional_alpha_by_reference": {
+        "automatic_three_plug_reference": 0.3078460211874846,
+        "manual_liquid_m06q01_001_455_515": 0.31056836659275683,
+        "manual_liquid_m05q05_002_505_540": 0.3084417344173441,
+        "manual_liquid_m07q01_001_180_250": 0.3123344419807834
+      }
+    },
+    {
+      "run": "m06q01_001",
+      "conditional_alpha_by_reference": {
+        "automatic_three_plug_reference": 0.4655481818699952,
+        "manual_liquid_m06q01_001_455_515": 0.46743271066655273,
+        "manual_liquid_m05q05_002_505_540": 0.4652474281154712,
+        "manual_liquid_m07q01_001_180_250": 0.47090215439856375
+      }
+    },
+    {
+      "run": "m06q05_001",
+      "conditional_alpha_by_reference": {
+        "automatic_three_plug_reference": 0.4756132371616512,
+        "manual_liquid_m06q01_001_455_515": 0.4782846410684474,
+        "manual_liquid_m05q05_002_505_540": 0.47845265613629556,
+        "manual_liquid_m07q01_001_180_250": 0.4816795085826805
+      }
+    },
+    {
+      "run": "m06q20_001",
+      "conditional_alpha_by_reference": {
+        "automatic_three_plug_reference": 0.6499715695384752,
+        "manual_liquid_m06q01_001_455_515": 0.6524206546749858,
+        "manual_liquid_m05q05_002_505_540": 0.6429836497190141,
+        "manual_liquid_m07q01_001_180_250": 0.6563375315279438
+      }
+    },
+    {
+      "run": "m06q80_001",
+      "conditional_alpha_by_reference": {
+        "automatic_three_plug_reference": 0.7526505938030181,
+        "manual_liquid_m06q01_001_455_515": 0.753952034407834,
+        "manual_liquid_m05q05_002_505_540": 0.7490841890644999,
+        "manual_liquid_m07q01_001_180_250": 0.7557151829032355
+      }
+    },
+    {
+      "run": "m03q20_001",
+      "conditional_alpha_by_reference": {
+        "automatic_three_plug_reference": 0.780092147262302,
+        "manual_liquid_m06q01_001_455_515": 0.7800946507406926,
+        "manual_liquid_m05q05_002_505_540": 0.7801149915026168,
+        "manual_liquid_m07q01_001_180_250": 0.7801211900188244
+      }
+    }
+  ],
+  "crop_sensitivity": [
+    {
+      "run": "m07q01_001",
+      "crop_variants": {
+        "(15, 75)": {
+          "conditional_alpha": 0.0019185150145415045,
+          "maximum_column_alpha": 0.10027777777777777,
+          "analytic_crop_ceiling": 1.0
+        },
+        "(16, 73)": {
+          "conditional_alpha": 0.0019039735099337747,
+          "maximum_column_alpha": 0.10027777777777777,
+          "analytic_crop_ceiling": 0.9025
+        },
+        "(18, 71)": {
+          "conditional_alpha": 0.001835996355863905,
+          "maximum_column_alpha": 0.10027777777777777,
+          "analytic_crop_ceiling": 0.7802777777777777
+        },
+        "(20, 70)": {
+          "conditional_alpha": 0.0016983776586425592,
+          "maximum_column_alpha": 0.09,
+          "analytic_crop_ceiling": 0.6944444444444444
+        }
+      }
+    },
+    {
+      "run": "m05q05_002",
+      "crop_variants": {
+        "(15, 75)": {
+          "conditional_alpha": 0.31167227149544224,
+          "maximum_column_alpha": 0.8402777777777778,
+          "analytic_crop_ceiling": 1.0
+        },
+        "(16, 73)": {
+          "conditional_alpha": 0.30995257452574526,
+          "maximum_column_alpha": 0.81,
+          "analytic_crop_ceiling": 0.9025
+        },
+        "(18, 71)": {
+          "conditional_alpha": 0.3078460211874846,
+          "maximum_column_alpha": 0.7802777777777777,
+          "analytic_crop_ceiling": 0.7802777777777777
+        },
+        "(20, 70)": {
+          "conditional_alpha": 0.2993932618871643,
+          "maximum_column_alpha": 0.6944444444444444,
+          "analytic_crop_ceiling": 0.6944444444444444
+        }
+      }
+    },
+    {
+      "run": "m06q01_001",
+      "crop_variants": {
+        "(15, 75)": {
+          "conditional_alpha": 0.4776081117665498,
+          "maximum_column_alpha": 0.8711111111111111,
+          "analytic_crop_ceiling": 1.0
+        },
+        "(16, 73)": {
+          "conditional_alpha": 0.47751414180274143,
+          "maximum_column_alpha": 0.8711111111111111,
+          "analytic_crop_ceiling": 0.9025
+        },
+        "(18, 71)": {
+          "conditional_alpha": 0.4655481818699952,
+          "maximum_column_alpha": 0.7802777777777777,
+          "analytic_crop_ceiling": 0.7802777777777777
+        },
+        "(20, 70)": {
+          "conditional_alpha": 0.44258873357841044,
+          "maximum_column_alpha": 0.6944444444444444,
+          "analytic_crop_ceiling": 0.6944444444444444
+        }
+      }
+    },
+    {
+      "run": "m06q05_001",
+      "crop_variants": {
+        "(15, 75)": {
+          "conditional_alpha": 0.4833242726481458,
+          "maximum_column_alpha": 1.0,
+          "analytic_crop_ceiling": 1.0
+        },
+        "(16, 73)": {
+          "conditional_alpha": 0.48298806415250495,
+          "maximum_column_alpha": 0.9025,
+          "analytic_crop_ceiling": 0.9025
+        },
+        "(18, 71)": {
+          "conditional_alpha": 0.4756132371616512,
+          "maximum_column_alpha": 0.7802777777777777,
+          "analytic_crop_ceiling": 0.7802777777777777
+        },
+        "(20, 70)": {
+          "conditional_alpha": 0.4583548792146455,
+          "maximum_column_alpha": 0.6944444444444444,
+          "analytic_crop_ceiling": 0.6944444444444444
+        }
+      }
+    },
+    {
+      "run": "m06q20_001",
+      "crop_variants": {
+        "(15, 75)": {
+          "conditional_alpha": 0.6858445340501792,
+          "maximum_column_alpha": 0.9669444444444445,
+          "analytic_crop_ceiling": 1.0
+        },
+        "(16, 73)": {
+          "conditional_alpha": 0.6793442187707421,
+          "maximum_column_alpha": 0.9025,
+          "analytic_crop_ceiling": 0.9025
+        },
+        "(18, 71)": {
+          "conditional_alpha": 0.6499715695384752,
+          "maximum_column_alpha": 0.7802777777777777,
+          "analytic_crop_ceiling": 0.7802777777777777
+        },
+        "(20, 70)": {
+          "conditional_alpha": 0.6126298453471394,
+          "maximum_column_alpha": 0.6944444444444444,
+          "analytic_crop_ceiling": 0.6944444444444444
+        }
+      }
+    },
+    {
+      "run": "m06q80_001",
+      "crop_variants": {
+        "(15, 75)": {
+          "conditional_alpha": 0.8582433848260262,
+          "maximum_column_alpha": 0.9669444444444445,
+          "analytic_crop_ceiling": 1.0
+        },
+        "(16, 73)": {
+          "conditional_alpha": 0.8191730511652827,
+          "maximum_column_alpha": 0.9025,
+          "analytic_crop_ceiling": 0.9025
+        },
+        "(18, 71)": {
+          "conditional_alpha": 0.7526505938030181,
+          "maximum_column_alpha": 0.7802777777777777,
+          "analytic_crop_ceiling": 0.7802777777777777
+        },
+        "(20, 70)": {
+          "conditional_alpha": 0.6830769116290146,
+          "maximum_column_alpha": 0.6944444444444444,
+          "analytic_crop_ceiling": 0.6944444444444444
+        }
+      }
+    },
+    {
+      "run": "m03q20_001",
+      "crop_variants": {
+        "(15, 75)": {
+          "conditional_alpha": 0.9800868032988144,
+          "maximum_column_alpha": 1.0,
+          "analytic_crop_ceiling": 1.0
+        },
+        "(16, 73)": {
+          "conditional_alpha": 0.8974583917077091,
+          "maximum_column_alpha": 0.9025,
+          "analytic_crop_ceiling": 0.9025
+        },
+        "(18, 71)": {
+          "conditional_alpha": 0.780092147262302,
+          "maximum_column_alpha": 0.7802777777777777,
+          "analytic_crop_ceiling": 0.7802777777777777
+        },
+        "(20, 70)": {
+          "conditional_alpha": 0.6944372950878867,
+          "maximum_column_alpha": 0.6944444444444444,
+          "analytic_crop_ceiling": 0.6944444444444444
+        }
+      }
+    }
+  ],
+  "disconnected_paired_acceptances_in_slug_gap_x300_560": [],
+  "limits": "Selected phase interiors are not an unbiased segmentation test set or volumetric calibration; perturbation intervals are not confidence intervals"
+}

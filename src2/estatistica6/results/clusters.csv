@@ -1,0 +1,394 @@
+family,metric,scope,condition,run,pattern,cluster
+wps,pearson_residual,churn_annular,prefix,m03q05_001,churn,0
+wps,pearson_residual,churn_annular,prefix,m04q10_001,churn,1
+wps,pearson_residual,churn_annular,prefix,m04q20_001,churn,1
+wps,pearson_residual,churn_annular,prefix,m05q10_001,churn,1
+wps,pearson_residual,churn_annular,prefix,m05q20_001,churn,1
+wps,pearson_residual,churn_annular,prefix,m05q40_001,churn,0
+wps,pearson_residual,churn_annular,prefix,m06q10_001,churn,0
+wps,pearson_residual,churn_annular,prefix,m06q20_001,churn,0
+wps,pearson_residual,churn_annular,prefix,m07q20_001,churn,1
+wps,pearson_residual,churn_annular,prefix,m07q40_001,churn,0
+wps,pearson_residual,churn_annular,prefix,m03q10_001,wavy annular,0
+wps,pearson_residual,churn_annular,prefix,m03q20_001,wavy annular,0
+wps,pearson_residual,churn_annular,prefix,m03q40_001,wavy annular,0
+wps,pearson_residual,churn_annular,prefix,m04q40_001,wavy annular,0
+wps,pearson_residual,churn_annular,prefix,m04q80_001,wavy annular,0
+wps,pearson_residual,churn_annular,prefix,m05q80_001,wavy annular,0
+wps,pearson_residual,churn_annular,prefix,m06q40_001,wavy annular,0
+wps,pearson_residual,churn_annular,prefix,m06q80_001,wavy annular,0
+wps,pearson_residual,churn_annular,prefix,m07q80_001,wavy annular,0
+wps,pearson_residual,churn_annular,center,m03q05_001,churn,0
+wps,pearson_residual,churn_annular,center,m04q10_001,churn,0
+wps,pearson_residual,churn_annular,center,m04q20_001,churn,0
+wps,pearson_residual,churn_annular,center,m05q10_001,churn,0
+wps,pearson_residual,churn_annular,center,m05q20_001,churn,0
+wps,pearson_residual,churn_annular,center,m05q40_001,churn,0
+wps,pearson_residual,churn_annular,center,m06q10_001,churn,0
+wps,pearson_residual,churn_annular,center,m06q20_001,churn,0
+wps,pearson_residual,churn_annular,center,m07q20_001,churn,1
+wps,pearson_residual,churn_annular,center,m07q40_001,churn,0
+wps,pearson_residual,churn_annular,center,m03q10_001,wavy annular,0
+wps,pearson_residual,churn_annular,center,m03q20_001,wavy annular,0
+wps,pearson_residual,churn_annular,center,m03q40_001,wavy annular,0
+wps,pearson_residual,churn_annular,center,m04q40_001,wavy annular,0
+wps,pearson_residual,churn_annular,center,m04q80_001,wavy annular,0
+wps,pearson_residual,churn_annular,center,m05q80_001,wavy annular,0
+wps,pearson_residual,churn_annular,center,m06q40_001,wavy annular,0
+wps,pearson_residual,churn_annular,center,m06q80_001,wavy annular,0
+wps,pearson_residual,churn_annular,center,m07q80_001,wavy annular,0
+wps,pearson_residual,churn_annular,suffix,m03q05_001,churn,0
+wps,pearson_residual,churn_annular,suffix,m04q10_001,churn,0
+wps,pearson_residual,churn_annular,suffix,m04q20_001,churn,0
+wps,pearson_residual,churn_annular,suffix,m05q10_001,churn,0
+wps,pearson_residual,churn_annular,suffix,m05q20_001,churn,0
+wps,pearson_residual,churn_annular,suffix,m05q40_001,churn,0
+wps,pearson_residual,churn_annular,suffix,m06q10_001,churn,0
+wps,pearson_residual,churn_annular,suffix,m06q20_001,churn,0
+wps,pearson_residual,churn_annular,suffix,m07q20_001,churn,0
+wps,pearson_residual,churn_annular,suffix,m07q40_001,churn,0
+wps,pearson_residual,churn_annular,suffix,m03q10_001,wavy annular,0
+wps,pearson_residual,churn_annular,suffix,m03q20_001,wavy annular,0
+wps,pearson_residual,churn_annular,suffix,m03q40_001,wavy annular,1
+wps,pearson_residual,churn_annular,suffix,m04q40_001,wavy annular,0
+wps,pearson_residual,churn_annular,suffix,m04q80_001,wavy annular,0
+wps,pearson_residual,churn_annular,suffix,m05q80_001,wavy annular,0
+wps,pearson_residual,churn_annular,suffix,m06q40_001,wavy annular,0
+wps,pearson_residual,churn_annular,suffix,m06q80_001,wavy annular,0
+wps,pearson_residual,churn_annular,suffix,m07q80_001,wavy annular,0
+wps,hellinger,churn_annular,prefix,m03q05_001,churn,0
+wps,hellinger,churn_annular,prefix,m04q10_001,churn,0
+wps,hellinger,churn_annular,prefix,m04q20_001,churn,0
+wps,hellinger,churn_annular,prefix,m05q10_001,churn,0
+wps,hellinger,churn_annular,prefix,m05q20_001,churn,0
+wps,hellinger,churn_annular,prefix,m05q40_001,churn,0
+wps,hellinger,churn_annular,prefix,m06q10_001,churn,0
+wps,hellinger,churn_annular,prefix,m06q20_001,churn,0
+wps,hellinger,churn_annular,prefix,m07q20_001,churn,0
+wps,hellinger,churn_annular,prefix,m07q40_001,churn,0
+wps,hellinger,churn_annular,prefix,m03q10_001,wavy annular,0
+wps,hellinger,churn_annular,prefix,m03q20_001,wavy annular,0
+wps,hellinger,churn_annular,prefix,m03q40_001,wavy annular,1
+wps,hellinger,churn_annular,prefix,m04q40_001,wavy annular,0
+wps,hellinger,churn_annular,prefix,m04q80_001,wavy annular,0
+wps,hellinger,churn_annular,prefix,m05q80_001,wavy annular,0
+wps,hellinger,churn_annular,prefix,m06q40_001,wavy annular,0
+wps,hellinger,churn_annular,prefix,m06q80_001,wavy annular,0
+wps,hellinger,churn_annular,prefix,m07q80_001,wavy annular,0
+wps,hellinger,churn_annular,center,m03q05_001,churn,0
+wps,hellinger,churn_annular,center,m04q10_001,churn,0
+wps,hellinger,churn_annular,center,m04q20_001,churn,0
+wps,hellinger,churn_annular,center,m05q10_001,churn,0
+wps,hellinger,churn_annular,center,m05q20_001,churn,0
+wps,hellinger,churn_annular,center,m05q40_001,churn,0
+wps,hellinger,churn_annular,center,m06q10_001,churn,0
+wps,hellinger,churn_annular,center,m06q20_001,churn,0
+wps,hellinger,churn_annular,center,m07q20_001,churn,0
+wps,hellinger,churn_annular,center,m07q40_001,churn,0
+wps,hellinger,churn_annular,center,m03q10_001,wavy annular,0
+wps,hellinger,churn_annular,center,m03q20_001,wavy annular,0
+wps,hellinger,churn_annular,center,m03q40_001,wavy annular,0
+wps,hellinger,churn_annular,center,m04q40_001,wavy annular,0
+wps,hellinger,churn_annular,center,m04q80_001,wavy annular,1
+wps,hellinger,churn_annular,center,m05q80_001,wavy annular,0
+wps,hellinger,churn_annular,center,m06q40_001,wavy annular,0
+wps,hellinger,churn_annular,center,m06q80_001,wavy annular,0
+wps,hellinger,churn_annular,center,m07q80_001,wavy annular,0
+wps,hellinger,churn_annular,suffix,m03q05_001,churn,0
+wps,hellinger,churn_annular,suffix,m04q10_001,churn,1
+wps,hellinger,churn_annular,suffix,m04q20_001,churn,0
+wps,hellinger,churn_annular,suffix,m05q10_001,churn,0
+wps,hellinger,churn_annular,suffix,m05q20_001,churn,0
+wps,hellinger,churn_annular,suffix,m05q40_001,churn,0
+wps,hellinger,churn_annular,suffix,m06q10_001,churn,0
+wps,hellinger,churn_annular,suffix,m06q20_001,churn,0
+wps,hellinger,churn_annular,suffix,m07q20_001,churn,0
+wps,hellinger,churn_annular,suffix,m07q40_001,churn,0
+wps,hellinger,churn_annular,suffix,m03q10_001,wavy annular,0
+wps,hellinger,churn_annular,suffix,m03q20_001,wavy annular,0
+wps,hellinger,churn_annular,suffix,m03q40_001,wavy annular,1
+wps,hellinger,churn_annular,suffix,m04q40_001,wavy annular,0
+wps,hellinger,churn_annular,suffix,m04q80_001,wavy annular,0
+wps,hellinger,churn_annular,suffix,m05q80_001,wavy annular,0
+wps,hellinger,churn_annular,suffix,m06q40_001,wavy annular,0
+wps,hellinger,churn_annular,suffix,m06q80_001,wavy annular,0
+wps,hellinger,churn_annular,suffix,m07q80_001,wavy annular,0
+wps,hellinger,plug_slug,prefix,m05q01_001,plug,0
+wps,hellinger,plug_slug,prefix,m06q01_001,plug,0
+wps,hellinger,plug_slug,prefix,m07q05_001,plug,1
+wps,hellinger,plug_slug,prefix,m04q01_001,slug,0
+wps,hellinger,plug_slug,prefix,m05q05_001,slug,0
+wps,hellinger,plug_slug,prefix,m06q05_001,slug,0
+wps,hellinger,plug_slug,center,m05q01_001,plug,0
+wps,hellinger,plug_slug,center,m06q01_001,plug,0
+wps,hellinger,plug_slug,center,m07q05_001,plug,0
+wps,hellinger,plug_slug,center,m04q01_001,slug,1
+wps,hellinger,plug_slug,center,m05q05_001,slug,0
+wps,hellinger,plug_slug,center,m06q05_001,slug,0
+wps,hellinger,plug_slug,suffix,m05q01_001,plug,0
+wps,hellinger,plug_slug,suffix,m06q01_001,plug,0
+wps,hellinger,plug_slug,suffix,m07q05_001,plug,0
+wps,hellinger,plug_slug,suffix,m04q01_001,slug,1
+wps,hellinger,plug_slug,suffix,m05q05_001,slug,0
+wps,hellinger,plug_slug,suffix,m06q05_001,slug,1
+wps,wasserstein,plug_slug,prefix,m05q01_001,plug,0
+wps,wasserstein,plug_slug,prefix,m06q01_001,plug,1
+wps,wasserstein,plug_slug,prefix,m07q05_001,plug,1
+wps,wasserstein,plug_slug,prefix,m04q01_001,slug,0
+wps,wasserstein,plug_slug,prefix,m05q05_001,slug,0
+wps,wasserstein,plug_slug,prefix,m06q05_001,slug,0
+wps,wasserstein,plug_slug,center,m05q01_001,plug,0
+wps,wasserstein,plug_slug,center,m06q01_001,plug,0
+wps,wasserstein,plug_slug,center,m07q05_001,plug,0
+wps,wasserstein,plug_slug,center,m04q01_001,slug,1
+wps,wasserstein,plug_slug,center,m05q05_001,slug,0
+wps,wasserstein,plug_slug,center,m06q05_001,slug,0
+wps,wasserstein,plug_slug,suffix,m05q01_001,plug,0
+wps,wasserstein,plug_slug,suffix,m06q01_001,plug,0
+wps,wasserstein,plug_slug,suffix,m07q05_001,plug,0
+wps,wasserstein,plug_slug,suffix,m04q01_001,slug,1
+wps,wasserstein,plug_slug,suffix,m05q05_001,slug,0
+wps,wasserstein,plug_slug,suffix,m06q05_001,slug,0
+wps,trio,churn_annular,prefix,m03q05_001,churn,0
+wps,trio,churn_annular,prefix,m04q10_001,churn,0
+wps,trio,churn_annular,prefix,m04q20_001,churn,0
+wps,trio,churn_annular,prefix,m05q10_001,churn,0
+wps,trio,churn_annular,prefix,m05q20_001,churn,0
+wps,trio,churn_annular,prefix,m05q40_001,churn,0
+wps,trio,churn_annular,prefix,m06q10_001,churn,0
+wps,trio,churn_annular,prefix,m06q20_001,churn,0
+wps,trio,churn_annular,prefix,m07q20_001,churn,0
+wps,trio,churn_annular,prefix,m07q40_001,churn,0
+wps,trio,churn_annular,prefix,m03q10_001,wavy annular,0
+wps,trio,churn_annular,prefix,m03q20_001,wavy annular,0
+wps,trio,churn_annular,prefix,m03q40_001,wavy annular,1
+wps,trio,churn_annular,prefix,m04q40_001,wavy annular,0
+wps,trio,churn_annular,prefix,m04q80_001,wavy annular,0
+wps,trio,churn_annular,prefix,m05q80_001,wavy annular,0
+wps,trio,churn_annular,prefix,m06q40_001,wavy annular,0
+wps,trio,churn_annular,prefix,m06q80_001,wavy annular,0
+wps,trio,churn_annular,prefix,m07q80_001,wavy annular,0
+wps,trio,churn_annular,center,m03q05_001,churn,0
+wps,trio,churn_annular,center,m04q10_001,churn,0
+wps,trio,churn_annular,center,m04q20_001,churn,0
+wps,trio,churn_annular,center,m05q10_001,churn,0
+wps,trio,churn_annular,center,m05q20_001,churn,0
+wps,trio,churn_annular,center,m05q40_001,churn,0
+wps,trio,churn_annular,center,m06q10_001,churn,1
+wps,trio,churn_annular,center,m06q20_001,churn,0
+wps,trio,churn_annular,center,m07q20_001,churn,1
+wps,trio,churn_annular,center,m07q40_001,churn,0
+wps,trio,churn_annular,center,m03q10_001,wavy annular,0
+wps,trio,churn_annular,center,m03q20_001,wavy annular,0
+wps,trio,churn_annular,center,m03q40_001,wavy annular,0
+wps,trio,churn_annular,center,m04q40_001,wavy annular,0
+wps,trio,churn_annular,center,m04q80_001,wavy annular,0
+wps,trio,churn_annular,center,m05q80_001,wavy annular,0
+wps,trio,churn_annular,center,m06q40_001,wavy annular,0
+wps,trio,churn_annular,center,m06q80_001,wavy annular,0
+wps,trio,churn_annular,center,m07q80_001,wavy annular,0
+wps,trio,churn_annular,suffix,m03q05_001,churn,0
+wps,trio,churn_annular,suffix,m04q10_001,churn,0
+wps,trio,churn_annular,suffix,m04q20_001,churn,0
+wps,trio,churn_annular,suffix,m05q10_001,churn,0
+wps,trio,churn_annular,suffix,m05q20_001,churn,0
+wps,trio,churn_annular,suffix,m05q40_001,churn,0
+wps,trio,churn_annular,suffix,m06q10_001,churn,1
+wps,trio,churn_annular,suffix,m06q20_001,churn,0
+wps,trio,churn_annular,suffix,m07q20_001,churn,0
+wps,trio,churn_annular,suffix,m07q40_001,churn,0
+wps,trio,churn_annular,suffix,m03q10_001,wavy annular,0
+wps,trio,churn_annular,suffix,m03q20_001,wavy annular,0
+wps,trio,churn_annular,suffix,m03q40_001,wavy annular,0
+wps,trio,churn_annular,suffix,m04q40_001,wavy annular,0
+wps,trio,churn_annular,suffix,m04q80_001,wavy annular,0
+wps,trio,churn_annular,suffix,m05q80_001,wavy annular,0
+wps,trio,churn_annular,suffix,m06q40_001,wavy annular,0
+wps,trio,churn_annular,suffix,m06q80_001,wavy annular,0
+wps,trio,churn_annular,suffix,m07q80_001,wavy annular,0
+wps,log_peak,churn_annular,prefix,m03q05_001,churn,0
+wps,log_peak,churn_annular,prefix,m04q10_001,churn,1
+wps,log_peak,churn_annular,prefix,m04q20_001,churn,0
+wps,log_peak,churn_annular,prefix,m05q10_001,churn,1
+wps,log_peak,churn_annular,prefix,m05q20_001,churn,1
+wps,log_peak,churn_annular,prefix,m05q40_001,churn,0
+wps,log_peak,churn_annular,prefix,m06q10_001,churn,1
+wps,log_peak,churn_annular,prefix,m06q20_001,churn,0
+wps,log_peak,churn_annular,prefix,m07q20_001,churn,1
+wps,log_peak,churn_annular,prefix,m07q40_001,churn,0
+wps,log_peak,churn_annular,prefix,m03q10_001,wavy annular,0
+wps,log_peak,churn_annular,prefix,m03q20_001,wavy annular,0
+wps,log_peak,churn_annular,prefix,m03q40_001,wavy annular,0
+wps,log_peak,churn_annular,prefix,m04q40_001,wavy annular,0
+wps,log_peak,churn_annular,prefix,m04q80_001,wavy annular,0
+wps,log_peak,churn_annular,prefix,m05q80_001,wavy annular,0
+wps,log_peak,churn_annular,prefix,m06q40_001,wavy annular,0
+wps,log_peak,churn_annular,prefix,m06q80_001,wavy annular,0
+wps,log_peak,churn_annular,prefix,m07q80_001,wavy annular,0
+wps,log_peak,churn_annular,center,m03q05_001,churn,0
+wps,log_peak,churn_annular,center,m04q10_001,churn,0
+wps,log_peak,churn_annular,center,m04q20_001,churn,0
+wps,log_peak,churn_annular,center,m05q10_001,churn,0
+wps,log_peak,churn_annular,center,m05q20_001,churn,0
+wps,log_peak,churn_annular,center,m05q40_001,churn,0
+wps,log_peak,churn_annular,center,m06q10_001,churn,1
+wps,log_peak,churn_annular,center,m06q20_001,churn,0
+wps,log_peak,churn_annular,center,m07q20_001,churn,1
+wps,log_peak,churn_annular,center,m07q40_001,churn,0
+wps,log_peak,churn_annular,center,m03q10_001,wavy annular,0
+wps,log_peak,churn_annular,center,m03q20_001,wavy annular,0
+wps,log_peak,churn_annular,center,m03q40_001,wavy annular,0
+wps,log_peak,churn_annular,center,m04q40_001,wavy annular,0
+wps,log_peak,churn_annular,center,m04q80_001,wavy annular,0
+wps,log_peak,churn_annular,center,m05q80_001,wavy annular,0
+wps,log_peak,churn_annular,center,m06q40_001,wavy annular,0
+wps,log_peak,churn_annular,center,m06q80_001,wavy annular,0
+wps,log_peak,churn_annular,center,m07q80_001,wavy annular,0
+wps,log_peak,churn_annular,suffix,m03q05_001,churn,0
+wps,log_peak,churn_annular,suffix,m04q10_001,churn,0
+wps,log_peak,churn_annular,suffix,m04q20_001,churn,0
+wps,log_peak,churn_annular,suffix,m05q10_001,churn,0
+wps,log_peak,churn_annular,suffix,m05q20_001,churn,0
+wps,log_peak,churn_annular,suffix,m05q40_001,churn,0
+wps,log_peak,churn_annular,suffix,m06q10_001,churn,1
+wps,log_peak,churn_annular,suffix,m06q20_001,churn,0
+wps,log_peak,churn_annular,suffix,m07q20_001,churn,0
+wps,log_peak,churn_annular,suffix,m07q40_001,churn,0
+wps,log_peak,churn_annular,suffix,m03q10_001,wavy annular,0
+wps,log_peak,churn_annular,suffix,m03q20_001,wavy annular,0
+wps,log_peak,churn_annular,suffix,m03q40_001,wavy annular,0
+wps,log_peak,churn_annular,suffix,m04q40_001,wavy annular,0
+wps,log_peak,churn_annular,suffix,m04q80_001,wavy annular,0
+wps,log_peak,churn_annular,suffix,m05q80_001,wavy annular,0
+wps,log_peak,churn_annular,suffix,m06q40_001,wavy annular,0
+wps,log_peak,churn_annular,suffix,m06q80_001,wavy annular,0
+wps,log_peak,churn_annular,suffix,m07q80_001,wavy annular,0
+wps,log_peak,plug_slug,prefix,m05q01_001,plug,0
+wps,log_peak,plug_slug,prefix,m06q01_001,plug,0
+wps,log_peak,plug_slug,prefix,m07q05_001,plug,0
+wps,log_peak,plug_slug,prefix,m04q01_001,slug,0
+wps,log_peak,plug_slug,prefix,m05q05_001,slug,0
+wps,log_peak,plug_slug,prefix,m06q05_001,slug,1
+wps,log_peak,plug_slug,center,m05q01_001,plug,0
+wps,log_peak,plug_slug,center,m06q01_001,plug,0
+wps,log_peak,plug_slug,center,m07q05_001,plug,0
+wps,log_peak,plug_slug,center,m04q01_001,slug,0
+wps,log_peak,plug_slug,center,m05q05_001,slug,0
+wps,log_peak,plug_slug,center,m06q05_001,slug,1
+wps,log_peak,plug_slug,suffix,m05q01_001,plug,0
+wps,log_peak,plug_slug,suffix,m06q01_001,plug,1
+wps,log_peak,plug_slug,suffix,m07q05_001,plug,0
+wps,log_peak,plug_slug,suffix,m04q01_001,slug,1
+wps,log_peak,plug_slug,suffix,m05q05_001,slug,1
+wps,log_peak,plug_slug,suffix,m06q05_001,slug,1
+wps,slope,plug_slug,prefix,m05q01_001,plug,0
+wps,slope,plug_slug,prefix,m06q01_001,plug,1
+wps,slope,plug_slug,prefix,m07q05_001,plug,1
+wps,slope,plug_slug,prefix,m04q01_001,slug,0
+wps,slope,plug_slug,prefix,m05q05_001,slug,0
+wps,slope,plug_slug,prefix,m06q05_001,slug,0
+wps,slope,plug_slug,center,m05q01_001,plug,0
+wps,slope,plug_slug,center,m06q01_001,plug,0
+wps,slope,plug_slug,center,m07q05_001,plug,0
+wps,slope,plug_slug,center,m04q01_001,slug,1
+wps,slope,plug_slug,center,m05q05_001,slug,0
+wps,slope,plug_slug,center,m06q05_001,slug,0
+wps,slope,plug_slug,suffix,m05q01_001,plug,0
+wps,slope,plug_slug,suffix,m06q01_001,plug,0
+wps,slope,plug_slug,suffix,m07q05_001,plug,0
+wps,slope,plug_slug,suffix,m04q01_001,slug,1
+wps,slope,plug_slug,suffix,m05q05_001,slug,0
+wps,slope,plug_slug,suffix,m06q05_001,slug,0
+wps,width,churn_annular,prefix,m03q05_001,churn,0
+wps,width,churn_annular,prefix,m04q10_001,churn,0
+wps,width,churn_annular,prefix,m04q20_001,churn,0
+wps,width,churn_annular,prefix,m05q10_001,churn,1
+wps,width,churn_annular,prefix,m05q20_001,churn,1
+wps,width,churn_annular,prefix,m05q40_001,churn,0
+wps,width,churn_annular,prefix,m06q10_001,churn,0
+wps,width,churn_annular,prefix,m06q20_001,churn,0
+wps,width,churn_annular,prefix,m07q20_001,churn,0
+wps,width,churn_annular,prefix,m07q40_001,churn,0
+wps,width,churn_annular,prefix,m03q10_001,wavy annular,0
+wps,width,churn_annular,prefix,m03q20_001,wavy annular,0
+wps,width,churn_annular,prefix,m03q40_001,wavy annular,0
+wps,width,churn_annular,prefix,m04q40_001,wavy annular,0
+wps,width,churn_annular,prefix,m04q80_001,wavy annular,0
+wps,width,churn_annular,prefix,m05q80_001,wavy annular,0
+wps,width,churn_annular,prefix,m06q40_001,wavy annular,0
+wps,width,churn_annular,prefix,m06q80_001,wavy annular,0
+wps,width,churn_annular,prefix,m07q80_001,wavy annular,0
+wps,width,churn_annular,center,m03q05_001,churn,0
+wps,width,churn_annular,center,m04q10_001,churn,0
+wps,width,churn_annular,center,m04q20_001,churn,1
+wps,width,churn_annular,center,m05q10_001,churn,0
+wps,width,churn_annular,center,m05q20_001,churn,0
+wps,width,churn_annular,center,m05q40_001,churn,0
+wps,width,churn_annular,center,m06q10_001,churn,1
+wps,width,churn_annular,center,m06q20_001,churn,0
+wps,width,churn_annular,center,m07q20_001,churn,1
+wps,width,churn_annular,center,m07q40_001,churn,0
+wps,width,churn_annular,center,m03q10_001,wavy annular,0
+wps,width,churn_annular,center,m03q20_001,wavy annular,0
+wps,width,churn_annular,center,m03q40_001,wavy annular,0
+wps,width,churn_annular,center,m04q40_001,wavy annular,0
+wps,width,churn_annular,center,m04q80_001,wavy annular,0
+wps,width,churn_annular,center,m05q80_001,wavy annular,0
+wps,width,churn_annular,center,m06q40_001,wavy annular,0
+wps,width,churn_annular,center,m06q80_001,wavy annular,0
+wps,width,churn_annular,center,m07q80_001,wavy annular,0
+wps,width,churn_annular,suffix,m03q05_001,churn,0
+wps,width,churn_annular,suffix,m04q10_001,churn,0
+wps,width,churn_annular,suffix,m04q20_001,churn,0
+wps,width,churn_annular,suffix,m05q10_001,churn,1
+wps,width,churn_annular,suffix,m05q20_001,churn,1
+wps,width,churn_annular,suffix,m05q40_001,churn,1
+wps,width,churn_annular,suffix,m06q10_001,churn,0
+wps,width,churn_annular,suffix,m06q20_001,churn,1
+wps,width,churn_annular,suffix,m07q20_001,churn,0
+wps,width,churn_annular,suffix,m07q40_001,churn,0
+wps,width,churn_annular,suffix,m03q10_001,wavy annular,1
+wps,width,churn_annular,suffix,m03q20_001,wavy annular,1
+wps,width,churn_annular,suffix,m03q40_001,wavy annular,0
+wps,width,churn_annular,suffix,m04q40_001,wavy annular,1
+wps,width,churn_annular,suffix,m04q80_001,wavy annular,1
+wps,width,churn_annular,suffix,m05q80_001,wavy annular,1
+wps,width,churn_annular,suffix,m06q40_001,wavy annular,1
+wps,width,churn_annular,suffix,m06q80_001,wavy annular,1
+wps,width,churn_annular,suffix,m07q80_001,wavy annular,1
+mean_power,hellinger,plug_slug,prefix,m05q01_001,plug,0
+mean_power,hellinger,plug_slug,prefix,m06q01_001,plug,0
+mean_power,hellinger,plug_slug,prefix,m07q05_001,plug,1
+mean_power,hellinger,plug_slug,prefix,m04q01_001,slug,0
+mean_power,hellinger,plug_slug,prefix,m05q05_001,slug,0
+mean_power,hellinger,plug_slug,prefix,m06q05_001,slug,0
+mean_power,hellinger,plug_slug,center,m05q01_001,plug,0
+mean_power,hellinger,plug_slug,center,m06q01_001,plug,0
+mean_power,hellinger,plug_slug,center,m07q05_001,plug,0
+mean_power,hellinger,plug_slug,center,m04q01_001,slug,1
+mean_power,hellinger,plug_slug,center,m05q05_001,slug,0
+mean_power,hellinger,plug_slug,center,m06q05_001,slug,0
+mean_power,hellinger,plug_slug,suffix,m05q01_001,plug,0
+mean_power,hellinger,plug_slug,suffix,m06q01_001,plug,0
+mean_power,hellinger,plug_slug,suffix,m07q05_001,plug,0
+mean_power,hellinger,plug_slug,suffix,m04q01_001,slug,1
+mean_power,hellinger,plug_slug,suffix,m05q05_001,slug,1
+mean_power,hellinger,plug_slug,suffix,m06q05_001,slug,1
+mean_power,wasserstein,plug_slug,prefix,m05q01_001,plug,0
+mean_power,wasserstein,plug_slug,prefix,m06q01_001,plug,0
+mean_power,wasserstein,plug_slug,prefix,m07q05_001,plug,1
+mean_power,wasserstein,plug_slug,prefix,m04q01_001,slug,0
+mean_power,wasserstein,plug_slug,prefix,m05q05_001,slug,0
+mean_power,wasserstein,plug_slug,prefix,m06q05_001,slug,0
+mean_power,wasserstein,plug_slug,center,m05q01_001,plug,0
+mean_power,wasserstein,plug_slug,center,m06q01_001,plug,0
+mean_power,wasserstein,plug_slug,center,m07q05_001,plug,0
+mean_power,wasserstein,plug_slug,center,m04q01_001,slug,1
+mean_power,wasserstein,plug_slug,center,m05q05_001,slug,0
+mean_power,wasserstein,plug_slug,center,m06q05_001,slug,0
+mean_power,wasserstein,plug_slug,suffix,m05q01_001,plug,0
+mean_power,wasserstein,plug_slug,suffix,m06q01_001,plug,0
+mean_power,wasserstein,plug_slug,suffix,m07q05_001,plug,0
+mean_power,wasserstein,plug_slug,suffix,m04q01_001,slug,1
+mean_power,wasserstein,plug_slug,suffix,m05q05_001,slug,0
+mean_power,wasserstein,plug_slug,suffix,m06q05_001,slug,1

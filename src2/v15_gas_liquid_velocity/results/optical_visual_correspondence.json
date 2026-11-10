@@ -1,0 +1,13 @@
+{
+  "run": "m05q01_001",
+  "first_file": "ImgA000200.jpg",
+  "second_file": "ImgA000210.jpg",
+  "lag_frames": 10,
+  "roi": "20:60",
+  "method": "ncc_raw",
+  "shift_px": -118.16170600071484,
+  "peak": 0.9589767169371854,
+  "margin": 0.022791952926891734,
+  "passes_adjacent_pair_gate": false,
+  "caveat": "Image/profile correspondence check only, not independent displacement ground truth."
+}

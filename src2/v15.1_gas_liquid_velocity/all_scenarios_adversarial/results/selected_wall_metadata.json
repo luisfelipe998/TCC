@@ -1,0 +1,17 @@
+{
+  "source_sha256": "d9b67eabba6216c1f0a0e957ea2a9c04293ed78342df49c42d6e0a81935f48e2",
+  "script_sha256": "9815254798625dabe99b1aaeaa6815e0fbfd07542fe7bf48a7356788e3444237",
+  "counts": {
+    "blocks10__forward": 25,
+    "blocks10__reverse": 25,
+    "highpass32_blocks10__forward": 22,
+    "highpass32_blocks10__reverse": 22,
+    "highpass8_blocks10__forward": 8,
+    "highpass8_blocks10__reverse": 8,
+    "raw_blocks10__forward": 24,
+    "raw_blocks10__reverse": 23
+  },
+  "selection": "Training wall supported-block count, then mean NCC peak; no velocity magnitude or pattern used",
+  "support": "At least 3/5 simultaneous core/wall blocks in training AND assessment halves",
+  "limitation": "Exploratory analysis of reused recordings, not external validation. A selected wall is not the average film and optical motion is not gas/liquid material velocity."
+}

@@ -1,0 +1,16 @@
+{
+  "data_utc": "2026-10-24T23:57:11.110542+00:00",
+  "candidatos": 1365,
+  "ancoras": 152,
+  "pares_candidatos": 8208,
+  "pares_selecionados": 830,
+  "grupos": {
+    "entre / minimos_compativeis": 178,
+    "entre / minimos_distintos": 79,
+    "entre / polaridades_opostas": 180,
+    "intra / minimos_compativeis": 156,
+    "intra / minimos_distintos": 75,
+    "intra / polaridades_opostas": 162
+  },
+  "segundos": 20.403774915990653
+}

@@ -1,0 +1,37 @@
+metric,descricao
+wps_pearson,Pearson · WPS residual
+wps_width,Largura WPS
+wps_hellinger,Hellinger · WPS
+wps_wasserstein,Wasserstein · WPS
+wps_log_peak,Pico WPS
+wps_slope,Inclinação WPS
+wps_trio,Trio WPS
+mean_power_pearson,Pearson · potência média
+mean_power_hellinger,Hellinger · potência média
+mean_power_wasserstein,Wasserstein · potência média
+mean_power_log_peak,Pico · potência média
+mean_power_width,Largura · potência média
+mean_power_slope,Inclinação · potência média
+mean_power_trio,Trio · potência média
+wco_global_max,WCO · máximo global
+wco_zero_weighted,WCO · lag zero ponderado
+wco_scale_peak_weighted,WCO · pico por escala
+wco_scale_peak_power05,WCO · pico / piso 5%
+wco_common_lag_peak,WCO · pico em lag comum
+wco_map_mean,WCO · média integral
+wco_map_mean_weighted,WCO · média ponderada
+wco_lag_q90_weighted,WCO · percentil 90
+wco_area05_weighted,"WCO · área ≥ 0,5"
+wco_mean_short,WCO · média 50–200 px
+wco_mean_middle,WCO · média 200–800 px
+wco_mean_long,WCO · média 800–1024 px
+wco_common_peak_short,WCO · pico comum 50–200 px
+wco_common_peak_middle,WCO · pico comum 200–800 px
+wco_common_peak_long,WCO · pico comum 800–1024 px
+wco_central_mean,WCO · média central ±32 px
+self_area,Autocoerência · área
+self_width,Autocoerência · meia largura
+self_bands,Autocoerência · três bandas
+kernel_area_full,WCO normalizada · área integral
+kernel_area_short,WCO normalizada · área 50–200 px
+kernel_zero,WCO normalizada · lag zero

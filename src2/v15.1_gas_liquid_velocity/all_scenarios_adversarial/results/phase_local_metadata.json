@@ -1,0 +1,106 @@
+{
+  "status": "complete",
+  "runtime_s": 216.65720829099882,
+  "runs": 26,
+  "script_sha256": "3fab7f1eefff31e0a21416529e00d002b159092ba2877b6b9aa3b5c4044d6580",
+  "synthetic": {
+    "cases": [
+      {
+        "case": "two_independent_textures",
+        "phase": "gas_candidate",
+        "truth": -17.3,
+        "estimate": -17.2806304197118,
+        "error": 0.019369580288199018
+      },
+      {
+        "case": "two_independent_textures",
+        "phase": "liquid_candidate",
+        "truth": -7.4,
+        "estimate": -7.385044396634342,
+        "error": 0.014955603365658376
+      },
+      {
+        "case": "two_independent_textures",
+        "phase": "gas_candidate",
+        "truth": 13.25,
+        "estimate": 13.232345113270645,
+        "error": 0.017654886729355113
+      },
+      {
+        "case": "two_independent_textures",
+        "phase": "liquid_candidate",
+        "truth": -11.6,
+        "estimate": -11.614849623151509,
+        "error": 0.01484962315150895
+      },
+      {
+        "case": "untextured_liquid",
+        "phase": "liquid_candidate",
+        "truth": null,
+        "estimate": null,
+        "error": null
+      },
+      {
+        "case": "shared_binary_interface",
+        "phase": "gas_candidate",
+        "truth": null,
+        "estimate": -0.006177989150682747,
+        "error": null
+      },
+      {
+        "case": "shared_binary_interface",
+        "phase": "liquid_candidate",
+        "truth": null,
+        "estimate": -0.00616884583740066,
+        "error": null
+      }
+    ],
+    "static_rejected": true,
+    "blank_liquid_rejected": true,
+    "shared_interface_rejected": true,
+    "direct_sufficient_max_error": 0.000108688245745725,
+    "maximum_translation_error": 0.019369580288199018
+  },
+  "method": "Whole-lumen distributed phase-interior grayscale NCC using source/target mask intersections at every tested shift. Aggregate raw sufficient statistics across matched pixels, then normalize.",
+  "preprocessing": "Subtract the full-record per-pixel temporal mean; require also nonzero raw within-phase intensity variance.",
+  "masks": "Gas AND(060,070,080); liquid candidate lumen AND NOT OR(060,070,080); spatial erosion radius3 primary/radius1 sensitivity.",
+  "source_and_destination_masks": true,
+  "lags": [
+    1,
+    2,
+    4
+  ],
+  "search_px": [
+    -240,
+    240
+  ],
+  "blocks": 5,
+  "pairs_by_lag": {
+    "1": 496,
+    "2": 491,
+    "4": 481
+  },
+  "null": "Three independently shuffled orders in each temporal block, concatenated via sufficient statistics; feasibility control, no p-value.",
+  "gates": {
+    "min_phase_pixels": 100,
+    "min_frames": 20,
+    "min_raw_std": 1.0,
+    "min_dynamic_std": 1.0,
+    "min_corr": 0.2,
+    "min_margin": 0.02,
+    "min_overlap": 1000,
+    "min_relative_overlap": 0.25,
+    "min_null_gap": 0.05,
+    "min_blocks": 4,
+    "tolerance": "max(2 px/frame,20% absolute lag1 speed)",
+    "max_saturation": 0.2
+  },
+  "limitations": [
+    "Consensus silhouette masks do not establish material phase purity.",
+    "Mask-conditioned NCC pools scattered pixels and can track shared optical structure.",
+    "Full-record temporal background and five blocks are consistency diagnostics, not out-of-sample experimental validation.",
+    "Raw pixel counts are not independent observations.",
+    "Pure axial matching does not account for transverse motion or out-of-plane changes.",
+    "No calibration or independent phase-velocity truth is supplied."
+  ]
+}

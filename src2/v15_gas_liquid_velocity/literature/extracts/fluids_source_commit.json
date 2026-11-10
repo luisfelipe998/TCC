@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "b6b0a04d3ecfeb26894a6890fcea90f0e3436057",
+    "node_id": "C_kwDOAuqHa9oAKGI2YjBhMDRkM2VjZmViMjY4OTRhNjg5MGZjZWE5MGYwZTM0MzYwNTc",
+    "commit": {
+      "author": {
+        "name": "Caleb Bell",
+        "email": "Caleb.Andrew.Bell@gmail.com",
+        "date": "2025-10-18T20:58:45Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2025-10-18T20:58:45Z"
+      },
+      "message": "More cleanups (#81)\n\n* Typos\n\n* Typos\n\n* Doc updates\n\n* .\n\n* .\n\n* .\n\n* Typos\n\n* .\n\n* .\n\n* .\n\n* .\n\n* typos\n\n* More fixes\n\n* Typos\n\n* misc\n\n* .\n\n* .\n\n* isort of __all__\n\n* .\n\n* ruff fixes\n\n* .\n\n* Quotes :(\n\n* .\n\n* Remove old 3.7\n\n* .\n\n* .\n\n* .\n\n* .\n\n* ruff\n\n* lint\n\n* lint\n\n* explore graalpy\n\n* Merge in type hints at this point\n\n* Making mypy and numba both happy is pretty nasty\n\n* run ruff on the type hints that were merged in - nice!\n\n* hook?\n\n* check json, yaml, toml on git commit also\n\n* .\n\n* .\n\n* .\n\n* psd\n\n* .\n\n* .\n\n* .\n\n* .\n\n* .\n\n* docs\n\n* sphinx needs to be updated to work on python 3.13\n\n* .\n\n* Typing progress\n\n* mdformat\n\n* Check\n\n* x\n\n* link\n\n* json\n\n* fixes\n\n* .\n\n* fixes\n\n* format\n\n* .\n\n* .\n\n* .\n\n* .\n\n* Another\n\n* .\n\n* .\n\n* .\n\n* Try again\n\n* .\n\n* note about numba\n\n* Experiment with a micropython\n\n* Again\n\n* .\n\n* .\n\n* Fix sphinx issue\n\n* ,m\n\n* .\n\n* .\n\n* Updates\n\n* .",
+      "tree": {
+        "sha": "e011305dc3a75d7d74c275f297ee5b75298698c3",
+        "url": "https://api.github.com/repos/CalebBell/fluids/git/trees/e011305dc3a75d7d74c275f297ee5b75298698c3"
+      },
+      "url": "https://api.github.com/repos/CalebBell/fluids/git/commits/b6b0a04d3ecfeb26894a6890fcea90f0e3436057",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJo8/+FCRC1aQ7uu5UhlAAAiNsQAETDcg1B/zG7DoTQ9oqn2JaJ\nMSdhHWMiUGFrA4gso6XyAFl98NEA56sttAVAbzahxhQfaY9Pg7zxbJeMNvIPoRnv\nm8xRSvFqUMTZlu8phTsy+rvzOGE3ss2ktC0MwZxTdvG5K5FADJzssgPdlHdbMoZ3\nKmlHeNxUPmruNAjsmFl2YMXUe5QApE/TnizzpnqqC/t0xuGW5RLslQFBVPpQW2dh\n1Wlg72OrgNNyzpszbnX7KcRZ+HrZAJ2urFuR5rH+vWKfCn8WIRpYl3WFbM+5D2ge\n2+uwrQ06shnuJE9q3rW00/t3cfTDQaqL7QDvJHiUcypR0eBWeoQQ9WzEabKy0twF\nNBkN0Mrzx9ktLiMSOa0xqObpe/MxYmPlBaLvEHGOMi94xf5ltHuMhdYsEk01G9ll\niVD4odb+h+6+f1zZb7XmBQwCM6SEo0fb0eWMoNdgSaWTfxxS+xgAXtIRp5HeITx/\nOPS3wgn+O8ebqaDznF41M5QcZ/RJsTL9BoG+TKscJ79SngVus1D9L9+Gx6XYRQ4u\nCCKAE1JPQNjctlJBLWRMofPYagTsEUXSfBK4EExHJbwC96q1qQPpWCTqXyNK7gPu\n/HlBk4PSQEkwp5Ltd9AHzGKGUHSRpQ5ZRYGZA1/CMBaPhF5T1rOSjAds3wOeKuiC\noIJflgGcwRxY/NZtRPWW\n=XVWj\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree e011305dc3a75d7d74c275f297ee5b75298698c3\nparent 69bd70ff52efe24dced5f5401ed93906d331fd9b\nauthor Caleb Bell <Caleb.Andrew.Bell@gmail.com> 1760821125 -0600\ncommitter GitHub <noreply@github.com> 1760821125 -0600\n\nMore cleanups (#81)\n\n* Typos\n\n* Typos\n\n* Doc updates\n\n* .\n\n* .\n\n* .\n\n* Typos\n\n* .\n\n* .\n\n* .\n\n* .\n\n* typos\n\n* More fixes\n\n* Typos\n\n* misc\n\n* .\n\n* .\n\n* isort of __all__\n\n* .\n\n* ruff fixes\n\n* .\n\n* Quotes :(\n\n* .\n\n* Remove old 3.7\n\n* .\n\n* .\n\n* .\n\n* .\n\n* ruff\n\n* lint\n\n* lint\n\n* explore graalpy\n\n* Merge in type hints at this point\n\n* Making mypy and numba both happy is pretty nasty\n\n* run ruff on the type hints that were merged in - nice!\n\n* hook?\n\n* check json, yaml, toml on git commit also\n\n* .\n\n* .\n\n* .\n\n* psd\n\n* .\n\n* .\n\n* .\n\n* .\n\n* .\n\n* docs\n\n* sphinx needs to be updated to work on python 3.13\n\n* .\n\n* Typing progress\n\n* mdformat\n\n* Check\n\n* x\n\n* link\n\n* json\n\n* fixes\n\n* .\n\n* fixes\n\n* format\n\n* .\n\n* .\n\n* .\n\n* .\n\n* Another\n\n* .\n\n* .\n\n* .\n\n* Try again\n\n* .\n\n* note about numba\n\n* Experiment with a micropython\n\n* Again\n\n* .\n\n* .\n\n* Fix sphinx issue\n\n* ,m\n\n* .\n\n* .\n\n* Updates\n\n* .",
+        "verified_at": "2025-10-18T20:58:46Z"
+      }
+    },
+    "url": "https://api.github.com/repos/CalebBell/fluids/commits/b6b0a04d3ecfeb26894a6890fcea90f0e3436057",
+    "html_url": "https://github.com/CalebBell/fluids/commit/b6b0a04d3ecfeb26894a6890fcea90f0e3436057",
+    "comments_url": "https://api.github.com/repos/CalebBell/fluids/commits/b6b0a04d3ecfeb26894a6890fcea90f0e3436057/comments",
+    "author": {
+      "login": "CalebBell",
+      "id": 16520296,
+      "node_id": "MDQ6VXNlcjE2NTIwMjk2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16520296?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/CalebBell",
+      "html_url": "https://github.com/CalebBell",
+      "followers_url": "https://api.github.com/users/CalebBell/followers",
+      "following_url": "https://api.github.com/users/CalebBell/following{/other_user}",
+      "gists_url": "https://api.github.com/users/CalebBell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/CalebBell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/CalebBell/subscriptions",
+      "organizations_url": "https://api.github.com/users/CalebBell/orgs",
+      "repos_url": "https://api.github.com/users/CalebBell/repos",
+      "events_url": "https://api.github.com/users/CalebBell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/CalebBell/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "69bd70ff52efe24dced5f5401ed93906d331fd9b",
+        "url": "https://api.github.com/repos/CalebBell/fluids/commits/69bd70ff52efe24dced5f5401ed93906d331fd9b",
+        "html_url": "https://github.com/CalebBell/fluids/commit/69bd70ff52efe24dced5f5401ed93906d331fd9b"
+      }
+    ]
+  }
+]

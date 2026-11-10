@@ -1,0 +1,32 @@
+aquisicao,padrao,incluida,n,linhas,erro_extracao,deslocamentos_nao_positivos,quadros,piloto
+m03q01_001,plug-slug,False,5148,18–71,0.0,116,501,False
+m03q05_001,churn,True,9586,18–71,0.0,0,501,True
+m03q10_001,wavy annular,True,14224,18–71,0.0,0,501,True
+m03q20_001,wavy annular,True,23079,18–71,0.0,0,501,False
+m03q40_001,wavy annular,True,20743,18–71,0.0,60,501,False
+m03q80_001,smooth annular,False,501,18–71,0.0,500,501,False
+m04q01_001,slug,True,5071,18–71,0.0,1,501,True
+m04q05_001,slug-churn,False,5460,18–71,0.0,0,501,False
+m04q10_001,churn,True,8829,18–71,0.0,0,501,False
+m04q20_001,churn,True,9344,18–71,0.0,0,501,False
+m04q40_001,wavy annular,True,14960,18–71,0.0,0,501,False
+m04q80_001,wavy annular,True,22636,18–71,0.0,0,501,False
+m05q01_001,plug,True,5940,18–71,0.0,0,501,True
+m05q05_001,slug,True,6323,18–71,0.0,0,501,False
+m05q05_002,dispersed bubbles,False,4510,18–71,0.0,0,501,False
+m05q10_001,churn,True,7001,18–71,0.0,0,501,False
+m05q20_001,churn,True,7391,18–71,0.0,0,501,False
+m05q40_001,churn,True,9937,18–71,0.0,0,501,False
+m05q80_001,wavy annular,True,17524,18–71,0.0,0,501,False
+m06q01_001,plug,True,7798,18–71,0.0,0,501,False
+m06q05_001,slug,True,7787,18–71,0.0,0,501,False
+m06q10_001,churn,True,7584,18–71,0.0,0,501,False
+m06q20_001,churn,True,10044,18–71,0.0,0,501,False
+m06q40_001,wavy annular,True,14772,18–71,0.0,0,501,False
+m06q80_001,wavy annular,True,18665,18–71,0.0,0,501,False
+m07q01_001,dispersed bubbles,True,3171,18–71,0.0,0,501,True
+m07q05_001,plug,True,7358,18–71,0.0,0,501,False
+m07q10_001,slug-churn,False,9101,18–71,0.0,0,501,False
+m07q20_001,churn,True,8255,18–71,0.0,0,501,False
+m07q40_001,churn,True,10349,18–71,0.0,0,501,False
+m07q80_001,wavy annular,True,16658,18–71,0.0,0,501,False

@@ -1,0 +1,752 @@
+                                                             International Journal of Multiphase Flow 114 (2019) 240–257
+
+
+
+                                                                   Contents lists available at ScienceDirect
+
+
+                                               International Journal of Multiphase Flow
+                                                          journal homepage: www.elsevier.com/locate/ijmulflow
+
+
+
+
+Nonlinear analysis of characteristic frequencies and chaotic behavior of
+ﬂow patterns during ﬂow boiling of hydrocarbons in a small channel
+Jeferson Diehl de Oliveira a,∗, Jacqueline Biancon Copetti b, Maria Luiza Sperb Indrusiak a,b,c,
+Júlio César Passos c
+a
+  Department of Mechanical Engineering Graduate Program, Center of Innovation and Technology University Center of Serra Gaúcha, Os Dezoito do Forte St.,
+2366, Caxias do Sul, 95020-472, RS, Brazil
+b
+  Mechanical Engineering Graduate Program, LETEF, Laboratory of Thermal and Fluid Dynamic Studies, University of Vale do Rio dos Sinos, 93022-750, São
+Leopoldo, RS, Brazil
+c
+  Department of Mechanical Engineering, LEPTEN, Laboratory of Process of Engineering and Energy Technology, Federal University of Santa Catarina,
+88010-900, Florianópolis, SC, Brazil
+
+
+
+
+a r t i c l e             i n f o                          a b s t r a c t
+
+Article history:                                           The dynamics of time series obtained from an optical sensor for analysis of ﬂow patterns has been in-
+Received 21 November 2018                                  vestigated during ﬂow boiling of hydrocarbons in a horizontal tube with 1 mm inner diameter. The tests
+Revised 19 March 2019
+                                                           were performed with the refrigerants R-600a, R-290 and R-1270 at 17 °C saturation temperature, with
+Accepted 19 March 2019
+                                                           mass ﬂux ranging from 240 to 480 kg/(m²s), considering heat ﬂuxes between 5 and 60 kW/m². Five ﬂow
+Available online 20 March 2019
+                                                           patterns were identiﬁed, and their characteristic frequencies were investigated and related to dynamics
+Keywords:                                                  of the liquid-vapor morphology over time. Results also show different long memory trends based on time
+Flow patterns                                              series and nonlinear chaotic behavior has been observed.
+Flow boiling                                                                                                                © 2019 Elsevier Ltd. All rights reserved.
+Hydrocarbons
+Frequency analysis
+Chaos
+
+
+
+
+1. Introduction                                                                              concluded that intermittencies of the void fraction depend on size
+                                                                                             of bubble and on superﬁcial velocities of the phases. A time-
+    Many experimental studies have been carried out to investigate                           frequency analysis was used by Klein et al. (2004) to investigate
+characteristics of ﬂow patterns due to their important inﬂuence on                           air-water intermittent ﬂow regimes in a horizontal test section of
+performance of steam generators, evaporators and condensers. For                             60 mm inner diameter. The authors measured the void fraction us-
+this reason, the use of nonlinear methods has an important role to                           ing a conductivity probe and analyzed characteristic frequencies
+determine the dynamics of ﬂow patterns and their main character-                             using Gabor transform, a particular short Fourier transform (SFT)
+istics. Investigations involving several geometries, heat and mass                           method. The results indicated that the successive passage of tighter
+ﬂux condition and ﬂow direction have been reported in literature                             and looser trains of air plugs, characterized by intermittency fre-
+and many authors have focused their efforts on recognizing the na-                           quency, was related to the transition between two different types
+ture of ﬂow patterns through the use of sensors and the analysis                             of intermittent ﬂow. Characteristic frequencies of ﬂow pattern dur-
+of behavior of signals as well as through image analysis.                                    ing ﬂow boiling of R134a in horizontal tube of 0.5 mm inner di-
+    Song et al. (1995) investigated the bubble-to-slug ﬂow regime                            ameter were analyzed by Revellin et al. (2006). The authors used a
+transition based on instabilities of the void fraction waves dur-                            conﬁguration of two laser beans and photodiodes and investigated
+ing air-water ﬂow in vertical upwards. In their study, they used                             the frequencies using FFT. As a result, the authors observed regime
+an impedance void meter to analyze characteristic and statisti-                              changes based on frequency analysis and concluded that the elon-
+cal properties such as void fraction, ﬂuctuation of the signal, fre-                         gated bubble coalescence is proportional to the increases of mass
+quencies and power-spectral density function (PSDF) based on fast                            ﬂux. Nguyen et al. (2010) proposed a study on frequency analy-
+Fourier transform (FFT). As a result, they observed different pre-                           sis for two-phase ﬂow pattern using continuous wavelet transform
+dominant frequencies in bubble clusters and slug ﬂow. They also                              (CWT) technique in a vertical air-water ﬂow with 80 mm inner
+                                                                                             diameter. The authors used a multi-channel impedance void me-
+                                                                                             ter to measure both void fraction and characteristic frequencies.
+    ∗
+        Corresponding author.                                                                It was found a correlation between the amplitude of the signal
+        E-mail address: jeferson.physics@hotmail.com (J.D. de Oliveira).
+
+https://doi.org/10.1016/j.ijmultiphaseﬂow.2019.03.015
+0301-9322/© 2019 Elsevier Ltd. All rights reserved.
+                         J.D. de Oliveira, J.B. Copetti and M.L.S. Indrusiak et al. / International Journal of Multiphase Flow 114 (2019) 240–257         241
+
+
+and the maximum local wavelet energy coeﬃcient, which results                           pump, and also to assure that only subcooled liquid enters the ﬂow
+in a high precision method to characterize different ﬂow regimes.                       meter. The pre-heater establishes the experimental conditions en-
+A piezoelectric force sensor was used by Sim et al. (2010) to in-                       tering the test section immediately downstream. It consists of a
+vestigate the void fraction and ﬂow patterns in a vertical air-water                    horizontal stainless-steel tube with a 1.0 mm internal diameter, to-
+ﬂow with a test section of 30 mm inner diameter. The predom-                            tal length of 515 mm and heated length of 440 mm. This tube is
+inant frequencies based on the PSDF was explored. According to                          uniformly heated by direct application of an electrical current in
+the authors, the intensity of PSDF increases with increasing of su-                     the wall (Joule effect), the intensity of which is controlled by the
+perﬁcial velocity. The results also demonstrated that the increase                      power supplied by a SORENSEN model DCS 8-125E, which provides
+of superﬁcial velocity increases the range of frequencies. A more                       both direct voltage and direct current measurements. The TS con-
+complex methodology to relate predominant frequencies to ﬂow                            sists of the same tube and diameter with total length of 366 mm,
+patterns has been developed by Hanaﬁzadeh et al. (2015) in ver-                         heated length of 265 mm. As well as the PH, the TS is heated by
+tical air-water two-phase ﬂow. The authors studied characteristic                       Joule effect, the intensity of which is controlled by the power sup-
+frequencies of pressures measured throughout the test section and                       ply. The absolute internal roughness (Ra) of the tube was mea-
+implemented information such as PSDF maximum and location of                            sured with a STARRETTTM roughness tester, model SR 200, and was
+PDF in an artiﬁcial neural network to predict the ﬂow pattern.                          found to be 1.48 μm. There is a visualization section downstream
+The comparison with pictures of ﬂow patterns indicated that their                       of the test section with a 136 mm length glass tube with the same
+method has considerable accuracy. More recently, Zhai et al. (2017),                    test section internal diameter. Both PH and TS are thermally insu-
+performed tests in adiabatic condition with oil-water in a hori-                        lated. More details about the experimental apparatus can be seen
+zontal tube of 20 mm inner diameter, using a ring conductance                           in Oliveira et al. (2016).
+array probe, a conductance cross-correlation velocity probe and                             To analyze the characteristic frequencies of ﬂow patterns, an
+mini-conductance probes. The authors investigated the signals of                        optical sensor was built based on refraction and bright varia-
+such probes, considering the inﬂuence of mean velocities of both                        tion of light caused by vapor-liquid interface of two-phase ﬂow
+phases. It was observed multi-scale characteristics of ﬂow pat-                         (Oliveira, 2017). Such sensor is located on the beginning of vi-
+terns, such as ﬂuctuations of interfaces and movement of dispersed                      sualization section to guarantee the same conditions obtained on
+drops. Many other studies focused on the investigation of ﬂow                           the test section outlet, as presented in Fig. 2. The optical sensor
+patterns, void fraction analysis and characteristic frequencies have                    is constituted, basically, by a high-brightness light emitting diode
+been reported in literature (Costigan and Whalley (1997); Wang                          (LED), a light dependent resistor (LDR) and an electronic circuit
+and Shoji (2002); Morsi et al. (2011); Monni et al. (2014); Saidj                       responsible for converting electric resistance of LDR to resulting
+et al. (2014); Zeghloul et al. (2015); Dong et al. (2015)). Table 1                     signal of electric voltage. The bright variation caused by the in-
+also presents some other works, including different methodologies                       terface of two-phase ﬂow changes the electric resistance of LDR.
+applied in the investigations.                                                          Such variation is transformed into a ﬁltered-voltage signal through
+    To the best of the authors’ knowledge, there is a considerable                      an electronic circuit formed by a low-pass ﬁlter of 4th order and
+lack of nonlinear analysis investigation on the nature of behavior                      an operational ampliﬁer OPA 4227. In turn, the voltage signal is
+intrinsic to ﬂow patterns during ﬂow boiling in small channels.                         read by a data logger model NI 6009 managed by Labview 2013.
+The main contribution of the present study is to analyze experi-                        Fig. 2 presents the scheme of sensor + ﬁltering + acquisition sys-
+mental time series obtained from liquid-vapor interface with aid                        tem.
+of an optical sensor. The ﬂow patterns are identiﬁed using a high-
+speed camera. In turn, nonlinear analysis is implemented to inves-                      3. Methodology
+tigate characteristic frequencies, persistence and chaotic dynamics
+of ﬂow patterns according to the inﬂuence of parameters such as                         3.1. On vapor quality and void fraction
+heat and mass ﬂuxes.
+                                                                                            The heat ﬂux applied to the test section was given by,
+2. Experimental setup                                                                               qT S        U ·I
+                                                                                        qT S =           ≡                                             (1)
+                                                                                                   Aheated   π Di Lheated
+    An experimental facility was developed to investigate the ﬂow
+boiling, pressure drop and ﬂow patterns in a horizontal small                           where Di is the internal diameter, Lheated is the heated length and
+channel. The details of such set up are shown schematically in                          U and I represent the voltage and current applied by power supply
+Fig. 1. The experimental system consists of a loop that provides                        in test section, respectively.
+controlled mass ﬂux, and it was designed to test different ﬂuids                            The vapor quality in the test section inlet was calculated from
+under a wide range of ﬂow conditions. The main part of the loop                         energy balance in the pre-heater, according to Eq. (2).
+                                                                                                          qPH                
+has a pre-heater, a test section and a visualization section, repre-
+                                                                                                             m˙
+                                                                                                                   + ii−PH − il
+sented by PH, TS and VS, respectively. The secondary part consists                      x(i−T S) =                                                       (2)
+                                                                                                                      il v
+of a condenser, a refrigerant reservoir, a liquid refrigerant vessel,
+a dryer ﬁlter, a magnetic gear pump and a subcooler. The con-                           where il and ilv represent the liquid enthalpy and latent heat of
+denser and the subcooler have independent circuits and each one                         vaporization as function of saturation pressure. In this case, the
+uses an ethylene-glycol/water solution as the secondary refriger-                       subscripts i-TS and i-PH represent inlet of test section and inlet of
+ant, the temperature of which is controlled by a thermostatic bath.                     pre-heater, respectively.
+This set up controls the refrigerant saturation temperature. The re-                       Considering the local enthalpy as a function of location z in test
+frigerant reservoir connected to the main circuit of the bench has                      section, given by
+                                                                                                   q                         
+small volume and is partially ﬁlled with refrigerant to assist in                                       T S (z )
+                                                                                        i (z ) =                   + ii−T S                              (3)
+control of pressure ﬂuctuations, which occur when there is a vari-                                      m˙
+ation in heat ﬂux conditions. A liquid refrigerant vessel maintains                        Consequently, the local vapor quality along the test section was
+a constant static pressure at the pump suction. This procedure as-                      calculated according to
+sures that the pump works uniformly and under immersion, avoid-
+ing cavitation. The subcooler is used to compensate the tempera-                                   i ( z ) − il
+                                                                                        x (z ) =                                                         (4)
+ture rise, which usually occurs as the refrigerant passes the gear                                       il v
+                                                                                                                                                                                                                         242
+
+
+
+
+                                                                                                                                                                                                                         J.D. de Oliveira, J.B. Copetti and M.L.S. Indrusiak et al. / International Journal of Multiphase Flow 114 (2019) 240–257
+   Table 1
+   Literature review of ﬂow pattern studies.
+
+Author                             Hydraulic diameter            Working ﬂuid            Parameter analyzed              Sensor                         Method applied                  Remarks
+                                    (mm)
+
+Angeli and Hewitt (20 0 0)         24.3C, H                      Oil – water             Void fraction                   High frequency impedance       van Der Welle (1985)            –
+                                                                                                                           probe
+Butrin and Tadrist (2004)          0.889R, V                     n-pentane               Inlet and outlet pressures      Pressure transducer            FFT                             Flow boiling tests
+Jana et al., (2006)                25.4C, V                      Dyed kerosene – water   Phase fraction                  Parallel wire conductivity     Wavelet analysis                –
+                                                                                                                           probe
+Wang et al., (2007)                0.186T, H                     Water                   Wall temperature, inlet and     Pressure transducer and        Analysis of ﬂuctuations         Flow boiling in a test section
+                                                                                           outlet pressure and             type-T thermocouple                                            of eight parallel
+                                                                                           temperature oscillations                                                                       microchannels
+Mahvash and Ross (2008)            19C, V                        Air – water             Void fraction                   Optical ﬁber probe             Continuous hidden Markov        –
+                                                                                                                                                          model
+                                                    C, H
+Schubring and Shedd (2009)         (8.8 and 15.1)                Air – water             Superﬁcial velocities and ﬁlm   LED/phototransistor probe      FFT                             –
+                                                                                           thickness
+Jaworek and Kupra (2010)           (1, 2, 4 and 9.5)C, V         Isopropanol – water     Phase shift and void fraction   Capacitance probe              Analysis of electric            –
+                                                                                                                                                          permittivity
+Schembri and Bucolo (2011)         0.76R, H                      Air – water             Void fraction                   Photodiode probe               FFT and PDF gamma function      –
+Al-Wahaibi et al., (2012)          (19 and 25.4)C, H             Oil – water             Wave amplitude and              High speed video camera        Image treatment                 –
+                                                                                           superﬁcial velocities
+Du et al., (2012)                  120C, V                       Air – water             Void fraction and superﬁcial    Conductance probe              Wigner-Ville and                –
+                                                                                           velocities                                                     Choi-Williams distributions
+Kanizawa and Ribatski (2012)       15.9C, H                      R-134a                  Pressure drop                   Pressure transducer            FFT                             Flow boiling tests
+Sun et al., (2012)                 50                            Air – water             Void fraction                   Pressure transducer            Wavelet analysis                –
+Li et al., (2014)                  1.15R, V                      Nitrogen – water        Differential pressure           Pressure transducer            Wavelet analysis                –
+Oliveira et al., (2015)            50.8C, H                      Air – water             Void fraction and superﬁcial    Infrared photo gate            Image analysis                  –
+                                                                                           velocities
+Talley et al. (2015)               3.81C, H                      Air – water             Void fraction                   Conductivity probe             Data treatment                  –
+Tan et al., (2015)                 50C, H                        Oil – water             Water fraction                  Capacitance and conductivity   Wavelet analysis                –
+                                                                                                                           sensor
+Zhai et al., (2015)                20C, H                        Oil – water             Phase fractions                 Radial conductance probe       Adaptive optimal Kernel         –
+                                                                                                                                                          time-frequency
+Rysak et al., (2016)               5C, H, V                      Air – water             Void fraction                   Video and laser probe          Lyapunov exponent and PDF       –
+
+   C: circular; H: horizontal; R: rectangular; T: trapezoidal; V: vertical.
+                              J.D. de Oliveira, J.B. Copetti and M.L.S. Indrusiak et al. / International Journal of Multiphase Flow 114 (2019) 240–257                       243
+
+
+
+
+                                                                    Fig. 1. Schematic of experimental setup.
+
+
+
+
+Fig. 2. Schematic diagram of optical sensor: (1) independent DC power supply; (2) high bright LED; (3) LDR; (4) 4th order low-pass ﬁlter; (5) high frequency data acquisition
+system.
+
+
+
+   The void fraction was evaluated with the relation developed by
+Rouhani and Axelsson (1970) given by Eq. (5).
+                                   x              
+       x                                      1−x
+α=             [1 + 0.12(1 − x )]         +
+      ρv                             ρv          ρl
+                                          0.25
+                                                 −1
+           1.18(1 − x )[gσ (ρl − ρv )]
+      +                                                                           (5)
+                       G ρl 0 . 5
+
+where ρ l , ρ v , g, σ and G represent liquid density, vapor den-
+sity, gravitational acceleration, surface tension and mass ﬂux,
+respectively. The Rouhani and Axelsson model was developed
+for vertical ﬂow, it takes important parameters into account that
+are related to two-phase ﬂow in mini- and microchannels, based                                 Fig. 3. Evolution of a small circle to an ellipsoid based on Lyapunov exponents.
+on liquid mass density ρ l, vapor mass density ρ v, gravitational
+acceleration g and surface tension coeﬃcient σ . In addition, ﬂow
+boiling in horizontal mini and micro channels have practically                               perimental parameters related to the tests in this work, including
+the same radial symmetry in interfacial topology that is found in                            reduced pressure PR , are presented in Table 2.
+vertical ﬂow due to the dominance of capillarity. Moreover, this
+model has successfully been applied to horizontal ﬂow boiling
+for hydrocarbons by Del Col et al. (2014). The visualization study
+done by Oliveira et al. (2016) and Oliveira et al. (2017) proves the                         3.2. On frequency analysis
+hypothesis of radial symmetry. Thermodynamics and transport
+properties used in data reduction and pressure drop correlations                               The fast Fourier transform (FFT) was used to convert the time-
+were obtained from REFPROP v. 9.1 (Lemmon et al., 2013). Ex-                                 domain signal from the optical sensor (X (t)) to a frequency-
+244                                 J.D. de Oliveira, J.B. Copetti and M.L.S. Indrusiak et al. / International Journal of Multiphase Flow 114 (2019) 240–257
+
+
+                                                 Table 2
+                                                 Experimental conditions.
+
+                                                   Parameter
+
+                                                   Working ﬂuid [-]                     R-600a, R-290 and R-1270
+                                                   G [kg/(m2 s)]                        240, 320, 400 and 480
+                                                   q”TS [kW/m2 ]                        5, 10, 20, 40 and 60
+                                                   Tsat [°C]                            17
+                                                   Psat [kPa] (PR )                     275.4 (0.0757), 772.4 (0.1819) and 942.5 (0.202)
+                                                   x( i-TS ) [-]                        0.01–0.03
+                                                   Sample frequency of OS [kHz]         5
+                                                   Record length [n of samples]∗        50,0 0 0
+                                                   ∗
+                                                       For each test.
+
+
+
+
+Fig. 4. Characteristics obtained from sub-cooled liquid conditions of R-1270 for a time range of 1 s. (a) Signal of sensor (Vmax = 4,26 V). (b) PSD versus intrinsic frequencies
+of white noise (more intense ﬂuctuations of the signal – circulated in red).
+
+
+
+
+Fig. 5. Characteristics obtained in conditions of saturated vapor of R-1270 for a time range of 1 s. (a) Signal of sensor (Vmin = 0,0 V). (b) PSD versus intrinsic frequencies of
+white noise.
+
+
+
+domain signal (X (f)) and it is deﬁned by                                                              Since the power spectral density (PSD) establishes the time rate
+                                                                                                   of the energy distributed along the signal, and is deﬁned according
+                         1 
+                              N−1
+                                                                                                   to
+X ( f ) = F {X (t )} =       X (t ) e− j2π f t t                                       (6)
+                         N
+                                                                                                            1
+                                                                                                               N−1
+                              t=0
+                                                                                                   P SD =      |X (t )|2 t                                                 (8)
+where N represents the total time of the analyzed signal, t is the
+                                                                                                            T
+                                                                                                                t=0
+interval between two consecutive data acquisitions, i.e., (ti+ 1 − ti ).
+   The energy spectral density (ESD) which determinates the en-                                    Power spectrum (or Fourier spectrum) can be estimated through
+ergy distribution of the signal from optical sensor is given by                                    ﬁnite Fourier transform of the original signal. A usual procedure
+                                                                                                   used to enhance quality of spectrum of a stationary signal is
+        
+        N−1                                                                                        to estimate the spectral values for each of a collection of sam-
+ESD =          X |(t )|2 t                                                             (7)        ple records, acquired sequentially and average the results. A time
+         t=0                                                                                       window (e.g. Hanning) is applied to each sample record to taper
+                               J.D. de Oliveira, J.B. Copetti and M.L.S. Indrusiak et al. / International Journal of Multiphase Flow 114 (2019) 240–257                   245
+
+
+
+
+Fig. 6. Variation of vapor quality and void fraction in outlet of test section observed for the ﬂow patterns, considering dimensionless number β for: R-600a ((a), (b)), R-290
+((c), (d)) and R-1270 ((e), (f)).
+
+
+
+the data to provide a more gradual entrance and exit and avoid                                system and existence of attractors presented during the evolution
+anomalies in the estimated spectrum (Bendat and Piersol, 1993).                               of time. Specially, in chaotic systems, strange attractors are ob-
+A smoothing can also be done in frequency by averaging over a                                 served in space phases. Considering a dynamic system obtained
+proper spectral bandwidth. Welch (1967) established a method to                               from time series X(t) = {χ 1, χ 2, χ 3, . . ., χ n }, we can construct the
+obtain the power spectra using the fast Fourier transform and con-                            matrix trajectory by time delay coordinates method.
+veniently sectioning the original signal into several shorter ones,                              ⎡                     ⎤
+with superposition and a time window, which is the basis of the
+                                                                                                  χ1 χ2  ...       χd
+                                                                                                 ⎢χ2 χ3  ...      χd+1 ⎥
+                                                                                              X =⎢ . .              .. ⎥
+“welch” algorithm available in Matlab and used in this work.
+                                                                                                          ..                                                              (9)
+                                                                                                 ⎣ .. ..   .         .
+                                                                                                                       ⎦
+3.3. On reconstruction of attractors                                                               χm χm+1 . . . . χn
+   The time evolution of a dynamic system can be deﬁned in a                                     In this case, d represents the embedding dimension and
+phase space. In turn, a phase space indicates the behavior of the                             m = n – d + 1 corresponds to the number of dots in d-dimension
+246                               J.D. de Oliveira, J.B. Copetti and M.L.S. Indrusiak et al. / International Journal of Multiphase Flow 114 (2019) 240–257
+
+
+
+
+Fig. 7. Characteristic of plug ﬂow with presence of dispersed bubbles with diameter smaller than 0.5 mm observed with R-600a. Red arrow indicates the direction of ﬂow.
+
+
+
+reconstruction using the method developed by Lei et al. (2002),                                  and σ represents the standard deviation of the time series. Such a
+considering the presence of intrinsic noise in the signal and using                              result is assumed as part of the identity
+symplectic geometry.                                                                             R
+                                                                                                            = C nH                                                (11)
+3.4. On Hurst exponent                                                                             S    n
+
+                                                                                                 where C is an arbitrary constant intrinsic to time series and n is
+   The Hurst exponent H was used to classify time series into                                    the number of data points considered in each time series. Thus, by
+three different clusters, known as antipersistent, uncorrected and                               taking the log of both members, we have
+persistent time series:                                                                              R                              
+                                                                                                 l og            = l og(C ) + l og nH                             (12)
+ • 0 < H < 0.5 can indicate a time series with long-term switching                                      S    n
+   between low and high values in pairs. It means that a single                                  Consequently, the Hurst exponent H is given by
+   low value will probably be followed by a high value and vice-                                                            R
+                                                                                                                     −1
+   versa along the time into the future.                                                         H = [log(N )]            log                                     (13)
+ • H = 0.5 indicates that the time series has a similar behavior of                                                             SC   n
+
+   a random walk. That is, it indicates that the time series is com-
+                                                                                                 3.5. On largest Lyapunov exponent
+   pletely uncorrelated.
+ • 0.5 < H < 1 indicates that the time series has a long-term pos-
+                                                                                                     The most relevant characteristic of chaos is the unpredictabil-
+   itive autocorrelation. It means, for example, that a low value in
+                                                                                                 ity of the future events based on a deterministic time evolution.
+   the time series will probably be followed by another low value
+                                                                                                 Another important feature of chaos behavior is its sensitive depen-
+   and vice-versa.
+                                                                                                 dence on initial conditions SDIC. A way to determine quantitatively
+   In this paper, the Hurst exponent was estimated by the classical                              the degree of the SDIC of a dynamics system is by Lyapunov expo-
+(R/S)n method developed by Mandelbrot and Wallis (1969), based                                   nents. In fact, Lyapunov exponents present the rate of divergence
+on the sums of both maximum and minimum ﬂuctuations of the                                       of nearby trajectories in phase space. A graphical representation of
+time series:                                                                                     such a rate can be seen in a two-dimensional case off the evolu-
+                                                                     
+R           1           
+                          n                          
+                                                     n                                           tion of a small sphere of radius dr to an ellipsoid with axis l1 and
+          =       M axn         (χi − χ̄ ) − Minn           (χi − χ̄ )               (10)        l2 along the time t is presented in Fig. 3.
+ S    n       σ           i=1                         i=1                                            The growing of the ith principal axis as a function of time t is
+                                                                                                 described as
+where R is the range of maximum and minimum amplitudes of
+time series, S corresponds to standard deviation of such amplitudes                              li (t ) ∼ dr · eλi t                                             (14)
+                                      J.D. de Oliveira, J.B. Copetti and M.L.S. Indrusiak et al. / International Journal of Multiphase Flow 114 (2019) 240–257         247
+
+
+
+
+                                                             Fig. 8. Characteristics of plug ﬂow and dispersed bubbles of R-290.
+
+
+
+Consequently,                                                                                        method can be used only for a short range of a time series. On
+                                                                                                     the other hand, Lai and Chen (1998) method calculates Lyapunov
+                   1        li (t )
+λi =     lim           ln                                                                (15)        exponents using Jacobian method, considering long ranges of time
+       dr→0,t→∞ t             dr                                                                     series.
+   The Lyapunov exponents are listed according to the following
+order: λ1 ≥ λ2 ≥ λ3 ≥ … . Since λ1 is known as the largest Lya-                                      4. Results
+punov exponent LLE and when it is positive, the dynamics of the
+system is characterized as chaotic. Considering a dynamic system                                         In order to validate the optical sensor, as well as the method-
+obtained from a time series X, the LLE can be obtained according                                     ology used, tests were carried out under conditions of sub-cooled
+to                                                                                                   liquid and saturated vapor to ﬁnd intrinsic frequencies to the elec-
+       n−1         χi+1 
+                                                                                                     tronic system (white noise). Such tests were performed with and
+          i=1 ln     χ i
+λ1 =                                                                                     (16)        without isolation on visualization section to analyze the inﬂuence
+           tn − t1
+                                                                                                     of light inside the laboratory and LED set on the high-speed cam-
+where χ i+1 and χ ’i represent the spacing between two trajectories                                  era as well as to evaluate the magnitude of “noise” found in the
+at time ti+1 and ti , respectively.                                                                  electronic circuit of the optical sensor itself.
+    During years several methods have been developed to deter-                                           According to the tests, the absence of isolation around the vi-
+mine LLE in experimental time series. Wolf et al. (1985) method                                      sualization section does not inﬂuence the intrinsic frequencies of
+was the ﬁrst one to purpose an algorithm to ﬁnd the LLE and                                          the system. Figs. 4(a) and 5(a) present the characteristics of elec-
+has been widely used. However, Wolf et al. (1985) method just as-                                    tric signal obtained from optical sensor for sub-cooled liquid and
+sumes the existence of an exponential divergence, but it does not                                    saturated vapor cases, respectively, for R-1270. The maximum volt-
+test it. In sequence, other authors have developed methods to es-                                    age of 4.26 V is indicated by the sensor in conditions without the
+tablish LLE (Sano and Sawada, 1985; Eckmann et al., 1986; Rosen-                                     presence of vapor phase. On the other hand, the minimum voltage
+stein et al., 1993; Kantz, 1994).                                                                    obtained by the sensor is of 0 V and it is observed in conditions for
+    Two different methods were used to calculate the LLE of                                          vapor quality equal to 1. Since intrinsic frequencies for both condi-
+the experimental time series: Rosenstein et al. (1993) and                                           tions are presented in Figs. 4(b) and 5(b). It can be observed that
+Lai and Chen (1998). Since, the method purposed by                                                   white noise is presented and predominant from 100 Hz. In both
+Rosenstein et al. (1993) calculates directly the LLE and has                                         cases, the PSD of white noises are in the order of magnitude of
+the advantage of distinguishing chaos from noise, but such a                                         about 10−8 W/Hz. Both presence and absence of isolation on visu-
+248                         J.D. de Oliveira, J.B. Copetti and M.L.S. Indrusiak et al. / International Journal of Multiphase Flow 114 (2019) 240–257
+
+
+
+
+                                   Fig. 9. Phenomenon of coalescence observed with R-290 for G = 480 kg/(m2 s) e q”TS = 10 W/m2 .
+
+
+
+alization section did not affect those the order of magnitudes, indi-                      istic frequencies and morphologic structures of ﬂow patterns ob-
+cating that such frequencies originate from other electromagnetic                          served through the sequence of images. Five different ﬂow patterns
+source(s) than the artiﬁcial light in laboratory. The same maximum                         were identiﬁed during the tests: dispersed bubbles with plug, slug,
+and minimum voltages, as well as the intrinsic frequencies, were                           churn and wavy-annular. Fig. 6 presents the regime maps as func-
+also observed for R-600 and R-290.                                                         tion of vapor quality and void fraction for all tests in the outlet of
+    Signal amplitudes measured by optical sensor and the char-                             test section.
+acteristic frequencies of ﬂow patterns obtained from three ﬂuids                               In this case, all ﬂow patterns are classiﬁed by different ranges
+were described as function of experimental parameters q”TS , G, slip                       of the nondimensional number β = S·Bo·10−5 , originally purposed
+ratio in test section outlet S( o-TS ) and boiling number Bo, given by                     by Oliveira et al., (2018) and it represents a simple method to pre-
+                                                                                         dict ﬂow pattern based on effects of superﬁcial velocity of each
+           uv(o−T S)    x(o−T S) ρl 1 − α(o−T S)                                           phase, vapor quality and void fraction as function of both mass
+S(o−T S) ≡            =                                                      (17)        and heat ﬂuxes. Its speciﬁc form was obtained in order to avoid
+           ul (o−T S)   α(o−T S) ρv 1 − x(o−T S)
+                                                                                           overlapping of ﬂow patterns when presented as function of va-
+                                                                                           por quality or void fraction. In fact, the presence of dispersed bub-
+       q T S
+Bo =                                                                           (18)        bles was found only with plugs during the tests involving low heat
+       G il v                                                                              conditions.
+where uv ( o-TS ) and ul ( o-TS ) represent vapor and liquid mean veloci-
+ties in two-phase ﬂow, respectively.                                                       4.1. Dispersed bubbles and plug ﬂow
+    All images were captured by a high-speed camera with a range
+of 50 0 0 frames per second for a period of 10 s in each test. Thus,                           For all conditions of mass ﬂuxes and q”TS = 5 kW/m², plug ﬂow
+all results presented are based on comparisons between character-                          is predominantly observed. In this case, such a pattern is obtained
+    J.D. de Oliveira, J.B. Copetti and M.L.S. Indrusiak et al. / International Journal of Multiphase Flow 114 (2019) 240–257   249
+
+
+
+
+Fig. 10. Phase portraits observed from signals for plug ﬂow with dispersed bubbles, considering τ = 4 · 10–3 s and d = 3.
+
+
+
+
+                                       Fig. 11. Characteristics of slug ﬂow of R-1270.
+250                      J.D. de Oliveira, J.B. Copetti and M.L.S. Indrusiak et al. / International Journal of Multiphase Flow 114 (2019) 240–257
+
+
+
+
+                                                            Fig. 12. Characteristics of slug ﬂow of R-290.
+
+
+
+
+                                 Fig. 13. Phase portraits observed from signals for slug ﬂow, considering τ = 4 · 10–3 s and d = 3.
+
+
+
+only when slip ratio is higher than 1 and it is characterized by                        Plugs with length of approximately 1 mm present frequency equal
+different sizes of plugs accompanied intermittently by dispersed                        to 4 Hz, whereas more elongated plugs (≥2 mm) have a character-
+bubbles. The results obtained for R-600a, according to Fig. 7, show                     istic frequency equal to 2 Hz.
+that dispersed bubbles present a vast range of frequencies up to                            R-290 presented plug ﬂow with dispersed bubbles for all mass
+20 Hz, including harmonic and subharmonics ones. However, the                           ﬂuxes with q”TS ≤ 10 kW/m². Fig. 8 presents the characteristic fre-
+investigation of sequence of images indicates that plugs present,                       quencies of plug ﬂow observed in tests for q”TS = 10 kW/m² and
+basically, two distinct frequencies due to differences of the sizes.                    G = 480 kg/(m²s). In this case, there are two distinct frequencies:
+                         J.D. de Oliveira, J.B. Copetti and M.L.S. Indrusiak et al. / International Journal of Multiphase Flow 114 (2019) 240–257         251
+
+
+
+
+                                                          Fig. 14. Characteristics of churn ﬂow for R-600a.
+
+
+
+4.8 Hz, due to plugs with length smaller than 1 mm, and 1.5 Hz for                      terns related to Fig. 10(a) and (b) have Lyapunov exponents equal
+plugs bigger than 1 mm. The formation of more elongated bubbles                         to 0.6613 and 0.782, indicating the existence of deterministic chaos
+can be explained by coalescence effect between smaller plugs, or                        in the signal. For R-290, Fig. 10(b) and (c), the largest Lyapunov
+between plug and dispersed bubbles along the ﬂow. Fig. 9 presents                       exponents are equal to 2.038 and 2.891, respectively. Similar char-
+the images obtained sequentially from the same conditions de-                           acteristics of both phase portrait and Lyapunov exponent are ob-
+scribed in Fig. 8 and showing the process of coalescence between                        served for R-1270 (Fig. 10(d) and (e)) comparing to R-290. In this
+two dispersed bubbles and a small plug, forming a longer plug. For                      case, LLEs are 2.576 and 2.905, respectively.
+R-1270, plug ﬂow with dispersed bubbles was also found for the                              In fact, such phase portraits present strange attractors from the
+same conditions of heat and mass ﬂuxes with different ranges of                         chaotic nature of ﬂow patterns. For R-600a, R-290 and R-1270,
+frequencies caused by velocities of phases. In terms of heat trans-                     Hurst exponent ranges between 0.81–0.92, 0.80–0.84 and 0.67–
+fer, Oliveira et al. (2018) has shown that such ﬂow patterns are re-                    0.85, respectively, indicating intermittent variations in signal am-
+lated to nucleate boiling dominance due to the low vapor quality                        plitude for that respective ﬂow pattern. Such variations are re-
+conditions.                                                                             lated to the passage of vapor phase with different sizes along
+    The wide frequency ranges found in most of the observed ﬂow                         the ﬂow caused by coalescence of bubbles. Although Talley et al.
+patterns for the three refrigerants may be an indicative that vari-                     (2015) point out that the process of bubble coalescence can be
+ations caused by the liquid-vapor interface are governed by non-                        considered random, the dynamic of this ﬂow pattern, including
+linear dynamics. Based on this fact, the phase portraits obtained                       union of bubbles, is deterministic.
+from signal ﬂuctuations were analyzed for all experimental tests.
+Fig. 10 presents the strange attractor of signal ﬂuctuations found in                   4.2. Slug ﬂow
+plug/dispersed bubbles for different mass ﬂux conditions with heat
+ﬂux equals to 5 kW/m². Such attractors are characterized by a pres-                        A typical case of slug ﬂow for R-1270 is observed in Fig. 11 with
+ence of a central part formed by the passage of bubbles and exter-                      the main characteristics of the ﬂow pattern. In this case, the inter-
+nal parts (petals) created from the passing of plugs. The ﬂow pat-                      mittence of liquid phase presents a predominant frequency of ap-
+252            J.D. de Oliveira, J.B. Copetti and M.L.S. Indrusiak et al. / International Journal of Multiphase Flow 114 (2019) 240–257
+
+
+
+
+                                                Fig. 15. Characteristics of churn ﬂow for R-1270.
+
+
+
+
+      Fig. 16. Liquid-vapor structure of churn ﬂow for the refrigerants in different conditions of heat ﬂux, considering G = 480 kg/(m²s).
+                         J.D. de Oliveira, J.B. Copetti and M.L.S. Indrusiak et al. / International Journal of Multiphase Flow 114 (2019) 240–257        253
+
+
+
+
+                                 Fig. 17. Phase portraits observed from signals for slug ﬂow, considering τ = 4 · 10–3 s and d = 3.
+
+
+
+proximately 3.5 Hz for low mass ﬂux conditions (G ≤ 320 kg/(m²s))                       tence of dense zones in these cases can also be justiﬁed by intense
+and 5 Hz for G ≥ 40 0 kg/(m²s). For R-60 0a and R-290 (Fig. 12), such                   presence of dispersed bubbles in liquid phase between slugs. On
+a pattern presents practically the same characteristic frequencies                      the other hand, due to higher surface tension of R-600a, dispersed
+though its predominance occurs only for q”TS = 10 kW/m2 . On the                        bubbles were not easily found between slugs and causing lower
+other hand, slug ﬂow is also characterized by higher frequencies                        density in the center of attractors, as shown in Fig. 13(a).
+with smaller spectral energy due to the presence of small dis-
+persed bubbles that come off the back of the slug. Such detach-                         4.3. Churn ﬂow
+ment is due to hydrodynamic instabilities caused by higher vapor-
+phase velocity. Those frequencies are, generally, in the range be-                          The occurrence of churn ﬂow as one of the main ﬂow pat-
+tween 8 and 18 Hz and they can vary according to the intensity of                       terns found during the tests is intrinsically related to the large
+both heat and mass ﬂuxes. Similar range of frequencies was found                        amount of heat required to change of ﬂow pattern from slug ﬂow
+by Sardeshpande et al. (2016) in the investigation of pressure drop                     to wavy-annular ﬂow (Oliveira, 2017; Oliveira et al., 2018). The
+oscillations during ﬂow boiling of R-718. According to their results,                   existence of churn ﬂow is also explained by the radial symme-
+pressure ﬂuctuations are caused by acceleration of liquid intermit-                     try found in small channels. Videos obtained from images col-
+tencies due to the formation and growth of conﬁned bubbles and                          lected were also analyzed to ensure the existence of such ﬂow
+vapor plugs. A chaotic behavior based on the largest Lyapunov ex-                       pattern. Churn ﬂow has also been reported by Copetti et al.,
+ponents was also found and the trend of long-term positive corre-                       (2013) and Silveira et al. (2017) in experiments, using hydrocar-
+lation is still observed for signals obtained from this ﬂow pattern.                    bons and R134a. For R-600a, as shown in Fig. 14, churn ﬂow
+Results show that, for R-600a, the largest Lyapunov exponent, LLE,                      presents a predominant frequency of 5 Hz for mass ﬂuxes of 240
+decreases smoothly with increasing of mass ﬂux, but ranging posi-                       and 320 kg/(m2 s) and heat ﬂuxes between 20 and 40 kW/m² that
+tively from 2.39 to 2.18. On the other hand, the Hurst exponent, H,                     can be observed based on the counting of peaks of signal. Such
+increases with increasing of mass ﬂux from 0.68 to 0.82. For R-290,                     a characteristic frequency is caused by the passage of vapor gaps
+intermittent appearance of vapor slugs presents the LLE between                         caused by Kelvin–Helmholtz instabilities. However, with increas-
+2.22 and 3.03 and H ranging from 0.62 to 0.7, showing that there                        ing of mass ﬂux, it occurs a greater instability of interface of both
+is still existence of a long-time memory in the system. The time                        phases, causing the appearance of frequencies ranging from 3 to
+of stability indicated by Hurst exponents can also be stablished by                     10 Hz. Oliveira et al. (2018) also showed that heat transfer effect
+the inverse of LLE (Grzybowski and Mosdorf (2014)), i.e., the time                      depends on both mass and heat ﬂuxes where slug and churn ﬂow
+necessary to keep the trend of a high value followed by another                         are predominant.
+high value, for example. For R-290, average Lyapunov time (1/λ)                             Based on the typical frequencies found in churn ﬂow, caused
+is 0.38 s and it means that a predominant frequency of approx-                          by such gaps, the effect of both superﬁcial tension and reduced
+imately 2.63 Hz is found between intermittencies of liquid phase                        pressure are clearly observed for the three refrigerants. On the
+in this ﬂow pattern. This predominant frequency can also be veri-                       other hand, gaps of churn ﬂow with R-290 and R-1270 (Fig. 15)
+ﬁed through the FFT according to Fig. 12. Examples of phase por-                        present more dispersed characteristic frequencies, ranging be-
+traits found in slug ﬂows are presented in Fig. 13. Similar strange                     tween 2 and 10 Hz, according to conditions of both heat and mass
+attractors are observed between the patterns of R-290 and R-1270                        ﬂuxes. The behavior changes between persistent and antipersistent
+(Figs. 13(b) and 13(c)). Such a similarity is characterized by a dense                  characteristics of signals were found in churn ﬂow. For all mass
+zone in the center of attractors and is related to predominant fre-                     ﬂuxes and heat ﬂux of 20 kW/m², the persistent characteristic is
+quencies shown in Figs. 11 and 12, for example. In turn, the exis-                      still observed, with Hurst exponents ranging between 0.596 and
+254                     J.D. de Oliveira, J.B. Copetti and M.L.S. Indrusiak et al. / International Journal of Multiphase Flow 114 (2019) 240–257
+
+
+
+
+                                                  Fig. 18. Typical characteristics of wavy-annular ﬂow of R-290.
+
+
+
+
+0.5156. For cases with heat ﬂux equal to 40 kW/m², the time series                     4.4. Wavy-annular ﬂow
+of churn ﬂows are found to be antipersistent, indicated by Hurst
+exponents between 0.4094 and 0.3411. For R-600a, the largest                               The wavy-annular ﬂow is characterized by the presence of
+Lyapunov exponents were found to be also positives ranging                             a liquid front wave sliding on the liquid-vapor interface in an-
+from 1.5666 and 4.3775 without any apparent dependence of                              nular ﬂow. Such a ﬂow patterns was found for all mass ﬂuxes
+mass or heat ﬂux. For R-290 and R-1270, the chaotic behavior                           with higher heat ﬂuxes q”TS ≥ 40 kW/m² for G = 240 kg/(m²s)
+was also identiﬁed, indicated by the largest Lyapunov exponents                        and q”TS = 60 kW/m² for G >240 kg/(m²s). Surface tension and
+varying from 1.7126 to 3.0324. In fact, ﬂow presented the LLE                          reduced pressure effects are also observed in wavy-annular ﬂow.
+for each condition of heat and mass ﬂux and it is caused by the                        For, R-290, according to Oliveira et al. (2018), such a ﬂow pattern
+considerable turbulence and instability between both phases.                           is characterized by the convective boiling predominance and
+   The effect of superﬁcial tension is also perceived when the mor-                    presents the highest heat transfer coeﬃcients. That characteristics
+phology of liquid-vapor interface is observed, as seen in Fig. 16.                     can be explained by the reduction in the thickness of the liquid
+For R-600a, churn ﬂow is characterized by smooth oscillations on                       ﬁlm layer and it causes the thermal resistance of the liquid phase
+the interface. Even with the passing of gaps, the interface does                       to decrease, thereby reducing the difference between the internal
+not present considerable deformations in its structure. For R-290                      wall temperature and the saturation temperature. For both R-290
+and R-1270, the passing of gaps deforms considerable the inter-                        (Fig. 18) and R-1270 (Fig. 19), wave fronts (characteristics of
+face, causing the appearance of more intense oscillations along the                    such a ﬂow pattern) have frequencies between 1.5 Hz and 4.5 Hz.
+ﬂow. For churn ﬂow, phase portraits present wider orbits with dis-                     Nevertheless, higher frequencies with lower energies appear and
+tinct regions of concentration (Fig. 17). Such behavior can be ex-                     are generated by faster intermittent instabilities in the interface of
+plained by the increasing of Kelvin–Helmholtz instabilities caused                     two-phase ﬂow, varying between 6 and 12 Hz for both ﬂuids. On
+by a greater vapor-phase velocity. On the other hand, the regions                      the other hand, R-600a presents only one predominant frequency
+of concentration come from low predominant frequencies.                                for both wavy- and smooth-annular ﬂow. In this case, wave
+                         J.D. de Oliveira, J.B. Copetti and M.L.S. Indrusiak et al. / International Journal of Multiphase Flow 114 (2019) 240–257        255
+
+
+
+
+                                                  Fig. 19. Typical characteristics of wavy-annular ﬂow of R-1270.
+
+
+
+fronts present predominantly 5 Hz for G = 240 and 320 kg/(m2 s)                         unique denser region is observed for R-1270 but, in fact, such
+with q”TS = 40 kW/m2 and, for other conditions, a frequency of                          region consists of attractor close together.
+7.3 Hz. As well as to churn ﬂow observed with q”TS = 40 kW/m²,
+antipersistent time series were found in wavy-annular. In this case,
+                                                                                        5. Conclusions
+Hurst exponent presented the lowest values for this ﬂow pattern,
+ranging between 0.2871–0.3088, 0.3101–0.3668 and 0.2327–0.3437
+                                                                                           The main aim of the present investigation was to analyze time
+for R-600a, R-290 and R-1270, respectively. On the other hand,
+                                                                                        series provided by signals of void fraction during ﬂow boiling of R-
+the largest Lyapunov exponents decreased for this ﬂow pattern
+                                                                                        600a, R-290 and R-1270 for a saturation temperature of 17 °C per-
+when compared to churn ﬂow for R-600a. According to data
+                                                                                        formed in a horizontal tube having an internal diameter of 1.0 mm.
+analysis, R-600a presented the largest Lyapunov exponents varying
+                                                                                        A method based on fast Fourier transform was used to establish
+from 1.2915 (for G = 480 kg/(m²s) and q”TS = 60 kW/m²) to 2.2966
+                                                                                        characteristic frequencies of ﬂow patterns.
+(for G = 240 kg/(m²s) and q”TS = 60 kW/m²). For R-290 and R-1270,
+                                                                                           The following main conclusions can be drawn from the results
+this trend was not observed and the largest Lyapunov exponents
+                                                                                        obtained:
+ranged between 2.1326 and 3.3188, and 0.8434 and 1.4800, respec-
+tively. Fig. 20 shows examples of phase portraits for wavy-annular                       • The use of an optical probe to measure light ﬂuctuations caused
+ﬂow. The tendency of spreading orbits is still observed. For R-600a                        by the dynamic of liquid-vapor interface has been effective to
+(Fig. 20(a)), it can be seen the existence of a strange attractor                          recognize characteristics of ﬂow patterns for different condi-
+(indicated in ﬁgure) caused by the greater proximity among the                             tions of G and q”.
+characteristic frequencies. For R-290, (Fig. 20(b)) three denser                         • Both vapor quality and void fraction also have considerable in-
+regions are found and related to the distinct predominant fre-                             ﬂuence on ﬂow patterns since the affect the velocity of each
+quencies previously mentioned. On the other hand, an apparently                            phase.
+256                             J.D. de Oliveira, J.B. Copetti and M.L.S. Indrusiak et al. / International Journal of Multiphase Flow 114 (2019) 240–257
+
+
+
+
+                                  Fig. 20. Phase portraits observed from signals for wavy-annular ﬂow, considering τ = 4 · 10–3 s and d = 3.
+
+
+
+ • Five different ﬂow patterns were identiﬁed on the basis of im-                              Bendat, J.S., Piersol, A.G., 1993. Engineering Applications of Correlation and Spectral
+   ages, including dispersed bubbles ﬂow, plug ﬂow, slug ﬂow,                                       Analysis. Wiley-Interscience, New York.
+                                                                                               Brutin, D., Tadrist, L., 2004. Pressure drop and heat transfer analysis of ﬂow boiling
+   churn ﬂow and wavy-annular ﬂow. The predominant frequen-                                         in a minichannel: inﬂuence of the inlet condition on two-phase ﬂow stability.
+   cies of each ﬂow pattern were found to be related to its                                         Int. J. Heat Mass Transf. 47, 2365–2377.
+   morphology and regime characteristics such as heat and mass                                 Copetti, J.B., Sodré, R.A., Macagnan, M.H., Oliveira, J.D., 2013. Analysis of ﬂow pat-
+                                                                                                    terns during boiling of R-134a and R-600a in a mini tube. 22nd International
+   ﬂuxes.                                                                                           Congress of Mechanical Engineering, COBEM 2013 3-7 November.
+ • The existence of chaos in all-time series was investigated based                            Costigan, G., Whalley, P.B., 1997. Slug ﬂow regime identiﬁcation from dynamic void
+   on the largest Lyapunov exponent LLE. For all cases, positive                                    fraction measurements in vertical air-water ﬂows. Int. J. Multiph. Flow 23,
+                                                                                                    263–282.
+   LLEs were found, indicating a deterministic chaotic behavior of
+                                                                                               Del Col, D., Bortolato, M., Bortolin, S., 2014. Comprehensive experimental investiga-
+   liquid-vapor interface of ﬂow patterns. The LLE increases with                                   tion of two-phase heat transfer and pressure drop with propane in a minichan-
+   increasing the heat ﬂux during the development of ﬂow pat-                                       nel. Int. J. Refri. 47, 66–84.
+                                                                                               Dong, X., Tan, C., Yuan, Y., Dong, F., 2015. Oil-water two-phase ﬂow velocity
+   tern from dispersed bubbles ﬂow to churn ﬂow and decrease
+                                                                                                    measurement with continuous wave ultrasound Doppler. Chem. Eng. Sci. 135,
+   in wavy-annular ﬂow.                                                                             155–165.
+ • The dynamics of time series was observed, using phase por-                                  Du, M., Jin, N.-D., Gao, Z.-K., Sun, B., 2012. Analysis of total energy and time-fre-
+   traits to recognize the presence of strange attractors. Similar                                  quency entropy of gas–liquid two-phase ﬂow pattern. Chem. Eng. Sci. 82,
+                                                                                                    144–158.
+   phase portraits were found for each type of ﬂow pattern, in-                                Eckmann, J.-P., Oliffson Kamphorst, S., Ruelle, D., Ciliberto, S., 1986. Lyapunov expo-
+   dicating, consequently, the existence of similar intrinsic charac-                               nents from time series. Phys. Rev. A 34, 4971–4979.
+   teristics of the signals over time.                                                         Grzybowski, H., Mosdorf, R., 2014. Dynamics of pressure oscillations in ﬂow boiling
+                                                                                                    and condensation in the minichannel. Int. J. Heat Mass Trans. 73, 500–510.
+ • A test to detect long memory in time series of ﬂow pattern was
+                                                                                               Grzybowski, H., Mordof, R., 2018. Dynamics of pressure drop oscillations during ﬂow
+   implemented based on Hurst exponent. For a ﬁxed mass ﬂux                                         boiling inside minichannel. Int. Commun. Heat Mass Transf. 95, 25–32.
+   condition, Hurst exponent decrease with increasing heat ﬂux.                                Hanaﬁzadeh, P., Eshraghi, J., Takliﬁ, A., Ghanbarzadeh, S., 2015. Experimental identi-
+                                                                                                    ﬁcation of ﬂow regimes in gas–liquid two phase ﬂow in a vertical pipe. Mecca-
+   And for this reason, bubbly, plug and slug ﬂows are character-                                   nica 51, 1771–1782.
+   ized by persistent time series. On the other hand, churn and                                Jana, A.K., Das, G., Das, P.K., 2006. Flow regime identiﬁcation of two-phase liq-
+   wavy-annular ﬂows are represent by antipersistent time series.                                   uid-liquid upﬂow through vertical pipe. Chem. Eng. Sci. 61, 1500–1515.
+                                                                                               Jaworek, A., Krupa, A., 2010. Phase-shift detection for capacitance sensor measuring
+   And, apparently, none mass ﬂux effect was identiﬁed on both
+                                                                                                    void fraction in two-phase ﬂow. Sens. Actuators A Phys. 160, 78–86.
+   long-memory and the LLE.                                                                    Kanizawa, F.T., Ribatski, G., 2012. Two-phase ﬂow patterns and pressure drop inside
+                                                                                                    horizontal tubes containing twisted-tape inserts. Int. J. Multiph. Flow 47, 50–65.
+   In fact, the chaotic feature is not enough to identify ﬂow pat-                             Kantz, H., 1994. A robust method to estimate the maximal Lyapunov exponent of a
+terns. But it is evident that existence of some intrinsic frequencies                               time series. Phys. Lett. A 185 (, 1 ), 77–87.
+                                                                                               Klein, F.L., Seleghim Junior, P., Hervieu, E., 2004. Time-frequency analysis of inter-
+can help to identify them. On the other hand, the chaotic nature
+                                                                                                    mittent two-phase ﬂows in horizontal piping. J. Braz. Soc. Mech. Sci. Eng. 26,
+of ﬂow patterns can be related to ﬂuctuations in pressure drop, as                                  174–179.
+shown by Grzybowski and Mordof (2018).                                                         Lai, D., Chen, G., 1998. Statistical analysis of Lyapunov exponents from time series:
+                                                                                                    a Jacobian approach. Mathl. Comput. Model. 27, 1–9.
+References                                                                                     Lei, M., Wang, Z., Feng, Z., 2002. A method of embedding dimension estimation
+                                                                                                    based on symplectic geometry. Phys. Lett. A 303, 179–189.
+                                                                                               Lemmon, E.W., Hube, M.L., McLinden, M.O., 2013. Physics and chemical properties
+Al-Wahaibi, T., Yusuf, N., Al-Wahaibi, Y., Al-Ajmi, A., 2012. Experimental study on the             division. REFPROP 9.1, NIST Standard Reference Database 23, Version 9.1.
+    transition between stratiﬁed and non-stratiﬁed horizontal oil-water ﬂow. Int. J.           Li, H.W., Zhou, Y.L., Hou, Y.D., Sun, B., Yang, Y., 2014. Flow pattern map and time-fre-
+    Multiph. Flow 38, 126–135.                                                                      quency spectrum characteristics of nitrogen-water two-phase ﬂow in small ver-
+Angeli, P., Hewitt, G.F., 20 0 0. Flow structure in horizontal oil-water ﬂow. Int. J.               tical upward noncircular channels. Exp. Therm. Fluid Sci. 54, 47–60.
+    Multiph. Flow 26, 1117–1140.
+                                  J.D. de Oliveira, J.B. Copetti and M.L.S. Indrusiak et al. / International Journal of Multiphase Flow 114 (2019) 240–257                              257
+
+
+Mandelbrot, B., Wallis, J.R., 1969. Robustness of the rescaled range R/S in the mea-             Schembri, F., Bucolo, M., 2011. Periodic input ﬂows tuning nonlinear two-phase dy-
+    surement of noncyclic long-run statistical dependence. Water Resour. Res. 5,                      namics in a snake microchannel. Microﬂuid. Nanoﬂuidics 11, 189–197.
+    967–988.                                                                                     Schubring, D., Shedd, T.A., 2009. Two-phase wavy-annular ﬂow in small tubes. Int.
+Mahvash, A., Ross, A., 2008. Two-phase ﬂow pattern identiﬁcation using continuous                     J. Heat Mass Transf. 52, 1619–1622.
+    hidden Markov model. Int. J. Multiph. Flow 34, 303–311.                                      Silveira, L.E.S., Copetti, J.B., Oliveira, J.D., Silva, 2017. Experimental investigation of
+Monni, G., Salve, M.D., Panella, B., 2014. Horizontal two-phase ﬂow pattern recogni-                  ﬂow patterns during boiling of R-290 and R-600a in a small channel. IV Jour-
+    tion. Exp. Therm. Fluid Sci. 59, 213–221.                                                         neys in Multiphase Flows, JEM 2017, 27-31 March.
+Morsi, T., Ababou, N., Ababou, A., Saïdj, F., Arezki, S., Azzi, A., 2011. Im-                    Sim, W.G., Bae, B.M., Mureithi, N.W., 2010. An experimental study on characteristics
+    proved electronic conditioning circuit for conductance probe technique. Con-                      of two-phase ﬂows in vertical pipe. J. Mech. Sci. Technol. 24, 1981–1988.
+    férence Internationale sur l’Automatique et la Mécatronique, CIAM’2011, 22–24                Song, C.H., No, H.C., Chung, M.K., 1995. Investigation of bubble ﬂow developments
+    November.                                                                                         and its transition based on the instability of void fraction waves. Int. J. Multiph.
+Nguyen, V.T., Euh, D.J., Song, C.-H., 2010. An application of the wavelet analysis tech-              Flow 21, 381–404.
+    nique for the objective discrimination of two-phase ﬂow patterns. Int. J. Mul-               Sun, Z., Chen, Y., Gong, H., 2012. Classiﬁcation of gas–liquid ﬂow patterns by the
+    tiph. Flow 36, 755–768.                                                                           norm entropy of wavelet decomposed pressure ﬂuctuations across a bluff body.
+Oliveira, J.D., Copetti, J.B., Passos, J.C., 2016. An experimental investigation on ﬂow               Meas. Sci. Technol. 23, 125301.
+    boiling heat transfer of R-600a in a horizontal small tube. Int. J. Refrig. 72,              Tan, C., Li, P., Dai, W., Dong, F., 2015. Characterization of oil-water two-phase pipe
+    97–110.                                                                                           ﬂow with a combined conductivity/capacitance sensor and wavelet analysis.
+Oliveira, J.D., 2017. Análise Experimental da Ebulição Convectiva de Hidrocarbonetos                  Chem. Eng. Sci. 134, 153–168.
+    em um Mini Canal de Seção Circular.                                                          Talley, J.D., Worosz, T., Kim, S., 2015. Characterization of horizontal air–water
+Oliveira, J.D., Passos, J.C., Coppeti, J.B., van der Geld, C.W.M., 2018. Flow boiling heat            two-phase ﬂow in a round pipe part II: Measurement of local two-phase pa-
+    transfer of propane in 1.0mm tube. Exp. Therm. Fluid Sci. 96, 243–256.                            rameters in bubbly ﬂow. Int. J. Multiph. Flow 76, 223–236.
+Oliveira, W.R., Paula, I.B., Martins, F.J.W.A., Farias, P.S.C., Azevedo, L.F.A., 2015. Bubble    van Der Welle, R., 1985. Void fraction, bubble velocity and bubble size in two-phase
+    characterization in horizontal air-water intermittent ﬂow. Int. J. Multiph. Flow                  ﬂow. Int. J. Multiph. Flow 11, 317–345.
+    69, 18–30.                                                                                   Wang, S., Shoji, M., 2002. Fluctuation characteristics of two-phase ﬂow splitting at
+Revellin, R., Dupont, V., Ursenbacher, T., Thome, J.R., Zun, I., 2006. Characteriza-                  a vertical impacting T-junction. Int. J. Multiph. Flow 28, 2007–2016.
+    tion of diabatic two – phase ﬂows in microchannels: ﬂow parameter results                    Wang, G., Cheng, P., Wu, H., 2007. Unstable and stable ﬂow boiling in paral-
+    for R-134a in a 0.5mm channel. Int. J. Multiph. Flow 32, 755–774.                                 lel microchannels and in a single microchannel. Int. J. Heat Mass Transf. 50,
+Rosenstein, M.T., Collins, J.J., De Luca, C.J., 1993. A practical method for calculat-                4297–4310.
+    ing largest Lyapunov exponents from small data sets. Phys. D. Non. Phen. 65,                 Welch, P.D., 1967. The use of fast Fourier transform for the estimation of power
+    117–134.                                                                                          spectra: a method based on time averaging over short, modiﬁed periodograms.
+Rouhani, S.Z., Axelsson, E., 1970. Calculations of void volume fraction in the sub-                   IEEE Trans. Audio Electroacoust. 15, 70–73.
+    cooled and quality boiling region. Int. J. Heat Mass Transf. 13, 383–393.                    Wolf, A., Swift, J.B., Swinney, H.L., Vastano, J.A., 1985. Determining Lyapunov expo-
+Rysak, A., Litak, G., Mosdorf, R., Górski, G., 2016. Investigation of two-phase ﬂow                   nents from a time series. Phys. D 16, 285–317.
+    patterns by analysis of Eulerian space-time correlations. Int. J. Multiph. Flow              Zhai, L.-S., Jin, N.-D., Zong, Y.-B., Hao, Q.-Y., Gao, Z.-K., 2015. Experimental ﬂow pat-
+    85, 23–37.                                                                                        tern map, slippage and time–frequency representation of oil–water two-phase
+Saidj, F., Kibboua, R., Azzi, A., Ababou, N., James, B., 2014. Experimental investigation             ﬂow in horizontal small diameter pipes. Int. J. Multiph. Flow 76, 168–186.
+    of air–water two-phase ﬂow through vertical 90 ° bend. Exp. Therm. Fluid Sci.                Zhai, L.-S., Angeli, P., Jin, N.-D., Zhou, D.-S., Zhu, L., 2017. The nonlinear analysis of
+    57, 226–234.                                                                                      horizontal oil-water two-phase ﬂow in a small diameter pipe. Int. J. Multiph.
+Sano, M., Sawada, Y., 1985. Measurement of the Lyapunov spectrum from a chaotic                       Flow 92, 39–49.
+    time series. Phys. Rev. Lett. 55, 1082–1085.                                                 Zeghloul, A., Azzi, A., Saidj, F., Azzopardi, B.J., Hewakandamby, B., 2015. Interrogating
+Sardeshpande, M.V., Shastri, P., Ranade, V.V., 2016. Two-phase ﬂow boiling pressure                   the effect of an oriﬁce on the upward two-phase gas-liquid ﬂow behavior. Int.
+    drop in small channels. Int. J. Heat Fluid Flow 0, 1–14.                                          J. Multiph. Flow 74, 96–105.
+

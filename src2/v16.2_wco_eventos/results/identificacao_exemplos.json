@@ -1,0 +1,26 @@
+[
+  {
+    "caso": "favoravel",
+    "pair_id": "m05q01_001_E005__m06q01_001_E011",
+    "padrao_x": "plug",
+    "padrao_y": "plug",
+    "event_x": "m05q01_001_E005",
+    "event_y": "m06q01_001_E011"
+  },
+  {
+    "caso": "desfavoravel",
+    "pair_id": "m05q01_001_E004__m07q05_001_E007",
+    "padrao_x": "plug",
+    "padrao_y": "plug",
+    "event_x": "m05q01_001_E004",
+    "event_y": "m07q05_001_E007"
+  },
+  {
+    "caso": "entre_padroes",
+    "pair_id": "m05q01_001_E003__m06q05_001_E007",
+    "padrao_x": "plug",
+    "padrao_y": "slug",
+    "event_x": "m05q01_001_E003",
+    "event_y": "m06q05_001_E007"
+  }
+]

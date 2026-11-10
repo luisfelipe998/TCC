@@ -1,0 +1,1526 @@
+{
+  "passed": true,
+  "counts": {
+    "baseline_artifacts": 67,
+    "csv_files": 23,
+    "binary_masks": 31,
+    "json_files": 13,
+    "byte_identical_artifacts": 63,
+    "permitted_hash_changes": 4,
+    "local_markdown_links": 137,
+    "broken_links": 0,
+    "unexpected_root_or_scripts_entries": 0
+  },
+  "baseline": "intermediate/history/reorganization_baseline.json",
+  "baseline_snapshot_sha256": "6e1d41ff64343055ca1ee0423b91b6ecca6f9c2552752a4252fa93061502325a",
+  "allowed_metadata_fields": [
+    "estimator_sha256",
+    "script_sha256",
+    "segmentation_source_sha256"
+  ],
+  "file_checks": [
+    {
+      "original": "adversarial_checks.json",
+      "current": "results/validation/adversarial_checks.json",
+      "baseline_sha256": "286ea74664691ef40bdc750085f5227cbf1077e6eb7eb566f41d8939108d752b",
+      "exists": true,
+      "current_sha256": "96b192bf45f3134c4de4a773d38bee3eb233f1ae6a809ac76a6db191dd02ca33",
+      "byte_identical": false,
+      "json_differences": [
+        {
+          "path": "$.estimator_sha256",
+          "before": "9e4d7a7c1b5c9ef7bf2d18818cc2b298600f7e41f9006b6774e8b5c89221e835",
+          "after": "0d1ddf2d1222fe6677d52733626ea5205f23b2a8edf3e3b39be5d750fa82d70c",
+          "allowed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "original": "adversarial_connectivity_check.json",
+      "current": "intermediate/history/adversarial_connectivity_check.json",
+      "baseline_sha256": "574917ae3e00de4139ef8abc9eb043719b2b889e8079c9fc86655c17c7acfc81",
+      "exists": true,
+      "current_sha256": "574917ae3e00de4139ef8abc9eb043719b2b889e8079c9fc86655c17c7acfc81",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "adversarial_crop_sensitivity.json",
+      "current": "intermediate/history/adversarial_crop_sensitivity.json",
+      "baseline_sha256": "1f69b572834d07194cd4cec85b9ebb2c2521cc4f0495c9c0ebdba21e1b207b32",
+      "exists": true,
+      "current_sha256": "1f69b572834d07194cd4cec85b9ebb2c2521cc4f0495c9c0ebdba21e1b207b32",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "adversarial_manual_liquid_sensitivity.json",
+      "current": "intermediate/history/adversarial_manual_liquid_sensitivity.json",
+      "baseline_sha256": "3985d2a461b3fbd5bf21110b2c73f538f8532f5f7f3484422a33eaea588459d0",
+      "exists": true,
+      "current_sha256": "3985d2a461b3fbd5bf21110b2c73f538f8532f5f7f3484422a33eaea588459d0",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "adversarial_phase_anchor_checks.json",
+      "current": "intermediate/history/adversarial_phase_anchor_checks.json",
+      "baseline_sha256": "5ea97567b705f6e6d5be81fa394cbc8fab3c7d0573e318096171c8b123346cff",
+      "exists": true,
+      "current_sha256": "5ea97567b705f6e6d5be81fa394cbc8fab3c7d0573e318096171c8b123346cff",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "data_inventory.csv",
+      "current": "results/validation/data_inventory.csv",
+      "baseline_sha256": "5241d034e190f1ece4864d63c478b64d48289217c55a38b0765f3c3c00cd7b50",
+      "exists": true,
+      "current_sha256": "5241d034e190f1ece4864d63c478b64d48289217c55a38b0765f3c3c00cd7b50",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "final_verification.json",
+      "current": "results/validation/final_verification.json",
+      "baseline_sha256": "7e78f41680f46d52fec05655b9ee5e903951ccc7940139df8d85eb61915c1f00",
+      "exists": true,
+      "current_sha256": "b443c56e44137168bf9fe79ea841982b4ae94ba32a3b3840dc0cbf3bd41c763d",
+      "byte_identical": false,
+      "json_differences": [
+        {
+          "path": "$.segmentation_source_sha256",
+          "before": "9e4d7a7c1b5c9ef7bf2d18818cc2b298600f7e41f9006b6774e8b5c89221e835",
+          "after": "0d1ddf2d1222fe6677d52733626ea5205f23b2a8edf3e3b39be5d750fa82d70c",
+          "allowed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "original": "flip_rate_audit.json",
+      "current": "results/validation/flip_rate_audit.json",
+      "baseline_sha256": "90d91151ab7182aa2b548e0370140b85c435afa509e765dc1861507c70408099",
+      "exists": true,
+      "current_sha256": "90d91151ab7182aa2b548e0370140b85c435afa509e765dc1861507c70408099",
+      "byte_identical": true,
+      "json_differences": [],
+      "passed": true
+    },
+    {
+      "original": "flip_rate_by_pattern.csv",
+      "current": "results/flip_rate/flip_rate_by_pattern.csv",
+      "baseline_sha256": "ce0949ece004704b8849b5b106eb53aacabfb826459321ebcca2d07ea434c19d",
+      "exists": true,
+      "current_sha256": "ce0949ece004704b8849b5b106eb53aacabfb826459321ebcca2d07ea434c19d",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "flip_rate_group_sensitivity.csv",
+      "current": "intermediate/sensitivity/flip_rate_group_sensitivity.csv",
+      "baseline_sha256": "99e72c610db95062358e4b04b614182998e4c524ab17ec6590e4df617fc328ad",
+      "exists": true,
+      "current_sha256": "99e72c610db95062358e4b04b614182998e4c524ab17ec6590e4df617fc328ad",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "flip_rate_per_run.csv",
+      "current": "results/flip_rate/flip_rate_per_run.csv",
+      "baseline_sha256": "260cccefefe844fe423c8318971ffce1e7920cba8b02460b8820d2b4be11d11a",
+      "exists": true,
+      "current_sha256": "260cccefefe844fe423c8318971ffce1e7920cba8b02460b8820d2b4be11d11a",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "flip_rate_sensitivity.csv",
+      "current": "intermediate/sensitivity/flip_rate_sensitivity.csv",
+      "baseline_sha256": "d408db9ad00d8597d636bff81ba25c6bfd4d77b1de3424645c10a7baf0619cf1",
+      "exists": true,
+      "current_sha256": "d408db9ad00d8597d636bff81ba25c6bfd4d77b1de3424645c10a7baf0619cf1",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "flip_rate_spatial_group_sensitivity.csv",
+      "current": "intermediate/sensitivity/flip_rate_spatial_group_sensitivity.csv",
+      "baseline_sha256": "156cd4fea4ba8355652076537ffa16899b0ab5d2a1926a2738d072ea0862a5bd",
+      "exists": true,
+      "current_sha256": "156cd4fea4ba8355652076537ffa16899b0ab5d2a1926a2738d072ea0862a5bd",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "flip_rate_spatial_sensitivity.csv",
+      "current": "intermediate/sensitivity/flip_rate_spatial_sensitivity.csv",
+      "baseline_sha256": "5eb41a2ad503185ce92580563b049ddb11d3628ddec29c641d196b477152af14",
+      "exists": true,
+      "current_sha256": "5eb41a2ad503185ce92580563b049ddb11d3628ddec29c641d196b477152af14",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "image_void_alternatives.csv",
+      "current": "intermediate/exploratory/image_void_alternatives.csv",
+      "baseline_sha256": "1c0413f622baddb85223a13d4e8e3a2e8e3d974214a702e53d752996b5f8193b",
+      "exists": true,
+      "current_sha256": "1c0413f622baddb85223a13d4e8e3a2e8e3d974214a702e53d752996b5f8193b",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "image_void_alternatives_metadata.json",
+      "current": "intermediate/exploratory/image_void_alternatives_metadata.json",
+      "baseline_sha256": "0d0db209bd4a3d8d43172a0336ced1ca92f2577266cd97d8ceb77245f6a1718a",
+      "exists": true,
+      "current_sha256": "0d0db209bd4a3d8d43172a0336ced1ca92f2577266cd97d8ceb77245f6a1718a",
+      "byte_identical": true,
+      "json_differences": [],
+      "passed": true
+    },
+    {
+      "original": "legacy_independent_audit.json",
+      "current": "results/validation/legacy_independent_audit.json",
+      "baseline_sha256": "099ca3e835c7ba99854616702677373fda8f548546a60c7069fbbf6484c06806",
+      "exists": true,
+      "current_sha256": "099ca3e835c7ba99854616702677373fda8f548546a60c7069fbbf6484c06806",
+      "byte_identical": true,
+      "json_differences": [],
+      "passed": true
+    },
+    {
+      "original": "panorama_liquid_holdout_checks.csv",
+      "current": "results/validation/panorama_liquid_holdout_checks.csv",
+      "baseline_sha256": "6bb0d4038c198b56eda2df1b1295730bbdd0dc08caa998b1ad61f75630eee820",
+      "exists": true,
+      "current_sha256": "6bb0d4038c198b56eda2df1b1295730bbdd0dc08caa998b1ad61f75630eee820",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "panorama_liquid_reference.json",
+      "current": "intermediate/features/panorama_liquid_reference.json",
+      "baseline_sha256": "7e01bca4968abf9a0f040d6383c131316189af31d3c176c77820a04da2123d23",
+      "exists": true,
+      "current_sha256": "7e01bca4968abf9a0f040d6383c131316189af31d3c176c77820a04da2123d23",
+      "byte_identical": true,
+      "json_differences": [],
+      "passed": true
+    },
+    {
+      "original": "panorama_void_by_pattern.csv",
+      "current": "results/void_fraction/panorama_void_by_pattern.csv",
+      "baseline_sha256": "f5a30d20aa38470a3d44140684903f2197aa3fe364d6f44203b8e9a480cfc64a",
+      "exists": true,
+      "current_sha256": "f5a30d20aa38470a3d44140684903f2197aa3fe364d6f44203b8e9a480cfc64a",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "panorama_void_per_run.csv",
+      "current": "results/void_fraction/panorama_void_per_run.csv",
+      "baseline_sha256": "82a2d70f9a71977938670d72e4e1ee29af194fc26079ab97ce6fc2785ed5b9ef",
+      "exists": true,
+      "current_sha256": "82a2d70f9a71977938670d72e4e1ee29af194fc26079ab97ce6fc2785ed5b9ef",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "panorama_void_sensitivity.csv",
+      "current": "intermediate/sensitivity/panorama_void_sensitivity.csv",
+      "baseline_sha256": "24b2bf2997f1be1acdf93516a2f0dfeb4750fa55e207cec90f533bf4c4117ffa",
+      "exists": true,
+      "current_sha256": "24b2bf2997f1be1acdf93516a2f0dfeb4750fa55e207cec90f533bf4c4117ffa",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "pattern_identification.json",
+      "current": "results/patterns/pattern_identification.json",
+      "baseline_sha256": "4c206a5cf70103b8851c81f439cbc25f7392cebd0f25532f6455c7039a618181",
+      "exists": true,
+      "current_sha256": "4c206a5cf70103b8851c81f439cbc25f7392cebd0f25532f6455c7039a618181",
+      "byte_identical": true,
+      "json_differences": [],
+      "passed": true
+    },
+    {
+      "original": "pattern_identification_predictions.csv",
+      "current": "results/patterns/pattern_identification_predictions.csv",
+      "baseline_sha256": "584fa27ed4d558a4106bb8500f2800f67faef2b22d6c91153d9c03e0bdc8f2d0",
+      "exists": true,
+      "current_sha256": "584fa27ed4d558a4106bb8500f2800f67faef2b22d6c91153d9c03e0bdc8f2d0",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "pattern_identification_scores.csv",
+      "current": "results/patterns/pattern_identification_scores.csv",
+      "baseline_sha256": "c0fce21d2699d827cd09dd1412e6850388b9ba37e231b306902561b4a78ed88b",
+      "exists": true,
+      "current_sha256": "c0fce21d2699d827cd09dd1412e6850388b9ba37e231b306902561b4a78ed88b",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "pattern_morphology_features.csv",
+      "current": "intermediate/features/pattern_morphology_features.csv",
+      "baseline_sha256": "eec45a1670a161e786e4ca07a361025b78c955e5bc41f4779008deece01bbcf0",
+      "exists": true,
+      "current_sha256": "eec45a1670a161e786e4ca07a361025b78c955e5bc41f4779008deece01bbcf0",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_mask_flip_by_pattern.csv",
+      "current": "results/flip_rate/phase_mask_flip_by_pattern.csv",
+      "baseline_sha256": "d48ddbc852f66bea0c6d818f6cd795a2995cecf8769b06029929ec7b8fb6b1a6",
+      "exists": true,
+      "current_sha256": "d48ddbc852f66bea0c6d818f6cd795a2995cecf8769b06029929ec7b8fb6b1a6",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_mask_flip_group_sensitivity.csv",
+      "current": "intermediate/sensitivity/phase_mask_flip_group_sensitivity.csv",
+      "baseline_sha256": "f277a5dbbcbc5dc6177a20c107d98e048682b0bb21f2828f267d9f51db67e591",
+      "exists": true,
+      "current_sha256": "f277a5dbbcbc5dc6177a20c107d98e048682b0bb21f2828f267d9f51db67e591",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_mask_flip_metadata.json",
+      "current": "results/validation/phase_mask_flip_metadata.json",
+      "baseline_sha256": "a74db3b19e780ff3e0846fb46f7bba6fcfbf26bc4e8b56e85859ffbeeb08777e",
+      "exists": true,
+      "current_sha256": "7e609340c54645e095cfb13bc23c8d27bb2a7b4ea7693bcebc62980f693c5875",
+      "byte_identical": false,
+      "json_differences": [
+        {
+          "path": "$.segmentation_source_sha256",
+          "before": "9e4d7a7c1b5c9ef7bf2d18818cc2b298600f7e41f9006b6774e8b5c89221e835",
+          "after": "0d1ddf2d1222fe6677d52733626ea5205f23b2a8edf3e3b39be5d750fa82d70c",
+          "allowed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "original": "phase_mask_flip_per_run.csv",
+      "current": "results/flip_rate/phase_mask_flip_per_run.csv",
+      "baseline_sha256": "3b8f43b4bb643f9e351cc859bd27362afa7ce67377e6b59580a09d3c57a5d14a",
+      "exists": true,
+      "current_sha256": "3b8f43b4bb643f9e351cc859bd27362afa7ce67377e6b59580a09d3c57a5d14a",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_mask_flip_sensitivity.csv",
+      "current": "intermediate/sensitivity/phase_mask_flip_sensitivity.csv",
+      "baseline_sha256": "6fa3ac8212caae56e37b4527215f9fe7bda2519937bb5fa8ac51243788d26603",
+      "exists": true,
+      "current_sha256": "6fa3ac8212caae56e37b4527215f9fe7bda2519937bb5fa8ac51243788d26603",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m03q01_001_mask.png",
+      "current": "intermediate/phase_masks/m03q01_001_mask.png",
+      "baseline_sha256": "61d087b549fb2a77a0053be4fec0e601237e57f3c43a0c550c4104dcf5b199d1",
+      "exists": true,
+      "current_sha256": "61d087b549fb2a77a0053be4fec0e601237e57f3c43a0c550c4104dcf5b199d1",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m03q05_001_mask.png",
+      "current": "intermediate/phase_masks/m03q05_001_mask.png",
+      "baseline_sha256": "3869e857bf70e331fac86e1ed1ad6aac5e83133da15d9abc73748a3772509dcc",
+      "exists": true,
+      "current_sha256": "3869e857bf70e331fac86e1ed1ad6aac5e83133da15d9abc73748a3772509dcc",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m03q10_001_mask.png",
+      "current": "intermediate/phase_masks/m03q10_001_mask.png",
+      "baseline_sha256": "a42ae8374e94b329cb26332a11486f86928c29627ea0e95d6d286050e4ab6335",
+      "exists": true,
+      "current_sha256": "a42ae8374e94b329cb26332a11486f86928c29627ea0e95d6d286050e4ab6335",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m03q20_001_mask.png",
+      "current": "intermediate/phase_masks/m03q20_001_mask.png",
+      "baseline_sha256": "461acdf3598648497acf3939b209be2fd1dc07c35e1a639a049044b56e87a1fa",
+      "exists": true,
+      "current_sha256": "461acdf3598648497acf3939b209be2fd1dc07c35e1a639a049044b56e87a1fa",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m03q40_001_mask.png",
+      "current": "intermediate/phase_masks/m03q40_001_mask.png",
+      "baseline_sha256": "c45490ab7c977482c61643e81ba10d45dfc0687e5a5f38281f73d5a026d8ecbc",
+      "exists": true,
+      "current_sha256": "c45490ab7c977482c61643e81ba10d45dfc0687e5a5f38281f73d5a026d8ecbc",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m03q80_001_mask.png",
+      "current": "intermediate/phase_masks/m03q80_001_mask.png",
+      "baseline_sha256": "6b36d909bbc0ddc82d3ea56d2f7bcc8360079fb24dc476407750783515ee46fa",
+      "exists": true,
+      "current_sha256": "6b36d909bbc0ddc82d3ea56d2f7bcc8360079fb24dc476407750783515ee46fa",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m04q01_001_mask.png",
+      "current": "intermediate/phase_masks/m04q01_001_mask.png",
+      "baseline_sha256": "9d7d1bc14057917ef30e922a3b0734afa85cb4ad5e4f4ad8b8d65f0f84d4e8d7",
+      "exists": true,
+      "current_sha256": "9d7d1bc14057917ef30e922a3b0734afa85cb4ad5e4f4ad8b8d65f0f84d4e8d7",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m04q05_001_mask.png",
+      "current": "intermediate/phase_masks/m04q05_001_mask.png",
+      "baseline_sha256": "68cac340614753f597fe657909bc8c03c666286c60036d7e7dc6f25bf6285d0e",
+      "exists": true,
+      "current_sha256": "68cac340614753f597fe657909bc8c03c666286c60036d7e7dc6f25bf6285d0e",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m04q10_001_mask.png",
+      "current": "intermediate/phase_masks/m04q10_001_mask.png",
+      "baseline_sha256": "b460e364e3216b355573b92bb9ebfaee3590c0451b82f530a900d3df048a7470",
+      "exists": true,
+      "current_sha256": "b460e364e3216b355573b92bb9ebfaee3590c0451b82f530a900d3df048a7470",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m04q20_001_mask.png",
+      "current": "intermediate/phase_masks/m04q20_001_mask.png",
+      "baseline_sha256": "4b1337ae670c0c9ca41fea3a0889099a7894f0f442840f0d0c0e75c13fb02d30",
+      "exists": true,
+      "current_sha256": "4b1337ae670c0c9ca41fea3a0889099a7894f0f442840f0d0c0e75c13fb02d30",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m04q40_001_mask.png",
+      "current": "intermediate/phase_masks/m04q40_001_mask.png",
+      "baseline_sha256": "fc9c9d62e345ded691304210017b1b1d0020ca4fe3f2a6b919c88abae8784c0f",
+      "exists": true,
+      "current_sha256": "fc9c9d62e345ded691304210017b1b1d0020ca4fe3f2a6b919c88abae8784c0f",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m04q80_001_mask.png",
+      "current": "intermediate/phase_masks/m04q80_001_mask.png",
+      "baseline_sha256": "6a7f58f61711419a4e1cc180a00dc11d3e084f16884c18da3e82ee8e9a35da21",
+      "exists": true,
+      "current_sha256": "6a7f58f61711419a4e1cc180a00dc11d3e084f16884c18da3e82ee8e9a35da21",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m05q01_001_mask.png",
+      "current": "intermediate/phase_masks/m05q01_001_mask.png",
+      "baseline_sha256": "89a531173addf4a5fc91c9a4103eec9b348f209745b429845846e3cd60ca44ad",
+      "exists": true,
+      "current_sha256": "89a531173addf4a5fc91c9a4103eec9b348f209745b429845846e3cd60ca44ad",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m05q05_001_mask.png",
+      "current": "intermediate/phase_masks/m05q05_001_mask.png",
+      "baseline_sha256": "04e25a00d5d2e2bc4029efd6335e2cfee5ec61d1396fcb45673a1fd9bc142083",
+      "exists": true,
+      "current_sha256": "04e25a00d5d2e2bc4029efd6335e2cfee5ec61d1396fcb45673a1fd9bc142083",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m05q05_002_mask.png",
+      "current": "intermediate/phase_masks/m05q05_002_mask.png",
+      "baseline_sha256": "7fb9038e0fa08d4a55bc836f9d930748765dc770eea9119a7ed49c0db309db0a",
+      "exists": true,
+      "current_sha256": "7fb9038e0fa08d4a55bc836f9d930748765dc770eea9119a7ed49c0db309db0a",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m05q10_001_mask.png",
+      "current": "intermediate/phase_masks/m05q10_001_mask.png",
+      "baseline_sha256": "4272ca8e57a47859499f5092e8af417f4616aa53c79e181753202f3f282c7544",
+      "exists": true,
+      "current_sha256": "4272ca8e57a47859499f5092e8af417f4616aa53c79e181753202f3f282c7544",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m05q20_001_mask.png",
+      "current": "intermediate/phase_masks/m05q20_001_mask.png",
+      "baseline_sha256": "fd012a40652442edde1de1ab545aed7c457eb281a2c7d841947cc3badec62b99",
+      "exists": true,
+      "current_sha256": "fd012a40652442edde1de1ab545aed7c457eb281a2c7d841947cc3badec62b99",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m05q40_001_mask.png",
+      "current": "intermediate/phase_masks/m05q40_001_mask.png",
+      "baseline_sha256": "da00f1a6ed6fc3289ac6342a7f9cb091320d767abe65aa7e72c61ccfd9df9b9c",
+      "exists": true,
+      "current_sha256": "da00f1a6ed6fc3289ac6342a7f9cb091320d767abe65aa7e72c61ccfd9df9b9c",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m05q80_001_mask.png",
+      "current": "intermediate/phase_masks/m05q80_001_mask.png",
+      "baseline_sha256": "76e01b65e2ef9dc4c2a684695a95daade1ff5e848d991a1cc3260eae6b2629f0",
+      "exists": true,
+      "current_sha256": "76e01b65e2ef9dc4c2a684695a95daade1ff5e848d991a1cc3260eae6b2629f0",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m06q01_001_mask.png",
+      "current": "intermediate/phase_masks/m06q01_001_mask.png",
+      "baseline_sha256": "0ee993453e7c8add8c9b9374de8b51b7d736cece8bcafa6ea31234508d929377",
+      "exists": true,
+      "current_sha256": "0ee993453e7c8add8c9b9374de8b51b7d736cece8bcafa6ea31234508d929377",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m06q05_001_mask.png",
+      "current": "intermediate/phase_masks/m06q05_001_mask.png",
+      "baseline_sha256": "05024a3aa7852d6d42aac5ad89f83cdd2ee225b0ff1b080e1d3ef52dcf51f861",
+      "exists": true,
+      "current_sha256": "05024a3aa7852d6d42aac5ad89f83cdd2ee225b0ff1b080e1d3ef52dcf51f861",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m06q10_001_mask.png",
+      "current": "intermediate/phase_masks/m06q10_001_mask.png",
+      "baseline_sha256": "0c3433177c46740ea6a6f0a18bf7520575382959ca3825c06e4560a0b715eff1",
+      "exists": true,
+      "current_sha256": "0c3433177c46740ea6a6f0a18bf7520575382959ca3825c06e4560a0b715eff1",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m06q20_001_mask.png",
+      "current": "intermediate/phase_masks/m06q20_001_mask.png",
+      "baseline_sha256": "f56c5c89be9e43cb114e4f1c4d499c3a91b69c99611dc55ff10b9d66de460766",
+      "exists": true,
+      "current_sha256": "f56c5c89be9e43cb114e4f1c4d499c3a91b69c99611dc55ff10b9d66de460766",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m06q40_001_mask.png",
+      "current": "intermediate/phase_masks/m06q40_001_mask.png",
+      "baseline_sha256": "ed64b1abef8cec728199bfca3000957bc6c927c5f87b472558331835fe8d3252",
+      "exists": true,
+      "current_sha256": "ed64b1abef8cec728199bfca3000957bc6c927c5f87b472558331835fe8d3252",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m06q80_001_mask.png",
+      "current": "intermediate/phase_masks/m06q80_001_mask.png",
+      "baseline_sha256": "0f8bec9f5e018e3a7dc5c1e21406382c716e6ca25f63a11bfe07602e0b0dd67b",
+      "exists": true,
+      "current_sha256": "0f8bec9f5e018e3a7dc5c1e21406382c716e6ca25f63a11bfe07602e0b0dd67b",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m07q01_001_mask.png",
+      "current": "intermediate/phase_masks/m07q01_001_mask.png",
+      "baseline_sha256": "4784f2b09058fa6ded4f46c499b6483e2c4524577fb938a1ec604c4b3c7a1cba",
+      "exists": true,
+      "current_sha256": "4784f2b09058fa6ded4f46c499b6483e2c4524577fb938a1ec604c4b3c7a1cba",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m07q05_001_mask.png",
+      "current": "intermediate/phase_masks/m07q05_001_mask.png",
+      "baseline_sha256": "8f0c970aaa18c346f90bb0d63db41584cad91799c028ad66df150eb65acfb8b8",
+      "exists": true,
+      "current_sha256": "8f0c970aaa18c346f90bb0d63db41584cad91799c028ad66df150eb65acfb8b8",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m07q10_001_mask.png",
+      "current": "intermediate/phase_masks/m07q10_001_mask.png",
+      "baseline_sha256": "e50d087818a9d50a90ce26422b78df715f42eb134f3a0fa6cd474a2a24b304bf",
+      "exists": true,
+      "current_sha256": "e50d087818a9d50a90ce26422b78df715f42eb134f3a0fa6cd474a2a24b304bf",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m07q20_001_mask.png",
+      "current": "intermediate/phase_masks/m07q20_001_mask.png",
+      "baseline_sha256": "e2267118d19364e8857aafb7d3ddd555b16debe72619b32c97faf95200485203",
+      "exists": true,
+      "current_sha256": "e2267118d19364e8857aafb7d3ddd555b16debe72619b32c97faf95200485203",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m07q40_001_mask.png",
+      "current": "intermediate/phase_masks/m07q40_001_mask.png",
+      "baseline_sha256": "d9db902d591010b081eea6e9df1d074839e9f8d7bb160bba42876783e08b07c4",
+      "exists": true,
+      "current_sha256": "d9db902d591010b081eea6e9df1d074839e9f8d7bb160bba42876783e08b07c4",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "phase_masks/m07q80_001_mask.png",
+      "current": "intermediate/phase_masks/m07q80_001_mask.png",
+      "baseline_sha256": "56fb920e564e3fb3fcfd2d9c2316df9b2cdb4c0feab4ef78fe61c470d9b9d0e5",
+      "exists": true,
+      "current_sha256": "56fb920e564e3fb3fcfd2d9c2316df9b2cdb4c0feab4ef78fe61c470d9b9d0e5",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "silhouette_pattern_features.csv",
+      "current": "intermediate/features/silhouette_pattern_features.csv",
+      "baseline_sha256": "3f1cc556de345f1c017279a1d0df9ea71a5f6ff3ed5ef0975f5dd3b960bce11e",
+      "exists": true,
+      "current_sha256": "3f1cc556de345f1c017279a1d0df9ea71a5f6ff3ed5ef0975f5dd3b960bce11e",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "silhouette_pattern_fold_references.csv",
+      "current": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "baseline_sha256": "94dfa1be4aa538e2cefad982a92bce0de2da0f2279309cc36f526129d33aad3d",
+      "exists": true,
+      "current_sha256": "94dfa1be4aa538e2cefad982a92bce0de2da0f2279309cc36f526129d33aad3d",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "silhouette_pattern_predictions.csv",
+      "current": "results/patterns/silhouette_pattern_predictions.csv",
+      "baseline_sha256": "2a0ecced0f16282e01f1159312fba054b5df497b7b338b2ad6875b38ab9ba61e",
+      "exists": true,
+      "current_sha256": "2a0ecced0f16282e01f1159312fba054b5df497b7b338b2ad6875b38ab9ba61e",
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "original": "silhouette_pattern_results.json",
+      "current": "results/patterns/silhouette_pattern_results.json",
+      "baseline_sha256": "61e4c607063f327010322a1c7a139b5e3112c5500dbf032ee7994b5cf53c4f28",
+      "exists": true,
+      "current_sha256": "7f4d1341a6fd7b167dcbdc2a59a8731d40c2f15550effdf8c13ad3f723e4252b",
+      "byte_identical": false,
+      "json_differences": [
+        {
+          "path": "$.segmentation_source_sha256",
+          "before": "9e4d7a7c1b5c9ef7bf2d18818cc2b298600f7e41f9006b6774e8b5c89221e835",
+          "after": "0d1ddf2d1222fe6677d52733626ea5205f23b2a8edf3e3b39be5d750fa82d70c",
+          "allowed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "original": "silhouette_pattern_scores.csv",
+      "current": "results/patterns/silhouette_pattern_scores.csv",
+      "baseline_sha256": "75f96984f9a5b8a4c7444db4f9d24319ea07832a9dfa993f02bd4d225ed395ec",
+      "exists": true,
+      "current_sha256": "75f96984f9a5b8a4c7444db4f9d24319ea07832a9dfa993f02bd4d225ed395ec",
+      "byte_identical": true,
+      "passed": true
+    }
+  ],
+  "permitted_metadata_changes": [
+    {
+      "artifact": "results/validation/adversarial_checks.json",
+      "path": "$.estimator_sha256",
+      "before": "9e4d7a7c1b5c9ef7bf2d18818cc2b298600f7e41f9006b6774e8b5c89221e835",
+      "after": "0d1ddf2d1222fe6677d52733626ea5205f23b2a8edf3e3b39be5d750fa82d70c",
+      "allowed": true
+    },
+    {
+      "artifact": "results/validation/final_verification.json",
+      "path": "$.segmentation_source_sha256",
+      "before": "9e4d7a7c1b5c9ef7bf2d18818cc2b298600f7e41f9006b6774e8b5c89221e835",
+      "after": "0d1ddf2d1222fe6677d52733626ea5205f23b2a8edf3e3b39be5d750fa82d70c",
+      "allowed": true
+    },
+    {
+      "artifact": "results/validation/phase_mask_flip_metadata.json",
+      "path": "$.segmentation_source_sha256",
+      "before": "9e4d7a7c1b5c9ef7bf2d18818cc2b298600f7e41f9006b6774e8b5c89221e835",
+      "after": "0d1ddf2d1222fe6677d52733626ea5205f23b2a8edf3e3b39be5d750fa82d70c",
+      "allowed": true
+    },
+    {
+      "artifact": "results/patterns/silhouette_pattern_results.json",
+      "path": "$.segmentation_source_sha256",
+      "before": "9e4d7a7c1b5c9ef7bf2d18818cc2b298600f7e41f9006b6774e8b5c89221e835",
+      "after": "0d1ddf2d1222fe6677d52733626ea5205f23b2a8edf3e3b39be5d750fa82d70c",
+      "allowed": true
+    }
+  ],
+  "current_segmentation_source_sha256": "0d1ddf2d1222fe6677d52733626ea5205f23b2a8edf3e3b39be5d750fa82d70c",
+  "current_artifact_source_hashes": {
+    "phase_mask_flip_metadata.json": "0d1ddf2d1222fe6677d52733626ea5205f23b2a8edf3e3b39be5d750fa82d70c",
+    "silhouette_pattern_results.json": "0d1ddf2d1222fe6677d52733626ea5205f23b2a8edf3e3b39be5d750fa82d70c",
+    "adversarial_checks.json": "0d1ddf2d1222fe6677d52733626ea5205f23b2a8edf3e3b39be5d750fa82d70c",
+    "final_verification.json": "0d1ddf2d1222fe6677d52733626ea5205f23b2a8edf3e3b39be5d750fa82d70c"
+  },
+  "local_markdown_links": [
+    {
+      "document": "README.md",
+      "line": 3,
+      "target": "findings/EXECUTIVE_SUMMARY.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 11,
+      "target": "findings/README.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 12,
+      "target": "results/README.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 13,
+      "target": "figures/README.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 14,
+      "target": "scripts/README.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 15,
+      "target": "intermediate/README.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 16,
+      "target": "literature/README.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 22,
+      "target": "results/void_fraction/panorama_void_per_run.csv",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 22,
+      "target": "results/void_fraction/panorama_void_by_pattern.csv",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 23,
+      "target": "results/flip_rate/phase_mask_flip_per_run.csv",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 23,
+      "target": "results/flip_rate/phase_mask_flip_by_pattern.csv",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 25,
+      "target": "results/flip_rate",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 25,
+      "target": "findings/phase_mask_flip_review.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 29,
+      "target": "figures/void_fraction/void_fraction_vs_flip_rate.png",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 30,
+      "target": "figures/void_fraction/void_fraction_vs_center_flips.png",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 31,
+      "target": "figures/void_fraction/void_crop_sensitivity.png",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 32,
+      "target": "figures/void_fraction/panorama_phase_masks.png",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 33,
+      "target": "figures/void_fraction/panorama_liquid_reference_candidates.png",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 34,
+      "target": "figures/patterns/pattern_panorama_contact_sheet.png",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 35,
+      "target": "figures/patterns/pattern_confusion_matrices.png",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 35,
+      "target": "figures/patterns/silhouette_pattern_confusion_matrices.png",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 36,
+      "target": "figures/validation/adversarial_slug_gap_mask.png",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 46,
+      "target": "intermediate/logs",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 48,
+      "target": "scripts/README.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 48,
+      "target": "results/validation/final_verification.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 48,
+      "target": "findings/layout_verification.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 48,
+      "target": "results/validation/adversarial_checks.json",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 3,
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 7,
+      "target": "void_fraction/void_fraction_vs_flip_rate.png",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 7,
+      "target": "void_fraction/void_fraction_vs_flip_rate.svg",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 8,
+      "target": "void_fraction/void_fraction_vs_center_flips.png",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 8,
+      "target": "void_fraction/void_fraction_vs_center_flips.svg",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 9,
+      "target": "void_fraction/void_crop_sensitivity.png",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 9,
+      "target": "void_fraction/void_crop_sensitivity.svg",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 10,
+      "target": "void_fraction/panorama_phase_masks.png",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 11,
+      "target": "void_fraction/panorama_liquid_reference_candidates.png",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 12,
+      "target": "patterns/pattern_panorama_contact_sheet.png",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 13,
+      "target": "patterns/pattern_confusion_matrices.png",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 14,
+      "target": "patterns/silhouette_pattern_confusion_matrices.png",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 15,
+      "target": "validation/adversarial_phase_anchor_patches.png",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 16,
+      "target": "validation/adversarial_slug_gap_mask.png",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 17,
+      "target": "flip_rate/flip_rate_spatial_vs_native.png",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 18,
+      "target": "flip_rate/flip_rate_native_kymographs.png",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 20,
+      "target": "../intermediate/exploratory/figures",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 20,
+      "target": "../intermediate/history",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 22,
+      "target": "../results/void_fraction/void_fraction_flip_plot_data.csv",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 22,
+      "target": "../results/validation/summary_chart_checks.json",
+      "exists": true
+    },
+    {
+      "document": "findings/EXECUTIVE_SUMMARY.md",
+      "line": 7,
+      "target": "../figures/void_fraction/void_fraction_vs_flip_rate.png",
+      "exists": true
+    },
+    {
+      "document": "findings/EXECUTIVE_SUMMARY.md",
+      "line": 11,
+      "target": "../figures/void_fraction/void_fraction_vs_center_flips.png",
+      "exists": true
+    },
+    {
+      "document": "findings/EXECUTIVE_SUMMARY.md",
+      "line": 34,
+      "target": "../figures/void_fraction/panorama_phase_masks.png",
+      "exists": true
+    },
+    {
+      "document": "findings/EXECUTIVE_SUMMARY.md",
+      "line": 42,
+      "target": "../figures/void_fraction/void_crop_sensitivity.png",
+      "exists": true
+    },
+    {
+      "document": "findings/EXECUTIVE_SUMMARY.md",
+      "line": 57,
+      "target": "../results/void_fraction/panorama_void_per_run.csv",
+      "exists": true
+    },
+    {
+      "document": "findings/EXECUTIVE_SUMMARY.md",
+      "line": 57,
+      "target": "../results/flip_rate/phase_mask_flip_per_run.csv",
+      "exists": true
+    },
+    {
+      "document": "findings/EXECUTIVE_SUMMARY.md",
+      "line": 57,
+      "target": "panorama_void_alternatives.md",
+      "exists": true
+    },
+    {
+      "document": "findings/EXECUTIVE_SUMMARY.md",
+      "line": 57,
+      "target": "phase_mask_flip_review.md",
+      "exists": true
+    },
+    {
+      "document": "findings/EXECUTIVE_SUMMARY.md",
+      "line": 57,
+      "target": "adversarial_review.md",
+      "exists": true
+    },
+    {
+      "document": "findings/EXECUTIVE_SUMMARY.md",
+      "line": 57,
+      "target": "source_audit.md",
+      "exists": true
+    },
+    {
+      "document": "findings/README.md",
+      "line": 3,
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "document": "findings/README.md",
+      "line": 7,
+      "target": "EXECUTIVE_SUMMARY.md",
+      "exists": true
+    },
+    {
+      "document": "findings/README.md",
+      "line": 8,
+      "target": "panorama_void_alternatives.md",
+      "exists": true
+    },
+    {
+      "document": "findings/README.md",
+      "line": 9,
+      "target": "phase_mask_flip_review.md",
+      "exists": true
+    },
+    {
+      "document": "findings/README.md",
+      "line": 10,
+      "target": "adversarial_review.md",
+      "exists": true
+    },
+    {
+      "document": "findings/README.md",
+      "line": 11,
+      "target": "source_audit.md",
+      "exists": true
+    },
+    {
+      "document": "findings/README.md",
+      "line": 12,
+      "target": "prior_findings_audit.md",
+      "exists": true
+    },
+    {
+      "document": "findings/README.md",
+      "line": 13,
+      "target": "spatial_flip_review.md",
+      "exists": true
+    },
+    {
+      "document": "findings/README.md",
+      "line": 14,
+      "target": "flip_rate_review.md",
+      "exists": true
+    },
+    {
+      "document": "findings/README.md",
+      "line": 15,
+      "target": "pattern_identification.md",
+      "exists": true
+    },
+    {
+      "document": "findings/README.md",
+      "line": 16,
+      "target": "silhouette_pattern_review.md",
+      "exists": true
+    },
+    {
+      "document": "findings/README.md",
+      "line": 17,
+      "target": "layout_verification.md",
+      "exists": true
+    },
+    {
+      "document": "findings/adversarial_review.md",
+      "line": 5,
+      "target": "../results/validation/adversarial_checks.json",
+      "exists": true
+    },
+    {
+      "document": "findings/adversarial_review.md",
+      "line": 42,
+      "target": "../figures/validation/adversarial_slug_gap_mask.png",
+      "exists": true
+    },
+    {
+      "document": "findings/adversarial_review.md",
+      "line": 83,
+      "target": "layout_verification.md",
+      "exists": true
+    },
+    {
+      "document": "findings/adversarial_review.md",
+      "line": 83,
+      "target": "../results/validation/adversarial_checks.json",
+      "exists": true
+    },
+    {
+      "document": "findings/adversarial_review.md",
+      "line": 83,
+      "target": "../results/validation/final_verification.json",
+      "exists": true
+    },
+    {
+      "document": "findings/layout_verification.md",
+      "line": 3,
+      "target": "../intermediate/history/reorganization_baseline.json",
+      "exists": true
+    },
+    {
+      "document": "findings/layout_verification.md",
+      "line": 22,
+      "target": "../results/validation/layout_verification.json",
+      "exists": true
+    },
+    {
+      "document": "findings/source_audit.md",
+      "line": 7,
+      "target": "../../../assets/deoliveira2021-flow-patterns-pressure-drop.pdf",
+      "exists": true
+    },
+    {
+      "document": "findings/source_audit.md",
+      "line": 28,
+      "target": "../../../assets/dias2025-knn-flow-pattern.pdf",
+      "exists": true
+    },
+    {
+      "document": "findings/source_audit.md",
+      "line": 80,
+      "target": "../../../assets/schepperle2024-cv-void-fraction-microchannel.pdf",
+      "exists": true
+    },
+    {
+      "document": "findings/source_audit.md",
+      "line": 93,
+      "target": "../../../assets/deoliveira2019-flow-boiling-hydrocarbons-nonlinear.pdf",
+      "exists": true
+    },
+    {
+      "document": "findings/source_audit.md",
+      "line": 114,
+      "target": "../../../assets/driftflux2023-void-horizontal-intermittent.pdf",
+      "exists": true
+    },
+    {
+      "document": "intermediate/README.md",
+      "line": 3,
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "document": "intermediate/README.md",
+      "line": 7,
+      "target": "features",
+      "exists": true
+    },
+    {
+      "document": "intermediate/README.md",
+      "line": 8,
+      "target": "sensitivity",
+      "exists": true
+    },
+    {
+      "document": "intermediate/README.md",
+      "line": 9,
+      "target": "phase_masks",
+      "exists": true
+    },
+    {
+      "document": "intermediate/README.md",
+      "line": 10,
+      "target": "exploratory",
+      "exists": true
+    },
+    {
+      "document": "intermediate/README.md",
+      "line": 11,
+      "target": "history",
+      "exists": true
+    },
+    {
+      "document": "intermediate/README.md",
+      "line": 12,
+      "target": "logs",
+      "exists": true
+    },
+    {
+      "document": "intermediate/README.md",
+      "line": 13,
+      "target": "cache",
+      "exists": true
+    },
+    {
+      "document": "intermediate/README.md",
+      "line": 15,
+      "target": "../results/validation",
+      "exists": true
+    },
+    {
+      "document": "intermediate/README.md",
+      "line": 15,
+      "target": "../findings/adversarial_review.md",
+      "exists": true
+    },
+    {
+      "document": "literature/README.md",
+      "line": 3,
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "document": "literature/README.md",
+      "line": 5,
+      "target": "../findings/source_audit.md",
+      "exists": true
+    },
+    {
+      "document": "literature/README.md",
+      "line": 7,
+      "target": "extracts",
+      "exists": true
+    },
+    {
+      "document": "literature/README.md",
+      "line": 8,
+      "target": "pages",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 3,
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 9,
+      "target": "void_fraction",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 9,
+      "target": "void_fraction/panorama_void_per_run.csv",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 9,
+      "target": "void_fraction/panorama_void_by_pattern.csv",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 10,
+      "target": "void_fraction/void_fraction_flip_plot_data.csv",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 11,
+      "target": "flip_rate",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 11,
+      "target": "flip_rate/phase_mask_flip_per_run.csv",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 11,
+      "target": "flip_rate/phase_mask_flip_by_pattern.csv",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 11,
+      "target": "flip_rate/flip_rate_per_run.csv",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 11,
+      "target": "flip_rate/flip_rate_by_pattern.csv",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 12,
+      "target": "patterns",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 12,
+      "target": "patterns/pattern_identification_predictions.csv",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 12,
+      "target": "patterns/pattern_identification_scores.csv",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 12,
+      "target": "patterns/silhouette_pattern_predictions.csv",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 12,
+      "target": "patterns/silhouette_pattern_scores.csv",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 13,
+      "target": "validation",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 13,
+      "target": "validation/final_verification.json",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 13,
+      "target": "validation/adversarial_checks.json",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 13,
+      "target": "validation/data_inventory.csv",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 13,
+      "target": "validation/panorama_liquid_holdout_checks.csv",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 13,
+      "target": "validation/summary_chart_checks.json",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 13,
+      "target": "validation/layout_verification.json",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 15,
+      "target": "../findings/phase_mask_flip_review.md",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 15,
+      "target": "../intermediate/sensitivity",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 3,
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 17,
+      "target": "../intermediate/logs",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 29,
+      "target": "panorama_void_alternatives.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 30,
+      "target": "phase_mask_flip_analysis.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 31,
+      "target": "raw_flip_analysis.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 32,
+      "target": "spatial_flip_sensitivity.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 33,
+      "target": "inventory_and_legacy_audit.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 34,
+      "target": "pattern_identification.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 35,
+      "target": "silhouette_pattern_identification.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 36,
+      "target": "adversarial_review.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 37,
+      "target": "final_verification.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 38,
+      "target": "summary_figures.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 39,
+      "target": "write_summary.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 41,
+      "target": "image_void_alternatives.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 45,
+      "target": "v14_paths.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 45,
+      "target": "artifact_layout.json",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 45,
+      "target": "v14_navigation.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 47,
+      "target": "verify_layout.py",
+      "exists": true
+    }
+  ],
+  "failures": [],
+  "scope": "Organization and numerical preservation; physical calibration is not tested. Local link file destinations are checked; fragments are not checked. Historical JSON must remain byte-identical."
+}

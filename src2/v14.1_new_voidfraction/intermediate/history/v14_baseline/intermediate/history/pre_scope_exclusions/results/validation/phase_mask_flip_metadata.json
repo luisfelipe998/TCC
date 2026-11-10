@@ -1,0 +1,6 @@
+{
+  "segmentation_source_sha256": "0d1ddf2d1222fe6677d52733626ea5205f23b2a8edf3e3b39be5d750fa82d70c",
+  "n_saved_binary_masks": 31,
+  "mask_encoding": "255=inferred gas silhouette, 0=unmarked; not independent phase truth",
+  "source_data": "src2/data_processed/*/__panorama_v11.png"
+}

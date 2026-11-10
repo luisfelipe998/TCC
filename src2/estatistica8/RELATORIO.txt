@@ -1,0 +1,202 @@
+AVALIAÇÃO PRELIMINAR — estatistica8
+Data de geração: 2026-10-26T03:38:21.641879+00:00
+Fonte: src2/v16.3_ancoras. Comparação metodológica: src2/estatistica7.
+
+RECOMENDAÇÃO
+
+Não descartar toda a extensão além de Pearson. A largura espectral da WPS
+apresentou separação prática interessante entre churn e wavy annular e merece
+ser mantida como candidata, especialmente junto com Pearson. Entretanto, nenhuma
+hipótese passou a correção global de múltiplos testes a 5%: o benefício permanece
+exploratório, sem demonstração confirmatória de generalização.
+
+Para separar plug de slug ou os quatro padrões simultaneamente, esta extensão
+não entregou um separador consistente. Eu descartaria, para esse objetivo, os
+resumos adicionais de WCO/autocoerência e a análise do pico plug/slug. O controle
+de máximos WCO é um diagnóstico metodológico e não foi contado como sucesso de
+identificação, conforme o critério solicitado.
+
+O QUE FOI TESTADO
+
+Foram preservados os 25 ensaios e seus rótulos: churn=10, wavy annular=9, plug=3,
+slug=3. Cada ensaio teve uma janela fixa de 2048 px centrada na âncora existente.
+Usaram-se os 300 pares únicos, sem contar diagonal ou pares espelhados como novas
+observações. Cada aquisição, e não cada par/escala/janela, foi a unidade de análise.
+
+As 200 escalas disponíveis cobrem 50–1024 px. Não foram importados os comprimentos
+3171/5071/7001 px nem o teto de 3000 px da base antiga. A banda longa foi adaptada
+para 800–1024 px; os dados não sustentam uma avaliação das escalas ausentes.
+
+A triagem incluiu 36 representações admissíveis: 15 resumos cruzados WCO do estudo
+anterior; WCO média central da fonte; 3 descritores de autocoerência; 3 kernels
+WCO admissíveis; 7 representações WPS e 7 da potência média. Estas últimas foram
+Pearson residual, Hellinger, Wasserstein, pico, inclinação, largura e trio
+(pico/inclinação/largura). As análises WPS são as selecionadas em estatistica7,
+com implementação original em estatistica6. Dois kernels de área (bandas média
+e longa) foram recusados por autovalores negativos nas três condições, sem
+reparar a matriz para obter artificialmente uma distância euclidiana.
+
+Todos os candidatos foram avaliados nos seis contrastes binários e nas quatro
+classes. Mediram-se silhueta macro e por classe, vizinhança balanceada, agrupamento
+por ligação média com k fixo e ARI, influência de cada ensaio e ganho sobre Pearson.
+Não se escolheram k, pesos ou bandas para maximizar os resultados.
+
+RESULTADO MAIS ÚTIL: LARGURA WPS, CHURN × WAVY ANNULAR
+
+A largura é L = ln(λ75/λ25), obtida dos quantis da WPS no lag zero normalizada
+com pesos trapezoidais em ln(λ). Os quantis usam o primeiro ponto da grade que
+atinge 25% e 75%, sem interpolação. Isso descreve distribuição espectral relativa;
+não é energia física nem tamanho de bolha em milímetros.
+
+Mediana de L: churn=1,032; wavy annular=0,728.
+Faixas: churn 0,865–1,396; annular 0,577–0,956.
+Delta de Cliff = 0,956; AUC de ordenação descritiva = 0,978.
+A AUC resume as 90 comparações dos MESMOS 19 ensaios, não 90 réplicas independentes.
+
+                                      Pearson       Largura WPS
+Silhueta macro                          0,038          0,435
+Menor silhueta média entre classes      -0,186          0,415
+Vizinhança balanceada                    58,3%          81,1%
+
+A combinação 50:50 de distância de Pearson e distância da largura atingiu
+95,0% de concordância balanceada (18 de 19 ensaios corretos;
+9/10 churn e 9/9 annular). As distâncias foram normalizadas pela mediana dos pares
+do conjunto de treinamento em cada exclusão. A escala/IQR dos vetores também foi
+estimada somente nos ensaios de treinamento para os testes de vizinhança.
+
+São resultados de 1 vizinho com exclusão do próprio ensaio para candidatos fixos.
+A escolha do candidato promissor ocorreu após a exploração desta amostra: 95%
+não é uma estimativa imparcial de acurácia futura do processo de seleção, nem
+validação externa. Não há conjunto de teste independente neste estudo preliminar.
+
+O agrupamento sem supervisão não recuperou dois grupos limpos: ARI da largura foi
+0,040 e do trio -0,020. Proximidade útil para classificação por
+vizinhos e recuperação de grupos por ligação média são resultados diferentes.
+
+ESTABILIDADE E CONDIÇÕES OPERACIONAIS
+
+Recalcularam-se TODOS os 300 pares após deslocar cada janela em -64 e +64 px,
+mantendo N=2048 e a mesma grade. Os mesmos ensaios apareceram nas três condições;
+isso não aumentou o tamanho amostral. A largura manteve silhueta macro de
+0,417 / 0,435 / 0,357 e médias positivas nas duas classes. Sua vizinhança foi
+78,9% / 81,1% / 66,7%, indicando alguma sensibilidade local.
+
+Pearson + largura manteve 94,4% / 95,0% / 95,0%. Excluir todos os ensaios com o
+mesmo código m do ensaio avaliado produziu 95,0% na janela original; excluir o
+mesmo q também produziu 95,0%. Esses controles evitam a reutilização daquele
+código operacional no treinamento, mas não eliminam toda a confusão física.
+
+Ao retirar individualmente cada um dos 19 ensaios, os mínimos da silhueta macro
+e da menor média de classe foram 0,406 e 0,370. Não foi necessário um único
+ensaio específico para manter a diferença. No controle com panoramas completos,
+a largura também permaneceu favorável (silhueta macro 0,330), com vizinhança menor
+(64,6%). Esse controle muda conteúdo e comprimento juntos, não isola comprimento.
+
+A largura ainda se associou a q (Spearman -0,591) e ao comprimento original do
+panorama (-0,729) em churn/annular. Somente q=40 teve >=2 ensaios de cada classe
+(2 churn e 3 annular); nesse subconjunto a vizinhança da largura foi 33,3%, embora
+as silhuetas médias fossem ligeiramente positivas. Não se pode atribuir o efeito
+exclusivamente ao padrão de escoamento.
+
+SIGNIFICÂNCIA ESTATÍSTICA: RESULTADO AINDA NÃO CONFIRMADO
+
+Os testes permutaram rótulos de AQUISIÇÕES, preservando contagens e todas as
+dependências de pares. Enumeraram-se as 92378 alocações de churn/annular e todas
+as alocações dos demais contrastes binários (20 em plug/slug, 286 ou 220 nos
+outros); usaram-se 9999 permutações de semente fixa nas quatro classes.
+O refinamento para enumeração exata está documentado no adendo do protocolo.
+
+Para largura/churn-annular, p exato da silhueta=0,000184;
+após Holm sobre 504 testes (36 candidatos × 7 escopos × 2 desfechos),
+p=0,0926. O trio WPS teve o menor p corrigido da família,
+0,0764, também acima de 0,05. A correção é conservadora para
+descritores correlacionados, mas não foi reduzida após a escolha do resultado.
+
+O ganho da combinação sobre Pearson teve p bruto=0,0312
+sob a referência de permutação de rótulos, porém p Holm=1,000
+na família própria de 504 comparações de ganho. Esse teste usa a hipótese de
+permutabilidade dos rótulos; não é um teste de equivalência nem demonstra que um
+preditor não possa superar outro em dados futuros. Ausência de significância
+não significa efeito inexistente. Aqui há efeito descritivo forte e pouca
+evidência confirmatória depois de considerar toda a busca realizada.
+
+O aprofundamento por blocos m/q foi explicitamente posterior à triagem. Para
+largura, as permutações exatas dentro de q deram p bruto=0,025 da silhueta, mas
+p corrigido=1 na família exploratória conjunta de 216 testes. Dentro de m, o
+p corrigido foi 0,125. Esses controles não converteram o achado em confirmação.
+
+O QUE DESCARTARIA OU NÃO PRIORIZARIA
+
+1. WCO cruzada, seus kernels e autocoerência como extensão para identificar os
+   quatro padrões ou separar churn/annular e plug/slug: nenhum passou a triagem.
+   Máximos, médias, percentis, áreas e bandas não deram separação estável útil
+   nesses escopos. Dois kernels nem sequer tiveram geometria admissível.
+
+2. Houve sinais WCO locais em outros contrastes: WCO central atingiu 83,3% de
+   vizinhança para churn/plug, e lag zero ponderado atingiu 83,3% para annular/plug.
+   Eles não foram escondidos. A retirada de um ensaio tornou a silhueta macro
+   negativa; excluir o mesmo q reduziu a vizinhança para 45,0% e 44,4%. Não são
+   bons candidatos de continuidade diante da fragilidade e da confusão operacional.
+
+3. Pico WPS para plug/slug: silhueta macro -0,137, vizinhança 33,3% na âncora.
+   Não reproduziu uma separação útil. Com apenas 3+3 aquisições, testes exatos de
+   separação invariantes à troca dos nomes das classes têm resolução mínima de
+   2/20=0,10; nem uma separação perfeita atingiria 5% nesse teste de separação.
+
+4. Hellinger e Wasserstein: tiveram sinais em contrastes secundários, sobretudo
+   churn/slug, mas não foram superiores à largura no contraste prioritário.
+   Hellinger WPS em churn/annular teve uma classe com silhueta negativa na âncora.
+   No panorama completo ele foi mais favorável, o que confirma a dependência do
+   contexto, sem substituir silenciosamente a condição principal.
+
+5. Nos quatro padrões, todas as 36 silhuetas macro da janela original foram
+   negativas. A melhor combinação de vizinhos foi Pearson+largura, 42,2%, contra
+   26,7% de Pearson sozinho. Esse ganho parcial não resolve a identificação das
+   quatro classes e não passou a correção dos testes de ganho.
+
+O trio e a largura da potência média passaram a triagem churn/annular, mas não
+justificam ampliar a análise principal diante da simplicidade, magnitude e
+interpretabilidade da largura WPS. Os resultados completos, inclusive os
+contrastes secundários favoráveis, ficaram nas tabelas; não foram descartados.
+
+CONTROLE DE MÁXIMOS E TESTE DE FASES
+
+Nos 99 pares independentes de ruído branco e 99 AR(1)=0,95, os máximos WCO tiveram
+medianas 0,864 e 0,846. Cerca de 37,4% e 29,3% atingiram pelo menos 0,9. São
+simulações de independência conhecida, não réplicas experimentais nem um limiar
+universal de significância. Esse resultado enfraquece o uso de um máximo alto
+como identificador, mas não é considerado um resultado útil de classificação.
+
+O nulo de fases não foi recalculado. O protocolo condicionou esse custo a algum
+resumo WCO passar a triagem prioritária, o que não ocorreu. O teste de fases
+investigaria o modelo espectral/temporal, sem recuperar uma separação que os
+resumos observados não apresentaram. A conclusão negativa para WCO é restrita
+aos resumos e dados testados, não uma prova de impossibilidade universal.
+
+VERIFICAÇÃO E REPRODUÇÃO
+
+Auditoria: PASS. Todos os 479 arquivos-fonte usados
+mantiveram seus SHA-256. A WPS e autocoerência dos 25 ensaios foram confrontadas
+com a fonte; seis mapas cruzados completos foram conferidos contra o motor novo
+(erro máximo de WCO 1,78e-15). Os 300 resumos centrais coincidiram com os originais.
+As silhuetas/vizinhos/ARI foram confrontados com funções puras de estatistica7;
+as 1008 caudas de permutação e ambas as correções Holm foram rechecadas.
+O resultado destacado da combinação foi reconstruído por cálculo independente,
+com normalização exclusiva no treinamento. Nenhum arquivo da fonte/TCC foi editado.
+
+Arquivos principais:
+  protocolo.json — critérios, hipóteses e adendo de precisão.
+  dados/metricas.csv — todos os métodos, escopos e posições.
+  dados/decisoes.csv — triagem e sensibilidade por candidato.
+  dados/caracteristicas.csv — valores por ensaio, sem pares artificiais.
+  dados/ganho_pearson.csv — comparação e combinação com Pearson.
+  dados/ganho_sensibilidades.csv — posições e exclusão por m/q.
+  dados/permutacoes.csv — valores-p brutos e corrigidos de todos os candidatos.
+  dados/permutacoes_condicionais_exploratorias.csv — controles posteriores por m/q.
+  dados/validacao_final.json — auditoria, versões e preservação das fontes.
+  figuras/01_largura_wps.png — efeito e estabilidade local da largura.
+  figuras/02_vizinhos_e_sensibilidade.png — ganho e controles de vizinhança.
+  figuras/03_triagem_completa.png — todas as 36 representações, sem seleção visual.
+  figuras/04_controle_maximos_wco.png — diagnóstico de máximos independentes.
+
+Os comandos completos estão em README.txt. Os gráficos também têm versão PDF.

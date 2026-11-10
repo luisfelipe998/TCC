@@ -1,0 +1,116 @@
+{
+  "created_utc": "2026-10-25T18:04:58.426609+00:00",
+  "figures": [
+    {
+      "name": "01_imagem_sinal_perfil",
+      "files": [
+        "figures/conclusao/01_imagem_sinal_perfil.png",
+        "figures/conclusao/01_imagem_sinal_perfil.pdf"
+      ],
+      "aquisicao": "m05q01_001",
+      "rows": [
+        18,
+        71
+      ],
+      "n": 5940,
+      "variant": "principal",
+      "domain": "principal",
+      "note": "Imagem com proporção ajustada para leitura; o perfil é normalizado em log(lambda)."
+    },
+    {
+      "name": "02_comparacao_essencial",
+      "files": [
+        "figures/conclusao/02_comparacao_essencial.png",
+        "figures/conclusao/02_comparacao_essencial.pdf"
+      ],
+      "values": [
+        {
+          "method": "wco_v16_18_71",
+          "weighting": "A_pares",
+          "value": 0.2146237805467014,
+          "deletion_min": 0.1932894432894432,
+          "deletion_max": 0.2415373159974798
+        },
+        {
+          "method": "wps_prefixo_par",
+          "weighting": "A_pares",
+          "value": 0.7382401236356612,
+          "deletion_min": 0.711726296476175,
+          "deletion_max": 0.771980067586918
+        },
+        {
+          "method": "wps_principal",
+          "weighting": "A_pares",
+          "value": 0.7649473582536462,
+          "deletion_min": 0.7422697102153148,
+          "deletion_max": 0.8072627298241595
+        },
+        {
+          "method": "wco_v16_18_71",
+          "weighting": "A_balanceada",
+          "value": 0.3074300411522634,
+          "deletion_min": 0.2358395061728395,
+          "deletion_max": 0.4102949245541838
+        },
+        {
+          "method": "wps_prefixo_par",
+          "weighting": "A_balanceada",
+          "value": 0.7806687242798356,
+          "deletion_min": 0.6504586762688616,
+          "deletion_max": 0.8048731995884777
+        },
+        {
+          "method": "wps_principal",
+          "weighting": "A_balanceada",
+          "value": 0.8163467078189304,
+          "deletion_min": 0.7138906035665298,
+          "deletion_max": 0.85266975308642
+        }
+      ],
+      "direction": "WCO maior = mais semelhante; Hellinger menor = mais semelhante",
+      "note": "50% significa ausência de preferência de ordenação. A não é acurácia."
+    },
+    {
+      "name": "03_limites_semelhanca",
+      "files": [
+        "figures/conclusao/03_limites_semelhanca.png",
+        "figures/conclusao/03_limites_semelhanca.pdf"
+      ],
+      "cases": [
+        {
+          "type": "Controle cruzado mais semelhante",
+          "run_x": "m06q01_001",
+          "run_y": "m06q40_001",
+          "H": 0.0836707156943818
+        },
+        {
+          "type": "Par intrapadrão menos semelhante",
+          "run_x": "m03q40_001",
+          "run_y": "m07q80_001",
+          "H": 0.4235187451511549
+        }
+      ],
+      "variant": "principal",
+      "domain": "principal"
+    }
+  ],
+  "source_sha256": {
+    "v16.1_perfis_wps/results/profiles_normalized.csv": "aae1a7c0dd41ea57bb8897e61c191555f4574658b549a2ebd0cf64abecfb2dcf",
+    "v16.1_perfis_wps/results/ranking_summary.csv": "616a9f7359a6b80ef941f18369a37c9f623e3d664b5fa64d6d2af2716d757539",
+    "v16.1_perfis_wps/results/acquisition_deletion.csv": "2ca9fcee710ef20f0b5c8509c902841732d220a2a45d02a09e5b0ed2b6202591",
+    "v16.1_perfis_wps/results/selected_cases.csv": "299dcdbda37df9a3df0ff877e9854d827903dad797acba6101c852b90f1efb6b",
+    "v16.1_perfis_wps/results/conclusion_audit.json": "0560b29ce14ef05375c2a0dd65f100945e8e6c54a753401dfd72a50762c768a9",
+    "v16.1_perfis_wps/scripts/render_conclusion.py": "36676acb40e573ab705e26f3761aa3fe69b3c38edf8aae7264401fb60d0a5627",
+    "v16.1_perfis_wps/config.json": "4ece21384e583cff5f627f888b6b94fcbb61ad1a5955b0659baaf0c17862b9f6",
+    "data_processed/m05q01_001/__panorama_v11.png": "73abc29e73728a38a2f655a0a204df944409d80228f9a3cdc50a35fddeb7eaf1",
+    "v16_spatial2_18_71/intermediate/m05q01_001_input.npz": "ee37094daeab36ad78a6794ed0b90742f7ac2d9ced41b052f4e024d225cac6f5"
+  },
+  "output_sha256": {
+    "figures/conclusao/01_imagem_sinal_perfil.png": "28ac7e49e780dfd13ae71afe50dacdd940adf4806e962b060208e81fd95de70c",
+    "figures/conclusao/01_imagem_sinal_perfil.pdf": "6c153ba224528c750c1ff93592d02dbfbfd58fedcf807cab86af8df5078c63ea",
+    "figures/conclusao/02_comparacao_essencial.png": "1a1f57b9751a23c42e2541296a3c8e89a7882ab6ee4954e839859733a1b59ff0",
+    "figures/conclusao/02_comparacao_essencial.pdf": "77446e83e6d41068e7e143331d468568110a5bdf20baa70cce2957c3d402c1e7",
+    "figures/conclusao/03_limites_semelhanca.png": "880372a87f28b106739e84379ae3a70a53dcbb40c43400205f4afe00a32c2e35",
+    "figures/conclusao/03_limites_semelhanca.pdf": "452c147ab326ced696dbbf225dec949a0c75821616d33f8864ae3f4ef9499b9a"
+  }
+}

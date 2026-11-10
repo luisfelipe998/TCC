@@ -1,0 +1,127 @@
+complement m03q05_001
+complement m03q10_001
+complement m03q20_001
+complement m03q40_001
+complement m04q01_001
+complement m04q10_001
+complement m04q20_001
+complement m04q40_001
+complement m04q80_001
+complement m05q01_001
+complement m05q05_001
+complement m05q10_001
+complement m05q20_001
+complement m05q40_001
+complement m05q80_001
+complement m06q01_001
+complement m06q05_001
+complement m06q10_001
+complement m06q20_001
+complement m06q40_001
+complement m06q80_001
+complement m07q01_001
+complement m07q05_001
+complement m07q20_001
+complement m07q40_001
+complement m07q80_001
+{
+  "seed": 20261024,
+  "scope": "26 selected recordings; original exclusions preserved",
+  "status": "adversarial_controls_executed_not_phase_velocity_validation",
+  "real_complement_masks": {
+    "tested_pairs": 780,
+    "nonconstant_pairs": 690,
+    "constant_or_degenerate_pairs": 90,
+    "identical_argmax_pairs": 668,
+    "different_argmax_only_numerical_ties": 22,
+    "unique_peak_pairs_at_1e_10": 636,
+    "max_curve_difference": 3.9968028886505635e-15,
+    "all_curves_agree_within_1e_10": true,
+    "limitation": "Identity applies to normalized correlation of complementary masks over identical support, not to independent textured grayscale pixels within each phase."
+  },
+  "weighted_common_motion": {
+    "trials": 156,
+    "baseline_finite_pairs": 26,
+    "baseline_ratio_min": 0.6174005917361036,
+    "baseline_ratio_max": 0.9994243317693923,
+    "max_covariance_identity_residual_px_s": 3.7965946830809116e-08,
+    "max_shuffled_ratio_median_deviation_from_one": 0.022938873526928583,
+    "identity": "weighted_gas-weighted_complement = population_covariance(mask_fraction,global_motion)/(mean_fraction*(1-mean_fraction))",
+    "shuffle_role": "Break appearance/motion association; percentiles are permutation diagnostics, not experimental confidence intervals."
+  },
+  "synthetic_nonstationarity": {
+    "cases": [
+      {
+        "synthetic_case": "constant",
+        "frames": 501,
+        "true_time_mean_px_frame": -16.0,
+        "true_min_px_frame": -16.0,
+        "true_max_px_frame": -16.0,
+        "mean_individual_displacements_px_frame": -15.999956702696654,
+        "individual_mean_absolute_error_px_frame": 0.0009859326648431511,
+        "individual_max_absolute_error_px_frame": 0.005962676409556167,
+        "ensemble_peak_px_frame": -15.999956969829727,
+        "ensemble_peak_error_vs_time_mean": 4.30301702731839e-05,
+        "lag2_ensemble_px_frame": -15.999977389477493,
+        "lag4_ensemble_px_frame": -15.999985075819335,
+        "temporal_tolerance_px_frame": 3.1999913939659455,
+        "block_agree_count": 5,
+        "block_consistency_gate": true,
+        "lag_consistency_gate": true,
+        "rejected_by_either_stationarity_gate": false,
+        "block_speeds": "-16.0000138514;-16.0000295695;-15.9999172814;-15.9999489502;-15.9998917284",
+        "status": "synthetic_truth_known; not an experimental correction"
+      },
+      {
+        "synthetic_case": "two_real_speeds",
+        "frames": 501,
+        "true_time_mean_px_frame": -14.4,
+        "true_min_px_frame": -24.0,
+        "true_max_px_frame": -8.0,
+        "mean_individual_displacements_px_frame": -14.400094538662648,
+        "individual_mean_absolute_error_px_frame": 0.003964466494027802,
+        "individual_max_absolute_error_px_frame": 0.017025260508276574,
+        "ensemble_peak_px_frame": -7.987682664038634,
+        "ensemble_peak_error_vs_time_mean": 6.412317335961366,
+        "lag2_ensemble_px_frame": -8.006020855162983,
+        "lag4_ensemble_px_frame": -8.014919216289318,
+        "temporal_tolerance_px_frame": 2.0,
+        "block_agree_count": 3,
+        "block_consistency_gate": false,
+        "lag_consistency_gate": true,
+        "rejected_by_either_stationarity_gate": true,
+        "block_speeds": "-8.00030399651;-8.0000730491;-8.0002880929;-23.9999541312;-23.999937304",
+        "status": "synthetic_truth_known; not an experimental correction"
+      },
+      {
+        "synthetic_case": "continuous_acceleration",
+        "frames": 501,
+        "true_time_mean_px_frame": -16.0,
+        "true_min_px_frame": -28.0,
+        "true_max_px_frame": -4.0,
+        "mean_individual_displacements_px_frame": -16.000071481231238,
+        "individual_mean_absolute_error_px_frame": 0.011214202054786423,
+        "individual_max_absolute_error_px_frame": 0.04941250394589858,
+        "ensemble_peak_px_frame": -17.194758620605498,
+        "ensemble_peak_error_vs_time_mean": 1.1947586206054979,
+        "lag2_ensemble_px_frame": -19.81402299397406,
+        "lag4_ensemble_px_frame": -25.89679078237948,
+        "temporal_tolerance_px_frame": 3.4389517241211,
+        "block_agree_count": 1,
+        "block_consistency_gate": false,
+        "lag_consistency_gate": false,
+        "rejected_by_either_stationarity_gate": true,
+        "block_speeds": "-6.36910523897;-11.1909764061;-16.0748684577;-20.8286995389;-25.8138624552",
+        "status": "synthetic_truth_known; not an experimental correction"
+      }
+    ],
+    "conclusion": "A single dominant correlation peak and stationarity gates can reject real varying optical motion; mean pair displacements recover the synthetic temporal mean. This does not establish phase identity or validate any rejected real-data peak."
+  },
+  "legacy_gate_attrition": {
+    "region_rows": 148,
+    "baseline_rejected_only_stationarity": 42,
+    "only_stationarity_with_other_extended_checks_pass": 31,
+    "warning": "These counts flag investigable cases; loosening gates is not validation."
+  },
+  "script_sha256": "667265e5cb87af3a6ad3149324312e3878836626a8e501f82967aef1bb59223f"
+}

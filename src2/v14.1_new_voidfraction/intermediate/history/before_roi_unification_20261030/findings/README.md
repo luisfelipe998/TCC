@@ -1,0 +1,22 @@
+# Findings
+
+[Back to v14.1](../README.md)
+
+- [English executive summary](EXECUTIVE_SUMMARY.md)
+- [Resumo executivo](EXECUTIVE_SUMMARY_PT_BR.md)
+- [Before/after results and whether the fixes helped](fix_effectiveness.md)
+- [Adversarial source-order and method-preservation audit](seam_adversarial_review.md)
+- [Independent audit of completed results and both summaries](post_regeneration_adversarial_review.md)
+- [Independent segmentation and arithmetic](deep_method_review.md)
+- [Preserved D53 geometry](lumen_normalization_review.md)
+- [Void method and assumptions](panorama_void_alternatives.md)
+- [Spatial mask flip definitions](phase_mask_flip_review.md)
+- [Optical spatial sensitivity](spatial_flip_review.md)
+- [Native temporal controls](flip_rate_review.md)
+- [Morphology classifiers](pattern_identification.md)
+- [Silhouette classifiers](silhouette_pattern_review.md)
+- [Phase anchors, reference and crop sensitivity](adversarial_review.md)
+- [Literature audit](source_audit.md)
+- [Selection and independent optical arithmetic](prior_findings_audit.md)
+- [Files, scope and links](scope_verification.md)
+- [Leitura dos gráficos](GRAFICOS_PARA_DISCUSSAO_PT_BR.md)

@@ -1,0 +1,40 @@
+{
+  "counts": {
+    "old_outer": 12,
+    "block_two_walls": 20,
+    "selected_wall": 25,
+    "phase_radius3": 7,
+    "phase_radius1": 8,
+    "spectral_joint": 2,
+    "sensitivity_stable": 7,
+    "material_phase_pair": 0
+  },
+  "sensitivity_counts": {
+    "highpass32": {
+      "coordinate_agreement": 25,
+      "support_and_coordinate_agreement": 22
+    },
+    "highpass8": {
+      "coordinate_agreement": 14,
+      "support_and_coordinate_agreement": 8
+    },
+    "raw": {
+      "coordinate_agreement": 24,
+      "support_and_coordinate_agreement": 24
+    },
+    "reverse": {
+      "coordinate_agreement": 22,
+      "support_and_coordinate_agreement": 22
+    }
+  },
+  "insufficient_support": [
+    "m03q05_001"
+  ],
+  "all_points": 26,
+  "units": "px/s",
+  "plot_display_scale": 1000,
+  "background_fitting": "Training half only, frozen before assessment",
+  "stability_rule": "Primary support AND alternative support AND both coordinates within max(2*FPS,20% magnitude) for reversed halves, raw, sigma32, sigma8.",
+  "limitations": "Sensitivity compares different temporal/content samples; failure is not proof of erroneous matching. Agreement is not physical accuracy or phase identification.",
+  "script_sha256": "d62626163e89902c28c74196e8c45ff62746e3bf1114de5bf11c603e02e8fdc6"
+}

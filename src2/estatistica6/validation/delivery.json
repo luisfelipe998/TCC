@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "sources_unchanged": true,
+  "source_files": 70,
+  "figures": [
+    {
+      "file": "01_triagem.png",
+      "dimensions": [
+        1908,
+        1405
+      ]
+    },
+    {
+      "file": "02_perfis_wps.png",
+      "dimensions": [
+        2720,
+        704
+      ]
+    },
+    {
+      "file": "03_churn_annular.png",
+      "dimensions": [
+        2182,
+        998
+      ]
+    },
+    {
+      "file": "04_plug_slug.png",
+      "dimensions": [
+        2144,
+        1394
+      ]
+    },
+    {
+      "file": "05_estabilidade.png",
+      "dimensions": [
+        2180,
+        977
+      ]
+    },
+    {
+      "file": "06_condicoes_operacionais.png",
+      "dimensions": [
+        2180,
+        840
+      ]
+    },
+    {
+      "file": "07_diagnostico_pearson.png",
+      "dimensions": [
+        2144,
+        814
+      ]
+    }
+  ],
+  "broken_links": [],
+  "executive_pdf_pages": 4,
+  "figures_and_pdf_visual_review": "ver validation/visual_review.json",
+  "independent_numerical_checks": {
+    "status": "PASS",
+    "sources_checked": 70,
+    "sources_unchanged": true,
+    "a1_independent_leave_one_out_max_error": 0.0,
+    "mean_power_temporal_max_error": 2.220446049250313e-16,
+    "ari_independent_max_error": 0.0,
+    "valid_window_pairs": 75,
+    "weighting_replicates": 10000,
+    "condition_memberships_verified": true,
+    "q_arrangements": [
+      200,
+      9
+    ],
+    "mq_arrangements": [
+      1,
+      1
+    ]
+  }
+}

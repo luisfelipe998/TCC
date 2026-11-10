@@ -1,0 +1,22 @@
+{
+  "passage_points": 4,
+  "regional_points": 10,
+  "outer_regional_points": 12,
+  "all_candidate_points": 26,
+  "languages": [
+    "EN",
+    "PT_BR"
+  ],
+  "formats": [
+    "PNG 600dpi",
+    "SVG",
+    "PDF"
+  ],
+  "phase_axis_units": "px/s",
+  "regional_axis_units": "px/s",
+  "conditional_scale_m_px": 1.8867924528301888e-05,
+  "log_axes": false,
+  "display": "magnitude of signed mean for passages; magnitude of ensemble propagation peak for regional descriptors; all plotted directions leftward",
+  "no_pattern_boundaries_drawn": true,
+  "regional_descriptors_are_not_phase_velocities": true
+}

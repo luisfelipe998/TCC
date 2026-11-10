@@ -1,0 +1,113 @@
+{
+  "method": "Manual visually selected interior patches, not independent volumetric ground truth; no tuning of algorithm",
+  "checks": [
+    {
+      "run": "m07q01_001",
+      "x0": 180,
+      "x1_exclusive": 250,
+      "y0": 24,
+      "y1_exclusive": 65,
+      "visual_anchor": "visually liquid, held out",
+      "gas_mask_fraction": 0.0,
+      "gas_mask_column_flip_count": 0,
+      "center_gas_accepted_fraction": 0.0,
+      "shadow_gate_060_080_gas_fraction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "run": "m07q01_001",
+      "x0": 580,
+      "x1_exclusive": 650,
+      "y0": 24,
+      "y1_exclusive": 65,
+      "visual_anchor": "visually liquid, held out",
+      "gas_mask_fraction": 0.0,
+      "gas_mask_column_flip_count": 0,
+      "center_gas_accepted_fraction": 0.0,
+      "shadow_gate_060_080_gas_fraction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "run": "m06q01_001",
+      "x0": 455,
+      "x1_exclusive": 515,
+      "y0": 24,
+      "y1_exclusive": 65,
+      "visual_anchor": "visually liquid plug gap",
+      "gas_mask_fraction": 0.0,
+      "gas_mask_column_flip_count": 0,
+      "center_gas_accepted_fraction": 0.0,
+      "shadow_gate_060_080_gas_fraction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "run": "m06q01_001",
+      "x0": 150,
+      "x1_exclusive": 300,
+      "y0": 30,
+      "y1_exclusive": 55,
+      "visual_anchor": "visually gas body",
+      "gas_mask_fraction": 1.0,
+      "gas_mask_column_flip_count": 0,
+      "center_gas_accepted_fraction": 1.0,
+      "shadow_gate_060_080_gas_fraction": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "run": "m05q05_002",
+      "x0": 505,
+      "x1_exclusive": 540,
+      "y0": 24,
+      "y1_exclusive": 65,
+      "visual_anchor": "visually liquid, held out",
+      "gas_mask_fraction": 0.0,
+      "gas_mask_column_flip_count": 0,
+      "center_gas_accepted_fraction": 0.0,
+      "shadow_gate_060_080_gas_fraction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "run": "m05q05_002",
+      "x0": 580,
+      "x1_exclusive": 610,
+      "y0": 30,
+      "y1_exclusive": 55,
+      "visual_anchor": "visually gas body, held out",
+      "gas_mask_fraction": 1.0,
+      "gas_mask_column_flip_count": 0,
+      "center_gas_accepted_fraction": 1.0,
+      "shadow_gate_060_080_gas_fraction": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ]
+}

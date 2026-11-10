@@ -1,0 +1,36 @@
+{
+  "ancoras": 152,
+  "minimos": 76,
+  "maximos": 76,
+  "aquisicoes": 19,
+  "pares_ancoras": 830,
+  "comparacoes_planejadas": 6640,
+  "comparacoes_calculadas": 6625,
+  "comparacoes_nao_estimaveis": 15,
+  "comparacoes_fixos": 2052,
+  "ancoras_em_mistura": 10,
+  "ancoras_com_sobreposicao": 143,
+  "ancoras_com_outros_marcos": 120,
+  "minimos_com_sobreposicao": 70,
+  "minimos_com_outros_marcos": 60,
+  "minimos_em_mistura": 3,
+  "contextos_com_deslocamentos_nao_positivos": 2,
+  "costuras_contexto_min": 38,
+  "costuras_contexto_max": 162,
+  "invalidas_denominador": 0,
+  "erro_equacao_maximo": 0.0,
+  "maximo_wco": 1.0061569942141135,
+  "minimo_wco": 9.259254976876652e-13,
+  "maximo_wco_morlet": 0.9986783748386814,
+  "maximo_wco_v5": 1.0061569942141135,
+  "mapas_ancorados_v5_acima_1": 2,
+  "mapas_fixos_v5_acima_1": 1,
+  "ausencias_por_variante": {
+    "detector_sigma20": 15
+  },
+  "criterios_descritivos": {
+    "margem": 0.05,
+    "cobertura": 0.6666666666666666
+  },
+  "status": "PASS"
+}

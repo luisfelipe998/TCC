@@ -1,0 +1,918 @@
+{
+  "README.md": {
+    "sha256": "a139f06f8318328723c37f6992b284737f3be1255f0c4fa10466944e90fe2896",
+    "bytes": 6664
+  },
+  "figures/README.md": {
+    "sha256": "3859a7c6cc814f031f3a3d75a2fabea17dc079dfa1e41f5c2f5005dc1764cfd2",
+    "bytes": 3262
+  },
+  "figures/inlet_sensitivity.png": {
+    "sha256": "c5c63891608f0469bb683315cde9f347d04f4e2f1acb0124dbaeab1d34f736a3",
+    "bytes": 367553
+  },
+  "figures/optical_displacement_quality.png": {
+    "sha256": "a080674f6927f2ef15d76cdb27fd2bd3898773e5745c4173895ba7d8c8123fea",
+    "bytes": 143590
+  },
+  "figures/optical_method_comparison.png": {
+    "sha256": "dabcb5e20fe6fb22291941da5edbae4aead076eec989afef8452d0c9252088ab",
+    "bytes": 85872
+  },
+  "figures/optical_native_correspondence.png": {
+    "sha256": "f4fae52c6add675064f1b00d9a4d7248f74524aaf94e43dff55cb774b8f1dbc0",
+    "bytes": 421322
+  },
+  "figures/phase_model_comparison.png": {
+    "sha256": "9adaa0c390e15ea55c07bfe46011c194195c4031559b65be60d884d273f22b1e",
+    "bytes": 185707
+  },
+  "figures/phase_model_comparison.svg": {
+    "sha256": "620d6364bc752ce5f45dee49bcd78ced3dc2d2b1d8fb91540a537728ba486370",
+    "bytes": 155465
+  },
+  "figures/recorded_flow_comparison.png": {
+    "sha256": "88bbe5bcf4fa1b8676035d0b06167719c90534ae28cf61ab525f90e38fa9956f",
+    "bytes": 132310
+  },
+  "figures/recorded_flow_comparison.svg": {
+    "sha256": "002645ca2333efc04f974b7db9a4a31244dd43860195264d9f0b93782fd1751f",
+    "bytes": 108356
+  },
+  "figures/superficial_velocity.png": {
+    "sha256": "bd186b820479511bf4a6d8f118d72c1be7cd3096ffd6a59ed22261513f0ee270",
+    "bytes": 72628
+  },
+  "figures/superficial_velocity.svg": {
+    "sha256": "125d9be1f9aa5724f15eec8ad9524f8c7629f1c946dc27ec2e40ce7497d15e1b",
+    "bytes": 58726
+  },
+  "findings/EXECUTIVE_SUMMARY.md": {
+    "sha256": "329da575501509bbf2a3922bdacb1f076d7b223ddfe95af9e13d22d4fbb5102f",
+    "bytes": 16507
+  },
+  "findings/README.md": {
+    "sha256": "b87ebfa32a2f5ae1abdcd5379d3bdc06aac3fc3ae6eab50190ff150e2742a824",
+    "bytes": 2711
+  },
+  "findings/conditional_model_summary.md": {
+    "sha256": "e4587d64c09b4552d4cfc919957c35306575bfa362a452431bf3c4e966fa9bb5",
+    "bytes": 7843
+  },
+  "findings/independent_review.md": {
+    "sha256": "4dff90513da93eb37141c5b418b0302468e95931b0622a13779ee5aa67f82fa4",
+    "bytes": 7418
+  },
+  "findings/legacy_audit.md": {
+    "sha256": "f7ad81d22c8f80b952d44cea6082e0f3481001d1220d43e2fe70049349ccf0e5",
+    "bytes": 14828
+  },
+  "findings/literature_review.md": {
+    "sha256": "3cc0cc77793136afe1b0c8e4a21c91e62a71bf24759293122004ea8140d68720",
+    "bytes": 20844
+  },
+  "findings/massflow_review.md": {
+    "sha256": "53d6fbadf8a5cb1546909530718955410cda8092e7c75d5a684547e7455bea6d",
+    "bytes": 8545
+  },
+  "findings/method_comparison.md": {
+    "sha256": "f2af85a7f9d2ab8f859d666ce60097155311e62cd7141f310d392cd8c0f3512c",
+    "bytes": 11588
+  },
+  "findings/optical_investigation.md": {
+    "sha256": "1b1206802c7f02160b46a06174f13dc711fc21938f67126e1d7a0e2f15b88c55",
+    "bytes": 11294
+  },
+  "findings/velocity_results.md": {
+    "sha256": "46710aef2573c84bad30d6aa950665ef57f60980b75d035336fab94a389ef55e",
+    "bytes": 9460
+  },
+  "frame_motion_evaluation/README.md": {
+    "sha256": "c895ef6bc25ae1e30a533cbdbb84c9b67e1b42c35d57214f090b254d3bfd4b51",
+    "bytes": 2350
+  },
+  "frame_motion_evaluation/figures/local_patch_support.png": {
+    "sha256": "8164d5143e53ab80555d91dc133cdc9eaf9a0ef6936a67bd1ee82c99239bf952",
+    "bytes": 163479
+  },
+  "frame_motion_evaluation/figures/local_patch_support.svg": {
+    "sha256": "5b6b65d82d2274f2cebf04b0c04703a0d8f780794ec9093b302d6a64feb85ce8",
+    "bytes": 109502
+  },
+  "frame_motion_evaluation/figures/temporal_examples.png": {
+    "sha256": "5f4cc2b7918c32ab495edcee26d82c8b48c8b3496db7ef829fd3bb02f06575c6",
+    "bytes": 1038640
+  },
+  "frame_motion_evaluation/figures/temporal_motion_overview.png": {
+    "sha256": "d8fa058f5327e51b3b4f316f0d27e253901c8bfa3e6b47a4b7136fcedf925f01",
+    "bytes": 192061
+  },
+  "frame_motion_evaluation/figures/temporal_motion_overview.svg": {
+    "sha256": "a903b7c7b5ecde2d26f0ac14778a7a46de09c5a86e2b6f2167f72a70efe87088",
+    "bytes": 152223
+  },
+  "frame_motion_evaluation/figures/visual_sequence_m03q40_001.png": {
+    "sha256": "dd316affb386e3158a4ed98185d051446a752a28c7249acacd38ce78ace6853e",
+    "bytes": 308506
+  },
+  "frame_motion_evaluation/figures/visual_sequence_m04q80_001.png": {
+    "sha256": "8c424dfed1e6da5f1e88507d69e709e90cdef888d552155024cd6c2d5374c5b2",
+    "bytes": 295228
+  },
+  "frame_motion_evaluation/figures/visual_sequence_m05q01_001.png": {
+    "sha256": "bef2f9684192f269f9f49f2a0875b167f80826ff099829eb15e5fe85bab1d47d",
+    "bytes": 249479
+  },
+  "frame_motion_evaluation/figures/visual_sequence_m05q05_001.png": {
+    "sha256": "db8e2d0c9a1cfef995b111f4daab3fe85a9ec50deeb429e1e57dee601b2888d0",
+    "bytes": 264577
+  },
+  "frame_motion_evaluation/figures/visual_sequence_m05q20_001.png": {
+    "sha256": "42ba6e225720a25715cd5c45661f05d39f215d36ac380fb115dde859346d51fa",
+    "bytes": 300506
+  },
+  "frame_motion_evaluation/figures/visual_sequence_m07q01_001.png": {
+    "sha256": "73829f3dc1a7a7dc428a61f21c278c8facdf3ffce6fca29606c095d894267f74",
+    "bytes": 238789
+  },
+  "frame_motion_evaluation/figures/visual_xt_m03q40_001.png": {
+    "sha256": "39e957155ae4be9d143b715630cf5e4a486741c70f9d47fa6af989add8641960",
+    "bytes": 387912
+  },
+  "frame_motion_evaluation/figures/visual_xt_m04q80_001.png": {
+    "sha256": "0c9285ae1b54e2cc93a6345c846c115a62605c02058c4c75c33a2ea0d1058005",
+    "bytes": 361631
+  },
+  "frame_motion_evaluation/figures/visual_xt_m05q01_001.png": {
+    "sha256": "fffce24e0658d0aca7531d89147963164f12d4f6e6f3d4ffe90bd977f1a98e8c",
+    "bytes": 283963
+  },
+  "frame_motion_evaluation/figures/visual_xt_m05q05_001.png": {
+    "sha256": "cf7f2c526afc2573ef7e1b9623bf37f825b15d954b34512ec853dfb4ada20afa",
+    "bytes": 337347
+  },
+  "frame_motion_evaluation/figures/visual_xt_m05q20_001.png": {
+    "sha256": "a0750594da3471549aaeb5f8aa6aef2c02dd2626b0ceecddf525ae01a2692351",
+    "bytes": 376067
+  },
+  "frame_motion_evaluation/figures/visual_xt_m07q01_001.png": {
+    "sha256": "12dc8c158e9beb8f9447de96d4dfb718fac3deb1665295697f8f179e36167702",
+    "bytes": 220569
+  },
+  "frame_motion_evaluation/findings/EXECUTIVE_SUMMARY.md": {
+    "sha256": "3426ef661b51d3472b3c50b71b17013091d0175444c54595733a761c1bba1386",
+    "bytes": 8101
+  },
+  "frame_motion_evaluation/findings/independent_review.md": {
+    "sha256": "66d421397ec4b48cdf77b50853361fe07d9332445fe6314f3ce6948ffd85ab73",
+    "bytes": 5413
+  },
+  "frame_motion_evaluation/findings/local_patch_review.md": {
+    "sha256": "a8e84c101903585bbfb7c82fbf7eeb963de9bc2073e4d66308f071826df2f162",
+    "bytes": 6537
+  },
+  "frame_motion_evaluation/findings/temporal_review.md": {
+    "sha256": "c8f6268a46fb307f5cf9ba5f06ed1b19192ca54390165674dc6d6f08816192b7",
+    "bytes": 5584
+  },
+  "frame_motion_evaluation/findings/visual_review.md": {
+    "sha256": "566a4a5fe600453bf065ab58896df39389bafd957344595c85c25e3c24038dcd",
+    "bytes": 6137
+  },
+  "frame_motion_evaluation/results/independent_baseline_verification.json": {
+    "sha256": "e8c532b3fc678fe07c7973c413cd86e98f25daf2cd3c3addef4620795cace63d",
+    "bytes": 6447
+  },
+  "frame_motion_evaluation/results/independent_existing_sensitivity.json": {
+    "sha256": "d94e275ff9c32c8697a704bb67b4f201ebf60b51170f39359261cbd10d8dd389",
+    "bytes": 11792
+  },
+  "frame_motion_evaluation/results/independent_verification.json": {
+    "sha256": "7b8fc150cd481c2608c584fc76b0b7963ed5e12881b7e22aaf45e606285087ee",
+    "bytes": 6841
+  },
+  "frame_motion_evaluation/results/local_patch_pairs.csv": {
+    "sha256": "8009e6829ea8cbea9bd16b88ef72a69ab802d040cb2117341e8b8f3fd8396a9d",
+    "bytes": 365118
+  },
+  "frame_motion_evaluation/results/local_patch_saved_verification.json": {
+    "sha256": "d0ac656cacc1b25a7ffc0be25eb4b0f581fa1c4e9ab13621fd86a17a9a4a824f",
+    "bytes": 1244
+  },
+  "frame_motion_evaluation/results/local_patch_summary.csv": {
+    "sha256": "dab900fb3e1a710ca7d409ef70007edfa065bf03d4583c6fef3f30cd883a5960",
+    "bytes": 8185
+  },
+  "frame_motion_evaluation/results/local_patch_tracks.csv": {
+    "sha256": "c34dc62460fcb885735f41989ee20262877c043d92a826fd1373e9d06038ba73",
+    "bytes": 4165113
+  },
+  "frame_motion_evaluation/results/local_patch_validation.json": {
+    "sha256": "855326e3cc87193afd1a3d9fa13885c0c6f38f690724d6e23ccd86e8c774ec2e",
+    "bytes": 12416
+  },
+  "frame_motion_evaluation/results/temporal_metadata.json": {
+    "sha256": "67d89760cb1269516fd4956729372bc3febcb488e648127e45ba3fa1d45f6623",
+    "bytes": 12471
+  },
+  "frame_motion_evaluation/results/temporal_pairs.csv": {
+    "sha256": "ce0f5031f95af852a60a70842c9b434ecf74baedc40f369175672760d74eb2b6",
+    "bytes": 10508573
+  },
+  "frame_motion_evaluation/results/temporal_per_run.csv": {
+    "sha256": "9d47436f8c868fd563bde3a0501826fa6d7f4324f8d180d2d4dff8db894ff058",
+    "bytes": 12415
+  },
+  "frame_motion_evaluation/results/visual_sequences_metadata.json": {
+    "sha256": "0270188d7da60bb1be1103474655d9bb69cd479a9d98d28c37a7f67a6a5fac05",
+    "bytes": 8067
+  },
+  "frame_motion_evaluation/scripts/build_summary.py": {
+    "sha256": "7117d2709cf2816161636461451a9cf567cf006b4fd161c1110ae4f8193a142a",
+    "bytes": 17419
+  },
+  "frame_motion_evaluation/scripts/independent_verify.py": {
+    "sha256": "ecf64c616dea86651f75864ed045a622fc998fa0bb682380e626f8df65db1e78",
+    "bytes": 18069
+  },
+  "frame_motion_evaluation/scripts/local_patch_motion.py": {
+    "sha256": "997b76c404f1a32b28b190142fa0b98995865fbf17d5fbe3b053d5e90207ca12",
+    "bytes": 12468
+  },
+  "frame_motion_evaluation/scripts/local_patch_report.py": {
+    "sha256": "c5ce78c6df4729882508a763a1c8c7aca0cbb421c0573e104e1f68c6c162ae0b",
+    "bytes": 11601
+  },
+  "frame_motion_evaluation/scripts/temporal_motion.py": {
+    "sha256": "55a28fe1ad30bb3f993cc7a6c6f41855ebc0989f16421c7601cd456604d60895",
+    "bytes": 14021
+  },
+  "frame_motion_evaluation/scripts/visual_sequences.py": {
+    "sha256": "35d0c49cba80f49afdc9f1447c676fbdfcc3e308d7e567860a0ec1decd089d21",
+    "bytes": 4164
+  },
+  "intermediate/v14_void_input_snapshot.csv": {
+    "sha256": "07fae8da466837a04c101ac60794bcefa3b6ec20f80ff0f834c0edfbaea5223a",
+    "bytes": 9885
+  },
+  "literature/README.md": {
+    "sha256": "9662b5fa02be0e32ae79c6894d488a03fbde2f61bcbd8457b072a45eae2550ed",
+    "bytes": 835
+  },
+  "literature/extracts/deoliveira2019.txt": {
+    "sha256": "d9aec96494734e1e9af5945c79e76ba580618e427a360fb45203d518049ad2c4",
+    "bytes": 81394
+  },
+  "literature/extracts/deoliveira2021.txt": {
+    "sha256": "fba237c70d8549b2b83da673ee22ebeef372dbef69d708c58441de592ea32f81",
+    "bytes": 86703
+  },
+  "literature/extracts/dias2024.txt": {
+    "sha256": "e29602bca73866f167041066e9255c4b6f381347c234c846ab936dc4b9c50602",
+    "bytes": 89464
+  },
+  "literature/extracts/dias2025knn.txt": {
+    "sha256": "e531bb28784f7bd85d715966c30291e33e8b30ae8572cdce1a8a335f14a0e971",
+    "bytes": 90174
+  },
+  "literature/extracts/driftflux2023.txt": {
+    "sha256": "5416f800927c934f85a75afbdd973f8213e7aca6dc5fb65bf6bed4cba61e34fd",
+    "bytes": 92351
+  },
+  "literature/extracts/fluids_source_commit.json": {
+    "sha256": "0264e531af148261bc03e591bacd82cc16379c364dc115fda396b79fed7907ab",
+    "bytes": 7005
+  },
+  "literature/extracts/fluids_two_phase_voidage.py": {
+    "sha256": "a8bb8fb71f37e66b59f2e210034181e899e5d23708d6adbd67b2fded83d8db9a",
+    "bytes": 102605
+  },
+  "literature/extracts/xufang2014_openalex.json": {
+    "sha256": "722328d3633eb806476f906638a1c7d5d761326520ce795d79e3c337d7eaa213",
+    "bytes": 14905
+  },
+  "literature/pages/deoliveira2021-eq05-highres.png": {
+    "sha256": "e8e779cf310bb79cabb0f12fc2abe44d2a0436495432a916e5527e37190042ad",
+    "bytes": 98354
+  },
+  "literature/pages/deoliveira2021-p08.png": {
+    "sha256": "d1773a6fd6466315c853d0f799b335ab4a7d45d4c4f0c82c25d3b889f683d426",
+    "bytes": 908330
+  },
+  "literature/pages/dias2025knn-p05.png": {
+    "sha256": "8b662401051d64137cf102c219d153862d281c23f23ffbf4f239435bbf56602d",
+    "bytes": 789962
+  },
+  "literature/source_numeric_checks.json": {
+    "sha256": "b7485b44df2fbe7094a9594301695cee35265660f2a46636fe64881fc24dd63b",
+    "bytes": 4166
+  },
+  "literature/source_numeric_checks.py": {
+    "sha256": "a72dfd1b0df9e0ef6ad102f339ecc94452f8dde624e747a9176788d9454a3a40",
+    "bytes": 2474
+  },
+  "phase_conditioned_motion/README.md": {
+    "sha256": "7ae77e7b00a7c3602c83ff9d47c197702280fc6c2932fa253c652e5eeb3e3fb6",
+    "bytes": 2839
+  },
+  "phase_conditioned_motion/figures/adaptive_liquid_examples.png": {
+    "sha256": "ee04a76399b19e396612f24bac5d70f3c70a4181566c6143f774f1701e19e20d",
+    "bytes": 197084
+  },
+  "phase_conditioned_motion/figures/adaptive_support.png": {
+    "sha256": "a463a2caa3a1d76124a108b12255248bcd4630427bbd107693aeb343004e0770",
+    "bytes": 57925
+  },
+  "phase_conditioned_motion/figures/closed_contour_bubble_tracks.png": {
+    "sha256": "698274a7242d9452a9ba228ac1096d48430c09faa62cd08c5fce7b957e51ee2d",
+    "bytes": 267361
+  },
+  "phase_conditioned_motion/figures/closed_contour_m07q01_frame200.png": {
+    "sha256": "13c0960ee22ba4a51cc27e9397e155a737a28b39bd2c1bee1231b8a9979d02f0",
+    "bytes": 349140
+  },
+  "phase_conditioned_motion/figures/closed_contour_m07q01_frame210.png": {
+    "sha256": "f0708ff3ed5c40025f167e982ed346876b25b63d78b0778d0b301af1e33d4948",
+    "bytes": 344075
+  },
+  "phase_conditioned_motion/figures/conditional_passage_velocities.png": {
+    "sha256": "b2f89e9db66d4d2f1e383f7b83d645e3504610462c417ccadaa1875802c5f68a",
+    "bytes": 162344
+  },
+  "phase_conditioned_motion/figures/conditional_passage_velocities.svg": {
+    "sha256": "4da2b78a0d2ea550216470be8e293bd6d4bcc28592d7be7fbc82bd235591f2f4",
+    "bytes": 92710
+  },
+  "phase_conditioned_motion/figures/conditional_ratio_comparison.png": {
+    "sha256": "1a469749ad4ec6fa55ee1453c87745b9273c8d24713cfddfaf4fe690365a6b7d",
+    "bytes": 91480
+  },
+  "phase_conditioned_motion/figures/conditional_ratio_comparison.svg": {
+    "sha256": "c90ace87425bf28e013588428b663a36c72b70e6a8ec0c0c663644c3b04dc697",
+    "bytes": 57067
+  },
+  "phase_conditioned_motion/figures/passage_time_diagnostics.png": {
+    "sha256": "5177819d33c54cbb378e91d4760f35cc768fdc1e0f0ed8f3b286257220c27784",
+    "bytes": 696941
+  },
+  "phase_conditioned_motion/figures/phase_support_attrition.png": {
+    "sha256": "14874bedd4721cb6f75d2e021ecfafcf979a72379813f0a0fa4da6b529d0255d",
+    "bytes": 80680
+  },
+  "phase_conditioned_motion/figures/phase_visual_dispersed_alternative.png": {
+    "sha256": "2bfdb9caac1e8662a23ee85870229e912a6c28ddf4e72c08f69e42a86e054dbb",
+    "bytes": 243604
+  },
+  "phase_conditioned_motion/figures/phase_visual_m03q40_001.png": {
+    "sha256": "3ffaf8d50a6264567b63b209214e5ef2a5e9d3d30e1dfb8446c42109b3682bcb",
+    "bytes": 299047
+  },
+  "phase_conditioned_motion/figures/phase_visual_m04q01_001.png": {
+    "sha256": "fae17f13d586f490d795125c2d20e01deb0156b8b6f6e806bdcd997724e69c33",
+    "bytes": 259766
+  },
+  "phase_conditioned_motion/figures/phase_visual_m04q80_001.png": {
+    "sha256": "67806256362dfcdb15a5474cf25aff517393a2ade7d254480afb35b7e3330810",
+    "bytes": 282568
+  },
+  "phase_conditioned_motion/figures/phase_visual_m05q01_001.png": {
+    "sha256": "ef6db21de3f4e3e4c37c5df05425a03dd03855f1593252284c52f88ae7fe55f4",
+    "bytes": 255742
+  },
+  "phase_conditioned_motion/figures/phase_visual_m05q05_001.png": {
+    "sha256": "47f30d7a2e694396d303618d9f4239ad1fd1d8b6f715328354cfe8384080a48b",
+    "bytes": 278425
+  },
+  "phase_conditioned_motion/figures/phase_visual_m05q20_001.png": {
+    "sha256": "e8059c9e1b9faafd55323024cbb2f04dfa6d0b64415750b5256d9262d4cb33b5",
+    "bytes": 298392
+  },
+  "phase_conditioned_motion/figures/phase_visual_m06q05_001.png": {
+    "sha256": "2ff73c7d4ce1ba63a3b080f2c2412af2cf49dace38cc59093b85f76988c6073e",
+    "bytes": 278908
+  },
+  "phase_conditioned_motion/figures/phase_visual_m07q01_001.png": {
+    "sha256": "b4c439d736b2224f5d9a14a769f11f77f3e69d834c58cb8bace8d572ac0de983",
+    "bytes": 251818
+  },
+  "phase_conditioned_motion/figures/strict_liquid_candidate_examples.png": {
+    "sha256": "8a9a0a4ebe8b8a8d0157a44ec84cbf807d57fa1d48621e7ed21e0183ae6fd4b2",
+    "bytes": 194076
+  },
+  "phase_conditioned_motion/findings/EXECUTIVE_SUMMARY.md": {
+    "sha256": "759384d667dd3c3f1eae3d3b5e10ecb2c9ce20aba834f373bd11093c9a179ecd",
+    "bytes": 14918
+  },
+  "phase_conditioned_motion/findings/adaptive_patch_review.md": {
+    "sha256": "705e8d22c1ca3048d8ec2e83c30ff0f408be5388c505dc287293240dfb882164",
+    "bytes": 7074
+  },
+  "phase_conditioned_motion/findings/closed_contour_review.md": {
+    "sha256": "d1fc41bc3b44254d6e53999065446c64234d8637c257c32e6e8adf8bbef16618",
+    "bytes": 6228
+  },
+  "phase_conditioned_motion/findings/independent_review.md": {
+    "sha256": "5c499454271c8746b0102f7b2a9bb03a2e6a8d9df42e3f71e7cb7db88e921885",
+    "bytes": 12468
+  },
+  "phase_conditioned_motion/findings/native_phase_masks.md": {
+    "sha256": "4545714160f2d01a090f01f222e4dddc178923cc419f01edee2871509001e6f4",
+    "bytes": 5414
+  },
+  "phase_conditioned_motion/findings/phase_visual_review.md": {
+    "sha256": "f719c245d77eacce2c26d79db236712c263986b2a1d86b0f5b5a07f6cf78b1bf",
+    "bytes": 10312
+  },
+  "phase_conditioned_motion/intermediate/masks/m03q05_001.npz": {
+    "sha256": "d35ef7721b90089df4b85c8d08ca8c161b7138e40770d12c74a615e75e176ca0",
+    "bytes": 240272
+  },
+  "phase_conditioned_motion/intermediate/masks/m03q10_001.npz": {
+    "sha256": "00b104c1f96e5fd8803491261f42d0a184e2212e3204d26280402c7e2185c444",
+    "bytes": 75580
+  },
+  "phase_conditioned_motion/intermediate/masks/m03q20_001.npz": {
+    "sha256": "bc9566e8524a7656c5a0dc09d4e19e3d11be27e47d46db69d4b7e26733372b5b",
+    "bytes": 37184
+  },
+  "phase_conditioned_motion/intermediate/masks/m03q40_001.npz": {
+    "sha256": "119319da1d2c3ccee93d26297da31e749676ede8ceb6353c5712fdcc1247ecf2",
+    "bytes": 125829
+  },
+  "phase_conditioned_motion/intermediate/masks/m04q01_001.npz": {
+    "sha256": "33a868ebe42888e42069d8d6872846019e663e6d42e0f25765b6081c9f2d2ac9",
+    "bytes": 520512
+  },
+  "phase_conditioned_motion/intermediate/masks/m04q10_001.npz": {
+    "sha256": "adf7ed7f819269d028b422a110a36e78aeab1c72c2dd15eb66345772ce2830c7",
+    "bytes": 460627
+  },
+  "phase_conditioned_motion/intermediate/masks/m04q20_001.npz": {
+    "sha256": "82d58b8e0d83538848dfd50faecf5b55a1ec6b4fe27d7b50bf3ed2c8f324b804",
+    "bytes": 418999
+  },
+  "phase_conditioned_motion/intermediate/masks/m04q40_001.npz": {
+    "sha256": "1f8d985b3913cb26162013f23cfb105d958a7eeacc5b9b29586658d4fde266be",
+    "bytes": 135729
+  },
+  "phase_conditioned_motion/intermediate/masks/m04q80_001.npz": {
+    "sha256": "4df61573f5b0a870065bc4a5cc296502947b0245d560493e515204474519bcaf",
+    "bytes": 38680
+  },
+  "phase_conditioned_motion/intermediate/masks/m05q01_001.npz": {
+    "sha256": "15cb4960d5e4780a62f0586679b834fb71d97000d072bc8b461d01e0cbf8fb57",
+    "bytes": 574141
+  },
+  "phase_conditioned_motion/intermediate/masks/m05q05_001.npz": {
+    "sha256": "0fe694f51a1d37e2771935c9401dcab300cbfa25e3d792a4a95005122e28826e",
+    "bytes": 853212
+  },
+  "phase_conditioned_motion/intermediate/masks/m05q10_001.npz": {
+    "sha256": "c184d18dfb70650e6b2c0947bf31a02932a39f01e5b18a3a861c84484d289b48",
+    "bytes": 856344
+  },
+  "phase_conditioned_motion/intermediate/masks/m05q20_001.npz": {
+    "sha256": "5d6a2bf3650f8054534e57b6dbc26bb3abf723d9c2e5f4f2fd02ebe93f47d957",
+    "bytes": 805422
+  },
+  "phase_conditioned_motion/intermediate/masks/m05q40_001.npz": {
+    "sha256": "2f2c1423f959d63a1efdf54364b915b1b1f17d800918593dc51f0ead2bae66ca",
+    "bytes": 476477
+  },
+  "phase_conditioned_motion/intermediate/masks/m05q80_001.npz": {
+    "sha256": "8a106820e5eef6ba9366567888d9960bb6ce4e5d09c6f60ee9949a56a8e14342",
+    "bytes": 180458
+  },
+  "phase_conditioned_motion/intermediate/masks/m06q01_001.npz": {
+    "sha256": "8a04786c9c7c8776b3993d777562065b22bf33c3132d11dc8a12da7e07dc000f",
+    "bytes": 799200
+  },
+  "phase_conditioned_motion/intermediate/masks/m06q05_001.npz": {
+    "sha256": "5862635c8996e54c9fcecb1b49cd7d804d1acb4009afb578f95de270ede61cf0",
+    "bytes": 949418
+  },
+  "phase_conditioned_motion/intermediate/masks/m06q10_001.npz": {
+    "sha256": "de16836acbbc3ce48f2dd4759d8ea97c2c026c655f03ef601ede9d979e263186",
+    "bytes": 891012
+  },
+  "phase_conditioned_motion/intermediate/masks/m06q20_001.npz": {
+    "sha256": "cbb2e01b82febf9bc102bd4ad4928bab57b4419d4e1d50aeea88abe3590f62d5",
+    "bytes": 682792
+  },
+  "phase_conditioned_motion/intermediate/masks/m06q40_001.npz": {
+    "sha256": "554c9891a208607edfd395921e89de51b4394658eca8902173851f59d4b8eb86",
+    "bytes": 367279
+  },
+  "phase_conditioned_motion/intermediate/masks/m06q80_001.npz": {
+    "sha256": "b55463ef1a9a91ab7ce2d805915f649e085bed3261ddef4ef1fecb2eb1e51588",
+    "bytes": 269734
+  },
+  "phase_conditioned_motion/intermediate/masks/m07q01_001.npz": {
+    "sha256": "0a9a8ef73b1cd35b9fb5e23f71f1085849b55e9379a73847292120088027eb9c",
+    "bytes": 266237
+  },
+  "phase_conditioned_motion/intermediate/masks/m07q05_001.npz": {
+    "sha256": "7874efde74220e69b1684f93891cf64c7ae1184a2b78c12682337c972268a50e",
+    "bytes": 926436
+  },
+  "phase_conditioned_motion/intermediate/masks/m07q20_001.npz": {
+    "sha256": "affabe66796e0ecb065c4372d3b0459261febbf25790120c3a4f9a1e8647079d",
+    "bytes": 1099533
+  },
+  "phase_conditioned_motion/intermediate/masks/m07q40_001.npz": {
+    "sha256": "8d851f7558fee01703abc388ad36ad37bd397e2dd616e1a03008712ebf17fcff",
+    "bytes": 807297
+  },
+  "phase_conditioned_motion/intermediate/masks/m07q80_001.npz": {
+    "sha256": "b5e896d7358c5230611ac15154b48c7205f5c1737ae6ce96ad99e1316dc1f5e9",
+    "bytes": 367763
+  },
+  "phase_conditioned_motion/results/adaptive_independent_verification.json": {
+    "sha256": "772e76bc1850faf445b043ad8ccc6965784b34c22949f1d5d84bf5a67177396f",
+    "bytes": 629
+  },
+  "phase_conditioned_motion/results/adaptive_metadata.json": {
+    "sha256": "8009c4d3822b639c74898c44d55d21675865bd9551fa848f78c352735d183414",
+    "bytes": 4618
+  },
+  "phase_conditioned_motion/results/adaptive_opportunities.csv": {
+    "sha256": "98d81c7754cfb0ebfbfab5e269bfd61c1ab2e232141e7463dc87983874955f13",
+    "bytes": 417731
+  },
+  "phase_conditioned_motion/results/adaptive_phase_summary.csv": {
+    "sha256": "2acfe7630c435b77fa0463d995f6942cb1ce60c6ceecee536d65b4bca3c773bb",
+    "bytes": 12551
+  },
+  "phase_conditioned_motion/results/adaptive_ratios.csv": {
+    "sha256": "6bcd3f5a34411edf20f185da6c213eafc46ecf6dcc48efcf0bb18cf553108dc9",
+    "bytes": 7562
+  },
+  "phase_conditioned_motion/results/adaptive_tracks.csv": {
+    "sha256": "ab67be03fe1d26d483f2a3bceaad0f13af4c0155e7fb4d7fad7335fe9cbbfd46",
+    "bytes": 1890702
+  },
+  "phase_conditioned_motion/results/adaptive_verification.json": {
+    "sha256": "ffbfcdb6fa492bbbf76f297916128834f49c838e27d897b1cd4b1490547cd437",
+    "bytes": 401
+  },
+  "phase_conditioned_motion/results/adaptive_visual_examples.csv": {
+    "sha256": "dd5b80a4a08c8aa1fc878f70be6cfb2d0f54b683a9cc89dbc577aa77b386802a",
+    "bytes": 2796
+  },
+  "phase_conditioned_motion/results/closed_contour_bubble_links.csv": {
+    "sha256": "2e5f0c043c9c4f4a4171c30430e8601ccbb4a0cc4f29bb889c823184529d2d36",
+    "bytes": 936470
+  },
+  "phase_conditioned_motion/results/closed_contour_bubble_metadata.json": {
+    "sha256": "040dd27fa506c5098e183952dd650a81ff713085a7cd437df3040e4c84f226d7",
+    "bytes": 1026
+  },
+  "phase_conditioned_motion/results/closed_contour_bubble_objects.csv": {
+    "sha256": "d06c9dbd29bb51f72c4af68030ad8abbc5ed355f69769d19230c1a1be3b1e331",
+    "bytes": 371064
+  },
+  "phase_conditioned_motion/results/closed_contour_bubble_summary.csv": {
+    "sha256": "d4c780a6b10a016fa9725ff3ac1676afc6fa9c690aed4e9d48e29604a93fc3ee",
+    "bytes": 523
+  },
+  "phase_conditioned_motion/results/closed_contour_frames.csv": {
+    "sha256": "970bf88f438f8bbec6060aead78dc55b0318862acbb33bf225d01e5f374b1799",
+    "bytes": 188474
+  },
+  "phase_conditioned_motion/results/closed_contour_m07q01_masks.npz": {
+    "sha256": "0e373743cf68982680efa83255e483a8f4703ca6360f6cf334c6f619badf0af3",
+    "bytes": 246608
+  },
+  "phase_conditioned_motion/results/closed_contour_metadata.json": {
+    "sha256": "7af99f5abfc86bec61217b54678edba54e5845add0b8eacc77f7a2c3a54b4178",
+    "bytes": 20760
+  },
+  "phase_conditioned_motion/results/closed_contour_summary.csv": {
+    "sha256": "f2440ffe4043ad6d218b96ba9c320dc7752e9c0ff49fe17bc18802c105ae96f2",
+    "bytes": 11672
+  },
+  "phase_conditioned_motion/results/closed_contour_verification.json": {
+    "sha256": "624bded27c0627b1d88ea7edb5262ad2af002e718ab7938473f472bb61132aea",
+    "bytes": 302
+  },
+  "phase_conditioned_motion/results/conditional_passage_velocities.csv": {
+    "sha256": "8c5952f87d1a4dab218fe8ca3cabdb9d0c8efe79ca19dcf72a0400e39e9e7b2c",
+    "bytes": 776
+  },
+  "phase_conditioned_motion/results/conditional_ratio_by_pattern.csv": {
+    "sha256": "6f2c6d83f018891dcb33a1c242fa5ffd311ca53b134bcdd09f4c5fc2c554738a",
+    "bytes": 830
+  },
+  "phase_conditioned_motion/results/conditioned_metadata.json": {
+    "sha256": "3edebc0a8d2dfc39a04c314b7d0ddbc93b38e51d9f7970921446220b9bdf5191",
+    "bytes": 2505
+  },
+  "phase_conditioned_motion/results/independent_phase_precheck.json": {
+    "sha256": "cbfdc20aa2e648e1805630a742d50a5fb2fca19d0092525a18aac021d64db431",
+    "bytes": 5131
+  },
+  "phase_conditioned_motion/results/independent_verification.json": {
+    "sha256": "ee916c9bea454fc7888a9d7c062aae1ffb271731dc25f46a7b28df0c10cc5363",
+    "bytes": 11072
+  },
+  "phase_conditioned_motion/results/mask_complement_control.json": {
+    "sha256": "fb75d933577ae8cfcb2c70701d41b1fa88d6a7c556bffac0d7963292d6759aaa",
+    "bytes": 654
+  },
+  "phase_conditioned_motion/results/native_panorama_comparison.csv": {
+    "sha256": "e2361606a4c46ecf30169a15632d72543b7da46d799314a4b21651f84af1d044",
+    "bytes": 2141
+  },
+  "phase_conditioned_motion/results/native_phase_frame_fractions.csv": {
+    "sha256": "2b8ea18df3b25ac99d8a8f491d315770a41ee22ee568ebb10e19fd3dc027c372",
+    "bytes": 1516057
+  },
+  "phase_conditioned_motion/results/native_phase_inventory.csv": {
+    "sha256": "1e6a5656a135a3c3722ad78aa0ed19ab228e17f0c6fdadd0c38be1ded2bfba5f",
+    "bytes": 13941
+  },
+  "phase_conditioned_motion/results/native_phase_metadata.json": {
+    "sha256": "c82191512f3b817fff4d231249051db864ed7aec9414e40ba33d1986df118613",
+    "bytes": 5453
+  },
+  "phase_conditioned_motion/results/native_phase_reference.json": {
+    "sha256": "56bb4dd607596d310507e34f537e66012e75c95d5cd0d654de9ba048e2a8d13d",
+    "bytes": 17940
+  },
+  "phase_conditioned_motion/results/passage_episodes.csv": {
+    "sha256": "7306723852401358f65c70dc18303c21a85dcb840327b6546dd30ad25e2e7199",
+    "bytes": 331254
+  },
+  "phase_conditioned_motion/results/passage_frames.csv": {
+    "sha256": "d39b856f597e3539b44d2a9e28517bd09407a2a5866821db76bcb6868f458bb4",
+    "bytes": 10564357
+  },
+  "phase_conditioned_motion/results/passage_pairs.csv": {
+    "sha256": "245fc03a52242602f5d862828307f4b58298c7837425392adf1af6861bd82c79",
+    "bytes": 16755023
+  },
+  "phase_conditioned_motion/results/passage_phase_summary.csv": {
+    "sha256": "e65ad24674a7b73170b47a4f08eb37e1624a8b25e209bf6958d0becb8e0b78e6",
+    "bytes": 96921
+  },
+  "phase_conditioned_motion/results/passage_ratios.csv": {
+    "sha256": "49cb3c1501495616294fa67827b1585580f7f8bc70c411571b887f502cba01c0",
+    "bytes": 46973
+  },
+  "phase_conditioned_motion/results/passage_sensitivity_episodes.csv": {
+    "sha256": "096e9ca55a050c02e5c54a6e16003707be209cfcfcd6ed5b03588d1298d8c23b",
+    "bytes": 307107
+  },
+  "phase_conditioned_motion/results/passage_sensitivity_metadata.json": {
+    "sha256": "9ae6b00e485bb94c30a6ce42cf838ef439d350265e9bed96be745e6cabab775a",
+    "bytes": 897
+  },
+  "phase_conditioned_motion/results/passage_sensitivity_ratios.csv": {
+    "sha256": "709fd995f8e7b8ef730dcf01e374b53bc13d08800cff14c071a3f1f0616a2dda",
+    "bytes": 48152
+  },
+  "phase_conditioned_motion/results/phase_patch_ratios.csv": {
+    "sha256": "2fea7be11931c327ca432dc3b08f49bfab196ca01298b4452e87767cc0f68988",
+    "bytes": 26846
+  },
+  "phase_conditioned_motion/results/phase_patch_summary.csv": {
+    "sha256": "a4a52dd8f32c59e9853a53a19c2fefecc44cd6dd9f97aebed92e2356d0e1aecc",
+    "bytes": 44806
+  },
+  "phase_conditioned_motion/results/phase_patch_tracks.csv": {
+    "sha256": "419b86412ec2a629d3570638810311b733a7bcaba6d5d96bd8ff7f7e54eae641",
+    "bytes": 10254883
+  },
+  "phase_conditioned_motion/results/phase_visual_dispersed_alternative.json": {
+    "sha256": "46e4f6fdf64016ccf1a833340d6de485f8af4830dfcea1967fb9ddd66d2084d5",
+    "bytes": 170287
+  },
+  "phase_conditioned_motion/results/phase_visual_metadata.json": {
+    "sha256": "bbe2e8fba1e33b6c467fed73c4be91b77e5de61047b7cc9ed6b95620f8f2435f",
+    "bytes": 37317
+  },
+  "phase_conditioned_motion/results/phase_visual_verification.json": {
+    "sha256": "3199a0554cb35d71177d916f761e5dd445ff14e036044e41b299098038bfb867",
+    "bytes": 329
+  },
+  "phase_conditioned_motion/scripts/adaptive_phase_patches.py": {
+    "sha256": "6eb3630ab07a8231d02d330a4e95c2ec029cc198b4d0af4b293939b2d1a5c65a",
+    "bytes": 20883
+  },
+  "phase_conditioned_motion/scripts/adaptive_verify.py": {
+    "sha256": "ad02de2e15151abb65a70e62de2aab459b24f79b5507999eca7f19a449258181",
+    "bytes": 5862
+  },
+  "phase_conditioned_motion/scripts/build_summary.py": {
+    "sha256": "202c1bc3942ae45384f56c6b43376e4d08e51f0533799ef92d161c6cc94b0f00",
+    "bytes": 22714
+  },
+  "phase_conditioned_motion/scripts/closed_contour_bubble_tracks.py": {
+    "sha256": "e9eaccd4f2c84370307e1d9ff488ba336591190d3f35d94468392d00a4ff8fc0",
+    "bytes": 6611
+  },
+  "phase_conditioned_motion/scripts/closed_contour_probe.py": {
+    "sha256": "051d20af6ef25b98d7baf8ed8db2adcf860ebf46e33881fd14046192d99c9c16",
+    "bytes": 7891
+  },
+  "phase_conditioned_motion/scripts/closed_contour_report.py": {
+    "sha256": "6bde88dcc29bba52d6501d69f30734c6c6f03f26d30940631bfc5b14166af920",
+    "bytes": 11907
+  },
+  "phase_conditioned_motion/scripts/conditioned_motion.py": {
+    "sha256": "f74170cbc43eb0339d016e34572d02fee08f561a5861725578f04abd27a9a407",
+    "bytes": 19138
+  },
+  "phase_conditioned_motion/scripts/diagnostic_figures.py": {
+    "sha256": "5cf61a411e2e1682614567b509c49c447c38779a55ef7acc4df218d18d9d8578",
+    "bytes": 7451
+  },
+  "phase_conditioned_motion/scripts/independent_verify.py": {
+    "sha256": "682ab51c44730c64ddf6cb75272ce1485a377c011f6d1a2e41cacbfea143f8d7",
+    "bytes": 27792
+  },
+  "phase_conditioned_motion/scripts/mask_complement_control.py": {
+    "sha256": "8b022fa5f65d45142455d09f967b7892f69dd9df20cf75a54426722358be84ca",
+    "bytes": 2077
+  },
+  "phase_conditioned_motion/scripts/native_phase_masks.py": {
+    "sha256": "b626239403fd0c4bedf3acffedb6bc7ad22212fa01d8c8628aff9af7dafb3698",
+    "bytes": 16946
+  },
+  "phase_conditioned_motion/scripts/passage_sensitivity.py": {
+    "sha256": "65826551dc0b893485f4141efbfeef95168ad6a80042af300f6d1cf794b00555",
+    "bytes": 4641
+  },
+  "phase_conditioned_motion/scripts/phase_visual_audit.py": {
+    "sha256": "ffde46d248db5f277c4c22a1e44e446df97feba4f52ce5ccb4d81a9eede0aeaf",
+    "bytes": 9530
+  },
+  "phase_conditioned_motion/scripts/plot_headline.py": {
+    "sha256": "f681a423ed7ae9f21467bfb79ccd101ebc3ba8205ff5231eca3d1e6909547507",
+    "bytes": 5113
+  },
+  "phase_conditioned_motion/scripts/verify_adaptive.py": {
+    "sha256": "b472cd93d6298762d540aa92ee0657e7da47c22a3074aac7d52218ab4f56fa6e",
+    "bytes": 6661
+  },
+  "requirements.txt": {
+    "sha256": "2bb17a7973c794e0bfcc83e41386925ced009cc61a79d346e85bbd5bd301ff6e",
+    "bytes": 107
+  },
+  "results/README.md": {
+    "sha256": "15e6f716f4302788722c3b59262732d5e66ae25048284d64051f3e6411c5d482",
+    "bytes": 4649
+  },
+  "results/closure_spread.csv": {
+    "sha256": "bd7e5f65b50e739e1378afb0f1a02107de6460d3629f072a5b8bc1edb3ea1828",
+    "bytes": 4243
+  },
+  "results/conditional_velocities_by_pattern.csv": {
+    "sha256": "6388032aab2fb24fb7527c0ef7c04b2d96b266eae04bf0ceb496088d95913520",
+    "bytes": 11397
+  },
+  "results/conditional_velocities_per_run.csv": {
+    "sha256": "34766b7f9f63a283e2493bd7e5d7fb8f875cf856242dec1654ed5ccd36d33cd9",
+    "bytes": 33733
+  },
+  "results/image_alpha_diagnostics.csv": {
+    "sha256": "28b29da5d6b3dae690203e11aa75c7cb60f4d36fb73a7bee4819ee9977752a5f",
+    "bytes": 15504
+  },
+  "results/massflow_per_run.csv": {
+    "sha256": "23b3546c32e41085f57535ec39416332e6aeab5457bf0d1dd0612635a5c9486e",
+    "bytes": 14367
+  },
+  "results/massflow_source_blocks.csv": {
+    "sha256": "4bcb043718d61984391d8e363d992978d92dc4196b86642fe3564cb221befeb5",
+    "bytes": 60391
+  },
+  "results/optical_full_method_summary.csv": {
+    "sha256": "2941334842aeae55f44d7efbe73d9886e88d933cb6ffec889a113695901ed4cc",
+    "bytes": 15509
+  },
+  "results/optical_metadata.json": {
+    "sha256": "8a48bcf8655dbe072bf804bf01e9a3bb59c8650034fbcbba87d8c1a0298525c3",
+    "bytes": 4326
+  },
+  "results/optical_method_agreement.csv": {
+    "sha256": "c70eea8139f1fb663a1fdc1ea979062a13a4c16ea1441e9fe094e6107fb19027",
+    "bytes": 4976
+  },
+  "results/optical_per_run.csv": {
+    "sha256": "90f527e664318cc24887840a96bbb544079045fd935e43b2ad064ea17123d640",
+    "bytes": 8285
+  },
+  "results/optical_preferred_candidate_pairs.csv": {
+    "sha256": "7f73389ffb532676be307cdcb30a209ae5fcff6ac087716565bca8272f93b65c",
+    "bytes": 2000978
+  },
+  "results/optical_preferred_candidate_per_run.csv": {
+    "sha256": "1bc7cfa6f87663cc5d398eafbb1ec5eb9ce15e97b5f28277eb64d6033689791e",
+    "bytes": 6752
+  },
+  "results/optical_primary_pairs.csv": {
+    "sha256": "7bfed96028559b5add4eca34e6dabac566e0fca465dd2b59369811e0f72d9261",
+    "bytes": 1997261
+  },
+  "results/optical_sensitivity.csv": {
+    "sha256": "47f36d4d962e7990e02d80e06c0e771046f5ac2b217c8d59fc2d5565ef4ddbcc",
+    "bytes": 136226
+  },
+  "results/optical_synthetic_trials.csv": {
+    "sha256": "4b9159df2358862e38eb79f571237ddf30d640fffe15df89ed87826d37bf4e7b",
+    "bytes": 22456
+  },
+  "results/optical_validation.json": {
+    "sha256": "15cd1b89937bfddcafaf83738745e36c03d2e759ff03acc386cb8b0dbf0c7540",
+    "bytes": 512
+  },
+  "results/optical_visual_correspondence.json": {
+    "sha256": "75063cf90113687a2f59cde401f97c5fdf345ab00d6744ddba77bb3f8109922d",
+    "bytes": 392
+  },
+  "results/recorded_flow_conditional_velocities_by_pattern.csv": {
+    "sha256": "ceb5240eca2e3787e3651a5bfdb1d8c43444048268a0accfc4e257f4b4cfe4cb",
+    "bytes": 12947
+  },
+  "results/recorded_flow_conditional_velocities_per_run.csv": {
+    "sha256": "8c9274264fbbec18acae8008c49b7d4699e172b8c6ee5111770eb2201301caa2",
+    "bytes": 34185
+  },
+  "results/scenario_inventory.csv": {
+    "sha256": "cd4c14c22d926fa3896fbcd3243845dba49de361a2354fd0df87860e915d2abc",
+    "bytes": 9677
+  },
+  "results/sensitivity_relative_to_baseline.csv": {
+    "sha256": "2c620000f6ffbc4f07c9dff38c04419e95edb975af515b85273fa59c6c433b7c",
+    "bytes": 130882
+  },
+  "results/thermodynamic_sensitivity.csv": {
+    "sha256": "c9c80560886825b5a64d5076034cd63ec0b35b577257738b9c8f0e871dc55172",
+    "bytes": 434962
+  },
+  "results/validation/executive_summary_values.json": {
+    "sha256": "49add29e5be731097451dde6bfaa8c3fb3a3b14a3c079c638ae15b661b915ba2",
+    "bytes": 1937
+  },
+  "results/validation/independent_model_review.json": {
+    "sha256": "bfbc1011c9d15cf357816e3428982543f6561b0845f0257d0517ad535a639481",
+    "bytes": 3888
+  },
+  "results/validation/legacy_audit.json": {
+    "sha256": "e5faaa7cdfffebb441f11cc4a844bba7c9816af3fcba2cb6390e54e18dc58998",
+    "bytes": 79152
+  },
+  "results/validation/massflow_audit.json": {
+    "sha256": "b158f997daa8847732547c1b8fc47c2cca985eb0da98d5b1f3a8496f913f890f",
+    "bytes": 205719
+  },
+  "results/validation/model_checks.json": {
+    "sha256": "bc785b47fe4c8fb3355502e656b460efd30562d33a837d3fd01ff1d5bc386407",
+    "bytes": 491
+  },
+  "results/validation/model_metadata.json": {
+    "sha256": "bd986bbefd0a8f921357e4956548123adb0cb9a146e27ce70585718c5bc77ef0",
+    "bytes": 3712
+  },
+  "scripts/README.md": {
+    "sha256": "ac5a5a6f347d2ccb00da99618109860138ba2d16e24ac8ca251e92499ffe85c1",
+    "bytes": 2685
+  },
+  "scripts/audit_legacy.py": {
+    "sha256": "dec5ea87cfb7c2a583c624b3c07c3029ed2589679c18dc0f24f8ac7c80e8261f",
+    "bytes": 10357
+  },
+  "scripts/final_verification.py": {
+    "sha256": "52726838697d72c9bd8ded102db92176f44e8d099b8e6cc78ef109c61123f8c3",
+    "bytes": 11332
+  },
+  "scripts/independent_model_review.py": {
+    "sha256": "8ceddfa0be771cb45b48a50ba9e854a13bcbcafa1ec360a49da992be11dd9b41",
+    "bytes": 17619
+  },
+  "scripts/massflow_audit.py": {
+    "sha256": "07110f53ad7ed7abd9423c8d0d1890f1e1f9a1f7e36ca8166ddc020a4a403766",
+    "bytes": 17335
+  },
+  "scripts/model_comparison.py": {
+    "sha256": "5e02e8a3558cd51bee36aba753870444f25b39d279d63eabe0584965b6e749a7",
+    "bytes": 20752
+  },
+  "scripts/optical_investigation.py": {
+    "sha256": "df1a765ce45ac89853955f4312e06a42789c58657a4abfb2fce1ffb8f16bec8b",
+    "bytes": 36084
+  },
+  "scripts/publish_current_summary.py": {
+    "sha256": "03e572ee0c472481de7f7e57f62e9366d2591bdf51fe9822070d34009e4573d2",
+    "bytes": 3130
+  },
+  "scripts/run_all.py": {
+    "sha256": "b93315c797c5cd00da6a819ab4c3efd2153e84bb265d2edee49b5d7945a030d8",
+    "bytes": 2296
+  },
+  "scripts/write_summary.py": {
+    "sha256": "1f2e84b0058b2dce034ed0474368bac738f61b25893d36c38a609eba675b2f2c",
+    "bytes": 16889
+  }
+}

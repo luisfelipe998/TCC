@@ -1,0 +1,126 @@
+{
+  "status": "passed",
+  "metrics": {
+    "recordings": 26,
+    "native_frames": 13026,
+    "small_reference": 7,
+    "small_stable": 5,
+    "meniscus_reference": 4,
+    "meniscus_stable": 3,
+    "common_object_pairs": 2,
+    "identified_material_phase_pairs": 0,
+    "residual_stable_all_background_options": 0
+  },
+  "publication_links_checked": 101,
+  "audited_manifest_entries": 364,
+  "source_metadata_checks": [
+    "object_validation.json",
+    "meniscus_validation.json",
+    "robust_meniscus_metadata.json",
+    "physical_bounds_controls.json",
+    "conditional_piston_validation.json"
+  ],
+  "artifact_files": 118,
+  "audits": {
+    "object_independent_verification.json": {
+      "status": "passed_numerical_audit_with_documented_interpretation_limitations",
+      "counts": {
+        "native_frames_redetected_by_threshold": 390,
+        "native_objects_redetected": 1264,
+        "checked_scalar_values": 1718903,
+        "object_tracks": 19525,
+        "object_links": 46301,
+        "object_unique_nodes": 65826,
+        "meniscus_masks_reprocessed": 39078,
+        "meniscus_tracks": 2804,
+        "meniscus_links": 15552,
+        "meniscus_unique_nodes": 18356,
+        "roundoff_boundary_rejection_differences": 190
+      }
+    },
+    "comparison_independent_verification.json": {
+      "status": "passed_numerical_audit",
+      "counts": {
+        "checked_scalar_values": 27834,
+        "independent_robust_tracks": 2804,
+        "extrapolation_models_recalculated": 28
+      }
+    },
+    "residual_audit.json": {
+      "status": "passed",
+      "records": 26,
+      "phase_method_radius_combinations": 312,
+      "reconstructed_block_decisions": 1872,
+      "reconstructed_pairs": 156,
+      "mask_metadata_checked": 26,
+      "supported_pairs": [
+        {
+          "method": "raw",
+          "erosion_radius": 3,
+          "supported_pairs": 1,
+          "records": 26,
+          "median_common_blocks": 0.0
+        },
+        {
+          "method": "fixed_background",
+          "erosion_radius": 3,
+          "supported_pairs": 2,
+          "records": 26,
+          "median_common_blocks": 0.0
+        },
+        {
+          "method": "interface_distance",
+          "erosion_radius": 3,
+          "supported_pairs": 2,
+          "records": 26,
+          "median_common_blocks": 1.0
+        },
+        {
+          "method": "raw",
+          "erosion_radius": 1,
+          "supported_pairs": 0,
+          "records": 26,
+          "median_common_blocks": 0.0
+        },
+        {
+          "method": "fixed_background",
+          "erosion_radius": 1,
+          "supported_pairs": 4,
+          "records": 26,
+          "median_common_blocks": 0.0
+        },
+        {
+          "method": "interface_distance",
+          "erosion_radius": 1,
+          "supported_pairs": 4,
+          "records": 26,
+          "median_common_blocks": 2.0
+        }
+      ],
+      "all_six_option_stable_records": 0,
+      "four_background_option_stable_records": 0,
+      "report_script_sha256": "39e7e3fa9694fe6f7028398e56c192676f026d5866dbba235fabedc5d100a837",
+      "material_pairs_identified": 0
+    },
+    "residual_real_numerical_check.json": {
+      "status": "passed",
+      "records": 3,
+      "checks": 45,
+      "maximum_pearson_absolute_error": 8.048961275264332e-08,
+      "maximum_texture_std_absolute_error": 1.0018605749451126e-06,
+      "maximum_overlap_relative_error": 8.50335543820616e-08,
+      "interpretation": "Direct calculation from native images and masks verifies selected saved numerical peaks; no independent experimental velocity truth.",
+      "script_sha256": "e396fb973cf58f136800f5937ad245818a7f128cc7942faee951e0ceb94f538b"
+    }
+  },
+  "versions": {
+    "python": "3.13.2 (main, Mar  5 2025, 16:08:11) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "numpy": "2.3.4",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "matplotlib": "3.10.7",
+    "pillow": "12.0.0",
+    "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O"
+  },
+  "limitations": "Numerical, provenance and reporting verification only; no experimental material-phase velocity ground truth."
+}

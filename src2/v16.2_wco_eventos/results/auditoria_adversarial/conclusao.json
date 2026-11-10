@@ -1,0 +1,31 @@
+{
+  "data_utc": "2026-10-25T14:37:08.697238+00:00",
+  "conclusao": "ANALISE_EXPLORATORIA_COM_RESSALVAS",
+  "achados": [
+    "A1: correspondência local versus seleção completa",
+    "A2: ganho em nulo com seleção",
+    "A3: sensibilidade a parceiros",
+    "A4: feather e direção herdados",
+    "A5: denominadores de cobertura",
+    "A6: fase legada"
+  ],
+  "selecao_completa_minimos": {
+    "sigma12": 66,
+    "sigma20": 68,
+    "faixa30_49": 55
+  },
+  "erro_CWT_independente_maximo": 5.402578411571407e-15,
+  "nulo_ganho": 0.016901712770583454,
+  "sementes_anular_positivas": 80,
+  "arquivos_principais_atualizados": [
+    "AUDITORIA_ADVERSARIAL.md",
+    "EXECUTIVE_SUMMARY.md",
+    "RESUMO_EXECUTIVO.pdf",
+    "PASSO_A_PASSO.md",
+    "RESULTS.md",
+    "ANCORAS_E_AUTOCORRELACAO.md",
+    "README.md",
+    "RETOMADA.md",
+    "DECISIONS.md"
+  ]
+}

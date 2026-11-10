@@ -1,0 +1,49 @@
+{
+  "variants": [
+    {
+      "name": "center_strict",
+      "probe": [
+        496,
+        520
+      ],
+      "liquid_max_fraction": 0.05
+    },
+    {
+      "name": "left_strict",
+      "probe": [
+        208,
+        232
+      ],
+      "liquid_max_fraction": 0.05
+    },
+    {
+      "name": "right_strict",
+      "probe": [
+        624,
+        648
+      ],
+      "liquid_max_fraction": 0.05
+    },
+    {
+      "name": "center_liquidrich_020",
+      "probe": [
+        496,
+        520
+      ],
+      "liquid_max_fraction": 0.2
+    },
+    {
+      "name": "center_liquidrich_040",
+      "probe": [
+        496,
+        520
+      ],
+      "liquid_max_fraction": 0.4
+    }
+  ],
+  "gas_min_fraction": 0.6,
+  "baseline_reproduced": true,
+  "ratio_rows": 260,
+  "episode_rows": 3594,
+  "interpretation": "Relaxed gates label liquid-rich projected appearance, not pure liquid or material velocity."
+}

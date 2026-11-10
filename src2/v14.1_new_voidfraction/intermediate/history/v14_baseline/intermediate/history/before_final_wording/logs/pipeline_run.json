@@ -1,0 +1,121 @@
+{
+  "started_utc": "2026-10-23T20:23:59.013684+00:00",
+  "python_executable": "/Users/i521862/.pyenv/versions/3.13.2/bin/python3",
+  "include_exploratory": true,
+  "status": "passed",
+  "stages": [
+    {
+      "script": "scripts/panorama_void_alternatives.py",
+      "log": "intermediate/history/before_final_wording/logs/panorama_void_alternatives.log",
+      "elapsed_seconds": 18.9476978329767,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/phase_mask_flip_analysis.py",
+      "log": "intermediate/history/before_final_wording/logs/phase_mask_flip_analysis.log",
+      "elapsed_seconds": 9.480569292005384,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/raw_flip_analysis.py",
+      "log": "intermediate/history/before_final_wording/logs/raw_flip_analysis.log",
+      "elapsed_seconds": 45.55422187500517,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/spatial_flip_sensitivity.py",
+      "log": "intermediate/history/before_final_wording/logs/spatial_flip_sensitivity.log",
+      "elapsed_seconds": 3.8736494169861544,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/inventory_and_legacy_audit.py",
+      "log": "intermediate/history/before_final_wording/logs/inventory_and_legacy_audit.log",
+      "elapsed_seconds": 0.4211682919994928,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/pattern_identification.py",
+      "log": "intermediate/history/before_final_wording/logs/pattern_identification.log",
+      "elapsed_seconds": 7.276257834018907,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/silhouette_pattern_identification.py",
+      "log": "intermediate/history/before_final_wording/logs/silhouette_pattern_identification.log",
+      "elapsed_seconds": 4.945612667012028,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/adversarial_review.py",
+      "log": "intermediate/history/before_final_wording/logs/adversarial_review.log",
+      "elapsed_seconds": 2.683748415991431,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/deep_method_checks.py",
+      "log": "intermediate/history/before_final_wording/logs/deep_method_checks.log",
+      "elapsed_seconds": 5.931363458978012,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/image_void_alternatives.py",
+      "log": "intermediate/history/before_final_wording/logs/image_void_alternatives.log",
+      "elapsed_seconds": 13.149105958000291,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/final_verification.py",
+      "log": "intermediate/history/before_final_wording/logs/final_verification.log",
+      "elapsed_seconds": 1.076987750013359,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/summary_figures.py",
+      "log": "intermediate/history/before_final_wording/logs/summary_figures.log",
+      "elapsed_seconds": 0.7831144999945536,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/write_summary.py",
+      "log": "intermediate/history/before_final_wording/logs/write_summary.log",
+      "elapsed_seconds": 0.6168656660011038,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/post_regeneration_adversarial.py",
+      "log": "intermediate/history/before_final_wording/logs/post_regeneration_adversarial.log",
+      "elapsed_seconds": 2.1749162919877563,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/verify_layout.py",
+      "log": "intermediate/history/before_final_wording/logs/verify_layout.log",
+      "elapsed_seconds": 0.47299537499202415,
+      "returncode": 0
+    }
+  ],
+  "finished_utc": "2026-10-23T20:31:31.226776+00:00",
+  "initial_run_finished_utc": "2026-10-23T20:25:56.427184+00:00",
+  "followup_reason": "Correct the observed-hull-overlap finding using convex intersection checks; refine bilingual method wording.",
+  "followup_stages": [
+    {
+      "script": "scripts/write_summary.py",
+      "log": "intermediate/history/before_final_wording/logs/write_summary.final_text.log",
+      "returncode": 0,
+      "elapsed_seconds": 1.1271626249945257
+    },
+    {
+      "script": "scripts/post_regeneration_adversarial.py",
+      "log": "intermediate/history/before_final_wording/logs/post_regeneration_adversarial.final_text.log",
+      "returncode": 0,
+      "elapsed_seconds": 2.690580875001615
+    },
+    {
+      "script": "scripts/verify_layout.py",
+      "log": "intermediate/history/before_final_wording/logs/verify_layout.final_text.log",
+      "returncode": 0,
+      "elapsed_seconds": 0.38892520900117233
+    }
+  ]
+}

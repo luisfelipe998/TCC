@@ -1,0 +1,31 @@
+{
+  "scope": "Mathematical controls only; no measured phase velocities or R600a properties.",
+  "traveling_unit_cell_controls": 25,
+  "interval_monotonicity_controls": 2000,
+  "inter_run_interval_controls": 2000,
+  "planar_film_controls": 101,
+  "max_conservation_residual": 5.030698080332741e-16,
+  "max_cell_mean_residual": 8.881784197001252e-16,
+  "max_planar_film_residual": 1.1102230246251565e-16,
+  "conditional_branch_counterexamples": [
+    {
+      "film_over_bubble": -0.5,
+      "liquid_slug_over_bubble": 0.7000000000000001,
+      "violates": "co-current film"
+    },
+    {
+      "film_over_bubble": 1.5,
+      "liquid_slug_over_bubble": 1.1,
+      "violates": "film no faster than bubble"
+    }
+  ],
+  "required_assumptions": [
+    "Rigidly translating isolated gas bubble and adjoining full-liquid slug.",
+    "Constant phase densities, negligible phase change, no coalescence or breakup.",
+    "Valid gas cross-sectional AREA fractions, not projected image fractions.",
+    "At the nominated bubble-body section: 0 <= area-mean film velocity <= bubble celerity.",
+    "Complete unit cell and its own mean gas fraction for the intrinsic liquid mean.",
+    "Inter-run physical speed ratios require a relative axial optical scale."
+  ],
+  "source_sha256": "a7c0af63f1a9ede0632ba114ef846a167984b62b64198bee1454c27c2d726dec"
+}

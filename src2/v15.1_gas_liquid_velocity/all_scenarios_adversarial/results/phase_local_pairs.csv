@@ -1,0 +1,53 @@
+run,pattern,erosion_radius,gas_candidate_px_s,liquid_candidate_px_s,both_finite,gas_optical_supported,liquid_optical_supported,pair_optical_supported,gas_reasons,liquid_reasons,material_pair_identified
+m03q05_001,churn,3,-92795.60240290928,-202708.09317672596,True,False,False,False,lag_or_texture_inconsistency,lag_or_texture_inconsistency;block_inconsistency;null_not_separated,False
+m03q05_001,churn,1,-93640.56223719263,-132707.11877727698,True,False,False,False,lag_or_texture_inconsistency,lag_or_texture_inconsistency;ambiguous_peak,False
+m03q10_001,wavy annular,3,-139412.5195056644,nan,False,False,False,False,lag_or_texture_inconsistency;ambiguous_peak,insufficient_phase_area;undefined_correlation;lag_or_texture_inconsistency;block_inconsistency;ambiguous_peak;null_not_separated,False
+m03q10_001,wavy annular,1,-139707.52940708445,-162569.87843739009,True,False,False,False,lag_or_texture_inconsistency;ambiguous_peak,insufficient_phase_area;lag_or_texture_inconsistency;block_inconsistency;null_not_separated,False
+m03q20_001,wavy annular,3,-188395.87856074888,nan,False,False,False,False,ambiguous_peak,insufficient_phase_area;no_raw_phase_texture;undefined_correlation;lag_or_texture_inconsistency;block_inconsistency;ambiguous_peak;null_not_separated,False
+m03q20_001,wavy annular,1,-188400.14691110875,nan,False,False,False,False,ambiguous_peak,insufficient_phase_area;undefined_correlation;lag_or_texture_inconsistency;block_inconsistency;ambiguous_peak;null_not_separated,False
+m03q40_001,wavy annular,3,-211626.97489390167,nan,False,False,False,False,ambiguous_peak;phase_saturation,insufficient_phase_area;undefined_correlation;lag_or_texture_inconsistency;block_inconsistency;ambiguous_peak;null_not_separated,False
+m03q40_001,wavy annular,1,-211431.54633966635,nan,False,False,False,False,ambiguous_peak,insufficient_phase_area;undefined_correlation;lag_or_texture_inconsistency;block_inconsistency;ambiguous_peak;null_not_separated,False
+m04q01_001,slug,3,-40427.05151911993,-109897.28488108133,True,True,False,False,,ambiguous_peak,False
+m04q01_001,slug,1,-41593.46537353844,-110820.7807812,True,False,True,False,lag_or_texture_inconsistency,,False
+m04q10_001,churn,3,-80614.75997707841,-117895.5561497314,True,True,True,True,,,False
+m04q10_001,churn,1,-81327.9451838071,-115295.41863172801,True,True,True,True,,,False
+m04q20_001,churn,3,-86654.44674789807,-123329.88051003682,True,True,False,False,,lag_or_texture_inconsistency,False
+m04q20_001,churn,1,-87418.8088796359,-121946.82443950049,True,True,False,False,,ambiguous_peak,False
+m04q40_001,wavy annular,3,-135873.50769226835,nan,False,False,False,False,lag_or_texture_inconsistency;ambiguous_peak,insufficient_phase_area;undefined_correlation;lag_or_texture_inconsistency;block_inconsistency;ambiguous_peak;null_not_separated,False
+m04q40_001,wavy annular,1,-136045.37260721004,-156549.71021098187,True,False,True,False,lag_or_texture_inconsistency;ambiguous_peak,,False
+m04q80_001,wavy annular,3,-231231.12945336793,nan,False,False,False,False,ambiguous_peak,insufficient_phase_area;no_raw_phase_texture;undefined_correlation;lag_or_texture_inconsistency;block_inconsistency;ambiguous_peak;null_not_separated,False
+m04q80_001,wavy annular,1,-231214.03420677726,nan,False,False,False,False,ambiguous_peak,insufficient_phase_area;undefined_correlation;lag_or_texture_inconsistency;block_inconsistency;ambiguous_peak;null_not_separated,False
+m05q01_001,plug,3,-64785.80097633769,-81459.12213524789,True,False,False,False,lag_or_texture_inconsistency,ambiguous_peak,False
+m05q01_001,plug,1,-70482.31506547463,-83213.86101338828,True,True,True,True,,,False
+m05q05_001,slug,3,-66314.02140769319,-91622.61962425521,True,True,True,True,,,False
+m05q05_001,slug,1,-71805.95832996776,-91423.57749198686,True,True,True,True,,,False
+m05q10_001,churn,3,-85916.2167193448,-129130.76751886592,True,True,True,True,,,False
+m05q10_001,churn,1,-86860.12203325752,-123035.82440080965,True,True,True,True,,,False
+m05q20_001,churn,3,-94151.8233975253,-134414.09300471478,True,True,False,False,,lag_or_texture_inconsistency;ambiguous_peak,False
+m05q20_001,churn,1,-95056.09116459146,-125842.12211796101,True,True,True,True,,,False
+m05q40_001,churn,3,-128552.11860077492,-181088.53342837197,True,True,False,False,,lag_or_texture_inconsistency;ambiguous_peak;null_not_separated,False
+m05q40_001,churn,1,-129223.10576662036,-163613.0167960101,True,True,False,False,,lag_or_texture_inconsistency;ambiguous_peak,False
+m05q80_001,wavy annular,3,-219695.5382187827,nan,False,False,False,False,ambiguous_peak,insufficient_phase_area;undefined_correlation;lag_or_texture_inconsistency;block_inconsistency;ambiguous_peak;null_not_separated,False
+m05q80_001,wavy annular,1,-221127.50293185812,-281168.86228749383,True,False,False,False,ambiguous_peak,block_inconsistency;ambiguous_peak;null_not_separated,False
+m06q01_001,plug,3,-77687.91654413735,-111664.90307083401,True,True,True,True,,,False
+m06q01_001,plug,1,-81749.85223575376,-112367.71465423646,True,True,True,True,,,False
+m06q05_001,slug,3,-75768.77413024545,-123336.19477228995,True,True,True,True,,,False
+m06q05_001,slug,1,-77045.27614561173,-124921.28234667776,True,True,True,True,,,False
+m06q10_001,churn,3,-88399.5867742326,-154664.39218084645,True,True,False,False,,ambiguous_peak,False
+m06q10_001,churn,1,-89785.48630816296,-149332.63929044787,True,True,False,False,,ambiguous_peak,False
+m06q20_001,churn,3,-129525.68358726797,-175681.63451184795,True,True,False,False,,ambiguous_peak,False
+m06q20_001,churn,1,-130267.81569924443,-165658.37753863004,True,True,False,False,,ambiguous_peak,False
+m06q40_001,wavy annular,3,-177442.0269165942,-251665.4754800192,True,False,False,False,lag_or_texture_inconsistency;ambiguous_peak,lag_or_texture_inconsistency;block_inconsistency;ambiguous_peak;null_not_separated,False
+m06q40_001,wavy annular,1,-178183.68110219124,-207251.5742925338,True,False,False,False,lag_or_texture_inconsistency;ambiguous_peak,ambiguous_peak,False
+m06q80_001,wavy annular,3,-233405.32661686663,-325090.43506417156,True,False,False,False,ambiguous_peak,lag_or_texture_inconsistency;block_inconsistency;ambiguous_peak;null_not_separated,False
+m06q80_001,wavy annular,1,-234521.96211609035,-336214.70833040954,True,False,False,False,ambiguous_peak,ambiguous_peak,False
+m07q01_001,dispersed bubbles,3,-47676.24144642516,-44648.758060746055,True,False,True,False,insufficient_phase_area;block_inconsistency;ambiguous_peak;null_not_separated,,False
+m07q01_001,dispersed bubbles,1,-45683.658447235975,-44276.45661810492,True,False,True,False,ambiguous_peak;null_not_separated,,False
+m07q05_001,plug,3,-75659.51210855415,-105467.16423615068,True,True,True,True,,,False
+m07q05_001,plug,1,-79379.49969630508,-106490.89908791638,True,False,True,False,lag_or_texture_inconsistency,,False
+m07q20_001,churn,3,-101220.68909891757,-155219.84758525764,True,True,True,True,,,False
+m07q20_001,churn,1,-102361.2701732037,-146846.23715844596,True,True,True,True,,,False
+m07q40_001,churn,3,-134059.78394663968,-164014.2264321472,True,True,False,False,,ambiguous_peak,False
+m07q40_001,churn,1,-134918.2531732574,-156909.0839628081,True,True,False,False,,ambiguous_peak,False
+m07q80_001,wavy annular,3,-194868.93726441826,-236502.83616568375,True,False,False,False,lag_or_texture_inconsistency;ambiguous_peak,lag_or_texture_inconsistency;ambiguous_peak;null_not_separated,False
+m07q80_001,wavy annular,1,-195948.21389906306,-236308.89230854297,True,False,False,False,lag_or_texture_inconsistency;ambiguous_peak,ambiguous_peak,False

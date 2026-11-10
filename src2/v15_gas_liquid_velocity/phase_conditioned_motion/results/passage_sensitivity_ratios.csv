@@ -1,0 +1,261 @@
+run,pattern,variant,probe_start,probe_stop,liquid_max_occupancy,gas_min_occupancy,motion_gate,gas_mean_px_frame,liquid_mean_px_frame,unfiltered_ratio_of_means,descriptive_ratio,eligible_descriptive_ratio,withheld_reasons,gas_pairs,liquid_pairs,gas_episodes,liquid_episodes
+m03q05_001,churn,center_strict,496,520,0.05,0.6,adjacent,-16.453575010289114,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,260,0,3,0
+m03q05_001,churn,center_strict,496,520,0.05,0.6,lag2_confirmed,-17.35992440913418,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,63,0,3,0
+m03q05_001,churn,left_strict,208,232,0.05,0.6,adjacent,-16.30717447730205,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,253,0,7,0
+m03q05_001,churn,left_strict,208,232,0.05,0.6,lag2_confirmed,-17.050918720516584,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,58,0,7,0
+m03q05_001,churn,right_strict,624,648,0.05,0.6,adjacent,-16.453575010289114,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,260,0,4,0
+m03q05_001,churn,right_strict,624,648,0.05,0.6,lag2_confirmed,-17.35992440913418,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,63,0,4,0
+m03q05_001,churn,center_liquidrich_020,496,520,0.2,0.6,adjacent,-16.453575010289114,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,260,0,3,0
+m03q05_001,churn,center_liquidrich_020,496,520,0.2,0.6,lag2_confirmed,-17.35992440913418,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,63,0,3,0
+m03q05_001,churn,center_liquidrich_040,496,520,0.4,0.6,adjacent,-16.453575010289114,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,260,0,3,0
+m03q05_001,churn,center_liquidrich_040,496,520,0.4,0.6,lag2_confirmed,-17.35992440913418,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,63,0,3,0
+m03q10_001,wavy annular,center_strict,496,520,0.05,0.6,adjacent,-17.2621816944774,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,75,0,1,0
+m03q10_001,wavy annular,center_strict,496,520,0.05,0.6,lag2_confirmed,-10.232542871528278,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,9,0,1,0
+m03q10_001,wavy annular,left_strict,208,232,0.05,0.6,adjacent,-17.2621816944774,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,75,0,1,0
+m03q10_001,wavy annular,left_strict,208,232,0.05,0.6,lag2_confirmed,-10.232542871528278,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,9,0,1,0
+m03q10_001,wavy annular,right_strict,624,648,0.05,0.6,adjacent,-17.2621816944774,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,75,0,1,0
+m03q10_001,wavy annular,right_strict,624,648,0.05,0.6,lag2_confirmed,-10.232542871528278,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,9,0,1,0
+m03q10_001,wavy annular,center_liquidrich_020,496,520,0.2,0.6,adjacent,-17.2621816944774,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,75,0,1,0
+m03q10_001,wavy annular,center_liquidrich_020,496,520,0.2,0.6,lag2_confirmed,-10.232542871528278,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,9,0,1,0
+m03q10_001,wavy annular,center_liquidrich_040,496,520,0.4,0.6,adjacent,-17.2621816944774,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,75,0,1,0
+m03q10_001,wavy annular,center_liquidrich_040,496,520,0.4,0.6,lag2_confirmed,-10.232542871528278,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,9,0,1,0
+m03q20_001,wavy annular,center_strict,496,520,0.05,0.6,adjacent,-41.77955033368373,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,80,0,1,0
+m03q20_001,wavy annular,center_strict,496,520,0.05,0.6,lag2_confirmed,-40.53468131476556,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,18,0,1,0
+m03q20_001,wavy annular,left_strict,208,232,0.05,0.6,adjacent,-41.77955033368373,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,80,0,1,0
+m03q20_001,wavy annular,left_strict,208,232,0.05,0.6,lag2_confirmed,-40.53468131476556,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,18,0,1,0
+m03q20_001,wavy annular,right_strict,624,648,0.05,0.6,adjacent,-41.77955033368373,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,80,0,1,0
+m03q20_001,wavy annular,right_strict,624,648,0.05,0.6,lag2_confirmed,-40.53468131476556,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,18,0,1,0
+m03q20_001,wavy annular,center_liquidrich_020,496,520,0.2,0.6,adjacent,-41.77955033368373,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,80,0,1,0
+m03q20_001,wavy annular,center_liquidrich_020,496,520,0.2,0.6,lag2_confirmed,-40.53468131476556,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,18,0,1,0
+m03q20_001,wavy annular,center_liquidrich_040,496,520,0.4,0.6,adjacent,-41.77955033368373,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,80,0,1,0
+m03q20_001,wavy annular,center_liquidrich_040,496,520,0.4,0.6,lag2_confirmed,-40.53468131476556,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,18,0,1,0
+m03q40_001,wavy annular,center_strict,496,520,0.05,0.6,adjacent,-52.24163565298645,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;saturation;missing_phase_mean,270,0,1,0
+m03q40_001,wavy annular,center_strict,496,520,0.05,0.6,lag2_confirmed,-51.796510197088644,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;saturation;missing_phase_mean,193,0,1,0
+m03q40_001,wavy annular,left_strict,208,232,0.05,0.6,adjacent,-52.22295421836461,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;saturation;missing_phase_mean,268,0,3,0
+m03q40_001,wavy annular,left_strict,208,232,0.05,0.6,lag2_confirmed,-51.754853843239324,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;saturation;missing_phase_mean,190,0,3,0
+m03q40_001,wavy annular,right_strict,624,648,0.05,0.6,adjacent,-52.24163565298645,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;saturation;missing_phase_mean,270,0,1,0
+m03q40_001,wavy annular,right_strict,624,648,0.05,0.6,lag2_confirmed,-51.796510197088644,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;saturation;missing_phase_mean,193,0,1,0
+m03q40_001,wavy annular,center_liquidrich_020,496,520,0.2,0.6,adjacent,-52.24163565298645,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;saturation;missing_phase_mean,270,0,1,0
+m03q40_001,wavy annular,center_liquidrich_020,496,520,0.2,0.6,lag2_confirmed,-51.796510197088644,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;saturation;missing_phase_mean,193,0,1,0
+m03q40_001,wavy annular,center_liquidrich_040,496,520,0.4,0.6,adjacent,-52.24163565298645,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;saturation;missing_phase_mean,270,0,1,0
+m03q40_001,wavy annular,center_liquidrich_040,496,520,0.4,0.6,lag2_confirmed,-51.796510197088644,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;saturation;missing_phase_mean,193,0,1,0
+m04q01_001,slug,center_strict,496,520,0.05,0.6,adjacent,-7.140991822350893,-16.971997453500997,0.42075140783607906,nan,False,liquid_too_few_pairs;liquid_too_few_episodes,372,5,7,1
+m04q01_001,slug,center_strict,496,520,0.05,0.6,lag2_confirmed,-6.456728697742924,-16.94960667963573,0.3809367863090548,nan,False,liquid_too_few_pairs;liquid_too_few_episodes,312,4,7,1
+m04q01_001,slug,left_strict,208,232,0.05,0.6,adjacent,-7.468038556308973,-15.569664062470348,0.479653159268233,nan,False,liquid_too_few_pairs;liquid_too_few_episodes,379,8,5,1
+m04q01_001,slug,left_strict,208,232,0.05,0.6,lag2_confirmed,-6.529890025387956,-15.595666518316108,0.41869900319547226,nan,False,liquid_too_few_pairs;liquid_too_few_episodes,310,7,5,1
+m04q01_001,slug,right_strict,624,648,0.05,0.6,adjacent,-7.5634912060923005,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,390,0,7,0
+m04q01_001,slug,right_strict,624,648,0.05,0.6,lag2_confirmed,-7.065527411358616,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,335,0,7,0
+m04q01_001,slug,center_liquidrich_020,496,520,0.2,0.6,adjacent,-7.140991822350893,-16.17897303996286,0.4413748514638285,0.4413748514638285,True,,372,36,7,5
+m04q01_001,slug,center_liquidrich_020,496,520,0.2,0.6,lag2_confirmed,-6.456728697742924,-16.22915577145557,0.39784747824648115,0.39784747824648115,True,,312,23,7,4
+m04q01_001,slug,center_liquidrich_040,496,520,0.4,0.6,adjacent,-7.140991822350893,-16.201614924820575,0.4407580266218416,0.4407580266218416,True,,372,52,7,5
+m04q01_001,slug,center_liquidrich_040,496,520,0.4,0.6,lag2_confirmed,-6.456728697742924,-16.18264925990809,0.3989908323440729,0.3989908323440729,True,,312,36,7,4
+m04q10_001,churn,center_strict,496,520,0.05,0.6,adjacent,-15.435110385253424,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,350,0,9,0
+m04q10_001,churn,center_strict,496,520,0.05,0.6,lag2_confirmed,-14.724810330643484,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,211,0,9,0
+m04q10_001,churn,left_strict,208,232,0.05,0.6,adjacent,-15.104276509441835,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,329,0,9,0
+m04q10_001,churn,left_strict,208,232,0.05,0.6,lag2_confirmed,-14.315175971470822,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,196,0,9,0
+m04q10_001,churn,right_strict,624,648,0.05,0.6,adjacent,-15.423925905226513,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,349,0,7,0
+m04q10_001,churn,right_strict,624,648,0.05,0.6,lag2_confirmed,-14.708615053394853,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,210,0,7,0
+m04q10_001,churn,center_liquidrich_020,496,520,0.2,0.6,adjacent,-15.435110385253424,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,350,0,9,0
+m04q10_001,churn,center_liquidrich_020,496,520,0.2,0.6,lag2_confirmed,-14.724810330643484,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,211,0,9,0
+m04q10_001,churn,center_liquidrich_040,496,520,0.4,0.6,adjacent,-15.435110385253424,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,350,0,9,0
+m04q10_001,churn,center_liquidrich_040,496,520,0.4,0.6,lag2_confirmed,-14.724810330643484,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,211,0,9,0
+m04q20_001,churn,center_strict,496,520,0.05,0.6,adjacent,-17.29000453838135,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,314,0,6,0
+m04q20_001,churn,center_strict,496,520,0.05,0.6,lag2_confirmed,-17.035527080704703,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,154,0,6,0
+m04q20_001,churn,left_strict,208,232,0.05,0.6,adjacent,-17.287593138443228,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,303,0,10,0
+m04q20_001,churn,left_strict,208,232,0.05,0.6,lag2_confirmed,-16.925337581961102,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,147,0,9,0
+m04q20_001,churn,right_strict,624,648,0.05,0.6,adjacent,-17.40244119738586,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,312,0,9,0
+m04q20_001,churn,right_strict,624,648,0.05,0.6,lag2_confirmed,-17.030615817245383,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,153,0,8,0
+m04q20_001,churn,center_liquidrich_020,496,520,0.2,0.6,adjacent,-17.29000453838135,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,314,0,6,0
+m04q20_001,churn,center_liquidrich_020,496,520,0.2,0.6,lag2_confirmed,-17.035527080704703,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,154,0,6,0
+m04q20_001,churn,center_liquidrich_040,496,520,0.4,0.6,adjacent,-17.29000453838135,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,314,0,6,0
+m04q20_001,churn,center_liquidrich_040,496,520,0.4,0.6,lag2_confirmed,-17.035527080704703,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,154,0,6,0
+m04q40_001,wavy annular,center_strict,496,520,0.05,0.6,adjacent,-18.90101582789933,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,32,0,1,0
+m04q40_001,wavy annular,center_strict,496,520,0.05,0.6,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0
+m04q40_001,wavy annular,left_strict,208,232,0.05,0.6,adjacent,-18.90101582789933,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,32,0,1,0
+m04q40_001,wavy annular,left_strict,208,232,0.05,0.6,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0
+m04q40_001,wavy annular,right_strict,624,648,0.05,0.6,adjacent,-18.90101582789933,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,32,0,1,0
+m04q40_001,wavy annular,right_strict,624,648,0.05,0.6,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0
+m04q40_001,wavy annular,center_liquidrich_020,496,520,0.2,0.6,adjacent,-18.90101582789933,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,32,0,1,0
+m04q40_001,wavy annular,center_liquidrich_020,496,520,0.2,0.6,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0
+m04q40_001,wavy annular,center_liquidrich_040,496,520,0.4,0.6,adjacent,-18.90101582789933,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,32,0,1,0
+m04q40_001,wavy annular,center_liquidrich_040,496,520,0.4,0.6,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0
+m04q80_001,wavy annular,center_strict,496,520,0.05,0.6,adjacent,-33.92337686284077,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,16,0,1,0
+m04q80_001,wavy annular,center_strict,496,520,0.05,0.6,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0
+m04q80_001,wavy annular,left_strict,208,232,0.05,0.6,adjacent,-33.92337686284077,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,16,0,1,0
+m04q80_001,wavy annular,left_strict,208,232,0.05,0.6,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0
+m04q80_001,wavy annular,right_strict,624,648,0.05,0.6,adjacent,-33.92337686284077,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,16,0,1,0
+m04q80_001,wavy annular,right_strict,624,648,0.05,0.6,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0
+m04q80_001,wavy annular,center_liquidrich_020,496,520,0.2,0.6,adjacent,-33.92337686284077,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,16,0,1,0
+m04q80_001,wavy annular,center_liquidrich_020,496,520,0.2,0.6,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0
+m04q80_001,wavy annular,center_liquidrich_040,496,520,0.4,0.6,adjacent,-33.92337686284077,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,16,0,1,0
+m04q80_001,wavy annular,center_liquidrich_040,496,520,0.4,0.6,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0
+m05q01_001,plug,center_strict,496,520,0.05,0.6,adjacent,-11.522975080414891,-11.86346915044576,0.9712989458890215,0.9712989458890215,True,,303,81,9,9
+m05q01_001,plug,center_strict,496,520,0.05,0.6,lag2_confirmed,-11.676938691999014,-11.924390248792106,0.9792482842619011,0.9792482842619011,True,,273,62,9,9
+m05q01_001,plug,left_strict,208,232,0.05,0.6,adjacent,-11.622200291728301,-11.757499066330267,0.9884925549354779,0.9884925549354779,True,,306,89,10,11
+m05q01_001,plug,left_strict,208,232,0.05,0.6,lag2_confirmed,-11.757797731781135,-11.741298492368106,1.0014052312377335,1.0014052312377335,True,,262,78,10,11
+m05q01_001,plug,right_strict,624,648,0.05,0.6,adjacent,-11.507818853291457,-12.275819071275091,0.9374379653590104,nan,False,liquid_too_few_pairs,308,18,9,3
+m05q01_001,plug,right_strict,624,648,0.05,0.6,lag2_confirmed,-11.659841378015862,-12.319888265455658,0.9464242797322656,nan,False,liquid_too_few_pairs,279,15,9,3
+m05q01_001,plug,center_liquidrich_020,496,520,0.2,0.6,adjacent,-11.522975080414891,-11.843323386228649,0.9729511476325761,0.9729511476325761,True,,303,110,9,10
+m05q01_001,plug,center_liquidrich_020,496,520,0.2,0.6,lag2_confirmed,-11.676938691999014,-11.882692366905474,0.9826845912901436,0.9826845912901436,True,,273,88,9,10
+m05q01_001,plug,center_liquidrich_040,496,520,0.4,0.6,adjacent,-11.522975080414891,-11.858804590772428,0.9716809980477416,0.9716809980477416,True,,303,126,9,10
+m05q01_001,plug,center_liquidrich_040,496,520,0.4,0.6,lag2_confirmed,-11.676938691999014,-11.915507841587104,0.9799782642284499,0.9799782642284499,True,,273,101,9,10
+m05q05_001,slug,center_strict,496,520,0.05,0.6,adjacent,-11.627273440011392,-13.085812321661834,0.8885404401501293,0.8885404401501293,True,,288,76,13,9
+m05q05_001,slug,center_strict,496,520,0.05,0.6,lag2_confirmed,-11.665777028353274,-13.163435060329208,0.8862258958157934,0.8862258958157934,True,,253,62,13,9
+m05q05_001,slug,left_strict,208,232,0.05,0.6,adjacent,-11.747531735355116,-12.785261600449255,0.9188338965971823,0.9188338965971823,True,,276,76,13,9
+m05q05_001,slug,left_strict,208,232,0.05,0.6,lag2_confirmed,-11.816164081210095,-12.78865435624887,0.9239567942061402,0.9239567942061402,True,,236,67,13,9
+m05q05_001,slug,right_strict,624,648,0.05,0.6,adjacent,-11.653282681082311,-13.101339976448442,0.8894725808223264,nan,False,liquid_too_few_pairs;liquid_too_few_episodes,297,11,15,2
+m05q05_001,slug,right_strict,624,648,0.05,0.6,lag2_confirmed,-11.722463041821394,-14.61394299642503,0.8021423817438613,nan,False,liquid_too_few_pairs;liquid_too_few_episodes,267,5,15,2
+m05q05_001,slug,center_liquidrich_020,496,520,0.2,0.6,adjacent,-11.627273440011392,-13.286633914863428,0.8751105445152854,0.8751105445152854,True,,288,105,13,10
+m05q05_001,slug,center_liquidrich_020,496,520,0.2,0.6,lag2_confirmed,-11.665777028353274,-13.367923505256226,0.8726693434299146,0.8726693434299146,True,,253,90,13,10
+m05q05_001,slug,center_liquidrich_040,496,520,0.4,0.6,adjacent,-11.627273440011392,-13.263752738238711,0.8766201895856038,0.8766201895856038,True,,288,132,13,11
+m05q05_001,slug,center_liquidrich_040,496,520,0.4,0.6,lag2_confirmed,-11.665777028353274,-13.36278350892099,0.8730050158011768,0.8730050158011768,True,,253,115,13,11
+m05q10_001,churn,center_strict,496,520,0.05,0.6,adjacent,-13.100134675530063,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,375,0,11,0
+m05q10_001,churn,center_strict,496,520,0.05,0.6,lag2_confirmed,-12.514084922796886,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,229,0,10,0
+m05q10_001,churn,left_strict,208,232,0.05,0.6,adjacent,-13.550705288246617,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,387,0,15,0
+m05q10_001,churn,left_strict,208,232,0.05,0.6,lag2_confirmed,-12.78096354110847,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,223,0,15,0
+m05q10_001,churn,right_strict,624,648,0.05,0.6,adjacent,-13.164406472745114,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,386,0,13,0
+m05q10_001,churn,right_strict,624,648,0.05,0.6,lag2_confirmed,-12.614332250284994,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,235,0,13,0
+m05q10_001,churn,center_liquidrich_020,496,520,0.2,0.6,adjacent,-13.100134675530063,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,375,0,11,0
+m05q10_001,churn,center_liquidrich_020,496,520,0.2,0.6,lag2_confirmed,-12.514084922796886,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,229,0,10,0
+m05q10_001,churn,center_liquidrich_040,496,520,0.4,0.6,adjacent,-13.100134675530063,-24.664466656534753,0.531133912521041,nan,False,liquid_too_few_pairs;liquid_too_few_episodes,375,5,11,1
+m05q10_001,churn,center_liquidrich_040,496,520,0.4,0.6,lag2_confirmed,-12.514084922796886,-24.689295110207436,0.506862786763933,nan,False,liquid_too_few_pairs;liquid_too_few_episodes,229,4,10,1
+m05q20_001,churn,center_strict,496,520,0.05,0.6,adjacent,-14.431026359066204,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,388,0,13,0
+m05q20_001,churn,center_strict,496,520,0.05,0.6,lag2_confirmed,-14.057941043751288,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,244,0,12,0
+m05q20_001,churn,left_strict,208,232,0.05,0.6,adjacent,-14.395745483307527,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,366,0,14,0
+m05q20_001,churn,left_strict,208,232,0.05,0.6,lag2_confirmed,-13.888136781602018,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,218,0,14,0
+m05q20_001,churn,right_strict,624,648,0.05,0.6,adjacent,-14.499070934169962,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,379,0,13,0
+m05q20_001,churn,right_strict,624,648,0.05,0.6,lag2_confirmed,-14.082293576120708,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,243,0,13,0
+m05q20_001,churn,center_liquidrich_020,496,520,0.2,0.6,adjacent,-14.431026359066204,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,388,0,13,0
+m05q20_001,churn,center_liquidrich_020,496,520,0.2,0.6,lag2_confirmed,-14.057941043751288,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,244,0,12,0
+m05q20_001,churn,center_liquidrich_040,496,520,0.4,0.6,adjacent,-14.431026359066204,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,388,0,13,0
+m05q20_001,churn,center_liquidrich_040,496,520,0.4,0.6,lag2_confirmed,-14.057941043751288,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,244,0,12,0
+m05q40_001,churn,center_strict,496,520,0.05,0.6,adjacent,-18.73202665393436,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,255,0,15,0
+m05q40_001,churn,center_strict,496,520,0.05,0.6,lag2_confirmed,-19.253956976394853,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,80,0,13,0
+m05q40_001,churn,left_strict,208,232,0.05,0.6,adjacent,-18.689938268827493,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,243,0,21,0
+m05q40_001,churn,left_strict,208,232,0.05,0.6,lag2_confirmed,-19.037324176876066,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,70,0,16,0
+m05q40_001,churn,right_strict,624,648,0.05,0.6,adjacent,-18.752642843671694,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,259,0,15,0
+m05q40_001,churn,right_strict,624,648,0.05,0.6,lag2_confirmed,-19.402658705261583,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,91,0,11,0
+m05q40_001,churn,center_liquidrich_020,496,520,0.2,0.6,adjacent,-18.73202665393436,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,255,0,15,0
+m05q40_001,churn,center_liquidrich_020,496,520,0.2,0.6,lag2_confirmed,-19.253956976394853,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,80,0,13,0
+m05q40_001,churn,center_liquidrich_040,496,520,0.4,0.6,adjacent,-18.73202665393436,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,255,0,15,0
+m05q40_001,churn,center_liquidrich_040,496,520,0.4,0.6,lag2_confirmed,-19.253956976394853,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,80,0,13,0
+m05q80_001,wavy annular,center_strict,496,520,0.05,0.6,adjacent,-16.05090985450589,nan,nan,nan,False,gas_too_few_pairs;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,8,0,3,0
+m05q80_001,wavy annular,center_strict,496,520,0.05,0.6,lag2_confirmed,-13.82849339438004,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,1,0,1,0
+m05q80_001,wavy annular,left_strict,208,232,0.05,0.6,adjacent,-15.455444781008648,nan,nan,nan,False,gas_too_few_pairs;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,7,0,3,0
+m05q80_001,wavy annular,left_strict,208,232,0.05,0.6,lag2_confirmed,-13.82849339438004,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,1,0,1,0
+m05q80_001,wavy annular,right_strict,624,648,0.05,0.6,adjacent,-16.05090985450589,nan,nan,nan,False,gas_too_few_pairs;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,8,0,3,0
+m05q80_001,wavy annular,right_strict,624,648,0.05,0.6,lag2_confirmed,-13.82849339438004,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,1,0,1,0
+m05q80_001,wavy annular,center_liquidrich_020,496,520,0.2,0.6,adjacent,-16.05090985450589,nan,nan,nan,False,gas_too_few_pairs;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,8,0,3,0
+m05q80_001,wavy annular,center_liquidrich_020,496,520,0.2,0.6,lag2_confirmed,-13.82849339438004,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,1,0,1,0
+m05q80_001,wavy annular,center_liquidrich_040,496,520,0.4,0.6,adjacent,-16.05090985450589,nan,nan,nan,False,gas_too_few_pairs;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,8,0,3,0
+m05q80_001,wavy annular,center_liquidrich_040,496,520,0.4,0.6,lag2_confirmed,-13.82849339438004,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,1,0,1,0
+m06q01_001,plug,center_strict,496,520,0.05,0.6,adjacent,-15.396544092395283,-15.883237669129437,0.9693580372671694,0.9693580372671694,True,,302,44,15,6
+m06q01_001,plug,center_strict,496,520,0.05,0.6,lag2_confirmed,-15.697876143569143,-15.7349694928665,0.9976426170184713,0.9976426170184713,True,,245,35,15,6
+m06q01_001,plug,left_strict,208,232,0.05,0.6,adjacent,-15.564033615838401,-15.391462482950722,1.0112121335499364,nan,False,liquid_too_few_pairs,313,17,15,3
+m06q01_001,plug,left_strict,208,232,0.05,0.6,lag2_confirmed,-15.761325399463452,-15.320371790132727,1.0287821741777001,nan,False,liquid_too_few_pairs,264,12,15,3
+m06q01_001,plug,right_strict,624,648,0.05,0.6,adjacent,-15.523739823140506,-15.880487510649884,0.9775354700370418,nan,False,liquid_too_few_pairs,319,15,15,3
+m06q01_001,plug,right_strict,624,648,0.05,0.6,lag2_confirmed,-15.750269309845288,-15.973192119458465,0.9860439411267323,nan,False,liquid_too_few_pairs,266,12,15,3
+m06q01_001,plug,center_liquidrich_020,496,520,0.2,0.6,adjacent,-15.396544092395283,-15.800322485008618,0.9744449271211748,0.9744449271211748,True,,302,82,15,11
+m06q01_001,plug,center_liquidrich_020,496,520,0.2,0.6,lag2_confirmed,-15.697876143569143,-15.718278542100611,0.9987019953567547,0.9987019953567547,True,,245,67,15,11
+m06q01_001,plug,center_liquidrich_040,496,520,0.4,0.6,adjacent,-15.396544092395283,-15.757450376121065,0.977096149750679,0.977096149750679,True,,302,114,15,12
+m06q01_001,plug,center_liquidrich_040,496,520,0.4,0.6,lag2_confirmed,-15.697876143569143,-15.703321659393858,0.999653225225667,0.999653225225667,True,,245,97,15,12
+m06q05_001,slug,center_strict,496,520,0.05,0.6,adjacent,-13.75292903605334,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,321,0,13,0
+m06q05_001,slug,center_strict,496,520,0.05,0.6,lag2_confirmed,-13.63601822249748,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,224,0,13,0
+m06q05_001,slug,left_strict,208,232,0.05,0.6,adjacent,-14.26986249070206,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,333,0,11,0
+m06q05_001,slug,left_strict,208,232,0.05,0.6,lag2_confirmed,-14.333149627887476,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,235,0,11,0
+m06q05_001,slug,right_strict,624,648,0.05,0.6,adjacent,-14.149354851790987,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,334,0,13,0
+m06q05_001,slug,right_strict,624,648,0.05,0.6,lag2_confirmed,-14.365718069823354,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,250,0,13,0
+m06q05_001,slug,center_liquidrich_020,496,520,0.2,0.6,adjacent,-13.75292903605334,-17.993703369575854,0.7643189816781737,0.7643189816781737,True,,321,36,13,7
+m06q05_001,slug,center_liquidrich_020,496,520,0.2,0.6,lag2_confirmed,-13.63601822249748,-17.987922764302052,0.7580651974756558,0.7580651974756558,True,,224,29,13,7
+m06q05_001,slug,center_liquidrich_040,496,520,0.4,0.6,adjacent,-13.75292903605334,-18.14002165253767,0.758153948186131,0.758153948186131,True,,321,72,13,9
+m06q05_001,slug,center_liquidrich_040,496,520,0.4,0.6,lag2_confirmed,-13.63601822249748,-18.15292793626887,0.7511745912488985,0.7511745912488985,True,,224,60,13,9
+m06q10_001,churn,center_strict,496,520,0.05,0.6,adjacent,-13.751934344036044,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,344,0,11,0
+m06q10_001,churn,center_strict,496,520,0.05,0.6,lag2_confirmed,-12.486777362910606,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,223,0,9,0
+m06q10_001,churn,left_strict,208,232,0.05,0.6,adjacent,-13.546074905826949,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,321,0,12,0
+m06q10_001,churn,left_strict,208,232,0.05,0.6,lag2_confirmed,-12.102199214548907,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,206,0,12,0
+m06q10_001,churn,right_strict,624,648,0.05,0.6,adjacent,-14.260083198918503,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,362,0,13,0
+m06q10_001,churn,right_strict,624,648,0.05,0.6,lag2_confirmed,-12.895865448189568,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,229,0,12,0
+m06q10_001,churn,center_liquidrich_020,496,520,0.2,0.6,adjacent,-13.751934344036044,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,344,0,11,0
+m06q10_001,churn,center_liquidrich_020,496,520,0.2,0.6,lag2_confirmed,-12.486777362910606,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,223,0,9,0
+m06q10_001,churn,center_liquidrich_040,496,520,0.4,0.6,adjacent,-13.751934344036044,-21.87480449014694,0.6286654744836839,nan,False,liquid_too_few_pairs,344,12,11,3
+m06q10_001,churn,center_liquidrich_040,496,520,0.4,0.6,lag2_confirmed,-12.486777362910606,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,223,0,9,0
+m06q20_001,churn,center_strict,496,520,0.05,0.6,adjacent,-19.399666833486194,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,284,0,19,0
+m06q20_001,churn,center_strict,496,520,0.05,0.6,lag2_confirmed,-19.206158157214972,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,96,0,14,0
+m06q20_001,churn,left_strict,208,232,0.05,0.6,adjacent,-19.34537273018967,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,236,0,21,0
+m06q20_001,churn,left_strict,208,232,0.05,0.6,lag2_confirmed,-19.21640984216356,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,86,0,16,0
+m06q20_001,churn,right_strict,624,648,0.05,0.6,adjacent,-19.569908296704373,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,296,0,19,0
+m06q20_001,churn,right_strict,624,648,0.05,0.6,lag2_confirmed,-19.257431811075108,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,101,0,14,0
+m06q20_001,churn,center_liquidrich_020,496,520,0.2,0.6,adjacent,-19.399666833486194,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,284,0,19,0
+m06q20_001,churn,center_liquidrich_020,496,520,0.2,0.6,lag2_confirmed,-19.206158157214972,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,96,0,14,0
+m06q20_001,churn,center_liquidrich_040,496,520,0.4,0.6,adjacent,-19.399666833486194,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,284,0,19,0
+m06q20_001,churn,center_liquidrich_040,496,520,0.4,0.6,lag2_confirmed,-19.206158157214972,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,96,0,14,0
+m06q40_001,wavy annular,center_strict,496,520,0.05,0.6,adjacent,-20.569599411572003,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,41,0,9,0
+m06q40_001,wavy annular,center_strict,496,520,0.05,0.6,lag2_confirmed,-16.529098632802167,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,4,0,1,0
+m06q40_001,wavy annular,left_strict,208,232,0.05,0.6,adjacent,-19.217643375691477,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,32,0,8,0
+m06q40_001,wavy annular,left_strict,208,232,0.05,0.6,lag2_confirmed,-15.229790423835441,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,3,0,1,0
+m06q40_001,wavy annular,right_strict,624,648,0.05,0.6,adjacent,-20.758924366302445,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,42,0,8,0
+m06q40_001,wavy annular,right_strict,624,648,0.05,0.6,lag2_confirmed,-16.529098632802167,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,4,0,1,0
+m06q40_001,wavy annular,center_liquidrich_020,496,520,0.2,0.6,adjacent,-20.569599411572003,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,41,0,9,0
+m06q40_001,wavy annular,center_liquidrich_020,496,520,0.2,0.6,lag2_confirmed,-16.529098632802167,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,4,0,1,0
+m06q40_001,wavy annular,center_liquidrich_040,496,520,0.4,0.6,adjacent,-20.569599411572003,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,41,0,9,0
+m06q40_001,wavy annular,center_liquidrich_040,496,520,0.4,0.6,lag2_confirmed,-16.529098632802167,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,4,0,1,0
+m06q80_001,wavy annular,center_strict,496,520,0.05,0.6,adjacent,-32.62334107892109,nan,nan,nan,False,gas_too_few_pairs;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,4,0,3,0
+m06q80_001,wavy annular,center_strict,496,520,0.05,0.6,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0
+m06q80_001,wavy annular,left_strict,208,232,0.05,0.6,adjacent,-27.564215727967365,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,2,0,2,0
+m06q80_001,wavy annular,left_strict,208,232,0.05,0.6,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0
+m06q80_001,wavy annular,right_strict,624,648,0.05,0.6,adjacent,-32.62334107892109,nan,nan,nan,False,gas_too_few_pairs;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,4,0,3,0
+m06q80_001,wavy annular,right_strict,624,648,0.05,0.6,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0
+m06q80_001,wavy annular,center_liquidrich_020,496,520,0.2,0.6,adjacent,-32.62334107892109,nan,nan,nan,False,gas_too_few_pairs;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,4,0,3,0
+m06q80_001,wavy annular,center_liquidrich_020,496,520,0.2,0.6,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0
+m06q80_001,wavy annular,center_liquidrich_040,496,520,0.4,0.6,adjacent,-32.62334107892109,nan,nan,nan,False,gas_too_few_pairs;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,4,0,3,0
+m06q80_001,wavy annular,center_liquidrich_040,496,520,0.4,0.6,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0
+m07q01_001,dispersed bubbles,center_strict,496,520,0.05,0.6,adjacent,nan,-6.307605893705489,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;missing_phase_mean,0,447,0,10
+m07q01_001,dispersed bubbles,center_strict,496,520,0.05,0.6,lag2_confirmed,nan,-6.304859247113797,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;missing_phase_mean,0,436,0,10
+m07q01_001,dispersed bubbles,left_strict,208,232,0.05,0.6,adjacent,nan,-6.319926022487957,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;missing_phase_mean,0,411,0,13
+m07q01_001,dispersed bubbles,left_strict,208,232,0.05,0.6,lag2_confirmed,nan,-6.315612749669469,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;missing_phase_mean,0,397,0,13
+m07q01_001,dispersed bubbles,right_strict,624,648,0.05,0.6,adjacent,nan,-6.140989249881845,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_episodes;missing_phase_mean,0,27,0,1
+m07q01_001,dispersed bubbles,right_strict,624,648,0.05,0.6,lag2_confirmed,nan,-6.128623747258317,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_episodes;missing_phase_mean,0,26,0,1
+m07q01_001,dispersed bubbles,center_liquidrich_020,496,520,0.2,0.6,adjacent,nan,-6.325375573749543,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_episodes;missing_phase_mean,0,497,0,2
+m07q01_001,dispersed bubbles,center_liquidrich_020,496,520,0.2,0.6,lag2_confirmed,nan,-6.323744067476181,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_episodes;missing_phase_mean,0,494,0,2
+m07q01_001,dispersed bubbles,center_liquidrich_040,496,520,0.4,0.6,adjacent,nan,-6.327055306399974,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_episodes;missing_phase_mean,0,500,0,1
+m07q01_001,dispersed bubbles,center_liquidrich_040,496,520,0.4,0.6,lag2_confirmed,nan,-6.326283053020161,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_episodes;missing_phase_mean,0,498,0,1
+m07q05_001,plug,center_strict,496,520,0.05,0.6,adjacent,-14.477234737815838,-14.811437312012345,0.9774361821100601,0.9774361821100601,True,,262,60,18,9
+m07q05_001,plug,center_strict,496,520,0.05,0.6,lag2_confirmed,-14.605937156289677,-14.806051886505381,0.9864842611825443,0.9864842611825443,True,,221,47,18,9
+m07q05_001,plug,left_strict,208,232,0.05,0.6,adjacent,-14.742989591428069,-14.832040767835512,0.9939960267234056,0.9939960267234056,True,,246,45,19,8
+m07q05_001,plug,left_strict,208,232,0.05,0.6,lag2_confirmed,-14.819115783338482,-14.789969308841401,1.0019706920202773,1.0019706920202773,True,,198,37,18,8
+m07q05_001,plug,right_strict,624,648,0.05,0.6,adjacent,-14.60051360641194,-14.471011855999903,1.0089490459755477,1.0089490459755477,True,,271,28,19,6
+m07q05_001,plug,right_strict,624,648,0.05,0.6,lag2_confirmed,-14.652692728518895,-14.862501876794038,0.9858833223360103,nan,False,liquid_too_few_pairs,241,19,19,6
+m07q05_001,plug,center_liquidrich_020,496,520,0.2,0.6,adjacent,-14.477234737815838,-14.894466097516739,0.9719874913965219,0.9719874913965219,True,,262,106,18,13
+m07q05_001,plug,center_liquidrich_020,496,520,0.2,0.6,lag2_confirmed,-14.605937156289677,-14.937632552904132,0.9777946474824776,0.9777946474824776,True,,221,83,18,13
+m07q05_001,plug,center_liquidrich_040,496,520,0.4,0.6,adjacent,-14.477234737815838,-14.943975151004237,0.9687673187038836,0.9687673187038836,True,,262,131,18,16
+m07q05_001,plug,center_liquidrich_040,496,520,0.4,0.6,lag2_confirmed,-14.605937156289677,-14.95177048512228,0.976870075073937,0.976870075073937,True,,221,103,18,16
+m07q20_001,churn,center_strict,496,520,0.05,0.6,adjacent,-15.363414463387564,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,339,0,16,0
+m07q20_001,churn,center_strict,496,520,0.05,0.6,lag2_confirmed,-14.898272975482765,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,224,0,15,0
+m07q20_001,churn,left_strict,208,232,0.05,0.6,adjacent,-15.709419714205696,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,319,0,15,0
+m07q20_001,churn,left_strict,208,232,0.05,0.6,lag2_confirmed,-14.968744764906175,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,191,0,14,0
+m07q20_001,churn,right_strict,624,648,0.05,0.6,adjacent,-15.718514194250352,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,351,0,15,0
+m07q20_001,churn,right_strict,624,648,0.05,0.6,lag2_confirmed,-15.168489084911718,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,240,0,14,0
+m07q20_001,churn,center_liquidrich_020,496,520,0.2,0.6,adjacent,-15.363414463387564,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,339,0,16,0
+m07q20_001,churn,center_liquidrich_020,496,520,0.2,0.6,lag2_confirmed,-14.898272975482765,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,224,0,15,0
+m07q20_001,churn,center_liquidrich_040,496,520,0.4,0.6,adjacent,-15.363414463387564,-25.706036181248017,0.5976578557294194,nan,False,liquid_too_few_episodes,339,20,16,2
+m07q20_001,churn,center_liquidrich_040,496,520,0.4,0.6,lag2_confirmed,-14.898272975482765,-25.701975020691368,0.5796547916449578,nan,False,liquid_too_few_pairs;liquid_too_few_episodes,224,17,15,2
+m07q40_001,churn,center_strict,496,520,0.05,0.6,adjacent,-20.338372293165673,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,316,0,22,0
+m07q40_001,churn,center_strict,496,520,0.05,0.6,lag2_confirmed,-20.090766915244803,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,121,0,19,0
+m07q40_001,churn,left_strict,208,232,0.05,0.6,adjacent,-20.57167348093144,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,261,0,24,0
+m07q40_001,churn,left_strict,208,232,0.05,0.6,lag2_confirmed,-20.415932018021305,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,99,0,21,0
+m07q40_001,churn,right_strict,624,648,0.05,0.6,adjacent,-20.56407934638109,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,319,0,22,0
+m07q40_001,churn,right_strict,624,648,0.05,0.6,lag2_confirmed,-20.308879237011485,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,121,0,18,0
+m07q40_001,churn,center_liquidrich_020,496,520,0.2,0.6,adjacent,-20.338372293165673,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,316,0,22,0
+m07q40_001,churn,center_liquidrich_020,496,520,0.2,0.6,lag2_confirmed,-20.090766915244803,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,121,0,19,0
+m07q40_001,churn,center_liquidrich_040,496,520,0.4,0.6,adjacent,-20.338372293165673,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,316,0,22,0
+m07q40_001,churn,center_liquidrich_040,496,520,0.4,0.6,lag2_confirmed,-20.090766915244803,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,121,0,19,0
+m07q80_001,wavy annular,center_strict,496,520,0.05,0.6,adjacent,-23.622768420799478,nan,nan,nan,False,gas_too_few_pairs;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,6,0,3,0
+m07q80_001,wavy annular,center_strict,496,520,0.05,0.6,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0
+m07q80_001,wavy annular,left_strict,208,232,0.05,0.6,adjacent,-22.806781043816397,nan,nan,nan,False,gas_too_few_pairs;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,5,0,3,0
+m07q80_001,wavy annular,left_strict,208,232,0.05,0.6,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0
+m07q80_001,wavy annular,right_strict,624,648,0.05,0.6,adjacent,-23.622768420799478,nan,nan,nan,False,gas_too_few_pairs;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,6,0,3,0
+m07q80_001,wavy annular,right_strict,624,648,0.05,0.6,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0
+m07q80_001,wavy annular,center_liquidrich_020,496,520,0.2,0.6,adjacent,-23.622768420799478,nan,nan,nan,False,gas_too_few_pairs;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,6,0,3,0
+m07q80_001,wavy annular,center_liquidrich_020,496,520,0.2,0.6,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0
+m07q80_001,wavy annular,center_liquidrich_040,496,520,0.4,0.6,adjacent,-23.622768420799478,nan,nan,nan,False,gas_too_few_pairs;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,6,0,3,0
+m07q80_001,wavy annular,center_liquidrich_040,496,520,0.4,0.6,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0

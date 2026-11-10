@@ -1,0 +1,1837 @@
+condition,metric,scope,pattern,n_runs,mean_silhouette,mean_neighbor
+3171_prefix,global_max,churn_annular,churn,10,-0.11972661051230959,0.69999999999999996
+3171_prefix,global_max,churn_annular,wavy annular,9,0.2632833747565107,0.55555555555555558
+3171_prefix,global_max,plug_slug,plug,3,-0.096625314942916776,0
+3171_prefix,global_max,plug_slug,slug,3,-0.31545843507878041,0.66666666666666663
+3171_prefix,global_max,churn_plug,churn,10,-0.40159332109468399,0.69999999999999996
+3171_prefix,global_max,churn_plug,plug,3,0.65894025575717308,0
+3171_prefix,global_max,churn_slug,churn,10,-0.41779184195254115,0.69999999999999996
+3171_prefix,global_max,churn_slug,slug,3,0.54544435183824247,0.66666666666666663
+3171_prefix,global_max,annular_plug,wavy annular,9,-0.52451806900925346,0.66666666666666663
+3171_prefix,global_max,annular_plug,plug,3,0.43158939324021767,0.33333333333333331
+3171_prefix,global_max,annular_slug,wavy annular,9,-0.33864605338516346,0.55555555555555558
+3171_prefix,global_max,annular_slug,slug,3,0.45358246307847744,0
+3171_prefix,global_max,quatro_padroes,churn,10,-0.49273909503990165,0.5
+3171_prefix,global_max,quatro_padroes,wavy annular,9,-0.53516032574460093,0.33333333333333331
+3171_prefix,global_max,quatro_padroes,plug,3,-0.10904623894934617,0
+3171_prefix,global_max,quatro_padroes,slug,3,-0.31545843507878041,0
+3171_prefix,zero_weighted,churn_annular,churn,10,0.017434526725193838,0.29999999999999999
+3171_prefix,zero_weighted,churn_annular,wavy annular,9,0.0088500126892990735,0.44444444444444442
+3171_prefix,zero_weighted,plug_slug,plug,3,-0.038772545771577439,0.66666666666666663
+3171_prefix,zero_weighted,plug_slug,slug,3,-0.014270162948975942,0.66666666666666663
+3171_prefix,zero_weighted,churn_plug,churn,10,-0.014526927823093705,0.69999999999999996
+3171_prefix,zero_weighted,churn_plug,plug,3,0.050703516866567017,0
+3171_prefix,zero_weighted,churn_slug,churn,10,-0.084818249924973096,0.10000000000000001
+3171_prefix,zero_weighted,churn_slug,slug,3,0.0028533857707480604,0.33333333333333331
+3171_prefix,zero_weighted,annular_plug,wavy annular,9,0.013849614908741936,0.88888888888888884
+3171_prefix,zero_weighted,annular_plug,plug,3,0.086128698759325051,0.66666666666666663
+3171_prefix,zero_weighted,annular_slug,wavy annular,9,-0.027973183831471373,0.77777777777777779
+3171_prefix,zero_weighted,annular_slug,slug,3,0.066100684962780029,0.66666666666666663
+3171_prefix,zero_weighted,quatro_padroes,churn,10,-0.093763374029469396,0
+3171_prefix,zero_weighted,quatro_padroes,wavy annular,9,-0.042413316010726378,0.44444444444444442
+3171_prefix,zero_weighted,quatro_padroes,plug,3,-0.038772545771577439,0
+3171_prefix,zero_weighted,quatro_padroes,slug,3,-0.051794192771633517,0
+3171_prefix,scale_peak_weighted,churn_annular,churn,10,0.022912664238509302,0.40000000000000002
+3171_prefix,scale_peak_weighted,churn_annular,wavy annular,9,-0.0016059941162635152,0.55555555555555558
+3171_prefix,scale_peak_weighted,plug_slug,plug,3,-0.095520462540826037,0.33333333333333331
+3171_prefix,scale_peak_weighted,plug_slug,slug,3,-0.0078778106621444702,0.33333333333333331
+3171_prefix,scale_peak_weighted,churn_plug,churn,10,-0.026096980229028198,0.69999999999999996
+3171_prefix,scale_peak_weighted,churn_plug,plug,3,-0.025936877658313592,0
+3171_prefix,scale_peak_weighted,churn_slug,churn,10,-0.077719898905993054,0.40000000000000002
+3171_prefix,scale_peak_weighted,churn_slug,slug,3,0.0089885595792952837,0.33333333333333331
+3171_prefix,scale_peak_weighted,annular_plug,wavy annular,9,-0.018115695757404668,0.77777777777777779
+3171_prefix,scale_peak_weighted,annular_plug,plug,3,0.0073529487176371465,0.33333333333333331
+3171_prefix,scale_peak_weighted,annular_slug,wavy annular,9,-0.035654689812386356,0.66666666666666663
+3171_prefix,scale_peak_weighted,annular_slug,slug,3,0.071358119833507871,0.33333333333333331
+3171_prefix,scale_peak_weighted,quatro_padroes,churn,10,-0.10950102056152233,0
+3171_prefix,scale_peak_weighted,quatro_padroes,wavy annular,9,-0.063483551127171356,0.55555555555555558
+3171_prefix,scale_peak_weighted,quatro_padroes,plug,3,-0.095520462540826037,0
+3171_prefix,scale_peak_weighted,quatro_padroes,slug,3,-0.035892681311684889,0
+3171_prefix,scale_peak_power05,churn_annular,churn,10,0.014947488445592252,0.40000000000000002
+3171_prefix,scale_peak_power05,churn_annular,wavy annular,9,-0.0046603953049711988,0.55555555555555558
+3171_prefix,scale_peak_power05,plug_slug,plug,3,-0.092264219148703155,0.33333333333333331
+3171_prefix,scale_peak_power05,plug_slug,slug,3,0.031169765209872784,0.33333333333333331
+3171_prefix,scale_peak_power05,churn_plug,churn,10,-0.023431829018520055,0.69999999999999996
+3171_prefix,scale_peak_power05,churn_plug,plug,3,-0.036725703943581448,0
+3171_prefix,scale_peak_power05,churn_slug,churn,10,-0.10033800118810166,0.40000000000000002
+3171_prefix,scale_peak_power05,churn_slug,slug,3,0.0075107428990882769,0.33333333333333331
+3171_prefix,scale_peak_power05,annular_plug,wavy annular,9,-0.0094092789356829357,0.88888888888888884
+3171_prefix,scale_peak_power05,annular_plug,plug,3,-0.001497847283706194,0.33333333333333331
+3171_prefix,scale_peak_power05,annular_slug,wavy annular,9,-0.039287489603747068,0.66666666666666663
+3171_prefix,scale_peak_power05,annular_slug,slug,3,0.084584459733563475,0.33333333333333331
+3171_prefix,scale_peak_power05,quatro_padroes,churn,10,-0.12951772833199551,0
+3171_prefix,scale_peak_power05,quatro_padroes,wavy annular,9,-0.067694159389131911,0.55555555555555558
+3171_prefix,scale_peak_power05,quatro_padroes,plug,3,-0.10282491021168026,0
+3171_prefix,scale_peak_power05,quatro_padroes,slug,3,-0.028778857432508066,0
+3171_prefix,common_lag_peak,churn_annular,churn,10,0.028630045098672514,0.5
+3171_prefix,common_lag_peak,churn_annular,wavy annular,9,0.0026719342752666128,0.44444444444444442
+3171_prefix,common_lag_peak,plug_slug,plug,3,-0.043447694770793209,0
+3171_prefix,common_lag_peak,plug_slug,slug,3,-0.051344282404761521,0
+3171_prefix,common_lag_peak,churn_plug,churn,10,-0.02044165299629613,0.80000000000000004
+3171_prefix,common_lag_peak,churn_plug,plug,3,0.024415223727183948,0
+3171_prefix,common_lag_peak,churn_slug,churn,10,-0.056092358720966892,0.29999999999999999
+3171_prefix,common_lag_peak,churn_slug,slug,3,-0.024714663308369356,0
+3171_prefix,common_lag_peak,annular_plug,wavy annular,9,-0.028378529347947115,0.77777777777777779
+3171_prefix,common_lag_peak,annular_plug,plug,3,0.041159407246442882,0.33333333333333331
+3171_prefix,common_lag_peak,annular_slug,wavy annular,9,-0.020550620382809991,0.77777777777777779
+3171_prefix,common_lag_peak,annular_slug,slug,3,0.038277073283363071,0.33333333333333331
+3171_prefix,common_lag_peak,quatro_padroes,churn,10,-0.087631458936190759,0
+3171_prefix,common_lag_peak,quatro_padroes,wavy annular,9,-0.054702458081297416,0.44444444444444442
+3171_prefix,common_lag_peak,quatro_padroes,plug,3,-0.04822638872912418,0
+3171_prefix,common_lag_peak,quatro_padroes,slug,3,-0.073371211434672443,0
+3171_prefix,map_mean,churn_annular,churn,10,-0.0025271721986483788,0.5
+3171_prefix,map_mean,churn_annular,wavy annular,9,0.0091203072342942205,0.66666666666666663
+3171_prefix,map_mean,plug_slug,plug,3,0.0012110060773997463,0.66666666666666663
+3171_prefix,map_mean,plug_slug,slug,3,-0.014021114757182788,0
+3171_prefix,map_mean,churn_plug,churn,10,-0.0067302034349696668,0.59999999999999998
+3171_prefix,map_mean,churn_plug,plug,3,0.0053429240916864846,0
+3171_prefix,map_mean,churn_slug,churn,10,-0.0023661643378199908,0.69999999999999996
+3171_prefix,map_mean,churn_slug,slug,3,-0.0055896510466632923,0
+3171_prefix,map_mean,annular_plug,wavy annular,9,0.0014066153653159582,0.88888888888888884
+3171_prefix,map_mean,annular_plug,plug,3,0.0018092090513014032,0.33333333333333331
+3171_prefix,map_mean,annular_slug,wavy annular,9,0.0088924321501372347,0.88888888888888884
+3171_prefix,map_mean,annular_slug,slug,3,-0.006002225317616257,0.33333333333333331
+3171_prefix,map_mean,quatro_padroes,churn,10,-0.011800545673487893,0.10000000000000001
+3171_prefix,map_mean,quatro_padroes,wavy annular,9,-0.0027665355522916634,0.55555555555555558
+3171_prefix,map_mean,quatro_padroes,plug,3,-0.0014463185646970296,0
+3171_prefix,map_mean,quatro_padroes,slug,3,-0.019635858832189396,0
+3171_prefix,map_mean_weighted,churn_annular,churn,10,0.0057582712584696299,0.29999999999999999
+3171_prefix,map_mean_weighted,churn_annular,wavy annular,9,-0.0014308346302101969,0.55555555555555558
+3171_prefix,map_mean_weighted,plug_slug,plug,3,-0.040913888716952118,0.33333333333333331
+3171_prefix,map_mean_weighted,plug_slug,slug,3,0.032840632876265166,0.66666666666666663
+3171_prefix,map_mean_weighted,churn_plug,churn,10,-0.0050439127360303506,0.5
+3171_prefix,map_mean_weighted,churn_plug,plug,3,-0.0077896450553834552,0.33333333333333331
+3171_prefix,map_mean_weighted,churn_slug,churn,10,-0.039005079974853092,0.10000000000000001
+3171_prefix,map_mean_weighted,churn_slug,slug,3,0.032181014215229495,0.66666666666666663
+3171_prefix,map_mean_weighted,annular_plug,wavy annular,9,-0.0088615646265971047,0.44444444444444442
+3171_prefix,map_mean_weighted,annular_plug,plug,3,-0.0042911327217855502,0.33333333333333331
+3171_prefix,map_mean_weighted,annular_slug,wavy annular,9,-0.028986794167748638,0.22222222222222221
+3171_prefix,map_mean_weighted,annular_slug,slug,3,0.048458436590546598,0.66666666666666663
+3171_prefix,map_mean_weighted,quatro_padroes,churn,10,-0.039952601464066088,0
+3171_prefix,map_mean_weighted,quatro_padroes,wavy annular,9,-0.029765397804488749,0.22222222222222221
+3171_prefix,map_mean_weighted,quatro_padroes,plug,3,-0.040913888716952118,0.33333333333333331
+3171_prefix,map_mean_weighted,quatro_padroes,slug,3,0.025830717806888313,0.33333333333333331
+3171_prefix,lag_q90_weighted,churn_annular,churn,10,0.023195238070926442,0.5
+3171_prefix,lag_q90_weighted,churn_annular,wavy annular,9,0.0030158548822679485,0.66666666666666663
+3171_prefix,lag_q90_weighted,plug_slug,plug,3,-0.091892587254609817,0.33333333333333331
+3171_prefix,lag_q90_weighted,plug_slug,slug,3,0.015580619126146562,0.33333333333333331
+3171_prefix,lag_q90_weighted,churn_plug,churn,10,-0.022797424665908658,0.5
+3171_prefix,lag_q90_weighted,churn_plug,plug,3,-0.020257722093161661,0
+3171_prefix,lag_q90_weighted,churn_slug,churn,10,-0.084260637714919623,0.10000000000000001
+3171_prefix,lag_q90_weighted,churn_slug,slug,3,0.024852360543641174,0.66666666666666663
+3171_prefix,lag_q90_weighted,annular_plug,wavy annular,9,-0.025284764990402105,0.77777777777777779
+3171_prefix,lag_q90_weighted,annular_plug,plug,3,-0.0015088681562650506,0.33333333333333331
+3171_prefix,lag_q90_weighted,annular_slug,wavy annular,9,-0.043651039079563414,0.33333333333333331
+3171_prefix,lag_q90_weighted,annular_slug,slug,3,0.081668001390713646,0.66666666666666663
+3171_prefix,lag_q90_weighted,quatro_padroes,churn,10,-0.097663890176211882,0
+3171_prefix,lag_q90_weighted,quatro_padroes,wavy annular,9,-0.062902589429521621,0.22222222222222221
+3171_prefix,lag_q90_weighted,quatro_padroes,plug,3,-0.091892587254609817,0
+3171_prefix,lag_q90_weighted,quatro_padroes,slug,3,-0.0059892602938346889,0
+3171_prefix,area05_weighted,churn_annular,churn,10,0.011193799032225567,0.69999999999999996
+3171_prefix,area05_weighted,churn_annular,wavy annular,9,-0.0018372994281407396,0.44444444444444442
+3171_prefix,area05_weighted,plug_slug,plug,3,-0.042908875290219139,0.33333333333333331
+3171_prefix,area05_weighted,plug_slug,slug,3,0.00055742422510427403,0.66666666666666663
+3171_prefix,area05_weighted,churn_plug,churn,10,0.0034132407592793296,0.69999999999999996
+3171_prefix,area05_weighted,churn_plug,plug,3,-0.0048186092559610507,0
+3171_prefix,area05_weighted,churn_slug,churn,10,-0.02541003440425188,0.10000000000000001
+3171_prefix,area05_weighted,churn_slug,slug,3,0.0097187937446191995,0
+3171_prefix,area05_weighted,annular_plug,wavy annular,9,-0.0060668017650063501,0.55555555555555558
+3171_prefix,area05_weighted,annular_plug,plug,3,-0.001429952668856805,0.33333333333333331
+3171_prefix,area05_weighted,annular_slug,wavy annular,9,-0.026024728008771376,0.22222222222222221
+3171_prefix,area05_weighted,annular_slug,slug,3,0.021602545243457172,0.66666666666666663
+3171_prefix,area05_weighted,quatro_padroes,churn,10,-0.026759293696353513,0.10000000000000001
+3171_prefix,area05_weighted,quatro_padroes,wavy annular,9,-0.027995384598899845,0.1111111111111111
+3171_prefix,area05_weighted,quatro_padroes,plug,3,-0.042908875290219139,0
+3171_prefix,area05_weighted,quatro_padroes,slug,3,-0.0069978666340576564,0
+3171_prefix,mean_short,churn_annular,churn,10,0.00077338318024265228,0.80000000000000004
+3171_prefix,mean_short,churn_annular,wavy annular,9,0.00020092464841022553,0.55555555555555558
+3171_prefix,mean_short,plug_slug,plug,3,-0.00055340817657256367,0.66666666666666663
+3171_prefix,mean_short,plug_slug,slug,3,-0.0015527789254834781,0
+3171_prefix,mean_short,churn_plug,churn,10,0.0003267088516723714,0.80000000000000004
+3171_prefix,mean_short,churn_plug,plug,3,9.2263121350693295e-05,0.33333333333333331
+3171_prefix,mean_short,churn_slug,churn,10,0.00091197822466333007,0.69999999999999996
+3171_prefix,mean_short,churn_slug,slug,3,-0.00031745555895798262,0
+3171_prefix,mean_short,annular_plug,wavy annular,9,0.00058551708239856998,0.88888888888888884
+3171_prefix,mean_short,annular_plug,plug,3,0.0009224377473888469,0.33333333333333331
+3171_prefix,mean_short,annular_slug,wavy annular,9,0.00038204209952286778,0.77777777777777779
+3171_prefix,mean_short,annular_slug,slug,3,-0.0002775866667079037,0
+3171_prefix,mean_short,quatro_padroes,churn,10,-0.00077437912419520507,0.5
+3171_prefix,mean_short,quatro_padroes,wavy annular,9,-0.00092264552770233001,0.55555555555555558
+3171_prefix,mean_short,quatro_padroes,plug,3,-0.00069856255890191586,0.33333333333333331
+3171_prefix,mean_short,quatro_padroes,slug,3,-0.0020347266390012826,0
+3171_prefix,mean_middle,churn_annular,churn,10,0.00028243003163334315,0.59999999999999998
+3171_prefix,mean_middle,churn_annular,wavy annular,9,0.0039234476080376897,0.33333333333333331
+3171_prefix,mean_middle,plug_slug,plug,3,-0.0023238728286540293,0.33333333333333331
+3171_prefix,mean_middle,plug_slug,slug,3,0.005510197626304926,1
+3171_prefix,mean_middle,churn_plug,churn,10,-0.004414888736094592,0.69999999999999996
+3171_prefix,mean_middle,churn_plug,plug,3,-0.010366470861455444,0.33333333333333331
+3171_prefix,mean_middle,churn_slug,churn,10,-0.00097644442010943501,0.90000000000000002
+3171_prefix,mean_middle,churn_slug,slug,3,0.0008953223532891444,0.33333333333333331
+3171_prefix,mean_middle,annular_plug,wavy annular,9,0.0011578906323596201,0.77777777777777779
+3171_prefix,mean_middle,annular_plug,plug,3,-0.0083583635805953658,0.33333333333333331
+3171_prefix,mean_middle,annular_slug,wavy annular,9,0.011627634422861447,0.77777777777777779
+3171_prefix,mean_middle,annular_slug,slug,3,0.0099917928127135971,0.33333333333333331
+3171_prefix,mean_middle,quatro_padroes,churn,10,-0.011635980177759934,0.5
+3171_prefix,mean_middle,quatro_padroes,wavy annular,9,-0.0042744346055953748,0.33333333333333331
+3171_prefix,mean_middle,quatro_padroes,plug,3,-0.012201523116909016,0
+3171_prefix,mean_middle,quatro_padroes,slug,3,0.0008953223532891444,0
+3171_prefix,mean_long,churn_annular,churn,10,-0.012173728440898108,0.40000000000000002
+3171_prefix,mean_long,churn_annular,wavy annular,9,0.031376751875572269,0.77777777777777779
+3171_prefix,mean_long,plug_slug,plug,3,0.0093171566118301335,0
+3171_prefix,mean_long,plug_slug,slug,3,-0.060856836264780334,0
+3171_prefix,mean_long,churn_plug,churn,10,-0.021655299188767657,0.5
+3171_prefix,mean_long,churn_plug,plug,3,0.036622445715908031,0
+3171_prefix,mean_long,churn_slug,churn,10,-0.0099310997690165246,0.59999999999999998
+3171_prefix,mean_long,churn_slug,slug,3,-0.023095089248387501,0
+3171_prefix,mean_long,annular_plug,wavy annular,9,0.0032671668050089295,1
+3171_prefix,mean_long,annular_plug,plug,3,0.018231696463936149,0.33333333333333331
+3171_prefix,mean_long,annular_slug,wavy annular,9,0.018745242884192912,1
+3171_prefix,mean_long,annular_slug,slug,3,-0.037891585482578947,0
+3171_prefix,mean_long,quatro_padroes,churn,10,-0.037143465240538548,0.29999999999999999
+3171_prefix,mean_long,quatro_padroes,wavy annular,9,-0.0098379653468523374,0.77777777777777779
+3171_prefix,mean_long,quatro_padroes,plug,3,-0.0052120770596232567,0
+3171_prefix,mean_long,quatro_padroes,slug,3,-0.077320310899854458,0
+3171_prefix,common_peak_short,churn_annular,churn,10,-0.016202406704746892,0.29999999999999999
+3171_prefix,common_peak_short,churn_annular,wavy annular,9,0.0035141001731213181,0.22222222222222221
+3171_prefix,common_peak_short,plug_slug,plug,3,0.048976313696651154,1
+3171_prefix,common_peak_short,plug_slug,slug,3,0.02113502117863204,0.33333333333333331
+3171_prefix,common_peak_short,churn_plug,churn,10,-0.0035582324291971758,0.80000000000000004
+3171_prefix,common_peak_short,churn_plug,plug,3,0.064656117061055896,1
+3171_prefix,common_peak_short,churn_slug,churn,10,-0.001790073855820298,0.59999999999999998
+3171_prefix,common_peak_short,churn_slug,slug,3,0.038760298467468,0.33333333333333331
+3171_prefix,common_peak_short,annular_plug,wavy annular,9,0.017877314227973711,1
+3171_prefix,common_peak_short,annular_plug,plug,3,0.066462668908928921,1
+3171_prefix,common_peak_short,annular_slug,wavy annular,9,0.00011692782785134581,0.55555555555555558
+3171_prefix,common_peak_short,annular_slug,slug,3,0.021762357410739452,0
+3171_prefix,common_peak_short,quatro_padroes,churn,10,-0.023050723198099636,0.29999999999999999
+3171_prefix,common_peak_short,quatro_padroes,wavy annular,9,-0.012989856173524368,0.1111111111111111
+3171_prefix,common_peak_short,quatro_padroes,plug,3,0.045714344112956239,1
+3171_prefix,common_peak_short,quatro_padroes,slug,3,0.01228549751758664,0
+3171_prefix,common_peak_middle,churn_annular,churn,10,0.034566197706399925,0.59999999999999998
+3171_prefix,common_peak_middle,churn_annular,wavy annular,9,0.00047221521069435509,0.33333333333333331
+3171_prefix,common_peak_middle,plug_slug,plug,3,-0.03516144786630987,0
+3171_prefix,common_peak_middle,plug_slug,slug,3,-0.053062937820709782,0
+3171_prefix,common_peak_middle,churn_plug,churn,10,-0.023219970866229248,0.80000000000000004
+3171_prefix,common_peak_middle,churn_plug,plug,3,-0.013703846886259634,0
+3171_prefix,common_peak_middle,churn_slug,churn,10,-0.0047744157976599092,0.90000000000000002
+3171_prefix,common_peak_middle,churn_slug,slug,3,-0.016926573864431294,0
+3171_prefix,common_peak_middle,annular_plug,wavy annular,9,-0.024455629946326655,0.77777777777777779
+3171_prefix,common_peak_middle,annular_plug,plug,3,0.014838004258602272,0.33333333333333331
+3171_prefix,common_peak_middle,annular_slug,wavy annular,9,0.039721600708195935,0.77777777777777779
+3171_prefix,common_peak_middle,annular_slug,slug,3,0.061475311781361619,0.66666666666666663
+3171_prefix,common_peak_middle,quatro_padroes,churn,10,-0.088849862538460361,0.29999999999999999
+3171_prefix,common_peak_middle,quatro_padroes,wavy annular,9,-0.037952753221783264,0.33333333333333331
+3171_prefix,common_peak_middle,quatro_padroes,plug,3,-0.056711725523274935,0
+3171_prefix,common_peak_middle,quatro_padroes,slug,3,-0.053062937820709782,0
+3171_prefix,common_peak_long,churn_annular,churn,10,0.032379926619287971,0.40000000000000002
+3171_prefix,common_peak_long,churn_annular,wavy annular,9,0.090961745545274322,0.44444444444444442
+3171_prefix,common_peak_long,plug_slug,plug,3,-0.083385164765761133,0.33333333333333331
+3171_prefix,common_peak_long,plug_slug,slug,3,-0.32718109384102761,0
+3171_prefix,common_peak_long,churn_plug,churn,10,-0.011075484556240666,0.69999999999999996
+3171_prefix,common_peak_long,churn_plug,plug,3,0.012394602136938474,0
+3171_prefix,common_peak_long,churn_slug,churn,10,0.034487461299372871,0.80000000000000004
+3171_prefix,common_peak_long,churn_slug,slug,3,-0.22718924664849224,0
+3171_prefix,common_peak_long,annular_plug,wavy annular,9,0.052662370875675588,0.88888888888888884
+3171_prefix,common_peak_long,annular_plug,plug,3,0.013025921502276142,0.33333333333333331
+3171_prefix,common_peak_long,annular_slug,wavy annular,9,0.090160889784737783,0.77777777777777779
+3171_prefix,common_peak_long,annular_slug,slug,3,-0.21277105705473406,0
+3171_prefix,common_peak_long,quatro_padroes,churn,10,-0.080670135114879193,0.40000000000000002
+3171_prefix,common_peak_long,quatro_padroes,wavy annular,9,-0.011754911884752152,0.33333333333333331
+3171_prefix,common_peak_long,quatro_padroes,plug,3,-0.13861912996024012,0
+3171_prefix,common_peak_long,quatro_padroes,slug,3,-0.40909923196332415,0
+3171_prefix,self_area_log_l2,churn_annular,churn,10,0.0012109184406635545,0.5
+3171_prefix,self_area_log_l2,churn_annular,wavy annular,9,-0.0084334417914229288,0.66666666666666663
+3171_prefix,self_area_log_l2,plug_slug,plug,3,-0.11040598766192584,0.33333333333333331
+3171_prefix,self_area_log_l2,plug_slug,slug,3,-0.10081745603554253,0
+3171_prefix,self_area_log_l2,churn_plug,churn,10,-0.050509967237229371,0.5
+3171_prefix,self_area_log_l2,churn_plug,plug,3,-0.075422389969746373,0
+3171_prefix,self_area_log_l2,churn_slug,churn,10,-0.026287796095439436,0.69999999999999996
+3171_prefix,self_area_log_l2,churn_slug,slug,3,-0.038402707169061884,0
+3171_prefix,self_area_log_l2,annular_plug,wavy annular,9,-0.033954567320993785,0.55555555555555558
+3171_prefix,self_area_log_l2,annular_plug,plug,3,-0.044106471864443775,0
+3171_prefix,self_area_log_l2,annular_slug,wavy annular,9,-0.051487281559397607,0.66666666666666663
+3171_prefix,self_area_log_l2,annular_slug,slug,3,-0.051664956780441168,0
+3171_prefix,self_area_log_l2,quatro_padroes,churn,10,-0.061008454496542255,0.5
+3171_prefix,self_area_log_l2,quatro_padroes,wavy annular,9,-0.085031125920601969,0.44444444444444442
+3171_prefix,self_area_log_l2,quatro_padroes,plug,3,-0.11808190617625057,0
+3171_prefix,self_area_log_l2,quatro_padroes,slug,3,-0.10348783115204462,0
+3171_prefix,self_width_log_l2,churn_annular,churn,10,0.035217787366170525,0.29999999999999999
+3171_prefix,self_width_log_l2,churn_annular,wavy annular,9,0.019628601869571764,0.77777777777777779
+3171_prefix,self_width_log_l2,plug_slug,plug,3,-0.08493601216187828,0.33333333333333331
+3171_prefix,self_width_log_l2,plug_slug,slug,3,-0.07931873867643309,0
+3171_prefix,self_width_log_l2,churn_plug,churn,10,-0.031981926996542072,0.69999999999999996
+3171_prefix,self_width_log_l2,churn_plug,plug,3,-0.022919663859377468,0
+3171_prefix,self_width_log_l2,churn_slug,churn,10,-0.014826471408932677,0.59999999999999998
+3171_prefix,self_width_log_l2,churn_slug,slug,3,-0.01095483060878532,0
+3171_prefix,self_width_log_l2,annular_plug,wavy annular,9,-0.043595906707477511,0.88888888888888884
+3171_prefix,self_width_log_l2,annular_plug,plug,3,-0.017694136944466952,0.66666666666666663
+3171_prefix,self_width_log_l2,annular_slug,wavy annular,9,-0.020546134005070604,1
+3171_prefix,self_width_log_l2,annular_slug,slug,3,0.0049911463596676378,0
+3171_prefix,self_width_log_l2,quatro_padroes,churn,10,-0.047317781151613433,0.20000000000000001
+3171_prefix,self_width_log_l2,quatro_padroes,wavy annular,9,-0.063332598357286871,0.77777777777777779
+3171_prefix,self_width_log_l2,quatro_padroes,plug,3,-0.10822187820224642,0
+3171_prefix,self_width_log_l2,quatro_padroes,slug,3,-0.094714822302324239,0
+3171_prefix,self_area_bands,churn_annular,churn,10,0.24394591261503346,0.69999999999999996
+3171_prefix,self_area_bands,churn_annular,wavy annular,9,-0.23764444346876593,0.33333333333333331
+3171_prefix,self_area_bands,plug_slug,plug,3,-0.27029830366746493,0
+3171_prefix,self_area_bands,plug_slug,slug,3,0.38428327026468284,0.66666666666666663
+3171_prefix,self_area_bands,churn_plug,churn,10,-0.042809781983670803,0.69999999999999996
+3171_prefix,self_area_bands,churn_plug,plug,3,-0.14229955639399491,0
+3171_prefix,self_area_bands,churn_slug,churn,10,-0.27258583166070549,0.59999999999999998
+3171_prefix,self_area_bands,churn_slug,slug,3,0.32797733245064992,0.66666666666666663
+3171_prefix,self_area_bands,annular_plug,wavy annular,9,-0.2487991699171746,0.66666666666666663
+3171_prefix,self_area_bands,annular_plug,plug,3,0.14476849893220065,0
+3171_prefix,self_area_bands,annular_slug,wavy annular,9,-0.3135878798796472,0.66666666666666663
+3171_prefix,self_area_bands,annular_slug,slug,3,0.58588142323885839,0.66666666666666663
+3171_prefix,self_area_bands,quatro_padroes,churn,10,-0.30364644505836252,0.40000000000000002
+3171_prefix,self_area_bands,quatro_padroes,wavy annular,9,-0.34373349236595052,0.22222222222222221
+3171_prefix,self_area_bands,quatro_padroes,plug,3,-0.27029830366746493,0
+3171_prefix,self_area_bands,quatro_padroes,slug,3,0.32566990174796928,0.66666666666666663
+3171_center,global_max,churn_annular,churn,10,-0.3157769216416707,0.40000000000000002
+3171_center,global_max,churn_annular,wavy annular,9,0.23452315969051535,0.77777777777777779
+3171_center,global_max,plug_slug,plug,3,-0.013475763845070571,0
+3171_center,global_max,plug_slug,slug,3,-0.56140943364564588,0
+3171_center,global_max,churn_plug,churn,10,0.22318930767706177,1
+3171_center,global_max,churn_plug,plug,3,0.083791039696040959,0
+3171_center,global_max,churn_slug,churn,10,0.17705947949084572,0.69999999999999996
+3171_center,global_max,churn_slug,slug,3,-0.58131653638218894,0
+3171_center,global_max,annular_plug,wavy annular,9,0.30258281899397105,0.77777777777777779
+3171_center,global_max,annular_plug,plug,3,-0.22403310164881099,0
+3171_center,global_max,annular_slug,wavy annular,9,0.36063454670342154,0.66666666666666663
+3171_center,global_max,annular_slug,slug,3,-0.73139916653222936,0
+3171_center,global_max,quatro_padroes,churn,10,-0.33197920618733295,0.40000000000000002
+3171_center,global_max,quatro_padroes,wavy annular,9,0.096365684087569334,0.44444444444444442
+3171_center,global_max,quatro_padroes,plug,3,-0.26135220990937741,0
+3171_center,global_max,quatro_padroes,slug,3,-0.78009719989646287,0
+3171_center,zero_weighted,churn_annular,churn,10,0.023462571071308485,0.59999999999999998
+3171_center,zero_weighted,churn_annular,wavy annular,9,0.027854339357704008,0.77777777777777779
+3171_center,zero_weighted,plug_slug,plug,3,-0.073864640281400426,0.33333333333333331
+3171_center,zero_weighted,plug_slug,slug,3,0.022647478789314474,0.66666666666666663
+3171_center,zero_weighted,churn_plug,churn,10,-0.031807972756436244,0.5
+3171_center,zero_weighted,churn_plug,plug,3,-0.030874590472544969,0
+3171_center,zero_weighted,churn_slug,churn,10,-0.057830931636709958,0.5
+3171_center,zero_weighted,churn_slug,slug,3,0.041194662169076149,0.66666666666666663
+3171_center,zero_weighted,annular_plug,wavy annular,9,-0.034316860956710507,0.66666666666666663
+3171_center,zero_weighted,annular_plug,plug,3,-0.037542721040699396,0
+3171_center,zero_weighted,annular_slug,wavy annular,9,-0.026862655676126057,0.77777777777777779
+3171_center,zero_weighted,annular_slug,slug,3,0.066393732913739748,0.66666666666666663
+3171_center,zero_weighted,quatro_padroes,churn,10,-0.077856777828635121,0.29999999999999999
+3171_center,zero_weighted,quatro_padroes,wavy annular,9,-0.052004997263396441,0.66666666666666663
+3171_center,zero_weighted,quatro_padroes,plug,3,-0.078623880331403162,0
+3171_center,zero_weighted,quatro_padroes,slug,3,0.022647478789314474,0.66666666666666663
+3171_center,scale_peak_weighted,churn_annular,churn,10,0.042197348129116741,0.80000000000000004
+3171_center,scale_peak_weighted,churn_annular,wavy annular,9,0.029307172402572253,0.88888888888888884
+3171_center,scale_peak_weighted,plug_slug,plug,3,-0.077548892382269738,0.33333333333333331
+3171_center,scale_peak_weighted,plug_slug,slug,3,0.041892205693341712,0.66666666666666663
+3171_center,scale_peak_weighted,churn_plug,churn,10,-0.054827980919026631,0.59999999999999998
+3171_center,scale_peak_weighted,churn_plug,plug,3,0.062101765839503865,0.66666666666666663
+3171_center,scale_peak_weighted,churn_slug,churn,10,-0.094149375899675536,0.29999999999999999
+3171_center,scale_peak_weighted,churn_slug,slug,3,0.13807090619597998,0.66666666666666663
+3171_center,scale_peak_weighted,annular_plug,wavy annular,9,-0.072350455226966287,0.77777777777777779
+3171_center,scale_peak_weighted,annular_plug,plug,3,0.061563291851781859,0.33333333333333331
+3171_center,scale_peak_weighted,annular_slug,wavy annular,9,-0.047699010314126281,0.55555555555555558
+3171_center,scale_peak_weighted,annular_slug,slug,3,0.19113942147756804,0.66666666666666663
+3171_center,scale_peak_weighted,quatro_padroes,churn,10,-0.10438947489990633,0.20000000000000001
+3171_center,scale_peak_weighted,quatro_padroes,wavy annular,9,-0.085218927141892137,0.55555555555555558
+3171_center,scale_peak_weighted,quatro_padroes,plug,3,-0.077548892382269738,0.33333333333333331
+3171_center,scale_peak_weighted,quatro_padroes,slug,3,0.041892205693341712,0.66666666666666663
+3171_center,scale_peak_power05,churn_annular,churn,10,0.040172505483245122,0.80000000000000004
+3171_center,scale_peak_power05,churn_annular,wavy annular,9,0.025730964098850201,0.88888888888888884
+3171_center,scale_peak_power05,plug_slug,plug,3,-0.078937221748048639,0.33333333333333331
+3171_center,scale_peak_power05,plug_slug,slug,3,0.065684263107021551,0.66666666666666663
+3171_center,scale_peak_power05,churn_plug,churn,10,-0.061880591138761286,0.59999999999999998
+3171_center,scale_peak_power05,churn_plug,plug,3,0.071796459376359603,0.66666666666666663
+3171_center,scale_peak_power05,churn_slug,churn,10,-0.11263158916155953,0.20000000000000001
+3171_center,scale_peak_power05,churn_slug,slug,3,0.15939742354572461,0.66666666666666663
+3171_center,scale_peak_power05,annular_plug,wavy annular,9,-0.078890790746553863,0.77777777777777779
+3171_center,scale_peak_power05,annular_plug,plug,3,0.073929621227210321,0.33333333333333331
+3171_center,scale_peak_power05,annular_slug,wavy annular,9,-0.062982182996566605,0.44444444444444442
+3171_center,scale_peak_power05,annular_slug,slug,3,0.21635010515072892,0.66666666666666663
+3171_center,scale_peak_power05,quatro_padroes,churn,10,-0.12103927337276732,0.10000000000000001
+3171_center,scale_peak_power05,quatro_padroes,wavy annular,9,-0.097661499591195966,0.44444444444444442
+3171_center,scale_peak_power05,quatro_padroes,plug,3,-0.078937221748048639,0.33333333333333331
+3171_center,scale_peak_power05,quatro_padroes,slug,3,0.065684263107021551,0.66666666666666663
+3171_center,common_lag_peak,churn_annular,churn,10,0.019017472856623613,0.59999999999999998
+3171_center,common_lag_peak,churn_annular,wavy annular,9,0.030283475104903517,0.77777777777777779
+3171_center,common_lag_peak,plug_slug,plug,3,-0.053418445602159054,0.33333333333333331
+3171_center,common_lag_peak,plug_slug,slug,3,0.076690287333964366,0.66666666666666663
+3171_center,common_lag_peak,churn_plug,churn,10,-0.054826345001228696,0.5
+3171_center,common_lag_peak,churn_plug,plug,3,0.037716760874111917,0.66666666666666663
+3171_center,common_lag_peak,churn_slug,churn,10,-0.06715138478837443,0.5
+3171_center,common_lag_peak,churn_slug,slug,3,0.15331238598128827,1
+3171_center,common_lag_peak,annular_plug,wavy annular,9,-0.039350158274143725,0.66666666666666663
+3171_center,common_lag_peak,annular_plug,plug,3,0.043475966763804129,0.66666666666666663
+3171_center,common_lag_peak,annular_slug,wavy annular,9,-0.029417495076271633,0.88888888888888884
+3171_center,common_lag_peak,annular_slug,slug,3,0.17632254730994359,1
+3171_center,common_lag_peak,quatro_padroes,churn,10,-0.08950146385694098,0.29999999999999999
+3171_center,common_lag_peak,quatro_padroes,wavy annular,9,-0.051836355557041122,0.66666666666666663
+3171_center,common_lag_peak,quatro_padroes,plug,3,-0.053418445602159054,0.33333333333333331
+3171_center,common_lag_peak,quatro_padroes,slug,3,0.076690287333964366,0.66666666666666663
+3171_center,map_mean,churn_annular,churn,10,0.0023325331500830908,0.59999999999999998
+3171_center,map_mean,churn_annular,wavy annular,9,0.015355058824805031,0.66666666666666663
+3171_center,map_mean,plug_slug,plug,3,0.0083263736304107511,0.66666666666666663
+3171_center,map_mean,plug_slug,slug,3,-0.0095772463650887051,0.66666666666666663
+3171_center,map_mean,churn_plug,churn,10,0.005240678780839076,1
+3171_center,map_mean,churn_plug,plug,3,0.0019155980973384363,0.66666666666666663
+3171_center,map_mean,churn_slug,churn,10,0.0059987308783644704,0.69999999999999996
+3171_center,map_mean,churn_slug,slug,3,-0.015425079936622862,0
+3171_center,map_mean,annular_plug,wavy annular,9,0.007199709334335589,1
+3171_center,map_mean,annular_plug,plug,3,-0.009264967927600452,0.66666666666666663
+3171_center,map_mean,annular_slug,wavy annular,9,0.028765888220208567,0.88888888888888884
+3171_center,map_mean,annular_slug,slug,3,-0.0054482085946799203,0
+3171_center,map_mean,quatro_padroes,churn,10,-0.0027354318011714326,0.40000000000000002
+3171_center,map_mean,quatro_padroes,wavy annular,9,0.003448129577426939,0.66666666666666663
+3171_center,map_mean,quatro_padroes,plug,3,-0.009264967927600452,0.66666666666666663
+3171_center,map_mean,quatro_padroes,slug,3,-0.021013267414258473,0
+3171_center,map_mean_weighted,churn_annular,churn,10,0.015608047496902016,0.80000000000000004
+3171_center,map_mean_weighted,churn_annular,wavy annular,9,0.0030895986321483044,0.77777777777777779
+3171_center,map_mean_weighted,plug_slug,plug,3,-0.019754355689490657,0.33333333333333331
+3171_center,map_mean_weighted,plug_slug,slug,3,-0.0038294883241464781,0.33333333333333331
+3171_center,map_mean_weighted,churn_plug,churn,10,-0.0121751662222442,0.69999999999999996
+3171_center,map_mean_weighted,churn_plug,plug,3,0.012331309628879414,0.66666666666666663
+3171_center,map_mean_weighted,churn_slug,churn,10,-0.023312466771647784,0.29999999999999999
+3171_center,map_mean_weighted,churn_slug,slug,3,0.016524975534040896,0.33333333333333331
+3171_center,map_mean_weighted,annular_plug,wavy annular,9,-0.02080466959012554,0.88888888888888884
+3171_center,map_mean_weighted,annular_plug,plug,3,0.016503197403630068,0.33333333333333331
+3171_center,map_mean_weighted,annular_slug,wavy annular,9,-0.013556994378833934,0.77777777777777779
+3171_center,map_mean_weighted,annular_slug,slug,3,0.038997623618148354,0.66666666666666663
+3171_center,map_mean_weighted,quatro_padroes,churn,10,-0.025952639088342156,0.29999999999999999
+3171_center,map_mean_weighted,quatro_padroes,wavy annular,9,-0.022152467589174746,0.77777777777777779
+3171_center,map_mean_weighted,quatro_padroes,plug,3,-0.019754355689490657,0.33333333333333331
+3171_center,map_mean_weighted,quatro_padroes,slug,3,-0.006742951404258425,0.33333333333333331
+3171_center,lag_q90_weighted,churn_annular,churn,10,0.037229367769111177,0.80000000000000004
+3171_center,lag_q90_weighted,churn_annular,wavy annular,9,0.021834713384800784,0.88888888888888884
+3171_center,lag_q90_weighted,plug_slug,plug,3,-0.067971946427757182,0.33333333333333331
+3171_center,lag_q90_weighted,plug_slug,slug,3,0.031279552892651274,0.66666666666666663
+3171_center,lag_q90_weighted,churn_plug,churn,10,-0.044816367298061682,0.5
+3171_center,lag_q90_weighted,churn_plug,plug,3,0.058381462073766432,0.66666666666666663
+3171_center,lag_q90_weighted,churn_slug,churn,10,-0.080938932697564261,0.20000000000000001
+3171_center,lag_q90_weighted,churn_slug,slug,3,0.11604958717345619,0.66666666666666663
+3171_center,lag_q90_weighted,annular_plug,wavy annular,9,-0.060307030064352257,0.77777777777777779
+3171_center,lag_q90_weighted,annular_plug,plug,3,0.060474207227666665,0.33333333333333331
+3171_center,lag_q90_weighted,annular_slug,wavy annular,9,-0.046840250256319632,0.55555555555555558
+3171_center,lag_q90_weighted,annular_slug,slug,3,0.16220071947490969,0.66666666666666663
+3171_center,lag_q90_weighted,quatro_padroes,churn,10,-0.084598074463397316,0.20000000000000001
+3171_center,lag_q90_weighted,quatro_padroes,wavy annular,9,-0.06852724732315385,0.55555555555555558
+3171_center,lag_q90_weighted,quatro_padroes,plug,3,-0.067971946427757182,0.33333333333333331
+3171_center,lag_q90_weighted,quatro_padroes,slug,3,0.031279552892651274,0.66666666666666663
+3171_center,area05_weighted,churn_annular,churn,10,0.012566614317177888,0.90000000000000002
+3171_center,area05_weighted,churn_annular,wavy annular,9,0.010771656372701416,0.66666666666666663
+3171_center,area05_weighted,plug_slug,plug,3,-0.025807276500465853,0.33333333333333331
+3171_center,area05_weighted,plug_slug,slug,3,0.007926970118634552,0.66666666666666663
+3171_center,area05_weighted,churn_plug,churn,10,-0.0053600004002326944,0.5
+3171_center,area05_weighted,churn_plug,plug,3,0.0049389460683840628,0.66666666666666663
+3171_center,area05_weighted,churn_slug,churn,10,-0.027743602096818875,0.29999999999999999
+3171_center,area05_weighted,churn_slug,slug,3,0.015835460161741328,0.33333333333333331
+3171_center,area05_weighted,annular_plug,wavy annular,9,-0.0085079657901300076,0.88888888888888884
+3171_center,area05_weighted,annular_plug,plug,3,0.0039746438919917816,0.33333333333333331
+3171_center,area05_weighted,annular_slug,wavy annular,9,-0.010718713005831767,0.55555555555555558
+3171_center,area05_weighted,annular_slug,slug,3,0.034832150535756674,0.66666666666666663
+3171_center,area05_weighted,quatro_padroes,churn,10,-0.02909897949807112,0.20000000000000001
+3171_center,area05_weighted,quatro_padroes,wavy annular,9,-0.01734361441484765,0.55555555555555558
+3171_center,area05_weighted,quatro_padroes,plug,3,-0.025807276500465853,0.33333333333333331
+3171_center,area05_weighted,quatro_padroes,slug,3,-2.0740102650756525e-05,0.33333333333333331
+3171_center,mean_short,churn_annular,churn,10,-0.0013434443019290296,0.29999999999999999
+3171_center,mean_short,churn_annular,wavy annular,9,-0.00053170266284411228,0.66666666666666663
+3171_center,mean_short,plug_slug,plug,3,-0.0020128246607130701,0.33333333333333331
+3171_center,mean_short,plug_slug,slug,3,-0.0029991154689556071,0.33333333333333331
+3171_center,mean_short,churn_plug,churn,10,-0.0012294694076168578,0.69999999999999996
+3171_center,mean_short,churn_plug,plug,3,-0.00031144653945124772,0.33333333333333331
+3171_center,mean_short,churn_slug,churn,10,-0.0011874486400819174,0.40000000000000002
+3171_center,mean_short,churn_slug,slug,3,-0.0012601012038296919,0
+3171_center,mean_short,annular_plug,wavy annular,9,-6.4524141390273236e-06,0.66666666666666663
+3171_center,mean_short,annular_plug,plug,3,0.00010037802935219519,0
+3171_center,mean_short,annular_slug,wavy annular,9,0.00012833557175195853,0.66666666666666663
+3171_center,mean_short,annular_slug,slug,3,-0.00075285780385930291,0
+3171_center,mean_short,quatro_padroes,churn,10,-0.0021809246610659623,0.10000000000000001
+3171_center,mean_short,quatro_padroes,wavy annular,9,-0.0017319729622560253,0.44444444444444442
+3171_center,mean_short,quatro_padroes,plug,3,-0.0020128246607130701,0
+3171_center,mean_short,quatro_padroes,slug,3,-0.0037468640582986792,0
+3171_center,mean_middle,churn_annular,churn,10,0.0019345428917209237,0.69999999999999996
+3171_center,mean_middle,churn_annular,wavy annular,9,0.0065062653768189378,0.77777777777777779
+3171_center,mean_middle,plug_slug,plug,3,-0.016252559014459076,0.33333333333333331
+3171_center,mean_middle,plug_slug,slug,3,0.00092791549646928254,0
+3171_center,mean_middle,churn_plug,churn,10,0.0017805753976420837,0.80000000000000004
+3171_center,mean_middle,churn_plug,plug,3,-0.00036900069720378323,0.33333333333333331
+3171_center,mean_middle,churn_slug,churn,10,0.0043960364116152322,0.90000000000000002
+3171_center,mean_middle,churn_slug,slug,3,0.01945895638471792,0.66666666666666663
+3171_center,mean_middle,annular_plug,wavy annular,9,-0.0045047358962756745,0.77777777777777779
+3171_center,mean_middle,annular_plug,plug,3,-0.011238985766585349,0
+3171_center,mean_middle,annular_slug,wavy annular,9,0.0037605723757920826,0.77777777777777779
+3171_center,mean_middle,annular_slug,slug,3,0.014414129261948851,0
+3171_center,mean_middle,quatro_padroes,churn,10,-0.002173303025906217,0.69999999999999996
+3171_center,mean_middle,quatro_padroes,wavy annular,9,-0.0062645096340543417,0.66666666666666663
+3171_center,mean_middle,quatro_padroes,plug,3,-0.018059101858571101,0
+3171_center,mean_middle,quatro_padroes,slug,3,0.00092791549646928254,0
+3171_center,mean_long,churn_annular,churn,10,0.0083011570493019184,0.5
+3171_center,mean_long,churn_annular,wavy annular,9,0.052163390372327374,0.44444444444444442
+3171_center,mean_long,plug_slug,plug,3,0.056974724178155446,0.66666666666666663
+3171_center,mean_long,plug_slug,slug,3,-0.031021905566774116,0.66666666666666663
+3171_center,mean_long,churn_plug,churn,10,0.019048027037480722,0.90000000000000002
+3171_center,mean_long,churn_plug,plug,3,0.0089501968175810936,0.66666666666666663
+3171_center,mean_long,churn_slug,churn,10,0.019373586098325745,0.69999999999999996
+3171_center,mean_long,churn_slug,slug,3,-0.081247080910884131,0
+3171_center,mean_long,annular_plug,wavy annular,9,0.035600110633870141,0.88888888888888884
+3171_center,mean_long,annular_plug,plug,3,-0.020933532710552649,0.66666666666666663
+3171_center,mean_long,annular_slug,wavy annular,9,0.10419431078833959,0.88888888888888884
+3171_center,mean_long,annular_slug,slug,3,-0.037328643678253295,0
+3171_center,mean_long,quatro_padroes,churn,10,-0.013087569166454132,0.29999999999999999
+3171_center,mean_long,quatro_padroes,wavy annular,9,0.019543139688091765,0.44444444444444442
+3171_center,mean_long,quatro_padroes,plug,3,-0.020933532710552649,0.66666666666666663
+3171_center,mean_long,quatro_padroes,slug,3,-0.094134589536505178,0
+3171_center,common_peak_short,churn_annular,churn,10,-0.016143820052233727,0.29999999999999999
+3171_center,common_peak_short,churn_annular,wavy annular,9,0.007762900797697197,0.66666666666666663
+3171_center,common_peak_short,plug_slug,plug,3,0.0073655833651171771,0.66666666666666663
+3171_center,common_peak_short,plug_slug,slug,3,-0.02785430867779598,0
+3171_center,common_peak_short,churn_plug,churn,10,-0.01138444728587501,0.69999999999999996
+3171_center,common_peak_short,churn_plug,plug,3,0.0037142437869226649,0
+3171_center,common_peak_short,churn_slug,churn,10,-0.013364266666650887,0.69999999999999996
+3171_center,common_peak_short,churn_slug,slug,3,-0.033430747198190565,0
+3171_center,common_peak_short,annular_plug,wavy annular,9,0.008790885918824801,0.88888888888888884
+3171_center,common_peak_short,annular_plug,plug,3,0.00010423813078945521,0
+3171_center,common_peak_short,annular_slug,wavy annular,9,0.010545628377803883,0.66666666666666663
+3171_center,common_peak_short,annular_slug,slug,3,-0.033205853046802562,0
+3171_center,common_peak_short,quatro_padroes,churn,10,-0.027044447059291356,0.20000000000000001
+3171_center,common_peak_short,quatro_padroes,wavy annular,9,-0.0072256895383541637,0.44444444444444442
+3171_center,common_peak_short,quatro_padroes,plug,3,-0.0053044435117634804,0
+3171_center,common_peak_short,quatro_padroes,slug,3,-0.042070859385699599,0
+3171_center,common_peak_middle,churn_annular,churn,10,0.013985614977299086,0.69999999999999996
+3171_center,common_peak_middle,churn_annular,wavy annular,9,0.02079489010532674,0.77777777777777779
+3171_center,common_peak_middle,plug_slug,plug,3,-0.058282186952625874,0.66666666666666663
+3171_center,common_peak_middle,plug_slug,slug,3,0.14370388459494587,1
+3171_center,common_peak_middle,churn_plug,churn,10,-0.033396978157898813,0.80000000000000004
+3171_center,common_peak_middle,churn_plug,plug,3,0.072490462720310872,0.66666666666666663
+3171_center,common_peak_middle,churn_slug,churn,10,-0.035178327169349932,0.90000000000000002
+3171_center,common_peak_middle,churn_slug,slug,3,0.26147858306303956,1
+3171_center,common_peak_middle,annular_plug,wavy annular,9,-0.047224706628070136,0.55555555555555558
+3171_center,common_peak_middle,annular_plug,plug,3,0.054214248868415582,0.66666666666666663
+3171_center,common_peak_middle,annular_slug,wavy annular,9,-0.049288216828132683,0.77777777777777779
+3171_center,common_peak_middle,annular_slug,slug,3,0.24701791818906085,1
+3171_center,common_peak_middle,quatro_padroes,churn,10,-0.064348505308705561,0.5
+3171_center,common_peak_middle,quatro_padroes,wavy annular,9,-0.07545708655945052,0.33333333333333331
+3171_center,common_peak_middle,quatro_padroes,plug,3,-0.058282186952625874,0.66666666666666663
+3171_center,common_peak_middle,quatro_padroes,slug,3,0.14370388459494587,1
+3171_center,common_peak_long,churn_annular,churn,10,0.053565641638606241,0.69999999999999996
+3171_center,common_peak_long,churn_annular,wavy annular,9,0.22337692057013361,0.66666666666666663
+3171_center,common_peak_long,plug_slug,plug,3,-0.03061141318246266,0.33333333333333331
+3171_center,common_peak_long,plug_slug,slug,3,0.0085528773898733337,0.66666666666666663
+3171_center,common_peak_long,churn_plug,churn,10,0.010942568199315841,0.69999999999999996
+3171_center,common_peak_long,churn_plug,plug,3,-0.050082872562380219,0
+3171_center,common_peak_long,churn_slug,churn,10,-0.044433612048437085,0.5
+3171_center,common_peak_long,churn_slug,slug,3,-0.069973379361873797,0
+3171_center,common_peak_long,annular_plug,wavy annular,9,0.11497307511991946,0.77777777777777779
+3171_center,common_peak_long,annular_plug,plug,3,-0.1310726126453923,0
+3171_center,common_peak_long,annular_slug,wavy annular,9,0.24255885028006441,1
+3171_center,common_peak_long,annular_slug,slug,3,0.060274135817780287,0.33333333333333331
+3171_center,common_peak_long,quatro_padroes,churn,10,-0.12625455414169914,0.29999999999999999
+3171_center,common_peak_long,quatro_padroes,wavy annular,9,0.094192217826455135,0.44444444444444442
+3171_center,common_peak_long,quatro_padroes,plug,3,-0.16527610213239299,0
+3171_center,common_peak_long,quatro_padroes,slug,3,-0.106986078912713,0
+3171_center,self_area_log_l2,churn_annular,churn,10,0.082217824424447888,0.20000000000000001
+3171_center,self_area_log_l2,churn_annular,wavy annular,9,0.0045012714187809477,0.66666666666666663
+3171_center,self_area_log_l2,plug_slug,plug,3,-0.0063410308476311962,0.33333333333333331
+3171_center,self_area_log_l2,plug_slug,slug,3,0.044436951235806009,0.33333333333333331
+3171_center,self_area_log_l2,churn_plug,churn,10,0.045513789271725176,0.90000000000000002
+3171_center,self_area_log_l2,churn_plug,plug,3,0.11907360538099648,0.33333333333333331
+3171_center,self_area_log_l2,churn_slug,churn,10,-0.0029090536184237016,0.80000000000000004
+3171_center,self_area_log_l2,churn_slug,slug,3,0.12025872228614454,0
+3171_center,self_area_log_l2,annular_plug,wavy annular,9,0.004573739161678316,1
+3171_center,self_area_log_l2,annular_plug,plug,3,0.14668007708761222,1
+3171_center,self_area_log_l2,annular_slug,wavy annular,9,0.037964774460491665,1
+3171_center,self_area_log_l2,annular_slug,slug,3,0.21955637201596576,1
+3171_center,self_area_log_l2,quatro_padroes,churn,10,-0.0082325333412112019,0.20000000000000001
+3171_center,self_area_log_l2,quatro_padroes,wavy annular,9,-0.024379870348520814,0.66666666666666663
+3171_center,self_area_log_l2,quatro_padroes,plug,3,-0.0063410308476311962,0
+3171_center,self_area_log_l2,quatro_padroes,slug,3,0.044436951235806009,0
+3171_center,self_width_log_l2,churn_annular,churn,10,0.13126479170913102,0.69999999999999996
+3171_center,self_width_log_l2,churn_annular,wavy annular,9,0.037677371904665566,0.66666666666666663
+3171_center,self_width_log_l2,plug_slug,plug,3,-0.0088447912808248628,0.66666666666666663
+3171_center,self_width_log_l2,plug_slug,slug,3,-0.046288602852703163,0
+3171_center,self_width_log_l2,churn_plug,churn,10,0.0047173204212172023,0.90000000000000002
+3171_center,self_width_log_l2,churn_plug,plug,3,0.092359832828883645,0.33333333333333331
+3171_center,self_width_log_l2,churn_slug,churn,10,0.017549430946105969,0.90000000000000002
+3171_center,self_width_log_l2,churn_slug,slug,3,0.071066163528906948,0
+3171_center,self_width_log_l2,annular_plug,wavy annular,9,-0.031284198937165962,0.77777777777777779
+3171_center,self_width_log_l2,annular_plug,plug,3,0.13851642338309367,0.66666666666666663
+3171_center,self_width_log_l2,annular_slug,wavy annular,9,0.10688168292036992,1
+3171_center,self_width_log_l2,annular_slug,slug,3,0.23688264872896894,1
+3171_center,self_width_log_l2,quatro_padroes,churn,10,-0.011551959609515846,0.59999999999999998
+3171_center,self_width_log_l2,quatro_padroes,wavy annular,9,-0.045325834961523072,0.55555555555555558
+3171_center,self_width_log_l2,quatro_padroes,plug,3,-0.0088447912808248628,0.33333333333333331
+3171_center,self_width_log_l2,quatro_padroes,slug,3,-0.046288602852703163,0
+3171_center,self_area_bands,churn_annular,churn,10,0.1549500192579602,0.80000000000000004
+3171_center,self_area_bands,churn_annular,wavy annular,9,-0.1612315196332027,0.33333333333333331
+3171_center,self_area_bands,plug_slug,plug,3,-0.036124243641729024,0.33333333333333331
+3171_center,self_area_bands,plug_slug,slug,3,0.030215909602008945,0.33333333333333331
+3171_center,self_area_bands,churn_plug,churn,10,0.02296207561261588,0.80000000000000004
+3171_center,self_area_bands,churn_plug,plug,3,-0.060050389106314779,0
+3171_center,self_area_bands,churn_slug,churn,10,0.042664803745670207,0.80000000000000004
+3171_center,self_area_bands,churn_slug,slug,3,0.010331117031161574,0
+3171_center,self_area_bands,annular_plug,wavy annular,9,-0.011103981274811173,0.66666666666666663
+3171_center,self_area_bands,annular_plug,plug,3,0.21024377084276955,0
+3171_center,self_area_bands,annular_slug,wavy annular,9,-0.032433985419724871,0.66666666666666663
+3171_center,self_area_bands,annular_slug,slug,3,0.22634641660996632,0
+3171_center,self_area_bands,quatro_padroes,churn,10,-0.10174568199032526,0.80000000000000004
+3171_center,self_area_bands,quatro_padroes,wavy annular,9,-0.19756994678200496,0.33333333333333331
+3171_center,self_area_bands,quatro_padroes,plug,3,-0.11171741492107819,0
+3171_center,self_area_bands,quatro_padroes,slug,3,-0.022793705114064904,0
+3171_suffix,global_max,churn_annular,churn,10,0.30588914746272727,0.5
+3171_suffix,global_max,churn_annular,wavy annular,9,0.037722613624607458,0.55555555555555558
+3171_suffix,global_max,plug_slug,plug,3,-0.51582301020165633,0
+3171_suffix,global_max,plug_slug,slug,3,0.30583359598511434,0
+3171_suffix,global_max,churn_plug,churn,10,0.099526568268828219,0.80000000000000004
+3171_suffix,global_max,churn_plug,plug,3,-0.47204465923834649,0
+3171_suffix,global_max,churn_slug,churn,10,-0.34509940514055915,1
+3171_suffix,global_max,churn_slug,slug,3,0.13153791606263995,0.33333333333333331
+3171_suffix,global_max,annular_plug,wavy annular,9,0.047220794005218801,0.77777777777777779
+3171_suffix,global_max,annular_plug,plug,3,-0.17881309917662788,0
+3171_suffix,global_max,annular_slug,wavy annular,9,0.05883102327480251,0.88888888888888884
+3171_suffix,global_max,annular_slug,slug,3,0.6102872490147524,0.66666666666666663
+3171_suffix,global_max,quatro_padroes,churn,10,-0.45221256573740864,0.5
+3171_suffix,global_max,quatro_padroes,wavy annular,9,-0.055758403396216655,0.44444444444444442
+3171_suffix,global_max,quatro_padroes,plug,3,-0.65833363503878062,0
+3171_suffix,global_max,quatro_padroes,slug,3,0.13153791606263995,0
+3171_suffix,zero_weighted,churn_annular,churn,10,0.00024326024478289049,0.69999999999999996
+3171_suffix,zero_weighted,churn_annular,wavy annular,9,-0.018572496175506558,0.33333333333333331
+3171_suffix,zero_weighted,plug_slug,plug,3,0.13965933427093774,1
+3171_suffix,zero_weighted,plug_slug,slug,3,0.017040210315700341,0.66666666666666663
+3171_suffix,zero_weighted,churn_plug,churn,10,-0.015731938748927643,0.80000000000000004
+3171_suffix,zero_weighted,churn_plug,plug,3,0.18207340591460452,0.66666666666666663
+3171_suffix,zero_weighted,churn_slug,churn,10,-0.061884874879263217,0.5
+3171_suffix,zero_weighted,churn_slug,slug,3,0.020320030603210464,0.33333333333333331
+3171_suffix,zero_weighted,annular_plug,wavy annular,9,-0.064314515306093167,0.55555555555555558
+3171_suffix,zero_weighted,annular_plug,plug,3,0.15558923398829425,1
+3171_suffix,zero_weighted,annular_slug,wavy annular,9,-0.033140299070624046,0.55555555555555558
+3171_suffix,zero_weighted,annular_slug,slug,3,0.067263161256173945,0.33333333333333331
+3171_suffix,zero_weighted,quatro_padroes,churn,10,-0.07158275048974827,0.5
+3171_suffix,zero_weighted,quatro_padroes,wavy annular,9,-0.083883528164519924,0.22222222222222221
+3171_suffix,zero_weighted,quatro_padroes,plug,3,0.13965933427093774,0.66666666666666663
+3171_suffix,zero_weighted,quatro_padroes,slug,3,-0.0039289916335311275,0.33333333333333331
+3171_suffix,scale_peak_weighted,churn_annular,churn,10,-0.010868683450118169,0.20000000000000001
+3171_suffix,scale_peak_weighted,churn_annular,wavy annular,9,-0.016829596353107518,0.33333333333333331
+3171_suffix,scale_peak_weighted,plug_slug,plug,3,0.20638727811975544,1
+3171_suffix,scale_peak_weighted,plug_slug,slug,3,0.025271826661149976,0.66666666666666663
+3171_suffix,scale_peak_weighted,churn_plug,churn,10,-0.041680800305416529,0.29999999999999999
+3171_suffix,scale_peak_weighted,churn_plug,plug,3,0.24072296406239002,1
+3171_suffix,scale_peak_weighted,churn_slug,churn,10,-0.070719896492692919,0.5
+3171_suffix,scale_peak_weighted,churn_slug,slug,3,0.037069124231768266,0.66666666666666663
+3171_suffix,scale_peak_weighted,annular_plug,wavy annular,9,-0.078084451021948303,0.44444444444444442
+3171_suffix,scale_peak_weighted,annular_plug,plug,3,0.21393530778613712,1
+3171_suffix,scale_peak_weighted,annular_slug,wavy annular,9,-0.038648084039559799,0.55555555555555558
+3171_suffix,scale_peak_weighted,annular_slug,slug,3,0.07382240540262687,0.33333333333333331
+3171_suffix,scale_peak_weighted,quatro_padroes,churn,10,-0.091048922033138455,0
+3171_suffix,scale_peak_weighted,quatro_padroes,wavy annular,9,-0.10745588403165278,0.1111111111111111
+3171_suffix,scale_peak_weighted,quatro_padroes,plug,3,0.20138624880239545,1
+3171_suffix,scale_peak_weighted,quatro_padroes,slug,3,0.016406415611995132,0.33333333333333331
+3171_suffix,scale_peak_power05,churn_annular,churn,10,-0.018532416584699628,0.20000000000000001
+3171_suffix,scale_peak_power05,churn_annular,wavy annular,9,-0.018470319663748833,0.33333333333333331
+3171_suffix,scale_peak_power05,plug_slug,plug,3,0.22045733689711286,1
+3171_suffix,scale_peak_power05,plug_slug,slug,3,0.034096264516373723,0.66666666666666663
+3171_suffix,scale_peak_power05,churn_plug,churn,10,-0.051500013843547132,0.29999999999999999
+3171_suffix,scale_peak_power05,churn_plug,plug,3,0.24640277528277998,1
+3171_suffix,scale_peak_power05,churn_slug,churn,10,-0.073402769912754712,0.5
+3171_suffix,scale_peak_power05,churn_slug,slug,3,0.043467894152735997,0.66666666666666663
+3171_suffix,scale_peak_power05,annular_plug,wavy annular,9,-0.080030713536004341,0.44444444444444442
+3171_suffix,scale_peak_power05,annular_plug,plug,3,0.22085316433335059,1
+3171_suffix,scale_peak_power05,annular_slug,wavy annular,9,-0.035051946972948743,0.55555555555555558
+3171_suffix,scale_peak_power05,annular_slug,slug,3,0.08022172568501984,0.33333333333333331
+3171_suffix,scale_peak_power05,quatro_padroes,churn,10,-0.09446099994690893,0
+3171_suffix,scale_peak_power05,quatro_padroes,wavy annular,9,-0.10882227523061244,0.1111111111111111
+3171_suffix,scale_peak_power05,quatro_padroes,plug,3,0.21102181721945565,1
+3171_suffix,scale_peak_power05,quatro_padroes,slug,3,0.020763493992628491,0.33333333333333331
+3171_suffix,common_lag_peak,churn_annular,churn,10,-0.015359320414373875,0.29999999999999999
+3171_suffix,common_lag_peak,churn_annular,wavy annular,9,-0.010284713234100362,0.33333333333333331
+3171_suffix,common_lag_peak,plug_slug,plug,3,0.18259152344191065,1
+3171_suffix,common_lag_peak,plug_slug,slug,3,-0.02003712890886403,0.33333333333333331
+3171_suffix,common_lag_peak,churn_plug,churn,10,-0.024516064252750779,0.59999999999999998
+3171_suffix,common_lag_peak,churn_plug,plug,3,0.22360623331878052,1
+3171_suffix,common_lag_peak,churn_slug,churn,10,-0.051269519118654273,0.69999999999999996
+3171_suffix,common_lag_peak,churn_slug,slug,3,0.0015131957880126408,0.33333333333333331
+3171_suffix,common_lag_peak,annular_plug,wavy annular,9,-0.033194104905074004,0.44444444444444442
+3171_suffix,common_lag_peak,annular_plug,plug,3,0.21168086765175809,1
+3171_suffix,common_lag_peak,annular_slug,wavy annular,9,-0.017337705213086734,0.66666666666666663
+3171_suffix,common_lag_peak,annular_slug,slug,3,0.031007103662293423,0.33333333333333331
+3171_suffix,common_lag_peak,quatro_padroes,churn,10,-0.073937261968703441,0.20000000000000001
+3171_suffix,common_lag_peak,quatro_padroes,wavy annular,9,-0.063566550467734587,0.33333333333333331
+3171_suffix,common_lag_peak,quatro_padroes,plug,3,0.18259152344191065,1
+3171_suffix,common_lag_peak,quatro_padroes,slug,3,-0.02003712890886403,0.33333333333333331
+3171_suffix,map_mean,churn_annular,churn,10,0.0056399971964365015,0.59999999999999998
+3171_suffix,map_mean,churn_annular,wavy annular,9,-0.0043691315282387878,0.1111111111111111
+3171_suffix,map_mean,plug_slug,plug,3,0.0021196064418946129,1
+3171_suffix,map_mean,plug_slug,slug,3,-0.0033146494046873919,0.33333333333333331
+3171_suffix,map_mean,churn_plug,churn,10,0.00019350705568755384,0.80000000000000004
+3171_suffix,map_mean,churn_plug,plug,3,-0.0017145227368120912,0.33333333333333331
+3171_suffix,map_mean,churn_slug,churn,10,-0.0029061861692749281,0.59999999999999998
+3171_suffix,map_mean,churn_slug,slug,3,-0.010247466495415339,0
+3171_suffix,map_mean,annular_plug,wavy annular,9,-0.0043316744680988077,0.33333333333333331
+3171_suffix,map_mean,annular_plug,plug,3,0.0037653744486490577,0.33333333333333331
+3171_suffix,map_mean,annular_slug,wavy annular,9,0.0033234577798418328,0.66666666666666663
+3171_suffix,map_mean,annular_slug,slug,3,0.0060454741136872908,0
+3171_suffix,map_mean,quatro_padroes,churn,10,-0.0063251907194216885,0.29999999999999999
+3171_suffix,map_mean,quatro_padroes,wavy annular,9,-0.0084196604226538449,0
+3171_suffix,map_mean,quatro_padroes,plug,3,-0.0045878020014604509,0.33333333333333331
+3171_suffix,map_mean,quatro_padroes,slug,3,-0.010247466495415339,0
+3171_suffix,map_mean_weighted,churn_annular,churn,10,0.0045086844944208469,0.5
+3171_suffix,map_mean_weighted,churn_annular,wavy annular,9,-0.009022034965025098,0.22222222222222221
+3171_suffix,map_mean_weighted,plug_slug,plug,3,0.022230566462158197,1
+3171_suffix,map_mean_weighted,plug_slug,slug,3,0.024761748456963262,1
+3171_suffix,map_mean_weighted,churn_plug,churn,10,-0.01745508455442742,0.40000000000000002
+3171_suffix,map_mean_weighted,churn_plug,plug,3,0.040575579569896991,1
+3171_suffix,map_mean_weighted,churn_slug,churn,10,-0.035739383444731702,0.20000000000000001
+3171_suffix,map_mean_weighted,churn_slug,slug,3,0.024809042429713879,0.66666666666666663
+3171_suffix,map_mean_weighted,annular_plug,wavy annular,9,-0.026330164954936286,0.33333333333333331
+3171_suffix,map_mean_weighted,annular_plug,plug,3,0.044807796037247292,1
+3171_suffix,map_mean_weighted,annular_slug,wavy annular,9,-0.028102361438606251,0.22222222222222221
+3171_suffix,map_mean_weighted,annular_slug,slug,3,0.045593205979537622,1
+3171_suffix,map_mean_weighted,quatro_padroes,churn,10,-0.036122298401672109,0.10000000000000001
+3171_suffix,map_mean_weighted,quatro_padroes,wavy annular,9,-0.037821631825344502,0.1111111111111111
+3171_suffix,map_mean_weighted,quatro_padroes,plug,3,0.022230566462158197,1
+3171_suffix,map_mean_weighted,quatro_padroes,slug,3,0.022788148529081498,0.66666666666666663
+3171_suffix,lag_q90_weighted,churn_annular,churn,10,-0.0020376983618433523,0.29999999999999999
+3171_suffix,lag_q90_weighted,churn_annular,wavy annular,9,-0.012013073269503466,0.33333333333333331
+3171_suffix,lag_q90_weighted,plug_slug,plug,3,0.14606343106566205,1
+3171_suffix,lag_q90_weighted,plug_slug,slug,3,0.010229926220570338,0.66666666666666663
+3171_suffix,lag_q90_weighted,churn_plug,churn,10,-0.048099887599980046,0.5
+3171_suffix,lag_q90_weighted,churn_plug,plug,3,0.17525576256722727,1
+3171_suffix,lag_q90_weighted,churn_slug,churn,10,-0.061771690929131803,0.29999999999999999
+3171_suffix,lag_q90_weighted,churn_slug,slug,3,0.028926773267933321,0.33333333333333331
+3171_suffix,lag_q90_weighted,annular_plug,wavy annular,9,-0.064857818861664404,0.44444444444444442
+3171_suffix,lag_q90_weighted,annular_plug,plug,3,0.16789524240056575,1
+3171_suffix,lag_q90_weighted,annular_slug,wavy annular,9,-0.038335195982098745,0.55555555555555558
+3171_suffix,lag_q90_weighted,annular_slug,slug,3,0.062129965517826895,0.33333333333333331
+3171_suffix,lag_q90_weighted,quatro_padroes,churn,10,-0.076494005613358729,0.10000000000000001
+3171_suffix,lag_q90_weighted,quatro_padroes,wavy annular,9,-0.081905266654625664,0.33333333333333331
+3171_suffix,lag_q90_weighted,quatro_padroes,plug,3,0.14606343106566205,1
+3171_suffix,lag_q90_weighted,quatro_padroes,slug,3,0.00219383385575566,0.33333333333333331
+3171_suffix,area05_weighted,churn_annular,churn,10,0.0068731630509071577,0.59999999999999998
+3171_suffix,area05_weighted,churn_annular,wavy annular,9,-0.011360826255275368,0
+3171_suffix,area05_weighted,plug_slug,plug,3,0.024791182107472123,1
+3171_suffix,area05_weighted,plug_slug,slug,3,0.019142956509985678,1
+3171_suffix,area05_weighted,churn_plug,churn,10,-0.0050432749907114854,0.5
+3171_suffix,area05_weighted,churn_plug,plug,3,0.034888324962517044,1
+3171_suffix,area05_weighted,churn_slug,churn,10,-0.023571006136073051,0.40000000000000002
+3171_suffix,area05_weighted,churn_slug,slug,3,0.010754434224011336,0.33333333333333331
+3171_suffix,area05_weighted,annular_plug,wavy annular,9,-0.019654826273345194,0.44444444444444442
+3171_suffix,area05_weighted,annular_plug,plug,3,0.038128208048754116,1
+3171_suffix,area05_weighted,annular_slug,wavy annular,9,-0.01526511960173048,0.55555555555555558
+3171_suffix,area05_weighted,annular_slug,slug,3,0.037029063243843204,0.66666666666666663
+3171_suffix,area05_weighted,quatro_padroes,churn,10,-0.025921070366259187,0.20000000000000001
+3171_suffix,area05_weighted,quatro_padroes,wavy annular,9,-0.02921308737810635,0
+3171_suffix,area05_weighted,quatro_padroes,plug,3,0.024604730141869285,1
+3171_suffix,area05_weighted,quatro_padroes,slug,3,0.0092615474713571237,0.33333333333333331
+3171_suffix,mean_short,churn_annular,churn,10,-0.00069907231041639335,0.59999999999999998
+3171_suffix,mean_short,churn_annular,wavy annular,9,-7.5758964582899989e-06,0.22222222222222221
+3171_suffix,mean_short,plug_slug,plug,3,0.00021144251180445426,0.33333333333333331
+3171_suffix,mean_short,plug_slug,slug,3,0.00040043701581982658,0.33333333333333331
+3171_suffix,mean_short,churn_plug,churn,10,-0.00017414064378051814,0.80000000000000004
+3171_suffix,mean_short,churn_plug,plug,3,-0.00087163877047696911,0
+3171_suffix,mean_short,churn_slug,churn,10,-0.00036799854285792433,0.69999999999999996
+3171_suffix,mean_short,churn_slug,slug,3,-0.0008759920757530176,0
+3171_suffix,mean_short,annular_plug,wavy annular,9,0.0015386657610993572,0.88888888888888884
+3171_suffix,mean_short,annular_plug,plug,3,0.00015034652888011761,0
+3171_suffix,mean_short,annular_slug,wavy annular,9,0.00043404508176185036,1
+3171_suffix,mean_short,annular_slug,slug,3,-0.00076548058501642844,0
+3171_suffix,mean_short,quatro_padroes,churn,10,-0.0016271500313111216,0.40000000000000002
+3171_suffix,mean_short,quatro_padroes,wavy annular,9,-0.00070870562829988327,0.22222222222222221
+3171_suffix,mean_short,quatro_padroes,plug,3,-0.00090176417717800913,0
+3171_suffix,mean_short,quatro_padroes,slug,3,-0.0014897345076034518,0
+3171_suffix,mean_middle,churn_annular,churn,10,-0.0050325404675393738,0.59999999999999998
+3171_suffix,mean_middle,churn_annular,wavy annular,9,-0.00064521646106218376,0.44444444444444442
+3171_suffix,mean_middle,plug_slug,plug,3,0.031749439428709177,1
+3171_suffix,mean_middle,plug_slug,slug,3,0.0019335761187257987,1
+3171_suffix,mean_middle,churn_plug,churn,10,0.00092217674069646567,0.90000000000000002
+3171_suffix,mean_middle,churn_plug,plug,3,0.032128574961002777,0.66666666666666663
+3171_suffix,mean_middle,churn_slug,churn,10,-0.0023689395949326479,0.80000000000000004
+3171_suffix,mean_middle,churn_slug,slug,3,-0.0010063021911553744,0
+3171_suffix,mean_middle,annular_plug,wavy annular,9,-0.0023140031466905597,0.55555555555555558
+3171_suffix,mean_middle,annular_plug,plug,3,0.024688274559011181,0.66666666666666663
+3171_suffix,mean_middle,annular_slug,wavy annular,9,0.001205946665592943,0.88888888888888884
+3171_suffix,mean_middle,annular_slug,slug,3,-0.0018579657020249517,0.33333333333333331
+3171_suffix,mean_middle,quatro_padroes,churn,10,-0.010850061525518264,0.5
+3171_suffix,mean_middle,quatro_padroes,wavy annular,9,-0.01090983234706369,0.44444444444444442
+3171_suffix,mean_middle,quatro_padroes,plug,3,0.024307305131658893,0.66666666666666663
+3171_suffix,mean_middle,quatro_padroes,slug,3,-0.0039326464597436127,0
+3171_suffix,mean_long,churn_annular,churn,10,0.031163587989588053,0.69999999999999996
+3171_suffix,mean_long,churn_annular,wavy annular,9,-0.016752383799677556,0.1111111111111111
+3171_suffix,mean_long,plug_slug,plug,3,-0.038132487904211608,0.66666666666666663
+3171_suffix,mean_long,plug_slug,slug,3,-0.016203515132373517,0
+3171_suffix,mean_long,churn_plug,churn,10,-0.00037032824316907505,0.80000000000000004
+3171_suffix,mean_long,churn_plug,plug,3,-0.051635055318380897,0
+3171_suffix,mean_long,churn_slug,churn,10,-0.0082065815008638653,0.59999999999999998
+3171_suffix,mean_long,churn_slug,slug,3,-0.038252182942096362,0
+3171_suffix,mean_long,annular_plug,wavy annular,9,-0.016616344634119769,0.44444444444444442
+3171_suffix,mean_long,annular_plug,plug,3,-0.019414095792204395,0
+3171_suffix,mean_long,annular_slug,wavy annular,9,0.0096821377363894463,0.77777777777777779
+3171_suffix,mean_long,annular_slug,slug,3,0.028069664097873842,0
+3171_suffix,mean_long,quatro_padroes,churn,10,-0.022974735245529492,0.40000000000000002
+3171_suffix,mean_long,quatro_padroes,wavy annular,9,-0.025406804627407107,0.1111111111111111
+3171_suffix,mean_long,quatro_padroes,plug,3,-0.063908621327326359,0
+3171_suffix,mean_long,quatro_padroes,slug,3,-0.038252182942096362,0
+3171_suffix,common_peak_short,churn_annular,churn,10,-0.018685351339103446,0
+3171_suffix,common_peak_short,churn_annular,wavy annular,9,0.005848366877305786,0.33333333333333331
+3171_suffix,common_peak_short,plug_slug,plug,3,0.012149917849819815,0.66666666666666663
+3171_suffix,common_peak_short,plug_slug,slug,3,0.0030140608713397077,0.66666666666666663
+3171_suffix,common_peak_short,churn_plug,churn,10,0.0033450597639552633,0.80000000000000004
+3171_suffix,common_peak_short,churn_plug,plug,3,0.0093709851278904448,0.66666666666666663
+3171_suffix,common_peak_short,churn_slug,churn,10,-0.0019263498656888825,0.80000000000000004
+3171_suffix,common_peak_short,churn_slug,slug,3,-0.0049742074397676169,0.66666666666666663
+3171_suffix,common_peak_short,annular_plug,wavy annular,9,-0.0042802123130518529,0.77777777777777779
+3171_suffix,common_peak_short,annular_plug,plug,3,-0.022094920369356383,0
+3171_suffix,common_peak_short,annular_slug,wavy annular,9,0.014568254777566523,0.66666666666666663
+3171_suffix,common_peak_short,annular_slug,slug,3,-0.012238431649821392,0.33333333333333331
+3171_suffix,common_peak_short,quatro_padroes,churn,10,-0.024091924115553161,0
+3171_suffix,common_peak_short,quatro_padroes,wavy annular,9,-0.017536365666860721,0
+3171_suffix,common_peak_short,quatro_padroes,plug,3,-0.022094920369356383,0
+3171_suffix,common_peak_short,quatro_padroes,slug,3,-0.013077513078595634,0.33333333333333331
+3171_suffix,common_peak_middle,churn_annular,churn,10,-0.029087659779060755,0.5
+3171_suffix,common_peak_middle,churn_annular,wavy annular,9,-0.0059032543163380991,0.33333333333333331
+3171_suffix,common_peak_middle,plug_slug,plug,3,0.26119201252530827,1
+3171_suffix,common_peak_middle,plug_slug,slug,3,0.05097004041360112,0.66666666666666663
+3171_suffix,common_peak_middle,churn_plug,churn,10,-0.0049615689810095665,0.90000000000000002
+3171_suffix,common_peak_middle,churn_plug,plug,3,0.25325498785745398,1
+3171_suffix,common_peak_middle,churn_slug,churn,10,-0.0095789945275281396,0.90000000000000002
+3171_suffix,common_peak_middle,churn_slug,slug,3,0.036886213524299737,0.33333333333333331
+3171_suffix,common_peak_middle,annular_plug,wavy annular,9,-0.024468758698104685,0.55555555555555558
+3171_suffix,common_peak_middle,annular_plug,plug,3,0.22031510256462553,0.66666666666666663
+3171_suffix,common_peak_middle,annular_slug,wavy annular,9,0.019346923286720129,0.66666666666666663
+3171_suffix,common_peak_middle,annular_slug,slug,3,0.039827606270398309,0.33333333333333331
+3171_suffix,common_peak_middle,quatro_padroes,churn,10,-0.077581173130541303,0.40000000000000002
+3171_suffix,common_peak_middle,quatro_padroes,wavy annular,9,-0.070820491867571167,0.22222222222222221
+3171_suffix,common_peak_middle,quatro_padroes,plug,3,0.21882300218675721,0.66666666666666663
+3171_suffix,common_peak_middle,quatro_padroes,slug,3,0.025459499789467228,0.33333333333333331
+3171_suffix,common_peak_long,churn_annular,churn,10,-0.02860795541400072,0.29999999999999999
+3171_suffix,common_peak_long,churn_annular,wavy annular,9,0.0023160652404968416,0.33333333333333331
+3171_suffix,common_peak_long,plug_slug,plug,3,0.052890634880392452,0.66666666666666663
+3171_suffix,common_peak_long,plug_slug,slug,3,-0.094490510222002055,0
+3171_suffix,common_peak_long,churn_plug,churn,10,-0.079073256935787026,0.69999999999999996
+3171_suffix,common_peak_long,churn_plug,plug,3,-0.039860477217345383,0.66666666666666663
+3171_suffix,common_peak_long,churn_slug,churn,10,-0.0014923614761429393,0.80000000000000004
+3171_suffix,common_peak_long,churn_slug,slug,3,-0.12203637728704457,0
+3171_suffix,common_peak_long,annular_plug,wavy annular,9,-0.062534139273566963,0.66666666666666663
+3171_suffix,common_peak_long,annular_plug,plug,3,-0.045630584658826023,0.66666666666666663
+3171_suffix,common_peak_long,annular_slug,wavy annular,9,0.093647341595769484,1
+3171_suffix,common_peak_long,annular_slug,slug,3,-0.047557928359497292,0
+3171_suffix,common_peak_long,quatro_padroes,churn,10,-0.17230735654370222,0.10000000000000001
+3171_suffix,common_peak_long,quatro_padroes,wavy annular,9,-0.087214506308376349,0.22222222222222221
+3171_suffix,common_peak_long,quatro_padroes,plug,3,-0.069699941313572503,0.66666666666666663
+3171_suffix,common_peak_long,quatro_padroes,slug,3,-0.16263398732605672,0
+3171_suffix,self_area_log_l2,churn_annular,churn,10,-0.041897615522752098,0.40000000000000002
+3171_suffix,self_area_log_l2,churn_annular,wavy annular,9,-0.005530322542776531,0.66666666666666663
+3171_suffix,self_area_log_l2,plug_slug,plug,3,0.0091968949934841272,0.66666666666666663
+3171_suffix,self_area_log_l2,plug_slug,slug,3,0.0066474737982303717,0
+3171_suffix,self_area_log_l2,churn_plug,churn,10,-0.0338225943194988,0.59999999999999998
+3171_suffix,self_area_log_l2,churn_plug,plug,3,0.15181542481700547,0.66666666666666663
+3171_suffix,self_area_log_l2,churn_slug,churn,10,-0.064828353227017924,0.59999999999999998
+3171_suffix,self_area_log_l2,churn_slug,slug,3,0.12008191798849259,0.33333333333333331
+3171_suffix,self_area_log_l2,annular_plug,wavy annular,9,-0.039863481160938199,0.77777777777777779
+3171_suffix,self_area_log_l2,annular_plug,plug,3,0.11488354522926088,0.66666666666666663
+3171_suffix,self_area_log_l2,annular_slug,wavy annular,9,-0.099828506371271386,0.55555555555555558
+3171_suffix,self_area_log_l2,annular_slug,slug,3,0.054942841878974712,0
+3171_suffix,self_area_log_l2,quatro_padroes,churn,10,-0.087208127383302164,0.29999999999999999
+3171_suffix,self_area_log_l2,quatro_padroes,wavy annular,9,-0.12066698145536929,0.44444444444444442
+3171_suffix,self_area_log_l2,quatro_padroes,plug,3,-0.00030694391539412325,0.66666666666666663
+3171_suffix,self_area_log_l2,quatro_padroes,slug,3,-0.0071363647271891805,0
+3171_suffix,self_width_log_l2,churn_annular,churn,10,-0.065329593793881896,0.5
+3171_suffix,self_width_log_l2,churn_annular,wavy annular,9,0.01787806706931468,0.33333333333333331
+3171_suffix,self_width_log_l2,plug_slug,plug,3,0.012235821163424381,1
+3171_suffix,self_width_log_l2,plug_slug,slug,3,-0.026352404835294094,0
+3171_suffix,self_width_log_l2,churn_plug,churn,10,-0.13199547294814404,0.59999999999999998
+3171_suffix,self_width_log_l2,churn_plug,plug,3,0.091957914493875317,0.33333333333333331
+3171_suffix,self_width_log_l2,churn_slug,churn,10,-0.10713975465216771,0.59999999999999998
+3171_suffix,self_width_log_l2,churn_slug,slug,3,0.076534620921400232,0
+3171_suffix,self_width_log_l2,annular_plug,wavy annular,9,-0.08104752694476472,0.44444444444444442
+3171_suffix,self_width_log_l2,annular_plug,plug,3,0.063590962946824134,0.66666666666666663
+3171_suffix,self_width_log_l2,annular_slug,wavy annular,9,-0.043361056447734692,0.44444444444444442
+3171_suffix,self_width_log_l2,annular_slug,slug,3,0.058510309394828576,0
+3171_suffix,self_width_log_l2,quatro_padroes,churn,10,-0.15115081324407234,0.40000000000000002
+3171_suffix,self_width_log_l2,quatro_padroes,wavy annular,9,-0.096090079512368407,0
+3171_suffix,self_width_log_l2,quatro_padroes,plug,3,-0.0012094232612575515,0.33333333333333331
+3171_suffix,self_width_log_l2,quatro_padroes,slug,3,-0.026352404835294094,0
+3171_suffix,self_area_bands,churn_annular,churn,10,-0.11379144022318469,0.40000000000000002
+3171_suffix,self_area_bands,churn_annular,wavy annular,9,0.2030972137814292,0.66666666666666663
+3171_suffix,self_area_bands,plug_slug,plug,3,-0.23830081489521535,0.33333333333333331
+3171_suffix,self_area_bands,plug_slug,slug,3,0.2878394491429393,1
+3171_suffix,self_area_bands,churn_plug,churn,10,0.10725581820310988,0.69999999999999996
+3171_suffix,self_area_bands,churn_plug,plug,3,-0.035119689964152927,0.66666666666666663
+3171_suffix,self_area_bands,churn_slug,churn,10,-0.0521927036883005,0.80000000000000004
+3171_suffix,self_area_bands,churn_slug,slug,3,0.33173021624013938,0.33333333333333331
+3171_suffix,self_area_bands,annular_plug,wavy annular,9,0.23415778410446958,0.88888888888888884
+3171_suffix,self_area_bands,annular_plug,plug,3,-0.22471470842040353,0.33333333333333331
+3171_suffix,self_area_bands,annular_slug,wavy annular,9,0.051054852964086843,0.88888888888888884
+3171_suffix,self_area_bands,annular_slug,slug,3,0.14215945945920708,0
+3171_suffix,self_area_bands,quatro_padroes,churn,10,-0.19011394561419276,0.20000000000000001
+3171_suffix,self_area_bands,quatro_padroes,wavy annular,9,-0.0087145046608258191,0.55555555555555558
+3171_suffix,self_area_bands,quatro_padroes,plug,3,-0.30157617799795883,0.33333333333333331
+3171_suffix,self_area_bands,quatro_padroes,slug,3,0.13868269266778216,0
+5071_prefix,global_max,churn_annular,churn,10,-0.22711317503251935,0.5
+5071_prefix,global_max,churn_annular,wavy annular,9,0.46720211333082595,0.77777777777777779
+5071_prefix,global_max,plug_slug,plug,3,-0.31004570275200122,0
+5071_prefix,global_max,plug_slug,slug,3,0.64984938737707676,0.66666666666666663
+5071_prefix,global_max,churn_plug,churn,10,0.21790164168495654,1
+5071_prefix,global_max,churn_plug,plug,3,-0.22856063724169337,0
+5071_prefix,global_max,churn_slug,churn,10,-0.24982955187435424,0.69999999999999996
+5071_prefix,global_max,churn_slug,slug,3,0.53828324733230426,0
+5071_prefix,global_max,annular_plug,wavy annular,9,0.59536768158064024,1
+5071_prefix,global_max,annular_plug,plug,3,-0.2742837323017287,0
+5071_prefix,global_max,annular_slug,wavy annular,9,-0.24327890008982336,0.77777777777777779
+5071_prefix,global_max,annular_slug,slug,3,-0.039225383285428947,0
+5071_prefix,global_max,quatro_padroes,churn,10,-0.32651186113256392,0.5
+5071_prefix,global_max,quatro_padroes,wavy annular,9,-0.25164524574223174,0.66666666666666663
+5071_prefix,global_max,quatro_padroes,plug,3,-0.39267286046022892,0
+5071_prefix,global_max,quatro_padroes,slug,3,-0.039225383285428947,0
+5071_prefix,zero_weighted,churn_annular,churn,10,0.0079723348317513355,0.5
+5071_prefix,zero_weighted,churn_annular,wavy annular,9,0.00018604657573358956,0.44444444444444442
+5071_prefix,zero_weighted,plug_slug,plug,3,-0.056825295295251377,0
+5071_prefix,zero_weighted,plug_slug,slug,3,0.027368029857387569,1
+5071_prefix,zero_weighted,churn_plug,churn,10,-0.0051580012494159416,0.80000000000000004
+5071_prefix,zero_weighted,churn_plug,plug,3,-0.00066795927097210855,0
+5071_prefix,zero_weighted,churn_slug,churn,10,-0.032718743177635845,0.69999999999999996
+5071_prefix,zero_weighted,churn_slug,slug,3,0.056470778387247067,0.66666666666666663
+5071_prefix,zero_weighted,annular_plug,wavy annular,9,-0.013316828513872524,0.55555555555555558
+5071_prefix,zero_weighted,annular_plug,plug,3,-0.0018759305163585903,0
+5071_prefix,zero_weighted,annular_slug,wavy annular,9,-0.03812458053268724,0.44444444444444442
+5071_prefix,zero_weighted,annular_slug,slug,3,0.057213463989591512,0.66666666666666663
+5071_prefix,zero_weighted,quatro_padroes,churn,10,-0.047971701541945397,0.20000000000000001
+5071_prefix,zero_weighted,quatro_padroes,wavy annular,9,-0.056916119658793805,0
+5071_prefix,zero_weighted,quatro_padroes,plug,3,-0.056825295295251377,0
+5071_prefix,zero_weighted,quatro_padroes,slug,3,0.01644082343036472,0.33333333333333331
+5071_prefix,scale_peak_weighted,churn_annular,churn,10,0.0024211111768931461,0.40000000000000002
+5071_prefix,scale_peak_weighted,churn_annular,wavy annular,9,-0.009976050683553157,0.44444444444444442
+5071_prefix,scale_peak_weighted,plug_slug,plug,3,-0.072535600093949687,0
+5071_prefix,scale_peak_weighted,plug_slug,slug,3,0.031398071077920031,0.66666666666666663
+5071_prefix,scale_peak_weighted,churn_plug,churn,10,-0.045701494740568095,0.5
+5071_prefix,scale_peak_weighted,churn_plug,plug,3,-0.04137241389909501,0
+5071_prefix,scale_peak_weighted,churn_slug,churn,10,-0.034088725362170412,0.5
+5071_prefix,scale_peak_weighted,churn_slug,slug,3,0.07384059696210106,0.66666666666666663
+5071_prefix,scale_peak_weighted,annular_plug,wavy annular,9,-0.038858107454069854,0.55555555555555558
+5071_prefix,scale_peak_weighted,annular_plug,plug,3,-0.022308690763041678,0
+5071_prefix,scale_peak_weighted,annular_slug,wavy annular,9,-0.053359882376730339,0.33333333333333331
+5071_prefix,scale_peak_weighted,annular_slug,slug,3,0.065779214002060007,0.66666666666666663
+5071_prefix,scale_peak_weighted,quatro_padroes,churn,10,-0.066495265149518368,0.20000000000000001
+5071_prefix,scale_peak_weighted,quatro_padroes,wavy annular,9,-0.061757818344695736,0.22222222222222221
+5071_prefix,scale_peak_weighted,quatro_padroes,plug,3,-0.072535600093949687,0
+5071_prefix,scale_peak_weighted,quatro_padroes,slug,3,0.031398071077920031,0.33333333333333331
+5071_prefix,scale_peak_power05,churn_annular,churn,10,-0.0023684800535649906,0.29999999999999999
+5071_prefix,scale_peak_power05,churn_annular,wavy annular,9,-0.01218959547875125,0.44444444444444442
+5071_prefix,scale_peak_power05,plug_slug,plug,3,-0.072122387735812143,0
+5071_prefix,scale_peak_power05,plug_slug,slug,3,0.020006107280745925,0.66666666666666663
+5071_prefix,scale_peak_power05,churn_plug,churn,10,-0.0517052205821531,0.29999999999999999
+5071_prefix,scale_peak_power05,churn_plug,plug,3,-0.039015004453096538,0
+5071_prefix,scale_peak_power05,churn_slug,churn,10,-0.040711322737772358,0.40000000000000002
+5071_prefix,scale_peak_power05,churn_slug,slug,3,0.064511408836378251,0.66666666666666663
+5071_prefix,scale_peak_power05,annular_plug,wavy annular,9,-0.04385232902855711,0.55555555555555558
+5071_prefix,scale_peak_power05,annular_plug,plug,3,-0.021298736449931979,0
+5071_prefix,scale_peak_power05,annular_slug,wavy annular,9,-0.048646200083628292,0.33333333333333331
+5071_prefix,scale_peak_power05,annular_slug,slug,3,0.064822275559503859,0.66666666666666663
+5071_prefix,scale_peak_power05,quatro_padroes,churn,10,-0.074443272197844731,0.10000000000000001
+5071_prefix,scale_peak_power05,quatro_padroes,wavy annular,9,-0.063050359438216269,0.22222222222222221
+5071_prefix,scale_peak_power05,quatro_padroes,plug,3,-0.07458199568988079,0
+5071_prefix,scale_peak_power05,quatro_padroes,slug,3,0.020006107280745925,0.33333333333333331
+5071_prefix,common_lag_peak,churn_annular,churn,10,0.004945439160513045,0.40000000000000002
+5071_prefix,common_lag_peak,churn_annular,wavy annular,9,0.0014576161788508746,0.66666666666666663
+5071_prefix,common_lag_peak,plug_slug,plug,3,-0.057169051882599076,0
+5071_prefix,common_lag_peak,plug_slug,slug,3,0.046272560444080513,1
+5071_prefix,common_lag_peak,churn_plug,churn,10,-0.029236943281836413,0.5
+5071_prefix,common_lag_peak,churn_plug,plug,3,-0.039196979379697891,0
+5071_prefix,common_lag_peak,churn_slug,churn,10,-0.028910763270586289,0.5
+5071_prefix,common_lag_peak,churn_slug,slug,3,0.065332644639283829,0.33333333333333331
+5071_prefix,common_lag_peak,annular_plug,wavy annular,9,-0.037815367444114498,0.55555555555555558
+5071_prefix,common_lag_peak,annular_plug,plug,3,-0.044326225425890708,0
+5071_prefix,common_lag_peak,annular_slug,wavy annular,9,-0.031224270996977752,0.44444444444444442
+5071_prefix,common_lag_peak,annular_slug,slug,3,0.064557358440585702,0.66666666666666663
+5071_prefix,common_lag_peak,quatro_padroes,churn,10,-0.054106503850574715,0.20000000000000001
+5071_prefix,common_lag_peak,quatro_padroes,wavy annular,9,-0.055477572340846888,0.22222222222222221
+5071_prefix,common_lag_peak,quatro_padroes,plug,3,-0.059044670944722301,0
+5071_prefix,common_lag_peak,quatro_padroes,slug,3,0.037232324965463387,0.33333333333333331
+5071_prefix,map_mean,churn_annular,churn,10,-0.0044578165888051503,0.40000000000000002
+5071_prefix,map_mean,churn_annular,wavy annular,9,0.0052218026987136826,0.44444444444444442
+5071_prefix,map_mean,plug_slug,plug,3,-0.012132908170779893,0
+5071_prefix,map_mean,plug_slug,slug,3,0.01134520769596737,0.66666666666666663
+5071_prefix,map_mean,churn_plug,churn,10,0.0022809274983018107,1
+5071_prefix,map_mean,churn_plug,plug,3,-0.0063894611298908298,0
+5071_prefix,map_mean,churn_slug,churn,10,2.6250107425320607e-05,0.90000000000000002
+5071_prefix,map_mean,churn_slug,slug,3,0.014880675388206829,0.66666666666666663
+5071_prefix,map_mean,annular_plug,wavy annular,9,0.0069832496182260489,0.66666666666666663
+5071_prefix,map_mean,annular_plug,plug,3,-0.011264582264716397,0
+5071_prefix,map_mean,annular_slug,wavy annular,9,-0.0010812577644917921,0.66666666666666663
+5071_prefix,map_mean,annular_slug,slug,3,0.0042762095404482404,0.66666666666666663
+5071_prefix,map_mean,quatro_padroes,churn,10,-0.006582158917815167,0.29999999999999999
+5071_prefix,map_mean,quatro_padroes,wavy annular,9,-0.0048066572475314769,0
+5071_prefix,map_mean,quatro_padroes,plug,3,-0.012833053252465768,0
+5071_prefix,map_mean,quatro_padroes,slug,3,0.0042762095404482404,0.66666666666666663
+5071_prefix,map_mean_weighted,churn_annular,churn,10,0.0014788143759695126,0.29999999999999999
+5071_prefix,map_mean_weighted,churn_annular,wavy annular,9,-0.0041512481618469436,0.22222222222222221
+5071_prefix,map_mean_weighted,plug_slug,plug,3,-0.021271839089773054,0
+5071_prefix,map_mean_weighted,plug_slug,slug,3,0.017639269199566071,1
+5071_prefix,map_mean_weighted,churn_plug,churn,10,-0.008647115580964735,0.69999999999999996
+5071_prefix,map_mean_weighted,churn_plug,plug,3,0.002026411866698683,0
+5071_prefix,map_mean_weighted,churn_slug,churn,10,-0.018705514253583862,0.29999999999999999
+5071_prefix,map_mean_weighted,churn_slug,slug,3,0.03068541786947274,0.66666666666666663
+5071_prefix,map_mean_weighted,annular_plug,wavy annular,9,-0.010151545397438375,0.33333333333333331
+5071_prefix,map_mean_weighted,annular_plug,plug,3,0.0060960279528695276,0
+5071_prefix,map_mean_weighted,annular_slug,wavy annular,9,-0.020890816249858474,0.1111111111111111
+5071_prefix,map_mean_weighted,annular_slug,slug,3,0.033899988375711017,0.66666666666666663
+5071_prefix,map_mean_weighted,quatro_padroes,churn,10,-0.019423333646449208,0.10000000000000001
+5071_prefix,map_mean_weighted,quatro_padroes,wavy annular,9,-0.021315898230818409,0
+5071_prefix,map_mean_weighted,quatro_padroes,plug,3,-0.021271839089773054,0
+5071_prefix,map_mean_weighted,quatro_padroes,slug,3,0.017639269199566071,0.33333333333333331
+5071_prefix,lag_q90_weighted,churn_annular,churn,10,0.006893400296438262,0.40000000000000002
+5071_prefix,lag_q90_weighted,churn_annular,wavy annular,9,-0.011707121453755085,0.44444444444444442
+5071_prefix,lag_q90_weighted,plug_slug,plug,3,-0.050118689174245383,0
+5071_prefix,lag_q90_weighted,plug_slug,slug,3,0.035996765144296332,0.66666666666666663
+5071_prefix,lag_q90_weighted,churn_plug,churn,10,-0.029294670788569326,0.5
+5071_prefix,lag_q90_weighted,churn_plug,plug,3,0.00015731298103636703,0
+5071_prefix,lag_q90_weighted,churn_slug,churn,10,-0.042176844313253761,0.40000000000000002
+5071_prefix,lag_q90_weighted,churn_slug,slug,3,0.072010316598750471,1
+5071_prefix,lag_q90_weighted,annular_plug,wavy annular,9,-0.029864779288541549,0.55555555555555558
+5071_prefix,lag_q90_weighted,annular_plug,plug,3,0.01794931303162289,0
+5071_prefix,lag_q90_weighted,annular_slug,wavy annular,9,-0.051757678767147992,0.22222222222222221
+5071_prefix,lag_q90_weighted,annular_slug,slug,3,0.078896083237548417,0.66666666666666663
+5071_prefix,lag_q90_weighted,quatro_padroes,churn,10,-0.051530999936072609,0.20000000000000001
+5071_prefix,lag_q90_weighted,quatro_padroes,wavy annular,9,-0.053776770919889999,0
+5071_prefix,lag_q90_weighted,quatro_padroes,plug,3,-0.050118689174245383,0
+5071_prefix,lag_q90_weighted,quatro_padroes,slug,3,0.035996765144296332,0.66666666666666663
+5071_prefix,area05_weighted,churn_annular,churn,10,0.0014414169208132079,0.5
+5071_prefix,area05_weighted,churn_annular,wavy annular,9,-0.003981514953327301,0
+5071_prefix,area05_weighted,plug_slug,plug,3,-0.01626681219769158,0
+5071_prefix,area05_weighted,plug_slug,slug,3,0.016893332394131263,0.66666666666666663
+5071_prefix,area05_weighted,churn_plug,churn,10,-0.0026658616109251163,0.69999999999999996
+5071_prefix,area05_weighted,churn_plug,plug,3,-0.0042478555352263624,0
+5071_prefix,area05_weighted,churn_slug,churn,10,-0.0096003973206380856,0.5
+5071_prefix,area05_weighted,churn_slug,slug,3,0.022027270724693904,0.66666666666666663
+5071_prefix,area05_weighted,annular_plug,wavy annular,9,-0.0045651691442448999,0.22222222222222221
+5071_prefix,area05_weighted,annular_plug,plug,3,-0.00071725795631843905,0
+5071_prefix,area05_weighted,annular_slug,wavy annular,9,-0.012751703712202918,0.1111111111111111
+5071_prefix,area05_weighted,annular_slug,slug,3,0.024120371660606554,0.66666666666666663
+5071_prefix,area05_weighted,quatro_padroes,churn,10,-0.010363712386540793,0.40000000000000002
+5071_prefix,area05_weighted,quatro_padroes,wavy annular,9,-0.014295047072296667,0
+5071_prefix,area05_weighted,quatro_padroes,plug,3,-0.01626681219769158,0
+5071_prefix,area05_weighted,quatro_padroes,slug,3,0.016301204039117112,0.66666666666666663
+5071_prefix,mean_short,churn_annular,churn,10,0.00064215712430213355,0.69999999999999996
+5071_prefix,mean_short,churn_annular,wavy annular,9,0.00061947983782842256,0.77777777777777779
+5071_prefix,mean_short,plug_slug,plug,3,0.0010413856836656741,0.66666666666666663
+5071_prefix,mean_short,plug_slug,slug,3,-0.0007573718679442441,0.33333333333333331
+5071_prefix,mean_short,churn_plug,churn,10,0.00044518048098422921,0.90000000000000002
+5071_prefix,mean_short,churn_plug,plug,3,0.0013475637509566265,0.66666666666666663
+5071_prefix,mean_short,churn_slug,churn,10,0.00032421657840307516,0.90000000000000002
+5071_prefix,mean_short,churn_slug,slug,3,-0.0005723358259889658,0
+5071_prefix,mean_short,annular_plug,wavy annular,9,0.00038561310234152705,1
+5071_prefix,mean_short,annular_plug,plug,3,0.0013117640858473004,0.66666666666666663
+5071_prefix,mean_short,annular_slug,wavy annular,9,0.00034068745766666238,0.88888888888888884
+5071_prefix,mean_short,annular_slug,slug,3,-0.00053319466313179933,0
+5071_prefix,mean_short,quatro_padroes,churn,10,-0.00028449088016319285,0.59999999999999998
+5071_prefix,mean_short,quatro_padroes,wavy annular,9,-0.00020510952722455915,0.77777777777777779
+5071_prefix,mean_short,quatro_padroes,plug,3,0.00077406114093548153,0.66666666666666663
+5071_prefix,mean_short,quatro_padroes,slug,3,-0.00091949417910771507,0
+5071_prefix,mean_middle,churn_annular,churn,10,-0.0014494265161783565,0.29999999999999999
+5071_prefix,mean_middle,churn_annular,wavy annular,9,0.00029114778013778517,0.33333333333333331
+5071_prefix,mean_middle,plug_slug,plug,3,-0.0058038450890660967,0
+5071_prefix,mean_middle,plug_slug,slug,3,0.013285945292714542,1
+5071_prefix,mean_middle,churn_plug,churn,10,-0.0024792968722591006,0.5
+5071_prefix,mean_middle,churn_plug,plug,3,-0.0071852054621194712,0
+5071_prefix,mean_middle,churn_slug,churn,10,-7.9491747774133092e-06,0.69999999999999996
+5071_prefix,mean_middle,churn_slug,slug,3,0.014386389511798789,0.33333333333333331
+5071_prefix,mean_middle,annular_plug,wavy annular,9,-0.00034740423235445636,0.77777777777777779
+5071_prefix,mean_middle,annular_plug,plug,3,-0.0067852648228551998,0
+5071_prefix,mean_middle,annular_slug,wavy annular,9,0.0016702794595349956,0.88888888888888884
+5071_prefix,mean_middle,annular_slug,slug,3,0.014292571307877587,0.66666666666666663
+5071_prefix,mean_middle,quatro_padroes,churn,10,-0.0071136368793538029,0.20000000000000001
+5071_prefix,mean_middle,quatro_padroes,wavy annular,9,-0.004289472717983368,0.22222222222222221
+5071_prefix,mean_middle,quatro_padroes,plug,3,-0.009165270353297195,0
+5071_prefix,mean_middle,quatro_padroes,slug,3,0.011541818084740011,0
+5071_prefix,mean_long,churn_annular,churn,10,-0.015093963861216159,0.5
+5071_prefix,mean_long,churn_annular,wavy annular,9,0.017980534288179157,0.55555555555555558
+5071_prefix,mean_long,plug_slug,plug,3,-0.037197003885311379,0
+5071_prefix,mean_long,plug_slug,slug,3,0.024777479845356987,0.66666666666666663
+5071_prefix,mean_long,churn_plug,churn,10,0.010499085866172157,1
+5071_prefix,mean_long,churn_plug,plug,3,-0.015464990027784871,0
+5071_prefix,mean_long,churn_slug,churn,10,-0.00071080814031242797,1
+5071_prefix,mean_long,churn_slug,slug,3,0.035798457579808089,0.66666666666666663
+5071_prefix,mean_long,annular_plug,wavy annular,9,0.024564338734811789,0.66666666666666663
+5071_prefix,mean_long,annular_plug,plug,3,-0.033253417578147863,0
+5071_prefix,mean_long,annular_slug,wavy annular,9,-0.0069590141862365829,0.77777777777777779
+5071_prefix,mean_long,annular_slug,slug,3,-0.0017840224622386509,0.66666666666666663
+5071_prefix,mean_long,quatro_padroes,churn,10,-0.019879674671475483,0.5
+5071_prefix,mean_long,quatro_padroes,wavy annular,9,-0.017420694893578198,0.22222222222222221
+5071_prefix,mean_long,quatro_padroes,plug,3,-0.038460266415114276,0
+5071_prefix,mean_long,quatro_padroes,slug,3,-0.0017840224622386509,0.66666666666666663
+5071_prefix,common_peak_short,churn_annular,churn,10,-0.016618241081954706,0.29999999999999999
+5071_prefix,common_peak_short,churn_annular,wavy annular,9,0.0068286455767306393,0.55555555555555558
+5071_prefix,common_peak_short,plug_slug,plug,3,0.0048909189713344731,0.66666666666666663
+5071_prefix,common_peak_short,plug_slug,slug,3,0.00023957625942734739,0
+5071_prefix,common_peak_short,churn_plug,churn,10,-0.0027130342666537204,0.80000000000000004
+5071_prefix,common_peak_short,churn_plug,plug,3,0.01451365438225065,0
+5071_prefix,common_peak_short,churn_slug,churn,10,-0.0029370011092531671,0.80000000000000004
+5071_prefix,common_peak_short,churn_slug,slug,3,0.0098416848296839048,0
+5071_prefix,common_peak_short,annular_plug,wavy annular,9,0.013072615978810324,0.88888888888888884
+5071_prefix,common_peak_short,annular_plug,plug,3,0.0070382573173733915,0
+5071_prefix,common_peak_short,annular_slug,wavy annular,9,-0.0028938207767548025,0.66666666666666663
+5071_prefix,common_peak_short,annular_slug,slug,3,-0.013473424353235135,0
+5071_prefix,common_peak_short,quatro_padroes,churn,10,-0.020857084834956192,0.29999999999999999
+5071_prefix,common_peak_short,quatro_padroes,wavy annular,9,-0.0076731177018698749,0.33333333333333331
+5071_prefix,common_peak_short,quatro_padroes,plug,3,0.0045106566677931377,0
+5071_prefix,common_peak_short,quatro_padroes,slug,3,-0.013473424353235135,0
+5071_prefix,common_peak_middle,churn_annular,churn,10,0.01651602765173537,0.59999999999999998
+5071_prefix,common_peak_middle,churn_annular,wavy annular,9,-0.0082670032768617421,0.66666666666666663
+5071_prefix,common_peak_middle,plug_slug,plug,3,-0.047670335707794637,0.33333333333333331
+5071_prefix,common_peak_middle,plug_slug,slug,3,0.074815200216041752,1
+5071_prefix,common_peak_middle,churn_plug,churn,10,-0.0488809439031819,0.40000000000000002
+5071_prefix,common_peak_middle,churn_plug,plug,3,-0.089261199128293597,0
+5071_prefix,common_peak_middle,churn_slug,churn,10,0.011942874755698661,0.59999999999999998
+5071_prefix,common_peak_middle,churn_slug,slug,3,0.093592905355915121,0.33333333333333331
+5071_prefix,common_peak_middle,annular_plug,wavy annular,9,-0.056298685518629349,0.66666666666666663
+5071_prefix,common_peak_middle,annular_plug,plug,3,-0.073363026552899127,0
+5071_prefix,common_peak_middle,annular_slug,wavy annular,9,0.004222574895830296,0.77777777777777779
+5071_prefix,common_peak_middle,annular_slug,slug,3,0.1088297732954715,0.66666666666666663
+5071_prefix,common_peak_middle,quatro_padroes,churn,10,-0.066617210802493693,0.20000000000000001
+5071_prefix,common_peak_middle,quatro_padroes,wavy annular,9,-0.063318615956732049,0.44444444444444442
+5071_prefix,common_peak_middle,quatro_padroes,plug,3,-0.092125167050517598,0
+5071_prefix,common_peak_middle,quatro_padroes,slug,3,0.073981539168449115,0
+5071_prefix,common_peak_long,churn_annular,churn,10,-0.020371676854130709,0.59999999999999998
+5071_prefix,common_peak_long,churn_annular,wavy annular,9,0.066032531720919746,0.66666666666666663
+5071_prefix,common_peak_long,plug_slug,plug,3,-0.051793695567395964,0
+5071_prefix,common_peak_long,plug_slug,slug,3,-0.043669787998983876,0.66666666666666663
+5071_prefix,common_peak_long,churn_plug,churn,10,0.044942463978803512,0.90000000000000002
+5071_prefix,common_peak_long,churn_plug,plug,3,-0.035875383600394162,0
+5071_prefix,common_peak_long,churn_slug,churn,10,-0.01617812252967981,0.90000000000000002
+5071_prefix,common_peak_long,churn_slug,slug,3,-0.088333224449770001,0.33333333333333331
+5071_prefix,common_peak_long,annular_plug,wavy annular,9,0.13971840761086612,0.88888888888888884
+5071_prefix,common_peak_long,annular_plug,plug,3,-0.014387693838590981,0
+5071_prefix,common_peak_long,annular_slug,wavy annular,9,0.0051243049185742502,0.77777777777777779
+5071_prefix,common_peak_long,annular_slug,slug,3,-0.13938522641141085,0
+5071_prefix,common_peak_long,quatro_padroes,churn,10,-0.086451315632714201,0.5
+5071_prefix,common_peak_long,quatro_padroes,wavy annular,9,-0.024958055402155649,0.44444444444444442
+5071_prefix,common_peak_long,quatro_padroes,plug,3,-0.063179600295567212,0
+5071_prefix,common_peak_long,quatro_padroes,slug,3,-0.14874857206417,0
+5071_prefix,self_area_log_l2,churn_annular,churn,10,-0.01295821341545976,0.5
+5071_prefix,self_area_log_l2,churn_annular,wavy annular,9,0.050903471958957502,0.88888888888888884
+5071_prefix,self_area_log_l2,plug_slug,plug,3,-0.013044401492651314,0.33333333333333331
+5071_prefix,self_area_log_l2,plug_slug,slug,3,0.2084600983549767,0.66666666666666663
+5071_prefix,self_area_log_l2,churn_plug,churn,10,-0.025399252691997991,0.69999999999999996
+5071_prefix,self_area_log_l2,churn_plug,plug,3,0.012953895720918851,0
+5071_prefix,self_area_log_l2,churn_slug,churn,10,-0.079394668166465288,0.80000000000000004
+5071_prefix,self_area_log_l2,churn_slug,slug,3,0.19540724778550425,0.66666666666666663
+5071_prefix,self_area_log_l2,annular_plug,wavy annular,9,0.0025474192841656246,1
+5071_prefix,self_area_log_l2,annular_plug,plug,3,-0.019961111834417459,0
+5071_prefix,self_area_log_l2,annular_slug,wavy annular,9,-0.066318256837989767,0.77777777777777779
+5071_prefix,self_area_log_l2,annular_slug,slug,3,0.15877909533217655,0.66666666666666663
+5071_prefix,self_area_log_l2,quatro_padroes,churn,10,-0.10902904754582714,0.5
+5071_prefix,self_area_log_l2,quatro_padroes,wavy annular,9,-0.079039048218289804,0.66666666666666663
+5071_prefix,self_area_log_l2,quatro_padroes,plug,3,-0.033385005623422524,0
+5071_prefix,self_area_log_l2,quatro_padroes,slug,3,0.15100034222509875,0.66666666666666663
+5071_prefix,self_width_log_l2,churn_annular,churn,10,-0.029120792489634627,0.29999999999999999
+5071_prefix,self_width_log_l2,churn_annular,wavy annular,9,0.030126253368027267,0.55555555555555558
+5071_prefix,self_width_log_l2,plug_slug,plug,3,0.0022017550415068393,0
+5071_prefix,self_width_log_l2,plug_slug,slug,3,0.069498305686630305,0.66666666666666663
+5071_prefix,self_width_log_l2,churn_plug,churn,10,-0.046822971420577841,0.80000000000000004
+5071_prefix,self_width_log_l2,churn_plug,plug,3,-0.0022790997014934117,0
+5071_prefix,self_width_log_l2,churn_slug,churn,10,-0.069831775543931135,0.69999999999999996
+5071_prefix,self_width_log_l2,churn_slug,slug,3,0.056032178610484373,0.33333333333333331
+5071_prefix,self_width_log_l2,annular_plug,wavy annular,9,-0.015873264765563576,0.88888888888888884
+5071_prefix,self_width_log_l2,annular_plug,plug,3,-0.029971676346728485,0
+5071_prefix,self_width_log_l2,annular_slug,wavy annular,9,-0.058032251773920226,0.77777777777777779
+5071_prefix,self_width_log_l2,annular_slug,slug,3,0.01384690278157929,0
+5071_prefix,self_width_log_l2,quatro_padroes,churn,10,-0.12165036102986855,0.10000000000000001
+5071_prefix,self_width_log_l2,quatro_padroes,wavy annular,9,-0.094745209449135837,0.44444444444444442
+5071_prefix,self_width_log_l2,quatro_padroes,plug,3,-0.057552083119109455,0
+5071_prefix,self_width_log_l2,quatro_padroes,slug,3,-0.0078557459337705582,0
+5071_prefix,self_area_bands,churn_annular,churn,10,0.25754331138174386,0.80000000000000004
+5071_prefix,self_area_bands,churn_annular,wavy annular,9,-0.10109538672325727,0.55555555555555558
+5071_prefix,self_area_bands,plug_slug,plug,3,0.29217255638034056,0.66666666666666663
+5071_prefix,self_area_bands,plug_slug,slug,3,0.032758774260717397,0
+5071_prefix,self_area_bands,churn_plug,churn,10,-0.18223547825479744,0.69999999999999996
+5071_prefix,self_area_bands,churn_plug,plug,3,0.2316116965778412,0.33333333333333331
+5071_prefix,self_area_bands,churn_slug,churn,10,-0.04550997584895513,0.90000000000000002
+5071_prefix,self_area_bands,churn_slug,slug,3,0.090678518968070207,0.33333333333333331
+5071_prefix,self_area_bands,annular_plug,wavy annular,9,-0.088291053765359506,0.77777777777777779
+5071_prefix,self_area_bands,annular_plug,plug,3,0.53568463800714883,1
+5071_prefix,self_area_bands,annular_slug,wavy annular,9,-0.040141551513343782,0.88888888888888884
+5071_prefix,self_area_bands,annular_slug,slug,3,0.39272939876052454,1
+5071_prefix,self_area_bands,quatro_padroes,churn,10,-0.2354598076330964,0.5
+5071_prefix,self_area_bands,quatro_padroes,wavy annular,9,-0.12040745680881527,0.55555555555555558
+5071_prefix,self_area_bands,quatro_padroes,plug,3,0.23060854911963266,0.33333333333333331
+5071_prefix,self_area_bands,quatro_padroes,slug,3,0.025520825669841138,0
+5071_center,global_max,churn_annular,churn,10,0.0024550497113992402,0.29999999999999999
+5071_center,global_max,churn_annular,wavy annular,9,0.0043791468261374861,0.44444444444444442
+5071_center,global_max,plug_slug,plug,3,0.09166763219728491,0.66666666666666663
+5071_center,global_max,plug_slug,slug,3,0.51178639300435524,0.66666666666666663
+5071_center,global_max,churn_plug,churn,10,0.024179191380268431,0.90000000000000002
+5071_center,global_max,churn_plug,plug,3,-0.091841667260008905,0.33333333333333331
+5071_center,global_max,churn_slug,churn,10,0.032574449162609584,0.90000000000000002
+5071_center,global_max,churn_slug,slug,3,0.42596200261521577,0
+5071_center,global_max,annular_plug,wavy annular,9,-0.061479948577288793,0.55555555555555558
+5071_center,global_max,annular_plug,plug,3,-0.17706372014587254,0
+5071_center,global_max,annular_slug,wavy annular,9,0.058136693482463295,0.66666666666666663
+5071_center,global_max,annular_slug,slug,3,0.34954143781867669,0
+5071_center,global_max,quatro_padroes,churn,10,-0.22234753366507118,0.29999999999999999
+5071_center,global_max,quatro_padroes,wavy annular,9,-0.24276870627010391,0.33333333333333331
+5071_center,global_max,quatro_padroes,plug,3,-0.18357315180379222,0
+5071_center,global_max,quatro_padroes,slug,3,0.2988390534050851,0
+5071_center,zero_weighted,churn_annular,churn,10,0.020656745958738711,0.69999999999999996
+5071_center,zero_weighted,churn_annular,wavy annular,9,-0.0043410614393242881,0.44444444444444442
+5071_center,zero_weighted,plug_slug,plug,3,-0.040314192651778318,0
+5071_center,zero_weighted,plug_slug,slug,3,0.031824531414501679,0.66666666666666663
+5071_center,zero_weighted,churn_plug,churn,10,-0.0046527326623632369,0.90000000000000002
+5071_center,zero_weighted,churn_plug,plug,3,0.012742935955570236,0
+5071_center,zero_weighted,churn_slug,churn,10,-0.025226472526942413,0.80000000000000004
+5071_center,zero_weighted,churn_slug,slug,3,0.062367375020164983,0.66666666666666663
+5071_center,zero_weighted,annular_plug,wavy annular,9,-0.02085645666525612,0.66666666666666663
+5071_center,zero_weighted,annular_plug,plug,3,0.022023010784725933,0
+5071_center,zero_weighted,annular_slug,wavy annular,9,-0.02852004617490693,0.55555555555555558
+5071_center,zero_weighted,annular_slug,slug,3,0.082022486925125829,0.66666666666666663
+5071_center,zero_weighted,quatro_padroes,churn,10,-0.040743145565055185,0.5
+5071_center,zero_weighted,quatro_padroes,wavy annular,9,-0.042733090158586395,0.33333333333333331
+5071_center,zero_weighted,quatro_padroes,plug,3,-0.040314192651778318,0
+5071_center,zero_weighted,quatro_padroes,slug,3,0.031452401561772973,0.66666666666666663
+5071_center,scale_peak_weighted,churn_annular,churn,10,0.015965422323852813,0.69999999999999996
+5071_center,scale_peak_weighted,churn_annular,wavy annular,9,-0.0072425544419473286,0.55555555555555558
+5071_center,scale_peak_weighted,plug_slug,plug,3,-0.094516824731571081,0
+5071_center,scale_peak_weighted,plug_slug,slug,3,0.039119724509049297,0.66666666666666663
+5071_center,scale_peak_weighted,churn_plug,churn,10,-0.02483457238825882,0.69999999999999996
+5071_center,scale_peak_weighted,churn_plug,plug,3,0.015568370674494056,0
+5071_center,scale_peak_weighted,churn_slug,churn,10,-0.054441624603138228,0.90000000000000002
+5071_center,scale_peak_weighted,churn_slug,slug,3,0.11725146499027857,0.66666666666666663
+5071_center,scale_peak_weighted,annular_plug,wavy annular,9,-0.033122809203213636,0.66666666666666663
+5071_center,scale_peak_weighted,annular_plug,plug,3,0.030356425918731889,0
+5071_center,scale_peak_weighted,annular_slug,wavy annular,9,-0.044030647463931677,0.55555555555555558
+5071_center,scale_peak_weighted,annular_slug,slug,3,0.14667586669461394,0.66666666666666663
+5071_center,scale_peak_weighted,quatro_padroes,churn,10,-0.058039371209566294,0.69999999999999996
+5071_center,scale_peak_weighted,quatro_padroes,wavy annular,9,-0.057192055227303799,0.44444444444444442
+5071_center,scale_peak_weighted,quatro_padroes,plug,3,-0.094516824731571081,0
+5071_center,scale_peak_weighted,quatro_padroes,slug,3,0.039119724509049297,0.33333333333333331
+5071_center,scale_peak_power05,churn_annular,churn,10,0.013264087333668267,0.69999999999999996
+5071_center,scale_peak_power05,churn_annular,wavy annular,9,-0.007586925029340854,0.55555555555555558
+5071_center,scale_peak_power05,plug_slug,plug,3,-0.091787537704289199,0
+5071_center,scale_peak_power05,plug_slug,slug,3,0.035104715314668015,0.66666666666666663
+5071_center,scale_peak_power05,churn_plug,churn,10,-0.030772505594431093,0.69999999999999996
+5071_center,scale_peak_power05,churn_plug,plug,3,0.019522583774862972,0
+5071_center,scale_peak_power05,churn_slug,churn,10,-0.058985745249965901,0.90000000000000002
+5071_center,scale_peak_power05,churn_slug,slug,3,0.11625368039180763,0.66666666666666663
+5071_center,scale_peak_power05,annular_plug,wavy annular,9,-0.032414518573848104,0.66666666666666663
+5071_center,scale_peak_power05,annular_plug,plug,3,0.038760013593342198,0
+5071_center,scale_peak_power05,annular_slug,wavy annular,9,-0.044787536166953273,0.55555555555555558
+5071_center,scale_peak_power05,annular_slug,slug,3,0.14694704208333462,0.66666666666666663
+5071_center,scale_peak_power05,quatro_padroes,churn,10,-0.065111611927399268,0.69999999999999996
+5071_center,scale_peak_power05,quatro_padroes,wavy annular,9,-0.057291356967520288,0.44444444444444442
+5071_center,scale_peak_power05,quatro_padroes,plug,3,-0.091787537704289199,0
+5071_center,scale_peak_power05,quatro_padroes,slug,3,0.035104715314668015,0.33333333333333331
+5071_center,common_lag_peak,churn_annular,churn,10,0.019967320026595761,0.90000000000000002
+5071_center,common_lag_peak,churn_annular,wavy annular,9,0.0049586988007635996,0.66666666666666663
+5071_center,common_lag_peak,plug_slug,plug,3,-0.063600719430633848,0.33333333333333331
+5071_center,common_lag_peak,plug_slug,slug,3,0.087336622346175771,1
+5071_center,common_lag_peak,churn_plug,churn,10,-0.0064422987078396835,1
+5071_center,common_lag_peak,churn_plug,plug,3,0.028346452905558862,0.66666666666666663
+5071_center,common_lag_peak,churn_slug,churn,10,-0.033132840801342038,0.90000000000000002
+5071_center,common_lag_peak,churn_slug,slug,3,0.14826762232319723,0.66666666666666663
+5071_center,common_lag_peak,annular_plug,wavy annular,9,-0.019207483111171243,0.55555555555555558
+5071_center,common_lag_peak,annular_plug,plug,3,0.031656427760898796,0
+5071_center,common_lag_peak,annular_slug,wavy annular,9,-0.021393234992628754,0.77777777777777779
+5071_center,common_lag_peak,annular_slug,slug,3,0.17134207654153943,1
+5071_center,common_lag_peak,quatro_padroes,churn,10,-0.037783945188590781,0.80000000000000004
+5071_center,common_lag_peak,quatro_padroes,wavy annular,9,-0.041307964155339293,0.55555555555555558
+5071_center,common_lag_peak,quatro_padroes,plug,3,-0.063600719430633848,0
+5071_center,common_lag_peak,quatro_padroes,slug,3,0.087336622346175771,0.66666666666666663
+5071_center,map_mean,churn_annular,churn,10,0.003642373356790901,0.80000000000000004
+5071_center,map_mean,churn_annular,wavy annular,9,0.00052997978984722818,0.44444444444444442
+5071_center,map_mean,plug_slug,plug,3,-0.0025739660786575961,0
+5071_center,map_mean,plug_slug,slug,3,0.013156493822318148,1
+5071_center,map_mean,churn_plug,churn,10,0.0083971713983647198,1
+5071_center,map_mean,churn_plug,plug,3,-0.0066425843829967584,0
+5071_center,map_mean,churn_slug,churn,10,0.0055377305593792784,0.90000000000000002
+5071_center,map_mean,churn_slug,slug,3,0.0062127449493688562,0.33333333333333331
+5071_center,map_mean,annular_plug,wavy annular,9,0.0025451946945208312,0.88888888888888884
+5071_center,map_mean,annular_plug,plug,3,-0.0093406331714989948,0
+5071_center,map_mean,annular_slug,wavy annular,9,0.0080854124279592342,0.88888888888888884
+5071_center,map_mean,annular_slug,slug,3,0.01190934102095819,0.33333333333333331
+5071_center,map_mean,quatro_padroes,churn,10,1.6165385235259246e-05,0.69999999999999996
+5071_center,map_mean,quatro_padroes,wavy annular,9,-0.0033567671689938156,0.33333333333333331
+5071_center,map_mean,quatro_padroes,plug,3,-0.01045659818250178,0
+5071_center,map_mean,quatro_padroes,slug,3,0.0062127449493688562,0.33333333333333331
+5071_center,map_mean_weighted,churn_annular,churn,10,0.0079089650541217284,0.80000000000000004
+5071_center,map_mean_weighted,churn_annular,wavy annular,9,-0.002527480587224839,0.44444444444444442
+5071_center,map_mean_weighted,plug_slug,plug,3,-0.016243263244605361,0
+5071_center,map_mean_weighted,plug_slug,slug,3,0.014860402305799852,1
+5071_center,map_mean_weighted,churn_plug,churn,10,-0.0049620917771252731,0.80000000000000004
+5071_center,map_mean_weighted,churn_plug,plug,3,0.001914494922498616,0
+5071_center,map_mean_weighted,churn_slug,churn,10,-0.018580327363507943,0.20000000000000001
+5071_center,map_mean_weighted,churn_slug,slug,3,0.019308308349854558,0.66666666666666663
+5071_center,map_mean_weighted,annular_plug,wavy annular,9,-0.01106199843337983,0.55555555555555558
+5071_center,map_mean_weighted,annular_plug,plug,3,0.0062746648232949133,0
+5071_center,map_mean_weighted,annular_slug,wavy annular,9,-0.016684520547280826,0.44444444444444442
+5071_center,map_mean_weighted,annular_slug,slug,3,0.031462496321885081,1
+5071_center,map_mean_weighted,quatro_padroes,churn,10,-0.018621599843300495,0.20000000000000001
+5071_center,map_mean_weighted,quatro_padroes,wavy annular,9,-0.018787978481398342,0.22222222222222221
+5071_center,map_mean_weighted,quatro_padroes,plug,3,-0.016243263244605361,0
+5071_center,map_mean_weighted,quatro_padroes,slug,3,0.014029151390095676,0.66666666666666663
+5071_center,lag_q90_weighted,churn_annular,churn,10,0.020693449147880429,0.69999999999999996
+5071_center,lag_q90_weighted,churn_annular,wavy annular,9,-0.0064421050905970351,0.44444444444444442
+5071_center,lag_q90_weighted,plug_slug,plug,3,-0.075382934236197199,0
+5071_center,lag_q90_weighted,plug_slug,slug,3,0.0156765284090979,0.66666666666666663
+5071_center,lag_q90_weighted,churn_plug,churn,10,-0.017225106762428645,0.80000000000000004
+5071_center,lag_q90_weighted,churn_plug,plug,3,0.0099176252693928945,0
+5071_center,lag_q90_weighted,churn_slug,churn,10,-0.045396167864011676,0.69999999999999996
+5071_center,lag_q90_weighted,churn_slug,slug,3,0.07200912093680388,0.33333333333333331
+5071_center,lag_q90_weighted,annular_plug,wavy annular,9,-0.034760821629504807,0.55555555555555558
+5071_center,lag_q90_weighted,annular_plug,plug,3,0.019544594783960416,0
+5071_center,lag_q90_weighted,annular_slug,wavy annular,9,-0.044719588164806756,0.55555555555555558
+5071_center,lag_q90_weighted,annular_slug,slug,3,0.097778075874928039,0.66666666666666663
+5071_center,lag_q90_weighted,quatro_padroes,churn,10,-0.047160898953376169,0.69999999999999996
+5071_center,lag_q90_weighted,quatro_padroes,wavy annular,9,-0.050266185237405996,0.44444444444444442
+5071_center,lag_q90_weighted,quatro_padroes,plug,3,-0.075382934236197199,0
+5071_center,lag_q90_weighted,quatro_padroes,slug,3,0.0156765284090979,0.33333333333333331
+5071_center,area05_weighted,churn_annular,churn,10,0.0048656547047262726,0.90000000000000002
+5071_center,area05_weighted,churn_annular,wavy annular,9,-0.0043186586319052672,0.22222222222222221
+5071_center,area05_weighted,plug_slug,plug,3,-0.023551264523792196,0
+5071_center,area05_weighted,plug_slug,slug,3,0.0021505555129995141,0.66666666666666663
+5071_center,area05_weighted,churn_plug,churn,10,0.0038374426209477771,0.90000000000000002
+5071_center,area05_weighted,churn_plug,plug,3,-0.0040041889289922855,0
+5071_center,area05_weighted,churn_slug,churn,10,-0.0098565808767409006,0.29999999999999999
+5071_center,area05_weighted,churn_slug,slug,3,0.0080157936064325121,0.33333333333333331
+5071_center,area05_weighted,annular_plug,wavy annular,9,-0.0049614845264676398,0.66666666666666663
+5071_center,area05_weighted,annular_plug,plug,3,-0.0035951700327962626,0
+5071_center,area05_weighted,annular_slug,wavy annular,9,-0.010960161102180285,0.33333333333333331
+5071_center,area05_weighted,annular_slug,slug,3,0.015961132252389459,0.66666666666666663
+5071_center,area05_weighted,quatro_padroes,churn,10,-0.011142359434244586,0.29999999999999999
+5071_center,area05_weighted,quatro_padroes,wavy annular,9,-0.012659137073957471,0.22222222222222221
+5071_center,area05_weighted,quatro_padroes,plug,3,-0.023551264523792196,0
+5071_center,area05_weighted,quatro_padroes,slug,3,-0.00013767748098432453,0.33333333333333331
+5071_center,mean_short,churn_annular,churn,10,0.00014914535608051544,0.29999999999999999
+5071_center,mean_short,churn_annular,wavy annular,9,-0.00026206946826753697,0.22222222222222221
+5071_center,mean_short,plug_slug,plug,3,-0.00062254811610456748,0.33333333333333331
+5071_center,mean_short,plug_slug,slug,3,-0.0013065687363130836,0
+5071_center,mean_short,churn_plug,churn,10,0.00045037846494985664,0.80000000000000004
+5071_center,mean_short,churn_plug,plug,3,-0.00010278332048253467,0.66666666666666663
+5071_center,mean_short,churn_slug,churn,10,0.00035153236297592394,0.90000000000000002
+5071_center,mean_short,churn_slug,slug,3,-0.00088677407425465354,0
+5071_center,mean_short,annular_plug,wavy annular,9,9.9227446919285343e-05,0.66666666666666663
+5071_center,mean_short,annular_plug,plug,3,-4.3371866864555563e-05,0.33333333333333331
+5071_center,mean_short,annular_slug,wavy annular,9,-0.00033885823312298168,1
+5071_center,mean_short,annular_slug,slug,3,-0.0011661888574865278,0
+5071_center,mean_short,quatro_padroes,churn,10,-0.00031187355090270459,0.29999999999999999
+5071_center,mean_short,quatro_padroes,wavy annular,9,-0.00078949085371659991,0.22222222222222221
+5071_center,mean_short,quatro_padroes,plug,3,-0.00085064464548863271,0
+5071_center,mean_short,quatro_padroes,slug,3,-0.0017075187911338927,0
+5071_center,mean_middle,churn_annular,churn,10,0.00063043366317789792,0.5
+5071_center,mean_middle,churn_annular,wavy annular,9,0.0048021800919623931,0.55555555555555558
+5071_center,mean_middle,plug_slug,plug,3,-0.0077179511978320986,0
+5071_center,mean_middle,plug_slug,slug,3,0.0071508983124699147,0.66666666666666663
+5071_center,mean_middle,churn_plug,churn,10,0.00050176127290728649,0.80000000000000004
+5071_center,mean_middle,churn_plug,plug,3,-0.0026495087209866216,0
+5071_center,mean_middle,churn_slug,churn,10,0.00062563170317330005,0.90000000000000002
+5071_center,mean_middle,churn_slug,slug,3,0.012347472910850294,0.33333333333333331
+5071_center,mean_middle,annular_plug,wavy annular,9,0.0014573715401817401,0.88888888888888884
+5071_center,mean_middle,annular_plug,plug,3,-0.0058603287338833592,0
+5071_center,mean_middle,annular_slug,wavy annular,9,0.0034727103662147134,0.88888888888888884
+5071_center,mean_middle,annular_slug,slug,3,0.011063826306579186,0.33333333333333331
+5071_center,mean_middle,quatro_padroes,churn,10,-0.0027718172466172043,0.5
+5071_center,mean_middle,quatro_padroes,wavy annular,9,-0.0031842038147622525,0.55555555555555558
+5071_center,mean_middle,quatro_padroes,plug,3,-0.0098725997649431168,0
+5071_center,mean_middle,quatro_padroes,slug,3,0.0066316311037539627,0.33333333333333331
+5071_center,mean_long,churn_annular,churn,10,0.01202245003267619,0.90000000000000002
+5071_center,mean_long,churn_annular,wavy annular,9,-0.0036267996860194201,0.22222222222222221
+5071_center,mean_long,plug_slug,plug,3,0.0012402459648858039,0.33333333333333331
+5071_center,mean_long,plug_slug,slug,3,0.039478716112320809,1
+5071_center,mean_long,churn_plug,churn,10,0.028639835857557593,1
+5071_center,mean_long,churn_plug,plug,3,-0.020218459610791308,0
+5071_center,mean_long,churn_slug,churn,10,0.01845356381875991,0.80000000000000004
+5071_center,mean_long,churn_slug,slug,3,0.0077272075619084146,0.33333333333333331
+5071_center,mean_long,annular_plug,wavy annular,9,0.0070661953929131993,0.88888888888888884
+5071_center,mean_long,annular_plug,plug,3,-0.025770562257863807,0
+5071_center,mean_long,annular_slug,wavy annular,9,0.024681769645952787,0.88888888888888884
+5071_center,mean_long,annular_slug,slug,3,0.030066722500064608,0.33333333333333331
+5071_center,mean_long,quatro_padroes,churn,10,-0.0019899534927884143,0.69999999999999996
+5071_center,mean_long,quatro_padroes,wavy annular,9,-0.01554374464633685,0.22222222222222221
+5071_center,mean_long,quatro_padroes,plug,3,-0.031301872720134294,0
+5071_center,mean_long,quatro_padroes,slug,3,0.0068686854972681765,0.33333333333333331
+5071_center,common_peak_short,churn_annular,churn,10,-0.013625374479013502,0.29999999999999999
+5071_center,common_peak_short,churn_annular,wavy annular,9,-0.008949314281796945,0.22222222222222221
+5071_center,common_peak_short,plug_slug,plug,3,-0.01916843844787549,0
+5071_center,common_peak_short,plug_slug,slug,3,-0.011590863953134712,0.33333333333333331
+5071_center,common_peak_short,churn_plug,churn,10,-0.00072015293035749476,0.69999999999999996
+5071_center,common_peak_short,churn_plug,plug,3,-0.0044450012187943781,0
+5071_center,common_peak_short,churn_slug,churn,10,-0.011133425548497802,0.5
+5071_center,common_peak_short,churn_slug,slug,3,-0.0074410956296222701,0.33333333333333331
+5071_center,common_peak_short,annular_plug,wavy annular,9,-0.0090524895195119928,0.77777777777777779
+5071_center,common_peak_short,annular_plug,plug,3,-0.017393024080119984,0
+5071_center,common_peak_short,annular_slug,wavy annular,9,-0.0032686611901521809,0.55555555555555558
+5071_center,common_peak_short,annular_slug,slug,3,-0.004196830866478595,0
+5071_center,common_peak_short,quatro_padroes,churn,10,-0.021091724535771045,0.20000000000000001
+5071_center,common_peak_short,quatro_padroes,wavy annular,9,-0.019984033772470433,0.22222222222222221
+5071_center,common_peak_short,quatro_padroes,plug,3,-0.027062497405242605,0
+5071_center,common_peak_short,quatro_padroes,slug,3,-0.02215670950893792,0
+5071_center,common_peak_middle,churn_annular,churn,10,0.016113593370135803,0.69999999999999996
+5071_center,common_peak_middle,churn_annular,wavy annular,9,0.011292481526242994,0.44444444444444442
+5071_center,common_peak_middle,plug_slug,plug,3,-0.066393438289630236,0
+5071_center,common_peak_middle,plug_slug,slug,3,0.11409710137484279,1
+5071_center,common_peak_middle,churn_plug,churn,10,-0.0031851063498058918,1
+5071_center,common_peak_middle,churn_plug,plug,3,0.018337044603991919,0.33333333333333331
+5071_center,common_peak_middle,churn_slug,churn,10,-0.01521785508812917,0.90000000000000002
+5071_center,common_peak_middle,churn_slug,slug,3,0.1813061458929304,1
+5071_center,common_peak_middle,annular_plug,wavy annular,9,-0.0080597613552570481,0.77777777777777779
+5071_center,common_peak_middle,annular_plug,plug,3,0.019403398782650173,0
+5071_center,common_peak_middle,annular_slug,wavy annular,9,0.0018111871632205355,0.66666666666666663
+5071_center,common_peak_middle,annular_slug,slug,3,0.20100062063162547,1
+5071_center,common_peak_middle,quatro_padroes,churn,10,-0.027854534130220758,0.69999999999999996
+5071_center,common_peak_middle,quatro_padroes,wavy annular,9,-0.043733176591894525,0.44444444444444442
+5071_center,common_peak_middle,quatro_padroes,plug,3,-0.066393438289630236,0
+5071_center,common_peak_middle,quatro_padroes,slug,3,0.11409710137484279,1
+5071_center,common_peak_long,churn_annular,churn,10,0.042667334581634284,0.69999999999999996
+5071_center,common_peak_long,churn_annular,wavy annular,9,-0.0049486446594799076,0.33333333333333331
+5071_center,common_peak_long,plug_slug,plug,3,-0.032756879533884599,0.33333333333333331
+5071_center,common_peak_long,plug_slug,slug,3,0.067670251915491017,0.66666666666666663
+5071_center,common_peak_long,churn_plug,churn,10,0.063417956377032111,0.69999999999999996
+5071_center,common_peak_long,churn_plug,plug,3,0.028421318590884408,0
+5071_center,common_peak_long,churn_slug,churn,10,0.061533852892865545,0.80000000000000004
+5071_center,common_peak_long,churn_slug,slug,3,0.12314634160305062,0.33333333333333331
+5071_center,common_peak_long,annular_plug,wavy annular,9,0.027864397378336642,0.88888888888888884
+5071_center,common_peak_long,annular_plug,plug,3,0.041263620937352828,0.33333333333333331
+5071_center,common_peak_long,annular_slug,wavy annular,9,0.048534660525862278,0.88888888888888884
+5071_center,common_peak_long,annular_slug,slug,3,0.15101687768128289,0.66666666666666663
+5071_center,common_peak_long,quatro_padroes,churn,10,-0.028400127669537412,0.59999999999999998
+5071_center,common_peak_long,quatro_padroes,wavy annular,9,-0.041398232529010856,0.33333333333333331
+5071_center,common_peak_long,quatro_padroes,plug,3,-0.054536495991195061,0
+5071_center,common_peak_long,quatro_padroes,slug,3,0.035865392530358607,0.33333333333333331
+5071_center,self_area_log_l2,churn_annular,churn,10,0.080771741715194925,0.59999999999999998
+5071_center,self_area_log_l2,churn_annular,wavy annular,9,-0.022837143739145378,0.44444444444444442
+5071_center,self_area_log_l2,plug_slug,plug,3,-0.011217014016955332,0.66666666666666663
+5071_center,self_area_log_l2,plug_slug,slug,3,0.033977637559864327,0.33333333333333331
+5071_center,self_area_log_l2,churn_plug,churn,10,-0.005275554379307293,1
+5071_center,self_area_log_l2,churn_plug,plug,3,0.048650115281797475,0
+5071_center,self_area_log_l2,churn_slug,churn,10,-0.022784478706582716,1
+5071_center,self_area_log_l2,churn_slug,slug,3,0.07677552180111899,0.33333333333333331
+5071_center,self_area_log_l2,annular_plug,wavy annular,9,-0.1112267275644499,0.33333333333333331
+5071_center,self_area_log_l2,annular_plug,plug,3,0.043101080776350394,0
+5071_center,self_area_log_l2,annular_slug,wavy annular,9,-0.032489838467569879,0.88888888888888884
+5071_center,self_area_log_l2,annular_slug,slug,3,0.15937635564851357,0.33333333333333331
+5071_center,self_area_log_l2,quatro_padroes,churn,10,-0.036911972153624746,0.59999999999999998
+5071_center,self_area_log_l2,quatro_padroes,wavy annular,9,-0.12351060421651322,0.22222222222222221
+5071_center,self_area_log_l2,quatro_padroes,plug,3,-0.026193665858804813,0
+5071_center,self_area_log_l2,quatro_padroes,slug,3,0.022688860300945874,0
+5071_center,self_width_log_l2,churn_annular,churn,10,0.10245566107128631,0.69999999999999996
+5071_center,self_width_log_l2,churn_annular,wavy annular,9,-0.050988152474162537,0.55555555555555558
+5071_center,self_width_log_l2,plug_slug,plug,3,-0.052463201919044189,0
+5071_center,self_width_log_l2,plug_slug,slug,3,0.20910803960104105,1
+5071_center,self_width_log_l2,churn_plug,churn,10,0.045085478905284422,1
+5071_center,self_width_log_l2,churn_plug,plug,3,-0.052541707056830644,0
+5071_center,self_width_log_l2,churn_slug,churn,10,-0.01140940136126262,0.90000000000000002
+5071_center,self_width_log_l2,churn_slug,slug,3,0.16263187297167714,0.33333333333333331
+5071_center,self_width_log_l2,annular_plug,wavy annular,9,-0.066022507969869776,1
+5071_center,self_width_log_l2,annular_plug,plug,3,-0.0039852514904118149,0
+5071_center,self_width_log_l2,annular_slug,wavy annular,9,0.0018173341515414683,0.88888888888888884
+5071_center,self_width_log_l2,annular_slug,slug,3,0.2951845617861471,1
+5071_center,self_width_log_l2,quatro_padroes,churn,10,-0.015691397534932754,0.59999999999999998
+5071_center,self_width_log_l2,quatro_padroes,wavy annular,9,-0.10996616635284366,0.55555555555555558
+5071_center,self_width_log_l2,quatro_padroes,plug,3,-0.10662331100443241,0
+5071_center,self_width_log_l2,quatro_padroes,slug,3,0.16263187297167714,0.33333333333333331
+5071_center,self_area_bands,churn_annular,churn,10,0.054854907630963054,0.20000000000000001
+5071_center,self_area_bands,churn_annular,wavy annular,9,-0.14405828419865813,0.33333333333333331
+5071_center,self_area_bands,plug_slug,plug,3,-0.28665305704060479,0.33333333333333331
+5071_center,self_area_bands,plug_slug,slug,3,0.1642962685561673,0
+5071_center,self_area_bands,churn_plug,churn,10,-0.051420732217303824,0.5
+5071_center,self_area_bands,churn_plug,plug,3,-0.12439447052703889,0
+5071_center,self_area_bands,churn_slug,churn,10,-0.22938895379640895,0.69999999999999996
+5071_center,self_area_bands,churn_slug,slug,3,0.17504211765839464,0
+5071_center,self_area_bands,annular_plug,wavy annular,9,-0.13325741616018039,0.66666666666666663
+5071_center,self_area_bands,annular_plug,plug,3,-0.029250528929329018,0
+5071_center,self_area_bands,annular_slug,wavy annular,9,-0.24969086997179668,0.66666666666666663
+5071_center,self_area_bands,annular_slug,slug,3,0.30242718224215642,0
+5071_center,self_area_bands,quatro_padroes,churn,10,-0.2450173423087621,0.10000000000000001
+5071_center,self_area_bands,quatro_padroes,wavy annular,9,-0.28253459027415251,0.33333333333333331
+5071_center,self_area_bands,quatro_padroes,plug,3,-0.28665305704060479,0
+5071_center,self_area_bands,quatro_padroes,slug,3,0.15147327790552587,0
+5071_suffix,global_max,churn_annular,churn,10,0.3375414440384969,0.5
+5071_suffix,global_max,churn_annular,wavy annular,9,-0.2035229549767345,0.33333333333333331
+5071_suffix,global_max,plug_slug,plug,3,0.30713452325442037,0.66666666666666663
+5071_suffix,global_max,plug_slug,slug,3,0.029571088927192513,0.66666666666666663
+5071_suffix,global_max,churn_plug,churn,10,0.28788185584662096,1
+5071_suffix,global_max,churn_plug,plug,3,-0.27685115525669501,0.66666666666666663
+5071_suffix,global_max,churn_slug,churn,10,0.55420288145738394,0.69999999999999996
+5071_suffix,global_max,churn_slug,slug,3,-0.14521714801147187,0
+5071_suffix,global_max,annular_plug,wavy annular,9,-0.065300916039073342,0.77777777777777779
+5071_suffix,global_max,annular_plug,plug,3,-0.068186261671788817,0.66666666666666663
+5071_suffix,global_max,annular_slug,wavy annular,9,0.19293778324139269,0.55555555555555558
+5071_suffix,global_max,annular_slug,slug,3,-0.15935060582704275,0
+5071_suffix,global_max,quatro_padroes,churn,10,0.26072543340969734,0.29999999999999999
+5071_suffix,global_max,quatro_padroes,wavy annular,9,-0.26104660231211846,0.33333333333333331
+5071_suffix,global_max,quatro_padroes,plug,3,-0.27685115525669501,0.66666666666666663
+5071_suffix,global_max,quatro_padroes,slug,3,-0.25831572931093477,0
+5071_suffix,zero_weighted,churn_annular,churn,10,0.0036829849971077148,0.5
+5071_suffix,zero_weighted,churn_annular,wavy annular,9,-0.0029886375486224076,0.55555555555555558
+5071_suffix,zero_weighted,plug_slug,plug,3,0.092573336547578863,0.66666666666666663
+5071_suffix,zero_weighted,plug_slug,slug,3,0.080142077963783254,0.66666666666666663
+5071_suffix,zero_weighted,churn_plug,churn,10,-0.032965561161170227,0.5
+5071_suffix,zero_weighted,churn_plug,plug,3,0.068730034768632597,0.66666666666666663
+5071_suffix,zero_weighted,churn_slug,churn,10,-0.032143628086924128,0.29999999999999999
+5071_suffix,zero_weighted,churn_slug,slug,3,0.058045292879553935,0.66666666666666663
+5071_suffix,zero_weighted,annular_plug,wavy annular,9,-0.035624952085571877,0.55555555555555558
+5071_suffix,zero_weighted,annular_plug,plug,3,0.072033833674423245,0.66666666666666663
+5071_suffix,zero_weighted,annular_slug,wavy annular,9,-0.0080760990194198041,0.88888888888888884
+5071_suffix,zero_weighted,annular_slug,slug,3,0.087317589609857804,0.33333333333333331
+5071_suffix,zero_weighted,quatro_padroes,churn,10,-0.060358043761372285,0.10000000000000001
+5071_suffix,zero_weighted,quatro_padroes,wavy annular,9,-0.046247575255636025,0.44444444444444442
+5071_suffix,zero_weighted,quatro_padroes,plug,3,0.068206884466920858,0.66666666666666663
+5071_suffix,zero_weighted,quatro_padroes,slug,3,0.056771399406169008,0.33333333333333331
+5071_suffix,scale_peak_weighted,churn_annular,churn,10,0.010935328927875753,0.5
+5071_suffix,scale_peak_weighted,churn_annular,wavy annular,9,0.0010025800342077606,0.55555555555555558
+5071_suffix,scale_peak_weighted,plug_slug,plug,3,0.069408295433818351,1
+5071_suffix,scale_peak_weighted,plug_slug,slug,3,0.098015394985655604,1
+5071_suffix,scale_peak_weighted,churn_plug,churn,10,-0.033608373802682251,0.40000000000000002
+5071_suffix,scale_peak_weighted,churn_plug,plug,3,0.11094966396771115,1
+5071_suffix,scale_peak_weighted,churn_slug,churn,10,-0.043917320435038182,0.40000000000000002
+5071_suffix,scale_peak_weighted,churn_slug,slug,3,0.12765118525700325,0.66666666666666663
+5071_suffix,scale_peak_weighted,annular_plug,wavy annular,9,-0.022292639051454486,0.66666666666666663
+5071_suffix,scale_peak_weighted,annular_plug,plug,3,0.12957493764884978,1
+5071_suffix,scale_peak_weighted,annular_slug,wavy annular,9,-0.034760349396643242,0.66666666666666663
+5071_suffix,scale_peak_weighted,annular_slug,slug,3,0.14425187162763331,0.66666666666666663
+5071_suffix,scale_peak_weighted,quatro_padroes,churn,10,-0.061032376514736308,0.20000000000000001
+5071_suffix,scale_peak_weighted,quatro_padroes,wavy annular,9,-0.054109838046884864,0.33333333333333331
+5071_suffix,scale_peak_weighted,quatro_padroes,plug,3,0.069408295433818351,1
+5071_suffix,scale_peak_weighted,quatro_padroes,slug,3,0.096073218420242912,0.66666666666666663
+5071_suffix,scale_peak_power05,churn_annular,churn,10,0.011477163289130602,0.40000000000000002
+5071_suffix,scale_peak_power05,churn_annular,wavy annular,9,0.0027930415465959643,0.66666666666666663
+5071_suffix,scale_peak_power05,plug_slug,plug,3,0.07603831045555437,1
+5071_suffix,scale_peak_power05,plug_slug,slug,3,0.10724532244419034,1
+5071_suffix,scale_peak_power05,churn_plug,churn,10,-0.032481153212563479,0.40000000000000002
+5071_suffix,scale_peak_power05,churn_plug,plug,3,0.11892652746013256,1
+5071_suffix,scale_peak_power05,churn_slug,churn,10,-0.05030819077463948,0.40000000000000002
+5071_suffix,scale_peak_power05,churn_slug,slug,3,0.13058157142942353,0.66666666666666663
+5071_suffix,scale_peak_power05,annular_plug,wavy annular,9,-0.021253786191523467,0.66666666666666663
+5071_suffix,scale_peak_power05,annular_plug,plug,3,0.1359648465992799,1
+5071_suffix,scale_peak_power05,annular_slug,wavy annular,9,-0.030828715535796691,0.55555555555555558
+5071_suffix,scale_peak_power05,annular_slug,slug,3,0.15522951298150386,0.66666666666666663
+5071_suffix,scale_peak_power05,quatro_padroes,churn,10,-0.064630915752194013,0.20000000000000001
+5071_suffix,scale_peak_power05,quatro_padroes,wavy annular,9,-0.056880639774137896,0.33333333333333331
+5071_suffix,scale_peak_power05,quatro_padroes,plug,3,0.07603831045555437,1
+5071_suffix,scale_peak_power05,quatro_padroes,slug,3,0.10666034651005944,0.66666666666666663
+5071_suffix,common_lag_peak,churn_annular,churn,10,-0.0030501911975529808,0.29999999999999999
+5071_suffix,common_lag_peak,churn_annular,wavy annular,9,0.0065338519069178163,0.66666666666666663
+5071_suffix,common_lag_peak,plug_slug,plug,3,0.10257215734388951,1
+5071_suffix,common_lag_peak,plug_slug,slug,3,0.090418554515674307,1
+5071_suffix,common_lag_peak,churn_plug,churn,10,-0.034068301994427744,0.40000000000000002
+5071_suffix,common_lag_peak,churn_plug,plug,3,0.14301214069868615,1
+5071_suffix,common_lag_peak,churn_slug,churn,10,-0.034201215275995456,0.40000000000000002
+5071_suffix,common_lag_peak,churn_slug,slug,3,0.13024029699478792,0.66666666666666663
+5071_suffix,common_lag_peak,annular_plug,wavy annular,9,-0.0071115280152341609,0.66666666666666663
+5071_suffix,common_lag_peak,annular_plug,plug,3,0.15824978835397507,1
+5071_suffix,common_lag_peak,annular_slug,wavy annular,9,-0.0018516263031924547,0.66666666666666663
+5071_suffix,common_lag_peak,annular_slug,slug,3,0.15046683294570393,1
+5071_suffix,common_lag_peak,quatro_padroes,churn,10,-0.058494026157017855,0.20000000000000001
+5071_suffix,common_lag_peak,quatro_padroes,wavy annular,9,-0.031671766708248256,0.44444444444444442
+5071_suffix,common_lag_peak,quatro_padroes,plug,3,0.10257215734388951,1
+5071_suffix,common_lag_peak,quatro_padroes,slug,3,0.090418554515674307,0.66666666666666663
+5071_suffix,map_mean,churn_annular,churn,10,0.0027206964469298446,0.80000000000000004
+5071_suffix,map_mean,churn_annular,wavy annular,9,-0.005456535920793126,0.44444444444444442
+5071_suffix,map_mean,plug_slug,plug,3,0.016153042593029566,0.66666666666666663
+5071_suffix,map_mean,plug_slug,slug,3,0.0057452216125234721,0.66666666666666663
+5071_suffix,map_mean,churn_plug,churn,10,-0.0057153697332263361,0.59999999999999998
+5071_suffix,map_mean,churn_plug,plug,3,-0.0053083363538251735,0
+5071_suffix,map_mean,churn_slug,churn,10,0.0093977404908075317,1
+5071_suffix,map_mean,churn_slug,slug,3,-0.00058873573533903322,0
+5071_suffix,map_mean,annular_plug,wavy annular,9,-0.005604556079416634,0.77777777777777779
+5071_suffix,map_mean,annular_plug,plug,3,0.0030275862822798389,0.66666666666666663
+5071_suffix,map_mean,annular_slug,wavy annular,9,0.0026990542517509701,0.77777777777777779
+5071_suffix,map_mean,annular_slug,slug,3,0.00088778390346204471,0
+5071_suffix,map_mean,quatro_padroes,churn,10,-0.0059902175784008905,0.5
+5071_suffix,map_mean,quatro_padroes,wavy annular,9,-0.010422707140903353,0.33333333333333331
+5071_suffix,map_mean,quatro_padroes,plug,3,-0.0059715818889312065,0
+5071_suffix,map_mean,quatro_padroes,slug,3,-0.0022155662552628759,0
+5071_suffix,map_mean_weighted,churn_annular,churn,10,0.0030129126400509137,0.90000000000000002
+5071_suffix,map_mean_weighted,churn_annular,wavy annular,9,-0.0074378699255542224,0.1111111111111111
+5071_suffix,map_mean_weighted,plug_slug,plug,3,-0.0039874688114782779,0.33333333333333331
+5071_suffix,map_mean_weighted,plug_slug,slug,3,0.013564955677106255,1
+5071_suffix,map_mean_weighted,churn_plug,churn,10,-0.010657619318387485,0.69999999999999996
+5071_suffix,map_mean_weighted,churn_plug,plug,3,0.0016763507601614488,0
+5071_suffix,map_mean_weighted,churn_slug,churn,10,-0.016877951295283359,0.29999999999999999
+5071_suffix,map_mean_weighted,churn_slug,slug,3,0.012914861155586356,0.66666666666666663
+5071_suffix,map_mean_weighted,annular_plug,wavy annular,9,-0.011776467056321268,0.33333333333333331
+5071_suffix,map_mean_weighted,annular_plug,plug,3,0.010927436917450408,0.66666666666666663
+5071_suffix,map_mean_weighted,annular_slug,wavy annular,9,-0.017733740841293973,0.1111111111111111
+5071_suffix,map_mean_weighted,annular_slug,slug,3,0.022412632382407816,0.66666666666666663
+5071_suffix,map_mean_weighted,quatro_padroes,churn,10,-0.018496807691184617,0.29999999999999999
+5071_suffix,map_mean_weighted,quatro_padroes,wavy annular,9,-0.019736161963789418,0
+5071_suffix,map_mean_weighted,quatro_padroes,plug,3,-0.0047211624480556144,0
+5071_suffix,map_mean_weighted,quatro_padroes,slug,3,0.012026214630463107,0.66666666666666663
+5071_suffix,lag_q90_weighted,churn_annular,churn,10,0.0084115931452771707,0.59999999999999998
+5071_suffix,lag_q90_weighted,churn_annular,wavy annular,9,-0.012189304453511896,0.44444444444444442
+5071_suffix,lag_q90_weighted,plug_slug,plug,3,0.0039277639902052068,0.33333333333333331
+5071_suffix,lag_q90_weighted,plug_slug,slug,3,0.038605696523234916,1
+5071_suffix,lag_q90_weighted,churn_plug,churn,10,-0.030865718174102229,0.5
+5071_suffix,lag_q90_weighted,churn_plug,plug,3,0.025552455869626445,0.33333333333333331
+5071_suffix,lag_q90_weighted,churn_slug,churn,10,-0.040773268356664671,0.29999999999999999
+5071_suffix,lag_q90_weighted,churn_slug,slug,3,0.049343934091979673,0.66666666666666663
+5071_suffix,lag_q90_weighted,annular_plug,wavy annular,9,-0.025458101407788002,0.55555555555555558
+5071_suffix,lag_q90_weighted,annular_plug,plug,3,0.050455353957675364,1
+5071_suffix,lag_q90_weighted,annular_slug,wavy annular,9,-0.039179189553488203,0.55555555555555558
+5071_suffix,lag_q90_weighted,annular_slug,slug,3,0.070305753954609154,0.66666666666666663
+5071_suffix,lag_q90_weighted,quatro_padroes,churn,10,-0.049746336493527374,0
+5071_suffix,lag_q90_weighted,quatro_padroes,wavy annular,9,-0.048444120404034459,0.33333333333333331
+5071_suffix,lag_q90_weighted,quatro_padroes,plug,3,0.0039277639902052068,0
+5071_suffix,lag_q90_weighted,quatro_padroes,slug,3,0.038605696523234916,0.66666666666666663
+5071_suffix,area05_weighted,churn_annular,churn,10,0.006972686308129172,0.80000000000000004
+5071_suffix,area05_weighted,churn_annular,wavy annular,9,-0.0046762095620451905,0.22222222222222221
+5071_suffix,area05_weighted,plug_slug,plug,3,0.012047939708475015,0.33333333333333331
+5071_suffix,area05_weighted,plug_slug,slug,3,0.021588016303852934,1
+5071_suffix,area05_weighted,churn_plug,churn,10,-0.002056000429815946,0.80000000000000004
+5071_suffix,area05_weighted,churn_plug,plug,3,0.0035267296237730971,0
+5071_suffix,area05_weighted,churn_slug,churn,10,-0.0023454211198320613,0.69999999999999996
+5071_suffix,area05_weighted,churn_slug,slug,3,0.012705149218236162,0.66666666666666663
+5071_suffix,area05_weighted,annular_plug,wavy annular,9,-0.0039571663844261262,0.55555555555555558
+5071_suffix,area05_weighted,annular_plug,plug,3,0.013175559603634654,0.66666666666666663
+5071_suffix,area05_weighted,annular_slug,wavy annular,9,-0.0059579003828042678,0.55555555555555558
+5071_suffix,area05_weighted,annular_slug,slug,3,0.020725588584224356,0.66666666666666663
+5071_suffix,area05_weighted,quatro_padroes,churn,10,-0.0072594500675124502,0.59999999999999998
+5071_suffix,area05_weighted,quatro_padroes,wavy annular,9,-0.0096722477895861882,0.1111111111111111
+5071_suffix,area05_weighted,quatro_padroes,plug,3,0.0035267296237730971,0
+5071_suffix,area05_weighted,quatro_padroes,slug,3,0.012702028426093593,0.66666666666666663
+5071_suffix,mean_short,churn_annular,churn,10,0.00012023399431317325,0.59999999999999998
+5071_suffix,mean_short,churn_annular,wavy annular,9,0.00061548482110235095,0.44444444444444442
+5071_suffix,mean_short,plug_slug,plug,3,0.00022885660757719284,1
+5071_suffix,mean_short,plug_slug,slug,3,-0.00031148223506110331,0.66666666666666663
+5071_suffix,mean_short,churn_plug,churn,10,0.00013834720010764254,0.80000000000000004
+5071_suffix,mean_short,churn_plug,plug,3,0.00075724227271558578,0.33333333333333331
+5071_suffix,mean_short,churn_slug,churn,10,-1.7563406399127483e-05,0.80000000000000004
+5071_suffix,mean_short,churn_slug,slug,3,6.008832459972914e-05,0.66666666666666663
+5071_suffix,mean_short,annular_plug,wavy annular,9,0.00077595410564746433,0.88888888888888884
+5071_suffix,mean_short,annular_plug,plug,3,0.00089978364582205461,0.66666666666666663
+5071_suffix,mean_short,annular_slug,wavy annular,9,0.00027140768398369389,0.66666666666666663
+5071_suffix,mean_short,annular_slug,slug,3,-0.00014599156430298625,0.33333333333333331
+5071_suffix,mean_short,quatro_padroes,churn,10,-0.00058247432864259169,0.59999999999999998
+5071_suffix,mean_short,quatro_padroes,wavy annular,9,-0.00021727407447389371,0.33333333333333331
+5071_suffix,mean_short,quatro_padroes,plug,3,-9.9565840604787128e-07,0.33333333333333331
+5071_suffix,mean_short,quatro_padroes,slug,3,-0.00055887047166130251,0.33333333333333331
+5071_suffix,mean_middle,churn_annular,churn,10,-0.0035822397181017791,0.40000000000000002
+5071_suffix,mean_middle,churn_annular,wavy annular,9,-0.001787493317271148,0.22222222222222221
+5071_suffix,mean_middle,plug_slug,plug,3,0.00021959456614023659,0.33333333333333331
+5071_suffix,mean_middle,plug_slug,slug,3,0.0044346761740376881,0.33333333333333331
+5071_suffix,mean_middle,churn_plug,churn,10,-0.0035572512629823269,0.69999999999999996
+5071_suffix,mean_middle,churn_plug,plug,3,-0.0012485454184167342,0
+5071_suffix,mean_middle,churn_slug,churn,10,-0.0030601956841842981,0.90000000000000002
+5071_suffix,mean_middle,churn_slug,slug,3,0.0034946492069369318,0
+5071_suffix,mean_middle,annular_plug,wavy annular,9,0.00073829471198724609,0.66666666666666663
+5071_suffix,mean_middle,annular_plug,plug,3,0.0012535314553038695,0
+5071_suffix,mean_middle,annular_slug,wavy annular,9,-0.00083485044277776968,0.55555555555555558
+5071_suffix,mean_middle,annular_slug,slug,3,0.0039077718974099302,0
+5071_suffix,mean_middle,quatro_padroes,churn,10,-0.0087496994455505614,0.29999999999999999
+5071_suffix,mean_middle,quatro_padroes,wavy annular,9,-0.0057964443759313151,0.1111111111111111
+5071_suffix,mean_middle,quatro_padroes,plug,3,-0.0034585595225073537,0
+5071_suffix,mean_middle,quatro_padroes,slug,3,0.00015477915865378224,0
+5071_suffix,mean_long,churn_annular,churn,10,0.014375407632663368,0.80000000000000004
+5071_suffix,mean_long,churn_annular,wavy annular,9,-0.018142348926768213,0.33333333333333331
+5071_suffix,mean_long,plug_slug,plug,3,0.056505026899802378,0.66666666666666663
+5071_suffix,mean_long,plug_slug,slug,3,0.014912561078135917,0.33333333333333331
+5071_suffix,mean_long,churn_plug,churn,10,-0.016536780942021507,0.80000000000000004
+5071_suffix,mean_long,churn_plug,plug,3,-0.01883653439854556,0.33333333333333331
+5071_suffix,mean_long,churn_slug,churn,10,0.037032017860881741,1
+5071_suffix,mean_long,churn_slug,slug,3,-0.006564770848048275,0
+5071_suffix,mean_long,annular_plug,wavy annular,9,-0.022119693869142424,0.88888888888888884
+5071_suffix,mean_long,annular_plug,plug,3,0.0086638870741424911,0.66666666666666663
+5071_suffix,mean_long,annular_slug,wavy annular,9,0.0094059841875282837,0.77777777777777779
+5071_suffix,mean_long,annular_slug,slug,3,-0.0016235570539603235,0
+5071_suffix,mean_long,quatro_padroes,churn,10,-0.017678649833815032,0.59999999999999998
+5071_suffix,mean_long,quatro_padroes,wavy annular,9,-0.036269782276613385,0.33333333333333331
+5071_suffix,mean_long,quatro_padroes,plug,3,-0.022853293842816608,0.33333333333333331
+5071_suffix,mean_long,quatro_padroes,slug,3,-0.011831543608596411,0
+5071_suffix,common_peak_short,churn_annular,churn,10,-0.016401188877689408,0.10000000000000001
+5071_suffix,common_peak_short,churn_annular,wavy annular,9,0.0099930751757170786,0.44444444444444442
+5071_suffix,common_peak_short,plug_slug,plug,3,-0.0081471906801154955,0
+5071_suffix,common_peak_short,plug_slug,slug,3,-0.0018308574182665158,0.33333333333333331
+5071_suffix,common_peak_short,churn_plug,churn,10,-0.0078608814329695163,0.5
+5071_suffix,common_peak_short,churn_plug,plug,3,-0.0086753420210631416,0
+5071_suffix,common_peak_short,churn_slug,churn,10,-0.0048627562411534212,0.59999999999999998
+5071_suffix,common_peak_short,churn_slug,slug,3,0.00070101737135613211,0.33333333333333331
+5071_suffix,common_peak_short,annular_plug,wavy annular,9,0.01113123587413775,0.88888888888888884
+5071_suffix,common_peak_short,annular_plug,plug,3,-0.015939967890060743,0
+5071_suffix,common_peak_short,annular_slug,wavy annular,9,0.0023300969673900919,0.44444444444444442
+5071_suffix,common_peak_short,annular_slug,slug,3,-0.018346566289099218,0
+5071_suffix,common_peak_short,quatro_padroes,churn,10,-0.021244695014956898,0.10000000000000001
+5071_suffix,common_peak_short,quatro_padroes,wavy annular,9,-0.0075910658022866799,0.1111111111111111
+5071_suffix,common_peak_short,quatro_padroes,plug,3,-0.018579549240924642,0
+5071_suffix,common_peak_short,quatro_padroes,slug,3,-0.018346566289099218,0
+5071_suffix,common_peak_middle,churn_annular,churn,10,-0.010529882140163817,0.29999999999999999
+5071_suffix,common_peak_middle,churn_annular,wavy annular,9,0.011171478311164836,0.55555555555555558
+5071_suffix,common_peak_middle,plug_slug,plug,3,0.13845508279388552,1
+5071_suffix,common_peak_middle,plug_slug,slug,3,0.15053916812906473,1
+5071_suffix,common_peak_middle,churn_plug,churn,10,-0.018429383779599497,0.69999999999999996
+5071_suffix,common_peak_middle,churn_plug,plug,3,0.16850515297851498,1
+5071_suffix,common_peak_middle,churn_slug,churn,10,-0.026260005209671672,0.5
+5071_suffix,common_peak_middle,churn_slug,slug,3,0.17366641570395944,0.33333333333333331
+5071_suffix,common_peak_middle,annular_plug,wavy annular,9,0.012047295050595968,0.66666666666666663
+5071_suffix,common_peak_middle,annular_plug,plug,3,0.17713417183964011,1
+5071_suffix,common_peak_middle,annular_slug,wavy annular,9,0.023854151370979085,0.88888888888888884
+5071_suffix,common_peak_middle,annular_slug,slug,3,0.19912172209313592,1
+5071_suffix,common_peak_middle,quatro_padroes,churn,10,-0.04777573993767905,0.20000000000000001
+5071_suffix,common_peak_middle,quatro_padroes,wavy annular,9,-0.023199695563356416,0.44444444444444442
+5071_suffix,common_peak_middle,quatro_padroes,plug,3,0.13845508279388552,1
+5071_suffix,common_peak_middle,quatro_padroes,slug,3,0.15041903996017733,0.33333333333333331
+5071_suffix,common_peak_long,churn_annular,churn,10,0.017592663526611586,0.69999999999999996
+5071_suffix,common_peak_long,churn_annular,wavy annular,9,0.0052237882449274577,1
+5071_suffix,common_peak_long,plug_slug,plug,3,0.055063755889060005,0.66666666666666663
+5071_suffix,common_peak_long,plug_slug,slug,3,-0.03769894159536899,0.33333333333333331
+5071_suffix,common_peak_long,churn_plug,churn,10,-0.073114911652721631,0.80000000000000004
+5071_suffix,common_peak_long,churn_plug,plug,3,-0.03954374774426981,0
+5071_suffix,common_peak_long,churn_slug,churn,10,0.066967827566363033,0.80000000000000004
+5071_suffix,common_peak_long,churn_slug,slug,3,2.8680446548442575e-06,0
+5071_suffix,common_peak_long,annular_plug,wavy annular,9,-0.098622726279172471,0.66666666666666663
+5071_suffix,common_peak_long,annular_plug,plug,3,-0.050541286139501616,0
+5071_suffix,common_peak_long,annular_slug,wavy annular,9,0.004710782743405824,1
+5071_suffix,common_peak_long,annular_slug,slug,3,-0.040199277782253295,0
+5071_suffix,common_peak_long,quatro_padroes,churn,10,-0.081046558075713135,0.69999999999999996
+5071_suffix,common_peak_long,quatro_padroes,wavy annular,9,-0.10636694263700931,0.66666666666666663
+5071_suffix,common_peak_long,quatro_padroes,plug,3,-0.076918763807797136,0
+5071_suffix,common_peak_long,quatro_padroes,slug,3,-0.049323080161448075,0
+5071_suffix,self_area_log_l2,churn_annular,churn,10,-0.051425488078166826,0.40000000000000002
+5071_suffix,self_area_log_l2,churn_annular,wavy annular,9,0.025588060967791593,0.66666666666666663
+5071_suffix,self_area_log_l2,plug_slug,plug,3,0.1801760309546169,0.66666666666666663
+5071_suffix,self_area_log_l2,plug_slug,slug,3,-0.027296137524869105,0
+5071_suffix,self_area_log_l2,churn_plug,churn,10,-0.13885288660143533,0.59999999999999998
+5071_suffix,self_area_log_l2,churn_plug,plug,3,0.20247420165031024,0.66666666666666663
+5071_suffix,self_area_log_l2,churn_slug,churn,10,-0.001726320282028277,0.80000000000000004
+5071_suffix,self_area_log_l2,churn_slug,slug,3,0.13280795167914305,0.33333333333333331
+5071_suffix,self_area_log_l2,annular_plug,wavy annular,9,-0.11042479832352624,0.55555555555555558
+5071_suffix,self_area_log_l2,annular_plug,plug,3,0.16801522801044877,0.66666666666666663
+5071_suffix,self_area_log_l2,annular_slug,wavy annular,9,-0.040062179326034529,0.77777777777777779
+5071_suffix,self_area_log_l2,annular_slug,slug,3,0.034060370378603523,0
+5071_suffix,self_area_log_l2,quatro_padroes,churn,10,-0.14768568571965462,0.20000000000000001
+5071_suffix,self_area_log_l2,quatro_padroes,wavy annular,9,-0.13539500005666893,0.33333333333333331
+5071_suffix,self_area_log_l2,quatro_padroes,plug,3,0.16620324438079659,0.66666666666666663
+5071_suffix,self_area_log_l2,quatro_padroes,slug,3,-0.034539029999571876,0
+5071_suffix,self_width_log_l2,churn_annular,churn,10,-0.061149372973919536,0.20000000000000001
+5071_suffix,self_width_log_l2,churn_annular,wavy annular,9,0.03403640607977805,0.33333333333333331
+5071_suffix,self_width_log_l2,plug_slug,plug,3,0.20352684438673344,0.66666666666666663
+5071_suffix,self_width_log_l2,plug_slug,slug,3,0.25319647608850948,1
+5071_suffix,self_width_log_l2,churn_plug,churn,10,-0.18088054927840336,0.69999999999999996
+5071_suffix,self_width_log_l2,churn_plug,plug,3,0.16103184215885821,0.66666666666666663
+5071_suffix,self_width_log_l2,churn_slug,churn,10,-0.051331811238333101,0.90000000000000002
+5071_suffix,self_width_log_l2,churn_slug,slug,3,0.31610238443484323,0.66666666666666663
+5071_suffix,self_width_log_l2,annular_plug,wavy annular,9,-0.10927189416536766,0.77777777777777779
+5071_suffix,self_width_log_l2,annular_plug,plug,3,0.14734487570179153,0.33333333333333331
+5071_suffix,self_width_log_l2,annular_slug,wavy annular,9,-0.011720777292891095,0.77777777777777779
+5071_suffix,self_width_log_l2,annular_slug,slug,3,0.27592455388781018,1
+5071_suffix,self_width_log_l2,quatro_padroes,churn,10,-0.19351879112809009,0.20000000000000001
+5071_suffix,self_width_log_l2,quatro_padroes,wavy annular,9,-0.13433431111451322,0.33333333333333331
+5071_suffix,self_width_log_l2,quatro_padroes,plug,3,0.13844543188613892,0.33333333333333331
+5071_suffix,self_width_log_l2,quatro_padroes,slug,3,0.25319647608850948,0.66666666666666663
+5071_suffix,self_area_bands,churn_annular,churn,10,-0.070618385306165585,0.40000000000000002
+5071_suffix,self_area_bands,churn_annular,wavy annular,9,-0.057653033897356688,0.33333333333333331
+5071_suffix,self_area_bands,plug_slug,plug,3,0.0038455741069521876,0.33333333333333331
+5071_suffix,self_area_bands,plug_slug,slug,3,-0.29173056838474271,0
+5071_suffix,self_area_bands,churn_plug,churn,10,-0.25008155614749766,0.5
+5071_suffix,self_area_bands,churn_plug,plug,3,0.49980621669969566,0.33333333333333331
+5071_suffix,self_area_bands,churn_slug,churn,10,-0.19787809284372801,0.5
+5071_suffix,self_area_bands,churn_slug,slug,3,0.33933216017929829,0.33333333333333331
+5071_suffix,self_area_bands,annular_plug,wavy annular,9,-0.3197441100062855,0.66666666666666663
+5071_suffix,self_area_bands,annular_plug,plug,3,0.46101164130353528,0
+5071_suffix,self_area_bands,annular_slug,wavy annular,9,-0.25887907212720251,0.66666666666666663
+5071_suffix,self_area_bands,annular_slug,slug,3,0.29388260283471795,0
+5071_suffix,self_area_bands,quatro_padroes,churn,10,-0.27358591873671878,0.40000000000000002
+5071_suffix,self_area_bands,quatro_padroes,wavy annular,9,-0.35004096916968486,0.1111111111111111
+5071_suffix,self_area_bands,quatro_padroes,plug,3,0.0038455741069521876,0
+5071_suffix,self_area_bands,quatro_padroes,slug,3,-0.29173056838474271,0
+7001_prefix,global_max,churn_annular,churn,10,-0.10774360154401871,0.5
+7001_prefix,global_max,churn_annular,wavy annular,9,0.050455222249268246,0.44444444444444442
+7001_prefix,zero_weighted,churn_annular,churn,10,0.00043902430957268312,0.5
+7001_prefix,zero_weighted,churn_annular,wavy annular,9,-0.0052274354352699476,0.44444444444444442
+7001_prefix,scale_peak_weighted,churn_annular,churn,10,-0.012373010714045809,0.20000000000000001
+7001_prefix,scale_peak_weighted,churn_annular,wavy annular,9,-0.012300297751003948,0.22222222222222221
+7001_prefix,scale_peak_power05,churn_annular,churn,10,-0.016129633201292803,0.20000000000000001
+7001_prefix,scale_peak_power05,churn_annular,wavy annular,9,-0.012829064854656421,0.22222222222222221
+7001_prefix,common_lag_peak,churn_annular,churn,10,-0.0091145834022723828,0.20000000000000001
+7001_prefix,common_lag_peak,churn_annular,wavy annular,9,-0.0022288244499879648,0.33333333333333331
+7001_prefix,map_mean,churn_annular,churn,10,-0.0019389829711641163,0.29999999999999999
+7001_prefix,map_mean,churn_annular,wavy annular,9,0.0016955515178346898,0.55555555555555558
+7001_prefix,map_mean_weighted,churn_annular,churn,10,0.00024349240516263851,0.29999999999999999
+7001_prefix,map_mean_weighted,churn_annular,wavy annular,9,-0.0033539771853296394,0.1111111111111111
+7001_prefix,lag_q90_weighted,churn_annular,churn,10,-0.0014472730380641794,0.20000000000000001
+7001_prefix,lag_q90_weighted,churn_annular,wavy annular,9,-0.013010655991393383,0.1111111111111111
+7001_prefix,area05_weighted,churn_annular,churn,10,0.00074534414246452791,0.59999999999999998
+7001_prefix,area05_weighted,churn_annular,wavy annular,9,-0.0018352035891343005,0.22222222222222221
+7001_prefix,mean_short,churn_annular,churn,10,0.00023963367596135858,0.29999999999999999
+7001_prefix,mean_short,churn_annular,wavy annular,9,0.00016719337641153632,0.33333333333333331
+7001_prefix,mean_middle,churn_annular,churn,10,-0.0026844574241500427,0.5
+7001_prefix,mean_middle,churn_annular,wavy annular,9,-0.0015821442810396878,0.33333333333333331
+7001_prefix,mean_long,churn_annular,churn,10,-0.0037750528420731171,0.40000000000000002
+7001_prefix,mean_long,churn_annular,wavy annular,9,0.0076231867252606273,0.55555555555555558
+7001_prefix,common_peak_short,churn_annular,churn,10,-0.014245701196066694,0.10000000000000001
+7001_prefix,common_peak_short,churn_annular,wavy annular,9,0.0040289750080793269,0.33333333333333331
+7001_prefix,common_peak_middle,churn_annular,churn,10,-0.012231022718723072,0.10000000000000001
+7001_prefix,common_peak_middle,churn_annular,wavy annular,9,-0.0057083907379668975,0.44444444444444442
+7001_prefix,common_peak_long,churn_annular,churn,10,-0.025363064032818055,0.5
+7001_prefix,common_peak_long,churn_annular,wavy annular,9,-0.0048974827217192242,0.1111111111111111
+7001_prefix,self_area_log_l2,churn_annular,churn,10,-0.0094710537060495401,0.5
+7001_prefix,self_area_log_l2,churn_annular,wavy annular,9,-0.0034289281728102036,0.44444444444444442
+7001_prefix,self_width_log_l2,churn_annular,churn,10,-0.015675249940695586,0.5
+7001_prefix,self_width_log_l2,churn_annular,wavy annular,9,0.035833026828454198,0.66666666666666663
+7001_prefix,self_area_bands,churn_annular,churn,10,0.13302534573890684,0.59999999999999998
+7001_prefix,self_area_bands,churn_annular,wavy annular,9,-0.19764288371289437,0.44444444444444442
+7001_center,global_max,churn_annular,churn,10,-0.068183360158415501,0.40000000000000002
+7001_center,global_max,churn_annular,wavy annular,9,0.012341343994383179,0.33333333333333331
+7001_center,zero_weighted,churn_annular,churn,10,0.011182640665710918,0.69999999999999996
+7001_center,zero_weighted,churn_annular,wavy annular,9,-0.008962312203083864,0.33333333333333331
+7001_center,scale_peak_weighted,churn_annular,churn,10,0.022380772947348419,0.90000000000000002
+7001_center,scale_peak_weighted,churn_annular,wavy annular,9,-0.012750934158484484,0.44444444444444442
+7001_center,scale_peak_power05,churn_annular,churn,10,0.026336459276952683,0.90000000000000002
+7001_center,scale_peak_power05,churn_annular,wavy annular,9,-0.013881781389916375,0.44444444444444442
+7001_center,common_lag_peak,churn_annular,churn,10,0.014594180775933066,0.80000000000000004
+7001_center,common_lag_peak,churn_annular,wavy annular,9,-0.0037708283818476606,0.33333333333333331
+7001_center,map_mean,churn_annular,churn,10,0.0027837501597984008,0.80000000000000004
+7001_center,map_mean,churn_annular,wavy annular,9,-0.0024404870700989525,0.55555555555555558
+7001_center,map_mean_weighted,churn_annular,churn,10,0.0061419032487245988,0.5
+7001_center,map_mean_weighted,churn_annular,wavy annular,9,-0.0044597753138492062,0.55555555555555558
+7001_center,lag_q90_weighted,churn_annular,churn,10,0.015721624299784923,0.59999999999999998
+7001_center,lag_q90_weighted,churn_annular,wavy annular,9,-0.013811351298805398,0.44444444444444442
+7001_center,area05_weighted,churn_annular,churn,10,0.0035704998082236872,0.69999999999999996
+7001_center,area05_weighted,churn_annular,wavy annular,9,-0.0032183472946553668,0.22222222222222221
+7001_center,mean_short,churn_annular,churn,10,0.00020099295498449853,0.29999999999999999
+7001_center,mean_short,churn_annular,wavy annular,9,-0.00021721591841326738,0.33333333333333331
+7001_center,mean_middle,churn_annular,churn,10,-0.00083779282796312034,0.40000000000000002
+7001_center,mean_middle,churn_annular,wavy annular,9,0.0017277952178534975,0.33333333333333331
+7001_center,mean_long,churn_annular,churn,10,0.01035874838944156,0.80000000000000004
+7001_center,mean_long,churn_annular,wavy annular,9,-0.01009205254132302,0.22222222222222221
+7001_center,common_peak_short,churn_annular,churn,10,-0.0064708790257339806,0.20000000000000001
+7001_center,common_peak_short,churn_annular,wavy annular,9,-0.0023908519652921503,0.33333333333333331
+7001_center,common_peak_middle,churn_annular,churn,10,0.013976140862768513,0.90000000000000002
+7001_center,common_peak_middle,churn_annular,wavy annular,9,0.0006328722872978431,0.33333333333333331
+7001_center,common_peak_long,churn_annular,churn,10,0.017895279573461691,0.40000000000000002
+7001_center,common_peak_long,churn_annular,wavy annular,9,-0.027011782986904546,0.33333333333333331
+7001_center,self_area_log_l2,churn_annular,churn,10,0.054438638766914918,0.69999999999999996
+7001_center,self_area_log_l2,churn_annular,wavy annular,9,0.025500863139420286,0.77777777777777779
+7001_center,self_width_log_l2,churn_annular,churn,10,-0.0038001998982659657,0.5
+7001_center,self_width_log_l2,churn_annular,wavy annular,9,0.039154622345489117,0.77777777777777779
+7001_center,self_area_bands,churn_annular,churn,10,0.051116605956748898,0.59999999999999998
+7001_center,self_area_bands,churn_annular,wavy annular,9,-0.012094564415321399,0.44444444444444442
+7001_suffix,global_max,churn_annular,churn,10,0.33994150735229556,0.59999999999999998
+7001_suffix,global_max,churn_annular,wavy annular,9,-0.20948845190127016,0.22222222222222221
+7001_suffix,zero_weighted,churn_annular,churn,10,0.006766276589039456,0.29999999999999999
+7001_suffix,zero_weighted,churn_annular,wavy annular,9,0.0012512993424535095,0.44444444444444442
+7001_suffix,scale_peak_weighted,churn_annular,churn,10,-0.00092560865354965782,0.5
+7001_suffix,scale_peak_weighted,churn_annular,wavy annular,9,0.0019062144007681635,0.33333333333333331
+7001_suffix,scale_peak_power05,churn_annular,churn,10,-0.0016010453273823833,0.5
+7001_suffix,scale_peak_power05,churn_annular,wavy annular,9,0.0044135180286266201,0.33333333333333331
+7001_suffix,common_lag_peak,churn_annular,churn,10,-0.0061971288231936223,0.5
+7001_suffix,common_lag_peak,churn_annular,wavy annular,9,-0.00051543423283385847,0.22222222222222221
+7001_suffix,map_mean,churn_annular,churn,10,0.0042916297589019872,0.69999999999999996
+7001_suffix,map_mean,churn_annular,wavy annular,9,-0.0050076441626024275,0
+7001_suffix,map_mean_weighted,churn_annular,churn,10,0.0032841170500416939,0.59999999999999998
+7001_suffix,map_mean_weighted,churn_annular,wavy annular,9,-0.0048035691775688795,0
+7001_suffix,lag_q90_weighted,churn_annular,churn,10,0.0071562791305075507,0.5
+7001_suffix,lag_q90_weighted,churn_annular,wavy annular,9,-0.011676111535912744,0.1111111111111111
+7001_suffix,area05_weighted,churn_annular,churn,10,0.0045282381251520367,0.80000000000000004
+7001_suffix,area05_weighted,churn_annular,wavy annular,9,-0.0038254943227542674,0.1111111111111111
+7001_suffix,mean_short,churn_annular,churn,10,0.0001552104910832485,0.40000000000000002
+7001_suffix,mean_short,churn_annular,wavy annular,9,0.00035324703667963671,0.77777777777777779
+7001_suffix,mean_middle,churn_annular,churn,10,-0.0025386380571479211,0.40000000000000002
+7001_suffix,mean_middle,churn_annular,wavy annular,9,0.00014455621467869017,0.1111111111111111
+7001_suffix,mean_long,churn_annular,churn,10,0.017781299268925993,0.59999999999999998
+7001_suffix,mean_long,churn_annular,wavy annular,9,-0.01782396687527734,0
+7001_suffix,common_peak_short,churn_annular,churn,10,-0.00624385930452084,0.29999999999999999
+7001_suffix,common_peak_short,churn_annular,wavy annular,9,0.012597618657439873,0.33333333333333331
+7001_suffix,common_peak_middle,churn_annular,churn,10,-0.013262777152101116,0.5
+7001_suffix,common_peak_middle,churn_annular,wavy annular,9,0.0055413792580189273,0.33333333333333331
+7001_suffix,common_peak_long,churn_annular,churn,10,0.019258832608981119,0.40000000000000002
+7001_suffix,common_peak_long,churn_annular,wavy annular,9,-0.013117441197499332,0
+7001_suffix,self_area_log_l2,churn_annular,churn,10,-0.0093150762277079465,0.59999999999999998
+7001_suffix,self_area_log_l2,churn_annular,wavy annular,9,0.0048761377530468922,0.66666666666666663
+7001_suffix,self_width_log_l2,churn_annular,churn,10,-0.053380440196506049,0.40000000000000002
+7001_suffix,self_width_log_l2,churn_annular,wavy annular,9,0.054373670586709423,0.33333333333333331
+7001_suffix,self_area_bands,churn_annular,churn,10,0.26511778629541705,0.69999999999999996
+7001_suffix,self_area_bands,churn_annular,wavy annular,9,-0.049381050868066032,0.55555555555555558

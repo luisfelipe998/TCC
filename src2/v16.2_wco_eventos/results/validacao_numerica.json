@@ -1,0 +1,14 @@
+{
+  "erro_correlacao_soma_direta": 8.326672684688674e-17,
+  "erro_convolucao_independente": 1.1580429779916289e-14,
+  "erro_padding_8_12": 1.6504651808933464e-15,
+  "erro_self_zero": 0.0,
+  "lag_atraso_100": -100,
+  "constante_nao_finito_rampa_rejeitados": true,
+  "denominador_zero_nao_virou_zero": true,
+  "erro_recorte_antes_preparo": 1.0591527654923993e-13,
+  "diferenca_preparo_antes_corte": 0.1015849236111519,
+  "erro_v5_literal": 2.6339164057661976e-15,
+  "status": "PASS",
+  "segundos": 1.6116304580064025
+}

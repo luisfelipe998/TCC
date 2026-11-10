@@ -1,0 +1,6 @@
+case,robust_px_frame,robust_left_px_frame,robust_right_px_frame,endpoint_median_error_px,endpoint_q90_error_px,half1_px_frame,half2_px_frame,robust_accepted,robust_rejection
+rigid,-8.0,-8.0,-8.0,0.0,0.0,-8.0,-8.0,True,
+jittered,-7.99573722023934,-7.9930616284984835,-7.998412811980195,1.22404236884978,3.3423506063538184,-7.988685433187175,-7.9557301178831725,True,
+growth,-6.5,-8.0,-5.0,0.0,0.0,-6.5,-6.5,False,front_rear_inconsistent
+stationary,-0.0,-0.0,-0.0,0.0,0.0,-0.0,-0.0,False,insufficient_displacement
+accelerated,-11.0,-11.0,-11.0,30.0,75.60000000000002,-6.5,-15.649999999999999,False,endpoint_fit_residual;half_velocity_inconsistent

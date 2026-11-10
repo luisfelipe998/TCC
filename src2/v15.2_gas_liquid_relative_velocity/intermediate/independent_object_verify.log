@@ -1,0 +1,75 @@
+m03q05_001 verified
+m03q10_001 verified
+m03q20_001 verified
+m03q40_001 verified
+m04q01_001 verified
+m04q10_001 verified
+m04q20_001 verified
+m04q40_001 verified
+m04q80_001 verified
+m05q01_001 verified
+m05q05_001 verified
+m05q10_001 verified
+m05q20_001 verified
+m05q40_001 verified
+m05q80_001 verified
+m06q01_001 verified
+m06q05_001 verified
+m06q10_001 verified
+m06q20_001 verified
+m06q40_001 verified
+m06q80_001 verified
+m07q01_001 verified
+m07q05_001 verified
+m07q20_001 verified
+m07q40_001 verified
+m07q80_001 verified
+{
+  "counts": {
+    "native_frames_redetected_by_threshold": 390,
+    "native_objects_redetected": 1264,
+    "checked_scalar_values": 1718903,
+    "object_tracks": 19525,
+    "object_links": 46301,
+    "object_unique_nodes": 65826,
+    "meniscus_masks_reprocessed": 39078,
+    "meniscus_tracks": 2804,
+    "meniscus_links": 15552,
+    "meniscus_unique_nodes": 18356,
+    "roundoff_boundary_rejection_differences": 190
+  },
+  "support": [
+    {
+      "method": "meniscus",
+      "group": "large",
+      "baseline_supported": 0,
+      "threshold_robust": 0
+    },
+    {
+      "method": "object",
+      "group": "isolated_small",
+      "baseline_supported": 6,
+      "threshold_robust": 5
+    },
+    {
+      "method": "object",
+      "group": "large",
+      "baseline_supported": 0,
+      "threshold_robust": 0
+    },
+    {
+      "method": "object",
+      "group": "small",
+      "baseline_supported": 7,
+      "threshold_robust": 5
+    }
+  ],
+  "accepted_counts": {
+    "object": {
+      "small": 243
+    },
+    "meniscus": {
+      "large": 5
+    }
+  }
+}

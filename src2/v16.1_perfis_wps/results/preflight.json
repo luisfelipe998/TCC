@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-10-24T22:55:21.521373+00:00",
+  "source_files": 583,
+  "manifest_entries_checked": 412,
+  "audited_inputs": 31,
+  "eligible_runs": 26,
+  "extraction_rows": [
+    18,
+    71
+  ],
+  "original_reconstruction_reexecuted": false,
+  "benchmark": [
+    {
+      "n": 3171,
+      "run": "m07q01_001",
+      "full_seconds": 0.13333195800078101,
+      "zero_seconds": 0.03882237497600727,
+      "legacy_seconds": 0.12517458299407735,
+      "zero_max_abs_error": 2.220446049250313e-16,
+      "complex_map_bytes": 20291200
+    },
+    {
+      "n": 9586,
+      "run": "m03q05_001",
+      "full_seconds": 0.15924141701543704,
+      "zero_seconds": 0.04770645798998885,
+      "legacy_seconds": 0.21228858298854902,
+      "zero_max_abs_error": 8.881784197001252e-16,
+      "complex_map_bytes": 61347200
+    },
+    {
+      "n": 23079,
+      "run": "m03q20_001",
+      "full_seconds": 0.24493700001039542,
+      "zero_seconds": 0.06801779201487079,
+      "legacy_seconds": 0.39860354200936854,
+      "zero_max_abs_error": 8.881784197001252e-16,
+      "complex_map_bytes": 147702400
+    }
+  ]
+}

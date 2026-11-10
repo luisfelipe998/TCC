@@ -1,0 +1,2305 @@
+{
+  "passed": true,
+  "started_utc": "2026-10-24T11:58:59.681930+00:00",
+  "finished_utc": "2026-10-24T11:59:03.059461+00:00",
+  "script_sha256": "5fa0b767a5ac2ffca8b4227497cbe7b58f787a88197f04d1bd187dff437418c3",
+  "independent_selection_uses_original_markers_not_shared_helper": true,
+  "selected_acquisitions": 26,
+  "statistical_acquisitions": 25,
+  "supplied_pattern_counts_selected": {
+    "churn": 10,
+    "wavy annular": 9,
+    "slug": 3,
+    "plug": 3,
+    "dispersed bubbles": 1
+  },
+  "selected_runs": [
+    "m03q05_001",
+    "m03q10_001",
+    "m03q20_001",
+    "m03q40_001",
+    "m04q01_001",
+    "m04q10_001",
+    "m04q20_001",
+    "m04q40_001",
+    "m04q80_001",
+    "m05q01_001",
+    "m05q05_001",
+    "m05q10_001",
+    "m05q20_001",
+    "m05q40_001",
+    "m05q80_001",
+    "m06q01_001",
+    "m06q05_001",
+    "m06q10_001",
+    "m06q20_001",
+    "m06q40_001",
+    "m06q80_001",
+    "m07q01_001",
+    "m07q05_001",
+    "m07q20_001",
+    "m07q40_001",
+    "m07q80_001"
+  ],
+  "excluded_runs": {
+    "m03q01_001": "plug-slug",
+    "m03q80_001": "smooth annular",
+    "m04q05_001": "slug-churn",
+    "m05q05_002": "dispersed bubbles",
+    "m07q10_001": "slug-churn"
+  },
+  "checks": [
+    {
+      "check": "scope_and_all_active_csvs",
+      "passed": true,
+      "details": {
+        "active_csv_files_checked": 26,
+        "active_csv_rows_checked": 3425,
+        "checked_files": [
+          "results/flip_rate/flip_rate_by_pattern.csv",
+          "results/flip_rate/flip_rate_per_run.csv",
+          "results/flip_rate/phase_mask_flip_by_pattern.csv",
+          "results/flip_rate/phase_mask_flip_per_run.csv",
+          "results/patterns/pattern_identification_predictions.csv",
+          "results/patterns/pattern_identification_scores.csv",
+          "results/patterns/silhouette_pattern_predictions.csv",
+          "results/patterns/silhouette_pattern_scores.csv",
+          "results/validation/data_inventory.csv",
+          "results/validation/deep_method_changes.csv",
+          "results/validation/lumen_normalization_changes.csv",
+          "results/validation/panorama_liquid_holdout_checks.csv",
+          "results/void_fraction/panorama_void_by_pattern.csv",
+          "results/void_fraction/panorama_void_per_run.csv",
+          "results/void_fraction/void_fraction_flip_plot_data.csv",
+          "intermediate/features/pattern_morphology_features.csv",
+          "intermediate/features/silhouette_pattern_features.csv",
+          "intermediate/features/silhouette_pattern_fold_references.csv",
+          "intermediate/sensitivity/flip_rate_group_sensitivity.csv",
+          "intermediate/sensitivity/flip_rate_sensitivity.csv",
+          "intermediate/sensitivity/flip_rate_spatial_group_sensitivity.csv",
+          "intermediate/sensitivity/flip_rate_spatial_sensitivity.csv",
+          "intermediate/sensitivity/panorama_void_sensitivity.csv",
+          "intermediate/sensitivity/phase_mask_flip_group_sensitivity.csv",
+          "intermediate/sensitivity/phase_mask_flip_sensitivity.csv",
+          "intermediate/exploratory/image_void_alternatives.csv"
+        ],
+        "selected_acquisitions": 26,
+        "statistical_acquisitions": 25,
+        "excluded_acquisitions": {
+          "m03q01_001": "plug-slug",
+          "m03q80_001": "smooth annular",
+          "m04q05_001": "slug-churn",
+          "m05q05_002": "dispersed bubbles",
+          "m07q10_001": "slug-churn"
+        }
+      }
+    },
+    {
+      "check": "independent_mask_arithmetic_and_input_hashes",
+      "passed": true,
+      "details": {
+        "input_panorama_hashes_verified": 26,
+        "independent_area_means_verified": 26,
+        "max_area_error": 0.0,
+        "pixel_and_center_flip_counts_verified": 26,
+        "saturation_excluded_selected_runs": [
+          "m03q40_001"
+        ]
+      }
+    },
+    {
+      "check": "retained_measurements_against_archive",
+      "passed": true,
+      "details": {
+        "tables_compared": [
+          {
+            "artifact": "results/void_fraction/panorama_void_per_run.csv",
+            "common_cells_compared": 442,
+            "retained_runs": 26,
+            "method_correction_changes": [
+              {
+                "run": "m03q05_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.7547824083733223",
+                "after": "0.9657493049560455"
+              },
+              {
+                "run": "m03q05_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.7451990958094247",
+                "after": "0.9524189425412355"
+              },
+              {
+                "run": "m03q05_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.7663487509418654",
+                "after": "0.9814908596390652"
+              },
+              {
+                "run": "m03q05_001",
+                "field": "reference_variants_min",
+                "before": "0.7546731054547141",
+                "after": "0.9655804785919183"
+              },
+              {
+                "run": "m03q05_001",
+                "field": "threshold_060_080_min",
+                "before": "0.7462078667964857",
+                "after": "0.9549873112838031"
+              },
+              {
+                "run": "m03q05_001",
+                "field": "threshold_060_080_max",
+                "before": "0.7606105547441873",
+                "after": "0.9736259127152099"
+              },
+              {
+                "run": "m03q05_001",
+                "field": "conditional_circle_alpha_spatial_median",
+                "before": "0.7802777777777777",
+                "after": "1.0"
+              },
+              {
+                "run": "m03q05_001",
+                "field": "reference_variants_max",
+                "before": "0.7550851357303475",
+                "after": "0.9661204927055944"
+              },
+              {
+                "run": "m03q05_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.8678332985604006",
+                "after": "0.9813348082305563"
+              },
+              {
+                "run": "m03q10_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.7771254179165106",
+                "after": "0.9959148012114364"
+              },
+              {
+                "run": "m03q10_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.7755215778168326",
+                "after": "0.9938046237270236"
+              },
+              {
+                "run": "m03q10_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.7777569810583871",
+                "after": "0.9967059182729876"
+              },
+              {
+                "run": "m03q10_001",
+                "field": "reference_variants_min",
+                "before": "0.7771254179165106",
+                "after": "0.9959148012114364"
+              },
+              {
+                "run": "m03q10_001",
+                "field": "threshold_060_080_min",
+                "before": "0.7751507233470817",
+                "after": "0.9933546598771985"
+              },
+              {
+                "run": "m03q10_001",
+                "field": "threshold_060_080_max",
+                "before": "0.7782076068616425",
+                "after": "0.9973417237939597"
+              },
+              {
+                "run": "m03q10_001",
+                "field": "conditional_circle_alpha_spatial_median",
+                "before": "0.7802777777777777",
+                "after": "1.0"
+              },
+              {
+                "run": "m03q10_001",
+                "field": "reference_variants_max",
+                "before": "0.7772754772840895",
+                "after": "0.9960845162243649"
+              },
+              {
+                "run": "m03q10_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.881513638920135",
+                "after": "0.9979160918564425"
+              },
+              {
+                "run": "m03q20_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.780092147262302",
+                "after": "0.9997620968829788"
+              },
+              {
+                "run": "m03q20_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.7799934406893897",
+                "after": "0.9996355950451414"
+              },
+              {
+                "run": "m03q20_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.7802525033699211",
+                "after": "0.999967608448457"
+              },
+              {
+                "run": "m03q20_001",
+                "field": "reference_variants_min",
+                "before": "0.780092147262302",
+                "after": "0.9997620968829788"
+              },
+              {
+                "run": "m03q20_001",
+                "field": "threshold_060_080_min",
+                "before": "0.7797726167607879",
+                "after": "0.9993494106356344"
+              },
+              {
+                "run": "m03q20_001",
+                "field": "threshold_060_080_max",
+                "before": "0.780208270144576",
+                "after": "0.9999109193736109"
+              },
+              {
+                "run": "m03q20_001",
+                "field": "conditional_circle_alpha_spatial_median",
+                "before": "0.7802777777777777",
+                "after": "1.0"
+              },
+              {
+                "run": "m03q20_001",
+                "field": "reference_variants_max",
+                "before": "0.7801174227652845",
+                "after": "0.9997944898380292"
+              },
+              {
+                "run": "m03q20_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.8832271762208068",
+                "after": "0.9998798221367624"
+              },
+              {
+                "run": "m03q40_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.7647292527064017",
+                "after": "0.9800448407520357"
+              },
+              {
+                "run": "m03q40_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.7630504660880748",
+                "after": "0.977859858088051"
+              },
+              {
+                "run": "m03q40_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.7665760607521699",
+                "after": "0.9824134300376974"
+              },
+              {
+                "run": "m03q40_001",
+                "field": "reference_variants_min",
+                "before": "0.7641379555084179",
+                "after": "0.9792835018507103"
+              },
+              {
+                "run": "m03q40_001",
+                "field": "threshold_060_080_min",
+                "before": "0.7531224723735451",
+                "after": "0.9651077116657643"
+              },
+              {
+                "run": "m03q40_001",
+                "field": "threshold_060_080_max",
+                "before": "0.7735072608162327",
+                "after": "0.9913052629523079"
+              },
+              {
+                "run": "m03q40_001",
+                "field": "conditional_circle_alpha_spatial_median",
+                "before": "0.7511111111111111",
+                "after": "0.9626201495194019"
+              },
+              {
+                "run": "m03q40_001",
+                "field": "reference_variants_max",
+                "before": "0.7662346735444889",
+                "after": "0.9819706449371666"
+              },
+              {
+                "run": "m03q40_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.8744411769432259",
+                "after": "0.9899188541895015"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.5511729551480095",
+                "after": "0.7047442865247273"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "center_gas_silhouette_duty",
+                "before": "0.8306054032735161",
+                "after": "0.8286334056399133"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.4511858974358975",
+                "after": "0.5765512795936982"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.7380393929432393",
+                "after": "0.9448749897308102"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "reference_variants_min",
+                "before": "0.5511375687460287",
+                "after": "0.7047090447015849"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "threshold_060_080_min",
+                "before": "0.5277026775345647",
+                "after": "0.6747630426161396"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "threshold_060_080_max",
+                "before": "0.5691190648348999",
+                "after": "0.7247569384796411"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "conditional_circle_alpha_spatial_median",
+                "before": "0.6944444444444444",
+                "after": "0.8899964400142399"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "reference_variants_max",
+                "before": "0.5522772190451151",
+                "after": "0.7060240842057733"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.6796785643857227",
+                "after": "0.7644244185397544"
+              },
+              {
+                "run": "m04q10_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.6934350813606674",
+                "after": "0.8851850763171192"
+              },
+              {
+                "run": "m04q10_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.6607751352711716",
+                "after": "0.8425385641605793"
+              },
+              {
+                "run": "m04q10_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.7253271674845855",
+                "after": "0.9267624650905699"
+              },
+              {
+                "run": "m04q10_001",
+                "field": "reference_variants_min",
+                "before": "0.6933707101597011",
+                "after": "0.8851276181711448"
+              },
+              {
+                "run": "m04q10_001",
+                "field": "threshold_060_080_min",
+                "before": "0.6774089490441852",
+                "after": "0.8660935287168354"
+              },
+              {
+                "run": "m04q10_001",
+                "field": "threshold_060_080_max",
+                "before": "0.7072214671348209",
+                "after": "0.9023692957215937"
+              },
+              {
+                "run": "m04q10_001",
+                "field": "conditional_circle_alpha_spatial_median",
+                "before": "0.7802777777777777",
+                "after": "1.0"
+              },
+              {
+                "run": "m04q10_001",
+                "field": "reference_variants_max",
+                "before": "0.6942053648959867",
+                "after": "0.8861180756432258"
+              },
+              {
+                "run": "m04q10_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.8245705440404727",
+                "after": "0.9304479021748654"
+              },
+              {
+                "run": "m04q20_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.7055736004090564",
+                "after": "0.9028685469162233"
+              },
+              {
+                "run": "m04q20_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.6929064859401939",
+                "after": "0.8861379792576068"
+              },
+              {
+                "run": "m04q20_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.7212576541228228",
+                "after": "0.9224545958959023"
+              },
+              {
+                "run": "m04q20_001",
+                "field": "reference_variants_min",
+                "before": "0.7054478215372907",
+                "after": "0.9026199498797894"
+              },
+              {
+                "run": "m04q20_001",
+                "field": "threshold_060_080_min",
+                "before": "0.6898658081240487",
+                "after": "0.8826666564052922"
+              },
+              {
+                "run": "m04q20_001",
+                "field": "threshold_060_080_max",
+                "before": "0.7189768538337139",
+                "after": "0.9198041200129722"
+              },
+              {
+                "run": "m04q20_001",
+                "field": "conditional_circle_alpha_spatial_median",
+                "before": "0.7511111111111111",
+                "after": "0.9626201495194019"
+              },
+              {
+                "run": "m04q20_001",
+                "field": "reference_variants_max",
+                "before": "0.7065323261510655",
+                "after": "0.904147078617165"
+              },
+              {
+                "run": "m04q20_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.8364351455479452",
+                "after": "0.9452135564745412"
+              },
+              {
+                "run": "m04q40_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.7659147541592397",
+                "after": "0.9814687273336468"
+              },
+              {
+                "run": "m04q40_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.7628357100415923",
+                "after": "0.9774121759127937"
+              },
+              {
+                "run": "m04q40_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.7689834001782534",
+                "after": "0.9854180984345581"
+              },
+              {
+                "run": "m04q40_001",
+                "field": "reference_variants_min",
+                "before": "0.7659147541592397",
+                "after": "0.9814687273336468"
+              },
+              {
+                "run": "m04q40_001",
+                "field": "threshold_060_080_min",
+                "before": "0.7615912804515746",
+                "after": "0.9756572171572276"
+              },
+              {
+                "run": "m04q40_001",
+                "field": "threshold_060_080_max",
+                "before": "0.7692843137254903",
+                "after": "0.9858584800954915"
+              },
+              {
+                "run": "m04q40_001",
+                "field": "conditional_circle_alpha_spatial_median",
+                "before": "0.7802777777777777",
+                "after": "1.0"
+              },
+              {
+                "run": "m04q40_001",
+                "field": "reference_variants_max",
+                "before": "0.7662603052584672",
+                "after": "0.9819097039119865"
+              },
+              {
+                "run": "m04q40_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.875007798573975",
+                "after": "0.9905067601654727"
+              },
+              {
+                "run": "m04q80_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.7797588035773891",
+                "after": "0.9993348853252404"
+              },
+              {
+                "run": "m04q80_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.7790615565864076",
+                "after": "0.9984412971559512"
+              },
+              {
+                "run": "m04q80_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.7801231499889553",
+                "after": "0.9998018298185258"
+              },
+              {
+                "run": "m04q80_001",
+                "field": "reference_variants_min",
+                "before": "0.7797588035773891",
+                "after": "0.9993348853252404"
+              },
+              {
+                "run": "m04q80_001",
+                "field": "threshold_060_080_min",
+                "before": "0.7792965728141997",
+                "after": "0.9987392529666497"
+              },
+              {
+                "run": "m04q80_001",
+                "field": "threshold_060_080_max",
+                "before": "0.7800007485617797",
+                "after": "0.9996449607769335"
+              },
+              {
+                "run": "m04q80_001",
+                "field": "conditional_circle_alpha_spatial_median",
+                "before": "0.7802777777777777",
+                "after": "1.0"
+              },
+              {
+                "run": "m04q80_001",
+                "field": "reference_variants_max",
+                "before": "0.7798026128487563",
+                "after": "0.9993910310628417"
+              },
+              {
+                "run": "m04q80_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.8830366083524769",
+                "after": "0.9996640849273323"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.49760592031425366",
+                "after": "0.6364323189171889"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "center_gas_silhouette_duty",
+                "before": "0.7084175084175084",
+                "after": "0.7052188552188552"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.44888397867564545",
+                "after": "0.5733267167941428"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.5351122334455668",
+                "after": "0.6856616479257989"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "reference_variants_min",
+                "before": "0.49760592031425366",
+                "after": "0.6364323189171889"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "threshold_060_080_min",
+                "before": "0.4831160213243547",
+                "after": "0.6181486156210256"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "threshold_060_080_max",
+                "before": "0.5108646184062852",
+                "after": "0.6534201634237234"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "conditional_circle_alpha_spatial_median",
+                "before": "0.7225",
+                "after": "0.9259522961908152"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "reference_variants_max",
+                "before": "0.5002627665544334",
+                "after": "0.6398338433582292"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.5933866442199776",
+                "after": "0.6683628740232513"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.4095369198868329",
+                "after": "0.5215153929831853"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "center_gas_silhouette_duty",
+                "before": "0.688122726553851",
+                "after": "0.6795824766724656"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.3024749670619236",
+                "after": "0.38696538652580564"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.49088669301712784",
+                "after": "0.6252426911240972"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "reference_variants_min",
+                "before": "0.40915976944839827",
+                "after": "0.520854292986434"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "threshold_060_080_min",
+                "before": "0.39219357899731144",
+                "after": "0.49960461806104695"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "threshold_060_080_max",
+                "before": "0.43041409668406344",
+                "after": "0.5470529843327409"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "conditional_circle_alpha_spatial_median",
+                "before": "0.5377777777777778",
+                "after": "0.6892132431470274"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "reference_variants_max",
+                "before": "0.4109255891190891",
+                "after": "0.5232933589853495"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.5320022141388582",
+                "after": "0.5935652708440882"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.5969814232887366",
+                "after": "0.7619199393220997"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "center_gas_silhouette_duty",
+                "before": "0.9470075703470933",
+                "after": "0.9454363662333952"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.5332429217225791",
+                "after": "0.6809134704931559"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.6383704365079366",
+                "after": "0.8166014850226312"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "reference_variants_min",
+                "before": "0.5966827357996477",
+                "after": "0.7615399905490793"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "threshold_060_080_min",
+                "before": "0.5695059039184879",
+                "after": "0.7275047774541082"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "threshold_060_080_max",
+                "before": "0.6268248583535685",
+                "after": "0.7991009167230293"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "conditional_circle_alpha_spatial_median",
+                "before": "0.6669444444444445",
+                "after": "0.854752580989676"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "reference_variants_max",
+                "before": "0.5989179323588695",
+                "after": "0.7639555026696335"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.7501095081655001",
+                "after": "0.8443645516947713"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.6401948691351345",
+                "after": "0.8164293896741339"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "center_gas_silhouette_duty",
+                "before": "0.9730753619266675",
+                "after": "0.972398863482614"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.6120890616783112",
+                "after": "0.7806499970754681"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.6616119756427606",
+                "after": "0.8455284122029955"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "reference_variants_min",
+                "before": "0.6391103669628228",
+                "after": "0.8157850182832797"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "threshold_060_080_min",
+                "before": "0.6039058013499903",
+                "after": "0.7706406803922237"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "threshold_060_080_max",
+                "before": "0.6664702566184099",
+                "after": "0.8500977707630234"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "conditional_circle_alpha_spatial_median",
+                "before": "0.6944444444444444",
+                "after": "0.8899964400142399"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "reference_variants_max",
+                "before": "0.642356845412589",
+                "after": "0.8193913402130183"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.7869413250349524",
+                "after": "0.8850156871054291"
+              },
+              {
+                "run": "m05q40_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.7279860342379211",
+                "after": "0.9314463963840833"
+              },
+              {
+                "run": "m05q40_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.7212851590896383",
+                "after": "0.9231220448042213"
+              },
+              {
+                "run": "m05q40_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.7335571492478892",
+                "after": "0.9387232747999054"
+              },
+              {
+                "run": "m05q40_001",
+                "field": "reference_variants_min",
+                "before": "0.7272877461339775",
+                "after": "0.9304931857458845"
+              },
+              {
+                "run": "m05q40_001",
+                "field": "threshold_060_080_min",
+                "before": "0.699682695425626",
+                "after": "0.8949174745718247"
+              },
+              {
+                "run": "m05q40_001",
+                "field": "threshold_060_080_max",
+                "before": "0.7437292162848166",
+                "after": "0.9517512840686286"
+              },
+              {
+                "run": "m05q40_001",
+                "field": "conditional_circle_alpha_spatial_median",
+                "before": "0.7802777777777777",
+                "after": "1.0"
+              },
+              {
+                "run": "m05q40_001",
+                "field": "reference_variants_max",
+                "before": "0.7289794315297486",
+                "after": "0.9327909295990874"
+              },
+              {
+                "run": "m05q40_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.8498272449766865",
+                "after": "0.960143242047541"
+              },
+              {
+                "run": "m05q80_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.7691476926881231",
+                "after": "0.985384190396587"
+              },
+              {
+                "run": "m05q80_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.7678092407671583",
+                "after": "0.9837632147331611"
+              },
+              {
+                "run": "m05q80_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.771081153907117",
+                "after": "0.9880439325603612"
+              },
+              {
+                "run": "m05q80_001",
+                "field": "reference_variants_min",
+                "before": "0.7691476926881231",
+                "after": "0.985384190396587"
+              },
+              {
+                "run": "m05q80_001",
+                "field": "threshold_060_080_min",
+                "before": "0.7475672094143904",
+                "after": "0.9575382515634969"
+              },
+              {
+                "run": "m05q80_001",
+                "field": "threshold_060_080_max",
+                "before": "0.7745976311851683",
+                "after": "0.9925788395454039"
+              },
+              {
+                "run": "m05q80_001",
+                "field": "conditional_circle_alpha_spatial_median",
+                "before": "0.7802777777777777",
+                "after": "1.0"
+              },
+              {
+                "run": "m05q80_001",
+                "field": "reference_variants_max",
+                "before": "0.7699881115422659",
+                "after": "0.9865017545179762"
+              },
+              {
+                "run": "m05q80_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.8765150650536407",
+                "after": "0.9919377414478473"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.4655481818699952",
+                "after": "0.5931380475555297"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "center_gas_silhouette_duty",
+                "before": "0.7478840728391896",
+                "after": "0.7383944601179789"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.39677475071225077",
+                "after": "0.5042087703444058"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.5130852920227921",
+                "after": "0.6550839335104198"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "reference_variants_min",
+                "before": "0.4655481818699952",
+                "after": "0.5931380475555297"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "threshold_060_080_min",
+                "before": "0.4426262075745918",
+                "after": "0.5647034031509938"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "threshold_060_080_max",
+                "before": "0.4910561468752672",
+                "after": "0.6228521959469484"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "conditional_circle_alpha_spatial_median",
+                "before": "0.6136111111111111",
+                "after": "0.7864008543965824"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "reference_variants_max",
+                "before": "0.46667436094725145",
+                "after": "0.5946233532326707"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.5924018979225443",
+                "after": "0.6591070763185529"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.4756132371616512",
+                "after": "0.6062947881250725"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "center_gas_silhouette_duty",
+                "before": "0.8014639784255811",
+                "after": "0.7985103377423912"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.413222079589217",
+                "after": "0.526340695664175"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.5330849925069578",
+                "after": "0.6814747898362292"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "reference_variants_min",
+                "before": "0.47516162978183013",
+                "after": "0.6055035633459623"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "threshold_060_080_min",
+                "before": "0.44711017650500123",
+                "after": "0.5716898704255703"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "threshold_060_080_max",
+                "before": "0.5093983562347503",
+                "after": "0.647177798087318"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "conditional_circle_alpha_spatial_median",
+                "before": "0.5877777777777777",
+                "after": "0.7532929868280527"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "reference_variants_max",
+                "before": "0.47704307749382874",
+                "after": "0.6080385273938549"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.6202880869825778",
+                "after": "0.6945392780904798"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.5419135680379747",
+                "after": "0.6893424240649029"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "center_gas_silhouette_duty",
+                "before": "0.8798786919831224",
+                "after": "0.8724947257383966"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.4929643668058303",
+                "after": "0.627663271812305"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.5889465685197393",
+                "after": "0.7514503363212652"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "reference_variants_min",
+                "before": "0.5418931669010785",
+                "after": "0.6892965629614275"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "threshold_060_080_min",
+                "before": "0.507750564052977",
+                "after": "0.6478940787823346"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "threshold_060_080_max",
+                "before": "0.5849370385021098",
+                "after": "0.7421489264464883"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "conditional_circle_alpha_spatial_median",
+                "before": "0.64",
+                "after": "0.8202207191171236"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "reference_variants_max",
+                "before": "0.543534780825129",
+                "after": "0.6913474977956628"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.695193829113924",
+                "after": "0.7737341772151899"
+              },
+              {
+                "run": "m06q20_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.6499715695384752",
+                "after": "0.828813491197648"
+              },
+              {
+                "run": "m06q20_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.6181483325037332",
+                "after": "0.7857039194043324"
+              },
+              {
+                "run": "m06q20_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.6725114818503762",
+                "after": "0.8578601703512547"
+              },
+              {
+                "run": "m06q20_001",
+                "field": "reference_variants_min",
+                "before": "0.6484880968184433",
+                "after": "0.8265474915001974"
+              },
+              {
+                "run": "m06q20_001",
+                "field": "threshold_060_080_min",
+                "before": "0.6079896787468472",
+                "after": "0.77526087068093"
+              },
+              {
+                "run": "m06q20_001",
+                "field": "threshold_060_080_max",
+                "before": "0.6863865104650648",
+                "after": "0.8756348889379434"
+              },
+              {
+                "run": "m06q20_001",
+                "field": "conditional_circle_alpha_spatial_median",
+                "before": "0.7225",
+                "after": "0.8899964400142399"
+              },
+              {
+                "run": "m06q20_001",
+                "field": "reference_variants_max",
+                "before": "0.6514192276206912",
+                "after": "0.8306666402964017"
+              },
+              {
+                "run": "m06q20_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.7869076065312625",
+                "after": "0.8799189227775148"
+              },
+              {
+                "run": "m06q40_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.7204070952552879",
+                "after": "0.920915682706075"
+              },
+              {
+                "run": "m06q40_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.7102689385390809",
+                "after": "0.9072844250261455"
+              },
+              {
+                "run": "m06q40_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.7376149101030618",
+                "after": "0.9411035666622397"
+              },
+              {
+                "run": "m06q40_001",
+                "field": "reference_variants_min",
+                "before": "0.7183425098534767",
+                "after": "0.9179281335948037"
+              },
+              {
+                "run": "m06q40_001",
+                "field": "threshold_060_080_min",
+                "before": "0.6722335424376449",
+                "after": "0.8596176779657897"
+              },
+              {
+                "run": "m06q40_001",
+                "field": "threshold_060_080_max",
+                "before": "0.7463834356289679",
+                "after": "0.9555288082665704"
+              },
+              {
+                "run": "m06q40_001",
+                "field": "conditional_circle_alpha_spatial_median",
+                "before": "0.7802777777777777",
+                "after": "1.0"
+              },
+              {
+                "run": "m06q40_001",
+                "field": "reference_variants_max",
+                "before": "0.7226010357432981",
+                "after": "0.9238234141024984"
+              },
+              {
+                "run": "m06q40_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.8405711255528477",
+                "after": "0.9470977729411585"
+              },
+              {
+                "run": "m06q80_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.7526505938030181",
+                "after": "0.9637431710117789"
+              },
+              {
+                "run": "m06q80_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.7423420245855286",
+                "after": "0.9503265164008724"
+              },
+              {
+                "run": "m06q80_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.7595472065958272",
+                "after": "0.9731633529935209"
+              },
+              {
+                "run": "m06q80_001",
+                "field": "reference_variants_min",
+                "before": "0.7515143465190346",
+                "after": "0.9621103839720726"
+              },
+              {
+                "run": "m06q80_001",
+                "field": "threshold_060_080_min",
+                "before": "0.7165953805399292",
+                "after": "0.9171441685516409"
+              },
+              {
+                "run": "m06q80_001",
+                "field": "threshold_060_080_max",
+                "before": "0.7648202518081973",
+                "after": "0.9798443962934569"
+              },
+              {
+                "run": "m06q80_001",
+                "field": "conditional_circle_alpha_spatial_median",
+                "before": "0.7802777777777777",
+                "after": "1.0"
+              },
+              {
+                "run": "m06q80_001",
+                "field": "reference_variants_max",
+                "before": "0.7535901568592435",
+                "after": "0.9649769688089744"
+              },
+              {
+                "run": "m06q80_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.8646557728368605",
+                "after": "0.9776445673215431"
+              },
+              {
+                "run": "m07q01_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.001835996355863905",
+                "after": "0.001768204847710411"
+              },
+              {
+                "run": "m07q01_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.00040878023133543635",
+                "after": "0.0002622260804332177"
+              },
+              {
+                "run": "m07q01_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.0034829396325459314",
+                "after": "0.004463717578200553"
+              },
+              {
+                "run": "m07q01_001",
+                "field": "reference_variants_min",
+                "before": "0.0018166368828620484",
+                "after": "0.001762142431089689"
+              },
+              {
+                "run": "m07q01_001",
+                "field": "threshold_060_080_min",
+                "before": "0.0012049300956585725",
+                "after": "0.0010773138868970856"
+              },
+              {
+                "run": "m07q01_001",
+                "field": "threshold_060_080_max",
+                "before": "0.0026530361960825535",
+                "after": "0.00270114340545476"
+              },
+              {
+                "run": "m07q01_001",
+                "field": "reference_variants_max",
+                "before": "0.0018446686989733348",
+                "after": "0.0017793192781817334"
+              },
+              {
+                "run": "m07q01_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.00992851886891622",
+                "after": "0.008211206511843773"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.37310244329678954",
+                "after": "0.4745310548521328"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "center_gas_silhouette_duty",
+                "before": "0.6670290839902148",
+                "after": "0.6592824136993748"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.31442085597826086",
+                "after": "0.3986555249431177"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.4193502792874397",
+                "after": "0.5340885565805563"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "reference_variants_min",
+                "before": "0.37272613330917215",
+                "after": "0.47358769249348115"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "threshold_060_080_min",
+                "before": "0.35082525444716256",
+                "after": "0.44736252857108716"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "threshold_060_080_max",
+                "before": "0.39960847603515454",
+                "after": "0.5054757883713776"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "conditional_circle_alpha_spatial_median",
+                "before": "0.46694444444444444",
+                "after": "0.598433606265575"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "reference_variants_max",
+                "before": "0.374595413910785",
+                "after": "0.47644772834879856"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.5013862462625713",
+                "after": "0.5580346382066497"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.5158136146443233",
+                "after": "0.6541214867242288"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "center_gas_silhouette_duty",
+                "before": "0.8812840702604482",
+                "after": "0.8782556026650515"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.41386819436032035",
+                "after": "0.522483433991158"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.5727384076990376",
+                "after": "0.7249733108881011"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "reference_variants_min",
+                "before": "0.5143569217309375",
+                "after": "0.6522887517171918"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "threshold_060_080_min",
+                "before": "0.4768879803486103",
+                "after": "0.6076085369795406"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "threshold_060_080_max",
+                "before": "0.5571718487112189",
+                "after": "0.705754217806872"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "conditional_circle_alpha_spatial_median",
+                "before": "0.5877777777777777",
+                "after": "0.7532929868280527"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "reference_variants_max",
+                "before": "0.5173679251632007",
+                "after": "0.6560283539604786"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.6801433474661821",
+                "after": "0.7570346159560244"
+              },
+              {
+                "run": "m07q40_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.6361585928860546",
+                "after": "0.8119799145114948"
+              },
+              {
+                "run": "m07q40_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.6137410719080608",
+                "after": "0.7820015447826077"
+              },
+              {
+                "run": "m07q40_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.6485602522812668",
+                "after": "0.8276765675545993"
+              },
+              {
+                "run": "m07q40_001",
+                "field": "reference_variants_min",
+                "before": "0.6356811447160757",
+                "after": "0.8110632757971431"
+              },
+              {
+                "run": "m07q40_001",
+                "field": "threshold_060_080_min",
+                "before": "0.5881041646535898",
+                "after": "0.7505073641895016"
+              },
+              {
+                "run": "m07q40_001",
+                "field": "threshold_060_080_max",
+                "before": "0.673313927271556",
+                "after": "0.8588071257918853"
+              },
+              {
+                "run": "m07q40_001",
+                "field": "conditional_circle_alpha_spatial_median",
+                "before": "0.6944444444444444",
+                "after": "0.8899964400142399"
+              },
+              {
+                "run": "m07q40_001",
+                "field": "reference_variants_max",
+                "before": "0.6379467151952417",
+                "after": "0.81426660939409"
+              },
+              {
+                "run": "m07q40_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.7810722453055046",
+                "after": "0.8755617624162029"
+              },
+              {
+                "run": "m07q80_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.7235606348634623",
+                "after": "0.9260116649051953"
+              },
+              {
+                "run": "m07q80_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.7073754501800721",
+                "after": "0.9043136300443995"
+              },
+              {
+                "run": "m07q80_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.7358542583700148",
+                "after": "0.9422499152740484"
+              },
+              {
+                "run": "m07q80_001",
+                "field": "reference_variants_min",
+                "before": "0.7204572877896507",
+                "after": "0.9217115363499164"
+              },
+              {
+                "run": "m07q80_001",
+                "field": "threshold_060_080_min",
+                "before": "0.6708390196235375",
+                "after": "0.8580292510382366"
+              },
+              {
+                "run": "m07q80_001",
+                "field": "threshold_060_080_max",
+                "before": "0.7472374968316858",
+                "after": "0.9569082722588549"
+              },
+              {
+                "run": "m07q80_001",
+                "field": "conditional_circle_alpha_spatial_median",
+                "before": "0.7802777777777777",
+                "after": "1.0"
+              },
+              {
+                "run": "m07q80_001",
+                "field": "reference_variants_max",
+                "before": "0.7260992549459053",
+                "after": "0.9295138420358794"
+              },
+              {
+                "run": "m07q80_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.8417166926801937",
+                "after": "0.9493902867226807"
+              }
+            ]
+          },
+          {
+            "artifact": "results/flip_rate/phase_mask_flip_per_run.csv",
+            "common_cells_compared": 442,
+            "retained_runs": 26,
+            "method_correction_changes": [
+              {
+                "run": "m03q05_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.002017696676213817",
+                "after": "0.0026594226434779183"
+              },
+              {
+                "run": "m03q05_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "1025",
+                "after": "1351"
+              },
+              {
+                "run": "m03q10_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.0002865409335662805",
+                "after": "0.00031572565828136463"
+              },
+              {
+                "run": "m03q10_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "216",
+                "after": "238"
+              },
+              {
+                "run": "m03q40_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.0016291800612375218",
+                "after": "0.0016473730267454786"
+              },
+              {
+                "run": "m03q40_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "1791",
+                "after": "1811"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "center_candidate_gas_duty",
+                "before": "0.8306054032735161",
+                "after": "0.8286334056399133"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.00919950876409512",
+                "after": "0.009727959510252689"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "2472",
+                "after": "2614"
+              },
+              {
+                "run": "m04q10_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.005283360833026989",
+                "after": "0.006257961375041677"
+              },
+              {
+                "run": "m04q10_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "2472",
+                "after": "2928"
+              },
+              {
+                "run": "m04q20_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.004378214746586588",
+                "after": "0.0051254192928213834"
+              },
+              {
+                "run": "m04q20_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "2168",
+                "after": "2538"
+              },
+              {
+                "run": "m04q40_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.0008526450284866686",
+                "after": "0.0009434592918757813"
+              },
+              {
+                "run": "m04q40_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "676",
+                "after": "748"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "center_candidate_gas_exits",
+                "before": "26",
+                "after": "24"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "center_candidate_flip_rate",
+                "before": "0.008755682774877925",
+                "after": "0.008082168715271931"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "center_candidate_flip_count",
+                "before": "52",
+                "after": "48"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "center_candidate_flips_per1000px",
+                "before": "8.755682774877926",
+                "after": "8.082168715271932"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "center_candidate_gas_duty",
+                "before": "0.7084175084175084",
+                "after": "0.7052188552188552"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.007294284343657372",
+                "after": "0.00726886871876658"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "2296",
+                "after": "2288"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "center_candidate_gas_entries",
+                "before": "26",
+                "after": "24"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "center_candidate_gas_exits",
+                "before": "40",
+                "after": "44"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "center_candidate_flip_rate",
+                "before": "0.012654223347042075",
+                "after": "0.013919645681746282"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "center_candidate_flip_count",
+                "before": "80",
+                "after": "88"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "center_candidate_flips_per1000px",
+                "before": "12.654223347042075",
+                "after": "13.919645681746283"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "center_candidate_gas_duty",
+                "before": "0.688122726553851",
+                "after": "0.6795824766724656"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.009750317847826996",
+                "after": "0.01041884285484054"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "3267",
+                "after": "3491"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "center_candidate_gas_entries",
+                "before": "40",
+                "after": "44"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "center_candidate_gas_duty",
+                "before": "0.9470075703470933",
+                "after": "0.9454363662333952"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.010943396226415094",
+                "after": "0.012404312668463612"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "4060",
+                "after": "4602"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "center_candidate_gas_exits",
+                "before": "20",
+                "after": "19"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "center_candidate_flip_rate",
+                "before": "0.005412719891745603",
+                "after": "0.005142083897158322"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "center_candidate_flip_count",
+                "before": "40",
+                "after": "38"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "center_candidate_flips_per1000px",
+                "before": "5.412719891745602",
+                "after": "5.142083897158322"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "center_candidate_gas_duty",
+                "before": "0.9730753619266675",
+                "after": "0.972398863482614"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.010245870247912783",
+                "after": "0.011624581918451758"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "4013",
+                "after": "4553"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "center_candidate_gas_entries",
+                "before": "20",
+                "after": "19"
+              },
+              {
+                "run": "m05q40_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.004753061100477015",
+                "after": "0.005713927627381278"
+              },
+              {
+                "run": "m05q40_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "2503",
+                "after": "3009"
+              },
+              {
+                "run": "m05q80_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.00107244494836436",
+                "after": "0.001322251402200235"
+              },
+              {
+                "run": "m05q80_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "996",
+                "after": "1228"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "center_candidate_gas_exits",
+                "before": "48",
+                "after": "41"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "center_candidate_flip_rate",
+                "before": "0.012440682313710401",
+                "after": "0.010645119917917148"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "center_candidate_flip_count",
+                "before": "97",
+                "after": "83"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "center_candidate_flips_per1000px",
+                "before": "12.4406823137104",
+                "after": "10.645119917917148"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "center_candidate_gas_duty",
+                "before": "0.7478840728391896",
+                "after": "0.7383944601179789"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.010044985855711315",
+                "after": "0.009730399452135679"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "4151",
+                "after": "4021"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "center_candidate_gas_entries",
+                "before": "49",
+                "after": "42"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "center_candidate_gas_exits",
+                "before": "44",
+                "after": "39"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "center_candidate_flip_rate",
+                "before": "0.011302337528898022",
+                "after": "0.010017980991523246"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "center_candidate_flip_count",
+                "before": "88",
+                "after": "78"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "center_candidate_flips_per1000px",
+                "before": "11.302337528898022",
+                "after": "10.017980991523247"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "center_candidate_gas_duty",
+                "before": "0.8014639784255811",
+                "after": "0.7985103377423912"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.01261577383693034",
+                "after": "0.012993810855478386"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "5206",
+                "after": "5362"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "center_candidate_gas_entries",
+                "before": "44",
+                "after": "39"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "center_candidate_gas_duty",
+                "before": "0.8798786919831224",
+                "after": "0.8724947257383966"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.01302566067594097",
+                "after": "0.013826856996409545"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "5235",
+                "after": "5557"
+              },
+              {
+                "run": "m06q20_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.009714830004565274",
+                "after": "0.010755637550983601"
+              },
+              {
+                "run": "m06q20_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "5171",
+                "after": "5725"
+              },
+              {
+                "run": "m06q40_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.005639556346385",
+                "after": "0.006980787187541115"
+              },
+              {
+                "run": "m06q40_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "4415",
+                "after": "5465"
+              },
+              {
+                "run": "m06q80_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.0022503214744963567",
+                "after": "0.002737587849477149"
+              },
+              {
+                "run": "m06q80_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "2226",
+                "after": "2708"
+              },
+              {
+                "run": "m07q01_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.0032021903458127493",
+                "after": "0.0024641390393428963"
+              },
+              {
+                "run": "m07q01_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "538",
+                "after": "414"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "center_candidate_gas_exits",
+                "before": "43",
+                "after": "39"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "center_candidate_flip_rate",
+                "before": "0.011825472339268724",
+                "after": "0.010738072583933668"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "center_candidate_flip_count",
+                "before": "87",
+                "after": "79"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "center_candidate_flips_per1000px",
+                "before": "11.825472339268723",
+                "after": "10.738072583933668"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "center_candidate_gas_duty",
+                "before": "0.6670290839902148",
+                "after": "0.6592824136993748"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.010640616945483829",
+                "after": "0.010502127354002477"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "4149",
+                "after": "4095"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "center_candidate_gas_entries",
+                "before": "44",
+                "after": "40"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "center_candidate_gas_duty",
+                "before": "0.8812840702604482",
+                "after": "0.8782556026650515"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.015018447316566924",
+                "after": "0.016234552944027137"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "6570",
+                "after": "7102"
+              },
+              {
+                "run": "m07q40_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.011410463055480597",
+                "after": "0.013066055969251191"
+              },
+              {
+                "run": "m07q40_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "6258",
+                "after": "7166"
+              },
+              {
+                "run": "m07q80_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.004605690168222097",
+                "after": "0.005511876133440415"
+              },
+              {
+                "run": "m07q80_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "4066",
+                "after": "4866"
+              }
+            ]
+          },
+          {
+            "artifact": "results/flip_rate/flip_rate_per_run.csv",
+            "common_cells_compared": 936,
+            "retained_runs": 26,
+            "method_correction_changes": []
+          },
+          {
+            "artifact": "results/validation/data_inventory.csv",
+            "common_cells_compared": 312,
+            "retained_runs": 26,
+            "method_correction_changes": []
+          },
+          {
+            "artifact": "intermediate/exploratory/image_void_alternatives.csv",
+            "common_cells_compared": 858,
+            "retained_runs": 26,
+            "method_correction_changes": []
+          },
+          {
+            "artifact": "intermediate/features/pattern_morphology_features.csv",
+            "common_cells_compared": 416,
+            "retained_runs": 26,
+            "method_correction_changes": []
+          }
+        ],
+        "method_correction_verified": true,
+        "interpretation": "The morphology ledger retains D60 on both sides. Current D53 normalization is checked separately; raw inputs, labels and unrelated measurements stay identical."
+      }
+    },
+    {
+      "check": "confirmed_full_lumen_normalization",
+      "passed": true,
+      "details": {
+        "passed": true,
+        "completed_utc": "2026-10-24T11:59:01.064516+00:00",
+        "selected_acquisitions": 26,
+        "statistical_acquisitions": 25,
+        "diameter_before_px": 60,
+        "diameter_after_px": 53,
+        "confirmed_lumen_rows": [
+          18,
+          71
+        ],
+        "full_lumen_maximum": 1,
+        "boundary_source": "User-confirmed full tube interior on 2026-10-23: Python slice 18:71, rows 18 through 70, 53 pixel cells. Optical profile minima are not used as lumen boundaries. Refraction mapping remains uncalibrated.",
+        "alpha_scale_factor": 1.2815948736205054,
+        "projected_scale_factor": 1.1320754716981132,
+        "identical_masks": 26,
+        "unchanged_flip_metrics": 26,
+        "unchanged_input_panorama_hashes": 26,
+        "scaled_value_checks": 234,
+        "max_rescaling_error": 3.3306690738754696e-16,
+        "obsolete_primary_fields_removed": true,
+        "segmentation_source_sha256": "a63db1153e6f73d334ffce09416ab2794d8a360f5474f27aa48c6b9e9c098933",
+        "geometry_source_sha256": "05f36daaca877d1d80f3f6c992d403a1382978e81293b9649532e00e5e4dce3b",
+        "failures": [],
+        "interpretation": "Only normalization changes. User-confirmed lumen boundaries are provenance, not independent optical/phase calibration."
+      }
+    },
+    {
+      "check": "calibration_and_computational_metadata_scope",
+      "passed": true,
+      "details": {
+        "computational_json_inputs_checked": [
+          "panorama_liquid_reference.json",
+          "image_void_alternatives_metadata.json",
+          "phase_mask_flip_metadata.json",
+          "flip_rate_audit.json",
+          "legacy_independent_audit.json",
+          "pattern_identification.json",
+          "silhouette_pattern_results.json",
+          "adversarial_checks.json",
+          "final_verification.json",
+          "summary_chart_checks.json",
+          "lumen_normalization_checks.json"
+        ],
+        "scope_bookkeeping_subtrees_exempt_from_input_scan": [
+          "dataset_scope",
+          "excluded_acquisitions",
+          "excluded_runs",
+          "explicitly_excluded_acquisitions",
+          "policy",
+          "scope"
+        ],
+        "segmentation_source_sha256": "a63db1153e6f73d334ffce09416ab2794d8a360f5474f27aa48c6b9e9c098933",
+        "all_four_source_hashes_current": true
+      }
+    },
+    {
+      "check": "groups_charts_scaling_and_provenance",
+      "passed": true,
+      "details": {
+        "group_counts_independently_recomputed": {
+          "wavy annular": 8,
+          "churn": 10,
+          "slug": 3,
+          "plug": 3,
+          "dispersed bubbles": 1
+        },
+        "chart_coordinate_pairs_verified": 26,
+        "equal_acquisition_centroids_verified": 5,
+        "flip_scaling_factor": 1000,
+        "chart_source_hashes_current": true,
+        "svg_scope_and_hull_scope_verified": true
+      }
+    },
+    {
+      "check": "heldout_classifier_tests_and_missing_classes",
+      "passed": true,
+      "details": {
+        "model_variant_matrices_rebuilt": 48,
+        "heldout_predictions_checked": 1200,
+        "heldout_reference_folds_checked": 50,
+        "all_statistical_tests_retained_per_model": 25,
+        "singleton_bubble_runs": [
+          "m07q01_001"
+        ],
+        "absent_class_centroid_control_passed": true,
+        "independently_detected_absent_training_class_folds": {
+          "pattern_identification.json": {
+            "leave_one_run_out": 1,
+            "leave_one_mass_flux_out": 5,
+            "leave_one_run_out_consistent_variant": 1
+          },
+          "silhouette_pattern_results.json": {
+            "leave_one_run_out": 1,
+            "leave_one_mass_flux_out": 5
+          }
+        }
+      }
+    },
+    {
+      "check": "rank_test_methods_and_values",
+      "passed": true,
+      "details": {
+        "comparisons_independently_verified": 17,
+        "methods_ties_continuity_sample_sizes_and_auc_checked": true
+      }
+    },
+    {
+      "check": "written_executive_summary",
+      "passed": true,
+      "details": {
+        "summary_table_groups_checked": [
+          "dispersed bubbles",
+          "plug",
+          "slug",
+          "churn",
+          "wavy annular"
+        ],
+        "summary_table_rounding_checked": true,
+        "observed_hull_overlap_pairs_independently_checked": [
+          [
+            "churn",
+            "wavy annular"
+          ]
+        ],
+        "summary_flip_scaling_checked": 1000,
+        "embedded_figures_checked": 3,
+        "executive_summary_sha256": "66f1693fd4024c5be410cc7a9c646ce255a5b942047013cf28eaceb1f46b9344",
+        "limitations_and_singleton_support_disclosed": true
+      }
+    },
+    {
+      "check": "written_executive_summary_pt_br",
+      "passed": true,
+      "details": {
+        "summary_table_groups_checked": [
+          "dispersed bubbles",
+          "plug",
+          "slug",
+          "churn",
+          "wavy annular"
+        ],
+        "summary_table_rounding_checked": true,
+        "observed_hull_overlap_pairs_independently_checked": [
+          [
+            "churn",
+            "wavy annular"
+          ]
+        ],
+        "summary_flip_scaling_checked": 1000,
+        "embedded_figures_checked": 3,
+        "executive_summary_sha256": "b4f478c9cb3087196a64805d76df5dc2bd5268e0f267c45fea43008068b80c10",
+        "limitations_and_singleton_support_disclosed": true
+      }
+    }
+  ],
+  "failures": [],
+  "scope": "Post-regeneration arithmetic, dataset selection, leakage, chart and written-findings audit; not independent physical void calibration."
+}

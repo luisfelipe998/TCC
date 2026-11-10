@@ -1,0 +1,23 @@
+{
+  "objetivo": "Triagem preliminar da contribuição das análises de estatistica7 além de Pearson na identificação/separação dos quatro padrões da v16.3_ancoras.",
+  "status": "Definido antes do cálculo desta triagem; exploração informada pelos resultados anteriores, não pré-registro independente.",
+  "seed": 2026102608,
+  "fonte": "src2/v16.3_ancoras",
+  "unidade": "ensaio; 25 aquisições, nunca os 300 pares ou as 200 escalas",
+  "principal": "2048 px, centro da âncora congelada, 200 comprimentos de onda entre 50 e 1024 px",
+  "sensibilidades": ["mesma janela deslocada -64 px", "mesma janela deslocada +64 px", "WPS do panorama completo, faixa de escalas mantida"],
+  "bandas_px": [[50, 200], [200, 800], [800, 1024]],
+  "adaptacao": "Preservar fórmulas de estatistica7; banda longa termina em 1024 px, limite disponível na fonte. Não extrapolar até 3000 px.",
+  "familias": ["15 resumos cruzados WCO de estatistica7", "3 descritores de autocoerência", "5 normalizações de kernel, recusadas se geometria inválida", "WCO central já usada na fonte", "WPS e potência média: Hellinger, Wasserstein, pico, largura, inclinação e trio", "Pearson residual como referência"],
+  "escopos": ["quatro_padroes", "churn_annular", "plug_slug", "churn_plug", "churn_slug", "annular_plug", "annular_slug"],
+  "escopos_prioritarios": ["quatro_padroes", "churn_annular", "plug_slug"],
+  "triagem": {"silhueta_macro_minima": 0.1, "silhueta_media_cada_classe": ">0", "vizinho_balanceado_acima_referencia": 0.1},
+  "estabilidade": "Verificar todos os candidatos em ambas as perturbações, influência ao retirar cada aquisição e vizinhos excluindo o mesmo código m. Janelas são sensibilidades dependentes, não réplicas.",
+  "estatistica": "Permutar rótulos de aquisições preservando contagens. Enumerar todas as alocações binárias quando <=20000; caso contrário 9999 permutações com semente fixa. Silhueta macro e vizinhança balanceada; Holm conjunto para todos os candidatos/escopos e ambos os desfechos principais. Associação exploratória condicionada à permutabilidade, limitada por confusão operacional.",
+  "ganho_pearson": "Comparar vizinhança por candidato e combinação 50:50 com distância de Pearson, normalizadas pela mediana dos pares de treinamento em cada exclusão. Testar ganho pela mesma permutação de aquisições, com família Holm própria para todos os ganhos. Sem escolher peso ou candidato pelo ensaio omitido.",
+  "escalonamento": "Trio e bandas de autocoerência: IQR global apenas na geometria descritiva; nos vizinhos, ajustar IQR apenas nos candidatos de treinamento de cada exclusão.",
+  "agrupamento": "Ligação média, k=4 ou k=2 fixos, ARI; sem escolher algoritmo ou k para maximizar concordância.",
+  "controles": "Ruído branco e AR(1)=0.95 independentes, 99 pares de cada. Fases aleatórias não têm utilidade de classificação própria: executar somente se algum resumo WCO passar a triagem nos escopos prioritários, 199 réplicas e seis contrastes Holm.",
+  "decisao": "Resultado útil exige evidência prática de separação, não apenas p pequeno nem diagnóstico de limitações. Ganho estável para um contraste específico pode justificar manutenção restrita; nenhum candidato favorável implica recomendar descarte desta extensão para identificação. Não alegar impossibilidade universal de classificação.",
+  "adendo_precisao_posterior_triagem": "A primeira execução usou 9999 permutações em churn/annular e encontrou p=0.0003 para largura/trio, com incerteza Monte Carlo relevante após Holm. Como enumerar todas as 92378 alocações se mostrou computacionalmente viável, a execução final usa enumeração exata para TODOS os 36 candidatos, ambos os desfechos e ambos os ganhos desse contraste. Limite de enumeração aumentado de 20000 a 100000. Mesmas estatísticas, candidatos, hipóteses e famílias Holm; não escolher número de simulações até significância. O conjunto de quatro padrões mantém 9999 permutações."
+}

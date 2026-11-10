@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "comparisons_checked": 224368,
+  "region_rows": 148,
+  "lag_rows": 444,
+  "null_trials": 8436,
+  "additional_checks": 888,
+  "variant_rows": 61,
+  "maximum_shift_difference_from_float32_curves_px": 0.00018439506311551668,
+  "limitation": "Saved arithmetic, gates and provenance only; no physical accuracy or material phase identity verified"
+}

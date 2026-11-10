@@ -1,0 +1,22 @@
+{
+  "inicio_utc": "2026-10-25T05:02:27.160163+00:00",
+  "manifesto_anterior_conferido": 264,
+  "escopo": "Etapa 1 plug/slug, extensão churn/anular, dados e cadeia herdada, fórmulas, implementação, controles, inferência e relatórios.",
+  "copias_preservadas": [
+    "EXECUTIVE_SUMMARY.md",
+    "RESUMO_EXECUTIVO.pdf",
+    "PASSO_A_PASSO.md",
+    "RESULTS.md",
+    "README.md",
+    "ANCORAS_E_AUTOCORRELACAO.md",
+    "RETOMADA.md",
+    "DECISIONS.md",
+    "results/verificacao_final.json",
+    "results/manifesto.json",
+    "results/extensao_churn_anular/verificacao_final.json",
+    "scripts/write_texture_reports.py",
+    "scripts/verify_final.py",
+    "scripts/verify_texture_extension.py"
+  ],
+  "manifesto_anterior_sha256": "9198591ee90504de5b858e83d872520fdc7b69830b3b014ccf94eeb5bf4404f9"
+}

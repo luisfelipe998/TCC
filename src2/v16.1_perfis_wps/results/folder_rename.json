@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "renamed_utc": "2026-10-24T23:24:04.683279+00:00",
+  "previous_folder": "v16_perfis_wps",
+  "canonical_folder": "v16.1_perfis_wps",
+  "files_preserved": 82,
+  "file_hashes_unchanged_on_move": true,
+  "historical_symlink": null,
+  "removed_alias": "v16.1",
+  "previous_rename": {
+    "status": "PASS",
+    "renamed_utc": "2026-10-24T23:10:15.860137+00:00",
+    "previous_folder": "v16.1",
+    "canonical_folder": "v16_perfis_wps",
+    "files_preserved": 81,
+    "file_hashes_unchanged_on_move": true,
+    "historical_symlink": "v16.1 -> v16_perfis_wps"
+  }
+}

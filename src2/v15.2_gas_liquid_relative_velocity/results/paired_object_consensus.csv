@@ -1,0 +1,27 @@
+run,pattern,baseline_supported,threshold_stable,common_intervals,small_px_s,meniscus_px_s,ratio,ratio_sensitivity_min,ratio_sensitivity_max,material_phase_pair
+m03q05_001,churn,False,False,0,nan,nan,nan,nan,nan,False
+m03q10_001,wavy annular,False,False,0,nan,nan,nan,nan,nan,False
+m03q20_001,wavy annular,False,False,0,nan,nan,nan,nan,nan,False
+m03q40_001,wavy annular,False,False,0,nan,nan,nan,nan,nan,False
+m04q01_001,slug,False,False,2,nan,nan,nan,nan,nan,False
+m04q10_001,churn,False,False,0,nan,nan,nan,nan,nan,False
+m04q20_001,churn,False,False,0,nan,nan,nan,nan,nan,False
+m04q40_001,wavy annular,False,False,0,nan,nan,nan,nan,nan,False
+m04q80_001,wavy annular,False,False,0,nan,nan,nan,nan,nan,False
+m05q01_001,plug,False,False,36,nan,nan,nan,nan,nan,False
+m05q05_001,slug,True,True,120,-86040.72885521945,-92069.85357042648,0.9345157564457817,0.9345157564457817,0.9923624884602762,False
+m05q10_001,churn,False,False,0,nan,nan,nan,nan,nan,False
+m05q20_001,churn,False,False,0,nan,nan,nan,nan,nan,False
+m05q40_001,churn,False,False,0,nan,nan,nan,nan,nan,False
+m05q80_001,wavy annular,False,False,0,nan,nan,nan,nan,nan,False
+m06q01_001,plug,False,False,15,nan,nan,nan,nan,nan,False
+m06q05_001,slug,False,False,0,nan,nan,nan,nan,nan,False
+m06q10_001,churn,False,False,0,nan,nan,nan,nan,nan,False
+m06q20_001,churn,False,False,0,nan,nan,nan,nan,nan,False
+m06q40_001,wavy annular,False,False,0,nan,nan,nan,nan,nan,False
+m06q80_001,wavy annular,False,False,0,nan,nan,nan,nan,nan,False
+m07q01_001,dispersed bubbles,False,False,0,nan,nan,nan,nan,nan,False
+m07q05_001,plug,True,True,133,-103864.36729896726,-107757.37895481694,0.9638724355249766,0.9444351352632124,0.9817423229539938,False
+m07q20_001,churn,False,False,0,nan,nan,nan,nan,nan,False
+m07q40_001,churn,False,False,0,nan,nan,nan,nan,nan,False
+m07q80_001,wavy annular,False,False,0,nan,nan,nan,nan,nan,False

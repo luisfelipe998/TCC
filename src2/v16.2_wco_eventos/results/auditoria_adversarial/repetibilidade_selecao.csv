@@ -1,0 +1,13 @@
+padrao,tipo,alternativa,total,candidatos_em_64,selecionados_em_64,selecionados_em_16,maior_distancia_ao_selecionado
+churn,maximo,faixa30_49,40,28,13,11,1049.0
+churn,maximo,sigma12,40,40,37,37,718.0
+churn,maximo,sigma20,40,39,34,34,973.0
+churn,minimo,faixa30_49,40,40,27,20,1054.0
+churn,minimo,sigma12,40,40,37,37,771.0
+churn,minimo,sigma20,40,40,38,38,899.0
+wavy annular,maximo,faixa30_49,36,30,12,12,3734.0
+wavy annular,maximo,sigma12,36,36,33,32,606.0
+wavy annular,maximo,sigma20,36,34,30,30,2280.0
+wavy annular,minimo,faixa30_49,36,36,28,28,2219.0
+wavy annular,minimo,sigma12,36,36,29,29,2875.0
+wavy annular,minimo,sigma20,36,36,30,30,1747.0

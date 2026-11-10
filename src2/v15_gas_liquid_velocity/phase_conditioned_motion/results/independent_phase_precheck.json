@@ -1,0 +1,161 @@
+{
+  "native_mask_observations": [
+    {
+      "run": "m03q05_001",
+      "pattern": "churn",
+      "baseline_projected_fraction": 0.9828986730149862,
+      "threshold_disagreement_fraction": 0.011323327197929205
+    },
+    {
+      "run": "m03q10_001",
+      "pattern": "wavy annular",
+      "baseline_projected_fraction": 0.9973059748872483,
+      "threshold_disagreement_fraction": 0.0022745327944615895
+    },
+    {
+      "run": "m03q20_001",
+      "pattern": "wavy annular",
+      "baseline_projected_fraction": 0.9996719160104987,
+      "threshold_disagreement_fraction": 0.0004092987698648165
+    },
+    {
+      "run": "m03q40_001",
+      "pattern": "wavy annular",
+      "baseline_projected_fraction": 0.9885533493998484,
+      "threshold_disagreement_fraction": 0.013599750432280589
+    },
+    {
+      "run": "m04q01_001",
+      "pattern": "slug",
+      "baseline_projected_fraction": 0.8331483296962753,
+      "threshold_disagreement_fraction": 0.07698634820686957
+    },
+    {
+      "run": "m04q10_001",
+      "pattern": "churn",
+      "baseline_projected_fraction": 0.9457896715853689,
+      "threshold_disagreement_fraction": 0.02518292044643442
+    },
+    {
+      "run": "m04q20_001",
+      "pattern": "churn",
+      "baseline_projected_fraction": 0.9529152214068372,
+      "threshold_disagreement_fraction": 0.024069228946652824
+    },
+    {
+      "run": "m04q40_001",
+      "pattern": "wavy annular",
+      "baseline_projected_fraction": 0.9918441233711451,
+      "threshold_disagreement_fraction": 0.005506591926828263
+    },
+    {
+      "run": "m04q80_001",
+      "pattern": "wavy annular",
+      "baseline_projected_fraction": 0.9996052316700724,
+      "threshold_disagreement_fraction": 0.0004997062775355544
+    },
+    {
+      "run": "m05q01_001",
+      "pattern": "plug",
+      "baseline_projected_fraction": 0.6665388951705858,
+      "threshold_disagreement_fraction": 0.1030208932899318
+    },
+    {
+      "run": "m05q05_001",
+      "pattern": "slug",
+      "baseline_projected_fraction": 0.6132090298677642,
+      "threshold_disagreement_fraction": 0.11621468102274132
+    },
+    {
+      "run": "m05q10_001",
+      "pattern": "churn",
+      "baseline_projected_fraction": 0.8678259659554758,
+      "threshold_disagreement_fraction": 0.07179686830469206
+    },
+    {
+      "run": "m05q20_001",
+      "pattern": "churn",
+      "baseline_projected_fraction": 0.894585179662959,
+      "threshold_disagreement_fraction": 0.06963283357516137
+    },
+    {
+      "run": "m05q40_001",
+      "pattern": "churn",
+      "baseline_projected_fraction": 0.9491589173458165,
+      "threshold_disagreement_fraction": 0.06167949348665616
+    },
+    {
+      "run": "m05q80_001",
+      "pattern": "wavy annular",
+      "baseline_projected_fraction": 0.9850000266885631,
+      "threshold_disagreement_fraction": 0.04596304345698738
+    },
+    {
+      "run": "m06q01_001",
+      "pattern": "plug",
+      "baseline_projected_fraction": 0.7015202991728621,
+      "threshold_disagreement_fraction": 0.11932252713411388
+    },
+    {
+      "run": "m06q05_001",
+      "pattern": "slug",
+      "baseline_projected_fraction": 0.7397452161491902,
+      "threshold_disagreement_fraction": 0.10910977777026544
+    },
+    {
+      "run": "m06q10_001",
+      "pattern": "churn",
+      "baseline_projected_fraction": 0.8162791932106668,
+      "threshold_disagreement_fraction": 0.09150318439039319
+    },
+    {
+      "run": "m06q20_001",
+      "pattern": "churn",
+      "baseline_projected_fraction": 0.8844104615015994,
+      "threshold_disagreement_fraction": 0.10260217938806683
+    },
+    {
+      "run": "m06q40_001",
+      "pattern": "wavy annular",
+      "baseline_projected_fraction": 0.9397203587180119,
+      "threshold_disagreement_fraction": 0.09571071050589358
+    },
+    {
+      "run": "m06q80_001",
+      "pattern": "wavy annular",
+      "baseline_projected_fraction": 0.9656048918357016,
+      "threshold_disagreement_fraction": 0.08348060230749317
+    },
+    {
+      "run": "m07q01_001",
+      "pattern": "dispersed bubbles",
+      "baseline_projected_fraction": 0.15183901992479162,
+      "threshold_disagreement_fraction": 0.24369171329010378
+    },
+    {
+      "run": "m07q05_001",
+      "pattern": "plug",
+      "baseline_projected_fraction": 0.6066325601656589,
+      "threshold_disagreement_fraction": 0.1265292176010481
+    },
+    {
+      "run": "m07q20_001",
+      "pattern": "churn",
+      "baseline_projected_fraction": 0.7879078049516773,
+      "threshold_disagreement_fraction": 0.10518537282884832
+    },
+    {
+      "run": "m07q40_001",
+      "pattern": "churn",
+      "baseline_projected_fraction": 0.8646008384360383,
+      "threshold_disagreement_fraction": 0.11077985167682759
+    },
+    {
+      "run": "m07q80_001",
+      "pattern": "wavy annular",
+      "baseline_projected_fraction": 0.9311379469555912,
+      "threshold_disagreement_fraction": 0.11444382072283897
+    }
+  ],
+  "interpretation": "Threshold agreement is not phase truth. Near-total gas masks suppress candidate liquid intervals; substantial disagreement in dispersed case needs visual audit. Values are projected mask occupancy, not alpha."
+}

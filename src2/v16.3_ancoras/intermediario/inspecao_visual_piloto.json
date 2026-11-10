@@ -1,0 +1,55 @@
+{
+  "data_utc": "2026-10-25T18:29:51.677434+00:00",
+  "antes_das_wavelets": true,
+  "revisor": "Assistente; inspecao visual das oito novas figuras, sem validacao fisica independente.",
+  "ancoras": [
+    {
+      "anchor_id": "m05q01_001_E004",
+      "figura_sha256": "5d1020fbe632343aff47535f0e41c20dd8481943e670003a245564a4dc1e1d5c",
+      "verificada_visualmente": true,
+      "avaliacao": "Evento alongado com as duas extremidades visiveis e centro dentro do recorte completo."
+    },
+    {
+      "anchor_id": "m06q01_001_E010",
+      "figura_sha256": "5ea1f85211d14e757afc5155735d1e4c4fe44d211b3877719efc00fb3290a99a",
+      "verificada_visualmente": true,
+      "avaliacao": "Evento alongado com as duas extremidades visiveis e centro dentro do recorte completo."
+    },
+    {
+      "anchor_id": "m04q01_001_E002",
+      "figura_sha256": "bc938c09e540aed3f1a44b811a1466564ec5c88c29215e442b76a2cb235c4b30",
+      "verificada_visualmente": true,
+      "avaliacao": "Evento alongado com as duas extremidades visiveis e centro dentro do recorte completo."
+    },
+    {
+      "anchor_id": "m05q05_001_E008",
+      "figura_sha256": "c560d824e9257ede03bb5346a5a0d07b3f2335f2c3a39dd1a1e4ccd07c94468c",
+      "verificada_visualmente": true,
+      "avaliacao": "Evento alongado com as duas extremidades visiveis e centro dentro do recorte completo."
+    },
+    {
+      "anchor_id": "m03q05_001_MIN02256",
+      "figura_sha256": "4494f65bec75d986ec0ed2fee3fe7e98a2bfaf26567688cc47de4358f609fb21",
+      "verificada_visualmente": true,
+      "avaliacao": "Vale local identificavel no perfil, alinhado a marca laranja e dentro do recorte completo."
+    },
+    {
+      "anchor_id": "m04q10_001_MIN02128",
+      "figura_sha256": "82871a67cde2092e922c306783ac49cd0e52d40131cf78578fa890cc9383623c",
+      "verificada_visualmente": true,
+      "avaliacao": "Vale local identificavel no perfil, alinhado a marca laranja e dentro do recorte completo."
+    },
+    {
+      "anchor_id": "m03q10_001_MIN03119",
+      "figura_sha256": "33b346883703a11cb4254fc114b57eaec778ddc8599171ca5e9cc88d8c0fd854",
+      "verificada_visualmente": true,
+      "avaliacao": "Vale local identificavel no perfil, alinhado a marca laranja e dentro do recorte completo."
+    },
+    {
+      "anchor_id": "m03q20_001_MIN18525",
+      "figura_sha256": "29f4d411dac5e947ea061d8c7f73f9dddc6fc51035ada92aff5b26001a060d32",
+      "verificada_visualmente": true,
+      "avaliacao": "Vale local identificavel no perfil, alinhado a marca laranja e dentro do recorte completo."
+    }
+  ]
+}

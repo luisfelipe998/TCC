@@ -1,0 +1,3 @@
+case,identical_observed_interface_c_px_frame,assumed_axial_gas_px_frame,assumed_axial_liquid_px_frame,assumed_axial_ratio,max_normal_constraint_residual,interpretation
+kinematic_A,12.0,18.0,6.0,3.0,1.1102230246251565e-16,Two kinematically admissible interfacial motions; not full hydrodynamic solutions or measured phase-average speeds
+kinematic_B,12.0,30.0,4.0,7.5,2.220446049250313e-16,Two kinematically admissible interfacial motions; not full hydrodynamic solutions or measured phase-average speeds

@@ -1,0 +1,127 @@
+{
+  "passed": true,
+  "modified_scripts_compiled": [
+    "phase_mask_flip_analysis.py",
+    "raw_flip_analysis.py",
+    "spatial_flip_sensitivity.py",
+    "pattern_identification.py",
+    "silhouette_pattern_identification.py"
+  ],
+  "method_resolution_controls": 3,
+  "classifier_absent_class_control": true,
+  "silhouette_interval_controls": true,
+  "phase_comparisons_reproduced": [
+    {
+      "shadow_threshold": 0.6,
+      "metric": "candidate_pixel_flip_rate",
+      "saved_p": 0.006216006216006216,
+      "recomputed_p": 0.006216006216006216,
+      "mwu_requested_method": "auto",
+      "mwu_method": "exact",
+      "mwu_has_pooled_ties": false,
+      "mwu_use_continuity": false,
+      "mwu_tie_correction_applied": false
+    },
+    {
+      "shadow_threshold": 0.6,
+      "metric": "center_candidate_flip_rate",
+      "saved_p": 0.022755380929508105,
+      "recomputed_p": 0.022755380929508105,
+      "mwu_requested_method": "auto",
+      "mwu_method": "asymptotic",
+      "mwu_has_pooled_ties": true,
+      "mwu_use_continuity": true,
+      "mwu_tie_correction_applied": true
+    },
+    {
+      "shadow_threshold": 0.65,
+      "metric": "candidate_pixel_flip_rate",
+      "saved_p": 0.0030622971799442386,
+      "recomputed_p": 0.0030622971799442386,
+      "mwu_requested_method": "auto",
+      "mwu_method": "exact",
+      "mwu_has_pooled_ties": false,
+      "mwu_use_continuity": false,
+      "mwu_tie_correction_applied": false
+    },
+    {
+      "shadow_threshold": 0.65,
+      "metric": "center_candidate_flip_rate",
+      "saved_p": 0.014043624594691018,
+      "recomputed_p": 0.014043624594691018,
+      "mwu_requested_method": "auto",
+      "mwu_method": "asymptotic",
+      "mwu_has_pooled_ties": true,
+      "mwu_use_continuity": true,
+      "mwu_tie_correction_applied": true
+    },
+    {
+      "shadow_threshold": 0.7,
+      "metric": "candidate_pixel_flip_rate",
+      "saved_p": 0.0020567667626491155,
+      "recomputed_p": 0.0020567667626491155,
+      "mwu_requested_method": "auto",
+      "mwu_method": "exact",
+      "mwu_has_pooled_ties": false,
+      "mwu_use_continuity": false,
+      "mwu_tie_correction_applied": false
+    },
+    {
+      "shadow_threshold": 0.7,
+      "metric": "center_candidate_flip_rate",
+      "saved_p": 0.010913387163406582,
+      "recomputed_p": 0.010913387163406582,
+      "mwu_requested_method": "auto",
+      "mwu_method": "asymptotic",
+      "mwu_has_pooled_ties": true,
+      "mwu_use_continuity": true,
+      "mwu_tie_correction_applied": true
+    },
+    {
+      "shadow_threshold": 0.75,
+      "metric": "candidate_pixel_flip_rate",
+      "saved_p": 0.00018282371223547693,
+      "recomputed_p": 0.00018282371223547693,
+      "mwu_requested_method": "auto",
+      "mwu_method": "exact",
+      "mwu_has_pooled_ties": false,
+      "mwu_use_continuity": false,
+      "mwu_tie_correction_applied": false
+    },
+    {
+      "shadow_threshold": 0.75,
+      "metric": "center_candidate_flip_rate",
+      "saved_p": 0.004681241158520029,
+      "recomputed_p": 0.004681241158520029,
+      "mwu_requested_method": "auto",
+      "mwu_method": "asymptotic",
+      "mwu_has_pooled_ties": true,
+      "mwu_use_continuity": true,
+      "mwu_tie_correction_applied": true
+    },
+    {
+      "shadow_threshold": 0.8,
+      "metric": "candidate_pixel_flip_rate",
+      "saved_p": 0.00018282371223547693,
+      "recomputed_p": 0.00018282371223547693,
+      "mwu_requested_method": "auto",
+      "mwu_method": "exact",
+      "mwu_has_pooled_ties": false,
+      "mwu_use_continuity": false,
+      "mwu_tie_correction_applied": false
+    },
+    {
+      "shadow_threshold": 0.8,
+      "metric": "center_candidate_flip_rate",
+      "saved_p": 0.015277927098429315,
+      "recomputed_p": 0.015277927098429315,
+      "mwu_requested_method": "auto",
+      "mwu_method": "asymptotic",
+      "mwu_has_pooled_ties": true,
+      "mwu_use_continuity": true,
+      "mwu_tie_correction_applied": true
+    }
+  ],
+  "legacy_optical_comparisons_reproduced": 7,
+  "interpretation": "Method-metadata/report changes preserve prior p-values on the archived data. The estimator correction may change newly regenerated phase data."
+}

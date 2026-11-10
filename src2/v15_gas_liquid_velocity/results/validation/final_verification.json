@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "selected_acquisitions": 26,
+  "scope_checked_tables": [
+    "closure_spread.csv",
+    "conditional_velocities_per_run.csv",
+    "image_alpha_diagnostics.csv",
+    "massflow_per_run.csv",
+    "massflow_source_blocks.csv",
+    "optical_full_method_summary.csv",
+    "optical_method_agreement.csv",
+    "optical_per_run.csv",
+    "optical_preferred_candidate_pairs.csv",
+    "optical_preferred_candidate_per_run.csv",
+    "optical_primary_pairs.csv",
+    "optical_sensitivity.csv",
+    "recorded_flow_conditional_velocities_per_run.csv",
+    "sensitivity_relative_to_baseline.csv",
+    "thermodynamic_sensitivity.csv"
+  ],
+  "native_config_and_marker_hashes_checked": 31,
+  "original_legacy_source_hashes_checked": 4,
+  "independent_model_numeric_cells": 19632,
+  "independent_summary_cells": 1200,
+  "independent_report_cells": 441,
+  "checked_json_files": 11,
+  "checked_markdown_files": 28,
+  "existing_relative_links": 238,
+  "optical_preferred_pair_count": 13000,
+  "current_phase_summary": {
+    "status": "passed",
+    "eligible_recordings": 4,
+    "report_table_rows": 8,
+    "plotted_numeric_cells": 36,
+    "configuration": "consensus_reference_guard / lag2_confirmed",
+    "velocity_units": "px/s",
+    "ratio_units": "dimensionless",
+    "current_plot_csv_sha256": "8c5952f87d1a4dab218fe8ca3cabdb9d0c8efe79ca19dcf72a0400e39e9e7b2c",
+    "current_plot_svg_sha256": "4da2b78a0d2ea550216470be8e293bd6d4bcc28592d7be7fbc82bd235591f2f4",
+    "embedded_images": [
+      "phase_conditioned_motion/figures/adaptive_liquid_examples.png",
+      "phase_conditioned_motion/figures/adaptive_support.png",
+      "phase_conditioned_motion/figures/closed_contour_bubble_tracks.png",
+      "phase_conditioned_motion/figures/conditional_passage_velocities.png",
+      "phase_conditioned_motion/figures/conditional_ratio_comparison.png",
+      "phase_conditioned_motion/figures/passage_time_diagnostics.png",
+      "phase_conditioned_motion/figures/phase_support_attrition.png"
+    ]
+  },
+  "physical_accuracy": "unvalidated; arithmetic, scope and provenance only",
+  "manifest_artifacts": 229
+}

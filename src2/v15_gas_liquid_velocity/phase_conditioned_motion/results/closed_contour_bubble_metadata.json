@@ -1,0 +1,43 @@
+{
+  "run": "m07q01_001",
+  "fps": 7000.0,
+  "area_px": [
+    15,
+    1000
+  ],
+  "width_px": [
+    3,
+    60
+  ],
+  "height_px": [
+    3,
+    35
+  ],
+  "maximum_aspect_ratio": 4,
+  "valid_rows": [
+    20,
+    69
+  ],
+  "valid_columns": [
+    10,
+    1006
+  ],
+  "maximum_step_px": 30,
+  "maximum_vertical_step_px": 5,
+  "area_ratio": [
+    0.5,
+    2.0
+  ],
+  "reciprocal_nearest": true,
+  "minimum_competitor_distance_margin_px": 2,
+  "minimum_chain_intervals": 5,
+  "maximum_consecutive_dx_or_dy_change_px": 2,
+  "synthetic_centroid_translation_passed": true,
+  "interpretation": "Exploratory motion of selected small closed gas-silhouette candidates; not verified gas-phase mass velocity.",
+  "limitations": [
+    "Filters omit small, touching, coalescing, cropped and deformed objects.",
+    "Entire-chain stability gate selects persistent easy objects.",
+    "No independent bubble labels or velocity ground truth; comparison with global NCC is not accuracy validation.",
+    "No liquid parcel motion is measured."
+  ]
+}

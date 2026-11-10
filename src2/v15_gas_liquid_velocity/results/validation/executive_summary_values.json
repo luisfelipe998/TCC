@@ -1,0 +1,68 @@
+{
+  "selected_runs": 26,
+  "pattern_counts": {
+    "churn": 10,
+    "wavy annular": 9,
+    "slug": 3,
+    "plug": 3,
+    "dispersed bubbles": 1
+  },
+  "massflux_change_pct_min": -5.0105970027630065,
+  "massflux_change_pct_max": 16.84716148087073,
+  "maximum_nominal_liquid_model_factor": 4.403119046189556,
+  "preferred_optical_passing_pairs": 7528,
+  "optical_pairs": 13000,
+  "preferred_optical_supported_runs": 17,
+  "preferred_optical_supported_annular_runs": 0,
+  "thermodynamic_experiment_rows": 1352,
+  "nominal_XF_Fr_extrapolated_runs": 11,
+  "recorded_XF_Fr_extrapolated_runs": 15,
+  "subcool_1K_out_of_domain_runs": 4,
+  "recorded_RA_pattern_medians": [
+    {
+      "pattern": "dispersed bubbles",
+      "n": 1,
+      "Jg": 0.336226144843373,
+      "Jl_nominal": 1.6177797790348976,
+      "Jl_recorded": 1.858158738526192,
+      "ug_recorded_RA": 2.5915771733094304,
+      "ul_recorded_RA": 2.1351717361820866
+    },
+    {
+      "pattern": "plug",
+      "n": 3,
+      "Jg": 0.336226144843373,
+      "Jl_nominal": 1.3806102668017943,
+      "Jl_recorded": 1.567525340533774,
+      "ug_recorded_RA": 2.265965260288946,
+      "ul_recorded_RA": 1.8406415343101916
+    },
+    {
+      "pattern": "slug",
+      "n": 3,
+      "Jg": 1.6811307242168647,
+      "Jl_nominal": 1.1380078058812364,
+      "Jl_recorded": 1.24525292178853,
+      "ug_recorded_RA": 3.401391528623914,
+      "ul_recorded_RA": 2.462180576523474
+    },
+    {
+      "pattern": "churn",
+      "n": 10,
+      "Jg": 6.724522896867459,
+      "Jl_nominal": 1.0788159125793104,
+      "Jl_recorded": 1.1040709530417914,
+      "ug_recorded_RA": 8.614914624012258,
+      "ul_recorded_RA": 4.327142410138251
+    },
+    {
+      "pattern": "wavy annular",
+      "n": 9,
+      "Jg": 13.44904579373492,
+      "Jl_nominal": 0.6936666670913919,
+      "Jl_recorded": 0.733405551722942,
+      "ug_recorded_RA": 16.398999433999247,
+      "ul_recorded_RA": 6.415514129968785
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+run,pattern,region,robust_ensemble_supported,original_reasons,baseline_rejection_only_stationarity,other_extended_checks_pass,would_only_relax_stationarity,interpretation
+m03q05_001,churn,core,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m03q05_001,churn,upper_inner,False,lag_inconsistency;block_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m03q05_001,churn,lower_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m03q05_001,churn,upper_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m03q05_001,churn,lower_outer,False,lag_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m03q10_001,wavy annular,core,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m03q10_001,wavy annular,upper_inner,False,lag_inconsistency;block_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m03q10_001,wavy annular,lower_inner,False,lag_inconsistency;block_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m03q10_001,wavy annular,upper_outer,False,lag_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m03q10_001,wavy annular,lower_outer,False,lag_inconsistency;block_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m03q10_001,wavy annular,upper_edge,False,lag_inconsistency;block_inconsistency,True,False,False,Candidate for nonstationary follow-up; not automatically accepted
+m03q10_001,wavy annular,lower_edge,False,lag_inconsistency;block_inconsistency,True,False,False,Candidate for nonstationary follow-up; not automatically accepted
+m03q20_001,wavy annular,core,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m03q20_001,wavy annular,upper_inner,False,lag_inconsistency,True,False,False,Candidate for nonstationary follow-up; not automatically accepted
+m03q20_001,wavy annular,lower_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m03q20_001,wavy annular,upper_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m03q20_001,wavy annular,lower_outer,False,lag_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m03q20_001,wavy annular,upper_edge,False,weak_ensemble_peak;lag_inconsistency;block_inconsistency,False,False,False,Candidate for nonstationary follow-up; not automatically accepted
+m03q20_001,wavy annular,lower_edge,False,weak_ensemble_peak;lag_inconsistency;block_inconsistency,False,False,False,Candidate for nonstationary follow-up; not automatically accepted
+m03q40_001,wavy annular,core,False,region_saturation,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m03q40_001,wavy annular,upper_inner,False,region_saturation,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m03q40_001,wavy annular,lower_inner,False,lag_inconsistency,True,False,False,Candidate for nonstationary follow-up; not automatically accepted
+m03q40_001,wavy annular,upper_outer,False,lag_inconsistency,True,False,False,Candidate for nonstationary follow-up; not automatically accepted
+m03q40_001,wavy annular,lower_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m03q40_001,wavy annular,upper_edge,False,region_saturation,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m03q40_001,wavy annular,lower_edge,False,weak_ensemble_peak;lag_inconsistency;block_inconsistency,False,False,False,Candidate for nonstationary follow-up; not automatically accepted
+m04q01_001,slug,core,False,lag_inconsistency;block_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m04q01_001,slug,upper_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m04q01_001,slug,lower_inner,False,lag_inconsistency;block_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m04q01_001,slug,upper_outer,False,block_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m04q01_001,slug,lower_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m04q10_001,churn,core,False,lag_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m04q10_001,churn,upper_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m04q10_001,churn,lower_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m04q10_001,churn,upper_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m04q10_001,churn,lower_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m04q20_001,churn,core,False,lag_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m04q20_001,churn,upper_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m04q20_001,churn,lower_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m04q20_001,churn,upper_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m04q20_001,churn,lower_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m04q40_001,wavy annular,core,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m04q40_001,wavy annular,upper_inner,False,,False,False,False,Candidate for nonstationary follow-up; not automatically accepted
+m04q40_001,wavy annular,lower_inner,False,lag_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m04q40_001,wavy annular,upper_outer,False,lag_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m04q40_001,wavy annular,lower_outer,False,lag_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m04q40_001,wavy annular,upper_edge,False,,False,False,False,Candidate for nonstationary follow-up; not automatically accepted
+m04q40_001,wavy annular,lower_edge,False,,False,False,False,Candidate for nonstationary follow-up; not automatically accepted
+m04q80_001,wavy annular,core,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m04q80_001,wavy annular,upper_inner,False,lag_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m04q80_001,wavy annular,lower_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m04q80_001,wavy annular,upper_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m04q80_001,wavy annular,lower_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m04q80_001,wavy annular,upper_edge,False,lag_inconsistency;block_inconsistency,True,False,False,Candidate for nonstationary follow-up; not automatically accepted
+m04q80_001,wavy annular,lower_edge,False,lag_inconsistency;block_inconsistency,True,False,False,Candidate for nonstationary follow-up; not automatically accepted
+m05q01_001,plug,core,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m05q01_001,plug,upper_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m05q01_001,plug,lower_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m05q01_001,plug,upper_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m05q01_001,plug,lower_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m05q05_001,slug,core,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m05q05_001,slug,upper_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m05q05_001,slug,lower_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m05q05_001,slug,upper_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m05q05_001,slug,lower_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m05q10_001,churn,core,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m05q10_001,churn,upper_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m05q10_001,churn,lower_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m05q10_001,churn,upper_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m05q10_001,churn,lower_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m05q20_001,churn,core,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m05q20_001,churn,upper_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m05q20_001,churn,lower_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m05q20_001,churn,upper_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m05q20_001,churn,lower_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m05q40_001,churn,core,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m05q40_001,churn,upper_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m05q40_001,churn,lower_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m05q40_001,churn,upper_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m05q40_001,churn,lower_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m05q80_001,wavy annular,core,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m05q80_001,wavy annular,upper_inner,False,lag_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m05q80_001,wavy annular,lower_inner,False,lag_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m05q80_001,wavy annular,upper_outer,False,lag_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m05q80_001,wavy annular,lower_outer,False,lag_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m05q80_001,wavy annular,upper_edge,False,,False,False,False,Candidate for nonstationary follow-up; not automatically accepted
+m05q80_001,wavy annular,lower_edge,False,lag_inconsistency,True,False,False,Candidate for nonstationary follow-up; not automatically accepted
+m06q01_001,plug,core,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m06q01_001,plug,upper_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m06q01_001,plug,lower_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m06q01_001,plug,upper_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m06q01_001,plug,lower_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m06q05_001,slug,core,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m06q05_001,slug,upper_inner,False,lag_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m06q05_001,slug,lower_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m06q05_001,slug,upper_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m06q05_001,slug,lower_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m06q10_001,churn,core,False,lag_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m06q10_001,churn,upper_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m06q10_001,churn,lower_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m06q10_001,churn,upper_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m06q10_001,churn,lower_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m06q20_001,churn,core,False,lag_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m06q20_001,churn,upper_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m06q20_001,churn,lower_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m06q20_001,churn,upper_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m06q20_001,churn,lower_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m06q40_001,wavy annular,core,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m06q40_001,wavy annular,upper_inner,False,lag_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m06q40_001,wavy annular,lower_inner,False,lag_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m06q40_001,wavy annular,upper_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m06q40_001,wavy annular,lower_outer,False,lag_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m06q40_001,wavy annular,upper_edge,False,lag_inconsistency,True,False,False,Candidate for nonstationary follow-up; not automatically accepted
+m06q40_001,wavy annular,lower_edge,False,,False,False,False,Candidate for nonstationary follow-up; not automatically accepted
+m06q80_001,wavy annular,core,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m06q80_001,wavy annular,upper_inner,False,lag_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m06q80_001,wavy annular,lower_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m06q80_001,wavy annular,upper_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m06q80_001,wavy annular,lower_outer,False,lag_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m06q80_001,wavy annular,upper_edge,False,lag_inconsistency,True,False,False,Candidate for nonstationary follow-up; not automatically accepted
+m06q80_001,wavy annular,lower_edge,False,weak_ensemble_peak,False,False,False,Candidate for nonstationary follow-up; not automatically accepted
+m07q01_001,dispersed bubbles,core,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m07q01_001,dispersed bubbles,upper_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m07q01_001,dispersed bubbles,lower_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m07q01_001,dispersed bubbles,upper_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m07q01_001,dispersed bubbles,lower_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m07q05_001,plug,core,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m07q05_001,plug,upper_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m07q05_001,plug,lower_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m07q05_001,plug,upper_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m07q05_001,plug,lower_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m07q20_001,churn,core,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m07q20_001,churn,upper_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m07q20_001,churn,lower_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m07q20_001,churn,upper_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m07q20_001,churn,lower_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m07q40_001,churn,core,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m07q40_001,churn,upper_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m07q40_001,churn,lower_inner,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m07q40_001,churn,upper_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m07q40_001,churn,lower_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m07q80_001,wavy annular,core,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m07q80_001,wavy annular,upper_inner,False,lag_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m07q80_001,wavy annular,lower_inner,False,lag_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m07q80_001,wavy annular,upper_outer,True,,False,True,False,Candidate for nonstationary follow-up; not automatically accepted
+m07q80_001,wavy annular,lower_outer,False,lag_inconsistency,True,True,True,Candidate for nonstationary follow-up; not automatically accepted
+m07q80_001,wavy annular,upper_edge,False,,False,False,False,Candidate for nonstationary follow-up; not automatically accepted
+m07q80_001,wavy annular,lower_edge,False,lag_inconsistency,True,False,False,Candidate for nonstationary follow-up; not automatically accepted

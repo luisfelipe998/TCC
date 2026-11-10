@@ -1,0 +1,22 @@
+{
+  "status": "current_canonical_optical_execution",
+  "input_panorama_manifest": "src2/v18_montagem_18_71/01_panoramas/manifesto.json",
+  "input_panorama_manifest_sha256": "dad45203bc7b39e4114a08944d793cf8637420dd3a2e4e7273310c231beca5e1",
+  "current_output_directory": "src2/v18_montagem_18_71/03_optica",
+  "current_output_manifest": "src2/v18_montagem_18_71/03_optica/results/validation/artifact_manifest.json",
+  "current_output_manifest_sha256": "f3defe42342737508877fc2c875a1b4a8ae0916f5f94635131307b1faf236cc0",
+  "shared_numerical_model": "src2/v14.1_new_voidfraction/scripts/panorama_void_alternatives.py",
+  "shared_numerical_model_sha256": "423ba8dc0fc8dd84ebe40a46b1851247689e0584b2fc95968e214ac3a53781d8",
+  "roi": [
+    18,
+    72
+  ],
+  "included_rows": "18 through 71 inclusive",
+  "height": 54,
+  "diameter_px": 54,
+  "scope": "Current panorama optical analysis used by the TCC; same canonical execution, not independent replication",
+  "previous_results": "intermediate/history/before_roi_unification_20261030",
+  "previous_panorama_alignment": "The preserved reconstructed_inputs used alignment profiles 20:60; current inputs are the v18 optical panoramas aligned on 18:72",
+  "wavelet_recomputed": false,
+  "classifiers_recomputed": false
+}

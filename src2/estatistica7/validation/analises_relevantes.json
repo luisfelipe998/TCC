@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "document": "ANALISES_RELEVANTES_TCC.md",
+  "analyses": 4,
+  "images": 5,
+  "links_checked": 19,
+  "display_equations": 12,
+  "numeric_checks": "Pearson, Hellinger, picos plug/slug e controles WCO conferidos nos CSVs; definições confrontadas com os scripts.",
+  "document_sha256": "a4efcfc26599e366ef0b054ea5de1e5120789fb4d7885b22e9af5461d78aeafa",
+  "scope": "Revisão documental e dos valores citados; não é nova validação experimental.",
+  "plain_language_sections": 4
+}

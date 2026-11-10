@@ -1,0 +1,47 @@
+414 A. Schuck Jr. and B. E. J. Bodmann
+
+For K time series xx{n] and yen], (32.14), (32.15), and (32.16) can be
+estimated by:
+
+~ 1 & ak
+WPS, (b, a) = RLwr {Rtn} 1, (32.18)
+~ i< .
+WPS, (ba) = zg Liewr {&,tm1} I. (32.19)
+k=l
+. 1X
+WCSsy(b. a) = y jowr {Rm}, (32.20)
+where
+N-m
+. 1
+Rtn) = 7, Yo ela + mien],0<m <N-1 (32.21)
+n=l
+N-m
+. 1
+Rylm] = > ole + mb], O<m<N-1 (32.22)
+n=l
+N-m
+. 1
+K En] = hyd - 32.23
+Ry bn) = FL ala + mien], Om NI (32.23)
+
+n=l
+
+are the unbiased auto-correlation and cross-correlation estimators [BePi00]
+
+32.3. Signal Composition and Transient Analysis
+
+Let us assume that one wants to find a single transient event s(t) added to a zero
+mean, unitary variance gaussian noise n(t) in realizations of x(t) = s(t) + Gonx(t),
+where Go is adjusted to give some desired signal-to-noise ratio (SNR) and y(t) =
+s(t — t) + Gony(t). The noise sequences n,(t) and ny(t) will be independent.
+Furthermore, for each realization the event can appear only once and at any moment
+within some time interval in the x process. Then the problem here is to detect s(f) in
+both processes and estimate the delay t between the processes. Although the noise
+used here is stationary, this model can also work in nonstationary signals which
+can be considered stationary in a time interval, as in EEG event related potential
+(ERP) analysis [LaEtAl02, HeEtAl05]. The transient chosen to be detected here
+is a modulated Gaussian pulse s(¢) e-” cos 6t, synthesized using Matlab with
+a sample rate of 25 samples/s. This is shown in Fig. 32.1. The noise added in the
+realizations were also generated with Matlab randn command, with 2048 sample
+
+bardo.bodmann@utrgs.br

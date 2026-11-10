@@ -1,0 +1,2608 @@
+{
+  "passed": true,
+  "started_utc": "2026-10-23T20:40:03.490080+00:00",
+  "finished_utc": "2026-10-23T20:40:05.677971+00:00",
+  "script_sha256": "30e72cf29bc93180d91660e6e1aef7fc3ac2225c848eda381dcd4c655b5fb36e",
+  "independent_selection_uses_original_markers_not_shared_helper": true,
+  "selected_acquisitions": 26,
+  "statistical_acquisitions": 25,
+  "supplied_pattern_counts_selected": {
+    "churn": 10,
+    "wavy annular": 9,
+    "slug": 3,
+    "plug": 3,
+    "dispersed bubbles": 1
+  },
+  "selected_runs": [
+    "m03q05_001",
+    "m03q10_001",
+    "m03q20_001",
+    "m03q40_001",
+    "m04q01_001",
+    "m04q10_001",
+    "m04q20_001",
+    "m04q40_001",
+    "m04q80_001",
+    "m05q01_001",
+    "m05q05_001",
+    "m05q10_001",
+    "m05q20_001",
+    "m05q40_001",
+    "m05q80_001",
+    "m06q01_001",
+    "m06q05_001",
+    "m06q10_001",
+    "m06q20_001",
+    "m06q40_001",
+    "m06q80_001",
+    "m07q01_001",
+    "m07q05_001",
+    "m07q20_001",
+    "m07q40_001",
+    "m07q80_001"
+  ],
+  "excluded_runs": {
+    "m03q01_001": "plug-slug",
+    "m03q80_001": "smooth annular",
+    "m04q05_001": "slug-churn",
+    "m05q05_002": "dispersed bubbles",
+    "m07q10_001": "slug-churn"
+  },
+  "checks": [
+    {
+      "check": "scope_and_all_active_csvs",
+      "passed": true,
+      "details": {
+        "active_csv_files_checked": 25,
+        "active_csv_rows_checked": 3399,
+        "checked_files": [
+          "results/flip_rate/flip_rate_by_pattern.csv",
+          "results/flip_rate/flip_rate_per_run.csv",
+          "results/flip_rate/phase_mask_flip_by_pattern.csv",
+          "results/flip_rate/phase_mask_flip_per_run.csv",
+          "results/patterns/pattern_identification_predictions.csv",
+          "results/patterns/pattern_identification_scores.csv",
+          "results/patterns/silhouette_pattern_predictions.csv",
+          "results/patterns/silhouette_pattern_scores.csv",
+          "results/validation/data_inventory.csv",
+          "results/validation/deep_method_changes.csv",
+          "results/validation/panorama_liquid_holdout_checks.csv",
+          "results/void_fraction/panorama_void_by_pattern.csv",
+          "results/void_fraction/panorama_void_per_run.csv",
+          "results/void_fraction/void_fraction_flip_plot_data.csv",
+          "intermediate/features/pattern_morphology_features.csv",
+          "intermediate/features/silhouette_pattern_features.csv",
+          "intermediate/features/silhouette_pattern_fold_references.csv",
+          "intermediate/sensitivity/flip_rate_group_sensitivity.csv",
+          "intermediate/sensitivity/flip_rate_sensitivity.csv",
+          "intermediate/sensitivity/flip_rate_spatial_group_sensitivity.csv",
+          "intermediate/sensitivity/flip_rate_spatial_sensitivity.csv",
+          "intermediate/sensitivity/panorama_void_sensitivity.csv",
+          "intermediate/sensitivity/phase_mask_flip_group_sensitivity.csv",
+          "intermediate/sensitivity/phase_mask_flip_sensitivity.csv",
+          "intermediate/exploratory/image_void_alternatives.csv"
+        ],
+        "selected_acquisitions": 26,
+        "statistical_acquisitions": 25,
+        "excluded_acquisitions": {
+          "m03q01_001": "plug-slug",
+          "m03q80_001": "smooth annular",
+          "m04q05_001": "slug-churn",
+          "m05q05_002": "dispersed bubbles",
+          "m07q10_001": "slug-churn"
+        }
+      }
+    },
+    {
+      "check": "independent_mask_arithmetic_and_input_hashes",
+      "passed": true,
+      "details": {
+        "input_panorama_hashes_verified": 26,
+        "independent_area_means_verified": 26,
+        "max_area_error": 0.0,
+        "pixel_and_center_flip_counts_verified": 26,
+        "saturation_excluded_selected_runs": [
+          "m03q40_001"
+        ]
+      }
+    },
+    {
+      "check": "retained_measurements_against_archive",
+      "passed": true,
+      "details": {
+        "tables_compared": [
+          {
+            "artifact": "results/void_fraction/panorama_void_per_run.csv",
+            "common_cells_compared": 546,
+            "retained_runs": 26,
+            "method_correction_changes": [
+              {
+                "run": "m03q05_001",
+                "field": "threshold_060_080_min",
+                "before": "0.7462078667964857",
+                "after": "0.7451553770545009"
+              },
+              {
+                "run": "m03q05_001",
+                "field": "threshold_060_080_max",
+                "before": "0.7606105547441873",
+                "after": "0.7596986635602847"
+              },
+              {
+                "run": "m03q05_001",
+                "field": "reference_variants_max",
+                "before": "0.7550851357303475",
+                "after": "0.7538423511138931"
+              },
+              {
+                "run": "m03q05_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.8678332985604006",
+                "after": "0.8668457472703248"
+              },
+              {
+                "run": "m03q05_001",
+                "field": "conditional_alpha_D56",
+                "before": "0.8664593973673342",
+                "after": "0.8650477670987025"
+              },
+              {
+                "run": "m03q05_001",
+                "field": "conditional_missing_width_alpha_lower",
+                "before": "0.7547824083733223",
+                "after": "0.7535527215615366"
+              },
+              {
+                "run": "m03q05_001",
+                "field": "conditional_missing_width_alpha_upper",
+                "before": "0.9726790226487702",
+                "after": "0.9718876486542875"
+              },
+              {
+                "run": "m03q05_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.7547824083733223",
+                "after": "0.7535527215615366"
+              },
+              {
+                "run": "m03q05_001",
+                "field": "reference_variants_min",
+                "before": "0.7546731054547141",
+                "after": "0.7534209901013053"
+              },
+              {
+                "run": "m03q05_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.7451990958094247",
+                "after": "0.7431513359995364"
+              },
+              {
+                "run": "m03q05_001",
+                "field": "conditional_alpha_D64",
+                "before": "0.6633829761093653",
+                "after": "0.6623021966849442"
+              },
+              {
+                "run": "m03q05_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.7663487509418654",
+                "after": "0.7658355068683709"
+              },
+              {
+                "run": "m03q10_001",
+                "field": "threshold_060_080_min",
+                "before": "0.7751507233470817",
+                "after": "0.7750925665541808"
+              },
+              {
+                "run": "m03q10_001",
+                "field": "threshold_060_080_max",
+                "before": "0.7782076068616425",
+                "after": "0.7782035839270093"
+              },
+              {
+                "run": "m03q10_001",
+                "field": "reference_variants_max",
+                "before": "0.7772754772840895",
+                "after": "0.7772226127984003"
+              },
+              {
+                "run": "m03q10_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.881513638920135",
+                "after": "0.8814925478065242"
+              },
+              {
+                "run": "m03q10_001",
+                "field": "conditional_alpha_D56",
+                "before": "0.8921082603633412",
+                "after": "0.8920678177943001"
+              },
+              {
+                "run": "m03q10_001",
+                "field": "conditional_missing_width_alpha_lower",
+                "before": "0.7771254179165106",
+                "after": "0.777090187945257"
+              },
+              {
+                "run": "m03q10_001",
+                "field": "conditional_missing_width_alpha_upper",
+                "before": "0.9965153379265091",
+                "after": "0.9964881538245219"
+              },
+              {
+                "run": "m03q10_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.7771254179165106",
+                "after": "0.777090187945257"
+              },
+              {
+                "run": "m03q10_001",
+                "field": "reference_variants_min",
+                "before": "0.7771254179165106",
+                "after": "0.777090187945257"
+              },
+              {
+                "run": "m03q10_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.7755215778168326",
+                "after": "0.7754436633470027"
+              },
+              {
+                "run": "m03q10_001",
+                "field": "conditional_alpha_D64",
+                "before": "0.683020386840683",
+                "after": "0.6829894229987609"
+              },
+              {
+                "run": "m03q10_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.7777569810583871",
+                "after": "0.7777074790080063"
+              },
+              {
+                "run": "m03q20_001",
+                "field": "threshold_060_080_min",
+                "before": "0.7797726167607879",
+                "after": "0.7797701373543049"
+              },
+              {
+                "run": "m03q40_001",
+                "field": "threshold_060_080_min",
+                "before": "0.7531224723735451",
+                "after": "0.7530521005747589"
+              },
+              {
+                "run": "m03q40_001",
+                "field": "threshold_060_080_max",
+                "before": "0.7735072608162327",
+                "after": "0.7734934676758425"
+              },
+              {
+                "run": "m03q40_001",
+                "field": "reference_variants_max",
+                "before": "0.7662346735444889",
+                "after": "0.7662098726745837"
+              },
+              {
+                "run": "m03q40_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.8744411769432259",
+                "after": "0.8744283212007263"
+              },
+              {
+                "run": "m03q40_001",
+                "field": "conditional_alpha_D56",
+                "before": "0.8778779686680632",
+                "after": "0.8778526650741288"
+              },
+              {
+                "run": "m03q40_001",
+                "field": "conditional_missing_width_alpha_lower",
+                "before": "0.7647292527064017",
+                "after": "0.7647072104645743"
+              },
+              {
+                "run": "m03q40_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.7647292527064017",
+                "after": "0.7647072104645743"
+              },
+              {
+                "run": "m03q40_001",
+                "field": "reference_variants_min",
+                "before": "0.7641379555084179",
+                "after": "0.7641131546385127"
+              },
+              {
+                "run": "m03q40_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.7630504660880748",
+                "after": "0.7630023170470375"
+              },
+              {
+                "run": "m03q40_001",
+                "field": "conditional_alpha_D64",
+                "before": "0.6721253197614858",
+                "after": "0.6721059466973799"
+              },
+              {
+                "run": "m03q40_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.7665760607521699",
+                "after": "0.766555368048859"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "threshold_060_080_min",
+                "before": "0.5277026775345647",
+                "after": "0.5265026074190934"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "threshold_060_080_max",
+                "before": "0.5691190648348999",
+                "after": "0.56551173338592"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "reference_variants_max",
+                "before": "0.5522772190451151",
+                "after": "0.5508949034816715"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.6796785643857227",
+                "after": "0.6752415697101164"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "conditional_alpha_D56",
+                "before": "0.6327240556546025",
+                "after": "0.6312585143010073"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "conditional_missing_width_alpha_lower",
+                "before": "0.5511729551480095",
+                "after": "0.5498963057910998"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "center_gas_silhouette_duty",
+                "before": "0.8306054032735161",
+                "after": "0.8286334056399133"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "conditional_missing_width_alpha_upper",
+                "before": "0.6717265934836434",
+                "after": "0.6705497491180787"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.5511729551480095",
+                "after": "0.5498963057910998"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "reference_variants_min",
+                "before": "0.5511375687460287",
+                "after": "0.5498688073796534"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.4511858974358975",
+                "after": "0.44987015121630514"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "conditional_alpha_D64",
+                "before": "0.4844293551105551",
+                "after": "0.48330730001170874"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.7380393929432393",
+                "after": "0.7372649572649574"
+              },
+              {
+                "run": "m04q10_001",
+                "field": "threshold_060_080_min",
+                "before": "0.6774089490441852",
+                "after": "0.6757935339348863"
+              },
+              {
+                "run": "m04q10_001",
+                "field": "threshold_060_080_max",
+                "before": "0.7072214671348209",
+                "after": "0.7040987088005438"
+              },
+              {
+                "run": "m04q10_001",
+                "field": "reference_variants_max",
+                "before": "0.6942053648959867",
+                "after": "0.6914182429116171"
+              },
+              {
+                "run": "m04q10_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.8245705440404727",
+                "after": "0.8218956469211312"
+              },
+              {
+                "run": "m04q10_001",
+                "field": "conditional_alpha_D56",
+                "before": "0.7960351699293376",
+                "after": "0.7928842089843072"
+              },
+              {
+                "run": "m04q10_001",
+                "field": "conditional_missing_width_alpha_lower",
+                "before": "0.6934350813606674",
+                "after": "0.6906902442707744"
+              },
+              {
+                "run": "m04q10_001",
+                "field": "conditional_missing_width_alpha_upper",
+                "before": "0.8883260341551201",
+                "after": "0.8863494041101925"
+              },
+              {
+                "run": "m04q10_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.6934350813606674",
+                "after": "0.6906902442707744"
+              },
+              {
+                "run": "m04q10_001",
+                "field": "reference_variants_min",
+                "before": "0.6933707101597011",
+                "after": "0.6906454109563183"
+              },
+              {
+                "run": "m04q10_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.6607751352711716",
+                "after": "0.6574141185352965"
+              },
+              {
+                "run": "m04q10_001",
+                "field": "conditional_alpha_D64",
+                "before": "0.6094644269771492",
+                "after": "0.6070519725036103"
+              },
+              {
+                "run": "m04q10_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.7253271674845855",
+                "after": "0.7231321567887254"
+              },
+              {
+                "run": "m04q20_001",
+                "field": "threshold_060_080_min",
+                "before": "0.6898658081240487",
+                "after": "0.6887251771784628"
+              },
+              {
+                "run": "m04q20_001",
+                "field": "threshold_060_080_max",
+                "before": "0.7189768538337139",
+                "after": "0.7177027147545663"
+              },
+              {
+                "run": "m04q20_001",
+                "field": "reference_variants_max",
+                "before": "0.7065323261510655",
+                "after": "0.7054858732876713"
+              },
+              {
+                "run": "m04q20_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.8364351455479452",
+                "after": "0.8349386415525114"
+              },
+              {
+                "run": "m04q20_001",
+                "field": "conditional_alpha_D56",
+                "before": "0.809969694347131",
+                "after": "0.8087237717754054"
+              },
+              {
+                "run": "m04q20_001",
+                "field": "conditional_missing_width_alpha_lower",
+                "before": "0.7055736004090564",
+                "after": "0.704488263413242"
+              },
+              {
+                "run": "m04q20_001",
+                "field": "conditional_missing_width_alpha_upper",
+                "before": "0.9255157498573058",
+                "after": "0.9246965967465753"
+              },
+              {
+                "run": "m04q20_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.7055736004090564",
+                "after": "0.704488263413242"
+              },
+              {
+                "run": "m04q20_001",
+                "field": "reference_variants_min",
+                "before": "0.7054478215372907",
+                "after": "0.7042942886700915"
+              },
+              {
+                "run": "m04q20_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.6929064859401939",
+                "after": "0.691433773259616"
+              },
+              {
+                "run": "m04q20_001",
+                "field": "conditional_alpha_D64",
+                "before": "0.6201330472345221",
+                "after": "0.6191791377655448"
+              },
+              {
+                "run": "m04q20_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.7212576541228228",
+                "after": "0.7197708221865524"
+              },
+              {
+                "run": "m04q40_001",
+                "field": "threshold_060_080_min",
+                "before": "0.7615912804515746",
+                "after": "0.7612836452762924"
+              },
+              {
+                "run": "m04q40_001",
+                "field": "threshold_060_080_max",
+                "before": "0.7692843137254903",
+                "after": "0.7692434640522877"
+              },
+              {
+                "run": "m04q40_001",
+                "field": "reference_variants_max",
+                "before": "0.7662603052584672",
+                "after": "0.7661623217468807"
+              },
+              {
+                "run": "m04q40_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.875007798573975",
+                "after": "0.8749476381461676"
+              },
+              {
+                "run": "m04q40_001",
+                "field": "conditional_alpha_D56",
+                "before": "0.8792388759481065",
+                "after": "0.8791280787883334"
+              },
+              {
+                "run": "m04q40_001",
+                "field": "conditional_missing_width_alpha_lower",
+                "before": "0.7659147541592397",
+                "after": "0.7658182375222817"
+              },
+              {
+                "run": "m04q40_001",
+                "field": "conditional_missing_width_alpha_upper",
+                "before": "0.9890138703208556",
+                "after": "0.988960617201426"
+              },
+              {
+                "run": "m04q40_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.7659147541592397",
+                "after": "0.7658182375222817"
+              },
+              {
+                "run": "m04q40_001",
+                "field": "reference_variants_min",
+                "before": "0.7659147541592397",
+                "after": "0.7658182375222817"
+              },
+              {
+                "run": "m04q40_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.7628357100415923",
+                "after": "0.7626530005941771"
+              },
+              {
+                "run": "m04q40_001",
+                "field": "conditional_alpha_D64",
+                "before": "0.6731672643977691",
+                "after": "0.6730824353223178"
+              },
+              {
+                "run": "m04q40_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.7689834001782534",
+                "after": "0.7688998440285207"
+              },
+              {
+                "run": "m04q80_001",
+                "field": "threshold_060_080_min",
+                "before": "0.7792965728141997",
+                "after": "0.7792940448842552"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "threshold_060_080_min",
+                "before": "0.4831160213243547",
+                "after": "0.4823276281331837"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "threshold_060_080_max",
+                "before": "0.5108646184062852",
+                "after": "0.5098492330714554"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "reference_variants_max",
+                "before": "0.5002627665544334",
+                "after": "0.4992481294425739"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.5933866442199776",
+                "after": "0.5903872053872053"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "conditional_alpha_D56",
+                "before": "0.5712312860750361",
+                "after": "0.5700696377035662"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "conditional_missing_width_alpha_lower",
+                "before": "0.49760592031425366",
+                "after": "0.4965939955106622"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "center_gas_silhouette_duty",
+                "before": "0.7084175084175084",
+                "after": "0.7052188552188552"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "conditional_missing_width_alpha_upper",
+                "before": "0.6223743920688365",
+                "after": "0.6214038065843622"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.49760592031425366",
+                "after": "0.4965939955106622"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "reference_variants_min",
+                "before": "0.49760592031425366",
+                "after": "0.4965939955106622"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.44888397867564545",
+                "after": "0.44735409652076324"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "conditional_alpha_D64",
+                "before": "0.4373489534011995",
+                "after": "0.43645956636679295"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.5351122334455668",
+                "after": "0.5350065469509914"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "threshold_060_080_min",
+                "before": "0.39219357899731144",
+                "after": "0.38983038114818924"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "threshold_060_080_max",
+                "before": "0.43041409668406344",
+                "after": "0.4268532869418525"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "reference_variants_max",
+                "before": "0.4109255891190891",
+                "after": "0.40831417927495745"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.5320022141388582",
+                "after": "0.5243159892456113"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "conditional_alpha_D56",
+                "before": "0.47013166823743574",
+                "after": "0.46713543969699217"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "conditional_missing_width_alpha_lower",
+                "before": "0.4095369198868329",
+                "after": "0.4069268719138243"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "center_gas_silhouette_duty",
+                "before": "0.688122726553851",
+                "after": "0.6795824766724656"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "conditional_missing_width_alpha_upper",
+                "before": "0.49261136591280513",
+                "after": "0.4900329924262392"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.4095369198868329",
+                "after": "0.4069268719138243"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "reference_variants_min",
+                "before": "0.40915976944839827",
+                "after": "0.40641103027747033"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.3024749670619236",
+                "after": "0.3019404918752745"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "conditional_alpha_D64",
+                "before": "0.35994455849428675",
+                "after": "0.3576505710180096"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.49088669301712784",
+                "after": "0.4878629776021081"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "threshold_060_080_min",
+                "before": "0.5695059039184879",
+                "after": "0.5676558110746085"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "threshold_060_080_max",
+                "before": "0.6268248583535685",
+                "after": "0.6235206875208303"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "reference_variants_max",
+                "before": "0.5989179323588695",
+                "after": "0.5960975019441667"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.7501095081655001",
+                "after": "0.745855353997048"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "conditional_alpha_D56",
+                "before": "0.6853103073467638",
+                "after": "0.6824722925879394"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "conditional_missing_width_alpha_lower",
+                "before": "0.5969814232887366",
+                "after": "0.5945091970988272"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "center_gas_silhouette_duty",
+                "before": "0.9470075703470933",
+                "after": "0.9454363662333952"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "conditional_missing_width_alpha_upper",
+                "before": "0.71099164405085",
+                "after": "0.7087950134107825"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.5969814232887366",
+                "after": "0.5945091970988272"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "reference_variants_min",
+                "before": "0.5966827357996477",
+                "after": "0.5942127315145457"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.5332429217225791",
+                "after": "0.5313016496153541"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "conditional_alpha_D64",
+                "before": "0.5246907040623661",
+                "after": "0.5225178490126411"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.6383704365079366",
+                "after": "0.6371759920634921"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "threshold_060_080_min",
+                "before": "0.6039058013499903",
+                "after": "0.6013137975615991"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "threshold_060_080_max",
+                "before": "0.6664702566184099",
+                "after": "0.6633123994648147"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "reference_variants_max",
+                "before": "0.642356845412589",
+                "after": "0.639352854071769"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.7869413250349524",
+                "after": "0.781763856943129"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "conditional_alpha_D56",
+                "before": "0.7349175793643123",
+                "after": "0.7312978812482915"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "conditional_missing_width_alpha_lower",
+                "before": "0.6401948691351345",
+                "after": "0.6370417098874006"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "center_gas_silhouette_duty",
+                "before": "0.9730753619266675",
+                "after": "0.972398863482614"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "conditional_missing_width_alpha_upper",
+                "before": "0.7723409101159068",
+                "after": "0.7693635652971331"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.6401948691351345",
+                "after": "0.6370417098874006"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "reference_variants_min",
+                "before": "0.6391103669628228",
+                "after": "0.6365389212104813"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.6120890616783112",
+                "after": "0.6091238449402749"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "conditional_alpha_D64",
+                "before": "0.5626712717008017",
+                "after": "0.5598999403307232"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.6616119756427606",
+                "after": "0.659747030521726"
+              },
+              {
+                "run": "m05q40_001",
+                "field": "threshold_060_080_min",
+                "before": "0.699682695425626",
+                "after": "0.6982842183534043"
+              },
+              {
+                "run": "m05q40_001",
+                "field": "threshold_060_080_max",
+                "before": "0.7437292162848166",
+                "after": "0.7426303769302159"
+              },
+              {
+                "run": "m05q40_001",
+                "field": "reference_variants_max",
+                "before": "0.7289794315297486",
+                "after": "0.7278360336788434"
+              },
+              {
+                "run": "m05q40_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.8498272449766865",
+                "after": "0.8481265304753279"
+              },
+              {
+                "run": "m05q40_001",
+                "field": "conditional_alpha_D56",
+                "before": "0.8356982535894503",
+                "after": "0.8343217243121461"
+              },
+              {
+                "run": "m05q40_001",
+                "field": "conditional_missing_width_alpha_lower",
+                "before": "0.7279860342379211",
+                "after": "0.7267869242896918"
+              },
+              {
+                "run": "m05q40_001",
+                "field": "conditional_missing_width_alpha_upper",
+                "before": "0.9070216251271901",
+                "after": "0.9062196840092582"
+              },
+              {
+                "run": "m05q40_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.7279860342379211",
+                "after": "0.7267869242896918"
+              },
+              {
+                "run": "m05q40_001",
+                "field": "reference_variants_min",
+                "before": "0.7272877461339775",
+                "after": "0.7260431552111637"
+              },
+              {
+                "run": "m05q40_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.7212851590896383",
+                "after": "0.720291617737516"
+              },
+              {
+                "run": "m05q40_001",
+                "field": "conditional_alpha_D64",
+                "before": "0.6398314754044229",
+                "after": "0.6387775701764868"
+              },
+              {
+                "run": "m05q40_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.7335571492478892",
+                "after": "0.7324649108091484"
+              },
+              {
+                "run": "m05q80_001",
+                "field": "threshold_060_080_min",
+                "before": "0.7475672094143904",
+                "after": "0.747145819067184"
+              },
+              {
+                "run": "m05q80_001",
+                "field": "threshold_060_080_max",
+                "before": "0.7745976311851683",
+                "after": "0.7744872111897334"
+              },
+              {
+                "run": "m05q80_001",
+                "field": "reference_variants_max",
+                "before": "0.7699881115422659",
+                "after": "0.7697453967891653"
+              },
+              {
+                "run": "m05q80_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.8765150650536407",
+                "after": "0.8762116716122651"
+              },
+              {
+                "run": "m05q80_001",
+                "field": "conditional_alpha_D56",
+                "before": "0.88295015742259",
+                "after": "0.8826352649311263"
+              },
+              {
+                "run": "m05q80_001",
+                "field": "conditional_missing_width_alpha_lower",
+                "before": "0.7691476926881231",
+                "after": "0.7688733863400037"
+              },
+              {
+                "run": "m05q80_001",
+                "field": "conditional_missing_width_alpha_upper",
+                "before": "0.9757730667782598",
+                "after": "0.9755289888153389"
+              },
+              {
+                "run": "m05q80_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.7691476926881231",
+                "after": "0.7688733863400037"
+              },
+              {
+                "run": "m05q80_001",
+                "field": "reference_variants_min",
+                "before": "0.7691476926881231",
+                "after": "0.7688733863400037"
+              },
+              {
+                "run": "m05q80_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.7678092407671583",
+                "after": "0.7676085750515138"
+              },
+              {
+                "run": "m05q80_001",
+                "field": "conditional_alpha_D64",
+                "before": "0.6760087142766705",
+                "after": "0.6757676247128938"
+              },
+              {
+                "run": "m05q80_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.771081153907117",
+                "after": "0.7709487240450152"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "threshold_060_080_min",
+                "before": "0.4426262075745918",
+                "after": "0.44062551651420595"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "threshold_060_080_max",
+                "before": "0.4910561468752672",
+                "after": "0.485997727337494"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "reference_variants_max",
+                "before": "0.46667436094725145",
+                "after": "0.4639713886751589"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.5924018979225443",
+                "after": "0.582211250748055"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "conditional_alpha_D56",
+                "before": "0.5344303108201475",
+                "after": "0.5312897881324882"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "conditional_missing_width_alpha_lower",
+                "before": "0.4655481818699952",
+                "after": "0.46281243766207864"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "center_gas_silhouette_duty",
+                "before": "0.7478840728391896",
+                "after": "0.7383944601179789"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "conditional_missing_width_alpha_upper",
+                "before": "0.5721880254196233",
+                "after": "0.5695235245504545"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.4655481818699952",
+                "after": "0.46281243766207864"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "reference_variants_min",
+                "before": "0.4655481818699952",
+                "after": "0.46281243766207864"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.39677475071225077",
+                "after": "0.39342289886039894"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "conditional_alpha_D64",
+                "before": "0.40917320672167545",
+                "after": "0.40676874403893626"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.5130852920227921",
+                "after": "0.5111474358974359"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "threshold_060_080_min",
+                "before": "0.44711017650500123",
+                "after": "0.44607690167372976"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "threshold_060_080_max",
+                "before": "0.5093983562347503",
+                "after": "0.5049784541186879"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "reference_variants_max",
+                "before": "0.47704307749382874",
+                "after": "0.4744389509581497"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.6202880869825778",
+                "after": "0.6135096956465905"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "conditional_alpha_D56",
+                "before": "0.5459845834763852",
+                "after": "0.5430746364296328"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "conditional_missing_width_alpha_lower",
+                "before": "0.4756132371616512",
+                "after": "0.4730783499564802"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "center_gas_silhouette_duty",
+                "before": "0.8014639784255811",
+                "after": "0.7985103377423912"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "conditional_missing_width_alpha_upper",
+                "before": "0.5682137251544597",
+                "after": "0.5659250460168658"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.4756132371616512",
+                "after": "0.4730783499564802"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "reference_variants_min",
+                "before": "0.47516162978183013",
+                "after": "0.4724609748441134"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.413222079589217",
+                "after": "0.41069194836685213"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "conditional_alpha_D64",
+                "before": "0.4180194467241075",
+                "after": "0.41579151851643764"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.5330849925069578",
+                "after": "0.5317396346249912"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "threshold_060_080_min",
+                "before": "0.507750564052977",
+                "after": "0.5055373520276606"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "threshold_060_080_max",
+                "before": "0.5849370385021098",
+                "after": "0.5790823151078294"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "reference_variants_max",
+                "before": "0.543534780825129",
+                "after": "0.539443089252227"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.695193829113924",
+                "after": "0.6834651898734178"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "conditional_alpha_D56",
+                "before": "0.6220946571864506",
+                "after": "0.6174626496168087"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "conditional_missing_width_alpha_lower",
+                "before": "0.5419135680379747",
+                "after": "0.537878574777309"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "center_gas_silhouette_duty",
+                "before": "0.8798786919831224",
+                "after": "0.8724947257383966"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "conditional_missing_width_alpha_upper",
+                "before": "0.6727183324542897",
+                "after": "0.6688902807079231"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.5419135680379747",
+                "after": "0.537878574777309"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "reference_variants_min",
+                "before": "0.5418931669010785",
+                "after": "0.5378427903774028"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.4929643668058303",
+                "after": "0.48975170292243464"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "conditional_alpha_D64",
+                "before": "0.4762912219083762",
+                "after": "0.4727448411128692"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.5889465685197393",
+                "after": "0.5863399985351205"
+              },
+              {
+                "run": "m06q20_001",
+                "field": "threshold_060_080_min",
+                "before": "0.6079896787468472",
+                "after": "0.6049188293729811"
+              },
+              {
+                "run": "m06q20_001",
+                "field": "threshold_060_080_max",
+                "before": "0.6863865104650648",
+                "after": "0.6832384452851896"
+              },
+              {
+                "run": "m06q20_001",
+                "field": "reference_variants_max",
+                "before": "0.6514192276206912",
+                "after": "0.6481507201646091"
+              },
+              {
+                "run": "m06q20_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.7869076065312625",
+                "after": "0.7772617151201381"
+              },
+              {
+                "run": "m06q20_001",
+                "field": "conditional_alpha_D56",
+                "before": "0.7461408323783516",
+                "after": "0.7423906558591178"
+              },
+              {
+                "run": "m06q20_001",
+                "field": "conditional_missing_width_alpha_lower",
+                "before": "0.6499715695384752",
+                "after": "0.6467047491039427"
+              },
+              {
+                "run": "m06q20_001",
+                "field": "conditional_missing_width_alpha_upper",
+                "before": "0.8414916865790523",
+                "after": "0.8388532678437101"
+              },
+              {
+                "run": "m06q20_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.6499715695384752",
+                "after": "0.6467047491039427"
+              },
+              {
+                "run": "m06q20_001",
+                "field": "reference_variants_min",
+                "before": "0.6484880968184433",
+                "after": "0.6449366398955706"
+              },
+              {
+                "run": "m06q20_001",
+                "field": "conditional_circle_alpha_spatial_median",
+                "before": "0.7225",
+                "after": "0.6944444444444444"
+              },
+              {
+                "run": "m06q20_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.6181483325037332",
+                "after": "0.6130673082241027"
+              },
+              {
+                "run": "m06q20_001",
+                "field": "conditional_alpha_D64",
+                "before": "0.5712640747896754",
+                "after": "0.5683928458921371"
+              },
+              {
+                "run": "m06q20_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.6725114818503762",
+                "after": "0.6693692273657431"
+              },
+              {
+                "run": "m06q40_001",
+                "field": "threshold_060_080_min",
+                "before": "0.6722335424376449",
+                "after": "0.6707405715016398"
+              },
+              {
+                "run": "m06q40_001",
+                "field": "threshold_060_080_max",
+                "before": "0.7463834356289679",
+                "after": "0.7455778951168879"
+              },
+              {
+                "run": "m06q40_001",
+                "field": "reference_variants_max",
+                "before": "0.7226010357432981",
+                "after": "0.7208388806149774"
+              },
+              {
+                "run": "m06q40_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.8405711255528477",
+                "after": "0.83660303276469"
+              },
+              {
+                "run": "m06q40_001",
+                "field": "conditional_alpha_D56",
+                "before": "0.8269979409818355",
+                "after": "0.8248890793116597"
+              },
+              {
+                "run": "m06q40_001",
+                "field": "conditional_missing_width_alpha_lower",
+                "before": "0.7204070952552879",
+                "after": "0.7185700424226014"
+              },
+              {
+                "run": "m06q40_001",
+                "field": "conditional_missing_width_alpha_upper",
+                "before": "0.9209715828745073",
+                "after": "0.9196989800523514"
+              },
+              {
+                "run": "m06q40_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.7204070952552879",
+                "after": "0.7185700424226014"
+              },
+              {
+                "run": "m06q40_001",
+                "field": "reference_variants_min",
+                "before": "0.7183425098534767",
+                "after": "0.7162389242410568"
+              },
+              {
+                "run": "m06q40_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.7102689385390809",
+                "after": "0.7079338749717897"
+              },
+              {
+                "run": "m06q40_001",
+                "field": "conditional_alpha_D64",
+                "before": "0.6331702985642178",
+                "after": "0.6315557013479894"
+              },
+              {
+                "run": "m06q40_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.7376149101030618",
+                "after": "0.7343221996539533"
+              },
+              {
+                "run": "m06q80_001",
+                "field": "threshold_060_080_min",
+                "before": "0.7165953805399292",
+                "after": "0.7156272137393219"
+              },
+              {
+                "run": "m06q80_001",
+                "field": "threshold_060_080_max",
+                "before": "0.7648202518081973",
+                "after": "0.7645508081078668"
+              },
+              {
+                "run": "m06q80_001",
+                "field": "reference_variants_max",
+                "before": "0.7535901568592435",
+                "after": "0.7529500848290027"
+              },
+              {
+                "run": "m06q80_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.8646557728368605",
+                "after": "0.8635860344673632"
+              },
+              {
+                "run": "m06q80_001",
+                "field": "conditional_alpha_D56",
+                "before": "0.8640121612534646",
+                "after": "0.8632508186773235"
+              },
+              {
+                "run": "m06q80_001",
+                "field": "conditional_missing_width_alpha_lower",
+                "before": "0.7526505938030181",
+                "after": "0.7519873798255798"
+              },
+              {
+                "run": "m06q80_001",
+                "field": "conditional_missing_width_alpha_upper",
+                "before": "0.9675531446260082",
+                "after": "0.9672238592731494"
+              },
+              {
+                "run": "m06q80_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.7526505938030181",
+                "after": "0.7519873798255798"
+              },
+              {
+                "run": "m06q80_001",
+                "field": "reference_variants_min",
+                "before": "0.7515143465190346",
+                "after": "0.7507133523826534"
+              },
+              {
+                "run": "m06q80_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.7423420245855286",
+                "after": "0.7415186623805698"
+              },
+              {
+                "run": "m06q80_001",
+                "field": "conditional_alpha_D64",
+                "before": "0.6615093109596839",
+                "after": "0.6609264080498258"
+              },
+              {
+                "run": "m06q80_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.7595472065958272",
+                "after": "0.7593377384885557"
+              },
+              {
+                "run": "m07q01_001",
+                "field": "threshold_060_080_min",
+                "before": "0.0012049300956585725",
+                "after": "0.0008406040856371981"
+              },
+              {
+                "run": "m07q01_001",
+                "field": "threshold_060_080_max",
+                "before": "0.0026530361960825535",
+                "after": "0.002107642173867339"
+              },
+              {
+                "run": "m07q01_001",
+                "field": "reference_variants_max",
+                "before": "0.0018446686989733348",
+                "after": "0.0013883632923368022"
+              },
+              {
+                "run": "m07q01_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.00992851886891622",
+                "after": "0.007253232418795333"
+              },
+              {
+                "run": "m07q01_001",
+                "field": "conditional_alpha_D56",
+                "before": "0.0021076488779049932",
+                "after": "0.0015838288957967291"
+              },
+              {
+                "run": "m07q01_001",
+                "field": "conditional_missing_width_alpha_lower",
+                "before": "0.001835996355863905",
+                "after": "0.0013796909492273732"
+              },
+              {
+                "run": "m07q01_001",
+                "field": "conditional_missing_width_alpha_upper",
+                "before": "0.001835996355863905",
+                "after": "0.0013796909492273732"
+              },
+              {
+                "run": "m07q01_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.001835996355863905",
+                "after": "0.0013796909492273732"
+              },
+              {
+                "run": "m07q01_001",
+                "field": "reference_variants_min",
+                "before": "0.0018166368828620484",
+                "after": "0.0013749605802585935"
+              },
+              {
+                "run": "m07q01_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.00040878023133543635",
+                "after": "0.0002046091833158079"
+              },
+              {
+                "run": "m07q01_001",
+                "field": "conditional_alpha_D64",
+                "before": "0.0016136686721460107",
+                "after": "0.0012126189983443709"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "threshold_060_080_min",
+                "before": "0.35082525444716256",
+                "after": "0.3490670396544955"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "threshold_060_080_max",
+                "before": "0.39960847603515454",
+                "after": "0.3944115248708888"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "reference_variants_max",
+                "before": "0.374595413910785",
+                "after": "0.37176157470327087"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.5013862462625713",
+                "after": "0.49293059708254056"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "conditional_alpha_D56",
+                "before": "0.42830637623355944",
+                "after": "0.4250502975381508"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "conditional_missing_width_alpha_lower",
+                "before": "0.37310244329678954",
+                "after": "0.370266036966567"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "center_gas_silhouette_duty",
+                "before": "0.6670290839902148",
+                "after": "0.6592824136993748"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "conditional_missing_width_alpha_upper",
+                "before": "0.41686894083537196",
+                "after": "0.4141127193379843"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.37310244329678954",
+                "after": "0.370266036966567"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "reference_variants_min",
+                "before": "0.37272613330917215",
+                "after": "0.3695299522817191"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.31442085597826086",
+                "after": "0.31106204710144925"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "conditional_alpha_D64",
+                "before": "0.32792206930381895",
+                "after": "0.3254291340526468"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.4193502792874397",
+                "after": "0.4167374320652174"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "threshold_060_080_min",
+                "before": "0.4768879803486103",
+                "after": "0.4741034389932028"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "threshold_060_080_max",
+                "before": "0.5571718487112189",
+                "after": "0.5506843327276398"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "reference_variants_max",
+                "before": "0.5173679251632007",
+                "after": "0.5118843461874959"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.6801433474661821",
+                "after": "0.6687139107611548"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "conditional_alpha_D56",
+                "before": "0.5921329759947589",
+                "after": "0.5859143036378694"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "conditional_missing_width_alpha_lower",
+                "before": "0.5158136146443233",
+                "after": "0.5103964600578774"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "center_gas_silhouette_duty",
+                "before": "0.8812840702604482",
+                "after": "0.8782556026650515"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "conditional_missing_width_alpha_upper",
+                "before": "0.6005744330035669",
+                "after": "0.5953379096843663"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.5158136146443233",
+                "after": "0.5103964600578774"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "reference_variants_min",
+                "before": "0.5143569217309375",
+                "after": "0.5089664176593311"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.41386819436032035",
+                "after": "0.407682212800323"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "conditional_alpha_D64",
+                "before": "0.45335180974598727",
+                "after": "0.4485906387227438"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.5727384076990376",
+                "after": "0.5656805639679656"
+              },
+              {
+                "run": "m07q40_001",
+                "field": "threshold_060_080_min",
+                "before": "0.5881041646535898",
+                "after": "0.5856042183356417"
+              },
+              {
+                "run": "m07q40_001",
+                "field": "threshold_060_080_max",
+                "before": "0.673313927271556",
+                "after": "0.6701081156526129"
+              },
+              {
+                "run": "m07q40_001",
+                "field": "reference_variants_max",
+                "before": "0.6379467151952417",
+                "after": "0.6353541404966664"
+              },
+              {
+                "run": "m07q40_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.7810722453055046",
+                "after": "0.7734128901343125"
+              },
+              {
+                "run": "m07q40_001",
+                "field": "conditional_alpha_D56",
+                "before": "0.7302840989763381",
+                "after": "0.7273123660276749"
+              },
+              {
+                "run": "m07q40_001",
+                "field": "conditional_missing_width_alpha_lower",
+                "before": "0.6361585928860546",
+                "after": "0.6335698832952191"
+              },
+              {
+                "run": "m07q40_001",
+                "field": "conditional_missing_width_alpha_upper",
+                "before": "0.7960845921774515",
+                "after": "0.7937927443338595"
+              },
+              {
+                "run": "m07q40_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.6361585928860546",
+                "after": "0.6335698832952191"
+              },
+              {
+                "run": "m07q40_001",
+                "field": "reference_variants_min",
+                "before": "0.6356811447160757",
+                "after": "0.6328546504761599"
+              },
+              {
+                "run": "m07q40_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.6137410719080608",
+                "after": "0.6101784275817626"
+              },
+              {
+                "run": "m07q40_001",
+                "field": "conditional_alpha_D64",
+                "before": "0.5591237632787588",
+                "after": "0.5568485302399386"
+              },
+              {
+                "run": "m07q40_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.6485602522812668",
+                "after": "0.6458176328502416"
+              },
+              {
+                "run": "m07q80_001",
+                "field": "threshold_060_080_min",
+                "before": "0.6708390196235375",
+                "after": "0.6695011572684464"
+              },
+              {
+                "run": "m07q80_001",
+                "field": "threshold_060_080_max",
+                "before": "0.7472374968316858",
+                "after": "0.7466542602153119"
+              },
+              {
+                "run": "m07q80_001",
+                "field": "reference_variants_max",
+                "before": "0.7260992549459053",
+                "after": "0.7252789950774404"
+              },
+              {
+                "run": "m07q80_001",
+                "field": "gas_silhouette_projected_fraction",
+                "before": "0.8417166926801937",
+                "after": "0.8386280866050346"
+              },
+              {
+                "run": "m07q80_001",
+                "field": "conditional_alpha_D56",
+                "before": "0.8306180757361175",
+                "after": "0.8294536883669303"
+              },
+              {
+                "run": "m07q80_001",
+                "field": "conditional_missing_width_alpha_lower",
+                "before": "0.7235606348634623",
+                "after": "0.7225463240885263"
+              },
+              {
+                "run": "m07q80_001",
+                "field": "conditional_missing_width_alpha_upper",
+                "before": "0.9269314543562652",
+                "after": "0.9261015894932031"
+              },
+              {
+                "run": "m07q80_001",
+                "field": "conditional_circle_alpha_spatial_mean",
+                "before": "0.7235606348634623",
+                "after": "0.7225463240885263"
+              },
+              {
+                "run": "m07q80_001",
+                "field": "reference_variants_min",
+                "before": "0.7204572877896507",
+                "after": "0.7191910293352545"
+              },
+              {
+                "run": "m07q80_001",
+                "field": "five_spatial_block_means_min",
+                "before": "0.7073754501800721",
+                "after": "0.7056158296651995"
+              },
+              {
+                "run": "m07q80_001",
+                "field": "conditional_alpha_D64",
+                "before": "0.6359419642354649",
+                "after": "0.6350504801559311"
+              },
+              {
+                "run": "m07q80_001",
+                "field": "five_spatial_block_means_max",
+                "before": "0.7358542583700148",
+                "after": "0.7352166700013341"
+              }
+            ]
+          },
+          {
+            "artifact": "results/flip_rate/phase_mask_flip_per_run.csv",
+            "common_cells_compared": 442,
+            "retained_runs": 26,
+            "method_correction_changes": [
+              {
+                "run": "m03q05_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "1025",
+                "after": "1351"
+              },
+              {
+                "run": "m03q05_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.002017696676213817",
+                "after": "0.0026594226434779183"
+              },
+              {
+                "run": "m03q10_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "216",
+                "after": "238"
+              },
+              {
+                "run": "m03q10_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.0002865409335662805",
+                "after": "0.00031572565828136463"
+              },
+              {
+                "run": "m03q40_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "1791",
+                "after": "1811"
+              },
+              {
+                "run": "m03q40_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.0016291800612375218",
+                "after": "0.0016473730267454786"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "2472",
+                "after": "2614"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "center_candidate_gas_duty",
+                "before": "0.8306054032735161",
+                "after": "0.8286334056399133"
+              },
+              {
+                "run": "m04q01_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.00919950876409512",
+                "after": "0.009727959510252689"
+              },
+              {
+                "run": "m04q10_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "2472",
+                "after": "2928"
+              },
+              {
+                "run": "m04q10_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.005283360833026989",
+                "after": "0.006257961375041677"
+              },
+              {
+                "run": "m04q20_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "2168",
+                "after": "2538"
+              },
+              {
+                "run": "m04q20_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.004378214746586588",
+                "after": "0.0051254192928213834"
+              },
+              {
+                "run": "m04q40_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "676",
+                "after": "748"
+              },
+              {
+                "run": "m04q40_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.0008526450284866686",
+                "after": "0.0009434592918757813"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "center_candidate_flip_count",
+                "before": "52",
+                "after": "48"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "center_candidate_flip_rate",
+                "before": "0.008755682774877925",
+                "after": "0.008082168715271931"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "center_candidate_gas_entries",
+                "before": "26",
+                "after": "24"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "2296",
+                "after": "2288"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "center_candidate_gas_duty",
+                "before": "0.7084175084175084",
+                "after": "0.7052188552188552"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.007294284343657372",
+                "after": "0.00726886871876658"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "center_candidate_flips_per1000px",
+                "before": "8.755682774877926",
+                "after": "8.082168715271932"
+              },
+              {
+                "run": "m05q01_001",
+                "field": "center_candidate_gas_exits",
+                "before": "26",
+                "after": "24"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "center_candidate_flip_count",
+                "before": "80",
+                "after": "88"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "center_candidate_flip_rate",
+                "before": "0.012654223347042075",
+                "after": "0.013919645681746282"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "center_candidate_gas_entries",
+                "before": "40",
+                "after": "44"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "3267",
+                "after": "3491"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "center_candidate_gas_duty",
+                "before": "0.688122726553851",
+                "after": "0.6795824766724656"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.009750317847826996",
+                "after": "0.01041884285484054"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "center_candidate_flips_per1000px",
+                "before": "12.654223347042075",
+                "after": "13.919645681746283"
+              },
+              {
+                "run": "m05q05_001",
+                "field": "center_candidate_gas_exits",
+                "before": "40",
+                "after": "44"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "4060",
+                "after": "4602"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "center_candidate_gas_duty",
+                "before": "0.9470075703470933",
+                "after": "0.9454363662333952"
+              },
+              {
+                "run": "m05q10_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.010943396226415094",
+                "after": "0.012404312668463612"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "center_candidate_flip_count",
+                "before": "40",
+                "after": "38"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "center_candidate_flip_rate",
+                "before": "0.005412719891745603",
+                "after": "0.005142083897158322"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "center_candidate_gas_entries",
+                "before": "20",
+                "after": "19"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "4013",
+                "after": "4553"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "center_candidate_gas_duty",
+                "before": "0.9730753619266675",
+                "after": "0.972398863482614"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.010245870247912783",
+                "after": "0.011624581918451758"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "center_candidate_flips_per1000px",
+                "before": "5.412719891745602",
+                "after": "5.142083897158322"
+              },
+              {
+                "run": "m05q20_001",
+                "field": "center_candidate_gas_exits",
+                "before": "20",
+                "after": "19"
+              },
+              {
+                "run": "m05q40_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "2503",
+                "after": "3009"
+              },
+              {
+                "run": "m05q40_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.004753061100477015",
+                "after": "0.005713927627381278"
+              },
+              {
+                "run": "m05q80_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "996",
+                "after": "1228"
+              },
+              {
+                "run": "m05q80_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.00107244494836436",
+                "after": "0.001322251402200235"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "center_candidate_flip_count",
+                "before": "97",
+                "after": "83"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "center_candidate_flip_rate",
+                "before": "0.012440682313710401",
+                "after": "0.010645119917917148"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "center_candidate_gas_entries",
+                "before": "49",
+                "after": "42"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "4151",
+                "after": "4021"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "center_candidate_gas_duty",
+                "before": "0.7478840728391896",
+                "after": "0.7383944601179789"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.010044985855711315",
+                "after": "0.009730399452135679"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "center_candidate_flips_per1000px",
+                "before": "12.4406823137104",
+                "after": "10.645119917917148"
+              },
+              {
+                "run": "m06q01_001",
+                "field": "center_candidate_gas_exits",
+                "before": "48",
+                "after": "41"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "center_candidate_flip_count",
+                "before": "88",
+                "after": "78"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "center_candidate_flip_rate",
+                "before": "0.011302337528898022",
+                "after": "0.010017980991523246"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "center_candidate_gas_entries",
+                "before": "44",
+                "after": "39"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "5206",
+                "after": "5362"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "center_candidate_gas_duty",
+                "before": "0.8014639784255811",
+                "after": "0.7985103377423912"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.01261577383693034",
+                "after": "0.012993810855478386"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "center_candidate_flips_per1000px",
+                "before": "11.302337528898022",
+                "after": "10.017980991523247"
+              },
+              {
+                "run": "m06q05_001",
+                "field": "center_candidate_gas_exits",
+                "before": "44",
+                "after": "39"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "5235",
+                "after": "5557"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "center_candidate_gas_duty",
+                "before": "0.8798786919831224",
+                "after": "0.8724947257383966"
+              },
+              {
+                "run": "m06q10_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.01302566067594097",
+                "after": "0.013826856996409545"
+              },
+              {
+                "run": "m06q20_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "5171",
+                "after": "5725"
+              },
+              {
+                "run": "m06q20_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.009714830004565274",
+                "after": "0.010755637550983601"
+              },
+              {
+                "run": "m06q40_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "4415",
+                "after": "5465"
+              },
+              {
+                "run": "m06q40_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.005639556346385",
+                "after": "0.006980787187541115"
+              },
+              {
+                "run": "m06q80_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "2226",
+                "after": "2708"
+              },
+              {
+                "run": "m06q80_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.0022503214744963567",
+                "after": "0.002737587849477149"
+              },
+              {
+                "run": "m07q01_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "538",
+                "after": "414"
+              },
+              {
+                "run": "m07q01_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.0032021903458127493",
+                "after": "0.0024641390393428963"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "center_candidate_flip_count",
+                "before": "87",
+                "after": "79"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "center_candidate_flip_rate",
+                "before": "0.011825472339268724",
+                "after": "0.010738072583933668"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "center_candidate_gas_entries",
+                "before": "44",
+                "after": "40"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "4149",
+                "after": "4095"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "center_candidate_gas_duty",
+                "before": "0.6670290839902148",
+                "after": "0.6592824136993748"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.010640616945483829",
+                "after": "0.010502127354002477"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "center_candidate_flips_per1000px",
+                "before": "11.825472339268723",
+                "after": "10.738072583933668"
+              },
+              {
+                "run": "m07q05_001",
+                "field": "center_candidate_gas_exits",
+                "before": "43",
+                "after": "39"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "6570",
+                "after": "7102"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "center_candidate_gas_duty",
+                "before": "0.8812840702604482",
+                "after": "0.8782556026650515"
+              },
+              {
+                "run": "m07q20_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.015018447316566924",
+                "after": "0.016234552944027137"
+              },
+              {
+                "run": "m07q40_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "6258",
+                "after": "7166"
+              },
+              {
+                "run": "m07q40_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.011410463055480597",
+                "after": "0.013066055969251191"
+              },
+              {
+                "run": "m07q80_001",
+                "field": "candidate_pixel_flip_count",
+                "before": "4066",
+                "after": "4866"
+              },
+              {
+                "run": "m07q80_001",
+                "field": "candidate_pixel_flip_rate",
+                "before": "0.004605690168222097",
+                "after": "0.005511876133440415"
+              }
+            ]
+          },
+          {
+            "artifact": "results/flip_rate/flip_rate_per_run.csv",
+            "common_cells_compared": 936,
+            "retained_runs": 26,
+            "method_correction_changes": []
+          },
+          {
+            "artifact": "results/validation/data_inventory.csv",
+            "common_cells_compared": 312,
+            "retained_runs": 26,
+            "method_correction_changes": []
+          },
+          {
+            "artifact": "intermediate/exploratory/image_void_alternatives.csv",
+            "common_cells_compared": 858,
+            "retained_runs": 26,
+            "method_correction_changes": []
+          },
+          {
+            "artifact": "intermediate/features/pattern_morphology_features.csv",
+            "common_cells_compared": 416,
+            "retained_runs": 26,
+            "method_correction_changes": []
+          }
+        ],
+        "method_correction_verified": true,
+        "interpretation": "Mask-derived values may change after the documented border fix; raw inputs, labels and unrelated measurements must stay identical."
+      }
+    },
+    {
+      "check": "calibration_and_computational_metadata_scope",
+      "passed": true,
+      "details": {
+        "computational_json_inputs_checked": [
+          "panorama_liquid_reference.json",
+          "image_void_alternatives_metadata.json",
+          "phase_mask_flip_metadata.json",
+          "flip_rate_audit.json",
+          "legacy_independent_audit.json",
+          "pattern_identification.json",
+          "silhouette_pattern_results.json",
+          "adversarial_checks.json",
+          "final_verification.json",
+          "summary_chart_checks.json"
+        ],
+        "scope_bookkeeping_subtrees_exempt_from_input_scan": [
+          "dataset_scope",
+          "excluded_acquisitions",
+          "excluded_runs",
+          "explicitly_excluded_acquisitions",
+          "policy",
+          "scope"
+        ],
+        "segmentation_source_sha256": "b8ea65b2838a3cc372760de6b05d1542d6677c2b334328498cb52c1ea3d98b61",
+        "all_four_source_hashes_current": true
+      }
+    },
+    {
+      "check": "groups_charts_scaling_and_provenance",
+      "passed": true,
+      "details": {
+        "group_counts_independently_recomputed": {
+          "churn": 10,
+          "plug": 3,
+          "wavy annular": 8,
+          "dispersed bubbles": 1,
+          "slug": 3
+        },
+        "chart_coordinate_pairs_verified": 26,
+        "flip_scaling_factor": 1000,
+        "chart_source_hashes_current": true,
+        "svg_scope_and_hull_scope_verified": true
+      }
+    },
+    {
+      "check": "heldout_classifier_tests_and_missing_classes",
+      "passed": true,
+      "details": {
+        "model_variant_matrices_rebuilt": 48,
+        "heldout_predictions_checked": 1200,
+        "heldout_reference_folds_checked": 50,
+        "all_statistical_tests_retained_per_model": 25,
+        "singleton_bubble_runs": [
+          "m07q01_001"
+        ],
+        "absent_class_centroid_control_passed": true,
+        "independently_detected_absent_training_class_folds": {
+          "pattern_identification.json": {
+            "leave_one_run_out": 1,
+            "leave_one_mass_flux_out": 5,
+            "leave_one_run_out_consistent_variant": 1
+          },
+          "silhouette_pattern_results.json": {
+            "leave_one_run_out": 1,
+            "leave_one_mass_flux_out": 5
+          }
+        }
+      }
+    },
+    {
+      "check": "rank_test_methods_and_values",
+      "passed": true,
+      "details": {
+        "comparisons_independently_verified": 17,
+        "methods_ties_continuity_sample_sizes_and_auc_checked": true
+      }
+    },
+    {
+      "check": "written_executive_summary",
+      "passed": true,
+      "details": {
+        "summary_table_groups_checked": [
+          "dispersed bubbles",
+          "plug",
+          "slug",
+          "churn",
+          "wavy annular"
+        ],
+        "summary_table_rounding_checked": true,
+        "observed_hull_overlap_pairs_independently_checked": [
+          [
+            "churn",
+            "wavy annular"
+          ]
+        ],
+        "summary_flip_scaling_checked": 1000,
+        "embedded_figures_checked": 3,
+        "executive_summary_sha256": "5532033567d96c1a3e701aa118106c0772e2524e93e2ba3142dc80d6ffdb6d7d",
+        "limitations_and_singleton_support_disclosed": true
+      }
+    },
+    {
+      "check": "written_executive_summary_pt_br",
+      "passed": true,
+      "details": {
+        "summary_table_groups_checked": [
+          "dispersed bubbles",
+          "plug",
+          "slug",
+          "churn",
+          "wavy annular"
+        ],
+        "summary_table_rounding_checked": true,
+        "observed_hull_overlap_pairs_independently_checked": [
+          [
+            "churn",
+            "wavy annular"
+          ]
+        ],
+        "summary_flip_scaling_checked": 1000,
+        "embedded_figures_checked": 3,
+        "executive_summary_sha256": "27c8acadacb32b6eabc8a3b2b18b8c4a9ae2a1c82a6b01735b9b48e76449543c",
+        "limitations_and_singleton_support_disclosed": true
+      }
+    }
+  ],
+  "failures": [],
+  "scope": "Post-regeneration arithmetic, dataset selection, leakage, chart and written-findings audit; not independent physical void calibration."
+}

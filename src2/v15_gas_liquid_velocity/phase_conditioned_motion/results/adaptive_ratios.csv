@@ -1,0 +1,53 @@
+run,pattern,width,height,gas_mean_px_frame,liquid_mean_px_frame,gas_tracks,liquid_tracks,gas_frames,liquid_frames,unfiltered_ratio,descriptive_ratio,eligible_descriptive_ratio,withheld_reasons
+m03q05_001,churn,64,12,-18.747679916628698,nan,27,0,23,0,nan,nan,False,liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m03q05_001,churn,32,12,-17.559464157225378,nan,27,0,22,0,nan,nan,False,liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m03q10_001,wavy annular,64,12,-25.8925265710366,nan,16,0,15,0,nan,nan,False,gas_too_few_tracks;liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m03q10_001,wavy annular,32,12,-23.237215327268732,nan,15,0,12,0,nan,nan,False,gas_too_few_tracks;liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m03q20_001,wavy annular,64,12,-40.12388790898423,nan,10,0,10,0,nan,nan,False,gas_too_few_tracks;liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m03q20_001,wavy annular,32,12,-25.36080932274496,nan,10,0,10,0,nan,nan,False,gas_too_few_tracks;liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m03q40_001,wavy annular,64,12,-47.36511632218573,nan,15,0,13,0,nan,nan,False,gas_too_few_tracks;liquid_too_few_tracks;liquid_too_few_frames;missing_mean;saturation
+m03q40_001,wavy annular,32,12,-20.42568926632555,nan,9,0,8,0,nan,nan,False,gas_too_few_tracks;gas_too_few_frames;liquid_too_few_tracks;liquid_too_few_frames;missing_mean;saturation
+m04q01_001,slug,64,12,-6.372154101543252,nan,73,0,48,0,nan,nan,False,liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m04q01_001,slug,32,12,-6.515463114075347,-13.970639013906613,52,3,37,2,0.46636829622394105,nan,False,liquid_too_few_tracks;liquid_too_few_frames
+m04q10_001,churn,64,12,-15.254713718746126,nan,57,0,38,0,nan,nan,False,liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m04q10_001,churn,32,12,-12.70109332322145,nan,47,0,32,0,nan,nan,False,liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m04q20_001,churn,64,12,-18.50850644495962,nan,42,0,36,0,nan,nan,False,liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m04q20_001,churn,32,12,-15.898454166556744,nan,32,0,24,0,nan,nan,False,liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m04q40_001,wavy annular,64,12,-23.85937021337189,nan,5,0,5,0,nan,nan,False,gas_too_few_tracks;gas_too_few_frames;liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m04q40_001,wavy annular,32,12,-24.53716636683352,nan,6,0,6,0,nan,nan,False,gas_too_few_tracks;gas_too_few_frames;liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m04q80_001,wavy annular,64,12,-43.343382538627154,nan,1,0,1,0,nan,nan,False,gas_too_few_tracks;gas_too_few_frames;liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m04q80_001,wavy annular,32,12,-48.9323848432817,nan,3,0,3,0,nan,nan,False,gas_too_few_tracks;gas_too_few_frames;liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m05q01_001,plug,64,12,-6.8044612883123,-11.150328826053784,45,8,33,8,0.6102475895072297,nan,False,liquid_too_few_tracks;liquid_too_few_frames
+m05q01_001,plug,32,12,-7.177348657870601,-10.038590494085895,35,4,23,4,0.7149757390839921,nan,False,liquid_too_few_tracks;liquid_too_few_frames
+m05q05_001,slug,64,12,-8.265574075545748,-12.822828544570427,64,2,46,2,0.6445983463645111,nan,False,liquid_too_few_tracks;liquid_too_few_frames
+m05q05_001,slug,32,12,-8.365078089543776,-13.021018152659076,43,2,34,2,0.642428878561659,nan,False,liquid_too_few_tracks;liquid_too_few_frames
+m05q10_001,churn,64,12,-11.606785561740926,nan,73,0,47,0,nan,nan,False,liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m05q10_001,churn,32,12,-11.21197843272832,nan,56,0,38,0,nan,nan,False,liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m05q20_001,churn,64,12,-13.32807738466191,nan,56,0,39,0,nan,nan,False,liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m05q20_001,churn,32,12,-12.08287823011679,nan,45,0,32,0,nan,nan,False,liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m05q40_001,churn,64,12,-18.770527362616757,nan,51,0,36,0,nan,nan,False,liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m05q40_001,churn,32,12,-15.71084517561754,nan,35,0,29,0,nan,nan,False,liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m05q80_001,wavy annular,64,12,-21.66819818113216,nan,19,0,17,0,nan,nan,False,gas_too_few_tracks;liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m05q80_001,wavy annular,32,12,-19.286053846409267,nan,14,0,14,0,nan,nan,False,gas_too_few_tracks;liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m06q01_001,plug,64,12,-9.67099216458578,-16.492084809321028,48,2,37,2,0.5864020393055407,nan,False,liquid_too_few_tracks;liquid_too_few_frames
+m06q01_001,plug,32,12,-9.80431450128173,-15.039653362330263,42,4,32,4,0.6518976378696695,nan,False,liquid_too_few_tracks;liquid_too_few_frames
+m06q05_001,slug,64,12,-10.56179120772493,nan,63,0,43,0,nan,nan,False,liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m06q05_001,slug,32,12,-11.473904381903074,-14.608395957431453,46,1,38,1,0.7854321867601194,nan,False,liquid_too_few_tracks;liquid_too_few_frames
+m06q10_001,churn,64,12,-12.547760139310045,nan,71,0,43,0,nan,nan,False,liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m06q10_001,churn,32,12,-12.93610289266573,nan,54,0,39,0,nan,nan,False,liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m06q20_001,churn,64,12,-18.46750459172798,nan,41,0,31,0,nan,nan,False,liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m06q20_001,churn,32,12,-18.21594902869723,nan,38,0,32,0,nan,nan,False,liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m06q40_001,wavy annular,64,12,-22.177405081611585,nan,33,0,24,0,nan,nan,False,liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m06q40_001,wavy annular,32,12,-19.695813695325707,nan,26,0,23,0,nan,nan,False,liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m06q80_001,wavy annular,64,12,-20.943771453883265,nan,16,0,13,0,nan,nan,False,gas_too_few_tracks;liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m06q80_001,wavy annular,32,12,-10.123816343947972,nan,12,0,11,0,nan,nan,False,gas_too_few_tracks;liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m07q01_001,dispersed bubbles,64,12,nan,-6.3014124628666695,0,78,0,47,nan,nan,False,gas_too_few_tracks;gas_too_few_frames;missing_mean
+m07q01_001,dispersed bubbles,32,12,nan,-6.345690838774292,0,79,0,46,nan,nan,False,gas_too_few_tracks;gas_too_few_frames;missing_mean
+m07q05_001,plug,64,12,-9.680248661173469,-15.245323667074151,64,5,42,5,0.6349651127499664,nan,False,liquid_too_few_tracks;liquid_too_few_frames
+m07q05_001,plug,32,12,-9.043724039709353,-16.354110901420615,41,3,33,3,0.5529939288184577,nan,False,liquid_too_few_tracks;liquid_too_few_frames
+m07q20_001,churn,64,12,-15.106736047071738,nan,53,0,40,0,nan,nan,False,liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m07q20_001,churn,32,12,-14.442276346737497,nan,33,0,28,0,nan,nan,False,liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m07q40_001,churn,64,12,-17.796830150207505,nan,33,0,27,0,nan,nan,False,liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m07q40_001,churn,32,12,-15.826602197109857,nan,27,0,26,0,nan,nan,False,liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m07q80_001,wavy annular,64,12,-19.766156355016182,nan,18,0,16,0,nan,nan,False,gas_too_few_tracks;liquid_too_few_tracks;liquid_too_few_frames;missing_mean
+m07q80_001,wavy annular,32,12,-19.6839979614221,nan,26,0,22,0,nan,nan,False,liquid_too_few_tracks;liquid_too_few_frames;missing_mean

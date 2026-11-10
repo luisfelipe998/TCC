@@ -1,0 +1,19 @@
+{
+  "data_utc": "2026-10-25T00:03:10.374547+00:00",
+  "nota": "Catálogo e regras congelados antes do primeiro cálculo WCO da extensão. Nenhuma âncora ou par escolhido por WCO.",
+  "sha256": {
+    "config_ancoras_textura.json": "6e3da157db32f03c56acb1cb424781f3e57892ef8c820b9a3eed56436408f3a0",
+    "PROTOCOL_CHURN_ANULAR.md": "738c05514fb9b4ead959ed79ef86550cd8230ba1dd49fe15aacf8b7496e78c6e",
+    "scripts/catalog_texture_anchors.py": "ee1046195f28beb64517bb53eca3748dd2754874ac3d02fa172c3514234965bb",
+    "scripts/wavelet_core.py": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc",
+    "scripts/analysis_common.py": "a823a60eea0f1f117526350ced3de4d6058d278a154fe55ec4bbd3902cdeb6ee",
+    "config.json": "ca14a2d3fc1eefc4892d211d8e649fb951e48c7db25c93ce7a215e0f4ef88c54",
+    "results/resultados_fixos.csv": "b0c4532395dc23c291c83def8f9241481ba310fe21e8ddcb99875ce2c4a4122a",
+    "results/segmentos_fixos.csv": "02087c5fc55922ab56b24f4c12a4daea6c95976ef3d4b4f11ea71752631cbc48",
+    "results/extensao_churn_anular/catalogo_ancoras.csv": "5283314ffbf95f1709021a0766262654ffed3f4d9e788278fb85124e20210418",
+    "results/extensao_churn_anular/pares_candidatos.csv": "64bb943898edc409727370bb9d16fbeaed4d9304d16387db5e4fcc074b222384",
+    "results/extensao_churn_anular/pares_ancoras.csv": "2fd269732042de8e16a12dae7ef4472b5e86f7d010a97d49f182c9cd52a27143",
+    "results/extensao_churn_anular/revisao_visual.csv": "f5f4135257718ab056b0a1b62211a6df3203a0925c496c42d53fa22b28c36fc2",
+    "results/extensao_churn_anular/fontes_sha256.json": "e4ae7e4a19b10d386b3d60307b8a88e651235f10abbe32de7cf6e84b41a7c100"
+  }
+}

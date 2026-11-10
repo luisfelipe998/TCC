@@ -1,0 +1,15 @@
+control,truth_px_frame,upper_clipped_fraction,estimate_px_frame,absolute_error_px_frame,supported_blocks,blocks,within_declared_error,supported,reasons
+known_shift_with_clipping,-35.0,0.0,-34.999978187671815,2.1812328185433216e-05,5.0,5.0,True,,
+known_shift_with_clipping,-35.0,0.2,-34.99985958816431,0.0001404118356873596,5.0,5.0,True,,
+known_shift_with_clipping,-35.0,0.5,-34.99988988034568,0.00011011965432317083,5.0,5.0,True,,
+known_shift_with_clipping,-35.0,0.8,-34.999785290422025,0.00021470957797475876,5.0,5.0,True,,
+known_shift_with_clipping,-13.4,0.0,-13.395643961872782,0.004356038127218298,5.0,5.0,True,,
+known_shift_with_clipping,-13.4,0.2,-13.393574511997286,0.006425488002713919,5.0,5.0,True,,
+known_shift_with_clipping,-13.4,0.5,-13.390186232808952,0.009813767191047873,5.0,5.0,True,,
+known_shift_with_clipping,-13.4,0.8,-13.384845803578822,0.015154196421178767,5.0,5.0,True,,
+known_shift_with_clipping,22.75,0.0,22.75578381975727,0.005783819757269271,5.0,5.0,True,,
+known_shift_with_clipping,22.75,0.2,22.75872869083567,0.00872869083567096,5.0,5.0,True,,
+known_shift_with_clipping,22.75,0.5,22.763370691598688,0.013370691598687756,5.0,5.0,True,,
+known_shift_with_clipping,22.75,0.8,22.770750616806833,0.020750616806832767,5.0,5.0,True,,
+static,,,,,,,,False,texture;weak_peak;search_boundary;shuffle;lag2;reverse;x160;x320
+constant,,,,,,,,False,texture;weak_peak;search_boundary;shuffle;lag2;reverse;x160;x320

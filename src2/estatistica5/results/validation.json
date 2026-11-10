@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "formula_controls": {
+    "status": "PASS",
+    "cases": [
+      "r=1: d=0",
+      "r=0: d=0.5",
+      "r=-1: d=1",
+      "invariância afim positiva",
+      "vetor constante recusado"
+    ],
+    "scope": "Controles matemáticos, não resultados experimentais."
+  },
+  "pearson_vs_scipy_max_abs_error": 4.440892098500626e-16,
+  "independent_profile_checks": [
+    {
+      "pattern": "churn",
+      "run": "m03q05_001",
+      "n": 8829,
+      "relative_l2": 2.318297820820291e-16
+    },
+    {
+      "pattern": "churn",
+      "run": "m04q10_001",
+      "n": 8829,
+      "relative_l2": 1.9109775869203216e-16
+    },
+    {
+      "pattern": "wavy annular",
+      "run": "m03q10_001",
+      "n": 14224,
+      "relative_l2": 1.7196317181823947e-16
+    },
+    {
+      "pattern": "wavy annular",
+      "run": "m03q20_001",
+      "n": 14224,
+      "relative_l2": 1.7685859041197515e-16
+    },
+    {
+      "pattern": "plug",
+      "run": "m05q01_001",
+      "n": 5940,
+      "relative_l2": 3.2328960444749957e-16
+    },
+    {
+      "pattern": "plug",
+      "run": "m06q01_001",
+      "n": 5940,
+      "relative_l2": 2.803547991265876e-16
+    },
+    {
+      "pattern": "slug",
+      "run": "m04q01_001",
+      "n": 5071,
+      "relative_l2": 2.891313417988313e-16
+    },
+    {
+      "pattern": "slug",
+      "run": "m05q05_001",
+      "n": 5071,
+      "relative_l2": 3.784637200987308e-16
+    }
+  ],
+  "exact_source_pair_set": true,
+  "matrix_symmetric": true,
+  "negative_correlations_preserved": true,
+  "color_limits": [
+    0,
+    1
+  ],
+  "source_files_unchanged": true
+}

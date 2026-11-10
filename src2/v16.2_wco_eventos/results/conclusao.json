@@ -1,0 +1,139 @@
+{
+  "status": "PASS",
+  "eventos_aceitos": 26,
+  "pares_eventos": 165,
+  "aquisicoes_elegiveis": 26,
+  "aquisicoes_com_eventos": 6,
+  "aquisicoes_com_equivalentes_intra": 5,
+  "principais": [
+    {
+      "variante": "principal",
+      "escopo": "entre",
+      "comparador": "distintos",
+      "padrao": "plug × slug",
+      "equivalentes": 0.27387393333839827,
+      "controle": 0.20965577477125366,
+      "diferenca": 0.06421815856714466,
+      "diferenca_conservador": 0.03300911002395852,
+      "pares_aquisicoes": 5,
+      "minimo_par": 0.01867336955783247,
+      "maximo_par": 0.1307374384126156
+    },
+    {
+      "variante": "principal",
+      "escopo": "entre",
+      "comparador": "fixos",
+      "padrao": "plug × slug",
+      "equivalentes": 0.27387393333839827,
+      "controle": 0.2248060919011662,
+      "diferenca": 0.04906784143723207,
+      "diferenca_conservador": 0.026845334169444235,
+      "pares_aquisicoes": 5,
+      "minimo_par": -0.060518413347742855,
+      "maximo_par": 0.13520976378660485
+    },
+    {
+      "variante": "principal",
+      "escopo": "intra",
+      "comparador": "distintos",
+      "padrao": "plug",
+      "equivalentes": 0.23866325806285146,
+      "controle": 0.21116143492818393,
+      "diferenca": 0.027501823134667546,
+      "diferenca_conservador": 0.02386468568603098,
+      "pares_aquisicoes": 3,
+      "minimo_par": 0.01184527617126463,
+      "maximo_par": 0.04059773462302563
+    },
+    {
+      "variante": "principal",
+      "escopo": "intra",
+      "comparador": "distintos",
+      "padrao": "slug",
+      "equivalentes": 0.3656288169323944,
+      "controle": 0.21363853657545856,
+      "diferenca": 0.15199028035693585,
+      "diferenca_conservador": 0.05357058132661657,
+      "pares_aquisicoes": 1,
+      "minimo_par": 0.15199028035693585,
+      "maximo_par": 0.15199028035693585
+    },
+    {
+      "variante": "principal",
+      "escopo": "intra",
+      "comparador": "fixos",
+      "padrao": "plug",
+      "equivalentes": 0.23866325806285146,
+      "controle": 0.2097723137449442,
+      "diferenca": 0.028890944317907268,
+      "diferenca_conservador": 0.03693232246366152,
+      "pares_aquisicoes": 3,
+      "minimo_par": -0.027039919306752952,
+      "maximo_par": 0.07497241987824219
+    },
+    {
+      "variante": "principal",
+      "escopo": "intra",
+      "comparador": "fixos",
+      "padrao": "slug",
+      "equivalentes": 0.3656288169323944,
+      "controle": 0.1464361248459873,
+      "diferenca": 0.2191926920864071,
+      "diferenca_conservador": 0.1184959531166447,
+      "pares_aquisicoes": 1,
+      "minimo_par": 0.2191926920864071,
+      "maximo_par": 0.2191926920864071
+    }
+  ],
+  "balanceado": [
+    {
+      "variante": "principal",
+      "escopo": "entre",
+      "comparador": "distintos",
+      "equivalentes": 0.27387393333839827,
+      "controle": 0.20965577477125366,
+      "diferenca": 0.06421815856714466,
+      "padroes": 1,
+      "pares_aquisicoes": 5
+    },
+    {
+      "variante": "principal",
+      "escopo": "entre",
+      "comparador": "fixos",
+      "equivalentes": 0.27387393333839827,
+      "controle": 0.2248060919011662,
+      "diferenca": 0.04906784143723207,
+      "padroes": 1,
+      "pares_aquisicoes": 5
+    },
+    {
+      "variante": "principal",
+      "escopo": "intra",
+      "comparador": "distintos",
+      "equivalentes": 0.3021460374976229,
+      "controle": 0.21239998575182123,
+      "diferenca": 0.08974605174580169,
+      "padroes": 2,
+      "pares_aquisicoes": 4
+    },
+    {
+      "variante": "principal",
+      "escopo": "intra",
+      "comparador": "fixos",
+      "equivalentes": 0.3021460374976229,
+      "controle": 0.17810421929546577,
+      "diferenca": 0.12404181820215718,
+      "padroes": 2,
+      "pares_aquisicoes": 4
+    }
+  ],
+  "eventos_sem_parceiro": 3,
+  "eventos_com_vizinhos_aceitos": 22,
+  "max_mudanca_fronteira": 40.0,
+  "escalas_invalidas_morlet": 0,
+  "erro_equacao_maximo": 0.0,
+  "maior_wco_morlet": 0.9996594451876166,
+  "maior_wco_v5": 0.998794409942468,
+  "slug_sensibilidade_faixa30_49": -0.0427097665368428,
+  "frase": "Não conseguimos melhorar de forma convincente a alternative WCO com este protocolo. Plug teve melhora marginal; slug dependeu de um único par e o contraste se inverteu na faixa 30–49."
+}

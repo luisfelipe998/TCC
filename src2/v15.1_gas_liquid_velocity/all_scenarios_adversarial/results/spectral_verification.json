@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "candidate_runs": 26,
+  "regions": 78,
+  "blocks": 390,
+  "saved_null_trials": 7410,
+  "independently_recomputed_curve_values": 249990,
+  "maximum_numpy_vs_saved_scipy_float32_curve_difference": 2.9793340794448397e-08,
+  "region_and_pair_aggregations_checked": true,
+  "unit_and_scope_checked": true,
+  "limitation": "Independent implementation confirms arithmetic and declared gates; no experimental phase identity or accuracy validation.",
+  "jointly_supported_pairs": 2,
+  "all_five_block_means_supported": 2
+}

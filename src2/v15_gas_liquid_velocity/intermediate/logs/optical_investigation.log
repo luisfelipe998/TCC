@@ -1,0 +1,26 @@
+m03q05_001 churn pass=0.088 median=-6.442 px/frame
+m03q10_001 wavy annular pass=0.038 median=-8.894 px/frame
+m03q20_001 wavy annular pass=0.002 median=-14.761 px/frame
+m03q40_001 wavy annular pass=0.000 median=nan px/frame
+m04q01_001 slug pass=0.724 median=-4.988 px/frame
+m04q10_001 churn pass=0.346 median=-12.849 px/frame
+m04q20_001 churn pass=0.210 median=-15.484 px/frame
+m04q40_001 wavy annular pass=0.002 median=-16.479 px/frame
+m04q80_001 wavy annular pass=0.000 median=nan px/frame
+m05q01_001 plug pass=0.960 median=-11.897 px/frame
+m05q05_001 slug pass=0.942 median=-12.879 px/frame
+m05q10_001 churn pass=0.276 median=-10.696 px/frame
+m05q20_001 churn pass=0.278 median=-13.600 px/frame
+m05q40_001 churn pass=0.048 median=-19.309 px/frame
+m05q80_001 wavy annular pass=0.000 median=nan px/frame
+m06q01_001 plug pass=0.782 median=-15.844 px/frame
+m06q05_001 slug pass=0.438 median=-17.390 px/frame
+m06q10_001 churn pass=0.388 median=-11.412 px/frame
+m06q20_001 churn pass=0.120 median=-18.477 px/frame
+m06q40_001 wavy annular pass=0.002 median=-27.622 px/frame
+m06q80_001 wavy annular pass=0.000 median=nan px/frame
+m07q01_001 dispersed bubbles pass=0.944 median=-6.337 px/frame
+m07q05_001 plug pass=0.830 median=-14.839 px/frame
+m07q20_001 churn pass=0.344 median=-14.972 px/frame
+m07q40_001 churn pass=0.094 median=-19.572 px/frame
+m07q80_001 wavy annular pass=0.000 median=nan px/frame

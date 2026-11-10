@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "auditadas": 31,
+  "elegiveis": 26,
+  "piloto": [
+    "m07q01_001",
+    "m05q01_001",
+    "m04q01_001",
+    "m03q05_001",
+    "m03q10_001"
+  ],
+  "panoramas_planilhas_verificados": 62,
+  "quadros_fixos_por_aquisicao": 3,
+  "faixa": [
+    18,
+    71
+  ],
+  "reconstrucao_reexecutada": false,
+  "segundos": 10.722819916001754
+}

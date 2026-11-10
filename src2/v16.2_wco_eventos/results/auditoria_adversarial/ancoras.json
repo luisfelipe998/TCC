@@ -1,0 +1,225 @@
+{
+  "status": "PASS",
+  "data_utc": "2026-10-25T05:07:43.896420+00:00",
+  "testes": "Reexecução do detector e da seleção por estrato; nenhuma nova WCO nem alteração do catálogo.",
+  "resumo": [
+    {
+      "padrao": "churn",
+      "tipo": "maximo",
+      "alternativa": "faixa30_49",
+      "total": 40,
+      "candidatos_em_64": 28,
+      "selecionados_em_64": 13,
+      "selecionados_em_16": 11,
+      "maior_distancia_ao_selecionado": 1049.0
+    },
+    {
+      "padrao": "churn",
+      "tipo": "maximo",
+      "alternativa": "sigma12",
+      "total": 40,
+      "candidatos_em_64": 40,
+      "selecionados_em_64": 37,
+      "selecionados_em_16": 37,
+      "maior_distancia_ao_selecionado": 718.0
+    },
+    {
+      "padrao": "churn",
+      "tipo": "maximo",
+      "alternativa": "sigma20",
+      "total": 40,
+      "candidatos_em_64": 39,
+      "selecionados_em_64": 34,
+      "selecionados_em_16": 34,
+      "maior_distancia_ao_selecionado": 973.0
+    },
+    {
+      "padrao": "churn",
+      "tipo": "minimo",
+      "alternativa": "faixa30_49",
+      "total": 40,
+      "candidatos_em_64": 40,
+      "selecionados_em_64": 27,
+      "selecionados_em_16": 20,
+      "maior_distancia_ao_selecionado": 1054.0
+    },
+    {
+      "padrao": "churn",
+      "tipo": "minimo",
+      "alternativa": "sigma12",
+      "total": 40,
+      "candidatos_em_64": 40,
+      "selecionados_em_64": 37,
+      "selecionados_em_16": 37,
+      "maior_distancia_ao_selecionado": 771.0
+    },
+    {
+      "padrao": "churn",
+      "tipo": "minimo",
+      "alternativa": "sigma20",
+      "total": 40,
+      "candidatos_em_64": 40,
+      "selecionados_em_64": 38,
+      "selecionados_em_16": 38,
+      "maior_distancia_ao_selecionado": 899.0
+    },
+    {
+      "padrao": "wavy annular",
+      "tipo": "maximo",
+      "alternativa": "faixa30_49",
+      "total": 36,
+      "candidatos_em_64": 30,
+      "selecionados_em_64": 12,
+      "selecionados_em_16": 12,
+      "maior_distancia_ao_selecionado": 3734.0
+    },
+    {
+      "padrao": "wavy annular",
+      "tipo": "maximo",
+      "alternativa": "sigma12",
+      "total": 36,
+      "candidatos_em_64": 36,
+      "selecionados_em_64": 33,
+      "selecionados_em_16": 32,
+      "maior_distancia_ao_selecionado": 606.0
+    },
+    {
+      "padrao": "wavy annular",
+      "tipo": "maximo",
+      "alternativa": "sigma20",
+      "total": 36,
+      "candidatos_em_64": 34,
+      "selecionados_em_64": 30,
+      "selecionados_em_16": 30,
+      "maior_distancia_ao_selecionado": 2280.0
+    },
+    {
+      "padrao": "wavy annular",
+      "tipo": "minimo",
+      "alternativa": "faixa30_49",
+      "total": 36,
+      "candidatos_em_64": 36,
+      "selecionados_em_64": 28,
+      "selecionados_em_16": 28,
+      "maior_distancia_ao_selecionado": 2219.0
+    },
+    {
+      "padrao": "wavy annular",
+      "tipo": "minimo",
+      "alternativa": "sigma12",
+      "total": 36,
+      "candidatos_em_64": 36,
+      "selecionados_em_64": 29,
+      "selecionados_em_16": 29,
+      "maior_distancia_ao_selecionado": 2875.0
+    },
+    {
+      "padrao": "wavy annular",
+      "tipo": "minimo",
+      "alternativa": "sigma20",
+      "total": 36,
+      "candidatos_em_64": 36,
+      "selecionados_em_64": 30,
+      "selecionados_em_16": 30,
+      "maior_distancia_ao_selecionado": 1747.0
+    }
+  ],
+  "cobertura": [
+    {
+      "padrao": "churn",
+      "controle": "fixos",
+      "aquisicoes": 10,
+      "aquisicoes_possiveis": 10,
+      "fracao_aquisicoes": 1.0,
+      "pares": 45,
+      "pares_possiveis": 45,
+      "fracao_pares": 1.0
+    },
+    {
+      "padrao": "churn",
+      "controle": "minimos_distintos",
+      "aquisicoes": 10,
+      "aquisicoes_possiveis": 10,
+      "fracao_aquisicoes": 1.0,
+      "pares": 29,
+      "pares_possiveis": 45,
+      "fracao_pares": 0.6444444444444445
+    },
+    {
+      "padrao": "churn",
+      "controle": "polaridades_opostas",
+      "aquisicoes": 10,
+      "aquisicoes_possiveis": 10,
+      "fracao_aquisicoes": 1.0,
+      "pares": 45,
+      "pares_possiveis": 45,
+      "fracao_pares": 1.0
+    },
+    {
+      "padrao": "entre",
+      "controle": "fixos",
+      "aquisicoes": 19,
+      "aquisicoes_possiveis": 19,
+      "fracao_aquisicoes": 1.0,
+      "pares": 89,
+      "pares_possiveis": 90,
+      "fracao_pares": 0.9888888888888889
+    },
+    {
+      "padrao": "entre",
+      "controle": "minimos_distintos",
+      "aquisicoes": 19,
+      "aquisicoes_possiveis": 19,
+      "fracao_aquisicoes": 1.0,
+      "pares": 46,
+      "pares_possiveis": 90,
+      "fracao_pares": 0.5111111111111111
+    },
+    {
+      "padrao": "entre",
+      "controle": "polaridades_opostas",
+      "aquisicoes": 19,
+      "aquisicoes_possiveis": 19,
+      "fracao_aquisicoes": 1.0,
+      "pares": 89,
+      "pares_possiveis": 90,
+      "fracao_pares": 0.9888888888888889
+    },
+    {
+      "padrao": "wavy annular",
+      "controle": "fixos",
+      "aquisicoes": 9,
+      "aquisicoes_possiveis": 9,
+      "fracao_aquisicoes": 1.0,
+      "pares": 34,
+      "pares_possiveis": 36,
+      "fracao_pares": 0.9444444444444444
+    },
+    {
+      "padrao": "wavy annular",
+      "controle": "minimos_distintos",
+      "aquisicoes": 8,
+      "aquisicoes_possiveis": 9,
+      "fracao_aquisicoes": 0.8888888888888888,
+      "pares": 13,
+      "pares_possiveis": 36,
+      "fracao_pares": 0.3611111111111111
+    },
+    {
+      "padrao": "wavy annular",
+      "controle": "polaridades_opostas",
+      "aquisicoes": 9,
+      "aquisicoes_possiveis": 9,
+      "fracao_aquisicoes": 1.0,
+      "pares": 34,
+      "pares_possiveis": 36,
+      "fracao_pares": 0.9444444444444444
+    }
+  ],
+  "pares_intra_admissiveis_por_grupo": {
+    "churn / minimos_compativeis": 484,
+    "churn / minimos_distintos": 68,
+    "wavy annular / minimos_compativeis": 348,
+    "wavy annular / minimos_distintos": 74
+  }
+}

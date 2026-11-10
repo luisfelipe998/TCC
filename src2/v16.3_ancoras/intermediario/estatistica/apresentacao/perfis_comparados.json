@@ -1,0 +1,27 @@
+{
+  "arquivo": "perfis_comparados.png",
+  "largura_insercao_cm": 16,
+  "altura_inserida_cm": 22.322586270591017,
+  "fonte_minima_inserida_pt": 9.366235584348942,
+  "titulo": "Perfis WPS e descritores · 2.048 px",
+  "titulos_paineis": [
+    "churn",
+    "churn",
+    "wavy annular",
+    "wavy annular",
+    "plug",
+    "plug",
+    "slug",
+    "slug"
+  ],
+  "rotulos": [
+    "WPS / máximo",
+    "Resíduo unitário",
+    "WPS / máximo",
+    "Resíduo unitário",
+    "WPS / máximo",
+    "Resíduo unitário",
+    "WPS / máximo",
+    "Resíduo unitário"
+  ]
+}

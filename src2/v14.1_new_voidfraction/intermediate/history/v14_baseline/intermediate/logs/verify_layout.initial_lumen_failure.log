@@ -1,0 +1,136 @@
+{
+  "passed": false,
+  "selected_runs": 26,
+  "identical_retained_masks": 2,
+  "masks_changed_by_verified_method_correction": 24,
+  "active_csv_artifacts_checked": 26,
+  "local_links_checked": 610,
+  "failures": [
+    {
+      "kind": "broken Markdown link",
+      "document": "intermediate/history/before_confirmed_lumen_D53/README.md",
+      "line": 15,
+      "target": "intermediate/README.md",
+      "exists": false
+    },
+    {
+      "kind": "broken Markdown link",
+      "document": "intermediate/history/before_confirmed_lumen_D53/README.md",
+      "line": 16,
+      "target": "literature/README.md",
+      "exists": false
+    },
+    {
+      "kind": "broken Markdown link",
+      "document": "intermediate/history/before_confirmed_lumen_D53/figures/README.md",
+      "line": 20,
+      "target": "../intermediate/exploratory/figures",
+      "exists": false
+    },
+    {
+      "kind": "broken Markdown link",
+      "document": "intermediate/history/before_confirmed_lumen_D53/figures/README.md",
+      "line": 20,
+      "target": "../intermediate/history",
+      "exists": false
+    },
+    {
+      "kind": "broken Markdown link",
+      "document": "intermediate/history/before_confirmed_lumen_D53/findings/GRAFICOS_PARA_DISCUSSAO_PT_BR.md",
+      "line": 25,
+      "target": "../intermediate/exploratory/figures/raw_comparison.png",
+      "exists": false
+    },
+    {
+      "kind": "broken Markdown link",
+      "document": "intermediate/history/before_confirmed_lumen_D53/findings/GRAFICOS_PARA_DISCUSSAO_PT_BR.md",
+      "line": 26,
+      "target": "../intermediate/exploratory/figures/bright_width_mean_vs_median.png",
+      "exists": false
+    },
+    {
+      "kind": "broken Markdown link",
+      "document": "intermediate/history/before_confirmed_lumen_D53/findings/GRAFICOS_PARA_DISCUSSAO_PT_BR.md",
+      "line": 27,
+      "target": "../intermediate/exploratory/figures/interface_detector_overlay.png",
+      "exists": false
+    },
+    {
+      "kind": "broken Markdown link",
+      "document": "intermediate/history/before_confirmed_lumen_D53/findings/GRAFICOS_PARA_DISCUSSAO_PT_BR.md",
+      "line": 28,
+      "target": "../intermediate/exploratory/figures/radial_interface_profiles.png",
+      "exists": false
+    },
+    {
+      "kind": "broken Markdown link",
+      "document": "intermediate/history/before_confirmed_lumen_D53/findings/GRAFICOS_PARA_DISCUSSAO_PT_BR.md",
+      "line": 29,
+      "target": "../intermediate/exploratory/figures/representative_raw_images.png",
+      "exists": false
+    },
+    {
+      "kind": "broken Markdown link",
+      "document": "intermediate/history/before_confirmed_lumen_D53/findings/adversarial_review.md",
+      "line": 50,
+      "target": "../intermediate/history/pre_scope_exclusions/findings/adversarial_review.md",
+      "exists": false
+    },
+    {
+      "kind": "broken Markdown link",
+      "document": "intermediate/history/before_confirmed_lumen_D53/findings/layout_verification.md",
+      "line": 5,
+      "target": "../intermediate/history/pre_scope_exclusions/README.md",
+      "exists": false
+    },
+    {
+      "kind": "broken Markdown link",
+      "document": "intermediate/history/before_confirmed_lumen_D53/findings/scope_verification.md",
+      "line": 5,
+      "target": "../intermediate/history/pre_scope_exclusions/README.md",
+      "exists": false
+    },
+    {
+      "kind": "broken Markdown link",
+      "document": "intermediate/history/before_confirmed_lumen_D53/findings/scope_verification.md",
+      "line": 5,
+      "target": "../intermediate/history/before_deep_method_review/README.md",
+      "exists": false
+    },
+    {
+      "kind": "broken Markdown link",
+      "document": "intermediate/history/before_confirmed_lumen_D53/findings/source_audit.md",
+      "line": 10,
+      "target": "../../../assets/deoliveira2021-flow-patterns-pressure-drop.pdf",
+      "exists": false
+    },
+    {
+      "kind": "broken Markdown link",
+      "document": "intermediate/history/before_confirmed_lumen_D53/findings/source_audit.md",
+      "line": 31,
+      "target": "../../../assets/dias2025-knn-flow-pattern.pdf",
+      "exists": false
+    },
+    {
+      "kind": "broken Markdown link",
+      "document": "intermediate/history/before_confirmed_lumen_D53/findings/source_audit.md",
+      "line": 83,
+      "target": "../../../assets/schepperle2024-cv-void-fraction-microchannel.pdf",
+      "exists": false
+    },
+    {
+      "kind": "broken Markdown link",
+      "document": "intermediate/history/before_confirmed_lumen_D53/findings/source_audit.md",
+      "line": 96,
+      "target": "../../../assets/deoliveira2019-flow-boiling-hydrocarbons-nonlinear.pdf",
+      "exists": false
+    },
+    {
+      "kind": "broken Markdown link",
+      "document": "intermediate/history/before_confirmed_lumen_D53/findings/source_audit.md",
+      "line": 117,
+      "target": "../../../assets/driftflux2023-void-horizontal-intermittent.pdf",
+      "exists": false
+    }
+  ]
+}

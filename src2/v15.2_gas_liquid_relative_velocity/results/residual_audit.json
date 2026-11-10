@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "records": 26,
+  "phase_method_radius_combinations": 312,
+  "reconstructed_block_decisions": 1872,
+  "reconstructed_pairs": 156,
+  "mask_metadata_checked": 26,
+  "supported_pairs": [
+    {
+      "method": "raw",
+      "erosion_radius": 3,
+      "supported_pairs": 1,
+      "records": 26,
+      "median_common_blocks": 0.0
+    },
+    {
+      "method": "fixed_background",
+      "erosion_radius": 3,
+      "supported_pairs": 2,
+      "records": 26,
+      "median_common_blocks": 0.0
+    },
+    {
+      "method": "interface_distance",
+      "erosion_radius": 3,
+      "supported_pairs": 2,
+      "records": 26,
+      "median_common_blocks": 1.0
+    },
+    {
+      "method": "raw",
+      "erosion_radius": 1,
+      "supported_pairs": 0,
+      "records": 26,
+      "median_common_blocks": 0.0
+    },
+    {
+      "method": "fixed_background",
+      "erosion_radius": 1,
+      "supported_pairs": 4,
+      "records": 26,
+      "median_common_blocks": 0.0
+    },
+    {
+      "method": "interface_distance",
+      "erosion_radius": 1,
+      "supported_pairs": 4,
+      "records": 26,
+      "median_common_blocks": 2.0
+    }
+  ],
+  "all_six_option_stable_records": 0,
+  "four_background_option_stable_records": 0,
+  "report_script_sha256": "39e7e3fa9694fe6f7028398e56c192676f026d5866dbba235fabedc5d100a837",
+  "material_pairs_identified": 0
+}

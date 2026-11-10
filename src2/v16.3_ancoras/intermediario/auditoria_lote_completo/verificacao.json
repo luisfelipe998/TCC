@@ -1,0 +1,141 @@
+{
+  "status": "PASS_COM_LIMITES_METODOLOGICOS",
+  "producao_preservada": true,
+  "referencia_pdf_sha256": "8a052388ebb12e36611b80cd2684a813155b8f6d9c13d92ad2415b9dad9108f2",
+  "paginas_impressas_conferidas": [
+    411,
+    413,
+    414
+  ],
+  "formulas": "CWT 32.4, Morlet 32.6, lambda 32.8, alternativas 32.14-17 com K=1",
+  "adaptacoes": "Divisor N (biased), em lugar de N-|lag| das Eqs.32.21-23; dx=1 px. Potencia media e resumo adicional sobre lags com suporte.",
+  "observacao_32_20": "A Eq.32.20 impressa usa modulo, ao contrario da definicao complexa 32.16. Com K=1, modulo para exibir WCS e WCO sao os mesmos; nao generalizar a K>1 sem definir a media.",
+  "limites": [
+    "Ancora escolhida no contexto nativo e preservada em 2048; quatro rankings locais diferentes.",
+    "Correspondencia local em sigma 12/16/20 nao garante repeticao do vencedor global: cinco casos nativos sensiveis.",
+    "Um centro coincide com coluna substituida pelo feather herdado; teste pontual registrado, sem validar fisicamente toda a montagem.",
+    "K=1 e rotulos favoravel/desfavoravel sao descritivos; nao representam significancia ou acuracia de classificacao.",
+    "Zoom das 19 ancoras de churn/wavy annular mostra 4096 px; comparacoes usam 2048 px e os mesmos centros."
+  ],
+  "compatibilidade_futura": {
+    "pares_validados_por_metadados": {
+      "inter": 213,
+      "intra": 87
+    },
+    "inter_calculados": 0,
+    "reutilizacao_sem_reescrita": true,
+    "individuais": 44,
+    "perfis": 50,
+    "grades": 2
+  },
+  "codigo_auditoria_sha256": "efc2a522379758ec3c8637b54d0238425f7154369216e23138dd6ce36bc22587",
+  "resultados": {
+    "ancoras": {
+      "ancoras": 25,
+      "quadros_reconstruidos": 12525,
+      "sensiveis_ranking_nativo": [
+        "m03q05_001",
+        "m03q10_001",
+        "m05q40_001",
+        "m05q80_001",
+        "m07q40_001"
+      ],
+      "sensiveis_ranking_2048": [
+        "m03q05_001",
+        "m03q10_001",
+        "m04q10_001",
+        "m04q20_001",
+        "m04q40_001",
+        "m05q40_001",
+        "m05q80_001",
+        "m06q10_001",
+        "m07q40_001"
+      ],
+      "ranking_2048_diferente": [
+        "m04q20_001",
+        "m04q40_001",
+        "m06q10_001",
+        "m07q40_001"
+      ],
+      "coluna_substituida": [
+        "m07q05_001"
+      ],
+      "data_utc": "2026-10-25T19:13:03.699216+00:00",
+      "segundos": 10.103719125007046
+    },
+    "numerica": {
+      "individuais": 44,
+      "perfis": 50,
+      "pares": 87,
+      "erros_individuais": {
+        "erro_preparo": 1.865174681370263e-14,
+        "erro_correlacao": 2.508410146262463e-15,
+        "erro_cwt": 3.493994846957313e-14,
+        "erro_potencia_media": 3.3084646133829665e-14
+      },
+      "erros_pares": {
+        "erro_wxx": 3.493994846957313e-14,
+        "erro_wyy": 3.493994846957313e-14,
+        "erro_wxy": 3.094496497456088e-14,
+        "erro_wco": 1.3433698597964394e-14,
+        "erro_soma_direta": 3.020766949856839e-14
+      },
+      "wco_minima": 2.756233995876675e-11,
+      "wco_maxima": 0.9901648111319936,
+      "protecoes_aprovadas": [
+        "parametro_estimador",
+        "parametro_K",
+        "parametro_omega0",
+        "parametro_comprimento_onda_maximo",
+        "comprimento_2049",
+        "comprimento_2048.5",
+        "comprimento_True",
+        "comprimento_512",
+        "comprimento_0",
+        "cache_de_outro_ensaio",
+        "contexto_ancora",
+        "contexto_costuras_contexto",
+        "contexto_comprimento",
+        "grades_2048_4096_incompativeis",
+        "array_modificado_apos_primeira_leitura"
+      ],
+      "data_utc": "2026-10-25T19:14:39.962550+00:00",
+      "segundos": 40.34012629100471
+    },
+    "controles": {
+      "erro_auto_coerencia": 0.0,
+      "erro_troca_wcs": 3.517601174519978e-17,
+      "erro_troca_wco": 1.9984014443252818e-15,
+      "erro_invariancia_ganho": 2.220446049250313e-15,
+      "erro_atraso": 1.1102230246251565e-15,
+      "atraso_esperado": -500,
+      "pico_lambda_seno_256": 253.54611688290203,
+      "wco_nao_enviesada_impulso": 1.7503221627973748,
+      "efeito_coluna_costura_intensidade": 1.2037037037037095,
+      "efeito_coluna_costura": [
+        {
+          "run_x": "m05q01_001",
+          "run_y": "m07q05_001",
+          "diferenca_maxima_wco": 0.0002563526821223877,
+          "diferenca_media_central": -1.207631305144683e-05
+        },
+        {
+          "run_x": "m06q01_001",
+          "run_y": "m07q05_001",
+          "diferenca_maxima_wco": 0.00018152828454383318,
+          "diferenca_media_central": 5.530399782565935e-06
+        }
+      ],
+      "teste_costura_nao_altera_ancora": true,
+      "data_utc": "2026-10-25T19:15:01.876940+00:00",
+      "segundos": 1.8046649589959998
+    },
+    "figuras": {
+      "imagens": 112,
+      "pixels_identicos": 112,
+      "bytes_identicos": 112,
+      "data_utc": "2026-10-25T19:17:51.492498+00:00",
+      "segundos": 132.4211240420118
+    }
+  }
+}

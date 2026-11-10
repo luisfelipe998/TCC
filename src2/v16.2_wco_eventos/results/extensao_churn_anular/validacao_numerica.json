@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "data_utc": "2026-10-25T00:05:01.672093+00:00",
+  "checks": {
+    "detector_sinal_constante_centro_translacao_polaridade": "PASS",
+    "cache_vs_nucleo_erro_maximo": 0.0,
+    "cache_vs_nucleo_erro_escore": 0.0,
+    "correlacao_direta_erro_maximo": 1.1102230246251565e-16,
+    "recorte_antes_regressao_erro_maximo": 8.215650382226158e-15,
+    "invariancia_WCO_inversao_sinal_erro_maximo": 0.0,
+    "fase_WCS_inversao_sinal_erro_maximo": 0.0,
+    "atraso_y_100px_lag_pico": -100,
+    "self_zero_erro_maximo": 0.0,
+    "referencia_reutilizada_erro_escore": 5.551115123125783e-17
+  }
+}

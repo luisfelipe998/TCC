@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "controls": {
+    "morphology_reference_cases": 10,
+    "direct_loop_and_boolean_reduction_agree": true,
+    "radial_contact_rejected": true,
+    "axial_contact_preserved": true,
+    "interior_hole_filled": true,
+    "flat_intensity_controls": 3,
+    "bounded_noise_control": true,
+    "liquid_profile_control": true,
+    "bright_gas_interior_control": true,
+    "separated_interval_geometry_control": true,
+    "full_lumen_maximum": 1.0,
+    "confirmed_lumen_rows": [
+      18,
+      71
+    ],
+    "confirmed_diameter_px": 53.0,
+    "historical_D60_full_mask_value": 0.7802777777777777,
+    "boundary_source": "User-confirmed full tube interior on 2026-10-23: Python slice 18:71, rows 18 through 70, 53 pixel cells. Optical profile minima are not used as lumen boundaries. Refraction mapping remains uncalibrated."
+  },
+  "selected_acquisitions": 26,
+  "statistical_acquisitions": 25,
+  "changed_masks": 26,
+  "max_independent_area_error": 0.0,
+  "segmentation_source_sha256": "68e7d0b7ea4f37a6a4ea474f68e440510a2887ef960a258dd52aa92faa6658f2",
+  "failures": [],
+  "interpretation": "Independent morphology and interval arithmetic on corrected inputs. Both versions use D53; changes compare v14 with v14.1, not the historical morphology or D60 correction."
+}

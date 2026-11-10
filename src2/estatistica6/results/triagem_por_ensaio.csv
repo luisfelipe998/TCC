@@ -1,0 +1,1884 @@
+family,condition,metric,scope,run,pattern,silhouette,neighbor_agreement
+wps,prefix,pearson_residual,churn_annular,m03q05_001,churn,-0.30240644908262065,0
+wps,prefix,pearson_residual,churn_annular,m04q10_001,churn,0.27079927218217209,1
+wps,prefix,pearson_residual,churn_annular,m04q20_001,churn,0.19359294183922254,1
+wps,prefix,pearson_residual,churn_annular,m05q10_001,churn,0.10817390959323647,0
+wps,prefix,pearson_residual,churn_annular,m05q20_001,churn,0.24060214044020201,1
+wps,prefix,pearson_residual,churn_annular,m05q40_001,churn,-0.34797825424047107,0
+wps,prefix,pearson_residual,churn_annular,m06q10_001,churn,-0.074225198644296525,0
+wps,prefix,pearson_residual,churn_annular,m06q20_001,churn,0.11233356678143376,1
+wps,prefix,pearson_residual,churn_annular,m07q20_001,churn,0.30526894361842011,1
+wps,prefix,pearson_residual,churn_annular,m07q40_001,churn,-0.15240779448719438,0
+wps,prefix,pearson_residual,churn_annular,m03q10_001,wavy annular,-0.13643032046086268,0
+wps,prefix,pearson_residual,churn_annular,m03q20_001,wavy annular,0.34164159439001329,1
+wps,prefix,pearson_residual,churn_annular,m03q40_001,wavy annular,0.37957176340017357,1
+wps,prefix,pearson_residual,churn_annular,m04q40_001,wavy annular,0.10692144775238155,1
+wps,prefix,pearson_residual,churn_annular,m04q80_001,wavy annular,0.30815973161075949,1
+wps,prefix,pearson_residual,churn_annular,m05q80_001,wavy annular,0.38859181174137858,1
+wps,prefix,pearson_residual,churn_annular,m06q40_001,wavy annular,0.042249018232545524,0
+wps,prefix,pearson_residual,churn_annular,m06q80_001,wavy annular,0.30513115907929045,1
+wps,prefix,pearson_residual,churn_annular,m07q80_001,wavy annular,0.10028185646228222,0
+wps,prefix,pearson_residual,plug_slug,m05q01_001,plug,-0.029147895450608485,1
+wps,prefix,pearson_residual,plug_slug,m06q01_001,plug,0.16978407975992713,1
+wps,prefix,pearson_residual,plug_slug,m07q05_001,plug,0.2516804552927735,1
+wps,prefix,pearson_residual,plug_slug,m04q01_001,slug,-0.22032628807831997,0
+wps,prefix,pearson_residual,plug_slug,m05q05_001,slug,-0.05611932501350439,0
+wps,prefix,pearson_residual,plug_slug,m06q05_001,slug,0.052621363213549634,0
+wps,prefix,pearson_residual,quatro_padroes,m03q05_001,churn,-0.31733689442981333,0
+wps,prefix,pearson_residual,quatro_padroes,m04q10_001,churn,-0.079767102514387789,1
+wps,prefix,pearson_residual,quatro_padroes,m04q20_001,churn,-0.039356514249221201,0
+wps,prefix,pearson_residual,quatro_padroes,m05q10_001,churn,0.027608055077171716,0
+wps,prefix,pearson_residual,quatro_padroes,m05q20_001,churn,0.040177344680474958,1
+wps,prefix,pearson_residual,quatro_padroes,m05q40_001,churn,-0.34797825424047107,0
+wps,prefix,pearson_residual,quatro_padroes,m06q10_001,churn,-0.074225198644296525,0
+wps,prefix,pearson_residual,quatro_padroes,m06q20_001,churn,-0.10453589541796543,0
+wps,prefix,pearson_residual,quatro_padroes,m07q20_001,churn,-0.035899021680241991,1
+wps,prefix,pearson_residual,quatro_padroes,m07q40_001,churn,-0.18907783759827476,0
+wps,prefix,pearson_residual,quatro_padroes,m03q10_001,wavy annular,-0.13643032046086268,0
+wps,prefix,pearson_residual,quatro_padroes,m03q20_001,wavy annular,0.12162738098696393,1
+wps,prefix,pearson_residual,quatro_padroes,m03q40_001,wavy annular,0.18566151034863748,1
+wps,prefix,pearson_residual,quatro_padroes,m04q40_001,wavy annular,0.030241386399828121,1
+wps,prefix,pearson_residual,quatro_padroes,m04q80_001,wavy annular,0.13817608794451144,1
+wps,prefix,pearson_residual,quatro_padroes,m05q80_001,wavy annular,0.24353249760605333,1
+wps,prefix,pearson_residual,quatro_padroes,m06q40_001,wavy annular,-0.18496025237971861,0
+wps,prefix,pearson_residual,quatro_padroes,m06q80_001,wavy annular,0.070268159695980853,1
+wps,prefix,pearson_residual,quatro_padroes,m07q80_001,wavy annular,-0.101568346449362,0
+wps,prefix,pearson_residual,quatro_padroes,m05q01_001,plug,-0.18653685527897843,0
+wps,prefix,pearson_residual,quatro_padroes,m06q01_001,plug,0.018882621661168962,0
+wps,prefix,pearson_residual,quatro_padroes,m07q05_001,plug,-0.32242769980498365,0
+wps,prefix,pearson_residual,quatro_padroes,m04q01_001,slug,-0.28921659541449335,0
+wps,prefix,pearson_residual,quatro_padroes,m05q05_001,slug,-0.075544928925874305,0
+wps,prefix,pearson_residual,quatro_padroes,m06q05_001,slug,-0.070642946365545856,0
+wps,prefix,hellinger,churn_annular,m03q05_001,churn,-0.024111479799915684,1
+wps,prefix,hellinger,churn_annular,m04q10_001,churn,0.27382047232082907,1
+wps,prefix,hellinger,churn_annular,m04q20_001,churn,0.27584015054596756,1
+wps,prefix,hellinger,churn_annular,m05q10_001,churn,0.24327764465175533,1
+wps,prefix,hellinger,churn_annular,m05q20_001,churn,0.30856429634264554,1
+wps,prefix,hellinger,churn_annular,m05q40_001,churn,-0.14291320194771773,1
+wps,prefix,hellinger,churn_annular,m06q10_001,churn,0.19442087391433646,0
+wps,prefix,hellinger,churn_annular,m06q20_001,churn,-0.0041493033515233695,0
+wps,prefix,hellinger,churn_annular,m07q20_001,churn,0.33999591968634563,1
+wps,prefix,hellinger,churn_annular,m07q40_001,churn,-0.12090106715625021,1
+wps,prefix,hellinger,churn_annular,m03q10_001,wavy annular,0.039026692261282157,1
+wps,prefix,hellinger,churn_annular,m03q20_001,wavy annular,0.19031903872821818,1
+wps,prefix,hellinger,churn_annular,m03q40_001,wavy annular,-0.007454217552711642,1
+wps,prefix,hellinger,churn_annular,m04q40_001,wavy annular,-0.0093380880810096586,0
+wps,prefix,hellinger,churn_annular,m04q80_001,wavy annular,0.15773244733985073,1
+wps,prefix,hellinger,churn_annular,m05q80_001,wavy annular,0.21807043533438128,1
+wps,prefix,hellinger,churn_annular,m06q40_001,wavy annular,-0.038565440790762837,1
+wps,prefix,hellinger,churn_annular,m06q80_001,wavy annular,0.18364348924203031,1
+wps,prefix,hellinger,churn_annular,m07q80_001,wavy annular,0.07434444229564921,1
+wps,prefix,hellinger,plug_slug,m05q01_001,plug,-0.072164847680906349,1
+wps,prefix,hellinger,plug_slug,m06q01_001,plug,0.31273738445385257,1
+wps,prefix,hellinger,plug_slug,m07q05_001,plug,0.2992738353253574,1
+wps,prefix,hellinger,plug_slug,m04q01_001,slug,0.29953033483670816,0
+wps,prefix,hellinger,plug_slug,m05q05_001,slug,0.10109096480468471,0
+wps,prefix,hellinger,plug_slug,m06q05_001,slug,0.21883650033288035,1
+wps,prefix,hellinger,quatro_padroes,m03q05_001,churn,-0.024111479799915684,1
+wps,prefix,hellinger,quatro_padroes,m04q10_001,churn,0.15015430491809287,1
+wps,prefix,hellinger,quatro_padroes,m04q20_001,churn,0.20209419597323822,1
+wps,prefix,hellinger,quatro_padroes,m05q10_001,churn,0.21361596607725397,1
+wps,prefix,hellinger,quatro_padroes,m05q20_001,churn,0.30856429634264554,1
+wps,prefix,hellinger,quatro_padroes,m05q40_001,churn,-0.14291320194771773,1
+wps,prefix,hellinger,quatro_padroes,m06q10_001,churn,0.19442087391433646,0
+wps,prefix,hellinger,quatro_padroes,m06q20_001,churn,-0.13592682662122929,0
+wps,prefix,hellinger,quatro_padroes,m07q20_001,churn,0.078177466730479359,1
+wps,prefix,hellinger,quatro_padroes,m07q40_001,churn,-0.12090106715625021,1
+wps,prefix,hellinger,quatro_padroes,m03q10_001,wavy annular,0.039026692261282157,1
+wps,prefix,hellinger,quatro_padroes,m03q20_001,wavy annular,0.11986647972543558,1
+wps,prefix,hellinger,quatro_padroes,m03q40_001,wavy annular,-0.007454217552711642,1
+wps,prefix,hellinger,quatro_padroes,m04q40_001,wavy annular,-0.0093380880810096586,0
+wps,prefix,hellinger,quatro_padroes,m04q80_001,wavy annular,0.15773244733985073,1
+wps,prefix,hellinger,quatro_padroes,m05q80_001,wavy annular,0.21807043533438128,1
+wps,prefix,hellinger,quatro_padroes,m06q40_001,wavy annular,-0.24430939613408009,0
+wps,prefix,hellinger,quatro_padroes,m06q80_001,wavy annular,-0.029350573492287636,1
+wps,prefix,hellinger,quatro_padroes,m07q80_001,wavy annular,-0.23363322588700516,0
+wps,prefix,hellinger,quatro_padroes,m05q01_001,plug,-0.072164847680906349,0
+wps,prefix,hellinger,quatro_padroes,m06q01_001,plug,0.0042289438928691881,0
+wps,prefix,hellinger,quatro_padroes,m07q05_001,plug,-0.3678421285941193,0
+wps,prefix,hellinger,quatro_padroes,m04q01_001,slug,0.27211099315217646,0
+wps,prefix,hellinger,quatro_padroes,m05q05_001,slug,0.076777057767552656,0
+wps,prefix,hellinger,quatro_padroes,m06q05_001,slug,0.063589326380711214,0
+wps,prefix,wasserstein,churn_annular,m03q05_001,churn,0.12305327061190142,1
+wps,prefix,wasserstein,churn_annular,m04q10_001,churn,0.30856587499942589,1
+wps,prefix,wasserstein,churn_annular,m04q20_001,churn,0.37925107579425138,1
+wps,prefix,wasserstein,churn_annular,m05q10_001,churn,0.39799701514894564,1
+wps,prefix,wasserstein,churn_annular,m05q20_001,churn,0.34839261322317389,1
+wps,prefix,wasserstein,churn_annular,m05q40_001,churn,0.12307674772400297,1
+wps,prefix,wasserstein,churn_annular,m06q10_001,churn,0.33929155232023722,1
+wps,prefix,wasserstein,churn_annular,m06q20_001,churn,0.058339450397962761,0
+wps,prefix,wasserstein,churn_annular,m07q20_001,churn,0.37087166430989932,1
+wps,prefix,wasserstein,churn_annular,m07q40_001,churn,0.080998795962629946,1
+wps,prefix,wasserstein,churn_annular,m03q10_001,wavy annular,-0.10842440664702926,1
+wps,prefix,wasserstein,churn_annular,m03q20_001,wavy annular,-0.058657177290013574,1
+wps,prefix,wasserstein,churn_annular,m03q40_001,wavy annular,-0.016445900858811376,1
+wps,prefix,wasserstein,churn_annular,m04q40_001,wavy annular,-0.12434136009249601,1
+wps,prefix,wasserstein,churn_annular,m04q80_001,wavy annular,-0.011276901603958238,1
+wps,prefix,wasserstein,churn_annular,m05q80_001,wavy annular,0.076421308459783371,1
+wps,prefix,wasserstein,churn_annular,m06q40_001,wavy annular,-0.07989758732540142,1
+wps,prefix,wasserstein,churn_annular,m06q80_001,wavy annular,0.05403972446200473,1
+wps,prefix,wasserstein,churn_annular,m07q80_001,wavy annular,0.033312405927948936,1
+wps,prefix,wasserstein,plug_slug,m05q01_001,plug,-0.27870070100353217,0
+wps,prefix,wasserstein,plug_slug,m06q01_001,plug,0.36173091458363466,1
+wps,prefix,wasserstein,plug_slug,m07q05_001,plug,0.40613963491930205,1
+wps,prefix,wasserstein,plug_slug,m04q01_001,slug,0.57952901826112968,1
+wps,prefix,wasserstein,plug_slug,m05q05_001,slug,0.19425735322766347,0
+wps,prefix,wasserstein,plug_slug,m06q05_001,slug,0.39777189016122461,1
+wps,prefix,wasserstein,quatro_padroes,m03q05_001,churn,0.12305327061190142,1
+wps,prefix,wasserstein,quatro_padroes,m04q10_001,churn,0.090229807002439655,1
+wps,prefix,wasserstein,quatro_padroes,m04q20_001,churn,0.33746498679626508,1
+wps,prefix,wasserstein,quatro_padroes,m05q10_001,churn,0.3899187583183476,1
+wps,prefix,wasserstein,quatro_padroes,m05q20_001,churn,0.34839261322317389,1
+wps,prefix,wasserstein,quatro_padroes,m05q40_001,churn,0.12307674772400297,1
+wps,prefix,wasserstein,quatro_padroes,m06q10_001,churn,0.33929155232023722,1
+wps,prefix,wasserstein,quatro_padroes,m06q20_001,churn,-0.026687533005906088,0
+wps,prefix,wasserstein,quatro_padroes,m07q20_001,churn,0.22809577184860458,1
+wps,prefix,wasserstein,quatro_padroes,m07q40_001,churn,0.080998795962629946,1
+wps,prefix,wasserstein,quatro_padroes,m03q10_001,wavy annular,-0.10842440664702926,1
+wps,prefix,wasserstein,quatro_padroes,m03q20_001,wavy annular,-0.058657177290013574,1
+wps,prefix,wasserstein,quatro_padroes,m03q40_001,wavy annular,-0.016445900858811376,1
+wps,prefix,wasserstein,quatro_padroes,m04q40_001,wavy annular,-0.12434136009249601,1
+wps,prefix,wasserstein,quatro_padroes,m04q80_001,wavy annular,-0.011276901603958238,1
+wps,prefix,wasserstein,quatro_padroes,m05q80_001,wavy annular,0.076421308459783371,1
+wps,prefix,wasserstein,quatro_padroes,m06q40_001,wavy annular,-0.3251524021201237,0
+wps,prefix,wasserstein,quatro_padroes,m06q80_001,wavy annular,-0.14086515596326055,1
+wps,prefix,wasserstein,quatro_padroes,m07q80_001,wavy annular,-0.3379734064677099,0
+wps,prefix,wasserstein,quatro_padroes,m05q01_001,plug,-0.27870070100353217,0
+wps,prefix,wasserstein,quatro_padroes,m06q01_001,plug,0.01073457512627304,0
+wps,prefix,wasserstein,quatro_padroes,m07q05_001,plug,-0.40359573868182552,0
+wps,prefix,wasserstein,quatro_padroes,m04q01_001,slug,0.57952901826112968,1
+wps,prefix,wasserstein,quatro_padroes,m05q05_001,slug,0.19425735322766347,0
+wps,prefix,wasserstein,quatro_padroes,m06q05_001,slug,0.39777189016122461,1
+wps,prefix,trio,churn_annular,m03q05_001,churn,0.18356457028878564,1
+wps,prefix,trio,churn_annular,m04q10_001,churn,0.42756945014030995,1
+wps,prefix,trio,churn_annular,m04q20_001,churn,0.33434686214282294,1
+wps,prefix,trio,churn_annular,m05q10_001,churn,0.39174004582895661,1
+wps,prefix,trio,churn_annular,m05q20_001,churn,0.42181619894501959,1
+wps,prefix,trio,churn_annular,m05q40_001,churn,0.11384264661477063,1
+wps,prefix,trio,churn_annular,m06q10_001,churn,0.45740632389001212,1
+wps,prefix,trio,churn_annular,m06q20_001,churn,-0.35216177830855772,0
+wps,prefix,trio,churn_annular,m07q20_001,churn,0.42194671548479035,1
+wps,prefix,trio,churn_annular,m07q40_001,churn,0.038258671452472331,1
+wps,prefix,trio,churn_annular,m03q10_001,wavy annular,0.16353423470918296,0
+wps,prefix,trio,churn_annular,m03q20_001,wavy annular,0.42699331274060914,1
+wps,prefix,trio,churn_annular,m03q40_001,wavy annular,-0.10605194045182985,0
+wps,prefix,trio,churn_annular,m04q40_001,wavy annular,0.14961600485000645,1
+wps,prefix,trio,churn_annular,m04q80_001,wavy annular,0.17011571232123443,1
+wps,prefix,trio,churn_annular,m05q80_001,wavy annular,0.42092274330600749,1
+wps,prefix,trio,churn_annular,m06q40_001,wavy annular,0.29624710421122519,1
+wps,prefix,trio,churn_annular,m06q80_001,wavy annular,0.32168391810501729,1
+wps,prefix,trio,churn_annular,m07q80_001,wavy annular,0.35296252097963576,1
+wps,prefix,trio,plug_slug,m05q01_001,plug,0.18634595820962632,0
+wps,prefix,trio,plug_slug,m06q01_001,plug,0.53237474609509494,1
+wps,prefix,trio,plug_slug,m07q05_001,plug,0.52952848644065131,1
+wps,prefix,trio,plug_slug,m04q01_001,slug,0.15926108443552714,0
+wps,prefix,trio,plug_slug,m05q05_001,slug,-0.41084380978925816,0
+wps,prefix,trio,plug_slug,m06q05_001,slug,0.21429941338543654,1
+wps,prefix,trio,quatro_padroes,m03q05_001,churn,0.18356457028878564,1
+wps,prefix,trio,quatro_padroes,m04q10_001,churn,0.41517588112568216,1
+wps,prefix,trio,quatro_padroes,m04q20_001,churn,0.33434686214282294,1
+wps,prefix,trio,quatro_padroes,m05q10_001,churn,0.24734025144606617,1
+wps,prefix,trio,quatro_padroes,m05q20_001,churn,0.42181619894501959,1
+wps,prefix,trio,quatro_padroes,m05q40_001,churn,0.11384264661477063,1
+wps,prefix,trio,quatro_padroes,m06q10_001,churn,0.44098691411344781,1
+wps,prefix,trio,quatro_padroes,m06q20_001,churn,-0.45712995411780194,0
+wps,prefix,trio,quatro_padroes,m07q20_001,churn,0.39642846096490564,1
+wps,prefix,trio,quatro_padroes,m07q40_001,churn,0.011444556674929034,1
+wps,prefix,trio,quatro_padroes,m03q10_001,wavy annular,-0.22549968107967727,0
+wps,prefix,trio,quatro_padroes,m03q20_001,wavy annular,-0.13592940342478083,1
+wps,prefix,trio,quatro_padroes,m03q40_001,wavy annular,-0.10605194045182985,0
+wps,prefix,trio,quatro_padroes,m04q40_001,wavy annular,0.013693661144603776,1
+wps,prefix,trio,quatro_padroes,m04q80_001,wavy annular,0.041729851307732491,1
+wps,prefix,trio,quatro_padroes,m05q80_001,wavy annular,-0.11996100540837373,1
+wps,prefix,trio,quatro_padroes,m06q40_001,wavy annular,-0.32367944021147743,0
+wps,prefix,trio,quatro_padroes,m06q80_001,wavy annular,-0.31033478032442802,0
+wps,prefix,trio,quatro_padroes,m07q80_001,wavy annular,-0.37627202679594246,0
+wps,prefix,trio,quatro_padroes,m05q01_001,plug,-0.013661754003784754,0
+wps,prefix,trio,quatro_padroes,m06q01_001,plug,0.10663249093138438,0
+wps,prefix,trio,quatro_padroes,m07q05_001,plug,-0.16158410864939363,0
+wps,prefix,trio,quatro_padroes,m04q01_001,slug,0.15926108443552714,0
+wps,prefix,trio,quatro_padroes,m05q05_001,slug,-0.41084380978925816,0
+wps,prefix,trio,quatro_padroes,m06q05_001,slug,-0.0087159424074385802,0
+wps,prefix,log_peak,churn_annular,m03q05_001,churn,-0.41258741258741355,0.5
+wps,prefix,log_peak,churn_annular,m04q10_001,churn,0.52881355932203389,1
+wps,prefix,log_peak,churn_annular,m04q20_001,churn,-0.12213740458015268,0
+wps,prefix,log_peak,churn_annular,m05q10_001,churn,0.45231607629427806,1
+wps,prefix,log_peak,churn_annular,m05q20_001,churn,0.52302631578947389,1
+wps,prefix,log_peak,churn_annular,m05q40_001,churn,-0.41258741258741355,0.5
+wps,prefix,log_peak,churn_annular,m06q10_001,churn,0.52707581227436817,1
+wps,prefix,log_peak,churn_annular,m06q20_001,churn,-0.68341708542713531,0
+wps,prefix,log_peak,churn_annular,m07q20_001,churn,0.52707581227436817,1
+wps,prefix,log_peak,churn_annular,m07q40_001,churn,-0.35971223021582621,0.66666666666666663
+wps,prefix,log_peak,churn_annular,m03q10_001,wavy annular,0.60427135678391908,0
+wps,prefix,log_peak,churn_annular,m03q20_001,wavy annular,0.71525096525096521,1
+wps,prefix,log_peak,churn_annular,m03q40_001,wavy annular,0.65301003344481656,1
+wps,prefix,log_peak,churn_annular,m04q40_001,wavy annular,0.70883534136546178,1
+wps,prefix,log_peak,churn_annular,m04q80_001,wavy annular,0.69086021505376294,1
+wps,prefix,log_peak,churn_annular,m05q80_001,wavy annular,0.71525096525096521,1
+wps,prefix,log_peak,churn_annular,m06q40_001,wavy annular,0.0037593984962401373,0.5
+wps,prefix,log_peak,churn_annular,m06q80_001,wavy annular,0.26573426573426701,0
+wps,prefix,log_peak,churn_annular,m07q80_001,wavy annular,0.083333333333332538,1
+wps,prefix,log_peak,plug_slug,m05q01_001,plug,0.64084507042253491,1
+wps,prefix,log_peak,plug_slug,m06q01_001,plug,0.56153846153846154,1
+wps,prefix,log_peak,plug_slug,m07q05_001,plug,0.58620689655172398,1
+wps,prefix,log_peak,plug_slug,m04q01_001,slug,0.20909090909090752,1
+wps,prefix,log_peak,plug_slug,m05q05_001,slug,0.20909090909090752,1
+wps,prefix,log_peak,plug_slug,m06q05_001,slug,0.38732394366197131,1
+wps,prefix,log_peak,quatro_padroes,m03q05_001,churn,-0.58041958041958008,0.5
+wps,prefix,log_peak,quatro_padroes,m04q10_001,churn,-0.20143884892086236,1
+wps,prefix,log_peak,quatro_padroes,m04q20_001,churn,-0.56488549618320627,0
+wps,prefix,log_peak,quatro_padroes,m05q10_001,churn,-0.328358208955223,1
+wps,prefix,log_peak,quatro_padroes,m05q20_001,churn,-0.2137931034482744,1
+wps,prefix,log_peak,quatro_padroes,m05q40_001,churn,-0.58041958041958008,0.5
+wps,prefix,log_peak,quatro_padroes,m06q10_001,churn,-0.19847328244274715,1
+wps,prefix,log_peak,quatro_padroes,m06q20_001,churn,-0.68341708542713531,0
+wps,prefix,log_peak,quatro_padroes,m07q20_001,churn,-0.19847328244274715,1
+wps,prefix,log_peak,quatro_padroes,m07q40_001,churn,-0.58992805755395694,0.66666666666666663
+wps,prefix,log_peak,quatro_padroes,m03q10_001,wavy annular,0.1249999999999994,0
+wps,prefix,log_peak,quatro_padroes,m03q20_001,wavy annular,0.36785714285714277,1
+wps,prefix,log_peak,quatro_padroes,m03q40_001,wavy annular,0.33776595744680921,1
+wps,prefix,log_peak,quatro_padroes,m04q40_001,wavy annular,0.32031250000000017,0
+wps,prefix,log_peak,quatro_padroes,m04q80_001,wavy annular,0.36890243902439013,1
+wps,prefix,log_peak,quatro_padroes,m05q80_001,wavy annular,0.36785714285714277,1
+wps,prefix,log_peak,quatro_padroes,m06q40_001,wavy annular,-0.54716981132075493,0.25
+wps,prefix,log_peak,quatro_padroes,m06q80_001,wavy annular,-0.36507936507936356,0
+wps,prefix,log_peak,quatro_padroes,m07q80_001,wavy annular,-0.54208754208754228,0
+wps,prefix,log_peak,quatro_padroes,m05q01_001,plug,0.22727272727272771,0
+wps,prefix,log_peak,quatro_padroes,m06q01_001,plug,0.25652173913043508,0
+wps,prefix,log_peak,quatro_padroes,m07q05_001,plug,-0.59722222222222232,0
+wps,prefix,log_peak,quatro_padroes,m04q01_001,slug,-0.096551724137932018,1
+wps,prefix,log_peak,quatro_padroes,m05q05_001,slug,-0.096551724137932018,1
+wps,prefix,log_peak,quatro_padroes,m06q05_001,slug,0.1238670694864043,0
+wps,prefix,slope,churn_annular,m03q05_001,churn,0.59795155333611794,1
+wps,prefix,slope,churn_annular,m04q10_001,churn,0.53103493940779822,1
+wps,prefix,slope,churn_annular,m04q20_001,churn,0.50199860365757665,0
+wps,prefix,slope,churn_annular,m05q10_001,churn,-0.091373933393257306,0
+wps,prefix,slope,churn_annular,m05q20_001,churn,0.58825570800945193,0
+wps,prefix,slope,churn_annular,m05q40_001,churn,0.58488680978309726,1
+wps,prefix,slope,churn_annular,m06q10_001,churn,0.33703649940469282,1
+wps,prefix,slope,churn_annular,m06q20_001,churn,0.59790461434545672,1
+wps,prefix,slope,churn_annular,m07q20_001,churn,0.017965226754314379,0
+wps,prefix,slope,churn_annular,m07q40_001,churn,0.46665297137444062,1
+wps,prefix,slope,churn_annular,m03q10_001,wavy annular,-0.67077414106014255,0
+wps,prefix,slope,churn_annular,m03q20_001,wavy annular,0.060170972503131033,1
+wps,prefix,slope,churn_annular,m03q40_001,wavy annular,-0.23169981106196011,0
+wps,prefix,slope,churn_annular,m04q40_001,wavy annular,-0.62674456618322694,1
+wps,prefix,slope,churn_annular,m04q80_001,wavy annular,-0.61763895696056481,1
+wps,prefix,slope,churn_annular,m05q80_001,wavy annular,-0.1978765781801779,0
+wps,prefix,slope,churn_annular,m06q40_001,wavy annular,0.09233896954358535,1
+wps,prefix,slope,churn_annular,m06q80_001,wavy annular,0.10306472591093387,1
+wps,prefix,slope,churn_annular,m07q80_001,wavy annular,0.054925623201642119,1
+wps,prefix,slope,plug_slug,m05q01_001,plug,-0.54718877938287147,0
+wps,prefix,slope,plug_slug,m06q01_001,plug,0.42090344485761616,1
+wps,prefix,slope,plug_slug,m07q05_001,plug,0.44873088707880682,1
+wps,prefix,slope,plug_slug,m04q01_001,slug,0.54389213869794473,1
+wps,prefix,slope,plug_slug,m05q05_001,slug,-0.052597709724775614,0
+wps,prefix,slope,plug_slug,m06q05_001,slug,0.56414167961523698,0
+wps,prefix,slope,quatro_padroes,m03q05_001,churn,0.53307979643260694,1
+wps,prefix,slope,quatro_padroes,m04q10_001,churn,0.46350718756746645,0
+wps,prefix,slope,quatro_padroes,m04q20_001,churn,0.43083337173953534,0
+wps,prefix,slope,quatro_padroes,m05q10_001,churn,-0.21415638760008643,0
+wps,prefix,slope,quatro_padroes,m05q20_001,churn,0.51802064540469361,0
+wps,prefix,slope,quatro_padroes,m05q40_001,churn,0.52596000577922664,1
+wps,prefix,slope,quatro_padroes,m06q10_001,churn,0.16820892507215338,0
+wps,prefix,slope,quatro_padroes,m06q20_001,churn,0.53624715283241153,1
+wps,prefix,slope,quatro_padroes,m07q20_001,churn,-0.15910472765785075,0
+wps,prefix,slope,quatro_padroes,m07q40_001,churn,0.41611973714065781,1
+wps,prefix,slope,quatro_padroes,m03q10_001,wavy annular,-0.67077414106014255,0
+wps,prefix,slope,quatro_padroes,m03q20_001,wavy annular,-0.18359766626466931,1
+wps,prefix,slope,quatro_padroes,m03q40_001,wavy annular,-0.23169981106196011,0
+wps,prefix,slope,quatro_padroes,m04q40_001,wavy annular,-0.62674456618322694,1
+wps,prefix,slope,quatro_padroes,m04q80_001,wavy annular,-0.61763895696056481,1
+wps,prefix,slope,quatro_padroes,m05q80_001,wavy annular,-0.25815908898252249,0
+wps,prefix,slope,quatro_padroes,m06q40_001,wavy annular,-0.20351347244508688,1
+wps,prefix,slope,quatro_padroes,m06q80_001,wavy annular,-0.61145830149151481,0
+wps,prefix,slope,quatro_padroes,m07q80_001,wavy annular,-0.18386477011383781,1
+wps,prefix,slope,quatro_padroes,m05q01_001,plug,-0.54718877938287147,0
+wps,prefix,slope,quatro_padroes,m06q01_001,plug,-0.32951752572113946,0
+wps,prefix,slope,quatro_padroes,m07q05_001,plug,-0.68956064165939357,0
+wps,prefix,slope,quatro_padroes,m04q01_001,slug,0.54389213869794473,1
+wps,prefix,slope,quatro_padroes,m05q05_001,slug,-0.052597709724775614,0
+wps,prefix,slope,quatro_padroes,m06q05_001,slug,0.56414167961523698,0
+wps,prefix,width,churn_annular,m03q05_001,churn,-1.5313218980671518e-15,0.5
+wps,prefix,width,churn_annular,m04q10_001,churn,0.3850931677018643,1
+wps,prefix,width,churn_annular,m04q20_001,churn,0.3850931677018628,1
+wps,prefix,width,churn_annular,m05q10_001,churn,0.43630573248407661,1
+wps,prefix,width,churn_annular,m05q20_001,churn,0.3955431754874652,1
+wps,prefix,width,churn_annular,m05q40_001,churn,-0.18487394957983241,0.5
+wps,prefix,width,churn_annular,m06q10_001,churn,0.45685279187817229,1
+wps,prefix,width,churn_annular,m06q20_001,churn,-0.74647887323943651,0
+wps,prefix,width,churn_annular,m07q20_001,churn,0.47210300429184548,1
+wps,prefix,width,churn_annular,m07q40_001,churn,-0.51677852348993181,0
+wps,prefix,width,churn_annular,m03q10_001,wavy annular,0.68902439024390183,1
+wps,prefix,width,churn_annular,m03q20_001,wavy annular,0.68309859154929575,0
+wps,prefix,width,churn_annular,m03q40_001,wavy annular,-0.3152000000000007,0
+wps,prefix,width,churn_annular,m04q40_001,wavy annular,0.28832116788321072,1
+wps,prefix,width,churn_annular,m04q80_001,wavy annular,0.20801526717557184,1
+wps,prefix,width,churn_annular,m05q80_001,wavy annular,0.68902439024390183,1
+wps,prefix,width,churn_annular,m06q40_001,wavy annular,0.68902439024390216,1
+wps,prefix,width,churn_annular,m06q80_001,wavy annular,0.64506172839506137,0.5
+wps,prefix,width,churn_annular,m07q80_001,wavy annular,0.52875399361022335,1
+wps,prefix,width,plug_slug,m05q01_001,plug,0.83636363636363698,1
+wps,prefix,width,plug_slug,m06q01_001,plug,0.91346153846153888,1
+wps,prefix,width,plug_slug,m07q05_001,plug,0.91346153846153888,1
+wps,prefix,width,plug_slug,m04q01_001,slug,-0.74468085106383097,0
+wps,prefix,width,plug_slug,m05q05_001,slug,-0.7666666666666675,0
+wps,prefix,width,plug_slug,m06q05_001,slug,-0.012345679012345612,1
+wps,prefix,width,quatro_padroes,m03q05_001,churn,-1.5313218980671518e-15,0.5
+wps,prefix,width,quatro_padroes,m04q10_001,churn,0.3850931677018643,1
+wps,prefix,width,quatro_padroes,m04q20_001,churn,0.3850931677018628,1
+wps,prefix,width,quatro_padroes,m05q10_001,churn,0.29761904761904689,0
+wps,prefix,width,quatro_padroes,m05q20_001,churn,0.26936026936026863,1
+wps,prefix,width,quatro_padroes,m05q40_001,churn,-0.18487394957983241,0.5
+wps,prefix,width,quatro_padroes,m06q10_001,churn,0.45685279187817229,1
+wps,prefix,width,quatro_padroes,m06q20_001,churn,-0.87323943661971892,0
+wps,prefix,width,quatro_padroes,m07q20_001,churn,0.43835616438356084,1
+wps,prefix,width,quatro_padroes,m07q40_001,churn,-0.51677852348993181,0
+wps,prefix,width,quatro_padroes,m03q10_001,wavy annular,-0.37254901960784736,1
+wps,prefix,width,quatro_padroes,m03q20_001,wavy annular,-0.55555555555555769,0
+wps,prefix,width,quatro_padroes,m03q40_001,wavy annular,-0.3152000000000007,0
+wps,prefix,width,quatro_padroes,m04q40_001,wavy annular,0.24999999999999792,1
+wps,prefix,width,quatro_padroes,m04q80_001,wavy annular,0.20801526717557184,1
+wps,prefix,width,quatro_padroes,m05q80_001,wavy annular,-0.37254901960784736,1
+wps,prefix,width,quatro_padroes,m06q40_001,wavy annular,-0.37254901960785469,1
+wps,prefix,width,quatro_padroes,m06q80_001,wavy annular,-0.84541062801932298,0
+wps,prefix,width,quatro_padroes,m07q80_001,wavy annular,-0.52542372881355659,0
+wps,prefix,width,quatro_padroes,m05q01_001,plug,0.67469879518072362,0
+wps,prefix,width,quatro_padroes,m06q01_001,plug,0.78906250000000089,1
+wps,prefix,width,quatro_padroes,m07q05_001,plug,0.78906250000000089,1
+wps,prefix,width,quatro_padroes,m04q01_001,slug,-0.74468085106383097,0
+wps,prefix,width,quatro_padroes,m05q05_001,slug,-0.7666666666666675,0
+wps,prefix,width,quatro_padroes,m06q05_001,slug,-0.57777777777777739,0
+wps,center,pearson_residual,churn_annular,m03q05_001,churn,-0.23652336336996724,0
+wps,center,pearson_residual,churn_annular,m04q10_001,churn,0.15636525940618151,1
+wps,center,pearson_residual,churn_annular,m04q20_001,churn,0.1461315011267551,1
+wps,center,pearson_residual,churn_annular,m05q10_001,churn,0.059928584157514238,0
+wps,center,pearson_residual,churn_annular,m05q20_001,churn,0.06172614069402458,1
+wps,center,pearson_residual,churn_annular,m05q40_001,churn,0.092445664860097324,0
+wps,center,pearson_residual,churn_annular,m06q10_001,churn,-0.19216914997082984,1
+wps,center,pearson_residual,churn_annular,m06q20_001,churn,0.045651055485684544,1
+wps,center,pearson_residual,churn_annular,m07q20_001,churn,-0.048098061658866001,1
+wps,center,pearson_residual,churn_annular,m07q40_001,churn,0.070627931018676995,0
+wps,center,pearson_residual,churn_annular,m03q10_001,wavy annular,0.22120689883438055,1
+wps,center,pearson_residual,churn_annular,m03q20_001,wavy annular,0.18701959562746046,1
+wps,center,pearson_residual,churn_annular,m03q40_001,wavy annular,0.30210388482187489,1
+wps,center,pearson_residual,churn_annular,m04q40_001,wavy annular,-0.09783475212091032,0
+wps,center,pearson_residual,churn_annular,m04q80_001,wavy annular,0.24807605794742951,1
+wps,center,pearson_residual,churn_annular,m05q80_001,wavy annular,0.25741590240269008,1
+wps,center,pearson_residual,churn_annular,m06q40_001,wavy annular,0.045760793872531999,1
+wps,center,pearson_residual,churn_annular,m06q80_001,wavy annular,0.17495971766864257,0
+wps,center,pearson_residual,churn_annular,m07q80_001,wavy annular,0.032310973416015021,1
+wps,center,pearson_residual,plug_slug,m05q01_001,plug,0.42079711262771241,1
+wps,center,pearson_residual,plug_slug,m06q01_001,plug,0.36534844494562818,1
+wps,center,pearson_residual,plug_slug,m07q05_001,plug,0.48064327573076104,1
+wps,center,pearson_residual,plug_slug,m04q01_001,slug,-0.047421917451415843,1
+wps,center,pearson_residual,plug_slug,m05q05_001,slug,-0.30484252838361992,0
+wps,center,pearson_residual,plug_slug,m06q05_001,slug,-0.51398063283728102,0
+wps,center,pearson_residual,quatro_padroes,m03q05_001,churn,-0.23652336336996724,0
+wps,center,pearson_residual,quatro_padroes,m04q10_001,churn,-0.16514939982741195,0
+wps,center,pearson_residual,quatro_padroes,m04q20_001,churn,-0.086640604686243017,1
+wps,center,pearson_residual,quatro_padroes,m05q10_001,churn,-0.3072356843964289,0
+wps,center,pearson_residual,quatro_padroes,m05q20_001,churn,-0.40463298886017773,0
+wps,center,pearson_residual,quatro_padroes,m05q40_001,churn,0.037466892714441619,0
+wps,center,pearson_residual,quatro_padroes,m06q10_001,churn,-0.19216914997082984,1
+wps,center,pearson_residual,quatro_padroes,m06q20_001,churn,0.045651055485684544,1
+wps,center,pearson_residual,quatro_padroes,m07q20_001,churn,-0.059752100364610643,1
+wps,center,pearson_residual,quatro_padroes,m07q40_001,churn,-0.0078620364684427336,0
+wps,center,pearson_residual,quatro_padroes,m03q10_001,wavy annular,0.22120689883438055,1
+wps,center,pearson_residual,quatro_padroes,m03q20_001,wavy annular,0.18701959562746046,1
+wps,center,pearson_residual,quatro_padroes,m03q40_001,wavy annular,0.30210388482187489,1
+wps,center,pearson_residual,quatro_padroes,m04q40_001,wavy annular,-0.10060049603713922,0
+wps,center,pearson_residual,quatro_padroes,m04q80_001,wavy annular,0.24807605794742951,1
+wps,center,pearson_residual,quatro_padroes,m05q80_001,wavy annular,0.25741590240269008,1
+wps,center,pearson_residual,quatro_padroes,m06q40_001,wavy annular,-0.35285176150128406,1
+wps,center,pearson_residual,quatro_padroes,m06q80_001,wavy annular,0.17495971766864257,0
+wps,center,pearson_residual,quatro_padroes,m07q80_001,wavy annular,-0.27693905024689053,1
+wps,center,pearson_residual,quatro_padroes,m05q01_001,plug,0.42079711262771241,1
+wps,center,pearson_residual,quatro_padroes,m06q01_001,plug,0.36534844494562818,0
+wps,center,pearson_residual,quatro_padroes,m07q05_001,plug,0.48064327573076104,1
+wps,center,pearson_residual,quatro_padroes,m04q01_001,slug,-0.08521654244972357,0
+wps,center,pearson_residual,quatro_padroes,m05q05_001,slug,-0.30484252838361992,0
+wps,center,pearson_residual,quatro_padroes,m06q05_001,slug,-0.51398063283728102,0
+wps,center,hellinger,churn_annular,m03q05_001,churn,-0.0064322220344646495,0
+wps,center,hellinger,churn_annular,m04q10_001,churn,0.31726865213924188,1
+wps,center,hellinger,churn_annular,m04q20_001,churn,0.24925392174041466,1
+wps,center,hellinger,churn_annular,m05q10_001,churn,0.25341758939805675,1
+wps,center,hellinger,churn_annular,m05q20_001,churn,0.29631571153232089,1
+wps,center,hellinger,churn_annular,m05q40_001,churn,0.23519389948371316,1
+wps,center,hellinger,churn_annular,m06q10_001,churn,0.19076994658439844,1
+wps,center,hellinger,churn_annular,m06q20_001,churn,0.27399183092413287,1
+wps,center,hellinger,churn_annular,m07q20_001,churn,0.19463240759716369,1
+wps,center,hellinger,churn_annular,m07q40_001,churn,0.30834406055766023,1
+wps,center,hellinger,churn_annular,m03q10_001,wavy annular,0.014358889209370005,0
+wps,center,hellinger,churn_annular,m03q20_001,wavy annular,-0.17982285214588217,0
+wps,center,hellinger,churn_annular,m03q40_001,wavy annular,-0.015985964495593471,1
+wps,center,hellinger,churn_annular,m04q40_001,wavy annular,-0.082733266095641245,1
+wps,center,hellinger,churn_annular,m04q80_001,wavy annular,0.12844386914766243,1
+wps,center,hellinger,churn_annular,m05q80_001,wavy annular,0.050253767126519855,1
+wps,center,hellinger,churn_annular,m06q40_001,wavy annular,-0.20511466294044861,1
+wps,center,hellinger,churn_annular,m06q80_001,wavy annular,0.0042329649101165764,1
+wps,center,hellinger,churn_annular,m07q80_001,wavy annular,-0.24507984687331236,1
+wps,center,hellinger,plug_slug,m05q01_001,plug,0.33102142496369874,1
+wps,center,hellinger,plug_slug,m06q01_001,plug,0.23484340532856002,0
+wps,center,hellinger,plug_slug,m07q05_001,plug,0.38255074341278744,1
+wps,center,hellinger,plug_slug,m04q01_001,slug,-0.10239561408199141,0
+wps,center,hellinger,plug_slug,m05q05_001,slug,-0.41620863880515258,0
+wps,center,hellinger,plug_slug,m06q05_001,slug,-0.37131186761920437,0
+wps,center,hellinger,quatro_padroes,m03q05_001,churn,-0.0064322220344646495,0
+wps,center,hellinger,quatro_padroes,m04q10_001,churn,0.064077913689045404,1
+wps,center,hellinger,quatro_padroes,m04q20_001,churn,0.23180730402383054,1
+wps,center,hellinger,quatro_padroes,m05q10_001,churn,-0.016975863922876061,1
+wps,center,hellinger,quatro_padroes,m05q20_001,churn,0.2299119487230312,1
+wps,center,hellinger,quatro_padroes,m05q40_001,churn,0.08274499637101207,1
+wps,center,hellinger,quatro_padroes,m06q10_001,churn,0.13151777550478422,1
+wps,center,hellinger,quatro_padroes,m06q20_001,churn,0.24977487990274466,1
+wps,center,hellinger,quatro_padroes,m07q20_001,churn,0.057823502064771375,1
+wps,center,hellinger,quatro_padroes,m07q40_001,churn,0.066930400072331725,1
+wps,center,hellinger,quatro_padroes,m03q10_001,wavy annular,0.014358889209370005,0
+wps,center,hellinger,quatro_padroes,m03q20_001,wavy annular,-0.17982285214588217,0
+wps,center,hellinger,quatro_padroes,m03q40_001,wavy annular,-0.015985964495593471,1
+wps,center,hellinger,quatro_padroes,m04q40_001,wavy annular,-0.082733266095641245,1
+wps,center,hellinger,quatro_padroes,m04q80_001,wavy annular,0.12844386914766243,1
+wps,center,hellinger,quatro_padroes,m05q80_001,wavy annular,0.050253767126519855,1
+wps,center,hellinger,quatro_padroes,m06q40_001,wavy annular,-0.40895087147154835,1
+wps,center,hellinger,quatro_padroes,m06q80_001,wavy annular,0.0042329649101165764,1
+wps,center,hellinger,quatro_padroes,m07q80_001,wavy annular,-0.45202391009703291,1
+wps,center,hellinger,quatro_padroes,m05q01_001,plug,0.33102142496369874,1
+wps,center,hellinger,quatro_padroes,m06q01_001,plug,0.045758002982259238,0
+wps,center,hellinger,quatro_padroes,m07q05_001,plug,0.38255074341278744,1
+wps,center,hellinger,quatro_padroes,m04q01_001,slug,-0.10239561408199141,0
+wps,center,hellinger,quatro_padroes,m05q05_001,slug,-0.41620863880515258,0
+wps,center,hellinger,quatro_padroes,m06q05_001,slug,-0.37131186761920437,0
+wps,center,wasserstein,churn_annular,m03q05_001,churn,0.077506653940029327,0
+wps,center,wasserstein,churn_annular,m04q10_001,churn,0.37947257401793738,1
+wps,center,wasserstein,churn_annular,m04q20_001,churn,0.10916599058794575,0
+wps,center,wasserstein,churn_annular,m05q10_001,churn,0.38484748674778468,1
+wps,center,wasserstein,churn_annular,m05q20_001,churn,0.33611185985127923,1
+wps,center,wasserstein,churn_annular,m05q40_001,churn,0.325930355303513,1
+wps,center,wasserstein,churn_annular,m06q10_001,churn,0.31470699208912112,1
+wps,center,wasserstein,churn_annular,m06q20_001,churn,0.38085679964887587,1
+wps,center,wasserstein,churn_annular,m07q20_001,churn,0.21313352777322256,1
+wps,center,wasserstein,churn_annular,m07q40_001,churn,0.33403068723142854,1
+wps,center,wasserstein,churn_annular,m03q10_001,wavy annular,-0.15606706609090754,0
+wps,center,wasserstein,churn_annular,m03q20_001,wavy annular,-0.13993096481111847,0
+wps,center,wasserstein,churn_annular,m03q40_001,wavy annular,0.068204181740970676,1
+wps,center,wasserstein,churn_annular,m04q40_001,wavy annular,-0.13433822545087193,1
+wps,center,wasserstein,churn_annular,m04q80_001,wavy annular,0.08943550056210918,1
+wps,center,wasserstein,churn_annular,m05q80_001,wavy annular,-0.16090675262490561,1
+wps,center,wasserstein,churn_annular,m06q40_001,wavy annular,-0.28810697876661767,1
+wps,center,wasserstein,churn_annular,m06q80_001,wavy annular,-0.14390401161686173,1
+wps,center,wasserstein,churn_annular,m07q80_001,wavy annular,-0.25816942224261136,1
+wps,center,wasserstein,plug_slug,m05q01_001,plug,0.25799666591190523,1
+wps,center,wasserstein,plug_slug,m06q01_001,plug,0.2048121025866724,0
+wps,center,wasserstein,plug_slug,m07q05_001,plug,0.29691097499987357,1
+wps,center,wasserstein,plug_slug,m04q01_001,slug,-0.063639122364999481,0
+wps,center,wasserstein,plug_slug,m05q05_001,slug,-0.55228874272160644,0
+wps,center,wasserstein,plug_slug,m06q05_001,slug,-0.31262165232529338,0
+wps,center,wasserstein,quatro_padroes,m03q05_001,churn,0.077506653940029327,0
+wps,center,wasserstein,quatro_padroes,m04q10_001,churn,0.37947257401793738,1
+wps,center,wasserstein,quatro_padroes,m04q20_001,churn,0.10916599058794575,0
+wps,center,wasserstein,quatro_padroes,m05q10_001,churn,0.14509295300146932,0
+wps,center,wasserstein,quatro_padroes,m05q20_001,churn,0.33611185985127923,1
+wps,center,wasserstein,quatro_padroes,m05q40_001,churn,0.23673377658822647,1
+wps,center,wasserstein,quatro_padroes,m06q10_001,churn,-0.040340682036459491,1
+wps,center,wasserstein,quatro_padroes,m06q20_001,churn,0.38085679964887587,1
+wps,center,wasserstein,quatro_padroes,m07q20_001,churn,-0.39345381655938816,0
+wps,center,wasserstein,quatro_padroes,m07q40_001,churn,-0.099662949037409215,0
+wps,center,wasserstein,quatro_padroes,m03q10_001,wavy annular,-0.15606706609090754,0
+wps,center,wasserstein,quatro_padroes,m03q20_001,wavy annular,-0.13993096481111847,0
+wps,center,wasserstein,quatro_padroes,m03q40_001,wavy annular,0.068204181740970676,1
+wps,center,wasserstein,quatro_padroes,m04q40_001,wavy annular,-0.13433822545087193,1
+wps,center,wasserstein,quatro_padroes,m04q80_001,wavy annular,0.08943550056210918,1
+wps,center,wasserstein,quatro_padroes,m05q80_001,wavy annular,-0.16090675262490561,1
+wps,center,wasserstein,quatro_padroes,m06q40_001,wavy annular,-0.62957330488883223,1
+wps,center,wasserstein,quatro_padroes,m06q80_001,wavy annular,-0.14390401161686173,1
+wps,center,wasserstein,quatro_padroes,m07q80_001,wavy annular,-0.65834288678807129,0
+wps,center,wasserstein,quatro_padroes,m05q01_001,plug,0.25799666591190523,1
+wps,center,wasserstein,quatro_padroes,m06q01_001,plug,-0.25877007604647445,0
+wps,center,wasserstein,quatro_padroes,m07q05_001,plug,0.29691097499987357,0
+wps,center,wasserstein,quatro_padroes,m04q01_001,slug,-0.063639122364999481,0
+wps,center,wasserstein,quatro_padroes,m05q05_001,slug,-0.55228874272160644,0
+wps,center,wasserstein,quatro_padroes,m06q05_001,slug,-0.31262165232529338,0
+wps,center,trio,churn_annular,m03q05_001,churn,-0.19339131866931986,0
+wps,center,trio,churn_annular,m04q10_001,churn,0.25469384807213963,1
+wps,center,trio,churn_annular,m04q20_001,churn,0.12848986727173309,1
+wps,center,trio,churn_annular,m05q10_001,churn,0.20441145115822876,1
+wps,center,trio,churn_annular,m05q20_001,churn,0.13803033784724092,1
+wps,center,trio,churn_annular,m05q40_001,churn,-0.22837979949492462,0
+wps,center,trio,churn_annular,m06q10_001,churn,0.26621413788529658,1
+wps,center,trio,churn_annular,m06q20_001,churn,0.15072233600663171,1
+wps,center,trio,churn_annular,m07q20_001,churn,0.24885631651798434,1
+wps,center,trio,churn_annular,m07q40_001,churn,0.08290852940902807,1
+wps,center,trio,churn_annular,m03q10_001,wavy annular,-0.123809355695254,0
+wps,center,trio,churn_annular,m03q20_001,wavy annular,0.096745047299410691,0
+wps,center,trio,churn_annular,m03q40_001,wavy annular,0.15329094587061717,1
+wps,center,trio,churn_annular,m04q40_001,wavy annular,0.057278163644587057,1
+wps,center,trio,churn_annular,m04q80_001,wavy annular,0.17449058719109148,1
+wps,center,trio,churn_annular,m05q80_001,wavy annular,0.10638048666364075,1
+wps,center,trio,churn_annular,m06q40_001,wavy annular,-0.087942220456036529,0
+wps,center,trio,churn_annular,m06q80_001,wavy annular,0.13514901268885074,1
+wps,center,trio,churn_annular,m07q80_001,wavy annular,-0.21448036022485378,1
+wps,center,trio,plug_slug,m05q01_001,plug,0.37456198214850339,1
+wps,center,trio,plug_slug,m06q01_001,plug,0.26902123997437316,1
+wps,center,trio,plug_slug,m07q05_001,plug,0.4998526796633796,1
+wps,center,trio,plug_slug,m04q01_001,slug,-0.21040690188952163,0
+wps,center,trio,plug_slug,m05q05_001,slug,-0.44706426917213643,0
+wps,center,trio,plug_slug,m06q05_001,slug,-0.20608867121112096,0
+wps,center,trio,quatro_padroes,m03q05_001,churn,-0.19339131866931986,0
+wps,center,trio,quatro_padroes,m04q10_001,churn,0.022278502886004199,1
+wps,center,trio,quatro_padroes,m04q20_001,churn,0.12848986727173309,1
+wps,center,trio,quatro_padroes,m05q10_001,churn,-0.40907459594771195,1
+wps,center,trio,quatro_padroes,m05q20_001,churn,-0.020762983653974904,1
+wps,center,trio,quatro_padroes,m05q40_001,churn,-0.22837979949492462,0
+wps,center,trio,quatro_padroes,m06q10_001,churn,-0.1806664757424655,1
+wps,center,trio,quatro_padroes,m06q20_001,churn,-0.32657181200229668,1
+wps,center,trio,quatro_padroes,m07q20_001,churn,-0.22285581752819522,1
+wps,center,trio,quatro_padroes,m07q40_001,churn,-0.52868295840253232,0
+wps,center,trio,quatro_padroes,m03q10_001,wavy annular,-0.15969788557666623,0
+wps,center,trio,quatro_padroes,m03q20_001,wavy annular,0.096745047299410691,0
+wps,center,trio,quatro_padroes,m03q40_001,wavy annular,0.15329094587061717,1
+wps,center,trio,quatro_padroes,m04q40_001,wavy annular,0.021864172786223594,1
+wps,center,trio,quatro_padroes,m04q80_001,wavy annular,0.17449058719109148,1
+wps,center,trio,quatro_padroes,m05q80_001,wavy annular,-0.26232640801583001,1
+wps,center,trio,quatro_padroes,m06q40_001,wavy annular,-0.3125520411810368,0
+wps,center,trio,quatro_padroes,m06q80_001,wavy annular,-0.20898538082887344,1
+wps,center,trio,quatro_padroes,m07q80_001,wavy annular,-0.46342689005343723,0
+wps,center,trio,quatro_padroes,m05q01_001,plug,0.37456198214850339,1
+wps,center,trio,quatro_padroes,m06q01_001,plug,0.13902467655979181,0
+wps,center,trio,quatro_padroes,m07q05_001,plug,0.43121849391853823,0
+wps,center,trio,quatro_padroes,m04q01_001,slug,-0.21040690188952163,0
+wps,center,trio,quatro_padroes,m05q05_001,slug,-0.44706426917213643,0
+wps,center,trio,quatro_padroes,m06q05_001,slug,-0.20608867121112096,0
+wps,center,log_peak,churn_annular,m03q05_001,churn,-0.50187265917602986,0
+wps,center,log_peak,churn_annular,m04q10_001,churn,0.081730769230768927,1
+wps,center,log_peak,churn_annular,m04q20_001,churn,-0.47488584474885831,0
+wps,center,log_peak,churn_annular,m05q10_001,churn,0.069651741293532674,1
+wps,center,log_peak,churn_annular,m05q20_001,churn,-0.13661202185792343,1
+wps,center,log_peak,churn_annular,m05q40_001,churn,-0.4798761609907119,1
+wps,center,log_peak,churn_annular,m06q10_001,churn,0.24052718286655661,1
+wps,center,log_peak,churn_annular,m06q20_001,churn,-0.061452513966480646,0.5
+wps,center,log_peak,churn_annular,m07q20_001,churn,0.22835820895522366,1
+wps,center,log_peak,churn_annular,m07q40_001,churn,-0.033519553072624858,0
+wps,center,log_peak,churn_annular,m03q10_001,wavy annular,0.34360730593607297,0
+wps,center,log_peak,churn_annular,m03q20_001,wavy annular,0.29933665008291843,1
+wps,center,log_peak,churn_annular,m03q40_001,wavy annular,0.35706401766004386,0
+wps,center,log_peak,churn_annular,m04q40_001,wavy annular,-0.17225433526011633,0
+wps,center,log_peak,churn_annular,m04q80_001,wavy annular,0.38697318007662806,0
+wps,center,log_peak,churn_annular,m05q80_001,wavy annular,0.31395348837209303,0.5
+wps,center,log_peak,churn_annular,m06q40_001,wavy annular,0.38818565400843852,1
+wps,center,log_peak,churn_annular,m06q80_001,wavy annular,0.36666666666666642,0.5
+wps,center,log_peak,churn_annular,m07q80_001,wavy annular,-0.26986899563318761,0
+wps,center,log_peak,plug_slug,m05q01_001,plug,0.6911764705882365,1
+wps,center,log_peak,plug_slug,m06q01_001,plug,0.052631578947374878,0
+wps,center,log_peak,plug_slug,m07q05_001,plug,0.66250000000000109,1
+wps,center,log_peak,plug_slug,m04q01_001,slug,-0.57894736842105554,0
+wps,center,log_peak,plug_slug,m05q05_001,slug,-0.44444444444444231,0.5
+wps,center,log_peak,plug_slug,m06q05_001,slug,0.20454545454545472,1
+wps,center,log_peak,quatro_padroes,m03q05_001,churn,-0.50187265917602986,0
+wps,center,log_peak,quatro_padroes,m04q10_001,churn,-0.81151832460732853,0.5
+wps,center,log_peak,quatro_padroes,m04q20_001,churn,-0.47488584474885831,0
+wps,center,log_peak,quatro_padroes,m05q10_001,churn,-0.75935828877005462,1
+wps,center,log_peak,quatro_padroes,m05q20_001,churn,-0.40983606557377117,1
+wps,center,log_peak,quatro_padroes,m05q40_001,churn,-0.4798761609907119,1
+wps,center,log_peak,quatro_padroes,m06q10_001,churn,-0.40130151843817796,1
+wps,center,log_peak,quatro_padroes,m06q20_001,churn,-0.49720670391061478,0.5
+wps,center,log_peak,quatro_padroes,m07q20_001,churn,-0.34429400386847159,1
+wps,center,log_peak,quatro_padroes,m07q40_001,churn,-0.54748603351955527,0
+wps,center,log_peak,quatro_padroes,m03q10_001,wavy annular,0.31547619047618997,0
+wps,center,log_peak,quatro_padroes,m03q20_001,wavy annular,0.29933665008291843,1
+wps,center,log_peak,quatro_padroes,m03q40_001,wavy annular,0.35706401766004386,0
+wps,center,log_peak,quatro_padroes,m04q40_001,wavy annular,-0.58381502890173653,0
+wps,center,log_peak,quatro_padroes,m04q80_001,wavy annular,0.38697318007662806,0
+wps,center,log_peak,quatro_padroes,m05q80_001,wavy annular,0.26249999999999968,0.5
+wps,center,log_peak,quatro_padroes,m06q40_001,wavy annular,0.38818565400843852,1
+wps,center,log_peak,quatro_padroes,m06q80_001,wavy annular,0.35227272727272663,0.5
+wps,center,log_peak,quatro_padroes,m07q80_001,wavy annular,-0.91848617176128133,0
+wps,center,log_peak,quatro_padroes,m05q01_001,plug,0.6911764705882365,0
+wps,center,log_peak,quatro_padroes,m06q01_001,plug,0.052631578947374878,0
+wps,center,log_peak,quatro_padroes,m07q05_001,plug,0.66250000000000109,0
+wps,center,log_peak,quatro_padroes,m04q01_001,slug,-0.57894736842105554,0
+wps,center,log_peak,quatro_padroes,m05q05_001,slug,-0.44444444444444231,0.5
+wps,center,log_peak,quatro_padroes,m06q05_001,slug,0.20454545454545472,1
+wps,center,slope,churn_annular,m03q05_001,churn,0.31357296205185647,1
+wps,center,slope,churn_annular,m04q10_001,churn,0.30566241794412102,1
+wps,center,slope,churn_annular,m04q20_001,churn,0.23197090015924685,1
+wps,center,slope,churn_annular,m05q10_001,churn,0.39742556500506965,1
+wps,center,slope,churn_annular,m05q20_001,churn,0.30302621173537786,1
+wps,center,slope,churn_annular,m05q40_001,churn,0.37872832655530236,1
+wps,center,slope,churn_annular,m06q10_001,churn,0.23890320362087836,0
+wps,center,slope,churn_annular,m06q20_001,churn,0.39511923001785759,1
+wps,center,slope,churn_annular,m07q20_001,churn,0.16295577185862559,0
+wps,center,slope,churn_annular,m07q40_001,churn,0.30866568437830078,0
+wps,center,slope,churn_annular,m03q10_001,wavy annular,-0.45957603547364118,1
+wps,center,slope,churn_annular,m03q20_001,wavy annular,-0.44947190886147759,1
+wps,center,slope,churn_annular,m03q40_001,wavy annular,0.033741220229565633,1
+wps,center,slope,churn_annular,m04q40_001,wavy annular,0.013411509860533381,1
+wps,center,slope,churn_annular,m04q80_001,wavy annular,0.00036688949546729324,1
+wps,center,slope,churn_annular,m05q80_001,wavy annular,-0.45835659920046135,1
+wps,center,slope,churn_annular,m06q40_001,wavy annular,-0.35079714558131703,0
+wps,center,slope,churn_annular,m06q80_001,wavy annular,-0.4612939441231953,1
+wps,center,slope,churn_annular,m07q80_001,wavy annular,-0.23812941039945387,0
+wps,center,slope,plug_slug,m05q01_001,plug,0.27122483649762441,0
+wps,center,slope,plug_slug,m06q01_001,plug,0.33258897304156487,1
+wps,center,slope,plug_slug,m07q05_001,plug,0.4818897497390926,0
+wps,center,slope,plug_slug,m04q01_001,slug,-0.24166128751106863,0
+wps,center,slope,plug_slug,m05q05_001,slug,-0.42580052709958716,0
+wps,center,slope,plug_slug,m06q05_001,slug,-0.71586228448449563,0
+wps,center,slope,quatro_padroes,m03q05_001,churn,0.31357296205185647,1
+wps,center,slope,quatro_padroes,m04q10_001,churn,0.30566241794412102,1
+wps,center,slope,quatro_padroes,m04q20_001,churn,0.23197090015924685,1
+wps,center,slope,quatro_padroes,m05q10_001,churn,-0.013063662791133352,1
+wps,center,slope,quatro_padroes,m05q20_001,churn,0.30302621173537786,1
+wps,center,slope,quatro_padroes,m05q40_001,churn,-0.12018152422599222,1
+wps,center,slope,quatro_padroes,m06q10_001,churn,-0.47402734356804044,0
+wps,center,slope,quatro_padroes,m06q20_001,churn,0.0058844320185580104,1
+wps,center,slope,quatro_padroes,m07q20_001,churn,-0.4795423968764127,0
+wps,center,slope,quatro_padroes,m07q40_001,churn,-0.46686157682289303,0
+wps,center,slope,quatro_padroes,m03q10_001,wavy annular,-0.45957603547364118,1
+wps,center,slope,quatro_padroes,m03q20_001,wavy annular,-0.44947190886147759,1
+wps,center,slope,quatro_padroes,m03q40_001,wavy annular,0.033741220229565633,1
+wps,center,slope,quatro_padroes,m04q40_001,wavy annular,0.013411509860533381,1
+wps,center,slope,quatro_padroes,m04q80_001,wavy annular,0.00036688949546729324,1
+wps,center,slope,quatro_padroes,m05q80_001,wavy annular,-0.57012812599011586,1
+wps,center,slope,quatro_padroes,m06q40_001,wavy annular,-0.63349829899858401,0
+wps,center,slope,quatro_padroes,m06q80_001,wavy annular,-0.56275006203936184,1
+wps,center,slope,quatro_padroes,m07q80_001,wavy annular,-0.4654826361613893,0
+wps,center,slope,quatro_padroes,m05q01_001,plug,0.16929760658199178,0
+wps,center,slope,quatro_padroes,m06q01_001,plug,-0.41570172182250947,0
+wps,center,slope,quatro_padroes,m07q05_001,plug,0.11525087548020894,0
+wps,center,slope,quatro_padroes,m04q01_001,slug,-0.24166128751106863,0
+wps,center,slope,quatro_padroes,m05q05_001,slug,-0.61681988748047445,0
+wps,center,slope,quatro_padroes,m06q05_001,slug,-0.71586228448449563,0
+wps,center,width,churn_annular,m03q05_001,churn,-0.34108527131782851,1
+wps,center,width,churn_annular,m04q10_001,churn,0.23125000000000032,0
+wps,center,width,churn_annular,m04q20_001,churn,0.32286995515695094,1
+wps,center,width,churn_annular,m05q10_001,churn,-0.14285714285714388,1
+wps,center,width,churn_annular,m05q20_001,churn,-0.038095238095237523,0
+wps,center,width,churn_annular,m05q40_001,churn,-0.37226277372262795,1
+wps,center,width,churn_annular,m06q10_001,churn,0.28529411764705898,1
+wps,center,width,churn_annular,m06q20_001,churn,-0.18691588785046803,0.66666666666666663
+wps,center,width,churn_annular,m07q20_001,churn,0.32490974729241895,1
+wps,center,width,churn_annular,m07q40_001,churn,-0.24324324324324365,0
+wps,center,width,churn_annular,m03q10_001,wavy annular,0.11324786324786348,0.5
+wps,center,width,churn_annular,m03q20_001,wavy annular,-0.35894039735099381,0
+wps,center,width,churn_annular,m03q40_001,wavy annular,0.054054054054054557,0
+wps,center,width,churn_annular,m04q40_001,wavy annular,0.47687224669603473,1
+wps,center,width,churn_annular,m04q80_001,wavy annular,0.47687224669603528,1
+wps,center,width,churn_annular,m05q80_001,wavy annular,0.46862348178137664,1
+wps,center,width,churn_annular,m06q40_001,wavy annular,-0.12499999999999888,0
+wps,center,width,churn_annular,m06q80_001,wavy annular,0.44288389513108695,1
+wps,center,width,churn_annular,m07q80_001,wavy annular,-0.23448275862068982,0
+wps,center,width,plug_slug,m05q01_001,plug,0.30952380952381064,0.5
+wps,center,width,plug_slug,m06q01_001,plug,-0.33333333333333731,0
+wps,center,width,plug_slug,m07q05_001,plug,0.055555555555560396,0
+wps,center,width,plug_slug,m04q01_001,slug,0.20588235294117768,0
+wps,center,width,plug_slug,m05q05_001,slug,-0.58024691358024283,0
+wps,center,width,plug_slug,m06q05_001,slug,0.33606557377049273,1
+wps,center,width,quatro_padroes,m03q05_001,churn,-0.58139534883720922,0.33333333333333331
+wps,center,width,quatro_padroes,m04q10_001,churn,-0.39024390243902424,0
+wps,center,width,quatro_padroes,m04q20_001,churn,-0.16556291390728572,0
+wps,center,width,quatro_padroes,m05q10_001,churn,-0.39999999999999802,0.5
+wps,center,width,quatro_padroes,m05q20_001,churn,-0.42857142857142899,0
+wps,center,width,quatro_padroes,m05q40_001,churn,-0.58394160583941601,1
+wps,center,width,quatro_padroes,m06q10_001,churn,-7.9942025013735019e-16,1
+wps,center,width,quatro_padroes,m06q20_001,churn,-0.43925233644859596,0.66666666666666663
+wps,center,width,quatro_padroes,m07q20_001,churn,-0.037433155080215219,1
+wps,center,width,quatro_padroes,m07q40_001,churn,-0.48648648648648413,0
+wps,center,width,quatro_padroes,m03q10_001,wavy annular,-0.42168674698794867,0.25
+wps,center,width,quatro_padroes,m03q20_001,wavy annular,-0.57615894039735116,0
+wps,center,width,quatro_padroes,m03q40_001,wavy annular,-0.39682539682539381,0
+wps,center,width,quatro_padroes,m04q40_001,wavy annular,-0.21403508771929872,1
+wps,center,width,quatro_padroes,m04q80_001,wavy annular,-0.21403508771929836,1
+wps,center,width,quatro_padroes,m05q80_001,wavy annular,-0.18730158730158755,0
+wps,center,width,quatro_padroes,m06q40_001,wavy annular,-0.41666666666666519,0
+wps,center,width,quatro_padroes,m06q80_001,wavy annular,-0.14845938375350265,1
+wps,center,width,quatro_padroes,m07q80_001,wavy annular,-0.5632183908045979,0
+wps,center,width,quatro_padroes,m05q01_001,plug,-0.23371647509578539,0
+wps,center,width,quatro_padroes,m06q01_001,plug,-0.33333333333333731,0
+wps,center,width,quatro_padroes,m07q05_001,plug,0.055555555555560396,0
+wps,center,width,quatro_padroes,m04q01_001,slug,0.1743119266055046,0
+wps,center,width,quatro_padroes,m05q05_001,slug,-0.58024691358024283,0
+wps,center,width,quatro_padroes,m06q05_001,slug,-0.02962962962963012,0
+wps,suffix,pearson_residual,churn_annular,m03q05_001,churn,-0.17310288755343142,0
+wps,suffix,pearson_residual,churn_annular,m04q10_001,churn,-0.058679991164844889,0
+wps,suffix,pearson_residual,churn_annular,m04q20_001,churn,-0.16413728263744209,0
+wps,suffix,pearson_residual,churn_annular,m05q10_001,churn,-0.11332726581457199,0
+wps,suffix,pearson_residual,churn_annular,m05q20_001,churn,0.0013050420685283906,1
+wps,suffix,pearson_residual,churn_annular,m05q40_001,churn,-0.0510639229107838,1
+wps,suffix,pearson_residual,churn_annular,m06q10_001,churn,-0.0089945988250373053,0
+wps,suffix,pearson_residual,churn_annular,m06q20_001,churn,-0.0037718797290450341,0
+wps,suffix,pearson_residual,churn_annular,m07q20_001,churn,-0.035960346075371394,0
+wps,suffix,pearson_residual,churn_annular,m07q40_001,churn,0.0011548534679818811,0
+wps,suffix,pearson_residual,churn_annular,m03q10_001,wavy annular,0.044482866176945503,0
+wps,suffix,pearson_residual,churn_annular,m03q20_001,wavy annular,-0.10838496590125173,0
+wps,suffix,pearson_residual,churn_annular,m03q40_001,wavy annular,0.026483863743001865,0
+wps,suffix,pearson_residual,churn_annular,m04q40_001,wavy annular,0.065011965633007596,1
+wps,suffix,pearson_residual,churn_annular,m04q80_001,wavy annular,0.022149216086219458,1
+wps,suffix,pearson_residual,churn_annular,m05q80_001,wavy annular,0.086087440628961093,0
+wps,suffix,pearson_residual,churn_annular,m06q40_001,wavy annular,0.052557124643707209,1
+wps,suffix,pearson_residual,churn_annular,m06q80_001,wavy annular,0.10150226749098173,1
+wps,suffix,pearson_residual,churn_annular,m07q80_001,wavy annular,-0.043863254000404674,1
+wps,suffix,pearson_residual,plug_slug,m05q01_001,plug,0.46104475145905277,1
+wps,suffix,pearson_residual,plug_slug,m06q01_001,plug,0.41502100505628214,1
+wps,suffix,pearson_residual,plug_slug,m07q05_001,plug,0.44610779961029767,1
+wps,suffix,pearson_residual,plug_slug,m04q01_001,slug,-0.25599460553902087,0
+wps,suffix,pearson_residual,plug_slug,m05q05_001,slug,-0.14658931485521348,0
+wps,suffix,pearson_residual,plug_slug,m06q05_001,slug,0.093828145064618576,1
+wps,suffix,pearson_residual,quatro_padroes,m03q05_001,churn,-0.29154694458824615,0
+wps,suffix,pearson_residual,quatro_padroes,m04q10_001,churn,-0.058679991164844889,0
+wps,suffix,pearson_residual,quatro_padroes,m04q20_001,churn,-0.16413728263744209,0
+wps,suffix,pearson_residual,quatro_padroes,m05q10_001,churn,-0.11332726581457199,0
+wps,suffix,pearson_residual,quatro_padroes,m05q20_001,churn,-0.41298253552436165,0
+wps,suffix,pearson_residual,quatro_padroes,m05q40_001,churn,-0.32578976567333673,0
+wps,suffix,pearson_residual,quatro_padroes,m06q10_001,churn,-0.20706887105158261,0
+wps,suffix,pearson_residual,quatro_padroes,m06q20_001,churn,-0.32358005876265927,0
+wps,suffix,pearson_residual,quatro_padroes,m07q20_001,churn,-0.20488439092258695,0
+wps,suffix,pearson_residual,quatro_padroes,m07q40_001,churn,-0.28550328802881964,0
+wps,suffix,pearson_residual,quatro_padroes,m03q10_001,wavy annular,0.044482866176945503,0
+wps,suffix,pearson_residual,quatro_padroes,m03q20_001,wavy annular,-0.32029791038880767,0
+wps,suffix,pearson_residual,quatro_padroes,m03q40_001,wavy annular,0.026483863743001865,0
+wps,suffix,pearson_residual,quatro_padroes,m04q40_001,wavy annular,-0.15463539971825277,1
+wps,suffix,pearson_residual,quatro_padroes,m04q80_001,wavy annular,-0.1736945112554005,1
+wps,suffix,pearson_residual,quatro_padroes,m05q80_001,wavy annular,-0.13408319445327338,0
+wps,suffix,pearson_residual,quatro_padroes,m06q40_001,wavy annular,-0.094570470328952716,1
+wps,suffix,pearson_residual,quatro_padroes,m06q80_001,wavy annular,0.10150226749098173,1
+wps,suffix,pearson_residual,quatro_padroes,m07q80_001,wavy annular,-0.31870042362213913,1
+wps,suffix,pearson_residual,quatro_padroes,m05q01_001,plug,0.35429521387454016,0
+wps,suffix,pearson_residual,quatro_padroes,m06q01_001,plug,0.30730553167490005,0
+wps,suffix,pearson_residual,quatro_padroes,m07q05_001,plug,0.34427766751831423,0
+wps,suffix,pearson_residual,quatro_padroes,m04q01_001,slug,-0.25599460553902087,0
+wps,suffix,pearson_residual,quatro_padroes,m05q05_001,slug,-0.15371692185602118,0
+wps,suffix,pearson_residual,quatro_padroes,m06q05_001,slug,0.0765076893143493,0
+wps,suffix,hellinger,churn_annular,m03q05_001,churn,0.19723026994734452,1
+wps,suffix,hellinger,churn_annular,m04q10_001,churn,0.28109198978769645,0
+wps,suffix,hellinger,churn_annular,m04q20_001,churn,0.17115104202178538,1
+wps,suffix,hellinger,churn_annular,m05q10_001,churn,0.026757016383548854,1
+wps,suffix,hellinger,churn_annular,m05q20_001,churn,0.17328945044494051,1
+wps,suffix,hellinger,churn_annular,m05q40_001,churn,-0.083932877049382848,0
+wps,suffix,hellinger,churn_annular,m06q10_001,churn,0.17921468994914702,1
+wps,suffix,hellinger,churn_annular,m06q20_001,churn,0.18113679238156455,1
+wps,suffix,hellinger,churn_annular,m07q20_001,churn,0.20134526404589825,1
+wps,suffix,hellinger,churn_annular,m07q40_001,churn,0.28655077280848812,1
+wps,suffix,hellinger,churn_annular,m03q10_001,wavy annular,0.090622232656780391,0
+wps,suffix,hellinger,churn_annular,m03q20_001,wavy annular,0.13022625698574311,1
+wps,suffix,hellinger,churn_annular,m03q40_001,wavy annular,-0.2727298086130478,0
+wps,suffix,hellinger,churn_annular,m04q40_001,wavy annular,0.2421376106898514,1
+wps,suffix,hellinger,churn_annular,m04q80_001,wavy annular,0.091983874315115136,1
+wps,suffix,hellinger,churn_annular,m05q80_001,wavy annular,0.16074793224996847,0
+wps,suffix,hellinger,churn_annular,m06q40_001,wavy annular,0.23567747777076176,1
+wps,suffix,hellinger,churn_annular,m06q80_001,wavy annular,0.028250580473638064,1
+wps,suffix,hellinger,churn_annular,m07q80_001,wavy annular,0.17551040847161181,1
+wps,suffix,hellinger,plug_slug,m05q01_001,plug,0.5105135276587901,1
+wps,suffix,hellinger,plug_slug,m06q01_001,plug,0.30261447495355281,0
+wps,suffix,hellinger,plug_slug,m07q05_001,plug,0.47343274293190757,1
+wps,suffix,hellinger,plug_slug,m04q01_001,slug,0.082094242295199321,1
+wps,suffix,hellinger,plug_slug,m05q05_001,slug,-0.10467361645194993,0
+wps,suffix,hellinger,plug_slug,m06q05_001,slug,0.29835835556320434,1
+wps,suffix,hellinger,quatro_padroes,m03q05_001,churn,0.19723026994734452,1
+wps,suffix,hellinger,quatro_padroes,m04q10_001,churn,0.28109198978769645,0
+wps,suffix,hellinger,quatro_padroes,m04q20_001,churn,0.17115104202178538,1
+wps,suffix,hellinger,quatro_padroes,m05q10_001,churn,0.026757016383548854,1
+wps,suffix,hellinger,quatro_padroes,m05q20_001,churn,0.17328945044494051,1
+wps,suffix,hellinger,quatro_padroes,m05q40_001,churn,-0.12533442852776677,0
+wps,suffix,hellinger,quatro_padroes,m06q10_001,churn,-0.092527223660872113,1
+wps,suffix,hellinger,quatro_padroes,m06q20_001,churn,0.071538482565726397,1
+wps,suffix,hellinger,quatro_padroes,m07q20_001,churn,0.20134526404589825,1
+wps,suffix,hellinger,quatro_padroes,m07q40_001,churn,0.12853047670253148,1
+wps,suffix,hellinger,quatro_padroes,m03q10_001,wavy annular,0.090622232656780391,0
+wps,suffix,hellinger,quatro_padroes,m03q20_001,wavy annular,0.13022625698574311,1
+wps,suffix,hellinger,quatro_padroes,m03q40_001,wavy annular,-0.2727298086130478,0
+wps,suffix,hellinger,quatro_padroes,m04q40_001,wavy annular,0.22167539139166403,1
+wps,suffix,hellinger,quatro_padroes,m04q80_001,wavy annular,0.091983874315115136,1
+wps,suffix,hellinger,quatro_padroes,m05q80_001,wavy annular,-0.10979651087852649,0
+wps,suffix,hellinger,quatro_padroes,m06q40_001,wavy annular,0.104661959895704,1
+wps,suffix,hellinger,quatro_padroes,m06q80_001,wavy annular,0.028250580473638064,1
+wps,suffix,hellinger,quatro_padroes,m07q80_001,wavy annular,-0.059171765869908848,1
+wps,suffix,hellinger,quatro_padroes,m05q01_001,plug,0.49334231359994823,1
+wps,suffix,hellinger,quatro_padroes,m06q01_001,plug,0.15035283609975472,0
+wps,suffix,hellinger,quatro_padroes,m07q05_001,plug,0.47244746637987112,1
+wps,suffix,hellinger,quatro_padroes,m04q01_001,slug,0.082094242295199321,1
+wps,suffix,hellinger,quatro_padroes,m05q05_001,slug,-0.21020171399737531,0
+wps,suffix,hellinger,quatro_padroes,m06q05_001,slug,0.18361452201349962,1
+wps,suffix,wasserstein,churn_annular,m03q05_001,churn,-0.043318758295831719,1
+wps,suffix,wasserstein,churn_annular,m04q10_001,churn,0.22150005209818571,1
+wps,suffix,wasserstein,churn_annular,m04q20_001,churn,0.12946874921972173,1
+wps,suffix,wasserstein,churn_annular,m05q10_001,churn,-0.11479566351363016,0
+wps,suffix,wasserstein,churn_annular,m05q20_001,churn,-0.064790351563985799,1
+wps,suffix,wasserstein,churn_annular,m05q40_001,churn,-0.26666104979834176,0
+wps,suffix,wasserstein,churn_annular,m06q10_001,churn,0.031813944551736556,1
+wps,suffix,wasserstein,churn_annular,m06q20_001,churn,0.077695438223986515,1
+wps,suffix,wasserstein,churn_annular,m07q20_001,churn,-0.024587771570114044,1
+wps,suffix,wasserstein,churn_annular,m07q40_001,churn,0.19903630860238999,1
+wps,suffix,wasserstein,churn_annular,m03q10_001,wavy annular,0.18095100414095203,1
+wps,suffix,wasserstein,churn_annular,m03q20_001,wavy annular,0.25745040674576802,0
+wps,suffix,wasserstein,churn_annular,m03q40_001,wavy annular,-0.21139140654346458,0
+wps,suffix,wasserstein,churn_annular,m04q40_001,wavy annular,0.39808629330895834,1
+wps,suffix,wasserstein,churn_annular,m04q80_001,wavy annular,0.19434591290121589,1
+wps,suffix,wasserstein,churn_annular,m05q80_001,wavy annular,0.24274494774490329,0
+wps,suffix,wasserstein,churn_annular,m06q40_001,wavy annular,0.34695940249303386,1
+wps,suffix,wasserstein,churn_annular,m06q80_001,wavy annular,0.22145819483990933,1
+wps,suffix,wasserstein,churn_annular,m07q80_001,wavy annular,0.30852188391917501,1
+wps,suffix,wasserstein,plug_slug,m05q01_001,plug,0.56976413319976416,1
+wps,suffix,wasserstein,plug_slug,m06q01_001,plug,0.29707855429733943,0
+wps,suffix,wasserstein,plug_slug,m07q05_001,plug,0.47259688585082277,1
+wps,suffix,wasserstein,plug_slug,m04q01_001,slug,-0.14887768136568191,0
+wps,suffix,wasserstein,plug_slug,m05q05_001,slug,-0.41289105329543163,0
+wps,suffix,wasserstein,plug_slug,m06q05_001,slug,-0.053184631869338667,0
+wps,suffix,wasserstein,quatro_padroes,m03q05_001,churn,-0.043318758295831719,1
+wps,suffix,wasserstein,quatro_padroes,m04q10_001,churn,0.22150005209818571,1
+wps,suffix,wasserstein,quatro_padroes,m04q20_001,churn,0.12946874921972173,1
+wps,suffix,wasserstein,quatro_padroes,m05q10_001,churn,-0.11479566351363016,0
+wps,suffix,wasserstein,quatro_padroes,m05q20_001,churn,-0.064790351563985799,1
+wps,suffix,wasserstein,quatro_padroes,m05q40_001,churn,-0.26666104979834176,0
+wps,suffix,wasserstein,quatro_padroes,m06q10_001,churn,-0.44608067294115883,0
+wps,suffix,wasserstein,quatro_padroes,m06q20_001,churn,0.077695438223986515,1
+wps,suffix,wasserstein,quatro_padroes,m07q20_001,churn,-0.024587771570114044,1
+wps,suffix,wasserstein,quatro_padroes,m07q40_001,churn,0.10935108033163377,1
+wps,suffix,wasserstein,quatro_padroes,m03q10_001,wavy annular,0.18095100414095203,1
+wps,suffix,wasserstein,quatro_padroes,m03q20_001,wavy annular,0.25745040674576802,0
+wps,suffix,wasserstein,quatro_padroes,m03q40_001,wavy annular,-0.21139140654346458,0
+wps,suffix,wasserstein,quatro_padroes,m04q40_001,wavy annular,0.38416090783100959,1
+wps,suffix,wasserstein,quatro_padroes,m04q80_001,wavy annular,0.19434591290121589,1
+wps,suffix,wasserstein,quatro_padroes,m05q80_001,wavy annular,0.00490624637342913,0
+wps,suffix,wasserstein,quatro_padroes,m06q40_001,wavy annular,0.10879713057648953,1
+wps,suffix,wasserstein,quatro_padroes,m06q80_001,wavy annular,0.22145819483990933,0
+wps,suffix,wasserstein,quatro_padroes,m07q80_001,wavy annular,-0.18068833128180883,1
+wps,suffix,wasserstein,quatro_padroes,m05q01_001,plug,0.56976413319976416,1
+wps,suffix,wasserstein,quatro_padroes,m06q01_001,plug,0.1189333378307605,0
+wps,suffix,wasserstein,quatro_padroes,m07q05_001,plug,0.47259688585082277,1
+wps,suffix,wasserstein,quatro_padroes,m04q01_001,slug,-0.14887768136568191,0
+wps,suffix,wasserstein,quatro_padroes,m05q05_001,slug,-0.50984910816924234,0
+wps,suffix,wasserstein,quatro_padroes,m06q05_001,slug,-0.053184631869338667,0
+wps,suffix,trio,churn_annular,m03q05_001,churn,-0.1085771151670229,0
+wps,suffix,trio,churn_annular,m04q10_001,churn,-0.035167414319237991,0
+wps,suffix,trio,churn_annular,m04q20_001,churn,0.2502159577801929,1
+wps,suffix,trio,churn_annular,m05q10_001,churn,0.014241106440402686,0
+wps,suffix,trio,churn_annular,m05q20_001,churn,0.064276335564666054,0
+wps,suffix,trio,churn_annular,m05q40_001,churn,-0.19708764492487699,1
+wps,suffix,trio,churn_annular,m06q10_001,churn,0.17235024539767568,1
+wps,suffix,trio,churn_annular,m06q20_001,churn,0.069476476159042788,1
+wps,suffix,trio,churn_annular,m07q20_001,churn,0.056983469448299594,1
+wps,suffix,trio,churn_annular,m07q40_001,churn,0.26010940498741936,1
+wps,suffix,trio,churn_annular,m03q10_001,wavy annular,-0.19709977169219631,0
+wps,suffix,trio,churn_annular,m03q20_001,wavy annular,0.01215172644085279,0
+wps,suffix,trio,churn_annular,m03q40_001,wavy annular,-0.10195286042224239,0
+wps,suffix,trio,churn_annular,m04q40_001,wavy annular,0.25177661741160184,0
+wps,suffix,trio,churn_annular,m04q80_001,wavy annular,0.085900622407872385,0
+wps,suffix,trio,churn_annular,m05q80_001,wavy annular,-0.10166430132788108,0
+wps,suffix,trio,churn_annular,m06q40_001,wavy annular,0.19426467640239992,1
+wps,suffix,trio,churn_annular,m06q80_001,wavy annular,0.075022441746512139,0
+wps,suffix,trio,churn_annular,m07q80_001,wavy annular,0.22427705824006164,1
+wps,suffix,trio,plug_slug,m05q01_001,plug,0.66967571311718876,1
+wps,suffix,trio,plug_slug,m06q01_001,plug,0.42797038325698677,0
+wps,suffix,trio,plug_slug,m07q05_001,plug,0.68726110418104169,1
+wps,suffix,trio,plug_slug,m04q01_001,slug,0.17856107355770132,1
+wps,suffix,trio,plug_slug,m05q05_001,slug,-0.50722638736016568,0
+wps,suffix,trio,plug_slug,m06q05_001,slug,0.31038892310511668,1
+wps,suffix,trio,quatro_padroes,m03q05_001,churn,-0.1085771151670229,0
+wps,suffix,trio,quatro_padroes,m04q10_001,churn,-0.035167414319237991,0
+wps,suffix,trio,quatro_padroes,m04q20_001,churn,0.045624662087952253,1
+wps,suffix,trio,quatro_padroes,m05q10_001,churn,-0.18863518466574339,0
+wps,suffix,trio,quatro_padroes,m05q20_001,churn,0.064276335564666054,0
+wps,suffix,trio,quatro_padroes,m05q40_001,churn,-0.2209232508640625,0
+wps,suffix,trio,quatro_padroes,m06q10_001,churn,-0.15641498144084509,1
+wps,suffix,trio,quatro_padroes,m06q20_001,churn,-0.096192193443433077,1
+wps,suffix,trio,quatro_padroes,m07q20_001,churn,0.056983469448299594,1
+wps,suffix,trio,quatro_padroes,m07q40_001,churn,0.036989592311117904,1
+wps,suffix,trio,quatro_padroes,m03q10_001,wavy annular,-0.19709977169219631,0
+wps,suffix,trio,quatro_padroes,m03q20_001,wavy annular,0.01215172644085279,0
+wps,suffix,trio,quatro_padroes,m03q40_001,wavy annular,-0.10195286042224239,0
+wps,suffix,trio,quatro_padroes,m04q40_001,wavy annular,0.076387702262672205,0
+wps,suffix,trio,quatro_padroes,m04q80_001,wavy annular,0.085900622407872385,0
+wps,suffix,trio,quatro_padroes,m05q80_001,wavy annular,-0.64405677811542617,0
+wps,suffix,trio,quatro_padroes,m06q40_001,wavy annular,-0.45092771008838178,0
+wps,suffix,trio,quatro_padroes,m06q80_001,wavy annular,-0.14687713872597127,0
+wps,suffix,trio,quatro_padroes,m07q80_001,wavy annular,-0.38935694647384828,1
+wps,suffix,trio,quatro_padroes,m05q01_001,plug,0.66967571311718876,1
+wps,suffix,trio,quatro_padroes,m06q01_001,plug,0.2981999569000312,0
+wps,suffix,trio,quatro_padroes,m07q05_001,plug,0.68726110418104169,1
+wps,suffix,trio,quatro_padroes,m04q01_001,slug,0.17856107355770132,1
+wps,suffix,trio,quatro_padroes,m05q05_001,slug,-0.50722638736016568,0
+wps,suffix,trio,quatro_padroes,m06q05_001,slug,0.18582289476762551,0
+wps,suffix,log_peak,churn_annular,m03q05_001,churn,-0.35774647887323968,0
+wps,suffix,log_peak,churn_annular,m04q10_001,churn,-0.30848861283643919,0
+wps,suffix,log_peak,churn_annular,m04q20_001,churn,0.10859728506787394,1
+wps,suffix,log_peak,churn_annular,m05q10_001,churn,0.075000000000001468,0
+wps,suffix,log_peak,churn_annular,m05q20_001,churn,-0.0467836257309929,1
+wps,suffix,log_peak,churn_annular,m05q40_001,churn,-0.149171270718232,1
+wps,suffix,log_peak,churn_annular,m06q10_001,churn,0.10742187500000022,0
+wps,suffix,log_peak,churn_annular,m06q20_001,churn,-0.0467836257309929,1
+wps,suffix,log_peak,churn_annular,m07q20_001,churn,-0.21761658031088049,1
+wps,suffix,log_peak,churn_annular,m07q40_001,churn,0.11063829787234108,0
+wps,suffix,log_peak,churn_annular,m03q10_001,wavy annular,-0.24145077720207306,0
+wps,suffix,log_peak,churn_annular,m03q20_001,wavy annular,0.15322580645161327,1
+wps,suffix,log_peak,churn_annular,m03q40_001,wavy annular,0.13561076604554906,0
+wps,suffix,log_peak,churn_annular,m04q40_001,wavy annular,0.20212765957446827,1
+wps,suffix,log_peak,churn_annular,m04q80_001,wavy annular,0.19854881266490806,0
+wps,suffix,log_peak,churn_annular,m05q80_001,wavy annular,-0.28264462809917384,0
+wps,suffix,log_peak,churn_annular,m06q40_001,wavy annular,-0.12405063291139214,1
+wps,suffix,log_peak,churn_annular,m06q80_001,wavy annular,0.24003322259136237,0
+wps,suffix,log_peak,churn_annular,m07q80_001,wavy annular,-0.12405063291139214,1
+wps,suffix,log_peak,plug_slug,m05q01_001,plug,0.66447368421052655,1
+wps,suffix,log_peak,plug_slug,m06q01_001,plug,-0.43434343434343381,0
+wps,suffix,log_peak,plug_slug,m07q05_001,plug,0.65822784810126611,1
+wps,suffix,log_peak,plug_slug,m04q01_001,slug,-0.040000000000001992,0
+wps,suffix,log_peak,plug_slug,m05q05_001,slug,0.52631578947368329,1
+wps,suffix,log_peak,plug_slug,m06q05_001,slug,0.51666666666666616,1
+wps,suffix,log_peak,quatro_padroes,m03q05_001,churn,-0.35774647887323968,0
+wps,suffix,log_peak,quatro_padroes,m04q10_001,churn,-0.30848861283643919,0
+wps,suffix,log_peak,quatro_padroes,m04q20_001,churn,-0.60406091370558246,1
+wps,suffix,log_peak,quatro_padroes,m05q10_001,churn,-0.52972972972972987,0
+wps,suffix,log_peak,quatro_padroes,m05q20_001,churn,-0.59649122807017418,1
+wps,suffix,log_peak,quatro_padroes,m05q40_001,churn,-0.70165745856353523,0
+wps,suffix,log_peak,quatro_padroes,m06q10_001,churn,-0.42888402625820571,0
+wps,suffix,log_peak,quatro_padroes,m06q20_001,churn,-0.59649122807017418,1
+wps,suffix,log_peak,quatro_padroes,m07q20_001,churn,-0.67357512953367815,0.5
+wps,suffix,log_peak,quatro_padroes,m07q40_001,churn,-0.65550239234449625,0
+wps,suffix,log_peak,quatro_padroes,m03q10_001,wavy annular,-0.58549222797927414,0
+wps,suffix,log_peak,quatro_padroes,m03q20_001,wavy annular,-0.54648526077097404,1
+wps,suffix,log_peak,quatro_padroes,m03q40_001,wavy annular,0.065298507462686645,0
+wps,suffix,log_peak,quatro_padroes,m04q40_001,wavy annular,-0.50222222222222146,0
+wps,suffix,log_peak,quatro_padroes,m04q80_001,wavy annular,0.040789473684210667,0
+wps,suffix,log_peak,quatro_padroes,m05q80_001,wavy annular,-0.74655647382920098,0
+wps,suffix,log_peak,quatro_padroes,m06q40_001,wavy annular,-0.62869198312236241,1
+wps,suffix,log_peak,quatro_padroes,m06q80_001,wavy annular,-0.14025500910746752,0
+wps,suffix,log_peak,quatro_padroes,m07q80_001,wavy annular,-0.62869198312236241,1
+wps,suffix,log_peak,quatro_padroes,m05q01_001,plug,0.66447368421052655,1
+wps,suffix,log_peak,quatro_padroes,m06q01_001,plug,-0.43434343434343381,0
+wps,suffix,log_peak,quatro_padroes,m07q05_001,plug,0.65822784810126611,1
+wps,suffix,log_peak,quatro_padroes,m04q01_001,slug,-0.040000000000001992,0
+wps,suffix,log_peak,quatro_padroes,m05q05_001,slug,0.47402597402597274,0
+wps,suffix,log_peak,quatro_padroes,m06q05_001,slug,0.14705882352941002,0
+wps,suffix,slope,churn_annular,m03q05_001,churn,-0.12702699028248837,0
+wps,suffix,slope,churn_annular,m04q10_001,churn,0.059909795287533284,1
+wps,suffix,slope,churn_annular,m04q20_001,churn,-0.046112189755723142,0
+wps,suffix,slope,churn_annular,m05q10_001,churn,0.064959920319294484,1
+wps,suffix,slope,churn_annular,m05q20_001,churn,-0.11452672245811697,0
+wps,suffix,slope,churn_annular,m05q40_001,churn,0.072196956888261374,1
+wps,suffix,slope,churn_annular,m06q10_001,churn,-0.044227221023453042,0
+wps,suffix,slope,churn_annular,m06q20_001,churn,0.02116199224819992,0
+wps,suffix,slope,churn_annular,m07q20_001,churn,-0.13406155619187149,0
+wps,suffix,slope,churn_annular,m07q40_001,churn,-0.054038126486383578,0
+wps,suffix,slope,churn_annular,m03q10_001,wavy annular,-0.062729308471410672,1
+wps,suffix,slope,churn_annular,m03q20_001,wavy annular,-0.059366037163492529,0
+wps,suffix,slope,churn_annular,m03q40_001,wavy annular,-0.063237440889820723,1
+wps,suffix,slope,churn_annular,m04q40_001,wavy annular,-0.18894257471483469,0
+wps,suffix,slope,churn_annular,m04q80_001,wavy annular,-0.075197795700854428,0
+wps,suffix,slope,churn_annular,m05q80_001,wavy annular,-0.15103860400229027,0
+wps,suffix,slope,churn_annular,m06q40_001,wavy annular,-0.15407753530265572,1
+wps,suffix,slope,churn_annular,m06q80_001,wavy annular,-0.13722460898491098,0
+wps,suffix,slope,churn_annular,m07q80_001,wavy annular,-0.15594506027032176,1
+wps,suffix,slope,plug_slug,m05q01_001,plug,0.32181009388142945,0
+wps,suffix,slope,plug_slug,m06q01_001,plug,0.41198762622884622,0
+wps,suffix,slope,plug_slug,m07q05_001,plug,0.49903475370695988,1
+wps,suffix,slope,plug_slug,m04q01_001,slug,0.094121824775586768,1
+wps,suffix,slope,plug_slug,m05q05_001,slug,-0.72601226972661437,0
+wps,suffix,slope,plug_slug,m06q05_001,slug,-0.48104608816700356,0
+wps,suffix,slope,quatro_padroes,m03q05_001,churn,-0.12702699028248837,0
+wps,suffix,slope,quatro_padroes,m04q10_001,churn,0.059909795287533284,1
+wps,suffix,slope,quatro_padroes,m04q20_001,churn,-0.46596820701264213,0
+wps,suffix,slope,quatro_padroes,m05q10_001,churn,0.064959920319294484,1
+wps,suffix,slope,quatro_padroes,m05q20_001,churn,-0.11452672245811697,0
+wps,suffix,slope,quatro_padroes,m05q40_001,churn,0.072196956888261374,1
+wps,suffix,slope,quatro_padroes,m06q10_001,churn,-0.77705181553406777,0
+wps,suffix,slope,quatro_padroes,m06q20_001,churn,-0.14181962746555238,0
+wps,suffix,slope,quatro_padroes,m07q20_001,churn,-0.13406155619187149,0
+wps,suffix,slope,quatro_padroes,m07q40_001,churn,-0.53395133612333978,0
+wps,suffix,slope,quatro_padroes,m03q10_001,wavy annular,-0.062729308471410672,1
+wps,suffix,slope,quatro_padroes,m03q20_001,wavy annular,-0.059366037163492529,0
+wps,suffix,slope,quatro_padroes,m03q40_001,wavy annular,-0.063237440889820723,1
+wps,suffix,slope,quatro_padroes,m04q40_001,wavy annular,-0.18894257471483469,0
+wps,suffix,slope,quatro_padroes,m04q80_001,wavy annular,-0.075197795700854428,0
+wps,suffix,slope,quatro_padroes,m05q80_001,wavy annular,-0.56936322963024411,0
+wps,suffix,slope,quatro_padroes,m06q40_001,wavy annular,-0.46473825594056173,1
+wps,suffix,slope,quatro_padroes,m06q80_001,wavy annular,-0.74098826585479638,0
+wps,suffix,slope,quatro_padroes,m07q80_001,wavy annular,-0.4526897543671512,1
+wps,suffix,slope,quatro_padroes,m05q01_001,plug,0.32181009388142945,0
+wps,suffix,slope,quatro_padroes,m06q01_001,plug,-0.0068086920522914688,0
+wps,suffix,slope,quatro_padroes,m07q05_001,plug,0.49903475370695988,0
+wps,suffix,slope,quatro_padroes,m04q01_001,slug,0.094121824775586768,1
+wps,suffix,slope,quatro_padroes,m05q05_001,slug,-0.72601226972661437,0
+wps,suffix,slope,quatro_padroes,m06q05_001,slug,-0.48104608816700356,0
+wps,suffix,width,churn_annular,m03q05_001,churn,0.54117647058823493,1
+wps,suffix,width,churn_annular,m04q10_001,churn,0.36774193548387107,0
+wps,suffix,width,churn_annular,m04q20_001,churn,0.548022598870056,1
+wps,suffix,width,churn_annular,m05q10_001,churn,-0.3145161290322569,0
+wps,suffix,width,churn_annular,m05q20_001,churn,0.23966942148760184,1
+wps,suffix,width,churn_annular,m05q40_001,churn,-0.45121951219512202,0
+wps,suffix,width,churn_annular,m06q10_001,churn,0.48672566371681403,0
+wps,suffix,width,churn_annular,m06q20_001,churn,0.065420560747662587,0.5
+wps,suffix,width,churn_annular,m07q20_001,churn,0.54117647058823493,1
+wps,suffix,width,churn_annular,m07q40_001,churn,0.5353535353535348,1
+wps,suffix,width,churn_annular,m03q10_001,wavy annular,-0.036559139784946154,1
+wps,suffix,width,churn_annular,m03q20_001,wavy annular,0.20454545454545367,0.5
+wps,suffix,width,churn_annular,m03q40_001,wavy annular,-0.5465587044534419,0
+wps,suffix,width,churn_annular,m04q40_001,wavy annular,0.42974452554744541,1
+wps,suffix,width,churn_annular,m04q80_001,wavy annular,0.067796610169486779,0.66666666666666663
+wps,suffix,width,churn_annular,m05q80_001,wavy annular,0.30288461538461564,0
+wps,suffix,width,churn_annular,m06q40_001,wavy annular,0.43181818181818188,1
+wps,suffix,width,churn_annular,m06q80_001,wavy annular,0.14314516129032476,0
+wps,suffix,width,churn_annular,m07q80_001,wavy annular,0.37499999999999928,1
+wps,suffix,width,plug_slug,m05q01_001,plug,0.81506849315068808,1
+wps,suffix,width,plug_slug,m06q01_001,plug,0.84482758620689746,1
+wps,suffix,width,plug_slug,m07q05_001,plug,0.87704918032787083,1
+wps,suffix,width,plug_slug,m04q01_001,slug,0.3695652173913051,1
+wps,suffix,width,plug_slug,m05q05_001,slug,-0.73913043478260809,0
+wps,suffix,width,plug_slug,m06q05_001,slug,0.4142857142857147,1
+wps,suffix,width,quatro_padroes,m03q05_001,churn,0.13333333333333275,1
+wps,suffix,width,quatro_padroes,m04q10_001,churn,-0.051020408163265113,0
+wps,suffix,width,quatro_padroes,m04q20_001,churn,0.13978494623655852,1
+wps,suffix,width,quatro_padroes,m05q10_001,churn,-0.3145161290322569,0
+wps,suffix,width,quatro_padroes,m05q20_001,churn,0.12380952380952362,1
+wps,suffix,width,quatro_padroes,m05q40_001,churn,-0.67073170731707243,0
+wps,suffix,width,quatro_padroes,m06q10_001,churn,-0.017241379310345094,0
+wps,suffix,width,quatro_padroes,m06q20_001,churn,0.065420560747662587,0.5
+wps,suffix,width,quatro_padroes,m07q20_001,churn,0.13333333333333275,1
+wps,suffix,width,quatro_padroes,m07q40_001,churn,0.098039215686273606,1
+wps,suffix,width,quatro_padroes,m03q10_001,wavy annular,-0.036559139784946154,1
+wps,suffix,width,quatro_padroes,m03q20_001,wavy annular,-0.0476190476190438,0.5
+wps,suffix,width,quatro_padroes,m03q40_001,wavy annular,-0.55735492577597823,0
+wps,suffix,width,quatro_padroes,m04q40_001,wavy annular,-0.6800000000000036,1
+wps,suffix,width,quatro_padroes,m04q80_001,wavy annular,0.067796610169486779,0.66666666666666663
+wps,suffix,width,quatro_padroes,m05q80_001,wavy annular,-0.356321839080459,0
+wps,suffix,width,quatro_padroes,m06q40_001,wavy annular,-0.73333333333333461,0.5
+wps,suffix,width,quatro_padroes,m06q80_001,wavy annular,0.034090909090908957,0
+wps,suffix,width,quatro_padroes,m07q80_001,wavy annular,-0.47305389221556865,1
+wps,suffix,width,quatro_padroes,m05q01_001,plug,0.65384615384616007,0
+wps,suffix,width,quatro_padroes,m06q01_001,plug,0.73529411764706032,1
+wps,suffix,width,quatro_padroes,m07q05_001,plug,0.78571428571428903,1
+wps,suffix,width,quatro_padroes,m04q01_001,slug,-0.4482758620689653,0
+wps,suffix,width,quatro_padroes,m05q05_001,slug,-0.73913043478260809,0
+wps,suffix,width,quatro_padroes,m06q05_001,slug,-0.31707317073170743,0
+wps,full,pearson_residual,churn_annular,m03q05_001,churn,-0.32757918724851648,0
+wps,full,pearson_residual,churn_annular,m04q10_001,churn,0.13982530312125738,1
+wps,full,pearson_residual,churn_annular,m04q20_001,churn,-0.075590486612829286,1
+wps,full,pearson_residual,churn_annular,m05q10_001,churn,-0.093550166247820796,0
+wps,full,pearson_residual,churn_annular,m05q20_001,churn,0.1691394507781129,1
+wps,full,pearson_residual,churn_annular,m05q40_001,churn,-0.098466072753182893,0
+wps,full,pearson_residual,churn_annular,m06q10_001,churn,0.071391305154179019,1
+wps,full,pearson_residual,churn_annular,m06q20_001,churn,-0.060280415970514742,0
+wps,full,pearson_residual,churn_annular,m07q20_001,churn,0.07388707481532715,1
+wps,full,pearson_residual,churn_annular,m07q40_001,churn,-0.11376370015963005,0
+wps,full,pearson_residual,churn_annular,m03q10_001,wavy annular,0.32995030779770423,1
+wps,full,pearson_residual,churn_annular,m03q20_001,wavy annular,0.39548754216436721,1
+wps,full,pearson_residual,churn_annular,m03q40_001,wavy annular,0.24782782846080148,1
+wps,full,pearson_residual,churn_annular,m04q40_001,wavy annular,0.16926708313923142,0
+wps,full,pearson_residual,churn_annular,m04q80_001,wavy annular,0.40457685017683875,1
+wps,full,pearson_residual,churn_annular,m05q80_001,wavy annular,0.36855760105129926,1
+wps,full,pearson_residual,churn_annular,m06q40_001,wavy annular,0.042122502295981676,1
+wps,full,pearson_residual,churn_annular,m06q80_001,wavy annular,0.32653128893595801,1
+wps,full,pearson_residual,churn_annular,m07q80_001,wavy annular,-0.064634266441708624,1
+wps,full,pearson_residual,plug_slug,m05q01_001,plug,0.46001474869243919,1
+wps,full,pearson_residual,plug_slug,m06q01_001,plug,0.42469158623305947,1
+wps,full,pearson_residual,plug_slug,m07q05_001,plug,0.4035666868317217,1
+wps,full,pearson_residual,plug_slug,m04q01_001,slug,-0.13900965310711141,1
+wps,full,pearson_residual,plug_slug,m05q05_001,slug,-0.365539411170137,0
+wps,full,pearson_residual,plug_slug,m06q05_001,slug,-0.36472407828976616,0
+wps,full,pearson_residual,quatro_padroes,m03q05_001,churn,-0.32757918724851648,0
+wps,full,pearson_residual,quatro_padroes,m04q10_001,churn,-0.38759684477779288,0
+wps,full,pearson_residual,quatro_padroes,m04q20_001,churn,-0.09625075381559918,1
+wps,full,pearson_residual,quatro_padroes,m05q10_001,churn,-0.093550166247820796,0
+wps,full,pearson_residual,quatro_padroes,m05q20_001,churn,-0.37554561801804531,0
+wps,full,pearson_residual,quatro_padroes,m05q40_001,churn,-0.110616156441668,0
+wps,full,pearson_residual,quatro_padroes,m06q10_001,churn,-0.24409972503397509,0
+wps,full,pearson_residual,quatro_padroes,m06q20_001,churn,-0.37058865882630471,0
+wps,full,pearson_residual,quatro_padroes,m07q20_001,churn,-0.10750464058352538,1
+wps,full,pearson_residual,quatro_padroes,m07q40_001,churn,-0.11376370015963005,0
+wps,full,pearson_residual,quatro_padroes,m03q10_001,wavy annular,0.32995030779770423,1
+wps,full,pearson_residual,quatro_padroes,m03q20_001,wavy annular,0.39548754216436721,1
+wps,full,pearson_residual,quatro_padroes,m03q40_001,wavy annular,0.24782782846080148,1
+wps,full,pearson_residual,quatro_padroes,m04q40_001,wavy annular,0.12042295948368134,0
+wps,full,pearson_residual,quatro_padroes,m04q80_001,wavy annular,0.40457685017683875,1
+wps,full,pearson_residual,quatro_padroes,m05q80_001,wavy annular,0.36855760105129926,1
+wps,full,pearson_residual,quatro_padroes,m06q40_001,wavy annular,-0.25165316910399815,1
+wps,full,pearson_residual,quatro_padroes,m06q80_001,wavy annular,0.32653128893595801,1
+wps,full,pearson_residual,quatro_padroes,m07q80_001,wavy annular,-0.43622239473979635,1
+wps,full,pearson_residual,quatro_padroes,m05q01_001,plug,0.39997005556302201,1
+wps,full,pearson_residual,quatro_padroes,m06q01_001,plug,0.29207384736868497,0
+wps,full,pearson_residual,quatro_padroes,m07q05_001,plug,0.38886409576739306,0
+wps,full,pearson_residual,quatro_padroes,m04q01_001,slug,-0.1399127062716003,0
+wps,full,pearson_residual,quatro_padroes,m05q05_001,slug,-0.365539411170137,0
+wps,full,pearson_residual,quatro_padroes,m06q05_001,slug,-0.36472407828976616,0
+wps,full,hellinger,churn_annular,m03q05_001,churn,-0.04015818182969514,0
+wps,full,hellinger,churn_annular,m04q10_001,churn,0.3507933767032605,1
+wps,full,hellinger,churn_annular,m04q20_001,churn,0.34553705616086611,1
+wps,full,hellinger,churn_annular,m05q10_001,churn,0.32146079543870643,1
+wps,full,hellinger,churn_annular,m05q20_001,churn,0.30175730279174517,1
+wps,full,hellinger,churn_annular,m05q40_001,churn,-0.031169632781334076,1
+wps,full,hellinger,churn_annular,m06q10_001,churn,0.2863389760562759,1
+wps,full,hellinger,churn_annular,m06q20_001,churn,0.086803742398747927,1
+wps,full,hellinger,churn_annular,m07q20_001,churn,0.33091826652950856,1
+wps,full,hellinger,churn_annular,m07q40_001,churn,0.27339308194061024,1
+wps,full,hellinger,churn_annular,m03q10_001,wavy annular,0.086629684731924159,1
+wps,full,hellinger,churn_annular,m03q20_001,wavy annular,0.099483723910250246,1
+wps,full,hellinger,churn_annular,m03q40_001,wavy annular,-0.16356143022024502,0
+wps,full,hellinger,churn_annular,m04q40_001,wavy annular,0.24671605400172536,1
+wps,full,hellinger,churn_annular,m04q80_001,wavy annular,0.17660359564088135,1
+wps,full,hellinger,churn_annular,m05q80_001,wavy annular,0.28024365236241083,1
+wps,full,hellinger,churn_annular,m06q40_001,wavy annular,0.13091722423430388,1
+wps,full,hellinger,churn_annular,m06q80_001,wavy annular,0.23409227783413997,1
+wps,full,hellinger,churn_annular,m07q80_001,wavy annular,0.08061963886474556,1
+wps,full,hellinger,plug_slug,m05q01_001,plug,0.29274512419230264,0
+wps,full,hellinger,plug_slug,m06q01_001,plug,0.47917363671284513,1
+wps,full,hellinger,plug_slug,m07q05_001,plug,0.37114366811645799,1
+wps,full,hellinger,plug_slug,m04q01_001,slug,0.065127016487068284,0
+wps,full,hellinger,plug_slug,m05q05_001,slug,-0.47753764185500702,0
+wps,full,hellinger,plug_slug,m06q05_001,slug,-0.084137344387525279,0
+wps,full,hellinger,quatro_padroes,m03q05_001,churn,-0.04015818182969514,0
+wps,full,hellinger,quatro_padroes,m04q10_001,churn,0.16154560940784965,1
+wps,full,hellinger,quatro_padroes,m04q20_001,churn,0.3127647829981397,1
+wps,full,hellinger,quatro_padroes,m05q10_001,churn,0.32146079543870643,1
+wps,full,hellinger,quatro_padroes,m05q20_001,churn,0.30119464379217809,1
+wps,full,hellinger,quatro_padroes,m05q40_001,churn,-0.037132054431057292,1
+wps,full,hellinger,quatro_padroes,m06q10_001,churn,0.066938573362444756,0
+wps,full,hellinger,quatro_padroes,m06q20_001,churn,-0.069803732782822522,0
+wps,full,hellinger,quatro_padroes,m07q20_001,churn,0.22121508739251508,1
+wps,full,hellinger,quatro_padroes,m07q40_001,churn,0.16391041480595089,1
+wps,full,hellinger,quatro_padroes,m03q10_001,wavy annular,0.086629684731924159,1
+wps,full,hellinger,quatro_padroes,m03q20_001,wavy annular,0.099483723910250246,1
+wps,full,hellinger,quatro_padroes,m03q40_001,wavy annular,-0.16356143022024502,0
+wps,full,hellinger,quatro_padroes,m04q40_001,wavy annular,0.2150367332214434,1
+wps,full,hellinger,quatro_padroes,m04q80_001,wavy annular,0.17660359564088135,1
+wps,full,hellinger,quatro_padroes,m05q80_001,wavy annular,0.26900001871257678,1
+wps,full,hellinger,quatro_padroes,m06q40_001,wavy annular,-0.26262865207484554,1
+wps,full,hellinger,quatro_padroes,m06q80_001,wavy annular,0.096550898801484986,1
+wps,full,hellinger,quatro_padroes,m07q80_001,wavy annular,-0.41862060915248889,1
+wps,full,hellinger,quatro_padroes,m05q01_001,plug,0.29274512419230264,0
+wps,full,hellinger,quatro_padroes,m06q01_001,plug,0.27961720414390417,0
+wps,full,hellinger,quatro_padroes,m07q05_001,plug,0.26157869984500892,1
+wps,full,hellinger,quatro_padroes,m04q01_001,slug,0.065127016487068284,0
+wps,full,hellinger,quatro_padroes,m05q05_001,slug,-0.47753764185500702,0
+wps,full,hellinger,quatro_padroes,m06q05_001,slug,-0.11582741382536903,0
+wps,full,wasserstein,churn_annular,m03q05_001,churn,-0.019581881866610813,0
+wps,full,wasserstein,churn_annular,m04q10_001,churn,0.47105832946252285,1
+wps,full,wasserstein,churn_annular,m04q20_001,churn,0.43649972978568291,1
+wps,full,wasserstein,churn_annular,m05q10_001,churn,0.45989787722576669,1
+wps,full,wasserstein,churn_annular,m05q20_001,churn,0.23464436315522297,1
+wps,full,wasserstein,churn_annular,m05q40_001,churn,0.095342208465828721,1
+wps,full,wasserstein,churn_annular,m06q10_001,churn,0.35615948538416875,1
+wps,full,wasserstein,churn_annular,m06q20_001,churn,0.22220533497894338,1
+wps,full,wasserstein,churn_annular,m07q20_001,churn,0.44270028776916548,1
+wps,full,wasserstein,churn_annular,m07q40_001,churn,0.39944254021408554,1
+wps,full,wasserstein,churn_annular,m03q10_001,wavy annular,-0.06834595523783904,1
+wps,full,wasserstein,churn_annular,m03q20_001,wavy annular,-0.014157462502706676,1
+wps,full,wasserstein,churn_annular,m03q40_001,wavy annular,-0.022962179861740355,0
+wps,full,wasserstein,churn_annular,m04q40_001,wavy annular,0.14935018689397228,1
+wps,full,wasserstein,churn_annular,m04q80_001,wavy annular,0.09813850359553733,1
+wps,full,wasserstein,churn_annular,m05q80_001,wavy annular,0.16783941171728031,1
+wps,full,wasserstein,churn_annular,m06q40_001,wavy annular,-0.02655241478979042,1
+wps,full,wasserstein,churn_annular,m06q80_001,wavy annular,0.058818797598650593,1
+wps,full,wasserstein,churn_annular,m07q80_001,wavy annular,-0.045887121430748114,1
+wps,full,wasserstein,plug_slug,m05q01_001,plug,0.098273703933582285,0
+wps,full,wasserstein,plug_slug,m06q01_001,plug,0.55361049038259669,1
+wps,full,wasserstein,plug_slug,m07q05_001,plug,0.58111196176851054,1
+wps,full,wasserstein,plug_slug,m04q01_001,slug,0.27966684123718888,1
+wps,full,wasserstein,plug_slug,m05q05_001,slug,-0.59056319541307312,0
+wps,full,wasserstein,plug_slug,m06q05_001,slug,0.07795410395072476,1
+wps,full,wasserstein,quatro_padroes,m03q05_001,churn,-0.019581881866610813,0
+wps,full,wasserstein,quatro_padroes,m04q10_001,churn,0.37574719447524674,1
+wps,full,wasserstein,quatro_padroes,m04q20_001,churn,0.43649972978568291,1
+wps,full,wasserstein,quatro_padroes,m05q10_001,churn,0.45989787722576669,1
+wps,full,wasserstein,quatro_padroes,m05q20_001,churn,0.23464436315522297,1
+wps,full,wasserstein,quatro_padroes,m05q40_001,churn,0.095342208465828721,1
+wps,full,wasserstein,quatro_padroes,m06q10_001,churn,0.010226689954231561,1
+wps,full,wasserstein,quatro_padroes,m06q20_001,churn,0.22220533497894338,1
+wps,full,wasserstein,quatro_padroes,m07q20_001,churn,0.29478397733965811,1
+wps,full,wasserstein,quatro_padroes,m07q40_001,churn,0.27242774019619426,1
+wps,full,wasserstein,quatro_padroes,m03q10_001,wavy annular,-0.06834595523783904,1
+wps,full,wasserstein,quatro_padroes,m03q20_001,wavy annular,-0.014157462502706676,1
+wps,full,wasserstein,quatro_padroes,m03q40_001,wavy annular,-0.022962179861740355,0
+wps,full,wasserstein,quatro_padroes,m04q40_001,wavy annular,0.14935018689397228,1
+wps,full,wasserstein,quatro_padroes,m04q80_001,wavy annular,0.09813850359553733,1
+wps,full,wasserstein,quatro_padroes,m05q80_001,wavy annular,0.16783941171728031,1
+wps,full,wasserstein,quatro_padroes,m06q40_001,wavy annular,-0.53241451590086419,0
+wps,full,wasserstein,quatro_padroes,m06q80_001,wavy annular,-0.2343093170267086,1
+wps,full,wasserstein,quatro_padroes,m07q80_001,wavy annular,-0.62844763040195162,1
+wps,full,wasserstein,quatro_padroes,m05q01_001,plug,0.098273703933582285,0
+wps,full,wasserstein,quatro_padroes,m06q01_001,plug,0.39759166371354737,0
+wps,full,wasserstein,quatro_padroes,m07q05_001,plug,0.52951431749020217,1
+wps,full,wasserstein,quatro_padroes,m04q01_001,slug,0.27966684123718888,1
+wps,full,wasserstein,quatro_padroes,m05q05_001,slug,-0.59056319541307312,0
+wps,full,wasserstein,quatro_padroes,m06q05_001,slug,0.07795410395072476,0
+wps,full,trio,churn_annular,m03q05_001,churn,-0.096517854879015957,0
+wps,full,trio,churn_annular,m04q10_001,churn,0.43743288704982808,1
+wps,full,trio,churn_annular,m04q20_001,churn,0.41375660792922814,1
+wps,full,trio,churn_annular,m05q10_001,churn,0.32992237432244503,1
+wps,full,trio,churn_annular,m05q20_001,churn,0.29220448136480509,1
+wps,full,trio,churn_annular,m05q40_001,churn,-0.20077304681316194,1
+wps,full,trio,churn_annular,m06q10_001,churn,0.2987313224451037,1
+wps,full,trio,churn_annular,m06q20_001,churn,-0.24029664720670704,1
+wps,full,trio,churn_annular,m07q20_001,churn,0.35461117133107267,1
+wps,full,trio,churn_annular,m07q40_001,churn,0.15613498478632012,1
+wps,full,trio,churn_annular,m03q10_001,wavy annular,0.0054828598061645983,0
+wps,full,trio,churn_annular,m03q20_001,wavy annular,0.22806713913388763,1
+wps,full,trio,churn_annular,m03q40_001,wavy annular,0.11180502561063919,1
+wps,full,trio,churn_annular,m04q40_001,wavy annular,0.28309852500362187,0
+wps,full,trio,churn_annular,m04q80_001,wavy annular,0.2459428465506909,1
+wps,full,trio,churn_annular,m05q80_001,wavy annular,0.40545422328918224,1
+wps,full,trio,churn_annular,m06q40_001,wavy annular,0.3680708531578879,1
+wps,full,trio,churn_annular,m06q80_001,wavy annular,0.32502483724743864,1
+wps,full,trio,churn_annular,m07q80_001,wavy annular,0.35260840306580959,1
+wps,full,trio,plug_slug,m05q01_001,plug,0.23432025070043327,0
+wps,full,trio,plug_slug,m06q01_001,plug,0.53540226901864518,1
+wps,full,trio,plug_slug,m07q05_001,plug,0.50897461498675778,1
+wps,full,trio,plug_slug,m04q01_001,slug,0.11991337216031295,0
+wps,full,trio,plug_slug,m05q05_001,slug,-0.49686191767717791,0
+wps,full,trio,plug_slug,m06q05_001,slug,0.23711982416463689,1
+wps,full,trio,quatro_padroes,m03q05_001,churn,-0.096517854879015957,0
+wps,full,trio,quatro_padroes,m04q10_001,churn,0.39298247986358092,1
+wps,full,trio,quatro_padroes,m04q20_001,churn,0.35020293887109399,1
+wps,full,trio,quatro_padroes,m05q10_001,churn,0.17391349705150697,1
+wps,full,trio,quatro_padroes,m05q20_001,churn,0.29220448136480509,1
+wps,full,trio,quatro_padroes,m05q40_001,churn,-0.29122046055931655,1
+wps,full,trio,quatro_padroes,m06q10_001,churn,-0.20634982464936766,0
+wps,full,trio,quatro_padroes,m06q20_001,churn,-0.33324040713968006,1
+wps,full,trio,quatro_padroes,m07q20_001,churn,0.30419842122289487,1
+wps,full,trio,quatro_padroes,m07q40_001,churn,-0.097235100099168179,1
+wps,full,trio,quatro_padroes,m03q10_001,wavy annular,-0.10132651576773621,0
+wps,full,trio,quatro_padroes,m03q20_001,wavy annular,0.026878847435318702,1
+wps,full,trio,quatro_padroes,m03q40_001,wavy annular,0.11180502561063919,1
+wps,full,trio,quatro_padroes,m04q40_001,wavy annular,-0.047057148487995228,0
+wps,full,trio,quatro_padroes,m04q80_001,wavy annular,0.1106641770958864,1
+wps,full,trio,quatro_padroes,m05q80_001,wavy annular,-0.26337263494397767,1
+wps,full,trio,quatro_padroes,m06q40_001,wavy annular,-0.36189096095669288,1
+wps,full,trio,quatro_padroes,m06q80_001,wavy annular,-0.34124836170172351,1
+wps,full,trio,quatro_padroes,m07q80_001,wavy annular,-0.38105333059061014,1
+wps,full,trio,quatro_padroes,m05q01_001,plug,0.16529522782684816,0
+wps,full,trio,quatro_padroes,m06q01_001,plug,0.12000737276267649,0
+wps,full,trio,quatro_padroes,m07q05_001,plug,-0.17823584233273901,0
+wps,full,trio,quatro_padroes,m04q01_001,slug,0.11991337216031295,0
+wps,full,trio,quatro_padroes,m05q05_001,slug,-0.49686191767717791,0
+wps,full,trio,quatro_padroes,m06q05_001,slug,0.067034413022045061,0
+wps,full,log_peak,churn_annular,m03q05_001,churn,-0.49677419354838687,0
+wps,full,log_peak,churn_annular,m04q10_001,churn,0.39015151515151553,1
+wps,full,log_peak,churn_annular,m04q20_001,churn,0.41212121212121322,1
+wps,full,log_peak,churn_annular,m05q10_001,churn,0.41954022988505818,1
+wps,full,log_peak,churn_annular,m05q20_001,churn,0.0098039215686294926,0
+wps,full,log_peak,churn_annular,m05q40_001,churn,-0.09523809523809719,0.33333333333333331
+wps,full,log_peak,churn_annular,m06q10_001,churn,0.25387596899224829,1
+wps,full,log_peak,churn_annular,m06q20_001,churn,-0.36585365853658575,0
+wps,full,log_peak,churn_annular,m07q20_001,churn,0.36734693877551172,1
+wps,full,log_peak,churn_annular,m07q40_001,churn,0.32608695652173919,1
+wps,full,log_peak,churn_annular,m03q10_001,wavy annular,0.284351145038168,1
+wps,full,log_peak,churn_annular,m03q20_001,wavy annular,0.44186046511627897,1
+wps,full,log_peak,churn_annular,m03q40_001,wavy annular,0.25,1
+wps,full,log_peak,churn_annular,m04q40_001,wavy annular,0.284351145038168,1
+wps,full,log_peak,churn_annular,m04q80_001,wavy annular,0.43888888888888883,1
+wps,full,log_peak,churn_annular,m05q80_001,wavy annular,0.37096774193548349,0
+wps,full,log_peak,churn_annular,m06q40_001,wavy annular,0.0090090090090105632,0
+wps,full,log_peak,churn_annular,m06q80_001,wavy annular,0.20731707317073217,0
+wps,full,log_peak,churn_annular,m07q80_001,wavy annular,-0.20784313725490358,0
+wps,full,log_peak,plug_slug,m05q01_001,plug,0.30769230769230921,1
+wps,full,log_peak,plug_slug,m06q01_001,plug,0.53125000000000022,1
+wps,full,log_peak,plug_slug,m07q05_001,plug,0.51785714285714302,1
+wps,full,log_peak,plug_slug,m04q01_001,slug,-0.17647058823529402,1
+wps,full,log_peak,plug_slug,m05q05_001,slug,0.088235294117645885,1
+wps,full,log_peak,plug_slug,m06q05_001,slug,0.34444444444444416,1
+wps,full,log_peak,quatro_padroes,m03q05_001,churn,-0.49677419354838687,0
+wps,full,log_peak,quatro_padroes,m04q10_001,churn,-0.40372670807453287,0
+wps,full,log_peak,quatro_padroes,m04q20_001,churn,-0.28865979381443219,0.5
+wps,full,log_peak,quatro_padroes,m05q10_001,churn,-0.28712871287128644,0
+wps,full,log_peak,quatro_padroes,m05q20_001,churn,-0.28712871287128761,0
+wps,full,log_peak,quatro_padroes,m05q40_001,churn,-0.28571428571428614,0.33333333333333331
+wps,full,log_peak,quatro_padroes,m06q10_001,churn,-0.51688311688311706,0
+wps,full,log_peak,quatro_padroes,m06q20_001,churn,-0.36585365853658575,0
+wps,full,log_peak,quatro_padroes,m07q20_001,churn,-0.32258064516128931,0.5
+wps,full,log_peak,quatro_padroes,m07q40_001,churn,-0.35483870967741965,0
+wps,full,log_peak,quatro_padroes,m03q10_001,wavy annular,0.030172413793103314,1
+wps,full,log_peak,quatro_padroes,m03q20_001,wavy annular,0.1428571428571421,1
+wps,full,log_peak,quatro_padroes,m03q40_001,wavy annular,0.13520408163265277,1
+wps,full,log_peak,quatro_padroes,m04q40_001,wavy annular,0.030172413793103314,1
+wps,full,log_peak,quatro_padroes,m04q80_001,wavy annular,0.15833333333333255,1
+wps,full,log_peak,quatro_padroes,m05q80_001,wavy annular,0.085937499999999653,0
+wps,full,log_peak,quatro_padroes,m06q40_001,wavy annular,-0.21212121212121129,0
+wps,full,log_peak,quatro_padroes,m06q80_001,wavy annular,-0.042735042735042549,0
+wps,full,log_peak,quatro_padroes,m07q80_001,wavy annular,-0.37254901960784492,0
+wps,full,log_peak,quatro_padroes,m05q01_001,plug,-0.15833333333333421,0
+wps,full,log_peak,quatro_padroes,m06q01_001,plug,-0.069999999999999757,0
+wps,full,log_peak,quatro_padroes,m07q05_001,plug,-0.4444444444444442,0
+wps,full,log_peak,quatro_padroes,m04q01_001,slug,-0.19411764705882459,1
+wps,full,log_peak,quatro_padroes,m05q05_001,slug,-2.2628750628887872e-15,0
+wps,full,log_peak,quatro_padroes,m06q05_001,slug,0.21750663129973416,0
+wps,full,slope,churn_annular,m03q05_001,churn,0.041310886343466843,1
+wps,full,slope,churn_annular,m04q10_001,churn,0.1804211185404265,0
+wps,full,slope,churn_annular,m04q20_001,churn,0.28292974441063012,1
+wps,full,slope,churn_annular,m05q10_001,churn,0.22025134761769671,1
+wps,full,slope,churn_annular,m05q20_001,churn,0.02085963642176757,1
+wps,full,slope,churn_annular,m05q40_001,churn,0.21227309919292769,1
+wps,full,slope,churn_annular,m06q10_001,churn,-0.063941751342661862,0
+wps,full,slope,churn_annular,m06q20_001,churn,0.27877093603189457,1
+wps,full,slope,churn_annular,m07q20_001,churn,0.020090466629247468,0
+wps,full,slope,churn_annular,m07q40_001,churn,0.17455768648818204,1
+wps,full,slope,churn_annular,m03q10_001,wavy annular,-0.34233476548444264,0
+wps,full,slope,churn_annular,m03q20_001,wavy annular,-0.33854169578721799,1
+wps,full,slope,churn_annular,m03q40_001,wavy annular,-0.16350992297204484,0
+wps,full,slope,churn_annular,m04q40_001,wavy annular,-0.21373249878554762,1
+wps,full,slope,churn_annular,m04q80_001,wavy annular,-0.21235892806771603,1
+wps,full,slope,churn_annular,m05q80_001,wavy annular,-0.27404449095011163,0
+wps,full,slope,churn_annular,m06q40_001,wavy annular,-0.16447937031882315,0
+wps,full,slope,churn_annular,m06q80_001,wavy annular,-0.053580627003816411,1
+wps,full,slope,churn_annular,m07q80_001,wavy annular,-0.10720163742329417,0
+wps,full,slope,plug_slug,m05q01_001,plug,-0.32902312319207183,0
+wps,full,slope,plug_slug,m06q01_001,plug,0.62873820928620805,1
+wps,full,slope,plug_slug,m07q05_001,plug,0.63432165854305911,1
+wps,full,slope,plug_slug,m04q01_001,slug,0.27344026131595511,1
+wps,full,slope,plug_slug,m05q05_001,slug,-0.53302550966309103,0
+wps,full,slope,plug_slug,m06q05_001,slug,-0.064909005870073769,0
+wps,full,slope,quatro_padroes,m03q05_001,churn,0.041310886343466843,1
+wps,full,slope,quatro_padroes,m04q10_001,churn,0.1804211185404265,0
+wps,full,slope,quatro_padroes,m04q20_001,churn,0.13586714256298774,1
+wps,full,slope,quatro_padroes,m05q10_001,churn,-0.31938337801496192,0
+wps,full,slope,quatro_padroes,m05q20_001,churn,0.02085963642176757,1
+wps,full,slope,quatro_padroes,m05q40_001,churn,0.21227309919292769,1
+wps,full,slope,quatro_padroes,m06q10_001,churn,-0.39833063570677407,0
+wps,full,slope,quatro_padroes,m06q20_001,churn,0.18672900892702227,1
+wps,full,slope,quatro_padroes,m07q20_001,churn,-0.35650433266806814,0
+wps,full,slope,quatro_padroes,m07q40_001,churn,-0.31461253759913194,1
+wps,full,slope,quatro_padroes,m03q10_001,wavy annular,-0.34233476548444264,0
+wps,full,slope,quatro_padroes,m03q20_001,wavy annular,-0.33854169578721799,1
+wps,full,slope,quatro_padroes,m03q40_001,wavy annular,-0.16350992297204484,0
+wps,full,slope,quatro_padroes,m04q40_001,wavy annular,-0.21373249878554762,1
+wps,full,slope,quatro_padroes,m04q80_001,wavy annular,-0.21235892806771603,1
+wps,full,slope,quatro_padroes,m05q80_001,wavy annular,-0.46282327977526511,0
+wps,full,slope,quatro_padroes,m06q40_001,wavy annular,-0.42694011381796415,0
+wps,full,slope,quatro_padroes,m06q80_001,wavy annular,-0.47100600048935282,0
+wps,full,slope,quatro_padroes,m07q80_001,wavy annular,-0.43059553779244975,0
+wps,full,slope,quatro_padroes,m05q01_001,plug,-0.32902312319207183,0
+wps,full,slope,quatro_padroes,m06q01_001,plug,-0.16251832581955916,1
+wps,full,slope,quatro_padroes,m07q05_001,plug,-0.089133773080868089,1
+wps,full,slope,quatro_padroes,m04q01_001,slug,0.27344026131595511,1
+wps,full,slope,quatro_padroes,m05q05_001,slug,-0.53302550966309103,0
+wps,full,slope,quatro_padroes,m06q05_001,slug,-0.064909005870073769,0
+wps,full,width,churn_annular,m03q05_001,churn,-0.076923076923080216,1
+wps,full,width,churn_annular,m04q10_001,churn,0.54032258064516114,1
+wps,full,width,churn_annular,m04q20_001,churn,0.47727272727272735,0.66666666666666663
+wps,full,width,churn_annular,m05q10_001,churn,0.29770992366412147,0
+wps,full,width,churn_annular,m05q20_001,churn,0.53846153846153821,1
+wps,full,width,churn_annular,m05q40_001,churn,-0.54929577464788604,0
+wps,full,width,churn_annular,m06q10_001,churn,0.52631578947368407,1
+wps,full,width,churn_annular,m06q20_001,churn,-0.50000000000000122,0.33333333333333331
+wps,full,width,churn_annular,m07q20_001,churn,0.47682119205298074,1
+wps,full,width,churn_annular,m07q40_001,churn,0.029126213592233791,1
+wps,full,width,churn_annular,m03q10_001,wavy annular,0.231557377049177,1
+wps,full,width,churn_annular,m03q20_001,wavy annular,0.31640624999999667,0.5
+wps,full,width,churn_annular,m03q40_001,wavy annular,-0.43816793893129719,0
+wps,full,width,churn_annular,m04q40_001,wavy annular,0.69288793103448154,1
+wps,full,width,churn_annular,m04q80_001,wavy annular,0.43661971830985763,0
+wps,full,width,churn_annular,m05q80_001,wavy annular,0.68468468468468302,1
+wps,full,width,churn_annular,m06q40_001,wavy annular,0.69288793103448143,1
+wps,full,width,churn_annular,m06q80_001,wavy annular,0.67975206611570127,1
+wps,full,width,churn_annular,m07q80_001,wavy annular,0.63740458015267087,1
+wps,full,width,plug_slug,m05q01_001,plug,0.49107142857142866,0.5
+wps,full,width,plug_slug,m06q01_001,plug,0.48684210526315796,0
+wps,full,width,plug_slug,m07q05_001,plug,0.032258064516129462,0
+wps,full,width,plug_slug,m04q01_001,slug,-0.30952380952380759,0
+wps,full,width,plug_slug,m05q05_001,slug,-0.77192982456140347,0
+wps,full,width,plug_slug,m06q05_001,slug,0.16867469879518124,1
+wps,full,width,quatro_padroes,m03q05_001,churn,-0.13461538461538627,1
+wps,full,width,quatro_padroes,m04q10_001,churn,0.26923076923076866,0.5
+wps,full,width,quatro_padroes,m04q20_001,churn,0.23333333333333353,0.66666666666666663
+wps,full,width,quatro_padroes,m05q10_001,churn,0.12380952380952362,0
+wps,full,width,quatro_padroes,m05q20_001,churn,0.2444444444444446,0
+wps,full,width,quatro_padroes,m05q40_001,churn,-0.59859154929577352,0
+wps,full,width,quatro_padroes,m06q10_001,churn,0.27586206896551668,1
+wps,full,width,quatro_padroes,m06q20_001,churn,-0.5522388059701504,0
+wps,full,width,quatro_padroes,m07q20_001,churn,0.24761904761904754,1
+wps,full,width,quatro_padroes,m07q40_001,churn,-0.069999999999999146,1
+wps,full,width,quatro_padroes,m03q10_001,wavy annular,-0.075555555555553267,0.5
+wps,full,width,quatro_padroes,m03q20_001,wavy annular,-0.12380952380952097,0.33333333333333331
+wps,full,width,quatro_padroes,m03q40_001,wavy annular,-0.43816793893129719,0
+wps,full,width,quatro_padroes,m04q40_001,wavy annular,-0.25146198830409572,1
+wps,full,width,quatro_padroes,m04q80_001,wavy annular,-0.20833333333333329,0
+wps,full,width,quatro_padroes,m05q80_001,wavy annular,-0.2857142857142892,1
+wps,full,width,quatro_padroes,m06q40_001,wavy annular,-0.25146198830409544,1
+wps,full,width,quatro_padroes,m06q80_001,wavy annular,-0.26881720430107681,1
+wps,full,width,quatro_padroes,m07q80_001,wavy annular,-0.33333333333333409,0
+wps,full,width,quatro_padroes,m05q01_001,plug,-0.11111111111111012,0
+wps,full,width,quatro_padroes,m06q01_001,plug,-0.00854700854700856,0
+wps,full,width,quatro_padroes,m07q05_001,plug,-0.25555555555555559,0
+wps,full,width,quatro_padroes,m04q01_001,slug,-0.34920634920634874,0
+wps,full,width,quatro_padroes,m05q05_001,slug,-0.77192982456140347,0
+wps,full,width,quatro_padroes,m06q05_001,slug,-0.53913043478260847,0
+wps,7001_prefix,pearson_residual,churn_annular,m03q05_001,churn,-0.29109338534989865,0
+wps,7001_prefix,pearson_residual,churn_annular,m04q10_001,churn,0.11336781252965289,1
+wps,7001_prefix,pearson_residual,churn_annular,m04q20_001,churn,0.047350285167262862,0
+wps,7001_prefix,pearson_residual,churn_annular,m05q10_001,churn,-0.11814308747366004,0
+wps,7001_prefix,pearson_residual,churn_annular,m05q20_001,churn,0.10125684500316792,1
+wps,7001_prefix,pearson_residual,churn_annular,m05q40_001,churn,-0.16913473763095138,0
+wps,7001_prefix,pearson_residual,churn_annular,m06q10_001,churn,0.052979676525023348,1
+wps,7001_prefix,pearson_residual,churn_annular,m06q20_001,churn,-0.14999965832514453,0
+wps,7001_prefix,pearson_residual,churn_annular,m07q20_001,churn,0.082037508031209794,1
+wps,7001_prefix,pearson_residual,churn_annular,m07q40_001,churn,-0.097961192080232254,0
+wps,7001_prefix,pearson_residual,churn_annular,m03q10_001,wavy annular,0.16532528381998368,1
+wps,7001_prefix,pearson_residual,churn_annular,m03q20_001,wavy annular,0.33288392547076034,1
+wps,7001_prefix,pearson_residual,churn_annular,m03q40_001,wavy annular,0.24429021240956228,1
+wps,7001_prefix,pearson_residual,churn_annular,m04q40_001,wavy annular,0.1908604742486415,1
+wps,7001_prefix,pearson_residual,churn_annular,m04q80_001,wavy annular,0.32932435494203949,1
+wps,7001_prefix,pearson_residual,churn_annular,m05q80_001,wavy annular,0.30041701501063106,1
+wps,7001_prefix,pearson_residual,churn_annular,m06q40_001,wavy annular,-0.06281674018359748,1
+wps,7001_prefix,pearson_residual,churn_annular,m06q80_001,wavy annular,0.1487615771372795,1
+wps,7001_prefix,pearson_residual,churn_annular,m07q80_001,wavy annular,0.072365915271730516,1
+wps,7001_prefix,hellinger,churn_annular,m03q05_001,churn,-0.059350335000077421,0
+wps,7001_prefix,hellinger,churn_annular,m04q10_001,churn,0.26417752114984872,1
+wps,7001_prefix,hellinger,churn_annular,m04q20_001,churn,0.28921157638555733,1
+wps,7001_prefix,hellinger,churn_annular,m05q10_001,churn,0.26851668957377151,1
+wps,7001_prefix,hellinger,churn_annular,m05q20_001,churn,0.28220491940761405,1
+wps,7001_prefix,hellinger,churn_annular,m05q40_001,churn,0.0076675527949728595,1
+wps,7001_prefix,hellinger,churn_annular,m06q10_001,churn,0.23136886253917535,1
+wps,7001_prefix,hellinger,churn_annular,m06q20_001,churn,0.028216887774604817,1
+wps,7001_prefix,hellinger,churn_annular,m07q20_001,churn,0.25289462586092459,1
+wps,7001_prefix,hellinger,churn_annular,m07q40_001,churn,0.11744117117471038,1
+wps,7001_prefix,hellinger,churn_annular,m03q10_001,wavy annular,-0.001377715895797482,1
+wps,7001_prefix,hellinger,churn_annular,m03q20_001,wavy annular,0.058435948861985838,0
+wps,7001_prefix,hellinger,churn_annular,m03q40_001,wavy annular,-0.1300980743556519,1
+wps,7001_prefix,hellinger,churn_annular,m04q40_001,wavy annular,0.11578107282546218,0
+wps,7001_prefix,hellinger,churn_annular,m04q80_001,wavy annular,0.029748377753387002,1
+wps,7001_prefix,hellinger,churn_annular,m05q80_001,wavy annular,0.08903847240373948,0
+wps,7001_prefix,hellinger,churn_annular,m06q40_001,wavy annular,0.014592813972753672,1
+wps,7001_prefix,hellinger,churn_annular,m06q80_001,wavy annular,0.15596209974865785,1
+wps,7001_prefix,hellinger,churn_annular,m07q80_001,wavy annular,0.10589871977120671,1
+wps,7001_prefix,wasserstein,churn_annular,m03q05_001,churn,0.13123247562824406,0
+wps,7001_prefix,wasserstein,churn_annular,m04q10_001,churn,0.4138167953880279,1
+wps,7001_prefix,wasserstein,churn_annular,m04q20_001,churn,0.38719800549496308,1
+wps,7001_prefix,wasserstein,churn_annular,m05q10_001,churn,0.43396133073688364,1
+wps,7001_prefix,wasserstein,churn_annular,m05q20_001,churn,0.2728819127831919,1
+wps,7001_prefix,wasserstein,churn_annular,m05q40_001,churn,0.17608366833093456,1
+wps,7001_prefix,wasserstein,churn_annular,m06q10_001,churn,0.31261072860768957,1
+wps,7001_prefix,wasserstein,churn_annular,m06q20_001,churn,0.20157970368836825,1
+wps,7001_prefix,wasserstein,churn_annular,m07q20_001,churn,0.34214026610746856,1
+wps,7001_prefix,wasserstein,churn_annular,m07q40_001,churn,0.26016395206665877,1
+wps,7001_prefix,wasserstein,churn_annular,m03q10_001,wavy annular,-0.18468544619847183,0
+wps,7001_prefix,wasserstein,churn_annular,m03q20_001,wavy annular,-0.18406204639282675,1
+wps,7001_prefix,wasserstein,churn_annular,m03q40_001,wavy annular,-0.04563800202413041,1
+wps,7001_prefix,wasserstein,churn_annular,m04q40_001,wavy annular,-0.017449634021658292,1
+wps,7001_prefix,wasserstein,churn_annular,m04q80_001,wavy annular,-0.053267287314803249,0
+wps,7001_prefix,wasserstein,churn_annular,m05q80_001,wavy annular,-0.1182997902812075,1
+wps,7001_prefix,wasserstein,churn_annular,m06q40_001,wavy annular,-0.03175243739981759,1
+wps,7001_prefix,wasserstein,churn_annular,m06q80_001,wavy annular,0.044564679752265565,1
+wps,7001_prefix,wasserstein,churn_annular,m07q80_001,wavy annular,0.073235301037932993,1
+wps,7001_prefix,trio,churn_annular,m03q05_001,churn,0.063769170238047665,1
+wps,7001_prefix,trio,churn_annular,m04q10_001,churn,0.45110321783723012,1
+wps,7001_prefix,trio,churn_annular,m04q20_001,churn,0.46472261052546332,1
+wps,7001_prefix,trio,churn_annular,m05q10_001,churn,0.39214289405513758,1
+wps,7001_prefix,trio,churn_annular,m05q20_001,churn,0.41757646881456273,1
+wps,7001_prefix,trio,churn_annular,m05q40_001,churn,0.17277756334456104,1
+wps,7001_prefix,trio,churn_annular,m06q10_001,churn,0.35854072313578106,1
+wps,7001_prefix,trio,churn_annular,m06q20_001,churn,0.0011587103694503443,1
+wps,7001_prefix,trio,churn_annular,m07q20_001,churn,0.36241869249140529,1
+wps,7001_prefix,trio,churn_annular,m07q40_001,churn,0.17190704856158392,1
+wps,7001_prefix,trio,churn_annular,m03q10_001,wavy annular,-0.004871411470462092,0
+wps,7001_prefix,trio,churn_annular,m03q20_001,wavy annular,0.17155650323571217,1
+wps,7001_prefix,trio,churn_annular,m03q40_001,wavy annular,0.069957797701934998,1
+wps,7001_prefix,trio,churn_annular,m04q40_001,wavy annular,0.0021520051776199867,0
+wps,7001_prefix,trio,churn_annular,m04q80_001,wavy annular,0.11609841562261369,1
+wps,7001_prefix,trio,churn_annular,m05q80_001,wavy annular,0.13722017577198878,1
+wps,7001_prefix,trio,churn_annular,m06q40_001,wavy annular,0.16187699354900451,1
+wps,7001_prefix,trio,churn_annular,m06q80_001,wavy annular,0.212391452198331,1
+wps,7001_prefix,trio,churn_annular,m07q80_001,wavy annular,0.24609397942390407,1
+wps,7001_prefix,log_peak,churn_annular,m03q05_001,churn,0.0075187969924826884,0.5
+wps,7001_prefix,log_peak,churn_annular,m04q10_001,churn,0.52142857142857146,1
+wps,7001_prefix,log_peak,churn_annular,m04q20_001,churn,0.56886227544910228,0.66666666666666663
+wps,7001_prefix,log_peak,churn_annular,m05q10_001,churn,0.59798994974874398,1
+wps,7001_prefix,log_peak,churn_annular,m05q20_001,churn,0.39726027397260244,0
+wps,7001_prefix,log_peak,churn_annular,m05q40_001,churn,0.5500000000000006,0.5
+wps,7001_prefix,log_peak,churn_annular,m06q10_001,churn,0.4375,1
+wps,7001_prefix,log_peak,churn_annular,m06q20_001,churn,0.060606060606062086,0
+wps,7001_prefix,log_peak,churn_annular,m07q20_001,churn,0.59798994974874398,1
+wps,7001_prefix,log_peak,churn_annular,m07q40_001,churn,0.5500000000000006,0.5
+wps,7001_prefix,log_peak,churn_annular,m03q10_001,wavy annular,-0.2484848484848495,0
+wps,7001_prefix,log_peak,churn_annular,m03q20_001,wavy annular,0.084158415841583817,1
+wps,7001_prefix,log_peak,churn_annular,m03q40_001,wavy annular,0.16389627659574463,1
+wps,7001_prefix,log_peak,churn_annular,m04q40_001,wavy annular,-0.3313432835820902,0.5
+wps,7001_prefix,log_peak,churn_annular,m04q80_001,wavy annular,0.20809659090909077,1
+wps,7001_prefix,log_peak,churn_annular,m05q80_001,wavy annular,-0.047058823529411493,0
+wps,7001_prefix,log_peak,churn_annular,m06q40_001,wavy annular,-0.66408839779005557,0
+wps,7001_prefix,log_peak,churn_annular,m06q80_001,wavy annular,-0.64000000000000046,0
+wps,7001_prefix,log_peak,churn_annular,m07q80_001,wavy annular,-0.60774193548387156,0.33333333333333331
+wps,7001_prefix,slope,churn_annular,m03q05_001,churn,0.34350947552141747,0
+wps,7001_prefix,slope,churn_annular,m04q10_001,churn,0.32071033808049837,1
+wps,7001_prefix,slope,churn_annular,m04q20_001,churn,0.33642034160203282,0
+wps,7001_prefix,slope,churn_annular,m05q10_001,churn,-0.034490827373586878,1
+wps,7001_prefix,slope,churn_annular,m05q20_001,churn,0.32375577949733375,1
+wps,7001_prefix,slope,churn_annular,m05q40_001,churn,0.2904695434763877,1
+wps,7001_prefix,slope,churn_annular,m06q10_001,churn,-0.23969937510396536,1
+wps,7001_prefix,slope,churn_annular,m06q20_001,churn,0.31940252563371474,0
+wps,7001_prefix,slope,churn_annular,m07q20_001,churn,-0.23410555219331708,0
+wps,7001_prefix,slope,churn_annular,m07q40_001,churn,0.0068349186888728717,0
+wps,7001_prefix,slope,churn_annular,m03q10_001,wavy annular,-0.26899888720829351,1
+wps,7001_prefix,slope,churn_annular,m03q20_001,wavy annular,-0.20638540750373377,0
+wps,7001_prefix,slope,churn_annular,m03q40_001,wavy annular,-0.2376132000183451,0
+wps,7001_prefix,slope,churn_annular,m04q40_001,wavy annular,-0.45577290836604262,0
+wps,7001_prefix,slope,churn_annular,m04q80_001,wavy annular,-0.46870697988389454,0
+wps,7001_prefix,slope,churn_annular,m05q80_001,wavy annular,-0.046417550828860704,0
+wps,7001_prefix,slope,churn_annular,m06q40_001,wavy annular,0.082442753290898368,0
+wps,7001_prefix,slope,churn_annular,m06q80_001,wavy annular,0.088239700576179955,1
+wps,7001_prefix,slope,churn_annular,m07q80_001,wavy annular,0.042972259197541857,0
+wps,7001_prefix,width,churn_annular,m03q05_001,churn,-0.49137931034482779,0
+wps,7001_prefix,width,churn_annular,m04q10_001,churn,0.51724137931034442,1
+wps,7001_prefix,width,churn_annular,m04q20_001,churn,0.42499999999999905,1
+wps,7001_prefix,width,churn_annular,m05q10_001,churn,0.3082706766917287,0
+wps,7001_prefix,width,churn_annular,m05q20_001,churn,0.51401869158878466,1
+wps,7001_prefix,width,churn_annular,m05q40_001,churn,-0.55737704918032516,0.5
+wps,7001_prefix,width,churn_annular,m06q10_001,churn,0.49806949806949785,1
+wps,7001_prefix,width,churn_annular,m06q20_001,churn,-0.55737704918033049,0.5
+wps,7001_prefix,width,churn_annular,m07q20_001,churn,0.48507462686567149,1
+wps,7001_prefix,width,churn_annular,m07q40_001,churn,-0.32407407407407512,0.5
+wps,7001_prefix,width,churn_annular,m03q10_001,wavy annular,0.51704545454545414,1
+wps,7001_prefix,width,churn_annular,m03q20_001,wavy annular,0.51704545454545414,1
+wps,7001_prefix,width,churn_annular,m03q40_001,wavy annular,-0.33217391304347821,0
+wps,7001_prefix,width,churn_annular,m04q40_001,wavy annular,0.62890624999999944,1
+wps,7001_prefix,width,churn_annular,m04q80_001,wavy annular,0.36422413793103475,0
+wps,7001_prefix,width,churn_annular,m05q80_001,wavy annular,0.44672131147541017,0
+wps,7001_prefix,width,churn_annular,m06q40_001,wavy annular,0.62853773584905603,1
+wps,7001_prefix,width,churn_annular,m06q80_001,wavy annular,0.60668103448275823,1
+wps,7001_prefix,width,churn_annular,m07q80_001,wavy annular,0.53584558823529271,1
+mean_power,prefix,pearson_residual,churn_annular,m03q05_001,churn,-0.36619778621152288,0
+mean_power,prefix,pearson_residual,churn_annular,m04q10_001,churn,0.17792643446470172,1
+mean_power,prefix,pearson_residual,churn_annular,m04q20_001,churn,0.12052666431578259,1
+mean_power,prefix,pearson_residual,churn_annular,m05q10_001,churn,-0.06799597965482139,0
+mean_power,prefix,pearson_residual,churn_annular,m05q20_001,churn,0.18636686848192668,1
+mean_power,prefix,pearson_residual,churn_annular,m05q40_001,churn,-0.30764637778411352,0
+mean_power,prefix,pearson_residual,churn_annular,m06q10_001,churn,-0.074748510465867737,0
+mean_power,prefix,pearson_residual,churn_annular,m06q20_001,churn,0.043871404336348632,0
+mean_power,prefix,pearson_residual,churn_annular,m07q20_001,churn,0.24180240473172981,1
+mean_power,prefix,pearson_residual,churn_annular,m07q40_001,churn,-0.15161956691622461,0
+mean_power,prefix,pearson_residual,churn_annular,m03q10_001,wavy annular,-0.088097509718658318,0
+mean_power,prefix,pearson_residual,churn_annular,m03q20_001,wavy annular,0.30705569134228677,1
+mean_power,prefix,pearson_residual,churn_annular,m03q40_001,wavy annular,0.3523376402204913,1
+mean_power,prefix,pearson_residual,churn_annular,m04q40_001,wavy annular,0.14894111142415417,1
+mean_power,prefix,pearson_residual,churn_annular,m04q80_001,wavy annular,0.32069773800228563,1
+mean_power,prefix,pearson_residual,churn_annular,m05q80_001,wavy annular,0.36722175075936564,1
+mean_power,prefix,pearson_residual,churn_annular,m06q40_001,wavy annular,0.092935753990873463,1
+mean_power,prefix,pearson_residual,churn_annular,m06q80_001,wavy annular,0.30447854374352951,0
+mean_power,prefix,pearson_residual,churn_annular,m07q80_001,wavy annular,0.11077055979337004,0
+mean_power,prefix,pearson_residual,plug_slug,m05q01_001,plug,0.052696188859962967,1
+mean_power,prefix,pearson_residual,plug_slug,m06q01_001,plug,0.15663876164190102,1
+mean_power,prefix,pearson_residual,plug_slug,m07q05_001,plug,0.22531464542185781,1
+mean_power,prefix,pearson_residual,plug_slug,m04q01_001,slug,-0.27343052890918335,0
+mean_power,prefix,pearson_residual,plug_slug,m05q05_001,slug,-0.066249272723647515,0
+mean_power,prefix,pearson_residual,plug_slug,m06q05_001,slug,0.036758892700213756,0
+mean_power,prefix,pearson_residual,quatro_padroes,m03q05_001,churn,-0.36619778621152288,0
+mean_power,prefix,pearson_residual,quatro_padroes,m04q10_001,churn,-0.11624792748749724,1
+mean_power,prefix,pearson_residual,quatro_padroes,m04q20_001,churn,-0.13314773788808684,1
+mean_power,prefix,pearson_residual,quatro_padroes,m05q10_001,churn,-0.06799597965482139,0
+mean_power,prefix,pearson_residual,quatro_padroes,m05q20_001,churn,0.046841076475884584,1
+mean_power,prefix,pearson_residual,quatro_padroes,m05q40_001,churn,-0.30764637778411352,0
+mean_power,prefix,pearson_residual,quatro_padroes,m06q10_001,churn,-0.074748510465867737,0
+mean_power,prefix,pearson_residual,quatro_padroes,m06q20_001,churn,-0.12810794081246615,0
+mean_power,prefix,pearson_residual,quatro_padroes,m07q20_001,churn,-0.015077114892567012,1
+mean_power,prefix,pearson_residual,quatro_padroes,m07q40_001,churn,-0.21636839031423361,0
+mean_power,prefix,pearson_residual,quatro_padroes,m03q10_001,wavy annular,-0.088097509718658318,0
+mean_power,prefix,pearson_residual,quatro_padroes,m03q20_001,wavy annular,0.065936616776669191,0
+mean_power,prefix,pearson_residual,quatro_padroes,m03q40_001,wavy annular,0.13061358486798147,0
+mean_power,prefix,pearson_residual,quatro_padroes,m04q40_001,wavy annular,0.0047804723682308868,1
+mean_power,prefix,pearson_residual,quatro_padroes,m04q80_001,wavy annular,0.16375827373160445,1
+mean_power,prefix,pearson_residual,quatro_padroes,m05q80_001,wavy annular,0.18731162893873207,0
+mean_power,prefix,pearson_residual,quatro_padroes,m06q40_001,wavy annular,-0.097416997374109901,1
+mean_power,prefix,pearson_residual,quatro_padroes,m06q80_001,wavy annular,0.014596634836802135,0
+mean_power,prefix,pearson_residual,quatro_padroes,m07q80_001,wavy annular,-0.089313501221404717,0
+mean_power,prefix,pearson_residual,quatro_padroes,m05q01_001,plug,-0.068090550207699635,0
+mean_power,prefix,pearson_residual,quatro_padroes,m06q01_001,plug,0.0099680988438810673,0
+mean_power,prefix,pearson_residual,quatro_padroes,m07q05_001,plug,-0.305125165729771,0
+mean_power,prefix,pearson_residual,quatro_padroes,m04q01_001,slug,-0.27567898031025295,0
+mean_power,prefix,pearson_residual,quatro_padroes,m05q05_001,slug,-0.066249272723647515,0
+mean_power,prefix,pearson_residual,quatro_padroes,m06q05_001,slug,-0.032305515673294614,0
+mean_power,prefix,hellinger,churn_annular,m03q05_001,churn,-0.23619555035838238,0
+mean_power,prefix,hellinger,churn_annular,m04q10_001,churn,0.19950335047380233,1
+mean_power,prefix,hellinger,churn_annular,m04q20_001,churn,0.18621892230779027,0
+mean_power,prefix,hellinger,churn_annular,m05q10_001,churn,0.062179351543105013,1
+mean_power,prefix,hellinger,churn_annular,m05q20_001,churn,0.2266388063406462,1
+mean_power,prefix,hellinger,churn_annular,m05q40_001,churn,-0.20557857656091835,1
+mean_power,prefix,hellinger,churn_annular,m06q10_001,churn,0.14027827664311951,1
+mean_power,prefix,hellinger,churn_annular,m06q20_001,churn,-0.039355131945407663,0
+mean_power,prefix,hellinger,churn_annular,m07q20_001,churn,0.26040163963704721,1
+mean_power,prefix,hellinger,churn_annular,m07q40_001,churn,-0.19134858311363409,0
+mean_power,prefix,hellinger,churn_annular,m03q10_001,wavy annular,0.012881907309107937,1
+mean_power,prefix,hellinger,churn_annular,m03q20_001,wavy annular,0.1775974821846325,1
+mean_power,prefix,hellinger,churn_annular,m03q40_001,wavy annular,0.13308309709878655,1
+mean_power,prefix,hellinger,churn_annular,m04q40_001,wavy annular,-0.018236841213071526,0
+mean_power,prefix,hellinger,churn_annular,m04q80_001,wavy annular,0.21835168957328441,1
+mean_power,prefix,hellinger,churn_annular,m05q80_001,wavy annular,0.23128690057990406,1
+mean_power,prefix,hellinger,churn_annular,m06q40_001,wavy annular,-0.13071604529249226,0
+mean_power,prefix,hellinger,churn_annular,m06q80_001,wavy annular,0.14591137559980827,1
+mean_power,prefix,hellinger,churn_annular,m07q80_001,wavy annular,0.036652913223541063,0
+mean_power,prefix,hellinger,plug_slug,m05q01_001,plug,0.017021288297649369,1
+mean_power,prefix,hellinger,plug_slug,m06q01_001,plug,0.28669741759267092,1
+mean_power,prefix,hellinger,plug_slug,m07q05_001,plug,0.30298675197678654,1
+mean_power,prefix,hellinger,plug_slug,m04q01_001,slug,0.2330356550870987,0
+mean_power,prefix,hellinger,plug_slug,m05q05_001,slug,0.055825442125748963,0
+mean_power,prefix,hellinger,plug_slug,m06q05_001,slug,0.21885328535395049,1
+mean_power,prefix,hellinger,quatro_padroes,m03q05_001,churn,-0.23619555035838238,0
+mean_power,prefix,hellinger,quatro_padroes,m04q10_001,churn,0.13968566126942913,1
+mean_power,prefix,hellinger,quatro_padroes,m04q20_001,churn,0.13106196782563409,0
+mean_power,prefix,hellinger,quatro_padroes,m05q10_001,churn,0.030161803561464643,1
+mean_power,prefix,hellinger,quatro_padroes,m05q20_001,churn,0.20075793660085642,1
+mean_power,prefix,hellinger,quatro_padroes,m05q40_001,churn,-0.20557857656091835,1
+mean_power,prefix,hellinger,quatro_padroes,m06q10_001,churn,0.14027827664311951,1
+mean_power,prefix,hellinger,quatro_padroes,m06q20_001,churn,-0.1516130066093781,0
+mean_power,prefix,hellinger,quatro_padroes,m07q20_001,churn,-0.079895964471283151,1
+mean_power,prefix,hellinger,quatro_padroes,m07q40_001,churn,-0.20848729078252892,0
+mean_power,prefix,hellinger,quatro_padroes,m03q10_001,wavy annular,0.0079325020168854003,1
+mean_power,prefix,hellinger,quatro_padroes,m03q20_001,wavy annular,0.045332577150441318,1
+mean_power,prefix,hellinger,quatro_padroes,m03q40_001,wavy annular,0.097355647427267322,0
+mean_power,prefix,hellinger,quatro_padroes,m04q40_001,wavy annular,-0.018236841213071526,0
+mean_power,prefix,hellinger,quatro_padroes,m04q80_001,wavy annular,0.15339888553684522,1
+mean_power,prefix,hellinger,quatro_padroes,m05q80_001,wavy annular,0.12596454974450572,0
+mean_power,prefix,hellinger,quatro_padroes,m06q40_001,wavy annular,-0.15233172956631763,0
+mean_power,prefix,hellinger,quatro_padroes,m06q80_001,wavy annular,-0.056112248070840698,0
+mean_power,prefix,hellinger,quatro_padroes,m07q80_001,wavy annular,-0.18859389127315573,0
+mean_power,prefix,hellinger,quatro_padroes,m05q01_001,plug,-0.093221821502726954,0
+mean_power,prefix,hellinger,quatro_padroes,m06q01_001,plug,-0.057582294995326952,0
+mean_power,prefix,hellinger,quatro_padroes,m07q05_001,plug,-0.32738587436111694,0
+mean_power,prefix,hellinger,quatro_padroes,m04q01_001,slug,0.12718817208897204,0
+mean_power,prefix,hellinger,quatro_padroes,m05q05_001,slug,-0.02288118848918794,0
+mean_power,prefix,hellinger,quatro_padroes,m06q05_001,slug,0.098947722803856566,0
+mean_power,prefix,wasserstein,churn_annular,m03q05_001,churn,-0.25382203606578174,0
+mean_power,prefix,wasserstein,churn_annular,m04q10_001,churn,0.34223521793564576,1
+mean_power,prefix,wasserstein,churn_annular,m04q20_001,churn,0.32336020084601191,1
+mean_power,prefix,wasserstein,churn_annular,m05q10_001,churn,0.31732733789818196,1
+mean_power,prefix,wasserstein,churn_annular,m05q20_001,churn,0.36571083873867605,1
+mean_power,prefix,wasserstein,churn_annular,m05q40_001,churn,-0.11838199445717558,1
+mean_power,prefix,wasserstein,churn_annular,m06q10_001,churn,0.32606425000528444,1
+mean_power,prefix,wasserstein,churn_annular,m06q20_001,churn,0.001494324355623536,0
+mean_power,prefix,wasserstein,churn_annular,m07q20_001,churn,0.32344782975968417,1
+mean_power,prefix,wasserstein,churn_annular,m07q40_001,churn,-0.14663042511993407,1
+mean_power,prefix,wasserstein,churn_annular,m03q10_001,wavy annular,0.020452959915493642,1
+mean_power,prefix,wasserstein,churn_annular,m03q20_001,wavy annular,-0.017013338497161003,1
+mean_power,prefix,wasserstein,churn_annular,m03q40_001,wavy annular,0.12347099416893645,1
+mean_power,prefix,wasserstein,churn_annular,m04q40_001,wavy annular,0.034747150611310201,1
+mean_power,prefix,wasserstein,churn_annular,m04q80_001,wavy annular,0.21124014354770082,1
+mean_power,prefix,wasserstein,churn_annular,m05q80_001,wavy annular,0.21800116356169705,1
+mean_power,prefix,wasserstein,churn_annular,m06q40_001,wavy annular,-0.26915710899223633,0
+mean_power,prefix,wasserstein,churn_annular,m06q80_001,wavy annular,-0.0048776104567713257,1
+mean_power,prefix,wasserstein,churn_annular,m07q80_001,wavy annular,-0.037465173321634626,0
+mean_power,prefix,wasserstein,plug_slug,m05q01_001,plug,-0.15555137890369505,0
+mean_power,prefix,wasserstein,plug_slug,m06q01_001,plug,0.44647096970697892,1
+mean_power,prefix,wasserstein,plug_slug,m07q05_001,plug,0.46537336991759731,1
+mean_power,prefix,wasserstein,plug_slug,m04q01_001,slug,0.59591460119846129,1
+mean_power,prefix,wasserstein,plug_slug,m05q05_001,slug,0.052304257625554837,0
+mean_power,prefix,wasserstein,plug_slug,m06q05_001,slug,0.51609884713073584,1
+mean_power,prefix,wasserstein,quatro_padroes,m03q05_001,churn,-0.25382203606578174,0
+mean_power,prefix,wasserstein,quatro_padroes,m04q10_001,churn,0.17038141305484847,1
+mean_power,prefix,wasserstein,quatro_padroes,m04q20_001,churn,0.24484308592715032,1
+mean_power,prefix,wasserstein,quatro_padroes,m05q10_001,churn,0.25034392297087643,1
+mean_power,prefix,wasserstein,quatro_padroes,m05q20_001,churn,0.34394885930467906,1
+mean_power,prefix,wasserstein,quatro_padroes,m05q40_001,churn,-0.11838199445717558,1
+mean_power,prefix,wasserstein,quatro_padroes,m06q10_001,churn,0.28941724806087699,1
+mean_power,prefix,wasserstein,quatro_padroes,m06q20_001,churn,-0.07202296646753735,0
+mean_power,prefix,wasserstein,quatro_padroes,m07q20_001,churn,-0.057851872763428569,1
+mean_power,prefix,wasserstein,quatro_padroes,m07q40_001,churn,-0.14663042511993407,1
+mean_power,prefix,wasserstein,quatro_padroes,m03q10_001,wavy annular,0.020452959915493642,1
+mean_power,prefix,wasserstein,quatro_padroes,m03q20_001,wavy annular,-0.017013338497161003,1
+mean_power,prefix,wasserstein,quatro_padroes,m03q40_001,wavy annular,0.066570844642179966,0
+mean_power,prefix,wasserstein,quatro_padroes,m04q40_001,wavy annular,0.034747150611310201,1
+mean_power,prefix,wasserstein,quatro_padroes,m04q80_001,wavy annular,0.20290054406902877,1
+mean_power,prefix,wasserstein,quatro_padroes,m05q80_001,wavy annular,0.18419899456662819,1
+mean_power,prefix,wasserstein,quatro_padroes,m06q40_001,wavy annular,-0.26915710899223633,0
+mean_power,prefix,wasserstein,quatro_padroes,m06q80_001,wavy annular,-0.041428744023310732,1
+mean_power,prefix,wasserstein,quatro_padroes,m07q80_001,wavy annular,-0.26223135153969251,0
+mean_power,prefix,wasserstein,quatro_padroes,m05q01_001,plug,-0.22549953179544499,0
+mean_power,prefix,wasserstein,quatro_padroes,m06q01_001,plug,-0.12187192480962585,0
+mean_power,prefix,wasserstein,quatro_padroes,m07q05_001,plug,-0.34132151724079135,0
+mean_power,prefix,wasserstein,quatro_padroes,m04q01_001,slug,0.56533452303342768,1
+mean_power,prefix,wasserstein,quatro_padroes,m05q05_001,slug,0.052304257625554837,0
+mean_power,prefix,wasserstein,quatro_padroes,m06q05_001,slug,0.46257142072608298,1
+wcs_zero,prefix,normalized_magnitude,churn_annular,m03q05_001,churn,0.048054255730771052,0
+wcs_zero,prefix,normalized_magnitude,churn_annular,m04q10_001,churn,0.11208206199898749,1
+wcs_zero,prefix,normalized_magnitude,churn_annular,m04q20_001,churn,0.021880780980815362,0
+wcs_zero,prefix,normalized_magnitude,churn_annular,m05q10_001,churn,-0.020713702865350993,0
+wcs_zero,prefix,normalized_magnitude,churn_annular,m05q20_001,churn,0.074391159372206306,1
+wcs_zero,prefix,normalized_magnitude,churn_annular,m05q40_001,churn,-0.038061898385139264,0
+wcs_zero,prefix,normalized_magnitude,churn_annular,m06q10_001,churn,-0.0072482985647196324,0
+wcs_zero,prefix,normalized_magnitude,churn_annular,m06q20_001,churn,0.046460141129273887,0
+wcs_zero,prefix,normalized_magnitude,churn_annular,m07q20_001,churn,0.04598617681526232,1
+wcs_zero,prefix,normalized_magnitude,churn_annular,m07q40_001,churn,-0.090125051199081527,0
+wcs_zero,prefix,normalized_magnitude,churn_annular,m03q10_001,wavy annular,-0.014490326499109567,0
+wcs_zero,prefix,normalized_magnitude,churn_annular,m03q20_001,wavy annular,0.11792899732502195,1
+wcs_zero,prefix,normalized_magnitude,churn_annular,m03q40_001,wavy annular,0.070833274290279996,1
+wcs_zero,prefix,normalized_magnitude,churn_annular,m04q40_001,wavy annular,0.020557120034191658,1
+wcs_zero,prefix,normalized_magnitude,churn_annular,m04q80_001,wavy annular,-0.038994308850817533,0
+wcs_zero,prefix,normalized_magnitude,churn_annular,m05q80_001,wavy annular,-0.070745882564283449,0
+wcs_zero,prefix,normalized_magnitude,churn_annular,m06q40_001,wavy annular,0.030576970701955791,0
+wcs_zero,prefix,normalized_magnitude,churn_annular,m06q80_001,wavy annular,0.087161154364584617,1
+wcs_zero,prefix,normalized_magnitude,churn_annular,m07q80_001,wavy annular,-0.071463761651288135,0
+wcs_zero,prefix,normalized_magnitude,plug_slug,m05q01_001,plug,-0.027070816912853467,1
+wcs_zero,prefix,normalized_magnitude,plug_slug,m06q01_001,plug,0.0041894526015306159,1
+wcs_zero,prefix,normalized_magnitude,plug_slug,m07q05_001,plug,-0.013187575529417758,0
+wcs_zero,prefix,normalized_magnitude,plug_slug,m04q01_001,slug,0.15346046744475578,1
+wcs_zero,prefix,normalized_magnitude,plug_slug,m05q05_001,slug,-0.13392208226179184,1
+wcs_zero,prefix,normalized_magnitude,plug_slug,m06q05_001,slug,-0.046437236178635106,1
+wcs_zero,prefix,normalized_magnitude,quatro_padroes,m03q05_001,churn,-0.053327087042470613,0
+wcs_zero,prefix,normalized_magnitude,quatro_padroes,m04q10_001,churn,-0.12165219978710262,0
+wcs_zero,prefix,normalized_magnitude,quatro_padroes,m04q20_001,churn,-0.13518434819738923,0
+wcs_zero,prefix,normalized_magnitude,quatro_padroes,m05q10_001,churn,-0.092723247699055988,0
+wcs_zero,prefix,normalized_magnitude,quatro_padroes,m05q20_001,churn,-0.061843475774962048,1
+wcs_zero,prefix,normalized_magnitude,quatro_padroes,m05q40_001,churn,-0.22136170362418195,0
+wcs_zero,prefix,normalized_magnitude,quatro_padroes,m06q10_001,churn,-0.10497727541659076,0
+wcs_zero,prefix,normalized_magnitude,quatro_padroes,m06q20_001,churn,-0.21498246097577947,0
+wcs_zero,prefix,normalized_magnitude,quatro_padroes,m07q20_001,churn,-0.12179418374291663,0
+wcs_zero,prefix,normalized_magnitude,quatro_padroes,m07q40_001,churn,-0.12169422345890769,0
+wcs_zero,prefix,normalized_magnitude,quatro_padroes,m03q10_001,wavy annular,-0.014490326499109567,0
+wcs_zero,prefix,normalized_magnitude,quatro_padroes,m03q20_001,wavy annular,0.080524503018521765,1
+wcs_zero,prefix,normalized_magnitude,quatro_padroes,m03q40_001,wavy annular,-0.10155250076527818,1
+wcs_zero,prefix,normalized_magnitude,quatro_padroes,m04q40_001,wavy annular,-0.087980157804247935,1
+wcs_zero,prefix,normalized_magnitude,quatro_padroes,m04q80_001,wavy annular,-0.038994308850817533,0
+wcs_zero,prefix,normalized_magnitude,quatro_padroes,m05q80_001,wavy annular,-0.19840247492992708,0
+wcs_zero,prefix,normalized_magnitude,quatro_padroes,m06q40_001,wavy annular,-0.055862529990260909,0
+wcs_zero,prefix,normalized_magnitude,quatro_padroes,m06q80_001,wavy annular,0.060562355189924443,1
+wcs_zero,prefix,normalized_magnitude,quatro_padroes,m07q80_001,wavy annular,-0.11146624869705025,0
+wcs_zero,prefix,normalized_magnitude,quatro_padroes,m05q01_001,plug,-0.027070816912853467,1
+wcs_zero,prefix,normalized_magnitude,quatro_padroes,m06q01_001,plug,0.0041894526015306159,1
+wcs_zero,prefix,normalized_magnitude,quatro_padroes,m07q05_001,plug,-0.036475241676233415,0
+wcs_zero,prefix,normalized_magnitude,quatro_padroes,m04q01_001,slug,0.055257087586033475,0
+wcs_zero,prefix,normalized_magnitude,quatro_padroes,m05q05_001,slug,-0.13392208226179184,0
+wcs_zero,prefix,normalized_magnitude,quatro_padroes,m06q05_001,slug,-0.058421489846424812,0
+wco_cached,pair_min_length,max_wco_all,churn_annular,m03q05_001,churn,0.10634176952400028,0
+wco_cached,pair_min_length,max_wco_all,churn_annular,m04q10_001,churn,0.061687078311909747,0
+wco_cached,pair_min_length,max_wco_all,churn_annular,m04q20_001,churn,-0.13662622425725099,1
+wco_cached,pair_min_length,max_wco_all,churn_annular,m05q10_001,churn,-0.11806170333961832,1
+wco_cached,pair_min_length,max_wco_all,churn_annular,m05q20_001,churn,-0.040697190813901128,1
+wco_cached,pair_min_length,max_wco_all,churn_annular,m05q40_001,churn,0.015378837886038344,1
+wco_cached,pair_min_length,max_wco_all,churn_annular,m06q10_001,churn,-0.15870409772981736,0
+wco_cached,pair_min_length,max_wco_all,churn_annular,m06q20_001,churn,0.11250407010990775,1
+wco_cached,pair_min_length,max_wco_all,churn_annular,m07q20_001,churn,0.22034029586532144,0
+wco_cached,pair_min_length,max_wco_all,churn_annular,m07q40_001,churn,0.17592738217669313,1
+wco_cached,pair_min_length,max_wco_all,churn_annular,m03q10_001,wavy annular,-0.57012335871722086,0
+wco_cached,pair_min_length,max_wco_all,churn_annular,m03q20_001,wavy annular,-0.38220270839619158,0
+wco_cached,pair_min_length,max_wco_all,churn_annular,m03q40_001,wavy annular,-0.52286817241557348,0
+wco_cached,pair_min_length,max_wco_all,churn_annular,m04q40_001,wavy annular,-0.61257765253633023,0
+wco_cached,pair_min_length,max_wco_all,churn_annular,m04q80_001,wavy annular,-0.49092845921250289,0
+wco_cached,pair_min_length,max_wco_all,churn_annular,m05q80_001,wavy annular,-0.64625002005862542,0
+wco_cached,pair_min_length,max_wco_all,churn_annular,m06q40_001,wavy annular,-0.36483787139720075,0
+wco_cached,pair_min_length,max_wco_all,churn_annular,m06q80_001,wavy annular,-0.48037059854679098,0
+wco_cached,pair_min_length,max_wco_all,churn_annular,m07q80_001,wavy annular,-0.48720489347868645,0
+wco_cached,pair_min_length,max_wco_all,plug_slug,m05q01_001,plug,-0.11036733398451089,0
+wco_cached,pair_min_length,max_wco_all,plug_slug,m06q01_001,plug,-0.21633694454670216,0
+wco_cached,pair_min_length,max_wco_all,plug_slug,m07q05_001,plug,0.014172833721022016,0
+wco_cached,pair_min_length,max_wco_all,plug_slug,m04q01_001,slug,0.75402248476625877,1
+wco_cached,pair_min_length,max_wco_all,plug_slug,m05q05_001,slug,0.70689073454523943,1
+wco_cached,pair_min_length,max_wco_all,plug_slug,m06q05_001,slug,0.85429274111978193,1
+wco_cached,pair_min_length,max_wco_all,quatro_padroes,m03q05_001,churn,-0.15667174802714609,0
+wco_cached,pair_min_length,max_wco_all,quatro_padroes,m04q10_001,churn,-0.14339475550951156,0
+wco_cached,pair_min_length,max_wco_all,quatro_padroes,m04q20_001,churn,-0.13662622425725099,1
+wco_cached,pair_min_length,max_wco_all,quatro_padroes,m05q10_001,churn,-0.11806170333961832,0
+wco_cached,pair_min_length,max_wco_all,quatro_padroes,m05q20_001,churn,-0.066448117541706611,1
+wco_cached,pair_min_length,max_wco_all,quatro_padroes,m05q40_001,churn,-0.53597242590975236,0
+wco_cached,pair_min_length,max_wco_all,quatro_padroes,m06q10_001,churn,-0.15870409772981736,0
+wco_cached,pair_min_length,max_wco_all,quatro_padroes,m06q20_001,churn,-0.29235018586960976,0
+wco_cached,pair_min_length,max_wco_all,quatro_padroes,m07q20_001,churn,-0.079695314067344564,0
+wco_cached,pair_min_length,max_wco_all,quatro_padroes,m07q40_001,churn,-0.33994115713427508,0
+wco_cached,pair_min_length,max_wco_all,quatro_padroes,m03q10_001,wavy annular,-0.58520432796830157,0
+wco_cached,pair_min_length,max_wco_all,quatro_padroes,m03q20_001,wavy annular,-0.45959589437955539,0
+wco_cached,pair_min_length,max_wco_all,quatro_padroes,m03q40_001,wavy annular,-0.52286817241557348,0
+wco_cached,pair_min_length,max_wco_all,quatro_padroes,m04q40_001,wavy annular,-0.68289481372974148,0
+wco_cached,pair_min_length,max_wco_all,quatro_padroes,m04q80_001,wavy annular,-0.60357126320869103,0
+wco_cached,pair_min_length,max_wco_all,quatro_padroes,m05q80_001,wavy annular,-0.80409912879355694,0
+wco_cached,pair_min_length,max_wco_all,quatro_padroes,m06q40_001,wavy annular,-0.84221437578280312,0
+wco_cached,pair_min_length,max_wco_all,quatro_padroes,m06q80_001,wavy annular,-0.6726132109079469,0
+wco_cached,pair_min_length,max_wco_all,quatro_padroes,m07q80_001,wavy annular,-0.48720489347868645,0
+wco_cached,pair_min_length,max_wco_all,quatro_padroes,m05q01_001,plug,-0.34183423120916606,0
+wco_cached,pair_min_length,max_wco_all,quatro_padroes,m06q01_001,plug,-0.23741662918908507,0
+wco_cached,pair_min_length,max_wco_all,quatro_padroes,m07q05_001,plug,-0.10414035264916839,0
+wco_cached,pair_min_length,max_wco_all,quatro_padroes,m04q01_001,slug,0.076664137205586749,0
+wco_cached,pair_min_length,max_wco_all,quatro_padroes,m05q05_001,slug,0.69114220172009966,0
+wco_cached,pair_min_length,max_wco_all,quatro_padroes,m06q05_001,slug,0.81515190611120725,1
+wco_cached,pair_min_length,weighted_zero_lag_wco,churn_annular,m03q05_001,churn,0.02889119941569037,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,churn_annular,m04q10_001,churn,0.030569405922564231,1
+wco_cached,pair_min_length,weighted_zero_lag_wco,churn_annular,m04q20_001,churn,0.0095769195535265594,1
+wco_cached,pair_min_length,weighted_zero_lag_wco,churn_annular,m05q10_001,churn,-0.046755573472873804,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,churn_annular,m05q20_001,churn,0.035285783464625214,1
+wco_cached,pair_min_length,weighted_zero_lag_wco,churn_annular,m05q40_001,churn,0.0044552594122700129,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,churn_annular,m06q10_001,churn,0.0033939152133476481,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,churn_annular,m06q20_001,churn,0.012346502991831144,1
+wco_cached,pair_min_length,weighted_zero_lag_wco,churn_annular,m07q20_001,churn,0.043678963630867006,1
+wco_cached,pair_min_length,weighted_zero_lag_wco,churn_annular,m07q40_001,churn,-0.009687421461492254,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,churn_annular,m03q10_001,wavy annular,-0.057700968962274932,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,churn_annular,m03q20_001,wavy annular,-0.055129510363054302,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,churn_annular,m03q40_001,wavy annular,-0.031011436141376816,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,churn_annular,m04q40_001,wavy annular,-0.045595801068660936,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,churn_annular,m04q80_001,wavy annular,-0.038128098128130901,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,churn_annular,m05q80_001,wavy annular,-0.060934379362195083,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,churn_annular,m06q40_001,wavy annular,-0.051384588497141649,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,churn_annular,m06q80_001,wavy annular,-0.04384898946566862,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,churn_annular,m07q80_001,wavy annular,-0.082933736914687833,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,plug_slug,m05q01_001,plug,-0.018081899295132174,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,plug_slug,m06q01_001,plug,-0.0007467283422829523,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,plug_slug,m07q05_001,plug,-0.042590889678758632,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,plug_slug,m04q01_001,slug,0.11012134842888906,1
+wco_cached,pair_min_length,weighted_zero_lag_wco,plug_slug,m05q05_001,slug,0.077002768184268974,1
+wco_cached,pair_min_length,weighted_zero_lag_wco,plug_slug,m06q05_001,slug,0.053820767283849186,1
+wco_cached,pair_min_length,weighted_zero_lag_wco,quatro_padroes,m03q05_001,churn,-0.071600500002994449,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,quatro_padroes,m04q10_001,churn,-0.058524365914050559,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,quatro_padroes,m04q20_001,churn,-0.076618587934249693,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,quatro_padroes,m05q10_001,churn,-0.046755573472873804,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,quatro_padroes,m05q20_001,churn,-0.046444015059360855,1
+wco_cached,pair_min_length,weighted_zero_lag_wco,quatro_padroes,m05q40_001,churn,-0.045673364038158026,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,quatro_padroes,m06q10_001,churn,-0.026309144162881451,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,quatro_padroes,m06q20_001,churn,-0.10382835959230993,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,quatro_padroes,m07q20_001,churn,-0.13581978992836893,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,quatro_padroes,m07q40_001,churn,-0.049629220224205066,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,quatro_padroes,m03q10_001,wavy annular,-0.11622086645121087,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,quatro_padroes,m03q20_001,wavy annular,-0.088094727275242465,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,quatro_padroes,m03q40_001,wavy annular,-0.1107412407903665,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,quatro_padroes,m04q40_001,wavy annular,-0.1472972636328195,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,quatro_padroes,m04q80_001,wavy annular,-0.088029519956770746,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,quatro_padroes,m05q80_001,wavy annular,-0.15771279183296974,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,quatro_padroes,m06q40_001,wavy annular,-0.11529775476655192,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,quatro_padroes,m06q80_001,wavy annular,-0.11034769665052439,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,quatro_padroes,m07q80_001,wavy annular,-0.12133221570304599,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,quatro_padroes,m05q01_001,plug,-0.018081899295132174,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,quatro_padroes,m06q01_001,plug,-0.0007467283422829523,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,quatro_padroes,m07q05_001,plug,-0.042590889678758632,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,quatro_padroes,m04q01_001,slug,0.10633796516378619,0
+wco_cached,pair_min_length,weighted_zero_lag_wco,quatro_padroes,m05q05_001,slug,0.073058314448385217,1
+wco_cached,pair_min_length,weighted_zero_lag_wco,quatro_padroes,m06q05_001,slug,0.023595695341194916,1
+wco_cached,pair_min_length,weighted_scale_peak_power05,churn_annular,m03q05_001,churn,0.0075654097546243703,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,churn_annular,m04q10_001,churn,-0.00051835262280149205,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,churn_annular,m04q20_001,churn,0.023982197865508575,1
+wco_cached,pair_min_length,weighted_scale_peak_power05,churn_annular,m05q10_001,churn,-0.028098177410554332,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,churn_annular,m05q20_001,churn,0.012279699156087462,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,churn_annular,m05q40_001,churn,0.019235149276020325,1
+wco_cached,pair_min_length,weighted_scale_peak_power05,churn_annular,m06q10_001,churn,0.008548003767265935,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,churn_annular,m06q20_001,churn,-0.0041147465924642104,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,churn_annular,m07q20_001,churn,0.02357394103721051,1
+wco_cached,pair_min_length,weighted_scale_peak_power05,churn_annular,m07q40_001,churn,-0.012415140190830704,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,churn_annular,m03q10_001,wavy annular,-0.099489035246661625,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,churn_annular,m03q20_001,wavy annular,-0.10318463895565184,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,churn_annular,m03q40_001,wavy annular,-0.071008796662975118,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,churn_annular,m04q40_001,wavy annular,-0.082030840881636966,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,churn_annular,m04q80_001,wavy annular,-0.096496036284924397,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,churn_annular,m05q80_001,wavy annular,-0.10676357514100715,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,churn_annular,m06q40_001,wavy annular,-0.12220881190956205,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,churn_annular,m06q80_001,wavy annular,-0.11484827106597768,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,churn_annular,m07q80_001,wavy annular,-0.1394044020110638,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,plug_slug,m05q01_001,plug,-0.011856553417624035,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,plug_slug,m06q01_001,plug,-0.03037617053728096,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,plug_slug,m07q05_001,plug,-0.076790289753530971,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,plug_slug,m04q01_001,slug,0.10030509587312325,1
+wco_cached,pair_min_length,weighted_scale_peak_power05,plug_slug,m05q05_001,slug,0.055498375825298651,1
+wco_cached,pair_min_length,weighted_scale_peak_power05,plug_slug,m06q05_001,slug,0.088514497448810917,1
+wco_cached,pair_min_length,weighted_scale_peak_power05,quatro_padroes,m03q05_001,churn,-0.12529572566115599,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,quatro_padroes,m04q10_001,churn,-0.13350837760342721,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,quatro_padroes,m04q20_001,churn,-0.11820869754861069,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,quatro_padroes,m05q10_001,churn,-0.052993357630447165,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,quatro_padroes,m05q20_001,churn,-0.085633609789720622,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,quatro_padroes,m05q40_001,churn,-0.081710006735523338,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,quatro_padroes,m06q10_001,churn,-0.06576994228492361,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,quatro_padroes,m06q20_001,churn,-0.11002032956802475,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,quatro_padroes,m07q20_001,churn,-0.20454051767409417,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,quatro_padroes,m07q40_001,churn,-0.11311428347222315,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,quatro_padroes,m03q10_001,wavy annular,-0.15631558866041895,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,quatro_padroes,m03q20_001,wavy annular,-0.17072704505434921,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,quatro_padroes,m03q40_001,wavy annular,-0.15658928104355105,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,quatro_padroes,m04q40_001,wavy annular,-0.15346959795176535,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,quatro_padroes,m04q80_001,wavy annular,-0.20600197204695553,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,quatro_padroes,m05q80_001,wavy annular,-0.22074111404580601,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,quatro_padroes,m06q40_001,wavy annular,-0.17927235047167425,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,quatro_padroes,m06q80_001,wavy annular,-0.21881364028628031,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,quatro_padroes,m07q80_001,wavy annular,-0.20973913841187111,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,quatro_padroes,m05q01_001,plug,-0.031862913774241969,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,quatro_padroes,m06q01_001,plug,-0.03037617053728096,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,quatro_padroes,m07q05_001,plug,-0.076790289753530971,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,quatro_padroes,m04q01_001,slug,0.10030509587312325,0
+wco_cached,pair_min_length,weighted_scale_peak_power05,quatro_padroes,m05q05_001,slug,0.055498375825298651,1
+wco_cached,pair_min_length,weighted_scale_peak_power05,quatro_padroes,m06q05_001,slug,0.062819207948233091,1

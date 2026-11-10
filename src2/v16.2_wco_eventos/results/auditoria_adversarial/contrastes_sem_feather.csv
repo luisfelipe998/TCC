@@ -1,0 +1,21 @@
+etapa,padrao,comparador,variante,diferenca,pares
+etapa1,plug,fixos,original,0.028890944317907268,3
+etapa1,plug,intra_distintos,original,0.027501823134667546,3
+etapa1,slug,fixos,original,0.2191926920864071,1
+etapa1,slug,intra_distintos,original,0.15199028035693585,1
+etapa1,plug,fixos,sem_feather,0.028649962526955564,3
+etapa1,plug,intra_distintos,sem_feather,0.02738944191896142,3
+etapa1,slug,fixos,sem_feather,0.21871511519283174,1
+etapa1,slug,intra_distintos,sem_feather,0.1504368378390596,1
+extensao,churn,fixos,original,0.028308239303955415,45
+extensao,churn,minimos_distintos,original,0.020217731340751062,29
+extensao,churn,polaridades_opostas,original,0.022939042461485624,45
+extensao,wavy annular,fixos,original,0.0044412001370028684,34
+extensao,wavy annular,minimos_distintos,original,-0.023808648743780875,13
+extensao,wavy annular,polaridades_opostas,original,0.00908783595538053,34
+extensao,churn,fixos,sem_feather,0.027996133188132717,45
+extensao,churn,minimos_distintos,sem_feather,0.019742556174872698,29
+extensao,churn,polaridades_opostas,sem_feather,0.02228750709369802,45
+extensao,wavy annular,fixos,sem_feather,0.004582445123104247,34
+extensao,wavy annular,minimos_distintos,sem_feather,-0.023867448533164068,13
+extensao,wavy annular,polaridades_opostas,sem_feather,0.009326546609566238,34

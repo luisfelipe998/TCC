@@ -1,0 +1,105 @@
+run,pattern,method,group,baseline_supported,all_thresholds_supported,threshold_robust,reference_median_px_s,tolerance_px_frame
+m03q05_001,churn,meniscus,large,False,False,False,,1.5
+m03q05_001,churn,object,isolated_small,False,False,False,,1.5
+m03q05_001,churn,object,large,False,False,False,,1.5
+m03q05_001,churn,object,small,False,False,False,,1.5
+m03q10_001,wavy annular,meniscus,large,False,False,False,,1.5
+m03q10_001,wavy annular,object,isolated_small,False,False,False,,1.5
+m03q10_001,wavy annular,object,large,False,False,False,,1.5
+m03q10_001,wavy annular,object,small,False,False,False,,1.5
+m03q20_001,wavy annular,meniscus,large,False,False,False,,1.5
+m03q20_001,wavy annular,object,isolated_small,False,False,False,,1.5
+m03q20_001,wavy annular,object,large,False,False,False,,1.5
+m03q20_001,wavy annular,object,small,False,False,False,,1.5
+m03q40_001,wavy annular,meniscus,large,False,False,False,,1.5
+m03q40_001,wavy annular,object,isolated_small,False,False,False,,1.5
+m03q40_001,wavy annular,object,large,False,False,False,,1.5
+m03q40_001,wavy annular,object,small,False,False,False,,1.5
+m04q01_001,slug,meniscus,large,False,False,False,,1.5
+m04q01_001,slug,object,isolated_small,True,False,False,-94480.55446746264,2.6994444133560758
+m04q01_001,slug,object,large,False,False,False,,1.5
+m04q01_001,slug,object,small,True,False,False,-104418.47735597745,2.9833850673136415
+m04q10_001,churn,meniscus,large,False,False,False,,1.5
+m04q10_001,churn,object,isolated_small,False,False,False,,1.5
+m04q10_001,churn,object,large,False,False,False,,1.5
+m04q10_001,churn,object,small,False,False,False,,1.5
+m04q20_001,churn,meniscus,large,False,False,False,,1.5
+m04q20_001,churn,object,isolated_small,False,False,False,,1.5
+m04q20_001,churn,object,large,False,False,False,,1.5
+m04q20_001,churn,object,small,False,False,False,,1.5
+m04q40_001,wavy annular,meniscus,large,False,False,False,,1.5
+m04q40_001,wavy annular,object,isolated_small,False,False,False,,1.5
+m04q40_001,wavy annular,object,large,False,False,False,,1.5
+m04q40_001,wavy annular,object,small,False,False,False,,1.5
+m04q80_001,wavy annular,meniscus,large,False,False,False,,1.5
+m04q80_001,wavy annular,object,isolated_small,False,False,False,,1.5
+m04q80_001,wavy annular,object,large,False,False,False,,1.5
+m04q80_001,wavy annular,object,small,False,False,False,,1.5
+m05q01_001,plug,meniscus,large,False,False,False,,1.5
+m05q01_001,plug,object,isolated_small,True,True,True,-82747.60954747126,2.364217415642036
+m05q01_001,plug,object,large,False,False,False,,1.5
+m05q01_001,plug,object,small,True,True,True,-82364.71381061249,2.3532775374460715
+m05q05_001,slug,meniscus,large,False,False,False,-84403.03030303013,2.4115151515151467
+m05q05_001,slug,object,isolated_small,True,True,True,-86259.86473429968,2.464567563837134
+m05q05_001,slug,object,large,False,False,False,,1.5
+m05q05_001,slug,object,small,True,True,True,-85670.68965517258,2.447733990147788
+m05q10_001,churn,meniscus,large,False,False,False,,1.5
+m05q10_001,churn,object,isolated_small,False,False,False,-66753.24573976769,1.9072355925647912
+m05q10_001,churn,object,large,False,False,False,,1.5
+m05q10_001,churn,object,small,False,False,False,-66753.24573976769,1.9072355925647912
+m05q20_001,churn,meniscus,large,False,False,False,,1.5
+m05q20_001,churn,object,isolated_small,False,False,False,,1.5
+m05q20_001,churn,object,large,False,False,False,,1.5
+m05q20_001,churn,object,small,False,False,False,,1.5
+m05q40_001,churn,meniscus,large,False,False,False,,1.5
+m05q40_001,churn,object,isolated_small,False,False,False,,1.5
+m05q40_001,churn,object,large,False,False,False,,1.5
+m05q40_001,churn,object,small,False,False,False,,1.5
+m05q80_001,wavy annular,meniscus,large,False,False,False,,1.5
+m05q80_001,wavy annular,object,isolated_small,False,False,False,,1.5
+m05q80_001,wavy annular,object,large,False,False,False,,1.5
+m05q80_001,wavy annular,object,small,False,False,False,,1.5
+m06q01_001,plug,meniscus,large,False,False,False,,1.5
+m06q01_001,plug,object,isolated_small,True,True,True,-110447.19568272238,3.1556341623634965
+m06q01_001,plug,object,large,False,False,False,,1.5
+m06q01_001,plug,object,small,True,True,True,-110996.17944204227,3.1713194126297792
+m06q05_001,slug,meniscus,large,False,False,False,,1.5
+m06q05_001,slug,object,isolated_small,False,False,False,-125691.8219995925,3.591194914274072
+m06q05_001,slug,object,large,False,False,False,,1.5
+m06q05_001,slug,object,small,True,False,False,-126080.16416008855,3.6022904045739588
+m06q10_001,churn,meniscus,large,False,False,False,,1.5
+m06q10_001,churn,object,isolated_small,False,False,False,,1.5
+m06q10_001,churn,object,large,False,False,False,,1.5
+m06q10_001,churn,object,small,False,False,False,,1.5
+m06q20_001,churn,meniscus,large,False,False,False,,1.5
+m06q20_001,churn,object,isolated_small,False,False,False,,1.5
+m06q20_001,churn,object,large,False,False,False,,1.5
+m06q20_001,churn,object,small,False,False,False,,1.5
+m06q40_001,wavy annular,meniscus,large,False,False,False,,1.5
+m06q40_001,wavy annular,object,isolated_small,False,False,False,,1.5
+m06q40_001,wavy annular,object,large,False,False,False,,1.5
+m06q40_001,wavy annular,object,small,False,False,False,,1.5
+m06q80_001,wavy annular,meniscus,large,False,False,False,,1.5
+m06q80_001,wavy annular,object,isolated_small,False,False,False,,1.5
+m06q80_001,wavy annular,object,large,False,False,False,,1.5
+m06q80_001,wavy annular,object,small,False,False,False,,1.5
+m07q01_001,dispersed bubbles,meniscus,large,False,False,False,,1.5
+m07q01_001,dispersed bubbles,object,isolated_small,True,True,True,-46289.93778783041,1.5
+m07q01_001,dispersed bubbles,object,large,False,False,False,,1.5
+m07q01_001,dispersed bubbles,object,small,True,True,True,-44543.82770801545,1.5
+m07q05_001,plug,meniscus,large,False,False,False,-107054.33257918559,3.05869521654816
+m07q05_001,plug,object,isolated_small,True,True,True,-107086.30365950859,3.0596086759859595
+m07q05_001,plug,object,large,False,False,False,,1.5
+m07q05_001,plug,object,small,True,True,True,-106433.51102724439,3.040957457921268
+m07q20_001,churn,meniscus,large,False,False,False,,1.5
+m07q20_001,churn,object,isolated_small,False,False,False,-116101.47607022618,3.317185030577891
+m07q20_001,churn,object,large,False,False,False,,1.5
+m07q20_001,churn,object,small,False,False,False,-116101.47607022618,3.317185030577891
+m07q40_001,churn,meniscus,large,False,False,False,,1.5
+m07q40_001,churn,object,isolated_small,False,False,False,,1.5
+m07q40_001,churn,object,large,False,False,False,,1.5
+m07q40_001,churn,object,small,False,False,False,,1.5
+m07q80_001,wavy annular,meniscus,large,False,False,False,,1.5
+m07q80_001,wavy annular,object,isolated_small,False,False,False,,1.5
+m07q80_001,wavy annular,object,large,False,False,False,,1.5
+m07q80_001,wavy annular,object,small,False,False,False,,1.5

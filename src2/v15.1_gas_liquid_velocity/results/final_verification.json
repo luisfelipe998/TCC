@@ -1,0 +1,68 @@
+{
+  "status": "passed",
+  "independent_audits": {
+    "independent_verification.json": {
+      "status": "passed",
+      "inputs_checked": 102
+    },
+    "independent_regional_verification.json": {
+      "status": "passed",
+      "inputs_checked": 10
+    },
+    "independent_paper_verification.json": {
+      "status": "passed",
+      "inputs_checked": 41
+    }
+  },
+  "selected_runs": 26,
+  "passage_pairs": 4,
+  "inner_region_pairs": 10,
+  "outer_region_pairs": 12,
+  "supported_core_regions": 20,
+  "documented_material_phase_pairs": 0,
+  "relative_links_checked": 268,
+  "original_result_scope": "Original passage and fixed-region analysis; current report coverage is recorded under latest_investigation.",
+  "main_reports_match_latest": [
+    "findings/EXECUTIVE_SUMMARY.md",
+    "findings/EXECUTIVE_SUMMARY_PT_BR.md",
+    "findings/FIGURE_CAPTIONS_PT_BR.md"
+  ],
+  "latest_investigation": {
+    "status": "passed",
+    "all_points": 26,
+    "internally_supported": 25,
+    "stable_all_variants": 7,
+    "material_phase_pairs": 0,
+    "svg_coordinate_checks": {
+      "PT_BR": {
+        "points": 26,
+        "filled": 7,
+        "max_coordinate_error_px_s": 0.00040093439747579396
+      },
+      "EN": {
+        "points": 26,
+        "filled": 7,
+        "max_coordinate_error_px_s": 0.0005121033755131066
+      }
+    },
+    "local_links_checked": 96,
+    "audits": {
+      "independent_block_verification.json": "passed_with_interpretation_limits",
+      "phase_local_verification.json": "passed",
+      "spectral_verification.json": "passed"
+    },
+    "manifest_files": 102,
+    "main_reports_match_latest": [
+      "findings/EXECUTIVE_SUMMARY.md",
+      "findings/EXECUTIVE_SUMMARY_PT_BR.md",
+      "findings/FIGURE_CAPTIONS_PT_BR.md"
+    ],
+    "limitations": "Numerical/provenance/presentation verification, not calibration or experimental validation of material phase velocities."
+  },
+  "scripts_parsed": 13,
+  "json_files_parsed": 12,
+  "manifest_artifacts": 221,
+  "main_units": "px/s",
+  "conditional_physical_scale_m_px": 1.8867924528301888e-05,
+  "precision_limit": "These checks validate numerical consistency and provenance, not physical phase velocities or calibrated measurement accuracy."
+}

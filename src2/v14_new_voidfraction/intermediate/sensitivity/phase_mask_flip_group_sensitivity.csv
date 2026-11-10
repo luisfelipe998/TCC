@@ -1,0 +1,11 @@
+shadow_threshold,metric,n_churn,n_annular,churn_median,annular_median,exploratory_mwu_two_sided_p,auc_churn_greater,mwu_requested_method,mwu_method,mwu_has_pooled_ties,mwu_use_continuity,mwu_tie_correction_applied
+0.6,candidate_pixel_flip_rate,10,8,0.011975819743297889,0.002366286985478387,0.0043877690936514465,0.8875,auto,exact,False,False,False
+0.6,center_candidate_flip_rate,10,8,0.005698820800309298,0.0012554927809165098,0.022755380929508105,0.825,auto,asymptotic,True,True,True
+0.65,candidate_pixel_flip_rate,10,8,0.01148102465447037,0.0016449569650448556,0.0030622971799442386,0.9,auto,exact,False,False,False
+0.65,center_candidate_flip_rate,10,8,0.00569351517837305,0.0006277463904582549,0.014043624594691018,0.85,auto,asymptotic,True,True,True
+0.7,candidate_pixel_flip_rate,10,8,0.01119010973471768,0.001132855347038008,0.0020567667626491155,0.9125,auto,exact,False,False,False
+0.7,center_candidate_flip_rate,10,8,0.005159909816746043,0.00022827141471209268,0.010913387163406582,0.8625,auto,asymptotic,True,True,True
+0.75,candidate_pixel_flip_rate,10,8,0.010875686484695075,0.0007620233841385855,0.00031994149641208463,0.9625,auto,exact,False,False,False
+0.75,center_candidate_flip_rate,10,8,0.004465880533539532,0.0,0.004681241158520029,0.9,auto,asymptotic,True,True,True
+0.8,candidate_pixel_flip_rate,10,8,0.009778813759555676,0.0006460125203408865,0.00018282371223547693,0.975,auto,exact,False,False,False
+0.8,center_candidate_flip_rate,10,8,0.003092646536523567,0.0,0.005022982067122862,0.89375,auto,asymptotic,True,True,True

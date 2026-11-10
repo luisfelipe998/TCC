@@ -1,0 +1,12 @@
+scenario,distance,ANOSIM_R,median_distance_to_primary
+principal_7001_inicio,1-Pearson(residual),0.08367626886145399,0.0
+7001_centro,1-Pearson(residual),0.14101508916323735,0.02911928835747435
+7001_fim,1-Pearson(residual),0.08093278463648826,0.036592483789541275
+linha40_7001_inicio,1-Pearson(residual),0.18491083676268869,0.04359825304447229
+referencia20_59_7001_inicio,1-Pearson(residual),0.1700960219478737,0.012604497302085793
+comprimento_completo,1-Pearson(residual),0.14897119341563791,0.011783888415961896
+3171_inicio,1-Pearson(residual),0.2197530864197531,0.0776739308405624
+3171_centro,1-Pearson(residual),0.18820301783264748,0.08547131870194313
+3171_fim,1-Pearson(residual),-0.04581618655692736,0.10607021336827627
+Spearman_residuos,Spearman_residuos,0.04471879286694103,
+Pearson_log_sem_remover_inclinacao,Pearson_log_sem_remover_inclinacao,0.11632373113854595,

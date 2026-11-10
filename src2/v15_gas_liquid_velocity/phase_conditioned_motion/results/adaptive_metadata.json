@@ -1,0 +1,223 @@
+{
+  "sizes": [
+    [
+      64,
+      12
+    ],
+    [
+      32,
+      12
+    ]
+  ],
+  "frame_indices": [
+    0,
+    10,
+    20,
+    30,
+    40,
+    50,
+    61,
+    71,
+    81,
+    91,
+    101,
+    112,
+    122,
+    132,
+    142,
+    152,
+    162,
+    173,
+    183,
+    193,
+    203,
+    213,
+    224,
+    234,
+    244,
+    254,
+    264,
+    274,
+    285,
+    295,
+    305,
+    315,
+    325,
+    336,
+    346,
+    356,
+    366,
+    376,
+    386,
+    397,
+    407,
+    417,
+    427,
+    437,
+    448,
+    458,
+    468,
+    478,
+    488,
+    499
+  ],
+  "grid_x": [
+    96,
+    128,
+    160,
+    192,
+    224,
+    256,
+    288,
+    320,
+    352,
+    384,
+    416,
+    448,
+    480,
+    512,
+    544,
+    576,
+    608,
+    640,
+    672,
+    704,
+    736,
+    768,
+    800,
+    832,
+    864,
+    896
+  ],
+  "grid_y": [
+    24,
+    36,
+    48,
+    56
+  ],
+  "source_selection": "Up to two nonoverlapping highest-dynamic-texture wholly interior grid patches; no match outcome enters selection.",
+  "source_masks": "AND of three gas masks; liquid candidate is NOT OR within18:71; both eroded with square7x7.",
+  "thresholds": [
+    0.6,
+    0.7,
+    0.8
+  ],
+  "erosion_width": 7,
+  "search": [
+    64,
+    4
+  ],
+  "min_peak": 0.6,
+  "min_margin": 0.03,
+  "min_texture": 1.0,
+  "maximum_roundtrip_px": 1.0,
+  "maximum_saturation": 0.2,
+  "method": "temporal-background-subtracted 2D NCC",
+  "ratio_definition": "Ratio of phase means, where each phase mean averages accepted-window means per sampled frame.",
+  "ratio_gates": {
+    "minimum_tracks": 20,
+    "minimum_frames": 10,
+    "minimum_abs_liquid_mean_px_frame": 1.0,
+    "same_nonzero_direction": true
+  },
+  "original_ncc_sha256": "997b76c404f1a32b28b190142fa0b98995865fbf17d5fbe3b053d5e90207ca12",
+  "synthetic": {
+    "translations": [
+      {
+        "width": 64,
+        "height": 12,
+        "true_dx": -13,
+        "true_dy": 0,
+        "measured_dx": -12.9998594632619,
+        "measured_dy": -0.013442664200374937,
+        "error_px": 0.013443398803085385,
+        "roundtrip_px": 0.013443398803085316
+      },
+      {
+        "width": 64,
+        "height": 12,
+        "true_dx": 17,
+        "true_dy": 2,
+        "measured_dx": 17.0001405367381,
+        "measured_dy": 1.9865573357996253,
+        "error_px": 0.01344339880308512,
+        "roundtrip_px": 0.01344339880308512
+      },
+      {
+        "width": 64,
+        "height": 12,
+        "true_dx": -6.25,
+        "true_dy": -1.2,
+        "measured_dx": -6.213488757914583,
+        "measured_dy": -1.181775728734951,
+        "error_px": 0.04080679920995985,
+        "roundtrip_px": 0.2650958213661392
+      },
+      {
+        "width": 64,
+        "height": 12,
+        "true_dx": 0,
+        "true_dy": 0,
+        "measured_dx": 0.00014053673809981502,
+        "measured_dy": -0.013442664200374778,
+        "error_px": 0.013443398803085229,
+        "roundtrip_px": 0.013443398803085057
+      },
+      {
+        "width": 32,
+        "height": 12,
+        "true_dx": -13,
+        "true_dy": 0,
+        "measured_dx": -13.003865540586384,
+        "measured_dy": -0.0051167646841328305,
+        "error_px": 0.0064127751292065455,
+        "roundtrip_px": 0.006412775129206551
+      },
+      {
+        "width": 32,
+        "height": 12,
+        "true_dx": 17,
+        "true_dy": 2,
+        "measured_dx": 16.996134459413614,
+        "measured_dy": 1.994883235315867,
+        "error_px": 0.00641277512920777,
+        "roundtrip_px": 0.00641277512920777
+      },
+      {
+        "width": 32,
+        "height": 12,
+        "true_dx": -6.25,
+        "true_dy": -1.2,
+        "measured_dx": -6.2186243312949525,
+        "measured_dy": -1.176264402036459,
+        "error_px": 0.03934223172845875,
+        "roundtrip_px": 0.2688057872150801
+      },
+      {
+        "width": 32,
+        "height": 12,
+        "true_dx": 0,
+        "true_dy": 0,
+        "measured_dx": -0.0038655405863842955,
+        "measured_dy": -0.0051167646841327455,
+        "error_px": 0.006412775129206724,
+        "roundtrip_px": 0.0064127751292065
+      }
+    ],
+    "constant_rejected": true,
+    "maximum_error_px": 0.04080679920995985
+  },
+  "rows": {
+    "opportunities": 5200,
+    "tracks": 5862,
+    "phase_summary": 104,
+    "ratios": 52
+  },
+  "elapsed_seconds": 19.45023154199589,
+  "limitations": [
+    "Phase-candidate purity is not independently established phase identity.",
+    "Texture-maximizing selection may favor residual bubbles, reflections or refractive features.",
+    "Smaller windows can be more ambiguous and less representative.",
+    "Image descriptors do not establish material gas/liquid velocity or slip."
+  ]
+}

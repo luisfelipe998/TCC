@@ -1,0 +1,50 @@
+{
+  "status": "complete",
+  "runs": 26,
+  "runtime_s": 626.1876340409799,
+  "script_sha256": "b1e280335f15c702c756326c2b823e6f7cd4d74cc4d6f22c8559c0a5fce53556",
+  "reused_math_sha256": "3fab7f1eefff31e0a21416529e00d002b159092ba2877b6b9aa3b5c4044d6580",
+  "inventory_sha256": "cd462d58c268a085d588d2010a91f59f3a39133ce8218e77eff5b599e37c7c19",
+  "methods": [
+    "raw",
+    "fixed_background",
+    "interface_distance"
+  ],
+  "erosion_radii": [
+    3,
+    1
+  ],
+  "lags": [
+    1,
+    2,
+    4
+  ],
+  "blocks": 6,
+  "block_policy": "Three blocks per half; >=5/6 supported, >=2 per half. Pair uses identical common blocks.",
+  "predictor": "Other-half training only; radial row x signed segmentation-distance bin, 25 bins of width2 clipped +/-24px; sigma1-bin smooth; sparse bins (<100 pixels) interpolated using training only.",
+  "velocity_average": "Mean of accepted per-block lag1 NCC velocities weighted by compared frame intervals; not peak of pooled correlations.",
+  "gates": {
+    "min_area_pixels_per_frame": 100,
+    "min_area_frames_per_block": 20,
+    "min_raw_std": 1,
+    "min_residual_std": 1,
+    "min_corr": 0.2,
+    "min_margin": 0.02,
+    "min_null_gap": 0.05,
+    "max_saturation": 0.2,
+    "min_overlap_pairs": 1000,
+    "min_overlap_relative": 0.25,
+    "lag_tolerance": "max(2 px/frame, 20% lag1 magnitude)",
+    "min_common_blocks": 5
+  },
+  "material_pairs_identified": 0,
+  "limitations": [
+    "The predictor removes one interface-conditioned brightness law, not all interface optics.",
+    "No new material phase labels or tracer identity are created by residualization.",
+    "Shared moving illumination passes the optical validation controls.",
+    "Intervals across block boundaries are omitted; selected subsets can bias means.",
+    "Other-half temporal training is separated, but halves are not independent experimental replicates.",
+    "Static wall texture can dominate raw correlations; fixed subtraction can imprint training structures.",
+    "Physical pixel calibration is absent; no certified m/s or cross-run magnification is assumed."
+  ]
+}

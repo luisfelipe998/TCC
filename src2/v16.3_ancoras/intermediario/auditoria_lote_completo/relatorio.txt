@@ -1,0 +1,37 @@
+A auditoria aprovou os cálculos e a consistência dos dados do lote completo, para o método e os perfis configurados. Não foi identificado erro numérico, vínculo com outro ensaio, resultado desatualizado ou divergência entre PNGs e dados. Os arquivos de produção permaneceram intactos; as evidências desta auditoria estão somente nesta pasta.
+
+Foram reconstruídos os 25 panoramas, pixel a pixel, a partir dos 12.525 quadros originais e das larguras das faixas armazenadas. Isso confirmou a reprodução do método de montagem v11. Não equivale a uma calibração física dos deslocamentos: os eixos continuam em pixels.
+
+A detecção e o ranking das 25 âncoras foram recalculados por uma implementação independente: mediana com janelas explícitas e fechamento por preenchimento de lacunas para plug/slug; convolução gaussiana explícita para churn/wavy annular. Todos os candidatos elegíveis e todos os vencedores nativos coincidiram. Foram conferidos as linhas 18–71 inclusivas, as margens, os centros, os suportes e os perfis nativo/comparável. A aceitação morfológica de plug/slug continua dependendo das anotações visuais da v16.2, complementadas pela inspeção do lote; não é um classificador automático de forma.
+
+As 44 precomputações individuais e os 87 pares foram conferidos novamente a partir da média extraída dos panoramas, com regressão independente, correlação direta, convolução com Morlet no domínio temporal e somas escalares explícitas. Maior erro absoluto da CWT individual: 3,50e-14; da potência média: 3,31e-14; da WCO: 1,35e-14. São diferenças de arredondamento em ponto flutuante. A WCO observada ficou entre 2,75e-11 e 0,990165, sem truncamento artificial em 1.
+
+As fórmulas foram confrontadas com Schuck–Bodmann, páginas impressas 411, 413 e 414, no PDF de /assets. A CWT, a Morlet, a conversão entre escala e comprimento de onda e as definições alternativas de WPS/WCS/WCO estão consistentes com as Eqs.32.4, 32.6, 32.8 e 32.14–32.17, para K=1. O estimador de correlação usa explicitamente divisor N (enviesado), adaptação já adotada; o livro usa N-|lag|. No controle de impulsos atrasados em 500 px, o método adotado produziu WCO=1 no lag correto, enquanto o divisor não enviesado produziu 1,750322. A adaptação permanece justificada para conservar o limite unitário neste método.
+
+A Eq.32.20 impressa no livro contém módulo, embora a definição 32.16 seja complexa. Para K=1, isso não altera o módulo exibido nem a WCO. O código preserva a WCS complexa; uma futura extensão para K>1 exigirá definir explicitamente a agregação, e está atualmente bloqueada pela validação de parâmetros.
+
+A curva potência média é a média do módulo da WPS sobre lags com suporte geométrico, em cada escala. É um resumo adicional; não é uma média de realizações K nem potência física calibrada. Foram conferidos ganho, inversão de sinal, troca X/Y, sinal do lag, autocorrelação, pico de uma senoide e integridade dos caches. As proteções rejeitaram parâmetros incompatíveis, comprimento inválido, arquivo de outro ensaio e corrupção posterior à primeira leitura.
+
+Os 112 PNGs foram gerados novamente somente numa pasta de auditoria. Todos ficaram idênticos, pixel a pixel e byte a byte, aos arquivos finais. Foram confirmados o uso de 2048 px nos 87 pares, os centros correspondentes, os rótulos e as proporções em retrato. As imagens de âncoras de churn/wavy annular mostram o contexto nativo de 4096 px; o recorte das comparações é de 2048 px. Os títulos indicam essas janelas diferentes.
+
+Há limites da seleção que devem acompanhar a interpretação:
+
+- O mesmo vale continua localizável em sigma 12, 16 e 20 em todos os 19 ensaios de churn/wavy annular. Porém, refazer TODO o ranking com outro sigma muda o vencedor em 5 contextos nativos: m03q05_001, m03q10_001, m05q40_001, m05q80_001 e m07q40_001. As posições locais têm deslocamento máximo de apenas 4 px, mas a proeminência relativa de vales concorrentes pode trocar a ordem. Na janela comparável de 2048 px, o ranking completo é sensível em 9 dos 19 ensaios. A regra principal permanece maior proeminência em sigma=16 entre vales localmente estáveis.
+
+- Quatro âncoras são as melhores no contexto nativo de 4096 px, mas ficam em segundo lugar se a escolha for reiniciada diretamente em 2048 px. As alternativas ficam perto das bordas e não comportam 4096 px. A política adotada preservou as âncoras nativas entre os perfis, conforme documentado antes das comparações:
+  m04q20_001: centro preservado 5074 px; alternativa em 2048 px: 2009 px.
+  m04q40_001: centro preservado 8529 px; alternativa em 2048 px: 13597 px.
+  m06q10_001: centro preservado 5321 px; alternativa em 2048 px: 1759 px.
+  m07q40_001: centro preservado 5065 px; alternativa em 2048 px: 1530 px.
+  Portanto, melhor âncora deve ser entendido dentro das condições nativas de seleção, e não como ótimo independente da janela.
+
+- A âncora m07q05_001, coluna 5732 px, coincide com uma coluna substituída pela costura de 2 px herdada do v11. Restaurar apenas essa coluna ao valor nominal não mudou o evento nem sua âncora. Nos dois pares envolvidos, a maior alteração pontual da WCO foi 0,0002564, e a maior alteração da média central em módulo foi 0,0000121. Esse teste pontual não avalia a remoção de todas as costuras e não justifica alterar os dados principais.
+
+- Os rótulos favoravel/desfavoravel continuam sendo orientação visual, sem significância estatística. K=1, seleção de um evento e coerência alta em escalas longas não demonstram acurácia de classificação nem representatividade de toda a aquisição.
+
+A reutilização foi confirmada nos 50 perfis nomeados, com 44 contextos numéricos distintos e duas grades. Foram verificados os vínculos dos 87 pares intra e dos 213 pares inter possíveis no perfil comum, sem executar as comparações inter. A fonte, o centro, o recorte, o preparo, a grade e a implementação integram a identidade do cache. WPS/autocorrelações são individuais; WCS/WCO dependem do par. Os arquivos pré-calculados foram reutilizados sem reescrita.
+
+Recomendação: manter os resultados atuais e os centros congelados para continuar a comparação descritiva no perfil comum. Os diagnósticos acima devem acompanhar a interpretação de melhor âncora e dos rótulos de coerência. Não houve necessidade de corrigir as fórmulas, os dados pré-calculados ou as figuras. A pasta 03_conclusoes permanece vazia.
+
+Evidências: verificacao.json; ancoras.csv; individuais.csv; pares.csv; figuras.csv; controles.json; compatibilidade_futura.json; efeito_janela_no_ranking.json; sensibilidade_coluna_costura.csv; referencia_schuck/.
+Script: ../../scripts/audit_full_analysis.py.

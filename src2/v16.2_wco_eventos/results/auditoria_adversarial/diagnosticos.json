@@ -1,0 +1,34 @@
+{
+  "etapas": {
+    "admissible": {
+      "pares_admissiveis": 1095,
+      "novos": 799,
+      "sementes_alternativas": 100,
+      "nota": "Distribuição de decisões de amostragem de parceiros; não intervalo de confiança nem replicações experimentais.",
+      "segundos": 77.97459587501362
+    },
+    "seams": {
+      "pares_ancorados": 458,
+      "pares_fixos": 261,
+      "nota": "Contrafactual da operação de feather, com deslocamentos, âncoras e parceiros fixos; não reconstrói o escoamento real nem refaz a seleção óptica.",
+      "segundos": 73.66772500000661
+    },
+    "synthetic": {
+      "repeticoes": 40,
+      "calculaveis": 40,
+      "semente": 20261026,
+      "phi": 0.95,
+      "N_panorama": 8192,
+      "ancoras_media": 0.23090038487293896,
+      "fixos_media": 0.2139986721023555,
+      "diferenca_media": 0.016901712770583454,
+      "diferenca_minima": -0.1725537896038035,
+      "diferenca_maxima": 0.15206287542944122,
+      "fracao_positiva": 0.625,
+      "nota": "Dois AR(1) gaussianos independentes por repetição, sem evento físico compartilhado. Detector e seleção completos antes da WCO. Diagnóstico posterior; não teste nulo calibrado para os dados experimentais.",
+      "segundos": 29.853856583009474
+    }
+  },
+  "status": "PASS",
+  "data_utc": "2026-10-25T05:16:22.122843+00:00"
+}

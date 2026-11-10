@@ -1,0 +1,58 @@
+m03q05_001 additional comparisons verified
+m03q10_001 additional comparisons verified
+m03q20_001 additional comparisons verified
+m03q40_001 additional comparisons verified
+m04q01_001 additional comparisons verified
+m04q10_001 additional comparisons verified
+m04q20_001 additional comparisons verified
+m04q40_001 additional comparisons verified
+m04q80_001 additional comparisons verified
+m05q01_001 additional comparisons verified
+m05q05_001 additional comparisons verified
+m05q10_001 additional comparisons verified
+m05q20_001 additional comparisons verified
+m05q40_001 additional comparisons verified
+m05q80_001 additional comparisons verified
+m06q01_001 additional comparisons verified
+m06q05_001 additional comparisons verified
+m06q10_001 additional comparisons verified
+m06q20_001 additional comparisons verified
+m06q40_001 additional comparisons verified
+m06q80_001 additional comparisons verified
+m07q01_001 additional comparisons verified
+m07q05_001 additional comparisons verified
+m07q20_001 additional comparisons verified
+m07q40_001 additional comparisons verified
+m07q80_001 additional comparisons verified
+{
+  "status": "passed_numerical_audit",
+  "counts": {
+    "checked_scalar_values": 27834,
+    "independent_robust_tracks": 2804,
+    "extrapolation_models_recalculated": 28
+  },
+  "accepted_robust_tracks_missing_old_correspondence_gates": 0,
+  "motion_resolved_small_baseline_tracks": 214,
+  "common_intervals_checked": 1041,
+  "threshold_stable_common_pairs": [
+    "m05q05_001",
+    "m07q05_001"
+  ],
+  "threshold_stable_small_object_runs": [
+    "m05q01_001",
+    "m05q05_001",
+    "m06q01_001",
+    "m07q01_001",
+    "m07q05_001"
+  ],
+  "inter_recording_pairs": 10,
+  "extrapolation_midpoint_folds_with_temporal_overlap": 0,
+  "extrapolation_midpoint_folds_with_overlap_before_purge": 6,
+  "extrapolation_midpoint_folds": 33,
+  "physical_phase_pair_verified": false,
+  "limitations": [
+    "Paired interval coordinates average fitted whole-trajectory slopes; fits also use nodes outside the common interval set.",
+    "The size-extrapolation holdouts assign tracks by midpoint block and purge overlapping training intervals; they remain dependent samples from one short recording.",
+    "Robust endpoint method uses new gates rather than requiring original OLS acceptance; current accepted chains nevertheless pass the original lag/reversal correspondence diagnostics."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "n_numeric_reaggregations": 14883,
+  "mask_summary_rows": 78,
+  "per_frame_rows": 1001,
+  "bubble_link_rows": 4904,
+  "bubble_summary_rows": 3,
+  "displayed_tracks": [
+    22,
+    29
+  ],
+  "scope": "Saved computation and selection consistency; no physical phase ground truth."
+}

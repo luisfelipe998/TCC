@@ -1,0 +1,30 @@
+[
+  {
+    "ensaio": "m04q20_001",
+    "ancora_preservada": 5074,
+    "melhor_se_reselecionar_em_2048": 2009,
+    "alternativa_cabe_4096": false,
+    "alternativa_cabe_2048": true
+  },
+  {
+    "ensaio": "m04q40_001",
+    "ancora_preservada": 8529,
+    "melhor_se_reselecionar_em_2048": 13597,
+    "alternativa_cabe_4096": false,
+    "alternativa_cabe_2048": true
+  },
+  {
+    "ensaio": "m06q10_001",
+    "ancora_preservada": 5321,
+    "melhor_se_reselecionar_em_2048": 1759,
+    "alternativa_cabe_4096": false,
+    "alternativa_cabe_2048": true
+  },
+  {
+    "ensaio": "m07q40_001",
+    "ancora_preservada": 5065,
+    "melhor_se_reselecionar_em_2048": 1530,
+    "alternativa_cabe_4096": false,
+    "alternativa_cabe_2048": true
+  }
+]

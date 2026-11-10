@@ -1,0 +1,298 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "synthetic_and_mutation_controls",
+      "passed": true,
+      "details": {
+        "monotone_source_columns": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "legacy_columns": [
+          1,
+          2,
+          3,
+          6,
+          5,
+          6,
+          7,
+          8
+        ],
+        "correct_flips": 1,
+        "legacy_flips": 3,
+        "odd_even_one_pixel_widths_passed": true,
+        "constant_pixels_preserved": true,
+        "legacy_and_one_pixel_mutations_rejected": true,
+        "invalid_widths_rejected": true,
+        "wrong_flip_denominators_and_D60_detected": true
+      }
+    },
+    {
+      "check": "method_preservation",
+      "passed": true,
+      "details": {
+        "entire_analysis_modules_unchanged_except_input_routing_and_documented_paths": [
+          "panorama_void_alternatives.py",
+          "phase_mask_flip_analysis.py",
+          "raw_flip_analysis.py",
+          "image_void_alternatives.py",
+          "pattern_identification.py",
+          "silhouette_pattern_identification.py"
+        ],
+        "unchanged_function_AST": [
+          "panorama_void_alternatives.py:normalize",
+          "panorama_void_alternatives.py:make_reference",
+          "panorama_void_alternatives.py:close_shadow_crop",
+          "panorama_void_alternatives.py:silhouette",
+          "panorama_void_alternatives.py:geometry",
+          "raw_flip_analysis.py:otsu",
+          "raw_flip_analysis.py:state_statistics",
+          "raw_flip_analysis.py:config",
+          "raw_flip_analysis.py:two_sided_mann_whitney",
+          "pattern_identification.py:features",
+          "pattern_identification.py:predict",
+          "pattern_identification.py:evaluate",
+          "pattern_identification.py:training_fold_metadata",
+          "pattern_identification.py:metrics",
+          "silhouette_pattern_identification.py:interval_lengths",
+          "silhouette_pattern_identification.py:extract",
+          "silhouette_pattern_identification.py:checks",
+          "summary_figures.py:hull_indices",
+          "summary_figures.py:alternation_chart"
+        ],
+        "geometry_and_selection_byte_identical": true,
+        "analysis_constants_unchanged": true
+      }
+    },
+    {
+      "check": "source_column_order_and_immutable_inputs",
+      "passed": true,
+      "details": {
+        "runs": [
+          {
+            "run": "m03q05_001",
+            "native_strips": 501,
+            "width": 9586,
+            "changed_columns": 500,
+            "changes_confined_to_defective_seam_columns": true
+          },
+          {
+            "run": "m03q10_001",
+            "native_strips": 501,
+            "width": 14224,
+            "changed_columns": 500,
+            "changes_confined_to_defective_seam_columns": true
+          },
+          {
+            "run": "m03q20_001",
+            "native_strips": 501,
+            "width": 23079,
+            "changed_columns": 500,
+            "changes_confined_to_defective_seam_columns": true
+          },
+          {
+            "run": "m03q40_001",
+            "native_strips": 501,
+            "width": 20743,
+            "changed_columns": 419,
+            "changes_confined_to_defective_seam_columns": true
+          },
+          {
+            "run": "m04q01_001",
+            "native_strips": 501,
+            "width": 5071,
+            "changed_columns": 430,
+            "changes_confined_to_defective_seam_columns": true
+          },
+          {
+            "run": "m04q10_001",
+            "native_strips": 501,
+            "width": 8829,
+            "changed_columns": 500,
+            "changes_confined_to_defective_seam_columns": true
+          },
+          {
+            "run": "m04q20_001",
+            "native_strips": 501,
+            "width": 9344,
+            "changed_columns": 500,
+            "changes_confined_to_defective_seam_columns": true
+          },
+          {
+            "run": "m04q40_001",
+            "native_strips": 501,
+            "width": 14960,
+            "changed_columns": 500,
+            "changes_confined_to_defective_seam_columns": true
+          },
+          {
+            "run": "m04q80_001",
+            "native_strips": 501,
+            "width": 22636,
+            "changed_columns": 500,
+            "changes_confined_to_defective_seam_columns": true
+          },
+          {
+            "run": "m05q01_001",
+            "native_strips": 501,
+            "width": 5940,
+            "changed_columns": 500,
+            "changes_confined_to_defective_seam_columns": true
+          },
+          {
+            "run": "m05q05_001",
+            "native_strips": 501,
+            "width": 6323,
+            "changed_columns": 500,
+            "changes_confined_to_defective_seam_columns": true
+          },
+          {
+            "run": "m05q10_001",
+            "native_strips": 501,
+            "width": 7001,
+            "changed_columns": 500,
+            "changes_confined_to_defective_seam_columns": true
+          },
+          {
+            "run": "m05q20_001",
+            "native_strips": 501,
+            "width": 7391,
+            "changed_columns": 500,
+            "changes_confined_to_defective_seam_columns": true
+          },
+          {
+            "run": "m05q40_001",
+            "native_strips": 501,
+            "width": 9937,
+            "changed_columns": 500,
+            "changes_confined_to_defective_seam_columns": true
+          },
+          {
+            "run": "m05q80_001",
+            "native_strips": 501,
+            "width": 17524,
+            "changed_columns": 500,
+            "changes_confined_to_defective_seam_columns": true
+          },
+          {
+            "run": "m06q01_001",
+            "native_strips": 501,
+            "width": 7798,
+            "changed_columns": 500,
+            "changes_confined_to_defective_seam_columns": true
+          },
+          {
+            "run": "m06q05_001",
+            "native_strips": 501,
+            "width": 7787,
+            "changed_columns": 500,
+            "changes_confined_to_defective_seam_columns": true
+          },
+          {
+            "run": "m06q10_001",
+            "native_strips": 501,
+            "width": 7584,
+            "changed_columns": 500,
+            "changes_confined_to_defective_seam_columns": true
+          },
+          {
+            "run": "m06q20_001",
+            "native_strips": 501,
+            "width": 10044,
+            "changed_columns": 500,
+            "changes_confined_to_defective_seam_columns": true
+          },
+          {
+            "run": "m06q40_001",
+            "native_strips": 501,
+            "width": 14772,
+            "changed_columns": 500,
+            "changes_confined_to_defective_seam_columns": true
+          },
+          {
+            "run": "m06q80_001",
+            "native_strips": 501,
+            "width": 18665,
+            "changed_columns": 500,
+            "changes_confined_to_defective_seam_columns": true
+          },
+          {
+            "run": "m07q01_001",
+            "native_strips": 501,
+            "width": 3171,
+            "changed_columns": 500,
+            "changes_confined_to_defective_seam_columns": true
+          },
+          {
+            "run": "m07q05_001",
+            "native_strips": 501,
+            "width": 7358,
+            "changed_columns": 500,
+            "changes_confined_to_defective_seam_columns": true
+          },
+          {
+            "run": "m07q20_001",
+            "native_strips": 501,
+            "width": 8255,
+            "changed_columns": 500,
+            "changes_confined_to_defective_seam_columns": true
+          },
+          {
+            "run": "m07q40_001",
+            "native_strips": 501,
+            "width": 10349,
+            "changed_columns": 500,
+            "changes_confined_to_defective_seam_columns": true
+          },
+          {
+            "run": "m07q80_001",
+            "native_strips": 501,
+            "width": 16658,
+            "changed_columns": 500,
+            "changes_confined_to_defective_seam_columns": true
+          }
+        ],
+        "native_strips_checked": 13026,
+        "source_files_unchanged": 13105,
+        "baseline_and_original_files_unchanged": 632
+      }
+    },
+    {
+      "check": "all_thresholds_and_hulls",
+      "passed": true,
+      "details": {
+        "independent_mask_area_flip_threshold_cases": 130,
+        "hull_intersections_verified_with_distinct_linear_program": 10,
+        "hull_intersections_also_verified_without_optimizer": 10,
+        "thresholds_preserved": [
+          0.6,
+          0.65,
+          0.7,
+          0.75,
+          0.8
+        ],
+        "primary_threshold": 0.7
+      }
+    },
+    {
+      "check": "honest_comparison_and_reports",
+      "passed": true,
+      "details": {
+        "acquisitions": 26,
+        "classifier_variants": 48,
+        "fixed_classifier_comparisons": 12,
+        "report_change_numbers_checked": true,
+        "all_outcomes_reported": true
+      }
+    }
+  ],
+  "script_sha256": "2a3f418a09ff01219edb8aa567ee16a8da56c089238c0a6f08f316b303d2f17b",
+  "limitation": "These controls verify implementation and reporting, not true gas phase, refraction, advection validity or physical void accuracy."
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "images": 31,
+  "signal_csvs": 31,
+  "full_profiles_recomputed": 31,
+  "window_profiles_recomputed": 78,
+  "saved_pair_maps_equation_checked": 87,
+  "full_profile_max_relative_l2": 3.8573073562876003e-16,
+  "window_profile_max_relative_l2": 2.2460423633545835e-16,
+  "saved_maps_equation_max_abs_error": 0.0,
+  "panorama_reconstruction_reexecuted": false,
+  "full_pair_transforms_reexecuted": false,
+  "note": "Perfis em zero recalculados independentemente; mapas salvos conferidos na Eq. 32.17. Não se refez a reconstrução dos panoramas."
+}

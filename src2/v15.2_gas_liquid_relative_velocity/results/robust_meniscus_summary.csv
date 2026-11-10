@@ -1,0 +1,79 @@
+run,pattern,fps,threshold,accepted_tracks,unique_intervals,observed_blocks,median_px_frame,median_px_s,q25_px_s,q75_px_s,supported
+m03q05_001,churn,5000.0,0.6,0,0,0,nan,nan,nan,nan,False
+m03q05_001,churn,5000.0,0.7,0,0,0,nan,nan,nan,nan,False
+m03q05_001,churn,5000.0,0.8,0,0,0,nan,nan,nan,nan,False
+m03q10_001,wavy annular,5000.0,0.6,0,0,0,nan,nan,nan,nan,False
+m03q10_001,wavy annular,5000.0,0.7,0,0,0,nan,nan,nan,nan,False
+m03q10_001,wavy annular,5000.0,0.8,0,0,0,nan,nan,nan,nan,False
+m03q20_001,wavy annular,4000.0,0.6,0,0,0,nan,nan,nan,nan,False
+m03q20_001,wavy annular,4000.0,0.7,0,0,0,nan,nan,nan,nan,False
+m03q20_001,wavy annular,4000.0,0.8,0,0,0,nan,nan,nan,nan,False
+m03q40_001,wavy annular,4000.0,0.6,0,0,0,nan,nan,nan,nan,False
+m03q40_001,wavy annular,4000.0,0.7,0,0,0,nan,nan,nan,nan,False
+m03q40_001,wavy annular,4000.0,0.8,0,0,0,nan,nan,nan,nan,False
+m04q01_001,slug,7000.0,0.6,0,0,0,nan,nan,nan,nan,False
+m04q01_001,slug,7000.0,0.7,1,29,1,-15.5,-108500.0,-108500.0,-108500.0,False
+m04q01_001,slug,7000.0,0.8,0,0,0,nan,nan,nan,nan,False
+m04q10_001,churn,5000.0,0.6,0,0,0,nan,nan,nan,nan,False
+m04q10_001,churn,5000.0,0.7,0,0,0,nan,nan,nan,nan,False
+m04q10_001,churn,5000.0,0.8,0,0,0,nan,nan,nan,nan,False
+m04q20_001,churn,5000.0,0.6,0,0,0,nan,nan,nan,nan,False
+m04q20_001,churn,5000.0,0.7,0,0,0,nan,nan,nan,nan,False
+m04q20_001,churn,5000.0,0.8,0,0,0,nan,nan,nan,nan,False
+m04q40_001,wavy annular,5000.0,0.6,0,0,0,nan,nan,nan,nan,False
+m04q40_001,wavy annular,5000.0,0.7,0,0,0,nan,nan,nan,nan,False
+m04q40_001,wavy annular,5000.0,0.8,0,0,0,nan,nan,nan,nan,False
+m04q80_001,wavy annular,5000.0,0.6,0,0,0,nan,nan,nan,nan,False
+m04q80_001,wavy annular,5000.0,0.7,0,0,0,nan,nan,nan,nan,False
+m04q80_001,wavy annular,5000.0,0.8,0,0,0,nan,nan,nan,nan,False
+m05q01_001,plug,7000.0,0.6,4,161,4,-11.809832791503661,-82668.82954052562,-83014.58345655646,-81665.79861111112,True
+m05q01_001,plug,7000.0,0.7,3,130,4,-11.86111111111111,-83027.77777777778,-83446.90324295587,-82324.11433172303,True
+m05q01_001,plug,7000.0,0.8,3,97,3,-11.880476190476191,-83163.33333333334,-84665.0,-82837.91666666667,True
+m05q05_001,slug,7000.0,0.6,7,195,5,-12.957936507936509,-90705.55555555556,-94466.12619406736,-90287.11414937327,True
+m05q05_001,slug,7000.0,0.7,5,206,5,-12.999583333333334,-90997.08333333334,-92750.0,-90043.51851851851,True
+m05q05_001,slug,7000.0,0.8,3,120,3,-12.961449579831932,-90730.14705882352,-92503.01212590298,-89681.74019607843,True
+m05q10_001,churn,7000.0,0.6,0,0,0,nan,nan,nan,nan,False
+m05q10_001,churn,7000.0,0.7,0,0,0,nan,nan,nan,nan,False
+m05q10_001,churn,7000.0,0.8,0,0,0,nan,nan,nan,nan,False
+m05q20_001,churn,7000.0,0.6,0,0,0,nan,nan,nan,nan,False
+m05q20_001,churn,7000.0,0.7,0,0,0,nan,nan,nan,nan,False
+m05q20_001,churn,7000.0,0.8,0,0,0,nan,nan,nan,nan,False
+m05q40_001,churn,7000.0,0.6,0,0,0,nan,nan,nan,nan,False
+m05q40_001,churn,7000.0,0.7,0,0,0,nan,nan,nan,nan,False
+m05q40_001,churn,7000.0,0.8,0,0,0,nan,nan,nan,nan,False
+m05q80_001,wavy annular,7000.0,0.6,0,0,0,nan,nan,nan,nan,False
+m05q80_001,wavy annular,7000.0,0.7,0,0,0,nan,nan,nan,nan,False
+m05q80_001,wavy annular,7000.0,0.8,0,0,0,nan,nan,nan,nan,False
+m06q01_001,plug,7000.0,0.6,5,156,3,-16.332456140350878,-114327.19298245615,-119350.0,-113189.54248366013,True
+m06q01_001,plug,7000.0,0.7,5,178,4,-16.1890190592761,-113323.13341493269,-119835.22727272726,-109408.77192982456,True
+m06q01_001,plug,7000.0,0.8,3,101,2,-15.45,-108150.0,-108700.0,-107936.28389154705,False
+m06q05_001,slug,7000.0,0.6,0,0,0,nan,nan,nan,nan,False
+m06q05_001,slug,7000.0,0.7,0,0,0,nan,nan,nan,nan,False
+m06q05_001,slug,7000.0,0.8,0,0,0,nan,nan,nan,nan,False
+m06q10_001,churn,7000.0,0.6,0,0,0,nan,nan,nan,nan,False
+m06q10_001,churn,7000.0,0.7,0,0,0,nan,nan,nan,nan,False
+m06q10_001,churn,7000.0,0.8,0,0,0,nan,nan,nan,nan,False
+m06q20_001,churn,7000.0,0.6,0,0,0,nan,nan,nan,nan,False
+m06q20_001,churn,7000.0,0.7,0,0,0,nan,nan,nan,nan,False
+m06q20_001,churn,7000.0,0.8,0,0,0,nan,nan,nan,nan,False
+m06q40_001,wavy annular,7000.0,0.6,0,0,0,nan,nan,nan,nan,False
+m06q40_001,wavy annular,7000.0,0.7,0,0,0,nan,nan,nan,nan,False
+m06q40_001,wavy annular,7000.0,0.8,0,0,0,nan,nan,nan,nan,False
+m06q80_001,wavy annular,7000.0,0.6,0,0,0,nan,nan,nan,nan,False
+m06q80_001,wavy annular,7000.0,0.7,0,0,0,nan,nan,nan,nan,False
+m06q80_001,wavy annular,7000.0,0.8,0,0,0,nan,nan,nan,nan,False
+m07q01_001,dispersed bubbles,7000.0,0.6,0,0,0,nan,nan,nan,nan,False
+m07q01_001,dispersed bubbles,7000.0,0.7,0,0,0,nan,nan,nan,nan,False
+m07q01_001,dispersed bubbles,7000.0,0.8,0,0,0,nan,nan,nan,nan,False
+m07q05_001,plug,7000.0,0.6,11,325,5,-15.429487179487179,-108006.41025641025,-109811.05769230769,-106541.96290123882,True
+m07q05_001,plug,7000.0,0.7,10,329,5,-15.415812356979405,-107910.68649885584,-110241.83078915089,-106573.92914141747,True
+m07q05_001,plug,7000.0,0.8,10,321,5,-15.432205648960968,-108025.43954272679,-111972.21824942791,-106720.60489766081,True
+m07q20_001,churn,7000.0,0.6,0,0,0,nan,nan,nan,nan,False
+m07q20_001,churn,7000.0,0.7,0,0,0,nan,nan,nan,nan,False
+m07q20_001,churn,7000.0,0.8,0,0,0,nan,nan,nan,nan,False
+m07q40_001,churn,7000.0,0.6,0,0,0,nan,nan,nan,nan,False
+m07q40_001,churn,7000.0,0.7,0,0,0,nan,nan,nan,nan,False
+m07q40_001,churn,7000.0,0.8,0,0,0,nan,nan,nan,nan,False
+m07q80_001,wavy annular,7000.0,0.6,0,0,0,nan,nan,nan,nan,False
+m07q80_001,wavy annular,7000.0,0.7,0,0,0,nan,nan,nan,nan,False
+m07q80_001,wavy annular,7000.0,0.8,0,0,0,nan,nan,nan,nan,False

@@ -1,0 +1,79 @@
+run,pattern,alternative,sampled_pairs,jointly_passing_pairs,median_abs_difference_px_per_frame,fraction_within_2px
+m03q05_001,churn,ncc_raw,100,9,0.287111613494055,1.0
+m03q05_001,churn,ncc_dynamic,100,8,0.2345023369235193,1.0
+m03q05_001,churn,phase_dynamic_highpass,100,10,0.6655193727687743,0.9
+m03q10_001,wavy annular,ncc_raw,100,3,0.2388011621597954,1.0
+m03q10_001,wavy annular,ncc_dynamic,100,3,0.27654515465049023,1.0
+m03q10_001,wavy annular,phase_dynamic_highpass,100,3,0.42234277904680084,1.0
+m03q20_001,wavy annular,ncc_raw,100,0,nan,nan
+m03q20_001,wavy annular,ncc_dynamic,100,1,0.21168859913512073,1.0
+m03q20_001,wavy annular,phase_dynamic_highpass,100,0,nan,nan
+m03q40_001,wavy annular,ncc_raw,100,0,nan,nan
+m03q40_001,wavy annular,ncc_dynamic,100,0,nan,nan
+m03q40_001,wavy annular,phase_dynamic_highpass,100,0,nan,nan
+m04q01_001,slug,ncc_raw,100,49,0.09658264507726422,1.0
+m04q01_001,slug,ncc_dynamic,100,74,0.11110554544711371,1.0
+m04q01_001,slug,phase_dynamic_highpass,100,68,0.373947533194554,0.9264705882352942
+m04q10_001,churn,ncc_raw,100,35,0.46039808904736823,0.9714285714285714
+m04q10_001,churn,ncc_dynamic,100,37,0.536109452907553,1.0
+m04q10_001,churn,phase_dynamic_highpass,100,25,1.203847914859895,0.8
+m04q20_001,churn,ncc_raw,100,15,0.5680606006434079,1.0
+m04q20_001,churn,ncc_dynamic,100,16,0.69196055167453,1.0
+m04q20_001,churn,phase_dynamic_highpass,100,10,1.180379441030042,0.6
+m04q40_001,wavy annular,ncc_raw,100,0,nan,nan
+m04q40_001,wavy annular,ncc_dynamic,100,0,nan,nan
+m04q40_001,wavy annular,phase_dynamic_highpass,100,0,nan,nan
+m04q80_001,wavy annular,ncc_raw,100,0,nan,nan
+m04q80_001,wavy annular,ncc_dynamic,100,0,nan,nan
+m04q80_001,wavy annular,phase_dynamic_highpass,100,0,nan,nan
+m05q01_001,plug,ncc_raw,100,82,0.13078567917867012,1.0
+m05q01_001,plug,ncc_dynamic,100,91,0.10169695381032184,1.0
+m05q01_001,plug,phase_dynamic_highpass,100,92,0.3795981550495373,0.9021739130434783
+m05q05_001,slug,ncc_raw,100,84,0.12019534905270035,1.0
+m05q05_001,slug,ncc_dynamic,100,91,0.10094632945477677,1.0
+m05q05_001,slug,phase_dynamic_highpass,100,91,0.363710164866756,0.9560439560439561
+m05q10_001,churn,ncc_raw,100,25,0.3301447624447107,1.0
+m05q10_001,churn,ncc_dynamic,100,25,0.35867895572250497,1.0
+m05q10_001,churn,phase_dynamic_highpass,100,20,0.838820279970439,0.8
+m05q20_001,churn,ncc_raw,100,28,0.22466759832184557,1.0
+m05q20_001,churn,ncc_dynamic,100,28,0.23181321107824449,1.0
+m05q20_001,churn,phase_dynamic_highpass,100,21,0.7604049505572377,0.9047619047619048
+m05q40_001,churn,ncc_raw,100,4,0.868099695937314,1.0
+m05q40_001,churn,ncc_dynamic,100,5,0.5957124260950621,1.0
+m05q40_001,churn,phase_dynamic_highpass,100,4,1.0583908585596618,0.75
+m05q80_001,wavy annular,ncc_raw,100,0,nan,nan
+m05q80_001,wavy annular,ncc_dynamic,100,0,nan,nan
+m05q80_001,wavy annular,phase_dynamic_highpass,100,0,nan,nan
+m06q01_001,plug,ncc_raw,100,76,0.21049051875625224,1.0
+m06q01_001,plug,ncc_dynamic,100,77,0.1905643110253301,1.0
+m06q01_001,plug,phase_dynamic_highpass,100,69,0.6309917026604381,0.9420289855072463
+m06q05_001,slug,ncc_raw,100,43,0.18911958442279797,1.0
+m06q05_001,slug,ncc_dynamic,100,44,0.21612736865993032,1.0
+m06q05_001,slug,phase_dynamic_highpass,100,32,0.8604851442946568,0.84375
+m06q10_001,churn,ncc_raw,100,39,0.31126261996564253,0.9743589743589743
+m06q10_001,churn,ncc_dynamic,100,40,0.3130159361376599,0.975
+m06q10_001,churn,phase_dynamic_highpass,100,33,0.7120573133769348,0.8484848484848485
+m06q20_001,churn,ncc_raw,100,11,0.5015860571673656,1.0
+m06q20_001,churn,ncc_dynamic,100,11,0.40929800124485993,1.0
+m06q20_001,churn,phase_dynamic_highpass,100,8,0.7453279868692677,0.75
+m06q40_001,wavy annular,ncc_raw,100,0,nan,nan
+m06q40_001,wavy annular,ncc_dynamic,100,0,nan,nan
+m06q40_001,wavy annular,phase_dynamic_highpass,100,0,nan,nan
+m06q80_001,wavy annular,ncc_raw,100,0,nan,nan
+m06q80_001,wavy annular,ncc_dynamic,100,0,nan,nan
+m06q80_001,wavy annular,phase_dynamic_highpass,100,0,nan,nan
+m07q01_001,dispersed bubbles,ncc_raw,100,72,0.02277200256981038,1.0
+m07q01_001,dispersed bubbles,ncc_dynamic,100,94,0.011668385247843638,1.0
+m07q01_001,dispersed bubbles,phase_dynamic_highpass,100,94,0.23678718343886196,1.0
+m07q05_001,plug,ncc_raw,100,79,0.1329864688841944,1.0
+m07q05_001,plug,ncc_dynamic,100,83,0.1702696626272484,1.0
+m07q05_001,plug,phase_dynamic_highpass,100,79,0.8595254126416378,0.8860759493670886
+m07q20_001,churn,ncc_raw,100,32,0.19546738870210234,1.0
+m07q20_001,churn,ncc_dynamic,100,32,0.20524537531277787,1.0
+m07q20_001,churn,phase_dynamic_highpass,100,27,1.4790981507812067,0.8148148148148148
+m07q40_001,churn,ncc_raw,100,8,0.7905623946707241,1.0
+m07q40_001,churn,ncc_dynamic,100,8,0.8490986866196302,1.0
+m07q40_001,churn,phase_dynamic_highpass,100,5,1.6360274573770468,1.0
+m07q80_001,wavy annular,ncc_raw,100,0,nan,nan
+m07q80_001,wavy annular,ncc_dynamic,100,0,nan,nan
+m07q80_001,wavy annular,phase_dynamic_highpass,100,0,nan,nan

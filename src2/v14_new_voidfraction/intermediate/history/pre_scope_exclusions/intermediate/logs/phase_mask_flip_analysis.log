@@ -1,0 +1,37 @@
+[
+  {
+    "pattern": "dispersed bubbles",
+    "n": 2,
+    "candidate_pixel_flip_rate_median": 0.013830305515324265,
+    "center_candidate_flip_rate_median": 0.021502945738386528,
+    "center_candidate_gas_duty_median": 0.32041655915828104
+  },
+  {
+    "pattern": "plug",
+    "n": 3,
+    "candidate_pixel_flip_rate_median": 0.010044985855711315,
+    "center_candidate_flip_rate_median": 0.011825472339268724,
+    "center_candidate_gas_duty_median": 0.7084175084175084
+  },
+  {
+    "pattern": "slug",
+    "n": 3,
+    "candidate_pixel_flip_rate_median": 0.009750317847826996,
+    "center_candidate_flip_rate_median": 0.011302337528898022,
+    "center_candidate_gas_duty_median": 0.8014639784255811
+  },
+  {
+    "pattern": "churn",
+    "n": 10,
+    "candidate_pixel_flip_rate_median": 0.009980350126239029,
+    "center_candidate_flip_rate_median": 0.005295227814039684,
+    "center_candidate_gas_duty_median": 0.9606414591061495
+  },
+  {
+    "pattern": "wavy annular",
+    "n": 8,
+    "candidate_pixel_flip_rate_median": 0.0009625449884255143,
+    "center_candidate_flip_rate_median": 0.00022827141471209268,
+    "center_candidate_gas_duty_median": 0.9994864186258845
+  }
+]

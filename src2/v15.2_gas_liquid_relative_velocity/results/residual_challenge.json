@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "numerical_scope": "Prescribed synthetic textures and held-out prediction invariance; no experimental velocity truth.",
+  "maximum_dynamic_interface_texture_error_px_frame": 0.015874746030203113,
+  "prediction_invariance_error": {
+    "fixed_background": 1.52587890625e-05,
+    "interface_distance": 1.52587890625e-05
+  },
+  "direct_pearson_max_error": 3.707263306583497e-08,
+  "static_and_independent_frame_combinations_rejected": 12,
+  "script_sha256": "a9280a68230e52475ab2cc6e0a160e6517acf6c8fb051b9c7e12879127e75bd8",
+  "study_script_sha256": "b1e280335f15c702c756326c2b823e6f7cd4d74cc4d6f22c8559c0a5fce53556"
+}

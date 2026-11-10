@@ -1,0 +1,314 @@
+{
+  "status": "passed_with_interpretation_limits",
+  "runtime_s": 9.762793625006452,
+  "numerical_errors_found": 0,
+  "detail_rows_checked": 5070,
+  "summary_rows_checked": 156,
+  "selection_rows_checked": 208,
+  "numeric_fields_checked": 15622,
+  "max_numeric_difference": 1.1641532182693481e-10,
+  "final_split_detail_rows_checked": 4680,
+  "final_split_pair_rows_checked": 156,
+  "final_background_train_assessment_disjoint": true,
+  "representative_blocks_recomputed": 132,
+  "averaged_curves_recomputed": 1848,
+  "direct_centered_Pearson_values": 15801,
+  "max_direct_Pearson_difference": 7.867040352493859e-13,
+  "max_recomputed_velocity_difference_px_frame": 8.881784197001252e-13,
+  "shuffled_controls_recomputed": 1188,
+  "input_sources": [
+    {
+      "run": "m03q05_001",
+      "fps": 5000.0,
+      "frames": 501,
+      "profile_sample_max_error": 7.227847447666136e-06
+    },
+    {
+      "run": "m03q10_001",
+      "fps": 5000.0,
+      "frames": 501,
+      "profile_sample_max_error": 7.227847447666136e-06
+    },
+    {
+      "run": "m03q20_001",
+      "fps": 4000.0,
+      "frames": 501,
+      "profile_sample_max_error": 7.227847447666136e-06
+    },
+    {
+      "run": "m03q40_001",
+      "fps": 4000.0,
+      "frames": 501,
+      "profile_sample_max_error": 7.227847447666136e-06
+    },
+    {
+      "run": "m04q01_001",
+      "fps": 7000.0,
+      "frames": 501,
+      "profile_sample_max_error": 7.227847447666136e-06
+    },
+    {
+      "run": "m04q10_001",
+      "fps": 5000.0,
+      "frames": 501,
+      "profile_sample_max_error": 7.227847447666136e-06
+    },
+    {
+      "run": "m04q20_001",
+      "fps": 5000.0,
+      "frames": 501,
+      "profile_sample_max_error": 7.227847447666136e-06
+    },
+    {
+      "run": "m04q40_001",
+      "fps": 5000.0,
+      "frames": 501,
+      "profile_sample_max_error": 7.227847447666136e-06
+    },
+    {
+      "run": "m04q80_001",
+      "fps": 5000.0,
+      "frames": 501,
+      "profile_sample_max_error": 7.227847447666136e-06
+    },
+    {
+      "run": "m05q01_001",
+      "fps": 7000.0,
+      "frames": 501,
+      "profile_sample_max_error": 7.227847447666136e-06
+    },
+    {
+      "run": "m05q05_001",
+      "fps": 7000.0,
+      "frames": 501,
+      "profile_sample_max_error": 6.935813217978648e-06
+    },
+    {
+      "run": "m05q10_001",
+      "fps": 7000.0,
+      "frames": 501,
+      "profile_sample_max_error": 3.613923723833068e-06
+    },
+    {
+      "run": "m05q20_001",
+      "fps": 7000.0,
+      "frames": 501,
+      "profile_sample_max_error": 3.613923723833068e-06
+    },
+    {
+      "run": "m05q40_001",
+      "fps": 7000.0,
+      "frames": 501,
+      "profile_sample_max_error": 3.613923723833068e-06
+    },
+    {
+      "run": "m05q80_001",
+      "fps": 7000.0,
+      "frames": 501,
+      "profile_sample_max_error": 3.613923723833068e-06
+    },
+    {
+      "run": "m06q01_001",
+      "fps": 7000.0,
+      "frames": 501,
+      "profile_sample_max_error": 7.227847447666136e-06
+    },
+    {
+      "run": "m06q05_001",
+      "fps": 7000.0,
+      "frames": 501,
+      "profile_sample_max_error": 7.227847447666136e-06
+    },
+    {
+      "run": "m06q10_001",
+      "fps": 7000.0,
+      "frames": 501,
+      "profile_sample_max_error": 7.227847447666136e-06
+    },
+    {
+      "run": "m06q20_001",
+      "fps": 7000.0,
+      "frames": 501,
+      "profile_sample_max_error": 7.227847447666136e-06
+    },
+    {
+      "run": "m06q40_001",
+      "fps": 7000.0,
+      "frames": 501,
+      "profile_sample_max_error": 3.613923723833068e-06
+    },
+    {
+      "run": "m06q80_001",
+      "fps": 7000.0,
+      "frames": 501,
+      "profile_sample_max_error": 3.613923723833068e-06
+    },
+    {
+      "run": "m07q01_001",
+      "fps": 7000.0,
+      "frames": 501,
+      "profile_sample_max_error": 6.935813217978648e-06
+    },
+    {
+      "run": "m07q05_001",
+      "fps": 7000.0,
+      "frames": 501,
+      "profile_sample_max_error": 6.935813217978648e-06
+    },
+    {
+      "run": "m07q20_001",
+      "fps": 7000.0,
+      "frames": 501,
+      "profile_sample_max_error": 3.613923723833068e-06
+    },
+    {
+      "run": "m07q40_001",
+      "fps": 7000.0,
+      "frames": 501,
+      "profile_sample_max_error": 3.613923723833068e-06
+    },
+    {
+      "run": "m07q80_001",
+      "fps": 7000.0,
+      "frames": 501,
+      "profile_sample_max_error": 3.613923723833068e-06
+    }
+  ],
+  "block_counts": {
+    "blocks10": 20,
+    "blocks20": 18,
+    "blocks5": 19,
+    "highpass32_blocks10": 17,
+    "highpass8_blocks10": 7,
+    "raw_blocks10": 19
+  },
+  "selected_counts": {
+    "blocks10__forward": 25,
+    "blocks10__reverse": 25,
+    "highpass32_blocks10__forward": 22,
+    "highpass32_blocks10__reverse": 22,
+    "highpass8_blocks10__forward": 8,
+    "highpass8_blocks10__reverse": 8,
+    "raw_blocks10__forward": 24,
+    "raw_blocks10__reverse": 23
+  },
+  "final_split_counts": {
+    "training_background__forward": 25,
+    "training_background__reverse": 25,
+    "training_background_hp32__forward": 22,
+    "training_background_hp32__reverse": 22,
+    "training_background_hp8__forward": 8,
+    "training_background_hp8__reverse": 8
+  },
+  "final_sensitivity": {
+    "reverse": {
+      "both_supported": 25,
+      "both_coordinates_agree": 22,
+      "changed_or_unsupported_runs": [
+        "m04q01_001",
+        "m04q10_001",
+        "m05q05_001"
+      ]
+    },
+    "raw": {
+      "both_supported": 24,
+      "both_coordinates_agree": 24,
+      "changed_or_unsupported_runs": [
+        "m03q40_001"
+      ]
+    },
+    "hp32": {
+      "both_supported": 22,
+      "both_coordinates_agree": 22,
+      "changed_or_unsupported_runs": [
+        "m03q40_001",
+        "m04q01_001",
+        "m05q80_001"
+      ]
+    },
+    "hp8": {
+      "both_supported": 8,
+      "both_coordinates_agree": 8,
+      "changed_or_unsupported_runs": [
+        "m03q10_001",
+        "m03q20_001",
+        "m03q40_001",
+        "m04q01_001",
+        "m04q10_001",
+        "m04q20_001",
+        "m04q40_001",
+        "m04q80_001",
+        "m05q10_001",
+        "m05q40_001",
+        "m05q80_001",
+        "m06q20_001",
+        "m06q40_001",
+        "m06q80_001",
+        "m07q20_001",
+        "m07q40_001",
+        "m07q80_001"
+      ]
+    }
+  },
+  "final_all_alternatives_stable_count": 7,
+  "final_all_alternatives_stable_runs": [
+    "m05q01_001",
+    "m05q20_001",
+    "m06q01_001",
+    "m06q05_001",
+    "m06q10_001",
+    "m07q01_001",
+    "m07q05_001"
+  ],
+  "final_forward_reverse_wall_changes": [
+    "m03q05_001",
+    "m04q10_001",
+    "m05q40_001",
+    "m07q05_001"
+  ],
+  "final_forward_interval_fraction_of_full_record": [
+    0.294,
+    0.49
+  ],
+  "forward_reverse_selected_wall_changes": [
+    "m03q05_001",
+    "m04q10_001",
+    "m05q40_001",
+    "m07q05_001"
+  ],
+  "forward_reverse_differences_over_max_2px_or20percent": {
+    "core_signed_px_s": [
+      "m04q01_001",
+      "m04q10_001"
+    ],
+    "wall_signed_px_s": [
+      "m04q01_001"
+    ]
+  },
+  "forward_reported_interval_fraction_of_full_record": [
+    0.294,
+    0.49
+  ],
+  "warnings": [
+    "The ARCHIVED selected_wall experiment shared the501-frame mean; FINAL split_background uses training-only mean, frozen for assessment. That processing leakage is fixed.",
+    "Selection was developed after inspecting the recordings; no external experimental validation.",
+    "Selected-wall means describe accepted assessment-half blocks and one chosen wall, not whole-record time averages or mean liquid-film speed.",
+    "m03q05 has finite forward coordinates from one accepted block but fails training2/5 and assessment1/5 support; never mark this point accepted.",
+    "m03q40 passes selected-wall reference but fails raw and both high-pass alternatives; retaining it must state preprocessing dependence and original saturation.",
+    "High-pass failures expose frequency/content sensitivity and do not alone establish that reference velocities are physically false.",
+    "Passing numerical and transport tests does not identify gas/liquid material or superficial velocities.",
+    "The other-wall candidate on assessment epochs need not pass its own support gate and must not be presented as a validated second-wall measurement."
+  ],
+  "input_sha256": {
+    "scripts/block_ncc.py": "8896efead61f34795130328c73dd40f98f55b078a6d5a0e0959a80564ec19534",
+    "scripts/selected_wall.py": "9815254798625dabe99b1aaeaa6815e0fbfd07542fe7bf48a7356788e3444237",
+    "PROTOCOL.md": "b3b5e7c3ed279b31b4ffb9d6bd8afe71d4f59245eed6f7500aa90618511d4758",
+    "results/block_ncc_details.csv": "d9b67eabba6216c1f0a0e957ea2a9c04293ed78342df49c42d6e0a81935f48e2",
+    "results/block_ncc_per_run.csv": "f203af9e8ea8260037885e945813e26cf04c130f36b935999ffe7b022d55ae50",
+    "results/selected_wall_per_run.csv": "584393e264560df92ed46b77122d369b5786e11df9e0a7bd1e79896aa742384e",
+    "scripts/split_background_ncc.py": "9ecf24f283dd0504433921a1a68f21d4ae395e84a3ae91ae5f561b0f646843d8",
+    "results/split_background_details.csv": "6163852dc929185478be01db80638380ea252b43f6a4f2aaca41b260c490895b",
+    "results/split_background_pairs.csv": "a9d302b2cf1aa0a12da6160231375f4f82678c2fd70809fddc08cf13125cc384",
+    "results/split_background_metadata.json": "c0ea44ec8cb1ed2774e16fe7ff9d9c812009b92c1c814dab5b5876048504c2f2"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "executive_pdf_pages_reviewed": 4,
+  "figures_reviewed": ["01_triagem", "02_perfis_wps", "03_churn_annular", "04_plug_slug", "05_estabilidade", "06_condicoes_operacionais", "07_diagnostico_pearson"],
+  "checks": [
+    "PDF renderizado e inspecionado; parágrafos ajustados à largura real da fonte.",
+    "Títulos, legendas e barras de cores conferidos após correção de layout.",
+    "Mesma escala de cor entre janelas de mean power; unidades e tamanhos de amostra explícitos.",
+    "Gráfico plug/slug mostra todos os seis ensaios, a inversão do pico e ARI nas três janelas.",
+    "Faixas leave-one-out identificadas como sensibilidade, não intervalos de confiança.",
+    "Resumo diferencia aprovação geométrica de recuperação dos rótulos e informa a seleção na mesma amostra."
+  ],
+  "presentation_changes_altered_numerical_results": false
+}

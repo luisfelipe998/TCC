@@ -1,0 +1,27 @@
+run,pattern,erosion_radius,gas_candidate_px_s,liquid_candidate_px_s,both_finite,gas_optical_supported,liquid_optical_supported,pair_optical_supported,gas_reasons,liquid_reasons,material_pair_identified,both_erosions_optical_supported,both_erosions_speed_consistent,erosion_consensus_supported
+m03q05_001,churn,3,-92795.60240290928,-202708.09317672596,True,False,False,False,lag_or_texture_inconsistency,lag_or_texture_inconsistency;block_inconsistency;null_not_separated,False,False,False,False
+m03q10_001,wavy annular,3,-139412.5195056644,,False,False,False,False,lag_or_texture_inconsistency;ambiguous_peak,insufficient_phase_area;undefined_correlation;lag_or_texture_inconsistency;block_inconsistency;ambiguous_peak;null_not_separated,False,False,False,False
+m03q20_001,wavy annular,3,-188395.87856074888,,False,False,False,False,ambiguous_peak,insufficient_phase_area;no_raw_phase_texture;undefined_correlation;lag_or_texture_inconsistency;block_inconsistency;ambiguous_peak;null_not_separated,False,False,False,False
+m03q40_001,wavy annular,3,-211626.97489390167,,False,False,False,False,ambiguous_peak;phase_saturation,insufficient_phase_area;undefined_correlation;lag_or_texture_inconsistency;block_inconsistency;ambiguous_peak;null_not_separated,False,False,False,False
+m04q01_001,slug,3,-40427.05151911993,-109897.28488108132,True,True,False,False,,ambiguous_peak,False,False,True,False
+m04q10_001,churn,3,-80614.75997707841,-117895.5561497314,True,True,True,True,,,False,True,True,True
+m04q20_001,churn,3,-86654.44674789807,-123329.88051003682,True,True,False,False,,lag_or_texture_inconsistency,False,False,True,False
+m04q40_001,wavy annular,3,-135873.50769226835,,False,False,False,False,lag_or_texture_inconsistency;ambiguous_peak,insufficient_phase_area;undefined_correlation;lag_or_texture_inconsistency;block_inconsistency;ambiguous_peak;null_not_separated,False,False,False,False
+m04q80_001,wavy annular,3,-231231.12945336793,,False,False,False,False,ambiguous_peak,insufficient_phase_area;no_raw_phase_texture;undefined_correlation;lag_or_texture_inconsistency;block_inconsistency;ambiguous_peak;null_not_separated,False,False,False,False
+m05q01_001,plug,3,-64785.80097633769,-81459.12213524789,True,False,False,False,lag_or_texture_inconsistency,ambiguous_peak,False,False,True,False
+m05q05_001,slug,3,-66314.02140769319,-91622.6196242552,True,True,True,True,,,False,True,True,True
+m05q10_001,churn,3,-85916.2167193448,-129130.76751886592,True,True,True,True,,,False,True,True,True
+m05q20_001,churn,3,-94151.8233975253,-134414.09300471478,True,True,False,False,,lag_or_texture_inconsistency;ambiguous_peak,False,False,True,False
+m05q40_001,churn,3,-128552.11860077492,-181088.53342837197,True,True,False,False,,lag_or_texture_inconsistency;ambiguous_peak;null_not_separated,False,False,True,False
+m05q80_001,wavy annular,3,-219695.5382187827,,False,False,False,False,ambiguous_peak,insufficient_phase_area;undefined_correlation;lag_or_texture_inconsistency;block_inconsistency;ambiguous_peak;null_not_separated,False,False,False,False
+m06q01_001,plug,3,-77687.91654413735,-111664.903070834,True,True,True,True,,,False,True,True,True
+m06q05_001,slug,3,-75768.77413024545,-123336.19477228996,True,True,True,True,,,False,True,True,True
+m06q10_001,churn,3,-88399.5867742326,-154664.39218084645,True,True,False,False,,ambiguous_peak,False,False,True,False
+m06q20_001,churn,3,-129525.68358726797,-175681.63451184795,True,True,False,False,,ambiguous_peak,False,False,True,False
+m06q40_001,wavy annular,3,-177442.0269165942,-251665.4754800192,True,False,False,False,lag_or_texture_inconsistency;ambiguous_peak,lag_or_texture_inconsistency;block_inconsistency;ambiguous_peak;null_not_separated,False,False,True,False
+m06q80_001,wavy annular,3,-233405.32661686663,-325090.43506417156,True,False,False,False,ambiguous_peak,lag_or_texture_inconsistency;block_inconsistency;ambiguous_peak;null_not_separated,False,False,True,False
+m07q01_001,dispersed bubbles,3,-47676.24144642516,-44648.758060746055,True,False,True,False,insufficient_phase_area;block_inconsistency;ambiguous_peak;null_not_separated,,False,False,True,False
+m07q05_001,plug,3,-75659.51210855415,-105467.16423615068,True,True,True,True,,,False,False,True,False
+m07q20_001,churn,3,-101220.68909891756,-155219.84758525764,True,True,True,True,,,False,True,True,True
+m07q40_001,churn,3,-134059.78394663968,-164014.2264321472,True,True,False,False,,ambiguous_peak,False,False,True,False
+m07q80_001,wavy annular,3,-194868.93726441823,-236502.83616568375,True,False,False,False,lag_or_texture_inconsistency;ambiguous_peak,lag_or_texture_inconsistency;ambiguous_peak;null_not_separated,False,False,True,False

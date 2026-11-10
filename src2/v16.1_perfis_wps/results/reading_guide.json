@@ -1,0 +1,229 @@
+{
+  "scope": "Apresentação dos resultados existentes; protocolo e cálculos preservados.",
+  "figures": [
+    {
+      "name": "01_pares_explicados",
+      "files": [
+        "figures/leitura/01_pares_explicados.png",
+        "figures/leitura/01_pares_explicados.pdf"
+      ],
+      "cases": [
+        {
+          "tipo": "Perfis próximos com escore WCO baixo",
+          "aquisicao_x": "m03q20_001",
+          "aquisicao_y": "m04q80_001",
+          "H": 0.064156258332094,
+          "WCO": 0.0714426210109065
+        },
+        {
+          "tipo": "Controle cruzado mais semelhante",
+          "aquisicao_x": "m06q01_001",
+          "aquisicao_y": "m06q40_001",
+          "H": 0.0836707156943818,
+          "WCO": 0.1972023647727863
+        },
+        {
+          "tipo": "Par intrapadrão menos semelhante",
+          "aquisicao_x": "m03q40_001",
+          "aquisicao_y": "m07q80_001",
+          "H": 0.4235187451511549,
+          "WCO": 0.1049397989744848
+        }
+      ],
+      "variant": "principal",
+      "domain": "principal"
+    },
+    {
+      "name": "02_distribuicao_distancias",
+      "files": [
+        "figures/leitura/02_distribuicao_distancias.png",
+        "figures/leitura/02_distribuicao_distancias.pdf"
+      ],
+      "bin_edges": [
+        0.0,
+        0.025,
+        0.05,
+        0.07500000000000001,
+        0.1,
+        0.125,
+        0.15000000000000002,
+        0.17500000000000002,
+        0.2,
+        0.225,
+        0.25,
+        0.275,
+        0.30000000000000004,
+        0.325,
+        0.35000000000000003,
+        0.375,
+        0.4,
+        0.42500000000000004,
+        0.45,
+        0.47500000000000003
+      ],
+      "groups": [
+        {
+          "same_pattern": true,
+          "n": 87,
+          "counts": [
+            0,
+            0,
+            2,
+            11,
+            11,
+            24,
+            13,
+            7,
+            6,
+            6,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "proportions": [
+            0.0,
+            0.0,
+            0.022988505747126436,
+            0.12643678160919541,
+            0.12643678160919541,
+            0.27586206896551724,
+            0.14942528735632185,
+            0.08045977011494253,
+            0.06896551724137931,
+            0.06896551724137931,
+            0.011494252873563218,
+            0.011494252873563218,
+            0.011494252873563218,
+            0.011494252873563218,
+            0.011494252873563218,
+            0.011494252873563218,
+            0.011494252873563218,
+            0.0,
+            0.0
+          ],
+          "mean": 0.16324517341098296
+        },
+        {
+          "same_pattern": false,
+          "n": 238,
+          "counts": [
+            0,
+            0,
+            0,
+            6,
+            11,
+            21,
+            20,
+            34,
+            19,
+            40,
+            27,
+            20,
+            10,
+            9,
+            7,
+            3,
+            4,
+            3,
+            4
+          ],
+          "proportions": [
+            0.0,
+            0.0,
+            0.0,
+            0.025210084033613446,
+            0.046218487394957986,
+            0.08823529411764706,
+            0.08403361344537816,
+            0.14285714285714285,
+            0.07983193277310924,
+            0.16806722689075632,
+            0.1134453781512605,
+            0.08403361344537816,
+            0.04201680672268908,
+            0.037815126050420166,
+            0.029411764705882353,
+            0.012605042016806723,
+            0.01680672268907563,
+            0.012605042016806723,
+            0.01680672268907563
+          ],
+          "mean": 0.2318683561874658
+        }
+      ]
+    },
+    {
+      "name": "03_calculo_concordancia",
+      "files": [
+        "figures/leitura/03_calculo_concordancia.png",
+        "figures/leitura/03_calculo_concordancia.pdf"
+      ],
+      "counts": {
+        "favorable": 15839,
+        "ties": 0,
+        "unfavorable": 4867,
+        "total": 20706
+      }
+    },
+    {
+      "name": "04_comparacao_metodos",
+      "files": [
+        "figures/leitura/04_comparacao_metodos.png",
+        "figures/leitura/04_comparacao_metodos.pdf"
+      ],
+      "values": [
+        {
+          "method": "wco_v16_18_71",
+          "A_pares": 0.2146237805467014
+        },
+        {
+          "method": "wps_prefixo_par",
+          "A_pares": 0.7382401236356612
+        },
+        {
+          "method": "wps_principal",
+          "A_pares": 0.7649473582536462
+        }
+      ]
+    }
+  ],
+  "order_comparisons": {
+    "favorable": 15839,
+    "ties": 0,
+    "unfavorable": 4867,
+    "total": 20706
+  },
+  "acquisitions_by_pattern": {
+    "Bolhas dispersas": 1,
+    "Bolhas alongadas (plug)": 3,
+    "Golfadas (slug)": 3,
+    "Agitado (churn)": 10,
+    "Anular ondulado": 9
+  },
+  "source_sha256": {
+    "results/all_pairs.csv": "c6c5261a3badab67e3271bbe8f7fbfc92bf8d6547ca6e2408b892c34ee202208",
+    "results/profiles_normalized.csv": "aae1a7c0dd41ea57bb8897e61c191555f4574658b549a2ebd0cf64abecfb2dcf",
+    "results/ranking_summary.csv": "616a9f7359a6b80ef941f18369a37c9f623e3d664b5fa64d6d2af2716d757539",
+    "results/ranking_by_pattern.csv": "06b853ff2867a9fbaec4d19a2607b63adf927100f03a364685188b7e0e05343a",
+    "results/selected_cases.csv": "299dcdbda37df9a3df0ff877e9854d827903dad797acba6101c852b90f1efb6b",
+    "results/acquisition_deletion.csv": "2ca9fcee710ef20f0b5c8509c902841732d220a2a45d02a09e5b0ed2b6202591",
+    "config.json": "4ece21384e583cff5f627f888b6b94fcbb61ad1a5955b0659baaf0c17862b9f6",
+    "scripts/reading_guide.py": "dccd8f8622e8a1b157cd1a2db31bf6c26b2e857cce6049429e78f238a00fc61b"
+  },
+  "output_sha256": {
+    "figures/leitura/01_pares_explicados.png": "7a3a498ac573bb95c5a430d7f23fceeb5cdc4b29de5335736ebf24a99efbe987",
+    "figures/leitura/01_pares_explicados.pdf": "493730c37419747b550962297da27079ca4527068cd7a50000e08c650b627943",
+    "figures/leitura/02_distribuicao_distancias.png": "500998b14a0f9c392e6c1436f7454708b5951cf638a627822e547e69d676674f",
+    "figures/leitura/02_distribuicao_distancias.pdf": "c1f7e6dc7cfdfedc98853eeb3efdffd9607a8bb16225531c9f6b0cfae06ef1ad",
+    "figures/leitura/03_calculo_concordancia.png": "d34bf1055b59d667b654c3297b8164f152952dcd4f5b25e94a879e88e6d2ed40",
+    "figures/leitura/03_calculo_concordancia.pdf": "6f7695c8de02430cf3f2f6520cf87ded5d45bff49c4dc96b94ced787943337a4",
+    "figures/leitura/04_comparacao_metodos.png": "eae836942e216d4fab39c1daf745fba4d4b0babfe430dddc991b98d4b20d4153",
+    "figures/leitura/04_comparacao_metodos.pdf": "0ec16208a6d2f19e7c576c4332f61f88f928679bf53f8c8c2a1e671e1b1119ef"
+  }
+}

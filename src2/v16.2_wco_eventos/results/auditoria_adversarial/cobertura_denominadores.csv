@@ -1,0 +1,10 @@
+padrao,controle,aquisicoes,aquisicoes_possiveis,fracao_aquisicoes,pares,pares_possiveis,fracao_pares
+churn,fixos,10,10,1.0,45,45,1.0
+churn,minimos_distintos,10,10,1.0,29,45,0.6444444444444445
+churn,polaridades_opostas,10,10,1.0,45,45,1.0
+entre,fixos,19,19,1.0,89,90,0.9888888888888889
+entre,minimos_distintos,19,19,1.0,46,90,0.5111111111111111
+entre,polaridades_opostas,19,19,1.0,89,90,0.9888888888888889
+wavy annular,fixos,9,9,1.0,34,36,0.9444444444444444
+wavy annular,minimos_distintos,8,9,0.8888888888888888,13,36,0.3611111111111111
+wavy annular,polaridades_opostas,9,9,1.0,34,36,0.9444444444444444

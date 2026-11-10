@@ -1,0 +1,166 @@
+{
+  "status": "passed",
+  "paired_variant_rows": 61,
+  "checked_variant_fields": 671,
+  "variant_counts": {
+    "gradient_locations": {
+      "total": 9,
+      "baseline": 1,
+      "final": 0,
+      "annular_final": 0
+    },
+    "inner_bands": {
+      "total": 26,
+      "baseline": 10,
+      "final": 10,
+      "annular_final": 0
+    },
+    "outer_bands": {
+      "total": 26,
+      "baseline": 12,
+      "final": 12,
+      "annular_final": 1
+    }
+  },
+  "plot_data_rows": {
+    "passage": 4,
+    "regional": 10,
+    "regional_outer": 12,
+    "all_candidates": 26
+  },
+  "svg_checks": [
+    {
+      "stem": "gas_liquid_passages_px_s",
+      "language": "EN",
+      "points": 4,
+      "extra_markers": 0,
+      "max_svg_coordinate_difference": 0.0001007373066386208,
+      "units": "px/s"
+    },
+    {
+      "stem": "gas_liquid_passages_px_s",
+      "language": "PT_BR",
+      "points": 4,
+      "extra_markers": 0,
+      "max_svg_coordinate_difference": 0.00011287668894510716,
+      "units": "px/s"
+    },
+    {
+      "stem": "gas_liquid_passages_conditional_m_s",
+      "language": "EN",
+      "points": 4,
+      "extra_markers": 0,
+      "max_svg_coordinate_difference": 3.011109583894722e-09,
+      "units": "m/s"
+    },
+    {
+      "stem": "gas_liquid_passages_conditional_m_s",
+      "language": "PT_BR",
+      "points": 4,
+      "extra_markers": 0,
+      "max_svg_coordinate_difference": 1.8585455396902262e-09,
+      "units": "m/s"
+    },
+    {
+      "stem": "regional_motion_px_s",
+      "language": "EN",
+      "points": 10,
+      "extra_markers": 0,
+      "max_svg_coordinate_difference": 0.00023563296417705715,
+      "units": "px/s"
+    },
+    {
+      "stem": "regional_motion_px_s",
+      "language": "PT_BR",
+      "points": 10,
+      "extra_markers": 0,
+      "max_svg_coordinate_difference": 0.00034780467831296846,
+      "units": "px/s"
+    },
+    {
+      "stem": "regional_outer_motion_px_s",
+      "language": "EN",
+      "points": 12,
+      "extra_markers": 0,
+      "max_svg_coordinate_difference": 0.0005046049045631662,
+      "units": "px/s"
+    },
+    {
+      "stem": "regional_outer_motion_px_s",
+      "language": "PT_BR",
+      "points": 12,
+      "extra_markers": 0,
+      "max_svg_coordinate_difference": 0.0004845160583499819,
+      "units": "px/s"
+    },
+    {
+      "stem": "all_regional_candidates",
+      "language": "EN",
+      "points": 26,
+      "extra_markers": 1,
+      "max_svg_coordinate_difference": 0.00047295117110479623,
+      "units": "px/s"
+    },
+    {
+      "stem": "all_regional_candidates",
+      "language": "PT_BR",
+      "points": 26,
+      "extra_markers": 1,
+      "max_svg_coordinate_difference": 0.000543947026017122,
+      "units": "px/s"
+    }
+  ],
+  "bilingual_report_numeric_cells": 32,
+  "all_run_status_rows": 26,
+  "input_sha256": {
+    "results/annular_region_summary.csv": "c150b4b9f196d137e82b07982cb272026deb2068885a471348c5fa79b9741f5f",
+    "results/annular_variant_pairs.csv": "0436d2994adce1c18d88512108f2b0cd3df34cf816d735d95b7cc289c7e79526",
+    "results/annular_spatial_pairs.csv": "bab347844ed356111d865f6983c828bedd32a29ddf520b2aca62cc647c3bb4af",
+    "results/passage_per_run.csv": "7e58d25e021336339bd125055a5417b896b1c2421c4e29413026c22f9af39410",
+    "results/paper_passage_plot_data.csv": "d26955b326100fbf81b50e48f23bae30de76e83198aa51191bee1a988cc43b15",
+    "results/paper_regional_plot_data.csv": "1b0c7482095b106bbd16fd772e5bda261b4f39433a6bd0c70c33af9a8275b6d2",
+    "results/paper_regional_outer_plot_data.csv": "935eab6427b099f5f28004da484e825651677e5c821f0428027192007bdc4132",
+    "results/paper_all_candidate_plot_data.csv": "0e1d7518616a7e18ed96286d5d14776b6bbf4381e3c579302116e688c378cee8",
+    "figures/gas_liquid_passages_px_s_EN.svg": "fc5045e06656d76444a51d88ddb1ee37474ba5cc445a4bb3fbd056811bb882aa",
+    "figures/gas_liquid_passages_px_s_EN.png": "f855612e82b8fd7877ad137a3606185a72159c36ac5b20107b710604f0dc0ea3",
+    "figures/gas_liquid_passages_px_s_EN.pdf": "51a43ecfc7d740d409920455b617e334d55f56797fff1711d45e662aa0354b2a",
+    "figures/gas_liquid_passages_px_s_PT_BR.svg": "faa888cdf39d85a46047bd451fd9f88b391d29878e20b88ad76239de9470c7a2",
+    "figures/gas_liquid_passages_px_s_PT_BR.png": "5b99bb1729a6488477c47e8de25c96cd8d0c38850a86ea5dc76d09de413fa8af",
+    "figures/gas_liquid_passages_px_s_PT_BR.pdf": "5dba87a45d4188acd19e888a01244bf3057babe2d9eb0fdd25dd29064a28b6f0",
+    "figures/gas_liquid_passages_conditional_m_s_EN.svg": "0d3cb323155b5ed7a6c4d10764414283de235fe117e56cbadc2fdef98cba22ff",
+    "figures/gas_liquid_passages_conditional_m_s_EN.png": "4f21e184e252c4cb4d2030b78978922d25996a31398a31fe052c4ee356b23be9",
+    "figures/gas_liquid_passages_conditional_m_s_EN.pdf": "c2a7cc664b718321f006a9a22d4ccf79405a8fcd74cc195a262897f9b2188969",
+    "figures/gas_liquid_passages_conditional_m_s_PT_BR.svg": "43cfe93b4712d9c6656d9edda1a1e67eaecb5c311fadb3a0ccb7503c7162a7bc",
+    "figures/gas_liquid_passages_conditional_m_s_PT_BR.png": "5a0844aaf651af0d00346db90caa54cdc4a8d1f1b60df2311e33ca7b7749cdeb",
+    "figures/gas_liquid_passages_conditional_m_s_PT_BR.pdf": "b58fcc7deaa62a327c3ace7c38d2bdaf52a8d1e9675489a9d0e5d3c26adc9798",
+    "figures/regional_motion_px_s_EN.svg": "cf6aaf505bb1f27bbd06b74b7ded2e0e9e40b454f34c28b5a94d35f60f30f9bc",
+    "figures/regional_motion_px_s_EN.png": "add238fbe0d119820312fa60bfdd5d70f0a7d4c74cae174648561ef050c82ee2",
+    "figures/regional_motion_px_s_EN.pdf": "1150f33c4080ea68f569c29b00c1d9373a140d562ed4eb879879d724baf0e15c",
+    "figures/regional_motion_px_s_PT_BR.svg": "a6c3578c68f1fed273667e46d822fe07ca72edf7f60d8c87d54889fa6c9bda4a",
+    "figures/regional_motion_px_s_PT_BR.png": "c759e2d1c034bad8777aedde797de0e9bcd92fb868b1275d95857491c4a78990",
+    "figures/regional_motion_px_s_PT_BR.pdf": "79e3f286432ae907d803208b1814e92298675b4a809d2326bb79d7de3377a5b8",
+    "figures/regional_outer_motion_px_s_EN.svg": "4e41cae85ee35f729abc4948a6f847fcff0a0dce403f02212a982c04962d3977",
+    "figures/regional_outer_motion_px_s_EN.png": "670317868f178a4d4baa99dfa6fb2e3efda2b29f6ff7e936ba95927ceb519105",
+    "figures/regional_outer_motion_px_s_EN.pdf": "5eb8f43899d5337ad6f0a8416228d05b898765ec4c406b69d10890a6da4d3624",
+    "figures/regional_outer_motion_px_s_PT_BR.svg": "5d2ee9edf8377560282debf6dfafab843e8dc8c7001f3221226df78ea893533c",
+    "figures/regional_outer_motion_px_s_PT_BR.png": "bc76d4dce0d7740fa88631b43996823ed6b91829db9fa087d4b75bcf5b74cbfe",
+    "figures/regional_outer_motion_px_s_PT_BR.pdf": "40852251ad151dc050cc8fc38bb9b01fc67ab584835408be2a4992dd109e2929",
+    "figures/all_regional_candidates_EN.svg": "2c302b93b93b2588fd0b0101a8eafec9fcfbbb5bee689a51455b07047eed8489",
+    "figures/all_regional_candidates_EN.png": "2495a5d92b22e4bef2b7bd7f599bcbe09946fc106a708635927d1050f748ddef",
+    "figures/all_regional_candidates_EN.pdf": "9269c57d5eefb1f609eacdbd64632102ff910aeedecda21bcd041f4b353f93ca",
+    "figures/all_regional_candidates_PT_BR.svg": "c2d3a295c54d10c07dd5d9613ca50ff146233248c0604ba080817866c9c6c474",
+    "figures/all_regional_candidates_PT_BR.png": "1f494764642578aaaa03b31521d36d1a250a2cb8e7f8e0ebda3de7387e0d1e98",
+    "figures/all_regional_candidates_PT_BR.pdf": "c9eeac7a425fd9db8efa7cc02ae51c1d6ad02e032b66da5429a43ad877801640",
+    "results/all_run_status.csv": "3b6ee8179c48938ca8c3134b8039c23374511c522fdf41a8cc9d2b450b86ebab",
+    "findings/EXECUTIVE_SUMMARY_2026-10-23.md": "9d73f2151ab15c757b4ccbd2576be147f20607ba68638e85e67ccc3fffe7e508",
+    "findings/EXECUTIVE_SUMMARY_PT_BR_2026-10-23.md": "b23e2d36f40d26bfe40bf7f649397d5e0491ef26c136de81bbab7b497885011a"
+  },
+  "report_documents": [
+    "findings/EXECUTIVE_SUMMARY_2026-10-23.md",
+    "findings/EXECUTIVE_SUMMARY_PT_BR_2026-10-23.md"
+  ],
+  "report_scope": "Original passage and regional results; newer all-recording results have their own independent verification.",
+  "verifier_sha256": "0c058eb1756401c10e5ce704903e989a91813eba8a0573945e763b08ff020fb6",
+  "independence": "No generator imported. Variant gates reconstructed from region rows; exported SVG marker positions mapped back to data using axis ticks in each language.",
+  "limitations": "Checks numerical plotting, scope, support selection and figure units, not experimental material velocity or physical calibration. Annotation readability is also reviewed visually."
+}

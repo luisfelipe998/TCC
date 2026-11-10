@@ -1,0 +1,16 @@
+{
+  "runtime_s": 88.22548358299537,
+  "counts": {
+    "training_background__forward": 25,
+    "training_background__reverse": 25,
+    "training_background_hp32__forward": 22,
+    "training_background_hp32__reverse": 22,
+    "training_background_hp8__forward": 8,
+    "training_background_hp8__reverse": 8
+  },
+  "source_profiles_sha256": "729a070503730eeec6362cef43d8bed70fcaceb6abfa2c39b2c4cdaddefdf6df",
+  "script_sha256": "9ecf24f283dd0504433921a1a68f21d4ae395e84a3ae91ae5f561b0f646843d8",
+  "background": "Each direction estimates the temporal mean only from its training half, frozen for all assessment frames.",
+  "selection": "Wall ranked using training-only supported-block count then mean peak; speed magnitude and pattern are unused.",
+  "limitations": "Internally separated processing/selection, but the experiment design explored these recordings; not new-data or independent physical validation. Coordinate means include only accepted assessment blocks."
+}

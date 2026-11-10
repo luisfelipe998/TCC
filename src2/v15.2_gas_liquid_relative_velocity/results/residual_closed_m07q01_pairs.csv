@@ -1,0 +1,7 @@
+run,pattern,fps,method,erosion_radius,common_blocks,common_block_ids,matched_intervals,pair_optical_supported,gas_candidate_px_frame,liquid_candidate_px_frame,gas_candidate_px_s,liquid_candidate_px_s,signed_ratio_gas_candidate_over_liquid_candidate,material_pair_identified
+m07q01_001,dispersed bubbles,7000.0,raw,3,0,,0,False,nan,nan,nan,nan,nan,False
+m07q01_001,dispersed bubbles,7000.0,fixed_background,3,0,,0,False,nan,nan,nan,nan,nan,False
+m07q01_001,dispersed bubbles,7000.0,interface_distance,3,0,,0,False,nan,nan,nan,nan,nan,False
+m07q01_001,dispersed bubbles,7000.0,raw,1,0,,0,False,nan,nan,nan,nan,nan,False
+m07q01_001,dispersed bubbles,7000.0,fixed_background,1,0,,0,False,nan,nan,nan,nan,nan,False
+m07q01_001,dispersed bubbles,7000.0,interface_distance,1,0,,0,False,nan,nan,nan,nan,nan,False

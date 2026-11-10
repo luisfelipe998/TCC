@@ -1,0 +1,261 @@
+run,pattern,config,motion_gate,gas_mean_px_frame,liquid_mean_px_frame,unfiltered_ratio_of_means,descriptive_ratio,eligible_descriptive_ratio,withheld_reasons,gas_pairs,liquid_pairs,gas_episodes,liquid_episodes,episode_equal_ratio,high_saturation
+m03q05_001,churn,threshold_060,adjacent,-16.453575010289114,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,260,0,3,0,nan,False
+m03q05_001,churn,threshold_060,lag2_confirmed,-17.35992440913418,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,63,0,3,0,nan,False
+m03q05_001,churn,threshold_070,adjacent,-16.453575010289114,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,260,0,3,0,nan,False
+m03q05_001,churn,threshold_070,lag2_confirmed,-17.35992440913418,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,63,0,3,0,nan,False
+m03q05_001,churn,threshold_080,adjacent,-16.453575010289114,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,260,0,1,0,nan,False
+m03q05_001,churn,threshold_080,lag2_confirmed,-17.35992440913418,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,63,0,1,0,nan,False
+m03q05_001,churn,consensus,adjacent,-16.453575010289114,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,260,0,3,0,nan,False
+m03q05_001,churn,consensus,lag2_confirmed,-17.35992440913418,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,63,0,3,0,nan,False
+m03q05_001,churn,consensus_reference_guard,adjacent,-16.453575010289114,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,260,0,3,0,nan,False
+m03q05_001,churn,consensus_reference_guard,lag2_confirmed,-17.35992440913418,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,63,0,3,0,nan,False
+m03q10_001,wavy annular,threshold_060,adjacent,-17.2621816944774,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,75,0,1,0,nan,False
+m03q10_001,wavy annular,threshold_060,lag2_confirmed,-10.232542871528278,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,9,0,1,0,nan,False
+m03q10_001,wavy annular,threshold_070,adjacent,-17.2621816944774,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,75,0,1,0,nan,False
+m03q10_001,wavy annular,threshold_070,lag2_confirmed,-10.232542871528278,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,9,0,1,0,nan,False
+m03q10_001,wavy annular,threshold_080,adjacent,-17.2621816944774,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,75,0,1,0,nan,False
+m03q10_001,wavy annular,threshold_080,lag2_confirmed,-10.232542871528278,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,9,0,1,0,nan,False
+m03q10_001,wavy annular,consensus,adjacent,-17.2621816944774,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,75,0,1,0,nan,False
+m03q10_001,wavy annular,consensus,lag2_confirmed,-10.232542871528278,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,9,0,1,0,nan,False
+m03q10_001,wavy annular,consensus_reference_guard,adjacent,-17.2621816944774,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,75,0,1,0,nan,False
+m03q10_001,wavy annular,consensus_reference_guard,lag2_confirmed,-10.232542871528278,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,9,0,1,0,nan,False
+m03q20_001,wavy annular,threshold_060,adjacent,-41.77955033368373,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,80,0,1,0,nan,False
+m03q20_001,wavy annular,threshold_060,lag2_confirmed,-40.53468131476556,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,18,0,1,0,nan,False
+m03q20_001,wavy annular,threshold_070,adjacent,-41.77955033368373,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,80,0,1,0,nan,False
+m03q20_001,wavy annular,threshold_070,lag2_confirmed,-40.53468131476556,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,18,0,1,0,nan,False
+m03q20_001,wavy annular,threshold_080,adjacent,-41.77955033368373,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,80,0,1,0,nan,False
+m03q20_001,wavy annular,threshold_080,lag2_confirmed,-40.53468131476556,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,18,0,1,0,nan,False
+m03q20_001,wavy annular,consensus,adjacent,-41.77955033368373,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,80,0,1,0,nan,False
+m03q20_001,wavy annular,consensus,lag2_confirmed,-40.53468131476556,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,18,0,1,0,nan,False
+m03q20_001,wavy annular,consensus_reference_guard,adjacent,-41.77955033368373,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,80,0,1,0,nan,False
+m03q20_001,wavy annular,consensus_reference_guard,lag2_confirmed,-40.53468131476556,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,18,0,1,0,nan,False
+m03q40_001,wavy annular,threshold_060,adjacent,-52.24163565298645,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;saturation;missing_phase_mean,270,0,1,0,nan,True
+m03q40_001,wavy annular,threshold_060,lag2_confirmed,-51.796510197088644,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;saturation;missing_phase_mean,193,0,1,0,nan,True
+m03q40_001,wavy annular,threshold_070,adjacent,-52.24163565298645,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;saturation;missing_phase_mean,270,0,1,0,nan,True
+m03q40_001,wavy annular,threshold_070,lag2_confirmed,-51.796510197088644,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;saturation;missing_phase_mean,193,0,1,0,nan,True
+m03q40_001,wavy annular,threshold_080,adjacent,-52.24163565298645,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;saturation;missing_phase_mean,270,0,1,0,nan,True
+m03q40_001,wavy annular,threshold_080,lag2_confirmed,-51.796510197088644,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;saturation;missing_phase_mean,193,0,1,0,nan,True
+m03q40_001,wavy annular,consensus,adjacent,-52.24163565298645,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;saturation;missing_phase_mean,270,0,1,0,nan,True
+m03q40_001,wavy annular,consensus,lag2_confirmed,-51.796510197088644,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;saturation;missing_phase_mean,193,0,1,0,nan,True
+m03q40_001,wavy annular,consensus_reference_guard,adjacent,-52.24163565298645,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;saturation;missing_phase_mean,270,0,1,0,nan,True
+m03q40_001,wavy annular,consensus_reference_guard,lag2_confirmed,-51.796510197088644,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;saturation;missing_phase_mean,193,0,1,0,nan,True
+m04q01_001,slug,threshold_060,adjacent,-7.140991822350893,-16.35823115070563,0.4365381413529456,0.4365381413529456,True,,372,27,7,4,0.5975070985344941,False
+m04q01_001,slug,threshold_060,lag2_confirmed,-6.456728697742924,-16.440028837303903,0.3927443656967332,nan,False,liquid_too_few_pairs,312,18,7,3,0.5714096692085235,False
+m04q01_001,slug,threshold_070,adjacent,-7.213483152567919,-17.02924285441738,0.423593885778471,nan,False,liquid_too_few_pairs;liquid_too_few_episodes,376,9,6,1,0.5342837393076628,False
+m04q01_001,slug,threshold_070,lag2_confirmed,-6.551645763122776,-17.031014307666048,0.38468911156828345,nan,False,liquid_too_few_pairs;liquid_too_few_episodes,316,8,6,1,0.5072566432392929,False
+m04q01_001,slug,threshold_080,adjacent,-7.223533135690371,-16.971997453500997,0.4256147902143536,nan,False,liquid_too_few_pairs;liquid_too_few_episodes,377,5,6,1,0.5364658289902048,False
+m04q01_001,slug,threshold_080,lag2_confirmed,-6.56120432893903,-16.94960667963573,0.3871006833935594,nan,False,liquid_too_few_pairs;liquid_too_few_episodes,317,4,6,1,0.510037057667536,False
+m04q01_001,slug,consensus,adjacent,-7.140991822350893,-16.971997453500997,0.42075140783607906,nan,False,liquid_too_few_pairs;liquid_too_few_episodes,372,5,7,1,0.5701092102174053,False
+m04q01_001,slug,consensus,lag2_confirmed,-6.456728697742924,-16.94960667963573,0.3809367863090548,nan,False,liquid_too_few_pairs;liquid_too_few_episodes,312,4,7,1,0.5469097418506383,False
+m04q01_001,slug,consensus_reference_guard,adjacent,-7.140991822350893,-16.98306485576791,0.42047721556722534,nan,False,liquid_too_few_pairs;liquid_too_few_episodes,372,4,7,1,0.5697376855238866,False
+m04q01_001,slug,consensus_reference_guard,lag2_confirmed,-6.456728697742924,-16.956899624703194,0.38077295028252783,nan,False,liquid_too_few_pairs;liquid_too_few_episodes,312,3,7,1,0.5466745229844272,False
+m04q10_001,churn,threshold_060,adjacent,-15.435110385253424,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,350,0,9,0,nan,False
+m04q10_001,churn,threshold_060,lag2_confirmed,-14.724810330643484,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,211,0,9,0,nan,False
+m04q10_001,churn,threshold_070,adjacent,-15.435110385253424,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,350,0,7,0,nan,False
+m04q10_001,churn,threshold_070,lag2_confirmed,-14.724810330643484,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,211,0,7,0,nan,False
+m04q10_001,churn,threshold_080,adjacent,-15.435110385253424,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,350,0,6,0,nan,False
+m04q10_001,churn,threshold_080,lag2_confirmed,-14.724810330643484,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,211,0,6,0,nan,False
+m04q10_001,churn,consensus,adjacent,-15.435110385253424,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,350,0,9,0,nan,False
+m04q10_001,churn,consensus,lag2_confirmed,-14.724810330643484,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,211,0,9,0,nan,False
+m04q10_001,churn,consensus_reference_guard,adjacent,-15.435110385253424,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,350,0,9,0,nan,False
+m04q10_001,churn,consensus_reference_guard,lag2_confirmed,-14.724810330643484,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,211,0,9,0,nan,False
+m04q20_001,churn,threshold_060,adjacent,-17.29000453838135,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,314,0,6,0,nan,False
+m04q20_001,churn,threshold_060,lag2_confirmed,-17.035527080704703,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,154,0,6,0,nan,False
+m04q20_001,churn,threshold_070,adjacent,-17.29000453838135,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,314,0,6,0,nan,False
+m04q20_001,churn,threshold_070,lag2_confirmed,-17.035527080704703,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,154,0,6,0,nan,False
+m04q20_001,churn,threshold_080,adjacent,-17.333796968405046,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,316,0,3,0,nan,False
+m04q20_001,churn,threshold_080,lag2_confirmed,-17.035527080704703,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,154,0,3,0,nan,False
+m04q20_001,churn,consensus,adjacent,-17.29000453838135,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,314,0,6,0,nan,False
+m04q20_001,churn,consensus,lag2_confirmed,-17.035527080704703,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,154,0,6,0,nan,False
+m04q20_001,churn,consensus_reference_guard,adjacent,-17.29000453838135,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,314,0,6,0,nan,False
+m04q20_001,churn,consensus_reference_guard,lag2_confirmed,-17.035527080704703,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,154,0,6,0,nan,False
+m04q40_001,wavy annular,threshold_060,adjacent,-18.90101582789933,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,32,0,1,0,nan,False
+m04q40_001,wavy annular,threshold_060,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0,nan,False
+m04q40_001,wavy annular,threshold_070,adjacent,-18.90101582789933,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,32,0,1,0,nan,False
+m04q40_001,wavy annular,threshold_070,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0,nan,False
+m04q40_001,wavy annular,threshold_080,adjacent,-18.90101582789933,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,32,0,1,0,nan,False
+m04q40_001,wavy annular,threshold_080,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0,nan,False
+m04q40_001,wavy annular,consensus,adjacent,-18.90101582789933,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,32,0,1,0,nan,False
+m04q40_001,wavy annular,consensus,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0,nan,False
+m04q40_001,wavy annular,consensus_reference_guard,adjacent,-18.90101582789933,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,32,0,1,0,nan,False
+m04q40_001,wavy annular,consensus_reference_guard,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0,nan,False
+m04q80_001,wavy annular,threshold_060,adjacent,-33.92337686284077,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,16,0,1,0,nan,False
+m04q80_001,wavy annular,threshold_060,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0,nan,False
+m04q80_001,wavy annular,threshold_070,adjacent,-33.92337686284077,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,16,0,1,0,nan,False
+m04q80_001,wavy annular,threshold_070,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0,nan,False
+m04q80_001,wavy annular,threshold_080,adjacent,-33.92337686284077,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,16,0,1,0,nan,False
+m04q80_001,wavy annular,threshold_080,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0,nan,False
+m04q80_001,wavy annular,consensus,adjacent,-33.92337686284077,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,16,0,1,0,nan,False
+m04q80_001,wavy annular,consensus,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0,nan,False
+m04q80_001,wavy annular,consensus_reference_guard,adjacent,-33.92337686284077,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,16,0,1,0,nan,False
+m04q80_001,wavy annular,consensus_reference_guard,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0,nan,False
+m05q01_001,plug,threshold_060,adjacent,-11.522975080414891,-11.870854023974392,0.9706946995677882,0.9706946995677882,True,,303,93,9,9,0.9767203740944991,False
+m05q01_001,plug,threshold_060,lag2_confirmed,-11.676938691999014,-11.92133184981299,0.9794995088725922,0.9794995088725922,True,,273,73,9,9,0.9816306126749762,False
+m05q01_001,plug,threshold_070,adjacent,-11.527851428706503,-11.837823283512803,0.973815130756512,0.973815130756512,True,,308,94,9,10,0.9837718019029394,False
+m05q01_001,plug,threshold_070,lag2_confirmed,-11.684119589512662,-11.922118853017125,0.9800371673493061,0.9800371673493061,True,,278,71,9,10,0.9844515806219326,False
+m05q01_001,plug,threshold_080,adjacent,-11.53134081887037,-11.86346915044576,0.9720041138588109,0.9720041138588109,True,,309,81,9,9,0.9845196103664843,False
+m05q01_001,plug,threshold_080,lag2_confirmed,-11.686855649137106,-11.924390248792106,0.9800799374476141,0.9800799374476141,True,,279,62,9,9,0.988071529629644,False
+m05q01_001,plug,consensus,adjacent,-11.522975080414891,-11.86346915044576,0.9712989458890215,0.9712989458890215,True,,303,81,9,9,0.9843967679188255,False
+m05q01_001,plug,consensus,lag2_confirmed,-11.676938691999014,-11.924390248792106,0.9792482842619011,0.9792482842619011,True,,273,62,9,9,0.9877747162911407,False
+m05q01_001,plug,consensus_reference_guard,adjacent,-11.522975080414891,-11.885557208255374,0.9694938889706708,0.9694938889706708,True,,303,75,9,8,0.9777839466637938,False
+m05q01_001,plug,consensus_reference_guard,lag2_confirmed,-11.676938691999014,-11.916128912332711,0.9799271875880644,0.9799271875880644,True,,273,59,9,8,0.9832237056144085,False
+m05q05_001,slug,threshold_060,adjacent,-11.633804499578462,-13.296619198002796,0.8749445499143048,0.8749445499143048,True,,289,99,13,10,0.9278347057653985,False
+m05q05_001,slug,threshold_060,lag2_confirmed,-11.673277843258175,-13.379550435750197,0.8724716050299526,0.8724716050299526,True,,254,84,13,10,0.9250123337749921,False
+m05q05_001,slug,threshold_070,adjacent,-11.65523474785676,-13.153632422372405,0.8860848755384794,0.8860848755384794,True,,295,90,12,10,0.9283508932691343,False
+m05q05_001,slug,threshold_070,lag2_confirmed,-11.703045897820768,-13.222415087125503,0.8850914012838603,0.8850914012838603,True,,261,75,12,10,0.9250716148702215,False
+m05q05_001,slug,threshold_080,adjacent,-11.682929577414603,-13.085812321661834,0.8927936065593006,0.8927936065593006,True,,299,76,12,9,0.9357806203659159,False
+m05q05_001,slug,threshold_080,lag2_confirmed,-11.732986554514852,-13.163435060329208,0.8913316699434091,0.8913316699434091,True,,265,62,12,9,0.9329241375194142,False
+m05q05_001,slug,consensus,adjacent,-11.627273440011392,-13.085812321661834,0.8885404401501293,0.8885404401501293,True,,288,76,13,9,0.9364343447281996,False
+m05q05_001,slug,consensus,lag2_confirmed,-11.665777028353274,-13.163435060329208,0.8862258958157934,0.8862258958157934,True,,253,62,13,9,0.9333769133261638,False
+m05q05_001,slug,consensus_reference_guard,adjacent,-11.627273440011392,-13.10133039524413,0.8874879946720654,0.8874879946720654,True,,288,70,13,9,0.9362913122392451,False
+m05q05_001,slug,consensus_reference_guard,lag2_confirmed,-11.665777028353274,-13.171311657526799,0.8856959224472393,0.8856959224472393,True,,253,56,13,9,0.934547474813284,False
+m05q10_001,churn,threshold_060,adjacent,-13.100134675530063,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,375,0,11,0,nan,False
+m05q10_001,churn,threshold_060,lag2_confirmed,-12.514084922796886,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,229,0,10,0,nan,False
+m05q10_001,churn,threshold_070,adjacent,-13.219620847580627,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,387,0,11,0,nan,False
+m05q10_001,churn,threshold_070,lag2_confirmed,-12.566562770195493,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,232,0,10,0,nan,False
+m05q10_001,churn,threshold_080,adjacent,-13.26821590523445,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,399,0,9,0,nan,False
+m05q10_001,churn,threshold_080,lag2_confirmed,-12.633726218764147,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,239,0,9,0,nan,False
+m05q10_001,churn,consensus,adjacent,-13.100134675530063,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,375,0,11,0,nan,False
+m05q10_001,churn,consensus,lag2_confirmed,-12.514084922796886,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,229,0,10,0,nan,False
+m05q10_001,churn,consensus_reference_guard,adjacent,-13.100134675530063,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,375,0,11,0,nan,False
+m05q10_001,churn,consensus_reference_guard,lag2_confirmed,-12.514084922796886,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,229,0,10,0,nan,False
+m05q20_001,churn,threshold_060,adjacent,-14.431026359066204,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,388,0,13,0,nan,False
+m05q20_001,churn,threshold_060,lag2_confirmed,-14.057941043751288,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,244,0,12,0,nan,False
+m05q20_001,churn,threshold_070,adjacent,-14.483833778900946,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,397,0,13,0,nan,False
+m05q20_001,churn,threshold_070,lag2_confirmed,-14.104522727999809,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,248,0,12,0,nan,False
+m05q20_001,churn,threshold_080,adjacent,-14.555048980007996,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,411,0,9,0,nan,False
+m05q20_001,churn,threshold_080,lag2_confirmed,-14.170208155361,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,256,0,9,0,nan,False
+m05q20_001,churn,consensus,adjacent,-14.431026359066204,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,388,0,13,0,nan,False
+m05q20_001,churn,consensus,lag2_confirmed,-14.057941043751288,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,244,0,12,0,nan,False
+m05q20_001,churn,consensus_reference_guard,adjacent,-14.431026359066204,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,388,0,13,0,nan,False
+m05q20_001,churn,consensus_reference_guard,lag2_confirmed,-14.057941043751288,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,244,0,12,0,nan,False
+m05q40_001,churn,threshold_060,adjacent,-18.73202665393436,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,255,0,15,0,nan,False
+m05q40_001,churn,threshold_060,lag2_confirmed,-19.253956976394853,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,80,0,13,0,nan,False
+m05q40_001,churn,threshold_070,adjacent,-18.758695436194834,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,269,0,4,0,nan,False
+m05q40_001,churn,threshold_070,lag2_confirmed,-19.33977636862425,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,93,0,4,0,nan,False
+m05q40_001,churn,threshold_080,adjacent,-18.825082676816475,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,274,0,1,0,nan,False
+m05q40_001,churn,threshold_080,lag2_confirmed,-19.36796463419489,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,94,0,1,0,nan,False
+m05q40_001,churn,consensus,adjacent,-18.73202665393436,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,255,0,15,0,nan,False
+m05q40_001,churn,consensus,lag2_confirmed,-19.253956976394853,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,80,0,13,0,nan,False
+m05q40_001,churn,consensus_reference_guard,adjacent,-18.73202665393436,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,255,0,15,0,nan,False
+m05q40_001,churn,consensus_reference_guard,lag2_confirmed,-19.253956976394853,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,80,0,13,0,nan,False
+m05q80_001,wavy annular,threshold_060,adjacent,-16.05090985450589,nan,nan,nan,False,gas_too_few_pairs;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,8,0,3,0,nan,False
+m05q80_001,wavy annular,threshold_060,lag2_confirmed,-13.82849339438004,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,1,0,1,0,nan,False
+m05q80_001,wavy annular,threshold_070,adjacent,-16.05090985450589,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,8,0,1,0,nan,False
+m05q80_001,wavy annular,threshold_070,lag2_confirmed,-13.82849339438004,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,1,0,1,0,nan,False
+m05q80_001,wavy annular,threshold_080,adjacent,-16.05090985450589,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,8,0,1,0,nan,False
+m05q80_001,wavy annular,threshold_080,lag2_confirmed,-13.82849339438004,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,1,0,1,0,nan,False
+m05q80_001,wavy annular,consensus,adjacent,-16.05090985450589,nan,nan,nan,False,gas_too_few_pairs;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,8,0,3,0,nan,False
+m05q80_001,wavy annular,consensus,lag2_confirmed,-13.82849339438004,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,1,0,1,0,nan,False
+m05q80_001,wavy annular,consensus_reference_guard,adjacent,-16.05090985450589,nan,nan,nan,False,gas_too_few_pairs;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,8,0,3,0,nan,False
+m05q80_001,wavy annular,consensus_reference_guard,lag2_confirmed,-13.82849339438004,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,1,0,1,0,nan,False
+m06q01_001,plug,threshold_060,adjacent,-15.396544092395283,-15.82633254362703,0.9728434588337515,0.9728434588337515,True,,302,63,15,9,0.9714256904923134,False
+m06q01_001,plug,threshold_060,lag2_confirmed,-15.697876143569143,-15.747403837269959,0.9968548660964929,0.9968548660964929,True,,245,51,15,9,0.9910298836668573,False
+m06q01_001,plug,threshold_070,adjacent,-15.414564808676621,-15.838201270913,0.9732522364762222,0.9732522364762222,True,,310,64,15,9,0.9723053328715507,False
+m06q01_001,plug,threshold_070,lag2_confirmed,-15.702774129693154,-15.738533713918933,0.9977278960749594,0.9977278960749594,True,,252,51,15,9,0.9912642587140496,False
+m06q01_001,plug,threshold_080,adjacent,-15.413551001155708,-15.846304766132976,0.972690556482155,0.972690556482155,True,,317,50,15,7,0.9751065127286974,False
+m06q01_001,plug,threshold_080,lag2_confirmed,-15.699608315351753,-15.70467890673659,0.9996771286178503,0.9996771286178503,True,,259,39,15,7,0.9964598924452422,False
+m06q01_001,plug,consensus,adjacent,-15.396544092395283,-15.883237669129437,0.9693580372671694,0.9693580372671694,True,,302,44,15,6,0.9670132496545389,False
+m06q01_001,plug,consensus,lag2_confirmed,-15.697876143569143,-15.7349694928665,0.9976426170184713,0.9976426170184713,True,,245,35,15,6,0.9897084627868061,False
+m06q01_001,plug,consensus_reference_guard,adjacent,-15.396544092395283,-15.918136428880244,0.9672328266053407,0.9672328266053407,True,,302,39,15,6,0.9646140014636418,False
+m06q01_001,plug,consensus_reference_guard,lag2_confirmed,-15.697876143569143,-15.783400472681341,0.9945813749540077,0.9945813749540077,True,,245,31,15,6,0.9881439324455116,False
+m06q05_001,slug,threshold_060,adjacent,-13.75292903605334,-18.140631278550146,0.7581284700006601,0.7581284700006601,True,,321,26,13,4,0.8076566044693602,False
+m06q05_001,slug,threshold_060,lag2_confirmed,-13.63601822249748,-18.074290234880564,0.7544428049618286,0.7544428049618286,True,,224,22,13,4,0.802870931947493,False
+m06q05_001,slug,threshold_070,adjacent,-13.82791179349326,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,327,0,13,0,nan,False
+m06q05_001,slug,threshold_070,lag2_confirmed,-13.747030410581052,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,230,0,13,0,nan,False
+m06q05_001,slug,threshold_080,adjacent,-13.874611304615048,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,340,0,13,0,nan,False
+m06q05_001,slug,threshold_080,lag2_confirmed,-13.819309432522827,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,235,0,13,0,nan,False
+m06q05_001,slug,consensus,adjacent,-13.75292903605334,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,321,0,13,0,nan,False
+m06q05_001,slug,consensus,lag2_confirmed,-13.63601822249748,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,224,0,13,0,nan,False
+m06q05_001,slug,consensus_reference_guard,adjacent,-13.75292903605334,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,321,0,13,0,nan,False
+m06q05_001,slug,consensus_reference_guard,lag2_confirmed,-13.63601822249748,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,224,0,13,0,nan,False
+m06q10_001,churn,threshold_060,adjacent,-13.751934344036044,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,344,0,11,0,nan,False
+m06q10_001,churn,threshold_060,lag2_confirmed,-12.486777362910606,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,223,0,9,0,nan,False
+m06q10_001,churn,threshold_070,adjacent,-13.869426622147458,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,356,0,11,0,nan,False
+m06q10_001,churn,threshold_070,lag2_confirmed,-12.61513804806493,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,230,0,9,0,nan,False
+m06q10_001,churn,threshold_080,adjacent,-14.026079395340119,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,377,0,10,0,nan,False
+m06q10_001,churn,threshold_080,lag2_confirmed,-12.821169735205906,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,243,0,10,0,nan,False
+m06q10_001,churn,consensus,adjacent,-13.751934344036044,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,344,0,11,0,nan,False
+m06q10_001,churn,consensus,lag2_confirmed,-12.486777362910606,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,223,0,9,0,nan,False
+m06q10_001,churn,consensus_reference_guard,adjacent,-13.751934344036044,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,344,0,11,0,nan,False
+m06q10_001,churn,consensus_reference_guard,lag2_confirmed,-12.486777362910606,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,223,0,9,0,nan,False
+m06q20_001,churn,threshold_060,adjacent,-19.399666833486194,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,284,0,19,0,nan,False
+m06q20_001,churn,threshold_060,lag2_confirmed,-19.206158157214972,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,96,0,14,0,nan,False
+m06q20_001,churn,threshold_070,adjacent,-19.460858179861752,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,294,0,17,0,nan,False
+m06q20_001,churn,threshold_070,lag2_confirmed,-19.206530122442572,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,98,0,14,0,nan,False
+m06q20_001,churn,threshold_080,adjacent,-19.611654195189768,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,318,0,11,0,nan,False
+m06q20_001,churn,threshold_080,lag2_confirmed,-19.42487583480695,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,111,0,10,0,nan,False
+m06q20_001,churn,consensus,adjacent,-19.399666833486194,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,284,0,19,0,nan,False
+m06q20_001,churn,consensus,lag2_confirmed,-19.206158157214972,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,96,0,14,0,nan,False
+m06q20_001,churn,consensus_reference_guard,adjacent,-19.399666833486194,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,284,0,19,0,nan,False
+m06q20_001,churn,consensus_reference_guard,lag2_confirmed,-19.206158157214972,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,96,0,14,0,nan,False
+m06q40_001,wavy annular,threshold_060,adjacent,-20.569599411572003,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,41,0,9,0,nan,False
+m06q40_001,wavy annular,threshold_060,lag2_confirmed,-16.529098632802167,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,4,0,1,0,nan,False
+m06q40_001,wavy annular,threshold_070,adjacent,-20.758924366302445,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,42,0,4,0,nan,False
+m06q40_001,wavy annular,threshold_070,lag2_confirmed,-16.529098632802167,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,4,0,1,0,nan,False
+m06q40_001,wavy annular,threshold_080,adjacent,-20.758924366302445,nan,nan,nan,False,gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,42,0,1,0,nan,False
+m06q40_001,wavy annular,threshold_080,lag2_confirmed,-16.529098632802167,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,4,0,1,0,nan,False
+m06q40_001,wavy annular,consensus,adjacent,-20.569599411572003,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,41,0,9,0,nan,False
+m06q40_001,wavy annular,consensus,lag2_confirmed,-16.529098632802167,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,4,0,1,0,nan,False
+m06q40_001,wavy annular,consensus_reference_guard,adjacent,-20.569599411572003,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,41,0,9,0,nan,False
+m06q40_001,wavy annular,consensus_reference_guard,lag2_confirmed,-16.529098632802167,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,4,0,1,0,nan,False
+m06q80_001,wavy annular,threshold_060,adjacent,-32.62334107892109,nan,nan,nan,False,gas_too_few_pairs;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,4,0,3,0,nan,False
+m06q80_001,wavy annular,threshold_060,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0,nan,False
+m06q80_001,wavy annular,threshold_070,adjacent,-32.62334107892109,nan,nan,nan,False,gas_too_few_pairs;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,4,0,3,0,nan,False
+m06q80_001,wavy annular,threshold_070,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0,nan,False
+m06q80_001,wavy annular,threshold_080,adjacent,-32.62334107892109,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,4,0,2,0,nan,False
+m06q80_001,wavy annular,threshold_080,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0,nan,False
+m06q80_001,wavy annular,consensus,adjacent,-32.62334107892109,nan,nan,nan,False,gas_too_few_pairs;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,4,0,3,0,nan,False
+m06q80_001,wavy annular,consensus,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0,nan,False
+m06q80_001,wavy annular,consensus_reference_guard,adjacent,-32.62334107892109,nan,nan,nan,False,gas_too_few_pairs;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,4,0,3,0,nan,False
+m06q80_001,wavy annular,consensus_reference_guard,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0,nan,False
+m07q01_001,dispersed bubbles,threshold_060,adjacent,nan,-6.307862061608481,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;missing_phase_mean,0,474,0,5,nan,False
+m07q01_001,dispersed bubbles,threshold_060,lag2_confirmed,nan,-6.304935604043251,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;missing_phase_mean,0,468,0,5,nan,False
+m07q01_001,dispersed bubbles,threshold_070,adjacent,nan,-6.307491230755134,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;missing_phase_mean,0,452,0,10,nan,False
+m07q01_001,dispersed bubbles,threshold_070,lag2_confirmed,nan,-6.304900638733817,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;missing_phase_mean,0,441,0,10,nan,False
+m07q01_001,dispersed bubbles,threshold_080,adjacent,nan,-6.307428358863801,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;missing_phase_mean,0,448,0,10,nan,False
+m07q01_001,dispersed bubbles,threshold_080,lag2_confirmed,nan,-6.304629628877962,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;missing_phase_mean,0,437,0,10,nan,False
+m07q01_001,dispersed bubbles,consensus,adjacent,nan,-6.307605893705489,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;missing_phase_mean,0,447,0,10,nan,False
+m07q01_001,dispersed bubbles,consensus,lag2_confirmed,nan,-6.304859247113797,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;missing_phase_mean,0,436,0,10,nan,False
+m07q01_001,dispersed bubbles,consensus_reference_guard,adjacent,nan,-6.3074007133554115,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;missing_phase_mean,0,432,0,11,nan,False
+m07q01_001,dispersed bubbles,consensus_reference_guard,lag2_confirmed,nan,-6.302876315939166,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;missing_phase_mean,0,420,0,11,nan,False
+m07q05_001,plug,threshold_060,adjacent,-14.477969432971038,-14.817535448399731,0.9770835024075907,0.9770835024075907,True,,263,90,18,11,0.9967862790360542,False
+m07q05_001,plug,threshold_060,lag2_confirmed,-14.61032309894918,-14.863684186158187,0.98295435478608,0.98295435478608,True,,222,69,18,11,1.0028206781255762,False
+m07q05_001,plug,threshold_070,adjacent,-14.4820356687369,-14.858184974250257,0.974684034007839,0.974684034007839,True,,264,95,18,12,0.9947494480282645,False
+m07q05_001,plug,threshold_070,lag2_confirmed,-14.611554528411222,-14.8922914753687,0.981148841504895,0.981148841504895,True,,223,74,18,12,1.001190426417794,False
+m07q05_001,plug,threshold_080,adjacent,-14.490594107832234,-14.82841669871757,0.9772178919874465,0.9772178919874465,True,,268,65,18,10,0.9958765171232632,False
+m07q05_001,plug,threshold_080,lag2_confirmed,-14.622566198794377,-14.819846151332522,0.9866881241192638,0.9866881241192638,True,,227,51,18,10,1.0063019477513195,False
+m07q05_001,plug,consensus,adjacent,-14.477234737815838,-14.811437312012345,0.9774361821100601,0.9774361821100601,True,,262,60,18,9,0.9972430377904217,False
+m07q05_001,plug,consensus,lag2_confirmed,-14.605937156289677,-14.806051886505381,0.9864842611825443,0.9864842611825443,True,,221,47,18,9,1.0076093066577876,False
+m07q05_001,plug,consensus_reference_guard,adjacent,-14.477234737815838,-14.780267863438572,0.9794974537388231,0.9794974537388231,True,,262,54,18,8,0.9983073075668425,False
+m07q05_001,plug,consensus_reference_guard,lag2_confirmed,-14.605937156289677,-14.775203470853228,0.9885438928203284,0.9885438928203284,True,,221,42,18,8,1.0084650562962783,False
+m07q20_001,churn,threshold_060,adjacent,-15.363414463387564,-25.99010419047317,0.5911255434296842,nan,False,liquid_too_few_pairs;liquid_too_few_episodes,339,4,16,1,0.6137799442984241,False
+m07q20_001,churn,threshold_060,lag2_confirmed,-14.898272975482765,-26.211457562675953,0.5683878105541639,nan,False,liquid_too_few_pairs;liquid_too_few_episodes,224,2,15,1,0.5961006870099076,False
+m07q20_001,churn,threshold_070,adjacent,-15.589321270470284,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,370,0,19,0,nan,False
+m07q20_001,churn,threshold_070,lag2_confirmed,-15.054316417323632,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,239,0,17,0,nan,False
+m07q20_001,churn,threshold_080,adjacent,-15.735525213825996,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,388,0,16,0,nan,False
+m07q20_001,churn,threshold_080,lag2_confirmed,-15.12335923128519,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,245,0,15,0,nan,False
+m07q20_001,churn,consensus,adjacent,-15.363414463387564,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,339,0,16,0,nan,False
+m07q20_001,churn,consensus,lag2_confirmed,-14.898272975482765,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,224,0,15,0,nan,False
+m07q20_001,churn,consensus_reference_guard,adjacent,-15.363414463387564,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,339,0,16,0,nan,False
+m07q20_001,churn,consensus_reference_guard,lag2_confirmed,-14.898272975482765,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,224,0,15,0,nan,False
+m07q40_001,churn,threshold_060,adjacent,-20.338372293165673,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,316,0,22,0,nan,False
+m07q40_001,churn,threshold_060,lag2_confirmed,-20.090766915244803,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,121,0,19,0,nan,False
+m07q40_001,churn,threshold_070,adjacent,-20.499711621312834,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,348,0,19,0,nan,False
+m07q40_001,churn,threshold_070,lag2_confirmed,-20.2886817584708,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,130,0,16,0,nan,False
+m07q40_001,churn,threshold_080,adjacent,-20.589720181907236,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,368,0,10,0,nan,False
+m07q40_001,churn,threshold_080,lag2_confirmed,-20.355825252574547,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,137,0,9,0,nan,False
+m07q40_001,churn,consensus,adjacent,-20.338372293165673,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,316,0,22,0,nan,False
+m07q40_001,churn,consensus,lag2_confirmed,-20.090766915244803,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,121,0,19,0,nan,False
+m07q40_001,churn,consensus_reference_guard,adjacent,-20.338372293165673,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,316,0,22,0,nan,False
+m07q40_001,churn,consensus_reference_guard,lag2_confirmed,-20.090766915244803,nan,nan,nan,False,liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,121,0,19,0,nan,False
+m07q80_001,wavy annular,threshold_060,adjacent,-23.622768420799478,nan,nan,nan,False,gas_too_few_pairs;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,6,0,3,0,nan,False
+m07q80_001,wavy annular,threshold_060,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0,nan,False
+m07q80_001,wavy annular,threshold_070,adjacent,-23.622768420799478,nan,nan,nan,False,gas_too_few_pairs;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,6,0,3,0,nan,False
+m07q80_001,wavy annular,threshold_070,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0,nan,False
+m07q80_001,wavy annular,threshold_080,adjacent,-23.622768420799478,nan,nan,nan,False,gas_too_few_pairs;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,6,0,3,0,nan,False
+m07q80_001,wavy annular,threshold_080,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0,nan,False
+m07q80_001,wavy annular,consensus,adjacent,-23.622768420799478,nan,nan,nan,False,gas_too_few_pairs;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,6,0,3,0,nan,False
+m07q80_001,wavy annular,consensus,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0,nan,False
+m07q80_001,wavy annular,consensus_reference_guard,adjacent,-23.622768420799478,nan,nan,nan,False,gas_too_few_pairs;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,6,0,3,0,nan,False
+m07q80_001,wavy annular,consensus_reference_guard,lag2_confirmed,nan,nan,nan,nan,False,gas_too_few_pairs;gas_too_few_episodes;liquid_too_few_pairs;liquid_too_few_episodes;missing_phase_mean,0,0,0,0,nan,False

@@ -1,0 +1,46 @@
+[AVISO] corr(shift_mean, n_samples) = 1.0000 — são a MESMA variável de velocidade.
+
+  churn         n=10  m̄=5.20  q̄=19.50  n_samples̄=8832
+  wavy annular  n= 9  m̄=4.56  q̄=52.22  n_samples̄=18140
+
+[A1] (principal: cropped, piso50)
+  ANOSIM R (observado)              = 0.1770
+  p q-estratificado (exato)         = 0.0200  (n_arranjos=200; p_min=0.00500; R_max=0.2422; rank=3)
+  p m-estratificado (exato)         = 0.0156  (n_arranjos=1728; p_min=0.00058; R_max=0.2502; rank=26)
+  p não-estratificado (5000 MC)     = 0.0072
+  -> R sobrevive controlando q E o confound ortogonal m; a m-estratificação é mais bem
+     condicionada (nenhum estrato puro: 1728 vs 200 arranjos). Efeito-tamanho DESCRITIVO,
+     NÃO teste inferencial forte (q e m colineares com padrão).
+
+[A2] ECDF distâncias (figura: a2_ecdf.png)
+  grupo          n     mediana   média
+  intra         81     0.098     0.136
+  inter viz     36     0.159     0.175
+  inter dist    54     0.135     0.184
+  NOTA: a ordem inter-viz vs inter-dist INVERTE entre mediana e média (as ECDFs quase
+        se sobrepõem) → NÃO é evidência robusta. A evidência robusta é a correlação:
+  corr(D, |Δq|)        = -0.004   (≈0 → separação NÃO é proximidade de ponto operacional em q)
+  corr(D, |Δm|)        = +0.160   (efeito de m, confound não controlado)
+  corr(D, mesmo padrão)= -0.178   (efeito de padrão; MESMA ordem de grandeza que |Δm|)
+
+[A3'] Robustez ao artefato de costura — R em piso50 (λ≥50px, A1 principal) vs
+      piso10 (λ≥10px, inclui a banda λ≈shift que o piso50 exclui):
+  cropped   R(piso50)=0.1770   R(piso10)=0.3539   Δ=+0.1770
+  center    R(piso50)=0.1791   R(piso10)=0.1978   Δ=+0.0187
+  energia média na banda de costura (cropped, piso10) = 1.1% do |WPS b=0|
+  VEREDITO: R SOBE ao rebaixar o piso (0,177→0.354), MAS a banda de costura carrega
+            energia ínfima (1.1%) e nenhum pico distinto (ver a3_out_of_band.png:
+            o pico do |WPS b=0| fica em λ≈400–950 px, longe de λ≈shift). Logo a subida
+            NÃO é atribuível ao bump de costura — vem do conteúdo difuso de PEQUENA
+            ESCALA (10–50 px), onde annular (sinal mais longo/fino) e churn diferem.
+            Essa faixa é COLINEAR com velocidade/comprimento (n_original≈shift_mean,
+            corr=1,0 com o padrão); incluí-la mede em parte o confound, não o padrão.
+            O piso50 (A1 principal) EXCLUI essa região confundida → leitura
+            CONSERVADORA quanto ao CONFOUND (não é questão de borda/COI: o descritor
+            é a coluna b=0 = CENTRO da autocorrelação 2N−1, a 7000 px de qualquer
+            borda, logo nenhuma escala tem COI que a alcance).
+  (piso10 é SONDA de robustez — inclui escalas pequenas colineares com o confound
+   de velocidade/comprimento; NUNCA é número de manchete. center quase não muda
+   (Δ=+0.0187), consistente com o colapso center não injetar a mesma textura de
+   pequena escala. center tem shift_mean NaN → banda identificada por escala, não
+   por metadata.)

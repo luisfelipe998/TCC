@@ -1,0 +1,235 @@
+run,pattern,fps,threshold,detected_objects,group,accepted_tracks,unique_intervals,observed_blocks,median_px_frame,median_px_s,q25_px_s,q75_px_s,interval_weighted_median_px_s,strict_tracks,strict_median_px_s,supported
+m03q05_001,churn,5000.0,0.6,463,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q05_001,churn,5000.0,0.6,463,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q05_001,churn,5000.0,0.6,463,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q05_001,churn,5000.0,0.7,772,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q05_001,churn,5000.0,0.7,772,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q05_001,churn,5000.0,0.7,772,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q05_001,churn,5000.0,0.8,864,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q05_001,churn,5000.0,0.8,864,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q05_001,churn,5000.0,0.8,864,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q10_001,wavy annular,5000.0,0.6,249,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q10_001,wavy annular,5000.0,0.6,249,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q10_001,wavy annular,5000.0,0.6,249,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q10_001,wavy annular,5000.0,0.7,408,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q10_001,wavy annular,5000.0,0.7,408,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q10_001,wavy annular,5000.0,0.7,408,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q10_001,wavy annular,5000.0,0.8,736,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q10_001,wavy annular,5000.0,0.8,736,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q10_001,wavy annular,5000.0,0.8,736,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q20_001,wavy annular,4000.0,0.6,84,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q20_001,wavy annular,4000.0,0.6,84,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q20_001,wavy annular,4000.0,0.6,84,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q20_001,wavy annular,4000.0,0.7,151,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q20_001,wavy annular,4000.0,0.7,151,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q20_001,wavy annular,4000.0,0.7,151,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q20_001,wavy annular,4000.0,0.8,384,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q20_001,wavy annular,4000.0,0.8,384,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q20_001,wavy annular,4000.0,0.8,384,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q40_001,wavy annular,4000.0,0.6,14,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q40_001,wavy annular,4000.0,0.6,14,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q40_001,wavy annular,4000.0,0.6,14,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q40_001,wavy annular,4000.0,0.7,29,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q40_001,wavy annular,4000.0,0.7,29,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q40_001,wavy annular,4000.0,0.7,29,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q40_001,wavy annular,4000.0,0.8,235,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q40_001,wavy annular,4000.0,0.8,235,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m03q40_001,wavy annular,4000.0,0.8,235,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q01_001,slug,7000.0,0.6,2133,small,12,56,1,-16.201876441625,-113413.135091375,-119377.55532563322,-104717.14464518691,-114199.30050587947,10,-115892.97675638199,False
+m04q01_001,slug,7000.0,0.6,2133,isolated_small,5,19,1,-16.798093286697792,-117586.65300688455,-120631.12619621206,-112626.96967687055,-117586.65300688455,3,-120631.12619621206,False
+m04q01_001,slug,7000.0,0.6,2133,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q01_001,slug,7000.0,0.7,2555,small,21,172,5,-14.916925336568198,-104418.47735597739,-111564.72840791332,-663.0637914760289,-1496.4115253676391,19,-84542.63157894729,True
+m04q01_001,slug,7000.0,0.7,2555,isolated_small,18,159,5,-13.497222066780335,-94480.55446746234,-110517.40648671375,-548.3601917063851,-663.0637914760289,16,-43766.214047415364,True
+m04q01_001,slug,7000.0,0.7,2555,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q01_001,slug,7000.0,0.8,2717,small,13,73,5,-13.998588016515656,-97990.11611560959,-108522.93951379316,-4159.567198653743,-97990.11611560959,11,-97990.11611560959,True
+m04q01_001,slug,7000.0,0.8,2717,isolated_small,9,54,5,-12.87011117596656,-90090.77823176591,-108522.93951379316,-4159.567198653743,-90090.77823176591,7,-90090.77823176591,True
+m04q01_001,slug,7000.0,0.8,2717,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q10_001,churn,5000.0,0.6,731,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q10_001,churn,5000.0,0.6,731,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q10_001,churn,5000.0,0.6,731,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q10_001,churn,5000.0,0.7,870,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q10_001,churn,5000.0,0.7,870,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q10_001,churn,5000.0,0.7,870,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q10_001,churn,5000.0,0.8,757,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q10_001,churn,5000.0,0.8,757,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q10_001,churn,5000.0,0.8,757,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q20_001,churn,5000.0,0.6,752,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q20_001,churn,5000.0,0.6,752,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q20_001,churn,5000.0,0.6,752,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q20_001,churn,5000.0,0.7,959,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q20_001,churn,5000.0,0.7,959,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q20_001,churn,5000.0,0.7,959,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q20_001,churn,5000.0,0.8,837,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q20_001,churn,5000.0,0.8,837,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q20_001,churn,5000.0,0.8,837,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q40_001,wavy annular,5000.0,0.6,393,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q40_001,wavy annular,5000.0,0.6,393,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q40_001,wavy annular,5000.0,0.6,393,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q40_001,wavy annular,5000.0,0.7,727,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q40_001,wavy annular,5000.0,0.7,727,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q40_001,wavy annular,5000.0,0.7,727,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q40_001,wavy annular,5000.0,0.8,995,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q40_001,wavy annular,5000.0,0.8,995,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q40_001,wavy annular,5000.0,0.8,995,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q80_001,wavy annular,5000.0,0.6,70,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q80_001,wavy annular,5000.0,0.6,70,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q80_001,wavy annular,5000.0,0.6,70,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q80_001,wavy annular,5000.0,0.7,150,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q80_001,wavy annular,5000.0,0.7,150,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q80_001,wavy annular,5000.0,0.7,150,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q80_001,wavy annular,5000.0,0.8,434,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q80_001,wavy annular,5000.0,0.8,434,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m04q80_001,wavy annular,5000.0,0.8,434,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q01_001,plug,7000.0,0.6,1872,small,50,343,5,-11.503481726435217,-80524.37208504652,-84155.96785936762,-66638.59432165578,-81305.54003567432,48,-80443.53934693943,True
+m05q01_001,plug,7000.0,0.6,1872,isolated_small,32,282,5,-11.567470518623619,-80972.29363036533,-84123.14969787674,-1332.2298779042055,-83637.21566588424,31,-80639.04722505635,True
+m05q01_001,plug,7000.0,0.6,1872,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q01_001,plug,7000.0,0.7,2156,small,48,309,5,-11.766387687230392,-82364.71381061274,-84550.75140522791,-38881.42584032915,-81892.6242424064,48,-82364.71381061274,True
+m05q01_001,plug,7000.0,0.7,2156,isolated_small,30,226,5,-11.821087078210162,-82747.60954747113,-85055.65756472277,-2419.826915689191,-82803.46646934465,30,-82747.60954747113,True
+m05q01_001,plug,7000.0,0.7,2156,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q01_001,plug,7000.0,0.8,2307,small,50,308,5,-11.835208892140937,-82846.46224498656,-84787.55709886276,-77006.01653603536,-82704.49095554418,47,-82989.09852531966,True
+m05q01_001,plug,7000.0,0.8,2307,isolated_small,25,212,5,-11.814927279363454,-82704.49095554418,-84160.58303951906,-40846.72924645857,-82704.49095554418,23,-82988.43353442894,True
+m05q01_001,plug,7000.0,0.8,2307,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q05_001,slug,7000.0,0.6,2817,small,35,242,5,-12.930466549189411,-90513.26584432588,-95717.78421933374,-59490.41300428217,-90577.58454106282,34,-89581.55881157491,True
+m05q05_001,slug,7000.0,0.6,2817,isolated_small,24,157,5,-12.263539456911726,-85844.77619838208,-96548.99344890246,-947.6741814911824,-86339.72070436181,24,-85844.77619838208,True
+m05q05_001,slug,7000.0,0.6,2817,large,2,24,2,-12.639302187214025,-88475.11531049818,-90473.95109930958,-86476.27952168678,-84477.44373287537,2,-88475.11531049818,False
+m05q05_001,slug,7000.0,0.7,3127,small,55,321,5,-12.23866995073892,-85670.68965517243,-91366.06947019999,-71291.76423325353,-86259.86473429952,55,-85670.68965517243,True
+m05q05_001,slug,7000.0,0.7,3127,isolated_small,29,180,5,-12.322837819185647,-86259.86473429952,-94479.31067875956,-47255.47073443858,-87048.5540803928,29,-86259.86473429952,True
+m05q05_001,slug,7000.0,0.7,3127,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q05_001,slug,7000.0,0.8,3435,small,60,366,5,-12.244610828854153,-85712.27580197908,-92310.76268029703,-80603.3594330798,-85376.53327801602,59,-85589.84068627456,True
+m05q05_001,slug,7000.0,0.8,3435,isolated_small,32,209,5,-12.191123273185708,-85337.86291229996,-93578.50084754833,-60233.31760707033,-84172.78794813118,31,-85299.19254658389,True
+m05q05_001,slug,7000.0,0.8,3435,large,1,5,1,-13.176932237563596,-92238.52566294518,-92238.52566294518,-92238.52566294518,-92238.52566294518,0,nan,False
+m05q10_001,churn,7000.0,0.6,2188,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q10_001,churn,7000.0,0.6,2188,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q10_001,churn,7000.0,0.6,2188,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q10_001,churn,7000.0,0.7,2160,small,1,5,2,-9.536177962823922,-66753.24573976746,-66753.24573976746,-66753.24573976746,-66753.24573976746,1,-66753.24573976746,False
+m05q10_001,churn,7000.0,0.7,2160,isolated_small,1,5,2,-9.536177962823922,-66753.24573976746,-66753.24573976746,-66753.24573976746,-66753.24573976746,1,-66753.24573976746,False
+m05q10_001,churn,7000.0,0.7,2160,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q10_001,churn,7000.0,0.8,1744,small,1,6,1,-10.641328274899703,-74489.29792429792,-74489.29792429792,-74489.29792429792,-74489.29792429792,1,-74489.29792429792,False
+m05q10_001,churn,7000.0,0.8,1744,isolated_small,1,6,1,-10.641328274899703,-74489.29792429792,-74489.29792429792,-74489.29792429792,-74489.29792429792,1,-74489.29792429792,False
+m05q10_001,churn,7000.0,0.8,1744,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q20_001,churn,7000.0,0.6,1952,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q20_001,churn,7000.0,0.6,1952,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q20_001,churn,7000.0,0.6,1952,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q20_001,churn,7000.0,0.7,1644,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q20_001,churn,7000.0,0.7,1644,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q20_001,churn,7000.0,0.7,1644,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q20_001,churn,7000.0,0.8,1268,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q20_001,churn,7000.0,0.8,1268,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q20_001,churn,7000.0,0.8,1268,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q40_001,churn,7000.0,0.6,1236,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q40_001,churn,7000.0,0.6,1236,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q40_001,churn,7000.0,0.6,1236,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q40_001,churn,7000.0,0.7,1173,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q40_001,churn,7000.0,0.7,1173,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q40_001,churn,7000.0,0.7,1173,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q40_001,churn,7000.0,0.8,1372,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q40_001,churn,7000.0,0.8,1372,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q40_001,churn,7000.0,0.8,1372,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q80_001,wavy annular,7000.0,0.6,346,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q80_001,wavy annular,7000.0,0.6,346,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q80_001,wavy annular,7000.0,0.6,346,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q80_001,wavy annular,7000.0,0.7,453,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q80_001,wavy annular,7000.0,0.7,453,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q80_001,wavy annular,7000.0,0.7,453,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q80_001,wavy annular,7000.0,0.8,624,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q80_001,wavy annular,7000.0,0.8,624,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m05q80_001,wavy annular,7000.0,0.8,624,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q01_001,plug,7000.0,0.6,2564,small,26,180,5,-16.145391483325632,-113017.74038327942,-115609.24132313771,-108860.62501107305,-113571.03428534849,25,-113145.1076424454,True
+m06q01_001,plug,7000.0,0.6,2564,isolated_small,12,87,5,-16.17581481496157,-113230.70370473099,-118866.02334402816,-111749.32337788033,-112890.37312411347,12,-113230.70370473099,True
+m06q01_001,plug,7000.0,0.6,2564,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q01_001,plug,7000.0,0.7,2660,small,29,154,5,-15.856597063148833,-110996.17944204183,-115335.76103743058,-108653.8294092582,-111313.11455916111,29,-110996.17944204183,True
+m06q01_001,plug,7000.0,0.7,2660,isolated_small,15,90,5,-15.778170811817487,-110447.1956827224,-114897.86790170269,-109036.95711466241,-110721.68756238213,15,-110447.1956827224,True
+m06q01_001,plug,7000.0,0.7,2660,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q01_001,plug,7000.0,0.8,3254,small,21,128,5,-15.613549141943734,-109294.84399360613,-114189.12053490069,-106028.58656117792,-109919.64838897795,21,-109294.84399360613,True
+m06q01_001,plug,7000.0,0.8,3254,isolated_small,11,75,4,-15.14694093731113,-106028.58656117792,-111757.40758193555,-97389.7945599473,-107645.17619197884,11,-106028.58656117792,True
+m06q01_001,plug,7000.0,0.8,3254,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q05_001,slug,7000.0,0.6,3951,small,12,74,4,-18.30088148892916,-128106.17042250412,-134822.10996268108,-114501.36253124132,-128433.63862313141,11,-128433.63862313141,True
+m06q05_001,slug,7000.0,0.6,3951,isolated_small,6,41,4,-19.027469761807744,-133192.28833265422,-137966.88080104635,-129097.94639401305,-133055.67891042176,6,-133192.28833265422,False
+m06q05_001,slug,7000.0,0.6,3951,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q05_001,slug,7000.0,0.7,4569,small,19,118,5,-18.011452022869758,-126080.1641600883,-132657.67282544784,-115571.33535660726,-131649.98594518224,19,-126080.1641600883,True
+m06q05_001,slug,7000.0,0.7,4569,isolated_small,7,41,4,-17.95597457137029,-125691.82199959204,-128865.07505263526,-97362.04412347154,-115824.18513494462,7,-125691.82199959204,False
+m06q05_001,slug,7000.0,0.7,4569,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q05_001,slug,7000.0,0.8,4759,small,6,38,3,-18.106285020476395,-126743.99514333477,-130907.98247432068,-124611.9815684597,-128096.31854270567,6,-126743.99514333477,False
+m06q05_001,slug,7000.0,0.8,4759,isolated_small,4,32,3,-18.03202881328552,-126224.20169299864,-129774.29110327887,-121359.65966933167,-128096.31854270567,4,-126224.20169299864,False
+m06q05_001,slug,7000.0,0.8,4759,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q10_001,churn,7000.0,0.6,2742,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q10_001,churn,7000.0,0.6,2742,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q10_001,churn,7000.0,0.6,2742,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q10_001,churn,7000.0,0.7,2927,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q10_001,churn,7000.0,0.7,2927,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q10_001,churn,7000.0,0.7,2927,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q10_001,churn,7000.0,0.8,2782,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q10_001,churn,7000.0,0.8,2782,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q10_001,churn,7000.0,0.8,2782,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q20_001,churn,7000.0,0.6,2066,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q20_001,churn,7000.0,0.6,2066,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q20_001,churn,7000.0,0.6,2066,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q20_001,churn,7000.0,0.7,2054,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q20_001,churn,7000.0,0.7,2054,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q20_001,churn,7000.0,0.7,2054,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q20_001,churn,7000.0,0.8,1854,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q20_001,churn,7000.0,0.8,1854,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q20_001,churn,7000.0,0.8,1854,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q40_001,wavy annular,7000.0,0.6,1086,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q40_001,wavy annular,7000.0,0.6,1086,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q40_001,wavy annular,7000.0,0.6,1086,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q40_001,wavy annular,7000.0,0.7,999,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q40_001,wavy annular,7000.0,0.7,999,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q40_001,wavy annular,7000.0,0.7,999,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q40_001,wavy annular,7000.0,0.8,1373,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q40_001,wavy annular,7000.0,0.8,1373,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q40_001,wavy annular,7000.0,0.8,1373,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q80_001,wavy annular,7000.0,0.6,657,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q80_001,wavy annular,7000.0,0.6,657,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q80_001,wavy annular,7000.0,0.6,657,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q80_001,wavy annular,7000.0,0.7,622,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q80_001,wavy annular,7000.0,0.7,622,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q80_001,wavy annular,7000.0,0.7,622,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q80_001,wavy annular,7000.0,0.8,732,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q80_001,wavy annular,7000.0,0.8,732,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m06q80_001,wavy annular,7000.0,0.8,732,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q01_001,dispersed bubbles,7000.0,0.6,1637,small,45,455,5,-6.170611650457301,-43194.28155320111,-45311.2598747859,-39964.193951165376,-43193.03366031357,45,-43194.28155320111,True
+m07q01_001,dispersed bubbles,7000.0,0.6,1637,isolated_small,25,261,5,-6.240308902078076,-43682.162314546535,-45365.664635909314,-41707.00059375772,-43682.162314546535,25,-43682.162314546535,True
+m07q01_001,dispersed bubbles,7000.0,0.6,1637,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q01_001,dispersed bubbles,7000.0,0.7,1625,small,38,421,5,-6.363403958287919,-44543.82770801544,-48603.02094467105,-39773.44086919519,-43455.20411485494,38,-44543.82770801544,True
+m07q01_001,dispersed bubbles,7000.0,0.7,1625,isolated_small,19,215,5,-6.61284825540436,-46289.937787830524,-49807.468863728915,-44797.57748875176,-45712.520752218115,19,-46289.937787830524,True
+m07q01_001,dispersed bubbles,7000.0,0.7,1625,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q01_001,dispersed bubbles,7000.0,0.8,1944,small,46,444,5,-6.296460030317054,-44075.22021221938,-51816.54666798139,-39025.66256270775,-43502.21191871994,46,-44075.22021221938,True
+m07q01_001,dispersed bubbles,7000.0,0.8,1944,isolated_small,23,288,5,-6.497202324604976,-45480.416272234834,-53515.81343109768,-38144.03830795041,-48492.96812775484,23,-45480.416272234834,True
+m07q01_001,dispersed bubbles,7000.0,0.8,1944,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q05_001,plug,7000.0,0.6,2716,small,36,195,5,-15.132007293072185,-105924.05105150529,-110628.79761209492,-101304.58241203369,-106460.68948362672,35,-105935.80384400421,True
+m07q05_001,plug,7000.0,0.6,2716,isolated_small,22,130,5,-15.077433784927752,-105542.03649449427,-110546.7654163222,-101987.64026602413,-106902.69654671187,21,-105912.29825900638,True
+m07q05_001,plug,7000.0,0.6,2716,large,3,22,3,-15.17193123833888,-106203.51866837215,-106796.74015288323,-104212.09040608526,-106203.51866837215,3,-106203.51866837215,False
+m07q05_001,plug,7000.0,0.7,2810,small,31,170,5,-15.204787289606363,-106433.51102724455,-110798.6966114844,-98823.20831628356,-106433.51102724455,30,-106491.48533690172,True
+m07q05_001,plug,7000.0,0.7,2810,isolated_small,17,103,5,-15.298043379929823,-107086.30365950876,-110834.17397163188,-102745.48993793745,-108491.34408602152,17,-107086.30365950876,True
+m07q05_001,plug,7000.0,0.7,2810,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q05_001,plug,7000.0,0.8,3400,small,39,252,5,-14.95127440494532,-104658.92083461724,-110382.15053351196,-100291.97026213439,-104927.5549186001,39,-104658.92083461724,True
+m07q05_001,plug,7000.0,0.8,3400,isolated_small,23,192,5,-14.625672877846805,-102379.71014492764,-108937.71878658037,-96693.01271121608,-105257.34390631305,23,-102379.71014492764,True
+m07q05_001,plug,7000.0,0.8,3400,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q20_001,churn,7000.0,0.6,3711,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q20_001,churn,7000.0,0.6,3711,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q20_001,churn,7000.0,0.6,3711,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q20_001,churn,7000.0,0.7,3446,small,1,6,1,-16.58592515288945,-116101.47607022614,-116101.47607022614,-116101.47607022614,-116101.47607022614,1,-116101.47607022614,False
+m07q20_001,churn,7000.0,0.7,3446,isolated_small,1,6,1,-16.58592515288945,-116101.47607022614,-116101.47607022614,-116101.47607022614,-116101.47607022614,1,-116101.47607022614,False
+m07q20_001,churn,7000.0,0.7,3446,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q20_001,churn,7000.0,0.8,2870,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q20_001,churn,7000.0,0.8,2870,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q20_001,churn,7000.0,0.8,2870,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q40_001,churn,7000.0,0.6,2556,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q40_001,churn,7000.0,0.6,2556,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q40_001,churn,7000.0,0.6,2556,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q40_001,churn,7000.0,0.7,2412,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q40_001,churn,7000.0,0.7,2412,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q40_001,churn,7000.0,0.7,2412,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q40_001,churn,7000.0,0.8,2091,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q40_001,churn,7000.0,0.8,2091,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q40_001,churn,7000.0,0.8,2091,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q80_001,wavy annular,7000.0,0.6,1113,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q80_001,wavy annular,7000.0,0.6,1113,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q80_001,wavy annular,7000.0,0.6,1113,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q80_001,wavy annular,7000.0,0.7,994,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q80_001,wavy annular,7000.0,0.7,994,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q80_001,wavy annular,7000.0,0.7,994,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q80_001,wavy annular,7000.0,0.8,1230,small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q80_001,wavy annular,7000.0,0.8,1230,isolated_small,0,0,0,nan,nan,nan,nan,nan,0,nan,False
+m07q80_001,wavy annular,7000.0,0.8,1230,large,0,0,0,nan,nan,nan,nan,nan,0,nan,False

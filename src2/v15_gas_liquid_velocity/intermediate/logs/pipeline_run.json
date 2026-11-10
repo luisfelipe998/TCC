@@ -1,0 +1,96 @@
+{
+  "started_utc": "2026-10-23T20:07:56.714372+00:00",
+  "interpreter": "/Users/i521862/.pyenv/versions/3.13.2/bin/python3",
+  "stages": [
+    {
+      "script": "scripts/audit_legacy.py",
+      "command": [
+        "/Users/i521862/.pyenv/versions/3.13.2/bin/python3",
+        "-B",
+        "/Users/i521862/Documents/personal/unisinos/TCC/src2/v15_gas_liquid_velocity/scripts/audit_legacy.py"
+      ],
+      "elapsed_s": 3.1464519999863114,
+      "returncode": 0,
+      "log": "intermediate/logs/audit_legacy.log"
+    },
+    {
+      "script": "scripts/massflow_audit.py",
+      "command": [
+        "/Users/i521862/.pyenv/versions/3.13.2/bin/python3",
+        "-B",
+        "/Users/i521862/Documents/personal/unisinos/TCC/src2/v15_gas_liquid_velocity/scripts/massflow_audit.py"
+      ],
+      "elapsed_s": 9.266406707989518,
+      "returncode": 0,
+      "log": "intermediate/logs/massflow_audit.log"
+    },
+    {
+      "script": "scripts/model_comparison.py",
+      "command": [
+        "/Users/i521862/.pyenv/versions/3.13.2/bin/python3",
+        "-B",
+        "/Users/i521862/Documents/personal/unisinos/TCC/src2/v15_gas_liquid_velocity/scripts/model_comparison.py"
+      ],
+      "elapsed_s": 4.018971750017954,
+      "returncode": 0,
+      "log": "intermediate/logs/model_comparison.log"
+    },
+    {
+      "script": "scripts/optical_investigation.py",
+      "command": [
+        "/Users/i521862/.pyenv/versions/3.13.2/bin/python3",
+        "-B",
+        "/Users/i521862/Documents/personal/unisinos/TCC/src2/v15_gas_liquid_velocity/scripts/optical_investigation.py"
+      ],
+      "elapsed_s": 28.92849941700115,
+      "returncode": 0,
+      "log": "intermediate/logs/optical_investigation.log"
+    },
+    {
+      "script": "literature/source_numeric_checks.py",
+      "command": [
+        "/Users/i521862/.pyenv/versions/3.13.2/bin/python3",
+        "-B",
+        "/Users/i521862/Documents/personal/unisinos/TCC/src2/v15_gas_liquid_velocity/literature/source_numeric_checks.py"
+      ],
+      "elapsed_s": 0.6682266250136308,
+      "returncode": 0,
+      "log": "intermediate/logs/source_numeric_checks.log"
+    },
+    {
+      "script": "scripts/write_summary.py",
+      "command": [
+        "/Users/i521862/.pyenv/versions/3.13.2/bin/python3",
+        "-B",
+        "/Users/i521862/Documents/personal/unisinos/TCC/src2/v15_gas_liquid_velocity/scripts/write_summary.py"
+      ],
+      "elapsed_s": 0.7314957909984514,
+      "returncode": 0,
+      "log": "intermediate/logs/write_summary.log"
+    },
+    {
+      "script": "scripts/independent_model_review.py",
+      "command": [
+        "/Users/i521862/.pyenv/versions/3.13.2/bin/python3",
+        "-B",
+        "/Users/i521862/Documents/personal/unisinos/TCC/src2/v15_gas_liquid_velocity/scripts/independent_model_review.py"
+      ],
+      "elapsed_s": 1.3807413339964114,
+      "returncode": 0,
+      "log": "intermediate/logs/independent_model_review.log"
+    },
+    {
+      "script": "scripts/final_verification.py",
+      "command": [
+        "/Users/i521862/.pyenv/versions/3.13.2/bin/python3",
+        "-B",
+        "/Users/i521862/Documents/personal/unisinos/TCC/src2/v15_gas_liquid_velocity/scripts/final_verification.py"
+      ],
+      "elapsed_s": 0.5531957919884007,
+      "returncode": 0,
+      "log": "intermediate/logs/final_verification.log"
+    }
+  ],
+  "status": "passed",
+  "finished_utc": "2026-10-23T20:08:45.419358+00:00"
+}

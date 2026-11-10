@@ -1,0 +1,54 @@
+{
+  "runtime_s": 16.73838599998271,
+  "seed": 20261024,
+  "runs": 26,
+  "regions": 78,
+  "blocks": 390,
+  "null_trials": 7410,
+  "temporal_pair_support": 8,
+  "robust_pair_support": 2,
+  "profile_archive_sha256": "729a070503730eeec6362cef43d8bed70fcaceb6abfa2c39b2c4cdaddefdf6df",
+  "script_sha256": "0fc8c9eed04f421d537abcc17668c3d0375e1d2e9c335beb77e8e2d4275d857a",
+  "parameters": {
+    "velocity_min": -80,
+    "velocity_max": 80,
+    "velocity_step": 0.25,
+    "frequency_bands": {
+      "main": [
+        0.00390625,
+        0.03125
+      ],
+      "coarse": [
+        0.001953125,
+        0.015625
+      ],
+      "fine": [
+        0.0078125,
+        0.0625
+      ]
+    },
+    "five_blocks": "consecutive, disjoint 101/100/100/100/100 frames; no frame pair crossing needed",
+    "preprocessing": "Subtract per-block temporal mean and each frame spatial mean; Hann time/space; remove temporal DC and neighbour bins",
+    "spectrum": "sqrt-energy weighted mean of each spatial-frequency normalized power in a 3-bin tube at f_t=-v*f_x modulo 1",
+    "block_gates": "dynamic std>=1; abs(v)>=1; not boundary; score>=0.10; score>=max(19 shuffles)+0.03; competitor margin>=0.03 outside max(3,15% speed); reversal<=0.25",
+    "run_gates": ">=4/5 block transport support; >=4/5 agree within max(3,25% speed) for BOTH alternate frequency bands and BOTH spatial halves; >=4/5 same sign; saturation<=20%",
+    "aggregation": "All five block speeds have equal weight, including failed candidates; accepted labels require explicit gates. Upper/lower wall speeds averaged without equality assumption; disagreement is reported.",
+    "selection": "No tuning, band selection, run-specific method switch, class labels or inter-run prediction used"
+  },
+  "limitations": [
+    "All acceptance criteria are empirical transport diagnostics, not calibrated error or formal significance.",
+    "The temporal blocks are not independent experimental repeats.",
+    "Frequency-band/axial sensitivity measures different optical scales/content.",
+    "A regional image wave is not an identified phase-material parcel.",
+    "Nonstationary optical wave speed is represented by five block maxima; sub-block variability and weaker coexisting waves remain unresolved.",
+    "19 temporal shuffles are negative controls, not a claimed inferential p-value.",
+    "Native profile archive is reused with hash; no new experimental data or spatial calibration."
+  ],
+  "postprocessing_script_sha256": "208e20ca0e3ca2169875e1952980bdfd19874bb47deb6210e46d30f6a938b29d",
+  "marginal_pair_support": 2,
+  "final_joint_pair_support": 2,
+  "full_candidate_mean_support": 2,
+  "final_joint_gate": "At least4 simultaneous blocks satisfying transport, both alternative bands, both axial halves and saturation<=20% in ALL THREE regions. All-five-block mean supported only if all5 simultaneous blocks pass.",
+  "accepted_aggregation": "Separate accepted coordinates use only simultaneously passing blocks; never present a failed block as accepted. Candidate means of all5 remain distinct. Initial marginal-gate fields preserved.",
+  "marginal_temporal_pair_support": 13
+}

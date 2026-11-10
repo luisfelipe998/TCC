@@ -1,0 +1,27 @@
+[
+  {
+    "scope": "churn_annular",
+    "n_runs": 19,
+    "q_arrangements": 200,
+    "mq_arrangements": 1,
+    "length_shift_pearson": 1.0,
+    "shared_q": [
+      10,
+      20,
+      40
+    ],
+    "tests_performed": false
+  },
+  {
+    "scope": "plug_slug",
+    "n_runs": 6,
+    "q_arrangements": 9,
+    "mq_arrangements": 1,
+    "length_shift_pearson": 1.0,
+    "shared_q": [
+      1,
+      5
+    ],
+    "tests_performed": false
+  }
+]

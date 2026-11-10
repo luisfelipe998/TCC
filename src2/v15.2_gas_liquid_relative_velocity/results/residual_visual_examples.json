@@ -1,0 +1,122 @@
+[
+  {
+    "run": "m05q10_001",
+    "frame": 200,
+    "full_native_frames_for_predictor": 501,
+    "erosion_radius": 3,
+    "gas_candidate_fraction": 0.7473443767642253,
+    "liquid_candidate_fraction": 0.011755311246471549,
+    "residual_limits": [
+      -50,
+      50
+    ],
+    "crossfit": [
+      {
+        "evaluation_half": 0,
+        "training_first": 250,
+        "training_last": 500,
+        "evaluation_first": 0,
+        "evaluation_last": 249,
+        "supported_categories": 906,
+        "total_categories": 1325,
+        "extrapolated_pixel_fraction": 0.0011432179468132521,
+        "raw_std": 31.243885040283203,
+        "fixed_residual_std": 20.62909507751465,
+        "interface_residual_std": 19.545719146728516
+      },
+      {
+        "evaluation_half": 1,
+        "training_first": 0,
+        "training_last": 249,
+        "evaluation_first": 250,
+        "evaluation_last": 500,
+        "supported_categories": 976,
+        "total_categories": 1325,
+        "extrapolated_pixel_fraction": 0.0001739439508346054,
+        "raw_std": 31.72393035888672,
+        "fixed_residual_std": 21.559528350830078,
+        "interface_residual_std": 19.950607299804688
+      }
+    ]
+  },
+  {
+    "run": "m04q80_001",
+    "frame": 200,
+    "full_native_frames_for_predictor": 501,
+    "erosion_radius": 3,
+    "gas_candidate_fraction": 0.8815554895260734,
+    "liquid_candidate_fraction": 0.0,
+    "residual_limits": [
+      -50,
+      50
+    ],
+    "crossfit": [
+      {
+        "evaluation_half": 0,
+        "training_first": 250,
+        "training_last": 500,
+        "evaluation_first": 0,
+        "evaluation_last": 249,
+        "supported_categories": 78,
+        "total_categories": 1325,
+        "extrapolated_pixel_fraction": 0.00022700935967909672,
+        "raw_std": 76.54467010498047,
+        "fixed_residual_std": 25.41090965270996,
+        "interface_residual_std": 43.0064697265625
+      },
+      {
+        "evaluation_half": 1,
+        "training_first": 0,
+        "training_last": 249,
+        "evaluation_first": 250,
+        "evaluation_last": 500,
+        "supported_categories": 91,
+        "total_categories": 1325,
+        "extrapolated_pixel_fraction": 1.4797443712003865e-07,
+        "raw_std": 76.771728515625,
+        "fixed_residual_std": 25.271177291870117,
+        "interface_residual_std": 43.47285842895508
+      }
+    ]
+  },
+  {
+    "run": "m07q01_001",
+    "frame": 200,
+    "full_native_frames_for_predictor": 501,
+    "erosion_radius": 3,
+    "gas_candidate_fraction": 0.00042712821274699155,
+    "liquid_candidate_fraction": 0.5542081414351508,
+    "residual_limits": [
+      -50,
+      50
+    ],
+    "crossfit": [
+      {
+        "evaluation_half": 0,
+        "training_first": 250,
+        "training_last": 500,
+        "evaluation_first": 0,
+        "evaluation_last": 249,
+        "supported_categories": 1002,
+        "total_categories": 1325,
+        "extrapolated_pixel_fraction": 3.7141583717129697e-07,
+        "raw_std": 22.977169036865234,
+        "fixed_residual_std": 7.008125305175781,
+        "interface_residual_std": 13.953435897827148
+      },
+      {
+        "evaluation_half": 1,
+        "training_first": 0,
+        "training_last": 249,
+        "evaluation_first": 250,
+        "evaluation_last": 500,
+        "supported_categories": 985,
+        "total_categories": 1325,
+        "extrapolated_pixel_fraction": 0.00040877938254410675,
+        "raw_std": 22.788921356201172,
+        "fixed_residual_std": 4.790405750274658,
+        "interface_residual_std": 13.612857818603516
+      }
+    ]
+  }
+]

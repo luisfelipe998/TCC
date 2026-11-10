@@ -1,0 +1,26 @@
+aquisicao,padrao,ancora,panorama_reconstruido_exatamente,candidatos_conferidos,ranking_nativo,ranking_2048,melhor_no_contexto_2048,repetivel_ranking_nativo,repetivel_ranking_2048,deslocamento_local_maximo,ancora_em_coluna_substituida,deslocamentos_nao_positivos_contexto
+m03q05_001,churn,2256,True,26,1,1,m03q05_001_MIN02256,False,False,2,False,0
+m03q10_001,wavy annular,3119,True,34,1,1,m03q10_001_MIN03119,False,False,0,False,0
+m03q20_001,wavy annular,18525,True,49,1,1,m03q20_001_MIN18525,True,True,2,False,0
+m03q40_001,wavy annular,11036,True,47,1,1,m03q40_001_MIN11036,True,True,1,False,0
+m04q01_001,slug,1112,True,1,1,1,m04q01_001_E002,,,6,False,0
+m04q10_001,churn,2128,True,21,1,1,m04q10_001_MIN02128,True,False,1,False,0
+m04q20_001,churn,5074,True,22,1,2,m04q20_001_MIN02009,True,False,1,False,0
+m04q40_001,wavy annular,8529,True,35,1,2,m04q40_001_MIN13597,True,False,1,False,0
+m04q80_001,wavy annular,11728,True,61,1,1,m04q80_001_MIN11728,True,True,1,False,0
+m05q01_001,plug,2458,True,6,1,1,m05q01_001_E004,,,0,False,0
+m05q05_001,slug,4371,True,3,1,1,m05q05_001_E008,,,1,False,0
+m05q10_001,churn,4683,True,15,1,1,m05q10_001_MIN04683,True,True,2,False,0
+m05q20_001,churn,4866,True,17,1,1,m05q20_001_MIN04866,True,True,3,False,0
+m05q40_001,churn,2323,True,24,1,1,m05q40_001_MIN02323,False,False,1,False,0
+m05q80_001,wavy annular,4485,True,42,1,1,m05q80_001_MIN04485,False,False,4,False,0
+m06q01_001,plug,5168,True,10,1,1,m06q01_001_E010,,,1,False,0
+m06q05_001,slug,4380,True,2,1,1,m06q05_001_E007,,,6,False,0
+m06q10_001,churn,5321,True,15,1,2,m06q10_001_MIN01759,True,False,2,False,0
+m06q20_001,churn,2484,True,25,1,1,m06q20_001_MIN02484,True,True,0,False,0
+m06q40_001,wavy annular,3471,True,34,1,1,m06q40_001_MIN03471,True,True,3,False,0
+m06q80_001,wavy annular,6621,True,47,1,1,m06q80_001_MIN06621,True,True,2,False,0
+m07q05_001,plug,5732,True,8,1,1,m07q05_001_E013,,,1,True,0
+m07q20_001,churn,5678,True,18,1,1,m07q20_001_MIN05678,True,True,3,False,0
+m07q40_001,churn,5065,True,31,1,2,m07q40_001_MIN01530,False,False,2,False,0
+m07q80_001,wavy annular,9018,True,35,1,1,m07q80_001_MIN09018,True,True,2,False,0

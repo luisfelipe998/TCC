@@ -1,0 +1,6 @@
+synthetic_shear_fraction,film_thickness_m,viscosity_Pa_s,interfacial_shear_Pa,pressure_gravity_drive_Pa_per_m,identical_linear_wave_speed_m_s,material_film_mean_m_s,wave_to_material_factor,status
+0.0,0.0001,0.001,0.0,59999.99999999999,0.6000000000000001,0.2,3.0000000000000004,"Illustrative planar laminar model, not fitted to R600a recordings or a valid annular bound"
+0.25,0.0001,0.001,1.4999999999999998,45000.0,0.6,0.225,2.6666666666666665,"Illustrative planar laminar model, not fitted to R600a recordings or a valid annular bound"
+0.5,0.0001,0.001,2.9999999999999996,29999.999999999996,0.6000000000000001,0.24999999999999997,2.400000000000001,"Illustrative planar laminar model, not fitted to R600a recordings or a valid annular bound"
+0.75,0.0001,0.001,4.5,14999.999999999998,0.6000000000000001,0.275,2.181818181818182,"Illustrative planar laminar model, not fitted to R600a recordings or a valid annular bound"
+1.0,0.0001,0.001,5.999999999999999,0.0,0.6,0.29999999999999993,2.0000000000000004,"Illustrative planar laminar model, not fitted to R600a recordings or a valid annular bound"

@@ -1,0 +1,26 @@
+m03q05_001 churn conditional alpha 0.7536 threshold range 0.7452 0.7597
+m03q10_001 wavy annular conditional alpha 0.7771 threshold range 0.7751 0.7782
+m03q20_001 wavy annular conditional alpha 0.7801 threshold range 0.7798 0.7802
+m03q40_001 wavy annular conditional alpha 0.7647 threshold range 0.7531 0.7735
+m04q01_001 slug conditional alpha 0.5499 threshold range 0.5265 0.5655
+m04q10_001 churn conditional alpha 0.6907 threshold range 0.6758 0.7041
+m04q20_001 churn conditional alpha 0.7045 threshold range 0.6887 0.7177
+m04q40_001 wavy annular conditional alpha 0.7658 threshold range 0.7613 0.7692
+m04q80_001 wavy annular conditional alpha 0.7798 threshold range 0.7793 0.78
+m05q01_001 plug conditional alpha 0.4966 threshold range 0.4823 0.5098
+m05q05_001 slug conditional alpha 0.4069 threshold range 0.3898 0.4269
+m05q10_001 churn conditional alpha 0.5945 threshold range 0.5677 0.6235
+m05q20_001 churn conditional alpha 0.637 threshold range 0.6013 0.6633
+m05q40_001 churn conditional alpha 0.7268 threshold range 0.6983 0.7426
+m05q80_001 wavy annular conditional alpha 0.7689 threshold range 0.7471 0.7745
+m06q01_001 plug conditional alpha 0.4628 threshold range 0.4406 0.486
+m06q05_001 slug conditional alpha 0.4731 threshold range 0.4461 0.505
+m06q10_001 churn conditional alpha 0.5379 threshold range 0.5055 0.5791
+m06q20_001 churn conditional alpha 0.6467 threshold range 0.6049 0.6832
+m06q40_001 wavy annular conditional alpha 0.7186 threshold range 0.6707 0.7456
+m06q80_001 wavy annular conditional alpha 0.752 threshold range 0.7156 0.7646
+m07q01_001 dispersed bubbles conditional alpha 0.0014 threshold range 0.0008 0.0021
+m07q05_001 plug conditional alpha 0.3703 threshold range 0.3491 0.3944
+m07q20_001 churn conditional alpha 0.5104 threshold range 0.4741 0.5507
+m07q40_001 churn conditional alpha 0.6336 threshold range 0.5856 0.6701
+m07q80_001 wavy annular conditional alpha 0.7225 threshold range 0.6695 0.7467

@@ -1,0 +1,22 @@
+{
+  "inicio_utc": "2026-10-24T23:04:22.872499+00:00",
+  "etapas": {
+    "events": {
+      "segundos": 215.6526617499767,
+      "comparacoes": 1320,
+      "mapas_predeterminados": 4
+    },
+    "fixed": {
+      "segundos": 176.80167625000468,
+      "comparacoes": 1110
+    },
+    "diagnostics": {
+      "segundos": 5.007987083023181,
+      "comparacoes": 31
+    }
+  },
+  "fim_utc": "2026-10-24T23:11:00.369757+00:00",
+  "segundos_total": 397.49164424999617,
+  "pico_memoria_mib": 269.5,
+  "status": "PASS"
+}

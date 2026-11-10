@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "completed_utc": "2026-10-23T21:07:21.584467+00:00",
+  "selected_acquisitions": 26,
+  "statistical_acquisitions": 25,
+  "diameter_before_px": 60,
+  "diameter_after_px": 53,
+  "confirmed_lumen_rows": [
+    18,
+    71
+  ],
+  "full_lumen_maximum": 1,
+  "boundary_source": "User-confirmed full tube interior on 2026-10-23: Python slice 18:71, rows 18 through 70, 53 pixel cells. Optical profile minima are not used as lumen boundaries. Refraction mapping remains uncalibrated.",
+  "alpha_scale_factor": 1.2815948736205054,
+  "projected_scale_factor": 1.1320754716981132,
+  "identical_masks": 26,
+  "unchanged_flip_metrics": 26,
+  "unchanged_input_panorama_hashes": 26,
+  "scaled_value_checks": 234,
+  "max_rescaling_error": 3.3306690738754696e-16,
+  "obsolete_primary_fields_removed": true,
+  "segmentation_source_sha256": "a63db1153e6f73d334ffce09416ab2794d8a360f5474f27aa48c6b9e9c098933",
+  "geometry_source_sha256": "05f36daaca877d1d80f3f6c992d403a1382978e81293b9649532e00e5e4dce3b",
+  "failures": [],
+  "interpretation": "Only normalization changes. User-confirmed lumen boundaries are provenance, not independent optical/phase calibration."
+}

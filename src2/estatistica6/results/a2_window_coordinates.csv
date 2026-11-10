@@ -1,0 +1,77 @@
+run,pattern,windows,start,end_exclusive,n_original
+m03q05_001,churn,prefix,0,3171,9586
+m03q05_001,churn,center,3207,6378,9586
+m03q05_001,churn,suffix,6415,9586,9586
+m04q10_001,churn,prefix,0,3171,8829
+m04q10_001,churn,center,2829,6000,8829
+m04q10_001,churn,suffix,5658,8829,8829
+m04q20_001,churn,prefix,0,3171,9344
+m04q20_001,churn,center,3086,6257,9344
+m04q20_001,churn,suffix,6173,9344,9344
+m05q10_001,churn,prefix,0,3171,7001
+m05q10_001,churn,center,1915,5086,7001
+m05q10_001,churn,suffix,3830,7001,7001
+m05q20_001,churn,prefix,0,3171,7391
+m05q20_001,churn,center,2110,5281,7391
+m05q20_001,churn,suffix,4220,7391,7391
+m05q40_001,churn,prefix,0,3171,9937
+m05q40_001,churn,center,3383,6554,9937
+m05q40_001,churn,suffix,6766,9937,9937
+m06q10_001,churn,prefix,0,3171,7584
+m06q10_001,churn,center,2206,5377,7584
+m06q10_001,churn,suffix,4413,7584,7584
+m06q20_001,churn,prefix,0,3171,10044
+m06q20_001,churn,center,3436,6607,10044
+m06q20_001,churn,suffix,6873,10044,10044
+m07q20_001,churn,prefix,0,3171,8255
+m07q20_001,churn,center,2542,5713,8255
+m07q20_001,churn,suffix,5084,8255,8255
+m07q40_001,churn,prefix,0,3171,10349
+m07q40_001,churn,center,3589,6760,10349
+m07q40_001,churn,suffix,7178,10349,10349
+m03q10_001,wavy annular,prefix,0,3171,14224
+m03q10_001,wavy annular,center,5526,8697,14224
+m03q10_001,wavy annular,suffix,11053,14224,14224
+m03q20_001,wavy annular,prefix,0,3171,23079
+m03q20_001,wavy annular,center,9954,13125,23079
+m03q20_001,wavy annular,suffix,19908,23079,23079
+m03q40_001,wavy annular,prefix,0,3171,20743
+m03q40_001,wavy annular,center,8786,11957,20743
+m03q40_001,wavy annular,suffix,17572,20743,20743
+m04q40_001,wavy annular,prefix,0,3171,14960
+m04q40_001,wavy annular,center,5894,9065,14960
+m04q40_001,wavy annular,suffix,11789,14960,14960
+m04q80_001,wavy annular,prefix,0,3171,22636
+m04q80_001,wavy annular,center,9732,12903,22636
+m04q80_001,wavy annular,suffix,19465,22636,22636
+m05q80_001,wavy annular,prefix,0,3171,17524
+m05q80_001,wavy annular,center,7176,10347,17524
+m05q80_001,wavy annular,suffix,14353,17524,17524
+m06q40_001,wavy annular,prefix,0,3171,14772
+m06q40_001,wavy annular,center,5800,8971,14772
+m06q40_001,wavy annular,suffix,11601,14772,14772
+m06q80_001,wavy annular,prefix,0,3171,18665
+m06q80_001,wavy annular,center,7747,10918,18665
+m06q80_001,wavy annular,suffix,15494,18665,18665
+m07q80_001,wavy annular,prefix,0,3171,16658
+m07q80_001,wavy annular,center,6743,9914,16658
+m07q80_001,wavy annular,suffix,13487,16658,16658
+m05q01_001,plug,prefix,0,3171,5940
+m05q01_001,plug,center,1384,4555,5940
+m05q01_001,plug,suffix,2769,5940,5940
+m06q01_001,plug,prefix,0,3171,7798
+m06q01_001,plug,center,2313,5484,7798
+m06q01_001,plug,suffix,4627,7798,7798
+m07q05_001,plug,prefix,0,3171,7358
+m07q05_001,plug,center,2093,5264,7358
+m07q05_001,plug,suffix,4187,7358,7358
+m04q01_001,slug,prefix,0,3171,5071
+m04q01_001,slug,center,950,4121,5071
+m04q01_001,slug,suffix,1900,5071,5071
+m05q05_001,slug,prefix,0,3171,6323
+m05q05_001,slug,center,1576,4747,6323
+m05q05_001,slug,suffix,3152,6323,6323
+m06q05_001,slug,prefix,0,3171,7787
+m06q05_001,slug,center,2308,5479,7787
+m06q05_001,slug,suffix,4616,7787,7787
+m07q01_001,dispersed bubbles,prefix|center|suffix,0,3171,3171

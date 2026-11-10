@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "n_cache_profiles": 123,
+  "max_cache_relative_error": 2.2460423633545835e-16,
+  "n_extractions": 26,
+  "pearson_max_error": 9.992007221626409e-16,
+  "wasserstein_max_error": 3.6637359812630166e-15,
+  "fft_zero_max_error": 1.3322676295501878e-15,
+  "reference_delta": 0.07555100435301754,
+  "controls": [
+    "extração PNG",
+    "elegibilidade",
+    "hashes anteriores",
+    "ordenação",
+    "pares distintos",
+    "corte antes do preparo",
+    "Pearson SciPy",
+    "Wasserstein SciPy",
+    "Hellinger independente",
+    "entropia/massas/bandas",
+    "mediana ponderada",
+    "vetor degenerado",
+    "silhueta sintética",
+    "ARI sintético"
+  ]
+}

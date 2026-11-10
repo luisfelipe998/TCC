@@ -1,0 +1,40 @@
+{
+  "px_s_max_arithmetic_residual": 1.1641532182693481e-10,
+  "all_saved_track_gates_reproduced": true,
+  "all_pair_gates_reproduced": true,
+  "all_run_summaries_reproduced": true,
+  "aggregates": [
+    {
+      "method": "raw",
+      "attempted_tracks": 7800,
+      "accepted_tracks": 2902,
+      "sampled_pairs": 1300,
+      "distributed_pairs": 527,
+      "coherent_pairs": 194,
+      "supported_runs": 1,
+      "annular_accepted_tracks": 109,
+      "annular_attempted_tracks": 2700,
+      "annular_coherent_pairs": 0,
+      "annular_supported_runs": 0,
+      "joint_global_local_pairs": 183,
+      "median_joint_difference_px": 0.6445383895534285,
+      "p90_joint_difference_px": 2.4096395202883816
+    },
+    {
+      "method": "background_subtracted",
+      "attempted_tracks": 7800,
+      "accepted_tracks": 3880,
+      "sampled_pairs": 1300,
+      "distributed_pairs": 740,
+      "coherent_pairs": 254,
+      "supported_runs": 1,
+      "annular_accepted_tracks": 434,
+      "annular_attempted_tracks": 2700,
+      "annular_coherent_pairs": 10,
+      "annular_supported_runs": 0,
+      "joint_global_local_pairs": 222,
+      "median_joint_difference_px": 0.7100528856004544,
+      "p90_joint_difference_px": 2.9405214082768567
+    }
+  ]
+}

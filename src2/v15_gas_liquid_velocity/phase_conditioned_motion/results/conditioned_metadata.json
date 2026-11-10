@@ -1,0 +1,92 @@
+{
+  "probe_columns": [
+    496,
+    520
+  ],
+  "lumen_rows": [
+    18,
+    71
+  ],
+  "gas_min_occupancy": 0.6,
+  "liquid_max_occupancy": 0.05,
+  "minimum_episode_frames": 5,
+  "configs": [
+    "threshold_060",
+    "threshold_070",
+    "threshold_080",
+    "consensus",
+    "consensus_reference_guard"
+  ],
+  "motion_gates": [
+    "adjacent",
+    "lag2_confirmed"
+  ],
+  "liquid_reference_guard": {
+    "mean_abs_ratio_error_max": 0.12,
+    "p95_abs_ratio_error_max": 0.3
+  },
+  "passage_ratio_gates": {
+    "minimum_accepted_pairs_per_phase": 20,
+    "minimum_accepted_episodes_per_phase": 3,
+    "min_abs_liquid_mean_px_frame": 1.0,
+    "same_nonzero_direction": true,
+    "maximum_core_saturation": 0.2
+  },
+  "local_variants": {
+    "majority_070": {
+      "purity": 0.8,
+      "threshold": 0.7,
+      "erosion": 0
+    },
+    "consensus_95": {
+      "purity": 0.95,
+      "thresholds": [
+        0.6,
+        0.7,
+        0.8
+      ],
+      "erosion": 0
+    },
+    "interior_consensus_100": {
+      "purity": 1.0,
+      "thresholds": [
+        0.6,
+        0.7,
+        0.8
+      ],
+      "erosion_square_width": 7
+    }
+  },
+  "local_ratio_gates": {
+    "minimum_tracks_per_phase": 20,
+    "minimum_distinct_frames_per_phase": 10,
+    "min_abs_liquid_mean_px_frame": 1.0,
+    "same_nonzero_direction": true,
+    "maximum_core_saturation": 0.2
+  },
+  "complement_control": {
+    "true_interface_shift": -12.0,
+    "gas_mask_shift": -12.0,
+    "liquid_complement_shift": -12.000000000000002,
+    "ratio": 0.9999999999999999,
+    "interpretation": "Ratio 1 arises from shared moving boundaries; no liquid parcel motion was measured."
+  },
+  "rows": {
+    "frames": 65130,
+    "pairs": 130000,
+    "episodes": 3016,
+    "passage_phase": 520,
+    "passage_ratios": 260,
+    "patches": 46800,
+    "patch_phase": 312,
+    "patch_ratios": 156
+  },
+  "definition": "Image-motion means conditional on inferred phase appearance; no material phase-velocity identification.",
+  "limitations": [
+    "Unmarked v14 pixels are not verified liquid.",
+    "A 24-pixel station labels a 536-pixel global correlation template only by time; it does not determine template phase purity.",
+    "Interior consensus is segmentation robustness, not gas/liquid ground truth or tracer identification.",
+    "Means of local frame means weight sampled frames equally; accepted windows can vary by phase and time.",
+    "Count thresholds are reporting diagnostics, not effective independent sample sizes or confidence levels."
+  ]
+}

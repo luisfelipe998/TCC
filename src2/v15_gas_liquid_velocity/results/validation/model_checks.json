@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "scope_count": 26,
+  "closure_rows": 104,
+  "experiment_rows": 1352,
+  "max_mass_balance_residual_kg_m2_s": 1.1368683772161603e-13,
+  "checks": [
+    "exact scope",
+    "native config agreement",
+    "frame count",
+    "mass conservation",
+    "phase flux identities",
+    "homogeneous equal speeds",
+    "superficial invariance to closure",
+    "same-q cancellation under zero inlet",
+    "invalid quality not clipped",
+    "absent phase velocity undefined"
+  ]
+}

@@ -1,0 +1,373 @@
+{
+  "estimator_sha256": "b8ea65b2838a3cc372760de6b05d1542d6677c2b334328498cb52c1ea3d98b61",
+  "basis": "Retained src2 panoramas only; internal visual checks on data used to develop the detector, not untouched validation",
+  "dataset_scope": {
+    "policy": "Five single-pattern classes; wavy annular only; m05q05_002 excluded",
+    "allowed_patterns": [
+      "dispersed bubbles",
+      "plug",
+      "slug",
+      "churn",
+      "wavy annular"
+    ],
+    "explicitly_excluded_acquisitions": [
+      "m05q05_002"
+    ],
+    "source_acquisitions": 31,
+    "selected_acquisitions": 26,
+    "selected_runs": [
+      "m03q05_001",
+      "m03q10_001",
+      "m03q20_001",
+      "m03q40_001",
+      "m04q01_001",
+      "m04q10_001",
+      "m04q20_001",
+      "m04q40_001",
+      "m04q80_001",
+      "m05q01_001",
+      "m05q05_001",
+      "m05q10_001",
+      "m05q20_001",
+      "m05q40_001",
+      "m05q80_001",
+      "m06q01_001",
+      "m06q05_001",
+      "m06q10_001",
+      "m06q20_001",
+      "m06q40_001",
+      "m06q80_001",
+      "m07q01_001",
+      "m07q05_001",
+      "m07q20_001",
+      "m07q40_001",
+      "m07q80_001"
+    ],
+    "selected_pattern_counts": {
+      "churn": 10,
+      "wavy annular": 9,
+      "slug": 3,
+      "plug": 3,
+      "dispersed bubbles": 1
+    },
+    "excluded_acquisitions": [
+      {
+        "run": "m03q01_001",
+        "supplied_pattern": "plug-slug",
+        "reason": "Compound pattern label excluded by user"
+      },
+      {
+        "run": "m03q80_001",
+        "supplied_pattern": "smooth annular",
+        "reason": "Smooth annular excluded; only wavy annular retained"
+      },
+      {
+        "run": "m04q05_001",
+        "supplied_pattern": "slug-churn",
+        "reason": "Compound pattern label excluded by user"
+      },
+      {
+        "run": "m05q05_002",
+        "supplied_pattern": "dispersed bubbles",
+        "reason": "Acquisition excluded by user: m05q05_002"
+      },
+      {
+        "run": "m07q10_001",
+        "supplied_pattern": "slug-churn",
+        "reason": "Compound pattern label excluded by user"
+      }
+    ],
+    "statistical_rule": "Selected acquisitions with core saturation fraction <= 0.20",
+    "scope_does_not_relabel_inputs": true
+  },
+  "anchors": [
+    {
+      "run": "m07q01_001",
+      "x_interval": [
+        180,
+        250
+      ],
+      "y_interval": [
+        24,
+        65
+      ],
+      "visual_anchor": "liquid, held-out run",
+      "gas_mask_fraction": 0.0,
+      "gas_fraction_at_gates_060_065_070_075_080": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "accepted_center_fraction": 0.0
+    },
+    {
+      "run": "m07q01_001",
+      "x_interval": [
+        580,
+        650
+      ],
+      "y_interval": [
+        24,
+        65
+      ],
+      "visual_anchor": "liquid, held-out run",
+      "gas_mask_fraction": 0.0,
+      "gas_fraction_at_gates_060_065_070_075_080": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "accepted_center_fraction": 0.0
+    },
+    {
+      "run": "m06q01_001",
+      "x_interval": [
+        455,
+        515
+      ],
+      "y_interval": [
+        24,
+        65
+      ],
+      "visual_anchor": "liquid plug gap",
+      "gas_mask_fraction": 0.0,
+      "gas_fraction_at_gates_060_065_070_075_080": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "accepted_center_fraction": 0.0
+    },
+    {
+      "run": "m06q01_001",
+      "x_interval": [
+        150,
+        300
+      ],
+      "y_interval": [
+        30,
+        55
+      ],
+      "visual_anchor": "gas body",
+      "gas_mask_fraction": 1.0,
+      "gas_fraction_at_gates_060_065_070_075_080": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "accepted_center_fraction": 1.0
+    }
+  ],
+  "manual_liquid_reference_sensitivity": [
+    {
+      "run": "m07q01_001",
+      "conditional_alpha_by_reference": {
+        "automatic_three_plug_reference": 0.0013796909492273732,
+        "manual_liquid_m06q01_001_455_515": 0.001391166473947931,
+        "manual_liquid_m07q01_001_180_250": 0.0013997512176320123
+      }
+    },
+    {
+      "run": "m06q01_001",
+      "conditional_alpha_by_reference": {
+        "automatic_three_plug_reference": 0.46281243766207864,
+        "manual_liquid_m06q01_001_455_515": 0.4647469792824371,
+        "manual_liquid_m07q01_001_180_250": 0.4676886523610043
+      }
+    },
+    {
+      "run": "m06q05_001",
+      "conditional_alpha_by_reference": {
+        "automatic_three_plug_reference": 0.4730783499564802,
+        "manual_liquid_m06q01_001_455_515": 0.475517029807514,
+        "manual_liquid_m07q01_001_180_250": 0.4789294122683105
+      }
+    },
+    {
+      "run": "m06q20_001",
+      "conditional_alpha_by_reference": {
+        "automatic_three_plug_reference": 0.6467047491039427,
+        "manual_liquid_m06q01_001_455_515": 0.6491067082614275,
+        "manual_liquid_m07q01_001_180_250": 0.652889259480508
+      }
+    },
+    {
+      "run": "m06q80_001",
+      "conditional_alpha_by_reference": {
+        "automatic_three_plug_reference": 0.7519873798255798,
+        "manual_liquid_m06q01_001_455_515": 0.7533982796082984,
+        "manual_liquid_m07q01_001_180_250": 0.7551745542756796
+      }
+    },
+    {
+      "run": "m03q20_001",
+      "conditional_alpha_by_reference": {
+        "automatic_three_plug_reference": 0.780092147262302,
+        "manual_liquid_m06q01_001_455_515": 0.7800946507406926,
+        "manual_liquid_m07q01_001_180_250": 0.7801211900188244
+      }
+    }
+  ],
+  "crop_sensitivity": [
+    {
+      "run": "m07q01_001",
+      "crop_variants": {
+        "(15, 75)": {
+          "conditional_alpha": 0.0019185150145415045,
+          "maximum_column_alpha": 0.10027777777777777,
+          "analytic_crop_ceiling": 1.0
+        },
+        "(16, 73)": {
+          "conditional_alpha": 0.001712130768422159,
+          "maximum_column_alpha": 0.10027777777777777,
+          "analytic_crop_ceiling": 0.9025
+        },
+        "(18, 71)": {
+          "conditional_alpha": 0.0013796909492273732,
+          "maximum_column_alpha": 0.10027777777777777,
+          "analytic_crop_ceiling": 0.7802777777777777
+        },
+        "(20, 70)": {
+          "conditional_alpha": 0.0010603910438347524,
+          "maximum_column_alpha": 0.09,
+          "analytic_crop_ceiling": 0.6944444444444444
+        }
+      }
+    },
+    {
+      "run": "m06q01_001",
+      "crop_variants": {
+        "(15, 75)": {
+          "conditional_alpha": 0.4772106095580063,
+          "maximum_column_alpha": 0.8711111111111111,
+          "analytic_crop_ceiling": 1.0
+        },
+        "(16, 73)": {
+          "conditional_alpha": 0.4750826778946169,
+          "maximum_column_alpha": 0.8711111111111111,
+          "analytic_crop_ceiling": 0.9025
+        },
+        "(18, 71)": {
+          "conditional_alpha": 0.46281243766207864,
+          "maximum_column_alpha": 0.7802777777777777,
+          "analytic_crop_ceiling": 0.7802777777777777
+        },
+        "(20, 70)": {
+          "conditional_alpha": 0.43984622125331285,
+          "maximum_column_alpha": 0.6944444444444444,
+          "analytic_crop_ceiling": 0.6944444444444444
+        }
+      }
+    },
+    {
+      "run": "m06q05_001",
+      "crop_variants": {
+        "(15, 75)": {
+          "conditional_alpha": 0.48258828817259547,
+          "maximum_column_alpha": 1.0,
+          "analytic_crop_ceiling": 1.0
+        },
+        "(16, 73)": {
+          "conditional_alpha": 0.48113279968037903,
+          "maximum_column_alpha": 0.9025,
+          "analytic_crop_ceiling": 0.9025
+        },
+        "(18, 71)": {
+          "conditional_alpha": 0.4730783499564802,
+          "maximum_column_alpha": 0.7802777777777777,
+          "analytic_crop_ceiling": 0.7802777777777777
+        },
+        "(20, 70)": {
+          "conditional_alpha": 0.45596960033103606,
+          "maximum_column_alpha": 0.6944444444444444,
+          "analytic_crop_ceiling": 0.6944444444444444
+        }
+      }
+    },
+    {
+      "run": "m06q20_001",
+      "crop_variants": {
+        "(15, 75)": {
+          "conditional_alpha": 0.6830176667109165,
+          "maximum_column_alpha": 0.9669444444444445,
+          "analytic_crop_ceiling": 1.0
+        },
+        "(16, 73)": {
+          "conditional_alpha": 0.6762238373379353,
+          "maximum_column_alpha": 0.9025,
+          "analytic_crop_ceiling": 0.9025
+        },
+        "(18, 71)": {
+          "conditional_alpha": 0.6467047491039427,
+          "maximum_column_alpha": 0.7802777777777777,
+          "analytic_crop_ceiling": 0.7802777777777777
+        },
+        "(20, 70)": {
+          "conditional_alpha": 0.6096044625868402,
+          "maximum_column_alpha": 0.6944444444444444,
+          "analytic_crop_ceiling": 0.6944444444444444
+        }
+      }
+    },
+    {
+      "run": "m06q80_001",
+      "crop_variants": {
+        "(15, 75)": {
+          "conditional_alpha": 0.8575148822811562,
+          "maximum_column_alpha": 0.9669444444444445,
+          "analytic_crop_ceiling": 1.0
+        },
+        "(16, 73)": {
+          "conditional_alpha": 0.818113105336786,
+          "maximum_column_alpha": 0.9025,
+          "analytic_crop_ceiling": 0.9025
+        },
+        "(18, 71)": {
+          "conditional_alpha": 0.7519873798255798,
+          "maximum_column_alpha": 0.7802777777777777,
+          "analytic_crop_ceiling": 0.7802777777777777
+        },
+        "(20, 70)": {
+          "conditional_alpha": 0.6825585171295058,
+          "maximum_column_alpha": 0.6944444444444444,
+          "analytic_crop_ceiling": 0.6944444444444444
+        }
+      }
+    },
+    {
+      "run": "m03q20_001",
+      "crop_variants": {
+        "(15, 75)": {
+          "conditional_alpha": 0.9800328581538773,
+          "maximum_column_alpha": 1.0,
+          "analytic_crop_ceiling": 1.0
+        },
+        "(16, 73)": {
+          "conditional_alpha": 0.8974426486801373,
+          "maximum_column_alpha": 0.9025,
+          "analytic_crop_ceiling": 0.9025
+        },
+        "(18, 71)": {
+          "conditional_alpha": 0.780092147262302,
+          "maximum_column_alpha": 0.7802777777777777,
+          "analytic_crop_ceiling": 0.7802777777777777
+        },
+        "(20, 70)": {
+          "conditional_alpha": 0.6944372950878867,
+          "maximum_column_alpha": 0.6944444444444444,
+          "analytic_crop_ceiling": 0.6944444444444444
+        }
+      }
+    }
+  ],
+  "disconnected_paired_acceptances_in_slug_gap_x300_560": [],
+  "limits": "Selected phase interiors are not an unbiased segmentation test set or volumetric calibration; perturbation intervals are not confidence intervals"
+}

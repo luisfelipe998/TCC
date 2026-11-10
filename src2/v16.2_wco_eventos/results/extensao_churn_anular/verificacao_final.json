@@ -1,0 +1,111 @@
+{
+  "tabelas_mapas_e_figuras_etapa1_inalterados": 103,
+  "fontes_da_extensao_inalteradas": true,
+  "checkpoint_retomada": {
+    "conferidos_antes_retomada": 46,
+    "resultados_e_mapas_preservados": 27,
+    "historico_pausa_preservado": true
+  },
+  "codigo_executado_e_testes_conferidos": true,
+  "ancoras_contexto_e_procedencia": {
+    "total": 152,
+    "pixels_identicos_fora_mistura": 142,
+    "em_mistura": 10
+  },
+  "catalogo_e_pares_reproduzidos_byte_a_byte": true,
+  "ultrapassagens_legado_auditadas": {
+    "status": "PASS",
+    "data_utc": "2026-10-25T04:47:13.932161+00:00",
+    "casos": 3,
+    "maior_valor": 1.0061569942141135,
+    "erro_maximo": 3.035349749325178e-13,
+    "interpretacao": "Ultrapassagens do núcleo discreto legado reproduzidas por somas diretas e convolução temporal. Não são erro de FFT nem motivo para clipping. O limite unitário é verificado separadamente na Morlet principal; a variante v5 é sensibilidade numérica.",
+    "casos_detalhados": [
+      {
+        "origem": "ancoras",
+        "pair_id": "m03q40_001_MIN04674__m04q10_001_MIN02128",
+        "variante": "v5_mesmos_segmentos",
+        "escore": 0.4333299142257586,
+        "maximo_fft": 1.0032638593586491,
+        "maximo_convolucao": 1.0032638593586607,
+        "lambda_pico_px": 906.9496439375575,
+        "lag_pico_px": 287,
+        "celulas_acima_1": 66,
+        "celulas_acima_1_lags_principais": 0,
+        "escalas_com_ultrapassagem": 1,
+        "erro_fft_vs_convolucao": 2.327027459614328e-13
+      },
+      {
+        "origem": "ancoras",
+        "pair_id": "m04q20_001_MIN05074__m07q40_001_MIN07538",
+        "variante": "v5_mesmos_segmentos",
+        "escore": 0.2807976356034405,
+        "maximo_fft": 1.0061569942141135,
+        "maximo_convolucao": 1.0061569942140887,
+        "lambda_pico_px": 963.6993490669474,
+        "lag_pico_px": 272,
+        "celulas_acima_1": 180,
+        "celulas_acima_1_lags_principais": 0,
+        "escalas_com_ultrapassagem": 3,
+        "erro_fft_vs_convolucao": 2.62234678416462e-13
+      },
+      {
+        "origem": "fixos",
+        "pair_id": "m03q40_001_F0__m05q20_001_F0",
+        "variante": "v5_mesmos_segmentos",
+        "escore": 0.2462141847811652,
+        "maximo_fft": 1.0036688765699884,
+        "maximo_convolucao": 1.0036688765698556,
+        "lambda_pico_px": 963.6993490669474,
+        "lag_pico_px": -528,
+        "celulas_acima_1": 31,
+        "celulas_acima_1_lags_principais": 0,
+        "escalas_com_ultrapassagem": 1,
+        "erro_fft_vs_convolucao": 3.035349749325178e-13
+      }
+    ]
+  },
+  "comparacoes": {
+    "ancoras_calculadas": 6625,
+    "ancoras_ausentes": 15,
+    "fixos": 2052,
+    "diagnosticos": 171
+  },
+  "recalculo_oito_variantes_erro_maximo": 8.326672684688674e-17,
+  "mapas_integrais_conferidos": 16,
+  "extremos_dos_exemplos_conferidos": {
+    "exemplos": 6,
+    "universos": [
+      {
+        "padrao": "churn",
+        "pares_selecionados": 90,
+        "pares_admissiveis": 484,
+        "minimo_selecionados": 0.0817823407342624,
+        "maximo_selecionados": 0.500719173199094,
+        "minimo_admissiveis": 0.0793094344130848,
+        "maximo_admissiveis": 0.500719173199094,
+        "par_minimo_admissiveis": "m05q20_001_MIN05793__m06q10_001_MIN03607",
+        "par_maximo_admissiveis": "m04q20_001_MIN02009__m06q20_001_MIN06186"
+      },
+      {
+        "padrao": "wavy annular",
+        "pares_selecionados": 66,
+        "pares_admissiveis": 348,
+        "minimo_selecionados": 0.0945157164033071,
+        "maximo_selecionados": 0.4219418899773018,
+        "minimo_admissiveis": 0.0945157164033071,
+        "maximo_admissiveis": 0.4475923519372433,
+        "par_minimo_admissiveis": "m04q80_001_MIN11728__m07q80_001_MIN15171",
+        "par_maximo_admissiveis": "m04q40_001_MIN08529__m04q80_001_MIN08479"
+      }
+    ],
+    "erro_maximo_recalculo_mapa": 7.233103005432895e-14
+  },
+  "sensibilidades_mesmos_ids_conferidas": true,
+  "painel_sensibilidades_mesmos_815_pares_locais": true,
+  "agregacoes_contrastes_e_retiradas_conferidos": true,
+  "paginas_pdf_integrado": 25,
+  "status": "PASS",
+  "data_utc": "2026-10-25T14:39:41.455701+00:00",
+  "limite": "Consistência e rastreabilidade computacionais; não valida identidade de ondas/bolhas, rótulos locais, independência estatística ou generalização."
+}

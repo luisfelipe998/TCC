@@ -1,0 +1,189 @@
+{
+  "selected_runs": 26,
+  "patterns": {
+    "churn": 10,
+    "wavy annular": 9,
+    "slug": 3,
+    "plug": 3,
+    "dispersed bubbles": 1
+  },
+  "excluded": [
+    {
+      "run": "m03q01_001",
+      "pattern": "plug-slug"
+    },
+    {
+      "run": "m03q80_001",
+      "pattern": "smooth annular"
+    },
+    {
+      "run": "m04q05_001",
+      "pattern": "slug-churn"
+    },
+    {
+      "run": "m05q05_002",
+      "pattern": "dispersed bubbles"
+    },
+    {
+      "run": "m07q10_001",
+      "pattern": "slug-churn"
+    }
+  ],
+  "primary_pairs": 13000,
+  "preferred_candidate_pairs": 13000,
+  "primary_heuristic_pass_pairs": 3928,
+  "full_method_quality": {
+    "ncc_raw": {
+      "passing_pairs": 6223,
+      "runs_with_at_least_half_passing": 15
+    },
+    "ncc_dynamic": {
+      "passing_pairs": 7528,
+      "runs_with_at_least_half_passing": 18
+    },
+    "ncc_dynamic_highpass": {
+      "passing_pairs": 3928,
+      "runs_with_at_least_half_passing": 6
+    },
+    "phase_dynamic_highpass": {
+      "passing_pairs": 6608,
+      "runs_with_at_least_half_passing": 11
+    }
+  },
+  "low_coverage_runs": [
+    "m03q05_001",
+    "m03q10_001",
+    "m03q20_001",
+    "m03q40_001",
+    "m04q10_001",
+    "m04q20_001",
+    "m04q40_001",
+    "m04q80_001",
+    "m05q10_001",
+    "m05q20_001",
+    "m05q40_001",
+    "m05q80_001",
+    "m06q05_001",
+    "m06q10_001",
+    "m06q20_001",
+    "m06q40_001",
+    "m06q80_001",
+    "m07q20_001",
+    "m07q40_001",
+    "m07q80_001"
+  ],
+  "high_saturation_runs": [
+    "m03q40_001"
+  ],
+  "synthetic": [
+    {
+      "method": "ncc",
+      "noise_std": 0.0,
+      "n": 45,
+      "mae_px": 0.0012728677890180527,
+      "median_error_px": 0.0008844957181963764,
+      "p95_error_px": 0.0028351918463265235,
+      "max_error_px": 0.0036042362404602457,
+      "fraction_within_1px": 1.0
+    },
+    {
+      "method": "ncc",
+      "noise_std": 2.0,
+      "n": 45,
+      "mae_px": 0.018245108876108976,
+      "median_error_px": 0.01771534485328541,
+      "p95_error_px": 0.039208518105805945,
+      "max_error_px": 0.04749746511043895,
+      "fraction_within_1px": 1.0
+    },
+    {
+      "method": "ncc",
+      "noise_std": 10.0,
+      "n": 45,
+      "mae_px": 0.1438770361309733,
+      "median_error_px": 0.11286705795130973,
+      "p95_error_px": 0.3550260125247178,
+      "max_error_px": 0.5715118469134928,
+      "fraction_within_1px": 1.0
+    },
+    {
+      "method": "phase",
+      "noise_std": 0.0,
+      "n": 45,
+      "mae_px": 0.02144093871464733,
+      "median_error_px": 0.012912237959181283,
+      "p95_error_px": 0.07631070674783585,
+      "max_error_px": 0.1716039855391216,
+      "fraction_within_1px": 1.0
+    },
+    {
+      "method": "phase",
+      "noise_std": 2.0,
+      "n": 45,
+      "mae_px": 0.41858979402553625,
+      "median_error_px": 0.32718231888112304,
+      "p95_error_px": 0.821769358898594,
+      "max_error_px": 0.929152117090907,
+      "fraction_within_1px": 1.0
+    },
+    {
+      "method": "phase",
+      "noise_std": 10.0,
+      "n": 45,
+      "mae_px": 0.6717980865633344,
+      "median_error_px": 0.6414344757829793,
+      "p95_error_px": 1.6364461213898456,
+      "max_error_px": 1.7513181928364077,
+      "fraction_within_1px": 0.8
+    }
+  ],
+  "featureless_pair_checks": {
+    "ncc": {
+      "heuristic_pass": false,
+      "texture_std": 0.0
+    },
+    "phase": {
+      "heuristic_pass": false,
+      "texture_std": 0.0
+    }
+  },
+  "fixed_method_settings": {
+    "max_displacement_px": 240,
+    "rois": [
+      [
+        10,
+        70
+      ],
+      [
+        20,
+        60
+      ],
+      [
+        25,
+        55
+      ]
+    ],
+    "lags": [
+      1,
+      2,
+      4
+    ],
+    "sensitivity_pairs_per_variant": 100,
+    "methods": [
+      "ncc_raw",
+      "ncc_dynamic",
+      "ncc_dynamic_highpass",
+      "phase_dynamic_highpass"
+    ],
+    "primary": "ncc_dynamic_highpass; ROI 20:60; lag 1",
+    "highpass_gaussian_sigma_px": 8,
+    "ncc_peak_threshold": 0.6,
+    "ncc_competitor_margin": 0.03,
+    "phase_peak_threshold": 0.08,
+    "phase_competitor_margin": 0.02,
+    "min_profile_std_graylevels": 1.0,
+    "saturation_intensity": 250,
+    "max_native_saturation_fraction": 0.2
+  },
+  "caveat": "Optical structure celerity only. Heuristic quality is not calibrated measurement confidence. No physical velocity ground truth or verified axial scale."
+}

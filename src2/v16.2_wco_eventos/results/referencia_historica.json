@@ -1,0 +1,215 @@
+{
+  "origem": "../v16_spatial2_18_71/results/preprocessing_conclusion.json",
+  "dominio": "50–3.000 px; todos os lags; máximos por escala ponderados por WPS da referência 18–71",
+  "comparacao_direta_com_media_eventos_valida": false,
+  "dados": {
+    "conclusion": "A ampliação da média de 20–59 para 18–71 diminuiu o escore médio de alternative WCO dos 87 pares intrapadrão de 0.196662 para 0.195636, diferença de -0.001026 (-0.52%), usando os mesmos pesos brutos da referência 20–59. Houve 41 aumentos, 46 reduções e 0 empates. Frente ao v5 original com entrada 20–59 (0.192835), a diferença da média 18–71 corrigida foi +0.002801 (+1.45%). \n\nO contraste balanceado intrapadrão menos entre padrões passou de -0.063051 para -0.059861. Não foi obtida uma melhora da média dos 87 pares ao ampliar a faixa principal. Os padrões com aumento da média foram plug, slug; com redução, churn, wavy annular. Com peso igual por padrão, a média intrapadrão passou de 0.228604 para 0.234430, variação de +0.005826.\n\nNesta execução, a piora na média dos 87 pares foi pequena. A vantagem numérica remanescente sobre o v5 original foi marginal em magnitude e não foi criada pela ampliação da faixa. O resultado é misto entre padrões; não sustenta uma melhora global da alternative WCO. Isso não implica mudanças pequenas em cada par: o exemplo plug predeterminado apresentou uma redução substancial do máximo integral, detalhada no diagnóstico do resumo executivo. Na comparação entre implementações, usando os pesos nativos da referência 18–71, o escore médio dos 87 pares foi 0.184176 para a implementação v5 aplicada à nova entrada e 0.187651 para a referência corrigida de Schuck, diferença de +0.003474. O controle fixo 30–49 teve média 0.185980, com 49 aumentos e 38 reduções frente ao v5 aplicado a 18–71. A mediana da faixa 18–71 teve média 0.192501, com 47 aumentos e 40 reduções. A maior média por par entre as três opções confirmadas foi de Mediana das linhas 18–71. Esta comparação entre implementações e controles não mede, sozinha, a vantagem da nova faixa sobre a antiga 20–59.",
+    "domain": "Todos os lags; 50–3000 px; pisos de potência da referência de 1%, 5% e 10% preservados.",
+    "primary_score": "weighted_scale_peak_power05",
+    "screen_choice": "rank_uniform",
+    "heldout_selection_source": "preprocessing_confirm_heldout.csv: três opções fixadas, 200 escalas",
+    "candidate": "central_band20",
+    "same_pattern_pairs_improved": 49,
+    "same_pattern_pairs_worsened": 38,
+    "pooled_same_pattern_score_v5": 0.1841761680918985,
+    "pooled_same_pattern_score_candidate": 0.18597995167295348,
+    "pooled_same_pattern_delta_vs_v5": 0.0018037835810549852,
+    "pooled_change": "aumento",
+    "corrected_reference": {
+      "pooled_mean": 0.18765060518909027,
+      "delta_vs_v5": 0.0034744370971917793,
+      "pairs_improved": 87,
+      "pairs_worsened": 0
+    },
+    "median_between_rows": {
+      "pooled_mean": 0.1925008637476223,
+      "delta_vs_v5": 0.008324695655723802,
+      "pairs_improved": 47,
+      "pairs_worsened": 40,
+      "balanced_mean": 0.2582319595831756,
+      "balanced_same_minus_different": -0.05775734511919378
+    },
+    "balanced_same_pattern_score_v5": 0.244365007896787,
+    "balanced_same_pattern_score_candidate": 0.24689481217935788,
+    "heldout_vs_v5": {
+      "delta_same": 0.005883939521216938,
+      "delta_different": 0.0018073017125484659,
+      "delta_gap": 0.004076637808668472
+    },
+    "conditional_null_full_domain": [
+      {
+        "pattern": "churn",
+        "run_x": "m03q05_001",
+        "run_y": "m04q10_001",
+        "n": 8829,
+        "surrogates": 199,
+        "observed_max": 0.6989875120034805,
+        "null_median": 0.7607732637468969,
+        "null_q95": 0.917400838278532,
+        "exceedances": 134,
+        "conditional_monte_carlo_p": 0.675
+      },
+      {
+        "pattern": "plug",
+        "run_x": "m05q01_001",
+        "run_y": "m06q01_001",
+        "n": 5940,
+        "surrogates": 199,
+        "observed_max": 0.728362569585687,
+        "null_median": 0.7573229397602649,
+        "null_q95": 0.8839249457215078,
+        "exceedances": 124,
+        "conditional_monte_carlo_p": 0.625
+      },
+      {
+        "pattern": "slug",
+        "run_x": "m04q01_001",
+        "run_y": "m05q05_001",
+        "n": 5071,
+        "surrogates": 199,
+        "observed_max": 0.9093020631120876,
+        "null_median": 0.8977439981639067,
+        "null_q95": 0.9865124942872464,
+        "exceedances": 87,
+        "conditional_monte_carlo_p": 0.44
+      },
+      {
+        "pattern": "wavy annular",
+        "run_x": "m03q10_001",
+        "run_y": "m03q20_001",
+        "n": 14224,
+        "surrogates": 199,
+        "observed_max": 0.3701301606239944,
+        "null_median": 0.4707390027660235,
+        "null_q95": 0.6461197614409184,
+        "exceedances": 182,
+        "conditional_monte_carlo_p": 0.915
+      },
+      {
+        "pattern": "cross-pattern control",
+        "run_x": "m04q01_001",
+        "run_y": "m05q01_001",
+        "n": 5071,
+        "surrogates": 199,
+        "observed_max": 0.8068141710771168,
+        "null_median": 0.9043755361190496,
+        "null_q95": 0.9878382646811512,
+        "exceedances": 163,
+        "conditional_monte_carlo_p": 0.82
+      }
+    ],
+    "band_comparison": {
+      "status": "PASS",
+      "metric": "weighted_scale_peak_power05",
+      "weights": "Referência corrigida 20–59, pesos e pisos fixos entre faixas",
+      "baseline_change": {
+        "variant": "baseline",
+        "metric": "weighted_scale_peak_power05",
+        "old_pooled_same": 0.19666177511443297,
+        "new_pooled_same": 0.19563552418750724,
+        "delta_pooled_same": -0.0010262509269257495,
+        "same_pairs_improved": 41,
+        "same_pairs_worsened": 46,
+        "same_pairs_unchanged": 0,
+        "delta_balanced_same": 0.005825729555924667,
+        "delta_balanced_different": 0.002635596876893995,
+        "delta_balanced_gap": 0.0031901326790306724
+      },
+      "variant_changes": {
+        "baseline": {
+          "variant": "baseline",
+          "metric": "weighted_scale_peak_power05",
+          "old_pooled_same": 0.19666177511443297,
+          "new_pooled_same": 0.19563552418750724,
+          "delta_pooled_same": -0.0010262509269257495,
+          "same_pairs_improved": 41,
+          "same_pairs_worsened": 46,
+          "same_pairs_unchanged": 0,
+          "delta_balanced_same": 0.005825729555924667,
+          "delta_balanced_different": 0.002635596876893995,
+          "delta_balanced_gap": 0.0031901326790306724
+        },
+        "central_band20": {
+          "variant": "central_band20",
+          "metric": "weighted_scale_peak_power05",
+          "old_pooled_same": 0.19541147354034077,
+          "new_pooled_same": 0.19541147354034077,
+          "delta_pooled_same": 0.0,
+          "same_pairs_improved": 0,
+          "same_pairs_worsened": 0,
+          "same_pairs_unchanged": 87,
+          "delta_balanced_same": 0.0,
+          "delta_balanced_different": 0.0,
+          "delta_balanced_gap": 0.0
+        },
+        "core_row_median": {
+          "variant": "core_row_median",
+          "metric": "weighted_scale_peak_power05",
+          "old_pooled_same": 0.19909096857722583,
+          "new_pooled_same": 0.20090652063564335,
+          "delta_pooled_same": 0.0018155520584174497,
+          "same_pairs_improved": 45,
+          "same_pairs_worsened": 42,
+          "same_pairs_unchanged": 0,
+          "delta_balanced_same": 0.008058902944280731,
+          "delta_balanced_different": 0.004297527308527474,
+          "delta_balanced_gap": 0.0037613756357532573
+        },
+        "v5": {
+          "variant": "v5",
+          "metric": "weighted_scale_peak_power05",
+          "old_pooled_same": 0.19283482553992787,
+          "new_pooled_same": 0.19202009553928584,
+          "delta_pooled_same": -0.0008147300006419949,
+          "same_pairs_improved": 41,
+          "same_pairs_worsened": 46,
+          "same_pairs_unchanged": 0,
+          "delta_balanced_same": 0.005473652303778219,
+          "delta_balanced_different": 0.0026692210443857133,
+          "delta_balanced_gap": 0.0028044312593925053
+        }
+      },
+      "original_v5_pooled_same": 0.19283482553992787,
+      "current_delta_vs_original_v5": {
+        "baseline": 0.0028006986475793694,
+        "central_band20": 0.0025766480004129066,
+        "core_row_median": 0.008071695095715481,
+        "v5": -0.0008147300006420277
+      },
+      "fixed_control_30_49_score_max_error": 0.0,
+      "caveat": "Escores nativos 18–71 usam outros pesos; para atribuir diferenças à extração, consultar esta comparação fixa. Pares compartilham aquisições; avaliação interna, sem teste externo."
+    },
+    "denominator_diagnostics": [
+      {
+        "stage": "Triagem",
+        "pair_variant_evaluations": 3250,
+        "scales_per_evaluation": 64,
+        "evaluations_with_invalid_scales": 0,
+        "total_invalid_scales": 0,
+        "minimum_valid_scales": 64,
+        "minimum_eligible_scales_power05": 37,
+        "maximum_eligible_scales_power05": 64
+      },
+      {
+        "stage": "Confirmação Schuck",
+        "pair_variant_evaluations": 975,
+        "scales_per_evaluation": 200,
+        "evaluations_with_invalid_scales": 0,
+        "total_invalid_scales": 0,
+        "minimum_valid_scales": 200,
+        "minimum_eligible_scales_power05": 117,
+        "maximum_eligible_scales_power05": 200
+      },
+      {
+        "stage": "Comparador v5, entrada 18–71",
+        "pair_variant_evaluations": 325,
+        "scales_per_evaluation": 200,
+        "evaluations_with_invalid_scales": 0,
+        "total_invalid_scales": 0,
+        "minimum_valid_scales": 200,
+        "minimum_eligible_scales_power05": 117,
+        "maximum_eligible_scales_power05": 200
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+run,pattern,old_outer,block_two_walls,selected_wall,phase_radius3,phase_radius1,spectral_joint,sensitivity_stable,material_phase_pair
+m03q05_001,churn,False,False,False,False,False,False,False,False
+m03q10_001,wavy annular,False,False,True,False,False,False,False,False
+m03q20_001,wavy annular,False,False,True,False,False,False,False,False
+m03q40_001,wavy annular,False,False,True,False,False,False,False,False
+m04q01_001,slug,False,False,True,False,False,False,False,False
+m04q10_001,churn,False,True,True,True,True,False,False,False
+m04q20_001,churn,False,True,True,False,False,False,False,False
+m04q40_001,wavy annular,False,False,True,False,False,False,False,False
+m04q80_001,wavy annular,True,True,True,False,False,False,False,False
+m05q01_001,plug,True,True,True,False,True,True,True,False
+m05q05_001,slug,True,True,True,True,True,False,False,False
+m05q10_001,churn,True,True,True,True,True,False,False,False
+m05q20_001,churn,True,True,True,False,True,False,True,False
+m05q40_001,churn,True,True,True,False,False,False,False,False
+m05q80_001,wavy annular,False,True,True,False,False,False,False,False
+m06q01_001,plug,True,True,True,True,True,False,True,False
+m06q05_001,slug,True,True,True,True,True,False,True,False
+m06q10_001,churn,False,True,True,False,False,False,True,False
+m06q20_001,churn,False,True,True,False,False,False,False,False
+m06q40_001,wavy annular,False,True,True,False,False,False,False,False
+m06q80_001,wavy annular,False,True,True,False,False,False,False,False
+m07q01_001,dispersed bubbles,True,True,True,False,False,True,True,False
+m07q05_001,plug,True,True,True,True,False,False,True,False
+m07q20_001,churn,True,True,True,True,True,False,False,False
+m07q40_001,churn,True,True,True,False,False,False,False,False
+m07q80_001,wavy annular,False,True,True,False,False,False,False,False

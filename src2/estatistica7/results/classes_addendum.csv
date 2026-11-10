@@ -1,0 +1,415 @@
+condition,metric,scope,pattern,mean_silhouette
+3171_prefix,area_normalized_full,churn_annular,churn,-0.01357184820115814
+3171_prefix,area_normalized_full,churn_annular,wavy annular,0.0555792103056654
+3171_prefix,area_normalized_full,plug_slug,plug,0.023269585225759833
+3171_prefix,area_normalized_full,plug_slug,slug,-0.088147293124162765
+3171_prefix,area_normalized_full,churn_plug,churn,-0.047843780470804127
+3171_prefix,area_normalized_full,churn_plug,plug,0.040893611960543155
+3171_prefix,area_normalized_full,churn_slug,churn,-0.015545681850782237
+3171_prefix,area_normalized_full,churn_slug,slug,-0.041561877251028952
+3171_prefix,area_normalized_full,annular_plug,wavy annular,0.012906969486438321
+3171_prefix,area_normalized_full,annular_plug,plug,0.031266430446810024
+3171_prefix,area_normalized_full,annular_slug,wavy annular,0.052833091511339393
+3171_prefix,area_normalized_full,annular_slug,slug,-0.042548735324050534
+3171_prefix,area_normalized_full,quatro_padroes,churn,-0.075449093063029757
+3171_prefix,area_normalized_full,quatro_padroes,wavy annular,-0.010549646011928626
+3171_prefix,area_normalized_full,quatro_padroes,plug,0.0080588679858904708
+3171_prefix,area_normalized_full,quatro_padroes,slug,-0.11659170065778067
+3171_prefix,area_normalized_short,churn_annular,churn,0.027452456659384401
+3171_prefix,area_normalized_short,churn_annular,wavy annular,-0.0066723488255364845
+3171_prefix,area_normalized_short,plug_slug,plug,0.014213919217496642
+3171_prefix,area_normalized_short,plug_slug,slug,-0.061470594668715996
+3171_prefix,area_normalized_short,churn_plug,churn,-0.0059266155126343339
+3171_prefix,area_normalized_short,churn_plug,plug,0.018036357870174505
+3171_prefix,area_normalized_short,churn_slug,churn,0.027969319930827463
+3171_prefix,area_normalized_short,churn_slug,slug,-0.021967716975504637
+3171_prefix,area_normalized_short,annular_plug,wavy annular,-0.0073763370485841811
+3171_prefix,area_normalized_short,annular_plug,plug,0.048964195330482241
+3171_prefix,area_normalized_short,annular_slug,wavy annular,0.011265313365928736
+3171_prefix,area_normalized_short,annular_slug,slug,-0.0061320160542464412
+3171_prefix,area_normalized_short,quatro_padroes,churn,-0.020444659243513737
+3171_prefix,area_normalized_short,quatro_padroes,wavy annular,-0.029044461137214168
+3171_prefix,area_normalized_short,quatro_padroes,plug,0.0053998241777302213
+3171_prefix,area_normalized_short,quatro_padroes,slug,-0.066974773693017062
+3171_prefix,area_normalized_middle,churn_annular,churn,0.0053099061676412981
+3171_prefix,area_normalized_middle,churn_annular,wavy annular,0.01778661622546078
+3171_prefix,area_normalized_middle,plug_slug,plug,0.00028369265961545172
+3171_prefix,area_normalized_middle,plug_slug,slug,0.036886481991812943
+3171_prefix,area_normalized_middle,churn_plug,churn,-0.020996884886210175
+3171_prefix,area_normalized_middle,churn_plug,plug,-0.046371287759856578
+3171_prefix,area_normalized_middle,churn_slug,churn,-0.0087484901353226709
+3171_prefix,area_normalized_middle,churn_slug,slug,0.0029867319929304434
+3171_prefix,area_normalized_middle,annular_plug,wavy annular,0.0050620219730011422
+3171_prefix,area_normalized_middle,annular_plug,plug,-0.031019551531236006
+3171_prefix,area_normalized_middle,annular_slug,wavy annular,0.052447657574975007
+3171_prefix,area_normalized_middle,annular_slug,slug,0.054624524737254598
+3171_prefix,area_normalized_middle,quatro_padroes,churn,-0.07253308865588487
+3171_prefix,area_normalized_middle,quatro_padroes,wavy annular,-0.027323241358483692
+3171_prefix,area_normalized_middle,quatro_padroes,plug,-0.052975254975831561
+3171_prefix,area_normalized_middle,quatro_padroes,slug,0.0029867319929304434
+3171_prefix,zero_uniform_kernel,churn_annular,churn,-0.0030637770352122222
+3171_prefix,zero_uniform_kernel,churn_annular,wavy annular,0.010159499773133025
+3171_prefix,zero_uniform_kernel,plug_slug,plug,0.035536217255434689
+3171_prefix,zero_uniform_kernel,plug_slug,slug,-0.023722724429527164
+3171_prefix,zero_uniform_kernel,churn_plug,churn,-0.008532605095897091
+3171_prefix,zero_uniform_kernel,churn_plug,plug,0.041104927539443357
+3171_prefix,zero_uniform_kernel,churn_slug,churn,-0.0086958774604181388
+3171_prefix,zero_uniform_kernel,churn_slug,slug,-0.018797717890312992
+3171_prefix,zero_uniform_kernel,annular_plug,wavy annular,0.013056162886388785
+3171_prefix,zero_uniform_kernel,annular_plug,plug,0.049291844919503558
+3171_prefix,zero_uniform_kernel,annular_slug,wavy annular,0.0092259871718696103
+3171_prefix,zero_uniform_kernel,annular_slug,slug,-0.013904488740786486
+3171_prefix,zero_uniform_kernel,quatro_padroes,churn,-0.020931470589852851
+3171_prefix,zero_uniform_kernel,quatro_padroes,wavy annular,-0.0069068140511582476
+3171_prefix,zero_uniform_kernel,quatro_padroes,plug,0.033065598713152955
+3171_prefix,zero_uniform_kernel,quatro_padroes,slug,-0.048621009558731221
+3171_center,area_normalized_full,churn_annular,churn,0.024878427664890495
+3171_center,area_normalized_full,churn_annular,wavy annular,0.069143451353474605
+3171_center,area_normalized_full,plug_slug,plug,0.036602085051446194
+3171_center,area_normalized_full,plug_slug,slug,-0.022543590400286528
+3171_center,area_normalized_full,churn_plug,churn,0.034912614262349102
+3171_center,area_normalized_full,churn_plug,plug,0.018694035386431322
+3171_center,area_normalized_full,churn_slug,churn,0.0098584755043697424
+3171_center,area_normalized_full,churn_slug,slug,-0.070815465677739983
+3171_center,area_normalized_full,annular_plug,wavy annular,0.033541961039260965
+3171_center,area_normalized_full,annular_plug,plug,-0.031101861632666622
+3171_center,area_normalized_full,annular_slug,wavy annular,0.12443646860952838
+3171_center,area_normalized_full,annular_slug,slug,0.0044018303133005017
+3171_center,area_normalized_full,quatro_padroes,churn,-0.024314692189635185
+3171_center,area_normalized_full,quatro_padroes,wavy annular,0.0043323526644341902
+3171_center,area_normalized_full,quatro_padroes,plug,-0.03172634948515772
+3171_center,area_normalized_full,quatro_padroes,slug,-0.098771881509057843
+3171_center,area_normalized_short,churn_annular,churn,-0.019198121616956859
+3171_center,area_normalized_short,churn_annular,wavy annular,-0.017719139482319672
+3171_center,area_normalized_short,plug_slug,plug,-0.017360520229707882
+3171_center,area_normalized_short,plug_slug,slug,-0.084934308777387099
+3171_center,area_normalized_short,churn_plug,churn,-0.044419369822577194
+3171_center,area_normalized_short,churn_plug,plug,0.0093618552865995727
+3171_center,area_normalized_short,churn_slug,churn,-0.017727145447457772
+3171_center,area_normalized_short,churn_slug,slug,-0.034473416674332819
+3171_center,area_normalized_short,annular_plug,wavy annular,-0.025460838305525906
+3171_center,area_normalized_short,annular_plug,plug,0.027043921283544266
+3171_center,area_normalized_short,annular_slug,wavy annular,-0.00038370093001720903
+3171_center,area_normalized_short,annular_slug,slug,-0.017795318097312662
+3171_center,area_normalized_short,quatro_padroes,churn,-0.049824343007165504
+3171_center,area_normalized_short,quatro_padroes,wavy annular,-0.049370349875441345
+3171_center,area_normalized_short,quatro_padroes,plug,-0.018911311017600404
+3171_center,area_normalized_short,quatro_padroes,slug,-0.094745937425144602
+3171_center,area_normalized_middle,churn_annular,churn,0.033794281327606278
+3171_center,area_normalized_middle,churn_annular,wavy annular,0.012451074957262574
+3171_center,area_normalized_middle,plug_slug,plug,-0.16570165133283266
+3171_center,area_normalized_middle,plug_slug,slug,0.069329073527804694
+3171_center,area_normalized_middle,churn_plug,churn,0.0090208858455677228
+3171_center,area_normalized_middle,churn_plug,plug,0.0092552922556184084
+3171_center,area_normalized_middle,churn_slug,churn,-0.018202552256240442
+3171_center,area_normalized_middle,churn_slug,slug,0.21799220768883551
+3171_center,area_normalized_middle,annular_plug,wavy annular,-0.055935437970223566
+3171_center,area_normalized_middle,annular_plug,plug,-0.036019127150217566
+3171_center,area_normalized_middle,annular_slug,wavy annular,-0.044119505869707303
+3171_center,area_normalized_middle,annular_slug,slug,0.21537534451393034
+3171_center,area_normalized_middle,quatro_padroes,churn,-0.030209745381911395
+3171_center,area_normalized_middle,quatro_padroes,wavy annular,-0.082667030057197374
+3171_center,area_normalized_middle,quatro_padroes,plug,-0.16570165133283266
+3171_center,area_normalized_middle,quatro_padroes,slug,0.069329073527804694
+3171_center,zero_uniform_kernel,churn_annular,churn,0.00040124898697850369
+3171_center,zero_uniform_kernel,churn_annular,wavy annular,0.020603268442157568
+3171_center,zero_uniform_kernel,plug_slug,plug,0.015681747800275304
+3171_center,zero_uniform_kernel,plug_slug,slug,-0.014941732172816136
+3171_center,zero_uniform_kernel,churn_plug,churn,0.0007440828143645585
+3171_center,zero_uniform_kernel,churn_plug,plug,0.0034830816652696287
+3171_center,zero_uniform_kernel,churn_slug,churn,-0.0040031731114562059
+3171_center,zero_uniform_kernel,churn_slug,slug,-0.032128366196091961
+3171_center,zero_uniform_kernel,annular_plug,wavy annular,0.0043277551715078903
+3171_center,zero_uniform_kernel,annular_plug,plug,-0.013253098519582701
+3171_center,zero_uniform_kernel,annular_slug,wavy annular,0.027255903288094623
+3171_center,zero_uniform_kernel,annular_slug,slug,-0.020939103473576613
+3171_center,zero_uniform_kernel,quatro_padroes,churn,-0.015955152665584442
+3171_center,zero_uniform_kernel,quatro_padroes,wavy annular,-0.0033495951695902602
+3171_center,zero_uniform_kernel,quatro_padroes,plug,-0.013550053583531755
+3171_center,zero_uniform_kernel,quatro_padroes,slug,-0.032830789468846662
+3171_suffix,area_normalized_full,churn_annular,churn,0.019578681249179962
+3171_suffix,area_normalized_full,churn_annular,wavy annular,-0.015441991449311373
+3171_suffix,area_normalized_full,plug_slug,plug,0.039172846414246405
+3171_suffix,area_normalized_full,plug_slug,slug,-0.040181527334699013
+3171_suffix,area_normalized_full,churn_plug,churn,-0.022766268770568227
+3171_suffix,area_normalized_full,churn_plug,plug,0.032568230404209579
+3171_suffix,area_normalized_full,churn_slug,churn,-0.034499803963412526
+3171_suffix,area_normalized_full,churn_slug,slug,-0.060320830031923976
+3171_suffix,area_normalized_full,annular_plug,wavy annular,-0.036309007569062954
+3171_suffix,area_normalized_full,annular_plug,plug,0.054556847299769028
+3171_suffix,area_normalized_full,annular_slug,wavy annular,0.017353016548287317
+3171_suffix,area_normalized_full,annular_slug,slug,0.02710642484569728
+3171_suffix,area_normalized_full,quatro_padroes,churn,-0.05937829283514405
+3171_suffix,area_normalized_full,quatro_padroes,wavy annular,-0.050532947633209375
+3171_suffix,area_normalized_full,quatro_padroes,plug,0.0013879701353583958
+3171_suffix,area_normalized_full,quatro_padroes,slug,-0.060320830031923976
+3171_suffix,area_normalized_short,churn_annular,churn,-0.031650971021793109
+3171_suffix,area_normalized_short,churn_annular,wavy annular,0.016872619892467664
+3171_suffix,area_normalized_short,plug_slug,plug,0.021560286938639334
+3171_suffix,area_normalized_short,plug_slug,slug,-0.0050145421197589661
+3171_suffix,area_normalized_short,churn_plug,churn,-0.054422887007181051
+3171_suffix,area_normalized_short,churn_plug,plug,0.049421527268935915
+3171_suffix,area_normalized_short,churn_slug,churn,-0.050525420091820664
+3171_suffix,area_normalized_short,churn_slug,slug,0.027992549529073249
+3171_suffix,area_normalized_short,annular_plug,wavy annular,-0.0068661205914553975
+3171_suffix,area_normalized_short,annular_plug,plug,0.050148080635560088
+3171_suffix,area_normalized_short,annular_slug,wavy annular,-0.020089196434179977
+3171_suffix,area_normalized_short,annular_slug,slug,0.010672154574969256
+3171_suffix,area_normalized_short,quatro_padroes,churn,-0.071793298711605044
+3171_suffix,area_normalized_short,quatro_padroes,wavy annular,-0.032987934314790489
+3171_suffix,area_normalized_short,quatro_padroes,plug,0.021560286938639334
+3171_suffix,area_normalized_short,quatro_padroes,slug,-0.018640860215643387
+3171_suffix,area_normalized_middle,churn_annular,churn,-0.039713733370005444
+3171_suffix,area_normalized_middle,churn_annular,wavy annular,0.0070696894830760571
+3171_suffix,area_normalized_middle,plug_slug,plug,0.24116166511400672
+3171_suffix,area_normalized_middle,plug_slug,slug,0.060935441072748696
+3171_suffix,area_normalized_middle,churn_plug,churn,-0.0011750389019961449
+3171_suffix,area_normalized_middle,churn_plug,plug,0.26910275904176251
+3171_suffix,area_normalized_middle,churn_slug,churn,-0.052324004430149819
+3171_suffix,area_normalized_middle,churn_slug,slug,0.041934860320190975
+3171_suffix,area_normalized_middle,annular_plug,wavy annular,-0.016439735469681145
+3171_suffix,area_normalized_middle,annular_plug,plug,0.22116722726053739
+3171_suffix,area_normalized_middle,annular_slug,wavy annular,-0.020762800026368874
+3171_suffix,area_normalized_middle,annular_slug,slug,0.028568103590860303
+3171_suffix,area_normalized_middle,quatro_padroes,churn,-0.09459747728827779
+3171_suffix,area_normalized_middle,quatro_padroes,wavy annular,-0.087515674150049932
+3171_suffix,area_normalized_middle,quatro_padroes,plug,0.21293900962837806
+3171_suffix,area_normalized_middle,quatro_padroes,slug,0.015595271047708262
+3171_suffix,zero_uniform_kernel,churn_annular,churn,0.00097022697854374509
+3171_suffix,zero_uniform_kernel,churn_annular,wavy annular,-0.004764453977360303
+3171_suffix,zero_uniform_kernel,plug_slug,plug,0.011664376106135159
+3171_suffix,zero_uniform_kernel,plug_slug,slug,-0.0045458121422156349
+3171_suffix,zero_uniform_kernel,churn_plug,churn,0.0017878465294464865
+3171_suffix,zero_uniform_kernel,churn_plug,plug,0.0078501976753851781
+3171_suffix,zero_uniform_kernel,churn_slug,churn,-0.0033189326769585137
+3171_suffix,zero_uniform_kernel,churn_slug,slug,-0.013663909701373418
+3171_suffix,zero_uniform_kernel,annular_plug,wavy annular,-0.0040925547287266571
+3171_suffix,zero_uniform_kernel,annular_plug,plug,0.0076107875888546438
+3171_suffix,zero_uniform_kernel,annular_slug,wavy annular,0.014490640129100519
+3171_suffix,zero_uniform_kernel,annular_slug,slug,0.010165707020748371
+3171_suffix,zero_uniform_kernel,quatro_padroes,churn,-0.015010815992171512
+3171_suffix,zero_uniform_kernel,quatro_padroes,wavy annular,-0.010447147494289318
+3171_suffix,zero_uniform_kernel,quatro_padroes,plug,0.0016231570052329537
+3171_suffix,zero_uniform_kernel,quatro_padroes,slug,-0.014373121649039243
+5071_prefix,area_normalized_full,churn_annular,churn,-0.033978985400190329
+5071_prefix,area_normalized_full,churn_annular,wavy annular,0.046622292099091751
+5071_prefix,area_normalized_full,plug_slug,plug,-0.096491235811475048
+5071_prefix,area_normalized_full,plug_slug,slug,0.09602978167317644
+5071_prefix,area_normalized_full,churn_plug,churn,0.020135225804733554
+5071_prefix,area_normalized_full,churn_plug,plug,-0.047991388504213563
+5071_prefix,area_normalized_full,churn_slug,churn,-0.004850190452843209
+5071_prefix,area_normalized_full,churn_slug,slug,0.12289974528999627
+5071_prefix,area_normalized_full,annular_plug,wavy annular,0.05543109153042812
+5071_prefix,area_normalized_full,annular_plug,plug,-0.08559042534526129
+5071_prefix,area_normalized_full,annular_slug,wavy annular,-0.023301808730622823
+5071_prefix,area_normalized_full,annular_slug,slug,0.038024642063465924
+5071_prefix,area_normalized_full,quatro_padroes,churn,-0.04989256707476207
+5071_prefix,area_normalized_full,quatro_padroes,wavy annular,-0.046685855384297509
+5071_prefix,area_normalized_full,quatro_padroes,plug,-0.098099626981987487
+5071_prefix,area_normalized_full,quatro_padroes,slug,0.038024642063465924
+5071_prefix,area_normalized_short,churn_annular,churn,0.033157855494016966
+5071_prefix,area_normalized_short,churn_annular,wavy annular,0.0077046817840923203
+5071_prefix,area_normalized_short,plug_slug,plug,-0.019708766709224893
+5071_prefix,area_normalized_short,plug_slug,slug,0.027320471370457788
+5071_prefix,area_normalized_short,churn_plug,churn,0.02928341793825693
+5071_prefix,area_normalized_short,churn_plug,plug,0.023339357588450651
+5071_prefix,area_normalized_short,churn_slug,churn,-0.025767072450667027
+5071_prefix,area_normalized_short,churn_slug,slug,0.01702965186118462
+5071_prefix,area_normalized_short,annular_plug,wavy annular,0.015239856562872613
+5071_prefix,area_normalized_short,annular_plug,plug,0.035980493177687839
+5071_prefix,area_normalized_short,annular_slug,wavy annular,-0.033650938113091618
+5071_prefix,area_normalized_short,annular_slug,slug,0.034215093953482434
+5071_prefix,area_normalized_short,quatro_padroes,churn,-0.028571436928426376
+5071_prefix,area_normalized_short,quatro_padroes,wavy annular,-0.033650938113091618
+5071_prefix,area_normalized_short,quatro_padroes,plug,-0.019708766709224893
+5071_prefix,area_normalized_short,quatro_padroes,slug,0.011985540050605162
+5071_prefix,area_normalized_middle,churn_annular,churn,-0.0028501368605131578
+5071_prefix,area_normalized_middle,churn_annular,wavy annular,-0.010839131167240244
+5071_prefix,area_normalized_middle,plug_slug,plug,-0.038790660936070219
+5071_prefix,area_normalized_middle,plug_slug,slug,0.11513517950915109
+5071_prefix,area_normalized_middle,churn_plug,churn,-0.04942264315187448
+5071_prefix,area_normalized_middle,churn_plug,plug,-0.050515124135542544
+5071_prefix,area_normalized_middle,churn_slug,churn,-0.014049680615382259
+5071_prefix,area_normalized_middle,churn_slug,slug,0.13827673507375882
+5071_prefix,area_normalized_middle,annular_plug,wavy annular,-0.042373965197802017
+5071_prefix,area_normalized_middle,annular_plug,plug,-0.034927692319283235
+5071_prefix,area_normalized_middle,annular_slug,wavy annular,-0.0047287940762106746
+5071_prefix,area_normalized_middle,annular_slug,slug,0.14921224982267339
+5071_prefix,area_normalized_middle,quatro_padroes,churn,-0.081692355106897332
+5071_prefix,area_normalized_middle,quatro_padroes,wavy annular,-0.073161165428479252
+5071_prefix,area_normalized_middle,quatro_padroes,plug,-0.070597180597072609
+5071_prefix,area_normalized_middle,quatro_padroes,slug,0.10966433131119174
+5071_prefix,zero_uniform_kernel,churn_annular,churn,-0.00096344226415413987
+5071_prefix,zero_uniform_kernel,churn_annular,wavy annular,0.015561426997215459
+5071_prefix,zero_uniform_kernel,plug_slug,plug,-0.0054060719337298739
+5071_prefix,zero_uniform_kernel,plug_slug,slug,0.015908320691397099
+5071_prefix,zero_uniform_kernel,churn_plug,churn,0.011400137956520855
+5071_prefix,zero_uniform_kernel,churn_plug,plug,0.0026414871900301818
+5071_prefix,zero_uniform_kernel,churn_slug,churn,0.0043182756136563669
+5071_prefix,zero_uniform_kernel,churn_slug,slug,0.01706706691105914
+5071_prefix,zero_uniform_kernel,annular_plug,wavy annular,0.021697467111691331
+5071_prefix,zero_uniform_kernel,annular_plug,plug,-0.0032236594761953456
+5071_prefix,zero_uniform_kernel,annular_slug,wavy annular,-0.0015953697930672487
+5071_prefix,zero_uniform_kernel,annular_slug,slug,-0.0050244265050177622
+5071_prefix,zero_uniform_kernel,quatro_padroes,churn,-0.0077861991395496684
+5071_prefix,zero_uniform_kernel,quatro_padroes,wavy annular,-0.0087746597992223105
+5071_prefix,zero_uniform_kernel,quatro_padroes,plug,-0.0082915830216550284
+5071_prefix,zero_uniform_kernel,quatro_padroes,slug,-0.0081562615390743786
+5071_center,area_normalized_full,churn_annular,churn,0.035553677720317325
+5071_center,area_normalized_full,churn_annular,wavy annular,-0.008054453983086806
+5071_center,area_normalized_full,plug_slug,plug,-0.019182437171058272
+5071_center,area_normalized_full,plug_slug,slug,0.10191721297268515
+5071_center,area_normalized_full,churn_plug,churn,0.050283714828832239
+5071_center,area_normalized_full,churn_plug,plug,-0.039279226408087724
+5071_center,area_normalized_full,churn_slug,churn,0.033714421022911792
+5071_center,area_normalized_full,churn_slug,slug,0.064122006849432617
+5071_center,area_normalized_full,annular_plug,wavy annular,-0.0054043157901920262
+5071_center,area_normalized_full,annular_plug,plug,-0.049579868963123129
+5071_center,area_normalized_full,annular_slug,wavy annular,0.039244209686408758
+5071_center,area_normalized_full,annular_slug,slug,0.11310668798681144
+5071_center,area_normalized_full,quatro_padroes,churn,-0.002248452622619611
+5071_center,area_normalized_full,quatro_padroes,wavy annular,-0.046370087185584524
+5071_center,area_normalized_full,quatro_padroes,plug,-0.066810153430025498
+5071_center,area_normalized_full,quatro_padroes,slug,0.060122707130248171
+5071_center,area_normalized_short,churn_annular,churn,0.0053341311588620995
+5071_center,area_normalized_short,churn_annular,wavy annular,-0.011096915498297642
+5071_center,area_normalized_short,plug_slug,plug,-0.020521016260348829
+5071_center,area_normalized_short,plug_slug,slug,-0.047652522041169106
+5071_center,area_normalized_short,churn_plug,churn,-0.007690501306523297
+5071_center,area_normalized_short,churn_plug,plug,0.0235274998211434
+5071_center,area_normalized_short,churn_slug,churn,-0.011405618244298119
+5071_center,area_normalized_short,churn_slug,slug,-0.0079519111857994217
+5071_center,area_normalized_short,annular_plug,wavy annular,-0.020832035695014618
+5071_center,area_normalized_short,annular_plug,plug,0.02657713847859201
+5071_center,area_normalized_short,annular_slug,wavy annular,-0.034799950046135321
+5071_center,area_normalized_short,annular_slug,slug,-0.015072567134995482
+5071_center,area_normalized_short,quatro_padroes,churn,-0.026803773235014094
+5071_center,area_normalized_short,quatro_padroes,wavy annular,-0.044777827245352279
+5071_center,area_normalized_short,quatro_padroes,plug,-0.020847300386055118
+5071_center,area_normalized_short,quatro_padroes,slug,-0.052865075393415097
+5071_center,area_normalized_middle,churn_annular,churn,0.022441266606721671
+5071_center,area_normalized_middle,churn_annular,wavy annular,0.014644240614502523
+5071_center,area_normalized_middle,plug_slug,plug,-0.094213780991318899
+5071_center,area_normalized_middle,plug_slug,slug,0.093410496438462151
+5071_center,area_normalized_middle,churn_plug,churn,0.0011316892472617475
+5071_center,area_normalized_middle,churn_plug,plug,-0.025347719594980375
+5071_center,area_normalized_middle,churn_slug,churn,-0.012186717362333833
+5071_center,area_normalized_middle,churn_slug,slug,0.14568685770834525
+5071_center,area_normalized_middle,annular_plug,wavy annular,-0.013761131457513391
+5071_center,area_normalized_middle,annular_plug,plug,-0.032588340117247906
+5071_center,area_normalized_middle,annular_slug,wavy annular,-0.0089192799483624047
+5071_center,area_normalized_middle,annular_slug,slug,0.15687545924178095
+5071_center,area_normalized_middle,quatro_padroes,churn,-0.029975588481443178
+5071_center,area_normalized_middle,quatro_padroes,wavy annular,-0.062821814816970828
+5071_center,area_normalized_middle,quatro_padroes,plug,-0.097265887901860013
+5071_center,area_normalized_middle,quatro_padroes,slug,0.088303739220732605
+5071_center,zero_uniform_kernel,churn_annular,churn,0.011359065000422112
+5071_center,zero_uniform_kernel,churn_annular,wavy annular,0.0023720459334636594
+5071_center,zero_uniform_kernel,plug_slug,plug,0.0045234146840060878
+5071_center,zero_uniform_kernel,plug_slug,slug,0.022337987165765263
+5071_center,zero_uniform_kernel,churn_plug,churn,0.012872195533194634
+5071_center,zero_uniform_kernel,churn_plug,plug,-4.2233007130386878e-05
+5071_center,zero_uniform_kernel,churn_slug,churn,0.015686157600699174
+5071_center,zero_uniform_kernel,churn_slug,slug,0.020591401026438857
+5071_center,zero_uniform_kernel,annular_plug,wavy annular,0.0047316666984549118
+5071_center,zero_uniform_kernel,annular_plug,plug,0.0008538235751834848
+5071_center,zero_uniform_kernel,annular_slug,wavy annular,0.013696034515853541
+5071_center,zero_uniform_kernel,annular_slug,slug,0.027509548455680388
+5071_center,zero_uniform_kernel,quatro_padroes,churn,-0.00065707220253810356
+5071_center,zero_uniform_kernel,quatro_padroes,wavy annular,-0.0065337078665849389
+5071_center,zero_uniform_kernel,quatro_padroes,plug,-0.0051911659764133132
+5071_center,zero_uniform_kernel,quatro_padroes,slug,0.015693450150649931
+5071_suffix,area_normalized_full,churn_annular,churn,0.012503227385031273
+5071_suffix,area_normalized_full,churn_annular,wavy annular,-0.025490458456881623
+5071_suffix,area_normalized_full,plug_slug,plug,0.12092373263122964
+5071_suffix,area_normalized_full,plug_slug,slug,0.046694977113341612
+5071_suffix,area_normalized_full,churn_plug,churn,-0.063973422366408544
+5071_suffix,area_normalized_full,churn_plug,plug,-0.012310080458076687
+5071_suffix,area_normalized_full,churn_slug,churn,0.04268188130483315
+5071_suffix,area_normalized_full,churn_slug,slug,0.01730851551089372
+5071_suffix,area_normalized_full,annular_plug,wavy annular,-0.047269672859725831
+5071_suffix,area_normalized_full,annular_plug,plug,0.04380193323368161
+5071_suffix,area_normalized_full,annular_slug,wavy annular,0.0055315358037591432
+5071_suffix,area_normalized_full,annular_slug,slug,0.016423026435384087
+5071_suffix,area_normalized_full,quatro_padroes,churn,-0.067553454982133679
+5071_suffix,area_normalized_full,quatro_padroes,wavy annular,-0.079130202327974575
+5071_suffix,area_normalized_full,quatro_padroes,plug,-0.02285194449871562
+5071_suffix,area_normalized_full,quatro_padroes,slug,-0.00157251347910294
+5071_suffix,area_normalized_short,churn_annular,churn,-0.0038840104069278992
+5071_suffix,area_normalized_short,churn_annular,wavy annular,0.026210529397688857
+5071_suffix,area_normalized_short,plug_slug,plug,0.007599490797484322
+5071_suffix,area_normalized_short,plug_slug,slug,-0.0091932865602433692
+5071_suffix,area_normalized_short,churn_plug,churn,-0.018913755264176886
+5071_suffix,area_normalized_short,churn_plug,plug,0.053523456533049026
+5071_suffix,area_normalized_short,churn_slug,churn,-0.024531768982110132
+5071_suffix,area_normalized_short,churn_slug,slug,0.029212909479352466
+5071_suffix,area_normalized_short,annular_plug,wavy annular,0.005461520805007565
+5071_suffix,area_normalized_short,annular_plug,plug,0.048014701731955191
+5071_suffix,area_normalized_short,annular_slug,wavy annular,-0.012210390172385691
+5071_suffix,area_normalized_short,annular_slug,slug,0.013255612191208951
+5071_suffix,area_normalized_short,quatro_padroes,churn,-0.038615275306355758
+5071_suffix,area_normalized_short,quatro_padroes,wavy annular,-0.022872549695728352
+5071_suffix,area_normalized_short,quatro_padroes,plug,0.0045030905215085225
+5071_suffix,area_normalized_short,quatro_padroes,slug,-0.0091932865602433692
+5071_suffix,area_normalized_middle,churn_annular,churn,-0.035971763889145678
+5071_suffix,area_normalized_middle,churn_annular,wavy annular,0.0015233955867940416
+5071_suffix,area_normalized_middle,plug_slug,plug,0.007255616236938457
+5071_suffix,area_normalized_middle,plug_slug,slug,0.040179028498620352
+5071_suffix,area_normalized_middle,churn_plug,churn,-0.05723744860966673
+5071_suffix,area_normalized_middle,churn_plug,plug,0.034424386563177402
+5071_suffix,area_normalized_middle,churn_slug,churn,-0.054228192419498819
+5071_suffix,area_normalized_middle,churn_slug,slug,0.072765991246653103
+5071_suffix,area_normalized_middle,annular_plug,wavy annular,-0.011814243507236886
+5071_suffix,area_normalized_middle,annular_plug,plug,0.041712083996093302
+5071_suffix,area_normalized_middle,annular_slug,wavy annular,-0.036771098755045174
+5071_suffix,area_normalized_middle,annular_slug,slug,0.050658440093372614
+5071_suffix,area_normalized_middle,quatro_padroes,churn,-0.093253470239587438
+5071_suffix,area_normalized_middle,quatro_padroes,wavy annular,-0.058514912449105144
+5071_suffix,area_normalized_middle,quatro_padroes,plug,-0.0063179224893544121
+5071_suffix,area_normalized_middle,quatro_padroes,slug,0.0095501193810071799
+5071_suffix,zero_uniform_kernel,churn_annular,churn,0.0031481794239131555
+5071_suffix,zero_uniform_kernel,churn_annular,wavy annular,-0.001366495044056939
+5071_suffix,zero_uniform_kernel,plug_slug,plug,0.043110184601698624
+5071_suffix,zero_uniform_kernel,plug_slug,slug,0.024362416293240253
+5071_suffix,zero_uniform_kernel,churn_plug,churn,-0.009490358382841322
+5071_suffix,zero_uniform_kernel,churn_plug,plug,0.0061756986892709765
+5071_suffix,zero_uniform_kernel,churn_slug,churn,0.014065287350372796
+5071_suffix,zero_uniform_kernel,churn_slug,slug,0.010615175351324224
+5071_suffix,zero_uniform_kernel,annular_plug,wavy annular,-0.0016668935574868679
+5071_suffix,zero_uniform_kernel,annular_plug,plug,0.018387309353235019
+5071_suffix,zero_uniform_kernel,annular_slug,wavy annular,0.0090567095895276607
+5071_suffix,zero_uniform_kernel,annular_slug,slug,0.010278101297510328
+5071_suffix,zero_uniform_kernel,quatro_padroes,churn,-0.010868551829841172
+5071_suffix,zero_uniform_kernel,quatro_padroes,wavy annular,-0.011375349142661837
+5071_suffix,zero_uniform_kernel,quatro_padroes,plug,0.0061756986892709765
+5071_suffix,zero_uniform_kernel,quatro_padroes,slug,0.0043754075809896396
+7001_prefix,area_normalized_full,churn_annular,churn,-0.013803634715855759
+7001_prefix,area_normalized_full,churn_annular,wavy annular,0.011195527836380417
+7001_prefix,area_normalized_short,churn_annular,churn,0.011645360969187524
+7001_prefix,area_normalized_short,churn_annular,wavy annular,0.0050446793740170429
+7001_prefix,area_normalized_middle,churn_annular,churn,-0.030663176154171922
+7001_prefix,area_normalized_middle,churn_annular,wavy annular,-0.011474356506762666
+7001_prefix,area_normalized_long,churn_annular,churn,-0.0068411626721676441
+7001_prefix,area_normalized_long,churn_annular,wavy annular,0.020918041343341083
+7001_prefix,zero_uniform_kernel,churn_annular,churn,-0.0023153608808972369
+7001_prefix,zero_uniform_kernel,churn_annular,wavy annular,0.0032706068020231559
+7001_center,area_normalized_full,churn_annular,churn,0.0034937918926297761
+7001_center,area_normalized_full,churn_annular,wavy annular,0.0029823344992503617
+7001_center,area_normalized_short,churn_annular,churn,0.017510685265184671
+7001_center,area_normalized_short,churn_annular,wavy annular,-0.019192393196182645
+7001_center,area_normalized_middle,churn_annular,churn,-0.015081301841221884
+7001_center,area_normalized_middle,churn_annular,wavy annular,0.020068539309068226
+7001_center,area_normalized_long,churn_annular,churn,0.0097352727820022491
+7001_center,area_normalized_long,churn_annular,wavy annular,0.0018572548861125228
+7001_center,zero_uniform_kernel,churn_annular,churn,0.0042068586146699512
+7001_center,zero_uniform_kernel,churn_annular,wavy annular,-0.005380708767213656
+7001_suffix,area_normalized_full,churn_annular,churn,0.0060796900932495943
+7001_suffix,area_normalized_full,churn_annular,wavy annular,-0.020603714947202131
+7001_suffix,area_normalized_short,churn_annular,churn,0.0087374346863667348
+7001_suffix,area_normalized_short,churn_annular,wavy annular,0.0094390332603012661
+7001_suffix,area_normalized_middle,churn_annular,churn,-0.043128017673585539
+7001_suffix,area_normalized_middle,churn_annular,wavy annular,0.020776403284836556
+7001_suffix,area_normalized_long,churn_annular,churn,0.03171001316475687
+7001_suffix,area_normalized_long,churn_annular,wavy annular,-0.048048449577473597
+7001_suffix,zero_uniform_kernel,churn_annular,churn,0.0062346892195742501
+7001_suffix,zero_uniform_kernel,churn_annular,wavy annular,-0.0040831794381424686

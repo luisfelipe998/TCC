@@ -1,0 +1,16 @@
+{
+  "n_run_variants": 624,
+  "churn_gt_annular_median_variants": 24,
+  "total_group_variants": 24,
+  "baseline": {
+    "roi": "20:60",
+    "method": "otsu",
+    "metric": "flip_rate",
+    "n_churn": 10,
+    "n_annular": 8,
+    "churn_median": 0.029994544809208407,
+    "annular_median": 0.0176813755177809,
+    "auc_churn_greater": 0.8625,
+    "mwu_two_sided_p": 0.011331975645198052
+  }
+}

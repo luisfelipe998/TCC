@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "tempo_s": 12.01859737499035,
+  "fases_executadas": false,
+  "motivo": "Nenhum resumo WCO passou a triagem prioritária. Conforme protocolo, o nulo de fases não foi executado: não pode transformar ausência de separação em identificação útil.",
+  "aprofundamento": "Permutações condicionais e combinações nas sensibilidades são exploração posterior à triagem; não substituem família principal nem validação externa."
+}

@@ -1,0 +1,651 @@
+metric,run_x,run_y,pattern_x,pattern_y,same_pattern,distance
+hellinger,m03q05_001,m04q10_001,churn,churn,True,0.26761728882648522
+hellinger,m03q05_001,m04q20_001,churn,churn,True,0.14489658720814028
+hellinger,m03q05_001,m05q10_001,churn,churn,True,0.22129594644902895
+hellinger,m03q05_001,m05q20_001,churn,churn,True,0.22562005505427996
+hellinger,m03q05_001,m05q40_001,churn,churn,True,0.09673073529538706
+hellinger,m03q05_001,m06q10_001,churn,churn,True,0.18252580536825722
+hellinger,m03q05_001,m06q20_001,churn,churn,True,0.16221877678585123
+hellinger,m03q05_001,m07q20_001,churn,churn,True,0.25865211572877284
+hellinger,m03q05_001,m07q40_001,churn,churn,True,0.096816295219239873
+hellinger,m03q05_001,m03q10_001,churn,wavy annular,False,0.16158750943887074
+hellinger,m03q05_001,m03q20_001,churn,wavy annular,False,0.1696682078569724
+hellinger,m03q05_001,m03q40_001,churn,wavy annular,False,0.26261378602854074
+hellinger,m03q05_001,m04q40_001,churn,wavy annular,False,0.10792030509177528
+hellinger,m03q05_001,m04q80_001,churn,wavy annular,False,0.1443035555840948
+hellinger,m03q05_001,m05q80_001,churn,wavy annular,False,0.16708548898215489
+hellinger,m03q05_001,m06q40_001,churn,wavy annular,False,0.17479018208897848
+hellinger,m03q05_001,m06q80_001,churn,wavy annular,False,0.20068612658144236
+hellinger,m03q05_001,m07q80_001,churn,wavy annular,False,0.22778082554198717
+hellinger,m03q05_001,m05q01_001,churn,plug,False,0.25930919614317188
+hellinger,m03q05_001,m06q01_001,churn,plug,False,0.18835392346257029
+hellinger,m03q05_001,m07q05_001,churn,plug,False,0.18949660734583576
+hellinger,m03q05_001,m04q01_001,churn,slug,False,0.37115523563383657
+hellinger,m03q05_001,m05q05_001,churn,slug,False,0.35667918403220294
+hellinger,m03q05_001,m06q05_001,churn,slug,False,0.36994499725719276
+hellinger,m03q05_001,m07q01_001,churn,dispersed bubbles,False,0.31409249716890059
+hellinger,m04q10_001,m04q20_001,churn,churn,True,0.16868796414054185
+hellinger,m04q10_001,m05q10_001,churn,churn,True,0.22660999480697447
+hellinger,m04q10_001,m05q20_001,churn,churn,True,0.17578349872220611
+hellinger,m04q10_001,m05q40_001,churn,churn,True,0.33352116773944451
+hellinger,m04q10_001,m06q10_001,churn,churn,True,0.20217553907057545
+hellinger,m04q10_001,m06q20_001,churn,churn,True,0.24726933060349815
+hellinger,m04q10_001,m07q20_001,churn,churn,True,0.15869298129019574
+hellinger,m04q10_001,m07q40_001,churn,churn,True,0.30484104582252169
+hellinger,m04q10_001,m03q10_001,churn,wavy annular,False,0.26797670952014357
+hellinger,m04q10_001,m03q20_001,churn,wavy annular,False,0.31916570730980587
+hellinger,m04q10_001,m03q40_001,churn,wavy annular,False,0.42552921335179494
+hellinger,m04q10_001,m04q40_001,churn,wavy annular,False,0.22764362294347859
+hellinger,m04q10_001,m04q80_001,churn,wavy annular,False,0.37166027173917315
+hellinger,m04q10_001,m05q80_001,churn,wavy annular,False,0.33970991047252352
+hellinger,m04q10_001,m06q40_001,churn,wavy annular,False,0.2450326786033214
+hellinger,m04q10_001,m06q80_001,churn,wavy annular,False,0.31584874571027249
+hellinger,m04q10_001,m07q80_001,churn,wavy annular,False,0.35889774592246521
+hellinger,m04q10_001,m05q01_001,churn,plug,False,0.24448796692285413
+hellinger,m04q10_001,m06q01_001,churn,plug,False,0.275986640880164
+hellinger,m04q10_001,m07q05_001,churn,plug,False,0.37906625779858633
+hellinger,m04q10_001,m04q01_001,churn,slug,False,0.27668519903905842
+hellinger,m04q10_001,m05q05_001,churn,slug,False,0.22819108105355732
+hellinger,m04q10_001,m06q05_001,churn,slug,False,0.31299721666472763
+hellinger,m04q10_001,m07q01_001,churn,dispersed bubbles,False,0.32543839285326165
+hellinger,m04q20_001,m05q10_001,churn,churn,True,0.18755775706503425
+hellinger,m04q20_001,m05q20_001,churn,churn,True,0.18239411420606436
+hellinger,m04q20_001,m05q40_001,churn,churn,True,0.19664851473734202
+hellinger,m04q20_001,m06q10_001,churn,churn,True,0.17564019264867228
+hellinger,m04q20_001,m06q20_001,churn,churn,True,0.16328376547115211
+hellinger,m04q20_001,m07q20_001,churn,churn,True,0.15416677050949726
+hellinger,m04q20_001,m07q40_001,churn,churn,True,0.18162715230298948
+hellinger,m04q20_001,m03q10_001,churn,wavy annular,False,0.2070439049385728
+hellinger,m04q20_001,m03q20_001,churn,wavy annular,False,0.23667846932727027
+hellinger,m04q20_001,m03q40_001,churn,wavy annular,False,0.36074605688472422
+hellinger,m04q20_001,m04q40_001,churn,wavy annular,False,0.16813973967581405
+hellinger,m04q20_001,m04q80_001,churn,wavy annular,False,0.26812407105836339
+hellinger,m04q20_001,m05q80_001,churn,wavy annular,False,0.26864443184945785
+hellinger,m04q20_001,m06q40_001,churn,wavy annular,False,0.15626960100041462
+hellinger,m04q20_001,m06q80_001,churn,wavy annular,False,0.23901945286226881
+hellinger,m04q20_001,m07q80_001,churn,wavy annular,False,0.24251602994148813
+hellinger,m04q20_001,m05q01_001,churn,plug,False,0.17182006053465221
+hellinger,m04q20_001,m06q01_001,churn,plug,False,0.17146190890821603
+hellinger,m04q20_001,m07q05_001,churn,plug,False,0.30629463071985891
+hellinger,m04q20_001,m04q01_001,churn,slug,False,0.28222147306950091
+hellinger,m04q20_001,m05q05_001,churn,slug,False,0.24913963322482641
+hellinger,m04q20_001,m06q05_001,churn,slug,False,0.30003232789317136
+hellinger,m04q20_001,m07q01_001,churn,dispersed bubbles,False,0.29654310253320937
+hellinger,m05q10_001,m05q20_001,churn,churn,True,0.14601115868982806
+hellinger,m05q10_001,m05q40_001,churn,churn,True,0.26483498073152806
+hellinger,m05q10_001,m06q10_001,churn,churn,True,0.17880769997634191
+hellinger,m05q10_001,m06q20_001,churn,churn,True,0.27415696905121267
+hellinger,m05q10_001,m07q20_001,churn,churn,True,0.14490465288709967
+hellinger,m05q10_001,m07q40_001,churn,churn,True,0.28053046849356511
+hellinger,m05q10_001,m03q10_001,churn,wavy annular,False,0.26438097766892538
+hellinger,m05q10_001,m03q20_001,churn,wavy annular,False,0.24135735395934099
+hellinger,m05q10_001,m03q40_001,churn,wavy annular,False,0.35483228713535564
+hellinger,m05q10_001,m04q40_001,churn,wavy annular,False,0.2207908368849088
+hellinger,m05q10_001,m04q80_001,churn,wavy annular,False,0.2964392863195443
+hellinger,m05q10_001,m05q80_001,churn,wavy annular,False,0.2639821581571356
+hellinger,m05q10_001,m06q40_001,churn,wavy annular,False,0.25728570993589855
+hellinger,m05q10_001,m06q80_001,churn,wavy annular,False,0.287574504556111
+hellinger,m05q10_001,m07q80_001,churn,wavy annular,False,0.35683880387963551
+hellinger,m05q10_001,m05q01_001,churn,plug,False,0.27564441167598369
+hellinger,m05q10_001,m06q01_001,churn,plug,False,0.30419053002319341
+hellinger,m05q10_001,m07q05_001,churn,plug,False,0.31910107991543579
+hellinger,m05q10_001,m04q01_001,churn,slug,False,0.26577685267228102
+hellinger,m05q10_001,m05q05_001,churn,slug,False,0.33676081110153766
+hellinger,m05q10_001,m06q05_001,churn,slug,False,0.21331038040612185
+hellinger,m05q10_001,m07q01_001,churn,dispersed bubbles,False,0.26572320513228909
+hellinger,m05q20_001,m05q40_001,churn,churn,True,0.2875044300046341
+hellinger,m05q20_001,m06q10_001,churn,churn,True,0.17114362477166831
+hellinger,m05q20_001,m06q20_001,churn,churn,True,0.25297615915874749
+hellinger,m05q20_001,m07q20_001,churn,churn,True,0.13869903637344208
+hellinger,m05q20_001,m07q40_001,churn,churn,True,0.28448933809107746
+hellinger,m05q20_001,m03q10_001,churn,wavy annular,False,0.25061068545572823
+hellinger,m05q20_001,m03q20_001,churn,wavy annular,False,0.29790723361758259
+hellinger,m05q20_001,m03q40_001,churn,wavy annular,False,0.3198684725012475
+hellinger,m05q20_001,m04q40_001,churn,wavy annular,False,0.21898362646499225
+hellinger,m05q20_001,m04q80_001,churn,wavy annular,False,0.31408943233983239
+hellinger,m05q20_001,m05q80_001,churn,wavy annular,False,0.29269788223550669
+hellinger,m05q20_001,m06q40_001,churn,wavy annular,False,0.28823917730864163
+hellinger,m05q20_001,m06q80_001,churn,wavy annular,False,0.33317004694948393
+hellinger,m05q20_001,m07q80_001,churn,wavy annular,False,0.38117213511095183
+hellinger,m05q20_001,m05q01_001,churn,plug,False,0.30046144600875274
+hellinger,m05q20_001,m06q01_001,churn,plug,False,0.32024458036427117
+hellinger,m05q20_001,m07q05_001,churn,plug,False,0.33224754062393719
+hellinger,m05q20_001,m04q01_001,churn,slug,False,0.31951391694299142
+hellinger,m05q20_001,m05q05_001,churn,slug,False,0.33190161063111323
+hellinger,m05q20_001,m06q05_001,churn,slug,False,0.29388452611138571
+hellinger,m05q20_001,m07q01_001,churn,dispersed bubbles,False,0.2030371996659579
+hellinger,m05q40_001,m06q10_001,churn,churn,True,0.24014971725046577
+hellinger,m05q40_001,m06q20_001,churn,churn,True,0.17437034159104978
+hellinger,m05q40_001,m07q20_001,churn,churn,True,0.30512302999739793
+hellinger,m05q40_001,m07q40_001,churn,churn,True,0.089620597755026149
+hellinger,m05q40_001,m03q10_001,churn,wavy annular,False,0.18981940941428033
+hellinger,m05q40_001,m03q20_001,churn,wavy annular,False,0.17313381254704654
+hellinger,m05q40_001,m03q40_001,churn,wavy annular,False,0.28296160612242438
+hellinger,m05q40_001,m04q40_001,churn,wavy annular,False,0.16656189458879878
+hellinger,m05q40_001,m04q80_001,churn,wavy annular,False,0.13192908791532745
+hellinger,m05q40_001,m05q80_001,churn,wavy annular,False,0.18062235544111918
+hellinger,m05q40_001,m06q40_001,churn,wavy annular,False,0.18755531762191832
+hellinger,m05q40_001,m06q80_001,churn,wavy annular,False,0.19664740158752367
+hellinger,m05q40_001,m07q80_001,churn,wavy annular,False,0.19508922543627888
+hellinger,m05q40_001,m05q01_001,churn,plug,False,0.26975267797731894
+hellinger,m05q40_001,m06q01_001,churn,plug,False,0.18991808190372006
+hellinger,m05q40_001,m07q05_001,churn,plug,False,0.18556239175744413
+hellinger,m05q40_001,m04q01_001,churn,slug,False,0.39402982989129365
+hellinger,m05q40_001,m05q05_001,churn,slug,False,0.3937346111048316
+hellinger,m05q40_001,m06q05_001,churn,slug,False,0.40191422351973721
+hellinger,m05q40_001,m07q01_001,churn,dispersed bubbles,False,0.36313075065345596
+hellinger,m06q10_001,m06q20_001,churn,churn,True,0.23786009642630163
+hellinger,m06q10_001,m07q20_001,churn,churn,True,0.20283365431876724
+hellinger,m06q10_001,m07q40_001,churn,churn,True,0.24101891987961235
+hellinger,m06q10_001,m03q10_001,churn,wavy annular,False,0.24576779254628534
+hellinger,m06q10_001,m03q20_001,churn,wavy annular,False,0.26459561410206722
+hellinger,m06q10_001,m03q40_001,churn,wavy annular,False,0.34112645922128426
+hellinger,m06q10_001,m04q40_001,churn,wavy annular,False,0.15899440669039325
+hellinger,m06q10_001,m04q80_001,churn,wavy annular,False,0.23972143671047916
+hellinger,m06q10_001,m05q80_001,churn,wavy annular,False,0.2242146499544781
+hellinger,m06q10_001,m06q40_001,churn,wavy annular,False,0.21505220274880024
+hellinger,m06q10_001,m06q80_001,churn,wavy annular,False,0.25583958050434452
+hellinger,m06q10_001,m07q80_001,churn,wavy annular,False,0.32902093093846368
+hellinger,m06q10_001,m05q01_001,churn,plug,False,0.28460388311716095
+hellinger,m06q10_001,m06q01_001,churn,plug,False,0.25664125694226797
+hellinger,m06q10_001,m07q05_001,churn,plug,False,0.29574901934361203
+hellinger,m06q10_001,m04q01_001,churn,slug,False,0.30178907931230631
+hellinger,m06q10_001,m05q05_001,churn,slug,False,0.29782015745238083
+hellinger,m06q10_001,m06q05_001,churn,slug,False,0.33221262373613564
+hellinger,m06q10_001,m07q01_001,churn,dispersed bubbles,False,0.30524464074996771
+hellinger,m06q20_001,m07q20_001,churn,churn,True,0.24598649195921585
+hellinger,m06q20_001,m07q40_001,churn,churn,True,0.15472931697052675
+hellinger,m06q20_001,m03q10_001,churn,wavy annular,False,0.15246005627483428
+hellinger,m06q20_001,m03q20_001,churn,wavy annular,False,0.21181850825280552
+hellinger,m06q20_001,m03q40_001,churn,wavy annular,False,0.36849141858976125
+hellinger,m06q20_001,m04q40_001,churn,wavy annular,False,0.18050019736136161
+hellinger,m06q20_001,m04q80_001,churn,wavy annular,False,0.25143289992895868
+hellinger,m06q20_001,m05q80_001,churn,wavy annular,False,0.24766938225490528
+hellinger,m06q20_001,m06q40_001,churn,wavy annular,False,0.13814312984134158
+hellinger,m06q20_001,m06q80_001,churn,wavy annular,False,0.18405558320368809
+hellinger,m06q20_001,m07q80_001,churn,wavy annular,False,0.17034307221553452
+hellinger,m06q20_001,m05q01_001,churn,plug,False,0.17601479439010767
+hellinger,m06q20_001,m06q01_001,churn,plug,False,0.13690968760785463
+hellinger,m06q20_001,m07q05_001,churn,plug,False,0.23802333402739487
+hellinger,m06q20_001,m04q01_001,churn,slug,False,0.32346310354361413
+hellinger,m06q20_001,m05q05_001,churn,slug,False,0.30147040754798832
+hellinger,m06q20_001,m06q05_001,churn,slug,False,0.39300014268813466
+hellinger,m06q20_001,m07q01_001,churn,dispersed bubbles,False,0.39062189780376866
+hellinger,m07q20_001,m07q40_001,churn,churn,True,0.30179327624142777
+hellinger,m07q20_001,m03q10_001,churn,wavy annular,False,0.28683561713439465
+hellinger,m07q20_001,m03q20_001,churn,wavy annular,False,0.31071520862616098
+hellinger,m07q20_001,m03q40_001,churn,wavy annular,False,0.42093728327170127
+hellinger,m07q20_001,m04q40_001,churn,wavy annular,False,0.26356765363931073
+hellinger,m07q20_001,m04q80_001,churn,wavy annular,False,0.36292210384549578
+hellinger,m07q20_001,m05q80_001,churn,wavy annular,False,0.34464210054543815
+hellinger,m07q20_001,m06q40_001,churn,wavy annular,False,0.24706517097772646
+hellinger,m07q20_001,m06q80_001,churn,wavy annular,False,0.31507194998105936
+hellinger,m07q20_001,m07q80_001,churn,wavy annular,False,0.34345533005606788
+hellinger,m07q20_001,m05q01_001,churn,plug,False,0.21418376308437154
+hellinger,m07q20_001,m06q01_001,churn,plug,False,0.27589894962501038
+hellinger,m07q20_001,m07q05_001,churn,plug,False,0.38479299511308873
+hellinger,m07q20_001,m04q01_001,churn,slug,False,0.21023779232647608
+hellinger,m07q20_001,m05q05_001,churn,slug,False,0.23958056924695284
+hellinger,m07q20_001,m06q05_001,churn,slug,False,0.24115050366950289
+hellinger,m07q20_001,m07q01_001,churn,dispersed bubbles,False,0.28303356774219895
+hellinger,m07q40_001,m03q10_001,churn,wavy annular,False,0.15478519148043748
+hellinger,m07q40_001,m03q20_001,churn,wavy annular,False,0.17616396691185413
+hellinger,m07q40_001,m03q40_001,churn,wavy annular,False,0.30288815750234804
+hellinger,m07q40_001,m04q40_001,churn,wavy annular,False,0.14888360244218204
+hellinger,m07q40_001,m04q80_001,churn,wavy annular,False,0.17734202021539755
+hellinger,m07q40_001,m05q80_001,churn,wavy annular,False,0.2005865845615733
+hellinger,m07q40_001,m06q40_001,churn,wavy annular,False,0.16961576703597867
+hellinger,m07q40_001,m06q80_001,churn,wavy annular,False,0.19098148871666656
+hellinger,m07q40_001,m07q80_001,churn,wavy annular,False,0.18021967740165479
+hellinger,m07q40_001,m05q01_001,churn,plug,False,0.26026587687040476
+hellinger,m07q40_001,m06q01_001,churn,plug,False,0.16969284121213762
+hellinger,m07q40_001,m07q05_001,churn,plug,False,0.1822147615315011
+hellinger,m07q40_001,m04q01_001,churn,slug,False,0.39838325913001299
+hellinger,m07q40_001,m05q05_001,churn,slug,False,0.38267840947398368
+hellinger,m07q40_001,m06q05_001,churn,slug,False,0.4180213236676904
+hellinger,m07q40_001,m07q01_001,churn,dispersed bubbles,False,0.37113823516386008
+hellinger,m03q10_001,m03q20_001,wavy annular,wavy annular,True,0.15381732343882945
+hellinger,m03q10_001,m03q40_001,wavy annular,wavy annular,True,0.32288008710777721
+hellinger,m03q10_001,m04q40_001,wavy annular,wavy annular,True,0.13567295894778292
+hellinger,m03q10_001,m04q80_001,wavy annular,wavy annular,True,0.22960022457088011
+hellinger,m03q10_001,m05q80_001,wavy annular,wavy annular,True,0.18397617911905945
+hellinger,m03q10_001,m06q40_001,wavy annular,wavy annular,True,0.20326860323856716
+hellinger,m03q10_001,m06q80_001,wavy annular,wavy annular,True,0.20593305686172952
+hellinger,m03q10_001,m07q80_001,wavy annular,wavy annular,True,0.24176371439534564
+hellinger,m03q10_001,m05q01_001,wavy annular,plug,False,0.26012824972040244
+hellinger,m03q10_001,m06q01_001,wavy annular,plug,False,0.23702765929862635
+hellinger,m03q10_001,m07q05_001,wavy annular,plug,False,0.17348735688903433
+hellinger,m03q10_001,m04q01_001,wavy annular,slug,False,0.37721673247538251
+hellinger,m03q10_001,m05q05_001,wavy annular,slug,False,0.39131102076115082
+hellinger,m03q10_001,m06q05_001,wavy annular,slug,False,0.37573806049502528
+hellinger,m03q10_001,m07q01_001,wavy annular,dispersed bubbles,False,0.37771974568653433
+hellinger,m03q20_001,m03q40_001,wavy annular,wavy annular,True,0.33915657736582894
+hellinger,m03q20_001,m04q40_001,wavy annular,wavy annular,True,0.156819722266404
+hellinger,m03q20_001,m04q80_001,wavy annular,wavy annular,True,0.19750282508045425
+hellinger,m03q20_001,m05q80_001,wavy annular,wavy annular,True,0.13948728426722509
+hellinger,m03q20_001,m06q40_001,wavy annular,wavy annular,True,0.19019584149233759
+hellinger,m03q20_001,m06q80_001,wavy annular,wavy annular,True,0.14521991995306446
+hellinger,m03q20_001,m07q80_001,wavy annular,wavy annular,True,0.23316788992558238
+hellinger,m03q20_001,m05q01_001,wavy annular,plug,False,0.26981632351622897
+hellinger,m03q20_001,m06q01_001,wavy annular,plug,False,0.23759081238378535
+hellinger,m03q20_001,m07q05_001,wavy annular,plug,False,0.1552909155719874
+hellinger,m03q20_001,m04q01_001,wavy annular,slug,False,0.35953723816745703
+hellinger,m03q20_001,m05q05_001,wavy annular,slug,False,0.40983597519032822
+hellinger,m03q20_001,m06q05_001,wavy annular,slug,False,0.34123583128773077
+hellinger,m03q20_001,m07q01_001,wavy annular,dispersed bubbles,False,0.41552958122294126
+hellinger,m03q40_001,m04q40_001,wavy annular,wavy annular,True,0.288181030122033
+hellinger,m03q40_001,m04q80_001,wavy annular,wavy annular,True,0.23958183373778041
+hellinger,m03q40_001,m05q80_001,wavy annular,wavy annular,True,0.2872565534207992
+hellinger,m03q40_001,m06q40_001,wavy annular,wavy annular,True,0.42137487158724207
+hellinger,m03q40_001,m06q80_001,wavy annular,wavy annular,True,0.42011533519495947
+hellinger,m03q40_001,m07q80_001,wavy annular,wavy annular,True,0.45411754335437376
+hellinger,m03q40_001,m05q01_001,wavy annular,plug,False,0.49203794345526403
+hellinger,m03q40_001,m06q01_001,wavy annular,plug,False,0.42853559405672381
+hellinger,m03q40_001,m07q05_001,wavy annular,plug,False,0.26697626516331241
+hellinger,m03q40_001,m04q01_001,wavy annular,slug,False,0.57058441998650733
+hellinger,m03q40_001,m05q05_001,wavy annular,slug,False,0.55656626639094231
+hellinger,m03q40_001,m06q05_001,wavy annular,slug,False,0.5053448407088349
+hellinger,m03q40_001,m07q01_001,wavy annular,dispersed bubbles,False,0.28677114325121361
+hellinger,m04q40_001,m04q80_001,wavy annular,wavy annular,True,0.16825548776053212
+hellinger,m04q40_001,m05q80_001,wavy annular,wavy annular,True,0.13296443935129354
+hellinger,m04q40_001,m06q40_001,wavy annular,wavy annular,True,0.17415798706521077
+hellinger,m04q40_001,m06q80_001,wavy annular,wavy annular,True,0.1861294114907362
+hellinger,m04q40_001,m07q80_001,wavy annular,wavy annular,True,0.26144869853409985
+hellinger,m04q40_001,m05q01_001,wavy annular,plug,False,0.27077436523098297
+hellinger,m04q40_001,m06q01_001,wavy annular,plug,False,0.21387865341276335
+hellinger,m04q40_001,m07q05_001,wavy annular,plug,False,0.18626701217041114
+hellinger,m04q40_001,m04q01_001,wavy annular,slug,False,0.36106347922944171
+hellinger,m04q40_001,m05q05_001,wavy annular,slug,False,0.35456472251747534
+hellinger,m04q40_001,m06q05_001,wavy annular,slug,False,0.35792209507724893
+hellinger,m04q40_001,m07q01_001,wavy annular,dispersed bubbles,False,0.34432980973163868
+hellinger,m04q80_001,m05q80_001,wavy annular,wavy annular,True,0.12466259755232839
+hellinger,m04q80_001,m06q40_001,wavy annular,wavy annular,True,0.25232774629732019
+hellinger,m04q80_001,m06q80_001,wavy annular,wavy annular,True,0.2305758500604006
+hellinger,m04q80_001,m07q80_001,wavy annular,wavy annular,True,0.28108560902030522
+hellinger,m04q80_001,m05q01_001,wavy annular,plug,False,0.35359572974118325
+hellinger,m04q80_001,m06q01_001,wavy annular,plug,False,0.269429430641761
+hellinger,m04q80_001,m07q05_001,wavy annular,plug,False,0.17445402765429177
+hellinger,m04q80_001,m04q01_001,wavy annular,slug,False,0.44132058758431714
+hellinger,m04q80_001,m05q05_001,wavy annular,slug,False,0.44245341667650334
+hellinger,m04q80_001,m06q05_001,wavy annular,slug,False,0.42983481897934644
+hellinger,m04q80_001,m07q01_001,wavy annular,dispersed bubbles,False,0.38481303193546013
+hellinger,m05q80_001,m06q40_001,wavy annular,wavy annular,True,0.23693115387806704
+hellinger,m05q80_001,m06q80_001,wavy annular,wavy annular,True,0.18727152998993116
+hellinger,m05q80_001,m07q80_001,wavy annular,wavy annular,True,0.28998496272874263
+hellinger,m05q80_001,m05q01_001,wavy annular,plug,False,0.33784701021900432
+hellinger,m05q80_001,m06q01_001,wavy annular,plug,False,0.28118870798805962
+hellinger,m05q80_001,m07q05_001,wavy annular,plug,False,0.14635334096714536
+hellinger,m05q80_001,m04q01_001,wavy annular,slug,False,0.4071643250636941
+hellinger,m05q80_001,m05q05_001,wavy annular,slug,False,0.4415372056526955
+hellinger,m05q80_001,m06q05_001,wavy annular,slug,False,0.38596544545553813
+hellinger,m05q80_001,m07q01_001,wavy annular,dispersed bubbles,False,0.40200387239442231
+hellinger,m06q40_001,m06q80_001,wavy annular,wavy annular,True,0.11023399962688357
+hellinger,m06q40_001,m07q80_001,wavy annular,wavy annular,True,0.14146544881256956
+hellinger,m06q40_001,m05q01_001,wavy annular,plug,False,0.14121482366399918
+hellinger,m06q40_001,m06q01_001,wavy annular,plug,False,0.079019601613068285
+hellinger,m06q40_001,m07q05_001,wavy annular,plug,False,0.27000728646784983
+hellinger,m06q40_001,m04q01_001,wavy annular,slug,False,0.26664988639266496
+hellinger,m06q40_001,m05q05_001,wavy annular,slug,False,0.26000181595812938
+hellinger,m06q40_001,m06q05_001,wavy annular,slug,False,0.35493214053815558
+hellinger,m06q40_001,m07q01_001,wavy annular,dispersed bubbles,False,0.43099763335550678
+hellinger,m06q80_001,m07q80_001,wavy annular,wavy annular,True,0.15957388541100059
+hellinger,m06q80_001,m05q01_001,wavy annular,plug,False,0.21965963236612962
+hellinger,m06q80_001,m06q01_001,wavy annular,plug,False,0.15788449441439309
+hellinger,m06q80_001,m07q05_001,wavy annular,plug,False,0.22124452570013681
+hellinger,m06q80_001,m04q01_001,wavy annular,slug,False,0.3139477510565829
+hellinger,m06q80_001,m05q05_001,wavy annular,slug,False,0.34881182613155104
+hellinger,m06q80_001,m06q05_001,wavy annular,slug,False,0.38240125270005143
+hellinger,m06q80_001,m07q01_001,wavy annular,dispersed bubbles,False,0.47907534293619486
+hellinger,m07q80_001,m05q01_001,wavy annular,plug,False,0.18796841130984152
+hellinger,m07q80_001,m06q01_001,wavy annular,plug,False,0.1151494609178795
+hellinger,m07q80_001,m07q05_001,wavy annular,plug,False,0.28964989625985021
+hellinger,m07q80_001,m04q01_001,wavy annular,slug,False,0.35276976394379866
+hellinger,m07q80_001,m05q05_001,wavy annular,slug,False,0.34495297683061316
+hellinger,m07q80_001,m06q05_001,wavy annular,slug,False,0.43519506531424107
+hellinger,m07q80_001,m07q01_001,wavy annular,dispersed bubbles,False,0.4974395357219763
+hellinger,m05q01_001,m06q01_001,plug,plug,True,0.15316125945019202
+hellinger,m05q01_001,m07q05_001,plug,plug,True,0.36842323336045124
+hellinger,m05q01_001,m04q01_001,plug,slug,False,0.2055190742713664
+hellinger,m05q01_001,m05q05_001,plug,slug,False,0.20896267279152847
+hellinger,m05q01_001,m06q05_001,plug,slug,False,0.31143489393846568
+hellinger,m05q01_001,m07q01_001,plug,dispersed bubbles,False,0.43975597507767611
+hellinger,m06q01_001,m07q05_001,plug,plug,True,0.29376389567803007
+hellinger,m06q01_001,m04q01_001,plug,slug,False,0.30798032023220384
+hellinger,m06q01_001,m05q05_001,plug,slug,False,0.26379242854358792
+hellinger,m06q01_001,m06q05_001,plug,slug,False,0.40367348899111433
+hellinger,m06q01_001,m07q01_001,plug,dispersed bubbles,False,0.44410321354522386
+hellinger,m07q05_001,m04q01_001,plug,slug,False,0.46638942029348435
+hellinger,m07q05_001,m05q05_001,plug,slug,False,0.48793241134167759
+hellinger,m07q05_001,m06q05_001,plug,slug,False,0.46318010226067985
+hellinger,m07q05_001,m07q01_001,plug,dispersed bubbles,False,0.42485729092692914
+hellinger,m04q01_001,m05q05_001,slug,slug,True,0.2098390394779798
+hellinger,m04q01_001,m06q05_001,slug,slug,True,0.24774922052078538
+hellinger,m04q01_001,m07q01_001,slug,dispersed bubbles,False,0.47052730834124862
+hellinger,m05q05_001,m06q05_001,slug,slug,True,0.3658747506183429
+hellinger,m05q05_001,m07q01_001,slug,dispersed bubbles,False,0.45600655744664353
+hellinger,m06q05_001,m07q01_001,slug,dispersed bubbles,False,0.38559940872460563
+wasserstein,m03q05_001,m04q10_001,churn,churn,True,0.35045154806876927
+wasserstein,m03q05_001,m04q20_001,churn,churn,True,0.19363652143069149
+wasserstein,m03q05_001,m05q10_001,churn,churn,True,0.27713521085032122
+wasserstein,m03q05_001,m05q20_001,churn,churn,True,0.20126938451787527
+wasserstein,m03q05_001,m05q40_001,churn,churn,True,0.050244824062961796
+wasserstein,m03q05_001,m06q10_001,churn,churn,True,0.14643007598279661
+wasserstein,m03q05_001,m06q20_001,churn,churn,True,0.20897600760382962
+wasserstein,m03q05_001,m07q20_001,churn,churn,True,0.3596880219477876
+wasserstein,m03q05_001,m07q40_001,churn,churn,True,0.095436557305194847
+wasserstein,m03q05_001,m03q10_001,churn,wavy annular,False,0.14567242190601554
+wasserstein,m03q05_001,m03q20_001,churn,wavy annular,False,0.2065943709364203
+wasserstein,m03q05_001,m03q40_001,churn,wavy annular,False,0.49114621483512333
+wasserstein,m03q05_001,m04q40_001,churn,wavy annular,False,0.086883836474289045
+wasserstein,m03q05_001,m04q80_001,churn,wavy annular,False,0.12632380725720027
+wasserstein,m03q05_001,m05q80_001,churn,wavy annular,False,0.14505727339340546
+wasserstein,m03q05_001,m06q40_001,churn,wavy annular,False,0.31943465361602791
+wasserstein,m03q05_001,m06q80_001,churn,wavy annular,False,0.29821559553204746
+wasserstein,m03q05_001,m07q80_001,churn,wavy annular,False,0.3282003915352027
+wasserstein,m03q05_001,m05q01_001,churn,plug,False,0.49381509423816861
+wasserstein,m03q05_001,m06q01_001,churn,plug,False,0.30003131367356428
+wasserstein,m03q05_001,m07q05_001,churn,plug,False,0.14555860929965747
+wasserstein,m03q05_001,m04q01_001,churn,slug,False,0.7679348840127318
+wasserstein,m03q05_001,m05q05_001,churn,slug,False,0.58549590207637636
+wasserstein,m03q05_001,m06q05_001,churn,slug,False,0.69456428715571272
+wasserstein,m03q05_001,m07q01_001,churn,dispersed bubbles,False,0.46398738050772764
+wasserstein,m04q10_001,m04q20_001,churn,churn,True,0.16426032317461808
+wasserstein,m04q10_001,m05q10_001,churn,churn,True,0.26026052231197949
+wasserstein,m04q10_001,m05q20_001,churn,churn,True,0.30332264967635358
+wasserstein,m04q10_001,m05q40_001,churn,churn,True,0.33445580680838072
+wasserstein,m04q10_001,m06q10_001,churn,churn,True,0.230235889393516
+wasserstein,m04q10_001,m06q20_001,churn,churn,True,0.17454482650950914
+wasserstein,m04q10_001,m07q20_001,churn,churn,True,0.11866807536349019
+wasserstein,m04q10_001,m07q40_001,churn,churn,True,0.30129019804781121
+wasserstein,m04q10_001,m03q10_001,churn,wavy annular,False,0.24055436594244528
+wasserstein,m04q10_001,m03q20_001,churn,wavy annular,False,0.25866965048074864
+wasserstein,m04q10_001,m03q40_001,churn,wavy annular,False,0.82335810248658525
+wasserstein,m04q10_001,m04q40_001,churn,wavy annular,False,0.3046323901326467
+wasserstein,m04q10_001,m04q80_001,churn,wavy annular,False,0.45031383329447217
+wasserstein,m04q10_001,m05q80_001,churn,wavy annular,False,0.38400948417449809
+wasserstein,m04q10_001,m06q40_001,churn,wavy annular,False,0.20580901299777443
+wasserstein,m04q10_001,m06q80_001,churn,wavy annular,False,0.28595700239286825
+wasserstein,m04q10_001,m07q80_001,churn,wavy annular,False,0.28270919021807839
+wasserstein,m04q10_001,m05q01_001,churn,plug,False,0.22430049313082992
+wasserstein,m04q10_001,m06q01_001,churn,plug,False,0.21754557600794588
+wasserstein,m04q10_001,m07q05_001,churn,plug,False,0.37795430703542587
+wasserstein,m04q10_001,m04q01_001,churn,slug,False,0.43825720953210462
+wasserstein,m04q10_001,m05q05_001,churn,slug,False,0.27525156434822262
+wasserstein,m04q10_001,m06q05_001,churn,slug,False,0.3648866126750856
+wasserstein,m04q10_001,m07q01_001,churn,dispersed bubbles,False,0.71999267329213701
+wasserstein,m04q20_001,m05q10_001,churn,churn,True,0.18960083823987439
+wasserstein,m04q20_001,m05q20_001,churn,churn,True,0.19268253053482431
+wasserstein,m04q20_001,m05q40_001,churn,churn,True,0.18059502058382149
+wasserstein,m04q20_001,m06q10_001,churn,churn,True,0.1043719759618645
+wasserstein,m04q20_001,m06q20_001,churn,churn,True,0.14308299177366834
+wasserstein,m04q20_001,m07q20_001,churn,churn,True,0.18569806575757836
+wasserstein,m04q20_001,m07q40_001,churn,churn,True,0.17359577855986533
+wasserstein,m04q20_001,m03q10_001,churn,wavy annular,False,0.15248873304252511
+wasserstein,m04q20_001,m03q20_001,churn,wavy annular,False,0.19691166443248001
+wasserstein,m04q20_001,m03q40_001,churn,wavy annular,False,0.67618564736671516
+wasserstein,m04q20_001,m04q40_001,churn,wavy annular,False,0.18533096518329889
+wasserstein,m04q20_001,m04q80_001,churn,wavy annular,False,0.30529434947460588
+wasserstein,m04q20_001,m05q80_001,churn,wavy annular,False,0.25930879681831365
+wasserstein,m04q20_001,m06q40_001,churn,wavy annular,False,0.18232257867750193
+wasserstein,m04q20_001,m06q80_001,churn,wavy annular,False,0.23772567559580576
+wasserstein,m04q20_001,m07q80_001,churn,wavy annular,False,0.26520757540225531
+wasserstein,m04q20_001,m05q01_001,churn,plug,False,0.30790303472463282
+wasserstein,m04q20_001,m06q01_001,churn,plug,False,0.20942745011108616
+wasserstein,m04q20_001,m07q05_001,churn,plug,False,0.25119445627411296
+wasserstein,m04q20_001,m04q01_001,churn,slug,False,0.58289545148113975
+wasserstein,m04q20_001,m05q05_001,churn,slug,False,0.4027505843998137
+wasserstein,m04q20_001,m06q05_001,churn,slug,False,0.50952485462412089
+wasserstein,m04q20_001,m07q01_001,churn,dispersed bubbles,False,0.56194022726252479
+wasserstein,m05q10_001,m05q20_001,churn,churn,True,0.17221370607004161
+wasserstein,m05q10_001,m05q40_001,churn,churn,True,0.27219524204739964
+wasserstein,m05q10_001,m06q10_001,churn,churn,True,0.18015144007119427
+wasserstein,m05q10_001,m06q20_001,churn,churn,True,0.3207896519151705
+wasserstein,m05q10_001,m07q20_001,churn,churn,True,0.15820922487655104
+wasserstein,m05q10_001,m07q40_001,churn,churn,True,0.30144491441027671
+wasserstein,m05q10_001,m03q10_001,churn,wavy annular,False,0.31107137224581022
+wasserstein,m05q10_001,m03q20_001,churn,wavy annular,False,0.28896353188079443
+wasserstein,m05q10_001,m03q40_001,churn,wavy annular,False,0.72650118521148677
+wasserstein,m05q10_001,m04q40_001,churn,wavy annular,False,0.30515409787160214
+wasserstein,m05q10_001,m04q80_001,churn,wavy annular,False,0.37940351227727903
+wasserstein,m05q10_001,m05q80_001,churn,wavy annular,False,0.35149150665143503
+wasserstein,m05q10_001,m06q40_001,churn,wavy annular,False,0.35747353656829539
+wasserstein,m05q10_001,m06q80_001,churn,wavy annular,False,0.3722049803471193
+wasserstein,m05q10_001,m07q80_001,churn,wavy annular,False,0.44924820370232454
+wasserstein,m05q10_001,m05q01_001,churn,plug,False,0.38789991431604892
+wasserstein,m05q10_001,m06q01_001,churn,plug,False,0.39631436643310691
+wasserstein,m05q10_001,m07q05_001,churn,plug,False,0.3806583105995397
+wasserstein,m05q10_001,m04q01_001,churn,slug,False,0.5339358736053178
+wasserstein,m05q10_001,m05q05_001,churn,slug,False,0.5021192587421629
+wasserstein,m05q10_001,m06q05_001,churn,slug,False,0.46056527674829906
+wasserstein,m05q10_001,m07q01_001,churn,dispersed bubbles,False,0.61041998020854227
+wasserstein,m05q20_001,m05q40_001,churn,churn,True,0.22681031033247431
+wasserstein,m05q20_001,m06q10_001,churn,churn,True,0.15075483589763353
+wasserstein,m05q20_001,m06q20_001,churn,churn,True,0.31005302782474736
+wasserstein,m05q20_001,m07q20_001,churn,churn,True,0.25786342645035026
+wasserstein,m05q20_001,m07q40_001,churn,churn,True,0.27501682245797754
+wasserstein,m05q20_001,m03q10_001,churn,wavy annular,False,0.28580181161920032
+wasserstein,m05q20_001,m03q20_001,churn,wavy annular,False,0.30042909258648581
+wasserstein,m05q20_001,m03q40_001,churn,wavy annular,False,0.55605079300196136
+wasserstein,m05q20_001,m04q40_001,churn,wavy annular,False,0.25425699614706415
+wasserstein,m05q20_001,m04q80_001,churn,wavy annular,False,0.29954503330373655
+wasserstein,m05q20_001,m05q80_001,churn,wavy annular,False,0.31558161926695549
+wasserstein,m05q20_001,m06q40_001,churn,wavy annular,False,0.36601081372459149
+wasserstein,m05q20_001,m06q80_001,churn,wavy annular,False,0.38186617237676562
+wasserstein,m05q20_001,m07q80_001,churn,wavy annular,False,0.44789014368593932
+wasserstein,m05q20_001,m05q01_001,churn,plug,False,0.43689522362199201
+wasserstein,m05q20_001,m06q01_001,churn,plug,False,0.40056158218040916
+wasserstein,m05q20_001,m07q05_001,churn,plug,False,0.34439319533226109
+wasserstein,m05q20_001,m04q01_001,churn,slug,False,0.70614957967535941
+wasserstein,m05q20_001,m05q05_001,churn,slug,False,0.54112192582584495
+wasserstein,m05q20_001,m06q05_001,churn,slug,False,0.63277898281834055
+wasserstein,m05q20_001,m07q01_001,churn,dispersed bubbles,False,0.43820627413850061
+wasserstein,m05q40_001,m06q10_001,churn,churn,True,0.12573780433168263
+wasserstein,m05q40_001,m06q20_001,churn,churn,True,0.19333615643606428
+wasserstein,m05q40_001,m07q20_001,churn,churn,True,0.35045015593932571
+wasserstein,m05q40_001,m07q40_001,churn,churn,True,0.05997287871955298
+wasserstein,m05q40_001,m03q10_001,churn,wavy annular,False,0.12751753025766058
+wasserstein,m05q40_001,m03q20_001,churn,wavy annular,False,0.18076992955318777
+wasserstein,m05q40_001,m03q40_001,churn,wavy annular,False,0.51722824121945399
+wasserstein,m05q40_001,m04q40_001,churn,wavy annular,False,0.093162308434278002
+wasserstein,m05q40_001,m04q80_001,churn,wavy annular,False,0.1248324019837925
+wasserstein,m05q40_001,m05q80_001,churn,wavy annular,False,0.13494942019503087
+wasserstein,m05q40_001,m06q40_001,churn,wavy annular,False,0.2944889124515952
+wasserstein,m05q40_001,m06q80_001,churn,wavy annular,False,0.2721335691477168
+wasserstein,m05q40_001,m07q80_001,churn,wavy annular,False,0.30047662775466027
+wasserstein,m05q40_001,m05q01_001,churn,plug,False,0.46716547712298995
+wasserstein,m05q40_001,m06q01_001,churn,plug,False,0.28609063904985432
+wasserstein,m05q40_001,m07q05_001,churn,plug,False,0.12334013034776342
+wasserstein,m05q40_001,m04q01_001,churn,slug,False,0.74185285762840103
+wasserstein,m05q40_001,m05q05_001,churn,slug,False,0.56444345799766693
+wasserstein,m05q40_001,m06q05_001,churn,slug,False,0.66848226077138206
+wasserstein,m05q40_001,m07q01_001,churn,dispersed bubbles,False,0.50778282476006553
+wasserstein,m06q10_001,m06q20_001,churn,churn,True,0.17680911647758818
+wasserstein,m06q10_001,m07q20_001,churn,churn,True,0.25541864856955343
+wasserstein,m06q10_001,m07q40_001,churn,churn,True,0.14775530592397296
+wasserstein,m06q10_001,m03q10_001,churn,wavy annular,False,0.15702546569527925
+wasserstein,m06q10_001,m03q20_001,churn,wavy annular,False,0.18036004172137027
+wasserstein,m06q10_001,m03q40_001,churn,wavy annular,False,0.63757629081791989
+wasserstein,m06q10_001,m04q40_001,churn,wavy annular,False,0.12798055150351123
+wasserstein,m06q10_001,m04q80_001,churn,wavy annular,False,0.22476397784910812
+wasserstein,m06q10_001,m05q80_001,churn,wavy annular,False,0.18197109555381152
+wasserstein,m06q10_001,m06q40_001,churn,wavy annular,False,0.22987069398095294
+wasserstein,m06q10_001,m06q80_001,churn,wavy annular,False,0.2430433254579146
+wasserstein,m06q10_001,m07q80_001,churn,wavy annular,False,0.31443548047439174
+wasserstein,m06q10_001,m05q01_001,churn,plug,False,0.35655450798241412
+wasserstein,m06q10_001,m06q01_001,churn,plug,False,0.26612901837354569
+wasserstein,m06q10_001,m07q05_001,churn,plug,False,0.21631325213123026
+wasserstein,m06q10_001,m04q01_001,churn,slug,False,0.62150480802993502
+wasserstein,m06q10_001,m05q05_001,churn,slug,False,0.45280390205465526
+wasserstein,m06q10_001,m06q05_001,churn,slug,False,0.54813421117291616
+wasserstein,m06q10_001,m07q01_001,churn,dispersed bubbles,False,0.531536833489616
+wasserstein,m06q20_001,m07q20_001,churn,churn,True,0.28165381056982236
+wasserstein,m06q20_001,m07q40_001,churn,churn,True,0.1631730541200978
+wasserstein,m06q20_001,m03q10_001,churn,wavy annular,False,0.11476217417284311
+wasserstein,m06q20_001,m03q20_001,churn,wavy annular,False,0.15869399837040207
+wasserstein,m06q20_001,m03q40_001,churn,wavy annular,False,0.68929819533882741
+wasserstein,m06q20_001,m04q40_001,churn,wavy annular,False,0.16699193693016937
+wasserstein,m06q20_001,m04q80_001,churn,wavy annular,False,0.30260241285130701
+wasserstein,m06q20_001,m05q80_001,churn,wavy annular,False,0.24620210244729984
+wasserstein,m06q20_001,m06q40_001,churn,wavy annular,False,0.12179933839192399
+wasserstein,m06q20_001,m06q80_001,churn,wavy annular,False,0.13843744351422993
+wasserstein,m06q20_001,m07q80_001,churn,wavy annular,False,0.15582987353092917
+wasserstein,m06q20_001,m05q01_001,churn,plug,False,0.29551354819654696
+wasserstein,m06q20_001,m06q01_001,churn,plug,False,0.10925060319011071
+wasserstein,m06q20_001,m07q05_001,churn,plug,False,0.23516240047594869
+wasserstein,m06q20_001,m04q01_001,churn,slug,False,0.57050596495305395
+wasserstein,m06q20_001,m05q05_001,churn,slug,False,0.38806698301669851
+wasserstein,m06q20_001,m06q05_001,churn,slug,False,0.49775083364618244
+wasserstein,m06q20_001,m07q01_001,churn,dispersed bubbles,False,0.62570723999249167
+wasserstein,m07q20_001,m07q40_001,churn,churn,True,0.35909099317850862
+wasserstein,m07q20_001,m03q10_001,churn,wavy annular,False,0.31274623804919721
+wasserstein,m07q20_001,m03q20_001,churn,wavy annular,False,0.30339064469642768
+wasserstein,m07q20_001,m03q40_001,churn,wavy annular,False,0.81117433371696446
+wasserstein,m07q20_001,m04q40_001,churn,wavy annular,False,0.37002921274748229
+wasserstein,m07q20_001,m04q80_001,churn,wavy annular,False,0.46627721018003054
+wasserstein,m07q20_001,m05q80_001,churn,wavy annular,False,0.41731796566215273
+wasserstein,m07q20_001,m06q40_001,churn,wavy annular,False,0.29028936881610268
+wasserstein,m07q20_001,m06q80_001,churn,wavy annular,False,0.35393929563396276
+wasserstein,m07q20_001,m07q80_001,churn,wavy annular,False,0.37319152002149647
+wasserstein,m07q20_001,m05q01_001,churn,plug,False,0.26316498037487979
+wasserstein,m07q20_001,m06q01_001,churn,plug,False,0.31618887795849349
+wasserstein,m07q20_001,m07q05_001,churn,plug,False,0.42540827743278292
+wasserstein,m07q20_001,m04q01_001,churn,slug,False,0.4482861532250092
+wasserstein,m07q20_001,m05q05_001,churn,slug,False,0.3509407952788911
+wasserstein,m07q20_001,m06q05_001,churn,slug,False,0.37491555636799045
+wasserstein,m07q20_001,m07q01_001,churn,dispersed bubbles,False,0.69606970058885076
+wasserstein,m07q40_001,m03q10_001,churn,wavy annular,False,0.10454579097286149
+wasserstein,m07q40_001,m03q20_001,churn,wavy annular,False,0.17840675655015331
+wasserstein,m07q40_001,m03q40_001,churn,wavy annular,False,0.52628463727211705
+wasserstein,m07q40_001,m04q40_001,churn,wavy annular,False,0.090245202099188793
+wasserstein,m07q40_001,m04q80_001,churn,wavy annular,False,0.16044267380847627
+wasserstein,m07q40_001,m05q80_001,churn,wavy annular,False,0.15105350601669784
+wasserstein,m07q40_001,m06q40_001,churn,wavy annular,False,0.28451410154323931
+wasserstein,m07q40_001,m06q80_001,churn,wavy annular,False,0.263501439623685
+wasserstein,m07q40_001,m07q80_001,churn,wavy annular,False,0.28319745234024307
+wasserstein,m07q40_001,m05q01_001,churn,plug,False,0.45822831134786235
+wasserstein,m07q40_001,m06q01_001,churn,plug,False,0.25548262993666448
+wasserstein,m07q40_001,m07q05_001,churn,plug,False,0.10154153913985282
+wasserstein,m07q40_001,m04q01_001,churn,slug,False,0.73322072810436922
+wasserstein,m07q40_001,m05q05_001,churn,slug,False,0.55078174616801379
+wasserstein,m07q40_001,m06q05_001,churn,slug,False,0.65985013124735015
+wasserstein,m07q40_001,m07q01_001,churn,dispersed bubbles,False,0.55007904849469003
+wasserstein,m03q10_001,m03q20_001,wavy annular,wavy annular,True,0.090179134884628587
+wasserstein,m03q10_001,m03q40_001,wavy annular,wavy annular,True,0.61854778074104133
+wasserstein,m03q10_001,m04q40_001,wavy annular,wavy annular,True,0.081651109574316427
+wasserstein,m03q10_001,m04q80_001,wavy annular,wavy annular,True,0.21328412168077573
+wasserstein,m03q10_001,m05q80_001,wavy annular,wavy annular,True,0.14568577157616699
+wasserstein,m03q10_001,m06q40_001,wavy annular,wavy annular,True,0.1931816836379997
+wasserstein,m03q10_001,m06q80_001,wavy annular,wavy annular,True,0.17585566263989497
+wasserstein,m03q10_001,m07q80_001,wavy annular,wavy annular,True,0.23328754323175932
+wasserstein,m03q10_001,m05q01_001,wavy annular,plug,False,0.36690444304159009
+wasserstein,m03q10_001,m06q01_001,wavy annular,plug,False,0.20430027852736229
+wasserstein,m03q10_001,m07q05_001,wavy annular,plug,False,0.16377758509728663
+wasserstein,m03q10_001,m04q01_001,wavy annular,slug,False,0.64188831019912962
+wasserstein,m03q10_001,m05q05_001,wavy annular,slug,False,0.46012845848587947
+wasserstein,m03q10_001,m06q05_001,wavy annular,slug,False,0.5685426682377579
+wasserstein,m03q10_001,m07q01_001,wavy annular,dispersed bubbles,False,0.55109915349426586
+wasserstein,m03q20_001,m03q40_001,wavy annular,wavy annular,True,0.69774058577154363
+wasserstein,m03q20_001,m04q40_001,wavy annular,wavy annular,True,0.14846260457001009
+wasserstein,m03q20_001,m04q80_001,wavy annular,wavy annular,True,0.26120221926317516
+wasserstein,m03q20_001,m05q80_001,wavy annular,wavy annular,True,0.16732459586896262
+wasserstein,m03q20_001,m06q40_001,wavy annular,wavy annular,True,0.17873702050138993
+wasserstein,m03q20_001,m06q80_001,wavy annular,wavy annular,True,0.1382576059338792
+wasserstein,m03q20_001,m07q80_001,wavy annular,wavy annular,True,0.23296901013745169
+wasserstein,m03q20_001,m05q01_001,wavy annular,plug,False,0.30536456967425063
+wasserstein,m03q20_001,m06q01_001,wavy annular,plug,False,0.20645063796621829
+wasserstein,m03q20_001,m07q05_001,wavy annular,plug,False,0.23076025471679781
+wasserstein,m03q20_001,m04q01_001,wavy annular,slug,False,0.56134051307631139
+wasserstein,m03q20_001,m05q05_001,wavy annular,slug,False,0.42404901128848482
+wasserstein,m03q20_001,m06q05_001,wavy annular,slug,False,0.49089218622030756
+wasserstein,m03q20_001,m07q01_001,wavy annular,dispersed bubbles,False,0.60570225826479751
+wasserstein,m03q40_001,m04q40_001,wavy annular,wavy annular,True,0.55005388355743545
+wasserstein,m03q40_001,m04q80_001,wavy annular,wavy annular,True,0.43769795757248009
+wasserstein,m03q40_001,m05q80_001,wavy annular,wavy annular,True,0.53735265398917942
+wasserstein,m03q40_001,m06q40_001,wavy annular,wavy annular,True,0.81037447228672521
+wasserstein,m03q40_001,m06q80_001,wavy annular,wavy annular,True,0.78936181036717079
+wasserstein,m03q40_001,m07q80_001,wavy annular,wavy annular,True,0.80905782308372887
+wasserstein,m03q40_001,m05q01_001,wavy annular,plug,False,0.98408868209134814
+wasserstein,m03q40_001,m06q01_001,wavy annular,plug,False,0.78134300068015028
+wasserstein,m03q40_001,m07q05_001,wavy annular,plug,False,0.46698033105474579
+wasserstein,m03q40_001,m04q01_001,wavy annular,slug,False,1.2590810988478549
+wasserstein,m03q40_001,m05q05_001,wavy annular,slug,False,1.0766421169114997
+wasserstein,m03q40_001,m06q05_001,wavy annular,slug,False,1.1857105019908363
+wasserstein,m03q40_001,m07q01_001,wavy annular,dispersed bubbles,False,0.27668606946395785
+wasserstein,m04q40_001,m04q80_001,wavy annular,wavy annular,True,0.15118507686376759
+wasserstein,m04q40_001,m05q80_001,wavy annular,wavy annular,True,0.096032380206432871
+wasserstein,m04q40_001,m06q40_001,wavy annular,wavy annular,True,0.2603205887292897
+wasserstein,m04q40_001,m06q80_001,wavy annular,wavy annular,True,0.23930792680973537
+wasserstein,m04q40_001,m07q80_001,wavy annular,wavy annular,True,0.28617472665658111
+wasserstein,m04q40_001,m05q01_001,wavy annular,plug,False,0.43403479853391269
+wasserstein,m04q40_001,m06q01_001,wavy annular,plug,False,0.24669901904285058
+wasserstein,m04q40_001,m07q05_001,wavy annular,plug,False,0.12618433127158712
+wasserstein,m04q40_001,m04q01_001,wavy annular,slug,False,0.70902721529041957
+wasserstein,m04q40_001,m05q05_001,wavy annular,slug,False,0.52658823335406413
+wasserstein,m04q40_001,m06q05_001,wavy annular,slug,False,0.63565723062801371
+wasserstein,m04q40_001,m07q01_001,wavy annular,dispersed bubbles,False,0.49987772464279506
+wasserstein,m04q80_001,m05q80_001,wavy annular,wavy annular,True,0.10552399586930991
+wasserstein,m04q80_001,m06q40_001,wavy annular,wavy annular,True,0.38450158582824095
+wasserstein,m04q80_001,m06q80_001,wavy annular,wavy annular,True,0.3519700418211375
+wasserstein,m04q80_001,m07q80_001,wavy annular,wavy annular,True,0.39238588151394388
+wasserstein,m04q80_001,m05q01_001,wavy annular,plug,False,0.55821572154409771
+wasserstein,m04q80_001,m06q01_001,wavy annular,plug,False,0.37643862954873664
+wasserstein,m04q80_001,m07q05_001,wavy annular,plug,False,0.1335379594031757
+wasserstein,m04q80_001,m04q01_001,wavy annular,slug,False,0.82138314127537504
+wasserstein,m04q80_001,m05q05_001,wavy annular,slug,False,0.65088972298599912
+wasserstein,m04q80_001,m06q05_001,wavy annular,slug,False,0.74908645115612726
+wasserstein,m04q80_001,m07q01_001,wavy annular,dispersed bubbles,False,0.46894390925422619
+wasserstein,m05q80_001,m06q40_001,wavy annular,wavy annular,True,0.2920864733470202
+wasserstein,m05q80_001,m06q80_001,wavy annular,wavy annular,True,0.25200915637799132
+wasserstein,m05q80_001,m07q80_001,wavy annular,wavy annular,True,0.31538114778245585
+wasserstein,m05q80_001,m05q01_001,wavy annular,plug,False,0.46094642905337491
+wasserstein,m05q80_001,m06q01_001,wavy annular,plug,False,0.30448731898482229
+wasserstein,m05q80_001,m07q05_001,wavy annular,plug,False,0.11800192326134692
+wasserstein,m05q80_001,m04q01_001,wavy annular,slug,False,0.7217284448586756
+wasserstein,m05q80_001,m05q05_001,wavy annular,slug,False,0.5581473359394753
+wasserstein,m05q80_001,m06q05_001,wavy annular,slug,False,0.65658421645574416
+wasserstein,m05q80_001,m07q01_001,wavy annular,dispersed bubbles,False,0.52620748770945758
+wasserstein,m06q40_001,m06q80_001,wavy annular,wavy annular,True,0.094326123917799348
+wasserstein,m06q40_001,m07q80_001,wavy annular,wavy annular,True,0.092313640023435478
+wasserstein,m06q40_001,m05q01_001,wavy annular,plug,False,0.18004207093787178
+wasserstein,m06q40_001,m06q01_001,wavy annular,plug,False,0.060007488972970716
+wasserstein,m06q40_001,m07q05_001,wavy annular,plug,False,0.34348481144046156
+wasserstein,m06q40_001,m04q01_001,wavy annular,slug,False,0.44870662656112997
+wasserstein,m06q40_001,m05q05_001,wavy annular,slug,False,0.2702764783270738
+wasserstein,m06q40_001,m06q05_001,wavy annular,slug,False,0.44350048922752694
+wasserstein,m06q40_001,m07q01_001,wavy annular,dispersed bubbles,False,0.71297647314003076
+wasserstein,m06q80_001,m07q80_001,wavy annular,wavy annular,True,0.11344933623315911
+wasserstein,m06q80_001,m05q01_001,wavy annular,plug,False,0.24045167353692698
+wasserstein,m06q80_001,m06q01_001,wavy annular,plug,False,0.13130623965758326
+wasserstein,m06q80_001,m07q05_001,wavy annular,plug,False,0.322381479312425
+wasserstein,m06q80_001,m04q01_001,wavy annular,slug,False,0.47539466449343531
+wasserstein,m06q80_001,m05q05_001,wavy annular,slug,False,0.33279953080188973
+wasserstein,m06q80_001,m06q05_001,wavy annular,slug,False,0.51097386395841182
+wasserstein,m06q80_001,m07q01_001,wavy annular,dispersed bubbles,False,0.70754192428519536
+wasserstein,m07q80_001,m05q01_001,wavy annular,plug,False,0.19200105947805429
+wasserstein,m07q80_001,m06q01_001,wavy annular,plug,False,0.074442030253537544
+wasserstein,m07q80_001,m07q05_001,wavy annular,plug,False,0.34800508630659688
+wasserstein,m07q80_001,m04q01_001,wavy annular,slug,False,0.45156324955520893
+wasserstein,m07q80_001,m05q05_001,wavy annular,slug,False,0.27769591291664619
+wasserstein,m07q80_001,m06q05_001,wavy annular,slug,False,0.50636548602064524
+wasserstein,m07q80_001,m07q01_001,wavy annular,dispersed bubbles,False,0.77075796510679351
+wasserstein,m05q01_001,m06q01_001,plug,plug,True,0.20289408150278571
+wasserstein,m05q01_001,m07q05_001,plug,plug,True,0.51799678458287779
+wasserstein,m05q01_001,m04q01_001,plug,slug,False,0.27499241675650699
+wasserstein,m05q01_001,m05q05_001,plug,slug,False,0.13913862319668627
+wasserstein,m05q01_001,m06q05_001,plug,slug,False,0.36583607458762518
+wasserstein,m05q01_001,m07q01_001,plug,dispersed bubbles,False,0.86936343705735308
+wasserstein,m06q01_001,m07q05_001,plug,plug,True,0.32152093779950763
+wasserstein,m06q01_001,m04q01_001,plug,slug,False,0.47773809816770463
+wasserstein,m06q01_001,m05q05_001,plug,slug,False,0.2952991162313493
+wasserstein,m06q01_001,m06q05_001,plug,slug,False,0.45939366299538953
+wasserstein,m06q01_001,m07q01_001,plug,dispersed bubbles,False,0.73319721829476558
+wasserstein,m07q05_001,m04q01_001,plug,slug,False,0.79210076779310912
+wasserstein,m07q05_001,m05q05_001,plug,slug,False,0.60966178585675379
+wasserstein,m07q05_001,m06q05_001,plug,slug,False,0.7187301709360906
+wasserstein,m07q05_001,m07q01_001,plug,dispersed bubbles,False,0.56037817593906802
+wasserstein,m04q01_001,m05q05_001,slug,slug,True,0.18700539456248899
+wasserstein,m04q01_001,m06q05_001,slug,slug,True,0.24603242281422444
+wasserstein,m04q01_001,m07q01_001,slug,dispersed bubbles,False,1.1443558538138601
+wasserstein,m05q05_001,m06q05_001,slug,slug,True,0.37384494876864849
+wasserstein,m05q05_001,m07q01_001,slug,dispersed bubbles,False,0.96191687187750463
+wasserstein,m06q05_001,m07q01_001,slug,dispersed bubbles,False,1.0709852569568412

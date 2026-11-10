@@ -1,0 +1,457 @@
+anchor_id,aquisicao,padrao,tipo,alternativa,distancia_candidato,distancia_selecionado,candidato_em_64,selecionado_em_64,selecionado_em_16,numero_selecionados_tipo
+m03q05_001_MIN02256,m03q05_001,churn,minimo,sigma12,2.0,613.0,True,False,False,4
+m03q05_001_MIN04139,m03q05_001,churn,minimo,sigma12,2.0,2.0,True,True,True,4
+m03q05_001_MIN05320,m03q05_001,churn,minimo,sigma12,1.0,1.0,True,True,True,4
+m03q05_001_MIN07932,m03q05_001,churn,minimo,sigma12,1.0,1.0,True,True,True,4
+m03q05_001_MAX01637,m03q05_001,churn,maximo,sigma12,5.0,5.0,True,True,True,4
+m03q05_001_MAX04588,m03q05_001,churn,maximo,sigma12,3.0,680.0,True,False,False,4
+m03q05_001_MAX06048,m03q05_001,churn,maximo,sigma12,3.0,3.0,True,True,True,4
+m03q05_001_MAX06763,m03q05_001,churn,maximo,sigma12,2.0,718.0,True,False,False,4
+m03q05_001_MIN02256,m03q05_001,churn,minimo,sigma20,1.0,1.0,True,True,True,4
+m03q05_001_MIN04139,m03q05_001,churn,minimo,sigma20,1.0,1.0,True,True,True,4
+m03q05_001_MIN05320,m03q05_001,churn,minimo,sigma20,1.0,1.0,True,True,True,4
+m03q05_001_MIN07932,m03q05_001,churn,minimo,sigma20,1.0,1.0,True,True,True,4
+m03q05_001_MAX01637,m03q05_001,churn,maximo,sigma20,3.0,3.0,True,True,True,4
+m03q05_001_MAX04588,m03q05_001,churn,maximo,sigma20,3.0,681.0,True,False,False,4
+m03q05_001_MAX06048,m03q05_001,churn,maximo,sigma20,2.0,2.0,True,True,True,4
+m03q05_001_MAX06763,m03q05_001,churn,maximo,sigma20,0.0,0.0,True,True,True,4
+m03q05_001_MIN02256,m03q05_001,churn,minimo,faixa30_49,8.0,624.0,True,False,False,4
+m03q05_001_MIN04139,m03q05_001,churn,minimo,faixa30_49,5.0,5.0,True,True,True,4
+m03q05_001_MIN05320,m03q05_001,churn,minimo,faixa30_49,14.0,935.0,True,False,False,4
+m03q05_001_MIN07932,m03q05_001,churn,minimo,faixa30_49,6.0,6.0,True,True,True,4
+m03q05_001_MAX01637,m03q05_001,churn,maximo,faixa30_49,9.0,1049.0,True,False,False,4
+m03q05_001_MAX04588,m03q05_001,churn,maximo,faixa30_49,8.0,676.0,True,False,False,4
+m03q05_001_MAX06048,m03q05_001,churn,maximo,faixa30_49,6.0,390.0,True,False,False,4
+m03q05_001_MAX06763,m03q05_001,churn,maximo,faixa30_49,3.0,325.0,True,False,False,4
+m03q10_001_MIN03119,m03q10_001,wavy annular,minimo,sigma12,0.0,0.0,True,True,True,4
+m03q10_001_MIN06333,m03q10_001,wavy annular,minimo,sigma12,0.0,0.0,True,True,True,4
+m03q10_001_MIN09444,m03q10_001,wavy annular,minimo,sigma12,0.0,0.0,True,True,True,4
+m03q10_001_MIN11566,m03q10_001,wavy annular,minimo,sigma12,2.0,2.0,True,True,True,4
+m03q10_001_MAX02837,m03q10_001,wavy annular,maximo,sigma12,0.0,0.0,True,True,True,4
+m03q10_001_MAX04399,m03q10_001,wavy annular,maximo,sigma12,4.0,606.0,True,False,False,4
+m03q10_001_MAX09718,m03q10_001,wavy annular,maximo,sigma12,3.0,3.0,True,True,True,4
+m03q10_001_MAX12844,m03q10_001,wavy annular,maximo,sigma12,1.0,1.0,True,True,True,4
+m03q10_001_MIN03119,m03q10_001,wavy annular,minimo,sigma20,0.0,803.0,True,False,False,4
+m03q10_001_MIN06333,m03q10_001,wavy annular,minimo,sigma20,1.0,1.0,True,True,True,4
+m03q10_001_MIN09444,m03q10_001,wavy annular,minimo,sigma20,1.0,523.0,True,False,False,4
+m03q10_001_MIN11566,m03q10_001,wavy annular,minimo,sigma20,0.0,607.0,True,False,False,4
+m03q10_001_MAX02837,m03q10_001,wavy annular,maximo,sigma20,1.0,1.0,True,True,True,4
+m03q10_001_MAX04399,m03q10_001,wavy annular,maximo,sigma20,1.0,1.0,True,True,True,4
+m03q10_001_MAX09718,m03q10_001,wavy annular,maximo,sigma20,2.0,2.0,True,True,True,4
+m03q10_001_MAX12844,m03q10_001,wavy annular,maximo,sigma20,1.0,2280.0,True,False,False,4
+m03q10_001_MIN03119,m03q10_001,wavy annular,minimo,faixa30_49,4.0,4.0,True,True,True,4
+m03q10_001_MIN06333,m03q10_001,wavy annular,minimo,faixa30_49,2.0,2.0,True,True,True,4
+m03q10_001_MIN09444,m03q10_001,wavy annular,minimo,faixa30_49,2.0,2.0,True,True,True,4
+m03q10_001_MIN11566,m03q10_001,wavy annular,minimo,faixa30_49,0.0,603.0,True,False,False,4
+m03q10_001_MAX02837,m03q10_001,wavy annular,maximo,faixa30_49,3.0,3.0,True,True,True,4
+m03q10_001_MAX04399,m03q10_001,wavy annular,maximo,faixa30_49,1.0,1.0,True,True,True,4
+m03q10_001_MAX09718,m03q10_001,wavy annular,maximo,faixa30_49,3.0,3.0,True,True,True,4
+m03q10_001_MAX12844,m03q10_001,wavy annular,maximo,faixa30_49,7.0,2176.0,True,False,False,4
+m03q20_001_MIN04441,m03q20_001,wavy annular,minimo,sigma12,0.0,0.0,True,True,True,4
+m03q20_001_MIN06981,m03q20_001,wavy annular,minimo,sigma12,0.0,2540.0,True,False,False,4
+m03q20_001_MIN16662,m03q20_001,wavy annular,minimo,sigma12,1.0,1.0,True,True,True,4
+m03q20_001_MIN18525,m03q20_001,wavy annular,minimo,sigma12,2.0,2.0,True,True,True,4
+m03q20_001_MAX02272,m03q20_001,wavy annular,maximo,sigma12,4.0,4.0,True,True,True,4
+m03q20_001_MAX11397,m03q20_001,wavy annular,maximo,sigma12,2.0,2.0,True,True,True,4
+m03q20_001_MAX12820,m03q20_001,wavy annular,maximo,sigma12,1.0,1.0,True,True,True,4
+m03q20_001_MAX20056,m03q20_001,wavy annular,maximo,sigma12,2.0,2.0,True,True,True,4
+m03q20_001_MIN04441,m03q20_001,wavy annular,minimo,sigma20,0.0,0.0,True,True,True,4
+m03q20_001_MIN06981,m03q20_001,wavy annular,minimo,sigma20,1.0,1.0,True,True,True,4
+m03q20_001_MIN16662,m03q20_001,wavy annular,minimo,sigma20,1.0,1.0,True,True,True,4
+m03q20_001_MIN18525,m03q20_001,wavy annular,minimo,sigma20,1.0,1.0,True,True,True,4
+m03q20_001_MAX02272,m03q20_001,wavy annular,maximo,sigma20,8.0,8.0,True,True,True,4
+m03q20_001_MAX11397,m03q20_001,wavy annular,maximo,sigma20,3.0,3.0,True,True,True,4
+m03q20_001_MAX12820,m03q20_001,wavy annular,maximo,sigma20,0.0,1420.0,True,False,False,4
+m03q20_001_MAX20056,m03q20_001,wavy annular,maximo,sigma20,1.0,1.0,True,True,True,4
+m03q20_001_MIN04441,m03q20_001,wavy annular,minimo,faixa30_49,3.0,3.0,True,True,True,4
+m03q20_001_MIN06981,m03q20_001,wavy annular,minimo,faixa30_49,3.0,3.0,True,True,True,4
+m03q20_001_MIN16662,m03q20_001,wavy annular,minimo,faixa30_49,1.0,1.0,True,True,True,4
+m03q20_001_MIN18525,m03q20_001,wavy annular,minimo,faixa30_49,2.0,2.0,True,True,True,4
+m03q20_001_MAX02272,m03q20_001,wavy annular,maximo,faixa30_49,43.0,1312.0,True,False,False,4
+m03q20_001_MAX11397,m03q20_001,wavy annular,maximo,faixa30_49,2.0,3734.0,True,False,False,4
+m03q20_001_MAX12820,m03q20_001,wavy annular,maximo,faixa30_49,3.0,3465.0,True,False,False,4
+m03q20_001_MAX20056,m03q20_001,wavy annular,maximo,faixa30_49,1.0,1.0,True,True,True,4
+m03q40_001_MIN04674,m03q40_001,wavy annular,minimo,sigma12,1.0,1.0,True,True,True,4
+m03q40_001_MIN05963,m03q40_001,wavy annular,minimo,sigma12,0.0,0.0,True,True,True,4
+m03q40_001_MIN11036,m03q40_001,wavy annular,minimo,sigma12,0.0,0.0,True,True,True,4
+m03q40_001_MIN16595,m03q40_001,wavy annular,minimo,sigma12,0.0,0.0,True,True,True,4
+m03q40_001_MAX02744,m03q40_001,wavy annular,maximo,sigma12,3.0,3.0,True,True,True,4
+m03q40_001_MAX06030,m03q40_001,wavy annular,maximo,sigma12,7.0,7.0,True,True,True,4
+m03q40_001_MAX11095,m03q40_001,wavy annular,maximo,sigma12,5.0,5.0,True,True,True,4
+m03q40_001_MAX16657,m03q40_001,wavy annular,maximo,sigma12,2.0,2.0,True,True,True,4
+m03q40_001_MIN04674,m03q40_001,wavy annular,minimo,sigma20,1.0,1.0,True,True,True,4
+m03q40_001_MIN05963,m03q40_001,wavy annular,minimo,sigma20,1.0,1.0,True,True,True,4
+m03q40_001_MIN11036,m03q40_001,wavy annular,minimo,sigma20,1.0,1.0,True,True,True,4
+m03q40_001_MIN16595,m03q40_001,wavy annular,minimo,sigma20,1.0,1.0,True,True,True,4
+m03q40_001_MAX02744,m03q40_001,wavy annular,maximo,sigma20,5.0,5.0,True,True,True,4
+m03q40_001_MAX06030,m03q40_001,wavy annular,maximo,sigma20,7.0,7.0,True,True,True,4
+m03q40_001_MAX11095,m03q40_001,wavy annular,maximo,sigma20,8.0,8.0,True,True,True,4
+m03q40_001_MAX16657,m03q40_001,wavy annular,maximo,sigma20,5.0,5.0,True,True,True,4
+m03q40_001_MIN04674,m03q40_001,wavy annular,minimo,faixa30_49,4.0,4.0,True,True,True,4
+m03q40_001_MIN05963,m03q40_001,wavy annular,minimo,faixa30_49,2.0,2.0,True,True,True,4
+m03q40_001_MIN11036,m03q40_001,wavy annular,minimo,faixa30_49,2.0,2.0,True,True,True,4
+m03q40_001_MIN16595,m03q40_001,wavy annular,minimo,faixa30_49,3.0,3.0,True,True,True,4
+m03q40_001_MAX02744,m03q40_001,wavy annular,maximo,faixa30_49,4.0,4.0,True,True,True,4
+m03q40_001_MAX06030,m03q40_001,wavy annular,maximo,faixa30_49,259.0,596.0,False,False,False,4
+m03q40_001_MAX11095,m03q40_001,wavy annular,maximo,faixa30_49,44.0,392.0,True,False,False,4
+m03q40_001_MAX16657,m03q40_001,wavy annular,maximo,faixa30_49,287.0,287.0,False,False,False,4
+m04q10_001_MIN02128,m04q10_001,churn,minimo,sigma12,1.0,1.0,True,True,True,4
+m04q10_001_MIN03417,m04q10_001,churn,minimo,sigma12,1.0,1.0,True,True,True,4
+m04q10_001_MIN05260,m04q10_001,churn,minimo,sigma12,11.0,771.0,True,False,False,4
+m04q10_001_MIN06926,m04q10_001,churn,minimo,sigma12,1.0,1.0,True,True,True,4
+m04q10_001_MAX02207,m04q10_001,churn,maximo,sigma12,2.0,2.0,True,True,True,4
+m04q10_001_MAX03188,m04q10_001,churn,maximo,sigma12,1.0,1.0,True,True,True,4
+m04q10_001_MAX06027,m04q10_001,churn,maximo,sigma12,7.0,7.0,True,True,True,4
+m04q10_001_MAX06807,m04q10_001,churn,maximo,sigma12,5.0,5.0,True,True,True,4
+m04q10_001_MIN02128,m04q10_001,churn,minimo,sigma20,0.0,0.0,True,True,True,4
+m04q10_001_MIN03417,m04q10_001,churn,minimo,sigma20,0.0,519.0,True,False,False,4
+m04q10_001_MIN05260,m04q10_001,churn,minimo,sigma20,5.0,5.0,True,True,True,4
+m04q10_001_MIN06926,m04q10_001,churn,minimo,sigma20,1.0,1.0,True,True,True,4
+m04q10_001_MAX02207,m04q10_001,churn,maximo,sigma20,3.0,613.0,True,False,False,4
+m04q10_001_MAX03188,m04q10_001,churn,maximo,sigma20,1.0,1.0,True,True,True,4
+m04q10_001_MAX06027,m04q10_001,churn,maximo,sigma20,0.0,0.0,True,True,True,4
+m04q10_001_MAX06807,m04q10_001,churn,maximo,sigma20,7.0,7.0,True,True,True,4
+m04q10_001_MIN02128,m04q10_001,churn,minimo,faixa30_49,17.0,17.0,True,True,False,4
+m04q10_001_MIN03417,m04q10_001,churn,minimo,faixa30_49,14.0,14.0,True,True,True,4
+m04q10_001_MIN05260,m04q10_001,churn,minimo,faixa30_49,25.0,756.0,True,False,False,4
+m04q10_001_MIN06926,m04q10_001,churn,minimo,faixa30_49,7.0,7.0,True,True,True,4
+m04q10_001_MAX02207,m04q10_001,churn,maximo,faixa30_49,2.0,405.0,True,False,False,4
+m04q10_001_MAX03188,m04q10_001,churn,maximo,faixa30_49,8.0,8.0,True,True,True,4
+m04q10_001_MAX06027,m04q10_001,churn,maximo,faixa30_49,133.0,821.0,False,False,False,4
+m04q10_001_MAX06807,m04q10_001,churn,maximo,faixa30_49,41.0,41.0,True,True,False,4
+m04q20_001_MIN02009,m04q20_001,churn,minimo,sigma12,4.0,4.0,True,True,True,4
+m04q20_001_MIN04412,m04q20_001,churn,minimo,sigma12,2.0,2.0,True,True,True,4
+m04q20_001_MIN05074,m04q20_001,churn,minimo,sigma12,0.0,0.0,True,True,True,4
+m04q20_001_MIN07324,m04q20_001,churn,minimo,sigma12,0.0,0.0,True,True,True,4
+m04q20_001_MAX02318,m04q20_001,churn,maximo,sigma12,1.0,1.0,True,True,True,4
+m04q20_001_MAX03001,m04q20_001,churn,maximo,sigma12,1.0,1.0,True,True,True,4
+m04q20_001_MAX04719,m04q20_001,churn,maximo,sigma12,2.0,2.0,True,True,True,4
+m04q20_001_MAX07029,m04q20_001,churn,maximo,sigma12,0.0,0.0,True,True,True,4
+m04q20_001_MIN02009,m04q20_001,churn,minimo,sigma20,3.0,3.0,True,True,True,4
+m04q20_001_MIN04412,m04q20_001,churn,minimo,sigma20,3.0,3.0,True,True,True,4
+m04q20_001_MIN05074,m04q20_001,churn,minimo,sigma20,1.0,1.0,True,True,True,4
+m04q20_001_MIN07324,m04q20_001,churn,minimo,sigma20,1.0,1.0,True,True,True,4
+m04q20_001_MAX02318,m04q20_001,churn,maximo,sigma20,0.0,0.0,True,True,True,4
+m04q20_001_MAX03001,m04q20_001,churn,maximo,sigma20,1.0,1.0,True,True,True,4
+m04q20_001_MAX04719,m04q20_001,churn,maximo,sigma20,1.0,1.0,True,True,True,4
+m04q20_001_MAX07029,m04q20_001,churn,maximo,sigma20,0.0,0.0,True,True,True,4
+m04q20_001_MIN02009,m04q20_001,churn,minimo,faixa30_49,6.0,6.0,True,True,True,4
+m04q20_001_MIN04412,m04q20_001,churn,minimo,faixa30_49,9.0,9.0,True,True,True,4
+m04q20_001_MIN05074,m04q20_001,churn,minimo,faixa30_49,11.0,11.0,True,True,True,4
+m04q20_001_MIN07324,m04q20_001,churn,minimo,faixa30_49,8.0,8.0,True,True,True,4
+m04q20_001_MAX02318,m04q20_001,churn,maximo,faixa30_49,159.0,159.0,False,False,False,4
+m04q20_001_MAX03001,m04q20_001,churn,maximo,faixa30_49,6.0,6.0,True,True,True,4
+m04q20_001_MAX04719,m04q20_001,churn,maximo,faixa30_49,0.0,0.0,True,True,True,4
+m04q20_001_MAX07029,m04q20_001,churn,maximo,faixa30_49,2.0,131.0,True,False,False,4
+m04q40_001_MIN02099,m04q40_001,wavy annular,minimo,sigma12,1.0,1.0,True,True,True,4
+m04q40_001_MIN06700,m04q40_001,wavy annular,minimo,sigma12,2.0,2.0,True,True,True,4
+m04q40_001_MIN08529,m04q40_001,wavy annular,minimo,sigma12,0.0,0.0,True,True,True,4
+m04q40_001_MIN13597,m04q40_001,wavy annular,minimo,sigma12,0.0,0.0,True,True,True,4
+m04q40_001_MAX04135,m04q40_001,wavy annular,maximo,sigma12,3.0,3.0,True,True,True,4
+m04q40_001_MAX06827,m04q40_001,wavy annular,maximo,sigma12,0.0,0.0,True,True,True,4
+m04q40_001_MAX08123,m04q40_001,wavy annular,maximo,sigma12,0.0,0.0,True,True,True,4
+m04q40_001_MAX13703,m04q40_001,wavy annular,maximo,sigma12,2.0,2.0,True,True,True,4
+m04q40_001_MIN02099,m04q40_001,wavy annular,minimo,sigma20,0.0,0.0,True,True,True,4
+m04q40_001_MIN06700,m04q40_001,wavy annular,minimo,sigma20,3.0,3.0,True,True,True,4
+m04q40_001_MIN08529,m04q40_001,wavy annular,minimo,sigma20,1.0,1.0,True,True,True,4
+m04q40_001_MIN13597,m04q40_001,wavy annular,minimo,sigma20,0.0,0.0,True,True,True,4
+m04q40_001_MAX04135,m04q40_001,wavy annular,maximo,sigma20,0.0,0.0,True,True,True,4
+m04q40_001_MAX06827,m04q40_001,wavy annular,maximo,sigma20,0.0,0.0,True,True,True,4
+m04q40_001_MAX08123,m04q40_001,wavy annular,maximo,sigma20,1.0,1.0,True,True,True,4
+m04q40_001_MAX13703,m04q40_001,wavy annular,maximo,sigma20,4.0,299.0,True,False,False,4
+m04q40_001_MIN02099,m04q40_001,wavy annular,minimo,faixa30_49,2.0,2.0,True,True,True,4
+m04q40_001_MIN06700,m04q40_001,wavy annular,minimo,faixa30_49,2.0,2.0,True,True,True,4
+m04q40_001_MIN08529,m04q40_001,wavy annular,minimo,faixa30_49,3.0,565.0,True,False,False,4
+m04q40_001_MIN13597,m04q40_001,wavy annular,minimo,faixa30_49,2.0,2.0,True,True,True,4
+m04q40_001_MAX04135,m04q40_001,wavy annular,maximo,faixa30_49,19.0,1803.0,True,False,False,4
+m04q40_001_MAX06827,m04q40_001,wavy annular,maximo,faixa30_49,97.0,97.0,False,False,False,4
+m04q40_001_MAX08123,m04q40_001,wavy annular,maximo,faixa30_49,5.0,5.0,True,True,True,4
+m04q40_001_MAX13703,m04q40_001,wavy annular,maximo,faixa30_49,301.0,301.0,False,False,False,4
+m04q80_001_MIN02779,m04q80_001,wavy annular,minimo,sigma12,1.0,1.0,True,True,True,4
+m04q80_001_MIN08479,m04q80_001,wavy annular,minimo,sigma12,0.0,2086.0,True,False,False,4
+m04q80_001_MIN11728,m04q80_001,wavy annular,minimo,sigma12,0.0,0.0,True,True,True,4
+m04q80_001_MIN18780,m04q80_001,wavy annular,minimo,sigma12,1.0,1.0,True,True,True,4
+m04q80_001_MAX02378,m04q80_001,wavy annular,maximo,sigma12,0.0,528.0,True,False,False,4
+m04q80_001_MAX09003,m04q80_001,wavy annular,maximo,sigma12,3.0,3.0,True,True,True,4
+m04q80_001_MAX14433,m04q80_001,wavy annular,maximo,sigma12,5.0,5.0,True,True,True,4
+m04q80_001_MAX16886,m04q80_001,wavy annular,maximo,sigma12,1.0,1.0,True,True,True,4
+m04q80_001_MIN02779,m04q80_001,wavy annular,minimo,sigma20,1.0,1.0,True,True,True,4
+m04q80_001_MIN08479,m04q80_001,wavy annular,minimo,sigma20,0.0,0.0,True,True,True,4
+m04q80_001_MIN11728,m04q80_001,wavy annular,minimo,sigma20,1.0,1.0,True,True,True,4
+m04q80_001_MIN18780,m04q80_001,wavy annular,minimo,sigma20,1.0,1.0,True,True,True,4
+m04q80_001_MAX02378,m04q80_001,wavy annular,maximo,sigma20,153.0,232.0,False,False,False,4
+m04q80_001_MAX09003,m04q80_001,wavy annular,maximo,sigma20,6.0,6.0,True,True,True,4
+m04q80_001_MAX14433,m04q80_001,wavy annular,maximo,sigma20,6.0,6.0,True,True,True,4
+m04q80_001_MAX16886,m04q80_001,wavy annular,maximo,sigma20,0.0,0.0,True,True,True,4
+m04q80_001_MIN02779,m04q80_001,wavy annular,minimo,faixa30_49,1.0,1.0,True,True,True,4
+m04q80_001_MIN08479,m04q80_001,wavy annular,minimo,faixa30_49,4.0,4.0,True,True,True,4
+m04q80_001_MIN11728,m04q80_001,wavy annular,minimo,faixa30_49,2.0,2.0,True,True,True,4
+m04q80_001_MIN18780,m04q80_001,wavy annular,minimo,faixa30_49,2.0,2.0,True,True,True,4
+m04q80_001_MAX02378,m04q80_001,wavy annular,maximo,faixa30_49,7.0,534.0,True,False,False,4
+m04q80_001_MAX09003,m04q80_001,wavy annular,maximo,faixa30_49,10.0,980.0,True,False,False,4
+m04q80_001_MAX14433,m04q80_001,wavy annular,maximo,faixa30_49,8.0,2964.0,True,False,False,4
+m04q80_001_MAX16886,m04q80_001,wavy annular,maximo,faixa30_49,7.0,3259.0,True,False,False,4
+m05q10_001_MIN01340,m05q10_001,churn,minimo,sigma12,5.0,5.0,True,True,True,4
+m05q10_001_MIN02339,m05q10_001,churn,minimo,sigma12,4.0,4.0,True,True,True,4
+m05q10_001_MIN04683,m05q10_001,churn,minimo,sigma12,1.0,1.0,True,True,True,4
+m05q10_001_MIN05329,m05q10_001,churn,minimo,sigma12,7.0,7.0,True,True,True,4
+m05q10_001_MAX01895,m05q10_001,churn,maximo,sigma12,4.0,4.0,True,True,True,4
+m05q10_001_MAX03331,m05q10_001,churn,maximo,sigma12,5.0,5.0,True,True,True,4
+m05q10_001_MAX04275,m05q10_001,churn,maximo,sigma12,2.0,2.0,True,True,True,4
+m05q10_001_MAX05568,m05q10_001,churn,maximo,sigma12,4.0,4.0,True,True,True,4
+m05q10_001_MIN01340,m05q10_001,churn,minimo,sigma20,3.0,3.0,True,True,True,4
+m05q10_001_MIN02339,m05q10_001,churn,minimo,sigma20,6.0,6.0,True,True,True,4
+m05q10_001_MIN04683,m05q10_001,churn,minimo,sigma20,2.0,2.0,True,True,True,4
+m05q10_001_MIN05329,m05q10_001,churn,minimo,sigma20,5.0,5.0,True,True,True,4
+m05q10_001_MAX01895,m05q10_001,churn,maximo,sigma20,3.0,3.0,True,True,True,4
+m05q10_001_MAX03331,m05q10_001,churn,maximo,sigma20,5.0,5.0,True,True,True,4
+m05q10_001_MAX04275,m05q10_001,churn,maximo,sigma20,3.0,3.0,True,True,True,4
+m05q10_001_MAX05568,m05q10_001,churn,maximo,sigma20,3.0,3.0,True,True,True,4
+m05q10_001_MIN01340,m05q10_001,churn,minimo,faixa30_49,8.0,8.0,True,True,True,4
+m05q10_001_MIN02339,m05q10_001,churn,minimo,faixa30_49,18.0,18.0,True,True,False,4
+m05q10_001_MIN04683,m05q10_001,churn,minimo,faixa30_49,29.0,504.0,True,False,False,4
+m05q10_001_MIN05329,m05q10_001,churn,minimo,faixa30_49,20.0,20.0,True,True,False,4
+m05q10_001_MAX01895,m05q10_001,churn,maximo,faixa30_49,26.0,348.0,True,False,False,4
+m05q10_001_MAX03331,m05q10_001,churn,maximo,faixa30_49,47.0,484.0,True,False,False,4
+m05q10_001_MAX04275,m05q10_001,churn,maximo,faixa30_49,47.0,460.0,True,False,False,4
+m05q10_001_MAX05568,m05q10_001,churn,maximo,faixa30_49,110.0,527.0,False,False,False,4
+m05q20_001_MIN02090,m05q20_001,churn,minimo,sigma12,3.0,3.0,True,True,True,4
+m05q20_001_MIN02945,m05q20_001,churn,minimo,sigma12,2.0,2.0,True,True,True,4
+m05q20_001_MIN04866,m05q20_001,churn,minimo,sigma12,3.0,3.0,True,True,True,4
+m05q20_001_MIN05793,m05q20_001,churn,minimo,sigma12,1.0,1.0,True,True,True,4
+m05q20_001_MAX01520,m05q20_001,churn,maximo,sigma12,2.0,2.0,True,True,True,4
+m05q20_001_MAX03517,m05q20_001,churn,maximo,sigma12,1.0,1.0,True,True,True,4
+m05q20_001_MAX04499,m05q20_001,churn,maximo,sigma12,2.0,2.0,True,True,True,4
+m05q20_001_MAX05615,m05q20_001,churn,maximo,sigma12,1.0,1.0,True,True,True,4
+m05q20_001_MIN02090,m05q20_001,churn,minimo,sigma20,1.0,1.0,True,True,True,4
+m05q20_001_MIN02945,m05q20_001,churn,minimo,sigma20,2.0,2.0,True,True,True,4
+m05q20_001_MIN04866,m05q20_001,churn,minimo,sigma20,2.0,2.0,True,True,True,4
+m05q20_001_MIN05793,m05q20_001,churn,minimo,sigma20,1.0,1.0,True,True,True,4
+m05q20_001_MAX01520,m05q20_001,churn,maximo,sigma20,1.0,1.0,True,True,True,4
+m05q20_001_MAX03517,m05q20_001,churn,maximo,sigma20,1.0,272.0,True,False,False,4
+m05q20_001_MAX04499,m05q20_001,churn,maximo,sigma20,1.0,1.0,True,True,True,4
+m05q20_001_MAX05615,m05q20_001,churn,maximo,sigma20,3.0,3.0,True,True,True,4
+m05q20_001_MIN02090,m05q20_001,churn,minimo,faixa30_49,11.0,11.0,True,True,True,4
+m05q20_001_MIN02945,m05q20_001,churn,minimo,faixa30_49,17.0,17.0,True,True,False,4
+m05q20_001_MIN04866,m05q20_001,churn,minimo,faixa30_49,25.0,525.0,True,False,False,4
+m05q20_001_MIN05793,m05q20_001,churn,minimo,faixa30_49,18.0,18.0,True,True,False,4
+m05q20_001_MAX01520,m05q20_001,churn,maximo,faixa30_49,6.0,295.0,True,False,False,4
+m05q20_001_MAX03517,m05q20_001,churn,maximo,faixa30_49,154.0,267.0,False,False,False,4
+m05q20_001_MAX04499,m05q20_001,churn,maximo,faixa30_49,78.0,78.0,False,False,False,4
+m05q20_001_MAX05615,m05q20_001,churn,maximo,faixa30_49,6.0,156.0,True,False,False,4
+m05q40_001_MIN02323,m05q40_001,churn,minimo,sigma12,0.0,0.0,True,True,True,4
+m05q40_001_MIN04536,m05q40_001,churn,minimo,sigma12,0.0,0.0,True,True,True,4
+m05q40_001_MIN06368,m05q40_001,churn,minimo,sigma12,3.0,3.0,True,True,True,4
+m05q40_001_MIN08610,m05q40_001,churn,minimo,sigma12,3.0,3.0,True,True,True,4
+m05q40_001_MAX02646,m05q40_001,churn,maximo,sigma12,3.0,3.0,True,True,True,4
+m05q40_001_MAX04714,m05q40_001,churn,maximo,sigma12,2.0,2.0,True,True,True,4
+m05q40_001_MAX05887,m05q40_001,churn,maximo,sigma12,5.0,5.0,True,True,True,4
+m05q40_001_MAX08301,m05q40_001,churn,maximo,sigma12,4.0,4.0,True,True,True,4
+m05q40_001_MIN02323,m05q40_001,churn,minimo,sigma20,1.0,1.0,True,True,True,4
+m05q40_001_MIN04536,m05q40_001,churn,minimo,sigma20,1.0,1.0,True,True,True,4
+m05q40_001_MIN06368,m05q40_001,churn,minimo,sigma20,4.0,4.0,True,True,True,4
+m05q40_001_MIN08610,m05q40_001,churn,minimo,sigma20,6.0,6.0,True,True,True,4
+m05q40_001_MAX02646,m05q40_001,churn,maximo,sigma20,3.0,3.0,True,True,True,4
+m05q40_001_MAX04714,m05q40_001,churn,maximo,sigma20,2.0,973.0,True,False,False,4
+m05q40_001_MAX05887,m05q40_001,churn,maximo,sigma20,4.0,4.0,True,True,True,4
+m05q40_001_MAX08301,m05q40_001,churn,maximo,sigma20,5.0,5.0,True,True,True,4
+m05q40_001_MIN02323,m05q40_001,churn,minimo,faixa30_49,7.0,7.0,True,True,True,4
+m05q40_001_MIN04536,m05q40_001,churn,minimo,faixa30_49,4.0,309.0,True,False,False,4
+m05q40_001_MIN06368,m05q40_001,churn,minimo,faixa30_49,47.0,1002.0,True,False,False,4
+m05q40_001_MIN08610,m05q40_001,churn,minimo,faixa30_49,42.0,817.0,True,False,False,4
+m05q40_001_MAX02646,m05q40_001,churn,maximo,faixa30_49,5.0,5.0,True,True,True,4
+m05q40_001_MAX04714,m05q40_001,churn,maximo,faixa30_49,5.0,5.0,True,True,True,4
+m05q40_001_MAX05887,m05q40_001,churn,maximo,faixa30_49,71.0,839.0,False,False,False,4
+m05q40_001_MAX08301,m05q40_001,churn,maximo,faixa30_49,5.0,5.0,True,True,True,4
+m05q80_001_MIN04485,m05q80_001,wavy annular,minimo,sigma12,0.0,2875.0,True,False,False,4
+m05q80_001_MIN08601,m05q80_001,wavy annular,minimo,sigma12,1.0,1241.0,True,False,False,4
+m05q80_001_MIN11648,m05q80_001,wavy annular,minimo,sigma12,1.0,1.0,True,True,True,4
+m05q80_001_MIN15548,m05q80_001,wavy annular,minimo,sigma12,3.0,3.0,True,True,True,4
+m05q80_001_MAX01577,m05q80_001,wavy annular,maximo,sigma12,2.0,432.0,True,False,False,4
+m05q80_001_MAX08237,m05q80_001,wavy annular,maximo,sigma12,1.0,1.0,True,True,True,4
+m05q80_001_MAX10088,m05q80_001,wavy annular,maximo,sigma12,5.0,5.0,True,True,True,4
+m05q80_001_MAX12626,m05q80_001,wavy annular,maximo,sigma12,1.0,1.0,True,True,True,4
+m05q80_001_MIN04485,m05q80_001,wavy annular,minimo,sigma20,4.0,4.0,True,True,True,4
+m05q80_001_MIN08601,m05q80_001,wavy annular,minimo,sigma20,0.0,0.0,True,True,True,4
+m05q80_001_MIN11648,m05q80_001,wavy annular,minimo,sigma20,0.0,1747.0,True,False,False,4
+m05q80_001_MIN15548,m05q80_001,wavy annular,minimo,sigma20,2.0,2.0,True,True,True,4
+m05q80_001_MAX01577,m05q80_001,wavy annular,maximo,sigma20,4.0,4.0,True,True,True,4
+m05q80_001_MAX08237,m05q80_001,wavy annular,maximo,sigma20,0.0,0.0,True,True,True,4
+m05q80_001_MAX10088,m05q80_001,wavy annular,maximo,sigma20,1.0,1.0,True,True,True,4
+m05q80_001_MAX12626,m05q80_001,wavy annular,maximo,sigma20,1.0,1.0,True,True,True,4
+m05q80_001_MIN04485,m05q80_001,wavy annular,minimo,faixa30_49,11.0,11.0,True,True,True,4
+m05q80_001_MIN08601,m05q80_001,wavy annular,minimo,faixa30_49,4.0,1244.0,True,False,False,4
+m05q80_001_MIN11648,m05q80_001,wavy annular,minimo,faixa30_49,3.0,1746.0,True,False,False,4
+m05q80_001_MIN15548,m05q80_001,wavy annular,minimo,faixa30_49,4.0,4.0,True,True,True,4
+m05q80_001_MAX01577,m05q80_001,wavy annular,maximo,faixa30_49,5.0,419.0,True,False,False,4
+m05q80_001_MAX08237,m05q80_001,wavy annular,maximo,faixa30_49,6.0,6.0,True,True,True,4
+m05q80_001_MAX10088,m05q80_001,wavy annular,maximo,faixa30_49,63.0,504.0,True,False,False,4
+m05q80_001_MAX12626,m05q80_001,wavy annular,maximo,faixa30_49,42.0,3042.0,True,False,False,4
+m06q10_001_MIN01759,m06q10_001,churn,minimo,sigma12,4.0,4.0,True,True,True,4
+m06q10_001_MIN03607,m06q10_001,churn,minimo,sigma12,1.0,1.0,True,True,True,4
+m06q10_001_MIN04231,m06q10_001,churn,minimo,sigma12,2.0,2.0,True,True,True,4
+m06q10_001_MIN05321,m06q10_001,churn,minimo,sigma12,1.0,1.0,True,True,True,4
+m06q10_001_MAX01257,m06q10_001,churn,maximo,sigma12,3.0,161.0,True,False,False,4
+m06q10_001_MAX03742,m06q10_001,churn,maximo,sigma12,2.0,2.0,True,True,True,4
+m06q10_001_MAX04370,m06q10_001,churn,maximo,sigma12,1.0,1.0,True,True,True,4
+m06q10_001_MAX05195,m06q10_001,churn,maximo,sigma12,6.0,6.0,True,True,True,4
+m06q10_001_MIN01759,m06q10_001,churn,minimo,sigma20,0.0,0.0,True,True,True,4
+m06q10_001_MIN03607,m06q10_001,churn,minimo,sigma20,1.0,1.0,True,True,True,4
+m06q10_001_MIN04231,m06q10_001,churn,minimo,sigma20,3.0,3.0,True,True,True,4
+m06q10_001_MIN05321,m06q10_001,churn,minimo,sigma20,2.0,2.0,True,True,True,4
+m06q10_001_MAX01257,m06q10_001,churn,maximo,sigma20,1.0,216.0,True,False,False,4
+m06q10_001_MAX03742,m06q10_001,churn,maximo,sigma20,1.0,1.0,True,True,True,4
+m06q10_001_MAX04370,m06q10_001,churn,maximo,sigma20,0.0,0.0,True,True,True,4
+m06q10_001_MAX05195,m06q10_001,churn,maximo,sigma20,0.0,0.0,True,True,True,4
+m06q10_001_MIN01759,m06q10_001,churn,minimo,faixa30_49,19.0,19.0,True,True,False,4
+m06q10_001_MIN03607,m06q10_001,churn,minimo,faixa30_49,11.0,628.0,True,False,False,4
+m06q10_001_MIN04231,m06q10_001,churn,minimo,faixa30_49,4.0,4.0,True,True,True,4
+m06q10_001_MIN05321,m06q10_001,churn,minimo,faixa30_49,0.0,1054.0,True,False,False,4
+m06q10_001_MAX01257,m06q10_001,churn,maximo,faixa30_49,22.0,371.0,True,False,False,3
+m06q10_001_MAX03742,m06q10_001,churn,maximo,faixa30_49,10.0,10.0,True,True,True,3
+m06q10_001_MAX04370,m06q10_001,churn,maximo,faixa30_49,226.0,618.0,False,False,False,3
+m06q10_001_MAX05195,m06q10_001,churn,maximo,faixa30_49,379.0,900.0,False,False,False,3
+m06q20_001_MIN02484,m06q20_001,churn,minimo,sigma12,0.0,0.0,True,True,True,4
+m06q20_001_MIN04124,m06q20_001,churn,minimo,sigma12,2.0,2.0,True,True,True,4
+m06q20_001_MIN06186,m06q20_001,churn,minimo,sigma12,3.0,3.0,True,True,True,4
+m06q20_001_MIN08206,m06q20_001,churn,minimo,sigma12,1.0,1.0,True,True,True,4
+m06q20_001_MAX01579,m06q20_001,churn,maximo,sigma12,0.0,0.0,True,True,True,4
+m06q20_001_MAX03810,m06q20_001,churn,maximo,sigma12,1.0,1.0,True,True,True,4
+m06q20_001_MAX06568,m06q20_001,churn,maximo,sigma12,2.0,2.0,True,True,True,4
+m06q20_001_MAX07196,m06q20_001,churn,maximo,sigma12,3.0,3.0,True,True,True,4
+m06q20_001_MIN02484,m06q20_001,churn,minimo,sigma20,0.0,0.0,True,True,True,4
+m06q20_001_MIN04124,m06q20_001,churn,minimo,sigma20,1.0,1.0,True,True,True,4
+m06q20_001_MIN06186,m06q20_001,churn,minimo,sigma20,2.0,2.0,True,True,True,4
+m06q20_001_MIN08206,m06q20_001,churn,minimo,sigma20,2.0,899.0,True,False,False,4
+m06q20_001_MAX01579,m06q20_001,churn,maximo,sigma20,0.0,0.0,True,True,True,4
+m06q20_001_MAX03810,m06q20_001,churn,maximo,sigma20,1.0,1.0,True,True,True,4
+m06q20_001_MAX06568,m06q20_001,churn,maximo,sigma20,3.0,3.0,True,True,True,4
+m06q20_001_MAX07196,m06q20_001,churn,maximo,sigma20,135.0,631.0,False,False,False,4
+m06q20_001_MIN02484,m06q20_001,churn,minimo,faixa30_49,7.0,7.0,True,True,True,4
+m06q20_001_MIN04124,m06q20_001,churn,minimo,faixa30_49,7.0,7.0,True,True,True,4
+m06q20_001_MIN06186,m06q20_001,churn,minimo,faixa30_49,5.0,721.0,True,False,False,4
+m06q20_001_MIN08206,m06q20_001,churn,minimo,faixa30_49,7.0,886.0,True,False,False,4
+m06q20_001_MAX01579,m06q20_001,churn,maximo,faixa30_49,3.0,3.0,True,True,True,4
+m06q20_001_MAX03810,m06q20_001,churn,maximo,faixa30_49,79.0,694.0,False,False,False,4
+m06q20_001_MAX06568,m06q20_001,churn,maximo,faixa30_49,2.0,2.0,True,True,True,4
+m06q20_001_MAX07196,m06q20_001,churn,maximo,faixa30_49,80.0,80.0,False,False,False,4
+m06q40_001_MIN03471,m06q40_001,wavy annular,minimo,sigma12,3.0,3.0,True,True,True,4
+m06q40_001_MIN07308,m06q40_001,wavy annular,minimo,sigma12,1.0,1.0,True,True,True,4
+m06q40_001_MIN10414,m06q40_001,wavy annular,minimo,sigma12,1.0,1.0,True,True,True,4
+m06q40_001_MIN11281,m06q40_001,wavy annular,minimo,sigma12,3.0,3.0,True,True,True,4
+m06q40_001_MAX03841,m06q40_001,wavy annular,maximo,sigma12,0.0,0.0,True,True,True,4
+m06q40_001_MAX06103,m06q40_001,wavy annular,maximo,sigma12,1.0,1.0,True,True,True,4
+m06q40_001_MAX07501,m06q40_001,wavy annular,maximo,sigma12,2.0,2.0,True,True,True,4
+m06q40_001_MAX11052,m06q40_001,wavy annular,maximo,sigma12,1.0,1.0,True,True,True,4
+m06q40_001_MIN03471,m06q40_001,wavy annular,minimo,sigma20,3.0,3.0,True,True,True,4
+m06q40_001_MIN07308,m06q40_001,wavy annular,minimo,sigma20,0.0,0.0,True,True,True,4
+m06q40_001_MIN10414,m06q40_001,wavy annular,minimo,sigma20,1.0,1.0,True,True,True,4
+m06q40_001_MIN11281,m06q40_001,wavy annular,minimo,sigma20,1.0,1.0,True,True,True,4
+m06q40_001_MAX03841,m06q40_001,wavy annular,maximo,sigma20,0.0,0.0,True,True,True,4
+m06q40_001_MAX06103,m06q40_001,wavy annular,maximo,sigma20,153.0,153.0,False,False,False,4
+m06q40_001_MAX07501,m06q40_001,wavy annular,maximo,sigma20,1.0,1.0,True,True,True,4
+m06q40_001_MAX11052,m06q40_001,wavy annular,maximo,sigma20,1.0,1.0,True,True,True,4
+m06q40_001_MIN03471,m06q40_001,wavy annular,minimo,faixa30_49,8.0,8.0,True,True,True,4
+m06q40_001_MIN07308,m06q40_001,wavy annular,minimo,faixa30_49,3.0,3.0,True,True,True,4
+m06q40_001_MIN10414,m06q40_001,wavy annular,minimo,faixa30_49,6.0,6.0,True,True,True,4
+m06q40_001_MIN11281,m06q40_001,wavy annular,minimo,faixa30_49,4.0,4.0,True,True,True,4
+m06q40_001_MAX03841,m06q40_001,wavy annular,maximo,faixa30_49,7.0,7.0,True,True,True,4
+m06q40_001_MAX06103,m06q40_001,wavy annular,maximo,faixa30_49,140.0,140.0,False,False,False,4
+m06q40_001_MAX07501,m06q40_001,wavy annular,maximo,faixa30_49,1.0,1258.0,True,False,False,4
+m06q40_001_MAX11052,m06q40_001,wavy annular,maximo,faixa30_49,1.0,1313.0,True,False,False,4
+m06q80_001_MIN01739,m06q80_001,wavy annular,minimo,sigma12,2.0,2.0,True,True,True,4
+m06q80_001_MIN06621,m06q80_001,wavy annular,minimo,sigma12,2.0,2.0,True,True,True,4
+m06q80_001_MIN13451,m06q80_001,wavy annular,minimo,sigma12,2.0,2070.0,True,False,False,4
+m06q80_001_MIN16737,m06q80_001,wavy annular,minimo,sigma12,1.0,1.0,True,True,True,4
+m06q80_001_MAX02571,m06q80_001,wavy annular,maximo,sigma12,2.0,2.0,True,True,True,4
+m06q80_001_MAX06188,m06q80_001,wavy annular,maximo,sigma12,33.0,33.0,True,True,False,4
+m06q80_001_MAX12526,m06q80_001,wavy annular,maximo,sigma12,2.0,2.0,True,True,True,4
+m06q80_001_MAX14250,m06q80_001,wavy annular,maximo,sigma12,4.0,4.0,True,True,True,4
+m06q80_001_MIN01739,m06q80_001,wavy annular,minimo,sigma20,1.0,695.0,True,False,False,4
+m06q80_001_MIN06621,m06q80_001,wavy annular,minimo,sigma20,1.0,1.0,True,True,True,4
+m06q80_001_MIN13451,m06q80_001,wavy annular,minimo,sigma20,1.0,1.0,True,True,True,4
+m06q80_001_MIN16737,m06q80_001,wavy annular,minimo,sigma20,0.0,0.0,True,True,True,4
+m06q80_001_MAX02571,m06q80_001,wavy annular,maximo,sigma20,1.0,1.0,True,True,True,4
+m06q80_001_MAX06188,m06q80_001,wavy annular,maximo,sigma20,11.0,11.0,True,True,True,4
+m06q80_001_MAX12526,m06q80_001,wavy annular,maximo,sigma20,2.0,2.0,True,True,True,4
+m06q80_001_MAX14250,m06q80_001,wavy annular,maximo,sigma20,4.0,4.0,True,True,True,4
+m06q80_001_MIN01739,m06q80_001,wavy annular,minimo,faixa30_49,6.0,6.0,True,True,True,4
+m06q80_001_MIN06621,m06q80_001,wavy annular,minimo,faixa30_49,7.0,7.0,True,True,True,4
+m06q80_001_MIN13451,m06q80_001,wavy annular,minimo,faixa30_49,1.0,1067.0,True,False,False,4
+m06q80_001_MIN16737,m06q80_001,wavy annular,minimo,faixa30_49,4.0,2219.0,True,False,False,4
+m06q80_001_MAX02571,m06q80_001,wavy annular,maximo,faixa30_49,3.0,3.0,True,True,True,4
+m06q80_001_MAX06188,m06q80_001,wavy annular,maximo,faixa30_49,8.0,2007.0,True,False,False,4
+m06q80_001_MAX12526,m06q80_001,wavy annular,maximo,faixa30_49,2.0,2.0,True,True,True,4
+m06q80_001_MAX14250,m06q80_001,wavy annular,maximo,faixa30_49,130.0,130.0,False,False,False,4
+m07q20_001_MIN01875,m07q20_001,churn,minimo,sigma12,0.0,0.0,True,True,True,4
+m07q20_001_MIN04061,m07q20_001,churn,minimo,sigma12,0.0,0.0,True,True,True,4
+m07q20_001_MIN04648,m07q20_001,churn,minimo,sigma12,2.0,2.0,True,True,True,4
+m07q20_001_MIN05678,m07q20_001,churn,minimo,sigma12,3.0,3.0,True,True,True,4
+m07q20_001_MAX01421,m07q20_001,churn,maximo,sigma12,4.0,4.0,True,True,True,4
+m07q20_001_MAX02915,m07q20_001,churn,maximo,sigma12,2.0,2.0,True,True,True,4
+m07q20_001_MAX04817,m07q20_001,churn,maximo,sigma12,1.0,1.0,True,True,True,4
+m07q20_001_MAX06716,m07q20_001,churn,maximo,sigma12,1.0,1.0,True,True,True,4
+m07q20_001_MIN01875,m07q20_001,churn,minimo,sigma20,0.0,0.0,True,True,True,4
+m07q20_001_MIN04061,m07q20_001,churn,minimo,sigma20,1.0,1.0,True,True,True,4
+m07q20_001_MIN04648,m07q20_001,churn,minimo,sigma20,5.0,5.0,True,True,True,4
+m07q20_001_MIN05678,m07q20_001,churn,minimo,sigma20,1.0,1.0,True,True,True,4
+m07q20_001_MAX01421,m07q20_001,churn,maximo,sigma20,1.0,1.0,True,True,True,4
+m07q20_001_MAX02915,m07q20_001,churn,maximo,sigma20,1.0,1.0,True,True,True,4
+m07q20_001_MAX04817,m07q20_001,churn,maximo,sigma20,2.0,2.0,True,True,True,4
+m07q20_001_MAX06716,m07q20_001,churn,maximo,sigma20,0.0,0.0,True,True,True,4
+m07q20_001_MIN01875,m07q20_001,churn,minimo,faixa30_49,4.0,4.0,True,True,True,4
+m07q20_001_MIN04061,m07q20_001,churn,minimo,faixa30_49,14.0,14.0,True,True,True,4
+m07q20_001_MIN04648,m07q20_001,churn,minimo,faixa30_49,33.0,33.0,True,True,False,4
+m07q20_001_MIN05678,m07q20_001,churn,minimo,faixa30_49,12.0,12.0,True,True,True,4
+m07q20_001_MAX01421,m07q20_001,churn,maximo,faixa30_49,99.0,99.0,False,False,False,4
+m07q20_001_MAX02915,m07q20_001,churn,maximo,faixa30_49,95.0,243.0,False,False,False,4
+m07q20_001_MAX04817,m07q20_001,churn,maximo,faixa30_49,4.0,309.0,True,False,False,4
+m07q20_001_MAX06716,m07q20_001,churn,maximo,faixa30_49,46.0,218.0,True,False,False,4
+m07q40_001_MIN01530,m07q40_001,churn,minimo,sigma12,2.0,2.0,True,True,True,4
+m07q40_001_MIN05065,m07q40_001,churn,minimo,sigma12,0.0,0.0,True,True,True,4
+m07q40_001_MIN05673,m07q40_001,churn,minimo,sigma12,1.0,608.0,True,False,False,4
+m07q40_001_MIN07538,m07q40_001,churn,minimo,sigma12,0.0,0.0,True,True,True,4
+m07q40_001_MAX01805,m07q40_001,churn,maximo,sigma12,4.0,4.0,True,True,True,4
+m07q40_001_MAX04440,m07q40_001,churn,maximo,sigma12,2.0,2.0,True,True,True,4
+m07q40_001_MAX05409,m07q40_001,churn,maximo,sigma12,5.0,5.0,True,True,True,4
+m07q40_001_MAX07836,m07q40_001,churn,maximo,sigma12,3.0,3.0,True,True,True,4
+m07q40_001_MIN01530,m07q40_001,churn,minimo,sigma20,2.0,2.0,True,True,True,4
+m07q40_001_MIN05065,m07q40_001,churn,minimo,sigma20,2.0,2.0,True,True,True,4
+m07q40_001_MIN05673,m07q40_001,churn,minimo,sigma20,0.0,0.0,True,True,True,4
+m07q40_001_MIN07538,m07q40_001,churn,minimo,sigma20,1.0,1.0,True,True,True,4
+m07q40_001_MAX01805,m07q40_001,churn,maximo,sigma20,6.0,6.0,True,True,True,4
+m07q40_001_MAX04440,m07q40_001,churn,maximo,sigma20,2.0,2.0,True,True,True,4
+m07q40_001_MAX05409,m07q40_001,churn,maximo,sigma20,2.0,2.0,True,True,True,4
+m07q40_001_MAX07836,m07q40_001,churn,maximo,sigma20,4.0,4.0,True,True,True,4
+m07q40_001_MIN01530,m07q40_001,churn,minimo,faixa30_49,7.0,7.0,True,True,True,4
+m07q40_001_MIN05065,m07q40_001,churn,minimo,faixa30_49,6.0,614.0,True,False,False,4
+m07q40_001_MIN05673,m07q40_001,churn,minimo,faixa30_49,6.0,6.0,True,True,True,4
+m07q40_001_MIN07538,m07q40_001,churn,minimo,faixa30_49,11.0,11.0,True,True,True,4
+m07q40_001_MAX01805,m07q40_001,churn,maximo,faixa30_49,51.0,51.0,True,True,False,4
+m07q40_001_MAX04440,m07q40_001,churn,maximo,faixa30_49,6.0,6.0,True,True,True,4
+m07q40_001_MAX05409,m07q40_001,churn,maximo,faixa30_49,4.0,542.0,True,False,False,4
+m07q40_001_MAX07836,m07q40_001,churn,maximo,faixa30_49,13.0,13.0,True,True,True,4
+m07q80_001_MIN03433,m07q80_001,wavy annular,minimo,sigma12,1.0,1811.0,True,False,False,4
+m07q80_001_MIN06881,m07q80_001,wavy annular,minimo,sigma12,3.0,899.0,True,False,False,4
+m07q80_001_MIN09018,m07q80_001,wavy annular,minimo,sigma12,2.0,2.0,True,True,True,4
+m07q80_001_MIN15171,m07q80_001,wavy annular,minimo,sigma12,1.0,1.0,True,True,True,4
+m07q80_001_MAX04501,m07q80_001,wavy annular,maximo,sigma12,3.0,3.0,True,True,True,4
+m07q80_001_MAX08055,m07q80_001,wavy annular,maximo,sigma12,0.0,0.0,True,True,True,4
+m07q80_001_MAX09190,m07q80_001,wavy annular,maximo,sigma12,2.0,2.0,True,True,True,4
+m07q80_001_MAX14961,m07q80_001,wavy annular,maximo,sigma12,4.0,4.0,True,True,True,4
+m07q80_001_MIN03433,m07q80_001,wavy annular,minimo,sigma20,1.0,1.0,True,True,True,4
+m07q80_001_MIN06881,m07q80_001,wavy annular,minimo,sigma20,2.0,2.0,True,True,True,4
+m07q80_001_MIN09018,m07q80_001,wavy annular,minimo,sigma20,1.0,1.0,True,True,True,4
+m07q80_001_MIN15171,m07q80_001,wavy annular,minimo,sigma20,0.0,582.0,True,False,False,4
+m07q80_001_MAX04501,m07q80_001,wavy annular,maximo,sigma20,1.0,1.0,True,True,True,4
+m07q80_001_MAX08055,m07q80_001,wavy annular,maximo,sigma20,0.0,1133.0,True,False,False,4
+m07q80_001_MAX09190,m07q80_001,wavy annular,maximo,sigma20,2.0,2.0,True,True,True,4
+m07q80_001_MAX14961,m07q80_001,wavy annular,maximo,sigma20,10.0,10.0,True,True,True,4
+m07q80_001_MIN03433,m07q80_001,wavy annular,minimo,faixa30_49,5.0,1806.0,True,False,False,4
+m07q80_001_MIN06881,m07q80_001,wavy annular,minimo,faixa30_49,11.0,11.0,True,True,True,4
+m07q80_001_MIN09018,m07q80_001,wavy annular,minimo,faixa30_49,10.0,10.0,True,True,True,4
+m07q80_001_MIN15171,m07q80_001,wavy annular,minimo,faixa30_49,5.0,1351.0,True,False,False,4
+m07q80_001_MAX04501,m07q80_001,wavy annular,maximo,faixa30_49,6.0,6.0,True,True,True,4
+m07q80_001_MAX08055,m07q80_001,wavy annular,maximo,faixa30_49,4.0,641.0,True,False,False,4
+m07q80_001_MAX09190,m07q80_001,wavy annular,maximo,faixa30_49,3.0,438.0,True,False,False,4
+m07q80_001_MAX14961,m07q80_001,wavy annular,maximo,faixa30_49,6.0,6.0,True,True,True,4

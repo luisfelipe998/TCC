@@ -1,0 +1,13 @@
+case,method,phase,accepted_blocks,optical_supported,estimated_px_frame
+stationary_image_moving_mask,raw,gas_candidate,0,False,nan
+stationary_image_moving_mask,raw,liquid_candidate,0,False,nan
+stationary_image_moving_mask,fixed_background,gas_candidate,0,False,nan
+stationary_image_moving_mask,fixed_background,liquid_candidate,0,False,nan
+stationary_image_moving_mask,interface_distance,gas_candidate,0,False,nan
+stationary_image_moving_mask,interface_distance,liquid_candidate,0,False,nan
+independent_frames_moving_mask,raw,gas_candidate,0,False,nan
+independent_frames_moving_mask,raw,liquid_candidate,0,False,nan
+independent_frames_moving_mask,fixed_background,gas_candidate,0,False,nan
+independent_frames_moving_mask,fixed_background,liquid_candidate,0,False,nan
+independent_frames_moving_mask,interface_distance,gas_candidate,0,False,nan
+independent_frames_moving_mask,interface_distance,liquid_candidate,0,False,nan

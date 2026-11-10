@@ -1,0 +1,119 @@
+{
+  "status": "passed",
+  "scope_runs": 26,
+  "support_decisions_reconstructed": 104,
+  "direct_native_peaks": [
+    {
+      "run": "m05q01_001",
+      "phase": "gas_candidate",
+      "erosion_radius": 3,
+      "integer_shift": -9,
+      "direct_peak": 0.9582682562716104,
+      "saved_peak": 0.9582682364419892,
+      "error": 1.9829621167311018e-08,
+      "matched_pixels": 14442317,
+      "count_error": 0.3985287193208933
+    },
+    {
+      "run": "m05q01_001",
+      "phase": "liquid_candidate",
+      "erosion_radius": 3,
+      "integer_shift": -12,
+      "direct_peak": 0.9933233678957798,
+      "saved_peak": 0.9933233537729876,
+      "error": 1.4122792157955644e-08,
+      "matched_pixels": 4187892,
+      "count_error": 0.17219473281875253
+    },
+    {
+      "run": "m05q01_001",
+      "phase": "gas_candidate",
+      "erosion_radius": 1,
+      "integer_shift": -10,
+      "direct_peak": 0.9590902438594573,
+      "saved_peak": 0.9590902221091162,
+      "error": 2.1750341083759395e-08,
+      "matched_pixels": 16044250,
+      "count_error": 0.44008463621139526
+    },
+    {
+      "run": "m05q01_001",
+      "phase": "liquid_candidate",
+      "erosion_radius": 1,
+      "integer_shift": -12,
+      "direct_peak": 0.9901659601474087,
+      "saved_peak": 0.9901659485273856,
+      "error": 1.1620023054881301e-08,
+      "matched_pixels": 5514429,
+      "count_error": 0.227093406021595
+    },
+    {
+      "run": "m04q80_001",
+      "phase": "gas_candidate",
+      "erosion_radius": 3,
+      "integer_shift": -46,
+      "direct_peak": 0.7867145656182473,
+      "saved_peak": 0.7867145742541732,
+      "error": 8.635925974331826e-09,
+      "matched_pixels": 22442167,
+      "count_error": 1.903574649244547
+    },
+    {
+      "run": "m04q80_001",
+      "phase": "gas_candidate",
+      "erosion_radius": 1,
+      "integer_shift": -46,
+      "direct_peak": 0.7865421787089308,
+      "saved_peak": 0.7865421916941472,
+      "error": 1.2985216346628192e-08,
+      "matched_pixels": 24460308,
+      "count_error": 2.1381489001214504
+    },
+    {
+      "run": "m07q01_001",
+      "phase": "gas_candidate",
+      "erosion_radius": 3,
+      "integer_shift": -7,
+      "direct_peak": 0.8908062074531103,
+      "saved_peak": 0.8908061944293589,
+      "error": 1.3023751410656814e-08,
+      "matched_pixels": 2498,
+      "count_error": 9.659965871833265e-05
+    },
+    {
+      "run": "m07q01_001",
+      "phase": "liquid_candidate",
+      "erosion_radius": 3,
+      "integer_shift": -6,
+      "direct_peak": 0.9283704033065476,
+      "saved_peak": 0.9283703747869116,
+      "error": 2.8519635986157255e-08,
+      "matched_pixels": 15370587,
+      "count_error": 0.0713445395231247
+    },
+    {
+      "run": "m07q01_001",
+      "phase": "gas_candidate",
+      "erosion_radius": 1,
+      "integer_shift": -7,
+      "direct_peak": 0.8941562435508827,
+      "saved_peak": 0.8941562208947216,
+      "error": 2.265616116936542e-08,
+      "matched_pixels": 24439,
+      "count_error": 0.0010152797513001133
+    },
+    {
+      "run": "m07q01_001",
+      "phase": "liquid_candidate",
+      "erosion_radius": 1,
+      "integer_shift": -6,
+      "direct_peak": 0.9266922891564717,
+      "saved_peak": 0.926692257773488,
+      "error": 3.1382983767258565e-08,
+      "matched_pixels": 18196936,
+      "count_error": 0.12309809774160385
+    }
+  ],
+  "max_direct_peak_error": 3.1382983767258565e-08,
+  "limitation": "Arithmetic checks using a separate direct implementation, not experimental validation of phase identity."
+}

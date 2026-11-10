@@ -1,0 +1,151 @@
+{
+  "properties": {
+    "temperature_c": 27.0,
+    "rho_l": 548.131160603092,
+    "rho_g": 9.649731786620363,
+    "h_l": 263864.2895703569,
+    "h_fg": 326707.52821966686,
+    "pressure_pa": 371596.6799759205,
+    "sigma": 0.009781959836699631
+  },
+  "CoolProp_version": "8.0.0",
+  "python": "3.13.2",
+  "numpy": "2.3.4",
+  "pandas": "2.3.3",
+  "diameter_m": 0.001,
+  "heated_length_m": 0.265,
+  "G_map": {
+    "3": 380.0,
+    "4": 510.0,
+    "5": 640.0,
+    "6": 760.0,
+    "7": 890.0
+  },
+  "gravity_m_s2": 9.81,
+  "baseline_temperature_and_G_status": "saturated_inlet baseline uses nominal literature/setpoint values; recorded_flow branches use massflow_input",
+  "scopes": {
+    "source": 31,
+    "selected": 26,
+    "patterns": {
+      "churn": 10,
+      "wavy annular": 9,
+      "slug": 3,
+      "plug": 3,
+      "dispersed bubbles": 1
+    }
+  },
+  "scenarios": [
+    {
+      "scenario": "saturated_inlet",
+      "temperature_c": 27.0,
+      "subcool_k": 0.0,
+      "xin": 0.0,
+      "eta": 1.0
+    },
+    {
+      "scenario": "subcool_1K",
+      "temperature_c": 27.0,
+      "subcool_k": 1.0,
+      "xin": 0.0,
+      "eta": 1.0
+    },
+    {
+      "scenario": "subcool_2K",
+      "temperature_c": 27.0,
+      "subcool_k": 2.0,
+      "xin": 0.0,
+      "eta": 1.0
+    },
+    {
+      "scenario": "subcool_5K",
+      "temperature_c": 27.0,
+      "subcool_k": 5.0,
+      "xin": 0.0,
+      "eta": 1.0
+    },
+    {
+      "scenario": "subcool_10K",
+      "temperature_c": 27.0,
+      "subcool_k": 10.0,
+      "xin": 0.0,
+      "eta": 1.0
+    },
+    {
+      "scenario": "inlet_quality_0.01",
+      "temperature_c": 27.0,
+      "subcool_k": 0.0,
+      "xin": 0.01,
+      "eta": 1.0
+    },
+    {
+      "scenario": "inlet_quality_0.05",
+      "temperature_c": 27.0,
+      "subcool_k": 0.0,
+      "xin": 0.05,
+      "eta": 1.0
+    },
+    {
+      "scenario": "Tsat_25C",
+      "temperature_c": 25.0,
+      "subcool_k": 0.0,
+      "xin": 0.0,
+      "eta": 1.0
+    },
+    {
+      "scenario": "Tsat_29C",
+      "temperature_c": 29.0,
+      "subcool_k": 0.0,
+      "xin": 0.0,
+      "eta": 1.0
+    },
+    {
+      "scenario": "net_heat_90pct",
+      "temperature_c": 27.0,
+      "subcool_k": 0.0,
+      "xin": 0.0,
+      "eta": 0.9
+    },
+    {
+      "scenario": "recorded_flow_mean",
+      "temperature_c": 27.0,
+      "subcool_k": 0.0,
+      "xin": 0.0,
+      "eta": 1.0,
+      "flow_column": "G_mean_kg_m2_s"
+    },
+    {
+      "scenario": "recorded_flow_median",
+      "temperature_c": 27.0,
+      "subcool_k": 0.0,
+      "xin": 0.0,
+      "eta": 1.0,
+      "flow_column": "G_median_kg_m2_s"
+    },
+    {
+      "scenario": "recorded_flow_trimmed10",
+      "temperature_c": 27.0,
+      "subcool_k": 0.0,
+      "xin": 0.0,
+      "eta": 1.0,
+      "flow_column": "G_trimmed10_kg_m2_s"
+    }
+  ],
+  "sensitivity_status": "assumed scenarios, not confidence intervals",
+  "image_input": {
+    "source": "src2/v14_new_voidfraction/results/void_fraction/panorama_void_per_run.csv",
+    "snapshot": "intermediate/v14_void_input_snapshot.csv",
+    "snapshot_sha256": "07fae8da466837a04c101ac60794bcefa3b6ec20f80ff0f834c0edfbaea5223a"
+  },
+  "massflow_input": {
+    "path": "results/massflow_per_run.csv",
+    "sha256": "23b3546c32e41085f57535ec39416332e6aeab5457bf0d1dd0612635a5c9486e",
+    "status": "owner-documented g/s; original blocks verified; same condition only, camera synchronization unproven"
+  },
+  "xu_fang_Fr_definition": "G^2/(rho_l^2*g*D); conventional closure",
+  "xu_fang_exponents": {
+    "literal_2021": -2.0,
+    "fluids": -0.2
+  },
+  "primary_velocity_status": "conditional model prediction; no measured truth available",
+  "script_sha256": "5e02e8a3558cd51bee36aba753870444f25b39d279d63eabe0584965b6e749a7"
+}

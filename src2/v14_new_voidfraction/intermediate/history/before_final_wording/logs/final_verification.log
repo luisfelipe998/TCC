@@ -1,0 +1,104 @@
+{
+  "selected_acquisitions": 26,
+  "eligible_classifier_acquisitions": 25,
+  "scope": {
+    "policy": "Five single-pattern classes; wavy annular only; m05q05_002 excluded",
+    "allowed_patterns": [
+      "dispersed bubbles",
+      "plug",
+      "slug",
+      "churn",
+      "wavy annular"
+    ],
+    "explicitly_excluded_acquisitions": [
+      "m05q05_002"
+    ],
+    "source_acquisitions": 31,
+    "selected_acquisitions": 26,
+    "selected_runs": [
+      "m03q05_001",
+      "m03q10_001",
+      "m03q20_001",
+      "m03q40_001",
+      "m04q01_001",
+      "m04q10_001",
+      "m04q20_001",
+      "m04q40_001",
+      "m04q80_001",
+      "m05q01_001",
+      "m05q05_001",
+      "m05q10_001",
+      "m05q20_001",
+      "m05q40_001",
+      "m05q80_001",
+      "m06q01_001",
+      "m06q05_001",
+      "m06q10_001",
+      "m06q20_001",
+      "m06q40_001",
+      "m06q80_001",
+      "m07q01_001",
+      "m07q05_001",
+      "m07q20_001",
+      "m07q40_001",
+      "m07q80_001"
+    ],
+    "selected_pattern_counts": {
+      "churn": 10,
+      "wavy annular": 9,
+      "slug": 3,
+      "plug": 3,
+      "dispersed bubbles": 1
+    },
+    "excluded_acquisitions": [
+      {
+        "run": "m03q01_001",
+        "supplied_pattern": "plug-slug",
+        "reason": "Compound pattern label excluded by user"
+      },
+      {
+        "run": "m03q80_001",
+        "supplied_pattern": "smooth annular",
+        "reason": "Smooth annular excluded; only wavy annular retained"
+      },
+      {
+        "run": "m04q05_001",
+        "supplied_pattern": "slug-churn",
+        "reason": "Compound pattern label excluded by user"
+      },
+      {
+        "run": "m05q05_002",
+        "supplied_pattern": "dispersed bubbles",
+        "reason": "Acquisition excluded by user: m05q05_002"
+      },
+      {
+        "run": "m07q10_001",
+        "supplied_pattern": "slug-churn",
+        "reason": "Compound pattern label excluded by user"
+      }
+    ],
+    "statistical_rule": "Selected acquisitions with core saturation fraction <= 0.20",
+    "scope_does_not_relabel_inputs": true
+  },
+  "unchanged_input_panorama_hashes": 26,
+  "saved_binary_masks_verified": 26,
+  "independently_recomputed_visible_area_means": 26,
+  "max_visible_area_absolute_error": 0.0,
+  "independently_recomputed_candidate_flip_counts": 26,
+  "authoritative_labels_preserved": true,
+  "source_hash_matches_phase_and_classifier": true,
+  "source_hash_matches_adversarial": true,
+  "heldout_reference_exclusions_verified": 50,
+  "heldout_training_class_availability_verified_predictions": 1200,
+  "folds_with_absent_training_classes": {
+    "leave_one_run_out": 1,
+    "leave_one_mass_flux_out": 5
+  },
+  "confusion_matrices_recomputed_from_per_run_predictions": true,
+  "confusion_matrix_scores_recomputed": true,
+  "no_out_of_scope_results_or_masks": true,
+  "selected_feature_scope_verified": true,
+  "singleton_class_limit": "The only dispersed-bubble test has no bubble training example when held out; these data cannot validate a transferable bubble classifier.",
+  "segmentation_source_sha256": "262b6b5f1299b49e3d221e4773deb6528734244061e8c8d04a2befefc1265f6f",
+  "interpretation": "Selected-scope arithmetic and artifact consistency checks; not physical calibration."
+}

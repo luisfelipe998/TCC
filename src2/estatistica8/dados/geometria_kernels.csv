@@ -1,0 +1,16 @@
+condition,metric,min_eigenvalue,max_normalized,valid
+ancora,kernel_area_full,0.0053451845908418349,1,True
+ancora,kernel_area_short,0.0045700535809895491,1,True
+ancora,kernel_area_middle,-0.001350285856001165,1,False
+ancora,kernel_area_long,-0.01790617058962805,1,False
+ancora,kernel_zero,0.35120908260086831,1,True
+desloc_m64,kernel_area_full,0.0042385238881945961,1,True
+desloc_m64,kernel_area_short,0.0036146728272634376,1,True
+desloc_m64,kernel_area_middle,-0.0033904253600500482,1,False
+desloc_m64,kernel_area_long,-0.018613238716966504,1,False
+desloc_m64,kernel_zero,0.36142541567245129,1,True
+desloc_p64,kernel_area_full,0.0043518736948256953,1,True
+desloc_p64,kernel_area_short,0.003187720741303491,1,True
+desloc_p64,kernel_area_middle,-0.00098241855948327859,1,False
+desloc_p64,kernel_area_long,-0.022259222694694249,1,False
+desloc_p64,kernel_zero,0.36198385272886835,1,True

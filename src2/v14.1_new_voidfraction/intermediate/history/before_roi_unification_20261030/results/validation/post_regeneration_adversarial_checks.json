@@ -1,0 +1,306 @@
+{
+  "passed": true,
+  "started_utc": "2026-10-24T22:40:57.409858+00:00",
+  "finished_utc": "2026-10-24T22:41:02.794307+00:00",
+  "script_sha256": "7ad556adee8942f3411060a5197863fbf1ae5743da17e027baa6b88f98717dc2",
+  "independent_selection_uses_original_markers_not_shared_helper": true,
+  "selected_acquisitions": 26,
+  "statistical_acquisitions": 25,
+  "supplied_pattern_counts_selected": {
+    "churn": 10,
+    "wavy annular": 9,
+    "slug": 3,
+    "plug": 3,
+    "dispersed bubbles": 1
+  },
+  "selected_runs": [
+    "m03q05_001",
+    "m03q10_001",
+    "m03q20_001",
+    "m03q40_001",
+    "m04q01_001",
+    "m04q10_001",
+    "m04q20_001",
+    "m04q40_001",
+    "m04q80_001",
+    "m05q01_001",
+    "m05q05_001",
+    "m05q10_001",
+    "m05q20_001",
+    "m05q40_001",
+    "m05q80_001",
+    "m06q01_001",
+    "m06q05_001",
+    "m06q10_001",
+    "m06q20_001",
+    "m06q40_001",
+    "m06q80_001",
+    "m07q01_001",
+    "m07q05_001",
+    "m07q20_001",
+    "m07q40_001",
+    "m07q80_001"
+  ],
+  "excluded_runs": {
+    "m03q01_001": "plug-slug",
+    "m03q80_001": "smooth annular",
+    "m04q05_001": "slug-churn",
+    "m05q05_002": "dispersed bubbles",
+    "m07q10_001": "slug-churn"
+  },
+  "checks": [
+    {
+      "check": "scope_and_all_active_csvs",
+      "passed": true,
+      "details": {
+        "active_csv_files_checked": 32,
+        "active_csv_rows_checked": 16790,
+        "checked_files": [
+          "results/flip_rate/flip_rate_by_pattern.csv",
+          "results/flip_rate/flip_rate_per_run.csv",
+          "results/flip_rate/phase_mask_flip_by_pattern.csv",
+          "results/flip_rate/phase_mask_flip_per_run.csv",
+          "results/patterns/pattern_identification_predictions.csv",
+          "results/patterns/pattern_identification_scores.csv",
+          "results/patterns/silhouette_pattern_predictions.csv",
+          "results/patterns/silhouette_pattern_scores.csv",
+          "results/summary/classifier_comparison.csv",
+          "results/summary/fix_comparison_by_pattern.csv",
+          "results/summary/fix_comparison_per_run.csv",
+          "results/summary/threshold_hull_intersections.csv",
+          "results/summary/threshold_plot_data.csv",
+          "results/validation/data_inventory.csv",
+          "results/validation/deep_method_changes.csv",
+          "results/validation/lumen_normalization_changes.csv",
+          "results/validation/panorama_liquid_holdout_checks.csv",
+          "results/validation/reconstruction_shifts.csv",
+          "results/void_fraction/panorama_void_by_pattern.csv",
+          "results/void_fraction/panorama_void_per_run.csv",
+          "results/void_fraction/void_fraction_flip_plot_data.csv",
+          "intermediate/features/pattern_morphology_features.csv",
+          "intermediate/features/silhouette_pattern_features.csv",
+          "intermediate/features/silhouette_pattern_fold_references.csv",
+          "intermediate/sensitivity/flip_rate_group_sensitivity.csv",
+          "intermediate/sensitivity/flip_rate_sensitivity.csv",
+          "intermediate/sensitivity/flip_rate_spatial_group_sensitivity.csv",
+          "intermediate/sensitivity/flip_rate_spatial_sensitivity.csv",
+          "intermediate/sensitivity/panorama_void_sensitivity.csv",
+          "intermediate/sensitivity/phase_mask_flip_group_sensitivity.csv",
+          "intermediate/sensitivity/phase_mask_flip_sensitivity.csv",
+          "intermediate/exploratory/image_void_alternatives.csv"
+        ],
+        "selected_acquisitions": 26,
+        "statistical_acquisitions": 25,
+        "excluded_acquisitions": {
+          "m03q01_001": "plug-slug",
+          "m03q80_001": "smooth annular",
+          "m04q05_001": "slug-churn",
+          "m05q05_002": "dispersed bubbles",
+          "m07q10_001": "slug-churn"
+        }
+      }
+    },
+    {
+      "check": "independent_mask_arithmetic_and_input_hashes",
+      "passed": true,
+      "details": {
+        "input_panorama_hashes_verified": 26,
+        "independent_area_means_verified": 26,
+        "max_area_error": 0.0,
+        "pixel_and_center_flip_counts_verified": 26,
+        "saturation_excluded_selected_runs": [
+          "m03q40_001"
+        ]
+      }
+    },
+    {
+      "check": "retained_measurements_against_archive",
+      "passed": true,
+      "details": {
+        "native_fields_checked": [
+          "n_native_frames",
+          "native_camera_fps",
+          "frame_index_step",
+          "effective_native_sample_hz",
+          "elapsed_s",
+          "sample_exposure_window_s",
+          "raw_otsu_threshold",
+          "raw_x508_flip_count",
+          "raw_x508_n_comparisons",
+          "raw_x508_flip_rate",
+          "raw_x508_flip_hz_per_pixel",
+          "raw_5probe_flip_count",
+          "raw_5probe_n_comparisons",
+          "raw_5probe_flip_rate",
+          "raw_5probe_flip_hz_per_pixel",
+          "raw_dark_occupancy",
+          "raw_shuffle_expected_rate",
+          "raw_rate_over_shuffle",
+          "raw_flip_share_intensity_change_le5",
+          "raw_core_saturation_fraction",
+          "raw_station_rate_min",
+          "raw_station_rate_max",
+          "raw_spatial_median3_flip_rate",
+          "raw_shuffled_flip_rate"
+        ],
+        "runs": 26,
+        "correction_ledger_verified": true,
+        "same_D53_on_both_sides": true,
+        "interpretation": "Spatial observables are recomputed. Original files, native temporal features, labels, widths, eligibility and geometry are preserved."
+      }
+    },
+    {
+      "check": "confirmed_full_lumen_normalization",
+      "passed": true,
+      "details": {
+        "passed": true,
+        "selected_acquisitions": 26,
+        "current_masks_checked": 26,
+        "corrected_input_hashes_checked": 26,
+        "confirmed_lumen_rows": [
+          18,
+          71
+        ],
+        "lumen_diameter_px": 53,
+        "full_lumen_maximum": 1,
+        "alpha_scale_factor": 1.2815948736205054,
+        "max_rescaling_error": 2.220446049250313e-16,
+        "boundary_source": "User-confirmed full tube interior on 2026-10-23: Python slice 18:71, rows 18 through 70, 53 pixel cells. Optical profile minima are not used as lumen boundaries. Refraction mapping remains uncalibrated.",
+        "segmentation_source_sha256": "68e7d0b7ea4f37a6a4ea474f68e440510a2887ef960a258dd52aa92faa6658f2",
+        "geometry_source_sha256": "05f36daaca877d1d80f3f6c992d403a1382978e81293b9649532e00e5e4dce3b",
+        "failures": [],
+        "interpretation": "D53 is unchanged between v14 and v14.1. D60 is only an algebraic control on each current mask; masks and flip rates may change because the panorama input changed."
+      }
+    },
+    {
+      "check": "calibration_and_computational_metadata_scope",
+      "passed": true,
+      "details": {
+        "computational_json_inputs_checked": [
+          "panorama_liquid_reference.json",
+          "image_void_alternatives_metadata.json",
+          "phase_mask_flip_metadata.json",
+          "flip_rate_audit.json",
+          "legacy_independent_audit.json",
+          "pattern_identification.json",
+          "silhouette_pattern_results.json",
+          "adversarial_checks.json",
+          "final_verification.json",
+          "summary_chart_checks.json",
+          "lumen_normalization_checks.json"
+        ],
+        "scope_bookkeeping_subtrees_exempt_from_input_scan": [
+          "dataset_scope",
+          "excluded_acquisitions",
+          "excluded_runs",
+          "explicitly_excluded_acquisitions",
+          "policy",
+          "scope"
+        ],
+        "segmentation_source_sha256": "68e7d0b7ea4f37a6a4ea474f68e440510a2887ef960a258dd52aa92faa6658f2",
+        "all_four_source_hashes_current": true
+      }
+    },
+    {
+      "check": "groups_charts_scaling_and_provenance",
+      "passed": true,
+      "details": {
+        "group_counts_independently_recomputed": {
+          "wavy annular": 8,
+          "churn": 10,
+          "plug": 3,
+          "slug": 3,
+          "dispersed bubbles": 1
+        },
+        "chart_coordinate_pairs_verified": 26,
+        "equal_acquisition_centroids_verified": 5,
+        "flip_scaling_factor": 1000,
+        "chart_source_hashes_current": true,
+        "svg_scope_and_hull_scope_verified": true
+      }
+    },
+    {
+      "check": "heldout_classifier_tests_and_missing_classes",
+      "passed": true,
+      "details": {
+        "model_variant_matrices_rebuilt": 48,
+        "heldout_predictions_checked": 1200,
+        "heldout_reference_folds_checked": 50,
+        "all_statistical_tests_retained_per_model": 25,
+        "singleton_bubble_runs": [
+          "m07q01_001"
+        ],
+        "absent_class_centroid_control_passed": true,
+        "independently_detected_absent_training_class_folds": {
+          "pattern_identification.json": {
+            "leave_one_run_out": 1,
+            "leave_one_mass_flux_out": 5,
+            "leave_one_run_out_consistent_variant": 1
+          },
+          "silhouette_pattern_results.json": {
+            "leave_one_run_out": 1,
+            "leave_one_mass_flux_out": 5
+          }
+        }
+      }
+    },
+    {
+      "check": "rank_test_methods_and_values",
+      "passed": true,
+      "details": {
+        "comparisons_independently_verified": 17,
+        "methods_ties_continuity_sample_sizes_and_auc_checked": true
+      }
+    },
+    {
+      "check": "written_executive_summary",
+      "passed": true,
+      "details": {
+        "summary_table_groups_checked": [
+          "dispersed bubbles",
+          "plug",
+          "slug",
+          "churn",
+          "wavy annular"
+        ],
+        "summary_table_rounding_checked": true,
+        "observed_hull_overlap_pairs_independently_checked": [
+          [
+            "churn",
+            "wavy annular"
+          ]
+        ],
+        "summary_flip_scaling_checked": 1000,
+        "embedded_figures_checked": 4,
+        "executive_summary_sha256": "51dded8b9ddebf1e742606cffe70057e98109eb8960f65fab68eaee1ec25cfb1",
+        "limitations_and_singleton_support_disclosed": true
+      }
+    },
+    {
+      "check": "written_executive_summary_pt_br",
+      "passed": true,
+      "details": {
+        "summary_table_groups_checked": [
+          "dispersed bubbles",
+          "plug",
+          "slug",
+          "churn",
+          "wavy annular"
+        ],
+        "summary_table_rounding_checked": true,
+        "observed_hull_overlap_pairs_independently_checked": [
+          [
+            "churn",
+            "wavy annular"
+          ]
+        ],
+        "summary_flip_scaling_checked": 1000,
+        "embedded_figures_checked": 4,
+        "executive_summary_sha256": "f177ff6a9103e2572e92ed71a6ee838071cb81a86a41d563ddc6c42ffbb38091",
+        "limitations_and_singleton_support_disclosed": true
+      }
+    }
+  ],
+  "failures": [],
+  "scope": "Post-regeneration arithmetic, dataset selection, leakage, chart and written-findings audit; not independent physical void calibration."
+}

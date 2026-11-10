@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "records": 3,
+  "checks": 45,
+  "maximum_pearson_absolute_error": 8.048961275264332e-08,
+  "maximum_texture_std_absolute_error": 1.0018605749451126e-06,
+  "maximum_overlap_relative_error": 8.50335543820616e-08,
+  "interpretation": "Direct calculation from native images and masks verifies selected saved numerical peaks; no independent experimental velocity truth.",
+  "script_sha256": "e396fb973cf58f136800f5937ad245818a7f128cc7942faee951e0ceb94f538b"
+}

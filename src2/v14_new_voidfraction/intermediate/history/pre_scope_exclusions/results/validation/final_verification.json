@@ -1,0 +1,13 @@
+{
+  "unchanged_input_panorama_hashes": 31,
+  "saved_binary_masks_verified": 31,
+  "independently_recomputed_visible_area_means": 31,
+  "max_visible_area_absolute_error": 0.0,
+  "independently_recomputed_candidate_flip_counts": 31,
+  "authoritative_labels_preserved": true,
+  "source_hash_matches_phase_and_classifier": true,
+  "heldout_reference_exclusions_verified": 52,
+  "confusion_matrix_scores_recomputed": true,
+  "segmentation_source_sha256": "0d1ddf2d1222fe6677d52733626ea5205f23b2a8edf3e3b39be5d750fa82d70c",
+  "interpretation": "arithmetic and artifact consistency checks; not physical calibration"
+}

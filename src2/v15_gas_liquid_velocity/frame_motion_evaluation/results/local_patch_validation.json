@@ -1,0 +1,381 @@
+{
+  "translation_tests": [
+    {
+      "dx_true": -45,
+      "dy_true": 0,
+      "dx": -45.002481094577256,
+      "dy": -0.002755349992393219,
+      "error_px": 0.0037078004101986466,
+      "roundtrip_px": 0.0037078004101989558,
+      "passed": true
+    },
+    {
+      "dx_true": 13,
+      "dy_true": 2,
+      "dx": 12.997518905422744,
+      "dy": 1.9972446500076064,
+      "error_px": 0.0037078004101989102,
+      "roundtrip_px": 0.0037078004101987454,
+      "passed": true
+    },
+    {
+      "dx_true": 0,
+      "dy_true": 0,
+      "dx": -0.002481094577255176,
+      "dy": -0.0027553499923938123,
+      "error_px": 0.0037078004101986964,
+      "roundtrip_px": 0.0037078004101986925,
+      "passed": true
+    },
+    {
+      "dx_true": 31.25,
+      "dy_true": -1.2,
+      "dx": 31.19306173488954,
+      "dy": -1.1472624523810417,
+      "error_px": 0.07760937419314086,
+      "roundtrip_px": 0.24336061965709013,
+      "passed": true
+    },
+    {
+      "dx_true": -13.4,
+      "dy_true": 1.3,
+      "dx": -13.34512195107469,
+      "dy": 1.221237821836097,
+      "error_px": 0.09599521322946869,
+      "roundtrip_px": 0.4099552897536723,
+      "passed": true
+    }
+  ],
+  "constant_rejected": true,
+  "peak_direct_pearson_difference": 5.551115123125783e-16,
+  "inputs": [
+    {
+      "run": "m03q05_001",
+      "pattern": "churn",
+      "fps": 5000.0,
+      "nframes": 501,
+      "duration_s": 0.1,
+      "core_saturation": 0.08994029657220991,
+      "config_sha256": "7b8ce31064fcbeaac7e21193e355b1f911ecc5a054b1429b5d445993e4335f3b",
+      "frame_content_sha256": "1a0db287aea2a707e5a7364606280c592b8cdc81976bed47611a2e9f0c048de3"
+    },
+    {
+      "run": "m03q10_001",
+      "pattern": "wavy annular",
+      "fps": 5000.0,
+      "nframes": 501,
+      "duration_s": 0.1,
+      "core_saturation": 0.0849730656796643,
+      "config_sha256": "52a9ed60b0563b7c6bca3af1b6237f577cf3ade80e2bcb1b2b27cfe62fb2cd82",
+      "frame_content_sha256": "b13f4d44d033b2ede926c19034a3afdede0d0057f68c5a6e10721637579e96c1"
+    },
+    {
+      "run": "m03q20_001",
+      "pattern": "wavy annular",
+      "fps": 4000.0,
+      "nframes": 501,
+      "duration_s": 0.125,
+      "core_saturation": 0.09580882526286011,
+      "config_sha256": "32a5ff648abbfe59905e820b70891d575b858f8c45797b12d4cbf111dda17bdb",
+      "frame_content_sha256": "f2502bafc0d83d68191fc2c6025f23fad0aa81632b1c585c673326e8e56065d9"
+    },
+    {
+      "run": "m03q40_001",
+      "pattern": "wavy annular",
+      "fps": 4000.0,
+      "nframes": 501,
+      "duration_s": 0.125,
+      "core_saturation": 0.2384445184434281,
+      "config_sha256": "8e67f172b69a81cfb3055bb324fb7ed99f10eba2332ba3a2c48327582a24c113",
+      "frame_content_sha256": "5e6b373ff83991d6cebf83f2a58cfd5bc6b3b7c4971f484a654ccd3aa5450e36"
+    },
+    {
+      "run": "m04q01_001",
+      "pattern": "slug",
+      "fps": 7000.0,
+      "nframes": 501,
+      "duration_s": 0.07142857142857142,
+      "core_saturation": 3.2906627689502885e-06,
+      "config_sha256": "68da6ad491a0ee3443c7096503a9a64fa7c3defb948740119736fe013affdeb2",
+      "frame_content_sha256": "fddb1ddeffb3e1ec8630626aee5e8b5713ecd697481859697ba8a270c3e8edd4"
+    },
+    {
+      "run": "m04q10_001",
+      "pattern": "churn",
+      "fps": 5000.0,
+      "nframes": 501,
+      "duration_s": 0.1,
+      "core_saturation": 0.017520127068697253,
+      "config_sha256": "14891930e7d838a2df916dff57c2677f2625a813c28950965c65ad37a5b024a0",
+      "frame_content_sha256": "66ed320676de78ac7982cee7ca3f5c5bab315cec1b9461024eff415c0e9f7bd2"
+    },
+    {
+      "run": "m04q20_001",
+      "pattern": "churn",
+      "fps": 5000.0,
+      "nframes": 501,
+      "duration_s": 0.1,
+      "core_saturation": 0.05378735638958304,
+      "config_sha256": "939acfec2847165fef8a112cb830ba2face3a7c0140bac6b9294d5602911564f",
+      "frame_content_sha256": "e2f7a57c0489f6d4f11030fb99629a6b10598ef87eaa85ccb6813a77e569dba1"
+    },
+    {
+      "run": "m04q40_001",
+      "pattern": "wavy annular",
+      "fps": 5000.0,
+      "nframes": 501,
+      "duration_s": 0.1,
+      "core_saturation": 0.042688049098653084,
+      "config_sha256": "79ebf78a17fb6a8b782eca0fbe29139c8305dff82bfb9e13cb8958ef9bfb4d3b",
+      "frame_content_sha256": "fb8ef47026d2572cae10f0aa8ba238249417656e9f56c37f64ba61a46093ec22"
+    },
+    {
+      "run": "m04q80_001",
+      "pattern": "wavy annular",
+      "fps": 5000.0,
+      "nframes": 501,
+      "duration_s": 0.1,
+      "core_saturation": 0.04051301923711632,
+      "config_sha256": "c8f50a35eabb14f45d35b88a0f3ffe1e7576c7f0723a247acd93a5230ea76d4b",
+      "frame_content_sha256": "4590d65e35d9316126bde93f40c197b5f5307ce9434f136e1582426eed4a75c8"
+    },
+    {
+      "run": "m05q01_001",
+      "pattern": "plug",
+      "fps": 7000.0,
+      "nframes": 501,
+      "duration_s": 0.07142857142857142,
+      "core_saturation": 1.1640105615540572e-05,
+      "config_sha256": "672c233fff958de898639f67ec77967d2eeab954adffaf2ba2b61a330237fc5e",
+      "frame_content_sha256": "12ab8149b9bac38d1b860c37e1c92bdcca9ea74986d4ffb02b7bde38fff61aca"
+    },
+    {
+      "run": "m05q05_001",
+      "pattern": "slug",
+      "fps": 7000.0,
+      "nframes": 501,
+      "duration_s": 0.07142857142857142,
+      "core_saturation": 2.5539472236629105e-06,
+      "config_sha256": "60ada031aeb8f5bc51db250cff17f6d2d118fb30778f15f2d0596da2dbb48d25",
+      "frame_content_sha256": "5d2a2d39d010bbf4fe0cf9cfec67d03e6b7898486c901dbb5eabe0bbc1beb1a4"
+    },
+    {
+      "run": "m05q10_001",
+      "pattern": "churn",
+      "fps": 7000.0,
+      "nframes": 501,
+      "duration_s": 0.07142857142857142,
+      "core_saturation": 2.1610322661763087e-06,
+      "config_sha256": "212c715b943d9ba88d31a19046767285e1e2aa820b92b09b95d9736f7b9a11af",
+      "frame_content_sha256": "aedcee27b70e7a837d62b7fa600819d7aa5e26874000f62a15a78ba9a72a76cb"
+    },
+    {
+      "run": "m05q20_001",
+      "pattern": "churn",
+      "fps": 7000.0,
+      "nframes": 501,
+      "duration_s": 0.07142857142857142,
+      "core_saturation": 2.013689157118833e-06,
+      "config_sha256": "4162ecdf22305cf84a3fda56b2b43cb84e0827f14a54bb4fc84b6499711ae4df",
+      "frame_content_sha256": "04c5a54007e406e5c4d44c3de9cc6148f9c4d192f7250ca7a7ef447df9385459"
+    },
+    {
+      "run": "m05q40_001",
+      "pattern": "churn",
+      "fps": 7000.0,
+      "nframes": 501,
+      "duration_s": 0.07142857142857142,
+      "core_saturation": 5.402580665440772e-07,
+      "config_sha256": "ac316eab16d64261d81bf2c166e26562ea26006514633f4854e450eb9a6301a6",
+      "frame_content_sha256": "9bc2541fe711f3a1b2d164bdaee9f934c4e713f57ad6d9261d20163bdda06e83"
+    },
+    {
+      "run": "m05q80_001",
+      "pattern": "wavy annular",
+      "fps": 7000.0,
+      "nframes": 501,
+      "duration_s": 0.07142857142857142,
+      "core_saturation": 0.0,
+      "config_sha256": "94ff5f63f1989712e3c42bc433c8765d131d0624506b6ec3e81b663d08c89aaf",
+      "frame_content_sha256": "269d95ec30d58dde61dbe6f1eda323f4f46ee5458edf6dfe96dde5b0d652d5f1"
+    },
+    {
+      "run": "m06q01_001",
+      "pattern": "plug",
+      "fps": 7000.0,
+      "nframes": 501,
+      "duration_s": 0.07142857142857142,
+      "core_saturation": 4.051935499080579e-05,
+      "config_sha256": "19cb64da3acbbc3d4aca1c515d0539770e01048c383b9758461a6a268eeef2fa",
+      "frame_content_sha256": "8f97efd8f79259740ae44367e87fd95a93b09e664bc32482cab0148725e29791"
+    },
+    {
+      "run": "m06q05_001",
+      "pattern": "slug",
+      "fps": 7000.0,
+      "nframes": 501,
+      "duration_s": 0.07142857142857142,
+      "core_saturation": 9.871988306850865e-06,
+      "config_sha256": "4fa748e1253a43503853bfb6ce481ff60f4a7a24ea54fe5f0c0677fa6523be60",
+      "frame_content_sha256": "a3a485202e4df1acab0ccf5b88065c4d22af4e53ac05efaddd4ddc74ade2116e"
+    },
+    {
+      "run": "m06q10_001",
+      "pattern": "churn",
+      "fps": 7000.0,
+      "nframes": 501,
+      "duration_s": 0.07142857142857142,
+      "core_saturation": 1.0756046961195718e-05,
+      "config_sha256": "331f6697a986f49778e0bb619820f281cedcfc552083213e8c8b3ca976b2f667",
+      "frame_content_sha256": "04144997fc5967832708df8114b025e7f90d53b3f11ab48d870001196d07fe6f"
+    },
+    {
+      "run": "m06q20_001",
+      "pattern": "churn",
+      "fps": 7000.0,
+      "nframes": 501,
+      "duration_s": 0.07142857142857142,
+      "core_saturation": 1.22785924214563e-06,
+      "config_sha256": "2bb3c5c91ccd04d63cf7b3f59b531f3533ec8efb76a7dc7535d955500ebf8457",
+      "frame_content_sha256": "689f612433420b414656d69cd4528b107587df8f6371364006a4a885b52f393d"
+    },
+    {
+      "run": "m06q40_001",
+      "pattern": "wavy annular",
+      "fps": 7000.0,
+      "nframes": 501,
+      "duration_s": 0.07142857142857142,
+      "core_saturation": 0.0,
+      "config_sha256": "36435f9a2fa9a2a571ed5129bbc8aac3adf7e532aefb6ddd34a7af473e3e80db",
+      "frame_content_sha256": "9f6b402b27d28e0281dee73e37ca141ec0c8d755c5d448f606b48ee6b001dbbc"
+    },
+    {
+      "run": "m06q80_001",
+      "pattern": "wavy annular",
+      "fps": 7000.0,
+      "nframes": 501,
+      "duration_s": 0.07142857142857142,
+      "core_saturation": 0.0,
+      "config_sha256": "e041a98f4b90a50d98c1f376e7b1f0a0f31748733b054c595c0cd9a96b3da239",
+      "frame_content_sha256": "f48a8284115039cd7ecc2e7a16d3da2ac06204525761c35bacee88e63d4905b0"
+    },
+    {
+      "run": "m07q01_001",
+      "pattern": "dispersed bubbles",
+      "fps": 7000.0,
+      "nframes": 501,
+      "duration_s": 0.07142857142857142,
+      "core_saturation": 0.0,
+      "config_sha256": "63ebb91609e544997adda52c3c4270a3cd822029d69ddcffe8dd53fbd5b502d0",
+      "frame_content_sha256": "f104c0502ba2a0a3533760db5c8741bc6db088c4e11390b4265bb984671e391d"
+    },
+    {
+      "run": "m07q05_001",
+      "pattern": "plug",
+      "fps": 7000.0,
+      "nframes": 501,
+      "duration_s": 0.07142857142857142,
+      "core_saturation": 5.697266883555723e-06,
+      "config_sha256": "4e3a9912656bf7db24dcc4c1281859f9109857562a3b3544f0c95a607fa1983e",
+      "frame_content_sha256": "13d33e776ef1531d8bb675d28cb0fdae72fcf182e14b1bf5299c30ee2a1f9124"
+    },
+    {
+      "run": "m07q20_001",
+      "pattern": "churn",
+      "fps": 7000.0,
+      "nframes": 501,
+      "duration_s": 0.07142857142857142,
+      "core_saturation": 2.946862181149512e-06,
+      "config_sha256": "71143822a96a7832c509700faba77312e0922096b6ae440e581b5e6209ba6436",
+      "frame_content_sha256": "2715ee9a1807b50d5a24257f92fdb4180b55cc8d3f68e7ed59bad8e89456a18e"
+    },
+    {
+      "run": "m07q40_001",
+      "pattern": "churn",
+      "fps": 7000.0,
+      "nframes": 501,
+      "duration_s": 0.07142857142857142,
+      "core_saturation": 1.473431090574756e-07,
+      "config_sha256": "e065ffecec41b705f3eca17333233195cd0c358cff6bd2796ab8495732d98c46",
+      "frame_content_sha256": "41469bdad1d9e2bca435c36c9d44ffa38303bbbaf0ebb81c7039ab267b2e5f59"
+    },
+    {
+      "run": "m07q80_001",
+      "pattern": "wavy annular",
+      "fps": 7000.0,
+      "nframes": 501,
+      "duration_s": 0.07142857142857142,
+      "core_saturation": 0.0,
+      "config_sha256": "797e8d93c5c1616db5618f239e6ef814140505638a3938f0617adfefc8b12f88",
+      "frame_content_sha256": "6ab1b95caf6777139926a27267f260a9c39a633fbc6ec67fd80c2a52b4b349d4"
+    }
+  ],
+  "excluded": [
+    {
+      "run": "m03q01_001",
+      "pattern": "plug-slug"
+    },
+    {
+      "run": "m03q80_001",
+      "pattern": "smooth annular"
+    },
+    {
+      "run": "m04q05_001",
+      "pattern": "slug-churn"
+    },
+    {
+      "run": "m05q05_002",
+      "pattern": "dispersed bubbles"
+    },
+    {
+      "run": "m07q10_001",
+      "pattern": "slug-churn"
+    }
+  ],
+  "methods": [
+    "raw",
+    "background_subtracted"
+  ],
+  "windows": [
+    [
+      220,
+      12
+    ],
+    [
+      220,
+      32
+    ],
+    [
+      220,
+      52
+    ],
+    [
+      636,
+      12
+    ],
+    [
+      636,
+      32
+    ],
+    [
+      636,
+      52
+    ]
+  ],
+  "samples": 50,
+  "search_dx": 96,
+  "search_dy": 4,
+  "min_correlation": 0.6,
+  "min_margin": 0.03,
+  "min_texture": 1.0,
+  "roundtrip_limit_px": 1.0,
+  "saturation_limit": 0.2,
+  "coherent_definition": "At least 3 accepted patches spanning both axial windows and >=2 radial windows; all axial shifts within max(2 px, 20% of absolute median).",
+  "support_definition": ">=50% sampled pairs coherent and whole-run native core saturation <=20%. Heuristic consistency, not physical validation.",
+  "rows": {
+    "tracks": 15600,
+    "pairs": 2600,
+    "summaries": 52
+  },
+  "elapsed_s": 19.142208624980412
+}

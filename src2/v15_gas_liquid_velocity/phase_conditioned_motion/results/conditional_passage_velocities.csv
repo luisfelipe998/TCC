@@ -1,0 +1,5 @@
+run,pattern,config,motion_gate,fps,gas_passage_mean_px_s,liquid_gap_mean_px_s,ratio_of_means,episode_equal_ratio,gas_pairs,liquid_pairs,gas_episodes,liquid_episodes
+m05q01_001,plug,consensus_reference_guard,lag2_confirmed,7000.0,-81738.5708439931,-83412.90238632898,0.9799271875880644,0.9832237056144085,273,59,9,8
+m05q05_001,slug,consensus_reference_guard,lag2_confirmed,7000.0,-81660.43919847292,-92199.18160268759,0.8856959224472393,0.934547474813284,253,56,13,9
+m06q01_001,plug,consensus_reference_guard,lag2_confirmed,7000.0,-109885.133004984,-110483.80330876939,0.9945813749540077,0.9881439324455116,245,31,15,6
+m07q05_001,plug,consensus_reference_guard,lag2_confirmed,7000.0,-102241.56009402774,-103426.4242959726,0.9885438928203284,1.0084650562962783,221,42,18,8

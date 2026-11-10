@@ -1,0 +1,16 @@
+{
+  "data_utc": "2026-10-25T00:05:01.670934+00:00",
+  "segundos_por_par": {
+    "principal": 0.10993190275136537,
+    "v5_mesmos_segmentos": 0.17937704166736998
+  },
+  "comparacoes_planejadas_novas": 8350,
+  "referencias_reutilizadas": 513,
+  "estimativa_segundos": 1011.196209538095,
+  "intervalo_planejado_minutos": [
+    13.482616127174602,
+    30.335886286142852
+  ],
+  "pico_memoria_benchmark_mib": 491.984375,
+  "nota": "Estimativa de tempo, não garantia. Ausências de correspondência óptica reduzem o número executável."
+}

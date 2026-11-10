@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "all_points": 26,
+  "internally_supported": 25,
+  "stable_all_variants": 7,
+  "material_phase_pairs": 0,
+  "svg_coordinate_checks": {
+    "PT_BR": {
+      "points": 26,
+      "filled": 7,
+      "max_coordinate_error_px_s": 0.00040093439747579396
+    },
+    "EN": {
+      "points": 26,
+      "filled": 7,
+      "max_coordinate_error_px_s": 0.0005121033755131066
+    }
+  },
+  "local_links_checked": 96,
+  "audits": {
+    "independent_block_verification.json": "passed_with_interpretation_limits",
+    "phase_local_verification.json": "passed",
+    "spectral_verification.json": "passed"
+  },
+  "manifest_files": 102,
+  "main_reports_match_latest": [
+    "findings/EXECUTIVE_SUMMARY.md",
+    "findings/EXECUTIVE_SUMMARY_PT_BR.md",
+    "findings/FIGURE_CAPTIONS_PT_BR.md"
+  ],
+  "limitations": "Numerical/provenance/presentation verification, not calibration or experimental validation of material phase velocities."
+}

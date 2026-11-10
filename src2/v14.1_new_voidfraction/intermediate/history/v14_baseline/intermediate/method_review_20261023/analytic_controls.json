@@ -1,0 +1,36 @@
+{
+  "hidden_disk": {
+    "diameter_px": 3,
+    "full_alpha": 0.0024999999999999996,
+    "observed_alpha": 0.0,
+    "reported_upper": 0.0,
+    "claimed_interval_covers_true": false
+  },
+  "all_original_boundary_checks_reject_no_foreground": true,
+  "runs_changed_by_boundary_fix": 24,
+  "largest_abs_alpha_change": {
+    "run": "m07q20_001",
+    "pattern": "churn",
+    "raw_radial_edge_foreground": 2965,
+    "closed_radial_edge_foreground": 0,
+    "n_rejected_original_foreground_components": 0,
+    "alpha_original": 0.5158136146443233,
+    "alpha_padded_closing": 0.5103964600578774,
+    "alpha_change": -0.0054171545864458714,
+    "changed_mask_pixels": 5697,
+    "flip_original": 0.015018447316566924,
+    "flip_padded_closing": 0.016234552944027137,
+    "flip_row40_per1000": 10.782650835958323,
+    "flip_row45_per1000": 9.328810273806639,
+    "duty_row40": 0.8812840702604482,
+    "duty_row45": 0.884312537855845
+  },
+  "probe_row45": {
+    "inferred_wall_rows": [
+      15,
+      75
+    ],
+    "apparent_midpoint": 45,
+    "implemented_probe": 40
+  }
+}

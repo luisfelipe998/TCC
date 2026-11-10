@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "scope_count": 26,
+  "closure_rows": 104,
+  "experiment_rows": 1352,
+  "max_mass_balance_residual_kg_m2_s": 1.1368683772161603e-13,
+  "checks": [
+    "exact scope",
+    "native config agreement",
+    "frame count",
+    "mass conservation",
+    "phase flux identities",
+    "homogeneous equal speeds",
+    "superficial invariance to closure",
+    "same-q cancellation under zero inlet",
+    "invalid quality not clipped",
+    "absent phase velocity undefined"
+  ]
+}
+RA baseline pattern medians:
+                          Jg        Jl         ug        ul      slip
+pattern                                                              
+churn               6.724523  1.078816   8.588635  4.274720  1.740328
+dispersed bubbles   0.336226  1.617780   2.322271  1.891661  1.227636
+plug                0.336226  1.380610   2.056532  1.650444  1.269681
+slug                1.681131  1.138008   3.280566  2.334142  1.360396
+wavy annular       13.449046  0.693667  16.163569  6.212639  3.156140
+Outside two-phase domain by scenario:
+scenario
+Tsat_25C                    0
+Tsat_29C                    0
+inlet_quality_0.01          0
+inlet_quality_0.05          0
+net_heat_90pct              0
+recorded_flow_mean          0
+recorded_flow_median        0
+recorded_flow_trimmed10     0
+saturated_inlet             0
+subcool_10K                12
+subcool_1K                  4
+subcool_2K                  4
+subcool_5K                  7

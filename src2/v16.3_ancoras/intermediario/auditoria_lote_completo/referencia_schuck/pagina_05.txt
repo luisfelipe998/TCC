@@ -1,0 +1,49 @@
+32 On the Development of an Alternative Proposition of Cross Wavelet Analysis 413
+
+32.2.2 Alternative Definitions for Cross Wavelet Spectrum
+and Wavelet Coherence
+
+When analyzing stationary processes, correlation functions perform a time transla-
+tion of one sequence in the time domain and the spectral density functions perform
+a point by point multiplication in the frequency domain [BePi00]. However, even
+though the CWT has both time and frequency domain representation, WPS and
+WCS are obtained just by a point by point multiplication of the CWT of x and y
+
+This fact, together with the averaging process defined in (32.13) for transient events
+to occur at different times in x and y series, renders the WCS inconclusive, with
+as many local maxima at the respective positions of each event. Therefore, if there
+is some fixed delay between event appearance in an x and y process, it will be
+hardly estimated by (32.13), contrarily to the traditional correlation analysis. This
+scenario gets worse if noise is present in the realizations, which will be exemplified
+in the next section. Moreover, the estimation of WCO can result in a trivial unitary
+response. For these issues and since CWT has both scale (or related frequency)
+and time as independent variables, it seems more appropriate if definitions for
+WPS, WCS, and WCO had some sort of correlation or convolution operation in the
+time domain along with multiplication in the scale domain. With this idea in mind
+and drawing an analogy with the Wiener-Khintchine relations [NU10], we propose
+different definitions for WPS and WCS by:
+
+WPS,(b,a) = E{|CWT {Ryx()} |} . (32.14)
+WPS,(b,a) = E{|CWT {Ryy@} |} , (32.15)
+WCSxy(b,a) = E{CWT {Rxy(t)}} , (32.16)
+
+where Ryx(t), Ryy(t), and Ryy(t) are the auto-correlation functions of stationary
+processes x and y and the cross-correlation function of stationary processes as
+defined in (32.1), (32.2), and (32.3), respectively. Now the variable b of CWT is
+related with the lag t between samples of time series and for a fixed scale a,
+WPS, (b, a), WPSy(b, a), and WCS,y(b, a) can be seen as the auto-correlation
+of the signals x and y and cross-correlation filtered by a scaled mother wavelet y.
+
+Taking into account that since Ry,(0) > |Ryx(t)| the maximum value of
+WPS will be at b = 0, but for WCS, this maximum value can occur at a
+different time position. So, in a quite similar way as in correlation analysis, one
+can normalize (32.16) in order to obtain a new WCO by:
+
+|WCSyy(b, a)?
+
+WC Oxy (b, a) =
+|W PS, (0, a)||W PS, (0, a)|
+
+(32.17)
+
+bardo.bodmann@utrgs.br

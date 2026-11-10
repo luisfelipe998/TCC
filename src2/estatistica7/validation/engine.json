@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "original_fft_errors": [
+    {
+      "n": 3171,
+      "max_abs_error": 1.3732700395566711e-15
+    },
+    {
+      "n": 5071,
+      "max_abs_error": 1.5742574924190435e-15
+    },
+    {
+      "n": 7001,
+      "max_abs_error": 1.1631705747361535e-15
+    }
+  ],
+  "maximum_pair_reversal_error": 4.9960036108132044e-15,
+  "temporal_convolution_checked": true,
+  "zero_lag_self_identity_checked": true,
+  "synthetic_silhouette_ari_holm_checked": true
+}

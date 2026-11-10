@@ -1,0 +1,28 @@
+{
+  "erro_auto_coerencia": 0.0,
+  "erro_troca_wcs": 3.517601174519978e-17,
+  "erro_troca_wco": 1.9984014443252818e-15,
+  "erro_invariancia_ganho": 2.220446049250313e-15,
+  "erro_atraso": 1.1102230246251565e-15,
+  "atraso_esperado": -500,
+  "pico_lambda_seno_256": 253.54611688290203,
+  "wco_nao_enviesada_impulso": 1.7503221627973748,
+  "efeito_coluna_costura_intensidade": 1.2037037037037095,
+  "efeito_coluna_costura": [
+    {
+      "run_x": "m05q01_001",
+      "run_y": "m07q05_001",
+      "diferenca_maxima_wco": 0.0002563526821223877,
+      "diferenca_media_central": -1.207631305144683e-05
+    },
+    {
+      "run_x": "m06q01_001",
+      "run_y": "m07q05_001",
+      "diferenca_maxima_wco": 0.00018152828454383318,
+      "diferenca_media_central": 5.530399782565935e-06
+    }
+  ],
+  "teste_costura_nao_altera_ancora": true,
+  "data_utc": "2026-10-25T19:15:01.876940+00:00",
+  "segundos": 1.8046649589959998
+}

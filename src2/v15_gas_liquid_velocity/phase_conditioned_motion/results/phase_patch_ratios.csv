@@ -1,0 +1,157 @@
+run,pattern,variant,method,gas_mean_px_frame,liquid_mean_px_frame,unfiltered_ratio_of_means,descriptive_ratio,eligible_descriptive_ratio,withheld_reasons,gas_tracks,liquid_tracks,gas_frames,liquid_frames
+m03q05_001,churn,majority_070,raw,-14.8881413019557,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,30,0,26,0
+m03q05_001,churn,majority_070,background_subtracted,-16.30996283109311,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,76,0,47,0
+m03q05_001,churn,consensus_95,raw,-14.013957801768498,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,27,0,24,0
+m03q05_001,churn,consensus_95,background_subtracted,-14.814234033756774,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,70,0,42,0
+m03q05_001,churn,interior_consensus_100,raw,-13.577931572852481,nan,nan,nan,False,gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,18,0,17,0
+m03q05_001,churn,interior_consensus_100,background_subtracted,-14.556568662977632,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,33,0,26,0
+m03q10_001,wavy annular,majority_070,raw,-13.241325418717688,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,3,0,3,0
+m03q10_001,wavy annular,majority_070,background_subtracted,-15.130392536947221,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,38,0,28,0
+m03q10_001,wavy annular,consensus_95,raw,-13.241325418717688,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,3,0,3,0
+m03q10_001,wavy annular,consensus_95,background_subtracted,-15.130392536947221,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,38,0,28,0
+m03q10_001,wavy annular,interior_consensus_100,raw,-13.241325418717688,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,3,0,3,0
+m03q10_001,wavy annular,interior_consensus_100,background_subtracted,-14.208993511575192,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,30,0,24,0
+m03q20_001,wavy annular,majority_070,raw,nan,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,0,0,0,0
+m03q20_001,wavy annular,majority_070,background_subtracted,-29.768248589942235,nan,nan,nan,False,gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,13,0,12,0
+m03q20_001,wavy annular,consensus_95,raw,nan,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,0,0,0,0
+m03q20_001,wavy annular,consensus_95,background_subtracted,-29.768248589942235,nan,nan,nan,False,gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,13,0,12,0
+m03q20_001,wavy annular,interior_consensus_100,raw,nan,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,0,0,0,0
+m03q20_001,wavy annular,interior_consensus_100,background_subtracted,-30.744558572025312,nan,nan,nan,False,gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,12,0,11,0
+m03q40_001,wavy annular,majority_070,raw,nan,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;saturation;missing_phase_mean,0,0,0,0
+m03q40_001,wavy annular,majority_070,background_subtracted,-52.304643423219936,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;saturation;missing_phase_mean,1,0,1,0
+m03q40_001,wavy annular,consensus_95,raw,nan,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;saturation;missing_phase_mean,0,0,0,0
+m03q40_001,wavy annular,consensus_95,background_subtracted,-52.304643423219936,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;saturation;missing_phase_mean,1,0,1,0
+m03q40_001,wavy annular,interior_consensus_100,raw,nan,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;saturation;missing_phase_mean,0,0,0,0
+m03q40_001,wavy annular,interior_consensus_100,background_subtracted,-52.304643423219936,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;saturation;missing_phase_mean,1,0,1,0
+m04q01_001,slug,majority_070,raw,-6.390766935049946,-13.96162554318412,0.4577380273724526,nan,False,liquid_too_few_frames;liquid_too_few_tracks,84,14,47,9
+m04q01_001,slug,majority_070,background_subtracted,-6.359252920969778,-13.939837430172583,0.4561927606992937,nan,False,liquid_too_few_frames;liquid_too_few_tracks,134,13,49,8
+m04q01_001,slug,consensus_95,raw,-4.7087847246592265,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,66,0,43,0
+m04q01_001,slug,consensus_95,background_subtracted,-5.158831388406024,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,118,0,46,0
+m04q01_001,slug,interior_consensus_100,raw,-4.618957571464651,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,60,0,43,0
+m04q01_001,slug,interior_consensus_100,background_subtracted,-4.980424686839725,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,72,0,46,0
+m04q10_001,churn,majority_070,raw,-15.381001709498634,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,83,0,41,0
+m04q10_001,churn,majority_070,background_subtracted,-14.933380279191812,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,131,0,47,0
+m04q10_001,churn,consensus_95,raw,-13.963463870487619,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,71,0,40,0
+m04q10_001,churn,consensus_95,background_subtracted,-14.018610537658775,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,116,0,46,0
+m04q10_001,churn,interior_consensus_100,raw,-12.206961044015898,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,42,0,34,0
+m04q10_001,churn,interior_consensus_100,background_subtracted,-13.247650406571438,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,66,0,43,0
+m04q20_001,churn,majority_070,raw,-17.90313091878166,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,56,0,36,0
+m04q20_001,churn,majority_070,background_subtracted,-16.850962890780014,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,86,0,46,0
+m04q20_001,churn,consensus_95,raw,-16.128513889134613,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,41,0,29,0
+m04q20_001,churn,consensus_95,background_subtracted,-15.957135708286767,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,74,0,44,0
+m04q20_001,churn,interior_consensus_100,raw,-15.373044322909877,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,22,0,21,0
+m04q20_001,churn,interior_consensus_100,background_subtracted,-15.28120995329418,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,31,0,27,0
+m04q40_001,wavy annular,majority_070,raw,-26.377925522069887,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,6,0,5,0
+m04q40_001,wavy annular,majority_070,background_subtracted,-19.68379852271375,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,44,0,31,0
+m04q40_001,wavy annular,consensus_95,raw,-26.377925522069887,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,6,0,5,0
+m04q40_001,wavy annular,consensus_95,background_subtracted,-19.68379852271375,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,44,0,31,0
+m04q40_001,wavy annular,interior_consensus_100,raw,-26.377925522069887,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,6,0,5,0
+m04q40_001,wavy annular,interior_consensus_100,background_subtracted,-19.99094399095929,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,21,0,17,0
+m04q80_001,wavy annular,majority_070,raw,-32.685994222761565,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,2,0,2,0
+m04q80_001,wavy annular,majority_070,background_subtracted,-21.536015964510142,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,9,0,7,0
+m04q80_001,wavy annular,consensus_95,raw,-32.685994222761565,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,2,0,2,0
+m04q80_001,wavy annular,consensus_95,background_subtracted,-21.536015964510142,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,9,0,7,0
+m04q80_001,wavy annular,interior_consensus_100,raw,-32.685994222761565,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,2,0,2,0
+m04q80_001,wavy annular,interior_consensus_100,background_subtracted,-22.049481890929677,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,8,0,7,0
+m05q01_001,plug,majority_070,raw,-7.428091645269691,-10.750343929675298,0.6909631630263617,0.6909631630263617,True,,51,22,34,15
+m05q01_001,plug,majority_070,background_subtracted,-7.161875666688394,-11.221920731917475,0.6382040862504518,0.6382040862504518,True,,74,26,41,18
+m05q01_001,plug,consensus_95,raw,-5.344571182325119,-0.47278085318997765,11.304542360935054,nan,False,liquid_too_few_frames;liquid_too_few_tracks;near_zero_liquid_mean,29,2,24,2
+m05q01_001,plug,consensus_95,background_subtracted,-5.998226509069063,-0.5552028345935445,10.80366693995767,nan,False,liquid_too_few_frames;liquid_too_few_tracks;near_zero_liquid_mean,51,2,38,2
+m05q01_001,plug,interior_consensus_100,raw,-4.34306185298924,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,22,0,20,0
+m05q01_001,plug,interior_consensus_100,background_subtracted,-4.985214139834002,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,36,0,33,0
+m05q05_001,slug,majority_070,raw,-9.5208374597895,-12.860714487466264,0.7403039286089643,0.7403039286089643,True,,61,24,39,17
+m05q05_001,slug,majority_070,background_subtracted,-9.485337603966196,-13.069702425618921,0.725750081759571,0.725750081759571,True,,64,29,40,17
+m05q05_001,slug,consensus_95,raw,-8.675665169969545,-12.024833141797851,0.7214790482051074,nan,False,liquid_too_few_frames;liquid_too_few_tracks,39,1,31,1
+m05q05_001,slug,consensus_95,background_subtracted,-8.84176723079467,-11.973674608491788,0.7384338993581842,nan,False,liquid_too_few_frames;liquid_too_few_tracks,42,1,34,1
+m05q05_001,slug,interior_consensus_100,raw,-7.531345083789245,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,29,0,23,0
+m05q05_001,slug,interior_consensus_100,background_subtracted,-7.661090144472514,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,31,0,25,0
+m05q10_001,churn,majority_070,raw,-12.717543085500997,-21.62152187771033,0.5881890811123494,nan,False,liquid_too_few_frames;liquid_too_few_tracks,121,1,47,1
+m05q10_001,churn,majority_070,background_subtracted,-12.62778673915544,-25.343581777085443,0.4982636965139999,nan,False,liquid_too_few_frames;liquid_too_few_tracks,136,1,49,1
+m05q10_001,churn,consensus_95,raw,-11.968706284014484,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,84,0,43,0
+m05q10_001,churn,consensus_95,background_subtracted,-12.18640556859019,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,100,0,47,0
+m05q10_001,churn,interior_consensus_100,raw,-11.732333163020957,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,45,0,37,0
+m05q10_001,churn,interior_consensus_100,background_subtracted,-11.734320583121688,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,50,0,40,0
+m05q20_001,churn,majority_070,raw,-13.399094310807596,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,110,0,46,0
+m05q20_001,churn,majority_070,background_subtracted,-13.336486023230368,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,125,0,47,0
+m05q20_001,churn,consensus_95,raw,-12.247068842350597,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,70,0,39,0
+m05q20_001,churn,consensus_95,background_subtracted,-12.069131771951152,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,83,0,40,0
+m05q20_001,churn,interior_consensus_100,raw,-11.906045870430132,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,35,0,28,0
+m05q20_001,churn,interior_consensus_100,background_subtracted,-12.32950445077353,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,44,0,34,0
+m05q40_001,churn,majority_070,raw,-18.773461665417976,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,68,0,38,0
+m05q40_001,churn,majority_070,background_subtracted,-18.67040988112393,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,82,0,44,0
+m05q40_001,churn,consensus_95,raw,-17.406150399364172,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,51,0,31,0
+m05q40_001,churn,consensus_95,background_subtracted,-16.779572131278268,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,59,0,36,0
+m05q40_001,churn,interior_consensus_100,raw,-16.869352719157582,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,26,0,20,0
+m05q40_001,churn,interior_consensus_100,background_subtracted,-15.705917551589236,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,29,0,22,0
+m05q80_001,wavy annular,majority_070,raw,-27.908862964918622,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,4,0,4,0
+m05q80_001,wavy annular,majority_070,background_subtracted,-22.801442855371114,nan,nan,nan,False,gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,11,0,10,0
+m05q80_001,wavy annular,consensus_95,raw,-25.60263211095561,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,3,0,3,0
+m05q80_001,wavy annular,consensus_95,background_subtracted,-22.801442855371114,nan,nan,nan,False,gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,11,0,10,0
+m05q80_001,wavy annular,interior_consensus_100,raw,-25.60263211095561,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,3,0,3,0
+m05q80_001,wavy annular,interior_consensus_100,background_subtracted,-22.142483227013436,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,4,0,4,0
+m06q01_001,plug,majority_070,raw,-10.971827895696238,-15.531294755920467,0.706433563210422,nan,False,liquid_too_few_tracks,58,18,37,13
+m06q01_001,plug,majority_070,background_subtracted,-10.985484694875472,-15.66017341744999,0.701491892971916,0.701491892971916,True,,69,21,38,13
+m06q01_001,plug,consensus_95,raw,-9.959135445537246,-15.43070805000481,0.6454101401739722,nan,False,liquid_too_few_frames;liquid_too_few_tracks,38,1,30,1
+m06q01_001,plug,consensus_95,background_subtracted,-10.029333807026536,-15.714835322096285,0.6382080118220844,nan,False,liquid_too_few_frames;liquid_too_few_tracks,48,1,33,1
+m06q01_001,plug,interior_consensus_100,raw,-9.476244291224,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,30,0,26,0
+m06q01_001,plug,interior_consensus_100,background_subtracted,-9.41834252299528,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,32,0,27,0
+m06q05_001,slug,majority_070,raw,-11.060161625551357,-17.70300767302722,0.6247617257943642,0.6247617257943642,True,,80,21,42,12
+m06q05_001,slug,majority_070,background_subtracted,-11.170552112510041,-17.762805166390297,0.6288731992425545,0.6288731992425545,True,,93,22,47,12
+m06q05_001,slug,consensus_95,raw,-10.567499860487837,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,53,0,37,0
+m06q05_001,slug,consensus_95,background_subtracted,-10.098819350858957,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,64,0,39,0
+m06q05_001,slug,interior_consensus_100,raw,-10.186970432065335,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,38,0,33,0
+m06q05_001,slug,interior_consensus_100,background_subtracted,-9.89094223108119,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,42,0,35,0
+m06q10_001,churn,majority_070,raw,-12.858359947137586,-22.987334478797614,0.5593671575535435,nan,False,liquid_too_few_frames;liquid_too_few_tracks,116,2,47,2
+m06q10_001,churn,majority_070,background_subtracted,-12.872361491104181,-22.958619927511435,0.5606766230612652,nan,False,liquid_too_few_frames;liquid_too_few_tracks,128,2,46,2
+m06q10_001,churn,consensus_95,raw,-11.646394082309675,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,91,0,40,0
+m06q10_001,churn,consensus_95,background_subtracted,-11.894784932755854,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,103,0,41,0
+m06q10_001,churn,interior_consensus_100,raw,-11.019647756210992,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,44,0,34,0
+m06q10_001,churn,interior_consensus_100,background_subtracted,-11.47296781483902,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,47,0,35,0
+m06q20_001,churn,majority_070,raw,-19.767771250889467,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,84,0,44,0
+m06q20_001,churn,majority_070,background_subtracted,-19.298662708274307,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,85,0,45,0
+m06q20_001,churn,consensus_95,raw,-18.6753466097881,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,58,0,37,0
+m06q20_001,churn,consensus_95,background_subtracted,-18.388230882754034,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,64,0,40,0
+m06q20_001,churn,interior_consensus_100,raw,-17.899322647167235,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,29,0,25,0
+m06q20_001,churn,interior_consensus_100,background_subtracted,-17.70781911821012,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,25,0,20,0
+m06q40_001,wavy annular,majority_070,raw,-23.64200036469868,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,26,0,20,0
+m06q40_001,wavy annular,majority_070,background_subtracted,-23.97353981227615,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,42,0,29,0
+m06q40_001,wavy annular,consensus_95,raw,-20.288220392061938,nan,nan,nan,False,gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,17,0,15,0
+m06q40_001,wavy annular,consensus_95,background_subtracted,-22.726027803349695,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,34,0,24,0
+m06q40_001,wavy annular,interior_consensus_100,raw,-20.02212945123458,nan,nan,nan,False,gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,15,0,14,0
+m06q40_001,wavy annular,interior_consensus_100,background_subtracted,-19.828863106317574,nan,nan,nan,False,gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,18,0,16,0
+m06q80_001,wavy annular,majority_070,raw,-28.74433358333974,nan,nan,nan,False,gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,10,0,10,0
+m06q80_001,wavy annular,majority_070,background_subtracted,-30.56240223748829,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,8,0,8,0
+m06q80_001,wavy annular,consensus_95,raw,-26.61461775073422,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,8,0,8,0
+m06q80_001,wavy annular,consensus_95,background_subtracted,-29.546720140140962,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,6,0,6,0
+m06q80_001,wavy annular,interior_consensus_100,raw,-26.61461775073422,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,8,0,8,0
+m06q80_001,wavy annular,interior_consensus_100,background_subtracted,-30.308243623116805,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,3,0,3,0
+m07q01_001,dispersed bubbles,majority_070,raw,nan,-6.725583395737514,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;missing_phase_mean,0,77,0,45
+m07q01_001,dispersed bubbles,majority_070,background_subtracted,nan,-6.743348972245549,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;missing_phase_mean,0,97,0,48
+m07q01_001,dispersed bubbles,consensus_95,raw,nan,-6.650065913722273,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;missing_phase_mean,0,24,0,24
+m07q01_001,dispersed bubbles,consensus_95,background_subtracted,nan,-6.7537033941945985,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;missing_phase_mean,0,35,0,29
+m07q01_001,dispersed bubbles,interior_consensus_100,raw,nan,-8.431240089789451,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,0,1,0,1
+m07q01_001,dispersed bubbles,interior_consensus_100,background_subtracted,nan,-6.517003379704635,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,0,4,0,4
+m07q05_001,plug,majority_070,raw,-11.461836132705324,-14.012543746106681,0.8179696948949715,0.8179696948949715,True,,53,22,32,12
+m07q05_001,plug,majority_070,background_subtracted,-11.471047130168229,-14.015175012074023,0.8184733419515605,0.8184733419515605,True,,60,22,33,12
+m07q05_001,plug,consensus_95,raw,-10.728508569861907,-13.545834419181718,0.7920153338556754,nan,False,liquid_too_few_frames;liquid_too_few_tracks,29,5,23,4
+m07q05_001,plug,consensus_95,background_subtracted,-10.669700456054304,-13.590597073831809,0.7850795957006493,nan,False,liquid_too_few_frames;liquid_too_few_tracks,33,5,25,4
+m07q05_001,plug,interior_consensus_100,raw,-10.420306096402753,nan,nan,nan,False,gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,18,0,18,0
+m07q05_001,plug,interior_consensus_100,background_subtracted,-10.457108309105962,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,20,0,20,0
+m07q20_001,churn,majority_070,raw,-15.056264339007106,-25.297977625191646,0.5951568367273014,nan,False,liquid_too_few_frames;liquid_too_few_tracks,111,3,44,2
+m07q20_001,churn,majority_070,background_subtracted,-15.272332719891667,-25.41874013799697,0.600829649187135,nan,False,liquid_too_few_frames;liquid_too_few_tracks,113,3,46,2
+m07q20_001,churn,consensus_95,raw,-14.218635017927056,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,68,0,40,0
+m07q20_001,churn,consensus_95,background_subtracted,-14.418507581790937,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,71,0,40,0
+m07q20_001,churn,interior_consensus_100,raw,-15.097571742792963,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,32,0,28,0
+m07q20_001,churn,interior_consensus_100,background_subtracted,-15.832009781441183,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,31,0,25,0
+m07q40_001,churn,majority_070,raw,-19.778673510609703,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,88,0,44,0
+m07q40_001,churn,majority_070,background_subtracted,-19.719634380559746,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,84,0,46,0
+m07q40_001,churn,consensus_95,raw,-19.02163290762314,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,52,0,33,0
+m07q40_001,churn,consensus_95,background_subtracted,-18.284693979570765,nan,nan,nan,False,liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,49,0,35,0
+m07q40_001,churn,interior_consensus_100,raw,-18.77100250186505,nan,nan,nan,False,gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,18,0,18,0
+m07q40_001,churn,interior_consensus_100,background_subtracted,-17.220050847421724,nan,nan,nan,False,gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,14,0,13,0
+m07q80_001,wavy annular,majority_070,raw,-27.94810077156454,nan,nan,nan,False,gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,15,0,15,0
+m07q80_001,wavy annular,majority_070,background_subtracted,-28.070084209480164,nan,nan,nan,False,gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,19,0,15,0
+m07q80_001,wavy annular,consensus_95,raw,-26.293895348127936,nan,nan,nan,False,gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,11,0,11,0
+m07q80_001,wavy annular,consensus_95,background_subtracted,-26.470617653182025,nan,nan,nan,False,gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,13,0,11,0
+m07q80_001,wavy annular,interior_consensus_100,raw,-24.534327759094637,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,8,0,8,0
+m07q80_001,wavy annular,interior_consensus_100,background_subtracted,-25.983169973112776,nan,nan,nan,False,gas_too_few_frames;gas_too_few_tracks;liquid_too_few_frames;liquid_too_few_tracks;missing_phase_mean,7,0,6,0

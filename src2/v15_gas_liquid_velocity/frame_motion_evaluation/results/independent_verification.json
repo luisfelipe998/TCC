@@ -1,0 +1,327 @@
+{
+  "scope": [
+    {
+      "run": "m03q05_001",
+      "pattern": "churn",
+      "frames": 501,
+      "fps": 5000.0,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.1
+    },
+    {
+      "run": "m03q10_001",
+      "pattern": "wavy annular",
+      "frames": 501,
+      "fps": 5000.0,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.1
+    },
+    {
+      "run": "m03q20_001",
+      "pattern": "wavy annular",
+      "frames": 501,
+      "fps": 4000.0,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.125
+    },
+    {
+      "run": "m03q40_001",
+      "pattern": "wavy annular",
+      "frames": 501,
+      "fps": 4000.0,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.125
+    },
+    {
+      "run": "m04q01_001",
+      "pattern": "slug",
+      "frames": 501,
+      "fps": 7000.0,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142
+    },
+    {
+      "run": "m04q10_001",
+      "pattern": "churn",
+      "frames": 501,
+      "fps": 5000.0,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.1
+    },
+    {
+      "run": "m04q20_001",
+      "pattern": "churn",
+      "frames": 501,
+      "fps": 5000.0,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.1
+    },
+    {
+      "run": "m04q40_001",
+      "pattern": "wavy annular",
+      "frames": 501,
+      "fps": 5000.0,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.1
+    },
+    {
+      "run": "m04q80_001",
+      "pattern": "wavy annular",
+      "frames": 501,
+      "fps": 5000.0,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.1
+    },
+    {
+      "run": "m05q01_001",
+      "pattern": "plug",
+      "frames": 501,
+      "fps": 7000.0,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142
+    },
+    {
+      "run": "m05q05_001",
+      "pattern": "slug",
+      "frames": 501,
+      "fps": 7000.0,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142
+    },
+    {
+      "run": "m05q10_001",
+      "pattern": "churn",
+      "frames": 501,
+      "fps": 7000.0,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142
+    },
+    {
+      "run": "m05q20_001",
+      "pattern": "churn",
+      "frames": 501,
+      "fps": 7000.0,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142
+    },
+    {
+      "run": "m05q40_001",
+      "pattern": "churn",
+      "frames": 501,
+      "fps": 7000.0,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142
+    },
+    {
+      "run": "m05q80_001",
+      "pattern": "wavy annular",
+      "frames": 501,
+      "fps": 7000.0,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142
+    },
+    {
+      "run": "m06q01_001",
+      "pattern": "plug",
+      "frames": 501,
+      "fps": 7000.0,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142
+    },
+    {
+      "run": "m06q05_001",
+      "pattern": "slug",
+      "frames": 501,
+      "fps": 7000.0,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142
+    },
+    {
+      "run": "m06q10_001",
+      "pattern": "churn",
+      "frames": 501,
+      "fps": 7000.0,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142
+    },
+    {
+      "run": "m06q20_001",
+      "pattern": "churn",
+      "frames": 501,
+      "fps": 7000.0,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142
+    },
+    {
+      "run": "m06q40_001",
+      "pattern": "wavy annular",
+      "frames": 501,
+      "fps": 7000.0,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142
+    },
+    {
+      "run": "m06q80_001",
+      "pattern": "wavy annular",
+      "frames": 501,
+      "fps": 7000.0,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142
+    },
+    {
+      "run": "m07q01_001",
+      "pattern": "dispersed bubbles",
+      "frames": 501,
+      "fps": 7000.0,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142
+    },
+    {
+      "run": "m07q05_001",
+      "pattern": "plug",
+      "frames": 501,
+      "fps": 7000.0,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142
+    },
+    {
+      "run": "m07q20_001",
+      "pattern": "churn",
+      "frames": 501,
+      "fps": 7000.0,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142
+    },
+    {
+      "run": "m07q40_001",
+      "pattern": "churn",
+      "frames": 501,
+      "fps": 7000.0,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142
+    },
+    {
+      "run": "m07q80_001",
+      "pattern": "wavy annular",
+      "frames": 501,
+      "fps": 7000.0,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142
+    }
+  ],
+  "excluded": [
+    {
+      "run": "m03q01_001",
+      "pattern": "plug-slug"
+    },
+    {
+      "run": "m03q80_001",
+      "pattern": "smooth annular"
+    },
+    {
+      "run": "m04q05_001",
+      "pattern": "slug-churn"
+    },
+    {
+      "run": "m05q05_002",
+      "pattern": "dispersed bubbles"
+    },
+    {
+      "run": "m07q10_001",
+      "pattern": "slug-churn"
+    }
+  ],
+  "rate_counts": {
+    "5000.0": 6,
+    "4000.0": 2,
+    "7000.0": 18
+  },
+  "baseline": {
+    "pair_rows": 13000,
+    "numeric_cells": 26104,
+    "maximum_difference": 0.0,
+    "passing_pairs": 7528,
+    "supported_runs": 17
+  },
+  "local_patch": {
+    "track_rows": 15600,
+    "pair_rows": 2600,
+    "summary_rows": 52,
+    "numeric_cells": 34463,
+    "maximum_difference": 1.4210854715202004e-14,
+    "methods": {
+      "raw": {
+        "accepted_tracks": 2902,
+        "coherent_pairs": 194,
+        "supported_runs": [
+          "m07q05_001"
+        ]
+      },
+      "background_subtracted": {
+        "accepted_tracks": 3880,
+        "coherent_pairs": 254,
+        "supported_runs": [
+          "m07q05_001"
+        ]
+      }
+    }
+  },
+  "temporal": {
+    "pair_rows": 38896,
+    "summary_rows": 26,
+    "totals": {
+      "runs": 26,
+      "adjacent_pairs": 13000,
+      "adjacent_pass": 7528,
+      "base_supported": 17,
+      "lag_stable": 7,
+      "temporal_pairs": 38896
+    },
+    "stable_runs": [
+      "m04q01_001",
+      "m05q01_001",
+      "m05q05_001",
+      "m06q01_001",
+      "m06q05_001",
+      "m07q01_001",
+      "m07q05_001"
+    ],
+    "numeric_cells": 247052,
+    "maximum_difference": 3.552713678800501e-15
+  },
+  "existing_sensitivity": {
+    "variants": 234,
+    "all_nine_supported": 5,
+    "supported_span_over_10pct": [
+      "m04q01_001",
+      "m06q05_001"
+    ]
+  },
+  "meaning": "Scope, arithmetic and declared gates verified; these checks do not establish physical accuracy or phase identity."
+}

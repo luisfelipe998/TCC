@@ -1,0 +1,63 @@
+{
+  "sample": {
+    "total": 26,
+    "churn": 10,
+    "wavy annular": 9,
+    "plug": 3,
+    "slug": 3,
+    "dispersed bubbles": 1
+  },
+  "n_representations": 14,
+  "n_scope_combinations": 42,
+  "n_advanced": 11,
+  "n_pass_geometry": 5,
+  "churn_hellinger_silhouette": [
+    0.11206881519237516,
+    0.08611295088739807,
+    0.12971541859163055
+  ],
+  "churn_hellinger_neighbor": [
+    0.8444444444444444,
+    0.8388888888888889,
+    0.7333333333333334
+  ],
+  "churn_neighbor_chance": 0.4722222222222222,
+  "churn_width_silhouette": [
+    0.28220542462541914,
+    0.06500047046353671,
+    0.20418958992027153
+  ],
+  "churn_width_medians": [
+    1.1727519600334664,
+    0.7612600442322499
+  ],
+  "churn_hellinger_7001": 0.10844979108781862,
+  "plug_peak_cliff": [
+    -1.0,
+    -0.8888888888888888,
+    1.0
+  ],
+  "plug_peak_silhouette": [
+    0.4323493650594178,
+    0.0979102818692616,
+    0.3152234256847844
+  ],
+  "plug_mean_power_hellinger_silhouette": [
+    0.1857366400723175,
+    0.035050332430507924,
+    0.29039214126230695
+  ],
+  "plug_mean_power_hellinger_ari": [
+    0.0,
+    0.0,
+    1.0
+  ],
+  "pearson_churn_delta": [
+    0.053134145182533565,
+    0.06465772594750752,
+    -0.012626396039070675
+  ],
+  "four_class_best_silhouette": 0.06343680784474187,
+  "data_reuse": "exploratório, sem teste independente",
+  "conclusion": "Sinais parciais em WPS; nenhum agrupamento de padrões robusto às condições avaliadas. Plug/slug: direção do pico inverte entre começo e fim."
+}

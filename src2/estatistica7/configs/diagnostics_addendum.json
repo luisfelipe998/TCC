@@ -1,0 +1,17 @@
+{
+  "status": "adendo exploratório definido depois da leitura inicial dos mapas; não é pré-registro",
+  "reason": "Os máximos concentram-se na maior escala e as médias de WCO têm autossimilaridade menor que um. Verificar suporte finito e uma geometria que use a diagonal observada, evitando descartar medidas somente pelo deslocamento aditivo em 1-escore.",
+  "normalized_kernel_candidates": ["area_normalized_full", "area_normalized_short", "area_normalized_middle", "area_normalized_long", "zero_uniform_kernel"],
+  "area_definition": "Kij=média WCOij em todos os lags e média trapezoidal em log(lambda), na banda declarada. Kii obtido da autocoerência integral do próprio ensaio. Cij=Kij/sqrt(Kii*Kjj); d=sqrt(2*(1-Cij)). Conferir PSD da matriz observada e C<=1 antes de usar; não afirmar prova geral de PSD para integração em domínio finito.",
+  "zero_definition": "Kij=média trapezoidal de WCOij no lag zero; Kii=1; d=sqrt(2*(1-Kij)). Pesos comuns, sem ponderação dependente do par.",
+  "scope": "mesmas condições, participantes e critérios da configuração principal; sem novos valores-p ou ajuste retrospectivo de bandas",
+  "noise_diagnostic": {
+    "models": ["gaussian_white", "gaussian_ar1_095"],
+    "lengths": [3171, 5071, 7001],
+    "independent_pairs_each": 99,
+    "burnin_ar1": 1000,
+    "statistics": ["global_max", "peak_lambda_px", "common_lag_peak", "map_mean", "maximum_up_to_800px"],
+    "interpretation": "Controles independentes para verificar se máximos altos exigem relação entre sinais; não substituem o modelo dos dados nem demonstram origem exclusiva do efeito observado. Limite 800 px já estava nas bandas iniciais, usado como diagnóstico e não escolhido por separação."
+  },
+  "inferential_family_unchanged": "Somente os seis contrastes do modelo de fases fixados em wco_v1.json."
+}

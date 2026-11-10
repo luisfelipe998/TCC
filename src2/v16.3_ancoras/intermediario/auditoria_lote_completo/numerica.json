@@ -1,0 +1,39 @@
+{
+  "individuais": 44,
+  "perfis": 50,
+  "pares": 87,
+  "erros_individuais": {
+    "erro_preparo": 1.865174681370263e-14,
+    "erro_correlacao": 2.508410146262463e-15,
+    "erro_cwt": 3.493994846957313e-14,
+    "erro_potencia_media": 3.3084646133829665e-14
+  },
+  "erros_pares": {
+    "erro_wxx": 3.493994846957313e-14,
+    "erro_wyy": 3.493994846957313e-14,
+    "erro_wxy": 3.094496497456088e-14,
+    "erro_wco": 1.3433698597964394e-14,
+    "erro_soma_direta": 3.020766949856839e-14
+  },
+  "wco_minima": 2.756233995876675e-11,
+  "wco_maxima": 0.9901648111319936,
+  "protecoes_aprovadas": [
+    "parametro_estimador",
+    "parametro_K",
+    "parametro_omega0",
+    "parametro_comprimento_onda_maximo",
+    "comprimento_2049",
+    "comprimento_2048.5",
+    "comprimento_True",
+    "comprimento_512",
+    "comprimento_0",
+    "cache_de_outro_ensaio",
+    "contexto_ancora",
+    "contexto_costuras_contexto",
+    "contexto_comprimento",
+    "grades_2048_4096_incompativeis",
+    "array_modificado_apos_primeira_leitura"
+  ],
+  "data_utc": "2026-10-25T19:14:39.962550+00:00",
+  "segundos": 40.34012629100471
+}

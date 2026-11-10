@@ -1,0 +1,13 @@
+feature,covariate,spearman_rho,n_runs,interpretation
+peak_wavelength_px,m_code,0.5413342057297197,19,descritiva; sem teste de significância
+peak_wavelength_px,q_code,-0.32349280195886565,19,descritiva; sem teste de significância
+peak_wavelength_px,n,-0.7062469614578148,19,descritiva; sem teste de significância
+peak_wavelength_px,recomputed_shift_mean,-0.7062469614578148,19,descritiva; sem teste de significância
+log_linear_slope,m_code,0.6754438455756775,19,descritiva; sem teste de significância
+log_linear_slope,q_code,0.2550481232222544,19,descritiva; sem teste de significância
+log_linear_slope,n,0.05087719298245614,19,descritiva; sem teste de significância
+log_linear_slope,recomputed_shift_mean,0.05087719298245614,19,descritiva; sem teste de significância
+residual_rms,m_code,0.04652063572176852,19,descritiva; sem teste de significância
+residual_rms,q_code,0.5740835847794207,19,descritiva; sem teste de significância
+residual_rms,n,0.5842105263157895,19,descritiva; sem teste de significância
+residual_rms,recomputed_shift_mean,0.5842105263157895,19,descritiva; sem teste de significância

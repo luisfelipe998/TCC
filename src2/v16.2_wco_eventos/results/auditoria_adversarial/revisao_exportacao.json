@@ -1,0 +1,21 @@
+{
+  "data_utc": "2026-10-25T05:17:30.063316+00:00",
+  "motivo": "Restringir as tabelas contrafactuais aos escores efetivamente recalculados e sua identificação; impedir que outras métricas herdadas da linha original pareçam recalculadas. Nenhuma fórmula, seleção, escore ou contraste alterado.",
+  "codigo_executado": "results/auditoria_adversarial/estado_anterior/scripts/adversarial_diagnostics_executado.py",
+  "codigo_executado_sha256": "baa5ebe0f880e4472b72d0226f4be4ac9f41af125e6b9165be9759d7c866953c",
+  "codigo_entregue_sha256": "b7c25a74941a8e7717da423490843507800527c04de161d27ade254e73786a89",
+  "exportacoes": [
+    {
+      "arquivo": "fixos_sem_feather.csv",
+      "sha256_antes": "3e70f3dfe632363c612ee45452b5aebd3638376115e347019ace8aa76ec41456",
+      "sha256_depois": "45fabf97c208a8db3f3bd03450e020b11cf9a071f1f74fddfd5535ed0292cc79",
+      "escores_inalterados": true
+    },
+    {
+      "arquivo": "ancoras_sem_feather.csv",
+      "sha256_antes": "3ca4577cbeb53a5b123188d712c0a0de995dc43ab78c211c8158cac055b4d3e6",
+      "sha256_depois": "f1913c0846e65a7f02f39ab2f938fcb619f846a41b58b357869be91fc7a11539",
+      "escores_inalterados": true
+    }
+  ]
+}

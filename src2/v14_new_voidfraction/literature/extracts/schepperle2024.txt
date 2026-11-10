@@ -1,0 +1,668 @@
+             sensors
+Article
+Computer-Vision- and Deep-Learning-Based Determination of
+Flow Regimes, Void Fraction, and Resistance Sensor Data in
+Microchannel Flow Boiling
+Mark Schepperle               , Shayan Junaid and Peter Woias *
+
+
+                                         Laboratory for the Design of Microsystems, Department of Microsystems Engineering—IMTEK,
+                                         University of Freiburg, 79110 Freiburg, Germany; schepperle@imtek.de (M.S.); shayanjunaidtalat@gmail.com (S.J.)
+                                         * Correspondence: woias@imtek.de
+
+
+                                         Abstract: The aim of this article is to introduce a novel approach to identifying flow regimes and
+                                         void fractions in microchannel flow boiling, which is based on binary image segmentation using
+                                         digital image processing and deep learning. The proposed image processing pipeline uses adap-
+                                         tive thresholding, blurring, gamma correction, contour detection, and histogram comparison to
+                                         separate vapor from liquid areas, while the deep learning method uses a customized version of a
+                                         convolutional neural network (CNN) called U-net to extract meaningful features from video frames.
+                                         Both approaches enabled the automatic detection of flow boiling conditions, such as bubbly, slug,
+                                         and annular flow, as well as automatic void fraction calculation. Especially CNN demonstrated its
+                                         ability to deliver fast and dependable results, presenting an appealing substitute to manual feature
+                                         extraction. The U-net-based CNN was able to segment flow boiling images with a Dice score of 99.1%
+                                         and classify the above flow regimes with an overall classification accuracy of 91%. In addition, the
+                                         neural network was able to predict resistance sensor readings from image data and assign them to a
+                                         flow state with a mean squared error (MSE) < 10−6 .
+
+                                         Keywords: computer vision; convolutional neural network; deep learning; image processing;
+                                         microchannel flow boiling
+Citation: Schepperle, M.; Junaid, S.;
+Woias, P. Computer-Vision- and
+Deep-Learning-Based Determination
+of Flow Regimes, Void Fraction, and
+Resistance Sensor Data in                1. Introduction
+Microchannel Flow Boiling. Sensors            Two-phase flow boiling in microchannel heat sinks is one of the most important topics
+2024, 24, 3363. https://doi.org/         in the field of fluid flow and heat transfer, especially due to the promising application
+10.3390/s24113363                        in high heat flux cooling [1–3]. It offers significant advantages for the cooling of power
+Academic Editor: Alfredo de la           electronics, computer chips, laser diodes, and other electronic components due to its
+Escosura-Muñiz                           large heat transfer surface area and compact design. This approach offers two main
+                                         benefits, an increased heat transfer coefficient and increased heat dissipation capacity,
+Received: 30 April 2024                  even at low mass flow rates [4]. Microchannel flow boiling heat transfer is currently one
+Revised: 21 May 2024
+                                         of the most promising approaches for removing significant heat loads from electronic
+Accepted: 22 May 2024
+                                         devices [5]. To further improve the flow boiling mechanism, it is important to have
+Published: 24 May 2024
+                                         a better understanding of the vapor bubble dynamics, the flow regime, and the void
+                                         fraction inside the microchannel [6]. Typical flow patterns observed in the microchannel
+                                         during flow boiling are bubbly, slug, and annular flow, as well as the chaotic mixtures
+Copyright: © 2024 by the authors.
+                                         and transitions that occur between them [7]. The knowledge of these patterns allows
+Licensee MDPI, Basel, Switzerland.       for the derivation of several significant thermal-hydraulic parameters, such as two-phase
+This article is an open access article   viscosity and two-phase density, which can be instrumental in forecasting heat transfer
+distributed under the terms and          coefficients and pressure drop in microchannel cooling devices. The void fraction represents
+conditions of the Creative Commons       the fraction of the cross-sectional area occupied by the vapor phase compared to the total
+Attribution (CC BY) license (https://    cross-sectional area [8]. Typically, this void fraction can be determined with high precision
+creativecommons.org/licenses/by/         by optical investigations at specific locations within the microchannel using high-speed
+4.0/).                                   video (HSV) imaging [9]. Alternatively, the flow regime and void fraction are estimated
+
+
+
+Sensors 2024, 24, 3363. https://doi.org/10.3390/s24113363                                                     https://www.mdpi.com/journal/sensors
+Sensors 2024, 24, 3363                                                                                            2 of 15
+
+
+
+                         from electrical resistance and impedance measurements, relating resistance and impedance
+                         to void fraction and flow regime [10,11]. However, it is a time-consuming task to manually
+                         determine flow regimes and void fractions, whether electrically or optically.
+                               For this reason, in response to the rapid progress of computer vision techniques, a few
+                         researchers have started to use image processing and machine learning to automatically
+                         analyze HSV images of two-phase flows [12]. The use of these tools not only enables
+                         the rapid analysis of several thousand HSV image frames in a matter of seconds while
+                         maintaining a standardized quantitative approach but also serves as a safeguard against
+                         the omission of crucial information due to human error.
+                               In 2011, Hanafizadeh et al. [13] employed basic image processing techniques, including
+                         color format conversion, image subtraction, median filtering, and threshold segmentation,
+                         to create a binary representation of two-phase flow patterns in the up-riser of airlift pumps.
+                         However, the data analysis was still conducted manually, using a ruler, rather than utiliz-
+                         ing computer vision (CV) methods. In another study, Singh et al. [14] conducted a more
+                         advanced image analysis technique that was performed to generate flow regime maps of
+                         flow boiling water in silicon microchannels. The captured HSV images were subjected
+                         to sophisticated image processing steps using background removal, cropping, color for-
+                         mat conversion, histogram equalization, median filtering, edge detection, contour filling,
+                         and binary liquid/vapor region segmentation to determine local void fractions at multiple
+                         locations along the microchannel. The void fractions were then used to automatically iden-
+                         tify and separate bubbly, slug, and annular flow regimes using predefined void fraction
+                         thresholds selected based on careful visual observations.
+                               Very recently, researchers started to apply machine learning techniques to study
+                         flow boiling in microchannels and microchannel pin-fins. However, most of the studies
+                         focus on the prediction of heat transfer coefficients and pressure drops based on universal
+                         consolidated data under the use of artificial neural networks [15–22]. So far, only a handful
+                         of studies have used machine learning based on convolutional neural networks (CNNs) to
+                         automatically detect bubbles, classify flow regimes, and calculate void fractions from HSV
+                         images taken during two-phase flow processes [23–26].
+                               Kim et al. [23] harnessed the Mask R-CNN to create an automated tool for bubble
+                         detection and mask extraction in gas–liquid two-phase flows. Their model was trained with
+                         a combination of experimental and synthetic bubbly flow images from upward bubbly flows
+                         in expansion pipes [27] and from utilizing the BubGAN algorithm [28]. The trained model
+                         reached an average precision of AP50 of 98% on unseen test data from the experimental
+                         bubbly flow. Additionally, the model was tested on unseen bubble-swarm flows [29] not
+                         included in the training set, where it was able to detect 95% of the bubbles. Although the
+                         results are remarkable, the model is limited to detecting bubbly flow at low void fraction
+                         values. It lacks the ability to detect more complex two-phase flows such as slug and annular
+                         flow. The model also does not include flow regime classification.
+                               In another study, Kadish et al. [24] classified vapor quality and flow regimes of vertical
+                         two-phase (vapor-liquid) CO2 flow images captured at frame rates of 10 fps and 30 fps,
+                         respectively, in an 8 mm diameter transparent circular channel using a CNN with ResNet101
+                         for image feature extraction and a deep long short-term memory (LSTM) network to
+                         incorporate temporal information of image sequences. The model was trained on a data
+                         set of 39,261 manually labeled image frames using cross-entropy loss and the Adam
+                         optimization function at a learning rate of 10−4 , a batch size of 256 for 60 epochs on an
+                         NVIDIA® Kepler™ K40 M GPU with 12 GB of GPU accelerator memory. For the flow
+                         identification task, there were two output layers in the high-level network architecture
+                         called FrameNet and FlowNet. The FrameNet output layer came directly after the CNN,
+                         skipping the LSTM network. The FlowNet output layer, on the other hand, came after
+                         the LSTM network, using the CNN and the LSTM network for flow regime classification.
+                         The authors validated the performance of both flow classification models using five-fold
+                         cross-validation on unseen test data, resulting in an accuracy of 91.8% for FlowNet and
+Sensors 2024, 24, 3363                                                                                             3 of 15
+
+
+
+                         92.3% for FrameNet, which in our opinion casts doubt on whether the LSTM network really
+                         helps to improve the classification accuracy of flow regime classification.
+                              In the present study, to the best of our knowledge, we are the first to use state-of-the-art
+                         image processing techniques and deep learning for binary image segmentation, automatic
+                         void fraction calculation, flow regime classification, and RTD sensor signal prediction
+                         during two-phase flow boiling in microchannels. For machine learning, we used a CNN
+                         based on the U-net architecture [30], using a very limited data set of only 4010 HSV image
+                         frames recorded during the flow boiling process in the microchannel as input. The U-net-
+                         based CNN classified microchannel flow boiling into 7 flow regimes: bubbly, bubbly-slug,
+                         slug, slug-annular with bubbles, slug-annular, annular with bubbles, and annular flow.
+                         The RTD sensor signal prediction was intended to be the first step towards automated flow
+                         regime detection based on electrical sensor data without cost-intensive optical inspection.
+                         The information about the present flow regime during microchannel flow boiling by
+                         the automated evaluation of electrical sensor signals from RTDs could pave the way for
+                         automated flow regime control in commercial microchannel heat sinks by initiating AI-
+                         based control signals to adjust the present flow regime by means of the read-out sensor
+                         data. For example, as we have shown in [31], microheaters could be actuated to adjust the
+                         flow regime in microchannels via short, low-power heating pulses.
+
+                         2. Materials and Methods
+                             In this section, the experimental setup, the computer vision, and deep learning tech-
+                         niques are described. The computer vision and deep learning code can be downloaded
+                         from github.com/shayanjunaidtalat (accessed on 29 April 2024).
+
+                         2.1. Experimental Flow Boiling Apparatus
+                              The experimental setup that was used to capture microchannel (MC) two-phase flow
+                         boiling videos and sensor data from thin-film platinum RTDs is illustrated in Figure 1.
+                         This setup was also used in similar configurations in [10,26,31–34], where further details
+                         about the setup and its application can be found if the reader is interested. The MC
+                         with a depth of 0.5 mm, a width of 1.5 mm and a length of 65 mm was milled into a
+                         5 mm × 8 mm × 68.6 mm stainless steel block. The RTDs were manufactured on a Pyrex
+                         glass wafer in a clean-room process that is described in detail in [10]. The important
+                         components of the setup for the experiments in this paper are a DI water reservoir, a micro
+                         pump to supply DI water from the reservoir to the stainless-steel MC, a 3D-printed housing
+                         for mechanical fixation and hermetic sealing of the MC, thin-film platinum RTDs on a
+                         transparent Pyrex glass lid mounted above the MC, a glass-wool wrapping around the
+                         housing for thermal isolation from the environment, heater cartridges inserted at the
+                         MC bottom to heat the MC and initiate two-phase flow boiling, a Phantom VEO 410L
+                         high-speed camera mounted on a microscope fixture with a 2× magnifying objective to
+                         capture the videos of the MC flow boiling process at a frame rate of 2000 fps, a linear stage
+                         that moved the microscope fixture with the high-speed camera along the MC to record
+                         flow boiling at different MC locations, and an MFIA impedance analyzer from Zurich
+                         Instruments to read out the RTD measurements.
+                              Figure 2 shows the housing with the MC, the RTDs, and the cartridge heaters in
+                         more detail. The housing lid pressed the glass lid with the RTDs on top of the MC in
+                         such a way that all RTDs were in direct contact with the flow boiling fluid. The MC
+                         was surrounded by an O-ring that ensured a watertight sealing. The boiling process
+                         could be observed through the observation window in the middle of the housing lid.
+                         The spring probes provided electrical contact to the RTDs via the gold contact pads at
+                         each side of the RTDs. The MFIA impedance analyzer was connected via a trigger cable
+                         to the high-speed camera, which provided a time-synchronized video and RTD sensor
+                         data acquisition. The RTDs detected the temperature-induced resistance changes that
+                         were caused by the temperature fluctuations of the flowing fluid (T f luid ) inside the MC.
+Sensors 2024, 24, 3363                                                                                               4 of 15
+
+
+
+                         The resistance/temperature dependency of the RTDs can be described with the following
+                         formula:
+                                                     R RTD = α( T f luid − T0 ) R0 + R0 ,                   (1)
+                         with the measured RTD resistance R RTD , the temperature coefficient of resistance
+                         α = 2.98 · 10−3 ◦ C−1 , the fluid temperature T f luid , the RTD room temperature resistance R0 ,
+                         and the room temperature T0 [10].
+
+
+
+
+                         Figure 1. Experimental setup to capture two-phase flow boiling videos and resistance sensor data.
+
+                              Vapor bubbles passing an RTD structure could be detected by an increase of the
+                         measured resistance R RTD due to a temperature increase in T f luid beneath the RTD to the
+                         boiling temperature of water at atmospheric pressure (≈100 ◦ C).
+
+
+
+
+                         Figure 2. Exploded view of the 3D-printed housing with microchannel (MC), platinum resistance
+                         temperature detectors (RTDs), and heating cartridges (top) and a closeup of the glass lid with the
+                         RTDs (bottom).
+Sensors 2024, 24, 3363                                                                                               5 of 15
+
+
+
+                         2.2. Video Data Pre-Processing
+                               Due to the length of the MC of 65 mm, it was not feasible to capture the entire
+                         flow boiling phenomenon at once in one video. Therefore, several videos of subsections
+                         were recorded along the MC to cover the whole channel length. Figure 3 shows at the
+                         top a raw unprocessed video frame of such an MC subsection. Each raw frame of a
+                         subsection video underwent a pre-processing pipeline to extract only the meaningful flow
+                         boiling pixel data. As shown at the bottom of Figure 3, the pixel area of the flowing
+                         fluid inside the MC was considered for further processing, while the rest of the pixel
+                         area was discarded. The thin platinum RTDs in Figure 3 were critical for this cropping
+                         process. Three vertical platinum RTDs were present in the video frames of each subsection.
+                         These platinum RTDs acted as separator lines and were manufactured similarly to the
+                         thin-film platinum RTDs for resistance measurements but with a width of only 20 µm
+                         to minimize obstruction of the view into the MC. An algorithm was developed to detect
+                         these vertical lines and crop the area between the outer two platinum RTD separator lines
+                         (ignoring the platinum RTD in the middle) and the MC walls. Therefore, each video
+                         represented a subsection covering the entire length of the flow boiling in the MC. This
+                         cropping process prevented overlapping pixels of subsection areas and focused solely on
+                         the flow boiling in each channel section. Another important reason for the pre-processing
+                         is the substantial reduction of computational cost during the application of computer
+                         vision and deep learning. The cropping reduced the effective frame size by 92 % from
+                         800 × 1280 pixels to 112 × 690 pixels. It is important to be aware of the fact that, in this
+                         pre-process, one separator line of a subsection is always part of a neighboring subsection.
+                         For example, the outer left channel part next to the left separator line in Figure 3 that is
+                         cropped is visible in the neighboring subsection on the left, where this line represents the
+                         separator line on the right. The pre-processing algorithm is robust to varying input frame
+                         pixel sizes and varying lighting conditions.
+
+
+
+
+                         Figure 3. Raw 800 × 1280 pixel image frame of a video of an MC subsection captured with the
+                         high-speed camera (top). A cropped 112 × 690 pixel version of the image frame after pre-processing,
+                         focusing only on the relevant flow boiling pixel area (bottom).
+
+                         2.3. Computer Vision for Binary Image Segmentation
+                              During MC flow boiling, the fluid prevails in two states of matter: gaseous and liquid.
+                         This is tailor-made for the application of binary image segmentation to further reduce
+                         the image complexity, bit depth, and memory size of the pre-processed video frames by
+                         setting the pixel intensity of liquid areas to 255 (white) and the pixel intensity of vapor
+                         areas to 0 (black). In preceding work on computer-vision-based vapor bubble segmentation
+                         in two-phase flows, like in [35,36], the vapor bubbles that occurred were small and had
+                         regular spherical or elliptical shapes. In this case, the Hough circle transform can be used to
+                         detect the presence of vapor bubbles whereas the rest of the section is considered as liquid.
+Sensors 2024, 24, 3363                                                                                             6 of 15
+
+
+
+                         However, in our MC, there was a recurring instance of more complex irregular shapes of
+                         vapor bubbles that could not be detected by the Hough Transform. Other fundamental
+                         challenges were textured lines at the MC background, as well as differentiating the inside of
+                         vapor bubbles from the liquid part. The textured MC background was removed by an image
+                         optimization process (Figure 4) that used adaptive thresholding, blurring, and gamma
+                         correction. This process created an initial segmentation that did not yet differentiate
+                         between vapor bubbles inside liquid sections. A contour detection (Figure 4) and histogram
+                         comparison (Figure 5) finally enabled the differentiation of pixel areas inside the vapor from
+                         pixel areas of the liquid. This was performed by correlating the pixel intensity histograms
+                         of these pixel areas with the same pixel areas of a single liquid-only background photo
+                         (Figure 6) of the same MC subsection captured at adiabatic conditions before the two-phase
+                         flow boiling videos were recorded. The histograms were correlated utilizing the magnitude
+                         of the Pearson correlation coefficient d, which takes values between 1 (full correlation) and
+                         0 (no correlation). It is defined as
+
+                                                                     ∑in=1 ( xi − x )(yi − y)
+                                                  d( x, y) = | q                                       |,             (2)
+                                                                   ∑in=1 ( xi − x )2 ∑in=1 (yi − y)2
+
+                         where
+                                                     1 n                                        1 n
+                                                     n i∑                                       n i∑
+                                                x=         xi ,                          y=           yi ,
+                                                        =1                                         =1
+
+                         with the histogram size n, the individual histogram data points xi , yi , and the histogram
+                         mean values x, y.
+
+
+
+
+                         Figure 4. Image optimization process to create initial segmentations from raw video frames using
+                         adaptive thresholding, blurring, and gamma correction.
+
+                               Figure 5 compares pixel intensity histograms of a liquid contour (H2 in Figure 5b) and
+                         a contour detected inside a vapor bubble (H4 in Figure 5c) of a flow boiling video frame
+                         (Figure 5a) with the pixel intensity histograms (H1 and H3 respectively) of the same pixel
+                         areas of a liquid-only background photo and states the histogram correlations d( H1, H2)
+                         and d( H3, H4).The pixels that were part of the contours and that were therefore used as
+                         data sets for the pixel intensity histograms are highlighted in green-yellow. The pixel
+                         areas in dark purple are not included in the respective histogram data sets. The liquid-only
+                         background images in Figure 5 highlight and discard the same pixel areas as the flow boiling
+                         video frames, even when the whole area was composed of liquid. This was important so
+                         that the same pixel areas were always compared with each other. The histogram correlation
+                         of pixel area 1 was d( H1, H2)= 0.97, and the histogram correlation of pixel area 2 was
+                         d( H3, H4)= 0.76. After analyzing several thousand flow boiling video frames with a
+                         histogram correlation sweep, it was found that for a histogram correlation of d ≥ 0.85,
+Sensors 2024, 24, 3363                                                                                                7 of 15
+
+
+
+                         most of the compared contour pixel areas were liquid. Respectively, below this value, most
+                         of the pixel areas were vapor inside areas. Therefore, 0.85 was set as threshold value for
+                         labeling contours as liquid. As a last step of the binary segmentation process, all pixel
+                         intensity values of pixels labeled as liquid were set to 255 (white). All other pixel intensities
+                         were labeled as vapor inside and set to 0 (black). The cross-sectional void fraction, which
+                         represents the proportion of the area taken up by the vapor phase in relation to the total
+                         cross-sectional area was automatically calculated for each binary segmentation frame
+                         as follows:
+                                                                 Pixels with a pixel intensity of 0
+                                              Void fraction =                                                            (3)
+                                                                Total No. of MC subsection pixels
+
+
+
+
+                         Figure 5. Pixel intensity histogram correlations d( H1, H2) and d( H3, H4) of a flow boiling video
+                         frame (a) of the liquid contour H2 (b) and the contour detected inside the vapor bubble H4 (c) with
+                         the pixel intensities H1 and H2 of the same pixel areas of the liquid-only background image shown
+                         in Figure 6.
+
+
+
+
+                         Figure 6. Liquid-only background photo of the MC subsection used in Figure 5 captured at adiabatic
+                         conditions before the flow boiling process was initiated.
+
+                              The computer vision algorithm saved all input two-phase flow boiling video frames,
+                         and the resulting binary segmented output frames in designated folders on the computer
+                         hard disk.
+
+                         2.4. Deep Learning for Binary Image Segmentation, Flow Regime Classification and RTD
+                         Data Prediction
+                              Using classical computer vision methods to distinguish vapor from liquid areas in the
+                         MC gave good results (see Section 3), but some pixel areas were still misclassified as liquid
+                         or vapor despite all efforts to fine-tune the parameters of adaptive thresholding, blurring,
+                         gamma correction, and histogram correlation. This led to the question of whether or not
+Sensors 2024, 24, 3363                                                                                           8 of 15
+
+
+
+                         deep learning would help to improve the results of binary image segmentation. The first
+                         step was to manually inspect the binary segmentation directory for mis-segmented images,
+                         which were then manually corrected using a custom-built manual segmentation function.
+                         A training and a test data set were then created in an 80:20 ratio. For this purpose, 4010
+                         pre-processed input video frames and manually corrected output binary segmentation
+                         frames were selected from randomly chosen sections of the respective directories to ensure
+                         that data from all recorded videos were selected in both the training and test data sets.
+                         The Dice coefficient below was used as the loss function:
+                                                                     2 · Overlapping pixel area
+                                                Dice coefficient =                                                  (4)
+                                                                          Total No. of pixels
+
+                              The overlapping pixel area is the area of overlap between the predicted binary seg-
+                         mentation of the model and the training or test data, respectively. The Dice coefficient is
+                         one of the most common loss functions used for image segmentation [37].
+                              The deep learning model used for binary segmentation is a modified form of the U-net
+                         architecture published by Ronneberger et al., 2015 [30]. The following modifications were
+                         made to the original model:
+                         •    Input layer image channels were set to 3, as the video frames are in RGB format.
+                         •    Output layer image channels were set to 1 since the masked images obtained were
+                              in greyscale form, with 0 denoting pixels identified as vapor and 1 denoting pixels
+                              identified as liquid.
+                         •    The kernel size of the first convolutional layer was set to 7 × 7 with a rectifier linear
+                              unit (ReLU) activation function. This change helped to process larger images with half
+                              the computational cost.
+                              As with the original U-net model, concatenated skip links were used to ensure feature
+                         reusability. The DL model for binary segmentation was trained using Dice coefficient loss
+                         and the Adam optimization function [38] at a learning rate of 10−5 and a batch size of 32
+                         for 50 epochs on a 6 GB NVIDIA GTX3060 laptop GPU and is referred to as VoidNet in this
+                         paper. The simplified network architecture for all DL models is illustrated as a flowchart
+                         in Figure 7.
+                              Some modifications were made to the deep learning model described above for flow
+                         regime classification (designated as FlowBoilNet) and RTD sensor data prediction (des-
+                         ignated as SensorNet). As shown in Figure 7, FlowBoilNet and SensorNet use only the
+                         Conv2D downscaling path to classify flow regimes and predict RTD signals from extracted
+                         downscaled image features. However, the randomized selection of training and test data
+                         remained constant at an 80:20 ratio.
+                              For the flow regime classification, the 4010 pre-processed video frames were manually
+                         labeled as expected output according to the current flow regime in the form of 3 × 1 tensors.
+                         Figure 8 shows the labeled training and test data distribution for FlowBoilNet. The model
+                         output layer of the modified U-net model was adapted accordingly to output the pre-
+                         dicted flow regime in the form of 3 × 1 tensors. All possible tensors are listed in Table 1.
+                         The loss function was changed to cross-entropy, one of the most common loss functions for
+                         classification problems [39], and the learning rate was set to 10−4 .
+                              For RTD sensor data prediction, 12,340 video frames were automatically labeled with
+                         the corresponding measured RTD resistance and split 80:20 into training and testing data.
+                         A trigger cable connecting the impedance analyzer and the high-speed camera synchronized
+                         the video frames with the measured RTD data. The output layer of the modified U-net
+                         model was adjusted to output real numbers representing the predicted RTD resistance.
+                         The mean square error (MSE) was used as a loss function to solve the linear regression
+                         problem. An overview of all hyperparameters is shown in Table 2.
+Sensors 2024, 24, 3363                                                                                                9 of 15
+
+
+
+
+                         Figure 7. Simplified network architecture of VoidNet for binary image segmentation (green), Flow-
+                         BoilNet for flow regime classification (orange), and SensorNet for RTD signal prediction illustrated
+                         in a single flowchart. The arrow colors visualize the paths taken by each model, with the blue path
+                         being taken by all models.
+
+
+
+
+                         Figure 8. Training and test data distribution for FlowBoilNet.
+
+                         Table 1. Tensor output of the flow regime classification model FlowBoilNet.
+
+                          Flow Regime                                                     3 × 1 Output Tensor
+                          Bubbly                                                                [1 0 0]
+                          Slug                                                                  [0 1 0]
+                          Annular                                                               [0 0 1]
+                          Bubbly slug                                                           [1 1 0]
+                          Annular with bubbles                                                  [1 0 1]
+                          Slug annular                                                          [0 1 1]
+                          Slug annular with bubbles                                             [1 1 1]
+Sensors 2024, 24, 3363                                                                                              10 of 15
+
+
+
+                         Table 2. Training hyperparameters for VoidNet, FlowBoilNet and SensorNet.
+
+                          Hyperparameter                 VoidNet              FlowBoilNet               SensorNet
+                          Loss                       Dice coefficient         Cross entropy               MSE
+                          Optimizer                      Adam                    Adam                     Adam
+                          Learning rate                   10−5                    10−4                    10−6
+                          Batch Size                       32                      32                      32
+                          Epochs                           50                      50                      50
+
+
+                         3. Results and Discussion
+                               Segmented HSV image frames using the CV method described in Section 2.3 are
+                         shown in Figure 9. The majority of all video frames could be correctly segmented in
+                         binary using CV. From separated and overlapping bubbles of different shapes and sizes
+                         (Figure 9a) to slug and annular flow (Figure 9b), the CV method was able to successfully
+                         segment most of the HSV images even for complex vapor/liquid mixtures. However,
+                         approximately 15% of all frames were incorrectly segmented. This was mainly because the
+                         image processing could not always distinguish the inside of the gas bubbles from the liquid
+                         segments, as shown in Figure 9c, despite careful fine-tuning of the histogram correlation d
+                         to a liquid-only background image (Figure 6).
+
+
+
+
+                         Figure 9. Results of the binary image segmentation using CV, for separated and overlapping vapor
+                         bubbles (a), slug and annular flow (b), and incorrectly segmented HSV images (c).
+
+                              Figure 10 shows an input frame from the DL test data set and the corresponding pre-
+                         diction of the trained VoidNet model after 50 epochs compared to the binary segmentation
+                         of the CV method. It can be seen that VoidNet reliably distinguishes between liquid and
+                         gaseous regions. Overall, the VoidNet model achieves a Dice score of 99.1% after 50 epochs
+                         in both the training and test runs, significantly outperforming the CV method.
+
+
+
+
+                         Figure 10. Binary segmentation of VoidNet after 50 epochs (bottom) compared to the binary segmen-
+                         tation of the CV method (top) for the same input frame (middle).
+
+                              Figure 11 shows the classification result of FlowBoilNet for all flow regimes given
+                         in Table 1. FlowBoilNet was able to classify flow regimes with an overall classification
+                         accuracy of 91%. The normalized confusion matrix shown in Figure 12 illustrates the
+                         ratio between the true and predicted values of the trained FlowBoilNet model for all
+Sensors 2024, 24, 3363                                                                                                  11 of 15
+
+
+
+                         classified flow rates (Table 1), with the individual flow regime accuracies shown in the
+                         diagonal from top left to bottom right. A normalized confusion matrix is a good way to
+                         visualize the accuracy of each class. This is especially helpful in the case of imbalanced
+                         data sets, as the overall accuracy of 91% does not reveal classification biases across classes.
+                         In Figure 12, it can be seen that for some flow rates, like bubbly, bubbly slug, and annular
+                         flow, FlowBoilNet performs very well and classifies the flow regime correctly with an
+                         accuracy between 97 to 100%. However, for other flow rates, the FlowBoilNet model does
+                         not perform as well, and the classification accuracy even goes below 50% like in the case of
+                         slug flow.
+
+
+
+
+                         Figure 11. FlowBoilNet classification result for HSV images covering all of the flow regimes listed in
+                         Table 1.
+
+                               This difference in classification accuracy of the trained deep learning model can be
+                         described by the imbalanced data distribution of the test and training data set shown in
+                         Figure 8. The accuracy of flow regime classification decreases significantly as the amount
+                         of training data for each flow regime decreases. For example, the slug flow regime is the
+                         least represented with 57 frames during the training run. Accordingly, the slug flow regime
+                         has the lowest accuracy at 33%, followed by annular with bubbles at 57% and slug annular
+                         at 63%. However, the normalized confusion matrix demonstrates that flow regimes are
+                         merely confused with very similar neighboring flow regimes; e.g., the slug flow is only
+                         confused with the very similar slug annular and annular flow.
+Sensors 2024, 24, 3363                                                                                                  12 of 15
+
+
+
+
+                         Figure 12. Normalized confusion matrix of the 50th epoch for flow regime classification of the training
+                         data set using FlowBoilNet.
+
+                               The prediction of the RTD data is shown in Figure 13 as an example of different kinds
+                         of flow patterns. In general, an impressive loss of <10−6 was achieved in the training
+                         run. However, two divergence peaks occurred in the test run, indicating problems with
+                         overfitting or a lack of generalization.
+
+
+
+
+                         Figure 13. SensorNet RTD signal prediction result for different microchannel flow boiling patterns.
+
+                              Overall, the trained deep learning models produced reliable results thanks to the
+                         state-of-the-art U-net architecture, which was able to extract meaningful representations
+                         from the microchannel flow boiling video frames. However, for better results, the use
+                         of more training data could further improve the accuracy of the model. Increasing the
+                         training data set is one of the most effective ways to address the lack of generalization.
+                         The experimental setup is subject to different lighting conditions and slightly tilted mi-
+                         crochannel positions. Training the model on a variety of HSV image frames will result
+Sensors 2024, 24, 3363                                                                                                            13 of 15
+
+
+
+                                in more accurate predictions, especially between very similar flow regimes such as slug,
+                                slug-annular, and annular flow.
+
+                                4. Conclusions
+                                     In conclusion, our study pioneers the application of image processing and deep learn-
+                                ing techniques in microchannel two-phase flow boiling. In particular, the U-net-based
+                                CNN architecture was used to automatically identify flow regimes and void fractions in
+                                microchannel flow boiling. The approach exhibited a high classification accuracy of 91%,
+                                demonstrating the efficiency of CNN in accurately discriminating flow regimes such as
+                                bubble, slug, and annular flow. In addition, our exploration of real-time RTD sensor signal
+                                prediction marks a significant step toward the imageless prediction of two-phase flow in
+                                microchannels. The promising results, including a mean squared error (MSE) < 10−6 in
+                                predicting RTD sensor readings, suggest the potential for automated flow regime control.
+                                While our trained models demonstrated reliability, it is critical to recognize the need for a
+                                more extensive training data set to account for variations in lighting conditions and mi-
+                                crochannel positions. Nevertheless, the implemented approaches, executed on a standard
+                                6 GB NVIDIA laptop GPU using Python, demonstrate adaptability for broader applica-
+                                tions beyond microchannel flow boiling. Looking to the future, this research envisions the
+                                integration of these automated techniques into microchannel heat sink control systems,
+                                potentially revolutionizing the field by leveraging artificial intelligence for improved op-
+                                erational efficiency and control. The results presented here lay the foundation for future
+                                advances in the seamless automation of two-phase flow boiling processes.
+
+                                Author Contributions: M.S.: Conceptualization, Methodology (supporting), Validation (equal),
+                                Formal analysis (equal), Investigation, Resources, Data Curation (equal), Writing—original draft,
+                                Writing—review and editing, Visualization (leading). S.J.: Methodology (leading), Software, Val-
+                                idation (equal), Formal analysis (equal), Data Curation (equal), Visualization (supporting). P.W.:
+                                Supervision. All authors have read and agreed to the published version of the manuscript.
+                                Funding: This research was funded by German Research Foundation (DFG) grant number WO
+                                883/24-2.
+                                Institutional Review Board Statement: Not applicable.
+                                Informed Consent Statement: Not applicable.
+                                Data Availability Statement: Data set available on request from the authors.
+                                Conflicts of Interest: The authors declare no conflicts of interest. The funders had no role in the design
+                                of the study; in the collection, analyses, or interpretation of data; in the writing of the manuscript; or
+                                in the decision to publish the results.
+
+                                Abbreviations
+                                The following abbreviations are used in this manuscript:
+                                CNN      Convolutional neural network
+                                CV       Computer vision
+                                DL       Deep learning
+                                HSV      High-speed video
+                                LSTM     Long short-term memory
+                                MSE      Mean square error
+                                ReLU     Rectifier linear unit
+                                RTD      Resistance temperature detector
+
+References
+1.    Cheng, L.; Xia, G. High heat flux cooling technologies using microchannel evaporators: Fundamentals and challenges. Heat
+      Transf. Eng. 2023, 44, 1470–1479. [CrossRef]
+2.    He, Z.; Yan, Y.; Zhang, Z. Thermal management and temperature uniformity enhancement of electronic devices by micro heat
+      sinks: A review. Energy 2020, 216, 119223. [CrossRef]
+Sensors 2024, 24, 3363                                                                                                                14 of 15
+
+
+
+3.    Thome, J.R. The new frontier in heat transfer: Microscale and nanoscale technologies. Heat Transf. Eng. 2006, 27, 1–3. [CrossRef]
+4.    Benam, B.P.; Sadaghiani, A.K.; Yağcı, V.; Parlak, M.; Sefiane, K.; Koşar, A. Review on high heat flux flow boiling of refrigerants
+      and water for electronics cooling. Int. J. Heat Mass Transf. 2021, 180, 121787. [CrossRef]
+5.    Karayiannis, T.G.; Mahmoud, M.M. Flow boiling in microchannels: Fundamentals and applications. Appl. Therm. Eng. 2017, 115,
+      1372–1397. [CrossRef]
+6.    Inamdar, S.J.; Lawankar, S.M. Flow boiling in micro and mini channels—A review. AIP Conf. Proc. 2022, 2451, 020054.
+7.    Wang, Y.; Wang, Z.G. An overview of liquid–vapor phase change, flow and heat transfer in mini-and micro-channels. Int. J.
+      Therm. Sci. 2014, 86, 227–245. [CrossRef]
+8.    Thome, J.R. Engineering Data Book III; Wolverine Tube Inc.: Decatur, AL, USA, 2010.
+9.    Zhao, Y.; Chen, G.; Yuan, Q. Liquid-liquid two-phase flow patterns in a rectangular microchannel. AICHE J. 2006, 52, 4052–4060.
+      [CrossRef]
+10.   Schepperle, M.; Ghanam, M.; Bucherer, A.; Gerach, T.; Woias, P. Noninvasive platinum thin-film microheater/temperature sensor
+      array for predicting and controlling flow boiling in microchannels. Sens. Actuators A Phys. 2022, 345, 113811. [CrossRef]
+11.   Talebi, M.; Sadir, S.; Cobry, K.; Stroh, A.; Dittmeyer, R.; Woias, P. Local heat transfer analysis in a single microchannel with boiling
+      DI-water and correlations with impedance local sensors. Energies 2020, 13, 6473. [CrossRef]
+12.   Yang, B.; Zhu, X.; Wei, B.; Liu, M.; Li, Y.; Lv, Z.; Wang, F. Computer vision and machine learning methods for heat transfer and
+      fluid flow in complex structural microchannels: A review. Energies 2023, 16, 1500. [CrossRef]
+13.   Hanafizadeh, P.; Ghanbarzadeh, S.; Saidi, M.H. Visual technique for detection of gas–liquid two-phase flow regime in the airlift
+      pump. J. Pet. Sci. Eng. 2023, 75, 327–335. [CrossRef]
+14.   Singh, S.G.; Jain, A.; Sridharan, A.; Duttagupta, S.P.; Agrawal, A. Flow map and measurement of void fraction and heat transfer
+      coefficient using an image analysis technique for flow boiling of water in a silicon microchannel. J. Micromech. Microeng. 2009,
+      19, 075004. [CrossRef]
+15.   Qiu, Y.; Garg, D.; Zhou, L.; Kharangate, C.R.; Kim, S.M.; Mudawar, I. An artificial neural network model to predict mini/micro-
+      channels saturated flow boiling heat transfer coefficient based on universal consolidated data. Int. J. Heat Mass Transf. 2020,
+      149, 119211. [CrossRef]
+16.   Zhu, G.; Wen, T.; Zhang, D. Machine learning based approach for the prediction of flow boiling/condensation heat transfer
+      performance in mini channels with serrated fins. Int. J. Heat Mass Transf. 2021, 166, 120783. [CrossRef]
+17.   Qiu, Y.; Garg, D.; Kim, S.M.; Mudawar, I.; Kharangate, C.R. Machine learning algorithms to predict flow boiling pressure drop in
+      mini/micro-channels based on universal consolidated data. Int. J. Heat Mass Transf. 2021, 178, 121607. [CrossRef]
+18.   Bard, A.; Qiu, Y.; Kharangate, C.R.; French, R. Consolidated modeling and prediction of heat transfer coefficients for saturated
+      flow boiling in mini/micro-channels using machine learning methods. Appl. Therm. Eng. 2022, 210, 118305. [CrossRef]
+19.   Qiu, Y.; Vo, T.; Garg, D.; Lee, H.; Kharangate, C.R. A systematic approach to optimization of ANN model parameters to predict
+      flow boiling heat transfer coefficient in mini/micro-channel heatsinks. Int. J. Heat Mass Transf. 2023, 202, 123728. [CrossRef]
+20.   Chen, B.L.; Yang, T.F.; Sajjad, U.; Ali, H.M.; Yan, W.M. Deep learning-based assessment of saturated flow boiling heat transfer and
+      two-phase pressure drop for evaporating flow. Eng. Anal. Bound. Elem. 2023, 151, 519–537. [CrossRef]
+21.   Suh, Y.; Bostanabad, R.; Won, Y. Deep learning predicts boiling heat transfer. Sci. Rep. 2021, 11, 5622. [CrossRef]
+22.   Lee, H.; Lee, G.; Kim, K.; Kong, D.; Lee, H. Multimodal machine learning for predicting heat transfer characteristics in micro-pin
+      fin heat sinks. Case Stud. Therm. Eng. 2024, 57, 104331. [CrossRef]
+23.   Kim, Y.; Park, H. Deep learning-based automated and universal bubble detection and mask extraction in complex two-phase
+      flows. Sci. Rep. 2021, 11, 8940. [CrossRef] [PubMed]
+24.   Kadish, S.; Schmid, D.; Son, J.; Boje, E. Computer vision-based classification of flow regime and vapor quality in vertical two-phase
+      flow. Sensors 2022, 22, 996. [CrossRef] [PubMed]
+25.   Seong, J.H.; Ravichandran, M.; Su, G.; Phillips, B.; Bucci, M. Automated bubble analysis of high-speed subcooled flow boiling
+      images using U-net transfer learning and global optical flow. Int. J. Multiph. Flow 2023, 159, 104336. [CrossRef]
+26.   Schepperle, M.; Junaid, S.; Mandal, A.; Selvam, D.; Woias, P. Determination of void fraction in microchannel flow boiling using
+      computer vision. In Proceedings of the Eighth World Congress on Mechanical, Chemical, and Material Engineering (MCM’22),
+      Prague, Czech Republic, 31 July–2 August 2022; p. 164.
+27.   Kim, Y.; Park, H. Upward bubbly flows in a square pipe with a sudden expansion: Bubble dispersion and reattachment length.
+      Int. J. Multiph. Flow 2019, 118, 254–269. [CrossRef]
+28.   Fu, Y.; Liu, Y. BubGAN: Bubble generative adversarial networks for synthesizing realistic bubbly flow images. Chem. Eng. Sci.
+      2019, 204, 35–47. [CrossRef]
+29.   Lee, J.; Park, H. Bubble dynamics and bubble-induced agitation in the homogeneous bubble-swarm past a circular cylinder at
+      small to moderate void fractions. Phys. Rev. Fluids 2020, 5, 054304. [CrossRef]
+30.   Ronneberger, O.; Fischer, P.; Brox, T. U-net: Convolutional networks for biomedical image segmentation. In Proceedings of the
+      MICCAI 2015, Munich, Germany, 5–9 October 2015.
+31.   Schepperle, M.; Arnold, S.J.; Woias, P. Active conversion of bubbly flow into slug and annular flow during microchannel flow
+      boiling using thin-film platinum microheaters. Proceedings 2024, 97, 13. [CrossRef]
+Sensors 2024, 24, 3363                                                                                                          15 of 15
+
+
+
+32.   Schepperle, M.; Samkhaniani, N.; Magnini, M.; Woias, P.; Stroh, A. Thermohydraulic characterization of DI water flow in
+      rectangular microchannels by means of experiments and simulations. In Proceedings of the 7th World Congress on Momentum,
+      Heat and Mass Transfer (MHMT’22), Virtual, 7–9 April 2022.
+33.   Schepperle, M.; Mandal, A.; Woias, P. Flow boiling instabilities and single-phase pressure drop in rectangular microchannels with
+      different inlet restrictions. In Proceedings of the Eighth World Congress on Momentum, Heat and Mass Transfer (MHMT’23),
+      Lisbon, Portugal, 26–28 March 2023.
+34.   Schepperle, M.; Samkhaniani, N.; Magnini, M.; Woias, P.; Stroh, A. Understanding inconsistencies in thermohydraulic characteris-
+      tics between experimental and numerical data for DI water flow through a rectangular microchannel. ASME J. Heat Mass Transf.
+      2024, 146, 1–33. [CrossRef]
+35.   Hosokawa, S.; Tanaka, K.; Tomiyama, A.; Maeda, Y.; Yamaguchi, S.; Ito, Y. Measurement of micro bubbles generated by a
+      pressurized dissolution method. J. Phys. Conf. Ser. 2009, 147, 012016. [CrossRef]
+36.   Gordiychuk, A.; Svanera, M.; Benini, S.; Poesio, P. Size distribution and Sauter mean diameter of micro bubbles for a Venturi type
+      bubble generator. Exp. Therm. Fluid Sci. 2016, 70, 51–60. [CrossRef]
+37.   Bertels, J.; Eelbode, T.; Berman, M.; Vandermeulen, D.; Maes, F.; Bisschops, R.; Blaschko, M.B. Optimizing the Dice score and
+      jaccard index for medical image segmentation: Theory and practice. In Proceedings of the MICCAI 2019, Shenzhen, China,
+      13–17 October 2019.
+38.   Kingma, P.; Ba, J. Adam: A method for stochastic optimization. arXiv 2014, arXiv:1412.6980.
+39.   Simard, P.; Steinkraus, D.; Platt, J. Best practices for convolutional neural networks applied to visual document analysis. In
+      Proceedings of the Seventh International Conference on Document Analysis and Recognition—ICDAR 2003, Edinburgh, Scotland,
+      3–6 August 2003.
+
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.
+

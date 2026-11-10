@@ -1,0 +1,297 @@
+{
+  "scope": [
+    {
+      "run": "m03q05_001",
+      "pattern": "churn",
+      "fps": 5000.0,
+      "frames": 501,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.1,
+      "exposure_ns": 132000
+    },
+    {
+      "run": "m03q10_001",
+      "pattern": "wavy annular",
+      "fps": 5000.0,
+      "frames": 501,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.1,
+      "exposure_ns": 132000
+    },
+    {
+      "run": "m03q20_001",
+      "pattern": "wavy annular",
+      "fps": 4000.0,
+      "frames": 501,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.125,
+      "exposure_ns": 132000
+    },
+    {
+      "run": "m03q40_001",
+      "pattern": "wavy annular",
+      "fps": 4000.0,
+      "frames": 501,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.125,
+      "exposure_ns": 132000
+    },
+    {
+      "run": "m04q01_001",
+      "pattern": "slug",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142,
+      "exposure_ns": 62000
+    },
+    {
+      "run": "m04q10_001",
+      "pattern": "churn",
+      "fps": 5000.0,
+      "frames": 501,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.1,
+      "exposure_ns": 127000
+    },
+    {
+      "run": "m04q20_001",
+      "pattern": "churn",
+      "fps": 5000.0,
+      "frames": 501,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.1,
+      "exposure_ns": 127000
+    },
+    {
+      "run": "m04q40_001",
+      "pattern": "wavy annular",
+      "fps": 5000.0,
+      "frames": 501,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.1,
+      "exposure_ns": 127000
+    },
+    {
+      "run": "m04q80_001",
+      "pattern": "wavy annular",
+      "fps": 5000.0,
+      "frames": 501,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.1,
+      "exposure_ns": 132000
+    },
+    {
+      "run": "m05q01_001",
+      "pattern": "plug",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142,
+      "exposure_ns": 62000
+    },
+    {
+      "run": "m05q05_001",
+      "pattern": "slug",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142,
+      "exposure_ns": 62000
+    },
+    {
+      "run": "m05q10_001",
+      "pattern": "churn",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142,
+      "exposure_ns": 62000
+    },
+    {
+      "run": "m05q20_001",
+      "pattern": "churn",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142,
+      "exposure_ns": 62000
+    },
+    {
+      "run": "m05q40_001",
+      "pattern": "churn",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142,
+      "exposure_ns": 62000
+    },
+    {
+      "run": "m05q80_001",
+      "pattern": "wavy annular",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142,
+      "exposure_ns": 62000
+    },
+    {
+      "run": "m06q01_001",
+      "pattern": "plug",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142,
+      "exposure_ns": 62000
+    },
+    {
+      "run": "m06q05_001",
+      "pattern": "slug",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142,
+      "exposure_ns": 62000
+    },
+    {
+      "run": "m06q10_001",
+      "pattern": "churn",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142,
+      "exposure_ns": 62000
+    },
+    {
+      "run": "m06q20_001",
+      "pattern": "churn",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142,
+      "exposure_ns": 62000
+    },
+    {
+      "run": "m06q40_001",
+      "pattern": "wavy annular",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142,
+      "exposure_ns": 62000
+    },
+    {
+      "run": "m06q80_001",
+      "pattern": "wavy annular",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142,
+      "exposure_ns": 62000
+    },
+    {
+      "run": "m07q01_001",
+      "pattern": "dispersed bubbles",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142,
+      "exposure_ns": 62000
+    },
+    {
+      "run": "m07q05_001",
+      "pattern": "plug",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142,
+      "exposure_ns": 62000
+    },
+    {
+      "run": "m07q20_001",
+      "pattern": "churn",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142,
+      "exposure_ns": 62000
+    },
+    {
+      "run": "m07q40_001",
+      "pattern": "churn",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142,
+      "exposure_ns": 62000
+    },
+    {
+      "run": "m07q80_001",
+      "pattern": "wavy annular",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_id": 0,
+      "last_id": 500,
+      "duration_s": 0.07142857142857142,
+      "exposure_ns": 62000
+    }
+  ],
+  "excluded": [
+    {
+      "run": "m03q01_001",
+      "pattern": "plug-slug"
+    },
+    {
+      "run": "m03q80_001",
+      "pattern": "smooth annular"
+    },
+    {
+      "run": "m04q05_001",
+      "pattern": "slug-churn"
+    },
+    {
+      "run": "m05q05_002",
+      "pattern": "dispersed bubbles"
+    },
+    {
+      "run": "m07q10_001",
+      "pattern": "slug-churn"
+    }
+  ],
+  "frame_rates": {
+    "5000.0": 6,
+    "4000.0": 2,
+    "7000.0": 18
+  },
+  "pairs": 13000,
+  "passing_pairs": 7528,
+  "baseline_supported_runs": 17,
+  "max_px_rate_absolute_discrepancy": 0,
+  "max_preferred_summary_absolute_discrepancy": 0,
+  "note": "Recomputed from original config files, frame identifiers, and every archived preferred pair; this verifies arithmetic, not real-motion accuracy."
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "data_utc": "2026-10-25T05:06:58.546066+00:00",
+  "aquisicoes": 31,
+  "quadros": 15531,
+  "deslocamentos": 15500,
+  "panoramas_reproduzidos": 31,
+  "planilhas_conferidas": 31,
+  "rotulos_conferidos": 31,
+  "grupos_quadros_duplicados": 0,
+  "fontes_com_hash": 15624,
+  "segundos": 18.20184349999181,
+  "limite": "Concordância com a montagem v11 e seus rótulos, não validação física de deslocamento, interfaces ou classificação."
+}

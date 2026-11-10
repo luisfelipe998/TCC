@@ -1,0 +1,37 @@
+[
+  {
+    "pattern": "dispersed bubbles",
+    "n": 1,
+    "candidate_pixel_flip_rate_median": 0.002630795785965121,
+    "center_candidate_flip_rate_median": 0.005047318611987382,
+    "center_candidate_gas_duty_median": 0.013560391043834753
+  },
+  {
+    "pattern": "plug",
+    "n": 3,
+    "candidate_pixel_flip_rate_median": 0.009628763844826627,
+    "center_candidate_flip_rate_median": 0.010645119917917148,
+    "center_candidate_gas_duty_median": 0.7055555555555556
+  },
+  {
+    "pattern": "slug",
+    "n": 3,
+    "candidate_pixel_flip_rate_median": 0.010066673431503047,
+    "center_candidate_flip_rate_median": 0.011045466221423068,
+    "center_candidate_gas_duty_median": 0.7995376910235007
+  },
+  {
+    "pattern": "churn",
+    "n": 10,
+    "candidate_pixel_flip_rate_median": 0.01122252886387904,
+    "center_candidate_flip_rate_median": 0.005359053498912726,
+    "center_candidate_gas_duty_median": 0.9589406234393683
+  },
+  {
+    "pattern": "wavy annular",
+    "n": 8,
+    "candidate_pixel_flip_rate_median": 0.0011267333582268683,
+    "center_candidate_flip_rate_median": 0.00022827141471209268,
+    "center_candidate_gas_duty_median": 0.9994864186258845
+  }
+]

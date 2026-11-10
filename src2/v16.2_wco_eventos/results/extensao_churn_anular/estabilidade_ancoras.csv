@@ -1,0 +1,13 @@
+padrao,tipo,alternativa,total,disponiveis,ausentes,mediana_abs_px,p90_abs_px,max_abs_px,fracao_ate16_total
+churn,maximo,sigma12,40,40,0,2.0,5.0,7.0,1.0
+churn,maximo,sigma20,40,39,1,2.0,4.200000000000003,7.0,0.975
+churn,maximo,faixa30_49,40,28,12,6.0,46.3,51.0,0.525
+churn,minimo,sigma12,40,40,0,1.5,4.0,11.0,1.0
+churn,minimo,sigma20,40,40,0,1.0,5.0,6.0,1.0
+churn,minimo,faixa30_49,40,40,0,10.0,25.400000000000006,47.0,0.7
+wavy annular,maximo,sigma12,36,36,0,2.0,5.0,33.0,0.9722222222222222
+wavy annular,maximo,sigma20,36,34,2,1.0,7.699999999999999,11.0,0.9444444444444444
+wavy annular,maximo,faixa30_49,36,30,6,5.5,42.1,63.0,0.6944444444444444
+wavy annular,minimo,sigma12,36,36,0,1.0,2.5,3.0,1.0
+wavy annular,minimo,sigma20,36,36,0,1.0,2.0,4.0,1.0
+wavy annular,minimo,faixa30_49,36,36,0,3.0,7.5,11.0,1.0

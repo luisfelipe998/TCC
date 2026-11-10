@@ -1,0 +1,193 @@
+{
+  "started_utc": "2026-10-23T21:05:45.666007+00:00",
+  "python_executable": "/Users/i521862/.pyenv/versions/3.13.2/bin/python3",
+  "include_exploratory": true,
+  "status": "passed",
+  "stages": [
+    {
+      "script": "scripts/panorama_void_alternatives.py",
+      "log": "intermediate/logs/panorama_void_alternatives.log",
+      "elapsed_seconds": 16.460622000013245,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/phase_mask_flip_analysis.py",
+      "log": "intermediate/logs/phase_mask_flip_analysis.log",
+      "elapsed_seconds": 6.396720417018514,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/raw_flip_analysis.py",
+      "log": "intermediate/logs/raw_flip_analysis.log",
+      "elapsed_seconds": 45.56349083301029,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/spatial_flip_sensitivity.py",
+      "log": "intermediate/logs/spatial_flip_sensitivity.log",
+      "elapsed_seconds": 4.13553354202304,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/inventory_and_legacy_audit.py",
+      "log": "intermediate/logs/inventory_and_legacy_audit.log",
+      "elapsed_seconds": 0.3801961669814773,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/pattern_identification.py",
+      "log": "intermediate/logs/pattern_identification.log",
+      "elapsed_seconds": 7.308312665991252,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/silhouette_pattern_identification.py",
+      "log": "intermediate/logs/silhouette_pattern_identification.log",
+      "elapsed_seconds": 4.825245957996231,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/adversarial_review.py",
+      "log": "intermediate/logs/adversarial_review.log",
+      "elapsed_seconds": 2.739699625002686,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/deep_method_checks.py",
+      "log": "intermediate/logs/deep_method_checks.log",
+      "elapsed_seconds": 7.808546707994537,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/lumen_normalization_checks.py",
+      "log": "intermediate/logs/lumen_normalization_checks.log",
+      "elapsed_seconds": 0.30148845800431445,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/image_void_alternatives.py",
+      "log": "intermediate/logs/image_void_alternatives.log",
+      "elapsed_seconds": 13.328514749999158,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/final_verification.py",
+      "log": "intermediate/logs/final_verification.log",
+      "elapsed_seconds": 1.1464570839889348,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/summary_figures.py",
+      "log": "intermediate/logs/summary_figures.log",
+      "elapsed_seconds": 0.7264488750079181,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/write_summary.py",
+      "log": "intermediate/logs/write_summary.log",
+      "elapsed_seconds": 0.572530250006821,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/post_regeneration_adversarial.py",
+      "log": "intermediate/logs/post_regeneration_adversarial.log",
+      "elapsed_seconds": 2.468909542018082,
+      "returncode": 0
+    },
+    {
+      "script": "scripts/verify_layout.py",
+      "log": "intermediate/logs/verify_layout.log",
+      "elapsed_seconds": 0.6210453330131713,
+      "returncode": 1
+    }
+  ],
+  "finished_utc": "2026-10-24T11:59:03.652575+00:00",
+  "initial_failure_reason": "Frozen exact-byte D60 snapshot retains original relative Markdown links; live link checker originally interpreted them at the archive depth. Numerical stages and post-summary audit passed.",
+  "followup_stages": [
+    {
+      "script": "scripts/verify_layout.py",
+      "log": "intermediate/logs/verify_layout.log",
+      "elapsed_seconds": 0.6618792910012417,
+      "returncode": 0,
+      "reason": "Verify frozen-snapshot integrity and resolve its original links in the original layout; verify all current links at current locations.",
+      "script_sha256": "6c9017b6846077588e46a5c778bf5ad6291cbee40366d6a23ff0bb4e9767424c"
+    },
+    {
+      "script": "scripts/adversarial_review.py",
+      "log": "intermediate/logs/adversarial_review.log",
+      "elapsed_seconds": 2.9632337080256548,
+      "returncode": 0,
+      "reason": "Final independent review found one duplicate punctuation mark; regenerated report and reran post-writing and navigation checks.",
+      "script_sha256": "b89736e2ad4e76a64a7356ac1831b895b9ac375def44974e634e690d34cb46b3"
+    },
+    {
+      "script": "scripts/post_regeneration_adversarial.py",
+      "log": "intermediate/logs/post_regeneration_adversarial.log",
+      "elapsed_seconds": 2.378274207992945,
+      "returncode": 0,
+      "reason": "Final independent review found one duplicate punctuation mark; regenerated report and reran post-writing and navigation checks.",
+      "script_sha256": "6711588efbca0851c6feb0e12a6f30dff389ef64be70560faf2a9932477e5076"
+    },
+    {
+      "script": "scripts/verify_layout.py",
+      "log": "intermediate/logs/verify_layout.log",
+      "elapsed_seconds": 0.688407042005565,
+      "returncode": 0,
+      "reason": "Final independent review found one duplicate punctuation mark; regenerated report and reran post-writing and navigation checks.",
+      "script_sha256": "6c9017b6846077588e46a5c778bf5ad6291cbee40366d6a23ff0bb4e9767424c"
+    },
+    {
+      "script": "scripts/summary_figures.py",
+      "log": "intermediate/logs/summary_figures.log",
+      "elapsed_seconds": 0.8908044169947971,
+      "returncode": 0,
+      "reason": "Add equal-acquisition arithmetic centroids to the primary scatter, explain means versus table medians in both summaries, verify numerical centroids and chart export.",
+      "script_sha256": "6c99809adec9f3ce01a476d6b394216244ec7a5500c29a2edbb4bb177b6621de"
+    },
+    {
+      "script": "scripts/write_summary.py",
+      "log": "intermediate/logs/write_summary.log",
+      "elapsed_seconds": 0.6804149170056917,
+      "returncode": 0,
+      "reason": "Add equal-acquisition arithmetic centroids to the primary scatter, explain means versus table medians in both summaries, verify numerical centroids and chart export.",
+      "script_sha256": "d2d18b9a3efa2e781b439c8c78eb10ee634d0cf7947fe63e9bd3dd9773c3713a"
+    },
+    {
+      "script": "scripts/post_regeneration_adversarial.py",
+      "log": "intermediate/logs/post_regeneration_adversarial.log",
+      "elapsed_seconds": 2.507305625011213,
+      "returncode": 0,
+      "reason": "Add equal-acquisition arithmetic centroids to the primary scatter, explain means versus table medians in both summaries, verify numerical centroids and chart export.",
+      "script_sha256": "5fa0b767a5ac2ffca8b4227497cbe7b58f787a88197f04d1bd187dff437418c3"
+    },
+    {
+      "script": "scripts/verify_layout.py",
+      "log": "intermediate/logs/verify_layout.log",
+      "elapsed_seconds": 0.5412601670250297,
+      "returncode": 0,
+      "reason": "Add equal-acquisition arithmetic centroids to the primary scatter, explain means versus table medians in both summaries, verify numerical centroids and chart export.",
+      "script_sha256": "6c9017b6846077588e46a5c778bf5ad6291cbee40366d6a23ff0bb4e9767424c"
+    },
+    {
+      "script": "scripts/write_summary.py",
+      "log": "intermediate/logs/write_summary.log",
+      "elapsed_seconds": 2.3368730419897474,
+      "returncode": 0,
+      "reason": "Explicitly document binary-mask resolution limits and absence of grayscale-to-phase-proportion calibration in both executive summaries."
+    },
+    {
+      "script": "scripts/post_regeneration_adversarial.py",
+      "log": "intermediate/logs/post_regeneration_adversarial.log",
+      "elapsed_seconds": 3.635017958993558,
+      "returncode": 0,
+      "reason": "Explicitly document binary-mask resolution limits and absence of grayscale-to-phase-proportion calibration in both executive summaries."
+    },
+    {
+      "script": "scripts/verify_layout.py",
+      "log": "intermediate/logs/verify_layout.log",
+      "elapsed_seconds": 0.5292508339916822,
+      "returncode": 0,
+      "reason": "Explicitly document binary-mask resolution limits and absence of grayscale-to-phase-proportion calibration in both executive summaries."
+    }
+  ]
+}

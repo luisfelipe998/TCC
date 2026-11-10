@@ -1,0 +1,514 @@
+{
+  "definition": "Axial image-structure displacement; positive is rightward.",
+  "frame_lags": [
+    1,
+    2,
+    4
+  ],
+  "source_roi_rows": [
+    20,
+    60
+  ],
+  "preprocessing": "Subtract per-pixel mean across the complete 501-frame sequence.",
+  "ncc_source_sha256": "df1a765ce45ac89853955f4312e06a42789c58657a4abfb2fce1ffb8f16bec8b",
+  "gates": {
+    "ncc_peak": 0.6,
+    "peak_competitor_margin": 0.03,
+    "min_profile_std": 1.0,
+    "max_abs_search_px": 240,
+    "excluded_boundary_px": 2,
+    "base_min_coverage": 0.5,
+    "max_core_saturation": 0.2,
+    "temporal_abs_tolerance_px_frame": 1.0,
+    "temporal_relative_tolerance": 0.15,
+    "temporal_tolerance_rule": "max(absolute, relative * abs(adjacent-path mean))",
+    "lag_joint_min_fraction": 0.25,
+    "lag_min_agreement_fraction": 0.8
+  },
+  "limitations": [
+    "Temporal and fixed-window reversal discrepancies also reflect spatially varying motion and deformation.",
+    "Diagnostic gates are heuristic, not measurement error bars.",
+    "Adjacent comparisons overlap and are not independent experiment replicates.",
+    "No independent phase-velocity truth or axial optical calibration is available.",
+    "A 501-frame record spans only 0.0714 to 0.125 seconds.",
+    "Exposure displacement is estimated from apparent motion, not independently measured blur."
+  ],
+  "inventory": [
+    {
+      "run": "m03q05_001",
+      "pattern": "churn",
+      "fps": 5000.0,
+      "frames": 501,
+      "first_frame_id": 0,
+      "last_frame_id": 500,
+      "shape": [
+        80,
+        1016
+      ],
+      "source_sha256": "7cea7bb3c669afb594e20c0a2973e01a37c7722e24e88bd38b48e0fdad256974",
+      "exposure_us": 132.0
+    },
+    {
+      "run": "m03q10_001",
+      "pattern": "wavy annular",
+      "fps": 5000.0,
+      "frames": 501,
+      "first_frame_id": 0,
+      "last_frame_id": 500,
+      "shape": [
+        80,
+        1016
+      ],
+      "source_sha256": "e7d6be64bb5c55e07a750f59f9bb177418fe807fc19093ffe0743fdb8c2dd1b7",
+      "exposure_us": 132.0
+    },
+    {
+      "run": "m03q20_001",
+      "pattern": "wavy annular",
+      "fps": 4000.0,
+      "frames": 501,
+      "first_frame_id": 0,
+      "last_frame_id": 500,
+      "shape": [
+        80,
+        1016
+      ],
+      "source_sha256": "bfeba748ea432fe833c5c4305073281d5accad8a7bfc5b909e8b52a444f44c2d",
+      "exposure_us": 132.0
+    },
+    {
+      "run": "m03q40_001",
+      "pattern": "wavy annular",
+      "fps": 4000.0,
+      "frames": 501,
+      "first_frame_id": 0,
+      "last_frame_id": 500,
+      "shape": [
+        80,
+        1016
+      ],
+      "source_sha256": "0c44e918d45775498f8d6e9cacb2fa660f10848de6b260a616aafd504407249f",
+      "exposure_us": 132.0
+    },
+    {
+      "run": "m04q01_001",
+      "pattern": "slug",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_frame_id": 0,
+      "last_frame_id": 500,
+      "shape": [
+        80,
+        1016
+      ],
+      "source_sha256": "99279d5fb072c9d7417a84828191380a0a8dca4b9a0ffd07141fd6b16dc778e1",
+      "exposure_us": 62.0
+    },
+    {
+      "run": "m04q10_001",
+      "pattern": "churn",
+      "fps": 5000.0,
+      "frames": 501,
+      "first_frame_id": 0,
+      "last_frame_id": 500,
+      "shape": [
+        80,
+        1016
+      ],
+      "source_sha256": "b78c74a024ae673da6221930523d75760c96eaa5e4b88b2ca79b1aedadbaf7ae",
+      "exposure_us": 127.0
+    },
+    {
+      "run": "m04q20_001",
+      "pattern": "churn",
+      "fps": 5000.0,
+      "frames": 501,
+      "first_frame_id": 0,
+      "last_frame_id": 500,
+      "shape": [
+        80,
+        1016
+      ],
+      "source_sha256": "267fc657d8a1655a18c8228f78a72ad6f2a23cc09e783113684a56aaa053c7a8",
+      "exposure_us": 127.0
+    },
+    {
+      "run": "m04q40_001",
+      "pattern": "wavy annular",
+      "fps": 5000.0,
+      "frames": 501,
+      "first_frame_id": 0,
+      "last_frame_id": 500,
+      "shape": [
+        80,
+        1016
+      ],
+      "source_sha256": "ce12bcb90422902fd3a5da9bbbd7b7112ba42525a360ed4b1f5b5e9995c97294",
+      "exposure_us": 127.0
+    },
+    {
+      "run": "m04q80_001",
+      "pattern": "wavy annular",
+      "fps": 5000.0,
+      "frames": 501,
+      "first_frame_id": 0,
+      "last_frame_id": 500,
+      "shape": [
+        80,
+        1016
+      ],
+      "source_sha256": "0bff122451044a6db2b36efca068ed99f67d6706653b60563d0bf58f71e4328f",
+      "exposure_us": 132.0
+    },
+    {
+      "run": "m05q01_001",
+      "pattern": "plug",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_frame_id": 0,
+      "last_frame_id": 500,
+      "shape": [
+        80,
+        1016
+      ],
+      "source_sha256": "d3ab3152ecb62881545b318ec075c7f80256bb620a0110dd2ab4978c04213068",
+      "exposure_us": 62.0
+    },
+    {
+      "run": "m05q05_001",
+      "pattern": "slug",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_frame_id": 0,
+      "last_frame_id": 500,
+      "shape": [
+        80,
+        1016
+      ],
+      "source_sha256": "e5042992e58727032100a8c5f547219a2e5b4b22bb23cb21cb2cfcce5d6deb38",
+      "exposure_us": 62.0
+    },
+    {
+      "run": "m05q10_001",
+      "pattern": "churn",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_frame_id": 0,
+      "last_frame_id": 500,
+      "shape": [
+        80,
+        1016
+      ],
+      "source_sha256": "5745d14547b8baea8c8bb2f34574f5aa72c2e7bc6c533e91ca35db845ac96dd5",
+      "exposure_us": 62.0
+    },
+    {
+      "run": "m05q20_001",
+      "pattern": "churn",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_frame_id": 0,
+      "last_frame_id": 500,
+      "shape": [
+        80,
+        1016
+      ],
+      "source_sha256": "bddb48a49e82c7edbff462413304693567d634bded3d20ace74a81fa8f83ac82",
+      "exposure_us": 62.0
+    },
+    {
+      "run": "m05q40_001",
+      "pattern": "churn",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_frame_id": 0,
+      "last_frame_id": 500,
+      "shape": [
+        80,
+        1016
+      ],
+      "source_sha256": "3b1989194f4a2bad58c9d2ea499722065d8fb87ab534668192f5a971c0d52b69",
+      "exposure_us": 62.0
+    },
+    {
+      "run": "m05q80_001",
+      "pattern": "wavy annular",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_frame_id": 0,
+      "last_frame_id": 500,
+      "shape": [
+        80,
+        1016
+      ],
+      "source_sha256": "61462f98140b325631529f6c3ef74486b3282eb197483282158fbf4bbcb262ac",
+      "exposure_us": 62.0
+    },
+    {
+      "run": "m06q01_001",
+      "pattern": "plug",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_frame_id": 0,
+      "last_frame_id": 500,
+      "shape": [
+        80,
+        1016
+      ],
+      "source_sha256": "816df7fcc7a738431b6d9182f6068a61388e9fe0cd8bf417d62292020e5496aa",
+      "exposure_us": 62.0
+    },
+    {
+      "run": "m06q05_001",
+      "pattern": "slug",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_frame_id": 0,
+      "last_frame_id": 500,
+      "shape": [
+        80,
+        1016
+      ],
+      "source_sha256": "d02482165c71496e4dcecec8e77975fb258259b62b4409e93b61a40aa828ed15",
+      "exposure_us": 62.0
+    },
+    {
+      "run": "m06q10_001",
+      "pattern": "churn",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_frame_id": 0,
+      "last_frame_id": 500,
+      "shape": [
+        80,
+        1016
+      ],
+      "source_sha256": "0f6b681a17ac83e61218c16ac2cae8b9e2a186334e6a2c3303002122890a2323",
+      "exposure_us": 62.0
+    },
+    {
+      "run": "m06q20_001",
+      "pattern": "churn",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_frame_id": 0,
+      "last_frame_id": 500,
+      "shape": [
+        80,
+        1016
+      ],
+      "source_sha256": "1f1b8e3595865f028325ee374f55301aa299a0110b2934cb0f1ef8104d973b19",
+      "exposure_us": 62.0
+    },
+    {
+      "run": "m06q40_001",
+      "pattern": "wavy annular",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_frame_id": 0,
+      "last_frame_id": 500,
+      "shape": [
+        80,
+        1016
+      ],
+      "source_sha256": "8fdae773ad3b894a48b4bed45a4bbcfe5e31beffefe47a2242316ee7272a2017",
+      "exposure_us": 62.0
+    },
+    {
+      "run": "m06q80_001",
+      "pattern": "wavy annular",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_frame_id": 0,
+      "last_frame_id": 500,
+      "shape": [
+        80,
+        1016
+      ],
+      "source_sha256": "aa6e9348a0b12619c9183aae451b0a180c70826304b6fc8fa9a0addf3ad18370",
+      "exposure_us": 62.0
+    },
+    {
+      "run": "m07q01_001",
+      "pattern": "dispersed bubbles",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_frame_id": 0,
+      "last_frame_id": 500,
+      "shape": [
+        80,
+        1016
+      ],
+      "source_sha256": "fd4f97f912a52b2838d66adf7ab587f62cd513dbb680d2c3cfa567dd5a682e9e",
+      "exposure_us": 62.0
+    },
+    {
+      "run": "m07q05_001",
+      "pattern": "plug",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_frame_id": 0,
+      "last_frame_id": 500,
+      "shape": [
+        80,
+        1016
+      ],
+      "source_sha256": "310eb6eed75c5a719af483f21e04d77df64c815a83608b51104b1af86c6fd751",
+      "exposure_us": 62.0
+    },
+    {
+      "run": "m07q20_001",
+      "pattern": "churn",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_frame_id": 0,
+      "last_frame_id": 500,
+      "shape": [
+        80,
+        1016
+      ],
+      "source_sha256": "c57ce65037b35b44b0ec626786d4cc938388ba65ffabb3ea0cdc2ee11add8e6f",
+      "exposure_us": 62.0
+    },
+    {
+      "run": "m07q40_001",
+      "pattern": "churn",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_frame_id": 0,
+      "last_frame_id": 500,
+      "shape": [
+        80,
+        1016
+      ],
+      "source_sha256": "fc8210999da4d383ed8ca520de568c502fc0c40cb9e1722bcf4e9fc7f9a2d85f",
+      "exposure_us": 62.0
+    },
+    {
+      "run": "m07q80_001",
+      "pattern": "wavy annular",
+      "fps": 7000.0,
+      "frames": 501,
+      "first_frame_id": 0,
+      "last_frame_id": 500,
+      "shape": [
+        80,
+        1016
+      ],
+      "source_sha256": "982008d4ea47ccaa02e669603ee5426a4e1af41b718ca158363db2a781135e4a",
+      "exposure_us": 62.0
+    }
+  ],
+  "exclusions": [
+    {
+      "run": "m03q01_001",
+      "pattern": "plug-slug"
+    },
+    {
+      "run": "m03q80_001",
+      "pattern": "smooth annular"
+    },
+    {
+      "run": "m04q05_001",
+      "pattern": "slug-churn"
+    },
+    {
+      "run": "m05q05_002",
+      "pattern": "dispersed bubbles"
+    },
+    {
+      "run": "m07q10_001",
+      "pattern": "slug-churn"
+    }
+  ],
+  "synthetic": {
+    "trials": [
+      {
+        "speed_px_frame": -16.25,
+        "lag": 1,
+        "error_px_frame": 0.005172344328901346
+      },
+      {
+        "speed_px_frame": -16.25,
+        "lag": 2,
+        "error_px_frame": 0.00023856107632980184
+      },
+      {
+        "speed_px_frame": -16.25,
+        "lag": 4,
+        "error_px_frame": 0.00042194871556588964
+      },
+      {
+        "speed_px_frame": -6.3,
+        "lag": 1,
+        "error_px_frame": 0.0054696832517491245
+      },
+      {
+        "speed_px_frame": -6.3,
+        "lag": 2,
+        "error_px_frame": 0.002997441937189649
+      },
+      {
+        "speed_px_frame": -6.3,
+        "lag": 4,
+        "error_px_frame": 0.0010947245996790755
+      },
+      {
+        "speed_px_frame": 0,
+        "lag": 1,
+        "error_px_frame": 0.0016877948622625947
+      },
+      {
+        "speed_px_frame": 0,
+        "lag": 2,
+        "error_px_frame": 0.0008438974311312974
+      },
+      {
+        "speed_px_frame": 0,
+        "lag": 4,
+        "error_px_frame": 0.0004219487155656487
+      },
+      {
+        "speed_px_frame": 7.4,
+        "lag": 1,
+        "error_px_frame": 0.005994883874379298
+      },
+      {
+        "speed_px_frame": 7.4,
+        "lag": 2,
+        "error_px_frame": 0.002189449199358151
+      },
+      {
+        "speed_px_frame": 7.4,
+        "lag": 4,
+        "error_px_frame": 0.0010373556220608648
+      },
+      {
+        "speed_px_frame": 20.1,
+        "lag": 1,
+        "error_px_frame": 0.005000806219307208
+      },
+      {
+        "speed_px_frame": 20.1,
+        "lag": 2,
+        "error_px_frame": 0.0036901060481504544
+      },
+      {
+        "speed_px_frame": 20.1,
+        "lag": 4,
+        "error_px_frame": 0.0014987209685948244
+      }
+    ],
+    "featureless_rejected": true,
+    "max_error_px_frame": 0.005994883874379298
+  },
+  "totals": {
+    "runs": 26,
+    "adjacent_pairs": 13000,
+    "adjacent_pass": 7528,
+    "base_supported": 17,
+    "lag_stable": 7,
+    "temporal_pairs": 38896
+  },
+  "old_preferred_reproduced": true
+}

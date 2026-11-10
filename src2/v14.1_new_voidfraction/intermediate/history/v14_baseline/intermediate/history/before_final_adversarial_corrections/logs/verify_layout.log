@@ -1,0 +1,309 @@
+{
+  "passed": false,
+  "selected_runs": 26,
+  "identical_retained_masks": 26,
+  "active_csv_artifacts_checked": 24,
+  "local_links_checked": 229,
+  "failures": [
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    },
+    {
+      "kind": "excluded CSV input leaked",
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "field": "heldout_run_excluded_from_reference",
+      "value": "True"
+    }
+  ]
+}

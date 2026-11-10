@@ -1,0 +1,12 @@
+family,metric,scope,retained,loo_silhouette_min,loo_silhouette_max,reasons
+wps,pearson_residual,churn_annular,False,0.088631418309412027,0.16168693755559665,silhueta não positiva em suffix; vizinhança sem vantagem em suffix
+wps,hellinger,churn_annular,True,0.088878670743203117,0.13981879485137697,passou os critérios exploratórios de estabilidade
+wps,hellinger,plug_slug,False,0.086044027935782655,0.27459254712972792,vizinhança sem vantagem em center
+wps,wasserstein,plug_slug,False,0.11341100260663335,0.4427972862417342,silhueta não positiva em center; vizinhança sem vantagem em center; vizinhança sem vantagem em suffix
+wps,trio,churn_annular,False,0.21690246556800483,0.30685878408831901,vizinhança sem vantagem em suffix
+wps,log_peak,churn_annular,False,0.23161753335341764,0.33907641762738316,silhueta não positiva em suffix; vizinhança sem vantagem em suffix
+wps,log_peak,plug_slug,True,0.33411825092251229,0.67491105637657323,passou os critérios exploratórios de estabilidade
+wps,slope,plug_slug,False,0.060924123193779024,0.53902359521883825,silhueta não positiva em center; vizinhança sem vantagem em center; vizinhança sem vantagem em suffix
+wps,width,churn_annular,True,0.24819243103425054,0.36653807985075648,passou os critérios exploratórios de estabilidade
+mean_power,hellinger,plug_slug,True,0.097460582013968788,0.27828887550792547,passou os critérios exploratórios de estabilidade
+mean_power,wasserstein,plug_slug,True,0.16072017894063062,0.51913931421162773,passou os critérios exploratórios de estabilidade

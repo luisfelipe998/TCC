@@ -1,0 +1,8 @@
+{
+  "segmentation_source_sha256": "b8ea65b2838a3cc372760de6b05d1542d6677c2b334328498cb52c1ea3d98b61",
+  "n_saved_binary_masks": 26,
+  "mask_encoding": "255=inferred gas silhouette, 0=unmarked; not independent phase truth",
+  "fixed_probe_row_zero_based": 40,
+  "center_field_semantics": "Legacy center_* names refer to fixed image row y=40; physical centering is unvalidated",
+  "source_data": "src2/data_processed/*/__panorama_v11.png"
+}

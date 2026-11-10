@@ -1,0 +1,243 @@
+{
+  "seed": 20261024,
+  "scope": "26 selected recordings; original exclusions preserved",
+  "status": "adversarial_controls_executed_not_phase_velocity_validation",
+  "real_complement_masks": {
+    "tested_pairs": 780,
+    "nonconstant_pairs": 690,
+    "constant_or_degenerate_pairs": 90,
+    "identical_argmax_pairs": 668,
+    "different_argmax_only_numerical_ties": 22,
+    "unique_peak_pairs_at_1e_10": 636,
+    "max_curve_difference": 3.9968028886505635e-15,
+    "all_curves_agree_within_1e_10": true,
+    "limitation": "Identity applies to normalized correlation of complementary masks over identical support, not to independent textured grayscale pixels within each phase."
+  },
+  "weighted_common_motion": {
+    "trials": 156,
+    "baseline_finite_pairs": 26,
+    "baseline_ratio_min": 0.6174005917361036,
+    "baseline_ratio_max": 0.9994243317693923,
+    "max_covariance_identity_residual_px_s": 3.7965946830809116e-08,
+    "max_shuffled_ratio_median_deviation_from_one": 0.022938873526928583,
+    "identity": "weighted_gas-weighted_complement = population_covariance(mask_fraction,global_motion)/(mean_fraction*(1-mean_fraction))",
+    "shuffle_role": "Break appearance/motion association; percentiles are permutation diagnostics, not experimental confidence intervals."
+  },
+  "synthetic_nonstationarity": {
+    "cases": [
+      {
+        "synthetic_case": "constant",
+        "frames": 501,
+        "true_time_mean_px_frame": -16.0,
+        "true_min_px_frame": -16.0,
+        "true_max_px_frame": -16.0,
+        "mean_individual_displacements_px_frame": -15.999956702696654,
+        "individual_mean_absolute_error_px_frame": 0.0009859326648431511,
+        "individual_max_absolute_error_px_frame": 0.005962676409556167,
+        "ensemble_peak_px_frame": -15.999956969829727,
+        "ensemble_peak_error_vs_time_mean": 4.30301702731839e-05,
+        "lag2_ensemble_px_frame": -15.999977389477493,
+        "lag4_ensemble_px_frame": -15.999985075819335,
+        "temporal_tolerance_px_frame": 3.1999913939659455,
+        "block_agree_count": 5,
+        "block_consistency_gate": true,
+        "lag_consistency_gate": true,
+        "rejected_by_either_stationarity_gate": false,
+        "block_speeds": "-16.0000138514;-16.0000295695;-15.9999172814;-15.9999489502;-15.9998917284",
+        "status": "synthetic_truth_known; not an experimental correction"
+      },
+      {
+        "synthetic_case": "two_real_speeds",
+        "frames": 501,
+        "true_time_mean_px_frame": -14.4,
+        "true_min_px_frame": -24.0,
+        "true_max_px_frame": -8.0,
+        "mean_individual_displacements_px_frame": -14.400094538662648,
+        "individual_mean_absolute_error_px_frame": 0.003964466494027802,
+        "individual_max_absolute_error_px_frame": 0.017025260508276574,
+        "ensemble_peak_px_frame": -7.987682664038634,
+        "ensemble_peak_error_vs_time_mean": 6.412317335961366,
+        "lag2_ensemble_px_frame": -8.006020855162983,
+        "lag4_ensemble_px_frame": -8.014919216289318,
+        "temporal_tolerance_px_frame": 2.0,
+        "block_agree_count": 3,
+        "block_consistency_gate": false,
+        "lag_consistency_gate": true,
+        "rejected_by_either_stationarity_gate": true,
+        "block_speeds": "-8.00030399651;-8.0000730491;-8.0002880929;-23.9999541312;-23.999937304",
+        "status": "synthetic_truth_known; not an experimental correction"
+      },
+      {
+        "synthetic_case": "continuous_acceleration",
+        "frames": 501,
+        "true_time_mean_px_frame": -16.0,
+        "true_min_px_frame": -28.0,
+        "true_max_px_frame": -4.0,
+        "mean_individual_displacements_px_frame": -16.000071481231238,
+        "individual_mean_absolute_error_px_frame": 0.011214202054786423,
+        "individual_max_absolute_error_px_frame": 0.04941250394589858,
+        "ensemble_peak_px_frame": -17.194758620605498,
+        "ensemble_peak_error_vs_time_mean": 1.1947586206054979,
+        "lag2_ensemble_px_frame": -19.81402299397406,
+        "lag4_ensemble_px_frame": -25.89679078237948,
+        "temporal_tolerance_px_frame": 3.4389517241211,
+        "block_agree_count": 1,
+        "block_consistency_gate": false,
+        "lag_consistency_gate": false,
+        "rejected_by_either_stationarity_gate": true,
+        "block_speeds": "-6.36910523897;-11.1909764061;-16.0748684577;-20.8286995389;-25.8138624552",
+        "status": "synthetic_truth_known; not an experimental correction"
+      }
+    ],
+    "conclusion": "A single dominant correlation peak and stationarity gates can reject real varying optical motion; mean pair displacements recover the synthetic temporal mean. This does not establish phase identity or validate any rejected real-data peak."
+  },
+  "physical_nonuniqueness": {
+    "kinematic": [
+      {
+        "case": "kinematic_A",
+        "identical_observed_interface_c_px_frame": 12.0,
+        "assumed_axial_gas_px_frame": 18.0,
+        "assumed_axial_liquid_px_frame": 6.0,
+        "assumed_axial_ratio": 3.0,
+        "max_normal_constraint_residual": 1.1102230246251565e-16,
+        "interpretation": "Two kinematically admissible interfacial motions; not full hydrodynamic solutions or measured phase-average speeds"
+      },
+      {
+        "case": "kinematic_B",
+        "identical_observed_interface_c_px_frame": 12.0,
+        "assumed_axial_gas_px_frame": 30.0,
+        "assumed_axial_liquid_px_frame": 4.0,
+        "assumed_axial_ratio": 7.5,
+        "max_normal_constraint_residual": 2.220446049250313e-16,
+        "interpretation": "Two kinematically admissible interfacial motions; not full hydrodynamic solutions or measured phase-average speeds"
+      }
+    ],
+    "film_examples": [
+      {
+        "synthetic_shear_fraction": 0.0,
+        "film_thickness_m": 0.0001,
+        "viscosity_Pa_s": 0.001,
+        "interfacial_shear_Pa": 0.0,
+        "pressure_gravity_drive_Pa_per_m": 59999.99999999999,
+        "identical_linear_wave_speed_m_s": 0.6000000000000001,
+        "material_film_mean_m_s": 0.2,
+        "wave_to_material_factor": 3.0000000000000004,
+        "status": "Illustrative planar laminar model, not fitted to R600a recordings or a valid annular bound"
+      },
+      {
+        "synthetic_shear_fraction": 0.25,
+        "film_thickness_m": 0.0001,
+        "viscosity_Pa_s": 0.001,
+        "interfacial_shear_Pa": 1.4999999999999998,
+        "pressure_gravity_drive_Pa_per_m": 45000.0,
+        "identical_linear_wave_speed_m_s": 0.6,
+        "material_film_mean_m_s": 0.225,
+        "wave_to_material_factor": 2.6666666666666665,
+        "status": "Illustrative planar laminar model, not fitted to R600a recordings or a valid annular bound"
+      },
+      {
+        "synthetic_shear_fraction": 0.5,
+        "film_thickness_m": 0.0001,
+        "viscosity_Pa_s": 0.001,
+        "interfacial_shear_Pa": 2.9999999999999996,
+        "pressure_gravity_drive_Pa_per_m": 29999.999999999996,
+        "identical_linear_wave_speed_m_s": 0.6000000000000001,
+        "material_film_mean_m_s": 0.24999999999999997,
+        "wave_to_material_factor": 2.400000000000001,
+        "status": "Illustrative planar laminar model, not fitted to R600a recordings or a valid annular bound"
+      },
+      {
+        "synthetic_shear_fraction": 0.75,
+        "film_thickness_m": 0.0001,
+        "viscosity_Pa_s": 0.001,
+        "interfacial_shear_Pa": 4.5,
+        "pressure_gravity_drive_Pa_per_m": 14999.999999999998,
+        "identical_linear_wave_speed_m_s": 0.6000000000000001,
+        "material_film_mean_m_s": 0.275,
+        "wave_to_material_factor": 2.181818181818182,
+        "status": "Illustrative planar laminar model, not fitted to R600a recordings or a valid annular bound"
+      },
+      {
+        "synthetic_shear_fraction": 1.0,
+        "film_thickness_m": 0.0001,
+        "viscosity_Pa_s": 0.001,
+        "interfacial_shear_Pa": 5.999999999999999,
+        "pressure_gravity_drive_Pa_per_m": 0.0,
+        "identical_linear_wave_speed_m_s": 0.6,
+        "material_film_mean_m_s": 0.29999999999999993,
+        "wave_to_material_factor": 2.0000000000000004,
+        "status": "Illustrative planar laminar model, not fitted to R600a recordings or a valid annular bound"
+      }
+    ],
+    "void_continuity_examples": [
+      {
+        "synthetic_gas_flux_constant": 1.0,
+        "synthetic_liquid_flux_constant": 0.8,
+        "identical_alpha_min": 0.40000012312365923,
+        "identical_alpha_max": 0.5999998768763407,
+        "identical_void_structure_speed": 2.0,
+        "identical_total_mean_mass_flux": 20.0,
+        "gas_flux_weighted_intrinsic_mean": 4.000000000000001,
+        "liquid_flux_weighted_intrinsic_mean": 3.6000000000000005,
+        "max_phase_continuity_residual": 0.0,
+        "status": "Dimensionless synthetic 1D continuity solutions; momentum and constitutive closure not supplied"
+      },
+      {
+        "synthetic_gas_flux_constant": 3.0,
+        "synthetic_liquid_flux_constant": 0.6,
+        "identical_alpha_min": 0.40000012312365923,
+        "identical_alpha_max": 0.5999998768763407,
+        "identical_void_structure_speed": 2.0,
+        "identical_total_mean_mass_flux": 20.0,
+        "gas_flux_weighted_intrinsic_mean": 8.000000000000002,
+        "liquid_flux_weighted_intrinsic_mean": 3.2,
+        "max_phase_continuity_residual": 0.0,
+        "status": "Dimensionless synthetic 1D continuity solutions; momentum and constitutive closure not supplied"
+      }
+    ],
+    "conservation_family_rows": 130,
+    "conservation_runs": 26,
+    "max_mass_residual_kg_m2_s": 2.2737367544323206e-13,
+    "interpretation": "Conservation alone constrains a locus, not a unique point. Positive flux endpoints require extra assumptions and are not experimental confidence bounds."
+  },
+  "legacy_gate_attrition": {
+    "region_rows": 148,
+    "baseline_rejected_only_stationarity": 42,
+    "only_stationarity_with_other_extended_checks_pass": 31,
+    "warning": "These counts flag investigable cases; loosening gates is not validation."
+  },
+  "sources_sha256": {
+    "v15_gas_liquid_velocity/phase_conditioned_motion/results/native_phase_inventory.csv": "1e6a5656a135a3c3722ad78aa0ed19ab228e17f0c6fdadd0c38be1ded2bfba5f",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/intermediate/masks/m03q05_001.npz": "d35ef7721b90089df4b85c8d08ca8c161b7138e40770d12c74a615e75e176ca0",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/intermediate/masks/m03q10_001.npz": "00b104c1f96e5fd8803491261f42d0a184e2212e3204d26280402c7e2185c444",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/intermediate/masks/m03q20_001.npz": "bc9566e8524a7656c5a0dc09d4e19e3d11be27e47d46db69d4b7e26733372b5b",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/intermediate/masks/m03q40_001.npz": "119319da1d2c3ccee93d26297da31e749676ede8ceb6353c5712fdcc1247ecf2",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/intermediate/masks/m04q01_001.npz": "33a868ebe42888e42069d8d6872846019e663e6d42e0f25765b6081c9f2d2ac9",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/intermediate/masks/m04q10_001.npz": "adf7ed7f819269d028b422a110a36e78aeab1c72c2dd15eb66345772ce2830c7",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/intermediate/masks/m04q20_001.npz": "82d58b8e0d83538848dfd50faecf5b55a1ec6b4fe27d7b50bf3ed2c8f324b804",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/intermediate/masks/m04q40_001.npz": "1f8d985b3913cb26162013f23cfb105d958a7eeacc5b9b29586658d4fde266be",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/intermediate/masks/m04q80_001.npz": "4df61573f5b0a870065bc4a5cc296502947b0245d560493e515204474519bcaf",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/intermediate/masks/m05q01_001.npz": "15cb4960d5e4780a62f0586679b834fb71d97000d072bc8b461d01e0cbf8fb57",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/intermediate/masks/m05q05_001.npz": "0fe694f51a1d37e2771935c9401dcab300cbfa25e3d792a4a95005122e28826e",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/intermediate/masks/m05q10_001.npz": "c184d18dfb70650e6b2c0947bf31a02932a39f01e5b18a3a861c84484d289b48",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/intermediate/masks/m05q20_001.npz": "5d6a2bf3650f8054534e57b6dbc26bb3abf723d9c2e5f4f2fd02ebe93f47d957",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/intermediate/masks/m05q40_001.npz": "2f2c1423f959d63a1efdf54364b915b1b1f17d800918593dc51f0ead2bae66ca",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/intermediate/masks/m05q80_001.npz": "8a106820e5eef6ba9366567888d9960bb6ce4e5d09c6f60ee9949a56a8e14342",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/intermediate/masks/m06q01_001.npz": "8a04786c9c7c8776b3993d777562065b22bf33c3132d11dc8a12da7e07dc000f",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/intermediate/masks/m06q05_001.npz": "5862635c8996e54c9fcecb1b49cd7d804d1acb4009afb578f95de270ede61cf0",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/intermediate/masks/m06q10_001.npz": "de16836acbbc3ce48f2dd4759d8ea97c2c026c655f03ef601ede9d979e263186",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/intermediate/masks/m06q20_001.npz": "cbb2e01b82febf9bc102bd4ad4928bab57b4419d4e1d50aeea88abe3590f62d5",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/intermediate/masks/m06q40_001.npz": "554c9891a208607edfd395921e89de51b4394658eca8902173851f59d4b8eb86",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/intermediate/masks/m06q80_001.npz": "b55463ef1a9a91ab7ce2d805915f649e085bed3261ddef4ef1fecb2eb1e51588",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/intermediate/masks/m07q01_001.npz": "0a9a8ef73b1cd35b9fb5e23f71f1085849b55e9379a73847292120088027eb9c",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/intermediate/masks/m07q05_001.npz": "7874efde74220e69b1684f93891cf64c7ae1184a2b78c12682337c972268a50e",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/intermediate/masks/m07q20_001.npz": "affabe66796e0ecb065c4372d3b0459261febbf25790120c3a4f9a1e8647079d",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/intermediate/masks/m07q40_001.npz": "8d851f7558fee01703abc388ad36ad37bd397e2dd616e1a03008712ebf17fcff",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/intermediate/masks/m07q80_001.npz": "b5e896d7358c5230611ac15154b48c7205f5c1737ae6ce96ad99e1316dc1f5e9",
+    "v15_gas_liquid_velocity/frame_motion_evaluation/results/temporal_pairs.csv": "ce0f5031f95af852a60a70842c9b434ecf74baedc40f369175672760d74eb2b6",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/results/native_phase_frame_fractions.csv": "2b8ea18df3b25ac99d8a8f491d315770a41ee22ee568ebb10e19fd3dc027c372",
+    "v15.1_gas_liquid_velocity/results/mass_balance_stress.csv": "564a5f779e526b76c3cd630014c66b6c858ce151d7ae130e809d9ff8d5c60221",
+    "v15.1_gas_liquid_velocity/results/annular_region_summary.csv": "c150b4b9f196d137e82b07982cb272026deb2068885a471348c5fa79b9741f5f"
+  },
+  "script_sha256": "667265e5cb87af3a6ad3149324312e3878836626a8e501f82967aef1bb59223f"
+}

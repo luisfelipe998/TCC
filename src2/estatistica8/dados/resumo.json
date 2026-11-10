@@ -1,0 +1,19 @@
+{
+  "recommendation": "Manter largura WPS/combinação Pearson para churn versus wavy annular como candidato exploratório; descartar extensão WCO e pico plug/slug como separadores nesta base.",
+  "significant_after_global_holm": false,
+  "n_runs": 25,
+  "candidates_admissible": 36,
+  "churn_annular": {
+    "n_runs": 19,
+    "silhouette_width": 0.4347766010411863,
+    "neighbor_pearson": 0.5833333333333331,
+    "neighbor_width": 0.8111111111111111,
+    "neighbor_combined": 0.95,
+    "width_cliff": 0.9555555555555556,
+    "width_p_exact": 0.0001840264998159,
+    "width_p_holm": 0.0925653294074346,
+    "gain_p_exact": 0.0312087293511442,
+    "gain_p_holm": 1.0
+  },
+  "validation": "PASS"
+}

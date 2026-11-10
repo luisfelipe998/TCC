@@ -1,0 +1,1655 @@
+{
+  "passed": true,
+  "scope": {
+    "policy": "Five single-pattern classes; wavy annular only; m05q05_002 excluded",
+    "allowed_patterns": [
+      "dispersed bubbles",
+      "plug",
+      "slug",
+      "churn",
+      "wavy annular"
+    ],
+    "explicitly_excluded_acquisitions": [
+      "m05q05_002"
+    ],
+    "source_acquisitions": 31,
+    "selected_acquisitions": 26,
+    "selected_runs": [
+      "m03q05_001",
+      "m03q10_001",
+      "m03q20_001",
+      "m03q40_001",
+      "m04q01_001",
+      "m04q10_001",
+      "m04q20_001",
+      "m04q40_001",
+      "m04q80_001",
+      "m05q01_001",
+      "m05q05_001",
+      "m05q10_001",
+      "m05q20_001",
+      "m05q40_001",
+      "m05q80_001",
+      "m06q01_001",
+      "m06q05_001",
+      "m06q10_001",
+      "m06q20_001",
+      "m06q40_001",
+      "m06q80_001",
+      "m07q01_001",
+      "m07q05_001",
+      "m07q20_001",
+      "m07q40_001",
+      "m07q80_001"
+    ],
+    "selected_pattern_counts": {
+      "churn": 10,
+      "wavy annular": 9,
+      "slug": 3,
+      "plug": 3,
+      "dispersed bubbles": 1
+    },
+    "excluded_acquisitions": [
+      {
+        "run": "m03q01_001",
+        "supplied_pattern": "plug-slug",
+        "reason": "Compound pattern label excluded by user"
+      },
+      {
+        "run": "m03q80_001",
+        "supplied_pattern": "smooth annular",
+        "reason": "Smooth annular excluded; only wavy annular retained"
+      },
+      {
+        "run": "m04q05_001",
+        "supplied_pattern": "slug-churn",
+        "reason": "Compound pattern label excluded by user"
+      },
+      {
+        "run": "m05q05_002",
+        "supplied_pattern": "dispersed bubbles",
+        "reason": "Acquisition excluded by user: m05q05_002"
+      },
+      {
+        "run": "m07q10_001",
+        "supplied_pattern": "slug-churn",
+        "reason": "Compound pattern label excluded by user"
+      }
+    ],
+    "statistical_rule": "Selected acquisitions with core saturation fraction <= 0.20",
+    "scope_does_not_relabel_inputs": true
+  },
+  "measurement_checks": [
+    {
+      "artifact": "results/void_fraction/panorama_void_per_run.csv",
+      "retained_rows": 26,
+      "differences": []
+    },
+    {
+      "artifact": "results/flip_rate/phase_mask_flip_per_run.csv",
+      "retained_rows": 26,
+      "differences": []
+    },
+    {
+      "artifact": "results/flip_rate/flip_rate_per_run.csv",
+      "retained_rows": 26,
+      "differences": []
+    },
+    {
+      "artifact": "results/validation/data_inventory.csv",
+      "retained_rows": 26,
+      "differences": []
+    },
+    {
+      "artifact": "intermediate/exploratory/image_void_alternatives.csv",
+      "retained_rows": 26,
+      "differences": []
+    }
+  ],
+  "active_csv_scope_checks": [
+    {
+      "artifact": "intermediate/exploratory/image_void_alternatives.csv",
+      "rows": 26,
+      "leaks": []
+    },
+    {
+      "artifact": "intermediate/features/pattern_morphology_features.csv",
+      "rows": 26,
+      "leaks": []
+    },
+    {
+      "artifact": "intermediate/features/silhouette_pattern_features.csv",
+      "rows": 100,
+      "leaks": []
+    },
+    {
+      "artifact": "intermediate/features/silhouette_pattern_fold_references.csv",
+      "rows": 50,
+      "leaks": []
+    },
+    {
+      "artifact": "intermediate/sensitivity/flip_rate_group_sensitivity.csv",
+      "rows": 21,
+      "leaks": []
+    },
+    {
+      "artifact": "intermediate/sensitivity/flip_rate_sensitivity.csv",
+      "rows": 546,
+      "leaks": []
+    },
+    {
+      "artifact": "intermediate/sensitivity/flip_rate_spatial_group_sensitivity.csv",
+      "rows": 24,
+      "leaks": []
+    },
+    {
+      "artifact": "intermediate/sensitivity/flip_rate_spatial_sensitivity.csv",
+      "rows": 624,
+      "leaks": []
+    },
+    {
+      "artifact": "intermediate/sensitivity/panorama_void_sensitivity.csv",
+      "rows": 390,
+      "leaks": []
+    },
+    {
+      "artifact": "intermediate/sensitivity/phase_mask_flip_group_sensitivity.csv",
+      "rows": 10,
+      "leaks": []
+    },
+    {
+      "artifact": "intermediate/sensitivity/phase_mask_flip_sensitivity.csv",
+      "rows": 130,
+      "leaks": []
+    },
+    {
+      "artifact": "results/flip_rate/flip_rate_by_pattern.csv",
+      "rows": 35,
+      "leaks": []
+    },
+    {
+      "artifact": "results/flip_rate/flip_rate_per_run.csv",
+      "rows": 26,
+      "leaks": []
+    },
+    {
+      "artifact": "results/flip_rate/phase_mask_flip_by_pattern.csv",
+      "rows": 5,
+      "leaks": []
+    },
+    {
+      "artifact": "results/flip_rate/phase_mask_flip_per_run.csv",
+      "rows": 26,
+      "leaks": []
+    },
+    {
+      "artifact": "results/patterns/pattern_identification_predictions.csv",
+      "rows": 1050,
+      "leaks": []
+    },
+    {
+      "artifact": "results/patterns/pattern_identification_scores.csv",
+      "rows": 42,
+      "leaks": []
+    },
+    {
+      "artifact": "results/patterns/silhouette_pattern_predictions.csv",
+      "rows": 150,
+      "leaks": []
+    },
+    {
+      "artifact": "results/patterns/silhouette_pattern_scores.csv",
+      "rows": 6,
+      "leaks": []
+    },
+    {
+      "artifact": "results/validation/data_inventory.csv",
+      "rows": 26,
+      "leaks": []
+    },
+    {
+      "artifact": "results/validation/panorama_liquid_holdout_checks.csv",
+      "rows": 3,
+      "leaks": []
+    },
+    {
+      "artifact": "results/void_fraction/panorama_void_by_pattern.csv",
+      "rows": 5,
+      "leaks": []
+    },
+    {
+      "artifact": "results/void_fraction/panorama_void_per_run.csv",
+      "rows": 26,
+      "leaks": []
+    },
+    {
+      "artifact": "results/void_fraction/void_fraction_flip_plot_data.csv",
+      "rows": 26,
+      "leaks": []
+    }
+  ],
+  "retained_masks_byte_identical": 26,
+  "current_segmentation_source_sha256": "072ffca53f5f7393548a40a9f90948cf24d9f92d7d477ccc930723d308e4682b",
+  "source_hashes": {
+    "phase_mask_flip_metadata.json": "072ffca53f5f7393548a40a9f90948cf24d9f92d7d477ccc930723d308e4682b",
+    "silhouette_pattern_results.json": "072ffca53f5f7393548a40a9f90948cf24d9f92d7d477ccc930723d308e4682b",
+    "adversarial_checks.json": "072ffca53f5f7393548a40a9f90948cf24d9f92d7d477ccc930723d308e4682b",
+    "final_verification.json": "072ffca53f5f7393548a40a9f90948cf24d9f92d7d477ccc930723d308e4682b"
+  },
+  "failures": [],
+  "interpretation": "Dataset scope, retained default measurements and navigation consistency; physical calibration is not established.",
+  "local_markdown_links": [
+    {
+      "document": "README.md",
+      "line": 3,
+      "target": "findings/EXECUTIVE_SUMMARY.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 3,
+      "target": "results/validation/dataset_selection.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 11,
+      "target": "findings/README.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 12,
+      "target": "results/README.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 13,
+      "target": "figures/README.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 14,
+      "target": "scripts/README.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 15,
+      "target": "intermediate/README.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 16,
+      "target": "literature/README.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 22,
+      "target": "results/void_fraction/panorama_void_per_run.csv",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 22,
+      "target": "results/void_fraction/panorama_void_by_pattern.csv",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 23,
+      "target": "results/flip_rate/phase_mask_flip_per_run.csv",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 23,
+      "target": "results/flip_rate/phase_mask_flip_by_pattern.csv",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 25,
+      "target": "results/flip_rate",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 25,
+      "target": "findings/phase_mask_flip_review.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 29,
+      "target": "figures/void_fraction/void_fraction_vs_flip_rate.png",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 30,
+      "target": "figures/void_fraction/void_fraction_vs_center_flips.png",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 31,
+      "target": "figures/void_fraction/void_crop_sensitivity.png",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 32,
+      "target": "figures/void_fraction/panorama_phase_masks.png",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 33,
+      "target": "figures/void_fraction/panorama_liquid_reference_candidates.png",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 34,
+      "target": "figures/patterns/pattern_panorama_contact_sheet.png",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 35,
+      "target": "figures/patterns/pattern_confusion_matrices.png",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 35,
+      "target": "figures/patterns/silhouette_pattern_confusion_matrices.png",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 36,
+      "target": "figures/validation/adversarial_slug_gap_mask.png",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 46,
+      "target": "intermediate/logs",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 48,
+      "target": "scripts/README.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 48,
+      "target": "results/validation/final_verification.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 48,
+      "target": "findings/layout_verification.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "line": 48,
+      "target": "results/validation/adversarial_checks.json",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 3,
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 7,
+      "target": "void_fraction/void_fraction_vs_flip_rate.png",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 7,
+      "target": "void_fraction/void_fraction_vs_flip_rate.svg",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 8,
+      "target": "void_fraction/void_fraction_vs_center_flips.png",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 8,
+      "target": "void_fraction/void_fraction_vs_center_flips.svg",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 9,
+      "target": "void_fraction/void_crop_sensitivity.png",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 9,
+      "target": "void_fraction/void_crop_sensitivity.svg",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 10,
+      "target": "void_fraction/panorama_phase_masks.png",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 11,
+      "target": "void_fraction/panorama_liquid_reference_candidates.png",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 12,
+      "target": "patterns/pattern_panorama_contact_sheet.png",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 13,
+      "target": "patterns/pattern_confusion_matrices.png",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 14,
+      "target": "patterns/silhouette_pattern_confusion_matrices.png",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 15,
+      "target": "validation/adversarial_phase_anchor_patches.png",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 16,
+      "target": "validation/adversarial_slug_gap_mask.png",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 17,
+      "target": "flip_rate/flip_rate_spatial_vs_native.png",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 18,
+      "target": "flip_rate/flip_rate_native_kymographs.png",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 20,
+      "target": "../intermediate/exploratory/figures",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 20,
+      "target": "../intermediate/history",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 22,
+      "target": "../results/void_fraction/void_fraction_flip_plot_data.csv",
+      "exists": true
+    },
+    {
+      "document": "figures/README.md",
+      "line": 22,
+      "target": "../results/validation/summary_chart_checks.json",
+      "exists": true
+    },
+    {
+      "document": "findings/EXECUTIVE_SUMMARY.md",
+      "line": 7,
+      "target": "../figures/void_fraction/void_fraction_vs_flip_rate.png",
+      "exists": true
+    },
+    {
+      "document": "findings/EXECUTIVE_SUMMARY.md",
+      "line": 11,
+      "target": "../figures/void_fraction/void_fraction_vs_center_flips.png",
+      "exists": true
+    },
+    {
+      "document": "findings/EXECUTIVE_SUMMARY.md",
+      "line": 25,
+      "target": "../intermediate/history/pre_scope_exclusions/README.md",
+      "exists": true
+    },
+    {
+      "document": "findings/EXECUTIVE_SUMMARY.md",
+      "line": 29,
+      "target": "../results/validation/dataset_selection.json",
+      "exists": true
+    },
+    {
+      "document": "findings/EXECUTIVE_SUMMARY.md",
+      "line": 35,
+      "target": "../figures/void_fraction/panorama_phase_masks.png",
+      "exists": true
+    },
+    {
+      "document": "findings/EXECUTIVE_SUMMARY.md",
+      "line": 43,
+      "target": "../figures/void_fraction/void_crop_sensitivity.png",
+      "exists": true
+    },
+    {
+      "document": "findings/EXECUTIVE_SUMMARY.md",
+      "line": 58,
+      "target": "../results/void_fraction/panorama_void_per_run.csv",
+      "exists": true
+    },
+    {
+      "document": "findings/EXECUTIVE_SUMMARY.md",
+      "line": 58,
+      "target": "../results/flip_rate/phase_mask_flip_per_run.csv",
+      "exists": true
+    },
+    {
+      "document": "findings/EXECUTIVE_SUMMARY.md",
+      "line": 58,
+      "target": "panorama_void_alternatives.md",
+      "exists": true
+    },
+    {
+      "document": "findings/EXECUTIVE_SUMMARY.md",
+      "line": 58,
+      "target": "phase_mask_flip_review.md",
+      "exists": true
+    },
+    {
+      "document": "findings/EXECUTIVE_SUMMARY.md",
+      "line": 58,
+      "target": "adversarial_review.md",
+      "exists": true
+    },
+    {
+      "document": "findings/EXECUTIVE_SUMMARY.md",
+      "line": 58,
+      "target": "source_audit.md",
+      "exists": true
+    },
+    {
+      "document": "findings/EXECUTIVE_SUMMARY.md",
+      "line": 58,
+      "target": "post_regeneration_adversarial_review.md",
+      "exists": true
+    },
+    {
+      "document": "findings/README.md",
+      "line": 3,
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "document": "findings/README.md",
+      "line": 7,
+      "target": "EXECUTIVE_SUMMARY.md",
+      "exists": true
+    },
+    {
+      "document": "findings/README.md",
+      "line": 8,
+      "target": "panorama_void_alternatives.md",
+      "exists": true
+    },
+    {
+      "document": "findings/README.md",
+      "line": 9,
+      "target": "phase_mask_flip_review.md",
+      "exists": true
+    },
+    {
+      "document": "findings/README.md",
+      "line": 10,
+      "target": "adversarial_review.md",
+      "exists": true
+    },
+    {
+      "document": "findings/README.md",
+      "line": 11,
+      "target": "source_audit.md",
+      "exists": true
+    },
+    {
+      "document": "findings/README.md",
+      "line": 12,
+      "target": "prior_findings_audit.md",
+      "exists": true
+    },
+    {
+      "document": "findings/README.md",
+      "line": 13,
+      "target": "spatial_flip_review.md",
+      "exists": true
+    },
+    {
+      "document": "findings/README.md",
+      "line": 14,
+      "target": "flip_rate_review.md",
+      "exists": true
+    },
+    {
+      "document": "findings/README.md",
+      "line": 15,
+      "target": "pattern_identification.md",
+      "exists": true
+    },
+    {
+      "document": "findings/README.md",
+      "line": 16,
+      "target": "silhouette_pattern_review.md",
+      "exists": true
+    },
+    {
+      "document": "findings/README.md",
+      "line": 17,
+      "target": "layout_verification.md",
+      "exists": true
+    },
+    {
+      "document": "findings/adversarial_review.md",
+      "line": 3,
+      "target": "../results/validation/dataset_selection.json",
+      "exists": true
+    },
+    {
+      "document": "findings/adversarial_review.md",
+      "line": 20,
+      "target": "../figures/validation/adversarial_phase_anchor_patches.png",
+      "exists": true
+    },
+    {
+      "document": "findings/adversarial_review.md",
+      "line": 50,
+      "target": "../intermediate/history/pre_scope_exclusions/findings/adversarial_review.md",
+      "exists": true
+    },
+    {
+      "document": "findings/adversarial_review.md",
+      "line": 52,
+      "target": "../figures/validation/adversarial_slug_gap_mask.png",
+      "exists": true
+    },
+    {
+      "document": "findings/adversarial_review.md",
+      "line": 56,
+      "target": "../results/validation/adversarial_checks.json",
+      "exists": true
+    },
+    {
+      "document": "findings/adversarial_review.md",
+      "line": 56,
+      "target": "../results/validation/final_verification.json",
+      "exists": true
+    },
+    {
+      "document": "findings/adversarial_review.md",
+      "line": 56,
+      "target": "post_regeneration_adversarial_review.md",
+      "exists": true
+    },
+    {
+      "document": "findings/layout_verification.md",
+      "line": 5,
+      "target": "scope_verification.md",
+      "exists": true
+    },
+    {
+      "document": "findings/layout_verification.md",
+      "line": 5,
+      "target": "../intermediate/history/pre_scope_exclusions/README.md",
+      "exists": true
+    },
+    {
+      "document": "findings/post_regeneration_adversarial_review.md",
+      "line": 25,
+      "target": "../results/validation/post_regeneration_adversarial_checks.json",
+      "exists": true
+    },
+    {
+      "document": "findings/prior_findings_audit.md",
+      "line": 9,
+      "target": "../results/validation/dataset_selection.json",
+      "exists": true
+    },
+    {
+      "document": "findings/prior_findings_audit.md",
+      "line": 9,
+      "target": "../results/validation/dataset_exclusions.csv",
+      "exists": true
+    },
+    {
+      "document": "findings/scope_verification.md",
+      "line": 5,
+      "target": "../intermediate/history/pre_scope_exclusions/README.md",
+      "exists": true
+    },
+    {
+      "document": "findings/scope_verification.md",
+      "line": 9,
+      "target": "../results/validation/scope_verification.json",
+      "exists": true
+    },
+    {
+      "document": "findings/scope_verification.md",
+      "line": 9,
+      "target": "post_regeneration_adversarial_review.md",
+      "exists": true
+    },
+    {
+      "document": "findings/source_audit.md",
+      "line": 10,
+      "target": "../../../assets/deoliveira2021-flow-patterns-pressure-drop.pdf",
+      "exists": true
+    },
+    {
+      "document": "findings/source_audit.md",
+      "line": 31,
+      "target": "../../../assets/dias2025-knn-flow-pattern.pdf",
+      "exists": true
+    },
+    {
+      "document": "findings/source_audit.md",
+      "line": 83,
+      "target": "../../../assets/schepperle2024-cv-void-fraction-microchannel.pdf",
+      "exists": true
+    },
+    {
+      "document": "findings/source_audit.md",
+      "line": 96,
+      "target": "../../../assets/deoliveira2019-flow-boiling-hydrocarbons-nonlinear.pdf",
+      "exists": true
+    },
+    {
+      "document": "findings/source_audit.md",
+      "line": 117,
+      "target": "../../../assets/driftflux2023-void-horizontal-intermittent.pdf",
+      "exists": true
+    },
+    {
+      "document": "intermediate/README.md",
+      "line": 3,
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "document": "intermediate/README.md",
+      "line": 7,
+      "target": "features",
+      "exists": true
+    },
+    {
+      "document": "intermediate/README.md",
+      "line": 8,
+      "target": "sensitivity",
+      "exists": true
+    },
+    {
+      "document": "intermediate/README.md",
+      "line": 9,
+      "target": "phase_masks",
+      "exists": true
+    },
+    {
+      "document": "intermediate/README.md",
+      "line": 10,
+      "target": "exploratory",
+      "exists": true
+    },
+    {
+      "document": "intermediate/README.md",
+      "line": 11,
+      "target": "history",
+      "exists": true
+    },
+    {
+      "document": "intermediate/README.md",
+      "line": 12,
+      "target": "logs",
+      "exists": true
+    },
+    {
+      "document": "intermediate/README.md",
+      "line": 13,
+      "target": "cache",
+      "exists": true
+    },
+    {
+      "document": "intermediate/README.md",
+      "line": 15,
+      "target": "../results/validation",
+      "exists": true
+    },
+    {
+      "document": "intermediate/README.md",
+      "line": 15,
+      "target": "../findings/adversarial_review.md",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/before_final_adversarial_corrections/README.md",
+      "line": 5,
+      "target": "logs/pipeline_run.json",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/before_final_adversarial_corrections/README.md",
+      "line": 5,
+      "target": "logs/verify_layout.log",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/before_final_adversarial_corrections/README.md",
+      "line": 5,
+      "target": "../../../README.md",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/figures/README.md",
+      "line": 3,
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/figures/README.md",
+      "line": 7,
+      "target": "void_fraction/void_fraction_vs_flip_rate.png",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/figures/README.md",
+      "line": 7,
+      "target": "void_fraction/void_fraction_vs_flip_rate.svg",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/figures/README.md",
+      "line": 8,
+      "target": "void_fraction/void_fraction_vs_center_flips.png",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/figures/README.md",
+      "line": 8,
+      "target": "void_fraction/void_fraction_vs_center_flips.svg",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/figures/README.md",
+      "line": 9,
+      "target": "void_fraction/void_crop_sensitivity.png",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/figures/README.md",
+      "line": 9,
+      "target": "void_fraction/void_crop_sensitivity.svg",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/figures/README.md",
+      "line": 10,
+      "target": "void_fraction/panorama_phase_masks.png",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/figures/README.md",
+      "line": 11,
+      "target": "void_fraction/panorama_liquid_reference_candidates.png",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/figures/README.md",
+      "line": 12,
+      "target": "patterns/pattern_panorama_contact_sheet.png",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/figures/README.md",
+      "line": 13,
+      "target": "patterns/pattern_confusion_matrices.png",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/figures/README.md",
+      "line": 14,
+      "target": "patterns/silhouette_pattern_confusion_matrices.png",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/figures/README.md",
+      "line": 15,
+      "target": "validation/adversarial_phase_anchor_patches.png",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/figures/README.md",
+      "line": 16,
+      "target": "validation/adversarial_slug_gap_mask.png",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/figures/README.md",
+      "line": 17,
+      "target": "flip_rate/flip_rate_spatial_vs_native.png",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/figures/README.md",
+      "line": 18,
+      "target": "flip_rate/flip_rate_native_kymographs.png",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/figures/README.md",
+      "line": 20,
+      "target": "../intermediate/exploratory/figures",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/figures/README.md",
+      "line": 20,
+      "target": "../..",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/figures/README.md",
+      "line": 22,
+      "target": "../results/void_fraction/void_fraction_flip_plot_data.csv",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/figures/README.md",
+      "line": 22,
+      "target": "../results/validation/summary_chart_checks.json",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/EXECUTIVE_SUMMARY.md",
+      "line": 7,
+      "target": "../figures/void_fraction/void_fraction_vs_flip_rate.png",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/EXECUTIVE_SUMMARY.md",
+      "line": 11,
+      "target": "../figures/void_fraction/void_fraction_vs_center_flips.png",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/EXECUTIVE_SUMMARY.md",
+      "line": 34,
+      "target": "../figures/void_fraction/panorama_phase_masks.png",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/EXECUTIVE_SUMMARY.md",
+      "line": 42,
+      "target": "../figures/void_fraction/void_crop_sensitivity.png",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/EXECUTIVE_SUMMARY.md",
+      "line": 57,
+      "target": "../results/void_fraction/panorama_void_per_run.csv",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/EXECUTIVE_SUMMARY.md",
+      "line": 57,
+      "target": "../results/flip_rate/phase_mask_flip_per_run.csv",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/EXECUTIVE_SUMMARY.md",
+      "line": 57,
+      "target": "panorama_void_alternatives.md",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/EXECUTIVE_SUMMARY.md",
+      "line": 57,
+      "target": "phase_mask_flip_review.md",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/EXECUTIVE_SUMMARY.md",
+      "line": 57,
+      "target": "adversarial_review.md",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/EXECUTIVE_SUMMARY.md",
+      "line": 57,
+      "target": "source_audit.md",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/README.md",
+      "line": 3,
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/README.md",
+      "line": 7,
+      "target": "EXECUTIVE_SUMMARY.md",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/README.md",
+      "line": 8,
+      "target": "panorama_void_alternatives.md",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/README.md",
+      "line": 9,
+      "target": "phase_mask_flip_review.md",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/README.md",
+      "line": 10,
+      "target": "adversarial_review.md",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/README.md",
+      "line": 11,
+      "target": "source_audit.md",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/README.md",
+      "line": 12,
+      "target": "prior_findings_audit.md",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/README.md",
+      "line": 13,
+      "target": "spatial_flip_review.md",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/README.md",
+      "line": 14,
+      "target": "flip_rate_review.md",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/README.md",
+      "line": 15,
+      "target": "pattern_identification.md",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/README.md",
+      "line": 16,
+      "target": "silhouette_pattern_review.md",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/README.md",
+      "line": 17,
+      "target": "layout_verification.md",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/adversarial_review.md",
+      "line": 5,
+      "target": "../results/validation/adversarial_checks.json",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/adversarial_review.md",
+      "line": 42,
+      "target": "../figures/validation/adversarial_slug_gap_mask.png",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/adversarial_review.md",
+      "line": 83,
+      "target": "layout_verification.md",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/adversarial_review.md",
+      "line": 83,
+      "target": "../results/validation/adversarial_checks.json",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/adversarial_review.md",
+      "line": 83,
+      "target": "../results/validation/final_verification.json",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/layout_verification.md",
+      "line": 3,
+      "target": "../../reorganization_baseline.json",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/layout_verification.md",
+      "line": 22,
+      "target": "../results/validation/layout_verification.json",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/source_audit.md",
+      "line": 7,
+      "target": "../../../../../../assets/deoliveira2021-flow-patterns-pressure-drop.pdf",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/source_audit.md",
+      "line": 28,
+      "target": "../../../../../../assets/dias2025-knn-flow-pattern.pdf",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/source_audit.md",
+      "line": 80,
+      "target": "../../../../../../assets/schepperle2024-cv-void-fraction-microchannel.pdf",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/source_audit.md",
+      "line": 93,
+      "target": "../../../../../../assets/deoliveira2019-flow-boiling-hydrocarbons-nonlinear.pdf",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/findings/source_audit.md",
+      "line": 114,
+      "target": "../../../../../../assets/driftflux2023-void-horizontal-intermittent.pdf",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/results/README.md",
+      "line": 3,
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/results/README.md",
+      "line": 9,
+      "target": "void_fraction",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/results/README.md",
+      "line": 9,
+      "target": "void_fraction/panorama_void_per_run.csv",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/results/README.md",
+      "line": 9,
+      "target": "void_fraction/panorama_void_by_pattern.csv",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/results/README.md",
+      "line": 10,
+      "target": "void_fraction/void_fraction_flip_plot_data.csv",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/results/README.md",
+      "line": 11,
+      "target": "flip_rate",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/results/README.md",
+      "line": 11,
+      "target": "flip_rate/phase_mask_flip_per_run.csv",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/results/README.md",
+      "line": 11,
+      "target": "flip_rate/phase_mask_flip_by_pattern.csv",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/results/README.md",
+      "line": 11,
+      "target": "flip_rate/flip_rate_per_run.csv",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/results/README.md",
+      "line": 11,
+      "target": "flip_rate/flip_rate_by_pattern.csv",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/results/README.md",
+      "line": 12,
+      "target": "patterns",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/results/README.md",
+      "line": 12,
+      "target": "patterns/pattern_identification_predictions.csv",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/results/README.md",
+      "line": 12,
+      "target": "patterns/pattern_identification_scores.csv",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/results/README.md",
+      "line": 12,
+      "target": "patterns/silhouette_pattern_predictions.csv",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/results/README.md",
+      "line": 12,
+      "target": "patterns/silhouette_pattern_scores.csv",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/results/README.md",
+      "line": 13,
+      "target": "validation",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/results/README.md",
+      "line": 13,
+      "target": "validation/final_verification.json",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/results/README.md",
+      "line": 13,
+      "target": "validation/adversarial_checks.json",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/results/README.md",
+      "line": 13,
+      "target": "validation/data_inventory.csv",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/results/README.md",
+      "line": 13,
+      "target": "validation/panorama_liquid_holdout_checks.csv",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/results/README.md",
+      "line": 13,
+      "target": "validation/summary_chart_checks.json",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/results/README.md",
+      "line": 13,
+      "target": "validation/layout_verification.json",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/results/README.md",
+      "line": 15,
+      "target": "../findings/phase_mask_flip_review.md",
+      "exists": true
+    },
+    {
+      "document": "intermediate/history/pre_scope_exclusions/results/README.md",
+      "line": 15,
+      "target": "../intermediate/sensitivity",
+      "exists": true
+    },
+    {
+      "document": "literature/README.md",
+      "line": 3,
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "document": "literature/README.md",
+      "line": 5,
+      "target": "../findings/source_audit.md",
+      "exists": true
+    },
+    {
+      "document": "literature/README.md",
+      "line": 7,
+      "target": "extracts",
+      "exists": true
+    },
+    {
+      "document": "literature/README.md",
+      "line": 8,
+      "target": "pages",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 3,
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 9,
+      "target": "void_fraction",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 9,
+      "target": "void_fraction/panorama_void_per_run.csv",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 9,
+      "target": "void_fraction/panorama_void_by_pattern.csv",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 10,
+      "target": "void_fraction/void_fraction_flip_plot_data.csv",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 11,
+      "target": "flip_rate",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 11,
+      "target": "flip_rate/phase_mask_flip_per_run.csv",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 11,
+      "target": "flip_rate/phase_mask_flip_by_pattern.csv",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 11,
+      "target": "flip_rate/flip_rate_per_run.csv",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 11,
+      "target": "flip_rate/flip_rate_by_pattern.csv",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 12,
+      "target": "patterns",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 12,
+      "target": "patterns/pattern_identification_predictions.csv",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 12,
+      "target": "patterns/pattern_identification_scores.csv",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 12,
+      "target": "patterns/silhouette_pattern_predictions.csv",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 12,
+      "target": "patterns/silhouette_pattern_scores.csv",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 13,
+      "target": "validation",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 13,
+      "target": "validation/dataset_selection.json",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 13,
+      "target": "validation/final_verification.json",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 13,
+      "target": "validation/adversarial_checks.json",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 13,
+      "target": "validation/post_regeneration_adversarial_checks.json",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 13,
+      "target": "validation/data_inventory.csv",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 13,
+      "target": "validation/panorama_liquid_holdout_checks.csv",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 13,
+      "target": "validation/summary_chart_checks.json",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 13,
+      "target": "validation/layout_verification.json",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 15,
+      "target": "../findings/phase_mask_flip_review.md",
+      "exists": true
+    },
+    {
+      "document": "results/README.md",
+      "line": 15,
+      "target": "../intermediate/sensitivity",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 3,
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 17,
+      "target": "../intermediate/logs",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 29,
+      "target": "panorama_void_alternatives.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 30,
+      "target": "phase_mask_flip_analysis.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 31,
+      "target": "raw_flip_analysis.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 32,
+      "target": "spatial_flip_sensitivity.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 33,
+      "target": "inventory_and_legacy_audit.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 34,
+      "target": "pattern_identification.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 35,
+      "target": "silhouette_pattern_identification.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 36,
+      "target": "adversarial_review.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 37,
+      "target": "final_verification.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 38,
+      "target": "summary_figures.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 39,
+      "target": "write_summary.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 40,
+      "target": "post_regeneration_adversarial.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 41,
+      "target": "verify_layout.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 43,
+      "target": "image_void_alternatives.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 47,
+      "target": "v14_selection.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 47,
+      "target": "v14_paths.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 47,
+      "target": "artifact_layout.json",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 47,
+      "target": "v14_navigation.py",
+      "exists": true
+    },
+    {
+      "document": "scripts/README.md",
+      "line": 49,
+      "target": "verify_layout.py",
+      "exists": true
+    }
+  ],
+  "local_link_count": 235,
+  "broken_link_count": 0
+}

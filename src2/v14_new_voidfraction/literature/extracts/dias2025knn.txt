@@ -1,0 +1,730 @@
+                                                             International Journal of Multiphase Flow 185 (2025) 105122
+
+
+                                                                      Contents lists available at ScienceDirect
+
+
+                                                    International Journal of Multiphase Flow
+                                                           journal homepage: www.elsevier.com/locate/ijmulflow
+
+
+Research Paper
+
+Classification of two-phase flow pattern in microtubes by image processing
+and machine learning
+Lucas Souza Dias a , Jean Schmith a,c , Jeferson Diehl de Oliveira b                                              ,∗,
+
+Jacqueline Biancon Copetti a
+a
+    Polytechnic School, Unisinos University, São Leopoldo, Brazil
+b SISEA - Renewable and Alternative Energy Systems Laboratory, Polytechnic School of the University of São Paulo, São Paulo, Brazil
+c SENAI Innovation Institute for Sensor Systems (ISI-SIM), EMBRAPII Hardware Competence Center for Digital Agriculture, São Leopoldo, Brazil
+
+
+
+
+ARTICLE                  INFO                                 ABSTRACT
+
+Keywords:                                                     Recognizing flow patterns is essential for understanding two-phase flow phenomena, applicable to various
+Two-phase flow patterns                                       fields such as liquid/gas mixtures, refrigeration, convective boiling, and more. The application of visual image
+Flow pattern classification                                   processing provides a means to automate the interpretation of two-phase flow patterns. This article aims to
+Image processing
+                                                              enhance the accuracy of two-phase flow patterns classification during convective boiling of isobutane in a
+Machine learning
+                                                              horizontal tube with 1 mm diameter. For this, the classification of gas/liquid two-phase flow patterns used
+                                                              image processing for texture features extraction applied to a kNN model. Five different flow patterns were
+                                                              identified using images obtained from a high-speed camera, including isolated bubble, plug, slug, churn and
+                                                              wavy-annular flow. The method achieved promising results with the best F1-Score of 97 % for bubbles and
+                                                              the worst of 81 % for plug and slug patterns.
+
+
+
+1. Introduction                                                                                Paranjape et al., 2012), pressure and temperature fluctuations (Li et al.,
+                                                                                               2014; Sun et al., 2012; Guo et al., 2021), capacitance probe (Jaworek
+    Gas/liquid flow is a prevalent flow type found in various applica-                         and Krupa, 2010; Tan et al., 2015), light sensor (Revellin et al., 2006;
+tions, including the oil and gas, power generation, chemical industries,                       Ong and Thome, 2011; de Oliveira et al., 2019) and others (Nnabuife
+refrigeration systems, in compact and modern cooling technologies                              et al., 2019), considering that some methods do not apply to small
+applied to high power electronics, computers, data centers, reactors,                          channels.
+turbine blades, avionics, aerospace, defense systems, electric vehicles
+                                                                                                   In all cases, the obtained signals are processed using robust methods
+and energy conversion. Numerous researchers have undertaken the task
+                                                                                               such as fast Fourier transforms, wavelet transforms, continuous hidden
+of identifying flow patterns in two-phase flow, in boiling and conden-
+                                                                                               Markov models and Lyapunov exponent, for example, to characterize
+sation flow. Studies encompassing various geometries, and sizes (from
+macro to mini and micro channels), fluids, heat and mass flux condi-                           flow patterns in two-phase flows. Even the robustness of such methods
+tions, operation pressure, and flow directions have been documented                            does not guarantee the definite attainment of the morphology of the
+in the literature (Wojtan et al., 2005; Revellin et al., 2006; Saisorn and                     obtained flow patterns. Consequently, visual observations aided by
+Wongwises, 2008; Ong and Thome, 2011; Keepaiboon and Wongwises,                                high-speed cameras become a more appealing option for flow pattern
+2015; Hanafizadeh et al., 2016; Peddu et al., 2018; Cai et al., 2022b,a).                      recognition, however they always rely on the subjective individual
+Interactions between phases and reciprocals effects between channel                            interpretation of the observer.
+wall and phases, leads to the development of flow patterns. The correct                            In small horizontal channels, flow patterns can be classified as iso-
+characterization and prediction of the flow patterns and it transitions                        lated bubble, plug, slug, churn, wavy- and smooth-annular flow (Cheng
+are essential for identifying the dominant mechanisms in the heat                              and Xia, 2023). Isolated bubble flow refers to a two-phase flow pattern
+transfer and pressure loss processes.                                                          commonly observed in small-diameter horizontal tubes, where small
+    Many authors have directed their efforts towards characterizing
+                                                                                               gas bubbles are dispersed within a liquid. It is an intermittent flow
+flow patterns by utilizing sensors and analyzing signal behavior, in-
+                                                                                               pattern with low gas volume fraction and often transitions to other
+cluding high frequency impedance probe (Angeli and Hewitt, 2000;
+
+
+     ∗ Corresponding author.
+     E-mail addresses: lucassouzadi@edu.unisinos.br (L.S. Dias), jschmith@unisinos.br (J. Schmith), jef.diehl@usp.br (J.D. de Oliveira), jcopetti@unisinos.br
+(J.B. Copetti).
+
+https://doi.org/10.1016/j.ijmultiphaseflow.2024.105122
+Received 14 June 2024; Received in revised form 27 November 2024; Accepted 30 December 2024
+Available online 4 January 2025
+0301-9322/© 2024 Published by Elsevier Ltd.
+L.S. Dias et al.                                                                                           International Journal of Multiphase Flow 185 (2025) 105122
+
+
+two-phase flow regimes based on factors like flow rates and tube                      Bahrami et al. (2019) used an artificial neural network to establish
+geometry.                                                                         three-phase flow rates and as input data, in addition to viscosity
+    Plug flow occurs when gas bubbles are stretched along a tube.                 and pressure, standard deviation, kurtosis and asymmetry coefficients
+In small channels, these elongated bubbles have diameters roughly                 were used. The authors validated the model using data collected from
+equivalent to the tube diameter, and their lengths are greater than the           separators in two oil fields and six wells. This data spanned a ten
+tube diameter. Plug flow is also known as elongated bubble flow.                  months duration, with measurements taken at 8-h intervals, resulting
+    Slug flow is characterized by alternating sections of liquid slugs            in a total of 5400 data sets. They observed a linear correlation between
+and gas bubbles within the tube. This results in a repeating pattern              the actual data and the predictions generated by both separators and
+of high-liquid and low-liquid regions. Liquid slugs separated by gas              the neural network method. Furthermore, the authors concluded that
+pocket and typically exhibits a variable velocity profile along the cross-        using a feed-forward neural network associated with the Levenberg–
+section of the tube, with higher velocities in the liquid slugs and lower         Marquardt algorithm, incorporating two hidden layers, was sufficient
+velocities in the gas-filled regions. This velocity variation, coupled            to determine flow rates.
+with fluctuations in the liquid–vapor interface, causes the release of                Considering integral methods, Wei et al. (2020) shown that the
+dispersed bubbles from the slug flow.                                             flow pattern could be effectively addressed with the combination of
+    Churn flow is characterized by the continuous mixing and re-                  wavelet energy entropy and recurrence analysis. In that research, they
+circulation of liquid and gas phases, resulting in a highly turbulent flow        introduced a novel approach to process the wavelet decomposition
+regime. It can be considered the transition between slug and annular              signal derived from the dust collector pressure. That approach aimed
+flow. With the increase of vapor velocity, the flow pattern becomes               to extract distinctive parameters for identifying different flow patterns.
+annular where the two phases are arranged concentrically within the               They utilized wavelet analysis to extract detailed information about the
+tube, with one phase forming a central core and the other adhering to             various frequency components within the pressure signal. Additionally,
+the inner wall in the form of a thin film or annular ring. Annular flow           they introduced the concept of wavelet energy entropy (WEE), which,
+is characterized by its unique fluid distribution and flow dynamics.              when combined with information entropy theory, served to assess the
+    Among the numerous methods of flow pattern analysis, focusing                 evenness of energy distribution across different frequency bands.
+on understanding their complexity, the use of various branches of                     Seal et al. (2021) identified the flow patterns in the condensation
+artificial intelligence has been standing out due to the reliability and          of refrigerant R134a inside inclined tubes based on flow images and
+robustness of these resources. Peddu et al. (2018) examined the down-             artificial neural networks. A data set with 10 classes of flow patterns,
+ward co-current flow of air and water in a 12 mm diameter tube                    obtained experimentally for a wide range of flow conditions and tube
+using a custom-built test facility that includes a standard fluid injection       inclination angles, was used. Based on the findings, the enhanced
+and mixing section. They thoroughly analyzed high-speed images to                 two-dimensional spatial learning capability of convolutional neural
+characterize the flow and identify various flow patterns. They intro-             networks enabled better image classification and generalization.
+duced innovative image processing techniques to objectively classify                  Loyola-Fuentes et al. (2022) employed experimental data gathered
+these flow patterns, taking into account different spatial coordinates.           from two distinct fluids, ethanol and FC-72. This data was utilized
+The study uncovered several new flow patterns exhibiting intermittent             within a pulsating heat pipe (PHP) setup, encompassing varying gravity
+behavior, but notably, churn flow was absent in their observations.               and power input settings, to facilitate the training of three distinct
+    Zhang et al. (2020) classified two-phase flow regimes in a horizontal         algorithms: k-Nearest Neighbors, random forest, and multilayer percep-
+pipe using the velocity information with several machine and deep                 tron. The findings suggest that, with accessible experimental data, the
+learning methods with good results. As a representation of complex                suggested machine learning methodology has the potential to decrease
+flows with various attractors and diverse multi-scale statistical char-           uncertainty in flow pattern classification and enhance predictions of
+acteristics, the authors opted for 10 turbulent scenarios. They achieved          patterns.
+this by altering the rotational frequency of the 3D domain’s frame of                 Hafsa et al. (2023) carried out a comparative study involving the
+reference. Additionally, they assumed access to only a set of partial ob-         use of several machine learning and deep learning frameworks to
+servations, limited to the instantaneous distribution of kinetic energy in        predict flow patterns. Their analysis was based on a data set contain-
+a 2D plane, a common scenario in geophysics and astrophysics. The au-             ing 11,837 points obtained in thirteen independent experiments. In
+thors then compared the outcomes obtained from two approaches: one                the pre-processing phase, extensive Big Data analysis was performed
+utilizing a deep convolutional neural network (DCNN) approach, and                to evaluate parameter correlations and identify key features. They
+the other relying on Bayesian inference, which leverages information              achieved accuracy better than 92%.
+related to velocity and entropy moments.                                              As aforementioned, the literature presents several works regarding
+    Nnabuife et al. (2019) investigated the two-phase flow regimes                the use of a plenty of different sensors features as input to a benchmark
+using a Doppler ultrasonic sensor and machine learning. In their study,           of machine and deep learning algorithms. One of the most powerful
+it was collected experimental data using a 16.2 m S-shaped riser, which           deep learning algorithms are the convolutional neural networks CNN.
+is connected to a long horizontal tube with an internal diameter of               The CNN method is widely used in image classification tasks, and
+50.4 mm. The experiments encompassed flow regimes, like bubbly,                   was used by Seal et al. (2021) to classify two-phase flow pattern
+slug, churn, and annular flows. To analyze the two-phase flow, they               images of condensation of R-134a refrigerant in inclined smooth tubes.
+employed the power spectral density (PSD) method, which focused on                They achieved an accuracy better than 98%. However, the training
+extracting frequency-domain characteristics from the ultrasound signals           of CNN should be done with a large dataset and with many types of
+modulated by the flow.                                                            images collected from different facilities to guarantee an generalized
+    Kuang et al. (2021) proposed the use of pseudo-image features                 classification model. Those kind of dataset may be a difficult task.
+(PIF), in which encodes the flow patterns, as the benchmark of deep               Moreover, CNN may introduce excessive complexity in modeling the
+learning methods. The PIF serves as a simulation of image format and              data and are computationally expensive (Hafsa et al., 2023).
+encodes the flow pattern into a pseudo-image, making implicit pattern                 Mondal and Sharma (2024) devised a sophisticated deep neural
+signals explicitly visible. In their investigation, three newly suggested         network framework to forecast the entrainment fraction in gas–liquid
+deep learning classifiers and five established ones were assessed. This           annular flow, adaptable to various operational scenarios and fluid
+benchmark offers a starting point for utilizing deep learning in flow             types. Their model integrates five dimensionless input parameters to
+pattern identification. Among them, the fully convolutional network               enhance accuracy and generalization, with a singular output parameter,
+(FCN) classifier demonstrated cutting-edge performance, achieving an              the entrainment fraction. The training and testing datasets comprise
+impressive testing accuracy of 99.95%.                                            experimental data points, encompassing three distinct working fluids,
+
+                                                                              2
+L.S. Dias et al.                                                                                           International Journal of Multiphase Flow 185 (2025) 105122
+
+
+including air/water, R113, and water/steam, across diverse operational           2.1. Experimental setup
+conditions. Bayesian optimization was employed to identify optimal
+hyperparameters for refining model accuracy during training. As per                  The Fig. 2 illustrates the experimental setup specifically designed
+the researchers’ findings, the developed model exhibits a sensitivity            for examining various fluids under a several flow conditions. The
+ranging from 1.75% to 3.72% (standard deviation) in mean absolute                objective of the facility is to explore heat transfer and pressure drop
+percentage error MAPE when predicting entrainment fraction on un-                phenomena occurring during flow boiling within a small horizontal
+seen data points from 6 authors. The researchers also noted that the             channel featuring an inner diameter of 1.0 mm (de Oliveira et al.,
+liquid Reynolds number (Re𝑙 ) stands out as the most critical parame-            2016, 2017). The experimental arrangement comprises a closed loop
+ter for entrainment fraction prediction. Notably, the model displayed            system designed to deliver precise mass and heat fluxes, allowing
+significantly higher MAPE on the test dataset when Re𝑙 was omitted               for the creation of desired process conditions within the test section.
+from the input parameters. Additionally, the density ratio and viscosity         This involves ensuring a saturation condition at the entrance of the
+ratio demonstrated lower sensitivity to entrainment fraction prediction          test section. The essential elements of the arrangement comprise a
+compared to other input parameters.                                              pre-heater (PH), a test section (TS), and a visualization section (VS),
+    More recently, Passoni et al. (2024) presented the results obtained          as illustrated in Fig. 3. The secondary elements of the experimental
+from precise segmentation of two-phase flow images captured by high-             configuration include an independent condenser and subcooler, both
+speed video for analysis in compact plate heat exchanger experiments.            operating with ethylene-glycol/water solution in separate circuits as
+The authors utilized machine learning algorithms such as the U-Net               the secondary refrigerant. Precise control of saturation pressure and
+neural network to segment the images and estimate the void fraction              temperature of the refrigerant is achieved using thermostatic baths. To
+of the flow. The proposed method includes a three-dimensional recon-             ensure the pump operates smoothly and uniformly without cavitation,
+struction approach to model the liquid–vapor interface through the               a liquid refrigerant vessel is employed to maintain a constant static
+corrugated channel, improving the accuracy of void fraction estimates            pressure at the pump suction, ensuring continuous submersion of the
+compared to conventional methods based solely on binary mask area.               pump. Additionally, the subcooler is utilized to maintain a subcooled
+As a result, the authors also present a drift flux model to predict              condition at the inlet of the Coriolis flow meter (Endress–Hauser model)
+the void fraction distribution based on the distribution coefficient and         to mitigate potential increases in refrigerant temperature.
+liquid flow rate.                                                                    This subcooling arrangement is implemented subsequent to the
+    In order to build a more generalized method, here we propose                 passage of the refrigerant through the Tuthill model D-1002-01 gear
+the extraction of texture features from the images collected from a              pump. The PH utilized in the setup is a horizontal stainless-steel tube,
+experimental facility camera. The advantage of using cameras is that             featuring an internal diameter of 1.0 mm. The total length of the
+no measurement of additional physical feature of the flow pattern is             PH is 515 mm, with a heated section measuring 440 mm in length.
+necessary for classification purposes. The usage of these texture features       The PH is heated uniformly using the Joule effect generated by a
+with an k-Nearest Neighbors machine learning method leads to an                  controlled direct electrical current supplied by the SORENSEN model
+                                                                                 DCS 8-125E power supply. The TS consists of a tube of identical type
+more general model, since images from other experimental facilities
+                                                                                 and diameter, with total and heated lengths measuring 366 mm and
+can be added to the dataset with no additional training step. So far,
+                                                                                 265 mm, respectively. Similar to the PH, the TS is heated via the Joule
+to the best of the authors’ knowledge, there is a significant lack of
+                                                                                 effect. The internal surface of the TS has an absolute roughness (Ra)
+works utilizing images collected directly from the flow pattern in small
+                                                                                 of 1.48 μm, as determined through measurements using a STARRETT™
+channels (mini/micro) during convective boiling of hydrocarbons and
+                                                                                 rugosimeter. The length of the TS was selected through an energy
+use them for classification with texture features as input to artificial
+                                                                                 balance analysis to ensure a significant variation in the vapor quality.
+intelligence models.
+                                                                                 This deliberate choice enables the observation of different flow patterns
+    Therefore, the proposed method involves utilizing flow pattern
+                                                                                 under diverse mass and heat flux conditions. By incorporating such a
+images gathered from boiling experiments captured with a high-speed
+                                                                                 length, the experimental setup facilitates the examination of a wide
+camera to initially compute texture features. Then, those features were
+                                                                                 range of vapor qualities, allowing for a comprehensive analysis of flow
+used as input to a machine learning algorithm to classify the flow
+                                                                                 behavior and its dependence on varying operational parameters.
+pattern. We hope that this novel approach can bring an extra and new
+                                                                                     The refrigerant enters the pre-heater (PH) as a subcooled liquid and
+vision over the flow patterns classification algorithms.
+                                                                                 undergoes the transition to a saturation condition before reaching the
+    In Section 2 the proposed method is detailed, containing the exper-
+                                                                                 outlet. The outlet condition of the PH determines the vapor quality at
+imental setup presentation, the dataset construction with the feature
+                                                                                 the inlet of the TS. To measure both temperatures and pressures at the
+extraction and the chosen machine learning model description. In
+                                                                                 inlet and outlet of the PH, two Keller model PAA-33X absolute pressure
+Section 3 the results are presented and discussed in Section 4. Finally
+                                                                                 transducers and two type-E Omega™ thermocouples with a diameter
+in Section 5 the conclusions are presented.                                      of 0.076 mm are utilized. These sensors are in direct contact with the
+                                                                                 refrigerant, providing accurate readings of pressure and temperature
+2. Materials and methods                                                         within the PH. The outlet pressure of the TS is calculated by deducting
+                                                                                 the pressure drop, as recorded by a differential pressure transducer
+   The main idea of the method is to automatic classify the two-                 at the inlet pressure. A frequency inverter is responsible for fine ad-
+phase flow pattern from videos recorded in a controlled experimental             justments in controlling the pump flow. Additionally, a bypass line is
+environment during convective boiling of a refrigerant fluid in a mi-            situated downstream of the pump, regulated by a needle valve. This
+crochannel. These videos were than split into frames (images), further           bypass line is used for coarse adjustments in flow rates, allowing for
+the images were processed and 93 features were extracted. Afterwards,            greater control over the experimental conditions. To mitigate potential
+the computed features were used as input to a machine learning model             pressure instabilities (minor fluctuations) during tests under various
+to perform the classification among five patterns of two-phase flow              flow boiling conditions, two extra needle valves are integrated—one
+(namely bubbles, plug, slug, churn and wavy-annular). The Fig. 1                 positioned downstream of the pre-heater (PH), and the other located
+presents the schematic of the methodology.                                       upstream of the visualization section (VS). These needle valves serve
+   All analyses and data extraction from the images were performed               to regulate the pressure effectively. The thermocouples, pressure trans-
+using the OpenCV (Bradski, 2000), scikit-image (Van der Walt et al.,             ducers, mass flow meter, and power meter are all integrated into a
+2014), PyWavelets (Lee et al., 2019) and scikit-learn (Pedregosa et al.,         data acquisition system, which includes a multimeter (Agilent, model
+2011) libraries in Python programming.                                           34970A). The data acquisition system is controlled by a computer
+
+                                                                             3
+L.S. Dias et al.                                                                                                              International Journal of Multiphase Flow 185 (2025) 105122
+
+
+
+
+                                                             Fig. 1. Proposed methodology for flow pattern classification.
+
+
+
+
+                                                                                               Fig. 3. The primary component of the experimental arrangement featuring the pre-
+                                                                                               heater (PH), test section (TS), and visualization section (VS).
+
+
+
+
+                            Fig. 2. Experimental test rig.                                     2.2. Data reduction
+
+Table 1                                                                                             The heat flux in TS is determined by the ratio of the electric power
+Experimental parameters.
+                                                                                               applied to the surface area, given by
+ Parameter                                                      Value (s)
+                                                                                                          𝑈 ⋅𝑙
+                                                                                               𝑞𝑇′′𝑆 =              .                                                (1)
+ Mass flux, 𝐺 [kg/(m2 s)]                                       516                                    𝜋 𝐷𝑖 𝐿ℎ𝑒𝑎𝑡𝑒𝑑
+             ′′
+ Heat flux, 𝑞𝑇 𝑆 [kW/m2 ]                                       10, 20, 30, 40 and 60
+ Heating power in PH, 𝑞𝑃 𝐻 [W]                                  2 to 58                        Here, 𝑈 represents the voltage difference, 𝐼 is the electric current
+ Saturation pressure, 𝑃𝑠𝑎𝑡 [kPa]                                371                            supplied by the power source, 𝐷𝑖 is the internal diameter and 𝐿ℎ𝑒𝑎𝑡𝑒𝑑 is
+ Saturation temperature, 𝑇𝑠𝑎𝑡 [◦ C]                             27                             the heated length.
+                                                                                                   Two important parameters in the analysis of convective boiling are
+                                                                                               the vapor quality, 𝑥, which indicates the amount of vapor being formed
+through an RS232 interface.                                                                    in the process, and the void fraction, 𝛼, or the area within the cross-
+    The downstream visualization section (VS) of the test section (TS)                         section occupied by the vapor directly linked to the flow pattern. The
+comprised a glass tube measuring 136 mm in length with an identical                            vapor quality at the inlet of the TS, 𝑥(𝑖−𝑇 𝑆) , is assessed by considering
+internal diameter to that of the TS. During tests, the observed flow pat-                      the energy balance in the PH, given by Eq. (2) and then it is calculated
+terns in the VS were captured using a high-speed camera, (MotionPro                            for some positions (z) along the flow at the TS and at the micro tube
+Y4-S1), operating at 3000 frames/s with a pixel length of 13.68 μm.                            outlet, Eq. (3) considering local values of enthalpy, 𝑖(𝑧), and local
+    Experiments using the natural refrigerant isobutane, R600a, were                           heating power 𝑞𝑇 𝑆 (𝑧), according to Eq. (4).
+                                                                                                          (                  )
+                                                                                                            𝑞𝑃 𝐻 −𝑖𝑙 (𝑃𝑠𝑎𝑡 )
+conducted under specific mass flux conditions. The tests involved ad-                                             𝑚̇
+                                                                                                                               − 𝑖𝑙 (𝑃𝑠𝑎𝑡 )
+justing the power input in the pre-heater (PH) while varying the heating                       𝑥(𝑖−𝑇 𝑆) =                                   .                          (2)
+                                                                                                                     𝑖𝑙𝑣 (𝑃𝑠𝑎𝑡 )
+conditions in TS. This approach resulted in 29 tests, as detailed in
+the conditions outlined in Table 1. The vapor quality at the TS inlet                              Here, 𝑞𝑃 𝐻 represents the applied heating power in the 𝑃 𝐻, 𝑚̇ is the
+is dictated by PH condition, evolving as the heat flux in this section                         mass flow rate, 𝑖(𝑖−𝑃 𝐻) corresponds to the enthalpy at the PH inlet, 𝑖𝑙
+increases. Once the condition of steady-state is achieved for each test,                       is the liquid enthalpy and 𝑖𝑙𝑣 represents the latent heat of vaporization
+signals from all sensors are recorded at 5-second intervals, with a total                      treated as a function of saturation pressure 𝑃𝑠𝑎𝑡 .
+of 100 measurements conducted. All transport and thermodynamic                                         𝑖(𝑧) − 𝑖𝑙 (𝑝𝑠𝑎𝑡,𝑧 )
+                                                                                               𝑥(𝑧) =                      .                                         (3)
+properties utilized in data reduction and heat transfer correlations were                                 𝑖𝑙𝑣 (𝑝𝑠𝑎𝑡,𝑧 )
+sourced from REFPROP v. 9.1 (Lemmon et al., 2013).                                                      𝑞𝑇 𝑆 (𝑧)
+                                                                                               𝑖(𝑧) =            + 𝑖𝑖−𝑇 𝑆 .                                                         (4)
+                                                                                                           𝑚̇
+
+
+                                                                                           4
+L.S. Dias et al.                                                                                                          International Journal of Multiphase Flow 185 (2025) 105122
+
+                                                                                            Table 2
+                                                                                            Values corresponding to the quality 𝑥(𝑜−𝑇 𝑆) , the void fraction 𝛼, liquid phase velocity
+                                                                                            𝑗𝑙 [m/s] and vapor phase velocity 𝑗𝑣 [m/s] at the tube outlet related to the images of
+                                                                                            Fig. 4.
+                                                                                             Regime                  𝑥(𝑜−𝑇 𝑆) [−]        𝛼 [−]          𝑗𝑙 [m/s]          𝑗𝑣 [m/s]
+                                                                                             Bubbles                 0.012               0.36           0.93              0.7
+                                                                                             Bubbles                 0.025               0.5            0.91              1.8
+                                                                                             Plug                    0.056               0.68           0.88              2.4
+                                                                                             Slug                    0.076               0.73           0.86              3.5
+                                                                                             Churn                   0.22                0.85           0.76              10.5
+                                                                                             Wavy-annular            0.30                0.88           0.73              11.7
+
+
+
+
+Fig. 4. Image samples from each of the recorded flow patterns: (a) bubbles, (b) plug,       bubbles coalesce and become larger (data corresponds to Fig. 4(a)),
+(c) slug, (d) churn and (e) wavy-annular.
+                                                                                            the quality and void fraction increase, and the vapor velocity is now
+                                                                                            slightly higher than that of the liquid. As it progresses from the slug to
+                                                                                            annular flow, the velocity of the vapor increases significantly and that
+                                                                                            of the liquid phase decreases. Between plug and slug flow patterns the
+    The void fraction was determined utilizing the model established by                     increase is not that significant. Complementing the velocity analysis,
+Rouhani and Axelsson (1970), as expressed in Eq. (5). This choice was                       the void fraction also increases from slug to churn pattern, however
+made owing to the subcooled flow boiling condition in the preheater,                        between churn and wavy-annular the values are close, which is associ-
+and its predictive accuracy for lower vapor quality was found to be                         ated with the difficult characterization of the patterns and the transition
+superior compared to other models.
+                     {                            (                                         between them.
+           𝑥(𝑜−𝑇 𝑆)    [         (             )] 𝑥(𝑜−𝑇 𝑆)
+𝛼(𝑜−𝑇 𝑆) =               1 + 0.12 1 − 𝑥(𝑜−𝑇 𝑆)                                                  One video from each pattern was used as test dataset. This test
+              𝜌𝑣                                       𝜌𝑣                                   dataset was composed of 1000 images and was not used in training and
+                          )                                           }
+             1 − 𝑥(𝑜−𝑇 𝑆)      1.18(1 − 𝑥(𝑜−𝑇 𝑆) )[𝑔 𝜎(𝜌𝑙 − 𝜌𝑣 )]0.25   −1                  validation steps. From the remaining 21 videos, a total of 4200 images
+           +                +                                              . (5)
+                  𝜌𝑙                         𝐺𝜌0.5𝑙
+                                                                                            of five different flow patterns were analyzed. To the method validation
+                                                                                            we used the k-fold cross-validation, with 𝑘 = 10 folds. Thus, each fold
+    While initially designed for vertical flow, this model considers                        of the dataset is divided into 90% (3780 images) for training and 10%
+crucial parameters associated with two-phase flow in mini- and mi-                          (420 images) for validation.
+crochannels, incorporating liquid density 𝜌𝑙, vapor density 𝜌𝑣 , and                            The images were all converted to grayscale, so that all pixels could
+surface tension 𝜎. This model has been effectively employed in the                          be represented by integer values between 0 and 255. Then, the images
+analysis of hydrocarbons under horizontal flow conditions (de Oliveira                      passed through histogram equalization and 93 features were computed
+et al., 2016, 2017; Del Col et al., 2017).                                                  to be used as input to the machine learning method.
+    Two other parameters associated with gas–liquid two-phase flow are
+the surface velocities of the liquid, 𝑗𝑙 , and vapor 𝑗𝑣 phases, presented                   2.4. Histogram equalization
+in Eqs. (6) and (7). These parameters help in analyzing the evolution
+of patterns and the transitions between them.
+                                                                                                The environment lighting conditions may cause differences in
+     𝐺(1 − 𝑥)
+𝑗𝑙 =          .                                                       (6)                   recording videos scene mainly due to external illumination distur-
+         𝜌𝑙
+                                                                                            bances. To deal with this lighting inconsistency, we applied the his-
+       𝐺𝑥                                                                                   togram equalization technique (Patel and Goswami, 2014) on each
+𝑗𝑣 =      .                                                                      (7)
+       𝜌𝑣
+                                                                                            image. It consists of changing the distribution of the histogram of the
+                                                                                            grayscale pixel values in the image to eliminate accentuated differences
+2.3. Dataset                                                                                between those values, with the aim of obtaining an image whose
+                                                                                            histogram is completely spread out in the domain of the grayscale
+    From the experimental facility 29 videos were recorded with 6 dif-                      values and not concentrated in lighter or darker regions. Therefore the
+ferent flow patterns: 4 bubbles, 3 plug, 7 slug, 6 churn, 6 wavy-annular                    idea is to diminish the lightning differences between images. Fig. 5
+and 3 videos with ambiguous flow.                                                           shows a histogram equalization applied to four subsequent images of
+    All recorded videos have the same length with exactly 200 frames                        one of the videos, where there is a notable difference in lighting. In left,
+and a resolution of 1016 × 88 pixels, resulting in 5800 images. The                         the first and third images (from top to down) are darker than the second
+identification of the predominant flow pattern in each video was done                       and fourth, and in the right the result from histogram equalization with
+based on parameters used in the experimental environment. Therefore,                        no noticeable lighting difference between images.
+the classification label given to each video as a whole was attributed
+to all images resulted from the video split process.
+                                                                                            2.5. Feature extraction
+    Three of the videos were discarded because they had an ambiguous
+classification, that is, they had considerable sections that could fit
+in between more than one flow pattern, thus using them as training                              From each image a set of features were computed. The chosen
+images dataset could be detrimental to the accuracy of the machine                          features with the best results were the statistical (3 features), the co-
+learning model. The classification was limited to five classes of well                      occurrence matrix (72 features) and wavelets coefficients (18 features).
+known patterns: bubbles, plug, slug, churn and wavy-annular. Examples                       Therefore the total number of features used were 93.
+for each pattern are presented in Fig. 4, along with vapor quality, void
+fraction, superficial velocities of liquid and vapor in the outlet of test                  2.5.1. Statistical features
+section corresponding to each flow condition presented in Table 2.                              As statistical features we used the mean, standard deviation and the
+    In the Table 2 are presented two sets of data for the bubble pattern                    entropy computed from each image. The mean feature consists of the
+in which the first refers to smaller and more dispersed bubbles where                       arithmetic mean of the gray level value of all pixels given by Eq. (8).
+the superficial liquid velocity is greater than that of the vapor. As the                   Where N and M are, respectively, the height and width of the image in
+
+                                                                                        5
+L.S. Dias et al.                                                                                                         International Journal of Multiphase Flow 185 (2025) 105122
+
+
+
+
+Fig. 5. Example of equalization of four subsequent images. On the left the original images with noticeable lighting differences. And on the right the same images after histogram
+equalization.
+
+
+                                                                                                2.5.3. Discrete wavelet transform
+                                                                                                    An interesting mathematical tool to explore the texture characteris-
+                                                                                                tics of images is the Discrete Wavelet Transform (DWT) (Mallat, 1999,
+                                                                                                1989a,b). The DWT decomposes the original image into sub-images
+                                                                                                each representing a level of detail within a frequency level keeping
+                                                                                                the spatial information (Kinoshita et al., 2023). The Fig. 7 presents this
+                                                                                                decomposition process. The original image is filtered by a low pass and
+                                                                                                a high pass filter and then the result is down sampled by a factor of two.
+                                                                                                Further this process repeats to form the approximation component A1
+                                                                                                and the detail components V1, H1 and D1. From the chosen Wavelet
+                                                                                                mother the filters coefficients are computed. One might note that to
+                                                                                                form the A1 component, the original image passes by two processes
+Fig. 6. Representation of the different considered relationships between pixels to create       of down sampling, therefore, the resulting A1 component is four times
+the co-occurrence matrices, with D ranging from 1 to 3.
+                                                                                                smaller than the original image. The same analysis was done to the V1,
+                                                                                                H1 and D1 components.
+                                                                                                    This decomposition can be done at several levels, where each one
+pixels, and 𝐹 [𝑖, 𝑗] represents the pixel in line i and column j of image                       abstracts more details from the main image. Fig. 8 presents a decom-
+F.                                                                                              position into two levels. One might note that image is decomposed into
+       1 ∑∑
+               𝑁   𝑀                                                                            A1, H1, V1 and D1 components and the approximation component A1
+𝜇=                 𝐹 [𝑖, 𝑗].                                                         (8)        is decomposed into A2, H2, V2 and D2 components to form the second
+      𝑁 .𝑀 𝑖=0 𝑗=0
+                                                                                                level decomposition.
+   The standard deviation SD provides a measure of the dispersion of                                In this proposed method, the Daubechies (db2) of second order was
+gray level intensities over the image, given by Eq. (9).                                        used as Wavelet mother (Daubechies, 1990, 1992, 1998). All the images
+      √                                                                                         were decomposed into two levels, the approximation components (A1
+      √
+      √
+      √ 1 ∑∑
+                𝑁 𝑀
+                                                                                                and A2) were discarded and from the six detail components (H1, V1,
+𝑆𝐷 = √                 (𝐹 [𝑖, 𝑗] − 𝜇)2 .                         (9)                            D1, H2, V2 and D2) the mean, standard deviation and entropy were
+         𝑁 .𝑀 𝑖=0 𝑗=0
+                                                                                                computed. Therefore, the DWT computation resulted in 18 features.
+    The Shannon entropy (Shannon, 1948) was also used as a feature
+                                                                                                2.6. Machine learning
+in this context to measure the level of uncertainty related to the pixels
+of the images, based on the frequency of appearance of the values
+                                                                                                    For the classification of two-phase flow regimes, the k-Nearest
+expressed by the histogram. The entropy of grayscale images is given
+                                                                                                Neighbors (kNN) machine learning method was used. The 93 computed
+by Eq. (10), where P(i) is the probability function of occurrence of
+                                                                                                features were used as input to the kNN. The kNN algorithm does
+a given pixel value in the image. The entropy H is a feature that
+                                                                                                distance-based sorting for k points in the training set and is widely used
+represents the image disorder.
+        ∑                                                                                       for classification purposes (Kerscher et al., 2022). The parameterization
+𝐻 =−       𝑃 [𝑖] log2 (𝑃 [𝑖]).                                      (10)                        of the model is done through the k value, which determines the
+           𝑖                                                                                    number of close neighbors used to determine the classification of a
+                                                                                                new element. What defines this proximity is the distance between the
+2.5.2. Gray-level co-occurrence matrices                                                        features values. The k value used in this work was 15. Therefore, the
+    Gray-Level Co-Occurrence matrices (GLCMs) is a widely used                                  Euclidean distance of a new point to each point in the dataset was
+method to display how the gray level values of pixels are distributed in                        computed. The k value indicates the closest points to the new point.
+an image. The main idea is to consider the relationship between pixels,                         If 𝑘 = 15, then the 15 closest points are selected. Each of the 15 points
+thus how each pixel are related to it neighbors. The elements of the                            has an associated class, then the majority class is associated to the new
+GLCM matrix describe the frequency that transitions between different                           point.
+gray-levels occur between pairs of pixels. So, in rough textures, it is                             The results were evaluated using the metrics obtained from the
+expected to see a higher frequency of abrupt changes, while smooth                              confusion matrix, where TP are the true positives, TN are the true neg-
+textures show changes of lesser magnitude.                                                      atives, FP are the false positives, FN are the false negatives predictions.
+    In this work, GLCMs were computed for 12 different spatial relation-                        The metrics used were: accuracy (Eq. (11)), precision (Eq. (12)), recall
+ships between pixels: 4 different angles (0◦ , 45◦ , 90◦ and 135◦ ) with                        (Eq. (13)), and F1-Score (Eq. (14)).
+3 different distances 𝐷 (1, 2 and 3 pixels), Fig. 6 illustrates all the 12                                         𝑇𝑃 + 𝑇𝑁
+relationships.                                                                                  accur acy =                         .                                  (11)
+                                                                                                             𝑇𝑃 + 𝑇𝑁 + 𝐹𝑃 + 𝐹𝑁
+    From the GLCMs spatial relationships 6 statistical measures were
+                                                                                                                 𝑇𝑃
+computed following the Baraldi and Panniggiani (1995) recommenda-                               𝑝𝑟𝑒𝑐 𝑖𝑠𝑖𝑜𝑛 =           .                                               (12)
+                                                                                                             𝑇𝑃 + 𝐹𝑃
+tion: energy, entropy, contrast, variance, correlation and homogeneity.
+                                                                                                             𝑇𝑃
+Therefore totaling 72 coefficients per image.                                                   r ecall =           .                                                  (13)
+                                                                                                          𝑇𝑃 + 𝐹𝑁
+
+                                                                                            6
+L.S. Dias et al.                                                                                                           International Journal of Multiphase Flow 185 (2025) 105122
+
+
+
+
+                                                       Fig. 7. Decomposition of an image by the discrete wavelet transform.
+
+
+
+
+Fig. 8. Decomposition process of DWT in two level by the process shown in Fig. 7. The components A1, H1, V1 and D1 are computed in the first level. The components A2, H2,
+V2 and D2 are computed in the second level.
+
+
+Table 3                                                                                     Table 4
+Accuracy results using the validation and test datasets for the 10 folds.                   Classification metrics for the validation dataset considering the fold number 2.
+ Fold                         Validation accuracy                       Test accuracy        Class                          Precision               Recall                F1-Score
+ 0                            91%                                       87%                  Bubbles                        95%                     100%                  97%
+ 1                            87%                                       88%                  Plug                           88%                     86%                   87%
+ 2                            91%                                       87%                  Slug                           87%                     90%                   89%
+ 3                            89%                                       87%                  Churn                          92%                     81%                   86%
+ 4                            88%                                       86%                  Wavy-annular                   93%                     97%                   95%
+ 5                            90%                                       86%
+ 6                            90%                                       86%
+ 7                            89%                                       87%                 Table 5
+ 8                            91%                                       86%                 Classification metrics for the test dataset.
+ 9                            91%                                       86%                  Class                          Precision                Recall               F1-Score
+ Mean                         90%                                       87%                  Bubbles                        95%                      99%                  97%
+                                                                                             Plug                           90%                      73%                  81%
+                                                                                             Slug                           75%                      88%                  81%
+                                                                                             Churn                          80%                      93%                  86%
+                    𝑝𝑟𝑒𝑐 𝑖𝑠𝑖𝑜𝑛.𝑟𝑒𝑐 𝑎𝑙𝑙                                                       Wavy annular                   100%                     81%                  90%
+F1 − Scor e = 2.                        .                                        (14)
+                   𝑝𝑟𝑒𝑐 𝑖𝑠𝑖𝑜𝑛 + 𝑟𝑒𝑐 𝑎𝑙𝑙
+
+
+3. Results                                                                                  F1-Score. Another important confusion point is the churn with wavy-
+                                                                                            annular classes. However, in a general way all the classes achieved a
+    After extracting the features from the images, several values for k                     F1-Score greater than 86%.
+were tested to analyze the kNN model results. The best results were                             The trained model was tested using one video from each class,
+achieved with 𝑘 = 15. Using tenfold cross-validation, 90% of all images                     containing 200 frames (images) each. Those videos were not used on
+features were used for training and 10% for validation of the model in                      the original train-validation scheme. In this test, the resulting metrics
+each fold. The accuracy for each fold is shown in Table 3 considering                       are presented in Table 5, with the best F1-Score of 97% for the bubbles
+the validation and test datasets. Note that the mean values were of 90%                     class and the worst of 81% for the slug and plug classes. The test
+with validation and 87% with test dataset and the minimum accuracy                          confusion matrix is presented in Fig. 10. Note again that the confusion
+value was of 86% considering the test datasets in folds 4,5,6,8 and 9.                      points were mainly with churn, plug and slug classes, and again the
+    In order to present the confusion points, the classification metrics                    confusion between wavy-annular and churn.
+of the fold number 2 is presented in Table 4 considering the validation
+dataset. Note that the better F1-Score was in bubbles class with 97%                        4. Discussion
+and the worst one in churn class with 86%. The confusion matrix is pre-
+sented in Fig. 9. One might note the main confusion points between the                         In a general way the proposed texture features presented as good
+classes plug, slug, and churn. This confusion explains the decrease of                      choices for the input dataset of the kNN model. As presented in Tables 4
+precision and recall metrics on those classes and consequently a lower                      and 5, the F1-Score values were above 81%. The accuracy values in
+
+                                                                                        7
+L.S. Dias et al.                                                                                                  International Journal of Multiphase Flow 185 (2025) 105122
+
+
+                                                                                         large dataset with variability is difficult to obtain.
+                                                                                             The kNN method does not have in fact a training step. The method
+                                                                                         computes the distance of a new point to all points in the train dataset.
+                                                                                         Then it assigns to the new point the label of the k nearest points from
+                                                                                         the train dataset. Therefore, to expand the model with new image
+                                                                                         features the idea is simply add the new ones to the train dataset.
+                                                                                         On other words, in this particular case it is simple to expand and
+                                                                                         increase the generalization, i.e. adding features from images of other
+                                                                                         experimental facilities. The limitation of this method is on the dataset.
+                                                                                         Thus, to make the method more generalized the dataset should be more
+                                                                                         general.
+                                                                                             An well established method to deal with the unbalanced dataset
+                                                                                         is the usage of data augmentation in classes with fewer images. This
+                                                                                         leads to a discussion over these solutions in the problem of propagate
+                                                                                         bad assigned information on the machine learning model since the new
+                                                                                         data is based on existent ones. On other words, a bad annotation in the
+                                                                                         original dataset could have this error amplified and propagate over the
+                                                                                         kNN model. Another point is that data augmentation on the images may
+                                                                                         have low influence on kNN performance, as an example, the rotation
+                                                                                         in image results in the same texture features values as the original
+Fig. 9. Confusion matrix of the kNN model using k = 15 with the validation dataset       image. Another example is the application of blur in original images to
+considering the fold number 2.                                                           create new ones, in which makes no sense in this application. On the
+                                                                                         other hand, a possible procedure is to apply the data augmentation in
+                                                                                         the features dataset (after computation from the images) using some
+                                                                                         tool like the Synthetic Minority Oversampling Technique - SMOTE
+                                                                                         algorithm (Chawla et al., 2002). This data augmentation algorithm is
+                                                                                         going to be tested in future works.
+                                                                                             One might note in the confusion matrix that the confusion points are
+                                                                                         restricted to the neighbor classes. It means that between the bubble and
+                                                                                         wavy-annular patterns the classification is complete and clear. There
+                                                                                         may be confusion between plug and slug, to a greater extent between
+                                                                                         slug and churn and, mainly, between churn and wavy-annular, which
+                                                                                         are pairs that are very close in terms of visual appearance and the
+                                                                                         transition between these patterns is very subtle.
+                                                                                             The boundary between any two flow patterns occurs because one
+                                                                                         flow pattern becomes unstable. The border is approached and the
+                                                                                         growth of this instability causes the transition from one flow pattern to
+                                                                                         another. However, the boundaries of the flow pattern are not distinct
+                                                                                         lines, but more poorly defined transition zones. Then part of this
+                                                                                         confusion may have occurred due to the ambiguity of the classification
+                                                                                         of these patterns as there are ranges in the videos where some specifics
+                                                                                         images can fit in either or another classification. In this sense the
+                                                                                         velocities are useful to identify patterns transitions in which is visually
+                                                                                         difficult to determine, as example the transitions of type slug-churn
+  Fig. 10. Confusion matrix of the kNN model using k = 15 with the test dataset.         and churn-wavy annular, as already mentioned in the analysis of the
+                                                                                         Table 2. Furthermore, the isobutane refrigerant, R600a, has properties
+                                                                                         such as high surface tension and latent heat, in addition to low viscosity
+Table 3 presented a stability in validation and test datasets, as well.                  and density, which result in an increased degree of expansion of the va-
+    The dataset is unbalanced, as an example the wavy-annular class                      por phase during phase change and its properties cause the patterns to
+have twice the number of images then the plug class. Besides that, the                   evolve very quickly towards churn-annular, which justifies the greater
+kNN model had an accuracy of 90% in average with the validation                          number of images of these patterns and the difficulty of classification.
+dataset. The expectation is if the number of images is increased, the
+model could have even a better accuracy. However, this demands new                       5. Conclusion
+recordings on the experimental facility.
+                                                                                             In this work a method to classify two-phase flow patterns in images
+    The use of deep learning methods, specially the convolutional neu-
+                                                                                         collected from an experimental facility were presented. The images
+ral networks (CNN) demands a large amount of images for a fair
+                                                                                         from five different flow patterns were processed and 93 texture features
+training. Here, the low quantity of images also justifies the no usage of
+                                                                                         were computed, 3 statistical, 72 statistical measures from GLCMs and
+convolutional neural networks for classification purposes, since those                   18 from wavelets decomposition. All 93 features were used as input to
+methods demands at least 1000 images per classes for reliable perfor-                    a kNN machine learning algorithm. The classification presented good
+mances (Ponti et al., 2021). One way to circumvent the lack of data                      results, with the worst F1-Score of 81% for plug and slug and the
+is data augmentation methods or even the usage of transfer learning.                     best value of 97% for bubbles pattern. The great advantage of using
+Even so, CNNs are powerful and its training may be an difficult task                     cameras is that no extra physical measurement is necessary for flow
+specially for a generalization in the network prediction (Hafsa et al.,                  pattern classification. The use of texture features in conjunction with
+2023). Few images leads to a CNN super specialized in the type of data                   the kNN model was a good choice for classifying flow patterns and
+used in training, it means that the change of the experimental facility                  allows extending the application to images from other experimental
+may lead to a new training. To achieve an reliable CNN, many images                      facilities. We hope this novel approach can bring an extra new vision
+from different experimental facilities shall be used. However, such a                    of features choice for flow patterns classification methods.
+
+                                                                                     8
+L.S. Dias et al.                                                                                                            International Journal of Multiphase Flow 185 (2025) 105122
+
+
+CRediT authorship contribution statement                                                      de Oliveira, Jeferson Diehl, Copetti, Jacqueline Biancon, Passos, Júlio César, 2017.
+                                                                                                   Experimental investigation on flow boiling pressure drop of R-290 and R-600a in
+                                                                                                   a horizontal small tube. Int. J. Refrig. 84, 165–180.
+    Lucas Souza Dias: Visualization, Validation, Software, Data cura-
+                                                                                              Del Col, Davide, Azzolin, Marco, Bortolin, Stefano, Berto, Arianna, 2017. Experimental
+tion. Jean Schmith: Writing – review & editing, Writing – original                                 results and design procedures for minichannel condensers and evaporators using
+draft, Validation, Supervision, Software, Methodology, Investigation,                              propylene. Int. J. Refrig. 83, 23–38.
+Formal analysis, Data curation, Conceptualization. Jeferson Diehl de                          Guo, Wei, Liu, Chuanping, Wang, Li, 2021. Temperature fluctuation on pipe wall
+                                                                                                   induced by gas–liquid flow and its application in flow pattern identification. Chem.
+Oliveira: Writing – review & editing, Writing – original draft, Vali-
+                                                                                                   Eng. Sci. 237, 116568.
+dation, Formal analysis, Data curation. Jacqueline Biancon Copetti:                           Hafsa, Noor, Rushd, Sayeed, Yousuf, Hazzaz, 2023. Comparative performance of
+Writing – review & editing, Writing – original draft, Validation, Su-                              machine-learning and deep-learning algorithms in predicting gas/liquid flow
+pervision, Project administration, Methodology, Formal analysis, Data                              regimes. Processes 11 (1).
+curation, Conceptualization.                                                                  Hanafizadeh, Pedram, Eshraghi, Javad, Taklifi, Alireza, Ghanbarzadeh, Soheil, 2016.
+                                                                                                   Experimental identification of flow regimes in gas–liquid two phase flow in a
+                                                                                                   vertical pipe. Meccanica 51, 1771–1782.
+Declaration of competing interest                                                             Jaworek, A., Krupa, A., 2010. Phase-shift detection for capacitance sensor measuring
+                                                                                                   void fraction in two-phase flow. Sensors Actuators A 160 (1), 78–86.
+                                                                                              Keepaiboon, Chanyoot, Wongwises, Somchai, 2015. Two-phase flow patterns and
+    The authors declare the following financial interests/personal rela-
+                                                                                                   heat transfer characteristics of R134a refrigerant during flow boiling in a single
+tionships which may be considered as potential competing interests:                                rectangular micro-channel. Exp. Therm Fluid Sci. 66, 36–45.
+Jean Schmith reports financial support was provided by Hardware                               Kerscher, Pedro Jose Pacheco, Schmith, Jean, Martins, Eduardo Augusto, de
+Competence Center for Digital Agriculture. If there are other authors,                             Figueiredo, Rodrigo Marques, Keller, Armando Leopoldo, 2022. Steel type determi-
+they declare that they have no known competing financial interests or                              nation by spark test image processing with machine learning. Measurement 187,
+                                                                                                   110361.
+personal relationships that could have appeared to influence the work                         Kinoshita, Natália Yukari Kume, Schmith, Jean, Martins, Eduardo Augusto, de
+reported in this paper.                                                                            Figueiredo, Rodrigo Marques, 2023. A method for identifying vegetation under
+                                                                                                   distribution power lines by remote sensing. J. Control Autom. Electr. Syst. 1–10.
+                                                                                              Kuang, Boyu, Nnabuife, Somtochukwu Godfrey, Rana, Zeeshan, 2021. Pseudo-image-
+Acknowledgments
+                                                                                                   feature-based identification benchmark for multi-phase flow regimes. Chem. Eng.
+                                                                                                   J. Adv. 5, 100060.
+   This work has partially funded and supported by the Hardware                               Lee, Gregory, Gommers, Ralf, Waselewski, Filip, Wohlfahrt, Kai, O’Leary, Aaron, 2019.
+Competence Center for Digital Agriculture, with financial resources                                PyWavelets: A python package for wavelet analysis. J. Open Source Softw. 4 (36),
+                                                                                                   1237.
+from PPI HardwareBR of the MCTI grant number 056/2023, signed
+                                                                                              Lemmon, E.W., Huber, Marcia L., McLinden, M.O., 2013. REFPROP, NIST Stan-
+with EMBRAPII.                                                                                     dard Reference Database 23. National Institute of Standards and Technology,
+                                                                                                   Thermophysical Properties Division.
+Data availability                                                                             Li, Hong-Wei, Zhou, Yun-Long, Hou, Yan-Dong, Sun, Bin, Yang, Yue, 2014. Flow pattern
+                                                                                                   map and time–frequency spectrum characteristics of nitrogen–water two-phase flow
+                                                                                                   in small vertical upward noncircular channels. Exp. Therm. Fluid Sci. 54, 47–60.
+    Data will be made available on request.                                                   Loyola-Fuentes, Jose, Pietrasanta, Luca, Marengo, Marco, Coletti, Francesco, 2022.
+                                                                                                   Machine learning algorithms for flow pattern classification in pulsating heat pipes.
+                                                                                                   Energies 15 (6).
+References                                                                                    Mallat, Stephane G., 1989a. Multiresolution approximations and wavelet orthonormal
+                                                                                                   bases of 𝐿2 (R). Trans. Am. Math. Soc. 315 (1), 69–87.
+                                                                                              Mallat, Stephane G., 1989b. A theory for multiresolution signal decomposition: the
+Angeli, P., Hewitt, G.F, 2000. Flow structure in horizontal oil–water flow. Int. J.
+                                                                                                   wavelet representation. IEEE Trans. Pattern Anal. Mach. Intell. 11 (7), 674–693.
+    Multiph. Flow 26 (7), 1117–1140.
+                                                                                              Mallat, Stéphane, 1999. A Wavelet Tour of Signal Processing. Elsevier.
+Bahrami, Babak, Mohsenpour, Sajjad, Noghabi, Hamid Reza Shamshiri, Hemmati, Nas-
+                                                                                              Mondal, Anadi, Sharma, Subash L., 2024. Prediction of entrainment fraction in two-
+    sim, Tabzar, Amir, 2019. Estimation of flow rates of individual phases in an
+                                                                                                   phase gas-liquid co-current annular flow-a machine learning approach. Int. J. Heat
+    oil-gas-water multiphase flow system using neural network approach and pressure
+                                                                                                   Mass Transfer 226, 125499.
+    signal analysis. Flow Meas. Instrum. 66, 28–36.
+                                                                                              Nnabuife, Somtochukwu Godfrey, Pilario, Karl Ezra S, Lao, Liyun, Cao, Yi, Shafiee, Mah-
+Baraldi, Andrea, Panniggiani, Flavio, 1995. An investigation of the textural character-
+                                                                                                   mood, 2019. Identification of gas-liquid flow regimes using a non-intrusive Doppler
+    istics associated with gray level cooccurrence matrix statistical parameters. IEEE
+                                                                                                   ultrasonic sensor and virtual flow regime maps. Flow Meas. Instrum. 68, 101568.
+    Trans. Geosci. Remote Sens. 33 (2), 293–304.
+                                                                                              Ong, Ch L., Thome, J.R., 2011. Macro-to-microchannel transition in two-phase flow:
+Bradski, G., 2000. The OpenCV library. Dr. Dobb’s J. Softw. Tools.
+                                                                                                   Part 1–two-phase flow patterns and film thickness measurements. Exp. Therm Fluid
+Cai, Bo, Xia, Guodong, Cheng, Lixin, Wang, Zhipeng, 2022a. Experimental investigation
+                                                                                                   Sci. 35 (1), 37–47.
+    on spatial phase distributions for various flow patterns and frictional pressure
+                                                                                              Paranjape, Sidharth, Ritchey, Susan N., Garimella, Suresh V., 2012. Electrical
+    drop characteristics of gas liquid two-phase flow in a horizontal helically coiled
+                                                                                                   impedance-based void fraction measurement and flow regime identification in
+    rectangular tube. Exp. Therm Fluid Sci. 110806.
+                                                                                                   microchannel flows under adiabatic conditions. Int. J. Multiph. Flow 42, 175–183.
+Cai, Bo, Xia, Guodong, Cheng, Lixin, Wang, Zhipeng, 2022b. Flow regime visualization
+                                                                                              Passoni, Stefano, Mereu, Riccardo, Bucci, Matteo, 2024. Integrating machine learning
+    and identification of air–water two-phase flow in a horizontal helically coiled
+                                                                                                   and image processing for void fraction estimation in two-phase flow through
+    rectangular channel. Heat Transf. Eng. 43 (8–10), 720–736.
+                                                                                                   corrugated channels. Int. J. Multiph. Flow 177, 104871.
+Chawla, Nitesh V, Bowyer, Kevin W, Hall, Lawrence O, Kegelmeyer, W Philip, 2002.              Patel, Surabhi, Goswami, Mausumi, 2014. Comparative analysis of histogram equal-
+    SMOTE: synthetic minority over-sampling technique. J. Artif. Intell. Res. 16,                  ization techniques. In: 2014 International Conference on Contemporary Computing
+    321–357.                                                                                       and Informatics. IC3I, IEEE, pp. 167–168.
+Cheng, Lixin, Xia, Guodong, 2023. Flow patterns and flow pattern maps for adi-                Peddu, Akhilesh, Chakraborty, Shubhankar, Das, Prasanta Kr, 2018. Visualization and
+    abatic and diabatic gas liquid two phase flow in microchannels: fundamentals,                  flow regime identification of downward air–water flow through a 12 mm diameter
+    mechanisms and applications. Exp. Therm Fluid Sci. 110988.                                     vertical tube using image analysis. Int. J. Multiph. Flow 100, 1–15.
+Daubechies, Ingrid, 1990. The wavelet transform, time-frequency localization and signal       Pedregosa, Fabian, Varoquaux, Gaël, Gramfort, Alexandre, Michel, Vincent,
+    analysis. IEEE Trans. Inf. Theory 36 (5), 961–1005.                                            Thirion, Bertrand, Grisel, Olivier, Blondel, Mathieu, Prettenhofer, Peter, Weiss, Ron,
+Daubechies, Ingrid, 1992. Ten Lectures on Wavelets. SIAM.                                          Dubourg, Vincent, et al., 2011. Scikit-learn: Machine learning in python. J. Mach.
+Daubechies, Ingrid, 1998. Recent results in wavelet applications. In: Wavelet                      Learn. Res. 12, 2825–2830.
+    Applications V. Vol. 3391, SPIE, pp. 2–9.                                                 Ponti, Moacir A, dos Santos, Fernando P, Ribeiro, Leo SF, Cavallari, Gabriel B, 2021.
+de Oliveira, Jeferson Diehl, Copetti, Jacqueline Biancon, Indrusiak, Maria Luiza Sperb,            Training deep networks from zero to hero: avoiding pitfalls and going beyond.
+    Passos, Júlio César, 2019. Nonlinear analysis of characteristic frequencies and                In: 2021 34th SIBGRAPI Conference on Graphics, Patterns and Images. SIBGRAPI,
+    chaotic behavior of flow patterns during flow boiling of hydrocarbons in a small               IEEE, pp. 9–16.
+    channel. Int. J. Multiph. Flow 114, 240–257.                                              Revellin, Rémi, Dupont, Vincent, Ursenbacher, Thierry, Thome, John R, Zun, Iztok,
+de Oliveira, Jeferson Diehl, Copetti, Jacqueline Biancon, Passos, Júlio César, 2016. An            2006. Characterization of diabatic two-phase flows in microchannels: Flow pa-
+    experimental investigation on flow boiling heat transfer of R-600a in a horizontal             rameter results for R-134a in a 0.5 mm channel. Int. J. Multiph. Flow 32 (7),
+    small tube. Int. J. Refrig. 72, 97–110.                                                        755–774.
+
+
+                                                                                          9
+L.S. Dias et al.                                                                                                          International Journal of Multiphase Flow 185 (2025) 105122
+
+
+Rouhani, S. Zia, Axelsson, Eva, 1970. Calculation of void volume fraction in the              Van    der Walt, Stefan, Schönberger, Johannes L, Nunez-Iglesias, Juan,
+    subcooled and quality boiling regions. Int. J. Heat Mass Transfer 13 (2), 383–393.            Boulogne, François, Warner, Joshua D, Yager, Neil, Gouillart, Emmanuelle,
+Saisorn, Sira, Wongwises, Somchai, 2008. Flow pattern, void fraction and pressure drop            Yu, Tony, 2014. Scikit-image: image processing in python. PeerJ 2, e453.
+    of two-phase air–water flow in a horizontal circular micro-channel. Exp. Therm            Wei, Tao, Li, Xiaochuan, Wang, Dongxue, 2020. Identification of gas-liquid two-phase
+    Fluid Sci. 32 (3), 748–760.                                                                   flow patterns in dust scrubber based on wavelet energy entropy and recurrence
+Seal, M.K., Noori Rahim Abadi, S.M.A., Mehrabi, M., Meyer, J.P., 2021. Machine                    analysis characteristics. Chem. Eng. Sci. 217, 115504.
+    learning classification of in-tube condensation flow patterns using visualization.        Wojtan, Leszek, Ursenbacher, Thierry, Thome, John R., 2005. Investigation of flow
+    Int. J. Multiph. Flow 143, 103755.                                                            boiling in horizontal tubes: Part I—A new diabatic two-phase flow pattern map.
+Shannon, Claude Elwood, 1948. A mathematical theory of communication. Bell Syst.                  Int. J. Heat Mass Transfer 48 (14), 2955–2969.
+    Tech. J. 27 (3), 379–423.                                                                 Zhang, Yongchao, Azman, Amirah Nabilah, Xu, Ke-Wei, Kang, Can, Kim, Hyoung-Bum,
+Sun, Zhiqiang, Chen, Yanping, Gong, Hui, 2012. Classification of gas–liquid flow                  2020. Two-phase flow regime identification based on the liquid-phase velocity
+    patterns by the norm entropy of wavelet decomposed pressure fluctuations across
+                                                                                                  information and machine learning. Exp. Fluids 61, 1–16.
+    a bluff body. Meas. Sci. Technol. 23 (12), 125301.
+Tan, Chao, Li, Pengfei, Dai, Wei, Dong, Feng, 2015. Characterization of oil–water two-
+    phase pipe flow with a combined conductivity/capacitance sensor and wavelet
+    analysis. Chem. Eng. Sci. 134, 153–168.
+
+
+
+
+                                                                                         10
+

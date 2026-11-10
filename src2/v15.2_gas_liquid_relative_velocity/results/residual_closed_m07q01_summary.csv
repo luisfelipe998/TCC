@@ -1,0 +1,13 @@
+run,pattern,fps,erosion_radius,phase,method,signed_px_s,signed_px_frame,optical_supported,accepted_blocks,accepted_intervals,available_intervals,material_phase_identified,reason
+m07q01_001,dispersed bubbles,7000.0,3,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m07q01_001,dispersed bubbles,7000.0,3,gas_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m07q01_001,dispersed bubbles,7000.0,3,gas_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m07q01_001,dispersed bubbles,7000.0,3,liquid_candidate,raw,-45796.256112976946,-6.542322301853849,False,1,83,495,False,fewer_than_5_of_6_blocks
+m07q01_001,dispersed bubbles,7000.0,3,liquid_candidate,fixed_background,-43247.63483032069,-6.17823354718867,True,6,495,495,False,
+m07q01_001,dispersed bubbles,7000.0,3,liquid_candidate,interface_distance,-44971.620506402636,-6.424517215200376,False,2,165,495,False,fewer_than_5_of_6_blocks
+m07q01_001,dispersed bubbles,7000.0,1,gas_candidate,raw,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m07q01_001,dispersed bubbles,7000.0,1,gas_candidate,fixed_background,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m07q01_001,dispersed bubbles,7000.0,1,gas_candidate,interface_distance,nan,nan,False,0,0,495,False,fewer_than_5_of_6_blocks
+m07q01_001,dispersed bubbles,7000.0,1,liquid_candidate,raw,-45387.592731116856,-6.48394181873098,False,1,83,495,False,fewer_than_5_of_6_blocks
+m07q01_001,dispersed bubbles,7000.0,1,liquid_candidate,fixed_background,-42916.01113695745,-6.130858733851064,True,6,495,495,False,
+m07q01_001,dispersed bubbles,7000.0,1,liquid_candidate,interface_distance,-44722.61607541467,-6.388945153630667,False,2,165,495,False,fewer_than_5_of_6_blocks

@@ -1,0 +1,7 @@
+model,validation,accuracy,balanced_accuracy
+centroid,leave_one_run_out,0.6,0.5116666666666666
+knn1,leave_one_run_out,0.64,0.44333333333333336
+knn3,leave_one_run_out,0.6,0.3716666666666667
+centroid,leave_one_mass_flux_out,0.52,0.425
+knn1,leave_one_mass_flux_out,0.68,0.46333333333333326
+knn3,leave_one_mass_flux_out,0.64,0.485

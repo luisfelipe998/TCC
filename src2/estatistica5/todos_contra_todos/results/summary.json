@@ -1,0 +1,45 @@
+{
+  "n_runs": 26,
+  "n_pairs": 325,
+  "n_intra_pairs": 87,
+  "n_inter_pairs": 238,
+  "n_common_px": 3171,
+  "n_scales": 200,
+  "wavelength_limits_px": [
+    50,
+    3000
+  ],
+  "color_limits": [
+    -1,
+    1
+  ],
+  "patterns": {
+    "churn": 10,
+    "wavy annular": 9,
+    "plug": 3,
+    "slug": 3,
+    "dispersed bubbles": 1
+  },
+  "pearson_min": -0.07958847383290729,
+  "pearson_max": 0.9778956546784416,
+  "negative_pairs": 2,
+  "median_intra": 0.8301240201424213,
+  "median_inter": 0.7545730157894037,
+  "median_delta": 0.07555100435301754,
+  "highest_pair": {
+    "run_x": "m06q40_001",
+    "run_y": "m06q01_001",
+    "r": 0.9778956546784416,
+    "same_pattern": false
+  },
+  "lowest_pair": {
+    "run_x": "m04q80_001",
+    "run_y": "m07q01_001",
+    "r": -0.07958847383290729,
+    "same_pattern": false
+  },
+  "inter_pairs_above_intra_median": 79,
+  "median_abs_change_with_full": 0.10142618293408068,
+  "max_abs_change_with_full": 0.7039846664599093,
+  "inference": "Descrição dos coeficientes, sem testes de separação ou classificação."
+}

@@ -1,0 +1,11 @@
+{
+  "control": "Complementary binary masks of the same translating interfaces",
+  "true_interface_shift_px": 17,
+  "gas_mask_estimated_shift_px": 17,
+  "liquid_complement_estimated_shift_px": 17,
+  "inferred_mask_motion_ratio": 1.0,
+  "maximum_correlation_curve_difference": 1.2212453270876722e-15,
+  "passed": true,
+  "interpretation": "Both labels contain the same interface-motion information. Ratio=1 is imposed by complementary masks and does not identify either material phase velocity.",
+  "limitation": "This control does not predict experimental conditional-grayscale ratios; those can differ because they sample different intervals/features."
+}

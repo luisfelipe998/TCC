@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "original_engine_map_checks": [
+    {
+      "condition": "3171_prefix",
+      "run_a": "m03q05_001",
+      "run_b": "m03q10_001",
+      "max_wco_map_error": 7.549516567451064e-15
+    },
+    {
+      "condition": "3171_center",
+      "run_a": "m05q01_001",
+      "run_b": "m04q01_001",
+      "max_wco_map_error": 1.9984014443252818e-15
+    },
+    {
+      "condition": "5071_suffix",
+      "run_a": "m06q01_001",
+      "run_b": "m06q05_001",
+      "max_wco_map_error": 1.3322676295501878e-15
+    },
+    {
+      "condition": "7001_center",
+      "run_a": "m04q20_001",
+      "run_b": "m04q80_001",
+      "max_wco_map_error": 2.220446049250313e-15
+    }
+  ],
+  "original_engine_max_error": 7.549516567451064e-15,
+  "pair_maps": 2388,
+  "independent_noise_pairs": 594,
+  "null_cohort_replicates": 199,
+  "null_hypotheses": 6,
+  "empirical_kernel_matrices_checked": 45,
+  "accepted_kernel_matrices": 39,
+  "rejected_kernel_matrices": [
+    {
+      "condition": "3171_prefix",
+      "metric": "area_normalized_long",
+      "minimum_eigenvalue": -0.012321676862629997
+    },
+    {
+      "condition": "3171_center",
+      "metric": "area_normalized_long",
+      "minimum_eigenvalue": -0.004528559362755745
+    },
+    {
+      "condition": "3171_suffix",
+      "metric": "area_normalized_long",
+      "minimum_eigenvalue": -0.01702310844885596
+    },
+    {
+      "condition": "5071_prefix",
+      "metric": "area_normalized_long",
+      "minimum_eigenvalue": -0.014882864513112824
+    },
+    {
+      "condition": "5071_center",
+      "metric": "area_normalized_long",
+      "minimum_eigenvalue": -0.017268898410434868
+    },
+    {
+      "condition": "5071_suffix",
+      "metric": "area_normalized_long",
+      "minimum_eigenvalue": -0.005342602397705435
+    }
+  ],
+  "all_accepted_kernel_matrices_psd_within_tolerance": true,
+  "stable_positive_classes_without_010_threshold": 0,
+  "stable_methods_without_010_threshold": 0,
+  "source_files_unchanged": 34,
+  "scope": "Verificação numérica; não valida representatividade, hipóteses físicas ou generalização."
+}

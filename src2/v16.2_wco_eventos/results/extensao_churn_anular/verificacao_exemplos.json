@@ -1,0 +1,192 @@
+{
+  "status": "PASS",
+  "data_utc": "2026-10-25T14:39:40.155493+00:00",
+  "definicao": "Média de WCO em 200 escalas logarítmicas (50–1024 px) e 65 lags (−32…+32).",
+  "metodo": "Preparo por regressão e correlação direta independentes; CWT pelo núcleo principal preservado.",
+  "interpretacao": "As figuras ordenam pares selecionados de mínimos compatíveis pela WCO do contexto, não pela escuridão da âncora. Os extremos não são necessariamente os de todos os pares admissíveis.",
+  "universos": [
+    {
+      "padrao": "churn",
+      "pares_selecionados": 90,
+      "pares_admissiveis": 484,
+      "minimo_selecionados": 0.0817823407342624,
+      "maximo_selecionados": 0.500719173199094,
+      "minimo_admissiveis": 0.0793094344130848,
+      "maximo_admissiveis": 0.500719173199094,
+      "par_minimo_admissiveis": "m05q20_001_MIN05793__m06q10_001_MIN03607",
+      "par_maximo_admissiveis": "m04q20_001_MIN02009__m06q20_001_MIN06186"
+    },
+    {
+      "padrao": "wavy annular",
+      "pares_selecionados": 66,
+      "pares_admissiveis": 348,
+      "minimo_selecionados": 0.0945157164033071,
+      "maximo_selecionados": 0.4219418899773018,
+      "minimo_admissiveis": 0.0945157164033071,
+      "maximo_admissiveis": 0.4475923519372433,
+      "par_minimo_admissiveis": "m04q80_001_MIN11728__m07q80_001_MIN15171",
+      "par_maximo_admissiveis": "m04q40_001_MIN08529__m04q80_001_MIN08479"
+    }
+  ],
+  "exemplos": [
+    {
+      "padrao": "churn",
+      "tipo": "menor_escore",
+      "pair_id": "m04q20_001_MIN05074__m06q10_001_MIN03607",
+      "escore_tabela": 0.0817823407342624,
+      "escore_mapa": 0.0817823407342625,
+      "escore_recalculado": 0.08178234073426288,
+      "erro_maximo_mapa": 1.2490009027033011e-14,
+      "ancoras": [
+        {
+          "anchor_id": "m04q20_001_MIN05074",
+          "centro": 5074,
+          "intensidade_suavizada": 62.923719311342396,
+          "minimo_local": true
+        },
+        {
+          "anchor_id": "m06q10_001_MIN03607",
+          "centro": 3607,
+          "intensidade_suavizada": 46.007797797537286,
+          "minimo_local": true
+        }
+      ]
+    },
+    {
+      "padrao": "churn",
+      "tipo": "maior_escore",
+      "pair_id": "m04q20_001_MIN02009__m06q20_001_MIN06186",
+      "escore_tabela": 0.500719173199094,
+      "escore_mapa": 0.5007191731990941,
+      "escore_recalculado": 0.5007191731990938,
+      "erro_maximo_mapa": 2.3425705819590803e-14,
+      "ancoras": [
+        {
+          "anchor_id": "m04q20_001_MIN02009",
+          "centro": 2009,
+          "intensidade_suavizada": 62.30984327230085,
+          "minimo_local": true
+        },
+        {
+          "anchor_id": "m06q20_001_MIN06186",
+          "centro": 6186,
+          "intensidade_suavizada": 38.30341539650539,
+          "minimo_local": true
+        }
+      ]
+    },
+    {
+      "padrao": "churn",
+      "tipo": "predeterminado",
+      "pair_id": "m03q05_001_MIN02256__m05q10_001_MIN04683",
+      "escore_tabela": 0.3340286446967423,
+      "escore_mapa": 0.3340286446967423,
+      "escore_recalculado": 0.3340286446967425,
+      "erro_maximo_mapa": 4.218847493575595e-15,
+      "ancoras": [
+        {
+          "anchor_id": "m03q05_001_MIN02256",
+          "centro": 2256,
+          "intensidade_suavizada": 64.46397581784161,
+          "minimo_local": true
+        },
+        {
+          "anchor_id": "m05q10_001_MIN04683",
+          "centro": 4683,
+          "intensidade_suavizada": 41.51767882621258,
+          "minimo_local": true
+        }
+      ]
+    },
+    {
+      "padrao": "wavy annular",
+      "tipo": "menor_escore",
+      "pair_id": "m04q80_001_MIN11728__m07q80_001_MIN15171",
+      "escore_tabela": 0.0945157164033071,
+      "escore_mapa": 0.09451571640330714,
+      "escore_recalculado": 0.0945157164033067,
+      "erro_maximo_mapa": 6.189493362285248e-15,
+      "ancoras": [
+        {
+          "anchor_id": "m04q80_001_MIN11728",
+          "centro": 11728,
+          "intensidade_suavizada": 59.563808665892346,
+          "minimo_local": true
+        },
+        {
+          "anchor_id": "m07q80_001_MIN15171",
+          "centro": 15171,
+          "intensidade_suavizada": 33.65379563313623,
+          "minimo_local": true
+        }
+      ]
+    },
+    {
+      "padrao": "wavy annular",
+      "tipo": "maior_escore",
+      "pair_id": "m04q80_001_MIN02779__m05q80_001_MIN11648",
+      "escore_tabela": 0.4219418899773018,
+      "escore_mapa": 0.42194188997730186,
+      "escore_recalculado": 0.42194188997729853,
+      "erro_maximo_mapa": 7.233103005432895e-14,
+      "ancoras": [
+        {
+          "anchor_id": "m04q80_001_MIN02779",
+          "centro": 2779,
+          "intensidade_suavizada": 62.25375817558114,
+          "minimo_local": true
+        },
+        {
+          "anchor_id": "m05q80_001_MIN11648",
+          "centro": 11648,
+          "intensidade_suavizada": 35.484386956912296,
+          "minimo_local": true
+        }
+      ]
+    },
+    {
+      "padrao": "wavy annular",
+      "tipo": "predeterminado",
+      "pair_id": "m03q10_001_MIN03119__m04q80_001_MIN18780",
+      "escore_tabela": 0.2574890619982634,
+      "escore_mapa": 0.25748906199826344,
+      "escore_recalculado": 0.25748906199826344,
+      "erro_maximo_mapa": 4.218847493575595e-15,
+      "ancoras": [
+        {
+          "anchor_id": "m03q10_001_MIN03119",
+          "centro": 3119,
+          "intensidade_suavizada": 66.8696824762144,
+          "minimo_local": true
+        },
+        {
+          "anchor_id": "m04q80_001_MIN18780",
+          "centro": 18780,
+          "intensidade_suavizada": 68.66692556688388,
+          "minimo_local": true
+        }
+      ]
+    }
+  ],
+  "entradas_sha256": {
+    "data_processed/m03q05_001/__panorama_v11.png": "452eb42d75378c30656c13076cdac07a641e502e6741b07045eeb02ab73cd68e",
+    "data_processed/m03q10_001/__panorama_v11.png": "7b727d6e94322567f92adcf44abe0aee97726105c33c929a999b6a5b5ff05c35",
+    "data_processed/m04q20_001/__panorama_v11.png": "ce54a5bfb0bb7fba3c7b584be81a1b009d334d39a630ccbf6bda8d08703f7f8b",
+    "data_processed/m04q80_001/__panorama_v11.png": "e2c5b2d15951159b9115af2dc1e5e123d078617965f9b951e76a7b11a172f8ba",
+    "data_processed/m05q10_001/__panorama_v11.png": "4849cd7a03bbb15dbde7af3ba13b52bdc131acd5db30071894e0481f9aa97c12",
+    "data_processed/m05q80_001/__panorama_v11.png": "b2a262fd4341f9d42ff8c1b401ef1fbd6af1bb134d753576832d738b1ca10a51",
+    "data_processed/m06q10_001/__panorama_v11.png": "9d1e6e9904fec5f40959aa1cf2b94a7327ae833a34bffed5d81c4c878888f5e1",
+    "data_processed/m06q20_001/__panorama_v11.png": "b607107c8a4103910c11a0a2c251472c249f9073ef844e499795a11f4b39f1a9",
+    "data_processed/m07q80_001/__panorama_v11.png": "2eb17eb9aab3284a23e374758e2f0ce6cb0e9e4db2d5ac9e41d1585cef3125cf",
+    "v16.2_wco_eventos/maps/extensao_churn_anular/m03q05_001_MIN02256__m05q10_001_MIN04683.npz": "daa579a556f26e93c87abeeeca56d83b7dea4dc95f6e3fd7a9ee82944572e996",
+    "v16.2_wco_eventos/maps/extensao_churn_anular/m03q10_001_MIN03119__m04q80_001_MIN18780.npz": "b3c9a9d5a7a105b7225999978a853b3a99538218319552eb2938e310369accb8",
+    "v16.2_wco_eventos/maps/extensao_churn_anular/m04q20_001_MIN02009__m06q20_001_MIN06186.npz": "eceac0020f52815ee57d243cdf63ff403d84b95a3e0a60935af01ac5da827511",
+    "v16.2_wco_eventos/maps/extensao_churn_anular/m04q20_001_MIN05074__m06q10_001_MIN03607.npz": "024996456a0f7809a9890394e19bcfb33a509dcb1e4508a00373613dd915f6a8",
+    "v16.2_wco_eventos/maps/extensao_churn_anular/m04q80_001_MIN02779__m05q80_001_MIN11648.npz": "07a35e31e2a7dca5efd636e1f3d887ce935d00d0fd3f5d6762a3a390e3e27b96",
+    "v16.2_wco_eventos/maps/extensao_churn_anular/m04q80_001_MIN11728__m07q80_001_MIN15171.npz": "a80c61833cae549df4b6b097f7e76eb5ce01eea1589b39d672c4ca073d4ee129",
+    "v16.2_wco_eventos/results/auditoria_adversarial/todos_pares_admissiveis.csv": "6c03a3c2b7abf0581529d03b17d8ad9f62e699de5e15806b713e46b346afde92",
+    "v16.2_wco_eventos/results/extensao_churn_anular/catalogo_ancoras.csv": "5283314ffbf95f1709021a0766262654ffed3f4d9e788278fb85124e20210418",
+    "v16.2_wco_eventos/results/extensao_churn_anular/exemplos.csv": "af81652def677234ce6d607c48c68d69a8c53dce4b9506eef9c90e6d3e1d0e98",
+    "v16.2_wco_eventos/results/extensao_churn_anular/resultados_ancoras.csv": "878449dff8744f44a6401bc0a34bab5179537b8d3c8a7bb7ff45a1cdf8a9cc7d"
+  }
+}

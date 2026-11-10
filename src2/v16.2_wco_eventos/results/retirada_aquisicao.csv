@@ -1,0 +1,21 @@
+escopo,comparador,padrao,retirada,pares_restantes,diferenca
+entre,distintos,plug × slug,m05q01_001,3,0.051990941578800985
+entre,distintos,plug × slug,m05q05_001,2,0.1204745061777937
+entre,distintos,plug × slug,m06q01_001,3,0.06406861644497298
+entre,distintos,plug × slug,m06q05_001,3,0.026713926826711948
+entre,distintos,plug × slug,m07q05_001,4,0.07350072790003115
+entre,fixos,plug × slug,m05q01_001,3,0.031581524146705044
+entre,fixos,plug × slug,m05q05_001,2,0.10998594628326627
+entre,fixos,plug × slug,m06q01_001,3,0.030025407132767457
+entre,fixos,plug × slug,m06q05_001,3,0.008455771539875942
+entre,fixos,plug × slug,m07q05_001,4,0.0764644051334758
+intra,distintos,plug,m05q01_001,1,0.030062458609712378
+intra,distintos,plug,m06q01_001,1,0.01184527617126463
+intra,distintos,plug,m07q05_001,1,0.04059773462302563
+intra,distintos,slug,m05q05_001,0,
+intra,distintos,slug,m06q05_001,0,
+intra,fixos,plug,m05q01_001,1,0.07497241987824219
+intra,fixos,plug,m06q01_001,1,-0.027039919306752952
+intra,fixos,plug,m07q05_001,1,0.03874033238223257
+intra,fixos,slug,m05q05_001,0,
+intra,fixos,slug,m06q05_001,0,

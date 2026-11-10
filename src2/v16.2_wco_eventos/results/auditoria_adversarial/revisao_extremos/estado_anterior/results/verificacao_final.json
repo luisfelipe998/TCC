@@ -1,0 +1,155 @@
+{
+  "extensao_churn_anular": {
+    "tabelas_mapas_e_figuras_etapa1_inalterados": 103,
+    "fontes_da_extensao_inalteradas": true,
+    "checkpoint_retomada": {
+      "conferidos_antes_retomada": 46,
+      "resultados_e_mapas_preservados": 27,
+      "historico_pausa_preservado": true
+    },
+    "codigo_executado_e_testes_conferidos": true,
+    "ancoras_contexto_e_procedencia": {
+      "total": 152,
+      "pixels_identicos_fora_mistura": 142,
+      "em_mistura": 10
+    },
+    "catalogo_e_pares_reproduzidos_byte_a_byte": true,
+    "ultrapassagens_legado_auditadas": {
+      "status": "PASS",
+      "data_utc": "2026-10-25T04:47:13.932161+00:00",
+      "casos": 3,
+      "maior_valor": 1.0061569942141135,
+      "erro_maximo": 3.035349749325178e-13,
+      "interpretacao": "Ultrapassagens do núcleo discreto legado reproduzidas por somas diretas e convolução temporal. Não são erro de FFT nem motivo para clipping. O limite unitário é verificado separadamente na Morlet principal; a variante v5 é sensibilidade numérica.",
+      "casos_detalhados": [
+        {
+          "origem": "ancoras",
+          "pair_id": "m03q40_001_MIN04674__m04q10_001_MIN02128",
+          "variante": "v5_mesmos_segmentos",
+          "escore": 0.4333299142257586,
+          "maximo_fft": 1.0032638593586491,
+          "maximo_convolucao": 1.0032638593586607,
+          "lambda_pico_px": 906.9496439375575,
+          "lag_pico_px": 287,
+          "celulas_acima_1": 66,
+          "celulas_acima_1_lags_principais": 0,
+          "escalas_com_ultrapassagem": 1,
+          "erro_fft_vs_convolucao": 2.327027459614328e-13
+        },
+        {
+          "origem": "ancoras",
+          "pair_id": "m04q20_001_MIN05074__m07q40_001_MIN07538",
+          "variante": "v5_mesmos_segmentos",
+          "escore": 0.2807976356034405,
+          "maximo_fft": 1.0061569942141135,
+          "maximo_convolucao": 1.0061569942140887,
+          "lambda_pico_px": 963.6993490669474,
+          "lag_pico_px": 272,
+          "celulas_acima_1": 180,
+          "celulas_acima_1_lags_principais": 0,
+          "escalas_com_ultrapassagem": 3,
+          "erro_fft_vs_convolucao": 2.62234678416462e-13
+        },
+        {
+          "origem": "fixos",
+          "pair_id": "m03q40_001_F0__m05q20_001_F0",
+          "variante": "v5_mesmos_segmentos",
+          "escore": 0.2462141847811652,
+          "maximo_fft": 1.0036688765699884,
+          "maximo_convolucao": 1.0036688765698556,
+          "lambda_pico_px": 963.6993490669474,
+          "lag_pico_px": -528,
+          "celulas_acima_1": 31,
+          "celulas_acima_1_lags_principais": 0,
+          "escalas_com_ultrapassagem": 1,
+          "erro_fft_vs_convolucao": 3.035349749325178e-13
+        }
+      ]
+    },
+    "comparacoes": {
+      "ancoras_calculadas": 6625,
+      "ancoras_ausentes": 15,
+      "fixos": 2052,
+      "diagnosticos": 171
+    },
+    "recalculo_oito_variantes_erro_maximo": 8.326672684688674e-17,
+    "mapas_integrais_conferidos": 16,
+    "sensibilidades_mesmos_ids_conferidas": true,
+    "painel_sensibilidades_mesmos_815_pares_locais": true,
+    "agregacoes_contrastes_e_retiradas_conferidos": true,
+    "paginas_pdf_integrado": 25,
+    "status": "PASS",
+    "data_utc": "2026-10-25T05:34:41.823636+00:00",
+    "limite": "Consistência e rastreabilidade computacionais; não valida identidade de ondas/bolhas, rótulos locais, independência estatística ou generalização."
+  },
+  "auditoria_adversarial": {
+    "tabelas_e_matrizes_anteriores_preservadas": 67,
+    "fontes_atuais_conferidas": 15624,
+    "evidencia_independente_das_formulas_conferida": true,
+    "correspondencia_e_selecao_distintas_conferidas": {
+      "faixa30_49": 55,
+      "sigma12": 66,
+      "sigma20": 68
+    },
+    "contrastes_sementes_e_todos_pares_recalculados": 816,
+    "costura_e_nulo_conferidos": true,
+    "documentos_principais_e_pdf_atualizados": true,
+    "paginas_pdf": 25,
+    "status": "PASS",
+    "data_utc": "2026-10-25T05:34:51.596014+00:00",
+    "conclusao": "Análise exploratória com ressalvas. Integridade e consistência verificadas não equivalem a validade física ou ausência garantida de falhas."
+  },
+  "arquivos_congelados_inalterados": 9,
+  "nucleo_identico_a_base": true,
+  "plano_original_sha256": "9be93fa2248cf7c7bc821b076892ac13a62717e72ae2945aabc7c4b9fd87d3da",
+  "fontes_e_quadros_inalterados": 497,
+  "artefatos_anteriores_preservados": 391,
+  "fontes_anteriores_preservadas": 10,
+  "extracoes_exatas_18_71_e_costuras": 31,
+  "ancoras_rastreaveis": 163,
+  "ancoras_fora_de_mistura_pixels_identicos": 148,
+  "pareamento_sem_wavelets_recalculado": {
+    "candidatos": 264,
+    "selecionados": 165
+  },
+  "catalogo_reproduzido_byte_a_byte": [
+    "catalogo_eventos.csv",
+    "pares_candidatos.csv",
+    "pares_eventos.csv",
+    "segmentos_fixos.csv",
+    "observabilidade.csv"
+  ],
+  "comparacoes_e_escopo": {
+    "eventos": 1320,
+    "fixos": 1110,
+    "self_e_mesma_aquisicao": 31,
+    "pares_intra": 87,
+    "pares_entre": 238
+  },
+  "recalculo_oito_variantes_erro_maximo": 8.326672684688674e-17,
+  "mapas_integrais_recalculados": 6,
+  "erro_maximo_escore_mapas": 1.1102230246251565e-16,
+  "perfis_dos_165_pares_conferidos": true,
+  "agregacoes_pesos_contrastes_e_retiradas_conferidos": true,
+  "links_locais_existentes": 284,
+  "links_historicos_com_destino_atual_documentado": [
+    {
+      "documento": "PLAN_ORIGINAL.md",
+      "caminho_original": "../v16.1/PLAN.md",
+      "destino_atual": "../v16.1_perfis_wps/PLAN.md"
+    },
+    {
+      "documento": "PLAN.md",
+      "caminho_original": "../v16.1/PLAN.md",
+      "destino_atual": "../v16.1_perfis_wps/PLAN.md"
+    }
+  ],
+  "imagens_png_integras": 109,
+  "paginas_pdf": 7,
+  "arquivo_pdf_etapa1_conferido": "RESUMO_EXECUTIVO_ETAPA1.pdf",
+  "texto_e_conclusao_pdf_conferidos": true,
+  "status": "PASS",
+  "data_utc": "2026-10-25T05:34:57.293399+00:00",
+  "segundos": 25.67532283300534,
+  "limite_da_verificacao": "Testes de integridade e consistência computacional; não validam identidade física, anotação independente ou generalização experimental."
+}

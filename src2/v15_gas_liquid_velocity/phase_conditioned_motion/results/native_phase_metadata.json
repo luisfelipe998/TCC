@@ -1,0 +1,234 @@
+{
+  "status": "complete",
+  "included_runs": [
+    {
+      "run": "m03q05_001",
+      "pattern": "churn"
+    },
+    {
+      "run": "m03q10_001",
+      "pattern": "wavy annular"
+    },
+    {
+      "run": "m03q20_001",
+      "pattern": "wavy annular"
+    },
+    {
+      "run": "m03q40_001",
+      "pattern": "wavy annular"
+    },
+    {
+      "run": "m04q01_001",
+      "pattern": "slug"
+    },
+    {
+      "run": "m04q10_001",
+      "pattern": "churn"
+    },
+    {
+      "run": "m04q20_001",
+      "pattern": "churn"
+    },
+    {
+      "run": "m04q40_001",
+      "pattern": "wavy annular"
+    },
+    {
+      "run": "m04q80_001",
+      "pattern": "wavy annular"
+    },
+    {
+      "run": "m05q01_001",
+      "pattern": "plug"
+    },
+    {
+      "run": "m05q05_001",
+      "pattern": "slug"
+    },
+    {
+      "run": "m05q10_001",
+      "pattern": "churn"
+    },
+    {
+      "run": "m05q20_001",
+      "pattern": "churn"
+    },
+    {
+      "run": "m05q40_001",
+      "pattern": "churn"
+    },
+    {
+      "run": "m05q80_001",
+      "pattern": "wavy annular"
+    },
+    {
+      "run": "m06q01_001",
+      "pattern": "plug"
+    },
+    {
+      "run": "m06q05_001",
+      "pattern": "slug"
+    },
+    {
+      "run": "m06q10_001",
+      "pattern": "churn"
+    },
+    {
+      "run": "m06q20_001",
+      "pattern": "churn"
+    },
+    {
+      "run": "m06q40_001",
+      "pattern": "wavy annular"
+    },
+    {
+      "run": "m06q80_001",
+      "pattern": "wavy annular"
+    },
+    {
+      "run": "m07q01_001",
+      "pattern": "dispersed bubbles"
+    },
+    {
+      "run": "m07q05_001",
+      "pattern": "plug"
+    },
+    {
+      "run": "m07q20_001",
+      "pattern": "churn"
+    },
+    {
+      "run": "m07q40_001",
+      "pattern": "churn"
+    },
+    {
+      "run": "m07q80_001",
+      "pattern": "wavy annular"
+    }
+  ],
+  "excluded_runs": [
+    {
+      "run": "m03q01_001",
+      "pattern": "plug-slug"
+    },
+    {
+      "run": "m03q80_001",
+      "pattern": "smooth annular"
+    },
+    {
+      "run": "m04q05_001",
+      "pattern": "slug-churn"
+    },
+    {
+      "run": "m05q05_002",
+      "pattern": "dispersed bubbles"
+    },
+    {
+      "run": "m07q10_001",
+      "pattern": "slug-churn"
+    }
+  ],
+  "thresholds": [
+    0.6,
+    0.7,
+    0.8
+  ],
+  "lumen_rows": [
+    18,
+    71
+  ],
+  "boundary_provenance": "User-confirmed full tube interior on 2026-10-23: Python slice 18:71, rows 18 through 70, 53 pixel cells. Optical profile minima are not used as lumen boundaries. Refraction mapping remains uncalibrated.",
+  "schema": {
+    "keys": [
+      "masks_060",
+      "masks_070",
+      "masks_080"
+    ],
+    "packed_shape": [
+      501,
+      80,
+      127
+    ],
+    "packed_dtype": "uint8",
+    "original_shape": [
+      501,
+      80,
+      1016
+    ],
+    "axis": -1,
+    "bitorder": "big",
+    "unpacked_dtype": "bool",
+    "unpack_instruction": "np.unpackbits(npz[key], axis=-1, count=int(npz['original_width']), bitorder='big').astype(bool)"
+  },
+  "source_files": [
+    {
+      "path": "v14_new_voidfraction/scripts/panorama_void_alternatives.py",
+      "sha256": "a63db1153e6f73d334ffce09416ab2794d8a360f5474f27aa48c6b9e9c098933"
+    },
+    {
+      "path": "v14_new_voidfraction/scripts/v14_geometry.py",
+      "sha256": "05f36daaca877d1d80f3f6c992d403a1382978e81293b9649532e00e5e4dce3b"
+    },
+    {
+      "path": "v14_new_voidfraction/scripts/v14_selection.py",
+      "sha256": "fb46363104dfc0b233b8bde35fa24f86bbef67363059f8774cb8bae9eafefeaf"
+    },
+    {
+      "path": "v14_new_voidfraction/scripts/v14_paths.py",
+      "sha256": "7cd64430ddc64defc0e40feb5bce4fec8c055bca1469733c2db4dd44e87e0835"
+    }
+  ],
+  "reference_json_sha256": "56bb4dd607596d310507e34f537e66012e75c95d5cd0d654de9ba048e2a8d13d",
+  "synthetic_checks": [
+    {
+      "control": "uniform",
+      "threshold": 0.6,
+      "gas_pixels": 0,
+      "pack_roundtrip_exact": true
+    },
+    {
+      "control": "liquid_reference",
+      "threshold": 0.6,
+      "gas_pixels": 0,
+      "pack_roundtrip_exact": true
+    },
+    {
+      "control": "uniform",
+      "threshold": 0.7,
+      "gas_pixels": 0,
+      "pack_roundtrip_exact": true
+    },
+    {
+      "control": "liquid_reference",
+      "threshold": 0.7,
+      "gas_pixels": 0,
+      "pack_roundtrip_exact": true
+    },
+    {
+      "control": "uniform",
+      "threshold": 0.8,
+      "gas_pixels": 0,
+      "pack_roundtrip_exact": true
+    },
+    {
+      "control": "liquid_reference",
+      "threshold": 0.8,
+      "gas_pixels": 0,
+      "pack_roundtrip_exact": true
+    }
+  ],
+  "total_frames": 13026,
+  "total_detector_calls": 39078,
+  "threshold_mask_files": 26,
+  "source_images_and_previous_outputs_modified": false,
+  "interpretation": "Mask 1=inferred visible gas silhouette; 0=unmarked, not independently proven liquid. No circular-volume alpha is calculated.",
+  "limitations": [
+    "The v14 detector was developed on panoramas; application to native frames is a transfer requiring visual checks.",
+    "Reference liquid-like intervals are inferred and may contain unresolved gas or optical artifacts.",
+    "Gas shadows may be missed or merged; unmarked regions cannot be certified liquid.",
+    "Agreement across thresholds is segmentation stability, not ground-truth correctness.",
+    "Morphology can make masks nonmonotonic with threshold; consensus must use all masks.",
+    "Saturated native regions lose information; those records remain inventoried and flagged."
+  ],
+  "elapsed_s": 54.8773869999859
+}

@@ -1,0 +1,80 @@
+{
+  "status": "additional_controls_and_aggregations_checked",
+  "controls": {
+    "illumination": [
+      {
+        "control": "common_moving_illumination_without_material_texture",
+        "phase": "gas_candidate",
+        "illumination_speed_px_frame": 12.0,
+        "estimated_px_frame": 12.000049510544878,
+        "optical_supported": true,
+        "peak": 0.9999059850641994,
+        "null_max_peak": 0.13864591304779333,
+        "interpretation": "Correct optical speed despite no material tracer. This is not a phase-velocity validation or an algorithm failure."
+      },
+      {
+        "control": "common_moving_illumination_without_material_texture",
+        "phase": "liquid_candidate",
+        "illumination_speed_px_frame": 12.0,
+        "estimated_px_frame": 12.00004951086168,
+        "optical_supported": true,
+        "peak": 0.999905989060346,
+        "null_max_peak": 0.13864590795755227,
+        "interpretation": "Correct optical speed despite no material tracer. This is not a phase-velocity validation or an algorithm failure."
+      }
+    ],
+    "periodic_cases": 18,
+    "periodic_rejected": 18,
+    "interpretation": "These tested periodic aliases are rejected by the joint temporal/reversal/position gates. This finite test is not a general anti-aliasing proof."
+  },
+  "independent_aggregation": {
+    "block_ncc": {
+      "rows": 156,
+      "max_coordinate_difference_px_s": 8.731149137020111e-11,
+      "support_by_variant": {
+        "blocks10": 20,
+        "blocks20": 18,
+        "blocks5": 19,
+        "highpass32_blocks10": 17,
+        "highpass8_blocks10": 7,
+        "raw_blocks10": 19
+      }
+    },
+    "spectral": {
+      "rows": 26,
+      "max_coordinate_difference_px_s": 2.9103830456733704e-11,
+      "simultaneous_supported_pairs": 2,
+      "all_five_joint_blocks_pairs": 2
+    },
+    "phase_local": {
+      "region_rows": 104,
+      "pair_rows": 52,
+      "finite_by_erosion_radius": {
+        "1": 23,
+        "3": 20
+      },
+      "optical_pairs_by_erosion_radius": {
+        "1": 8,
+        "3": 7
+      },
+      "max_fps_conversion_difference_px_s": 2.9103830456733704e-11,
+      "all_acceptance_rules_recomputed": true,
+      "independently_confirmed_material_pairs": 0
+    }
+  },
+  "sources_sha256": {
+    "scripts/phase_local_experiment.py": "3fab7f1eefff31e0a21416529e00d002b159092ba2877b6b9aa3b5c4044d6580",
+    "scripts/block_ncc.py": "8896efead61f34795130328c73dd40f98f55b078a6d5a0e0959a80564ec19534",
+    "scripts/spectral_transport.py": "929d2d503aa2d8b5ccd2c43624e20bcb7c2ef14b48d89be2626d18d57a28ff35",
+    "results/block_ncc_details.csv": "d9b67eabba6216c1f0a0e957ea2a9c04293ed78342df49c42d6e0a81935f48e2",
+    "results/block_ncc_per_run.csv": "f203af9e8ea8260037885e945813e26cf04c130f36b935999ffe7b022d55ae50",
+    "results/spectral_blocks.csv": "f613e04562a4a631e20d6c25a5b66b1d105f16a42f696270352ea822e2dcc9fb",
+    "results/spectral_pairs.csv": "7aad7f893ee9bf0c543f95b4e7d2e2ddc1beb3ebe9ec57b436a585d66eefd07a",
+    "results/phase_local_summary.csv": "86638d165dedac80a727a13424a0a47d37253fba9d99acede029d5ef886dfca4",
+    "results/phase_local_lags.csv": "70e03d3453eb2d29ff3192a80b069bd8336448a10be561bea959c1ddab81ba43",
+    "results/phase_local_blocks.csv": "453851d86fbbf3b01ce5f24cd009c3683ff1e879bacd38c11316330d3e9d345a",
+    "results/phase_local_nulls.csv": "960af7cc26d0f9444b4067045b03d8241b5abd95bc84f787da01eb925e3a5f58",
+    "results/phase_local_pairs.csv": "e0fcd2bca58d94dab98a1e6546a4fa1dd9b9c4d89a72585ebb4faa06fe957b16"
+  },
+  "script_sha256": "26735014ffcf50024de572b36d090e6b6dc29ff4b96b802e29a441e02bf678d5"
+}

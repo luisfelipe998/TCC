@@ -1,0 +1,117 @@
+{
+  "n_acquisition_runs": 26,
+  "n_pure_existing_saturation_rule": 25,
+  "exact_v11_3_flip_reproductions": 26,
+  "fps_counts": {
+    "4000": 2,
+    "5000": 6,
+    "7000": 18
+  },
+  "elapsed_range_s": [
+    0.07142857142857142,
+    0.125
+  ],
+  "probe_columns": [
+    254,
+    381,
+    508,
+    635,
+    762
+  ],
+  "group_comparisons": [
+    {
+      "metric": "spatial_flip_rate",
+      "n_churn": 10,
+      "n_annular": 8,
+      "churn_median": 0.029994544809208407,
+      "annular_median": 0.0176813755177809,
+      "auc_churn_greater": 0.8625,
+      "mwu_two_sided_p": 0.011331975645198052,
+      "mwu_method": "asymptotic",
+      "mwu_use_continuity": true
+    },
+    {
+      "metric": "raw_x508_flip_rate",
+      "n_churn": 10,
+      "n_annular": 8,
+      "churn_median": 0.170975,
+      "annular_median": 0.14934999999999998,
+      "auc_churn_greater": 0.6875,
+      "mwu_two_sided_p": 0.19762109031884834,
+      "mwu_method": "asymptotic",
+      "mwu_use_continuity": true
+    },
+    {
+      "metric": "raw_x508_flip_hz_per_pixel",
+      "n_churn": 10,
+      "n_annular": 8,
+      "churn_median": 1196.8249999999998,
+      "annular_median": 910.05,
+      "auc_churn_greater": 0.6875,
+      "mwu_two_sided_p": 0.19762109031884834,
+      "mwu_method": "asymptotic",
+      "mwu_use_continuity": true
+    },
+    {
+      "metric": "raw_5probe_flip_rate",
+      "n_churn": 10,
+      "n_annular": 8,
+      "churn_median": 0.175255,
+      "annular_median": 0.155065,
+      "auc_churn_greater": 0.6375,
+      "mwu_two_sided_p": 0.35084605198662877,
+      "mwu_method": "asymptotic",
+      "mwu_use_continuity": true
+    },
+    {
+      "metric": "raw_5probe_flip_hz_per_pixel",
+      "n_churn": 10,
+      "n_annular": 8,
+      "churn_median": 1226.785,
+      "annular_median": 939.155,
+      "auc_churn_greater": 0.6375,
+      "mwu_two_sided_p": 0.35084605198662877,
+      "mwu_method": "asymptotic",
+      "mwu_use_continuity": true
+    },
+    {
+      "metric": "raw_spatial_median3_flip_rate",
+      "n_churn": 10,
+      "n_annular": 8,
+      "churn_median": 0.172775,
+      "annular_median": 0.153255,
+      "auc_churn_greater": 0.6375,
+      "mwu_two_sided_p": 0.35084605198662877,
+      "mwu_method": "asymptotic",
+      "mwu_use_continuity": true
+    },
+    {
+      "metric": "raw_rate_over_shuffle",
+      "n_churn": 10,
+      "n_annular": 8,
+      "churn_median": 0.6655830672801926,
+      "annular_median": 0.7093944144332998,
+      "auc_churn_greater": 0.2875,
+      "mwu_two_sided_p": 0.1426309957897874,
+      "mwu_method": "asymptotic",
+      "mwu_use_continuity": true
+    }
+  ],
+  "sensitivity_hz_direction_churn_gt_annular": 21,
+  "sensitivity_variants": 21,
+  "spatial_vs_raw_hz_spearman": {
+    "rho": 0.8869230769230768,
+    "p": 3.538707348743784e-09
+  },
+  "invariants_passed": [
+    "constant",
+    "alternating",
+    "complement",
+    "time_reversal",
+    "N_minus_1_denominator",
+    "pixel_specific_shuffle_null",
+    "native_filename_step",
+    "camera_config_frame_count",
+    "all_run_exact_v11_3_reproduction"
+  ]
+}

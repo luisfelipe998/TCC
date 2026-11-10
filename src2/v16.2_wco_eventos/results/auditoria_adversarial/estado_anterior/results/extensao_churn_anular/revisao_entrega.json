@@ -1,0 +1,33 @@
+{
+  "data_utc": "2026-10-25T04:58:22.157954+00:00",
+  "estado": "REVISADO",
+  "revisor": "Assistente de IA; sem revisor humano independente",
+  "escopo": "Apresentação das 14 figuras principais e do PDF integrado de 20 páginas; catálogo óptico de 19 aquisições documentado separadamente em revisao_visual.csv.",
+  "itens_conferidos": [
+    "Identificação de churn/anular e de cada sinal x/y",
+    "Coordenadas, limites exclusivos dos recortes e distinção entre posição e lag",
+    "Títulos, legendas, barras de cor, decimais e legibilidade",
+    "Contagens e sinais dos contrastes, comparadores e conjunto comum de 815 pares",
+    "Exemplos predefinidos separados de extremos posteriores",
+    "Limitações, ausência de validação física e histórico de plug/slug explícitos",
+    "Prévia renderizada das 20 páginas, capa e limitações examinadas individualmente; ajustes finais restritos a legendas das figuras"
+  ],
+  "limitacao": "Revisão de apresentação assistida por IA; não comprova identidade física, correção de rótulos locais ou generalização.",
+  "sha256": {
+    "RESUMO_EXECUTIVO.pdf": "27b992ef7f54d22d52b5eb3e55f2dc1ed50833302f47ac2f8609805958be7e0b",
+    "figures/extensao_churn_anular/ancoras_dos_padroes.png": "3a4a60fd122db573017d8c7bcebe05c51541419f47b82bf0a6e82d8338ed0f41",
+    "figures/extensao_churn_anular/capa_resumo.png": "56c0383fe7ccda29b01dcfe2cc7fe38dd7bc8ab049ed3216264d10f70b0f9190",
+    "figures/extensao_churn_anular/cobertura_estabilidade.png": "88f42bc2fb282d27e0a6c8d0782b1bc48c455e0483b76b1ddc49bdefccb0ac7a",
+    "figures/extensao_churn_anular/contrastes.png": "384f2f01248884b684c84c018a87b026142c67d185ff7132ccb5536988cf26d0",
+    "figures/extensao_churn_anular/controles_sinteticos.png": "89e2b05f66bc910bc37b1b443aaf07180370d1d97c4b3a690d1b31238bbe2b7f",
+    "figures/extensao_churn_anular/entre_padroes.png": "7747b6b81ed763f4f147b5109f6ec754dd036fab88a5a55db5eb47625f5a9117",
+    "figures/extensao_churn_anular/par_anular_maior_escore.png": "ecb394beffb8d35b99d996aeaf3d7ac01d7ecfadc513227aa0dfe2139da414c3",
+    "figures/extensao_churn_anular/par_anular_menor_escore.png": "0e0999eab0862fc42446c56f85de3cb2e9e3a57996aeb75c774b544ec8c29377",
+    "figures/extensao_churn_anular/par_anular_predeterminado.png": "c54ad4b20b3f9241ffdede81eb4a3f03de5dcfdaf33a1ac0e7415ba84aedf47d",
+    "figures/extensao_churn_anular/par_churn_maior_escore.png": "1799930ebf08831056f4620298a91b6780239f60133b3e27d8a91d9a86f32bdd",
+    "figures/extensao_churn_anular/par_churn_menor_escore.png": "029d984f901aa4a0777704abcf1bced69a06e38f2a9e821840808fee7dc2df5b",
+    "figures/extensao_churn_anular/par_churn_predeterminado.png": "1d538c0fe03b04e2afabca230546efcfe3a9ba73cbe64df56423efa62f50e669",
+    "figures/extensao_churn_anular/retirada_aquisicao.png": "94cec145ed60c238050db307706e9c06cc006156d4abfff4c0ef5d84da24de05",
+    "figures/extensao_churn_anular/sensibilidades.png": "f310dbc9c0513560612b69e72420d58bdc063b4a74357f8d02f50516b8733b2e"
+  }
+}

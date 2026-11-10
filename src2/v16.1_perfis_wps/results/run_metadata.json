@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-10-24T23:00:45.125995+00:00",
+  "elapsed_seconds": 105.4725861659972,
+  "acquisitions": 26,
+  "pairs_per_method": 325,
+  "methods": 21,
+  "unique_pair_prefixes": 350,
+  "protocol_sha256": "f014ec938833ccfe86eaa6f7492caf934b29d2cde50d379d01f1831f41f02b88",
+  "configuration_sha256": "4ece21384e583cff5f627f888b6b94fcbb61ad1a5955b0659baaf0c17862b9f6",
+  "max_reused_zero_error": 8.881784197001252e-16,
+  "max_reused_mean_error": 4.440892098500626e-16,
+  "H_vs_log_length_ratio_spearman_descriptive": 0.49984688794504745,
+  "method_specs": {
+    "wps_principal": {
+      "profile": "principal",
+      "domain": "principal",
+      "metric": "hellinger",
+      "label": "WPS, registro inteiro"
+    },
+    "wps_cosseno": {
+      "profile": "principal",
+      "domain": "principal",
+      "metric": "cosine",
+      "label": "WPS, distância cosseno"
+    },
+    "wps_integral": {
+      "profile": "principal",
+      "domain": "integral",
+      "metric": "hellinger",
+      "label": "WPS, faixa integral"
+    },
+    "wps_conservador": {
+      "profile": "principal",
+      "domain": "conservador",
+      "metric": "hellinger",
+      "label": "WPS, faixa conservadora"
+    },
+    "media_lags_todos": {
+      "profile": "media_lags_todos",
+      "domain": "principal",
+      "metric": "hellinger",
+      "label": "Média em todos os lags"
+    },
+    "media_lags_coi": {
+      "profile": "media_lags_coi",
+      "domain": "principal",
+      "metric": "hellinger",
+      "label": "Média em lags sob COI"
+    },
+    "media_lags_conservador": {
+      "profile": "media_lags_conservador",
+      "domain": "conservador",
+      "metric": "hellinger",
+      "label": "Média sob suporte conservador"
+    },
+    "faixa30_49": {
+      "profile": "faixa30_49",
+      "domain": "principal",
+      "metric": "hellinger",
+      "label": "WPS, linhas 30–49"
+    },
+    "faixa20_59": {
+      "profile": "faixa20_59",
+      "domain": "principal",
+      "metric": "hellinger",
+      "label": "WPS, linhas 20–59"
+    },
+    "somente_media": {
+      "profile": "somente_media",
+      "domain": "principal",
+      "metric": "hellinger",
+      "label": "WPS, somente remoção da média"
+    },
+    "v5_nominal": {
+      "profile": "v5_nominal",
+      "domain": "principal",
+      "metric": "hellinger",
+      "label": "Perfil v5, eixo nominal"
+    },
+    "v5_mesmas_escalas": {
+      "profile": "v5_mesmas_escalas",
+      "domain": "principal",
+      "metric": "hellinger",
+      "label": "Perfil v5, mesmas escalas a"
+    },
+    "inicio3171": {
+      "profile": "inicio3171",
+      "domain": "principal",
+      "metric": "hellinger",
+      "label": "Segmento inicial, 3.171 px"
+    },
+    "centro3171": {
+      "profile": "centro3171",
+      "domain": "principal",
+      "metric": "hellinger",
+      "label": "Segmento central, 3.171 px"
+    },
+    "fim3171": {
+      "profile": "fim3171",
+      "domain": "principal",
+      "metric": "hellinger",
+      "label": "Segmento final, 3.171 px"
+    }
+  },
+  "inference": "Sem valor-p; pares dependentes, retirada de aquisições é análise de influência."
+}

@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "selected_recordings": 26,
+  "excluded_recordings": 5,
+  "pair_rows_reaggregated": 13000,
+  "primary_comparisons": 4,
+  "config": "consensus_reference_guard",
+  "motion_gate": "lag2_confirmed",
+  "velocity_units": "px/s",
+  "conditional_scale_m_px": 1.8867924528301888e-05,
+  "averaging": "signed arithmetic mean of accepted adjacent comparisons, separately per appearance; absolute value only for plotting",
+  "source_mode": "Reaggregated previous native-frame image evidence; segmentation/tracking was not refitted.",
+  "inputs": {
+    "v15_gas_liquid_velocity/results/scenario_inventory.csv": "cd4c14c22d926fa3896fbcd3243845dba49de361a2354fd0df87860e915d2abc",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/results/passage_pairs.csv": "245fc03a52242602f5d862828307f4b58298c7837425392adf1af6861bd82c79",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/results/passage_ratios.csv": "49cb3c1501495616294fa67827b1585580f7f8bc70c411571b887f502cba01c0",
+    "v15_gas_liquid_velocity/phase_conditioned_motion/results/closed_contour_bubble_summary.csv": "d4c780a6b10a016fa9725ff3ac1676afc6fa9c690aed4e9d48e29604a93fc3ee",
+    "v15_gas_liquid_velocity/frame_motion_evaluation/results/temporal_per_run.csv": "9d47436f8c868fd563bde3a0501826fa6d7f4324f8d180d2d4dff8db894ff058"
+  },
+  "script_sha256": "1f15d2765f8f2580441178e45a88af48f20f8385d927b009b05c629978ade9e4",
+  "limitations": [
+    "Phase appearance is inferred, not independently verified.",
+    "Motion template is wider than appearance probe.",
+    "Four selected pairs do not describe all five flow patterns.",
+    "Record duration is 71\u2013125 ms; overlapping comparisons are not independent repeats."
+  ]
+}

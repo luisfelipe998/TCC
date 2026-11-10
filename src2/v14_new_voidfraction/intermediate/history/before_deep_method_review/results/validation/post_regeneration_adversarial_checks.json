@@ -1,0 +1,239 @@
+{
+  "passed": true,
+  "started_utc": "2026-10-23T19:55:48.899761+00:00",
+  "finished_utc": "2026-10-23T19:55:50.733955+00:00",
+  "script_sha256": "c204d1303432d631ebf20f36270d47e3caf1dc209ea358081037c4e9a6bd9970",
+  "independent_selection_uses_original_markers_not_shared_helper": true,
+  "selected_acquisitions": 26,
+  "statistical_acquisitions": 25,
+  "supplied_pattern_counts_selected": {
+    "churn": 10,
+    "wavy annular": 9,
+    "slug": 3,
+    "plug": 3,
+    "dispersed bubbles": 1
+  },
+  "selected_runs": [
+    "m03q05_001",
+    "m03q10_001",
+    "m03q20_001",
+    "m03q40_001",
+    "m04q01_001",
+    "m04q10_001",
+    "m04q20_001",
+    "m04q40_001",
+    "m04q80_001",
+    "m05q01_001",
+    "m05q05_001",
+    "m05q10_001",
+    "m05q20_001",
+    "m05q40_001",
+    "m05q80_001",
+    "m06q01_001",
+    "m06q05_001",
+    "m06q10_001",
+    "m06q20_001",
+    "m06q40_001",
+    "m06q80_001",
+    "m07q01_001",
+    "m07q05_001",
+    "m07q20_001",
+    "m07q40_001",
+    "m07q80_001"
+  ],
+  "excluded_runs": {
+    "m03q01_001": "plug-slug",
+    "m03q80_001": "smooth annular",
+    "m04q05_001": "slug-churn",
+    "m05q05_002": "dispersed bubbles",
+    "m07q10_001": "slug-churn"
+  },
+  "checks": [
+    {
+      "check": "scope_and_all_active_csvs",
+      "passed": true,
+      "details": {
+        "active_csv_files_checked": 24,
+        "active_csv_rows_checked": 3373,
+        "checked_files": [
+          "results/flip_rate/flip_rate_by_pattern.csv",
+          "results/flip_rate/flip_rate_per_run.csv",
+          "results/flip_rate/phase_mask_flip_by_pattern.csv",
+          "results/flip_rate/phase_mask_flip_per_run.csv",
+          "results/patterns/pattern_identification_predictions.csv",
+          "results/patterns/pattern_identification_scores.csv",
+          "results/patterns/silhouette_pattern_predictions.csv",
+          "results/patterns/silhouette_pattern_scores.csv",
+          "results/validation/data_inventory.csv",
+          "results/validation/panorama_liquid_holdout_checks.csv",
+          "results/void_fraction/panorama_void_by_pattern.csv",
+          "results/void_fraction/panorama_void_per_run.csv",
+          "results/void_fraction/void_fraction_flip_plot_data.csv",
+          "intermediate/features/pattern_morphology_features.csv",
+          "intermediate/features/silhouette_pattern_features.csv",
+          "intermediate/features/silhouette_pattern_fold_references.csv",
+          "intermediate/sensitivity/flip_rate_group_sensitivity.csv",
+          "intermediate/sensitivity/flip_rate_sensitivity.csv",
+          "intermediate/sensitivity/flip_rate_spatial_group_sensitivity.csv",
+          "intermediate/sensitivity/flip_rate_spatial_sensitivity.csv",
+          "intermediate/sensitivity/panorama_void_sensitivity.csv",
+          "intermediate/sensitivity/phase_mask_flip_group_sensitivity.csv",
+          "intermediate/sensitivity/phase_mask_flip_sensitivity.csv",
+          "intermediate/exploratory/image_void_alternatives.csv"
+        ],
+        "selected_acquisitions": 26,
+        "statistical_acquisitions": 25,
+        "excluded_acquisitions": {
+          "m03q01_001": "plug-slug",
+          "m03q80_001": "smooth annular",
+          "m04q05_001": "slug-churn",
+          "m05q05_002": "dispersed bubbles",
+          "m07q10_001": "slug-churn"
+        }
+      }
+    },
+    {
+      "check": "independent_mask_arithmetic_and_input_hashes",
+      "passed": true,
+      "details": {
+        "input_panorama_hashes_verified": 26,
+        "masks_byte_identical_to_archive": 26,
+        "independent_area_means_verified": 26,
+        "max_area_error": 0.0,
+        "pixel_and_center_flip_counts_verified": 26,
+        "saturation_excluded_selected_runs": [
+          "m03q40_001"
+        ]
+      }
+    },
+    {
+      "check": "retained_measurements_against_archive",
+      "passed": true,
+      "details": {
+        "tables_compared": [
+          {
+            "artifact": "results/void_fraction/panorama_void_per_run.csv",
+            "common_cells_compared": 546,
+            "retained_runs": 26
+          },
+          {
+            "artifact": "results/flip_rate/phase_mask_flip_per_run.csv",
+            "common_cells_compared": 442,
+            "retained_runs": 26
+          },
+          {
+            "artifact": "results/flip_rate/flip_rate_per_run.csv",
+            "common_cells_compared": 936,
+            "retained_runs": 26
+          },
+          {
+            "artifact": "results/validation/data_inventory.csv",
+            "common_cells_compared": 312,
+            "retained_runs": 26
+          },
+          {
+            "artifact": "intermediate/exploratory/image_void_alternatives.csv",
+            "common_cells_compared": 858,
+            "retained_runs": 26
+          },
+          {
+            "artifact": "intermediate/features/pattern_morphology_features.csv",
+            "common_cells_compared": 416,
+            "retained_runs": 26
+          }
+        ],
+        "scope_and_classification_recalculations_are_intentional": true
+      }
+    },
+    {
+      "check": "calibration_and_computational_metadata_scope",
+      "passed": true,
+      "details": {
+        "computational_json_inputs_checked": [
+          "panorama_liquid_reference.json",
+          "image_void_alternatives_metadata.json",
+          "phase_mask_flip_metadata.json",
+          "flip_rate_audit.json",
+          "legacy_independent_audit.json",
+          "pattern_identification.json",
+          "silhouette_pattern_results.json",
+          "adversarial_checks.json",
+          "final_verification.json",
+          "summary_chart_checks.json"
+        ],
+        "scope_bookkeeping_subtrees_exempt_from_input_scan": [
+          "dataset_scope",
+          "excluded_acquisitions",
+          "excluded_runs",
+          "explicitly_excluded_acquisitions",
+          "policy",
+          "scope"
+        ],
+        "segmentation_source_sha256": "072ffca53f5f7393548a40a9f90948cf24d9f92d7d477ccc930723d308e4682b",
+        "all_four_source_hashes_current": true
+      }
+    },
+    {
+      "check": "groups_charts_scaling_and_provenance",
+      "passed": true,
+      "details": {
+        "group_counts_independently_recomputed": {
+          "churn": 10,
+          "slug": 3,
+          "wavy annular": 8,
+          "plug": 3,
+          "dispersed bubbles": 1
+        },
+        "chart_coordinate_pairs_verified": 26,
+        "flip_scaling_factor": 1000,
+        "chart_source_hashes_current": true,
+        "svg_scope_and_hull_scope_verified": true
+      }
+    },
+    {
+      "check": "heldout_classifier_tests_and_missing_classes",
+      "passed": true,
+      "details": {
+        "model_variant_matrices_rebuilt": 48,
+        "heldout_predictions_checked": 1200,
+        "heldout_reference_folds_checked": 50,
+        "all_statistical_tests_retained_per_model": 25,
+        "singleton_bubble_runs": [
+          "m07q01_001"
+        ],
+        "absent_class_centroid_control_passed": true,
+        "independently_detected_absent_training_class_folds": {
+          "pattern_identification.json": {
+            "leave_one_run_out": 1,
+            "leave_one_mass_flux_out": 5,
+            "leave_one_run_out_consistent_variant": 1
+          },
+          "silhouette_pattern_results.json": {
+            "leave_one_run_out": 1,
+            "leave_one_mass_flux_out": 5
+          }
+        }
+      }
+    },
+    {
+      "check": "written_executive_summary",
+      "passed": true,
+      "details": {
+        "summary_table_groups_checked": [
+          "dispersed bubbles",
+          "plug",
+          "slug",
+          "churn",
+          "wavy annular"
+        ],
+        "summary_table_rounding_checked": true,
+        "summary_flip_scaling_checked": 1000,
+        "embedded_figures_checked": 3,
+        "executive_summary_sha256": "8947e4ef00adea633ecea310397510eda4b460284f8ffd7a7acb61e30ed39634",
+        "limitations_and_singleton_support_disclosed": true
+      }
+    }
+  ],
+  "failures": [],
+  "scope": "Post-regeneration arithmetic, dataset selection, leakage, chart and written-findings audit; not independent physical void calibration."
+}

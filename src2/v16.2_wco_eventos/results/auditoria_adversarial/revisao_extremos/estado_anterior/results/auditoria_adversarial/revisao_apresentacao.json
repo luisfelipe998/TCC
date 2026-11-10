@@ -1,0 +1,37 @@
+{
+  "data_utc": "2026-10-25T05:33:18.839582+00:00",
+  "estado": "REVISADO",
+  "revisor": "Assistente de IA; sem revisor humano independente",
+  "escopo": "PDF integrado de 25 páginas; três figuras novas da auditoria e figura de correspondência local revisadas. As outras 13 figuras da extensão mantêm a revisão anterior, sem alteração de seus conteúdos.",
+  "itens_conferidos": [
+    "Contato renderizado com as 25 páginas; páginas 1, 3 e 5 também examinadas individualmente",
+    "Títulos, legendas, limites dos painéis, textos sem corte e identificação dos padrões",
+    "Correspondência local diferenciada da seleção completa: 66/76, 68/76 e 55/76",
+    "Distribuição entre sementes explicitamente sem intervalo de confiança; slug identificado com um único par equivalente",
+    "Controle AR(1) completo identificado como diagnóstico posterior, sem valor-p ou calibração experimental",
+    "Contagens, denominadores de aquisições e pares, limitações da montagem e fase legada explícitos",
+    "Etapa 1 identificada como apêndice histórico; resultados e protocolos congelados preservados"
+  ],
+  "limitacao": "Revisão de apresentação assistida por IA; não valida identidade física, rótulos locais ou generalização. A revisão visual não substitui as verificações numéricas.",
+  "revisao_anterior": "results/auditoria_adversarial/estado_anterior/results/extensao_churn_anular/revisao_entrega.json",
+  "sha256": {
+    "RESUMO_EXECUTIVO.pdf": "16e59e968ff8937180dbd71adfe32d1a6824a9506e4663c662b60393c9f6cec3",
+    "figures/extensao_churn_anular/ancoras_dos_padroes.png": "3a4a60fd122db573017d8c7bcebe05c51541419f47b82bf0a6e82d8338ed0f41",
+    "figures/extensao_churn_anular/capa_resumo.png": "a1ba8167f4a17e74663873394a6a26768d196f4a3f5171ae10e977267cfb4aa2",
+    "figures/extensao_churn_anular/cobertura_estabilidade.png": "56a7beda3f6423dafd7d094f0d783e87ae9322fdd594eb62a1f2ca8860ac3933",
+    "figures/extensao_churn_anular/contrastes.png": "384f2f01248884b684c84c018a87b026142c67d185ff7132ccb5536988cf26d0",
+    "figures/extensao_churn_anular/controles_sinteticos.png": "89e2b05f66bc910bc37b1b443aaf07180370d1d97c4b3a690d1b31238bbe2b7f",
+    "figures/extensao_churn_anular/entre_padroes.png": "7747b6b81ed763f4f147b5109f6ec754dd036fab88a5a55db5eb47625f5a9117",
+    "figures/extensao_churn_anular/par_anular_maior_escore.png": "ecb394beffb8d35b99d996aeaf3d7ac01d7ecfadc513227aa0dfe2139da414c3",
+    "figures/extensao_churn_anular/par_anular_menor_escore.png": "0e0999eab0862fc42446c56f85de3cb2e9e3a57996aeb75c774b544ec8c29377",
+    "figures/extensao_churn_anular/par_anular_predeterminado.png": "c54ad4b20b3f9241ffdede81eb4a3f03de5dcfdaf33a1ac0e7415ba84aedf47d",
+    "figures/extensao_churn_anular/par_churn_maior_escore.png": "1799930ebf08831056f4620298a91b6780239f60133b3e27d8a91d9a86f32bdd",
+    "figures/extensao_churn_anular/par_churn_menor_escore.png": "029d984f901aa4a0777704abcf1bced69a06e38f2a9e821840808fee7dc2df5b",
+    "figures/extensao_churn_anular/par_churn_predeterminado.png": "1d538c0fe03b04e2afabca230546efcfe3a9ba73cbe64df56423efa62f50e669",
+    "figures/extensao_churn_anular/retirada_aquisicao.png": "94cec145ed60c238050db307706e9c06cc006156d4abfff4c0ef5d84da24de05",
+    "figures/extensao_churn_anular/sensibilidades.png": "f310dbc9c0513560612b69e72420d58bdc063b4a74357f8d02f50516b8733b2e",
+    "figures/auditoria_adversarial/nulo_selecao.png": "a7fe7cff335a251de9c7156e8c9ba6abfefb654f9d54b5b5783511c682ce0f88",
+    "figures/auditoria_adversarial/repetibilidade_selecao.png": "76666bcd8bef8ad293e910d2e69a526a76843da4eb1cf4b8cc309d7a583e432d",
+    "figures/auditoria_adversarial/sensibilidade_parceiros.png": "e80eb714a4c2bf393635ea0c175e50a5b42452725ff83dc9f39d80b15f426f2e"
+  }
+}
