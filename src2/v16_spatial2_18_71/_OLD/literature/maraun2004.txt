@@ -1,0 +1,691 @@
+Nonlinear Processes in Geophysics (2004) 11: 505–514
+SRef-ID: 1607-7946/npg/2004-11-505                                                              Nonlinear Processes
+                                                                                                in Geophysics
+                                                                                                © European Geosciences Union 2004
+
+
+
+
+Cross wavelet analysis: significance testing and pitfalls
+D. Maraun and J. Kurths
+Department of Physics, Potsdam University, D-14415 Potsdam, Germany
+Received: 13 August 2004 – Revised: 5 November 2004 – Accepted: 8 November 2004 – Published: 11 November 2004
+
+Part of Special Issue “Nonlinear analysis of multivariate geoscientific data – advanced methods, theory and application”
+
+
+Abstract. In this paper, we present a detailed evaluation of      to the scales. Thus optimal time resolution for every scale is
+cross wavelet analysis of bivariate time series. We develop       given. Another advantage of wavelet analysis is the flexible
+a statistical test for zero wavelet coherency based on Monte      choice of the mother wavelet according to the characteristics
+Carlo simulations. If at least one of the two processes con-      of the investigated time series (in the following, we always
+sidered is Gaussian white noise, an approximative formula         omit the term “continuous”). For an introduction to discrete
+for the critical value can be utilized. In a second part, typi-   wavelet transformation and its applications see Kaiser (1994)
+cal pitfalls of wavelet cross spectra and wavelet coherency       and Percival and Walden (2000).
+are discussed. The wavelet cross spectrum appears to be              During the last decade, wavelet analysis has been success-
+not suitable for significance testing the interrelation between   fully applied in climate science, e.g. to El Niño/Southern Os-
+two processes. Instead, one should rather apply wavelet co-       cillation (ENSO) data (Gu and Philander, 1995; Kestin et al.,
+herency. Furthermore we investigate problems due to multi-        1998; Torrence and Webster, 1998), NAO proxy data (Ap-
+ple testing. Based on these results, we show that coherency       penzeller et al., 1998) or output of globally coupled ocean at-
+between ENSO and NAO is an artefact for most of the time          mosphere models (Timmermann et al., 1999). A good intro-
+from 1900 to 1995. However, during a distinct period from         duction to the basic theory and application of wavelet anal-
+around 1920 to 1940, significant coherency between the two        ysis is given by Torrence and Compo (1998). The most im-
+phenomena occurs.                                                 portant contribution of the latter paper is developing detailed
+                                                                  significance tests for the wavelet power spectrum to address
+                                                                  the critics, that wavelet analysis is rather producing colorful
+                                                                  images than reliable results.
+1 Introduction
+                                                                     An important field in time series analysis, especially in
+Time series analysis is a fundamental issue in climatology        climate sciences, is multivariate analysis. When compar-
+as in many other fields of empirical research (von Storch         ing two different variables like temperature or pressure, or
+and Zwiers, 1999; Ghil et al., 2002). Considering climate         when analyzing teleconnections, one needs the bivariate ex-
+records one almost always faces a composition of numerous         tension of wavelet analysis. This cross wavelet analysis,
+scales ranging from days to decades or even longer periods.       which was introduced by Hudgins et al. (1993) and oth-
+The classical method to investigate such data by frequency        ers, is briefly discussed by Torrence and Compo (1998). It
+decomposition is Fourier analysis (Priestley, 1992; Brock-        has already been applied to various problems in climatol-
+well and Davis, 1987). On the considered time scales cli-         ogy like the ENSO-Monsoon system (Torrence and Webster,
+mate processes are often non-stationary and time resolved         1999), ENSO-North Atlantic Oscillation (NAO) teleconnec-
+methods become necessary. The straightforward time re-            tions (Huang et al., 1998), a rainfall-runoff cross analysis
+solved extension of Fourier analysis is a windowed or slid-       (Labat et al., 2000) or the influence of NAO on European
+ing Fourier Transformation (Kaiser, 1994). A disadvantage         surface temperatures (Pozo-Vazquez et al., 2001).
+of this method is, that the window width and thus the time           However, important questions concerning this technique
+resolution is constant for all investigated frequencies. Here,    remain open. We try to contribute to this discussion by in-
+continuous wavelet analysis (Daubechies, 1992) has proven         vestigating the wavelet cross spectrum (WCS) and the nor-
+to be superior: The time resolution is intrinsically adjusted     malized wavelet coherency (WCO). For WCO, we develop a
+                                                                  statistical test for zero coherency. Since test statistics cannot
+Correspondence to: D. Maraun                                      easily be calculated analytically, we apply Monte Carlo sim-
+(maraun@agnld.uni-potsdam.de)                                     ulations. For the case that at least one of the processes can be
+506                                                                               D. Maraun and J. Kurths: Cross wavelet analysis
+
+              0.8                                                   to the investigated scale s: Thus the time series can be de-
+                                                                    composed scale- and time-dependent:
+              0.6
+
+              0.4
+                                                                                N−1
+                                                                                X
+                                                                    Wi (s) =           xj 9((j − i)1t, s).                      (1)
+              0.2                                                               j =0
+
+
+ Amplitude
+               0
+                                                                    If one considers arbitrary scales between the sampling inter-
+             −0.2                                                   val and the length of the time series, one speaks of continuous
+                                                                    wavelet transformation (CWT). In this case, the wavelets do
+             −0.4
+                                                                    not span an orthogonal set of basis functions. Hence neigh-
+             −0.6                                                   boring scales and times contain redundant information and
+                                                                    are correlated.
+             −0.8
+                    −3     −2   −1      0         1   2    3           The wavelet 9(tj −ti , s) is a stretched and translated ver-
+                                      Time                          sion of a chosen mother wavelet, normalized with a factor
+                                                                    c(s) (see Sect. 3):
+Fig. 1. Real (solid line) and imaginary (dashed line) part of the
+Morlet wavelet with ω0 =6.                                                                                    
+                                                                                                     tj − ti
+                                                                    9(tj − ti , s) = c(s)90                        .            (2)
+                                                                                                        s
+
+modeled by Gaussian white noise, we present an approxima-           2.2   Morlet wavelet
+tive formula to easily calculate the critical value for signifi-
+cance on the 95% level. A second focus of the paper are typi-       In the following, we always consider the Morlet mother
+cal pitfalls of cross wavelet analysis. We show, that not every     wavelet (see Fig. 1)
+structure in a wavelet plot has got a physical meaning but
+might be an artefact of WCS or multiple testing. To illustrate                                   2
+                                                                    90 (θ) = π −1/4 eiω0 θ e−θ /2 ,                             (3)
+our discussion, we show that the coherency between ENSO
+and NAO for most of the moderate and strong El Niños be-           where θ and ω0 are unit-less. The Gaussian envelope
+tween 1900 and 1995 as suggested by Huang et al. (1998) is          exp(−θ 2 /2) localizes the wavelet in time. The time/scale
+an artefact of WCS. However, during a distinct period from          resolution is adjusted by ω0 . For high values of ω0 , the scale
+around 1920 to 1940 significant coherency between the two           resolution increases, whereas time resolution decreases and
+phenomena occurs and invites to further investigation.              vice versa. Fourier frequency f and wavelet scale s are not
+   The paper is organized as follows: In Sect. 2 we intro-          direct reciprocals of each other. Instead, one has to rescale
+duce the most important measures for wavelet analysis. The          the result of wavelet analysis with a factor depending on the
+problem of normalizing wavelet spectra is briefly explained         mother wavelet (Meyers et al., 1993; Torrence and Compo,
+in Sect. 3. In Sect. 4, we interpret wavelet analysis as an in-     1998). For the Morlet wavelet, the conversion reads
+verse problem of parameter estimation and discuss the con-
+sequences arising. Sect. 5 provides a numerical significance        1      4πs
+                                                                      =    q       .                                            (4)
+test for time- and scale-dependent coherency. Important pit-        f   ω + 2 + ω2
+                                                                            0               0
+falls related to cross wavelet analysis are studied in Sect. 6.
+We review the cross wavelet analysis of ENSO and NAO in
+                                                                    For ω0 =6, s·f is approximately one. For other mother
+Sect. 7.
+                                                                    wavelets refer to Kaiser (1994) and Torrence and Compo
+                                                                    (1998).
+
+2            Definitions                                            2.3   Wavelet power spectrum
+
+                                                                    Transferring a concept of Fourier analysis, a wavelet power
+2.1           Continuous wavelet transformation                     spectrum (WPS) can be defined as the wavelet transforma-
+                                                                    tion of the autocorrelation function. Following the Wiener-
+The wavelet transformation Wi (s) at time ti =i1t on a scale        Khinchin theorem, this can be implemented as follows:
+s of a discrete time series xj =x(tj ) of length N with a
+sampling interval 1t can be interpreted asP  an extension of        WPSi (s) = hWi (s)Wi (s)∗ i.                                (5)
+the discrete Fourier transformation F (ω)= j xj exp(iωtj )
+(Kaiser, 1994). The latter one extracts contributions on fre-       The brackets denote expectation values. WPSi (s) describes
+quency ω. Wavelet transformation replaces the periodic ex-          the power of the signal x(t) at a certain time ti on a scale s.
+ponential exp(iωtj ) with a localized wavelet 9(tj −ti , s),        The relevance of considering expectation values and how to
+which is located around the time ti and stretched according         estimate them is discussed in Sect. 4.
+D. Maraun and J. Kurths: Cross wavelet analysis                                                                                  507
+
+2.4   Cross wavelet analysis                                               4
+
+
+As in Fourier analysis, the univariate WPS can be extended
+to compare two time series x(ti ) and y(ti ): One can define               3
+the wavelet cross spectrum WCSi (s) as the expectation value
+                                                  y
+of the product of the corresponding Wix (s) and Wi (s):
+                       y
+WCSi (s) = hWix (s)Wi (s)∗ i.                              (6)    Power    2
+
+
+In Sect. 6 we show, that WCS-peaks can even appear when
+x(ti ) and y(ti ) are independent, because WCS is not normal-              1
+ized. In contrast to the WPS, the WCS is complex valued
+(analogous to Fourier cross spectra) and can be decomposed
+into amplitude |WCSi (s)| and phase 8i (s):
+                                                                                  1              2                4                 8
+WCSi (s) = |WCSi (s)| ei8i (s) .                           (7)                                       Scale
+
+The phase 8i (s) describes the delay between the two signals      Fig. 2. Wavelet power spectrum of Gaussian white noise and two
+at time ti on a scale s.                                          sines of frequency 1/2 and 1/4 and equal amplitude. Solid line: Nor-
+   A normalized time and scale resolved measure for the           malization according to Torrence and Compo (1998) does not pre-
+relationship between two time series x(ti ) and y(ti ) is the     serve the integrated power, but a flat white noise spectrum. Dashed
+                                                                  line: Normalization according to Kaiser (1994) preserves the inte-
+wavelet coherency (WCO), which is defined as the amplitude
+                                                                  grated power, but the white noise spectrum is ∼1/scale.
+of the WCS normalized to the two single WPS:
+                    |WCSi (s)|
+WCOi (s) =                     1/2 .                      (8)
+                          y
+              WPSxi (s)WPSi (s)                                           Using the normalization of Kaiser with p = 0,
+
+A value of 1 means a linear relationship between x(ti ) and       c(s) = 1t 1/2 ,                                                (10)
+y(ti ) around time ti on a scale s. A value of zero is obtained
+for vanishing correlation. Because of the normalization, spu-     sines of equal amplitude also exhibit equal integrated power
+rious peaks can occur for areas of low wavelet power. Note        (when scale is plotted logarithmically). On the other hand,
+the importance of estimating the expectation values of the        the white noise spectrum is no longer flat but decreases pro-
+single terms in Eq. (8): If they are not considered separately,   portional to 1/scale. Figure 2 illustrates this dilemma of dif-
+nominator and denominator equal each other and the result         ferent normalizations for time series of Gaussian white noise
+will be identical to 1 no matter what the real WCO is. Thus       and a sine function.
+computing WCO from observational data, one has to smooth             Fortunately, the normalization is only relevant for a first
+nominator and denominator separately (see also Sect. 4.2).        inspection by eye. A normalization following Eq. (9) em-
+                                                                  phasizes power on high scales and could lead to misinterpre-
+                                                                  tations. However, when performing a significance test, the
+3 Normalizations                                                  significance level already includes the chosen normalization.
+
+In Fourier analysis, any normalization automatically pro-
+vides the following two features:                                 4        Wavelet analysis of observational records
+  – The Gaussian white noise spectrum is (by definition)
+                                                                  4.1 The inverse problem
+    flat.
+  – Sines of the same amplitude have the same integrated          In time series analysis, one aims to reveal properties of an un-
+    power in the frequency domain.                                derlying process from a given observation. This is referred to
+                                                                  as an inverse problem (Honerkamp, 1998), having two conse-
+In wavelet analysis, we meet difficulties to obtain both. For     quences: First, since most processes in geosciences are mix-
+the factor c(s) in Eq. (1), Torrence and Compo (1998) and         ing (i.e. loosely spoken processes that lose the knowledge
+Kaiser (1994) suggest different normalizations, which only        about their actual state for t→∞, see e.g. Karlin and Tylor,
+preserve one of the mentioned features. Torrence suggests         1975) and additionally all measured time series are of finite
+         1/2
+          1t                                                      size, one will never be able to obtain the exact values of the
+c(s) =            ,                                       (9)     “true” properties. Instead one has to define a meaningful esti-
+           s
+                                                                  mator, which is a function of the observation and (if possible)
+which preserves a flat white noise spectrum, but sines of         would yield the exact desired property if the time series was
+equal amplitude exhibit different integrated power propor-        of infinite lengths. Secondly, in general it is not a priori clear
+tional to their oscillation scale. This choice equals Kaiser’s    if the inference of a process property from observational data
+normalization with p = 1/2 (Eq. 3.5 in Kaiser, 1994, p. 62).      is unambiguous (Moritz, 1993; Anger, 1993).
+508                                                                             D. Maraun and J. Kurths: Cross wavelet analysis
+
+4.2   Estimator for wavelet power                                  5    Significance testing of wavelet coherency
+
+The observed WPS of a measured time series is an estimator         The wavelet transform of the realization of a mixing process
+for the “true” WPS of the underlying process. A comparison         is a random number. Thus, even for independent processes,
+with Fourier analysis illustrates the involved consequences:       nonzero values of the coherency will result and the question
+                                                                   arises, when a value has to be considered as being different
+   For the Fourier spectrum, the first guess estimator is
+                                                                   from zero. The idea is to formulate a null hypothesis H0 “the
+the periodogram, which is the squared absolute value of
+                                                                   processes are not coherent” and to derive a significance test
+the Fourier transformation of a given time series (Priestley,
+                                                                   for H0 . Therefore, one has to estimate the probability dis-
+1992; Brockwell and Davis, 1987). If this time series is a re-
+                                                                   tribution of the coherency under H0 . If the coherency lays
+alization of a mixing process, every value of the periodogram
+                                                                   outside a chosen α-quantile, the so-called critical value of
+is χ 2 distributed with two degrees of freedom. The variance
+                                                                   this distribution, one rejects H0 and the coherency is con-
+of this estimator will not converge to zero for an infinite time
+                                                                   sidered to be significantly different from zero on the (1 − α)-
+series, i.e. the periodogram is not a consistent estimator. To
+                                                                   level. For an introduction to significance testing refer to Hon-
+construct a consistent estimator for the true spectrum, one
+                                                                   erkamp (1994), Lehmann (1986) or Cox and Hinkley (1994).
+has to estimate the expectation value of the periodogram. In
+                                                                      In the case of Fourier analysis, a test for significant co-
+many practical cases, when only one realization is given, this
+                                                                   herency can be calculated straightforwardly (Brockwell and
+has to be done by smoothing neighboring frequencies.
+                                                                   Davis, 1987): Irrespective of the two processes to be ana-
+   This line of argumentation can be transferred to wavelet        lyzed, the Fourier transform is asymptotically Gaussian dis-
+analysis: Commonly, as an estimator for the true WPS, the          tributed and thus the cross periodogram is χ 2 distributed.
+squared absolute value of the CWT is calculated (i.e. Eq. 5        Since vicinal frequencies are asymptotically uncorrelated,
+without taking the expectation value). This measure is called      the coherency thus follows a F distribution.
+wavelet periodogram (Nason et al., 2000) to emphasize that it         However, this is not the case for different wavelet scales
+is like the Fourier periodogram χ 2 -distributed with 2 degrees    and times. Firstly, for small scales the asymptotic – process
+of freedom and thus not a consistent estimator. This does not      independent – distribution is not reached. Thus, consider-
+contradict the finding of Percival and Walden (2000), who          ing small scales, one has to find suitable models for the two
+state that the global wavelet spectrum is a consistent estima-     processes to be analyzed. Secondly, vicinal wavelet times
+tor of the time independent spectrum. There the expectation        and scales are not uncorrelated (Appendix A) and we show
+value is estimated by averaging over all times.                    in Appendix B, that the WCS is not χ 2 distributed. Thus an
+   In wavelet analysis, the situation is quite subtle: Since       analytical test statistic is highly non trivial if not impossible.
+neighboring points in time and scale are correlated (see Ap-          To overcome the second problem, we performed Monte
+pendix A), the wavelet periodogram looks smooth. However,          Carlo simulations to estimate the distribution under H0 nu-
+fluctuations around the true WPS are not smaller as in Fourier     merically. We first considered the most basic case: We simu-
+analysis, but vary jointly. Hence, the appearance of smooth        lated 10 000 realizations of two independent Gaussian white
+patterns can suggest structures which are just coincidence.        noise processes and estimated the 95% critical values for dif-
+This has to be kept in mind, when interpreting wavelet plots.      ferent smoothing windows in time and scale and for vari-
+Ideally, the expectation value should be estimated. When,          ous time/scale resolutions defined by ω0 . Since WCO is a
+as usually in climatology, only one realization is measured,       local and normalized measure, instationarity of the investi-
+one either has to assume stationarity over a certain time in-      gated process does not require instationary models to derive
+terval and smooth in time direction, or one has to assume that     the test statistics.
+neighboring scales exhibit similar power and thus smooth in           Given a choice of the smoothing window in time and scale,
+scale direction (Sect. 5). For WCO the smoothing is essen-         a scale independent critical value is desirable to ease the anal-
+tial, as shown in Sect. 2.4.                                       ysis (since white noise is stationary in time, the critical value
+                                                                   will automatically be time independent). We found that this
+4.3   Edge effects                                                 is obtained for the following smoothing procedures:
+                                                                       – When smoothing in time direction, one has to take into
+The wavelet transformation at a point in time t0 always con-             account the wavelet length of essential support, which is
+tains information of neighboring data points. The number                 proportional to the scale s considered (see Eq. 3). Thus,
+of these points depends on the chosen wavelet and the scale              a scale independent critical value is obtained, when the
+considered. Thus, if the wavelet is centered close to the be-            smoothing length is related to the actual scale s by a
+ginning or the end of the time series, edge effects occur. The           constant factor m.
+area, where such effects are relevant, is called the cone of
+influence. Here, the results should be interpreted carefully.          – Given a wavelet transform calculated for scales which
+In the figures of this paper, the cone of influence
+                                             √       is chosen           are equidistant in logarithmic scale (i.e. more values for
+as the e-folding time of the Morlet wavelet 2s and marked                smaller scales), one has to smooth a constant number
+as a shadow in the wavelet plot. For a discussion, refer to              w of neighboring scales to obtain a scale independent
+Torrence and Compo (1998).                                               critical value.
+D. Maraun and J. Kurths: Cross wavelet analysis                                                                                               509
+
+(a)
+                      1.0000
+                                                                               95%−Quantile
+                      0.9998                                   m=1
+
+                                                                                1.00
+                      0.9996                                                    0.95
+                                                                                0.90
+
+
+      95%−Quantile
+                                                               m=2
+                      0.9994                                                    0.85
+                                                                                0.80
+                      0.9992                                                    0.75
+                                                                                0.70
+                                                                                0.65
+                      0.9990                                                                                                                  3
+
+                      0.9988                                   m=3                                                                       6
+                                                                                    0                                                        ω0
+                                                                                            5                                      9
+                      0.9986                                                                       10
+                                                                                                          15
+                                                                                                    w             20
+                               6   12   24      48        96   192       384                                             25 12
+                                             Scale [∆t]
+(b)                                                                            Fig. 4.    Empirical 95% critical values for 10 000 realizations
+                          1
+                                                                               of wavelet coherency of two Gaussian white noise time series
+                                                               2w+1=11
+                       0.98                                                    for smoothing in scale direction with different smoothing window
+                       0.96                                                    lengths w and different ω0 . The plotted quantiles WCO95 are the
+                                                               2w+1=21
+                       0.94
+                                                                               mean values over all scales plotted in Fig. 3b, but for various ω0 .
+
+
+
+       95%−Quantile
+                       0.92
+                                                               2w+1=31
+                        0.9
+
+                       0.88                                                    Monte Carlo simulations for a fixed pair of parameters ω0
+                       0.86                                    2w+1=41         and w as depicted for ω0 =6 in Fig. 3b. For practical pur-
+                       0.84                                                    poses, we fitted a polynomial to these results and obtained
+                       0.82                                                    the following approximation for significance testing WCO
+                                                               2w+1=61
+                        0.8
+                                                                               using the Morlet wavelet and smoothing in scale direction:
+                              6    12   24      48        96   192       384
+                                             Scale [∆t]
+
+
+Fig. 3. Empirical 95% critical values for 10 000 realizations of               WCO95 = 8.23 ×10−5 ω03   + 4.24 ×10−5 ω02 w
+wavelet coherency of two white noise time series for ω0 = 6 and
+                                                                                     + 1.13 ×10 ω0 w + 1.54 ×10−5 w 3
+                                                                                               −5     2
+for smoothing with different smoothing window lengths (a) in time
+direction and (b) in scale direction. m denotes the ratio between                    − 2.30 ×10−3 ω02   − 2.19 ×10−3 ω0 w                     (11)
+                                                                                               −4
+                                                                                     − 7.51 ×10 w   2   + 2.05 ×10−2 ω0
+window length and scale. 2w+1 denotes the window lengths in
+                                                                                               −2
+                                                                                     + 1.27 ×10 w       + 0.95,
+relation to the 200 scales, chosen equidistant in logarithmic scale
+between 61t and 3841t, i.e. 0.5 and 32 years for the common case
+of 1t=1 month. For every m and w, the estimated value fluctuates
+around a time independent constant.                                            where 2w+1 denotes the width of the smoothing window
+                                                                               and ω0 defines the time/scale resolution. This approximation
+                                                                               is only valid in the interval shown in Fig. 4. Since smoothing
+Figure 3 presents the 95% critical values WCO95 obtained                       in time direction appears to be too ineffective, we did not
+from the Monte Carlo simulations of two Gaussian white                         consider it in detail.
+noise models. We use the Morlet wavelet and a fixed ω0 =6                         The Gaussian white noise model is a simple and often un-
+for different smoothing windows in (a) time direction and                      realistic assumption. As mentioned above, for Fourier analy-
+(b) scale direction respectively. The efficiency of smoothing                  sis critical coherency values are asymptotically independent
+is rather weak due to the strong correlation between neigh-                    of the model. This holds also for wavelet analysis in the limit
+boring times and scales (see Appendix A). Furthermore,                         of large scales s. However, since wavelet analysis is local-
+smoothing in time direction appears to be much less effective                  ized in time, for small scales s the asymptotic behavior is
+than smoothing in scale direction (compare the values at the                   not reached and a proper model has to be chosen to estimate
+ordinates). This finding becomes intuitively clear, when we                    critical values. We simulated different stochastic models and
+recall that wavelets already intrinsically smooth in time di-                  found that the result from the Gaussian white noise model
+rection. As expected, we found the normalization discussed                     as given in Eq. (11) holds already when at least one of the
+in Sect. 3 having no influence on the significance test, since                 two processes considered can be modeled by Gaussian white
+different normalizations cancel down in WCO.                                   noise. However, when none of the processes can be modeled
+   The dependency of WCO95 for the two Gaussian white                          by Gaussian white noise, one has to find suitable models and
+noise models on the relevant parameters ω0 and the smooth-                     perform Monte Carlo simulations. Further research is needed
+ing length in scale direction w is shown in Fig. 4. The plotted                to understand the dependency of the critical value on the cho-
+values for WCO95 are the mean values over all scales of the                    sen model.
+510                                                                                                  D. Maraun and J. Kurths: Cross wavelet analysis
+
+                                                                                           0.5
+
+                         1                                                                  1
+
+                                                                                            2
+                         2
+
+                                                                                   Scale
+
+      period [years]
+                                                                                            4
+                         4
+                                                                                            8
+
+                         8                                                                 16
+
+                                                                                           32
+                        16                                                                       0   10 20 30 40 50 60 70 80 90 100
+
+                                                                                                                     Time
+                        32
+                          1860   1880   1900   1920    1940   1960   1980   2000
+(a)                                            time [years]                        Fig. 6. 95% critical value contour plot for wavelet coherency of
+                                                                                   two independent white noise time series. The solid line denotes
+                                                                                   smoothing with 2w+1=11 points, the dashed line with 2w+1=41
+                         1                                                         points in scale direction. Even though the two processes are in-
+                                                                                   dependent, peaks covering around 5% of the time/scale area will
+                                                                                   appear by definition due to multiple testing
+                         2
+
+
+
+
+       period [years]
+                         4                                                         processes are independent by definition, a structure related to
+                                                                                   the peaks in the NINO3 WPS (i.e. El Niños) occurs (Fig. 5a).
+                         8                                                         WCO avoids this problem by normalizing to the single WPS
+                                                                                   (Fig. 5b). However, if one has detected a significant interre-
+                        16                                                         lation using WCO, one can apply WCS to estimate the phase
+                                                                                   spectrum.
+                        32
+                          1860   1880   1900   1920    1940   1960   1980   2000   6.2      Multiple testing
+(b)                                            time [years]
+
+
+Fig. 5. Contour plot of the amplitude of (a) WCS and (b) WCO                       When performing a test on the (1−α)-level, by definition one
+(2w+1=31) between NINO3 time series and a Gaussian white                           rejects H0 with a probability of α% even when it is true.
+noise time series. ω0 =6. (a) Contours with arbitrary units in log-                Hence when repeating a test for many independent realiza-
+arithmic scale. Even though the processes are independent, mis-                    tions, around α% of the results should spuriously appear to
+leading peaks appear for high NINO3 values. (b) Linear grey scale                  be significant. This effect is referred to as multiple testing
+from black (WCO=0) to white (WCO=1). The black contour line                        (Lehmann, 1986). Significance testing for WCO can also be
+denotes WCO95 . The structure suggested in the wavelet cross spec-                 seen as an example for multiple testing, since one investi-
+trum disappears and thus turns out to be an artefact. Only spurious                gates every point in the space/time domain separately. The
+peaks due to multiple testing (see Sect. 6.2) remain. The shadow                   important difference to a setting with independent realiza-
+marks the cone of influence (see Sect. 4.3).
+                                                                                   tions is the fact, that neighboring realizations are correlated
+                                                                                   according to Appendix A and due to smoothing.
+                                                                                      Figure 6 shows the effect of multiple testing: The 95%
+6 Pitfalls                                                                         level contour line for wavelet coherency between two in-
+                                                                                   dependent white noise time series is plotted for different
+6.1                     Peaks in wavelet cross spectra                             smoothing windows. Even though the two processes are in-
+                                                                                   dependent, peaks covering around 5% of the time/scale area
+WCS describes the common power of two processes without                            appear. If it is not a priori known if two processes are co-
+a normalization to the single WPS. This can produce mis-                           herent, the nontrivial issue is now to decide, which of these
+leading results, because one essentially multiplies the CWTs                       peaks can be interpreted as significant. A conservative solu-
+of two time series. E.g. if one of the spectra is locally flat                     tion is the Bonferroni correction (Lehmann, 1986) dividing
+and the other exhibits strong peaks, this can produce peaks in                     the significance level α by the number of tested realizations
+the cross spectrum, which may have nothing to do with any                          (i.e. here the number of points in scale and time of the WCO
+relation of the two time series. Thus, WCS is not suitable                         analysis). However, this correction is too strict for correlated
+for significance testing the relation between two time series.                     realizations. Also, a result based on the Bonferroni correc-
+Figure 5 exemplifies the problem showing the WCS between                           tion only states if any coherency exists at all between the two
+the NINO3 time series (see Sect. 7) and a realization of a                         processes without specifying at what scale and time. Thus,
+first order auto regressive (AR[1]) process. Although both                         deciding if a single peak is significant is not possible based
+D. Maraun and J. Kurths: Cross wavelet analysis                                                                                                 511
+
+on the Bonferroni correction. If a single peak covers more
+than 5% of the total area, the question is answered easily. For
+                                                                                            1
+peaks with smaller area, a valuable hint is given in Fig. 6: For
+different smoothing lengths, spurious peaks do not always
+                                                                                            2
+overlap. Thus one should always compare different smooth-
+
+
+                                                                         period [years]
+ing windows and sort out peaks that appear only in one of
+the corresponding plots. Additionally, it seems that the size                               4
+of the considered patches plays an important role, as small
+structures appear much more often than larger ones. One                                     8
+could investigate the distribution of the peak areas under H0
+to draw more distinct conclusions about single peaks. This                                 16
+issue is beyond the scope of this paper.
+                                                                                           32
+                                                                                             1860   1880   1900   1920    1940   1960   1980   2000
+                                                                   (a)                                            time [years]
+
+
+7 Cross wavelet analysis of ENSO/NAO teleconnections
+                                                                                            1
+
+A prominent example of a bivariate time and scale resolved
+                                                                                            2
+study is the WCS analysis of the ENSO-NAO teleconnec-
+
+
+                                                                          period [years]
+tions by Huang et al. (1998), stating that ENSO and NAO are
+coherent for most of the moderate and strong El Niños be-                                  4
+
+tween 1900 and 1995. Keeping in mind the discussion in the
+previous section, we review the WCS results and compare                                     8
+them with those of WCO. We used the extended NINO3-
+index updated from Kaplan et al. (1998) and the NAO-index                                  16
+defined in Jones et al. (1997). We considered N =1738 data
+points in the range from January 1856 to October 2000 in a                                 32
+monthly resolution.                                                                          1860   1880   1900   1920    1940   1960   1980   2000
+                                                                   (b)                                            time [years]
+   Figure 7a shows the results of the WCS analysis (ω0 =6).
+As in the analysis of Huang et al. (1998), several peaks ap-       Fig. 7. Contour plot of the amplitude of (a) WCS and (b) WCO
+pear at a period of about six years around 1877, 1918 and          (2w+1=31) between NINO3 and NAO index time series. ω0 =6.
+1940, and at a period between 2 to 4 years around 1888, 1969       (a) Contours with arbitrary units in logarithmic scale. The WCS
+to 1982. All these peaks are associated with El Niño Events.      (not smoothed) shows peaks around 1877, 1888, 1918, 1940, 1969
+                                                                   and 1982. (b) Linear grey scale from black (WCO=0) to white
+   However, a significant peak in the WCS might simply arise       (WCO=1). The black contour line denotes WCO95 . WCO analysis
+due to a peak in the univariate WPS of one of the time series      reveals that only a peak around 1920 at a scale of 4 to 8 years and
+as shown in Sect. 6.1. Thus we additionally calculated the         one around 1940 at a scale of about 4 to 14 years are significant.
+normalized WCO (see Fig. 7b, ω0 =6, 2w+1=31) and com-
+pared it to the WCS. For the calculation of the critical value,
+we chose Eq. (11). This critical value matches the result of       8         Conclusions
+additional Monte Carlo simulations, using an AR[1] process
+with an e-folding time of 12 months to model NINO3 and             In this paper we present a detailed evaluation of cross wavelet
+Gaussian white noise to model NAO. For WCO, most peaks             analysis. We investigate two wavelet measures for the linear
+from the WCS analysis vanish. However, this analysis shows         scale and time dependent interrelation between two time se-
+significant peaks around 1920 at a scale of 4 to 8 years and       ries, the wavelet cross spectrum (WCS) and the normalized
+around 1940 at a scale of about 4 to 14 years. The other           wavelet coherency (WCO). The latter one exhibits values be-
+small peaks cannot be distinguished from coincidence due to        tween zero and one, characterizing a vanishing or perfect lin-
+multiple testing.                                                  ear relationship respectively. Based on an inverse problem
+   These results cast doubt on the finding that ENSO and           point of view, we recall that the wavelet periodogram is not
+NAO are coherent for most of the moderate and strong El            a consistent estimator of the local wavelet power spectrum
+Niños between 1900 and 1995. However, the period between          (WPS) and that the inference of peaks from wavelet analysis
+around 1920 and 1940 seems to be distinct from other times,        is not unambiguous. Particularly with regard to WCO, one
+as a significance coherency occurs. The physical interpreta-       has to estimate expectation values to get any reliable results.
+tion of this time-dependent interrelation requires further de-     In practical cases, this has to be done by smoothing.
+tailed investigation of possible instationary coupling mecha-         Even for independent mixing processes, realizations will
+nisms.                                                             show nonzero WCO-values. Thus, a significance test is re-
+512                                                                              D. Maraun and J. Kurths: Cross wavelet analysis
+
+quired to decide, whether a WCO-value has to be consid-              – Check the result of different smoothing lengths. If peaks
+ered as being significantly different from zero. In contrast to        appear only for single smoothing lengths, they are prob-
+Fourier analysis, this test is not independent of the structure        ably artefacts due to multiple testing.
+of the two processes considered and not easily calculated an-
+                                                                     However, further research is required. Understanding
+alytically. Instead, appropriate models have to be chosen and
+                                                                  how the critical value for significant WCO depends on the
+Monte Carlo simulations have to be performed to estimate
+                                                                  stochastic models used to describe the investigated processes,
+critical values for a chosen significance level. We exempli-
+                                                                  could help to avoid time intensive Monte Carlo simulations.
+fied this discussion for the basic case of two processes which
+                                                                  An important issue is the treatment of multiple testing ef-
+can be modeled by Gaussian white noise. The critical value
+                                                                  fects. To our knowledge, there is no standard procedure for a
+WCO95 is essentially a function of the smoothing parameters
+                                                                  test, that is not too conservative, but does not produce many
+and the time/scale resolution defined by ω0 . An interesting
+                                                                  false positive results. It seems that the area of the investi-
+result is that due to correlations of neighboring scales and
+                                                                  gated peaks in the time/scale domain plays an important role,
+times, smoothing has only a weak effect. Especially smooth-
+                                                                  as small structures appear much more often than larger ones.
+ing in time direction is not feasible. For practical purposes,
+                                                                  Thus one could try to estimate the size distribution of spu-
+we fitted a polynomial to our numerical results. The critical
+                                                                  riously significant patches to draw more distinct conclusions
+values derived for the two Gaussian white noise models and
+                                                                  about single peaks.
+thus the approximation Eq. (11) are valid, if at least one of
+the processes considered can be modeled by Gaussian white
+noise. For other cases, appropriate models have to be chosen      Appendix A          Correlation of wavelet scales and times
+to perform Monte Carlo simulations.
+   A second focus of the paper are pitfalls of cross wavelet      In Fourier analysis, for a white noise time series neighbor-
+analysis. We show that the WCS can show misleading peaks          ing frequencies are uncorrelated. Here we show that this is
+even for realizations of independent processes, just because      no longer the case for wavelet analysis. Given a continuous
+the WPS of one of the time series exhibits strong peaks.          white noise time series x(t), the continuous formulation of
+Thus, WCS is not suitable for significance testing the inter-     Eq. (1) reads
+relation between two processes and one should rather utilize                 Z ∞
+WCO. Furthermore, due to multiple testing spuriously sig-         W (s, t) =      dτ 90 (τ − t)x(τ ),                     (A1)
+                                                                                 −∞
+nificant peaks have to appear by definition. A straightfor-
+ward identification of a single peak is only possible, when       where two different points in time are uncorrelated:
+this peak covers a percentage of the investigated time/scale      hx(t1 ) x(t2 )i = δ(t1 − t2 ).                                        (A2)
+area higher than the significance level. For the decision, if a
+small single peak is significant, no straightforward solution     The correlation between the CWT of two different scales s1
+exists so far. However, a valuable hint is given by comparing     and s2 at different times t1 and t2 is defined as
+the peak for different WCO parameters as smoothing length         C(s1 , s2 , t1 , t2 ) = hW (s1 , t1 ) W (s2 , t2 )∗ i.                (A3)
+and time/scale resolution.
+   On the basis of these results, we could show that the sug-     Inserting Eq. (A1) into Eq. (A3), we obtain
+gested coherency between ENSO and NAO for most of the                                     * ZZ
+moderate and strong El Niños between 1856 and 2000 is an         C(s1 , s2 , t1 , t2 ) =      dτ1 dτ2 90 (τ1 − t1 )
+artefact. The peaks visible in the WCS rather stem from high
+power in the single WPS of the NINO3 time series than from
+                                                                                                                                 +
+any coherency of the two time series. The WCO analysis                                            90 (τ2 − t2 )x(τ1 ) x(τ2 ) .          (A4)
+shows significant peaks only around 1920 at a scale of 4 to 8
+years and between 1920 and 1940 at a scale of about 4 to 14       Since integrals and expectation values are linear operators,
+years.                                                            this can be simplified to
+   Summarizing the discussion in this manuscript, we recom-                               ZZ
+mend the following steps for cross wavelet analysis:              C(s1 , s2 , t1 , t2 ) =        dτ1 dτ2 90 (τ1 − t1 )
+                                                                                                          D             E
+  – Choose suitable models for the significance test of                                      90 (τ2 − t2 ) x(τ1 ) x(τ2 ) . (A5)
+    WCO. If at least one of the models is Gaussian white
+    noise, the approximation Eq. (11) can be used to calcu-       Using Eq. (A2) and some algebra lead to
+    late critical values for a chosen significance level. Oth-                           r                                         
+    erwise, Monte Carlo simulations have to be performed.         C(s1 , s2 , t1 , t2 ) = 2s2 1 s22 exp iω0 s21 +s22 (t2 − t1 )
+                                                                                           s1 +s2                s1 +s2
+
+  – Choose the time/scale resolution ω0 (better compare
+                                                                                                                                
+                                                                                                                2    2         2
+                                                                                                     1 (t2 −t1 ) +ω0 (s2 −s1 )
+    different values).                                                                  × exp − 2                 2    2           .    (A6)
+                                                                                                                s1 +s2
+
+  – Calculate WCO and plot a contour line at the critical         Thus, in contrast to Fourier analysis, neighboring points in
+    value.                                                        time and scale are not uncorrelated.
+D. Maraun and J. Kurths: Cross wavelet analysis                                                                                   513
+
+Appendix B        Distribution of the cross wavelet spectrum     with sij kl =σ 2 +σij2 +σkl2 and sij klmn =2σ σij +σkl σmn and is
+                                                                 never fulfilled. Thus the smoothed WCS is not χ 2 dis-
+A condition for a simple analytical test statistic for Fourier   tributed.
+coherency is based on the fact, that the cross spectrum ex-
+hibits a χ 2 distribution (Brockwell and Davis, 1987). Since     Acknowledgements. We thank M. Kallache, U. Schwarz, M.
+we have shown that wavelet times and scales are not uncor-       Rosenblum and A. Pikovsky for inspiring discussions. Our special
+related, this condition is no longer trivially fulfilled.        thanks are dedicated to R. Dahlhaus, who called our attention to
+   The theorem of Ogasawara and Takahashi (c.f. Rao              the theorem of Ogasawara and Takahashi. D.M. was funded by
+(1965)) states, when a sum of squares of correlated Gaus-        Deutsche Forschungsgemeinschaft, SFB 555. J.K. was supported
+sian distributed random variables is χ 2 distributed. Given a    by SPP 1114.
+vector Y of Gaussian random variables
+                                                                 Edited by: M. Thiel
+Y ∼ Nn (0, 6)                                            (B1)    Reviewed by: two referees
+with a covariance matrix 6, the product YT AY is χ 2 dis-
+tributed, when                                                   References
+6A6A6 = 6A6                                              (B2)
+                                                                 Anger, G.: Basic Principles of Inverse Problems, in Inverse Prob-
+holds.                                                             lems: Principles and Applications in Geophysics, Technology
+   In the case of smoothing neighboring values of the WCS,         and Medicine, Akademie Verlag, 1993.
+we are interested in the sum of squares (in this example         Appenzeller, C., Stocker, T., and Anklin, M.: North Atlantic oscil-
+smoothing over three neighboring scales is considered. Gen-        lation dynamics recorded in Greenland ice cores, Science, 282,
+eralization follows straight forward)                              446–449, 1998.
+                                                                 Brockwell, P. and Davis, R.: Time Series: Theory and Methods,
+YT AY = W1 (s1 )W2 (s1 )∗                                          Springer, 1987.
+          + W1 (s2 )W2 (s2 )∗                                    Cox, D. and Hinkley, D.: Theoretical Statistics, Chapman & Hall,
+                                                                   1994.
+          + W1 (s3 )W2 (s3 )∗ .                          (B3)
+                                                                 Daubechies, I.: Ten Lectures on Wavelets, Society for Industrial
+This relation is obtained by defining                              and Applied Mathematics, 1992.
+                                                               Ghil, M., Allen, M., Dettingern, M., Ide, K., Kondrashov, D., Mann,
+        W1 (s1 )                                                   M., Robertson, A., Saunders, A., Tian, Y., Varadi, F., and Yiou,
+      W2 (s1 )∗ 
+                                                                 P.: Advanced Spectral Methods for Climate Time Series, Re-
+      W1 (s2 )                                                   views of Geophysics, 40, 3/1–3/41, 2002.
+Y=              
+                 ∗                                      (B4)
+      W2 (s2 )                                                 Gu, D. and Philander, S.: Secular changes of annual and interannual
+      W1 (s3 )                                                   variability in the Tropics during the past century, J. Climate, 8,
+        W2 (s3 )∗                                                  864–876, 1995.
+                                                                 Honerkamp, J.: Stochastic Dynamical Systems, VCH, 1994.
+and
+                                                               Honerkamp, J.: Statistical Physics, Springer, 1998.
+    010000                                                       Huang, J., Higuchi, K., and Shabbar, A.: The relationship between
+  0 0 0 0 0 0                                                    the North Atlantic Oscillations and El Niño-Southern Oscilla-
+             
+  0 0 0 1 0 0                                                    tion, Geophys. Res. Lett., 25, 2707–2710, 1998.
+A=
+  0 0 0 0 0 0.
+                                                        (B5)    Hudgins, L., Friebe, C., and Mayer, M.: Wavelet Transforms and
+             
+  0 0 0 0 0 1                                                    Atmospheric Turbulence, Phys. Rev. Lett., 71, 3279–3282, 1993.
+    000000                                                       Jones, P., Jónsson, T., and Wheeler, D.: Extension to the North
+                                                                   Atlantic Oscillation using early instrumental pressure observa-
+The covariance matrix then reads                                   tions from Gibraltar and South-West Iceland, Int. J. Climatol.,
+                              
+        σ 0 σ12 0 σ13 0                                            17, 1433–1450, 1997.
+      0 σ 0 σ12 0 σ13                                          Kaiser, G.: A friendly Guide to Wavelets, Birkhäuser, 1994.
+                                                                 Kaplan, A., Cane, M., Kushnir, Y., Clement, A., Blumenthal, M.,
+                              
+      σ12 0 σ 0 σ23 0 
+6=                                                    (B6)      and Rajagopalan, B.: Analyses of global sea surface temperature
+      0 σ12 0 σ 0 σ23 
+                               
+      σ13 0 σ23 0 σ 0                                            1856–1991, J. Geophys. Res., 103, 18 567–18 589, 1998.
+                                                                 Karlin, S. and Tylor, H.: A first course in stochastic processes, Aca-
+        0 σ13 0 σ23 0 σ                                            demic Press, 1975.
+where the single entries can be calculated according to          Kestin, T., Karoly, D., Yang, J., and Rayner, N.: Time-frequency
+Eq. (A6). For these conditions, Eq. (B2) reads                     variability of ENSO and stochastic simulations, J. Climate, 11,
+                                                               2258–2272, 1998.
+  000000              0 s1213 0 s121323 0 s131223                Labat, D., Ababou, R., and Mangin, A.: Rainfall-runoff relations
+0 0 0 0 0 0 0 0 0 0 0 0 
+                                                               for karstic springs. Part II: continuous wavelet and discrete or-
+ 0 0 0 0 0 0   0 s121323 0 s1223 0 s231213                     thogonal multiresolution, J. Hydrol, 238, 149–178, 2000.
+             =
+0 0 0 0 0 0 0 0 0 0 0 0 
+                                                   (B7)
+                                                             Lehmann, E.: Testing Statistical Hypothesis, Springer, 1986.
+ 0 0 0 0 0 0   0 s131223 0 s231213 0 s1323                   Meyers, S., Kelly, B., and O’Brien, J.: An introduction to wavelet
+  000000              0 0 0 0 0 0                                  analysis in oceanography and meteorology: With application to
+514                                                                                D. Maraun and J. Kurths: Cross wavelet analysis
+
+   the dispersion of Yanai waves, Mon. Wea. Rev., 121, 2858–2866,      Rao, C.: Linear Statistical Inference and its Applications, Wiley
+   1993.                                                                 Series in Probability and Mathematical Statistics, 1965.
+Moritz, H.: General Considerations Regarding Inverse and Related       Timmermann, A., Latif, M., Grotzner, A., and Voss, R.: Modes
+   Problems, in Inverse Problems: Principles and Applications in         of climate variability as simulated by a coupled general circu-
+   Geophysics, Technology and Medicine, Akademie Verlag, 1993.           lation model. Part I: ENSO-like climate variability and its low-
+Nason, G., von Sachs, R., and Kroisandt, G.: Wavelet processes and       frequency modulation, Clim. Dynam., 15, 605–618, 1999.
+   adaptive estimation of the evolutionary wavelet spectrum, J. Roy.   Torrence, C. and Compo, G.: A practical guide to wavelet analysis,
+   Stat. Soc. B, 62, 271–292, 2000.                                      Bull. Amer. Meteor. Soc., 79, 61–78, 1998.
+Percival, D. and Walden, A.: Wavelet Methods for Time Series           Torrence, C. and Webster, P.: The annual cycle of persistence in
+   Analysis, Cambridge Univ. Press, 2000.                                the El Niño Southern Oscillation, Quart. J. Roy. Met. Soc., 124,
+Pozo-Vazquez, D., Esteban-Parra, M., Rodrigo, F., and Castro-Diez,       1985–2004, 1998.
+   Y.: A study of NAO variability and its possible non-linear influ-   Torrence, C. and Webster, P.: Interdecadal Changes in the ENSO-
+   ences on European surface temperature, Clim. Dynam., 17, 701–         Monsoon System, Journal of Climate, 12, 2679–2690, 1999.
+   715, 2001.                                                          von Storch, H. and Zwiers, F.: Statistical Analysis in Climate Re-
+Priestley, M.: Spectral Analysis and Time Series, Academic Press,        search, Cambridge Univ. Press, 1999.
+   1992.
+

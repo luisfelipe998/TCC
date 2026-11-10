@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "date_utc": "2026-10-31T14:46:22.167035+00:00",
+  "scope": "Aplicação da revisão final da Conclusão, com ligação aos objetivos, linguagem acadêmica simples e preservação dos resultados.",
+  "pdf": {
+    "path": "TCC/dist/main.pdf",
+    "sha256": "90b2a96cf943fe50624e25205bf28102581137c8c98871f23759ce468f5028ba",
+    "pages": 74
+  },
+  "source_sha256": {
+    "TCC/conclusao.tex": "629b950fd327ec2389484fd6977ed4ee641b0688d4aeaeec9af469b42762cc92",
+    "TCC/main.tex": "998eeef74bc67af97d49873eb0be36df2e456db6320a35af6c6014c0bb0c1fcf",
+    "TCC/discussao.tex": "4f54320591be55fe86da61dea942dea1b0326360b9978c7e622e3d7eb86d16ba",
+    "TCC/anexos.tex": "f1b839f0924914cbff14442b048083a34d878186a0ce389a4a89ccee047edaa6",
+    "TCC/metodologia.tex": "e51bed7654c6dfdc972ee5e0756e973016da8fe2e107d2d2d6b74eef9ff95df8",
+    "TCC/pretextual.tex": "86091be8c2299aa14ba02df06c4e83cb2521335fc43fe538d89945820aebd51a",
+    "TCC/apendices.tex": "c12438d4f16784f18b374ecc0a5b9c8a9f50d640f0d8b36d25be397dc8a187a3",
+    "TCC/introducao.tex": "c7a4b0baad24e07715e6ac6ed594831f0c67aff3b08ab2a73b77905076df5898",
+    "TCC/resultados.tex": "0990158a6790f6bf9e30c8c160325150b7cd7373fdd1f358427a1c8ce5b04640",
+    "TCC/fundamentacao.tex": "fba574a0d0160b1a16ef9c310ea573fce3c319633f8a643ab5687488cb5ab900",
+    "TCC/referencias.bib": "7e1627976759cc6e873f16a2d485501fde5fd3a8dd2ecc261e845c667cf23b2d"
+  },
+  "audit_report": {
+    "path": "../../../auditorias/conclusao-objetivos-clareza/aplicacao/verificacao-final.json",
+    "sha256": "543d3bef62931ec010eb425764a67c24ca79d701a32fd6e3327a1db4e76687fb"
+  },
+  "scientific_results_changed": false
+}

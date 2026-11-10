@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "scope": "Abertura3.5 e explicitação do critério de saturação3.6, sem alteração de cálculo.",
+  "pdf": {
+    "path": "TCC/dist/main.pdf",
+    "sha256": "4150e8e21fa7cbc0f9c239e0f791babb6a8ab190bb477c568549729e1e51ea53",
+    "pages": 75
+  },
+  "manuscript_sha256": "07af38fe440390a43cf738f4dfab82dbac3fdbfb206004b92868e17130bc816b",
+  "report": {
+    "path": "../../../auditorias/secoes-com-texto/verificacao-final.json",
+    "sha256": "ef5d524c666b89c6a1d7a151784bc8d4102f7ab117dd372c8a6b18860e9dcc50"
+  },
+  "data_or_code_changed": false
+}

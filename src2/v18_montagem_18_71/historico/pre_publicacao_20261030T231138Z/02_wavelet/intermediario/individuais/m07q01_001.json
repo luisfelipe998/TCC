@@ -1,0 +1,14 @@
+{
+  "ensaio": "m07q01_001",
+  "padrao": "dispersed bubble",
+  "comprimento": 3094,
+  "pico_wps_zero_lambda_px": 137.0270291098545,
+  "pico_potencia_media_lambda_px": 909.6328093092038,
+  "erro_wps_independente": 4.440892098500626e-16,
+  "npz_sha256": "3d9421521608ae8bc172b451172891aa73050b68ad5dc8271e431a01941e80c5",
+  "assinaturas": {
+    "input": "2b72c5fd06ccb41000e24bc1277b05a6e44773ac94c9901a20fc95f49b06c873",
+    "core": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc",
+    "script": "b3d236b2076b168bd92b65564d856fa4fdb339b37d4d89ceeac068153513fa5e"
+  }
+}

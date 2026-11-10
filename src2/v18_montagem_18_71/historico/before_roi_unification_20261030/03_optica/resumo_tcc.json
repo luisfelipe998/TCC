@@ -1,0 +1,370 @@
+{
+  "status": "complete",
+  "processed_acquisitions": 26,
+  "eligible_acquisitions": 25,
+  "eligible_runs": [
+    "m03q05_001",
+    "m03q10_001",
+    "m03q20_001",
+    "m04q01_001",
+    "m04q10_001",
+    "m04q20_001",
+    "m04q40_001",
+    "m04q80_001",
+    "m05q01_001",
+    "m05q05_001",
+    "m05q10_001",
+    "m05q20_001",
+    "m05q40_001",
+    "m05q80_001",
+    "m06q01_001",
+    "m06q05_001",
+    "m06q10_001",
+    "m06q20_001",
+    "m06q40_001",
+    "m06q80_001",
+    "m07q01_001",
+    "m07q05_001",
+    "m07q20_001",
+    "m07q40_001",
+    "m07q80_001"
+  ],
+  "excluded": [
+    {
+      "run": "m03q40_001",
+      "reason": "core saturation above 20 percent in rows 20:60",
+      "saturated_fraction": 0.3406477817121433
+    }
+  ],
+  "geometry": {
+    "rows": "18:72",
+    "included_rows": "18 through 71",
+    "height": 54,
+    "diameter_px": 54
+  },
+  "saturation_rows": "20:60",
+  "groups": [
+    {
+      "pattern": "dispersed bubbles",
+      "n": 1,
+      "alpha_median": 0.001679763390003041,
+      "F1000_median": 2.6463579648190056,
+      "alpha_arithmetic_mean": 0.001679763390003041,
+      "F1000_arithmetic_mean": 2.6463579648190056
+    },
+    {
+      "pattern": "plug",
+      "n": 3,
+      "alpha_median": 0.5817954969649368,
+      "F1000_median": 9.8051809034468,
+      "alpha_arithmetic_mean": 0.552345185174639,
+      "F1000_arithmetic_mean": 9.012721118973205
+    },
+    {
+      "pattern": "slug",
+      "n": 3,
+      "alpha_median": 0.5908774722831777,
+      "F1000_median": 9.900669655992186,
+      "alpha_arithmetic_mean": 0.5934073934683823,
+      "F1000_arithmetic_mean": 10.858087559185455
+    },
+    {
+      "pattern": "churn",
+      "n": 10,
+      "alpha_median": 0.8066381906719438,
+      "F1000_median": 11.50082881007609,
+      "alpha_arithmetic_mean": 0.8031822996499176,
+      "F1000_arithmetic_mean": 10.018463135026893
+    },
+    {
+      "pattern": "wavy annular",
+      "n": 8,
+      "alpha_median": 0.9710351200355903,
+      "F1000_median": 1.5071386272840945,
+      "alpha_arithmetic_mean": 0.964885049861367,
+      "F1000_arithmetic_mean": 2.487153647903688
+    }
+  ],
+  "previous_groups": [
+    {
+      "pattern": "dispersed bubbles",
+      "n": 1,
+      "alpha_median": 0.0016529254531053238,
+      "F1000_median": 2.5820773454842856,
+      "alpha_arithmetic_mean": 0.0016529254531053238,
+      "F1000_arithmetic_mean": 2.5820773454842856
+    },
+    {
+      "pattern": "plug",
+      "n": 3,
+      "alpha_median": 0.5810308541706904,
+      "F1000_median": 9.790090205634646,
+      "alpha_arithmetic_mean": 0.5516904867241141,
+      "F1000_arithmetic_mean": 8.999041291477244
+    },
+    {
+      "pattern": "slug",
+      "n": 3,
+      "alpha_median": 0.5904151039252752,
+      "F1000_median": 9.868536679672395,
+      "alpha_arithmetic_mean": 0.590897375315586,
+      "F1000_arithmetic_mean": 10.895105289502208
+    },
+    {
+      "pattern": "churn",
+      "n": 10,
+      "alpha_median": 0.8062250285084778,
+      "F1000_median": 11.480888406983734,
+      "alpha_arithmetic_mean": 0.803774008646353,
+      "F1000_arithmetic_mean": 10.01880627157398
+    },
+    {
+      "pattern": "wavy annular",
+      "n": 8,
+      "alpha_median": 0.9712072848616216,
+      "F1000_median": 1.4946777816974142,
+      "alpha_arithmetic_mean": 0.9652136963739557,
+      "F1000_arithmetic_mean": 2.4592649122367476
+    }
+  ],
+  "reference": {
+    "recomputed_from_new_panoramas": true,
+    "algorithm_and_three_plug_runs_unchanged": true,
+    "exactly_equal_to_previous": false,
+    "max_absolute_radial_reference_difference": 0.0008385465868392394,
+    "old_selected_columns": {
+      "m05q01_001": 297,
+      "m06q01_001": 390,
+      "m07q05_001": 368
+    },
+    "new_selected_columns": {
+      "m05q01_001": 296,
+      "m06q01_001": 390,
+      "m07q05_001": 367
+    }
+  },
+  "hulls": {
+    "primary_chart_hulls": {
+      "dispersed bubbles": {
+        "eligible_runs": [
+          "m07q01_001"
+        ],
+        "polygon_vertex_runs": [],
+        "shaded": false
+      },
+      "plug": {
+        "eligible_runs": [
+          "m05q01_001",
+          "m06q01_001",
+          "m07q05_001"
+        ],
+        "polygon_vertex_runs": [
+          "m07q05_001",
+          "m05q01_001",
+          "m06q01_001"
+        ],
+        "shaded": true
+      },
+      "slug": {
+        "eligible_runs": [
+          "m04q01_001",
+          "m05q05_001",
+          "m06q05_001"
+        ],
+        "polygon_vertex_runs": [
+          "m05q05_001",
+          "m04q01_001",
+          "m06q05_001"
+        ],
+        "shaded": true
+      },
+      "churn": {
+        "eligible_runs": [
+          "m03q05_001",
+          "m04q10_001",
+          "m04q20_001",
+          "m05q10_001",
+          "m05q20_001",
+          "m05q40_001",
+          "m06q10_001",
+          "m06q20_001",
+          "m07q20_001",
+          "m07q40_001"
+        ],
+        "polygon_vertex_runs": [
+          "m07q40_001",
+          "m07q20_001",
+          "m06q10_001",
+          "m04q20_001",
+          "m03q05_001",
+          "m05q40_001"
+        ],
+        "shaded": true
+      },
+      "wavy annular": {
+        "eligible_runs": [
+          "m03q10_001",
+          "m03q20_001",
+          "m04q40_001",
+          "m04q80_001",
+          "m05q80_001",
+          "m06q40_001",
+          "m06q80_001",
+          "m07q80_001"
+        ],
+        "polygon_vertex_runs": [
+          "m03q20_001",
+          "m06q40_001",
+          "m07q80_001",
+          "m04q40_001"
+        ],
+        "shaded": true
+      }
+    },
+    "overlap_pairs": [
+      [
+        "plug",
+        "slug"
+      ]
+    ],
+    "churn_annular_intersect": false,
+    "independent_polygon_and_halfspace_tests_agree": true
+  },
+  "changes": {
+    "eligibility_changed": [],
+    "old_hull_intersections": [
+      [
+        "plug",
+        "slug"
+      ]
+    ],
+    "new_hull_intersections": [
+      [
+        "plug",
+        "slug"
+      ]
+    ],
+    "highest_alpha_median": "wavy annular",
+    "lowest_F1000_median": "wavy annular",
+    "discussion_example_pairs_changed": []
+  },
+  "discussion_examples": [
+    {
+      "pattern": "churn",
+      "run_x": "m04q20_001",
+      "run_y": "m07q40_001",
+      "pearson_r": 0.9668690352756103,
+      "alpha_x": 0.870760457694614,
+      "alpha_y": 0.7954507123202873,
+      "F1000_x": 5.184311201687583,
+      "F1000_y": 13.587190759417291,
+      "eligible_x": true,
+      "eligible_y": true,
+      "previous_run_x": "m04q20_001",
+      "previous_run_y": "m07q40_001",
+      "previous_pearson_r": 0.9692518588960242,
+      "example_pair_changed": false,
+      "selection": "maximum within-pattern Pearson across all retained spectral acquisitions"
+    },
+    {
+      "pattern": "wavy annular",
+      "run_x": "m06q40_001",
+      "run_y": "m07q80_001",
+      "pearson_r": 0.9899033795874617,
+      "alpha_x": 0.9142649066773709,
+      "alpha_y": 0.9186353546104898,
+      "F1000_x": 7.296203206807107,
+      "F1000_y": 5.764034824377064,
+      "eligible_x": true,
+      "eligible_y": true,
+      "previous_run_x": "m06q40_001",
+      "previous_run_y": "m07q80_001",
+      "previous_pearson_r": 0.9870095888610041,
+      "example_pair_changed": false,
+      "selection": "maximum within-pattern Pearson across all retained spectral acquisitions"
+    }
+  ],
+  "figure_paths": [
+    "TCC/figuras/v18_optica/panorama_phase_masks.png",
+    "TCC/figuras/v18_optica/void_fraction_vs_flip_rate.png"
+  ],
+  "spectral_example_source": {
+    "selection": "src2/v18_montagem_18_71/02_wavelet/04_estatistica/dados/selecao_intrapadrao.json",
+    "pearson_matrix": "src2/v18_montagem_18_71/02_wavelet/04_estatistica/dados/matriz_pearson_todos.csv",
+    "maxima_independently_verified": true
+  },
+  "group_changes": [
+    {
+      "pattern": "dispersed bubbles",
+      "n": 0,
+      "alpha_median": 2.6837936897717218e-05,
+      "F1000_median": 0.06428061933472007,
+      "alpha_arithmetic_mean": 2.6837936897717218e-05,
+      "F1000_arithmetic_mean": 0.06428061933472007
+    },
+    {
+      "pattern": "plug",
+      "n": 0,
+      "alpha_median": 0.0007646427942463729,
+      "F1000_median": 0.015090697812153664,
+      "alpha_arithmetic_mean": 0.0006546984505249043,
+      "F1000_arithmetic_mean": 0.013679827495961305
+    },
+    {
+      "pattern": "slug",
+      "n": 0,
+      "alpha_median": 0.0004623683579024762,
+      "F1000_median": 0.032132976319790174,
+      "alpha_arithmetic_mean": 0.0025100181527963894,
+      "F1000_arithmetic_mean": -0.03701773031675337
+    },
+    {
+      "pattern": "churn",
+      "n": 0,
+      "alpha_median": 0.00041316216346598544,
+      "F1000_median": 0.019940403092356007,
+      "alpha_arithmetic_mean": -0.0005917089964353472,
+      "F1000_arithmetic_mean": -0.00034313654708739705
+    },
+    {
+      "pattern": "wavy annular",
+      "n": 0,
+      "alpha_median": -0.00017216482603121808,
+      "F1000_median": 0.012460845586680369,
+      "alpha_arithmetic_mean": -0.0003286465125886817,
+      "F1000_arithmetic_mean": 0.02788873566694061
+    }
+  ],
+  "figure_manifest": {
+    "file": "TCC/figuras/v18_optica/origens.json",
+    "sha256": "c1107ad0ceefc88e8ea0b289cd7e5553e5fc68bdb32595f66e8f661867a27fe2",
+    "verification": {
+      "old_panel_reproduced_pixel_for_pixel": true,
+      "old_scatter_reproduced_pixel_for_pixel": true,
+      "historical_figure_and_script_hashes_unchanged": true,
+      "new_input_hashes_match_source_manifest": true,
+      "new_csv_counts_and_alpha_match_saved_masks": true,
+      "hulls_match_source_validation": true,
+      "centroids_match_source_summary": true,
+      "acquisitions": 26,
+      "displayed_acquisitions": 25,
+      "displayed_pattern_counts": {
+        "churn": 10,
+        "wavy annular": 8,
+        "slug": 3,
+        "plug": 3,
+        "dispersed bubbles": 1
+      }
+    }
+  },
+  "interpretation": [
+    "O grupo anular apresentou a maior mediana de fração de vazio e a menor mediana de densidade de transições.",
+    "As envoltórias de plug e slug se intersectaram. As de churn e anular permaneceram separadas nesta amostra.",
+    "A leitura conjunta dos dois pares permaneceu descritiva. Não foi calculada correlação entre grandezas ópticas e espectrais."
+  ],
+  "independent_verification": {
+    "file": "auditorias/montagem54/verificacao-optica-independente.json",
+    "sha256": "c0ba249ecfd8771a12e4be8a62a37273e51e38a818d5f5b39caf4e3c626608c8",
+    "status": "PASS"
+  }
+}

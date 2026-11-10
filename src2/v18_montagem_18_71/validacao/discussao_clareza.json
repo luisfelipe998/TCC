@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "date_utc": "2026-10-31T03:40:39.832928+00:00",
+  "scope": "Revisão editorial autorizada das seções 5.1–5.4, priorizando os achados úteis e a explicação didática.",
+  "pdf": {
+    "path": "TCC/dist/main.pdf",
+    "sha256": "d27dcf0f7be43589753947cf9e25feb186ce6c42801ee8476b76a5025a12ebd8",
+    "pages": 75
+  },
+  "source_sha256": {
+    "TCC/anexos.tex": "f1b839f0924914cbff14442b048083a34d878186a0ce389a4a89ccee047edaa6",
+    "TCC/apendices.tex": "c12438d4f16784f18b374ecc0a5b9c8a9f50d640f0d8b36d25be397dc8a187a3",
+    "TCC/conclusao.tex": "d4d60f64b86bf0367c7b1de37424ee0e8b88480bb3dd752310402e1e5957b525",
+    "TCC/discussao.tex": "4f54320591be55fe86da61dea942dea1b0326360b9978c7e622e3d7eb86d16ba",
+    "TCC/fundamentacao.tex": "fba574a0d0160b1a16ef9c310ea573fce3c319633f8a643ab5687488cb5ab900",
+    "TCC/introducao.tex": "c7a4b0baad24e07715e6ac6ed594831f0c67aff3b08ab2a73b77905076df5898",
+    "TCC/main.tex": "998eeef74bc67af97d49873eb0be36df2e456db6320a35af6c6014c0bb0c1fcf",
+    "TCC/metodologia.tex": "07af38fe440390a43cf738f4dfab82dbac3fdbfb206004b92868e17130bc816b",
+    "TCC/pretextual.tex": "1d3cd48601f93f7246619fb69c04a21dd3c66c5615ae32b4c35a3ced3d7b920a",
+    "TCC/resultados.tex": "0990158a6790f6bf9e30c8c160325150b7cd7373fdd1f358427a1c8ce5b04640"
+  },
+  "audit_report": {
+    "path": "../../../auditorias/discussao-clareza/verificacao-final.json",
+    "sha256": "a35c46b339e36e7ed581c3668ce3351d966d12845af053c1d692f41545de992e"
+  },
+  "preserved": {
+    "existing_analysis_sha256": 558,
+    "stage06_sha256": 336,
+    "figure_sha256": 109,
+    "code_files": 26
+  },
+  "independent_reports_sha256": {
+    "revisao-didatica.json": "240d40bf7d1db1137b69257385b6b2f6d0f7d33f38f6e24e8cb03ee1b472b125",
+    "revisao-espectral.json": "0410bed5f453755a7e866cf39d63412f2c262583d9025e28ab2f2c5708d3ebf9",
+    "revisao-optica.json": "1220cf3fb191f8f84ca54fb3cbf9081bdfea0b37ba2b062b91c146e963ffe82d"
+  }
+}

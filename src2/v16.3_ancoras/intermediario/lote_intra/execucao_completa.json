@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "inicio_utc": "2026-10-25T18:49:16.675483+00:00",
+  "fim_utc": "2026-10-25T18:59:59.927414+00:00",
+  "tempos_etapas_segundos": {
+    "ancoras": 10.69970770800137,
+    "calcular": 47.00331699999515,
+    "figuras": 108.99592316697817,
+    "galerias": 17.039389749988914,
+    "preparar": 5.7250855839811265,
+    "verificar": 39.17420491599478
+  },
+  "processamento_automatico_segundos": 228.6376281249395,
+  "decorrido_incluindo_revisao_visual_segundos": 643.251931,
+  "ancoras": 25,
+  "pares_intra": 87,
+  "pares_inter_calculados": 0,
+  "comprimento_comparacoes": 2048,
+  "precomputacoes_individuais": 44,
+  "arquivo_verificacao": "verificacao/verificacao.json",
+  "verificacao_sha256": "1d2981db9e69b8a5fca3197450f6e623825864ef438fd3fac4d8ecf79b3d2fee"
+}

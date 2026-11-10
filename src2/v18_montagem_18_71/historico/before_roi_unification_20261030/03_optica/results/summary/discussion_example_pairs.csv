@@ -1,0 +1,3 @@
+pattern,run_x,run_y,pearson_r,alpha_x,alpha_y,F1000_x,F1000_y,eligible_x,eligible_y,previous_run_x,previous_run_y,previous_pearson_r,example_pair_changed,selection
+churn,m04q20_001,m07q40_001,0.9668690352756103,0.870760457694614,0.7954507123202873,5.184311201687583,13.587190759417291,True,True,m04q20_001,m07q40_001,0.9692518588960242,False,maximum within-pattern Pearson across all retained spectral acquisitions
+wavy annular,m06q40_001,m07q80_001,0.9899033795874617,0.9142649066773709,0.9186353546104898,7.296203206807107,5.764034824377064,True,True,m06q40_001,m07q80_001,0.9870095888610041,False,maximum within-pattern Pearson across all retained spectral acquisitions

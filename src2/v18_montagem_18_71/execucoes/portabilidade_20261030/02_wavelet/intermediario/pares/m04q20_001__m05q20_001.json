@@ -1,0 +1,32 @@
+{
+  "run_x": "m04q20_001",
+  "run_y": "m05q20_001",
+  "padrao_x": "churn",
+  "padrao_y": "churn",
+  "tipo": "intra",
+  "padrao": "churn",
+  "arquivo": "04_analise_simplificada/figuras/churn_m04q20_001_m05q20_001.png",
+  "input_x_sha256": "57692e6906b114e7c60df57d4614fa4989a0935ad52f53fd16a9e6845c42de82",
+  "input_y_sha256": "5cc43971bc94a774f5f9e6e0a092871d813306a36710f8a95c895760b7f3e1d0",
+  "comprimento": 7411,
+  "comprimento_x": 9324,
+  "comprimento_y": 7411,
+  "descarte_x": 1913,
+  "descarte_y": 0,
+  "escalas_validas": 200,
+  "wco_maxima": 0.7784036915743863,
+  "wco_minima": 3.2737865351429696e-09,
+  "wco_media_integral": 0.08195048500468105,
+  "wco_maxima_zero": 0.660787207847253,
+  "wco_mediana_zero": 0.06532234338896978,
+  "pico_lag_px": 1336,
+  "pico_lambda_px": 3000.0,
+  "erro_soma_direta": 8.326672684688674e-17,
+  "erro_wps_independente": 4.440892098500626e-16,
+  "assinaturas": {
+    "core": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc",
+    "script": "edc4cc46e5ce0fc5267bfeaf023e7eb3ae1c6b298b15dc57a6d62cb7380463e8",
+    "input_x": "57692e6906b114e7c60df57d4614fa4989a0935ad52f53fd16a9e6845c42de82",
+    "input_y": "5cc43971bc94a774f5f9e6e0a092871d813306a36710f8a95c895760b7f3e1d0"
+  }
+}

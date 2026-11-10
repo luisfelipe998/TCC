@@ -1,0 +1,51 @@
+32 On the Development of an Alternative Proposition of Cross Wavelet Analysis 417
+
+2 2
+Iw, ,(b,a)! IW, ,(b.a)!
+oO o
+@ 20/4 @ 20 '
+& 40 S 40
+® 60 ® 60
+( 1000 2000 ( 1000 2000
+2 2
+IW, ,(b.a)| IW, a(b.a)|
+oO ow
+@ 20 i @ 20 \
+& 40 & 40
+® 60 © 60
+() 1000 2000 () 1000 2000
+2 2
+IW, ,(b,a)! Wyq(b.a)!
+ow oO
+@ 20 i @ 20 '
+8 40 8 40
+® 60 ® 60
+0 1000 2000 ( 1000 2000
+b b
+
+Fig. 32.3 Scalograms of the three realizations of processes x and y for SNR = 5 dB and delay of
+500 samples between events in x and y realizations
+
+lEstimator WCSI =IW,(b,a).Wy(b,a)!
+
+0.08
+10}
+0.07
+20 0.06
+© 0.05
+2 307
+3 0.04
+3
+40 0.03
+0.02
+50
+0.01
+60
+
+0 200 400 600 800 1000 1200 1400 1600 1800 2000
+b
+
+Fig. 32.4 WCS estimator for the three realizations from processes x and y, for SVR = 5dB and
+delay of 500 samples between events in x and y processes
+
+bardo.bodmann @ufrgs.br

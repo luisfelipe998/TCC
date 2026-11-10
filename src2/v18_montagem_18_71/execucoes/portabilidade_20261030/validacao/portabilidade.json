@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "probe_only": false,
+  "returncode": 0,
+  "minimal_package": "/private/var/folders/s3/59k9hj4s1dn071gxwzsljkd40000gn/T/tcc-v18-portability-jy0g2vs7/package",
+  "data_root": "/Users/i521862/Documents/personal/unisinos/TCC/src2/data_processed",
+  "output": "/Users/i521862/Documents/personal/unisinos/TCC/src2/v18_montagem_18_71/execucoes/portabilidade_20261030",
+  "original_package_not_allowed": "/Users/i521862/Documents/personal/unisinos/TCC/src2/v18_montagem_18_71",
+  "copied": [
+    "scripts",
+    "config",
+    "04_analise_simplificada/scripts",
+    "executar.py"
+  ],
+  "processes_with_guard": 23,
+  "blocked_events": [],
+  "file_events_by_category": {
+    "package": 209,
+    "system": 12694,
+    "output": 2193,
+    "support": 12,
+    "data": 13156,
+    "cache": 21
+  },
+  "audit_logs": "/private/var/folders/s3/59k9hj4s1dn071gxwzsljkd40000gn/T/tcc-v18-portability-jy0g2vs7/audit",
+  "os_font_cache_prepared_before_hook": true,
+  "methodology_presentation_coverage": {
+    "complete": true,
+    "required_artifacts": 21,
+    "missing": [],
+    "methodology_sources": {
+      "fluxograma": "diagram",
+      "perfis_wavelet": "synthetic_wavelet_example",
+      "exemplo_mascara": "experimental_crop",
+      "medidas_opticas": "synthetic_mask_example"
+    }
+  },
+  "scope": "Python file audit for cooperative pipeline; not an OS security sandbox."
+}

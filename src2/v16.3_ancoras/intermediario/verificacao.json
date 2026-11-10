@@ -1,0 +1,182 @@
+{
+  "status": "PASS",
+  "ancoras": 8,
+  "pares": 4,
+  "imagens": 12,
+  "conclusoes_vazias": true,
+  "numero_de_candidatos": 196,
+  "verificacoes_numericas": [
+    {
+      "padrao": "plug",
+      "comprimento": 2048,
+      "erro_equacao": 0.0,
+      "escalas_validas": 200,
+      "wco_media": 0.37097665516247197
+    },
+    {
+      "padrao": "slug",
+      "comprimento": 2048,
+      "erro_equacao": 0.0,
+      "escalas_validas": 200,
+      "wco_media": 0.26574390065590137
+    },
+    {
+      "padrao": "churn",
+      "comprimento": 4096,
+      "erro_equacao": 0.0,
+      "escalas_validas": 200,
+      "wco_media": 0.24966679992730012
+    },
+    {
+      "padrao": "wavy annular",
+      "comprimento": 4096,
+      "erro_equacao": 0.0,
+      "escalas_validas": 200,
+      "wco_media": 0.16960220363907502
+    }
+  ],
+  "imagens_png": [
+    {
+      "arquivo": "01_ancoras/plug_m05q01_001_E004",
+      "pixels": [
+        1833,
+        2257
+      ],
+      "altura_ao_inserir_com_16cm": 19.701036552100383
+    },
+    {
+      "arquivo": "01_ancoras/plug_m06q01_001_E010",
+      "pixels": [
+        1833,
+        2257
+      ],
+      "altura_ao_inserir_com_16cm": 19.701036552100383
+    },
+    {
+      "arquivo": "01_ancoras/slug_m04q01_001_E002",
+      "pixels": [
+        1858,
+        2257
+      ],
+      "altura_ao_inserir_com_16cm": 19.43595263724435
+    },
+    {
+      "arquivo": "01_ancoras/slug_m05q05_001_E008",
+      "pixels": [
+        1833,
+        2257
+      ],
+      "altura_ao_inserir_com_16cm": 19.701036552100383
+    },
+    {
+      "arquivo": "01_ancoras/churn_m03q05_001_MIN02256",
+      "pixels": [
+        1833,
+        2257
+      ],
+      "altura_ao_inserir_com_16cm": 19.701036552100383
+    },
+    {
+      "arquivo": "01_ancoras/churn_m04q10_001_MIN02128",
+      "pixels": [
+        1833,
+        2257
+      ],
+      "altura_ao_inserir_com_16cm": 19.701036552100383
+    },
+    {
+      "arquivo": "01_ancoras/wavy_annular_m03q10_001_MIN03119",
+      "pixels": [
+        1833,
+        2257
+      ],
+      "altura_ao_inserir_com_16cm": 19.701036552100383
+    },
+    {
+      "arquivo": "01_ancoras/wavy_annular_m03q20_001_MIN18525",
+      "pixels": [
+        1833,
+        2257
+      ],
+      "altura_ao_inserir_com_16cm": 19.701036552100383
+    },
+    {
+      "arquivo": "02_wavelets/plug_m05q01_001_m06q01_001_favoravel",
+      "pixels": [
+        1956,
+        2809
+      ],
+      "altura_ao_inserir_com_16cm": 22.97750511247444
+    },
+    {
+      "arquivo": "02_wavelets/slug_m04q01_001_m05q05_001_desfavoravel",
+      "pixels": [
+        1956,
+        2809
+      ],
+      "altura_ao_inserir_com_16cm": 22.97750511247444
+    },
+    {
+      "arquivo": "02_wavelets/churn_m03q05_001_m04q10_001_desfavoravel",
+      "pixels": [
+        1956,
+        2809
+      ],
+      "altura_ao_inserir_com_16cm": 22.97750511247444
+    },
+    {
+      "arquivo": "02_wavelets/wavy_annular_m03q10_001_m03q20_001_desfavoravel",
+      "pixels": [
+        1956,
+        2809
+      ],
+      "altura_ao_inserir_com_16cm": 22.97750511247444
+    }
+  ],
+  "artefatos_sha256": {
+    "01_ancoras/churn_m03q05_001_MIN02256.png": "4494f65bec75d986ec0ed2fee3fe7e98a2bfaf26567688cc47de4358f609fb21",
+    "01_ancoras/churn_m04q10_001_MIN02128.png": "82871a67cde2092e922c306783ac49cd0e52d40131cf78578fa890cc9383623c",
+    "01_ancoras/plug_m05q01_001_E004.png": "5d1020fbe632343aff47535f0e41c20dd8481943e670003a245564a4dc1e1d5c",
+    "01_ancoras/plug_m06q01_001_E010.png": "5ea1f85211d14e757afc5155735d1e4c4fe44d211b3877719efc00fb3290a99a",
+    "01_ancoras/slug_m04q01_001_E002.png": "bc938c09e540aed3f1a44b811a1466564ec5c88c29215e442b76a2cb235c4b30",
+    "01_ancoras/slug_m05q05_001_E008.png": "c560d824e9257ede03bb5346a5a0d07b3f2335f2c3a39dd1a1e4ccd07c94468c",
+    "01_ancoras/wavy_annular_m03q10_001_MIN03119.png": "33b346883703a11cb4254fc114b57eaec778ddc8599171ca5e9cc88d8c0fd854",
+    "01_ancoras/wavy_annular_m03q20_001_MIN18525.png": "29f4d411dac5e947ea061d8c7f73f9dddc6fc51035ada92aff5b26001a060d32",
+    "02_wavelets/churn_m03q05_001_m04q10_001_desfavoravel.png": "328ecb9f8a2a186bb78ccedee3cb4b14c40ce15d297159affdcadc207540a0d7",
+    "02_wavelets/plug_m05q01_001_m06q01_001_favoravel.png": "c4409eb08ce948dbe3d91848ed6cef4cc1953bdb2dc9fc800e28a04c7447c30e",
+    "02_wavelets/slug_m04q01_001_m05q05_001_desfavoravel.png": "e77b710303ea5e6cb8ad83b6b6b140b5e2851b3720f6c2339f549f26a0edb155",
+    "02_wavelets/wavy_annular_m03q10_001_m03q20_001_desfavoravel.png": "ddb0e0b5602b98f435dee03f072e77a891fd2428553a273548415b9846db5590",
+    "scripts/README.txt": "a509ef3a294a0231d7e4113fd63ce1070214446d73ee8e3d9db293b35d51fa1f",
+    "scripts/analyze_windows.py": "5d98fba45f0eccc1919057f3abe340e4d284b304d586c1f1317c9014487994ef",
+    "scripts/anchor_diagnostics.py": "5cafa6d693124945dc267df78e49fbd3bbded727337a95cca7b8520b8a3fbd57",
+    "scripts/audit_anchor_selection.py": "f7300937aa800813fe18c16ffd59e1e3ca7bbd7e3ab5e0835c7e2800fdfeec12",
+    "scripts/audit_context_profiles.py": "49ca53a14d17bb269dd16b8019efd86119a07e2cfca5581c4c420ade7929d610",
+    "scripts/audit_method_schuck.py": "e71ebbc4caa21e84b02fd8a4df97e58439f23a2b900cc3aaa802e479b00f419b",
+    "scripts/common.py": "fd1ec6b0a4fb15d845e584ee1c97504b2d79f71f85c3a4bc8457099dc7183fa8",
+    "scripts/compare_correlation_estimators.py": "0980e1e920236312774abadbb3031dc5b4982c5bc9416c3b02a824a66a053a68",
+    "scripts/compute_wavelets.py": "f7ef9fb04e61b9983211bb3bf0d19947f613d96fc7a0167678be613fd331aba4",
+    "scripts/config.json": "b88f361ca20f2f8c3b809d68559e40c36981541b26367dc9feeaf1f645f5096e",
+    "scripts/pair_identity.py": "2504cea974465e2d7165d3fcfe8b79c595611246b0ae64a5b068387a1b7ecf48",
+    "scripts/plot_config.json": "a28db85ca3538da8b8063328ae056400501926ab13ca64ce3377b28b99de93fe",
+    "scripts/plots.py": "f8750f4084e65eb996cc24f963afdffd7f45dcac46223357e1a750632fef8c2c",
+    "scripts/prepare_comparisons.py": "f0aca689a9c2e4fa38296d9ab9aff9e743d35ef4e5dfa95415990f01850bfb7f",
+    "scripts/render_pilot.py": "5c82eb776bc9f11600748939de8bc0e396ee661055013f1e1bde4de7fdfb1a42",
+    "scripts/requirements.txt": "1cf9e93ed90d8702498af8f0190188ae137cfc28cd800955c10f6d43d1679ae3",
+    "scripts/reset_outputs.py": "3e59c9ee946ba801a3c1f2c8b73c16d34c469f0987fc62c6d73f726dfee28d1b",
+    "scripts/run_pilot.py": "d04f51176966096dc6f4e050b2f73e29110a6d52742d7b368a0ca1c3b15ab209",
+    "scripts/select_anchors.py": "69d20a6acd962eacdeaa23192232bfc43b9b989cf9cd18929a9a1bb6eac433ff",
+    "scripts/study_anchor_consensus.py": "aabf03041b035e4820bee89eea7d9c1fa05d462b82056485979ed06058363c9d",
+    "scripts/validate_reusable_analysis.py": "827e7dc7c360d7c6efb19f307764f075dea91bee07fb1a393e64724525c2bcf3",
+    "scripts/verify_pilot.py": "3620f3b84050692b2f2e4eae4560cd2c3f6ed6236ff566252784168da62e44e0",
+    "scripts/verify_rebuild.py": "929570ce8754fd388355246b35643bafcabbb6cb463f7290f253c60a9aaf8a1d",
+    "scripts/wavelet_cache.py": "65a4767dc5c09631bc5c8328181e1ae63ad09eb6c109fb9afda2981f0304b0aa",
+    "scripts/wavelet_core.py": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc"
+  },
+  "casos_limite": [
+    "sinal_constante_sem_ancora",
+    "correspondencia_ambigua_rejeitada",
+    "morfologia_sem_revisao_rejeitada",
+    "convencao_de_lag",
+    "janela_maior_inviavel_reduzida_para_2048"
+  ]
+}

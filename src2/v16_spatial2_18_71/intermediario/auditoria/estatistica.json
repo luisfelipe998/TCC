@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "pares_scipy": 325,
+  "maior_erro_scipy": 1.1102230246251565e-15,
+  "menor_autovalor": 1.4565687681763721e-06,
+  "referencia_funcao_sha256": "68de6e2cc85e210a59a9aa008731374af9ef783ac87e0a452f95fd4e181b5cf7",
+  "identidade_descritor_v163": true,
+  "medias_balanceadas_conferidas": true,
+  "descritores_sha256": "0dfc11ab274a60c3e3b10ed01c4cb38ffb1f7b30b0ffdeda15509afca880879e"
+}

@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "aquisicoes": 25,
+  "janelas_por_aquisicao": 4,
+  "bandas": [
+    [
+      50,
+      512
+    ],
+    [
+      50,
+      1024
+    ]
+  ],
+  "n_avaliacoes_descritivas": 360,
+  "n_classificadores": 0,
+  "n_testes_significancia": 0,
+  "max_erro_wps_ancora": 7.105427357601002e-15,
+  "python": "3.13.2 (main, Mar  5 2025, 16:08:11) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "numpy": "2.3.4",
+  "scipy": "1.18.0",
+  "script_sha256": "57bae2038c13a2f871a026d469403ee2df41dcdfd1b92490eb9721bef21ed110"
+}

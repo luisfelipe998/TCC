@@ -1,0 +1,176 @@
+ensaio,condicao,erro_preparo,erro_wps_fft,erro_wps_temporal,verificacao
+m05q01_001,ancora_2048,4.218847493575595e-15,2.6645352591003757e-15,6.661338147750939e-15,correlacao direta + Morlet temporal em todas as escalas
+m05q01_001,inicio_2048,6.439293542825908e-15,0.0,8.881784197001252e-15,correlacao direta + Morlet temporal em todas as escalas
+m05q01_001,centro_2048,4.440892098500626e-15,0.0,4.440892098500626e-15,correlacao direta + Morlet temporal em todas as escalas
+m05q01_001,fim_2048,4.218847493575595e-15,0.0,8.881784197001252e-15,correlacao direta + Morlet temporal em todas as escalas
+m05q01_001,panorama_completo,9.992007221626409e-15,2.6645352591003757e-15,2.6645352591003757e-15,perfil temporal auditado v16.3 confrontado com FFT v16.1
+m05q01_001,ancora_menos16,5.218048215738236e-15,0.0,8.881784197001252e-15,correlacao direta + Morlet temporal em todas as escalas
+m05q01_001,ancora_mais16,4.884981308350689e-15,0.0,7.993605777301127e-15,correlacao direta + Morlet temporal em todas as escalas
+m06q01_001,ancora_2048,6.8833827526759706e-15,1.7763568394002505e-15,1.4210854715202004e-14,correlacao direta + Morlet temporal em todas as escalas
+m06q01_001,inicio_2048,7.771561172376096e-15,0.0,5.329070518200751e-15,correlacao direta + Morlet temporal em todas as escalas
+m06q01_001,centro_2048,7.105427357601002e-15,0.0,7.549516567451064e-15,correlacao direta + Morlet temporal em todas as escalas
+m06q01_001,fim_2048,6.8833827526759706e-15,0.0,7.993605777301127e-15,correlacao direta + Morlet temporal em todas as escalas
+m06q01_001,panorama_completo,2.4424906541753444e-15,2.6645352591003757e-15,2.6645352591003757e-15,perfil temporal auditado v16.3 confrontado com FFT v16.1
+m06q01_001,ancora_menos16,7.93809462606987e-15,0.0,1.7319479184152442e-14,correlacao direta + Morlet temporal em todas as escalas
+m06q01_001,ancora_mais16,5.689893001203927e-15,0.0,1.1102230246251565e-14,correlacao direta + Morlet temporal em todas as escalas
+m07q05_001,ancora_2048,6.161737786669619e-15,8.881784197001252e-16,7.993605777301127e-15,correlacao direta + Morlet temporal em todas as escalas
+m07q05_001,inicio_2048,5.329070518200751e-15,0.0,6.217248937900877e-15,correlacao direta + Morlet temporal em todas as escalas
+m07q05_001,centro_2048,8.770761894538737e-15,0.0,1.199040866595169e-14,correlacao direta + Morlet temporal em todas as escalas
+m07q05_001,fim_2048,7.882583474838611e-15,0.0,7.993605777301127e-15,correlacao direta + Morlet temporal em todas as escalas
+m07q05_001,panorama_completo,3.552713678800501e-15,2.6645352591003757e-15,2.6645352591003757e-15,perfil temporal auditado v16.3 confrontado com FFT v16.1
+m07q05_001,ancora_menos16,4.9960036108132044e-15,0.0,6.661338147750939e-15,correlacao direta + Morlet temporal em todas as escalas
+m07q05_001,ancora_mais16,5.551115123125783e-15,0.0,8.43769498715119e-15,correlacao direta + Morlet temporal em todas as escalas
+m04q01_001,ancora_2048,8.881784197001252e-15,1.7763568394002505e-15,1.2434497875801753e-14,correlacao direta + Morlet temporal em todas as escalas
+m04q01_001,inicio_2048,6.5503158452884236e-15,0.0,1.4210854715202004e-14,correlacao direta + Morlet temporal em todas as escalas
+m04q01_001,centro_2048,4.440892098500626e-15,0.0,7.105427357601002e-15,correlacao direta + Morlet temporal em todas as escalas
+m04q01_001,fim_2048,7.91033905045424e-15,0.0,1.5987211554602254e-14,correlacao direta + Morlet temporal em todas as escalas
+m04q01_001,panorama_completo,5.6066262743570405e-15,1.7763568394002505e-15,1.7763568394002505e-15,perfil temporal auditado v16.3 confrontado com FFT v16.1
+m04q01_001,ancora_menos16,8.455042221910958e-15,0.0,1.509903313490213e-14,correlacao direta + Morlet temporal em todas as escalas
+m04q01_001,ancora_mais16,9.992007221626409e-15,0.0,1.4210854715202004e-14,correlacao direta + Morlet temporal em todas as escalas
+m05q05_001,ancora_2048,5.134781488891349e-15,8.881784197001252e-16,5.329070518200751e-15,correlacao direta + Morlet temporal em todas as escalas
+m05q05_001,inicio_2048,4.1494585545365226e-15,0.0,5.329070518200751e-15,correlacao direta + Morlet temporal em todas as escalas
+m05q05_001,centro_2048,9.103828801926284e-15,0.0,1.687538997430238e-14,correlacao direta + Morlet temporal em todas as escalas
+m05q05_001,fim_2048,7.882583474838611e-15,0.0,7.549516567451064e-15,correlacao direta + Morlet temporal em todas as escalas
+m05q05_001,panorama_completo,1.3322676295501878e-15,3.552713678800501e-15,3.552713678800501e-15,perfil temporal auditado v16.3 confrontado com FFT v16.1
+m05q05_001,ancora_menos16,4.496403249731884e-15,0.0,5.329070518200751e-15,correlacao direta + Morlet temporal em todas as escalas
+m05q05_001,ancora_mais16,7.105427357601002e-15,0.0,7.993605777301127e-15,correlacao direta + Morlet temporal em todas as escalas
+m06q05_001,ancora_2048,8.326672684688674e-15,1.7763568394002505e-15,8.43769498715119e-15,correlacao direta + Morlet temporal em todas as escalas
+m06q05_001,inicio_2048,7.327471962526033e-15,0.0,7.105427357601002e-15,correlacao direta + Morlet temporal em todas as escalas
+m06q05_001,centro_2048,8.43769498715119e-15,0.0,1.199040866595169e-14,correlacao direta + Morlet temporal em todas as escalas
+m06q05_001,fim_2048,1.1268763699945339e-14,0.0,1.84297022087776e-14,correlacao direta + Morlet temporal em todas as escalas
+m06q05_001,panorama_completo,3.1086244689504383e-15,2.6645352591003757e-15,2.6645352591003757e-15,perfil temporal auditado v16.3 confrontado com FFT v16.1
+m06q05_001,ancora_menos16,6.494804694057166e-15,0.0,6.217248937900877e-15,correlacao direta + Morlet temporal em todas as escalas
+m06q05_001,ancora_mais16,8.992806499463768e-15,0.0,7.105427357601002e-15,correlacao direta + Morlet temporal em todas as escalas
+m03q05_001,ancora_2048,7.882583474838611e-15,1.7763568394002505e-15,7.105427357601002e-15,correlacao direta + Morlet temporal em todas as escalas
+m03q05_001,inicio_2048,9.603429163007604e-15,0.0,7.438494264988549e-15,correlacao direta + Morlet temporal em todas as escalas
+m03q05_001,centro_2048,8.43769498715119e-15,0.0,3.9968028886505635e-15,correlacao direta + Morlet temporal em todas as escalas
+m03q05_001,fim_2048,7.105427357601002e-15,0.0,9.2148511043888e-15,correlacao direta + Morlet temporal em todas as escalas
+m03q05_001,panorama_completo,2.220446049250313e-15,1.3322676295501878e-15,1.3322676295501878e-15,perfil temporal auditado v16.3 confrontado com FFT v16.1
+m03q05_001,ancora_menos16,8.042178034628478e-15,0.0,8.881784197001252e-15,correlacao direta + Morlet temporal em todas as escalas
+m03q05_001,ancora_mais16,9.325873406851315e-15,0.0,1.0658141036401503e-14,correlacao direta + Morlet temporal em todas as escalas
+m04q10_001,ancora_2048,5.10702591327572e-15,1.7763568394002505e-15,3.9968028886505635e-15,correlacao direta + Morlet temporal em todas as escalas
+m04q10_001,inicio_2048,8.43769498715119e-15,0.0,1.1546319456101628e-14,correlacao direta + Morlet temporal em todas as escalas
+m04q10_001,centro_2048,3.774758283725532e-15,0.0,5.329070518200751e-15,correlacao direta + Morlet temporal em todas as escalas
+m04q10_001,fim_2048,5.329070518200751e-15,0.0,3.9968028886505635e-15,correlacao direta + Morlet temporal em todas as escalas
+m04q10_001,panorama_completo,1.021405182655144e-14,1.7763568394002505e-15,1.7763568394002505e-15,perfil temporal auditado v16.3 confrontado com FFT v16.1
+m04q10_001,ancora_menos16,6.217248937900877e-15,0.0,2.6645352591003757e-15,correlacao direta + Morlet temporal em todas as escalas
+m04q10_001,ancora_mais16,7.327471962526033e-15,0.0,7.105427357601002e-15,correlacao direta + Morlet temporal em todas as escalas
+m04q20_001,ancora_2048,5.551115123125783e-15,8.881784197001252e-16,3.3306690738754696e-15,correlacao direta + Morlet temporal em todas as escalas
+m04q20_001,inicio_2048,4.9404924595819466e-15,0.0,3.552713678800501e-15,correlacao direta + Morlet temporal em todas as escalas
+m04q20_001,centro_2048,7.771561172376096e-15,0.0,4.9960036108132044e-15,correlacao direta + Morlet temporal em todas as escalas
+m04q20_001,fim_2048,7.105427357601002e-15,0.0,6.661338147750939e-15,correlacao direta + Morlet temporal em todas as escalas
+m04q20_001,panorama_completo,8.326672684688674e-15,1.3322676295501878e-15,1.3322676295501878e-15,perfil temporal auditado v16.3 confrontado com FFT v16.1
+m04q20_001,ancora_menos16,4.884981308350689e-15,0.0,3.3306690738754696e-15,correlacao direta + Morlet temporal em todas as escalas
+m04q20_001,ancora_mais16,7.216449660063518e-15,0.0,3.3306690738754696e-15,correlacao direta + Morlet temporal em todas as escalas
+m05q10_001,ancora_2048,1.1546319456101628e-14,8.881784197001252e-16,1.2323475573339238e-14,correlacao direta + Morlet temporal em todas as escalas
+m05q10_001,inicio_2048,8.340550472496489e-15,0.0,8.881784197001252e-15,correlacao direta + Morlet temporal em todas as escalas
+m05q10_001,centro_2048,1.890154699424329e-14,0.0,2.5757174171303632e-14,correlacao direta + Morlet temporal em todas as escalas
+m05q10_001,fim_2048,1.5376588891058418e-14,0.0,1.509903313490213e-14,correlacao direta + Morlet temporal em todas as escalas
+m05q10_001,panorama_completo,1.7319479184152442e-14,1.7763568394002505e-15,1.7763568394002505e-15,perfil temporal auditado v16.3 confrontado com FFT v16.1
+m05q10_001,ancora_menos16,1.6708856520608606e-14,0.0,1.965094753586527e-14,correlacao direta + Morlet temporal em todas as escalas
+m05q10_001,ancora_mais16,1.6542323066914832e-14,0.0,1.787459069646502e-14,correlacao direta + Morlet temporal em todas as escalas
+m05q20_001,ancora_2048,1.0880185641326534e-14,1.3322676295501878e-15,7.771561172376096e-15,correlacao direta + Morlet temporal em todas as escalas
+m05q20_001,inicio_2048,9.992007221626409e-15,0.0,1.509903313490213e-14,correlacao direta + Morlet temporal em todas as escalas
+m05q20_001,centro_2048,1.8984813721090177e-14,0.0,1.2878587085651816e-14,correlacao direta + Morlet temporal em todas as escalas
+m05q20_001,fim_2048,2.3314683517128287e-14,0.0,2.0650148258027912e-14,correlacao direta + Morlet temporal em todas as escalas
+m05q20_001,panorama_completo,2.220446049250313e-15,8.881784197001252e-16,8.881784197001252e-16,perfil temporal auditado v16.3 confrontado com FFT v16.1
+m05q20_001,ancora_menos16,1.9872992140790302e-14,0.0,1.5765166949677223e-14,correlacao direta + Morlet temporal em todas as escalas
+m05q20_001,ancora_mais16,1.199040866595169e-14,0.0,9.325873406851315e-15,correlacao direta + Morlet temporal em todas as escalas
+m05q40_001,ancora_2048,1.709743457922741e-14,1.3322676295501878e-15,1.7208456881689926e-14,correlacao direta + Morlet temporal em todas as escalas
+m05q40_001,inicio_2048,1.8984813721090177e-14,0.0,1.0658141036401503e-14,correlacao direta + Morlet temporal em todas as escalas
+m05q40_001,centro_2048,1.9539925233402755e-14,0.0,2.020605904817785e-14,correlacao direta + Morlet temporal em todas as escalas
+m05q40_001,fim_2048,1.6944778913341452e-14,0.0,1.2878587085651816e-14,correlacao direta + Morlet temporal em todas as escalas
+m05q40_001,panorama_completo,8.881784197001252e-15,1.7763568394002505e-15,1.7763568394002505e-15,perfil temporal auditado v16.3 confrontado com FFT v16.1
+m05q40_001,ancora_menos16,1.2490009027033011e-14,0.0,1.176836406102666e-14,correlacao direta + Morlet temporal em todas as escalas
+m05q40_001,ancora_mais16,1.1796119636642288e-14,0.0,1.099120794378905e-14,correlacao direta + Morlet temporal em todas as escalas
+m06q10_001,ancora_2048,9.325873406851315e-15,8.881784197001252e-16,7.993605777301127e-15,correlacao direta + Morlet temporal em todas as escalas
+m06q10_001,inicio_2048,1.404432126150823e-14,0.0,7.105427357601002e-15,correlacao direta + Morlet temporal em todas as escalas
+m06q10_001,centro_2048,1.554312234475219e-14,0.0,9.325873406851315e-15,correlacao direta + Morlet temporal em todas as escalas
+m06q10_001,fim_2048,1.0880185641326534e-14,0.0,2.842170943040401e-14,correlacao direta + Morlet temporal em todas as escalas
+m06q10_001,panorama_completo,2.4582766378067333e-14,1.3322676295501878e-15,1.3322676295501878e-15,perfil temporal auditado v16.3 confrontado com FFT v16.1
+m06q10_001,ancora_menos16,1.4432899320127035e-14,0.0,1.0436096431476471e-14,correlacao direta + Morlet temporal em todas as escalas
+m06q10_001,ancora_mais16,1.3877787807814457e-14,0.0,1.3766765505351941e-14,correlacao direta + Morlet temporal em todas as escalas
+m06q20_001,ancora_2048,1.4432899320127035e-14,8.881784197001252e-16,1.687538997430238e-14,correlacao direta + Morlet temporal em todas as escalas
+m06q20_001,inicio_2048,1.3322676295501878e-14,0.0,1.6431300764452317e-14,correlacao direta + Morlet temporal em todas as escalas
+m06q20_001,centro_2048,1.6264767310758543e-14,0.0,2.1760371282653068e-14,correlacao direta + Morlet temporal em todas as escalas
+m06q20_001,fim_2048,1.2045919817182948e-14,0.0,1.021405182655144e-14,correlacao direta + Morlet temporal em todas as escalas
+m06q20_001,panorama_completo,7.16093850883226e-15,1.7763568394002505e-15,1.7763568394002505e-15,perfil temporal auditado v16.3 confrontado com FFT v16.1
+m06q20_001,ancora_menos16,1.3988810110276972e-14,0.0,1.6431300764452317e-14,correlacao direta + Morlet temporal em todas as escalas
+m06q20_001,ancora_mais16,1.6958656701149266e-14,0.0,1.8207657603852567e-14,correlacao direta + Morlet temporal em todas as escalas
+m07q20_001,ancora_2048,1.509903313490213e-14,8.881784197001252e-16,1.4155343563970746e-14,correlacao direta + Morlet temporal em todas as escalas
+m07q20_001,inicio_2048,2.298161660974074e-14,0.0,3.419486915845482e-14,correlacao direta + Morlet temporal em todas as escalas
+m07q20_001,centro_2048,9.103828801926284e-15,0.0,7.549516567451064e-15,correlacao direta + Morlet temporal em todas as escalas
+m07q20_001,fim_2048,9.325873406851315e-15,0.0,8.43769498715119e-15,correlacao direta + Morlet temporal em todas as escalas
+m07q20_001,panorama_completo,1.3766765505351941e-14,8.881784197001252e-16,8.881784197001252e-16,perfil temporal auditado v16.3 confrontado com FFT v16.1
+m07q20_001,ancora_menos16,1.1102230246251565e-14,0.0,9.880984919163893e-15,correlacao direta + Morlet temporal em todas as escalas
+m07q20_001,ancora_mais16,1.865174681370263e-14,0.0,1.7985612998927536e-14,correlacao direta + Morlet temporal em todas as escalas
+m07q40_001,ancora_2048,1.687538997430238e-14,1.7763568394002505e-15,1.687538997430238e-14,correlacao direta + Morlet temporal em todas as escalas
+m07q40_001,inicio_2048,1.021405182655144e-14,0.0,5.551115123125783e-15,correlacao direta + Morlet temporal em todas as escalas
+m07q40_001,centro_2048,1.3211653993039363e-14,0.0,1.5765166949677223e-14,correlacao direta + Morlet temporal em todas as escalas
+m07q40_001,fim_2048,2.1871393585115584e-14,0.0,1.9761969838327786e-14,correlacao direta + Morlet temporal em todas as escalas
+m07q40_001,panorama_completo,1.8207657603852567e-14,1.7763568394002505e-15,1.7763568394002505e-15,perfil temporal auditado v16.3 confrontado com FFT v16.1
+m07q40_001,ancora_menos16,1.1379786002407855e-14,0.0,1.2434497875801753e-14,correlacao direta + Morlet temporal em todas as escalas
+m07q40_001,ancora_mais16,1.532107773982716e-14,0.0,1.176836406102666e-14,correlacao direta + Morlet temporal em todas as escalas
+m03q10_001,ancora_2048,6.5503158452884236e-15,1.7763568394002505e-15,5.329070518200751e-15,correlacao direta + Morlet temporal em todas as escalas
+m03q10_001,inicio_2048,7.993605777301127e-15,0.0,1.176836406102666e-14,correlacao direta + Morlet temporal em todas as escalas
+m03q10_001,centro_2048,8.326672684688674e-15,0.0,5.329070518200751e-15,correlacao direta + Morlet temporal em todas as escalas
+m03q10_001,fim_2048,7.549516567451064e-15,0.0,5.329070518200751e-15,correlacao direta + Morlet temporal em todas as escalas
+m03q10_001,panorama_completo,7.327471962526033e-15,2.6645352591003757e-15,2.6645352591003757e-15,perfil temporal auditado v16.3 confrontado com FFT v16.1
+m03q10_001,ancora_menos16,5.773159728050814e-15,0.0,4.884981308350689e-15,correlacao direta + Morlet temporal em todas as escalas
+m03q10_001,ancora_mais16,4.468647674116255e-15,0.0,3.1086244689504383e-15,correlacao direta + Morlet temporal em todas as escalas
+m03q20_001,ancora_2048,4.052314039881821e-15,1.7763568394002505e-15,3.552713678800501e-15,correlacao direta + Morlet temporal em todas as escalas
+m03q20_001,inicio_2048,1.0047518372857667e-14,0.0,1.0325074129013956e-14,correlacao direta + Morlet temporal em todas as escalas
+m03q20_001,centro_2048,9.103828801926284e-15,0.0,3.774758283725532e-15,correlacao direta + Morlet temporal em todas as escalas
+m03q20_001,fim_2048,7.771561172376096e-15,0.0,1.4210854715202004e-14,correlacao direta + Morlet temporal em todas as escalas
+m03q20_001,panorama_completo,1.021405182655144e-14,1.3322676295501878e-15,1.3322676295501878e-15,perfil temporal auditado v16.3 confrontado com FFT v16.1
+m03q20_001,ancora_menos16,7.882583474838611e-15,0.0,7.105427357601002e-15,correlacao direta + Morlet temporal em todas as escalas
+m03q20_001,ancora_mais16,5.995204332975845e-15,0.0,6.217248937900877e-15,correlacao direta + Morlet temporal em todas as escalas
+m03q40_001,ancora_2048,3.9968028886505635e-15,8.881784197001252e-16,1.7486012637846216e-15,correlacao direta + Morlet temporal em todas as escalas
+m03q40_001,inicio_2048,7.993605777301127e-15,0.0,3.1086244689504383e-15,correlacao direta + Morlet temporal em todas as escalas
+m03q40_001,centro_2048,9.547918011776346e-15,0.0,5.329070518200751e-15,correlacao direta + Morlet temporal em todas as escalas
+m03q40_001,fim_2048,9.103828801926284e-15,0.0,7.327471962526033e-15,correlacao direta + Morlet temporal em todas as escalas
+m03q40_001,panorama_completo,3.1086244689504383e-15,8.881784197001252e-16,8.881784197001252e-16,perfil temporal auditado v16.3 confrontado com FFT v16.1
+m03q40_001,ancora_menos16,7.549516567451064e-15,0.0,3.6914915568786455e-15,correlacao direta + Morlet temporal em todas as escalas
+m03q40_001,ancora_mais16,9.325873406851315e-15,0.0,4.718447854656915e-15,correlacao direta + Morlet temporal em todas as escalas
+m04q40_001,ancora_2048,5.329070518200751e-15,1.7763568394002505e-15,7.105427357601002e-15,correlacao direta + Morlet temporal em todas as escalas
+m04q40_001,inicio_2048,4.6629367034256575e-15,0.0,6.661338147750939e-15,correlacao direta + Morlet temporal em todas as escalas
+m04q40_001,centro_2048,2.7755575615628914e-15,0.0,4.884981308350689e-15,correlacao direta + Morlet temporal em todas as escalas
+m04q40_001,fim_2048,5.342948306008566e-15,0.0,4.440892098500626e-15,correlacao direta + Morlet temporal em todas as escalas
+m04q40_001,panorama_completo,3.1086244689504383e-15,3.552713678800501e-15,3.552713678800501e-15,perfil temporal auditado v16.3 confrontado com FFT v16.1
+m04q40_001,ancora_menos16,2.9976021664879227e-15,0.0,4.440892098500626e-15,correlacao direta + Morlet temporal em todas as escalas
+m04q40_001,ancora_mais16,4.884981308350689e-15,0.0,5.329070518200751e-15,correlacao direta + Morlet temporal em todas as escalas
+m04q80_001,ancora_2048,5.10702591327572e-15,2.6645352591003757e-15,2.6645352591003757e-15,correlacao direta + Morlet temporal em todas as escalas
+m04q80_001,inicio_2048,6.8833827526759706e-15,0.0,4.440892098500626e-15,correlacao direta + Morlet temporal em todas as escalas
+m04q80_001,centro_2048,5.10702591327572e-15,0.0,5.329070518200751e-15,correlacao direta + Morlet temporal em todas as escalas
+m04q80_001,fim_2048,6.529499163576702e-15,0.0,6.661338147750939e-15,correlacao direta + Morlet temporal em todas as escalas
+m04q80_001,panorama_completo,1.7763568394002505e-14,1.7763568394002505e-15,1.7763568394002505e-15,perfil temporal auditado v16.3 confrontado com FFT v16.1
+m04q80_001,ancora_menos16,4.73232564246473e-15,0.0,2.6645352591003757e-15,correlacao direta + Morlet temporal em todas as escalas
+m04q80_001,ancora_mais16,7.549516567451064e-15,0.0,3.552713678800501e-15,correlacao direta + Morlet temporal em todas as escalas
+m05q80_001,ancora_2048,1.9539925233402755e-14,3.552713678800501e-15,7.105427357601002e-15,correlacao direta + Morlet temporal em todas as escalas
+m05q80_001,inicio_2048,2.8976820942716586e-14,0.0,1.9539925233402755e-14,correlacao direta + Morlet temporal em todas as escalas
+m05q80_001,centro_2048,2.1649348980190553e-14,0.0,1.7208456881689926e-14,correlacao direta + Morlet temporal em todas as escalas
+m05q80_001,fim_2048,1.3988810110276972e-14,0.0,1.2878587085651816e-14,correlacao direta + Morlet temporal em todas as escalas
+m05q80_001,panorama_completo,2.3148150063434514e-14,2.6645352591003757e-15,2.6645352591003757e-15,perfil temporal auditado v16.3 confrontado com FFT v16.1
+m05q80_001,ancora_menos16,1.837419105754634e-14,0.0,5.329070518200751e-15,correlacao direta + Morlet temporal em todas as escalas
+m05q80_001,ancora_mais16,2.3092638912203256e-14,0.0,1.9539925233402755e-14,correlacao direta + Morlet temporal em todas as escalas
+m06q40_001,ancora_2048,1.9317880628477724e-14,3.552713678800501e-15,3.530509218307998e-14,correlacao direta + Morlet temporal em todas as escalas
+m06q40_001,inicio_2048,1.3322676295501878e-14,0.0,2.042810365310288e-14,correlacao direta + Morlet temporal em todas as escalas
+m06q40_001,centro_2048,1.4765966227514582e-14,0.0,1.4432899320127035e-14,correlacao direta + Morlet temporal em todas as escalas
+m06q40_001,fim_2048,1.8207657603852567e-14,0.0,1.7319479184152442e-14,correlacao direta + Morlet temporal em todas as escalas
+m06q40_001,panorama_completo,5.995204332975845e-15,3.552713678800501e-15,3.552713678800501e-15,perfil temporal auditado v16.3 confrontado com FFT v16.1
+m06q40_001,ancora_menos16,1.4099832412739488e-14,0.0,2.4424906541753444e-14,correlacao direta + Morlet temporal em todas as escalas
+m06q40_001,ancora_mais16,1.532107773982716e-14,0.0,2.7533531010703882e-14,correlacao direta + Morlet temporal em todas as escalas
+m06q80_001,ancora_2048,1.7763568394002505e-14,1.7763568394002505e-15,1.865174681370263e-14,correlacao direta + Morlet temporal em todas as escalas
+m06q80_001,inicio_2048,1.27675647831893e-14,0.0,1.509903313490213e-14,correlacao direta + Morlet temporal em todas as escalas
+m06q80_001,centro_2048,1.6209256159527285e-14,0.0,1.1546319456101628e-14,correlacao direta + Morlet temporal em todas as escalas
+m06q80_001,fim_2048,2.0095036745715333e-14,0.0,2.4424906541753444e-14,correlacao direta + Morlet temporal em todas as escalas
+m06q80_001,panorama_completo,1.7319479184152442e-14,3.552713678800501e-15,3.552713678800501e-15,perfil temporal auditado v16.3 confrontado com FFT v16.1
+m06q80_001,ancora_menos16,1.3988810110276972e-14,0.0,1.4654943925052066e-14,correlacao direta + Morlet temporal em todas as escalas
+m06q80_001,ancora_mais16,1.2656542480726785e-14,0.0,1.509903313490213e-14,correlacao direta + Morlet temporal em todas as escalas
+m07q80_001,ancora_2048,1.2989609388114332e-14,1.7763568394002505e-15,1.7319479184152442e-14,correlacao direta + Morlet temporal em todas as escalas
+m07q80_001,inicio_2048,1.709743457922741e-14,0.0,2.220446049250313e-14,correlacao direta + Morlet temporal em todas as escalas
+m07q80_001,centro_2048,1.5801596142672736e-14,0.0,2.2648549702353193e-14,correlacao direta + Morlet temporal em todas as escalas
+m07q80_001,fim_2048,1.709743457922741e-14,0.0,2.6423307986078726e-14,correlacao direta + Morlet temporal em todas as escalas
+m07q80_001,panorama_completo,2.6201263381153694e-14,4.440892098500626e-15,4.440892098500626e-15,perfil temporal auditado v16.3 confrontado com FFT v16.1
+m07q80_001,ancora_menos16,1.2434497875801753e-14,0.0,1.5987211554602254e-14,correlacao direta + Morlet temporal em todas as escalas
+m07q80_001,ancora_mais16,1.509903313490213e-14,0.0,2.3092638912203256e-14,correlacao direta + Morlet temporal em todas as escalas

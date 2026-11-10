@@ -1,0 +1,44 @@
+32 On the Development of an Alternative Proposition of Cross Wavelet Analysis 419
+
+2 2
+Iw, ,(b,a)! IW, ,(b.a)!
+oO o
+@ 2074 @ 20 '
+& 40 S 40
+® 60 ® 60
+( 1000 2000 ( 1000 2000
+2 2
+IW, ,(b.a)| IW, a(b.a)|
+oO ow
+@ 20 i @ 20 \
+& 40 & 40
+® 60 © 60
+() 1000 2000 () 1000 2000
+2 2
+IW, ,(b,a)! Wyq(b.a)!
+ow oO
+@ 20 j @ 20 '
+8 40 8 40
+® 60 ® 60
+0 1000 2000 ( 1000 2000
+b b
+
+Fig. 32.6 Scalograms of the three realizations of processes x and y for SNR = 5 dB and delay of
+500 samples between events in x and y realizations with some spikes randomly added
+
+the new technique was found more robust to the presence of other noncorrelated
+spikes and transients in the realizations (Fig. 32.11).
+
+Concluding, these new definitions proposed in the present contribution work
+better in a nonsynchronized transient event detection in noise as compared to the
+traditional definitions. Furthermore the new definitions may be seen as filtered
+versions of auto and cross-correlation of the signals, all estimator errors and
+confidence tests developed for correlation functions or spectral density functions
+[BePi00] can be applied to these new definitions. These ideas will be the focus of
+future works, where further theoretical considerations as well as experimental issues
+will be addressed. Finally, by means of CWT-2D use [AnEtA104], the presented
+idea can easily be extended to nonstationary processes, where the definitions of
+correlation functions have two time axes as independent variables. This is also
+subject of future research.
+
+bardo.bodmann@ufrgs.br

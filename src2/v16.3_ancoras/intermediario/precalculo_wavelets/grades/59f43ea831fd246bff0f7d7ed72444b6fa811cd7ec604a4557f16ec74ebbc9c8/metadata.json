@@ -1,0 +1,27 @@
+{
+  "spec": {
+    "tipo": "grade",
+    "schema": 2,
+    "comprimento": 4096,
+    "dx_px": 1,
+    "lambda_min": 50,
+    "lambda_max": 2048.0,
+    "escalas": 200,
+    "omega0": 6.0,
+    "padding_sigma": 8,
+    "estimador": "biased",
+    "K": 1,
+    "preparo": "recorte, 255-I, detrend linear, remocao de media, desvio padrao unitario",
+    "nucleo_sha256": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc",
+    "entrada_sha256": "fd1ec6b0a4fb15d845e584ee1c97504b2d79f71f85c3a4bc8457099dc7183fa8",
+    "backend_sha256": "65a4767dc5c09631bc5c8328181e1ae63ad09eb6c109fb9afda2981f0304b0aa"
+  },
+  "arrays_sha256": {
+    "wavelengths": "2761d8ef5d8366490923c01593e1f49a95b3283874e7a4a94fbfbc25fe925a4b",
+    "scales": "094d30941cd1459dd36325972b1380fb0a091bb037482c956cc0c19c8ca91035",
+    "lags": "bb7297f9911df6bc1fe9bea2e6f5675c574acf75d1e27c9ab3620546e9664e7a",
+    "support": "7eceb25fafbd7e84d67da256b437fa83c66040df16eb625c470d8728d238a9d7",
+    "kernels": "fdc801de9f2a53228bc3306cbfc7758cc79c0ecc79c5ed1cca838ef180654b6e"
+  },
+  "data_utc": "2026-10-25T18:29:54.928334+00:00"
+}

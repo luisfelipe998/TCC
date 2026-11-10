@@ -1,0 +1,14 @@
+{
+  "run_x": "m05q01_001",
+  "run_y": "m06q01_001",
+  "modo": "campos completos recalculados com o núcleo local; compactação somente para apresentação",
+  "pearson_r": 0.9400531818172181,
+  "origem_metricas": {
+    "arquivo": "02_wavelet/intermediario/pares/m05q01_001__m06q01_001.json",
+    "sha256": "b5541a2f88f75ca4ea6aa43edbaf82ff8faef52ae7a9817f1a276aed6fed30f3"
+  },
+  "mapa": {
+    "arquivo": "04_analise_simplificada/intermediario/pares/m05q01_001__m06q01_001.npz",
+    "sha256": "5665e83201b568914ddf4261df05d160e490333f2873471b7ae876c1e1835c8e"
+  }
+}

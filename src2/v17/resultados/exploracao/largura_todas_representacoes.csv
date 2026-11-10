@@ -1,0 +1,751 @@
+teto_lambda,janela,metodo,ensaio,padrao,largura,m,q
+512,prefixo,wps,m03q05_001,churn,0.9550147349751903,3,5
+512,prefixo,wps,m04q10_001,churn,1.1237338567770712,4,10
+512,prefixo,wps,m04q20_001,churn,0.9977402020980577,4,20
+512,prefixo,wps,m05q10_001,churn,1.0502638059509666,5,10
+512,prefixo,wps,m05q20_001,churn,0.9545090343572253,5,20
+512,prefixo,wps,m05q40_001,churn,0.8199088357080173,5,40
+512,prefixo,wps,m06q10_001,churn,0.6671830819603448,6,10
+512,prefixo,wps,m06q20_001,churn,0.563443839664866,6,20
+512,prefixo,wps,m07q20_001,churn,1.2989918859513567,7,20
+512,prefixo,wps,m07q40_001,churn,0.8626558560194999,7,40
+512,prefixo,wps,m03q10_001,wavy annular,0.8745836651848231,3,10
+512,prefixo,wps,m03q20_001,wavy annular,0.7761892623956435,3,20
+512,prefixo,wps,m03q40_001,wavy annular,0.9591616334594892,3,40
+512,prefixo,wps,m04q40_001,wavy annular,0.6410328281080853,4,40
+512,prefixo,wps,m04q80_001,wavy annular,0.7393939294312908,4,80
+512,prefixo,wps,m05q80_001,wavy annular,0.7957786815227594,5,80
+512,prefixo,wps,m06q40_001,wavy annular,0.5932283161984673,6,40
+512,prefixo,wps,m06q80_001,wavy annular,0.4605920956686127,6,80
+512,prefixo,wps,m07q80_001,wavy annular,0.48716609684095236,7,80
+512,prefixo,wps,m05q01_001,plug,0.5883743551657643,5,1
+512,prefixo,wps,m06q01_001,plug,0.6999517220093141,6,1
+512,prefixo,wps,m07q05_001,plug,0.7525568907115154,7,5
+512,prefixo,wps,m04q01_001,slug,0.591383661067372,4,1
+512,prefixo,wps,m05q05_001,slug,0.8595660655729791,5,5
+512,prefixo,wps,m06q05_001,slug,0.7113425955102519,6,5
+512,media_tres_janelas,wps,m03q05_001,churn,1.0054662217564623,3,5
+512,media_tres_janelas,wps,m04q10_001,churn,0.9925380065761038,4,10
+512,media_tres_janelas,wps,m04q20_001,churn,0.9316624132779108,4,20
+512,media_tres_janelas,wps,m05q10_001,churn,0.9753703284750541,5,10
+512,media_tres_janelas,wps,m05q20_001,churn,1.1015313571751255,5,20
+512,media_tres_janelas,wps,m05q40_001,churn,0.7977993069745297,5,40
+512,media_tres_janelas,wps,m06q10_001,churn,0.780299840664914,6,10
+512,media_tres_janelas,wps,m06q20_001,churn,0.9365912458904333,6,20
+512,media_tres_janelas,wps,m07q20_001,churn,1.1867225714847187,7,20
+512,media_tres_janelas,wps,m07q40_001,churn,0.9347777998261932,7,40
+512,media_tres_janelas,wps,m03q10_001,wavy annular,0.8600386539396938,3,10
+512,media_tres_janelas,wps,m03q20_001,wavy annular,0.866748878505069,3,20
+512,media_tres_janelas,wps,m03q40_001,wavy annular,0.9123611269770224,3,40
+512,media_tres_janelas,wps,m04q40_001,wavy annular,0.6482564307311449,4,40
+512,media_tres_janelas,wps,m04q80_001,wavy annular,0.7287821554438683,4,80
+512,media_tres_janelas,wps,m05q80_001,wavy annular,0.7100089101630491,5,80
+512,media_tres_janelas,wps,m06q40_001,wavy annular,0.5940630176102566,6,40
+512,media_tres_janelas,wps,m06q80_001,wavy annular,0.52520737056589,6,80
+512,media_tres_janelas,wps,m07q80_001,wavy annular,0.5745696993821454,7,80
+512,media_tres_janelas,wps,m05q01_001,plug,0.6624623174300703,5,1
+512,media_tres_janelas,wps,m06q01_001,plug,0.8059617361642308,6,1
+512,media_tres_janelas,wps,m07q05_001,plug,0.6958767056040189,7,5
+512,media_tres_janelas,wps,m04q01_001,slug,0.6087699216087401,4,1
+512,media_tres_janelas,wps,m05q05_001,slug,0.9040948743845467,5,5
+512,media_tres_janelas,wps,m06q05_001,slug,0.7253708270508401,6,5
+512,prefixo,wps_ponderada,m03q05_001,churn,1.0312628183317116,3,5
+512,prefixo,wps_ponderada,m04q10_001,churn,1.2096212221475708,4,10
+512,prefixo,wps_ponderada,m04q20_001,churn,1.2311505537093481,4,20
+512,prefixo,wps_ponderada,m05q10_001,churn,1.0814781655860441,5,10
+512,prefixo,wps_ponderada,m05q20_001,churn,0.9368810419274771,5,20
+512,prefixo,wps_ponderada,m05q40_001,churn,1.109706696904893,5,40
+512,prefixo,wps_ponderada,m06q10_001,churn,0.7681448079670341,6,10
+512,prefixo,wps_ponderada,m06q20_001,churn,1.0020962491785141,6,20
+512,prefixo,wps_ponderada,m07q20_001,churn,1.2672138230814358,7,20
+512,prefixo,wps_ponderada,m07q40_001,churn,1.0893255665991406,7,40
+512,prefixo,wps_ponderada,m03q10_001,wavy annular,0.9406214628075524,3,10
+512,prefixo,wps_ponderada,m03q20_001,wavy annular,0.9602481832287895,3,20
+512,prefixo,wps_ponderada,m03q40_001,wavy annular,0.7533089145519911,3,40
+512,prefixo,wps_ponderada,m04q40_001,wavy annular,0.7399577598720617,4,40
+512,prefixo,wps_ponderada,m04q80_001,wavy annular,0.8258077008637583,4,80
+512,prefixo,wps_ponderada,m05q80_001,wavy annular,0.9177692368558557,5,80
+512,prefixo,wps_ponderada,m06q40_001,wavy annular,0.6786983370906112,6,40
+512,prefixo,wps_ponderada,m06q80_001,wavy annular,0.5007070619647918,6,80
+512,prefixo,wps_ponderada,m07q80_001,wavy annular,0.602618757696316,7,80
+512,prefixo,wps_ponderada,m05q01_001,plug,1.058657606377932,5,1
+512,prefixo,wps_ponderada,m06q01_001,plug,0.8710503089146631,6,1
+512,prefixo,wps_ponderada,m07q05_001,plug,0.931754206680016,7,5
+512,prefixo,wps_ponderada,m04q01_001,slug,0.6914740574088638,4,1
+512,prefixo,wps_ponderada,m05q05_001,slug,1.0642578227794868,5,5
+512,prefixo,wps_ponderada,m06q05_001,slug,0.7926167464075915,6,5
+512,media_tres_janelas,wps_ponderada,m03q05_001,churn,1.0644593892903522,3,5
+512,media_tres_janelas,wps_ponderada,m04q10_001,churn,1.0468389568250567,4,10
+512,media_tres_janelas,wps_ponderada,m04q20_001,churn,0.9224067621034493,4,20
+512,media_tres_janelas,wps_ponderada,m05q10_001,churn,1.1782719611082246,5,10
+512,media_tres_janelas,wps_ponderada,m05q20_001,churn,1.0533423054237048,5,20
+512,media_tres_janelas,wps_ponderada,m05q40_001,churn,1.0990161506997813,5,40
+512,media_tres_janelas,wps_ponderada,m06q10_001,churn,0.9554981762897388,6,10
+512,media_tres_janelas,wps_ponderada,m06q20_001,churn,1.1658613221454068,6,20
+512,media_tres_janelas,wps_ponderada,m07q20_001,churn,1.2123980182997185,7,20
+512,media_tres_janelas,wps_ponderada,m07q40_001,churn,1.0867417264667658,7,40
+512,media_tres_janelas,wps_ponderada,m03q10_001,wavy annular,0.9188949411097296,3,10
+512,media_tres_janelas,wps_ponderada,m03q20_001,wavy annular,0.9304914505606403,3,20
+512,media_tres_janelas,wps_ponderada,m03q40_001,wavy annular,0.8452915302378416,3,40
+512,media_tres_janelas,wps_ponderada,m04q40_001,wavy annular,0.7626960137247174,4,40
+512,media_tres_janelas,wps_ponderada,m04q80_001,wavy annular,0.7890205053804751,4,80
+512,media_tres_janelas,wps_ponderada,m05q80_001,wavy annular,0.8447614819381339,5,80
+512,media_tres_janelas,wps_ponderada,m06q40_001,wavy annular,0.7078815297565173,6,40
+512,media_tres_janelas,wps_ponderada,m06q80_001,wavy annular,0.5777061736232518,6,80
+512,media_tres_janelas,wps_ponderada,m07q80_001,wavy annular,0.7107600995573469,7,80
+512,media_tres_janelas,wps_ponderada,m05q01_001,plug,0.9485121989613496,5,1
+512,media_tres_janelas,wps_ponderada,m06q01_001,plug,0.9882238658591902,6,1
+512,media_tres_janelas,wps_ponderada,m07q05_001,plug,0.9216151351851627,7,5
+512,media_tres_janelas,wps_ponderada,m04q01_001,slug,0.803406927940185,4,1
+512,media_tres_janelas,wps_ponderada,m05q05_001,slug,1.0714433395368426,5,5
+512,media_tres_janelas,wps_ponderada,m06q05_001,slug,0.8834492806531831,6,5
+512,prefixo,welch_logenergia,m03q05_001,churn,1.0385987566340944,3,5
+512,prefixo,welch_logenergia,m04q10_001,churn,1.2529687971772656,4,10
+512,prefixo,welch_logenergia,m04q20_001,churn,1.238691777596622,4,20
+512,prefixo,welch_logenergia,m05q10_001,churn,1.188479132459988,5,10
+512,prefixo,welch_logenergia,m05q20_001,churn,0.8878009076227018,5,20
+512,prefixo,welch_logenergia,m05q40_001,churn,1.0144354106323403,5,40
+512,prefixo,welch_logenergia,m06q10_001,churn,0.8507875342835174,6,10
+512,prefixo,welch_logenergia,m06q20_001,churn,0.9850692969295807,6,20
+512,prefixo,welch_logenergia,m07q20_001,churn,1.3254960791518045,7,20
+512,prefixo,welch_logenergia,m07q40_001,churn,0.9975175789037305,7,40
+512,prefixo,welch_logenergia,m03q10_001,wavy annular,1.0045598382098042,3,10
+512,prefixo,welch_logenergia,m03q20_001,wavy annular,0.8473779210228543,3,20
+512,prefixo,welch_logenergia,m03q40_001,wavy annular,0.5827852295592191,3,40
+512,prefixo,welch_logenergia,m04q40_001,wavy annular,0.7007755454563362,4,40
+512,prefixo,welch_logenergia,m04q80_001,wavy annular,0.7705064287659651,4,80
+512,prefixo,welch_logenergia,m05q80_001,wavy annular,0.7970770088751786,5,80
+512,prefixo,welch_logenergia,m06q40_001,wavy annular,0.6558868691596844,6,40
+512,prefixo,welch_logenergia,m06q80_001,wavy annular,0.4266138021900492,6,80
+512,prefixo,welch_logenergia,m07q80_001,wavy annular,0.6056495557156385,7,80
+512,prefixo,welch_logenergia,m05q01_001,plug,0.6960207142068704,5,1
+512,prefixo,welch_logenergia,m06q01_001,plug,0.7217477972710853,6,1
+512,prefixo,welch_logenergia,m07q05_001,plug,0.8963605175670839,7,5
+512,prefixo,welch_logenergia,m04q01_001,slug,0.5762055393480656,4,1
+512,prefixo,welch_logenergia,m05q05_001,slug,0.9515779431447244,5,5
+512,prefixo,welch_logenergia,m06q05_001,slug,0.7507449930846581,6,5
+512,media_tres_janelas,welch_logenergia,m03q05_001,churn,1.0676903223912504,3,5
+512,media_tres_janelas,welch_logenergia,m04q10_001,churn,0.9994693913698862,4,10
+512,media_tres_janelas,welch_logenergia,m04q20_001,churn,1.0222636772333864,4,20
+512,media_tres_janelas,welch_logenergia,m05q10_001,churn,1.2814693515587328,5,10
+512,media_tres_janelas,welch_logenergia,m05q20_001,churn,1.013063889611134,5,20
+512,media_tres_janelas,welch_logenergia,m05q40_001,churn,1.2248593276991118,5,40
+512,media_tres_janelas,welch_logenergia,m06q10_001,churn,1.0968496863312005,6,10
+512,media_tres_janelas,welch_logenergia,m06q20_001,churn,1.110434863227062,6,20
+512,media_tres_janelas,welch_logenergia,m07q20_001,churn,1.1726158502102866,7,20
+512,media_tres_janelas,welch_logenergia,m07q40_001,churn,0.9802779420931982,7,40
+512,media_tres_janelas,welch_logenergia,m03q10_001,wavy annular,0.9082508224992685,3,10
+512,media_tres_janelas,welch_logenergia,m03q20_001,wavy annular,0.8768554846219923,3,20
+512,media_tres_janelas,welch_logenergia,m03q40_001,wavy annular,0.8440712846681269,3,40
+512,media_tres_janelas,welch_logenergia,m04q40_001,wavy annular,0.7265793496940072,4,40
+512,media_tres_janelas,welch_logenergia,m04q80_001,wavy annular,0.7069525301468431,4,80
+512,media_tres_janelas,welch_logenergia,m05q80_001,wavy annular,0.7981043225635354,5,80
+512,media_tres_janelas,welch_logenergia,m06q40_001,wavy annular,0.6959812787671993,6,40
+512,media_tres_janelas,welch_logenergia,m06q80_001,wavy annular,0.5295895525778755,6,80
+512,media_tres_janelas,welch_logenergia,m07q80_001,wavy annular,0.6354305955280726,7,80
+512,media_tres_janelas,welch_logenergia,m05q01_001,plug,0.9492279305399354,5,1
+512,media_tres_janelas,welch_logenergia,m06q01_001,plug,1.0579118206835405,6,1
+512,media_tres_janelas,welch_logenergia,m07q05_001,plug,0.9782485837805535,7,5
+512,media_tres_janelas,welch_logenergia,m04q01_001,slug,0.8184102611598973,4,1
+512,media_tres_janelas,welch_logenergia,m05q05_001,slug,1.0595515825391546,5,5
+512,media_tres_janelas,welch_logenergia,m06q05_001,slug,0.8962421740112703,6,5
+1024,prefixo,wps,m03q05_001,churn,1.0013002821831742,3,5
+1024,prefixo,wps,m04q10_001,churn,1.165995273575109,4,10
+1024,prefixo,wps,m04q20_001,churn,1.0037447045253138,4,20
+1024,prefixo,wps,m05q10_001,churn,1.1409630010959306,5,10
+1024,prefixo,wps,m05q20_001,churn,1.1650765189822483,5,20
+1024,prefixo,wps,m05q40_001,churn,0.8313882487847799,5,40
+1024,prefixo,wps,m06q10_001,churn,1.2353446424723842,6,10
+1024,prefixo,wps,m06q20_001,churn,0.5533708069001495,6,20
+1024,prefixo,wps,m07q20_001,churn,1.440006333437121,7,20
+1024,prefixo,wps,m07q40_001,churn,0.8866153672242563,7,40
+1024,prefixo,wps,m03q10_001,wavy annular,0.9486947856115977,3,10
+1024,prefixo,wps,m03q20_001,wavy annular,0.8214338282206208,3,20
+1024,prefixo,wps,m03q40_001,wavy annular,1.1045809474506019,3,40
+1024,prefixo,wps,m04q40_001,wavy annular,1.0151220495687303,4,40
+1024,prefixo,wps,m04q80_001,wavy annular,0.748955068590134,4,80
+1024,prefixo,wps,m05q80_001,wavy annular,0.8134355764659889,5,80
+1024,prefixo,wps,m06q40_001,wavy annular,0.6564798375549348,6,40
+1024,prefixo,wps,m06q80_001,wavy annular,0.7368929954494083,6,80
+1024,prefixo,wps,m07q80_001,wavy annular,0.4959569523315155,7,80
+1024,prefixo,wps,m05q01_001,plug,0.5423064811718215,5,1
+1024,prefixo,wps,m06q01_001,plug,0.7023772068953846,6,1
+1024,prefixo,wps,m07q05_001,plug,0.7708251786861577,7,5
+1024,prefixo,wps,m04q01_001,slug,0.7220553098608535,4,1
+1024,prefixo,wps,m05q05_001,slug,0.5365054852464208,5,5
+1024,prefixo,wps,m06q05_001,slug,1.1991520671836646,6,5
+1024,media_tres_janelas,wps,m03q05_001,churn,1.0969957452648336,3,5
+1024,media_tres_janelas,wps,m04q10_001,churn,1.3096737185698863,4,10
+1024,media_tres_janelas,wps,m04q20_001,churn,1.2825198757671608,4,20
+1024,media_tres_janelas,wps,m05q10_001,churn,1.0561257423428003,5,10
+1024,media_tres_janelas,wps,m05q20_001,churn,1.3577348398120481,5,20
+1024,media_tres_janelas,wps,m05q40_001,churn,0.853332573547906,5,40
+1024,media_tres_janelas,wps,m06q10_001,churn,1.1582410827006058,6,10
+1024,media_tres_janelas,wps,m06q20_001,churn,0.9123334064201885,6,20
+1024,media_tres_janelas,wps,m07q20_001,churn,1.337139070953529,7,20
+1024,media_tres_janelas,wps,m07q40_001,churn,0.9926928410109079,7,40
+1024,media_tres_janelas,wps,m03q10_001,wavy annular,0.9692888339988031,3,10
+1024,media_tres_janelas,wps,m03q20_001,wavy annular,1.02992263961412,3,20
+1024,media_tres_janelas,wps,m03q40_001,wavy annular,1.09020121141665,3,40
+1024,media_tres_janelas,wps,m04q40_001,wavy annular,0.8243661596809453,4,40
+1024,media_tres_janelas,wps,m04q80_001,wavy annular,0.7971983862379091,4,80
+1024,media_tres_janelas,wps,m05q80_001,wavy annular,0.7546775368743761,5,80
+1024,media_tres_janelas,wps,m06q40_001,wavy annular,0.714087392760888,6,40
+1024,media_tres_janelas,wps,m06q80_001,wavy annular,0.7593739911067052,6,80
+1024,media_tres_janelas,wps,m07q80_001,wavy annular,0.5926550906852928,7,80
+1024,media_tres_janelas,wps,m05q01_001,plug,0.6435141377550249,5,1
+1024,media_tres_janelas,wps,m06q01_001,plug,0.8431421823113636,6,1
+1024,media_tres_janelas,wps,m07q05_001,plug,0.7862055226909543,7,5
+1024,media_tres_janelas,wps,m04q01_001,slug,0.716496610152543,4,1
+1024,media_tres_janelas,wps,m05q05_001,slug,0.8448260431910599,5,5
+1024,media_tres_janelas,wps,m06q05_001,slug,0.998189256201325,6,5
+1024,prefixo,wps_ponderada,m03q05_001,churn,1.0803100693522438,3,5
+1024,prefixo,wps_ponderada,m04q10_001,churn,1.3733325513231227,4,10
+1024,prefixo,wps_ponderada,m04q20_001,churn,1.3233104627058676,4,20
+1024,prefixo,wps_ponderada,m05q10_001,churn,1.1482903541083926,5,10
+1024,prefixo,wps_ponderada,m05q20_001,churn,1.1006555274608871,5,20
+1024,prefixo,wps_ponderada,m05q40_001,churn,1.1212768274605391,5,40
+1024,prefixo,wps_ponderada,m06q10_001,churn,0.9600254801645711,6,10
+1024,prefixo,wps_ponderada,m06q20_001,churn,0.9139549277615018,6,20
+1024,prefixo,wps_ponderada,m07q20_001,churn,1.5148062302706347,7,20
+1024,prefixo,wps_ponderada,m07q40_001,churn,1.1202124771102229,7,40
+1024,prefixo,wps_ponderada,m03q10_001,wavy annular,1.0231378145615384,3,10
+1024,prefixo,wps_ponderada,m03q20_001,wavy annular,0.9841119876085171,3,20
+1024,prefixo,wps_ponderada,m03q40_001,wavy annular,0.8363484094568472,3,40
+1024,prefixo,wps_ponderada,m04q40_001,wavy annular,0.9123087487389441,4,40
+1024,prefixo,wps_ponderada,m04q80_001,wavy annular,0.8348335469435586,4,80
+1024,prefixo,wps_ponderada,m05q80_001,wavy annular,0.9577430173936081,5,80
+1024,prefixo,wps_ponderada,m06q40_001,wavy annular,0.797707420692066,6,40
+1024,prefixo,wps_ponderada,m06q80_001,wavy annular,0.7426203614954652,6,80
+1024,prefixo,wps_ponderada,m07q80_001,wavy annular,0.6191358355246974,7,80
+1024,prefixo,wps_ponderada,m05q01_001,plug,0.8079015251245893,5,1
+1024,prefixo,wps_ponderada,m06q01_001,plug,0.8902841972784836,6,1
+1024,prefixo,wps_ponderada,m07q05_001,plug,0.9419351481690974,7,5
+1024,prefixo,wps_ponderada,m04q01_001,slug,0.8486937855660015,4,1
+1024,prefixo,wps_ponderada,m05q05_001,slug,0.8841458148669039,5,5
+1024,prefixo,wps_ponderada,m06q05_001,slug,1.2404594322179996,6,5
+1024,media_tres_janelas,wps_ponderada,m03q05_001,churn,1.1878496159326986,3,5
+1024,media_tres_janelas,wps_ponderada,m04q10_001,churn,1.3106849459015812,4,10
+1024,media_tres_janelas,wps_ponderada,m04q20_001,churn,1.2750592416614097,4,20
+1024,media_tres_janelas,wps_ponderada,m05q10_001,churn,1.3399154583390835,5,10
+1024,media_tres_janelas,wps_ponderada,m05q20_001,churn,1.242493579714231,5,20
+1024,media_tres_janelas,wps_ponderada,m05q40_001,churn,1.1389409819372371,5,40
+1024,media_tres_janelas,wps_ponderada,m06q10_001,churn,1.1824197597782193,6,10
+1024,media_tres_janelas,wps_ponderada,m06q20_001,churn,1.274068350281703,6,20
+1024,media_tres_janelas,wps_ponderada,m07q20_001,churn,1.4535336439465594,7,20
+1024,media_tres_janelas,wps_ponderada,m07q40_001,churn,1.180541274628231,7,40
+1024,media_tres_janelas,wps_ponderada,m03q10_001,wavy annular,1.0359959775404155,3,10
+1024,media_tres_janelas,wps_ponderada,m03q20_001,wavy annular,1.092388055065495,3,20
+1024,media_tres_janelas,wps_ponderada,m03q40_001,wavy annular,0.9490203459816602,3,40
+1024,media_tres_janelas,wps_ponderada,m04q40_001,wavy annular,0.9016203882035203,4,40
+1024,media_tres_janelas,wps_ponderada,m04q80_001,wavy annular,0.847556709876411,4,80
+1024,media_tres_janelas,wps_ponderada,m05q80_001,wavy annular,0.910033831912366,5,80
+1024,media_tres_janelas,wps_ponderada,m06q40_001,wavy annular,0.7975578313602787,6,40
+1024,media_tres_janelas,wps_ponderada,m06q80_001,wavy annular,0.7307615909441267,6,80
+1024,media_tres_janelas,wps_ponderada,m07q80_001,wavy annular,0.7391806954894129,7,80
+1024,media_tres_janelas,wps_ponderada,m05q01_001,plug,0.8851510048362075,5,1
+1024,media_tres_janelas,wps_ponderada,m06q01_001,plug,1.0721957237031612,6,1
+1024,media_tres_janelas,wps_ponderada,m07q05_001,plug,0.9850836075828333,7,5
+1024,media_tres_janelas,wps_ponderada,m04q01_001,slug,0.871517902204693,4,1
+1024,media_tres_janelas,wps_ponderada,m05q05_001,slug,1.1745288019517863,5,5
+1024,media_tres_janelas,wps_ponderada,m06q05_001,slug,1.058666641685492,6,5
+1024,prefixo,welch_logenergia,m03q05_001,churn,1.1268945939082462,3,5
+1024,prefixo,welch_logenergia,m04q10_001,churn,1.3937236216038933,4,10
+1024,prefixo,welch_logenergia,m04q20_001,churn,1.3612099871961663,4,20
+1024,prefixo,welch_logenergia,m05q10_001,churn,1.258978032408396,5,10
+1024,prefixo,welch_logenergia,m05q20_001,churn,1.0432683147024093,5,20
+1024,prefixo,welch_logenergia,m05q40_001,churn,1.0043789067571867,5,40
+1024,prefixo,welch_logenergia,m06q10_001,churn,0.9447480705442244,6,10
+1024,prefixo,welch_logenergia,m06q20_001,churn,0.9065704331331821,6,20
+1024,prefixo,welch_logenergia,m07q20_001,churn,1.565789691332201,7,20
+1024,prefixo,welch_logenergia,m07q40_001,churn,1.057930475319898,7,40
+1024,prefixo,welch_logenergia,m03q10_001,wavy annular,1.0790131695345337,3,10
+1024,prefixo,welch_logenergia,m03q20_001,wavy annular,0.899566155553364,3,20
+1024,prefixo,welch_logenergia,m03q40_001,wavy annular,0.7121579219031009,3,40
+1024,prefixo,welch_logenergia,m04q40_001,wavy annular,0.7397288175191807,4,40
+1024,prefixo,welch_logenergia,m04q80_001,wavy annular,0.7761175508894622,4,80
+1024,prefixo,welch_logenergia,m05q80_001,wavy annular,0.8638303037127439,5,80
+1024,prefixo,welch_logenergia,m06q40_001,wavy annular,0.6665001857720005,6,40
+1024,prefixo,welch_logenergia,m06q80_001,wavy annular,0.6906589368729552,6,80
+1024,prefixo,welch_logenergia,m07q80_001,wavy annular,0.6347394096008943,7,80
+1024,prefixo,welch_logenergia,m05q01_001,plug,0.644383738569676,5,1
+1024,prefixo,welch_logenergia,m06q01_001,plug,0.7993513675027355,6,1
+1024,prefixo,welch_logenergia,m07q05_001,plug,0.9075739715138056,7,5
+1024,prefixo,welch_logenergia,m04q01_001,slug,0.796004090420098,4,1
+1024,prefixo,welch_logenergia,m05q05_001,slug,0.8445596550111141,5,5
+1024,prefixo,welch_logenergia,m06q05_001,slug,1.1654550547267313,6,5
+1024,media_tres_janelas,welch_logenergia,m03q05_001,churn,1.1928945549924617,3,5
+1024,media_tres_janelas,welch_logenergia,m04q10_001,churn,1.240590170809556,4,10
+1024,media_tres_janelas,welch_logenergia,m04q20_001,churn,1.2825828417418998,4,20
+1024,media_tres_janelas,welch_logenergia,m05q10_001,churn,1.474043818676277,5,10
+1024,media_tres_janelas,welch_logenergia,m05q20_001,churn,1.205268102220849,5,20
+1024,media_tres_janelas,welch_logenergia,m05q40_001,churn,1.2561605468439465,5,40
+1024,media_tres_janelas,welch_logenergia,m06q10_001,churn,1.3185806371728335,6,10
+1024,media_tres_janelas,welch_logenergia,m06q20_001,churn,1.2901402889065867,6,20
+1024,media_tres_janelas,welch_logenergia,m07q20_001,churn,1.434022624579609,7,20
+1024,media_tres_janelas,welch_logenergia,m07q40_001,churn,1.0805730959041053,7,40
+1024,media_tres_janelas,welch_logenergia,m03q10_001,wavy annular,1.0334180453726178,3,10
+1024,media_tres_janelas,welch_logenergia,m03q20_001,wavy annular,1.0645235664951285,3,20
+1024,media_tres_janelas,welch_logenergia,m03q40_001,wavy annular,0.943510935344051,3,40
+1024,media_tres_janelas,welch_logenergia,m04q40_001,wavy annular,0.9005573793565853,4,40
+1024,media_tres_janelas,welch_logenergia,m04q80_001,wavy annular,0.7730918477878488,4,80
+1024,media_tres_janelas,welch_logenergia,m05q80_001,wavy annular,0.889219554107691,5,80
+1024,media_tres_janelas,welch_logenergia,m06q40_001,wavy annular,0.8043923667456516,6,40
+1024,media_tres_janelas,welch_logenergia,m06q80_001,wavy annular,0.6936444457997402,6,80
+1024,media_tres_janelas,welch_logenergia,m07q80_001,wavy annular,0.7238764443508918,7,80
+1024,media_tres_janelas,welch_logenergia,m05q01_001,plug,0.8520795103150194,5,1
+1024,media_tres_janelas,welch_logenergia,m06q01_001,plug,1.1312482885287025,6,1
+1024,media_tres_janelas,welch_logenergia,m07q05_001,plug,1.0106665887501656,7,5
+1024,media_tres_janelas,welch_logenergia,m04q01_001,slug,0.8175686701415339,4,1
+1024,media_tres_janelas,welch_logenergia,m05q05_001,slug,1.1218384229423632,5,5
+1024,media_tres_janelas,welch_logenergia,m06q05_001,slug,1.0279918340973904,6,5
+512,centro,wps,m03q05_001,churn,0.9818152665824025,3,5
+512,centro,wps,m04q10_001,churn,1.064643617382881,4,10
+512,centro,wps,m04q20_001,churn,0.8249671118072008,4,20
+512,centro,wps,m05q10_001,churn,0.600894223811518,5,10
+512,centro,wps,m05q20_001,churn,1.1916315861232514,5,20
+512,centro,wps,m05q40_001,churn,0.7838527825879567,5,40
+512,centro,wps,m06q10_001,churn,0.7351524628965285,6,10
+512,centro,wps,m06q20_001,churn,0.8856765084866636,6,20
+512,centro,wps,m07q20_001,churn,1.1590308291154017,7,20
+512,centro,wps,m07q40_001,churn,0.9183125622072561,7,40
+512,centro,wps,m03q10_001,wavy annular,0.8558246287691844,3,10
+512,centro,wps,m03q20_001,wavy annular,1.0134343349505857,3,20
+512,centro,wps,m03q40_001,wavy annular,0.905875239027857,3,40
+512,centro,wps,m04q40_001,wavy annular,0.573333761633096,4,40
+512,centro,wps,m04q80_001,wavy annular,0.7529881869586283,4,80
+512,centro,wps,m05q80_001,wavy annular,0.6732282936392009,5,80
+512,centro,wps,m06q40_001,wavy annular,0.5333407155448997,6,40
+512,centro,wps,m06q80_001,wavy annular,0.6467185258442374,6,80
+512,centro,wps,m07q80_001,wavy annular,0.602198057099983,7,80
+512,centro,wps,m05q01_001,plug,0.6362687738457575,5,1
+512,centro,wps,m06q01_001,plug,0.8542258245659307,6,1
+512,centro,wps,m07q05_001,plug,0.8108359288295981,7,5
+512,centro,wps,m04q01_001,slug,0.7651797886344642,4,1
+512,centro,wps,m05q05_001,slug,1.072187751154388,5,5
+512,centro,wps,m06q05_001,slug,0.832985452722232,6,5
+512,centro,wps_ponderada,m03q05_001,churn,1.067020078058957,3,5
+512,centro,wps_ponderada,m04q10_001,churn,1.1313551091575507,4,10
+512,centro,wps_ponderada,m04q20_001,churn,0.7910456202389957,4,20
+512,centro,wps_ponderada,m05q10_001,churn,0.7629695933202214,5,10
+512,centro,wps_ponderada,m05q20_001,churn,1.099414846532416,5,20
+512,centro,wps_ponderada,m05q40_001,churn,1.04712986076163,5,40
+512,centro,wps_ponderada,m06q10_001,churn,0.9942645224739701,6,10
+512,centro,wps_ponderada,m06q20_001,churn,1.0237945197845022,6,20
+512,centro,wps_ponderada,m07q20_001,churn,1.2515654596687247,7,20
+512,centro,wps_ponderada,m07q40_001,churn,1.0787075057866558,7,40
+512,centro,wps_ponderada,m03q10_001,wavy annular,0.9333826101807849,3,10
+512,centro,wps_ponderada,m03q20_001,wavy annular,0.8811593823338093,3,20
+512,centro,wps_ponderada,m03q40_001,wavy annular,0.8908790478064379,3,40
+512,centro,wps_ponderada,m04q40_001,wavy annular,0.7292889975176875,4,40
+512,centro,wps_ponderada,m04q80_001,wavy annular,0.8342552864468358,4,80
+512,centro,wps_ponderada,m05q80_001,wavy annular,0.8241877742116275,5,80
+512,centro,wps_ponderada,m06q40_001,wavy annular,0.773973943420569,6,40
+512,centro,wps_ponderada,m06q80_001,wavy annular,0.7493549188139692,6,80
+512,centro,wps_ponderada,m07q80_001,wavy annular,0.704611178167343,7,80
+512,centro,wps_ponderada,m05q01_001,plug,0.8910104865681818,5,1
+512,centro,wps_ponderada,m06q01_001,plug,0.9458194557852959,6,1
+512,centro,wps_ponderada,m07q05_001,plug,1.102673487654486,7,5
+512,centro,wps_ponderada,m04q01_001,slug,0.9739837379530121,4,1
+512,centro,wps_ponderada,m05q05_001,slug,0.9896876538386792,5,5
+512,centro,wps_ponderada,m06q05_001,slug,0.9389148047181868,6,5
+512,centro,welch_logenergia,m03q05_001,churn,1.0190241309340093,3,5
+512,centro,welch_logenergia,m04q10_001,churn,0.8932382054400092,4,10
+512,centro,welch_logenergia,m04q20_001,churn,0.6947777707202141,4,20
+512,centro,welch_logenergia,m05q10_001,churn,0.6446613850937153,5,10
+512,centro,welch_logenergia,m05q20_001,churn,0.8749249630894171,5,20
+512,centro,welch_logenergia,m05q40_001,churn,1.3053843616932834,5,40
+512,centro,welch_logenergia,m06q10_001,churn,1.0131804882622655,6,10
+512,centro,welch_logenergia,m06q20_001,churn,0.9845106805607395,6,20
+512,centro,welch_logenergia,m07q20_001,churn,1.266831778365514,7,20
+512,centro,welch_logenergia,m07q40_001,churn,0.972207941410784,7,40
+512,centro,welch_logenergia,m03q10_001,wavy annular,0.9776687787100471,3,10
+512,centro,welch_logenergia,m03q20_001,wavy annular,0.7977618595972302,3,20
+512,centro,welch_logenergia,m03q40_001,wavy annular,0.8544366701305144,3,40
+512,centro,welch_logenergia,m04q40_001,wavy annular,0.7559785793766167,4,40
+512,centro,welch_logenergia,m04q80_001,wavy annular,0.7507813640487662,4,80
+512,centro,welch_logenergia,m05q80_001,wavy annular,0.7926039152598783,5,80
+512,centro,welch_logenergia,m06q40_001,wavy annular,0.9142278453384387,6,40
+512,centro,welch_logenergia,m06q80_001,wavy annular,0.6516126712674586,6,80
+512,centro,welch_logenergia,m07q80_001,wavy annular,0.6531538694724874,7,80
+512,centro,welch_logenergia,m05q01_001,plug,0.9518058847772553,5,1
+512,centro,welch_logenergia,m06q01_001,plug,1.084814152718927,6,1
+512,centro,welch_logenergia,m07q05_001,plug,1.1936150962806105,7,5
+512,centro,welch_logenergia,m04q01_001,slug,1.4364137812419413,4,1
+512,centro,welch_logenergia,m05q05_001,slug,0.9708738396673295,5,5
+512,centro,welch_logenergia,m06q05_001,slug,0.899910201798483,6,5
+1024,centro,wps,m03q05_001,churn,1.1049379783018738,3,5
+1024,centro,wps,m04q10_001,churn,1.3334684187239088,4,10
+1024,centro,wps,m04q20_001,churn,1.2274576852965504,4,20
+1024,centro,wps,m05q10_001,churn,0.8161970548688746,5,10
+1024,centro,wps,m05q20_001,churn,1.2666226147885613,5,20
+1024,centro,wps,m05q40_001,churn,0.8736747452791942,5,40
+1024,centro,wps,m06q10_001,churn,0.9355638633837691,6,10
+1024,centro,wps,m06q20_001,churn,1.2090837594454502,6,20
+1024,centro,wps,m07q20_001,churn,1.0253481960413033,7,20
+1024,centro,wps,m07q40_001,churn,0.9230214468893179,7,40
+1024,centro,wps,m03q10_001,wavy annular,0.9165731258793768,3,10
+1024,centro,wps,m03q20_001,wavy annular,1.2364543686026161,3,20
+1024,centro,wps,m03q40_001,wavy annular,1.0165235558021788,3,40
+1024,centro,wps,m04q40_001,wavy annular,0.7681188084954051,4,40
+1024,centro,wps,m04q80_001,wavy annular,0.7658105862416935,4,80
+1024,centro,wps,m05q80_001,wavy annular,0.6791355021507348,5,80
+1024,centro,wps,m06q40_001,wavy annular,0.5803812824338968,6,40
+1024,centro,wps,m06q80_001,wavy annular,0.6972440131443998,6,80
+1024,centro,wps,m07q80_001,wavy annular,0.7360722327570448,7,80
+1024,centro,wps,m05q01_001,plug,0.6107936876931106,5,1
+1024,centro,wps,m06q01_001,plug,1.0992761591727058,6,1
+1024,centro,wps,m07q05_001,plug,0.8382383857326428,7,5
+1024,centro,wps,m04q01_001,slug,0.6962486501905998,4,1
+1024,centro,wps,m05q05_001,slug,1.1042003386258026,5,5
+1024,centro,wps,m06q05_001,slug,1.0929176531940366,6,5
+1024,centro,wps_ponderada,m03q05_001,churn,1.1827939403825596,3,5
+1024,centro,wps_ponderada,m04q10_001,churn,1.429435783538083,4,10
+1024,centro,wps_ponderada,m04q20_001,churn,0.9429945561140771,4,20
+1024,centro,wps_ponderada,m05q10_001,churn,0.86873011056651,5,10
+1024,centro,wps_ponderada,m05q20_001,churn,1.3367617305165442,5,20
+1024,centro,wps_ponderada,m05q40_001,churn,1.1078880201370875,5,40
+1024,centro,wps_ponderada,m06q10_001,churn,1.0415443048584487,6,10
+1024,centro,wps_ponderada,m06q20_001,churn,1.3764438880680974,6,20
+1024,centro,wps_ponderada,m07q20_001,churn,1.4653503048548258,7,20
+1024,centro,wps_ponderada,m07q40_001,churn,1.1508178607646427,7,40
+1024,centro,wps_ponderada,m03q10_001,wavy annular,1.0068512616144538,3,10
+1024,centro,wps_ponderada,m03q20_001,wavy annular,1.2326063096307287,3,20
+1024,centro,wps_ponderada,m03q40_001,wavy annular,0.9530523003102758,3,40
+1024,centro,wps_ponderada,m04q40_001,wavy annular,0.8636194096471925,4,40
+1024,centro,wps_ponderada,m04q80_001,wavy annular,0.8471734283165562,4,80
+1024,centro,wps_ponderada,m05q80_001,wavy annular,0.8527563782940071,5,80
+1024,centro,wps_ponderada,m06q40_001,wavy annular,0.7453487614781622,6,40
+1024,centro,wps_ponderada,m06q80_001,wavy annular,0.7923185201513911,6,80
+1024,centro,wps_ponderada,m07q80_001,wavy annular,0.8435703879859364,7,80
+1024,centro,wps_ponderada,m05q01_001,plug,0.8407896850022984,5,1
+1024,centro,wps_ponderada,m06q01_001,plug,1.1243777519094227,6,1
+1024,centro,wps_ponderada,m07q05_001,plug,1.1709676753598721,7,5
+1024,centro,wps_ponderada,m04q01_001,slug,1.0270344088398167,4,1
+1024,centro,wps_ponderada,m05q05_001,slug,1.6119200578067039,5,5
+1024,centro,wps_ponderada,m06q05_001,slug,1.2634625091763088,6,5
+1024,centro,welch_logenergia,m03q05_001,churn,1.134393884458679,3,5
+1024,centro,welch_logenergia,m04q10_001,churn,1.130743876850003,4,10
+1024,centro,welch_logenergia,m04q20_001,churn,0.8600245337554098,4,20
+1024,centro,welch_logenergia,m05q10_001,churn,0.7603205316765145,5,10
+1024,centro,welch_logenergia,m05q20_001,churn,1.1724092872954595,5,20
+1024,centro,welch_logenergia,m05q40_001,churn,1.3812846921183555,5,40
+1024,centro,welch_logenergia,m06q10_001,churn,1.0039679156371495,6,10
+1024,centro,welch_logenergia,m06q20_001,churn,1.0989755405418213,6,20
+1024,centro,welch_logenergia,m07q20_001,churn,1.5291155688331726,7,20
+1024,centro,welch_logenergia,m07q40_001,churn,1.082405695505276,7,40
+1024,centro,welch_logenergia,m03q10_001,wavy annular,1.123200257363436,3,10
+1024,centro,welch_logenergia,m03q20_001,wavy annular,1.2840412125772707,3,20
+1024,centro,welch_logenergia,m03q40_001,wavy annular,0.8898734703165765,3,40
+1024,centro,welch_logenergia,m04q40_001,wavy annular,0.8868658715287943,4,40
+1024,centro,welch_logenergia,m04q80_001,wavy annular,0.7980499493144011,4,80
+1024,centro,welch_logenergia,m05q80_001,wavy annular,0.8526428613946946,5,80
+1024,centro,welch_logenergia,m06q40_001,wavy annular,0.9169816875590584,6,40
+1024,centro,welch_logenergia,m06q80_001,wavy annular,0.7536079195908805,6,80
+1024,centro,welch_logenergia,m07q80_001,wavy annular,0.8343992196547942,7,80
+1024,centro,welch_logenergia,m05q01_001,plug,0.9481593150301482,5,1
+1024,centro,welch_logenergia,m06q01_001,plug,1.282866407895205,6,1
+1024,centro,welch_logenergia,m07q05_001,plug,1.3890627498040695,7,5
+1024,centro,welch_logenergia,m04q01_001,slug,0.7899324600497772,4,1
+1024,centro,welch_logenergia,m05q05_001,slug,1.4794567387100281,5,5
+1024,centro,welch_logenergia,m06q05_001,slug,1.083683527475647,6,5
+512,sufixo,wps,m03q05_001,churn,1.0555282703915045,3,5
+512,sufixo,wps,m04q10_001,churn,0.7677414892687571,4,10
+512,sufixo,wps,m04q20_001,churn,0.685638609144485,4,20
+512,sufixo,wps,m05q10_001,churn,1.1924947549086866,5,10
+512,sufixo,wps,m05q20_001,churn,1.1552653793005767,5,20
+512,sufixo,wps,m05q40_001,churn,0.778836927366525,5,40
+512,sufixo,wps,m06q10_001,churn,0.9085818281783604,6,10
+512,sufixo,wps,m06q20_001,churn,1.1006057229587034,6,20
+512,sufixo,wps,m07q20_001,churn,1.0520712132858012,7,20
+512,sufixo,wps,m07q40_001,churn,0.9499877645126755,7,40
+512,sufixo,wps,m03q10_001,wavy annular,0.8696569339886171,3,10
+512,sufixo,wps,m03q20_001,wavy annular,0.6912285089085293,3,20
+512,sufixo,wps,m03q40_001,wavy annular,0.8246645491398246,3,40
+512,sufixo,wps,m04q40_001,wavy annular,0.49984437747819754,4,40
+512,sufixo,wps,m04q80_001,wavy annular,0.6705617225378617,4,80
+512,sufixo,wps,m05q80_001,wavy annular,0.6726686597266269,5,80
+512,sufixo,wps,m06q40_001,wavy annular,0.6615749431726012,6,40
+512,sufixo,wps,m06q80_001,wavy annular,0.42316393414502773,6,80
+512,sufixo,wps,m07q80_001,wavy annular,0.6117236065361471,7,80
+512,sufixo,wps,m05q01_001,plug,0.711175800154022,5,1
+512,sufixo,wps,m06q01_001,plug,0.7535536805150347,6,1
+512,sufixo,wps,m07q05_001,plug,0.5865164627917085,7,5
+512,sufixo,wps,m04q01_001,slug,0.4674575412797717,4,1
+512,sufixo,wps,m05q05_001,slug,0.6031731195180248,5,5
+512,sufixo,wps,m06q05_001,slug,0.557490356888743,6,5
+512,sufixo,wps_ponderada,m03q05_001,churn,1.042519942201869,3,5
+512,sufixo,wps_ponderada,m04q10_001,churn,0.7586800530501101,4,10
+512,sufixo,wps_ponderada,m04q20_001,churn,0.7372362168585269,4,20
+512,sufixo,wps_ponderada,m05q10_001,churn,1.3083759283125858,5,10
+512,sufixo,wps_ponderada,m05q20_001,churn,1.0872566214786419,5,20
+512,sufixo,wps_ponderada,m05q40_001,churn,1.1486780481631094,5,40
+512,sufixo,wps_ponderada,m06q10_001,churn,1.126114831128647,6,10
+512,sufixo,wps_ponderada,m06q20_001,churn,1.183739749576202,6,20
+512,sufixo,wps_ponderada,m07q20_001,churn,1.0586966324990872,7,20
+512,sufixo,wps_ponderada,m07q40_001,churn,1.0803051648167799,7,40
+512,sufixo,wps_ponderada,m03q10_001,wavy annular,0.8808577962560893,3,10
+512,sufixo,wps_ponderada,m03q20_001,wavy annular,0.7757446057553476,3,20
+512,sufixo,wps_ponderada,m03q40_001,wavy annular,0.8063448104111588,3,40
+512,sufixo,wps_ponderada,m04q40_001,wavy annular,0.6267273813456171,4,40
+512,sufixo,wps_ponderada,m04q80_001,wavy annular,0.6616473735045769,4,80
+512,sufixo,wps_ponderada,m05q80_001,wavy annular,0.7740900099383303,5,80
+512,sufixo,wps_ponderada,m06q40_001,wavy annular,0.7374458229648093,6,40
+512,sufixo,wps_ponderada,m06q80_001,wavy annular,0.46774390585649517,6,80
+512,sufixo,wps_ponderada,m07q80_001,wavy annular,0.8013409376383658,7,80
+512,sufixo,wps_ponderada,m05q01_001,plug,0.8909564088574848,5,1
+512,sufixo,wps_ponderada,m06q01_001,plug,1.0386157313916469,6,1
+512,sufixo,wps_ponderada,m07q05_001,plug,0.6785286830553678,7,5
+512,sufixo,wps_ponderada,m04q01_001,slug,0.7250833428017955,4,1
+512,sufixo,wps_ponderada,m05q05_001,slug,0.736957589567095,5,5
+512,sufixo,wps_ponderada,m06q05_001,slug,0.7350588261695723,6,5
+512,sufixo,welch_logenergia,m03q05_001,churn,1.0665537397616163,3,5
+512,sufixo,welch_logenergia,m04q10_001,churn,0.7925583758840675,4,10
+512,sufixo,welch_logenergia,m04q20_001,churn,0.914646217256502,4,20
+512,sufixo,welch_logenergia,m05q10_001,churn,1.2417851796996935,5,10
+512,sufixo,welch_logenergia,m05q20_001,churn,1.1116868154818276,5,20
+512,sufixo,welch_logenergia,m05q40_001,churn,1.2634977123828666,5,40
+512,sufixo,welch_logenergia,m06q10_001,churn,1.536136957369588,6,10
+512,sufixo,welch_logenergia,m06q20_001,churn,1.062202999271741,6,20
+512,sufixo,welch_logenergia,m07q20_001,churn,0.9629714821371627,7,20
+512,sufixo,welch_logenergia,m07q40_001,churn,0.9350709327014446,7,40
+512,sufixo,welch_logenergia,m03q10_001,wavy annular,0.7530256085749754,3,10
+512,sufixo,welch_logenergia,m03q20_001,wavy annular,0.7577502272245216,3,20
+512,sufixo,welch_logenergia,m03q40_001,wavy annular,0.8149134072600752,3,40
+512,sufixo,welch_logenergia,m04q40_001,wavy annular,0.5085436081260148,4,40
+512,sufixo,welch_logenergia,m04q80_001,wavy annular,0.5563863697257236,4,80
+512,sufixo,welch_logenergia,m05q80_001,wavy annular,0.7929489679436381,5,80
+512,sufixo,welch_logenergia,m06q40_001,wavy annular,0.7097907450867105,6,40
+512,sufixo,welch_logenergia,m06q80_001,wavy annular,0.45452464041233487,6,80
+512,sufixo,welch_logenergia,m07q80_001,wavy annular,0.599047357695401,7,80
+512,sufixo,welch_logenergia,m05q01_001,plug,1.021279627843974,5,1
+512,sufixo,welch_logenergia,m06q01_001,plug,1.1157953566223,6,1
+512,sufixo,welch_logenergia,m07q05_001,plug,0.5411775497292224,7,5
+512,sufixo,welch_logenergia,m04q01_001,slug,0.7349292512165668,4,1
+512,sufixo,welch_logenergia,m05q05_001,slug,0.7256656480986683,5,5
+512,sufixo,welch_logenergia,m06q05_001,slug,0.876578614643889,6,5
+1024,sufixo,wps,m03q05_001,churn,1.2329835508607694,3,5
+1024,sufixo,wps,m04q10_001,churn,1.4043583905902857,4,10
+1024,sufixo,wps,m04q20_001,churn,1.2480925473799198,4,20
+1024,sufixo,wps,m05q10_001,churn,1.1049955454532503,5,10
+1024,sufixo,wps,m05q20_001,churn,1.6059581689075362,5,20
+1024,sufixo,wps,m05q40_001,churn,0.8885273534003915,5,40
+1024,sufixo,wps,m06q10_001,churn,1.0230411037093825,6,10
+1024,sufixo,wps,m06q20_001,churn,1.0255671213217532,6,20
+1024,sufixo,wps,m07q20_001,churn,1.3089912276855182,7,20
+1024,sufixo,wps,m07q40_001,churn,1.1137901131449626,7,40
+1024,sufixo,wps,m03q10_001,wavy annular,0.9864475271190463,3,10
+1024,sufixo,wps,m03q20_001,wavy annular,1.147580239166893,3,20
+1024,sufixo,wps,m03q40_001,wavy annular,1.1958836424126833,3,40
+1024,sufixo,wps,m04q40_001,wavy annular,0.5982468177137905,4,40
+1024,sufixo,wps,m04q80_001,wavy annular,0.9908545351129936,4,80
+1024,sufixo,wps,m05q80_001,wavy annular,0.8493740034987294,5,80
+1024,sufixo,wps,m06q40_001,wavy annular,0.7628814085868454,6,40
+1024,sufixo,wps,m06q80_001,wavy annular,0.8996538644702401,6,80
+1024,sufixo,wps,m07q80_001,wavy annular,0.543513367551621,7,80
+1024,sufixo,wps,m05q01_001,plug,0.7826248891357483,5,1
+1024,sufixo,wps,m06q01_001,plug,0.7315359444695968,6,1
+1024,sufixo,wps,m07q05_001,plug,0.7738189178244781,7,5
+1024,sufixo,wps,m04q01_001,slug,0.6561186751831709,4,1
+1024,sufixo,wps,m05q05_001,slug,0.6605787225320379,5,5
+1024,sufixo,wps,m06q05_001,slug,0.6213766106876557,6,5
+1024,sufixo,wps_ponderada,m03q05_001,churn,1.2203006283245257,3,5
+1024,sufixo,wps_ponderada,m04q10_001,churn,1.0808766043142706,4,10
+1024,sufixo,wps_ponderada,m04q20_001,churn,1.2861292193389566,4,20
+1024,sufixo,wps_ponderada,m05q10_001,churn,1.5175045794013098,5,10
+1024,sufixo,wps_ponderada,m05q20_001,churn,1.2718277500993507,5,20
+1024,sufixo,wps_ponderada,m05q40_001,churn,1.1354676883840646,5,40
+1024,sufixo,wps_ponderada,m06q10_001,churn,1.3683986110168629,6,10
+1024,sufixo,wps_ponderada,m06q20_001,churn,1.365338630573489,6,20
+1024,sufixo,wps_ponderada,m07q20_001,churn,1.2272877076700812,7,20
+1024,sufixo,wps_ponderada,m07q40_001,churn,1.1772317780290482,7,40
+1024,sufixo,wps_ponderada,m03q10_001,wavy annular,1.0849182127729158,3,10
+1024,sufixo,wps_ponderada,m03q20_001,wavy annular,1.0316237628754754,3,20
+1024,sufixo,wps_ponderada,m03q40_001,wavy annular,0.9587744808426999,3,40
+1024,sufixo,wps_ponderada,m04q40_001,wavy annular,0.6821386057650178,4,40
+1024,sufixo,wps_ponderada,m04q80_001,wavy annular,0.9830459110369061,4,80
+1024,sufixo,wps_ponderada,m05q80_001,wavy annular,0.9377542231856282,5,80
+1024,sufixo,wps_ponderada,m06q40_001,wavy annular,0.8406109824431249,6,40
+1024,sufixo,wps_ponderada,m06q80_001,wavy annular,0.6204785353976687,6,80
+1024,sufixo,wps_ponderada,m07q80_001,wavy annular,0.7743973920679954,7,80
+1024,sufixo,wps_ponderada,m05q01_001,plug,0.9613942616491613,5,1
+1024,sufixo,wps_ponderada,m06q01_001,plug,1.055208586094623,6,1
+1024,sufixo,wps_ponderada,m07q05_001,plug,0.8771358675639087,7,5
+1024,sufixo,wps_ponderada,m04q01_001,slug,0.704750676841372,4,1
+1024,sufixo,wps_ponderada,m05q05_001,slug,0.7866025515367427,5,5
+1024,sufixo,wps_ponderada,m06q05_001,slug,0.7543815853174447,6,5
+1024,sufixo,welch_logenergia,m03q05_001,churn,1.1625940319312527,3,5
+1024,sufixo,welch_logenergia,m04q10_001,churn,1.0659312379692691,4,10
+1024,sufixo,welch_logenergia,m04q20_001,churn,1.1725173692617705,4,20
+1024,sufixo,welch_logenergia,m05q10_001,churn,1.5017682649988453,5,10
+1024,sufixo,welch_logenergia,m05q20_001,churn,1.2649235398244416,5,20
+1024,sufixo,welch_logenergia,m05q40_001,churn,1.2818252091847473,5,40
+1024,sufixo,welch_logenergia,m06q10_001,churn,1.3543135014716299,6,10
+1024,sufixo,welch_logenergia,m06q20_001,churn,1.3466265790011773,6,20
+1024,sufixo,welch_logenergia,m07q20_001,churn,1.1008039344529932,7,20
+1024,sufixo,welch_logenergia,m07q40_001,churn,0.9741651103699178,7,40
+1024,sufixo,welch_logenergia,m03q10_001,wavy annular,0.9369810606207079,3,10
+1024,sufixo,welch_logenergia,m03q20_001,wavy annular,0.9201247785131672,3,20
+1024,sufixo,welch_logenergia,m03q40_001,wavy annular,0.9044607801055733,3,40
+1024,sufixo,welch_logenergia,m04q40_001,wavy annular,0.6294795939689681,4,40
+1024,sufixo,welch_logenergia,m04q80_001,wavy annular,0.7862379607773731,4,80
+1024,sufixo,welch_logenergia,m05q80_001,wavy annular,0.9549168991599473,5,80
+1024,sufixo,welch_logenergia,m06q40_001,wavy annular,0.8781817145197595,6,40
+1024,sufixo,welch_logenergia,m06q80_001,wavy annular,0.5468602222911425,6,80
+1024,sufixo,welch_logenergia,m07q80_001,wavy annular,0.6678536764578338,7,80
+1024,sufixo,welch_logenergia,m05q01_001,plug,0.9872905014071032,5,1
+1024,sufixo,welch_logenergia,m06q01_001,plug,1.3022645127592458,6,1
+1024,sufixo,welch_logenergia,m07q05_001,plug,0.7911212231094877,7,5
+1024,sufixo,welch_logenergia,m04q01_001,slug,0.6964459586663478,4,1
+1024,sufixo,welch_logenergia,m05q05_001,slug,0.7878217746977452,5,5
+1024,sufixo,welch_logenergia,m06q05_001,slug,0.8705634945853644,6,5
+512,ancora,wps,m03q05_001,churn,0.8929607277160443,3,5
+512,ancora,wps,m04q10_001,churn,0.8012056399599459,4,10
+512,ancora,wps,m04q20_001,churn,0.9960742292057931,4,20
+512,ancora,wps,m05q10_001,churn,0.6840109017173548,5,10
+512,ancora,wps,m05q20_001,churn,0.8734432448105078,5,20
+512,ancora,wps,m05q40_001,churn,0.9474347404636108,5,40
+512,ancora,wps,m06q10_001,churn,0.9473144917311638,6,10
+512,ancora,wps,m06q20_001,churn,1.067792589543271,6,20
+512,ancora,wps,m07q20_001,churn,1.0110398233033484,7,20
+512,ancora,wps,m07q40_001,churn,0.8844999385785615,7,40
+512,ancora,wps,m03q10_001,wavy annular,0.7090287312252235,3,10
+512,ancora,wps,m03q20_001,wavy annular,0.7188662144220777,3,20
+512,ancora,wps,m03q40_001,wavy annular,0.8343134361059521,3,40
+512,ancora,wps,m04q40_001,wavy annular,0.6790964002435338,4,40
+512,ancora,wps,m04q80_001,wavy annular,0.725242023701818,4,80
+512,ancora,wps,m05q80_001,wavy annular,0.5190852130106416,5,80
+512,ancora,wps,m06q40_001,wavy annular,0.66954625326363,6,40
+512,ancora,wps,m06q80_001,wavy annular,0.5549121081854249,6,80
+512,ancora,wps,m07q80_001,wavy annular,0.6024272682798459,7,80
+512,ancora,wps,m05q01_001,plug,0.6493371568232753,5,1
+512,ancora,wps,m06q01_001,plug,0.8357424706318364,6,1
+512,ancora,wps,m07q05_001,plug,0.586758463562882,7,5
+512,ancora,wps,m04q01_001,slug,0.6111318917514872,4,1
+512,ancora,wps,m05q05_001,slug,0.6387584792266026,5,5
+512,ancora,wps,m06q05_001,slug,0.6529957061079656,6,5
+512,ancora,wps_ponderada,m03q05_001,churn,0.993193256467185,3,5
+512,ancora,wps_ponderada,m04q10_001,churn,1.0762213089433752,4,10
+512,ancora,wps_ponderada,m04q20_001,churn,0.8925263451068819,4,20
+512,ancora,wps_ponderada,m05q10_001,churn,0.7929627012929181,5,10
+512,ancora,wps_ponderada,m05q20_001,churn,0.9315090133291619,5,20
+512,ancora,wps_ponderada,m05q40_001,churn,0.9473460932775435,5,40
+512,ancora,wps_ponderada,m06q10_001,churn,1.027081049954175,6,10
+512,ancora,wps_ponderada,m06q20_001,churn,1.064523929733591,6,20
+512,ancora,wps_ponderada,m07q20_001,churn,1.1445554889087735,7,20
+512,ancora,wps_ponderada,m07q40_001,churn,1.069456487646157,7,40
+512,ancora,wps_ponderada,m03q10_001,wavy annular,0.8244187921979087,3,10
+512,ancora,wps_ponderada,m03q20_001,wavy annular,0.835573135977711,3,20
+512,ancora,wps_ponderada,m03q40_001,wavy annular,0.8558318925008406,3,40
+512,ancora,wps_ponderada,m04q40_001,wavy annular,0.8451274000242002,4,40
+512,ancora,wps_ponderada,m04q80_001,wavy annular,0.7924270813638907,4,80
+512,ancora,wps_ponderada,m05q80_001,wavy annular,0.7145894018519021,5,80
+512,ancora,wps_ponderada,m06q40_001,wavy annular,0.8738336339755381,6,40
+512,ancora,wps_ponderada,m06q80_001,wavy annular,0.7088442143545937,6,80
+512,ancora,wps_ponderada,m07q80_001,wavy annular,0.6481349924295738,7,80
+512,ancora,wps_ponderada,m05q01_001,plug,0.9107597540835544,5,1
+512,ancora,wps_ponderada,m06q01_001,plug,1.088843147815389,6,1
+512,ancora,wps_ponderada,m07q05_001,plug,0.730927718512854,7,5
+512,ancora,wps_ponderada,m04q01_001,slug,0.7147349974354125,4,1
+512,ancora,wps_ponderada,m05q05_001,slug,0.8999774419370459,5,5
+512,ancora,wps_ponderada,m06q05_001,slug,0.8436371800199414,6,5
+512,ancora,welch_logenergia,m03q05_001,churn,0.8643985722403214,3,5
+512,ancora,welch_logenergia,m04q10_001,churn,0.983866109049961,4,10
+512,ancora,welch_logenergia,m04q20_001,churn,0.8564292236643887,4,20
+512,ancora,welch_logenergia,m05q10_001,churn,0.6818132582903251,5,10
+512,ancora,welch_logenergia,m05q20_001,churn,0.7384649882149503,5,20
+512,ancora,welch_logenergia,m05q40_001,churn,0.8251551132241088,5,40
+512,ancora,welch_logenergia,m06q10_001,churn,0.819977396625335,6,10
+512,ancora,welch_logenergia,m06q20_001,churn,1.0569320102270678,6,20
+512,ancora,welch_logenergia,m07q20_001,churn,1.006745372518533,7,20
+512,ancora,welch_logenergia,m07q40_001,churn,0.9936091890303667,7,40
+512,ancora,welch_logenergia,m03q10_001,wavy annular,0.7047015721367753,3,10
+512,ancora,welch_logenergia,m03q20_001,wavy annular,0.7121945034657591,3,20
+512,ancora,welch_logenergia,m03q40_001,wavy annular,0.8157286358833229,3,40
+512,ancora,welch_logenergia,m04q40_001,wavy annular,0.7512047334871115,4,40
+512,ancora,welch_logenergia,m04q80_001,wavy annular,0.7510640971987588,4,80
+512,ancora,welch_logenergia,m05q80_001,wavy annular,0.541481312955149,5,80
+512,ancora,welch_logenergia,m06q40_001,wavy annular,0.6018355227215988,6,40
+512,ancora,welch_logenergia,m06q80_001,wavy annular,0.4847581712575195,6,80
+512,ancora,welch_logenergia,m07q80_001,wavy annular,0.6028639406119414,7,80
+512,ancora,welch_logenergia,m05q01_001,plug,0.9516908243449924,5,1
+512,ancora,welch_logenergia,m06q01_001,plug,0.9953405106432465,6,1
+512,ancora,welch_logenergia,m07q05_001,plug,0.5360984995696239,7,5
+512,ancora,welch_logenergia,m04q01_001,slug,0.6034996669947041,4,1
+512,ancora,welch_logenergia,m05q05_001,slug,0.7607762099057478,5,5
+512,ancora,welch_logenergia,m06q05_001,slug,0.8759726368128069,6,5
+1024,ancora,wps,m03q05_001,churn,0.9868014438918511,3,5
+1024,ancora,wps,m04q10_001,churn,0.9866059691235902,4,10
+1024,ancora,wps,m04q20_001,churn,1.394823654398241,4,20
+1024,ancora,wps,m05q10_001,churn,1.0116104698347526,5,10
+1024,ancora,wps,m05q20_001,churn,1.0199659846222158,5,20
+1024,ancora,wps,m05q40_001,churn,1.067956851866919,5,40
+1024,ancora,wps,m06q10_001,churn,1.2136684005549618,6,10
+1024,ancora,wps,m06q20_001,churn,1.3251939140830453,6,20
+1024,ancora,wps,m07q20_001,churn,1.028157631763765,7,20
+1024,ancora,wps,m07q40_001,churn,0.8602252349872543,7,40
+1024,ancora,wps,m03q10_001,wavy annular,0.9103073804144293,3,10
+1024,ancora,wps,m03q20_001,wavy annular,0.7424889145849782,3,20
+1024,ancora,wps,m03q40_001,wavy annular,0.952805239022994,3,40
+1024,ancora,wps,m04q40_001,wavy annular,0.6714665647895188,4,40
+1024,ancora,wps,m04q80_001,wavy annular,0.7370455872665724,4,80
+1024,ancora,wps,m05q80_001,wavy annular,0.6601236284255068,5,80
+1024,ancora,wps,m06q40_001,wavy annular,0.5792774398723761,6,40
+1024,ancora,wps,m06q80_001,wavy annular,0.6245947211422491,6,80
+1024,ancora,wps,m07q80_001,wavy annular,0.8463264275007996,7,80
+1024,ancora,wps,m05q01_001,plug,0.6064606103913048,5,1
+1024,ancora,wps,m06q01_001,plug,0.8442493330467675,6,1
+1024,ancora,wps,m07q05_001,plug,0.9911764885832,7,5
+1024,ancora,wps,m04q01_001,slug,0.7200578154241377,4,1
+1024,ancora,wps,m05q05_001,slug,0.7784718843923146,5,5
+1024,ancora,wps,m06q05_001,slug,0.937611973342122,6,5
+1024,ancora,wps_ponderada,m03q05_001,churn,1.2200291251627027,3,5
+1024,ancora,wps_ponderada,m04q10_001,churn,1.3564249526951375,4,10
+1024,ancora,wps_ponderada,m04q20_001,churn,1.2296627211751225,4,20
+1024,ancora,wps_ponderada,m05q10_001,churn,1.033266461952521,5,10
+1024,ancora,wps_ponderada,m05q20_001,churn,1.1579864971591745,5,20
+1024,ancora,wps_ponderada,m05q40_001,churn,1.1511101195340974,5,40
+1024,ancora,wps_ponderada,m06q10_001,churn,1.3341019644953391,6,10
+1024,ancora,wps_ponderada,m06q20_001,churn,1.3874902561473599,6,20
+1024,ancora,wps_ponderada,m07q20_001,churn,1.1854060043057206,7,20
+1024,ancora,wps_ponderada,m07q40_001,churn,1.120113510926375,7,40
+1024,ancora,wps_ponderada,m03q10_001,wavy annular,0.9438240635260016,3,10
+1024,ancora,wps_ponderada,m03q20_001,wavy annular,0.856739279502218,3,20
+1024,ancora,wps_ponderada,m03q40_001,wavy annular,0.9012490241569413,3,40
+1024,ancora,wps_ponderada,m04q40_001,wavy annular,0.879058856455039,4,40
+1024,ancora,wps_ponderada,m04q80_001,wavy annular,0.8035574442924238,4,80
+1024,ancora,wps_ponderada,m05q80_001,wavy annular,0.8180894659187947,5,80
+1024,ancora,wps_ponderada,m06q40_001,wavy annular,0.8455649922189323,6,40
+1024,ancora,wps_ponderada,m06q80_001,wavy annular,0.7406731528729491,6,80
+1024,ancora,wps_ponderada,m07q80_001,wavy annular,0.9276813025840198,7,80
+1024,ancora,wps_ponderada,m05q01_001,plug,0.8609038829457676,5,1
+1024,ancora,wps_ponderada,m06q01_001,plug,1.1443695863792716,6,1
+1024,ancora,wps_ponderada,m07q05_001,plug,1.048038968979987,7,5
+1024,ancora,wps_ponderada,m04q01_001,slug,0.8720167158346213,4,1
+1024,ancora,wps_ponderada,m05q05_001,slug,0.9640858669685812,5,5
+1024,ancora,wps_ponderada,m06q05_001,slug,1.1157641282548019,6,5
+1024,ancora,welch_logenergia,m03q05_001,churn,0.9442559793120946,3,5
+1024,ancora,welch_logenergia,m04q10_001,churn,1.122228186788985,4,10
+1024,ancora,welch_logenergia,m04q20_001,churn,1.1295977297455861,4,20
+1024,ancora,welch_logenergia,m05q10_001,churn,0.791367560422267,5,10
+1024,ancora,welch_logenergia,m05q20_001,churn,0.8918011406084609,5,20
+1024,ancora,welch_logenergia,m05q40_001,churn,1.0457669303385035,5,40
+1024,ancora,welch_logenergia,m06q10_001,churn,0.9823653818221629,6,10
+1024,ancora,welch_logenergia,m06q20_001,churn,1.3013171599601776,6,20
+1024,ancora,welch_logenergia,m07q20_001,churn,1.0982055065272807,7,20
+1024,ancora,welch_logenergia,m07q40_001,churn,1.090464599360475,7,40
+1024,ancora,welch_logenergia,m03q10_001,wavy annular,0.8975013749689049,3,10
+1024,ancora,welch_logenergia,m03q20_001,wavy annular,0.775026750309844,3,20
+1024,ancora,welch_logenergia,m03q40_001,wavy annular,0.8495725018575984,3,40
+1024,ancora,welch_logenergia,m04q40_001,wavy annular,0.8152636814907117,4,40
+1024,ancora,welch_logenergia,m04q80_001,wavy annular,0.7813353735289974,4,80
+1024,ancora,welch_logenergia,m05q80_001,wavy annular,0.6894185285919923,5,80
+1024,ancora,welch_logenergia,m06q40_001,wavy annular,0.6917953579857254,6,40
+1024,ancora,welch_logenergia,m06q80_001,wavy annular,0.5875188448814166,6,80
+1024,ancora,welch_logenergia,m07q80_001,wavy annular,0.8577833772525345,7,80
+1024,ancora,welch_logenergia,m05q01_001,plug,0.9077750737643875,5,1
+1024,ancora,welch_logenergia,m06q01_001,plug,1.0585773525047895,6,1
+1024,ancora,welch_logenergia,m07q05_001,plug,0.7636419826654768,7,5
+1024,ancora,welch_logenergia,m04q01_001,slug,0.7955584024758418,4,1
+1024,ancora,welch_logenergia,m05q05_001,slug,0.8720485463303556,5,5
+1024,ancora,welch_logenergia,m06q05_001,slug,1.044122323448378,6,5

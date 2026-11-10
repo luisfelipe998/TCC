@@ -1,0 +1,35 @@
+1 / 325 1.4s
+26 / 325 29.6s
+51 / 325 55.5s
+76 / 325 83.3s
+101 / 325 107.1s
+126 / 325 127.7s
+151 / 325 150.3s
+176 / 325 174.3s
+201 / 325 198.0s
+226 / 325 218.5s
+251 / 325 239.9s
+276 / 325 262.2s
+301 / 325 283.5s
+{
+  "variants": [
+    "baseline",
+    "central_band20",
+    "core_row_median"
+  ],
+  "scale_count": 200,
+  "elapsed_seconds": 305.02140520801186,
+  "total_pairs": 325,
+  "same_pairs": 87,
+  "wavelengths_px": [
+    50,
+    3000
+  ],
+  "estimator": "biased",
+  "wavelet": "Schuck Morlet omega0=6",
+  "invariant": "Alternative WPS/WCS/WCO formulas unchanged in every candidate",
+  "domain": "Todos os lags, sem COI e sem m\u00e1scara conservadora",
+  "main_score": "M\u00e9dia ponderada dos m\u00e1ximos em todos os lags da alternative WCO por escala; pesos pela m\u00e9dia geom\u00e9trica das alternative WPS do baseline no lag zero; ambas >=5% de seus pr\u00f3prios m\u00e1ximos",
+  "score_sensitivity": "Identical calculation with 1% and 10% baseline power floors",
+  "limitation": "Scale-wise maximization is a descriptive similarity score, not evidence of common events or causality. Correlated pairs are not independent samples."
+}

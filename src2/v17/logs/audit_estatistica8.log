@@ -1,0 +1,38 @@
+{
+  "archived_source_hashes_checked": 479,
+  "archived_source_hash_mismatches": [],
+  "silhouette_configurations": 756,
+  "max_silhouette_error": 1.6653345369377348e-16,
+  "max_width_error": 2.220446049250313e-16,
+  "max_pearson_identity_error": 1.7763568394002505e-15,
+  "existing_combo_balanced_neighbor": 0.95,
+  "existing_combo_total_credit": 18.0,
+  "exact_width_tail_count": 17,
+  "exact_width_allocations": 92378,
+  "exact_width_p": 0.0001840264998159735,
+  "max_holm_error_p_silhouette": 3.690103778097864e-14,
+  "max_holm_error_p_gain_direct": 0.0,
+  "max_direct_power_error": 3.3306690738754696e-14,
+  "max_direct_power_relative_error": 3.253308039039591e-14,
+  "unique_joint_mq_blocks": 25,
+  "n_runs": 25,
+  "quantile_log_grid_step": 0.015173109548599533,
+  "overlap_fraction_anchor_shift64": 0.96875,
+  "python": "3.13.2",
+  "numpy": "2.3.4",
+  "pandas": "2.3.3",
+  "scipy": "1.18.0",
+  "script_sha256": "1c6f105f40b10fb772f1e42dddb9ef67f8105777d87a2eaba4594c561293ea19"
+}
+                  condition  n  macro_silhouette  min_class_silhouette  cliff_delta  median_churn  median_annular  median_difference  lambda_max_effective
+        ancora_discreta_200 19          0.434777              0.415052     0.955556      1.031771        0.728309           0.303462                   NaN
+        ancora_continua_200 19          0.430289              0.407930     0.955556      1.024091        0.737067           0.287024                   NaN
+        ancora_continua_800 19          0.430217              0.407928     0.955556      1.024060        0.737037           0.287023                   NaN
+   ancora_continua_teto_512 19          0.449684              0.408960     0.888889      0.917151        0.679036           0.238116            509.540208
+   ancora_continua_teto_768 19          0.514144              0.506520     0.977778      1.021272        0.734353           0.286918            767.533959
+          janela_uniforme_0 19          0.136284              0.046543     0.600000      1.072373        0.813437           0.258936                   NaN
+          janela_uniforme_1 19          0.208895             -0.055852     0.511111      1.028849        0.743199           0.285650                   NaN
+          janela_uniforme_2 19          0.200108              0.192533     0.688889      1.064765        0.765839           0.298926                   NaN
+          janela_uniforme_3 19          0.144507              0.005461     0.600000      0.985837        0.833493           0.152345                   NaN
+          janela_uniforme_4 19          0.178241              0.138044     0.711111      1.173401        0.899669           0.273731                   NaN
+mediana_5_janelas_uniformes 19          0.264775              0.118196     0.733333      1.052179        0.768113           0.284066                   NaN

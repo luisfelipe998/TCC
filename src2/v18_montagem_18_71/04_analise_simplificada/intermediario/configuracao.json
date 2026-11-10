@@ -1,0 +1,37 @@
+{
+  "ensaios": 26,
+  "pares": 325,
+  "intra": 87,
+  "inter": 238,
+  "linhas_inclusivas": [
+    18,
+    71
+  ],
+  "wavelengths_px": [
+    50,
+    3000
+  ],
+  "escalas": 200,
+  "omega0": 6,
+  "amostragem_px": 1,
+  "descritor": "potência no atraso zero dos sinais completos, sem transformação logarítmica ou ajuste espectral",
+  "implementacao_pearson": "produto escalar de perfis centralizados e divididos pela norma",
+  "verificacao_pearson": [
+    "numpy.corrcoef",
+    "scipy.stats.pearsonr, todos os 325 pares"
+  ],
+  "grade_comprimentos_onda": "logarítmica, 200 comprimentos de onda entre 50 e 3000 pixels",
+  "preparo_sinal": "inversão de intensidade, retirada de tendência linear, centralização e padronização preservadas",
+  "autocorrelacao": "enviesada, divisor N",
+  "wps": "abs(CWT(Rxx))",
+  "wcs": "CWT(Rxy)",
+  "wco": "abs(WCS)^2/(WPSx(0)*WPSy(0))",
+  "mapas_pares": "trecho inicial de comprimento min(Na,Nb), preparado após o corte",
+  "medias_laterais": "média dos módulos em todos os atrasos dos campos completos",
+  "escolha_intra": "maior coeficiente de Pearson direto por padrão com pelo menos dois ensaios",
+  "escolha_inter": "maior coerência pontual entre os 238 pares interpadrões",
+  "configuracao_campos": {
+    "arquivo": "02_wavelet/intermediario/configuracao.json",
+    "sha256": "aece735342b3f5194ac5e51a9f5c3c99b07398b104ad87f55296243243fb029a"
+  }
+}

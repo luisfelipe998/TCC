@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "purpose": "Teste independente de rejeição de divergências no comparador da consolidação v18.",
+  "method": "Cópia isolada por hardlinks; cada artefato mutado foi substituído atomicamente, preservando os arquivos originais. Validação criada apenas na cópia.",
+  "source_directory": "/var/folders/s3/59k9hj4s1dn071gxwzsljkd40000gn/T/tcc-v18-baseline-positive-8ehnrcof",
+  "fixture_directory": "/var/folders/s3/59k9hj4s1dn071gxwzsljkd40000gn/T/tcc-v18-gate-mutations-p2bcpgyr/output",
+  "sources_edited": false,
+  "positive_candidate_edited": false,
+  "command": [
+    "python3",
+    "-B",
+    "scripts/comparar_resultados.py",
+    "--stage",
+    "completo"
+  ],
+  "expected_exit_code": 1,
+  "observed_exit_code": 1,
+  "comparison_status": "FAIL",
+  "checked_files": 186,
+  "failed_checks": 4,
+  "mutations": [
+    {
+      "name": "pixel_png",
+      "artifact": "01_panoramas/wavelet/m05q01_001/panorama.png",
+      "change": "Pixel [0,0] invertido em 1 bit.",
+      "detected": true,
+      "diagnostics": [
+        {
+          "location": "01_panoramas/wavelet/m05q01_001/panorama.png/pixels_sha256",
+          "expected": "cc1bdd962def73ad02fe614c9feebeb8fb99c3e2dd1e72eab03aace5fb2f4a8f",
+          "actual": "9268085100c4b05472533aa4f79b63f3610145dadb54b32b36d7f556daab8bfb"
+        }
+      ],
+      "original_candidate_sha256": "de172fb99e7381405b8edb10a54833e39cc2ae8a3ebaf8dc2bdd82ed6ad27509",
+      "mutated_fixture_sha256": "102424a01f8ef557647e1676fb300f748e4d8086fc98e53bd7654ac9e7a7e5d1"
+    },
+    {
+      "name": "valor_npz",
+      "artifact": "02_wavelet/intermediario/individuais/m05q01_001.npz",
+      "change": "wps_zero[10] acrescido de 1e-4.",
+      "detected": true,
+      "diagnostics": [
+        {
+          "location": "02_wavelet/intermediario/individuais/m05q01_001.npz/wps_zero",
+          "problem": "array values differ",
+          "first_index": [
+            10
+          ],
+          "expected": 0.2865347680012522,
+          "actual": 0.2866347680012522,
+          "max_absolute_error": 9.999999999998899e-05
+        }
+      ],
+      "original_candidate_sha256": "b969983e463682c374a8fddbd86a69727d459467509d0e30e98fbbd1ac7eef26",
+      "mutated_fixture_sha256": "06364cf6a3d19bcc6d1521cf9aed033ad5f8a741902fb06e622851af00630816"
+    },
+    {
+      "name": "valor_csv",
+      "artifact": "04_analise_simplificada/dados/pares_pearson_wco.csv",
+      "change": "pearson_r da primeira linha acrescido de 1e-4.",
+      "detected": true,
+      "diagnostics": [
+        {
+          "location": "04_analise_simplificada/dados/pares_pearson_wco.csv/0/pearson_r",
+          "problem": "float differs beyond tolerance",
+          "expected": 0.9667599702305799,
+          "actual": 0.9668599702305799
+        }
+      ],
+      "original_candidate_sha256": "097897e63d1e3b8388f9f3266c9af78b3abc12c75e63b55edcacfb5a3d44b575",
+      "mutated_fixture_sha256": "68f0bf2b862f59d31e54366021f70618efe44fc960b0348a7dfce1cbe3c2b99d"
+    },
+    {
+      "name": "selecao_json",
+      "artifact": "04_analise_simplificada/dados/selecao_intrapadrao.json",
+      "change": "ensaio_x do primeiro par alterado para m03q05_001.",
+      "detected": true,
+      "diagnostics": [
+        {
+          "location": "04_analise_simplificada/dados/selecao_intrapadrao.json/0/ensaio_x",
+          "expected": "m05q40_001",
+          "actual": "m03q05_001"
+        }
+      ],
+      "original_candidate_sha256": "05058b8abfbe98d0a66bed8796f0895dd62b17e9310291ef4e5ecf4b15fee50f",
+      "mutated_fixture_sha256": "472d1c5af93ae39600089f3e2c91d6facba771626c934e627452e16fda53be10"
+    }
+  ],
+  "reference_sha256": {
+    "scripts/comparar_resultados.py": "5f18f8adf5c50c093a7257798abe71d2fb80b489181504d3236b40d1085aba86",
+    "config/referencia_resultados.json": "431d0da3a628588963a3688036c357f42c1387be5d7652aa0ae573347f0e550f",
+    "config/referencia_arrays.npz": "2935013ac7fecdadab04833f4deeb3642b4497626bd70ea4ac014a779fdc94c6"
+  },
+  "comparison_report_sha256": "9eb525436029dc768800cd7c33b7d446656e19d7da6556f5e84d9c1b35ecc7c9"
+}

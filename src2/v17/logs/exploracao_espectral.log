@@ -1,0 +1,62 @@
+Espectros 1/25: m03q05_001
+Espectros 2/25: m04q10_001
+Espectros 3/25: m04q20_001
+Espectros 4/25: m05q10_001
+Espectros 5/25: m05q20_001
+Espectros 6/25: m05q40_001
+Espectros 7/25: m06q10_001
+Espectros 8/25: m06q20_001
+Espectros 9/25: m07q20_001
+Espectros 10/25: m07q40_001
+Espectros 11/25: m03q10_001
+Espectros 12/25: m03q20_001
+Espectros 13/25: m03q40_001
+Espectros 14/25: m04q40_001
+Espectros 15/25: m04q80_001
+Espectros 16/25: m05q80_001
+Espectros 17/25: m06q40_001
+Espectros 18/25: m06q80_001
+Espectros 19/25: m07q80_001
+Espectros 20/25: m05q01_001
+Espectros 21/25: m06q01_001
+Espectros 22/25: m07q05_001
+Espectros 23/25: m04q01_001
+Espectros 24/25: m05q05_001
+Espectros 25/25: m06q05_001
+ teto_lambda             janela           metodo          metrica         escopo  n  silhueta_macro  distancia_intra_macro  distancia_inter_macro  contraste_distancia_macro  n_silhueta_negativa
+         512 media_tres_janelas              wps        hellinger quatro_padroes 25       -0.071706               0.122347               0.148757                   0.026410                   16
+         512 media_tres_janelas              wps      wasserstein quatro_padroes 25       -0.070636               0.140971               0.191673                   0.050702                   15
+         512 media_tres_janelas              wps pearson_residual quatro_padroes 25       -0.116035               1.390145               1.338954                  -0.051191                   17
+         512 media_tres_janelas              wps          largura quatro_padroes 25       -0.098514               0.150688               0.188715                   0.038027                   15
+         512 media_tres_janelas              wps        hellinger  churn_annular 19        0.209155               0.143001               0.183345                   0.040344                    3
+         512 media_tres_janelas              wps      wasserstein  churn_annular 19        0.222170               0.177601               0.237569                   0.059968                    4
+         512 media_tres_janelas              wps pearson_residual  churn_annular 19        0.087168               1.134424               1.238287                   0.103863                    7
+         512 media_tres_janelas              wps          largura  churn_annular 19        0.313698               0.155101               0.263027                   0.107927                    5
+         512 media_tres_janelas              wps        hellinger      plug_slug  6       -0.108272               0.101693               0.088786                  -0.012908                    5
+         512 media_tres_janelas              wps      wasserstein      plug_slug  6       -0.048775               0.104341               0.094112                  -0.010229                    3
+         512 media_tres_janelas              wps pearson_residual      plug_slug  6       -0.150677               1.645866               1.390454                  -0.255412                    6
+         512 media_tres_janelas              wps          largura      plug_slug  6       -0.117835               0.146275               0.117663                  -0.028612                    4
+         512 media_tres_janelas    wps_ponderada        hellinger quatro_padroes 25       -0.057698               0.122151               0.154629                   0.032478                   16
+         512 media_tres_janelas    wps_ponderada      wasserstein quatro_padroes 25       -0.041123               0.150379               0.216428                   0.066049                   15
+         512 media_tres_janelas    wps_ponderada pearson_residual quatro_padroes 25       -0.112354               1.389884               1.344887                  -0.044998                   17
+         512 media_tres_janelas    wps_ponderada          largura quatro_padroes 25        0.041392               0.116397               0.174296                   0.057899                    9
+         512 media_tres_janelas    wps_ponderada        hellinger  churn_annular 19        0.264865               0.145729               0.202235                   0.056505                    3
+         512 media_tres_janelas    wps_ponderada      wasserstein  churn_annular 19        0.301932               0.190713               0.288288                   0.097575                    3
+         512 media_tres_janelas    wps_ponderada pearson_residual  churn_annular 19        0.087915               1.140132               1.245991                   0.105859                    7
+         512 media_tres_janelas    wps_ponderada          largura  churn_annular 19        0.517441               0.121245               0.291163                   0.169918                    2
+         512 media_tres_janelas    wps_ponderada        hellinger      plug_slug  6       -0.104640               0.098573               0.086136                  -0.012438                    4
+         512 media_tres_janelas    wps_ponderada      wasserstein      plug_slug  6       -0.037668               0.110044               0.098741                  -0.011304                    3
+         512 media_tres_janelas    wps_ponderada pearson_residual      plug_slug  6       -0.146049               1.639636               1.392582                  -0.247054                    6
+         512 media_tres_janelas    wps_ponderada          largura      plug_slug  6        0.118376               0.111548               0.112457                   0.000909                    3
+         512 media_tres_janelas welch_logenergia        hellinger quatro_padroes 25       -0.042182               0.151575               0.182225                   0.030650                   15
+         512 media_tres_janelas welch_logenergia      wasserstein quatro_padroes 25       -0.077086               0.150958               0.219838                   0.068879                   17
+         512 media_tres_janelas welch_logenergia pearson_residual quatro_padroes 25       -0.033702               1.361820               1.413560                   0.051740                   16
+         512 media_tres_janelas welch_logenergia          largura quatro_padroes 25       -0.042064               0.124668               0.201087                   0.076419                   12
+         512 media_tres_janelas welch_logenergia        hellinger  churn_annular 19        0.252372               0.167937               0.228736                   0.060798                    3
+         512 media_tres_janelas welch_logenergia      wasserstein  churn_annular 19        0.361503               0.178257               0.297557                   0.119300                    3
+         512 media_tres_janelas welch_logenergia pearson_residual  churn_annular 19        0.074105               1.241355               1.339077                   0.097722                    6
+         512 media_tres_janelas welch_logenergia          largura  churn_annular 19        0.590546               0.132728               0.350031                   0.217303                    0
+         512 media_tres_janelas welch_logenergia        hellinger      plug_slug  6       -0.123373               0.135212               0.117905                  -0.017307                    6
+         512 media_tres_janelas welch_logenergia      wasserstein      plug_slug  6       -0.238788               0.123660               0.093789                  -0.029871                    6
+         512 media_tres_janelas welch_logenergia pearson_residual      plug_slug  6       -0.051140               1.482285               1.402398                  -0.079888                    6
+         512 media_tres_janelas welch_logenergia          largura      plug_slug  6        0.054684               0.116608               0.113343                  -0.003266                    2

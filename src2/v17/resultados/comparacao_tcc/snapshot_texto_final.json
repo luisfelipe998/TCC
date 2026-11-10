@@ -1,0 +1,60 @@
+{
+  "timestamp_utc": "2026-10-27T04:26:56.900900+00:00",
+  "fontes": [
+    {
+      "path": "TCC/anexos.tex",
+      "copia": "resultados/comparacao_tcc/texto_conferido/anexos.tex",
+      "sha256": "f1b839f0924914cbff14442b048083a34d878186a0ce389a4a89ccee047edaa6"
+    },
+    {
+      "path": "TCC/apendices.tex",
+      "copia": "resultados/comparacao_tcc/texto_conferido/apendices.tex",
+      "sha256": "c12438d4f16784f18b374ecc0a5b9c8a9f50d640f0d8b36d25be397dc8a187a3"
+    },
+    {
+      "path": "TCC/conclusao.tex",
+      "copia": "resultados/comparacao_tcc/texto_conferido/conclusao.tex",
+      "sha256": "cf21af9651a24229914950265fe3bc03513605aafe70d207703f2668f8fd5c1d"
+    },
+    {
+      "path": "TCC/discussao.tex",
+      "copia": "resultados/comparacao_tcc/texto_conferido/discussao.tex",
+      "sha256": "4c8cd684e8d4b6d9c03986ed4cabad1dbb11a03de9b1ce96d103f8d66b45e08f"
+    },
+    {
+      "path": "TCC/fundamentacao.tex",
+      "copia": "resultados/comparacao_tcc/texto_conferido/fundamentacao.tex",
+      "sha256": "4b94954398d0111e700a21d7e95664f4527b6485e4c3931954125e51c6cc2e13"
+    },
+    {
+      "path": "TCC/introducao.tex",
+      "copia": "resultados/comparacao_tcc/texto_conferido/introducao.tex",
+      "sha256": "9aaee03aea08dc034c1999031bf4fd6eed6760677df8b44f8150197af6f7cf69"
+    },
+    {
+      "path": "TCC/main.tex",
+      "copia": "resultados/comparacao_tcc/texto_conferido/main.tex",
+      "sha256": "7ac3c7779da8aafd1f1df6e2404fe0c7cf341204176689e9bcaa22299584c59f"
+    },
+    {
+      "path": "TCC/metodologia.tex",
+      "copia": "resultados/comparacao_tcc/texto_conferido/metodologia.tex",
+      "sha256": "a578ad88793d670c31a26db34aad86b0e8afe2216c885256e8e0100781db6b4a"
+    },
+    {
+      "path": "TCC/pretextual.tex",
+      "copia": "resultados/comparacao_tcc/texto_conferido/pretextual.tex",
+      "sha256": "1a62562744bffe1c041a73b212cc3429d05ce16769b878e777d0449404c81dd4"
+    },
+    {
+      "path": "TCC/referencias.bib",
+      "copia": "resultados/comparacao_tcc/texto_conferido/referencias.bib",
+      "sha256": "b0ff09a79ee8627abbf6967dc267413623da36d8ecbc9001cbca693a9374ecc5"
+    },
+    {
+      "path": "TCC/resultados.tex",
+      "copia": "resultados/comparacao_tcc/texto_conferido/resultados.tex",
+      "sha256": "587848799cc164cf441dbaf0d85dba05c13114a66ca08f94d257c82022a0e01b"
+    }
+  ]
+}

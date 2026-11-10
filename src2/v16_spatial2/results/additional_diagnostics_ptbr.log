@@ -1,0 +1,20 @@
+{
+  "self_example": {
+    "v5": {
+      "max_self_wco": 1.306373417846694
+    },
+    "v16 biased": {
+      "max_self_wco": 1.0
+    },
+    "Schuck unbiased": {
+      "max_self_wco": 40.15487673355887
+    }
+  },
+  "ensemble_complex_mean_commutation_error": 1.0971354589302191e-17,
+  "ensemble_wps_magnitude_noncommutation_relative_l2": 0.07540598417170899,
+  "ensemble_peak_lag": -500,
+  "note": "Controlled simulation, not an exact reproduction of the chapter figures."
+}
+real 14.44
+user 12.57
+sys 0.57

@@ -1,0 +1,32 @@
+{
+  "run_x": "m03q05_001",
+  "run_y": "m07q01_001",
+  "padrao_x": "churn",
+  "padrao_y": "dispersed bubble",
+  "tipo": "inter",
+  "padrao": "churn × dispersed bubble",
+  "arquivo": "04_analise_simplificada/figuras/churn_dispersed_bubble_m03q05_001_m07q01_001.png",
+  "input_x_sha256": "a6dd7633b517e3b2f0763674cd57afd4d21648d3071780602bfc4ba0dd4db1d0",
+  "input_y_sha256": "2b72c5fd06ccb41000e24bc1277b05a6e44773ac94c9901a20fc95f49b06c873",
+  "comprimento": 3094,
+  "comprimento_x": 9237,
+  "comprimento_y": 3094,
+  "descarte_x": 6143,
+  "descarte_y": 0,
+  "escalas_validas": 200,
+  "wco_maxima": 0.8331407281268426,
+  "wco_minima": 5.528254000460543e-10,
+  "wco_media_integral": 0.13241935920326262,
+  "wco_maxima_zero": 0.790438728383878,
+  "wco_mediana_zero": 0.07988166772076917,
+  "pico_lag_px": 272,
+  "pico_lambda_px": 1072.3821680509225,
+  "erro_soma_direta": 2.858227977214911e-17,
+  "erro_wps_independente": 6.661338147750939e-16,
+  "assinaturas": {
+    "core": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc",
+    "script": "edc4cc46e5ce0fc5267bfeaf023e7eb3ae1c6b298b15dc57a6d62cb7380463e8",
+    "input_x": "a6dd7633b517e3b2f0763674cd57afd4d21648d3071780602bfc4ba0dd4db1d0",
+    "input_y": "2b72c5fd06ccb41000e24bc1277b05a6e44773ac94c9901a20fc95f49b06c873"
+  }
+}

@@ -1,0 +1,1457 @@
+{
+  "analise": "Pearson direto dos perfis de potência no atraso zero",
+  "origem_campos_wavelet": "02_wavelet",
+  "ensaios": [
+    {
+      "ensaio": "m03q05_001",
+      "padrao": "churn",
+      "numero": 1,
+      "comprimento": 9237,
+      "wavelet_path": "01_panoramas/wavelet/m03q05_001/panorama.png",
+      "optica_path": "01_panoramas/optica/m03q05_001/panorama.png",
+      "hashes": {
+        "wavelet": "596027cea034973e5cc3363cc70f3f9a378cc48bd27c32197895500f612767e4",
+        "optica": "b65a4d192c9f53262ae05d3d4de2c509e823f43ebebc28520f18e4b45f608ef7"
+      },
+      "supplied_pattern": "churn",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "nonpositive_raw_lags": 0,
+      "acquisition": {
+        "Frames": 501.0,
+        "Rate": 5000.0,
+        "ExposureNs": 132000.0
+      },
+      "panorama_sha256": "596027cea034973e5cc3363cc70f3f9a378cc48bd27c32197895500f612767e4",
+      "raw_sha256": "a6dd7633b517e3b2f0763674cd57afd4d21648d3071780602bfc4ba0dd4db1d0"
+    },
+    {
+      "ensaio": "m04q10_001",
+      "padrao": "churn",
+      "numero": 2,
+      "comprimento": 8894,
+      "wavelet_path": "01_panoramas/wavelet/m04q10_001/panorama.png",
+      "optica_path": "01_panoramas/optica/m04q10_001/panorama.png",
+      "hashes": {
+        "wavelet": "0d079ddf48f515a8274a37f5bb70724ed96d03d31a7ad99787dda53a45136c0d",
+        "optica": "b16de558345240e2f1bdab154a988dfdb60d8925b2c529a7269e9733de04dd64"
+      },
+      "supplied_pattern": "churn",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "nonpositive_raw_lags": 0,
+      "acquisition": {
+        "Frames": 501.0,
+        "Rate": 5000.0,
+        "ExposureNs": 127000.0
+      },
+      "panorama_sha256": "0d079ddf48f515a8274a37f5bb70724ed96d03d31a7ad99787dda53a45136c0d",
+      "raw_sha256": "ede45d0f1b1749cdd405c8475193fc7e5fb2ae37ceeb8932a54390d14cd2826c"
+    },
+    {
+      "ensaio": "m04q20_001",
+      "padrao": "churn",
+      "numero": 3,
+      "comprimento": 9324,
+      "wavelet_path": "01_panoramas/wavelet/m04q20_001/panorama.png",
+      "optica_path": "01_panoramas/optica/m04q20_001/panorama.png",
+      "hashes": {
+        "wavelet": "f5e73c4ea3db76bf1cb008de7244bf573fada60669c18606928dc67833caa744",
+        "optica": "53484d97520e1b872881b776a7587661dc64693d1336216fa477a8eec90a29ca"
+      },
+      "supplied_pattern": "churn",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "nonpositive_raw_lags": 0,
+      "acquisition": {
+        "Frames": 501.0,
+        "Rate": 5000.0,
+        "ExposureNs": 127000.0
+      },
+      "panorama_sha256": "f5e73c4ea3db76bf1cb008de7244bf573fada60669c18606928dc67833caa744",
+      "raw_sha256": "57692e6906b114e7c60df57d4614fa4989a0935ad52f53fd16a9e6845c42de82"
+    },
+    {
+      "ensaio": "m05q10_001",
+      "padrao": "churn",
+      "numero": 4,
+      "comprimento": 7058,
+      "wavelet_path": "01_panoramas/wavelet/m05q10_001/panorama.png",
+      "optica_path": "01_panoramas/optica/m05q10_001/panorama.png",
+      "hashes": {
+        "wavelet": "23478d108c47094d3ce1634828e6c9d437bcc178493243ddd730eef88dc8b9ab",
+        "optica": "f74ede2891113c58816e1bb4552e38e440507cd058bf5df702de00470cfd6606"
+      },
+      "supplied_pattern": "churn",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "nonpositive_raw_lags": 0,
+      "acquisition": {
+        "Frames": 501.0,
+        "Rate": 7000.0,
+        "ExposureNs": 62000.0
+      },
+      "panorama_sha256": "23478d108c47094d3ce1634828e6c9d437bcc178493243ddd730eef88dc8b9ab",
+      "raw_sha256": "913d2b48d36aff31253b1385b4acf5bb6198af888176d3a6aa85594d2d9edc47"
+    },
+    {
+      "ensaio": "m05q20_001",
+      "padrao": "churn",
+      "numero": 5,
+      "comprimento": 7411,
+      "wavelet_path": "01_panoramas/wavelet/m05q20_001/panorama.png",
+      "optica_path": "01_panoramas/optica/m05q20_001/panorama.png",
+      "hashes": {
+        "wavelet": "1cfb9f15d826e46c392739d4e1fd684795647ff28239e3c4f6ff71ad4483508d",
+        "optica": "2d95f568ce5a7b97dd9bb9e4f68f12dd9c5156ef3c9e899e08102949e7225f0e"
+      },
+      "supplied_pattern": "churn",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "nonpositive_raw_lags": 0,
+      "acquisition": {
+        "Frames": 501.0,
+        "Rate": 7000.0,
+        "ExposureNs": 62000.0
+      },
+      "panorama_sha256": "1cfb9f15d826e46c392739d4e1fd684795647ff28239e3c4f6ff71ad4483508d",
+      "raw_sha256": "5cc43971bc94a774f5f9e6e0a092871d813306a36710f8a95c895760b7f3e1d0"
+    },
+    {
+      "ensaio": "m05q40_001",
+      "padrao": "churn",
+      "numero": 6,
+      "comprimento": 9873,
+      "wavelet_path": "01_panoramas/wavelet/m05q40_001/panorama.png",
+      "optica_path": "01_panoramas/optica/m05q40_001/panorama.png",
+      "hashes": {
+        "wavelet": "67731c2744ab0322d04d9058610d6f5d8e12f0813551fa506b140ed20661eb71",
+        "optica": "f84f7c9e569ae5a30f508562dc384b9d17af524856562e7758022f238ee5fcec"
+      },
+      "supplied_pattern": "churn",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "nonpositive_raw_lags": 0,
+      "acquisition": {
+        "Frames": 501.0,
+        "Rate": 7000.0,
+        "ExposureNs": 62000.0
+      },
+      "panorama_sha256": "67731c2744ab0322d04d9058610d6f5d8e12f0813551fa506b140ed20661eb71",
+      "raw_sha256": "56744a88c67cc1711a161c1c67263209a0b8680a81c9e947ab1612142cedfe30"
+    },
+    {
+      "ensaio": "m06q10_001",
+      "padrao": "churn",
+      "numero": 7,
+      "comprimento": 7615,
+      "wavelet_path": "01_panoramas/wavelet/m06q10_001/panorama.png",
+      "optica_path": "01_panoramas/optica/m06q10_001/panorama.png",
+      "hashes": {
+        "wavelet": "8e408c47901e34e18183e54e9f87b7d4dddc338b5c159f54dfb8e12cdbd46577",
+        "optica": "438ab90fd6f5c21193f4156024089b9c2bf8eafa291a1e3ac2b9d3a01a5aba03"
+      },
+      "supplied_pattern": "churn",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "nonpositive_raw_lags": 0,
+      "acquisition": {
+        "Frames": 501.0,
+        "Rate": 7000.0,
+        "ExposureNs": 62000.0
+      },
+      "panorama_sha256": "8e408c47901e34e18183e54e9f87b7d4dddc338b5c159f54dfb8e12cdbd46577",
+      "raw_sha256": "f91eb37f4d58cd17de8dbeb83239463dae97a2be998f214cf4c6f2a0cd65a9cb"
+    },
+    {
+      "ensaio": "m06q20_001",
+      "padrao": "churn",
+      "numero": 8,
+      "comprimento": 10025,
+      "wavelet_path": "01_panoramas/wavelet/m06q20_001/panorama.png",
+      "optica_path": "01_panoramas/optica/m06q20_001/panorama.png",
+      "hashes": {
+        "wavelet": "5bcb32171cb329efdf96b803bb6983e4c714153dad87827b7552e74abed1c86b",
+        "optica": "2d850110492e72778f3e4a84d56a31ecfade820b237022f00246ee9eee24ada9"
+      },
+      "supplied_pattern": "churn",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "nonpositive_raw_lags": 0,
+      "acquisition": {
+        "Frames": 501.0,
+        "Rate": 7000.0,
+        "ExposureNs": 62000.0
+      },
+      "panorama_sha256": "5bcb32171cb329efdf96b803bb6983e4c714153dad87827b7552e74abed1c86b",
+      "raw_sha256": "cc562313f7e6856bde0a7d7febd01fa7be103494de562af07a82f1a78ea9b2c1"
+    },
+    {
+      "ensaio": "m07q20_001",
+      "padrao": "churn",
+      "numero": 9,
+      "comprimento": 8289,
+      "wavelet_path": "01_panoramas/wavelet/m07q20_001/panorama.png",
+      "optica_path": "01_panoramas/optica/m07q20_001/panorama.png",
+      "hashes": {
+        "wavelet": "aa46a8f605e1519a9ce1c8c26ff55f057d2635499c2d6edc8403955a6f33032b",
+        "optica": "108509a0123eede16ed28f4d9bba3b653176047a806049f45ce7babe9b011080"
+      },
+      "supplied_pattern": "churn",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "nonpositive_raw_lags": 0,
+      "acquisition": {
+        "Frames": 501.0,
+        "Rate": 7000.0,
+        "ExposureNs": 62000.0
+      },
+      "panorama_sha256": "aa46a8f605e1519a9ce1c8c26ff55f057d2635499c2d6edc8403955a6f33032b",
+      "raw_sha256": "a22b31e0f1431639ea1092cd88841a8b39bb9ccb11e9139dbfbd8e60feb2bd92"
+    },
+    {
+      "ensaio": "m07q40_001",
+      "padrao": "churn",
+      "numero": 10,
+      "comprimento": 10313,
+      "wavelet_path": "01_panoramas/wavelet/m07q40_001/panorama.png",
+      "optica_path": "01_panoramas/optica/m07q40_001/panorama.png",
+      "hashes": {
+        "wavelet": "b4c124cd6979864df09eaeddf373eb3aa7c1c1d4b2b7161a089b13309cb1f549",
+        "optica": "6bd6ab1896ac3ddd88def5d846e9784488a268eb9fef8441be63c9a5d383d156"
+      },
+      "supplied_pattern": "churn",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "nonpositive_raw_lags": 0,
+      "acquisition": {
+        "Frames": 501.0,
+        "Rate": 7000.0,
+        "ExposureNs": 62000.0
+      },
+      "panorama_sha256": "b4c124cd6979864df09eaeddf373eb3aa7c1c1d4b2b7161a089b13309cb1f549",
+      "raw_sha256": "64d78e531f5f9d5f790eca9594724ffd315c4f5e24c66d2a07d4045a39f8c489"
+    },
+    {
+      "ensaio": "m03q10_001",
+      "padrao": "wavy annular",
+      "numero": 11,
+      "comprimento": 13789,
+      "wavelet_path": "01_panoramas/wavelet/m03q10_001/panorama.png",
+      "optica_path": "01_panoramas/optica/m03q10_001/panorama.png",
+      "hashes": {
+        "wavelet": "24262f359bf97fae065072e767591067bedef09fd3c67eb5a778621213f97a02",
+        "optica": "646daea131af86cb70f9c3f56a0f4c9b753e2503773fded81a8c38f3714633f3"
+      },
+      "supplied_pattern": "wavy annular",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "nonpositive_raw_lags": 0,
+      "acquisition": {
+        "Frames": 501.0,
+        "Rate": 5000.0,
+        "ExposureNs": 132000.0
+      },
+      "panorama_sha256": "24262f359bf97fae065072e767591067bedef09fd3c67eb5a778621213f97a02",
+      "raw_sha256": "fc4c5fb62492bc17777eec1d24c96d49e8dac7a21afad41c222fecf2a9c7db93"
+    },
+    {
+      "ensaio": "m03q20_001",
+      "padrao": "wavy annular",
+      "numero": 12,
+      "comprimento": 22831,
+      "wavelet_path": "01_panoramas/wavelet/m03q20_001/panorama.png",
+      "optica_path": "01_panoramas/optica/m03q20_001/panorama.png",
+      "hashes": {
+        "wavelet": "54f0240a89fd9127ff114c1352bca80d8bdeefe21859da24ed9c00dc324bed47",
+        "optica": "acb570c9a7e8afc70b3cd06abf428d315c70040ccca929f1850edb1691d2fec7"
+      },
+      "supplied_pattern": "wavy annular",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "nonpositive_raw_lags": 0,
+      "acquisition": {
+        "Frames": 501.0,
+        "Rate": 4000.0,
+        "ExposureNs": 132000.0
+      },
+      "panorama_sha256": "54f0240a89fd9127ff114c1352bca80d8bdeefe21859da24ed9c00dc324bed47",
+      "raw_sha256": "8ad40bbf66bc0d0311c296a030e0a34286f4acf3d43e6837cfc5072fddc3e32f"
+    },
+    {
+      "ensaio": "m03q40_001",
+      "padrao": "wavy annular",
+      "numero": 13,
+      "comprimento": 19204,
+      "wavelet_path": "01_panoramas/wavelet/m03q40_001/panorama.png",
+      "optica_path": "01_panoramas/optica/m03q40_001/panorama.png",
+      "hashes": {
+        "wavelet": "4716c7f359fbcba5d57c49b381e21bc81b3533dfe0028e347f33e13bfa993e0b",
+        "optica": "beecd421e703dc738e1bb77d7b69f29f455b30fd0b2bb616633a9aeb90011b66"
+      },
+      "supplied_pattern": "wavy annular",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "nonpositive_raw_lags": 82,
+      "acquisition": {
+        "Frames": 501.0,
+        "Rate": 4000.0,
+        "ExposureNs": 132000.0
+      },
+      "panorama_sha256": "4716c7f359fbcba5d57c49b381e21bc81b3533dfe0028e347f33e13bfa993e0b",
+      "raw_sha256": "89d1d6b1c794533bdafe38c5f4d80bd39345ee7e7e893e0ca6ff83e8c9ad383d"
+    },
+    {
+      "ensaio": "m04q40_001",
+      "padrao": "wavy annular",
+      "numero": 14,
+      "comprimento": 14477,
+      "wavelet_path": "01_panoramas/wavelet/m04q40_001/panorama.png",
+      "optica_path": "01_panoramas/optica/m04q40_001/panorama.png",
+      "hashes": {
+        "wavelet": "2faa2ee2369ae1a7319721d8498ff2766d1b137e5023794eb30f959dcfc306de",
+        "optica": "7d1f4f9f7030bd040f1912a36cd66212132e9299fbabda537992fa66766b3b65"
+      },
+      "supplied_pattern": "wavy annular",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "nonpositive_raw_lags": 0,
+      "acquisition": {
+        "Frames": 501.0,
+        "Rate": 5000.0,
+        "ExposureNs": 127000.0
+      },
+      "panorama_sha256": "2faa2ee2369ae1a7319721d8498ff2766d1b137e5023794eb30f959dcfc306de",
+      "raw_sha256": "9b104775129769bbb6d5cba0805c465e4a4556f0c2378326ade06d3da93d2e80"
+    },
+    {
+      "ensaio": "m04q80_001",
+      "padrao": "wavy annular",
+      "numero": 15,
+      "comprimento": 22533,
+      "wavelet_path": "01_panoramas/wavelet/m04q80_001/panorama.png",
+      "optica_path": "01_panoramas/optica/m04q80_001/panorama.png",
+      "hashes": {
+        "wavelet": "e9daef84d9f6992f48b9baf233a17820fcf904f050bc7e41d728470c7a25ce9b",
+        "optica": "c597a08707fb9c654f8ce62c709d41169454fe6f0ee0f933dcad53c857797c4b"
+      },
+      "supplied_pattern": "wavy annular",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "nonpositive_raw_lags": 0,
+      "acquisition": {
+        "Frames": 501.0,
+        "Rate": 5000.0,
+        "ExposureNs": 132000.0
+      },
+      "panorama_sha256": "e9daef84d9f6992f48b9baf233a17820fcf904f050bc7e41d728470c7a25ce9b",
+      "raw_sha256": "9a76f65883ce22c1ef9ba28ff491a0147e04988ae55ffbf81ce3a20381e377f5"
+    },
+    {
+      "ensaio": "m05q80_001",
+      "padrao": "wavy annular",
+      "numero": 16,
+      "comprimento": 17500,
+      "wavelet_path": "01_panoramas/wavelet/m05q80_001/panorama.png",
+      "optica_path": "01_panoramas/optica/m05q80_001/panorama.png",
+      "hashes": {
+        "wavelet": "13059bd134f66b4d56e08701801dbf25e2bf819ff6db66d95134e5505e1f4a64",
+        "optica": "c2ddbb436015be22b132937198b8ccd00a0e2f721f7b20c56b23ad50d5a3c388"
+      },
+      "supplied_pattern": "wavy annular",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "nonpositive_raw_lags": 0,
+      "acquisition": {
+        "Frames": 501.0,
+        "Rate": 7000.0,
+        "ExposureNs": 62000.0
+      },
+      "panorama_sha256": "13059bd134f66b4d56e08701801dbf25e2bf819ff6db66d95134e5505e1f4a64",
+      "raw_sha256": "09386ab620fe1ff1ad123b1429c7e3fc86ba6153fe91513df59564f790faed04"
+    },
+    {
+      "ensaio": "m06q40_001",
+      "padrao": "wavy annular",
+      "numero": 17,
+      "comprimento": 14722,
+      "wavelet_path": "01_panoramas/wavelet/m06q40_001/panorama.png",
+      "optica_path": "01_panoramas/optica/m06q40_001/panorama.png",
+      "hashes": {
+        "wavelet": "f8eaf72700063ae1361262de85d62151c9cc8845903a8002927c5a92e7289d25",
+        "optica": "38bd97fedc99f9119f81b582089f166b5253ed1dde48ab47f1a09ef7b9bc623c"
+      },
+      "supplied_pattern": "wavy annular",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "nonpositive_raw_lags": 0,
+      "acquisition": {
+        "Frames": 501.0,
+        "Rate": 7000.0,
+        "ExposureNs": 62000.0
+      },
+      "panorama_sha256": "f8eaf72700063ae1361262de85d62151c9cc8845903a8002927c5a92e7289d25",
+      "raw_sha256": "b6bf395acbd3a72c2b5bdf225318568c894bd2530174f2cc77bc41582a74a372"
+    },
+    {
+      "ensaio": "m06q80_001",
+      "padrao": "wavy annular",
+      "numero": 18,
+      "comprimento": 18664,
+      "wavelet_path": "01_panoramas/wavelet/m06q80_001/panorama.png",
+      "optica_path": "01_panoramas/optica/m06q80_001/panorama.png",
+      "hashes": {
+        "wavelet": "b7cc4bea7000c9c970e5d15232d5403e12778b094ebe77279a23845021d96632",
+        "optica": "ce1bbdb718678a8744f310311141031a0b492b0ec28e92fdfb400ef16a9a5407"
+      },
+      "supplied_pattern": "wavy annular",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "nonpositive_raw_lags": 0,
+      "acquisition": {
+        "Frames": 501.0,
+        "Rate": 7000.0,
+        "ExposureNs": 62000.0
+      },
+      "panorama_sha256": "b7cc4bea7000c9c970e5d15232d5403e12778b094ebe77279a23845021d96632",
+      "raw_sha256": "7a11908749ae8f9a6d44f5ac66674761078c1ece9bbde4e56a009fe7f88dff93"
+    },
+    {
+      "ensaio": "m07q80_001",
+      "padrao": "wavy annular",
+      "numero": 19,
+      "comprimento": 16656,
+      "wavelet_path": "01_panoramas/wavelet/m07q80_001/panorama.png",
+      "optica_path": "01_panoramas/optica/m07q80_001/panorama.png",
+      "hashes": {
+        "wavelet": "c772958344c4234a4b54272d4e39a00d3c8d2e4784b13013ba04c76cc556890f",
+        "optica": "5158579310a536518d48aa4bcb839b9378862cf0e753923a7a2c613f4f6776e3"
+      },
+      "supplied_pattern": "wavy annular",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "nonpositive_raw_lags": 0,
+      "acquisition": {
+        "Frames": 501.0,
+        "Rate": 7000.0,
+        "ExposureNs": 62000.0
+      },
+      "panorama_sha256": "c772958344c4234a4b54272d4e39a00d3c8d2e4784b13013ba04c76cc556890f",
+      "raw_sha256": "e710fc652804c1495c05f4094f70eca6fc29e6a0e1bd47449262ed1248c123ea"
+    },
+    {
+      "ensaio": "m05q01_001",
+      "padrao": "plug",
+      "numero": 20,
+      "comprimento": 5914,
+      "wavelet_path": "01_panoramas/wavelet/m05q01_001/panorama.png",
+      "optica_path": "01_panoramas/optica/m05q01_001/panorama.png",
+      "hashes": {
+        "wavelet": "de172fb99e7381405b8edb10a54833e39cc2ae8a3ebaf8dc2bdd82ed6ad27509",
+        "optica": "c5851f90ccf3ea23e930e0bc747ae41562649878687ca65b1399ce4df9ab563e"
+      },
+      "supplied_pattern": "plug",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "nonpositive_raw_lags": 0,
+      "acquisition": {
+        "Frames": 501.0,
+        "Rate": 7000.0,
+        "ExposureNs": 62000.0
+      },
+      "panorama_sha256": "de172fb99e7381405b8edb10a54833e39cc2ae8a3ebaf8dc2bdd82ed6ad27509",
+      "raw_sha256": "f855fcd889868fec5cae88d4ffd7f6f320a1fd36340a21ab6c076033a581bc52"
+    },
+    {
+      "ensaio": "m06q01_001",
+      "padrao": "plug",
+      "numero": 21,
+      "comprimento": 7786,
+      "wavelet_path": "01_panoramas/wavelet/m06q01_001/panorama.png",
+      "optica_path": "01_panoramas/optica/m06q01_001/panorama.png",
+      "hashes": {
+        "wavelet": "ce29a7d63315c98e752782343df85b5736e585e2209f91cce9aefa3886ff1875",
+        "optica": "72956875541a66e19957920e571eb1cfe65502143cc1f26be71daf7ba635d74d"
+      },
+      "supplied_pattern": "plug",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "nonpositive_raw_lags": 0,
+      "acquisition": {
+        "Frames": 501.0,
+        "Rate": 7000.0,
+        "ExposureNs": 62000.0
+      },
+      "panorama_sha256": "ce29a7d63315c98e752782343df85b5736e585e2209f91cce9aefa3886ff1875",
+      "raw_sha256": "b38869d23f8a5a94a8c0e94273411801f0ed07b41c2e6f1303bdfec16867ca3f"
+    },
+    {
+      "ensaio": "m07q05_001",
+      "padrao": "plug",
+      "numero": 22,
+      "comprimento": 7337,
+      "wavelet_path": "01_panoramas/wavelet/m07q05_001/panorama.png",
+      "optica_path": "01_panoramas/optica/m07q05_001/panorama.png",
+      "hashes": {
+        "wavelet": "a97a0be22910e33a5005a3798f00166232d06580793c40f14c65a651b590edf6",
+        "optica": "6ec6780c997b758a5308a0b070f312207a8fee12476dde30866fcd7456086d6d"
+      },
+      "supplied_pattern": "plug",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "nonpositive_raw_lags": 0,
+      "acquisition": {
+        "Frames": 501.0,
+        "Rate": 7000.0,
+        "ExposureNs": 62000.0
+      },
+      "panorama_sha256": "a97a0be22910e33a5005a3798f00166232d06580793c40f14c65a651b590edf6",
+      "raw_sha256": "fea41bbc268327b3b0000e792f831fab5fe5d9d4d63a347160f6c6d0660eb34b"
+    },
+    {
+      "ensaio": "m04q01_001",
+      "padrao": "slug",
+      "numero": 23,
+      "comprimento": 5071,
+      "wavelet_path": "01_panoramas/wavelet/m04q01_001/panorama.png",
+      "optica_path": "01_panoramas/optica/m04q01_001/panorama.png",
+      "hashes": {
+        "wavelet": "393d8e37f5b977134b18a0e40612e66cbe99ebcddd6595389038b2f0ed702e54",
+        "optica": "ef7d7593abdc47eff91870a16fe3e1a018481e9da2b23416c7873b4924929c28"
+      },
+      "supplied_pattern": "slug",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "nonpositive_raw_lags": 0,
+      "acquisition": {
+        "Frames": 501.0,
+        "Rate": 7000.0,
+        "ExposureNs": 62000.0
+      },
+      "panorama_sha256": "393d8e37f5b977134b18a0e40612e66cbe99ebcddd6595389038b2f0ed702e54",
+      "raw_sha256": "66585d71589ecc34cca205de4cf0fc8a278aca6954074e0406bc6570fbeca2a1"
+    },
+    {
+      "ensaio": "m05q05_001",
+      "padrao": "slug",
+      "numero": 24,
+      "comprimento": 6295,
+      "wavelet_path": "01_panoramas/wavelet/m05q05_001/panorama.png",
+      "optica_path": "01_panoramas/optica/m05q05_001/panorama.png",
+      "hashes": {
+        "wavelet": "d0e9e25d5d0e9393cd2fc5f73d4bb21446325b92302d8eeef2c847089c8c6adb",
+        "optica": "86abbc167b3f8119f20c5f602c58e99024bf18109f1c3c775e5a62eee1ab38b7"
+      },
+      "supplied_pattern": "slug",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "nonpositive_raw_lags": 0,
+      "acquisition": {
+        "Frames": 501.0,
+        "Rate": 7000.0,
+        "ExposureNs": 62000.0
+      },
+      "panorama_sha256": "d0e9e25d5d0e9393cd2fc5f73d4bb21446325b92302d8eeef2c847089c8c6adb",
+      "raw_sha256": "c3ee16ea923dca8aa191b414718f6b141c5489afba8b94c3730d8a163748d3d3"
+    },
+    {
+      "ensaio": "m06q05_001",
+      "padrao": "slug",
+      "numero": 25,
+      "comprimento": 7747,
+      "wavelet_path": "01_panoramas/wavelet/m06q05_001/panorama.png",
+      "optica_path": "01_panoramas/optica/m06q05_001/panorama.png",
+      "hashes": {
+        "wavelet": "d5611c3f80b17f48e7a6422670f34ee40a0b2f45fcc5bdfe01ea840d796fc4a3",
+        "optica": "7cd66ee797268bf90ddee40cf444e4a972c61901720c261c2cdec3c7737f690c"
+      },
+      "supplied_pattern": "slug",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "nonpositive_raw_lags": 0,
+      "acquisition": {
+        "Frames": 501.0,
+        "Rate": 7000.0,
+        "ExposureNs": 62000.0
+      },
+      "panorama_sha256": "d5611c3f80b17f48e7a6422670f34ee40a0b2f45fcc5bdfe01ea840d796fc4a3",
+      "raw_sha256": "97aab6dec150b07c8f9d6eeaf26e04cb85873f6a8543cc2678b45836946146c7"
+    },
+    {
+      "ensaio": "m07q01_001",
+      "padrao": "dispersed bubble",
+      "numero": 26,
+      "comprimento": 3094,
+      "wavelet_path": "01_panoramas/wavelet/m07q01_001/panorama.png",
+      "optica_path": "01_panoramas/optica/m07q01_001/panorama.png",
+      "hashes": {
+        "wavelet": "cfa09f8e1b7f95a36b33f1bde0faf3b2c005006fb24fa25c3045fdfec437fc37",
+        "optica": "fccc63b4ed6e37031ddb103ce76a50e62eec73a3fd3df69d9ff620c9b8a927d4"
+      },
+      "supplied_pattern": "dispersed bubbles",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "nonpositive_raw_lags": 0,
+      "acquisition": {
+        "Frames": 501.0,
+        "Rate": 7000.0,
+        "ExposureNs": 62000.0
+      },
+      "panorama_sha256": "cfa09f8e1b7f95a36b33f1bde0faf3b2c005006fb24fa25c3045fdfec437fc37",
+      "raw_sha256": "2b72c5fd06ccb41000e24bc1277b05a6e44773ac94c9901a20fc95f49b06c873"
+    }
+  ],
+  "grupos": [
+    {
+      "padrao_x": "churn",
+      "padrao_y": "churn",
+      "tipo": "intra",
+      "pares": 45,
+      "pearson_media": 0.7683644189591821,
+      "pearson_mediana": 0.7974214086871726
+    },
+    {
+      "padrao_x": "churn",
+      "padrao_y": "wavy annular",
+      "tipo": "inter",
+      "pares": 90,
+      "pearson_media": 0.7239596716579947,
+      "pearson_mediana": 0.78407845452038
+    },
+    {
+      "padrao_x": "churn",
+      "padrao_y": "plug",
+      "tipo": "inter",
+      "pares": 30,
+      "pearson_media": 0.8116745397005679,
+      "pearson_mediana": 0.8252938475515199
+    },
+    {
+      "padrao_x": "churn",
+      "padrao_y": "slug",
+      "tipo": "inter",
+      "pares": 30,
+      "pearson_media": 0.5417209333893103,
+      "pearson_mediana": 0.5569128201332814
+    },
+    {
+      "padrao_x": "churn",
+      "padrao_y": "dispersed bubble",
+      "tipo": "inter",
+      "pares": 10,
+      "pearson_media": -0.005591503397997306,
+      "pearson_mediana": -0.08754512223336958
+    },
+    {
+      "padrao_x": "wavy annular",
+      "padrao_y": "wavy annular",
+      "tipo": "intra",
+      "pares": 36,
+      "pearson_media": 0.7651125272683095,
+      "pearson_mediana": 0.8811068226221048
+    },
+    {
+      "padrao_x": "wavy annular",
+      "padrao_y": "plug",
+      "tipo": "inter",
+      "pares": 27,
+      "pearson_media": 0.6799532047967521,
+      "pearson_mediana": 0.7844223705857905
+    },
+    {
+      "padrao_x": "wavy annular",
+      "padrao_y": "slug",
+      "tipo": "inter",
+      "pares": 27,
+      "pearson_media": 0.3576749843067239,
+      "pearson_mediana": 0.41680459976500395
+    },
+    {
+      "padrao_x": "wavy annular",
+      "padrao_y": "dispersed bubble",
+      "tipo": "inter",
+      "pares": 9,
+      "pearson_media": -0.03338800402656401,
+      "pearson_mediana": -0.16062934852214633
+    },
+    {
+      "padrao_x": "plug",
+      "padrao_y": "plug",
+      "tipo": "intra",
+      "pares": 3,
+      "pearson_media": 0.9019560956035829,
+      "pearson_mediana": 0.8954722195052192
+    },
+    {
+      "padrao_x": "plug",
+      "padrao_y": "slug",
+      "tipo": "inter",
+      "pares": 9,
+      "pearson_media": 0.7022870267938235,
+      "pearson_mediana": 0.6801834154535571
+    },
+    {
+      "padrao_x": "plug",
+      "padrao_y": "dispersed bubble",
+      "tipo": "inter",
+      "pares": 3,
+      "pearson_media": -0.15675272760136286,
+      "pearson_mediana": -0.15320672318975825
+    },
+    {
+      "padrao_x": "slug",
+      "padrao_y": "slug",
+      "tipo": "intra",
+      "pares": 3,
+      "pearson_media": 0.5539829990012314,
+      "pearson_mediana": 0.4324883873838572
+    },
+    {
+      "padrao_x": "slug",
+      "padrao_y": "dispersed bubble",
+      "tipo": "inter",
+      "pares": 3,
+      "pearson_media": -0.29616022921347346,
+      "pearson_mediana": -0.32196718842534844
+    }
+  ],
+  "resumos": [
+    {
+      "tipo": "intra",
+      "metrica": "pearson_r",
+      "n": 87,
+      "media": 0.7642329553866295,
+      "mediana": 0.8187633444196417,
+      "minimo": -0.008797861127468146,
+      "maximo": 0.9882522803968814,
+      "q25": 0.6764606239648533,
+      "q75": 0.8976225898471433
+    },
+    {
+      "tipo": "inter",
+      "metrica": "pearson_r",
+      "n": 238,
+      "media": 0.5814270296142461,
+      "mediana": 0.6912143849984603,
+      "minimo": -0.5129397672695829,
+      "maximo": 0.9776153020534272,
+      "q25": 0.42208354487327365,
+      "q75": 0.8434882443466556
+    }
+  ],
+  "diferenca_global": 0.18280592577238342,
+  "medias_por_ensaio": [
+    {
+      "numero": 1,
+      "ensaio": "m03q05_001",
+      "padrao": "churn",
+      "pearson_media_todos": 0.682337193534153,
+      "pearson_media_intra": 0.714512739858716,
+      "pearson_media_inter": 0.6642384487265862,
+      "pares_intra": 9,
+      "pares_inter": 16
+    },
+    {
+      "numero": 2,
+      "ensaio": "m04q10_001",
+      "padrao": "churn",
+      "pearson_media_todos": 0.683499852311538,
+      "pearson_media_intra": 0.7644311355402647,
+      "pearson_media_inter": 0.6379760054953791,
+      "pares_intra": 9,
+      "pares_inter": 16
+    },
+    {
+      "numero": 3,
+      "ensaio": "m04q20_001",
+      "padrao": "churn",
+      "pearson_media_todos": 0.7368329581965061,
+      "pearson_media_intra": 0.8295872994238199,
+      "pearson_media_inter": 0.684658641256142,
+      "pares_intra": 9,
+      "pares_inter": 16
+    },
+    {
+      "numero": 4,
+      "ensaio": "m05q10_001",
+      "padrao": "churn",
+      "pearson_media_todos": 0.7248001318140102,
+      "pearson_media_intra": 0.8022314983335099,
+      "pearson_media_inter": 0.6812449881467917,
+      "pares_intra": 9,
+      "pares_inter": 16
+    },
+    {
+      "numero": 5,
+      "ensaio": "m05q20_001",
+      "padrao": "churn",
+      "pearson_media_todos": 0.7059580897330343,
+      "pearson_media_intra": 0.7802217926884304,
+      "pearson_media_inter": 0.664184756820624,
+      "pares_intra": 9,
+      "pares_inter": 16
+    },
+    {
+      "numero": 6,
+      "ensaio": "m05q40_001",
+      "padrao": "churn",
+      "pearson_media_todos": 0.7728190937595828,
+      "pearson_media_intra": 0.8435363132480591,
+      "pearson_media_inter": 0.7330406577973148,
+      "pares_intra": 9,
+      "pares_inter": 16
+    },
+    {
+      "numero": 7,
+      "ensaio": "m06q10_001",
+      "padrao": "churn",
+      "pearson_media_todos": 0.5278444405710031,
+      "pearson_media_intra": 0.5791247872031345,
+      "pearson_media_inter": 0.49899924559042913,
+      "pares_intra": 9,
+      "pares_inter": 16
+    },
+    {
+      "numero": 8,
+      "ensaio": "m06q20_001",
+      "padrao": "churn",
+      "pearson_media_todos": 0.7644070638648359,
+      "pearson_media_intra": 0.828602168062441,
+      "pearson_media_inter": 0.7282973177536831,
+      "pares_intra": 9,
+      "pares_inter": 16
+    },
+    {
+      "numero": 9,
+      "ensaio": "m07q20_001",
+      "padrao": "churn",
+      "pearson_media_todos": 0.6427316618608878,
+      "pearson_media_intra": 0.7126601836489165,
+      "pearson_media_inter": 0.6033968683551219,
+      "pares_intra": 9,
+      "pares_inter": 16
+    },
+    {
+      "numero": 10,
+      "ensaio": "m07q40_001",
+      "padrao": "churn",
+      "pearson_media_todos": 0.7529742069249404,
+      "pearson_media_intra": 0.8287362715845279,
+      "pearson_media_inter": 0.7103580455539225,
+      "pares_intra": 9,
+      "pares_inter": 16
+    },
+    {
+      "numero": 11,
+      "ensaio": "m03q10_001",
+      "padrao": "wavy annular",
+      "pearson_media_todos": 0.7363267590942638,
+      "pearson_media_intra": 0.8691388724490057,
+      "pearson_media_inter": 0.6738269410449733,
+      "pares_intra": 8,
+      "pares_inter": 17
+    },
+    {
+      "numero": 12,
+      "ensaio": "m03q20_001",
+      "padrao": "wavy annular",
+      "pearson_media_todos": 0.6735746736486545,
+      "pearson_media_intra": 0.837271087084841,
+      "pearson_media_inter": 0.5965410673257433,
+      "pares_intra": 8,
+      "pares_inter": 17
+    },
+    {
+      "numero": 13,
+      "ensaio": "m03q40_001",
+      "padrao": "wavy annular",
+      "pearson_media_todos": 0.17943109665139173,
+      "pearson_media_intra": 0.3275324406430844,
+      "pearson_media_inter": 0.10973634653765398,
+      "pares_intra": 8,
+      "pares_inter": 17
+    },
+    {
+      "numero": 14,
+      "ensaio": "m04q40_001",
+      "padrao": "wavy annular",
+      "pearson_media_todos": 0.7299203243600264,
+      "pearson_media_intra": 0.8528685484852405,
+      "pearson_media_inter": 0.6720623365363965,
+      "pares_intra": 8,
+      "pares_inter": 17
+    },
+    {
+      "numero": 15,
+      "ensaio": "m04q80_001",
+      "padrao": "wavy annular",
+      "pearson_media_todos": 0.6333470030787904,
+      "pearson_media_intra": 0.8009883456158837,
+      "pearson_media_inter": 0.5544569595319232,
+      "pares_intra": 8,
+      "pares_inter": 17
+    },
+    {
+      "numero": 16,
+      "ensaio": "m05q80_001",
+      "padrao": "wavy annular",
+      "pearson_media_todos": 0.7257197710287633,
+      "pearson_media_intra": 0.8498909205701598,
+      "pearson_media_inter": 0.6672862888916354,
+      "pares_intra": 8,
+      "pares_inter": 17
+    },
+    {
+      "numero": 17,
+      "ensaio": "m06q40_001",
+      "padrao": "wavy annular",
+      "pearson_media_todos": 0.7606132352934636,
+      "pearson_media_intra": 0.7925842290389323,
+      "pearson_media_inter": 0.7455680617661842,
+      "pares_intra": 8,
+      "pares_inter": 17
+    },
+    {
+      "numero": 18,
+      "ensaio": "m06q80_001",
+      "padrao": "wavy annular",
+      "pearson_media_todos": 0.7402652731490599,
+      "pearson_media_intra": 0.833424720921251,
+      "pearson_media_inter": 0.6964255330209701,
+      "pares_intra": 8,
+      "pares_inter": 17
+    },
+    {
+      "numero": 19,
+      "ensaio": "m07q80_001",
+      "padrao": "wavy annular",
+      "pearson_media_todos": 0.7391995229792898,
+      "pearson_media_intra": 0.7223135806063861,
+      "pearson_media_inter": 0.7471458488018324,
+      "pares_intra": 8,
+      "pares_inter": 17
+    },
+    {
+      "numero": 20,
+      "ensaio": "m05q01_001",
+      "padrao": "plug",
+      "pearson_media_todos": 0.6691097808984903,
+      "pearson_media_intra": 0.9051980336527647,
+      "pearson_media_inter": 0.6485803676155097,
+      "pares_intra": 2,
+      "pares_inter": 23
+    },
+    {
+      "numero": 21,
+      "ensaio": "m06q01_001",
+      "padrao": "plug",
+      "pearson_media_todos": 0.7564065890295943,
+      "pearson_media_intra": 0.9177627006612186,
+      "pearson_media_inter": 0.7423756228007575,
+      "pares_intra": 2,
+      "pares_inter": 23
+    },
+    {
+      "numero": 22,
+      "ensaio": "m07q05_001",
+      "padrao": "plug",
+      "pearson_media_todos": 0.7333250041715619,
+      "pearson_media_intra": 0.8829075524967653,
+      "pearson_media_inter": 0.7203178260563269,
+      "pares_intra": 2,
+      "pares_inter": 23
+    },
+    {
+      "numero": 23,
+      "ensaio": "m04q01_001",
+      "padrao": "slug",
+      "pearson_media_todos": 0.4254481158233581,
+      "pearson_media_intra": 0.6147303048099184,
+      "pearson_media_inter": 0.4089887950419181,
+      "pares_intra": 2,
+      "pares_inter": 23
+    },
+    {
+      "numero": 24,
+      "ensaio": "m05q05_001",
+      "padrao": "slug",
+      "pearson_media_todos": 0.6305100948774475,
+      "pearson_media_intra": 0.6285369866810528,
+      "pearson_media_inter": 0.6306816695032209,
+      "pares_intra": 2,
+      "pares_inter": 23
+    },
+    {
+      "numero": 25,
+      "ensaio": "m06q05_001",
+      "padrao": "slug",
+      "pearson_media_todos": 0.3306359143180835,
+      "pearson_media_intra": 0.41868170551272277,
+      "pearson_media_inter": 0.322979758562028,
+      "pares_intra": 2,
+      "pares_inter": 23
+    },
+    {
+      "numero": 26,
+      "ensaio": "m07q01_001",
+      "padrao": "dispersed bubble",
+      "pearson_media_todos": -0.06860583762654233,
+      "pearson_media_intra": null,
+      "pearson_media_inter": -0.06860583762654233,
+      "pares_intra": 0,
+      "pares_inter": 25
+    }
+  ],
+  "pares_intrapadrao_selecionados": [
+    {
+      "numero_x": 6,
+      "numero_y": 8,
+      "ensaio_x": "m05q40_001",
+      "ensaio_y": "m06q20_001",
+      "padrao_x": "churn",
+      "padrao_y": "churn",
+      "tipo": "intra",
+      "comprimento_comum": 9873,
+      "pearson_r": 0.9572096997749503,
+      "wco_maxima": 0.8325835162425786,
+      "wco_media_integral": 0.06323430936863421,
+      "wco_maxima_zero": 0.772747183586821,
+      "wco_mediana_zero": 0.02882454361418183,
+      "pico_lag_px": -1351,
+      "pico_lambda_px": 3000.0
+    },
+    {
+      "numero_x": 12,
+      "numero_y": 15,
+      "ensaio_x": "m03q20_001",
+      "ensaio_y": "m04q80_001",
+      "padrao_x": "wavy annular",
+      "padrao_y": "wavy annular",
+      "tipo": "intra",
+      "comprimento_comum": 22533,
+      "pearson_r": 0.9882522803968814,
+      "wco_maxima": 0.36595994466880466,
+      "wco_media_integral": 0.028230488075323294,
+      "wco_maxima_zero": 0.2476713759739843,
+      "wco_mediana_zero": 0.012096815815869482,
+      "pico_lag_px": 3665,
+      "pico_lambda_px": 2392.3872934929677
+    },
+    {
+      "numero_x": 20,
+      "numero_y": 21,
+      "ensaio_x": "m05q01_001",
+      "ensaio_y": "m06q01_001",
+      "padrao_x": "plug",
+      "padrao_y": "plug",
+      "tipo": "intra",
+      "comprimento_comum": 5914,
+      "pearson_r": 0.9400531818172181,
+      "wco_maxima": 0.7675579495337019,
+      "wco_media_integral": 0.09264103453534815,
+      "wco_maxima_zero": 0.6991777023196909,
+      "wco_mediana_zero": 0.056469819461279054,
+      "pico_lag_px": -744,
+      "pico_lambda_px": 1317.3583179142438
+    },
+    {
+      "numero_x": 23,
+      "numero_y": 24,
+      "ensaio_x": "m04q01_001",
+      "ensaio_y": "m05q05_001",
+      "padrao_x": "slug",
+      "padrao_y": "slug",
+      "tipo": "intra",
+      "comprimento_comum": 5071,
+      "pearson_r": 0.8245855859782485,
+      "wco_maxima": 0.9108913205717519,
+      "wco_media_integral": 0.13879813012915002,
+      "wco_maxima_zero": 0.8606919097441466,
+      "wco_mediana_zero": 0.19557255525009304,
+      "pico_lag_px": 2033,
+      "pico_lambda_px": 2203.381777722402
+    }
+  ],
+  "pares_ilustrados": [
+    {
+      "run_x": "m05q40_001",
+      "run_y": "m06q20_001",
+      "padrao_x": "churn",
+      "padrao_y": "churn",
+      "tipo": "intra",
+      "padrao": "churn",
+      "arquivo": "04_analise_simplificada/figuras/churn_m05q40_001_m06q20_001.png",
+      "input_x_sha256": "56744a88c67cc1711a161c1c67263209a0b8680a81c9e947ab1612142cedfe30",
+      "input_y_sha256": "cc562313f7e6856bde0a7d7febd01fa7be103494de562af07a82f1a78ea9b2c1",
+      "comprimento": 9873,
+      "comprimento_x": 9873,
+      "comprimento_y": 10025,
+      "descarte_x": 0,
+      "descarte_y": 152,
+      "escalas_validas": 200,
+      "wco_maxima": 0.8325835162425786,
+      "wco_minima": 1.4578151681292035e-09,
+      "wco_media_integral": 0.06323430936863421,
+      "wco_maxima_zero": 0.772747183586821,
+      "wco_mediana_zero": 0.02882454361418183,
+      "pico_lag_px": -1351,
+      "pico_lambda_px": 3000.0,
+      "erro_soma_direta": 2.949029909160572e-17,
+      "erro_wps_independente": 8.881784197001252e-16,
+      "assinaturas": {
+        "core": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc",
+        "script": "edc4cc46e5ce0fc5267bfeaf023e7eb3ae1c6b298b15dc57a6d62cb7380463e8",
+        "input_x": "56744a88c67cc1711a161c1c67263209a0b8680a81c9e947ab1612142cedfe30",
+        "input_y": "cc562313f7e6856bde0a7d7febd01fa7be103494de562af07a82f1a78ea9b2c1"
+      },
+      "pearson_r": 0.9572096997749503,
+      "origem_metricas_wavelet": "02_wavelet/intermediario/pares/m05q40_001__m06q20_001.json"
+    },
+    {
+      "run_x": "m03q20_001",
+      "run_y": "m04q80_001",
+      "padrao_x": "wavy annular",
+      "padrao_y": "wavy annular",
+      "tipo": "intra",
+      "padrao": "wavy annular",
+      "arquivo": "04_analise_simplificada/figuras/wavy_annular_m03q20_001_m04q80_001.png",
+      "input_x_sha256": "8ad40bbf66bc0d0311c296a030e0a34286f4acf3d43e6837cfc5072fddc3e32f",
+      "input_y_sha256": "9a76f65883ce22c1ef9ba28ff491a0147e04988ae55ffbf81ce3a20381e377f5",
+      "comprimento": 22533,
+      "comprimento_x": 22831,
+      "comprimento_y": 22533,
+      "descarte_x": 298,
+      "descarte_y": 0,
+      "escalas_validas": 200,
+      "wco_maxima": 0.36595994466880466,
+      "wco_minima": 1.780765688343149e-11,
+      "wco_media_integral": 0.028230488075323294,
+      "wco_maxima_zero": 0.2476713759739843,
+      "wco_mediana_zero": 0.012096815815869482,
+      "pico_lag_px": 3665,
+      "pico_lambda_px": 2392.3872934929677,
+      "erro_soma_direta": 3.469446951953614e-17,
+      "erro_wps_independente": 6.661338147750939e-16,
+      "assinaturas": {
+        "core": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc",
+        "script": "edc4cc46e5ce0fc5267bfeaf023e7eb3ae1c6b298b15dc57a6d62cb7380463e8",
+        "input_x": "8ad40bbf66bc0d0311c296a030e0a34286f4acf3d43e6837cfc5072fddc3e32f",
+        "input_y": "9a76f65883ce22c1ef9ba28ff491a0147e04988ae55ffbf81ce3a20381e377f5"
+      },
+      "pearson_r": 0.9882522803968814,
+      "origem_metricas_wavelet": "02_wavelet/intermediario/pares/m03q20_001__m04q80_001.json"
+    },
+    {
+      "run_x": "m05q01_001",
+      "run_y": "m06q01_001",
+      "padrao_x": "plug",
+      "padrao_y": "plug",
+      "tipo": "intra",
+      "padrao": "plug",
+      "arquivo": "04_analise_simplificada/figuras/plug_m05q01_001_m06q01_001.png",
+      "input_x_sha256": "f855fcd889868fec5cae88d4ffd7f6f320a1fd36340a21ab6c076033a581bc52",
+      "input_y_sha256": "b38869d23f8a5a94a8c0e94273411801f0ed07b41c2e6f1303bdfec16867ca3f",
+      "comprimento": 5914,
+      "comprimento_x": 5914,
+      "comprimento_y": 7786,
+      "descarte_x": 0,
+      "descarte_y": 1872,
+      "escalas_validas": 200,
+      "wco_maxima": 0.7675579495337019,
+      "wco_minima": 1.862374505375827e-08,
+      "wco_media_integral": 0.09264103453534815,
+      "wco_maxima_zero": 0.6991777023196909,
+      "wco_mediana_zero": 0.056469819461279054,
+      "pico_lag_px": -744,
+      "pico_lambda_px": 1317.3583179142438,
+      "erro_soma_direta": 1.1102230246251565e-16,
+      "erro_wps_independente": 8.881784197001252e-16,
+      "assinaturas": {
+        "core": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc",
+        "script": "edc4cc46e5ce0fc5267bfeaf023e7eb3ae1c6b298b15dc57a6d62cb7380463e8",
+        "input_x": "f855fcd889868fec5cae88d4ffd7f6f320a1fd36340a21ab6c076033a581bc52",
+        "input_y": "b38869d23f8a5a94a8c0e94273411801f0ed07b41c2e6f1303bdfec16867ca3f"
+      },
+      "pearson_r": 0.9400531818172181,
+      "origem_metricas_wavelet": "02_wavelet/intermediario/pares/m05q01_001__m06q01_001.json"
+    },
+    {
+      "run_x": "m04q01_001",
+      "run_y": "m05q05_001",
+      "padrao_x": "slug",
+      "padrao_y": "slug",
+      "tipo": "intra",
+      "padrao": "slug",
+      "arquivo": "04_analise_simplificada/figuras/slug_m04q01_001_m05q05_001.png",
+      "input_x_sha256": "66585d71589ecc34cca205de4cf0fc8a278aca6954074e0406bc6570fbeca2a1",
+      "input_y_sha256": "c3ee16ea923dca8aa191b414718f6b141c5489afba8b94c3730d8a163748d3d3",
+      "comprimento": 5071,
+      "comprimento_x": 5071,
+      "comprimento_y": 6295,
+      "descarte_x": 0,
+      "descarte_y": 1224,
+      "escalas_validas": 200,
+      "wco_maxima": 0.9108913205717519,
+      "wco_minima": 1.0989061223852873e-09,
+      "wco_media_integral": 0.13879813012915002,
+      "wco_maxima_zero": 0.8606919097441466,
+      "wco_mediana_zero": 0.19557255525009304,
+      "pico_lag_px": 2033,
+      "pico_lambda_px": 2203.381777722402,
+      "erro_soma_direta": 1.3877787807814457e-16,
+      "erro_wps_independente": 1.7763568394002505e-15,
+      "assinaturas": {
+        "core": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc",
+        "script": "edc4cc46e5ce0fc5267bfeaf023e7eb3ae1c6b298b15dc57a6d62cb7380463e8",
+        "input_x": "66585d71589ecc34cca205de4cf0fc8a278aca6954074e0406bc6570fbeca2a1",
+        "input_y": "c3ee16ea923dca8aa191b414718f6b141c5489afba8b94c3730d8a163748d3d3"
+      },
+      "pearson_r": 0.8245855859782485,
+      "origem_metricas_wavelet": "02_wavelet/intermediario/pares/m04q01_001__m05q05_001.json"
+    },
+    {
+      "run_x": "m04q01_001",
+      "run_y": "m05q80_001",
+      "padrao_x": "slug",
+      "padrao_y": "wavy annular",
+      "tipo": "inter",
+      "padrao": "slug × wavy annular",
+      "arquivo": "04_analise_simplificada/figuras/slug_wavy_annular_m04q01_001_m05q80_001.png",
+      "input_x_sha256": "66585d71589ecc34cca205de4cf0fc8a278aca6954074e0406bc6570fbeca2a1",
+      "input_y_sha256": "09386ab620fe1ff1ad123b1429c7e3fc86ba6153fe91513df59564f790faed04",
+      "comprimento": 5071,
+      "comprimento_x": 5071,
+      "comprimento_y": 17500,
+      "descarte_x": 0,
+      "descarte_y": 12429,
+      "escalas_validas": 200,
+      "wco_maxima": 0.9936204510965982,
+      "wco_minima": 3.3377142349692304e-10,
+      "wco_media_integral": 0.13201283777014436,
+      "wco_maxima_zero": 0.9687154747103607,
+      "wco_mediana_zero": 0.21219438230333934,
+      "pico_lag_px": 544,
+      "pico_lambda_px": 2544.7070169839235,
+      "erro_soma_direta": 1.1102230246251565e-16,
+      "erro_wps_independente": 1.7763568394002505e-15,
+      "assinaturas": {
+        "core": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc",
+        "script": "edc4cc46e5ce0fc5267bfeaf023e7eb3ae1c6b298b15dc57a6d62cb7380463e8",
+        "input_x": "66585d71589ecc34cca205de4cf0fc8a278aca6954074e0406bc6570fbeca2a1",
+        "input_y": "09386ab620fe1ff1ad123b1429c7e3fc86ba6153fe91513df59564f790faed04"
+      },
+      "pearson_r": 0.45138115766701475,
+      "origem_metricas_wavelet": "02_wavelet/intermediario/pares/m04q01_001__m05q80_001.json"
+    }
+  ],
+  "maximo_wco_interpadrões": {
+    "run_x": "m04q01_001",
+    "run_y": "m05q80_001",
+    "padrao_x": "slug",
+    "padrao_y": "wavy annular",
+    "tipo": "inter",
+    "padrao": "slug × wavy annular",
+    "arquivo": "04_analise_simplificada/figuras/slug_wavy_annular_m04q01_001_m05q80_001.png",
+    "input_x_sha256": "66585d71589ecc34cca205de4cf0fc8a278aca6954074e0406bc6570fbeca2a1",
+    "input_y_sha256": "09386ab620fe1ff1ad123b1429c7e3fc86ba6153fe91513df59564f790faed04",
+    "comprimento": 5071,
+    "comprimento_x": 5071,
+    "comprimento_y": 17500,
+    "descarte_x": 0,
+    "descarte_y": 12429,
+    "escalas_validas": 200,
+    "wco_maxima": 0.9936204510965982,
+    "wco_minima": 3.3377142349692304e-10,
+    "wco_media_integral": 0.13201283777014436,
+    "wco_maxima_zero": 0.9687154747103607,
+    "wco_mediana_zero": 0.21219438230333934,
+    "pico_lag_px": 544,
+    "pico_lambda_px": 2544.7070169839235,
+    "erro_soma_direta": 1.1102230246251565e-16,
+    "erro_wps_independente": 1.7763568394002505e-15,
+    "assinaturas": {
+      "core": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc",
+      "script": "edc4cc46e5ce0fc5267bfeaf023e7eb3ae1c6b298b15dc57a6d62cb7380463e8",
+      "input_x": "66585d71589ecc34cca205de4cf0fc8a278aca6954074e0406bc6570fbeca2a1",
+      "input_y": "09386ab620fe1ff1ad123b1429c7e3fc86ba6153fe91513df59564f790faed04"
+    },
+    "pearson_r": 0.45138115766701475,
+    "origem_metricas_wavelet": "02_wavelet/intermediario/pares/m04q01_001__m05q80_001.json"
+  },
+  "extensao_minima": 3094,
+  "extensao_maxima": 22831,
+  "menor_anular": {
+    "numero": 13,
+    "ensaio": "m03q40_001",
+    "padrao": "wavy annular",
+    "pearson_media_todos": 0.17943109665139173,
+    "pearson_media_intra": 0.3275324406430844,
+    "pearson_media_inter": 0.10973634653765398,
+    "pares_intra": 8,
+    "pares_inter": 17
+  },
+  "m03q40": {
+    "numero": 13,
+    "ensaio": "m03q40_001",
+    "padrao": "wavy annular",
+    "pearson_media_todos": 0.17943109665139173,
+    "pearson_media_intra": 0.3275324406430844,
+    "pearson_media_inter": 0.10973634653765398,
+    "pares_intra": 8,
+    "pares_inter": 17
+  },
+  "execucao_pares_wavelet_completa": true,
+  "campos_wavelet_obtidos_da_etapa_02": true,
+  "discussion_examples": [
+    {
+      "padrao": "churn",
+      "ensaio_x": "m05q40_001",
+      "ensaio_y": "m06q20_001",
+      "pearson_r": 0.9572096997749503,
+      "alpha_x": 0.8918913549124637,
+      "alpha_y": 0.7871086344495414,
+      "F1000_x": 7.3064859835524345,
+      "F1000_y": 12.418344122254737
+    },
+    {
+      "padrao": "wavy annular",
+      "ensaio_x": "m03q20_001",
+      "ensaio_y": "m04q80_001",
+      "pearson_r": 0.9882522803968814,
+      "alpha_x": 0.9987043823348263,
+      "alpha_y": 0.9970644639652728,
+      "F1000_x": 0.11518307619928293,
+      "F1000_y": 0.21040035242059033
+    }
+  ]
+}

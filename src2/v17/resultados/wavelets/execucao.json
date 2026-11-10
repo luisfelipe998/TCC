@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "python": "3.13.2",
+  "numpy": "2.3.4",
+  "scipy": "1.18.0",
+  "seed": 27012026,
+  "original_core_sha256": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc",
+  "audit_script_sha256": "929e33bf5c87e32dde8159d03ee50692e9e682818b201fdbf953cf391363ddf0",
+  "inputs_checked": 31,
+  "profiles_checked": 26,
+  "pair_summaries_checked": 325,
+  "full_pair_maps_independently_recomputed": 3,
+  "synthetic_replicates": 144,
+  "all_outputs": "src2/v17/resultados/wavelets"
+}

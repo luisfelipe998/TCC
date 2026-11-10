@@ -1,0 +1,12 @@
+{
+  "eligible_intervals": 13000,
+  "supported_intervals": 4888,
+  "supported_fraction": 0.376,
+  "improved": 3690,
+  "worsened": 1191,
+  "tied": 7,
+  "old_dynamic_correlation": 0.8745341721685731,
+  "new_dynamic_correlation": 0.8786139135016228,
+  "unresolved_m03q40_clamps": 60,
+  "recommendation": "Use verified segments as diagnostics; retain gaps and do not replace full wavelet inputs."
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "origem": "src2/v16_spatial2_18_71/01_panoramas/plug_m05q01_001.png",
+    "destino": "TCC/figuras/v16/plug_m05q01_001.png",
+    "sha256": "e1576cc48ea2750688da73105d55e632471d4beacff6dbb2d87ea670da708674",
+    "sha256_atual_origem": "e1576cc48ea2750688da73105d55e632471d4beacff6dbb2d87ea670da708674",
+    "sha256_atual_destino": "e1576cc48ea2750688da73105d55e632471d4beacff6dbb2d87ea670da708674",
+    "confere": true
+  },
+  {
+    "origem": "src2/v16_spatial2_18_71/01_panoramas/dispersed_bubble_m07q01_001.png",
+    "destino": "TCC/figuras/v16/dispersed_bubble_m07q01_001.png",
+    "sha256": "8559398dde2685164d20e42af771a2032d68dcef42c0b5dfe81461def7d835d2",
+    "sha256_atual_origem": "8559398dde2685164d20e42af771a2032d68dcef42c0b5dfe81461def7d835d2",
+    "sha256_atual_destino": "8559398dde2685164d20e42af771a2032d68dcef42c0b5dfe81461def7d835d2",
+    "confere": true
+  },
+  {
+    "origem": "src2/v16_spatial2_18_71/01_panoramas/wavy_annular_m03q40_001.png",
+    "destino": "TCC/figuras/v16/wavy_annular_m03q40_001.png",
+    "sha256": "4fa05c229e117ef48bb1f9c7c5dd9b01ad9ad5d065e17a6278a18860305f6730",
+    "sha256_atual_origem": "4fa05c229e117ef48bb1f9c7c5dd9b01ad9ad5d065e17a6278a18860305f6730",
+    "sha256_atual_destino": "4fa05c229e117ef48bb1f9c7c5dd9b01ad9ad5d065e17a6278a18860305f6730",
+    "confere": true
+  },
+  {
+    "origem": "src2/v16_spatial2_18_71/02_wavelets/plug_m05q01_001_m06q01_001.png",
+    "destino": "TCC/figuras/v16/plug_m05q01_001_m06q01_001.png",
+    "sha256": "156886079788cef15f7256430e134af39ef7c0944e213bcdb57e019f3cccdcd1",
+    "sha256_atual_origem": "156886079788cef15f7256430e134af39ef7c0944e213bcdb57e019f3cccdcd1",
+    "sha256_atual_destino": "156886079788cef15f7256430e134af39ef7c0944e213bcdb57e019f3cccdcd1",
+    "confere": true
+  },
+  {
+    "origem": "src2/v16_spatial2_18_71/02_wavelets/slug_m04q01_001_m05q05_001.png",
+    "destino": "TCC/figuras/v16/slug_m04q01_001_m05q05_001.png",
+    "sha256": "446647b011a672448b2473b30eed17a024a509cc227d956f383e90d7f5034af5",
+    "sha256_atual_origem": "446647b011a672448b2473b30eed17a024a509cc227d956f383e90d7f5034af5",
+    "sha256_atual_destino": "446647b011a672448b2473b30eed17a024a509cc227d956f383e90d7f5034af5",
+    "confere": true
+  },
+  {
+    "origem": "src2/v16_spatial2_18_71/03_wavelets_inter/slug_churn_m04q01_001_m07q20_001.png",
+    "destino": "TCC/figuras/v16/slug_churn_m04q01_001_m07q20_001.png",
+    "sha256": "b840a40b0fcdcdf7699d1e6486ee2fa313593fb715996813bb2527be86b390e0",
+    "sha256_atual_origem": "b840a40b0fcdcdf7699d1e6486ee2fa313593fb715996813bb2527be86b390e0",
+    "sha256_atual_destino": "b840a40b0fcdcdf7699d1e6486ee2fa313593fb715996813bb2527be86b390e0",
+    "confere": true
+  },
+  {
+    "origem": "src2/v16_spatial2_18_71/04_estatistica/perfis_comparados.png",
+    "destino": "TCC/figuras/v16/perfis_comparados.png",
+    "sha256": "d50f5f9b8d0b37cf697bca019f5b5ecd4a1f491ce8d274cce5d42a0abaacb927",
+    "sha256_atual_origem": "d50f5f9b8d0b37cf697bca019f5b5ecd4a1f491ce8d274cce5d42a0abaacb927",
+    "sha256_atual_destino": "d50f5f9b8d0b37cf697bca019f5b5ecd4a1f491ce8d274cce5d42a0abaacb927",
+    "confere": true
+  },
+  {
+    "origem": "src2/v16_spatial2_18_71/04_estatistica/matriz_pearson_todos.png",
+    "destino": "TCC/figuras/v16/matriz_pearson_todos.png",
+    "sha256": "5029da61b8c613aa5403f63b9588d3f5f832b74d5349f4cd906a7abcfb4e69ea",
+    "sha256_atual_origem": "5029da61b8c613aa5403f63b9588d3f5f832b74d5349f4cd906a7abcfb4e69ea",
+    "sha256_atual_destino": "5029da61b8c613aa5403f63b9588d3f5f832b74d5349f4cd906a7abcfb4e69ea",
+    "confere": true
+  },
+  {
+    "origem": "src2/v16_spatial2_18_71/04_estatistica/matriz_escore_wco.png",
+    "destino": "TCC/figuras/v16/matriz_escore_wco.png",
+    "sha256": "79a4db4a7a140c2be2a247765b2951bdf7c95cd0a53d01b0cb8abac99537c774",
+    "sha256_atual_origem": "79a4db4a7a140c2be2a247765b2951bdf7c95cd0a53d01b0cb8abac99537c774",
+    "sha256_atual_destino": "79a4db4a7a140c2be2a247765b2951bdf7c95cd0a53d01b0cb8abac99537c774",
+    "confere": true
+  },
+  {
+    "origem": "src2/v16_spatial2_18_71/04_estatistica/correlacoes_dentro_entre.png",
+    "destino": "TCC/figuras/v16/correlacoes_dentro_entre.png",
+    "sha256": "1de5ed90d387d29a17e0bc6b8378396274c13f96fef35c844b9747c75e9af1ba",
+    "sha256_atual_origem": "1de5ed90d387d29a17e0bc6b8378396274c13f96fef35c844b9747c75e9af1ba",
+    "sha256_atual_destino": "1de5ed90d387d29a17e0bc6b8378396274c13f96fef35c844b9747c75e9af1ba",
+    "confere": true
+  },
+  {
+    "origem": "src2/v16_spatial2_18_71/02_wavelets/churn_m04q20_001_m07q40_001.png",
+    "destino": "TCC/figuras/v16/churn_m04q20_001_m07q40_001.png",
+    "sha256": "f8673bf6c8237087daa5dd3ba923d381f9bfb5c4ea8063342ecae5d954389cac",
+    "sha256_atual_origem": "f8673bf6c8237087daa5dd3ba923d381f9bfb5c4ea8063342ecae5d954389cac",
+    "sha256_atual_destino": "f8673bf6c8237087daa5dd3ba923d381f9bfb5c4ea8063342ecae5d954389cac",
+    "confere": true
+  },
+  {
+    "origem": "src2/v16_spatial2_18_71/02_wavelets/wavy_annular_m06q40_001_m07q80_001.png",
+    "destino": "TCC/figuras/v16/wavy_annular_m06q40_001_m07q80_001.png",
+    "sha256": "1566107fa726643dac813c9b458e534d73b983dae9c0179d642ee6334b56c9e1",
+    "sha256_atual_origem": "1566107fa726643dac813c9b458e534d73b983dae9c0179d642ee6334b56c9e1",
+    "sha256_atual_destino": "1566107fa726643dac813c9b458e534d73b983dae9c0179d642ee6334b56c9e1",
+    "confere": true
+  }
+]

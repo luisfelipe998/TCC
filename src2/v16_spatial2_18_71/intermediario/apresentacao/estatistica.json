@@ -1,0 +1,216 @@
+[
+  {
+    "arquivo": "04_estatistica/matriz_pearson_todos.png",
+    "largura_insercao_cm": 16,
+    "altura_inserida_cm": 20.999934788408147,
+    "fonte_minima_inserida_pt": 9.522666240740005,
+    "titulo": "Correlação de Pearson · panoramas completos\n26 ensaios · λ de 50 a 3.000 px",
+    "titulos_paineis": [
+      "",
+      ""
+    ],
+    "rotulos_x": [
+      "Ensaio",
+      "Pearson r"
+    ],
+    "rotulos_y": [
+      "Ensaio",
+      ""
+    ],
+    "ensaios_x": [
+      "m03q05",
+      "m04q10",
+      "m04q20",
+      "m05q10",
+      "m05q20",
+      "m05q40",
+      "m06q10",
+      "m06q20",
+      "m07q20",
+      "m07q40",
+      "m03q10",
+      "m03q20",
+      "m03q40",
+      "m04q40",
+      "m04q80",
+      "m05q80",
+      "m06q40",
+      "m06q80",
+      "m07q80",
+      "m05q01",
+      "m06q01",
+      "m07q05",
+      "m04q01",
+      "m05q05",
+      "m06q05",
+      "m07q01"
+    ],
+    "ensaios_y": [
+      "m03q05",
+      "m04q10",
+      "m04q20",
+      "m05q10",
+      "m05q20",
+      "m05q40",
+      "m06q10",
+      "m06q20",
+      "m07q20",
+      "m07q40",
+      "m03q10",
+      "m03q20",
+      "m03q40",
+      "m04q40",
+      "m04q80",
+      "m05q80",
+      "m06q40",
+      "m06q80",
+      "m07q80",
+      "m05q01",
+      "m06q01",
+      "m07q05",
+      "m04q01",
+      "m05q05",
+      "m06q05",
+      "m07q01"
+    ],
+    "rotulos_sem_sobreposicao": true
+  },
+  {
+    "arquivo": "04_estatistica/matriz_escore_wco.png",
+    "largura_insercao_cm": 16,
+    "altura_inserida_cm": 20.999934788408147,
+    "fonte_minima_inserida_pt": 9.522666240740005,
+    "titulo": "Escore de coerência wavelet (WCO)\nMáximos por escala · ponderação pela potência · piso de 5%",
+    "titulos_paineis": [
+      "",
+      ""
+    ],
+    "rotulos_x": [
+      "Ensaio",
+      "Escore ponderado"
+    ],
+    "rotulos_y": [
+      "Ensaio",
+      ""
+    ],
+    "ensaios_x": [
+      "m03q05",
+      "m04q10",
+      "m04q20",
+      "m05q10",
+      "m05q20",
+      "m05q40",
+      "m06q10",
+      "m06q20",
+      "m07q20",
+      "m07q40",
+      "m03q10",
+      "m03q20",
+      "m03q40",
+      "m04q40",
+      "m04q80",
+      "m05q80",
+      "m06q40",
+      "m06q80",
+      "m07q80",
+      "m05q01",
+      "m06q01",
+      "m07q05",
+      "m04q01",
+      "m05q05",
+      "m06q05",
+      "m07q01"
+    ],
+    "ensaios_y": [
+      "m03q05",
+      "m04q10",
+      "m04q20",
+      "m05q10",
+      "m05q20",
+      "m05q40",
+      "m06q10",
+      "m06q20",
+      "m07q20",
+      "m07q40",
+      "m03q10",
+      "m03q20",
+      "m03q40",
+      "m04q40",
+      "m04q80",
+      "m05q80",
+      "m06q40",
+      "m06q80",
+      "m07q80",
+      "m05q01",
+      "m06q01",
+      "m07q05",
+      "m04q01",
+      "m05q05",
+      "m06q05",
+      "m07q01"
+    ],
+    "rotulos_sem_sobreposicao": true
+  },
+  {
+    "arquivo": "04_estatistica/correlacoes_dentro_entre.png",
+    "largura_insercao_cm": 16,
+    "altura_inserida_cm": 18.806140530861203,
+    "fonte_minima_inserida_pt": 9.517379277992221,
+    "titulo": "Correlações dentro e entre padrões",
+    "titulos_paineis": [
+      "Pearson dos perfis espectrais",
+      "Escore de coerência wavelet (WCO)"
+    ],
+    "rotulos_x": [
+      "",
+      ""
+    ],
+    "rotulos_y": [
+      "Pearson r",
+      "Escore ponderado"
+    ]
+  },
+  {
+    "arquivo": "04_estatistica/perfis_comparados.png",
+    "largura_insercao_cm": 16,
+    "altura_inserida_cm": 22.42046721670612,
+    "fonte_minima_inserida_pt": 9.462772105580514,
+    "titulo": "Perfis espectrais e descritores de Pearson",
+    "titulos_paineis": [
+      "churn · n = 10",
+      "",
+      "wavy annular · n = 9",
+      "",
+      "plug · n = 3",
+      "",
+      "slug · n = 3",
+      "",
+      "dispersed bubble · n = 1",
+      ""
+    ],
+    "rotulos_x": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "λ (px)",
+      "λ (px)"
+    ],
+    "rotulos_y": [
+      "WPS / máximo",
+      "Resíduo",
+      "WPS / máximo",
+      "Resíduo",
+      "WPS / máximo",
+      "Resíduo",
+      "WPS / máximo",
+      "Resíduo",
+      "WPS / máximo",
+      "Resíduo"
+    ]
+  }
+]

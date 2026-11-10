@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "data_utc": "2026-10-25T18:59:59.922273+00:00",
+  "ancoras": 25,
+  "pares_intra": 87,
+  "pares_inter_calculados": 0,
+  "por_padrao": {
+    "churn": {
+      "ensaios": 10,
+      "pares": 45
+    },
+    "wavy annular": {
+      "ensaios": 9,
+      "pares": 36
+    },
+    "slug": {
+      "ensaios": 3,
+      "pares": 3
+    },
+    "plug": {
+      "ensaios": 3,
+      "pares": 3
+    }
+  },
+  "perfil_comparacoes": "comparavel",
+  "comprimento_comparacoes": 2048,
+  "individuais_conferidos": 44,
+  "perfis_conferidos": 50,
+  "grades": 2,
+  "compatibilidade_futura_somente_metadados": {
+    "inter": 213,
+    "intra": 87
+  },
+  "cache_do_piloto_preservado": true,
+  "cache_reutilizado_sem_reescrita": true,
+  "erros_maximos_individuais": {
+    "erro_preparo": 1.865174681370263e-14,
+    "erro_correlacao": 2.508410146262463e-15,
+    "erro_cwt": 3.493994846957313e-14,
+    "erro_potencia_media": 3.3084646133829665e-14
+  },
+  "erros_maximos_pares": {
+    "erro_wxx": 3.493994846957313e-14,
+    "erro_wyy": 3.493994846957313e-14,
+    "erro_wxy": 3.094496497456088e-14,
+    "erro_wco": 1.3433698597964394e-14
+  },
+  "imagens_png": 112,
+  "fonte_minima_pt": 8.187571647523034,
+  "altura_maxima_16cm": 22.96170755017521,
+  "conclusoes_vazias": true
+}

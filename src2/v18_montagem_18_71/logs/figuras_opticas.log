@@ -1,0 +1,16 @@
+{
+  "new_input_hashes_match_source_manifest": true,
+  "new_csv_counts_and_alpha_match_saved_masks": true,
+  "saturation_recomputed_on_rows_18_72": true,
+  "hulls_match_source_validation": true,
+  "centroids_match_source_summary": true,
+  "acquisitions": 26,
+  "displayed_acquisitions": 25,
+  "displayed_pattern_counts": {
+    "churn": 10,
+    "wavy annular": 8,
+    "slug": 3,
+    "plug": 3,
+    "dispersed bubbles": 1
+  }
+}

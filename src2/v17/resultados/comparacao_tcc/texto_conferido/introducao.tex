@@ -1,0 +1,98 @@
+\chapter{Introdução}\label{cap:introducao}
+
+A dissipação de calor em dispositivos eletrônicos compactos motiva o
+desenvolvimento de tecnologias de resfriamento eficientes. O escoamento
+bifásico com mudança de fase em microcanais é uma alternativa para essa
+aplicação: combina elevados coeficientes de transferência de calor com pequenas
+dimensões físicas \cite{cheng2023}, e o fluido refrigerante absorve grandes quantidades de
+calor por unidade de área enquanto percorre o canal e passa do estado líquido para o vapor.
+
+Para o controle e a otimização desses sistemas, é necessário identificar o padrão de
+escoamento, isto é, a configuração geométrica assumida pelas fases líquida e vapor dentro
+do canal. Padrões como bolha dispersa, \textit{plug}, \textit{slug}, \textit{churn} e
+anular ondulado apresentam comportamentos térmicos e hidrodinâmicos distintos, relevantes
+para avaliar a transferência de calor e a queda de pressão \cite{cheng2023,deoliveira2021}. A identificação dos padrões por
+inspeção visual de imagens de câmera de alta velocidade é subjetiva e depende
+do observador \cite{dias2025knn}, o que motiva o desenvolvimento de métodos
+automáticos de classificação.
+
+No Laboratório de Estudos Térmicos e Fluidodinâmicos (LETEF) da UNISINOS, estudos
+recentes com isobutano (R600a) em microtubo horizontal de 1\,mm mostram a viabilidade
+dessa classificação automática. \citeonline{deoliveira2021} apresentam um estudo
+experimental abrangente com análise por transformada \textit{Wavelet} contínua (CWT),
+descrevendo as respostas espectrais de pressão diferencial e do sensor óptico
+associadas aos padrões.
+\citeonline{dias2025knn} e \citeonline{dias2025cnn} apresentam classificadores baseados
+em imagens da seção de visualização: o modelo $k$NN atinge 87\% de acurácia média de teste
+nas dez dobras, enquanto a rede CNN alcança 93\% na melhor dobra e média de
+88{,}1\% nas dez dobras.
+Esses resultados motivam a investigação de descritores que permitem examinar quais
+características das imagens se repetem entre ensaios de um mesmo padrão.
+
+O trabalho de \citeonline{deoliveira2021} caracteriza os padrões de escoamento
+aplicando a transformada \textit{Wavelet} contínua aos sinais dos sensores no domínio do
+tempo, extraindo o espectro de potência \textit{Wavelet} de cada sensor individualmente.
+Neste trabalho, investiga-se uma representação diferente: as sequências de imagens são
+reunidas em panoramas, dos quais se extraem sinais unidimensionais de intensidade em
+função da posição em pixels. Essa construção permite comparar estruturas ao longo do
+panorama, mas reúne observações feitas em instantes distintos. Por isso, o eixo espacial
+reconstruído não representa uma fotografia instantânea do escoamento, e seus
+comprimentos de onda não são convertidos em frequências temporais ou dimensões físicas
+de bolhas. A câmera permanece necessária para a aquisição.
+
+\citeonline{schuck2019} apresentam uma formulação alternativa para o cálculo da WCO em
+que a transformada é aplicada às funções de autocorrelação e correlação cruzada dos sinais
+em vez de ser aplicada diretamente a eles. Essa abordagem elimina a necessidade de
+suavização espectral exigida pela definição clássica \cite{torrence1998}. A questão
+investigada é se essa coerência e a forma dos espectros de potência dos sinais
+reconstruídos apresentam maior semelhança entre ensaios do mesmo padrão do que entre
+padrões distintos. Avalia-se essa questão de maneira descritiva, sem treinar um
+classificador ou pressupor que correlação elevada demonstre identidade do padrão.
+
+% =========================================================
+\section{Objetivo Geral}
+% =========================================================
+
+O objetivo geral é investigar a aplicabilidade da coerência \textit{Wavelet} alternativa
+de \citeonline{schuck2019} e da comparação dos perfis de potência como descritores dos
+padrões de escoamento bifásico no arranjo experimental do LETEF, a partir de sinais de
+intensidade extraídos dos panoramas, avaliando a semelhança dentro de cada padrão e entre
+padrões distintos.
+
+% =========================================================
+\section{Objetivos Específicos}
+% =========================================================
+
+\begin{itemize}
+  \item Revisar a literatura sobre padrões de escoamento bifásico em microcanais e sobre
+  métodos de análise espectral de sinais para caracterização de padrões de escoamento.
+  \item Apresentar a fundamentação teórica da transformada \textit{Wavelet} contínua, do
+  espectro de potência (WPS), do espectro cruzado (WCS) e da coerência \textit{Wavelet}
+  (WCO), com ênfase na formulação alternativa de \citeonline{schuck2019}.
+  \item Documentar e aplicar a extração da intensidade nas linhas selecionadas dos
+  panoramas, o pré-processamento dos sinais e o cálculo dos espectros e da coerência.
+  \item Comparar a forma dos perfis de potência pelo coeficiente de Pearson e os mapas
+  de coerência por um escore ponderado, apresentando as distribuições dentro dos padrões
+  e entre padrões distintos.
+  \item Examinar a qualidade das entradas e a sensibilidade dos resultados ao registro
+  com ressalvas de reconstrução, delimitando o alcance das evidências obtidas.
+\end{itemize}
+
+% =========================================================
+\section{Organização do Trabalho}
+% =========================================================
+
+Este trabalho está organizado em cinco capítulos, além desta introdução. O
+\autoref{cap:fundamentacao} apresenta a revisão bibliográfica e as bases teóricas que
+fundamentam a metodologia: fenomenologia dos padrões de escoamento bifásico em microcanais e
+formulação matemática das transformadas \textit{Wavelet} contínua, do espectro de potência, do
+espectro cruzado e da coerência \textit{Wavelet} nas formulações clássica e alternativa. O
+\autoref{cap:metodologia} descreve a metodologia, detalhando o arranjo experimental, a
+reconstrução do panorama, a sequência de processamento dos sinais espaciais e a
+estratégia de avaliação do método. O \autoref{cap:resultados} relata os resultados obtidos nas
+comparações intra-padrão e inter-padrão, com panoramas, campos espectrais, matrizes e
+tabelas de semelhança. O \autoref{cap:discussao} interpreta esses resultados, apresenta
+as tabelas de sensibilidade, compara os achados com a literatura e expõe as limitações
+do trabalho. Por fim, o \autoref{cap:conclusao} sintetiza as
+contribuições, discute o atendimento aos objetivos e aponta os encaminhamentos para trabalhos
+futuros.

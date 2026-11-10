@@ -1,0 +1,14 @@
+{
+  "run_x": "m05q40_001",
+  "run_y": "m06q20_001",
+  "modo": "mapas recalculados para o novo exemplo, com métricas conferidas contra a execução original",
+  "pearson_r": 0.9572096997749503,
+  "origem_metricas": {
+    "arquivo": "src2/v18_montagem_18_71/02_wavelet/intermediario/pares/m05q40_001__m06q20_001.json",
+    "sha256": "d62dccc00831d66a3ee1d01da3156d5fe9217fa2eee9b33e19b354aa989921a6"
+  },
+  "mapa": {
+    "arquivo": "src2/v18_montagem_18_71/04_analise_simplificada/intermediario/pares/m05q40_001__m06q20_001.npz",
+    "sha256": "e406134086ce1e69f15ecaf61d458ee4621d3b207ae5b89325fa69a28ce31f5b"
+  }
+}

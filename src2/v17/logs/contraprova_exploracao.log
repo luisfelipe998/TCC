@@ -1,0 +1,16 @@
+                                          scenario  macro_silhouette  min_class_silhouette  churn_min  churn_max  annular_min  annular_max  empirical_probability_churn_gt_annular  cliff_delta
+ cap512_nseg1024_detrendFalse_original_mixture_cdf          0.590546              0.533726   0.980278   1.281469     0.529590     0.908251                                1.000000     1.000000
+        cap512_nseg1024_detrendFalse_continuous200          0.590583              0.533785   0.980265   1.281473     0.529622     0.908238                                1.000000     1.000000
+       cap512_nseg1024_detrendFalse_continuous2000          0.590537              0.533706   0.980266   1.281573     0.529579     0.908272                                1.000000     1.000000
+  cap512_nseg1024_detrendFalse_pool_then_normalize          0.610250              0.560724   0.978404   1.252026     0.532844     0.880791                                1.000000     1.000000
+cap1024_nseg1024_detrendFalse_original_mixture_cdf          0.595699              0.550448   1.080573   1.474044     0.693644     1.064524                                1.000000     1.000000
+       cap1024_nseg1024_detrendFalse_continuous200          0.595678              0.550426   1.080578   1.474024     0.693705     1.064545                                1.000000     1.000000
+      cap1024_nseg1024_detrendFalse_continuous2000          0.595697              0.550505   1.080486   1.474194     0.693657     1.064507                                1.000000     1.000000
+ cap1024_nseg1024_detrendFalse_pool_then_normalize          0.622906              0.566529   1.083216   1.444856     0.696024     1.042207                                1.000000     1.000000
+  cap512_nseg512_detrendFalse_original_mixture_cdf          0.629869              0.610008   0.914573   1.214843     0.593399     0.852213                                1.000000     1.000000
+ cap1024_nseg512_detrendFalse_original_mixture_cdf          0.646479              0.634893   1.082418   1.368015     0.746879     0.999158                                1.000000     1.000000
+ cap512_nseg2048_detrendFalse_original_mixture_cdf          0.425204              0.289909   0.951095   1.319530     0.453177     0.990095                                0.977778     0.955556
+cap1024_nseg2048_detrendFalse_original_mixture_cdf          0.552422              0.465198   1.117376   1.422258     0.725652     1.094383                                1.000000     1.000000
+  cap512_nseg1024_detrendTrue_original_mixture_cdf          0.590899              0.534174   0.980358   1.281202     0.529295     0.908385                                1.000000     1.000000
+ cap1024_nseg1024_detrendTrue_original_mixture_cdf          0.587609              0.542144   1.077024   1.472740     0.701615     1.071751                                1.000000     1.000000
+max error 2.4424906541753444e-15

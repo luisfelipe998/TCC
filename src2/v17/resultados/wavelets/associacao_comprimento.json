@@ -1,0 +1,12 @@
+{
+  "spearman_descritivo": {
+    "score": -0.7996737676438288,
+    "max": -0.45826444322523296,
+    "pearson": 0.3870671215778034
+  },
+  "note": "Correlações entre pares dependentes; nenhum valor-p é utilizado. Comprimento e padrão são confundidos.",
+  "fraction_weight_lt3_cycles_median": 0.0,
+  "fraction_weight_lt5_cycles_median": 0.02143162065027988,
+  "pairs_peak_at_max_wavelength": 112,
+  "pairs_lt3cycles_weight_over_half": 0
+}

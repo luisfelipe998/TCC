@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "ensaios": 26,
+  "pares": 325,
+  "intra": 87,
+  "inter": 238,
+  "segundos": 350.04571966599906,
+  "maior_erro_metricas_vs_original": 0.0,
+  "maior_erro_mapas_intra": 0.0,
+  "maior_erro_perfis": 0.0,
+  "maior_erro_soma_direta": 2.220446049250313e-16,
+  "maior_erro_wps_independente": 3.552713678800501e-15,
+  "menor_fonte_pt": 8.18444283853729,
+  "maior_altura_cm": 22.95293293420801,
+  "core_sha256": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc",
+  "script_sha256": "1ee0cad786f0273950ce92d7f505eaba3c0f220b3968112fe424fcf677a02e28"
+}

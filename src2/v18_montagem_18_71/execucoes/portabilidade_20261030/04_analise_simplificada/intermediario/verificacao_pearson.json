@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "ensaios": 26,
+  "escalas": 200,
+  "pares_scipy": 325,
+  "maior_erro_scipy": 9.992007221626409e-16,
+  "menor_autovalor": 1.3119854498694517e-06,
+  "numpy_corrcoef_conferido": true,
+  "autopares_excluidos": true,
+  "descricao": "Pearson diretamente sobre wps_zero. Centralização e divisão pela norma são apenas a identidade algébrica de Pearson."
+}

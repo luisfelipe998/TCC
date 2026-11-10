@@ -1,0 +1,300 @@
+\chapter{Análise e Discussão}\label{cap:discussao}
+
+Neste capítulo, interpretaram-se as diferenças entre o coeficiente de Pearson $r$
+e o escore de coerência $S_{xy}^{(0{,}05)}$, a sensibilidade dos resultados e
+seu alcance frente à literatura. A discussão tomou como referência as 26 aquisições
+e todos os 325 pares do \autoref{cap:resultados}.
+
+% =========================================================
+\section{Interpretação das duas medidas}\label{sec:disc-interpretacao}
+% =========================================================
+
+O contraste descritivo $\Delta_h=0{,}0659$ do coeficiente de Pearson $r$, com peso igual
+por par, indicou maior semelhança espectral média dentro dos padrões. O contraste
+médio $\Delta_h=0{,}1453$, com peso igual por grupo, preservou essa direção.
+Esse comportamento constituiu um indício descritivo promissor para a investigação
+de assinaturas espectrais, principalmente pela proximidade dos descritores de
+\textit{plug} e de parte dos ensaios anulares. A ampla sobreposição da
+\autoref{fig:res-distribuicoes}, entretanto, impediu interpretar o contraste
+como separação automática dos padrões ou como significância estatística demonstrada.
+
+O coeficiente de Pearson $r$ comparou a forma dos resíduos espectrais, conforme
+a \autoref{eq:met-pearson}. Em termos práticos, dois descritores receberam
+coeficiente de Pearson $r$ elevado quando suas elevações e reduções relativas
+ocorreram em comprimentos de onda semelhantes, depois da transformação logarítmica
+e da remoção da tendência. Assim, a boa concordância dos descritores não exigiu
+a coincidência das estruturas em uma mesma posição do panorama. Também não
+preservou a amplitude original nem a inclinação espectral removida.
+
+O escore de coerência $S_{xy}^{(0{,}05)}$ resumiu outra propriedade: os máximos
+da coerência wavelet encontrados nos atrasos de cada escala, ponderados pela potência
+dos dois sinais. Além disso, utilizou prefixos cuja extensão dependeu do parceiro
+da comparação. Por isso, as duas medidas não responderam à mesma pergunta.
+O menor escore de coerência intrapadrão não invalidou a semelhança dos resíduos
+espectrais; indicou que esse resumo dos campos não favoreceu a discriminação
+global pretendida.
+
+A \autoref{fig:disc-inter} tornou essa distinção concreta. O par m04q01, de
+\textit{slug}, e m07q20, de \textit{churn}, apresentou escore de coerência
+$S_{xy}^{(0{,}05)}=0{,}5554$ e máximo da coerência wavelet de $0{,}9950$,
+apesar dos rótulos diferentes. O coeficiente de Pearson $r$ desse par foi
+$0{,}7103$. Uma região clara no mapa não bastou, portanto, para atribuir
+igualdade de padrão aos dois ensaios. Esse exemplo ilustrou o alcance da medida;
+a avaliação global permaneceu baseada em todos os pares.
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=\textwidth,height=0.86\textheight,keepaspectratio]{figuras/v16/slug_churn_m04q01_001_m07q20_001.png}
+  \caption{Comparação pontual entre \textit{slug}, m04q01, e \textit{churn}, m07q20:
+  regiões de coerência elevada também ocorreram entre padrões diferentes.}
+  \label{fig:disc-inter}
+  \fonte{Elaborado pelo autor, execução espacial 18--71.}
+\end{figure}
+
+A maximização por escala admitiu um atraso diferente para cada comprimento de onda
+$\lambda$. O escore de coerência $S_{xy}^{(0{,}05)}$ não identificou, portanto,
+um único deslocamento que alinhasse um mesmo evento nos dois registros.
+Não se demonstrou uma causa única para a diferença de desempenho entre as medidas:
+o domínio observado, a extensão dos prefixos e a forma de resumir os campos
+também diferiram. Atribuir o resultado apenas à ausência de fase espacial comum
+teria excedido o que foi verificado.
+
+% =========================================================
+\section{Sensibilidade ao piso de potência}\label{sec:disc-pisos}
+% =========================================================
+
+O piso de potência definiu quais escalas participaram do escore de coerência
+$S_{xy}^{(\eta)}$, conforme a \autoref{eq:met-piso}. Ele não foi um limiar de
+significância e não retirou regiões dos mapas. A \autoref{tab:disc-pisos}
+reuniu os três pisos registrados na execução. Em todos, o escore de coerência
+$S_{xy}^{(\eta)}$ médio foi menor dentro dos padrões do que entre padrões.
+A direção do resultado, portanto, não se restringiu ao piso principal de 5\%.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Sensibilidade do escore de coerência $S_{xy}^{(\eta)}$ ao piso de potência,
+  com peso igual por par.}
+  \label{tab:disc-pisos}
+  \begin{tabular}{c r r}
+    \hline
+    \textbf{Piso de potência $\eta$} &
+    \shortstack{\textbf{Escore médio}\\\textbf{intrapadrão}} &
+    \shortstack{\textbf{Escore médio}\\\textbf{entre padrões}}\\
+    \hline
+    1\% & 0,1907 & 0,2652\\
+    5\% & 0,1877 & 0,2635\\
+    10\% & 0,1822 & 0,2614\\
+    \hline
+  \end{tabular}
+  \fonte{Elaborado pelo autor a partir do resumo intrapadrão e entre padrões da execução.}
+\end{table}
+
+Essa estabilidade de direção ajudou a delimitar o problema: alterar somente o piso
+entre os valores examinados não produziu maior escore médio intrapadrão.
+O resultado ofereceu uma referência para novas análises de resumo dos campos,
+sem estabelecer que toda informação contida na coerência wavelet fosse inadequada
+à caracterização dos padrões.
+
+% =========================================================
+\section{Qualidade da entrada e sensibilidade a m03q40}\label{sec:disc-qualidade}
+% =========================================================
+
+A auditoria reconstruiu os 31 panoramas de origem a partir de 15.531 quadros
+e reproduziu suas intensidades pixel a pixel. Essa verificação confirmou a execução
+do algoritmo de montagem. Ela não demonstrou que cada deslocamento estimado
+representasse corretamente o movimento físico das interfaces.
+
+No ensaio anular m03q40, mostrado na \autoref{fig:disc-m03q40}, 60 dos 500
+deslocamentos estimados, ou 12\%, haviam sido substituídos por tiras de um pixel
+porque eram nulos ou negativos. Além disso, 25,43\% dos pixels da faixa 18--71
+do panorama atingiram a intensidade máxima de 255. O acúmulo no teto de intensidade
+foi observado antes da padronização; sua origem não foi isolada entre aquisição,
+processamento anterior e cena. A normalização posterior não recuperou informação
+que eventualmente tivesse sido perdida nesse teto.
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=\textwidth,height=0.76\textheight,keepaspectratio]{figuras/v16/wavy_annular_m03q40_001.png}
+  \caption{Panorama e sinais de m03q40, mantido na análise com ressalva de qualidade.
+  A faixa clara do panorama acompanhou o acúmulo de pixels no teto de intensidade.}
+  \label{fig:disc-m03q40}
+  \fonte{Elaborado pelo autor, execução espacial 18--71.}
+\end{figure}
+
+O coeficiente de Pearson $r$ médio de m03q40 com os outros oito ensaios anulares
+foi $0{,}7424$; entre esses outros oito, foi $0{,}9508$.
+A \autoref{tab:disc-controles} mostrou os controles realizados para examinar essa
+diferença. Em cada linha, a mesma regra foi aplicada aos nove ensaios.
+O prefixo anterior à primeira substituição reduziu a discrepância, mas não
+a eliminou. A faixa vertical mais estreita e a equalização também alteraram
+os coeficientes de Pearson $r$, enquanto a retirada da remoção de tendência
+linear produziu pouca mudança.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Coeficiente de Pearson $r$ médio nos controles do grupo anular.}
+  \label{tab:disc-controles}
+  \small
+  \begin{tabular}{p{0.55\textwidth} r r}
+    \hline
+    \textbf{Controle} &
+    \shortstack{\textbf{m03q40 versus}\\\textbf{outros oito}} &
+    \shortstack{\textbf{Entre os}\\\textbf{outros oito}}\\
+    \hline
+    Referência: panoramas completos, linhas 18--71 & 0,7424 & 0,9508\\
+    Prefixo comum de 14.008 px, anterior à primeira substituição & 0,8491 & 0,9350\\
+    Comprimentos de onda de 50 a 1024 px & 0,8675 & 0,9465\\
+    Sem remoção da tendência linear do sinal & 0,7405 & 0,9508\\
+    Média das linhas 20--59 & 0,8754 & 0,9508\\
+    Equalização global do histograma por aquisição & 0,8763 & 0,9249\\
+    \hline
+  \end{tabular}
+  \fonte{Elaborado pelo autor a partir dos controles de m03q40 da execução.}
+\end{table}
+
+Os controles revelaram sensibilidade ao processamento e à região observada,
+sem separar seus efeitos da variabilidade física do escoamento. O rótulo anular
+concordou com a tabela manual, e m03q40 e m03q20 compartilharam as mesmas
+configurações de câmera nos campos verificados. Não se identificou, portanto,
+um ajuste exclusivo da câmera ou uma troca de rótulo que explicasse o desvio.
+Tampouco se demonstrou que as substituições de deslocamento fossem sua única causa.
+
+A \autoref{tab:disc-exclusao} apresentou a análise com e sem m03q40.
+A retirada deixou 25 ensaios, 79 pares intrapadrão e 221 entre padrões.
+O coeficiente de Pearson $r$ médio intrapadrão do anular aumentou de
+$0{,}9045$ para $0{,}9508$, mas o contraste descritivo $\Delta_h$ global do coeficiente
+de Pearson $r$ diminuiu de $0{,}0659$ para $0{,}0549$.
+Isso ocorreu porque a média entre padrões também aumentou.
+A maior homogeneidade do grupo anular não implicou maior contraste global.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Sensibilidade à retirada de m03q40, com peso igual por par.}
+  \label{tab:disc-exclusao}
+  \small
+  \begin{tabular}{l r r r r}
+    \hline
+    \textbf{Medida} & \textbf{Ensaios} & \textbf{Intra} & \textbf{Entre} &
+    \shortstack{\textbf{Contraste}\\\textbf{descritivo $\Delta_h$}}\\
+    \hline
+    Coeficiente de Pearson $r$ & 26 & 0,8697 & 0,8038 & 0,0659\\
+    Coeficiente de Pearson $r$ & 25 & 0,8826 & 0,8277 & 0,0549\\
+    Escore de coerência $S_{xy}^{(0{,}05)}$ & 26 & 0,1877 & 0,2635 & $-0{,}0759$\\
+    Escore de coerência $S_{xy}^{(0{,}05)}$ & 25 & 0,1956 & 0,2687 & $-0{,}0730$\\
+    \hline
+  \end{tabular}
+  \fonte{Elaborado pelo autor a partir da sensibilidade à exclusão de m03q40.}
+\end{table}
+
+O contraste descritivo $\Delta_h$ do coeficiente de Pearson $r$ permaneceu positivo,
+enquanto o contraste descritivo $\Delta_h$ do escore de coerência
+$S_{xy}^{(0{,}05)}$ permaneceu negativo. A direção dos achados principais
+não dependeu, portanto, apenas desse registro. Manteve-se o conjunto de 26 ensaios
+como referência, acompanhado da análise exploratória de exclusão, sem selecionar
+aquisições pelo aumento da correlação.
+
+% =========================================================
+\section{Comparação com a literatura}\label{sec:disc-literatura}
+% =========================================================
+
+A \autoref{quad:disc-literatura} situou a contribuição executada em relação
+a trabalhos que utilizaram transformadas wavelet ou classificação por imagens.
+A comparação foi metodológica: não se equipararam frequências temporais em hertz
+a comprimentos de onda do panorama em pixels, nem coeficientes de similaridade
+a taxas de acerto de classificadores.
+
+\begin{quadro}[htbp]
+  \centering
+  \caption{Relação entre os antecedentes bibliográficos e a análise executada.}
+  \label{quad:disc-literatura}
+  \small
+  \begin{tabular}{p{0.22\textwidth} p{0.33\textwidth} p{0.35\textwidth}}
+    \hline
+    \textbf{Referência} & \textbf{Procedimento reportado} & \textbf{Relação com este trabalho}\\
+    \hline
+    \citeonline{nguyen2010} &
+    Combinaram descritores da CWT, fração de vazio média e razão entre o comprimento
+    efetivo estimado da estrutura gasosa e o diâmetro do tubo. &
+    Fundamentaram o interesse em descritores espectrais por registro; aqui,
+    foram examinados descritores de intensidade dos panoramas.\\
+    \hline
+    \citeonline{sun2012} &
+    Combinaram entropia de norma de sinais de pressão com vazão mássica total
+    ou fração volumétrica de gás em mapas de identificação. &
+    Relacionaram descritores wavelet à identificação de padrões, com outra
+    grandeza medida e outro descritor.\\
+    \hline
+    \citeonline{deoliveira2021} &
+    Analisaram por CWT séries temporais do sensor óptico e de pressão diferencial,
+    relacionando frequências à morfologia e às condições do escoamento. &
+    Ofereceram um antecedente no arranjo experimental; a análise atual
+    utilizou a coordenada espacial reconstruída.\\
+    \hline
+    \citeonline{dias2025knn} e \citeonline{dias2025cnn} &
+    Classificaram imagens por atributos, incluindo DWT, com kNN e por rede
+    convolucional ResNet50, respectivamente. &
+    Avaliaram classificadores; aqui, quantificou-se a semelhança dos
+    descritores, sem treinamento ou teste preditivo.\\
+    \hline
+  \end{tabular}
+  \fonte{Elaborado pelo autor a partir das referências indicadas.}
+\end{quadro}
+
+Esses antecedentes sustentaram a investigação de representações espectrais e
+visuais para os padrões. A presente execução acrescentou uma comparação
+rastreável entre a forma dos resíduos espectrais e um resumo da coerência
+alternativa, mantendo explícita a diferença entre caracterização descritiva
+e reconhecimento automático.
+
+% =========================================================
+\section{Alcance dos achados e continuidade da análise}\label{sec:disc-limitacoes}
+% =========================================================
+
+As limitações da \autoref{quad:disc-limites} delimitaram a interpretação dos
+resultados. Os grupos foram desbalanceados e cada aquisição participou de
+vários pares. A média por grupo tornou a ponderação mais transparente,
+mas não criou novas réplicas nem eliminou a dependência entre comparações.
+
+\begin{quadro}[htbp]
+  \centering
+  \caption{Limitações observadas e consequências para a interpretação.}
+  \label{quad:disc-limites}
+  \small
+  \begin{tabular}{p{0.40\textwidth} p{0.52\textwidth}}
+    \hline
+    \textbf{Condição observada} & \textbf{Consequência}\\
+    \hline
+    Três ensaios de \textit{plug}, três de \textit{slug} e um de bolhas dispersas &
+    As médias dos grupos pequenos dependeram de poucas aquisições;
+    não se estimou repetibilidade de bolhas dispersas.\\
+    \hline
+    Pares com aquisições compartilhadas e escalas correlacionadas &
+    Nem os 325 pares nem as 200 escalas corresponderam a réplicas independentes.\\
+    \hline
+    Extensões de 3171 a 23079 px e faixa espectral fixa de 50 a 3000 px &
+    Na maior escala, o menor panorama conteve apenas cerca de 1,06
+    comprimentos de onda; o suporte variou entre registros.\\
+    \hline
+    Montagem por deslocamentos ópticos e ausência de calibração espacial &
+    Os pixels descreveram a coordenada reconstruída; não se mediram
+    diretamente dimensões físicas de bolhas ou velocidades de fase.\\
+    \hline
+    Exposições de 62, 127 e 132 $\mu$s e taxas de 4000, 5000 e 7000 quadros/s &
+    A padronização de intensidade não eliminou possíveis diferenças
+    de borramento, resposta óptica e teto de intensidade.\\
+    \hline
+    Condições operacionais distintas entre aquisições &
+    Não se isolou experimentalmente o efeito do padrão dos efeitos
+    das condições de operação e aquisição.\\
+    \hline
+  \end{tabular}
+  \fonte{Elaborado pelo autor a partir dos dados e da auditoria da execução.}
+\end{quadro}
+
+Apesar dessas restrições, o contraste positivo do coeficiente de Pearson $r$
+permaneceu nas ponderações examinadas e após a retirada exploratória de m03q40.
+Esse resultado forneceu uma base favorável à continuidade da análise espectral,
+com a extensão do panorama, a qualidade óptica e a composição dos grupos como
+pontos concretos a controlar. A execução deixou essas questões abertas e
+produziu dados rastreáveis para aprofundá-las, sem antecipar desempenho de
+classificação ou significância estatística ainda não avaliados.

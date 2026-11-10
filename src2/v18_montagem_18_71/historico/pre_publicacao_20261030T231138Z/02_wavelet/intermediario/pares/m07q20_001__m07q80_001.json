@@ -1,0 +1,32 @@
+{
+  "run_x": "m07q20_001",
+  "run_y": "m07q80_001",
+  "padrao_x": "churn",
+  "padrao_y": "wavy annular",
+  "tipo": "inter",
+  "padrao": "churn × wavy annular",
+  "arquivo": "03_wavelets_inter/churn_wavy_annular_m07q20_001_m07q80_001.png",
+  "input_x_sha256": "a22b31e0f1431639ea1092cd88841a8b39bb9ccb11e9139dbfbd8e60feb2bd92",
+  "input_y_sha256": "e710fc652804c1495c05f4094f70eca6fc29e6a0e1bd47449262ed1248c123ea",
+  "comprimento": 8289,
+  "comprimento_x": 8289,
+  "comprimento_y": 16656,
+  "descarte_x": 0,
+  "descarte_y": 8367,
+  "escalas_validas": 200,
+  "wco_maxima": 0.7680449420634703,
+  "wco_minima": 6.815172429761333e-09,
+  "wco_media_integral": 0.07711778942423526,
+  "wco_maxima_zero": 0.7599974751334886,
+  "wco_mediana_zero": 0.06254857395647942,
+  "pico_lag_px": 561,
+  "pico_lambda_px": 2938.906851168053,
+  "erro_soma_direta": 1.249000902703301e-16,
+  "erro_wps_independente": 8.881784197001252e-16,
+  "assinaturas": {
+    "core": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc",
+    "script": "b3d236b2076b168bd92b65564d856fa4fdb339b37d4d89ceeac068153513fa5e",
+    "input_x": "a22b31e0f1431639ea1092cd88841a8b39bb9ccb11e9139dbfbd8e60feb2bd92",
+    "input_y": "e710fc652804c1495c05f4094f70eca6fc29e6a0e1bd47449262ed1248c123ea"
+  }
+}

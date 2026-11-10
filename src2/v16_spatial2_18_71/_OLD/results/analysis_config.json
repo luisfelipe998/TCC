@@ -1,0 +1,45 @@
+{
+  "source_analysis": "../v16_spatial2",
+  "extraction_rows_inclusive": [
+    18,
+    71
+  ],
+  "numpy_row_slice": [
+    18,
+    72
+  ],
+  "row_count": 54,
+  "spatial_sampling_px": 1,
+  "panorama_reconstruction": "Original v11 panoramas unchanged; original stitching uses rows 20–59",
+  "fixed_row_control": 40,
+  "fixed_band_control_inclusive": [
+    30,
+    49
+  ],
+  "upper_diagnostic_rows_inclusive": [
+    18,
+    44
+  ],
+  "lower_diagnostic_rows_inclusive": [
+    45,
+    71
+  ],
+  "trimmed_mean_fraction_requested": 0.2,
+  "trimmed_rows_each_end": 10,
+  "retained_trimmed_rows": 34,
+  "eligible_runs": 26,
+  "audited_inputs": 31,
+  "primary_correlation": "biased",
+  "coi": false,
+  "conservative_mask": false,
+  "wavelengths_px": [
+    50,
+    3000
+  ],
+  "primary_scale_count": 200,
+  "screen_scale_count": 64,
+  "pattern_names_language": "en",
+  "other_text_language": "pt-BR",
+  "new_v5_comparator": "v5 implementation applied to new 18–71 extraction, not the original 20–59 input",
+  "historical_comparison": "Compare to the original v16 and v5 at 20–59 using fixed original reference power weights for scores"
+}

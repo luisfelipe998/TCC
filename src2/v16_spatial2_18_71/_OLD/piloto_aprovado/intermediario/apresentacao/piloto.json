@@ -1,0 +1,98 @@
+[
+  {
+    "arquivo": "01_panoramas/plug_m05q01_001.png",
+    "largura_insercao_cm": 16,
+    "altura_inserida_cm": 16.174729274937608,
+    "fonte_minima_inserida_pt": 9.345199669817363,
+    "titulo": "plug · m05q01_001 · panorama de 5.940 px",
+    "titulos_paineis": [
+      "Panorama completo · faixa 18–71",
+      "Média por coluna · linhas 18–71",
+      "Sinal preparado · panorama completo"
+    ],
+    "rotulos_x": [
+      "Extensão do panorama (px)",
+      "Extensão do panorama (px)",
+      "Extensão do panorama (px)"
+    ],
+    "rotulos_y": [
+      "Altura do\npanorama (px)",
+      "Intensidade média",
+      "Sinal (σ)"
+    ]
+  },
+  {
+    "arquivo": "01_panoramas/plug_m06q01_001.png",
+    "largura_insercao_cm": 16,
+    "altura_inserida_cm": 16.80249456260446,
+    "fonte_minima_inserida_pt": 8.82602191038307,
+    "titulo": "plug · m06q01_001 · panorama de 7.798 px",
+    "titulos_paineis": [
+      "Panorama completo · faixa 18–71",
+      "Média por coluna · linhas 18–71",
+      "Sinal preparado · panorama completo"
+    ],
+    "rotulos_x": [
+      "Extensão do panorama (px)",
+      "Extensão do panorama (px)",
+      "Extensão do panorama (px)"
+    ],
+    "rotulos_y": [
+      "Altura do\npanorama (px)",
+      "Intensidade média",
+      "Sinal (σ)"
+    ]
+  },
+  {
+    "arquivo": "02_wavelets/plug_m05q01_001_m06q01_001.png",
+    "largura_insercao_cm": 16,
+    "altura_inserida_cm": 22.952932934208004,
+    "fonte_minima_inserida_pt": 8.18444283853729,
+    "titulo": "plug · m05q01_001 × m06q01_001 · 5.940 px",
+    "titulos_paineis": [
+      "A - m05q01_001 · prefixo 0–5939 px",
+      "B - m06q01_001 · prefixo 0–5939 px",
+      "Sinais normalizados",
+      "Espectro de potência wavelet (WPS) · A",
+      "",
+      "Potência média",
+      "Espectro de potência wavelet (WPS) · B",
+      "",
+      "Potência média",
+      "Espectro cruzado wavelet (WCS) · módulo",
+      "",
+      "Coerência wavelet (WCO)",
+      ""
+    ],
+    "rotulos_x": [
+      "Extensão do panorama (px)",
+      "Extensão do panorama (px)",
+      "Extensão do panorama (px)",
+      "Lag (px)",
+      "",
+      "u.a.",
+      "Lag (px)",
+      "",
+      "u.a.",
+      "Lag (px)",
+      "",
+      "Lag (px)",
+      ""
+    ],
+    "rotulos_y": [
+      "Altura do\npanorama (px)",
+      "Altura do\npanorama (px)",
+      "Sinal (σ)",
+      "Comprimento de onda\nλ (px)",
+      "",
+      "",
+      "Comprimento de onda\nλ (px)",
+      "",
+      "",
+      "Comprimento de onda\nλ (px)",
+      "",
+      "Comprimento de onda\nλ (px)",
+      ""
+    ]
+  }
+]

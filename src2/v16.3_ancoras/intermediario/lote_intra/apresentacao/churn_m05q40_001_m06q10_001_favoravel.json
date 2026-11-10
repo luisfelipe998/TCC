@@ -1,0 +1,37 @@
+{
+  "arquivo": "churn_m05q40_001_m06q10_001_favoravel.png",
+  "largura_insercao_cm": 16,
+  "altura_inserida_cm": 22.96170755017521,
+  "fonte_minima_inserida_pt": 8.187571647523034,
+  "titulo": "churn · m05q40_001 × m06q10_001 · 2.048 px",
+  "titulos_paineis": [
+    "A - m05q40_001",
+    "B - m06q10_001",
+    "Sinais alinhados",
+    "WPS · A",
+    "",
+    "Potência média",
+    "WPS · B",
+    "",
+    "Potência média",
+    "WCS · módulo",
+    "",
+    "WCO",
+    ""
+  ],
+  "rotulos": [
+    "Linha",
+    "Linha",
+    "Sinal (σ)",
+    "Comprimento de onda\nλ (px)",
+    "",
+    "",
+    "Comprimento de onda\nλ (px)",
+    "",
+    "",
+    "Comprimento de onda\nλ (px)",
+    "",
+    "Comprimento de onda\nλ (px)",
+    ""
+  ]
+}

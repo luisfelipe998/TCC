@@ -1,0 +1,23 @@
+{
+  "correlation_max_abs_error": {
+    "biased": 8.326672684688674e-17,
+    "unbiased": 2.220446049250313e-15
+  },
+  "cwt_complex_quadrature_max_abs_error": 2.964296775167217e-17,
+  "independent_spectral_identity_max_abs_error": 5.440092820663267e-15,
+  "swap_reflection_max_abs_error": 1.6653345369377348e-15,
+  "self_zero_max_abs_error": 0.0,
+  "known_delay_peak_lags": [
+    -100,
+    -100,
+    -100
+  ],
+  "known_delay_peak_errors": [
+    -4.440892098500626e-16,
+    -3.3306690738754696e-16,
+    -7.771561172376096e-16
+  ],
+  "double_padding_max_abs_error": 7.634754316485562e-17,
+  "fourier_factor": 1.0330436477492537,
+  "morlet_dc_ratio": 1.522997974471263e-08
+}

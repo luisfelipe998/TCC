@@ -1,0 +1,29 @@
+{
+  "variants": [
+    "baseline",
+    "demean_only",
+    "center_row",
+    "central_band20",
+    "core_row_median",
+    "core_trimmed_mean20",
+    "spatial_gaussian2",
+    "spatial_median5",
+    "rank_uniform",
+    "winsor_1pct"
+  ],
+  "scale_count": 64,
+  "elapsed_seconds": 337.0717355829838,
+  "total_pairs": 325,
+  "same_pairs": 87,
+  "wavelengths_px": [
+    50,
+    3000
+  ],
+  "estimator": "biased",
+  "wavelet": "Schuck Morlet omega0=6",
+  "invariant": "Alternative WPS/WCS/WCO formulas unchanged in every candidate",
+  "domain": "Todos os lags, sem COI e sem m\u00e1scara conservadora",
+  "main_score": "M\u00e9dia ponderada dos m\u00e1ximos em todos os lags da alternative WCO por escala; pesos pela m\u00e9dia geom\u00e9trica das alternative WPS do baseline no lag zero; ambas >=5% de seus pr\u00f3prios m\u00e1ximos",
+  "score_sensitivity": "Identical calculation with 1% and 10% baseline power floors",
+  "limitation": "Scale-wise maximization is a descriptive similarity score, not evidence of common events or causality. Correlated pairs are not independent samples."
+}

@@ -1,0 +1,79 @@
+{
+  "figuras": [
+    {
+      "arquivo": "figures/01_entrada_e_perfil.png",
+      "titulo": "Da âncora ao perfil",
+      "leitura": "O sombreado marca os 2.048 px usados. A linha vertical marca a âncora e as horizontais delimitam a faixa de linhas. A WPS descreve todo o sinal recortado; λ não localiza uma estrutura no panorama. O panorama foi ajustado em proporção para leitura. Exemplo fixado pelo primeiro ID de plug, sem seleção pelo resultado.",
+      "sha256": "02a157e2aa6e5a4dc1b0c580c8727788bfd1213ef7a81cb032c7cc5644dd6705",
+      "tamanho_px": [
+        1936,
+        2356
+      ]
+    },
+    {
+      "arquivo": "figures/02_perfis_ancorados.png",
+      "titulo": "Um perfil por aquisição",
+      "leitura": "Linhas finas: todos os ensaios. Linha grossa: média das densidades apenas para leitura. Cada distância foi calculada entre perfis individuais; essa média não é um modelo de classe. A escala vertical comum evidencia a variabilidade interna.",
+      "sha256": "76990d3d6ec56923cd8075771c30c466487a7d75aa10a067ef00d2d4dee1ae23",
+      "tamanho_px": [
+        1936,
+        1756
+      ]
+    },
+    {
+      "arquivo": "figures/03_comparacao_controles.png",
+      "titulo": "Âncoras e controles no mesmo conjunto",
+      "leitura": "Todos usam os mesmos 25 ensaios e 50–1.024 px. As cinco primeiras linhas usam Hellinger; Pearson e WCO são referências da v16.3. Os valores representam A, tornando comparável a ordenação. A linha de 50% indica ausência de preferência; não é teste estatístico nem acurácia.",
+      "sha256": "ef08fa24d3be91f101a1649a6508af4f255a91966e26e6fc281057757ef38ede",
+      "tamanho_px": [
+        1936,
+        1486
+      ]
+    },
+    {
+      "arquivo": "figures/04_distribuicoes_distancias.png",
+      "titulo": "Sobreposição das distâncias",
+      "leitura": "Cada histograma soma 100% dentro de seu grupo; as linhas tracejadas marcam medianas. As âncoras produziram maior sobreposição. O domínio matemático de H vai de 0 a 1; a figura mostra a faixa observada. Os pares compartilham aquisições.",
+      "sha256": "a6f041490e13b33bdf283f37e0b5b78c479cb80c73be1142c84d1453266fd1d5",
+      "tamanho_px": [
+        1936,
+        1756
+      ]
+    },
+    {
+      "arquivo": "figures/05_sensibilidade_escalas.png",
+      "titulo": "A faixa de escalas importa",
+      "leitura": "A faixa conservadora segue 3a≤N/2 e contém 129 pontos da grade original; as áreas foram normalizadas novamente. As âncoras melhoraram nessa faixa, mas não superaram o panorama completo nem o fim. As duas faixas foram preservadas, sem escolher a melhor após os resultados.",
+      "sha256": "04c223e05ae651220df46e102bd7efe8b4e37c78cf9f854dd1a7ad1085f3735a",
+      "tamanho_px": [
+        1936,
+        1427
+      ]
+    },
+    {
+      "arquivo": "figures/06_resultados_por_padrao.png",
+      "titulo": "A perda aparece nos quatro padrões",
+      "leitura": "Cada padrão foi avaliado contra os pares inter que o envolvem. A segunda ponderação dá o mesmo peso às três outras classes. Anular ondulado ficou abaixo de 50% nas âncoras. Plug e slug têm somente três aquisições cada.",
+      "sha256": "cf65636586616d191a3d5828fcb5efcc41c8e024e39b36beaa3011848ecede92",
+      "tamanho_px": [
+        1936,
+        1726
+      ]
+    }
+  ],
+  "imagens_incorporadas_html": 6,
+  "codigo_sha256": "ebdfdfef2d9a8d9dfe902c1eede11748a9861148150da747d172a0096fa0ba98",
+  "tabelas_sha256": {
+    "concordancia.csv": "e0dd9853e74e9e597ebc2cce72451770155f6e69721bdeab534063ef211bc73d",
+    "efeitos_pareados.csv": "602d5a0a0b93d5d58859586c91c7c5366b9d7c28d01d688175938426ecd2979e",
+    "grupos_pares.csv": "aa3671abd426ece546656b7887e831041066e575438f9d2d0d7a99bf538155ed",
+    "indice_ensaios.csv": "d01a9b5dafd59aefcf4e75d9fec4100b22ff05a943b41f8735ac4f7f1c9194df",
+    "influencia_aquisicoes.csv": "b433db8cba3acb1541764517e7d357a90ac612dad67c9406055a57b0c5f0d9b7",
+    "pares.csv": "f9719b4c8be40c1b5d8f6c0f381d8ed9977e1484b46118c86c4bd1c75a25ff31",
+    "perfis_normalizados.csv": "a00a8a8db3178746ac68b9c98ec13727d66bc6eaf66101d7d233cb480f0ef00b",
+    "por_padrao.csv": "1911e7e5a73f1b47392325256627474d9dea7042d83b5f6b29c8f048baa925b5",
+    "recortes.csv": "51849838943cf7dd17e71112d5eddd88d2af106d0bbe7f22465478c61b2cdfa2",
+    "sensibilidade_perfis.csv": "80bc784772d4c79e6f01902b7891ce0a5a8a6059cb7ba1b5e61f1c167cda30a2",
+    "verificacao_perfis.csv": "6d62cf33d5e400bc93348b5102b05a698e0fe2b9f9008a049eafdf6865aaceaf"
+  }
+}

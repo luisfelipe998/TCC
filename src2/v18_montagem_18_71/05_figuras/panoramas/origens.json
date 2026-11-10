@@ -1,0 +1,198 @@
+{
+  "generator": {
+    "arquivo": "package/scripts/gerar_panoramas.py",
+    "sha256": "f366976a1622a2d2b18a5c70ffb7e7f59d849b2105f924ea00dec41613755302"
+  },
+  "reproduction": "python3 -B scripts/gerar_panoramas.py",
+  "purpose": "Four complete panorama and signal illustrations for section 4.2.",
+  "selection": "Four fixed complete acquisitions illustrating plug, slug, churn and wavy annular. Illustration only; independent of the pair selection for spectral maps.",
+  "numerical_data_recomputed": false,
+  "existing_inputs_and_manifests_unchanged": true,
+  "input_hashes": {
+    "02_wavelet/intermediario/aquisicoes.json": "c4ddbc8605b8953ca8ee08d10af836876f4a4c8d1c0b03e99382811858669bd2",
+    "01_panoramas/manifesto.json": "31f3a19766181ab6a83c65dab09d08d94ca326811041deace7c2a81c110a11b1",
+    "01_panoramas/wavelet/m05q01_001/panorama.png": "de172fb99e7381405b8edb10a54833e39cc2ae8a3ebaf8dc2bdd82ed6ad27509",
+    "02_wavelet/intermediario/entradas/m05q01_001.npz": "402c5f02bdf4d252b80a3a7cfbbb1bbd4aced656ece98b1344aa40b014581174",
+    "02_wavelet/intermediario/individuais/m05q01_001.npz": "b969983e463682c374a8fddbd86a69727d459467509d0e30e98fbbd1ac7eef26",
+    "02_wavelet/intermediario/individuais/m05q01_001.json": "43265260685ea688cb6af47b43ece3b25fb515c4417bd3af84b66a0e80bd8928",
+    "01_panoramas/wavelet/m04q01_001/panorama.png": "393d8e37f5b977134b18a0e40612e66cbe99ebcddd6595389038b2f0ed702e54",
+    "02_wavelet/intermediario/entradas/m04q01_001.npz": "2146fc45a7835d1173b1f7483c8e8a7445321287ef34f9d6f528cc6d91311798",
+    "02_wavelet/intermediario/individuais/m04q01_001.npz": "8ff5b4e99bc2358125f5883192d3c8067569ee0638eb79b384ec4846df1112cd",
+    "02_wavelet/intermediario/individuais/m04q01_001.json": "897a6ffd324f1ef64ae88426da7466dded1d7850d4c98b6e2aa6acdaaa5c7928",
+    "01_panoramas/wavelet/m04q20_001/panorama.png": "f5e73c4ea3db76bf1cb008de7244bf573fada60669c18606928dc67833caa744",
+    "02_wavelet/intermediario/entradas/m04q20_001.npz": "fd023730154e99f00cf92a679071588090b542955e9f7b17580438e89de1d5f7",
+    "02_wavelet/intermediario/individuais/m04q20_001.npz": "67a64d5b465e7be0e9f781ec9725b26f5f6fa7fe9e4b61e29ff7c8f4bfc20f27",
+    "02_wavelet/intermediario/individuais/m04q20_001.json": "49f724287a7e9f85530c0ab5284137c1a1fe7187b0f9dd53a99c52703b968b20",
+    "01_panoramas/wavelet/m06q40_001/panorama.png": "f8eaf72700063ae1361262de85d62151c9cc8845903a8002927c5a92e7289d25",
+    "02_wavelet/intermediario/entradas/m06q40_001.npz": "173d18f0ba7162757c7edc84226cb41626486a30f1b01ac8ce6ea2d091303d53",
+    "02_wavelet/intermediario/individuais/m06q40_001.npz": "d68f7bbc20389e44e041677445ac85942b4cf6db6eee2cf18ad3c80c194e4dc0",
+    "02_wavelet/intermediario/individuais/m06q40_001.json": "db205eefeea00e27945c39d0766dec35eb86d210550cee29f34e2efbcbfdd202"
+  },
+  "figures": [
+    {
+      "arquivo": "05_figuras/panoramas/plug_m05q01_001.png",
+      "sha256": "e569bb010670daf9614f60a76d3868740d9dfa760694a52aed32a104a017555e",
+      "pattern": "plug",
+      "display_pattern": "Plug",
+      "run": "m05q01_001",
+      "full_length_px": 5914,
+      "layout": {
+        "dimensions_px": [
+          1813,
+          1237
+        ],
+        "dpi": 300,
+        "insertion_width_cm": 16,
+        "insertion_height_cm": 10.909321578127228,
+        "minimum_font_at_insertion_pt": 10.423934540876177,
+        "no_notes_or_observations": true,
+        "full_arrays_plotted_without_decimation": true
+      },
+      "inputs": [
+        {
+          "arquivo": "01_panoramas/wavelet/m05q01_001/panorama.png",
+          "sha256": "de172fb99e7381405b8edb10a54833e39cc2ae8a3ebaf8dc2bdd82ed6ad27509"
+        },
+        {
+          "arquivo": "02_wavelet/intermediario/entradas/m05q01_001.npz",
+          "sha256": "402c5f02bdf4d252b80a3a7cfbbb1bbd4aced656ece98b1344aa40b014581174"
+        },
+        {
+          "arquivo": "02_wavelet/intermediario/individuais/m05q01_001.npz",
+          "sha256": "b969983e463682c374a8fddbd86a69727d459467509d0e30e98fbbd1ac7eef26"
+        }
+      ],
+      "verification": {
+        "raw_equal_to_rows_18_through_71_mean": true,
+        "prepared_loaded_unchanged_from_current_individual_npz": true,
+        "plotted_arrays_identical_to_loaded_inputs": true,
+        "png_integrity_verified": true
+      }
+    },
+    {
+      "arquivo": "05_figuras/panoramas/slug_m04q01_001.png",
+      "sha256": "deb9842b4d67d94d4876dc01d381994e1c96d51a71e94e5b52c844309f2e5c8f",
+      "pattern": "slug",
+      "display_pattern": "Slug",
+      "run": "m04q01_001",
+      "full_length_px": 5071,
+      "layout": {
+        "dimensions_px": [
+          1813,
+          1237
+        ],
+        "dpi": 300,
+        "insertion_width_cm": 16,
+        "insertion_height_cm": 10.909321578127228,
+        "minimum_font_at_insertion_pt": 10.423934540876177,
+        "no_notes_or_observations": true,
+        "full_arrays_plotted_without_decimation": true
+      },
+      "inputs": [
+        {
+          "arquivo": "01_panoramas/wavelet/m04q01_001/panorama.png",
+          "sha256": "393d8e37f5b977134b18a0e40612e66cbe99ebcddd6595389038b2f0ed702e54"
+        },
+        {
+          "arquivo": "02_wavelet/intermediario/entradas/m04q01_001.npz",
+          "sha256": "2146fc45a7835d1173b1f7483c8e8a7445321287ef34f9d6f528cc6d91311798"
+        },
+        {
+          "arquivo": "02_wavelet/intermediario/individuais/m04q01_001.npz",
+          "sha256": "8ff5b4e99bc2358125f5883192d3c8067569ee0638eb79b384ec4846df1112cd"
+        }
+      ],
+      "verification": {
+        "raw_equal_to_rows_18_through_71_mean": true,
+        "prepared_loaded_unchanged_from_current_individual_npz": true,
+        "plotted_arrays_identical_to_loaded_inputs": true,
+        "png_integrity_verified": true
+      }
+    },
+    {
+      "arquivo": "05_figuras/panoramas/churn_m04q20_001.png",
+      "sha256": "bf99c9a026a33a37010b628d659344d92b035e7d9ab1a2c4dd853fe93fba4c8e",
+      "pattern": "churn",
+      "display_pattern": "Churn",
+      "run": "m04q20_001",
+      "full_length_px": 9324,
+      "layout": {
+        "dimensions_px": [
+          1841,
+          1237
+        ],
+        "dpi": 300,
+        "insertion_width_cm": 16,
+        "insertion_height_cm": 10.747040763650524,
+        "minimum_font_at_insertion_pt": 10.268874065737482,
+        "no_notes_or_observations": true,
+        "full_arrays_plotted_without_decimation": true
+      },
+      "inputs": [
+        {
+          "arquivo": "01_panoramas/wavelet/m04q20_001/panorama.png",
+          "sha256": "f5e73c4ea3db76bf1cb008de7244bf573fada60669c18606928dc67833caa744"
+        },
+        {
+          "arquivo": "02_wavelet/intermediario/entradas/m04q20_001.npz",
+          "sha256": "fd023730154e99f00cf92a679071588090b542955e9f7b17580438e89de1d5f7"
+        },
+        {
+          "arquivo": "02_wavelet/intermediario/individuais/m04q20_001.npz",
+          "sha256": "67a64d5b465e7be0e9f781ec9725b26f5f6fa7fe9e4b61e29ff7c8f4bfc20f27"
+        }
+      ],
+      "verification": {
+        "raw_equal_to_rows_18_through_71_mean": true,
+        "prepared_loaded_unchanged_from_current_individual_npz": true,
+        "plotted_arrays_identical_to_loaded_inputs": true,
+        "png_integrity_verified": true
+      }
+    },
+    {
+      "arquivo": "05_figuras/panoramas/wavy_annular_m06q40_001.png",
+      "sha256": "db9d7ad1644f4abbf1c45c2168f5315adb721e33a88dcd6bd04f67265bbc068a",
+      "pattern": "wavy annular",
+      "display_pattern": "Anular ondulado",
+      "run": "m06q40_001",
+      "full_length_px": 14722,
+      "layout": {
+        "dimensions_px": [
+          1813,
+          1237
+        ],
+        "dpi": 300,
+        "insertion_width_cm": 16,
+        "insertion_height_cm": 10.909321578127228,
+        "minimum_font_at_insertion_pt": 10.423934540876177,
+        "no_notes_or_observations": true,
+        "full_arrays_plotted_without_decimation": true
+      },
+      "inputs": [
+        {
+          "arquivo": "01_panoramas/wavelet/m06q40_001/panorama.png",
+          "sha256": "f8eaf72700063ae1361262de85d62151c9cc8845903a8002927c5a92e7289d25"
+        },
+        {
+          "arquivo": "02_wavelet/intermediario/entradas/m06q40_001.npz",
+          "sha256": "173d18f0ba7162757c7edc84226cb41626486a30f1b01ac8ce6ea2d091303d53"
+        },
+        {
+          "arquivo": "02_wavelet/intermediario/individuais/m06q40_001.npz",
+          "sha256": "d68f7bbc20389e44e041677445ac85942b4cf6db6eee2cf18ad3c80c194e4dc0"
+        }
+      ],
+      "verification": {
+        "raw_equal_to_rows_18_through_71_mean": true,
+        "prepared_loaded_unchanged_from_current_individual_npz": true,
+        "plotted_arrays_identical_to_loaded_inputs": true,
+        "png_integrity_verified": true
+      }
+    }
+  ],
+  "runtime": {
+    "python": "3.13.2",
+    "numpy": "2.3.4",
+    "matplotlib": "3.10.7"
+  }
+}

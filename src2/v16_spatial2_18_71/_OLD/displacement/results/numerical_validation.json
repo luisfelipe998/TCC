@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "translations": [
+    {
+      "true_dx": -120.0,
+      "estimated_dx": -119.99984596904469,
+      "error_px": 0.00015403095531496547
+    },
+    {
+      "true_dx": -52.3,
+      "estimated_dx": -52.29348673050275,
+      "error_px": 0.00651326949724762
+    },
+    {
+      "true_dx": -12.25,
+      "estimated_dx": -12.243630195541582,
+      "error_px": 0.006369804458417505
+    },
+    {
+      "true_dx": -6.0,
+      "estimated_dx": -5.999845969044692,
+      "error_px": 0.00015403095530786004
+    },
+    {
+      "true_dx": 0.0,
+      "estimated_dx": 0.00015403095530780458,
+      "error_px": 0.00015403095530780458
+    },
+    {
+      "true_dx": 0.7,
+      "estimated_dx": 0.7065132694972529,
+      "error_px": 0.006513269497252949
+    },
+    {
+      "true_dx": 7.4,
+      "estimated_dx": 7.395244556939879,
+      "error_px": 0.004755443060121323
+    },
+    {
+      "true_dx": 53.2,
+      "estimated_dx": 53.19452672077367,
+      "error_px": 0.005473279226329453
+    },
+    {
+      "true_dx": 120.0,
+      "estimated_dx": 120.00015403095531,
+      "error_px": 0.00015403095531496547
+    }
+  ],
+  "maximum_translation_error_px": 0.006513269497252949,
+  "constant_and_ambiguous_periodic_profiles_rejected": true,
+  "stationary_sequence_rejected": true,
+  "static_background_sequence": {
+    "true_dx": -12.25,
+    "supported": 40,
+    "intervals": 40,
+    "max_error_px": 0.034105038258205767
+  },
+  "reconstruction": [
+    {
+      "direction": "left",
+      "pixel_error": 0,
+      "total_travel_px": 17.4
+    },
+    {
+      "direction": "right",
+      "pixel_error": 0,
+      "total_travel_px": 17.4
+    }
+  ],
+  "unsupported_gaps_not_bridged": true,
+  "limitation": "Known translations verify implementation, not real-flow measurement accuracy."
+}

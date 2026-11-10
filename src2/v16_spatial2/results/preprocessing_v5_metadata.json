@@ -1,0 +1,9 @@
+{
+  "pairs": 325,
+  "scales": 200,
+  "elapsed_seconds": 181.56881708299625,
+  "baseline": "Literal v5 estimator, legacy cmor scale conversion and preprocessing-before-crop; no coherence clipping",
+  "domain": "Todos os lags, sem COI e sem m\u00e1scara conservadora",
+  "comparison": "Mesmos pesos de alternative WPS do baseline Morlet e dom\u00ednio integral de preprocessing_confirm_pairs.csv",
+  "coordinate": "Original v5 lag sign; all summaries are at lag zero or symmetric lag searches"
+}

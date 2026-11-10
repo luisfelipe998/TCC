@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "date_utc": "2026-10-31T04:09:43.814863+00:00",
+  "scope": "Revisão adversarial integral, com correções pontuais no resumo/abstract e pontuação da metodologia. Sem inconsistências materiais pendentes.",
+  "pdf": {
+    "path": "TCC/dist/main.pdf",
+    "sha256": "38fc506eeedb66d05fdf20d9e2222af516a969e9540a09038be19bb803fb0fcb",
+    "pages": 74
+  },
+  "source_sha256": {
+    "TCC/conclusao.tex": "39806bd24a06838acbac9072e5be711207d4594ece5041d3dea5889341890b27",
+    "TCC/main.tex": "998eeef74bc67af97d49873eb0be36df2e456db6320a35af6c6014c0bb0c1fcf",
+    "TCC/discussao.tex": "4f54320591be55fe86da61dea942dea1b0326360b9978c7e622e3d7eb86d16ba",
+    "TCC/anexos.tex": "f1b839f0924914cbff14442b048083a34d878186a0ce389a4a89ccee047edaa6",
+    "TCC/metodologia.tex": "e51bed7654c6dfdc972ee5e0756e973016da8fe2e107d2d2d6b74eef9ff95df8",
+    "TCC/pretextual.tex": "86091be8c2299aa14ba02df06c4e83cb2521335fc43fe538d89945820aebd51a",
+    "TCC/apendices.tex": "c12438d4f16784f18b374ecc0a5b9c8a9f50d640f0d8b36d25be397dc8a187a3",
+    "TCC/introducao.tex": "c7a4b0baad24e07715e6ac6ed594831f0c67aff3b08ab2a73b77905076df5898",
+    "TCC/resultados.tex": "0990158a6790f6bf9e30c8c160325150b7cd7373fdd1f358427a1c8ce5b04640",
+    "TCC/fundamentacao.tex": "fba574a0d0160b1a16ef9c310ea573fce3c319633f8a643ab5687488cb5ab900",
+    "TCC/referencias.bib": "7e1627976759cc6e873f16a2d485501fde5fd3a8dd2ecc261e845c667cf23b2d"
+  },
+  "audit_report": {
+    "path": "../../../auditorias/revisao-integral-final/verificacao-final.json",
+    "sha256": "b8178d250c8223f6d00bee621a5a752940b3a78db215a4131a74a6188ecb22e8"
+  },
+  "preserved": {
+    "existing_analysis_sha256": 558,
+    "stage06_sha256": 336,
+    "figure_sha256": 109,
+    "code_files": 26
+  },
+  "independent_reports_sha256": {
+    "revisao-espectral.json": "53540300cc2b79c2e072c81b543d8e9d45caf3dbe98a8df8a667d048049baaa7",
+    "revisao-optica.json": "7d29c9443d18931760e02ecd58b59f0f107ec6a1c30d7ffa3f11767ba2ef953b",
+    "revisao-literatura.json": "bb724ba968befefcc30bc0cd56b018ad694fb94a417ce7e48016de0d32b88f65"
+  },
+  "changed_manuscripts": [
+    "TCC/metodologia.tex",
+    "TCC/pretextual.tex"
+  ],
+  "full_pipeline_recomputed": false
+}

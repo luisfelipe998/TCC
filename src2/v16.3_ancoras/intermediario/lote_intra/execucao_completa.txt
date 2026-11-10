@@ -1,0 +1,13 @@
+Lote intra padrão concluído e verificado.
+25 ensaios e 25 âncoras individuais.
+87 pares: plug 3; slug 3; churn 45; wavy annular 36.
+112 PNGs finais. Comparações no perfil comum de 2048 px.
+Âncoras ilustradas no contexto nativo: plug/slug 2048 px; churn/wavy annular 4096 px.
+44 contextos numéricos reutilizáveis, 50 perfis nomeados e 2 grades.
+Os 213 pares inter têm compatibilidade verificada apenas por metadados; não foram calculados.
+Processamento e verificações automáticas: 3 min 49 s.
+Lote com implementação e revisão visual entre as etapas: aproximadamente 11 minutos.
+Resultados do piloto anterior preservados em piloto_anterior; seus mapas nativos permanecem em ../mapas.
+Verificação independente: PASS. Erro máximo de WCO: 1,35e-14.
+A 16 cm de largura: altura máxima 22,97 cm; fonte mínima 8,18 pt.
+03_conclusoes permanece vazia.

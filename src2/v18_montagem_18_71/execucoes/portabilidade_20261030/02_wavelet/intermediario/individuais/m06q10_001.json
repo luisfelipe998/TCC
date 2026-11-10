@@ -1,0 +1,14 @@
+{
+  "ensaio": "m06q10_001",
+  "padrao": "churn",
+  "comprimento": 7615,
+  "pico_wps_zero_lambda_px": 1264.250258548761,
+  "pico_potencia_media_lambda_px": 1264.250258548761,
+  "erro_wps_independente": 1.3322676295501878e-15,
+  "npz_sha256": "a4d09a5f7c1930bf5cd9db7ab6ac44dd43ac00bfe270bd7545aff22322133f03",
+  "assinaturas": {
+    "input": "f91eb37f4d58cd17de8dbeb83239463dae97a2be998f214cf4c6f2a0cd65a9cb",
+    "core": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc",
+    "script": "edc4cc46e5ce0fc5267bfeaf023e7eb3ae1c6b298b15dc57a6d62cb7380463e8"
+  }
+}

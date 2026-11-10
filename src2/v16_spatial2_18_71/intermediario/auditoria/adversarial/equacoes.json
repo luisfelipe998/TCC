@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "erro_correlacao_maximo": 3.608224830031759e-15,
+  "erro_cwt_temporal": 2.666834323444892e-17,
+  "erro_troca_par": 2.886579864025407e-15,
+  "erro_autocoerencia": 0.0,
+  "lag_atraso_100": [
+    -100,
+    -100,
+    -100
+  ],
+  "erro_invariancia_afim": 6.439293542825908e-14,
+  "entradas_invalidas_rejeitadas": 3,
+  "pdf_sha256": "8a052388ebb12e36611b80cd2684a813155b8f6d9c13d92ad2415b9dad9108f2",
+  "paginas_pdf_conferidas": [
+    3,
+    5,
+    6
+  ],
+  "paginas_impressas": [
+    411,
+    413,
+    414
+  ],
+  "definicoes": "32.4, 32.6, 32.8, 32.14–32.17",
+  "adaptacao": "divisor N; o artigo usa N−|m| em 32.21–32.23",
+  "ambiguidade": "32.16 média complexa versus 32.20 média de módulos; K=1 não altera a WCO"
+}

@@ -1,0 +1,155 @@
+{
+  "status": "PASS",
+  "escopo": "somente um par piloto; lote completo não executado",
+  "entradas": [
+    {
+      "ensaio": "m05q01_001",
+      "panorama_sha256": "73abc29e73728a38a2f655a0a204df944409d80228f9a3cdc50a35fddeb7eaf1",
+      "comprimento": 5940,
+      "linhas": [
+        18,
+        71
+      ],
+      "erro_raw": 0.0,
+      "erro_wps_zero_completo": 3.552713678800501e-15
+    },
+    {
+      "ensaio": "m06q01_001",
+      "panorama_sha256": "95f2de6d129d242fb622357e9fd37b28fd112ccfa302518cc28f31a75a6b148b",
+      "comprimento": 7798,
+      "linhas": [
+        18,
+        71
+      ],
+      "erro_raw": 0.0,
+      "erro_wps_zero_completo": 1.7763568394002505e-15
+    }
+  ],
+  "par": [
+    "m05q01_001",
+    "m06q01_001"
+  ],
+  "metodo": "v16, prefixo comum antes do preparo",
+  "nucleo_identico_ao_original": true,
+  "erros_mapas_vs_original": {
+    "wxx": 0.0,
+    "wyy": 0.0,
+    "wxy": 0.0,
+    "wco": 0.0
+  },
+  "escore_ponderado_conferido": true,
+  "pearson_conferido_scipy_numpy": true,
+  "arquivos_antigos_preservados": 583,
+  "apresentacao": [
+    {
+      "arquivo": "01_panoramas/plug_m05q01_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.174729274937608,
+      "fonte_minima_inserida_pt": 9.345199669817363,
+      "titulo": "plug · m05q01_001 · panorama de 5.940 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal preparado · panorama completo"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    },
+    {
+      "arquivo": "01_panoramas/plug_m06q01_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.80249456260446,
+      "fonte_minima_inserida_pt": 8.82602191038307,
+      "titulo": "plug · m06q01_001 · panorama de 7.798 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal preparado · panorama completo"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    },
+    {
+      "arquivo": "02_wavelets/plug_m05q01_001_m06q01_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 22.952932934208004,
+      "fonte_minima_inserida_pt": 8.18444283853729,
+      "titulo": "plug · m05q01_001 × m06q01_001 · 5.940 px",
+      "titulos_paineis": [
+        "A - m05q01_001 · prefixo 0–5939 px",
+        "B - m06q01_001 · prefixo 0–5939 px",
+        "Sinais normalizados",
+        "Espectro de potência wavelet (WPS) · A",
+        "",
+        "Potência média",
+        "Espectro de potência wavelet (WPS) · B",
+        "",
+        "Potência média",
+        "Espectro cruzado wavelet (WCS) · módulo",
+        "",
+        "Coerência wavelet (WCO)",
+        ""
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Lag (px)",
+        "",
+        "u.a.",
+        "Lag (px)",
+        "",
+        "u.a.",
+        "Lag (px)",
+        "",
+        "Lag (px)",
+        ""
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Altura do\npanorama (px)",
+        "Sinal (σ)",
+        "Comprimento de onda\nλ (px)",
+        "",
+        "",
+        "Comprimento de onda\nλ (px)",
+        "",
+        "",
+        "Comprimento de onda\nλ (px)",
+        "",
+        "Comprimento de onda\nλ (px)",
+        ""
+      ]
+    }
+  ],
+  "script_sha256": "01ca508047cb4087a335b838bb0f74804f19163d731a5e671afba2af746189fd",
+  "core_sha256": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc",
+  "atualizacao_rotulos": {
+    "script_sha256": "7141c34b3b99c445f49da6fd56d2e5e04fedd9c2a948b97cb40d4c3b4326d67b",
+    "dados_preservados_sha256": {
+      "intermediario/pares/m05q01_001__m06q01_001.npz": "b59ab26782c4b416c9c3cb7525f7d1be1d91a404c6fc64bf18a7382ef8dd9fbb",
+      "intermediario/individuais/descritores_piloto.npz": "86de84877ad88af11a5c322b708e4e26772c6d46418dd810ba2745124bc00d97",
+      "intermediario/entradas/m05q01_001.npz": "6a3c68f5fb86ec80000da0e2b77f9035ea4c8806bc8e8ef86e1f30a502e7f5f3",
+      "intermediario/entradas/m06q01_001.npz": "9fef6ba946f847b7dd9c71aee875b206355361826383ae5a6acf113e5c33ebd5",
+      "04_estatistica/dados/metricas_piloto.csv": "18644fb5beb8c9c4eb6bc6ba82d6742f2487934153b2d8384350dd99ad458be5",
+      "04_estatistica/dados/perfis_piloto.csv": "fd70055a03c40be5e56c7487f5e8888603df98d4b585f972d574a37c09cdf0b3"
+    },
+    "calculos_reexecutados": false
+  }
+}

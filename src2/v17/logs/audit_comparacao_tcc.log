@@ -1,0 +1,10 @@
+{'verificacao': 'tab:res-ensaios', 'status': 'PASS', 'detalhes': {'linhas': 26}}
+{'verificacao': 'tab:res-exemplos', 'status': 'PASS', 'detalhes': {'celulas': 12, 'erro_maximo': 4.983562033678002e-05, 'forma_tcc': [4, 3], 'forma_fonte': [4, 3]}}
+{'verificacao': 'tab:res-intra', 'status': 'PASS', 'detalhes': {'celulas': 16, 'erro_maximo': 4.723014036722706e-05, 'forma_tcc': [4, 4], 'forma_fonte': [4, 4]}}
+{'verificacao': 'tab:res-inter', 'status': 'PASS', 'detalhes': {'celulas': 30, 'erro_maximo': 4.966401695555289e-05, 'forma_tcc': [10, 3], 'forma_fonte': [10, 3]}}
+{'verificacao': 'tab:res-global', 'status': 'PASS', 'detalhes': {'celulas': 12, 'erro_maximo': 4.939481090979192e-05, 'forma_tcc': [4, 3], 'forma_fonte': [4, 3]}}
+{'verificacao': 'tab:disc-pisos', 'status': 'PASS', 'detalhes': {'celulas': 6, 'erro_maximo': 4.939481090973641e-05, 'forma_tcc': [3, 2], 'forma_fonte': [3, 2]}}
+{'verificacao': 'tab:disc-controles', 'status': 'PASS', 'detalhes': {'celulas': 12, 'erro_maximo': 4.071053398480018e-05, 'forma_tcc': [6, 2], 'forma_fonte': [6, 2]}}
+{'verificacao': 'tab:disc-exclusao', 'status': 'PASS', 'detalhes': {'celulas': 16, 'erro_maximo': 4.939481090979192e-05, 'forma_tcc': [4, 4], 'forma_fonte': [4, 4]}}
+{'verificacao': 'figuras_v16', 'status': 'PASS', 'detalhes': {'arquivos': 12}}
+{'verificacao': 'coortes', 'status': 'PASS', 'detalhes': {'tcc_v16': 26, 'v14_selecionados': 26, 'estatistica8': 25, 'v14_validade': {'conditional_optical_geometry': 25, 'unsupported_saturation': 1}}}

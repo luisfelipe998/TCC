@@ -1,0 +1,34 @@
+{
+  "ensaios": 26,
+  "pares": 325,
+  "intra": 87,
+  "inter": 238,
+  "linhas_inclusivas": [
+    18,
+    71
+  ],
+  "wavelengths_px": [
+    50,
+    3000
+  ],
+  "escalas": 200,
+  "omega0": 6,
+  "amostragem_px": 1,
+  "autocorrelacao": "enviesada, divisor N",
+  "dominio": "todos os atrasos, sem COI ou máscara geométrica",
+  "selecao_par": "prefixo min(Na,Nb), preparado após o corte",
+  "wps": "abs(CWT(Rxx))",
+  "wcs": "CWT(Rxy)",
+  "wco": "abs(WCS)^2/(WPSx(0)*WPSy(0))",
+  "potencia_media": "média da WPS em todos os atrasos",
+  "pearson": "resíduos de log(WPS(0)+1e-12), reta contra 1 e log(lambda), ensaios completos",
+  "escores_ponderados": "não calculados, retirados do manuscrito",
+  "core": {
+    "arquivo": "src2/v16_spatial2_18_71/scripts/wavelet_core.py",
+    "sha256": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc"
+  },
+  "manifesto_montagem": {
+    "arquivo": "src2/v18_montagem_18_71/01_panoramas/manifesto.json",
+    "sha256": "dad45203bc7b39e4114a08944d793cf8637420dd3a2e4e7273310c231beca5e1"
+  }
+}

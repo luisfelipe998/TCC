@@ -1,0 +1,27 @@
+{
+  "spec": {
+    "tipo": "grade",
+    "schema": 2,
+    "comprimento": 2048,
+    "dx_px": 1,
+    "lambda_min": 50,
+    "lambda_max": 1024.0,
+    "escalas": 200,
+    "omega0": 6.0,
+    "padding_sigma": 8,
+    "estimador": "biased",
+    "K": 1,
+    "preparo": "recorte, 255-I, detrend linear, remocao de media, desvio padrao unitario",
+    "nucleo_sha256": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc",
+    "entrada_sha256": "fd1ec6b0a4fb15d845e584ee1c97504b2d79f71f85c3a4bc8457099dc7183fa8",
+    "backend_sha256": "65a4767dc5c09631bc5c8328181e1ae63ad09eb6c109fb9afda2981f0304b0aa"
+  },
+  "arrays_sha256": {
+    "wavelengths": "84799f7b3defa5df60454840301ff8874bbc25960b895a5e58524250e2220bf2",
+    "scales": "175cad8ccee0cf0f7efff2af9db2f83074543efce3f799a75011c4bb41eccbe3",
+    "lags": "5e4f576284d3ab3b10f4f205c771e7c55db9386061b07699a0bcd02c1dab4adf",
+    "support": "e0c387b726369f3445aded0727066ed63191ab8ea0942d6a6fdde1508ac85444",
+    "kernels": "ac8cc41a59778a8ead663544bfb74b8d70f59b705328566626f52b07982aed62"
+  },
+  "data_utc": "2026-10-25T18:29:55.335860+00:00"
+}

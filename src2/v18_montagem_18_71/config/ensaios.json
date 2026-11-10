@@ -1,0 +1,135 @@
+{
+  "scope": "26 aquisições dos cinco padrões puros descritos na metodologia; exclui rótulos compostos e anular liso.",
+  "runs": [
+    {
+      "number": 1,
+      "run": "m03q05_001",
+      "pattern": "churn"
+    },
+    {
+      "number": 2,
+      "run": "m04q10_001",
+      "pattern": "churn"
+    },
+    {
+      "number": 3,
+      "run": "m04q20_001",
+      "pattern": "churn"
+    },
+    {
+      "number": 4,
+      "run": "m05q10_001",
+      "pattern": "churn"
+    },
+    {
+      "number": 5,
+      "run": "m05q20_001",
+      "pattern": "churn"
+    },
+    {
+      "number": 6,
+      "run": "m05q40_001",
+      "pattern": "churn"
+    },
+    {
+      "number": 7,
+      "run": "m06q10_001",
+      "pattern": "churn"
+    },
+    {
+      "number": 8,
+      "run": "m06q20_001",
+      "pattern": "churn"
+    },
+    {
+      "number": 9,
+      "run": "m07q20_001",
+      "pattern": "churn"
+    },
+    {
+      "number": 10,
+      "run": "m07q40_001",
+      "pattern": "churn"
+    },
+    {
+      "number": 11,
+      "run": "m03q10_001",
+      "pattern": "wavy annular"
+    },
+    {
+      "number": 12,
+      "run": "m03q20_001",
+      "pattern": "wavy annular"
+    },
+    {
+      "number": 13,
+      "run": "m03q40_001",
+      "pattern": "wavy annular"
+    },
+    {
+      "number": 14,
+      "run": "m04q40_001",
+      "pattern": "wavy annular"
+    },
+    {
+      "number": 15,
+      "run": "m04q80_001",
+      "pattern": "wavy annular"
+    },
+    {
+      "number": 16,
+      "run": "m05q80_001",
+      "pattern": "wavy annular"
+    },
+    {
+      "number": 17,
+      "run": "m06q40_001",
+      "pattern": "wavy annular"
+    },
+    {
+      "number": 18,
+      "run": "m06q80_001",
+      "pattern": "wavy annular"
+    },
+    {
+      "number": 19,
+      "run": "m07q80_001",
+      "pattern": "wavy annular"
+    },
+    {
+      "number": 20,
+      "run": "m05q01_001",
+      "pattern": "plug"
+    },
+    {
+      "number": 21,
+      "run": "m06q01_001",
+      "pattern": "plug"
+    },
+    {
+      "number": 22,
+      "run": "m07q05_001",
+      "pattern": "plug"
+    },
+    {
+      "number": 23,
+      "run": "m04q01_001",
+      "pattern": "slug"
+    },
+    {
+      "number": 24,
+      "run": "m05q05_001",
+      "pattern": "slug"
+    },
+    {
+      "number": 25,
+      "run": "m06q05_001",
+      "pattern": "slug"
+    },
+    {
+      "number": 26,
+      "run": "m07q01_001",
+      "pattern": "dispersed bubble"
+    }
+  ]
+}

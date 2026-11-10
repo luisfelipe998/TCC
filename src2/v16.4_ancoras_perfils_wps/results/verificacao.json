@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "ensaios": 25,
+  "condicoes": 7,
+  "metodos": 19,
+  "pares_por_metodo": 300,
+  "perfis_verificados": 175,
+  "escalas_principais": 200,
+  "escalas_conservadoras": 129,
+  "lambda_conservadora_max_px": 348.6892162591408,
+  "maior_erro_preparo": 2.8976820942716586e-14,
+  "maior_erro_wps": 3.530509218307998e-14,
+  "maior_erro_H": 1.1102230246251565e-16,
+  "maior_erro_A": 6.661338147750939e-16,
+  "maior_erro_referencia_Pearson": 6.661338147750939e-16,
+  "maior_erro_referencia_WCO": 9.71445146547012e-17,
+  "arquivos_fontes_congelados": 257,
+  "arquivos_anteriores_preservados": 2251,
+  "status_arquivos_anteriores": "mesmos nomes, tamanhos e mtimes antes/depois; hashes das entradas consumidas iguais",
+  "verificacoes": [
+    "fontes, catálogo e recortes",
+    "preparo por formulação independente",
+    "150 recortes: autocorrelação direta e Morlet temporal em todas as escalas",
+    "25 panoramas completos: perfil temporal auditado confrontado com FFT",
+    "Hellinger contra distância euclidiana e casos limite",
+    "invariância de normalização à amplitude",
+    "A por soma de postos e macro média entre grupos",
+    "referências vinculadas por IDs, não por posição"
+  ],
+  "limites": "Não reaudita quadros originais, escolha morfológica ou os 300 mapas WCO; reutiliza a auditoria v16.3.",
+  "duracao_segundos": 5.443545207963325,
+  "data_utc": "2026-10-27T01:44:06.059628+00:00",
+  "versoes": {
+    "python": "3.13.2",
+    "numpy": "2.3.4",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3"
+  },
+  "codigo_sha256": {
+    "scripts/run_analysis.py": "71a54202d40cd61784a3a7571b7008ceab902051a3afca4aa05b49ca075348c1"
+  }
+}

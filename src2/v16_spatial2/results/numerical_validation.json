@@ -1,0 +1,17 @@
+{
+  "biased_literal_sum_max_error": 1.3877787807814457e-16,
+  "unbiased_literal_sum_max_error": 3.9968028886505635e-15,
+  "morlet_independent_time_convolution_max_error": 1.0743379877633913e-14,
+  "padding_8_vs_12_sigma_max_error": 1.7865765401726057e-15,
+  "self_zero_lag_max_error": 0.0,
+  "self_global_max": 1.0,
+  "independent_signals_max_wco": 0.6364404088479713,
+  "known_delay_100_peak_paper_lag": -100,
+  "swap_reflect_magnitude_max_error": 1.1102230246251565e-16,
+  "coherence_amplitude_sign_invariance_error": 1.2713863295488181e-10,
+  "legacy_conv_vs_fft_max_error": 3.219146750601992e-16,
+  "100_px_sinusoid_ridge_px": 99.85975657695747,
+  "constant_signal_rejected": true,
+  "elapsed_seconds": 0.1555882500251755,
+  "status": "PASS"
+}

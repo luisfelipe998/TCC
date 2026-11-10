@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "ensaios": 25,
+  "pares_intra": 87,
+  "pares_inter": 213,
+  "celulas_pearson": 625,
+  "pares_pearson": 300,
+  "figuras_inter": 213,
+  "figuras_estatisticas": 5,
+  "rotulos_inter": {
+    "favoravel": 137,
+    "desfavoravel": 76
+  },
+  "links_locais_validos": 29,
+  "arquivos_finais": 229,
+  "coeficientes_csv_iguais_ao_npz": true,
+  "pares_duplicados": 0,
+  "arquivos_pdf": 0,
+  "auditoria_inter": "../lote_inter/verificacao.json",
+  "auditoria_estatistica": "../estatistica/verificacao.json"
+}

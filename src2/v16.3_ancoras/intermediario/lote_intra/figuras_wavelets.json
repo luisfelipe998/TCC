@@ -1,0 +1,698 @@
+[
+  {
+    "pair_id": "plug_m05q01_001_m06q01_001_comparavel_n2048",
+    "arquivo": "plug_m05q01_001_m06q01_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "3fd20edfa0227ca9d34fbd940e4f65e6b2a167a675ea40c16c8a03791e71f18e",
+    "png_sha256": "c4409eb08ce948dbe3d91848ed6cef4cc1953bdb2dc9fc800e28a04c7447c30e"
+  },
+  {
+    "pair_id": "plug_m05q01_001_m07q05_001_comparavel_n2048",
+    "arquivo": "plug_m05q01_001_m07q05_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "91f6f044ee054e73ec82adf3ba32ad8c52f6c32d9a8bab08dacbf6a22ebfe64e",
+    "png_sha256": "8975fef93b65e1517dec8eece73b16aa4c86b5e8c70c900627d6ba4111e47021"
+  },
+  {
+    "pair_id": "plug_m06q01_001_m07q05_001_comparavel_n2048",
+    "arquivo": "plug_m06q01_001_m07q05_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "3fbd75375804e2bfa81f37a2e13be2864d0ddc890339d2ac393e2bee0c7215e5",
+    "png_sha256": "814bc1316b9b6c1335289784a661a6bfb8e6874873289472e57bec637aafe2a5"
+  },
+  {
+    "pair_id": "slug_m04q01_001_m05q05_001_comparavel_n2048",
+    "arquivo": "slug_m04q01_001_m05q05_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "ee795b8c49452ce70b7a72db01bb8dc6dd50f1520f9cc907461f9bd755f95c9b",
+    "png_sha256": "e77b710303ea5e6cb8ad83b6b6b140b5e2851b3720f6c2339f549f26a0edb155"
+  },
+  {
+    "pair_id": "slug_m04q01_001_m06q05_001_comparavel_n2048",
+    "arquivo": "slug_m04q01_001_m06q05_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "f4e9fba31ea903425a8bd6f034ecf6314af1e5c9522c69cbe22041f25bd20847",
+    "png_sha256": "406fc2878c39103636815d9cb451042c7da11c11450d0e49ca2f20fc800ed6e8"
+  },
+  {
+    "pair_id": "slug_m05q05_001_m06q05_001_comparavel_n2048",
+    "arquivo": "slug_m05q05_001_m06q05_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "c5433168aa080655e8ce5ec4157f5d52f35caa679e15576c198337ed65b90e95",
+    "png_sha256": "895eba4549b0c306d41c3a0365a9e503a8a2ed4ec109f06bcaea0dd96d1f3020"
+  },
+  {
+    "pair_id": "churn_m03q05_001_m04q10_001_comparavel_n2048",
+    "arquivo": "churn_m03q05_001_m04q10_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "de08a24eb1f1ffb648995f1b541e221b5f0a0a5adce8807e8d7a85024a752f8d",
+    "png_sha256": "fdd8552fcd2d6e0b04c19436300b71e15c12788352f66d3b43207a8d4db1d2ba"
+  },
+  {
+    "pair_id": "churn_m03q05_001_m04q20_001_comparavel_n2048",
+    "arquivo": "churn_m03q05_001_m04q20_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "122b50d140b177941d2d4f192c8907300c2ba5707070bbd46a9145b3609b6a86",
+    "png_sha256": "5890ac24e1cfff0cc40ff570c322693aa315a2809526bb0aece7d5a38ad7b4e5"
+  },
+  {
+    "pair_id": "churn_m03q05_001_m05q10_001_comparavel_n2048",
+    "arquivo": "churn_m03q05_001_m05q10_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "474e1e7872e5af005805d47a83f5edec4da402ea76912ecbe59932cbb22b4d07",
+    "png_sha256": "a1cf8aacfe7b7ca10eee66aae6d4f24fd6b227e486b3054342a8e7988abb22dc"
+  },
+  {
+    "pair_id": "churn_m03q05_001_m05q20_001_comparavel_n2048",
+    "arquivo": "churn_m03q05_001_m05q20_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "31f4266f896095f257c1d56a9f18983651c07b1e2d8b9b71c8c1ab49a30a7006",
+    "png_sha256": "869c2ba31e6425befbc087ade3a9ae7db69a92f109b9689db2b0c8a3db4c6d98"
+  },
+  {
+    "pair_id": "churn_m03q05_001_m05q40_001_comparavel_n2048",
+    "arquivo": "churn_m03q05_001_m05q40_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "c8791b2ca42153c225880d59aa949a98d5326c16e7b4f113bc88e6c73c83489d",
+    "png_sha256": "275f7e8c5080ecc9d24c85832bed569202dff8b2c83a5a281bb2d0c9cb17b9c2"
+  },
+  {
+    "pair_id": "churn_m03q05_001_m06q10_001_comparavel_n2048",
+    "arquivo": "churn_m03q05_001_m06q10_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "b53ed9bee733190ea292880f5114d00a2ae3561bf8568f3b27da56fd4e3c90d1",
+    "png_sha256": "8f2785d50127250795c920964a54630dd97f4fb975c500abf7c6a1f9d1f2e9a3"
+  },
+  {
+    "pair_id": "churn_m03q05_001_m06q20_001_comparavel_n2048",
+    "arquivo": "churn_m03q05_001_m06q20_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "a9edcc38af8ba41c5909ba7b2cbeb5a6a45240e6a9798a9d36f407f84b7f548f",
+    "png_sha256": "8e4f49329b765a313ecd988f459a92616dad7d7f4ee0764e0a04d3977b89d625"
+  },
+  {
+    "pair_id": "churn_m03q05_001_m07q20_001_comparavel_n2048",
+    "arquivo": "churn_m03q05_001_m07q20_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "b9707c9ed9971c252149e008cb377431d1eec056ef6b1f4023676392f19ffbbc",
+    "png_sha256": "81e7a616b64013f4dee8b675deb1a0d778d9f8714c420e7abdad59647d2ee59b"
+  },
+  {
+    "pair_id": "churn_m03q05_001_m07q40_001_comparavel_n2048",
+    "arquivo": "churn_m03q05_001_m07q40_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "197ddc1b0d0a160323f3f97478a4fad425b8e5977a54ee0c1c93eb48632a2b2c",
+    "png_sha256": "4bdcff3e0e1a8953d02c786f74692ec6f4cee7adf605752dbcf3cefd82f1534a"
+  },
+  {
+    "pair_id": "churn_m04q10_001_m04q20_001_comparavel_n2048",
+    "arquivo": "churn_m04q10_001_m04q20_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "525b14bcb2e4c9371d31dea2cd049511d33ba4d5081412849d809117f545f90d",
+    "png_sha256": "9c63686932e03246ba35c60db0dff625c73f89a36856b446430cf5e3d01a90e5"
+  },
+  {
+    "pair_id": "churn_m04q10_001_m05q10_001_comparavel_n2048",
+    "arquivo": "churn_m04q10_001_m05q10_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "31f9274b9b5ec7141a9f0a046347a1f5b062c4169bed687be8bbcfbae7d97cb8",
+    "png_sha256": "e3573167bf726575460f99c576b166319912ee225b04607ccea485b860712833"
+  },
+  {
+    "pair_id": "churn_m04q10_001_m05q20_001_comparavel_n2048",
+    "arquivo": "churn_m04q10_001_m05q20_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "a98a9a994fdae097bcba85718b672cf06a8909d3516c06df00ccd132c82f4db5",
+    "png_sha256": "6bc52080add559729907a9d21373c38134cc7d41ad216a164da4adc1962d58cf"
+  },
+  {
+    "pair_id": "churn_m04q10_001_m05q40_001_comparavel_n2048",
+    "arquivo": "churn_m04q10_001_m05q40_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "cf60b2bafea32b5a986f89e7354b5e04e1b2646d21ed3ebeef3ff190517c8c2c",
+    "png_sha256": "f71836f87be97c6824a34c8e3ed717966a35845803d28df5a3073f76cc484643"
+  },
+  {
+    "pair_id": "churn_m04q10_001_m06q10_001_comparavel_n2048",
+    "arquivo": "churn_m04q10_001_m06q10_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "ff26c593407894cae2364d046ae46de4809d4b81afb79c1cef6fbe57f587ec97",
+    "png_sha256": "4a2d2cc8b84d3235db9ff85bb0a6e058aad1f3c6a3f6c300af463021b5676fcd"
+  },
+  {
+    "pair_id": "churn_m04q10_001_m06q20_001_comparavel_n2048",
+    "arquivo": "churn_m04q10_001_m06q20_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "0590692e440c9d25acd0558334317d3d4e41591ae5a46d93308594957f126c85",
+    "png_sha256": "b66a96070d817bec19a0427e342eb9ebeb623455e4b7808a5ab177036312084c"
+  },
+  {
+    "pair_id": "churn_m04q10_001_m07q20_001_comparavel_n2048",
+    "arquivo": "churn_m04q10_001_m07q20_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "6c4f90f7eea6abd531d05125440ab31aa7c71bcda96e5e069f726b91a4cb61f3",
+    "png_sha256": "2ad6f0d241f844a771ad51b8b3de7a9622e7b0b2a6eb06acace8b1230e8654a0"
+  },
+  {
+    "pair_id": "churn_m04q10_001_m07q40_001_comparavel_n2048",
+    "arquivo": "churn_m04q10_001_m07q40_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "898f7f6b522cfd59036be70f05956c1c08feca889bb1d3181a7d638453d72b02",
+    "png_sha256": "3eb6eebe3c1f410932efe983af6a9532dbd2a4beaccb03c9204c4d75b075a72c"
+  },
+  {
+    "pair_id": "churn_m04q20_001_m05q10_001_comparavel_n2048",
+    "arquivo": "churn_m04q20_001_m05q10_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "7855c5adfdb54a441e28d2c5dd2dc85423e32ccece608f82508b0e916c971a7e",
+    "png_sha256": "79ff3b4e628ecc240629bcf55b0049d23c4f7d8a460a00cb643b649108d4a499"
+  },
+  {
+    "pair_id": "churn_m04q20_001_m05q20_001_comparavel_n2048",
+    "arquivo": "churn_m04q20_001_m05q20_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "35d85bc1547249a200719fc9dee9b010f038445d952ebbf9422051e5f78ba575",
+    "png_sha256": "1314265b6c380f1ec40cfab61fb88e5571914866120688d285c86f808900f23e"
+  },
+  {
+    "pair_id": "churn_m04q20_001_m05q40_001_comparavel_n2048",
+    "arquivo": "churn_m04q20_001_m05q40_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "166eb567f590259fcd73e0e96bf165c7fc9e6db36df2b66fc4076b052ace1701",
+    "png_sha256": "8b75edd7d9424492b8fa5e7c4cb7dc8109f3d2ffe63862fae4707481cfa2c0ad"
+  },
+  {
+    "pair_id": "churn_m04q20_001_m06q10_001_comparavel_n2048",
+    "arquivo": "churn_m04q20_001_m06q10_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "d225f89764df64fdd7b8766b4dc118bdd685ebe687ec0002ca7ae60ebd930133",
+    "png_sha256": "dfeedbe2c48290e8fb5f5892ccac7b6266334f9150288977c8a6653c9449c6b9"
+  },
+  {
+    "pair_id": "churn_m04q20_001_m06q20_001_comparavel_n2048",
+    "arquivo": "churn_m04q20_001_m06q20_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "dc5191ab64fba0f94bbd24624af547df06a532cf7f9ba1051f63d2e89f2318d4",
+    "png_sha256": "49d1b0a71c718c20e539c52d28a4f1e8f7460c72d37a3640eac5577c31469299"
+  },
+  {
+    "pair_id": "churn_m04q20_001_m07q20_001_comparavel_n2048",
+    "arquivo": "churn_m04q20_001_m07q20_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "cd9afe0b64ab6e386968068e65417a3a099bad5b70ebaacd4560ef08c48711b8",
+    "png_sha256": "4c30e3cb13031eeede934c457be0cde6a0b17987d69c262a887fee732e9bdd5a"
+  },
+  {
+    "pair_id": "churn_m04q20_001_m07q40_001_comparavel_n2048",
+    "arquivo": "churn_m04q20_001_m07q40_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "045a76353f8b008cfdad6f718a9b0eca107e4e890145a83fd0f9eed1f613bb0d",
+    "png_sha256": "58c67ea0ffc6acca47baf8cd46eae2c5532dd05f5aa9583c4c81f318a889ab8f"
+  },
+  {
+    "pair_id": "churn_m05q10_001_m05q20_001_comparavel_n2048",
+    "arquivo": "churn_m05q10_001_m05q20_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "c04ec63609566daa0560a8e426b660ebcd042387fed3b6092a3a31ce330ec6f8",
+    "png_sha256": "a6bba6096db934ff70dc6a73ab6e090dadaab8a15e0b5e783e740a5e3f2bd4e8"
+  },
+  {
+    "pair_id": "churn_m05q10_001_m05q40_001_comparavel_n2048",
+    "arquivo": "churn_m05q10_001_m05q40_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "029cea57de8320dfaa7ade6e94ebb9b492dd27d305e4978be597dfd9b69f01ba",
+    "png_sha256": "c122090712fbd695391f1e6a8873c136216f01aacb36580a5bef1d4eb0217472"
+  },
+  {
+    "pair_id": "churn_m05q10_001_m06q10_001_comparavel_n2048",
+    "arquivo": "churn_m05q10_001_m06q10_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "8d483974ea05ecb76d1574165107362b934742f2526895b0a4d5b7edbed2e56e",
+    "png_sha256": "5952fc728491ceafc841fa2e38567679364447d3f2167f9de3b4e22af7b2d000"
+  },
+  {
+    "pair_id": "churn_m05q10_001_m06q20_001_comparavel_n2048",
+    "arquivo": "churn_m05q10_001_m06q20_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "9b3b077f9127519688b8be6bb8ffb75f2b05d46e6b78fbefc33b5a5f855ba5c8",
+    "png_sha256": "7560f567dfd54ea22223a7d04611652525e495dcd5085e8f91d64fb7a04e2f5e"
+  },
+  {
+    "pair_id": "churn_m05q10_001_m07q20_001_comparavel_n2048",
+    "arquivo": "churn_m05q10_001_m07q20_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "ad4ee5e8dee2c13832924313daa13fdf990e80eeaf441a86804c16829cc2d047",
+    "png_sha256": "d9afb8d6828710b4c092345ac8862143c50e3d6468d07555f75e08579e6d29e3"
+  },
+  {
+    "pair_id": "churn_m05q10_001_m07q40_001_comparavel_n2048",
+    "arquivo": "churn_m05q10_001_m07q40_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "93218d9aa2d24ce3fd32f9db18f346571a4d90c829463395eb3c79dcf4b333ca",
+    "png_sha256": "44aab34f7081edc0524535b0e69c47e694d0897a69c21be1c05d7206a603989a"
+  },
+  {
+    "pair_id": "churn_m05q20_001_m05q40_001_comparavel_n2048",
+    "arquivo": "churn_m05q20_001_m05q40_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "b3cb5626144bdedbea90ff62d358fc02a5107c428b695e8d7e8986078069e798",
+    "png_sha256": "39fa39cff6a25490014d6dcc4e61273df2b2d3bcf99d6438abfc3e27237fcc9a"
+  },
+  {
+    "pair_id": "churn_m05q20_001_m06q10_001_comparavel_n2048",
+    "arquivo": "churn_m05q20_001_m06q10_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "c45408f423d57a7b19fad44c5705797b61a2a93c3baf1dfe7575630f46a94427",
+    "png_sha256": "d5fa76e5978d156ba04e8b48ef882903c1f2abdb43997847f0e142d6607e008d"
+  },
+  {
+    "pair_id": "churn_m05q20_001_m06q20_001_comparavel_n2048",
+    "arquivo": "churn_m05q20_001_m06q20_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "5fd420d84ec8094ba99c1b6ea6dff66796f8975d410a5649814fefca80d1c3a5",
+    "png_sha256": "f4fb906b1c6e51cccd907098d26459621378a7d82ae41ce23f9dc7a1a836130e"
+  },
+  {
+    "pair_id": "churn_m05q20_001_m07q20_001_comparavel_n2048",
+    "arquivo": "churn_m05q20_001_m07q20_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "814cd1d565c2a09fc4ef88cbc248f49e93e41717fed3d33ed052d793d00792d7",
+    "png_sha256": "69858bc0b5e92e26860eff79d0ee4f476d8a8b16c26188a68bb27e67edcc3a75"
+  },
+  {
+    "pair_id": "churn_m05q20_001_m07q40_001_comparavel_n2048",
+    "arquivo": "churn_m05q20_001_m07q40_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "ba44bab5ab06663306484a79710c4871058b7043f998d987192aeba25d440f4b",
+    "png_sha256": "d3434bbc4d2a6ef4ca3acc981bfd461c9f57a6c618ca901045b0090971fc40cb"
+  },
+  {
+    "pair_id": "churn_m05q40_001_m06q10_001_comparavel_n2048",
+    "arquivo": "churn_m05q40_001_m06q10_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "35886b47a0c167d14499648d4f08c02f6f5e430c0b41f0e2216d04f6406a0b00",
+    "png_sha256": "ce5007cf9a92af4138d7952569b8fa26235f3caaabb9ecc7f1e64302816977a7"
+  },
+  {
+    "pair_id": "churn_m05q40_001_m06q20_001_comparavel_n2048",
+    "arquivo": "churn_m05q40_001_m06q20_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "939a807dab9464a71f97a0b62d4165a002698a9e8ad789ed1979d1a66cd043c2",
+    "png_sha256": "ded00d73cb15f6247d049aceef354f1e1fb249fac34e599255fc2ec9dfc434f6"
+  },
+  {
+    "pair_id": "churn_m05q40_001_m07q20_001_comparavel_n2048",
+    "arquivo": "churn_m05q40_001_m07q20_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "344efd7b8ad4fab3b50b3fd2889a0405906a5567743ad3d69a2f99a30e754e8f",
+    "png_sha256": "63239c10ffe0ef1645a9c61e01479c9c7f93b7d9e47c56c5931df4ea1df6e003"
+  },
+  {
+    "pair_id": "churn_m05q40_001_m07q40_001_comparavel_n2048",
+    "arquivo": "churn_m05q40_001_m07q40_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "4ed7fb16b2f69af5b0c0ccc4746011a64e46724109cd84c1cc28b80400d228d8",
+    "png_sha256": "f5f5048bec86e074343f69c1333ebb5b1451613281dfc769ccf25a45c302c878"
+  },
+  {
+    "pair_id": "churn_m06q10_001_m06q20_001_comparavel_n2048",
+    "arquivo": "churn_m06q10_001_m06q20_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "3ca57bb7e0ce459b33d7b8ced498c920b2efe0a42a433930a7d2d333f55f0e46",
+    "png_sha256": "54bb35e61be389ebac7718aaab20b8d0a9272b648ee2a554c33ec1497c8ca3dc"
+  },
+  {
+    "pair_id": "churn_m06q10_001_m07q20_001_comparavel_n2048",
+    "arquivo": "churn_m06q10_001_m07q20_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "a6b0f0ff4655d220d33cba9435f892910195f45483dc81f15f8128b19343a1df",
+    "png_sha256": "95bfc688be3b23819aca18601981d36358e9ca6e6fde0c88d81c75f7c02112c5"
+  },
+  {
+    "pair_id": "churn_m06q10_001_m07q40_001_comparavel_n2048",
+    "arquivo": "churn_m06q10_001_m07q40_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "625a249f2816e7bc2c690456c99939c8d70cba89b4c091e2ef9277060c6457f6",
+    "png_sha256": "ac610f3c447f9379fa1daf77f8717605d19b1ea88cff74bd617bac28c08fa334"
+  },
+  {
+    "pair_id": "churn_m06q20_001_m07q20_001_comparavel_n2048",
+    "arquivo": "churn_m06q20_001_m07q20_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "3ab6df01e4a0a97ec56bdd4c501c9819e5b959ef4c11ae5f449548153e17ebe5",
+    "png_sha256": "679ed636e7f89cec6ed75dc751434c755f5473d8464b410598fe9f40fcdc125f"
+  },
+  {
+    "pair_id": "churn_m06q20_001_m07q40_001_comparavel_n2048",
+    "arquivo": "churn_m06q20_001_m07q40_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "cc535cec5511c00aa0dff50baa52d0cad69ff8d2ab01d73b6a74bfe92bbeef24",
+    "png_sha256": "db7219f2c9ea26a809dcb008ff7011bfe5208d811bd1880b7fcd794c7a325711"
+  },
+  {
+    "pair_id": "churn_m07q20_001_m07q40_001_comparavel_n2048",
+    "arquivo": "churn_m07q20_001_m07q40_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "133111461b3ab827917e0cf86dfff3915a1d8c8a6e425bfbd7f0411518d7d5b5",
+    "png_sha256": "8a809af4fde7220c9cc846fa1e9166920483afcd2c4a731942e323a267bd7d45"
+  },
+  {
+    "pair_id": "wavy_annular_m03q10_001_m03q20_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m03q10_001_m03q20_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "dec20498203d989a723f1c2cacdd9a292a2a1c0d1a79a6cfd20908bc248c904a",
+    "png_sha256": "fa16e1afb1d9864ad86b47317d1b6ae04a537b7680541ed3c33c05a251d89e68"
+  },
+  {
+    "pair_id": "wavy_annular_m03q10_001_m03q40_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m03q10_001_m03q40_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "7b805b5ec94e9842806c24eb33f5a4cb87f14979aafc708582528517a6359506",
+    "png_sha256": "e6469bf9e058308714102aaf9593fe5e49a839fa0222b95872f8f3068084dd9d"
+  },
+  {
+    "pair_id": "wavy_annular_m03q10_001_m04q40_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m03q10_001_m04q40_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "8cf2ede270947b76ee194a1de13e338f608a0383cbb76e6ed9d0ee1e367647f1",
+    "png_sha256": "01d76cacb5123ab7f32b1c69eb775fac4bd69a2c68118583b8556b5b6abd0302"
+  },
+  {
+    "pair_id": "wavy_annular_m03q10_001_m04q80_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m03q10_001_m04q80_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "9099392c125aaddafe17f2fb5e4916166d8678240074e1f05df8d2fe199525f2",
+    "png_sha256": "5c6b1c1f620fc0694a482853bd799c843294f6311fbc9006dd6d991dcada885c"
+  },
+  {
+    "pair_id": "wavy_annular_m03q10_001_m05q80_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m03q10_001_m05q80_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "902d2219b5e10c9ba1106bf27094755f467950422b0d42f09320ea1b5ffad4ad",
+    "png_sha256": "181bd009722a4d85dc0c52e7f79e44eec2ac2a0b473fbfb50d3d26c511019fe1"
+  },
+  {
+    "pair_id": "wavy_annular_m03q10_001_m06q40_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m03q10_001_m06q40_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "cb323597476e45fcce817b0b7cf99c12f66aef1532b4e24c3fb3b9094ad99116",
+    "png_sha256": "8d73c5e47b43281a6ec9231499f49158ced99462f95309ab36f99e5d6de7c7b7"
+  },
+  {
+    "pair_id": "wavy_annular_m03q10_001_m06q80_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m03q10_001_m06q80_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "c1eda060c8afc892bee08495d3eb64df7343c3fddab3b729b87cbc0ad8dd00b2",
+    "png_sha256": "d79ed198245ced51ab59d3de2a5c95647aea4a89d7bef4458bc0b421724ab40e"
+  },
+  {
+    "pair_id": "wavy_annular_m03q10_001_m07q80_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m03q10_001_m07q80_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "1830b78814568f2feefa011a15b7601b9aa8333357f0d2cc71c07ea60fe96096",
+    "png_sha256": "36b0b212f17f4abb042cb24e1da8f55490ae947cdf02992ab6eacb28b82b1770"
+  },
+  {
+    "pair_id": "wavy_annular_m03q20_001_m03q40_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m03q20_001_m03q40_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "0b1c15bd2487d74dc30cd5087fc9eaed30aec514e56bf2c2ff18d806db425291",
+    "png_sha256": "5d876f1de0f15339267affc66b7109f4b6ed638a70b7230713453a466f2b15b8"
+  },
+  {
+    "pair_id": "wavy_annular_m03q20_001_m04q40_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m03q20_001_m04q40_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "34ae4cc86c0e1b11e436d316fe8568f56645176533073c328e1ed6b04f4dd697",
+    "png_sha256": "6c1db368061b7e9f940ab8c7a00fb8b8ba64095b6193f3c255efcfcca1fe15e6"
+  },
+  {
+    "pair_id": "wavy_annular_m03q20_001_m04q80_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m03q20_001_m04q80_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "833088251163c6224a07eed2df6a2bc099208bde264ed7c62afeed809153b04f",
+    "png_sha256": "0a04c9819c1ec6e4da365bf481d95d86aea216f145d9a02aa3d60427acec7ecf"
+  },
+  {
+    "pair_id": "wavy_annular_m03q20_001_m05q80_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m03q20_001_m05q80_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "67163f8e07fc446a5495cc0d334494cb0226d45b83b785e4c2542352d942da30",
+    "png_sha256": "129b2477479629bc8beea073ec7a04d172fd48b66836526dfd7f4ddb22fd2cd3"
+  },
+  {
+    "pair_id": "wavy_annular_m03q20_001_m06q40_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m03q20_001_m06q40_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "37e24f0de1f92f534160664a07afef5b6c2921529ad33f5fff35062f7552abf6",
+    "png_sha256": "1529d5575f23bce286cb8709900fce818cd2beee9a4d199c0375f04fc54a06eb"
+  },
+  {
+    "pair_id": "wavy_annular_m03q20_001_m06q80_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m03q20_001_m06q80_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "054d0a2b01297e939a7af00e870a47314e9a7b2be4b3391f3bfd2b279ec9f3e7",
+    "png_sha256": "e11512bde3e9f322819997d933f4dba1c85f72f875b777891a5e063994708027"
+  },
+  {
+    "pair_id": "wavy_annular_m03q20_001_m07q80_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m03q20_001_m07q80_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "6908bf779ba481ce1c1a203004850adf5bdbfa513a4cbf0a683cecf445050379",
+    "png_sha256": "7ed31c1fab78507aa3e1087048e3045fcd1658adcc205aba312cd462c06cf268"
+  },
+  {
+    "pair_id": "wavy_annular_m03q40_001_m04q40_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m03q40_001_m04q40_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "c6a073b49af0493b4d2ba1ca247d590797fcccf6a1c0890e3068f04ddf513183",
+    "png_sha256": "da1469145f9d4e7728576e8cd521c80d2a7f95bd0309d337a457cd399f1f1f6f"
+  },
+  {
+    "pair_id": "wavy_annular_m03q40_001_m04q80_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m03q40_001_m04q80_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "7b955c78f9965fd59f2b5e35512d3bbb8b013d438fc22ed77bc76060133f4509",
+    "png_sha256": "fca191bde17c9fc2720a634b3f6e8849f0c48a0dac1d807f3ac0fdb906dbeabc"
+  },
+  {
+    "pair_id": "wavy_annular_m03q40_001_m05q80_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m03q40_001_m05q80_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "e4e0f2a29ca89d6db6fdc8b85f53fc0bdd907091f9ea362a66369843fdc2a3c4",
+    "png_sha256": "cd666a69c394f356e8ceca4592e7430e560da814265b1810389cd1175b814f41"
+  },
+  {
+    "pair_id": "wavy_annular_m03q40_001_m06q40_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m03q40_001_m06q40_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "5969b7ff9b89ae4337820c4653b6c0bed89387ad02820f3348699dd40350f934",
+    "png_sha256": "6951b8c44224420f1129ed5a86a68e1f61d0197f403bc84044a70825bfe81611"
+  },
+  {
+    "pair_id": "wavy_annular_m03q40_001_m06q80_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m03q40_001_m06q80_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "a3f29c1490a13255fdf34753d1d15b55acb1575c00af9aae45de8e616a0cc3e4",
+    "png_sha256": "2de40923cc15d71c8dd2ca07f8cb961b69c3a3ecff2d386a133244d000ab8e4d"
+  },
+  {
+    "pair_id": "wavy_annular_m03q40_001_m07q80_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m03q40_001_m07q80_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "66de976b1502a7b2f281f6db43a5b32cae5a3eec894c950529c29d6f96db49bc",
+    "png_sha256": "7bbe02637a3d9a53b1fe9ea5df028d9a2716a45e4c6afd6e81fa1b5045f63b35"
+  },
+  {
+    "pair_id": "wavy_annular_m04q40_001_m04q80_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m04q40_001_m04q80_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "54e69eac01950a78533677b071eeb33755012d26a525af3e207d11b5fc4db91a",
+    "png_sha256": "52bac98944c01eace8f62e6089d71142ba57e516c1a2a5c38f628cfd3723d3eb"
+  },
+  {
+    "pair_id": "wavy_annular_m04q40_001_m05q80_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m04q40_001_m05q80_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "a89232f48de3178343408d7ab6c3b2bc4bb3173c8e81ebd2bd16627ebd58baa4",
+    "png_sha256": "6962cd7beae23a7cca16b6560d20de458762f7fea99d49a0d20bdb17d2f8799f"
+  },
+  {
+    "pair_id": "wavy_annular_m04q40_001_m06q40_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m04q40_001_m06q40_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "cc138512ab45c4740e8fb37866cb8a039068a1fb3e80ab96901d4d8ec347c608",
+    "png_sha256": "f457672715c0145324bbc643be3a4edb4384973b2a9fe16972ce1efa7894bc5c"
+  },
+  {
+    "pair_id": "wavy_annular_m04q40_001_m06q80_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m04q40_001_m06q80_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "0b2a5cd815b47f4a0086dc70320de3188c070843158a0e89c98f836f51d29b73",
+    "png_sha256": "1b8eaa0418e499be6bb84f33d134806525521309b5d3f04d6af61a3786c7d564"
+  },
+  {
+    "pair_id": "wavy_annular_m04q40_001_m07q80_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m04q40_001_m07q80_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "1e009e3d58aa77c7cf50556d6600168eb5ac30b87458433a4646994cb8828ed3",
+    "png_sha256": "9ae3c7f742671f57c2ed152fce9da4f1740b733781f7fd1240fc0bbed164ae12"
+  },
+  {
+    "pair_id": "wavy_annular_m04q80_001_m05q80_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m04q80_001_m05q80_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "1dbaca74a37cb757e05b59f2f5544b16021215b6c685f7fa76f0d48799e12312",
+    "png_sha256": "b9adb2126db2e509925ab91d10e38be5525eee6e0c507e057beeb0f024270198"
+  },
+  {
+    "pair_id": "wavy_annular_m04q80_001_m06q40_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m04q80_001_m06q40_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "61a667ba69f71f1ade349cac8778f425af9ef55f3726578dea0f44e7ffc0dc23",
+    "png_sha256": "ea794e034cd1709ab259607070599dd08ad6c4b82534044291439f4c0806d061"
+  },
+  {
+    "pair_id": "wavy_annular_m04q80_001_m06q80_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m04q80_001_m06q80_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "5fc54122e142d72d34b470e099d0720e41eb0655f0334875c62c13ae7b112e87",
+    "png_sha256": "0827582234a764ce687792d10ad811e0604462bd8e3b9b4157934f0cab428bff"
+  },
+  {
+    "pair_id": "wavy_annular_m04q80_001_m07q80_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m04q80_001_m07q80_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "4802880d56b923c524797f5f504d5f411f6dc36c82e9e18d72a76d5e4c9bf0da",
+    "png_sha256": "13922f302f00d6734b2e69cebc8b3d032e571574141db36f0ac45e20bf777437"
+  },
+  {
+    "pair_id": "wavy_annular_m05q80_001_m06q40_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m05q80_001_m06q40_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "6593e61bbaef4af62106b61fe9034ee8b321561c1ad0f206ed088be6f3bd8dbf",
+    "png_sha256": "7945acd6ac491093b8b8ea0088f3de5e75f7187396eb66147c4934175c3147bd"
+  },
+  {
+    "pair_id": "wavy_annular_m05q80_001_m06q80_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m05q80_001_m06q80_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "4d7a3bbd0a30e1d38f51bc5d4dd95a03bc5276ff38eaf1b8f8b32e0778a2bba4",
+    "png_sha256": "1ac7f3aef76d686d117d56812eaebcd50d9f1387da27821fd0267cce1867b8c7"
+  },
+  {
+    "pair_id": "wavy_annular_m05q80_001_m07q80_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m05q80_001_m07q80_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "14f07d5ba61486784f84991985b45d4b83040ad7b665e8183875176638e4adcc",
+    "png_sha256": "4e32369e7860018242345f56b64237b9ca08f2b0a64e8df8ce0297363591ccc6"
+  },
+  {
+    "pair_id": "wavy_annular_m06q40_001_m06q80_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m06q40_001_m06q80_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "70816e43d4b3c221d1f7353f903aad7ff558009b85e88ee8771856d76f8f698f",
+    "png_sha256": "f0093b6fceb009887677e1a45dfa9f76e35a5a81a75759bed2723443e43b3209"
+  },
+  {
+    "pair_id": "wavy_annular_m06q40_001_m07q80_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m06q40_001_m07q80_001_favoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "c1c8c512ab6798b217a729256459f6fdc0af6c25e7cdfeb82b412d76adc8807d",
+    "png_sha256": "f4e8d4ef9bd9ceb8feaaf59b2a0e7ed4455d2c1eb4238af72f00a21b26ec616d"
+  },
+  {
+    "pair_id": "wavy_annular_m06q80_001_m07q80_001_comparavel_n2048",
+    "arquivo": "wavy_annular_m06q80_001_m07q80_001_desfavoravel.png",
+    "perfil": "comparavel",
+    "comprimento": 2048,
+    "mapa_sha256": "66d0f81cdf09fca3476b058b5062aab36fc085664f998b3b2bb15b55c42cdcfe",
+    "png_sha256": "8d3bc5e04cd415051486b6e825fe124ec552dd7ab2f45d22a7ed2fa0552466bf"
+  }
+]

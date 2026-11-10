@@ -1,0 +1,101 @@
+ensaio,padrao,janela,inicio,fim_exclusivo,panorama_px
+m03q05_001,churn,prefixo,0,2048,9586
+m03q05_001,churn,centro,3769,5817,9586
+m03q05_001,churn,sufixo,7538,9586,9586
+m03q05_001,churn,ancora,1232,3280,9586
+m04q10_001,churn,prefixo,0,2048,8829
+m04q10_001,churn,centro,3390,5438,8829
+m04q10_001,churn,sufixo,6781,8829,8829
+m04q10_001,churn,ancora,1104,3152,8829
+m04q20_001,churn,prefixo,0,2048,9344
+m04q20_001,churn,centro,3648,5696,9344
+m04q20_001,churn,sufixo,7296,9344,9344
+m04q20_001,churn,ancora,4050,6098,9344
+m05q10_001,churn,prefixo,0,2048,7001
+m05q10_001,churn,centro,2476,4524,7001
+m05q10_001,churn,sufixo,4953,7001,7001
+m05q10_001,churn,ancora,3659,5707,7001
+m05q20_001,churn,prefixo,0,2048,7391
+m05q20_001,churn,centro,2671,4719,7391
+m05q20_001,churn,sufixo,5343,7391,7391
+m05q20_001,churn,ancora,3842,5890,7391
+m05q40_001,churn,prefixo,0,2048,9937
+m05q40_001,churn,centro,3944,5992,9937
+m05q40_001,churn,sufixo,7889,9937,9937
+m05q40_001,churn,ancora,1299,3347,9937
+m06q10_001,churn,prefixo,0,2048,7584
+m06q10_001,churn,centro,2768,4816,7584
+m06q10_001,churn,sufixo,5536,7584,7584
+m06q10_001,churn,ancora,4297,6345,7584
+m06q20_001,churn,prefixo,0,2048,10044
+m06q20_001,churn,centro,3998,6046,10044
+m06q20_001,churn,sufixo,7996,10044,10044
+m06q20_001,churn,ancora,1460,3508,10044
+m07q20_001,churn,prefixo,0,2048,8255
+m07q20_001,churn,centro,3103,5151,8255
+m07q20_001,churn,sufixo,6207,8255,8255
+m07q20_001,churn,ancora,4654,6702,8255
+m07q40_001,churn,prefixo,0,2048,10349
+m07q40_001,churn,centro,4150,6198,10349
+m07q40_001,churn,sufixo,8301,10349,10349
+m07q40_001,churn,ancora,4041,6089,10349
+m03q10_001,wavy annular,prefixo,0,2048,14224
+m03q10_001,wavy annular,centro,6088,8136,14224
+m03q10_001,wavy annular,sufixo,12176,14224,14224
+m03q10_001,wavy annular,ancora,2095,4143,14224
+m03q20_001,wavy annular,prefixo,0,2048,23079
+m03q20_001,wavy annular,centro,10515,12563,23079
+m03q20_001,wavy annular,sufixo,21031,23079,23079
+m03q20_001,wavy annular,ancora,17501,19549,23079
+m03q40_001,wavy annular,prefixo,0,2048,20743
+m03q40_001,wavy annular,centro,9347,11395,20743
+m03q40_001,wavy annular,sufixo,18695,20743,20743
+m03q40_001,wavy annular,ancora,10012,12060,20743
+m04q40_001,wavy annular,prefixo,0,2048,14960
+m04q40_001,wavy annular,centro,6456,8504,14960
+m04q40_001,wavy annular,sufixo,12912,14960,14960
+m04q40_001,wavy annular,ancora,7505,9553,14960
+m04q80_001,wavy annular,prefixo,0,2048,22636
+m04q80_001,wavy annular,centro,10294,12342,22636
+m04q80_001,wavy annular,sufixo,20588,22636,22636
+m04q80_001,wavy annular,ancora,10704,12752,22636
+m05q80_001,wavy annular,prefixo,0,2048,17524
+m05q80_001,wavy annular,centro,7738,9786,17524
+m05q80_001,wavy annular,sufixo,15476,17524,17524
+m05q80_001,wavy annular,ancora,3461,5509,17524
+m06q40_001,wavy annular,prefixo,0,2048,14772
+m06q40_001,wavy annular,centro,6362,8410,14772
+m06q40_001,wavy annular,sufixo,12724,14772,14772
+m06q40_001,wavy annular,ancora,2447,4495,14772
+m06q80_001,wavy annular,prefixo,0,2048,18665
+m06q80_001,wavy annular,centro,8308,10356,18665
+m06q80_001,wavy annular,sufixo,16617,18665,18665
+m06q80_001,wavy annular,ancora,5597,7645,18665
+m07q80_001,wavy annular,prefixo,0,2048,16658
+m07q80_001,wavy annular,centro,7305,9353,16658
+m07q80_001,wavy annular,sufixo,14610,16658,16658
+m07q80_001,wavy annular,ancora,7994,10042,16658
+m05q01_001,plug,prefixo,0,2048,5940
+m05q01_001,plug,centro,1946,3994,5940
+m05q01_001,plug,sufixo,3892,5940,5940
+m05q01_001,plug,ancora,1434,3482,5940
+m06q01_001,plug,prefixo,0,2048,7798
+m06q01_001,plug,centro,2875,4923,7798
+m06q01_001,plug,sufixo,5750,7798,7798
+m06q01_001,plug,ancora,4144,6192,7798
+m07q05_001,plug,prefixo,0,2048,7358
+m07q05_001,plug,centro,2655,4703,7358
+m07q05_001,plug,sufixo,5310,7358,7358
+m07q05_001,plug,ancora,4708,6756,7358
+m04q01_001,slug,prefixo,0,2048,5071
+m04q01_001,slug,centro,1511,3559,5071
+m04q01_001,slug,sufixo,3023,5071,5071
+m04q01_001,slug,ancora,88,2136,5071
+m05q05_001,slug,prefixo,0,2048,6323
+m05q05_001,slug,centro,2137,4185,6323
+m05q05_001,slug,sufixo,4275,6323,6323
+m05q05_001,slug,ancora,3347,5395,6323
+m06q05_001,slug,prefixo,0,2048,7787
+m06q05_001,slug,centro,2869,4917,7787
+m06q05_001,slug,sufixo,5739,7787,7787
+m06q05_001,slug,ancora,3356,5404,7787

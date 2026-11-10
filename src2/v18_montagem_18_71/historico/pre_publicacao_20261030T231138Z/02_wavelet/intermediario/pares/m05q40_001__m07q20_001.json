@@ -1,0 +1,32 @@
+{
+  "run_x": "m05q40_001",
+  "run_y": "m07q20_001",
+  "padrao_x": "churn",
+  "padrao_y": "churn",
+  "tipo": "intra",
+  "padrao": "churn",
+  "arquivo": "02_wavelets/churn_m05q40_001_m07q20_001.png",
+  "input_x_sha256": "56744a88c67cc1711a161c1c67263209a0b8680a81c9e947ab1612142cedfe30",
+  "input_y_sha256": "a22b31e0f1431639ea1092cd88841a8b39bb9ccb11e9139dbfbd8e60feb2bd92",
+  "comprimento": 8289,
+  "comprimento_x": 9873,
+  "comprimento_y": 8289,
+  "descarte_x": 1584,
+  "descarte_y": 0,
+  "escalas_validas": 200,
+  "wco_maxima": 0.814898766530543,
+  "wco_minima": 1.7899421220125627e-10,
+  "wco_media_integral": 0.08548174943713341,
+  "wco_maxima_zero": 0.7745805614775829,
+  "wco_mediana_zero": 0.07185701616652759,
+  "pico_lag_px": -1008,
+  "pico_lambda_px": 3000.0,
+  "erro_soma_direta": 2.7755575615628914e-17,
+  "erro_wps_independente": 4.440892098500626e-16,
+  "assinaturas": {
+    "core": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc",
+    "script": "b3d236b2076b168bd92b65564d856fa4fdb339b37d4d89ceeac068153513fa5e",
+    "input_x": "56744a88c67cc1711a161c1c67263209a0b8680a81c9e947ab1612142cedfe30",
+    "input_y": "a22b31e0f1431639ea1092cd88841a8b39bb9ccb11e9139dbfbd8e60feb2bd92"
+  }
+}

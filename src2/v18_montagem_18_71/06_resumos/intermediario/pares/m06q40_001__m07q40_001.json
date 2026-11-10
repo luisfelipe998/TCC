@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "valores": {
+    "ensaio_x": "m06q40_001",
+    "ensaio_y": "m07q40_001",
+    "padrao_x": "wavy annular",
+    "padrao_y": "churn",
+    "tipo": "inter",
+    "comprimento_x": 14722,
+    "comprimento_y": 10313,
+    "comprimento_comum": 10313,
+    "atraso_minimo": -10312,
+    "atraso_maximo": 10312,
+    "numero_atrasos": 20625,
+    "numero_escalas": 200,
+    "escalas_validas": 200,
+    "numero_valores": 4125000,
+    "pearson_r": 0.9496466902939782,
+    "wco_minima": 4.346812084141249e-09,
+    "wco_media_integral": 0.06114433293135481,
+    "wco_mediana_integral": 0.013717332469316373,
+    "wco_maxima": 0.665560074123288,
+    "pico_lambda_px": 1264.250258548761,
+    "pico_lag_px": -1886
+  },
+  "conferencia": {
+    "wco_minima": {
+      "obtido": 4.346812084141249e-09,
+      "referencia": 4.346812084141249e-09,
+      "erro_absoluto": 0.0
+    },
+    "wco_media_integral": {
+      "obtido": 0.06114433293135481,
+      "referencia": 0.06114433293135481,
+      "erro_absoluto": 0.0
+    },
+    "wco_maxima": {
+      "obtido": 0.665560074123288,
+      "referencia": 0.665560074123288,
+      "erro_absoluto": 0.0
+    },
+    "wco_maxima_zero": {
+      "obtido": 0.6061189378006252,
+      "referencia": 0.6061189378006252,
+      "erro_absoluto": 0.0
+    },
+    "wco_mediana_zero": {
+      "obtido": 0.05341257855153813,
+      "referencia": 0.05341257855153813,
+      "erro_absoluto": 0.0
+    },
+    "pico_lambda_px": {
+      "obtido": 1264.250258548761,
+      "referencia": 1264.250258548761,
+      "erro_absoluto": 0.0
+    },
+    "pico_lag_px": {
+      "obtido": -1886,
+      "referencia": -1886,
+      "erro_absoluto": 0
+    }
+  },
+  "assinaturas": {
+    "core": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc",
+    "script": "77f4fb42354191fa8d708d7f250ac9155f9be1ca08022a88fbf7cfa240e3aa73",
+    "input_x": "173d18f0ba7162757c7edc84226cb41626486a30f1b01ac8ce6ea2d091303d53",
+    "input_y": "7833432ef9aa6c116291349a496c2beae024c32c5a872359382e2dff423db284",
+    "referencia": "c51aad89282aa09f056539e233b7aac6ebfcfb5db0348fbb0f2dd700fea28608",
+    "pearson": 0.9496466902939782
+  },
+  "mediana": "numpy.median de todas as células do campo completo, sem redução de colunas"
+}

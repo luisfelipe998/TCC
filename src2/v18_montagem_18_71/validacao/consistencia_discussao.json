@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "date_utc": "2026-10-31T02:20:35.817779+00:00",
+  "scope": "Revisão editorial de consistência da Discussão com metodologia, resultados e artefatos executados.",
+  "pdf": {
+    "path": "TCC/dist/main.pdf",
+    "sha256": "d1be2c2642f7bcdc0acaf66307e612cad0e97df07e37326ccd67b63c7d2cec3c",
+    "pages": 75
+  },
+  "manuscript": "TCC/discussao.tex",
+  "manuscript_sha256": "430920d8874f7d47c57c46946c32a445a820a1c34f73f7fb45fb5e2beb36e7a0",
+  "consistency_report": {
+    "path": "../../../auditorias/consistencia-discussao/verificacao-final.json",
+    "sha256": "a8f8db665216ebf17d5041681075901f760281c00125e4371b4eca3390f87930"
+  },
+  "citations_report": {
+    "path": "../../../auditorias/consistencia-discussao/verificacao-citacoes.json",
+    "sha256": "ad0c326d723ee71035d05d985f540bad261600526089a0ed371c254a5d451a72"
+  },
+  "independent_reviews": {
+    "auditorias/consistencia-discussao/revisao-espectral.json": "43e35cf9ec86b7bf7764f6dc8fe7385302d24b35f9d4488a0fdc29f68b91636e",
+    "auditorias/consistencia-discussao/revisao-optica.json": "2623c08e7134ab2a884321568d71ff420aa581b00b749a2398e51e039509644a",
+    "auditorias/consistencia-discussao/revisao-literatura.json": "1f2298750d95022e2a81798b6eed3ef880f66693e52039b3df3de1c67a391387"
+  },
+  "methodology_unchanged": true,
+  "results_unchanged": true,
+  "conclusion_unchanged": true,
+  "data_or_code_changed": false,
+  "prior_analysis_files_preserved": 558,
+  "stage06_files_preserved": 336
+}

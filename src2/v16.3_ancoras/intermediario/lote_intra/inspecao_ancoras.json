@@ -1,0 +1,321 @@
+{
+  "data_utc": "2026-10-25T18:52:38.999766+00:00",
+  "antes_das_comparacoes": true,
+  "congelamento_sha256": "bb6251b281bd39b99ae690365d247c04d94ca7c5f9804f280d0b60722253f645",
+  "responsavel": "agente",
+  "evidencias": [
+    {
+      "arquivo": "intermediario/lote_intra/galerias_ancoras/ancoras_01.png",
+      "sha256": "e623de02339aaf12f3223a79699ff834e30ce5cc8c0ee823eea76dea05db7bdd"
+    },
+    {
+      "arquivo": "intermediario/lote_intra/galerias_ancoras/ancoras_02.png",
+      "sha256": "9b1d3089b737a9b6e526409dae033109bd3dff7b63a327ea17585fef2a00dadc"
+    },
+    {
+      "arquivo": "intermediario/lote_intra/galerias_ancoras/ancoras_03.png",
+      "sha256": "43364fbb2fc80aaba04c9220a88e2ea2154c70e6599609f59a454c9af64345a9"
+    },
+    {
+      "arquivo": "intermediario/lote_intra/galerias_ancoras/ancoras_04.png",
+      "sha256": "9156cb6273b065ae6014e28a7320b32cea1dfd50d219d19dfe622c210c98d8c3"
+    },
+    {
+      "arquivo": "intermediario/lote_intra/galerias_ancoras/ancoras_05.png",
+      "sha256": "19fa5465079e6cdaf0c66ef1bf5fd8c28bc60174cb3d5b1266f83898b9a73ea1"
+    },
+    {
+      "arquivo": "intermediario/lote_intra/galerias_ancoras/ancoras_06.png",
+      "sha256": "8717cbef0d6f507ddc7093b96197688ddc3f53c021921f56b43be0a1e6844d66"
+    },
+    {
+      "arquivo": "intermediario/lote_intra/galerias_ancoras/ancoras_07.png",
+      "sha256": "e436a4bf0872cd41373a6bc9d9cf15d7b963f3f5f1f75824da5adc79151d0029"
+    },
+    {
+      "arquivo": "intermediario/lote_intra/galerias_ancoras/ancoras_08.png",
+      "sha256": "9ea6d3a9e2b7504e1de368ec766309bbd192684f0fe4d02dd1878c07193dbd93"
+    },
+    {
+      "arquivo": "intermediario/lote_intra/galerias_ancoras/ancoras_09.png",
+      "sha256": "5f3fee462293d91deaf65605ddb74965b65fbffed1e1135e52f3ecf2b792a1d7"
+    }
+  ],
+  "ancoras": [
+    {
+      "padrao": "plug",
+      "aquisicao": "m05q01_001",
+      "anchor_id": "m05q01_001_E004",
+      "ancora": 2458,
+      "comprimento": 2048,
+      "arquivo": "01_ancoras/plug_m05q01_001_E004.png",
+      "png_sha256": "5d1020fbe632343aff47535f0e41c20dd8481943e670003a245564a4dc1e1d5c",
+      "verificada_visualmente": true,
+      "observacao": "Evento com extremidades identificaveis; centro e recorte conferidos."
+    },
+    {
+      "padrao": "plug",
+      "aquisicao": "m06q01_001",
+      "anchor_id": "m06q01_001_E010",
+      "ancora": 5168,
+      "comprimento": 2048,
+      "arquivo": "01_ancoras/plug_m06q01_001_E010.png",
+      "png_sha256": "5ea1f85211d14e757afc5155735d1e4c4fe44d211b3877719efc00fb3290a99a",
+      "verificada_visualmente": true,
+      "observacao": "Evento com extremidades identificaveis; centro e recorte conferidos."
+    },
+    {
+      "padrao": "plug",
+      "aquisicao": "m07q05_001",
+      "anchor_id": "m07q05_001_E013",
+      "ancora": 5732,
+      "comprimento": 2048,
+      "arquivo": "01_ancoras/plug_m07q05_001_E013.png",
+      "png_sha256": "33aa431df004bade89b60ea5a7daf7ad2ff0d0e5cd3c125e0878c7a05658d53e",
+      "verificada_visualmente": true,
+      "observacao": "Evento com extremidades identificaveis; centro e recorte conferidos."
+    },
+    {
+      "padrao": "slug",
+      "aquisicao": "m04q01_001",
+      "anchor_id": "m04q01_001_E002",
+      "ancora": 1112,
+      "comprimento": 2048,
+      "arquivo": "01_ancoras/slug_m04q01_001_E002.png",
+      "png_sha256": "bc938c09e540aed3f1a44b811a1466564ec5c88c29215e442b76a2cb235c4b30",
+      "verificada_visualmente": true,
+      "observacao": "Evento com extremidades identificaveis; centro e recorte conferidos."
+    },
+    {
+      "padrao": "slug",
+      "aquisicao": "m05q05_001",
+      "anchor_id": "m05q05_001_E008",
+      "ancora": 4371,
+      "comprimento": 2048,
+      "arquivo": "01_ancoras/slug_m05q05_001_E008.png",
+      "png_sha256": "c560d824e9257ede03bb5346a5a0d07b3f2335f2c3a39dd1a1e4ccd07c94468c",
+      "verificada_visualmente": true,
+      "observacao": "Evento com extremidades identificaveis; centro e recorte conferidos."
+    },
+    {
+      "padrao": "slug",
+      "aquisicao": "m06q05_001",
+      "anchor_id": "m06q05_001_E007",
+      "ancora": 4380,
+      "comprimento": 2048,
+      "arquivo": "01_ancoras/slug_m06q05_001_E007.png",
+      "png_sha256": "554f3631219f2b12216dce594bbc11fb58cfa124c7fa8c8b957cdc53ec517f68",
+      "verificada_visualmente": true,
+      "observacao": "Evento com extremidades identificaveis; centro e recorte conferidos."
+    },
+    {
+      "padrao": "churn",
+      "aquisicao": "m03q05_001",
+      "anchor_id": "m03q05_001_MIN02256",
+      "ancora": 2256,
+      "comprimento": 4096,
+      "arquivo": "01_ancoras/churn_m03q05_001_MIN02256.png",
+      "png_sha256": "4494f65bec75d986ec0ed2fee3fe7e98a2bfaf26567688cc47de4358f609fb21",
+      "verificada_visualmente": true,
+      "observacao": "Vale identificavel no perfil e no contexto; linha central e limites do recorte conferidos."
+    },
+    {
+      "padrao": "churn",
+      "aquisicao": "m04q10_001",
+      "anchor_id": "m04q10_001_MIN02128",
+      "ancora": 2128,
+      "comprimento": 4096,
+      "arquivo": "01_ancoras/churn_m04q10_001_MIN02128.png",
+      "png_sha256": "82871a67cde2092e922c306783ac49cd0e52d40131cf78578fa890cc9383623c",
+      "verificada_visualmente": true,
+      "observacao": "Vale identificavel no perfil e no contexto; linha central e limites do recorte conferidos."
+    },
+    {
+      "padrao": "churn",
+      "aquisicao": "m04q20_001",
+      "anchor_id": "m04q20_001_MIN05074",
+      "ancora": 5074,
+      "comprimento": 4096,
+      "arquivo": "01_ancoras/churn_m04q20_001_MIN05074.png",
+      "png_sha256": "98e498c58596635a57ea011afd96cf84ec81935964dcb57edc3d7da9687666f0",
+      "verificada_visualmente": true,
+      "observacao": "Vale identificavel no perfil e no contexto; linha central e limites do recorte conferidos."
+    },
+    {
+      "padrao": "churn",
+      "aquisicao": "m05q10_001",
+      "anchor_id": "m05q10_001_MIN04683",
+      "ancora": 4683,
+      "comprimento": 4096,
+      "arquivo": "01_ancoras/churn_m05q10_001_MIN04683.png",
+      "png_sha256": "9309993cafdb54297e072d8d7b44a47cce989f2f0af8b8a955445fbf277a36f1",
+      "verificada_visualmente": true,
+      "observacao": "Vale identificavel no perfil e no contexto; linha central e limites do recorte conferidos."
+    },
+    {
+      "padrao": "churn",
+      "aquisicao": "m05q20_001",
+      "anchor_id": "m05q20_001_MIN04866",
+      "ancora": 4866,
+      "comprimento": 4096,
+      "arquivo": "01_ancoras/churn_m05q20_001_MIN04866.png",
+      "png_sha256": "211d509f367417674187ce474fd94bdf55ac2de7112cd9bd9c409e10782abb01",
+      "verificada_visualmente": true,
+      "observacao": "Vale identificavel no perfil e no contexto; linha central e limites do recorte conferidos."
+    },
+    {
+      "padrao": "churn",
+      "aquisicao": "m05q40_001",
+      "anchor_id": "m05q40_001_MIN02323",
+      "ancora": 2323,
+      "comprimento": 4096,
+      "arquivo": "01_ancoras/churn_m05q40_001_MIN02323.png",
+      "png_sha256": "282a380dea5018b10d26ab94abecb51b87880cfe2560ef34d7059dfb64b92231",
+      "verificada_visualmente": true,
+      "observacao": "Vale identificavel no perfil e no contexto; linha central e limites do recorte conferidos."
+    },
+    {
+      "padrao": "churn",
+      "aquisicao": "m06q10_001",
+      "anchor_id": "m06q10_001_MIN05321",
+      "ancora": 5321,
+      "comprimento": 4096,
+      "arquivo": "01_ancoras/churn_m06q10_001_MIN05321.png",
+      "png_sha256": "445f79f5ae4469f36673c33af19368e00fc98ceedf0e52864e6aad181dab52dc",
+      "verificada_visualmente": true,
+      "observacao": "Vale identificavel no perfil e no contexto; linha central e limites do recorte conferidos."
+    },
+    {
+      "padrao": "churn",
+      "aquisicao": "m06q20_001",
+      "anchor_id": "m06q20_001_MIN02484",
+      "ancora": 2484,
+      "comprimento": 4096,
+      "arquivo": "01_ancoras/churn_m06q20_001_MIN02484.png",
+      "png_sha256": "57400154ffa36b496491f4e210162c830a3f6f457b02da7a294ffa4548dba669",
+      "verificada_visualmente": true,
+      "observacao": "Vale identificavel no perfil e no contexto; linha central e limites do recorte conferidos."
+    },
+    {
+      "padrao": "churn",
+      "aquisicao": "m07q20_001",
+      "anchor_id": "m07q20_001_MIN05678",
+      "ancora": 5678,
+      "comprimento": 4096,
+      "arquivo": "01_ancoras/churn_m07q20_001_MIN05678.png",
+      "png_sha256": "12f4764442a0e26e285c04c6bc413a5ccab3be3a8f04c47466d0719c6c27b070",
+      "verificada_visualmente": true,
+      "observacao": "Vale identificavel no perfil e no contexto; linha central e limites do recorte conferidos."
+    },
+    {
+      "padrao": "churn",
+      "aquisicao": "m07q40_001",
+      "anchor_id": "m07q40_001_MIN05065",
+      "ancora": 5065,
+      "comprimento": 4096,
+      "arquivo": "01_ancoras/churn_m07q40_001_MIN05065.png",
+      "png_sha256": "e00a3d6f6139f08476aa8524487f2a2e33e867537d797bf5f1dd565c7a76fdb3",
+      "verificada_visualmente": true,
+      "observacao": "Vale identificavel no perfil e no contexto; linha central e limites do recorte conferidos."
+    },
+    {
+      "padrao": "wavy annular",
+      "aquisicao": "m03q10_001",
+      "anchor_id": "m03q10_001_MIN03119",
+      "ancora": 3119,
+      "comprimento": 4096,
+      "arquivo": "01_ancoras/wavy_annular_m03q10_001_MIN03119.png",
+      "png_sha256": "33b346883703a11cb4254fc114b57eaec778ddc8599171ca5e9cc88d8c0fd854",
+      "verificada_visualmente": true,
+      "observacao": "Vale identificavel no perfil e no contexto; linha central e limites do recorte conferidos."
+    },
+    {
+      "padrao": "wavy annular",
+      "aquisicao": "m03q20_001",
+      "anchor_id": "m03q20_001_MIN18525",
+      "ancora": 18525,
+      "comprimento": 4096,
+      "arquivo": "01_ancoras/wavy_annular_m03q20_001_MIN18525.png",
+      "png_sha256": "29f4d411dac5e947ea061d8c7f73f9dddc6fc51035ada92aff5b26001a060d32",
+      "verificada_visualmente": true,
+      "observacao": "Vale identificavel no perfil e no contexto; linha central e limites do recorte conferidos."
+    },
+    {
+      "padrao": "wavy annular",
+      "aquisicao": "m03q40_001",
+      "anchor_id": "m03q40_001_MIN11036",
+      "ancora": 11036,
+      "comprimento": 4096,
+      "arquivo": "01_ancoras/wavy_annular_m03q40_001_MIN11036.png",
+      "png_sha256": "c4c08c525ac53841cf2a35a48698498e3a39723711e9fc0b374a7838a5daee7c",
+      "verificada_visualmente": true,
+      "observacao": "Vale identificavel no perfil e no contexto; linha central e limites do recorte conferidos. Panorama claro/saturado em parte da faixa; vale ainda distinguivel no perfil original. Fonte preservada."
+    },
+    {
+      "padrao": "wavy annular",
+      "aquisicao": "m04q40_001",
+      "anchor_id": "m04q40_001_MIN08529",
+      "ancora": 8529,
+      "comprimento": 4096,
+      "arquivo": "01_ancoras/wavy_annular_m04q40_001_MIN08529.png",
+      "png_sha256": "8b726e4f6b5e816467d3d380a991711077a8bb5ad9f771fb66077d63e88a8407",
+      "verificada_visualmente": true,
+      "observacao": "Vale identificavel no perfil e no contexto; linha central e limites do recorte conferidos."
+    },
+    {
+      "padrao": "wavy annular",
+      "aquisicao": "m04q80_001",
+      "anchor_id": "m04q80_001_MIN11728",
+      "ancora": 11728,
+      "comprimento": 4096,
+      "arquivo": "01_ancoras/wavy_annular_m04q80_001_MIN11728.png",
+      "png_sha256": "80609cf2b1485771cd4914688cc36a19dd1b77b91a06d2c541d0c220d845dcea",
+      "verificada_visualmente": true,
+      "observacao": "Vale identificavel no perfil e no contexto; linha central e limites do recorte conferidos."
+    },
+    {
+      "padrao": "wavy annular",
+      "aquisicao": "m05q80_001",
+      "anchor_id": "m05q80_001_MIN04485",
+      "ancora": 4485,
+      "comprimento": 4096,
+      "arquivo": "01_ancoras/wavy_annular_m05q80_001_MIN04485.png",
+      "png_sha256": "230081cb9f679ccf35b4f50ad311a5e6045f0ff21f7fc71f66674a663cb541ec",
+      "verificada_visualmente": true,
+      "observacao": "Vale identificavel no perfil e no contexto; linha central e limites do recorte conferidos."
+    },
+    {
+      "padrao": "wavy annular",
+      "aquisicao": "m06q40_001",
+      "anchor_id": "m06q40_001_MIN03471",
+      "ancora": 3471,
+      "comprimento": 4096,
+      "arquivo": "01_ancoras/wavy_annular_m06q40_001_MIN03471.png",
+      "png_sha256": "7f41449679b66a391c613b41050c731d0be09b8d718a8539d869a7982ce4ac94",
+      "verificada_visualmente": true,
+      "observacao": "Vale identificavel no perfil e no contexto; linha central e limites do recorte conferidos."
+    },
+    {
+      "padrao": "wavy annular",
+      "aquisicao": "m06q80_001",
+      "anchor_id": "m06q80_001_MIN06621",
+      "ancora": 6621,
+      "comprimento": 4096,
+      "arquivo": "01_ancoras/wavy_annular_m06q80_001_MIN06621.png",
+      "png_sha256": "0164b2e31aff634d54fd2f84c014edd9061ad492a2c2ed95c20768ff9e234838",
+      "verificada_visualmente": true,
+      "observacao": "Vale identificavel no perfil e no contexto; linha central e limites do recorte conferidos."
+    },
+    {
+      "padrao": "wavy annular",
+      "aquisicao": "m07q80_001",
+      "anchor_id": "m07q80_001_MIN09018",
+      "ancora": 9018,
+      "comprimento": 4096,
+      "arquivo": "01_ancoras/wavy_annular_m07q80_001_MIN09018.png",
+      "png_sha256": "ebb5baa98e93c6f4b0dfef6a910262e7a013a17f284504c684858006fb2c08d1",
+      "verificada_visualmente": true,
+      "observacao": "Vale identificavel no perfil e no contexto; linha central e limites do recorte conferidos."
+    }
+  ]
+}

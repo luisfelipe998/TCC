@@ -1,0 +1,52 @@
+1 / 325 1.7s
+26 / 325 35.3s
+51 / 325 65.6s
+76 / 325 98.2s
+101 / 325 123.7s
+126 / 325 146.9s
+151 / 325 172.0s
+176 / 325 198.0s
+201 / 325 223.9s
+226 / 325 247.4s
+251 / 325 271.3s
+276 / 325 296.7s
+301 / 325 321.5s
+{
+  "variants": [
+    "baseline",
+    "central_band20",
+    "core_row_median"
+  ],
+  "scale_count": 200,
+  "elapsed_seconds": 345.7824280420027,
+  "total_pairs": 325,
+  "same_pairs": 87,
+  "wavelengths_px": [
+    50,
+    3000
+  ],
+  "estimator": "biased",
+  "wavelet": "Schuck Morlet omega0=6",
+  "extraction_rows_inclusive": [
+    18,
+    71
+  ],
+  "extraction_row_count": 54,
+  "fixed_row_control": 40,
+  "fixed_band_control_inclusive": [
+    30,
+    49
+  ],
+  "trimmed_fraction_requested_each_end": 0.2,
+  "trimmed_rows_each_end": 10,
+  "trimmed_fraction_actual_each_end": 0.18518518518518517,
+  "trimmed_retained_rows": 34,
+  "invariant": "Alternative WPS/WCS/WCO formulas unchanged in every candidate",
+  "domain": "Todos os lags, sem COI e sem m\u00e1scara conservadora",
+  "main_score": "M\u00e9dia ponderada dos m\u00e1ximos em todos os lags da alternative WCO por escala; pesos pela m\u00e9dia geom\u00e9trica das alternative WPS do baseline no lag zero; ambas >=5% de seus pr\u00f3prios m\u00e1ximos",
+  "score_sensitivity": "Identical calculation with 1% and 10% baseline power floors",
+  "fixed20_59_scores": "Mesmas alternative WCO desta faixa; pesos e pisos fixos calculados com a refer\u00eancia corrigida 20\u201359 do cache anterior, cortada antes do preparo. N\u00e3o misturar com escores nativos 18\u201371.",
+  "denominator_valid_scales": "Contagem de escalas que passaram o piso num\u00e9rico de 1e-10 para ambos os denominadores do par e da variante.",
+  "eligible_scales_power05": "Contagem ap\u00f3s combinar denominadores v\u00e1lidos com ambos os pisos nativos de 5%; a coluna fixed20_59 usa os pisos antigos.",
+  "limitation": "Scale-wise maximization is a descriptive similarity score, not evidence of common events or causality. Correlated pairs are not independent samples."
+}

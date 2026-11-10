@@ -1,0 +1,12 @@
+{
+  "constant_profile_residual_norm": [
+    1.7706509766491718e-27,
+    1.7706509766491718e-27
+  ],
+  "returned_unit_norm": [
+    1.0,
+    1.0
+  ],
+  "min_actual_individual_profile_residual_norm": 1.3521990921401885,
+  "impact_on_welch_width": "none"
+}

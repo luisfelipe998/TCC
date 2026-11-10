@@ -1,0 +1,67 @@
+[
+  {
+    "arquivo": "scripts/estatistica.py",
+    "sha256": "5141f49245fdcba9b5db3b8b2a1a824836a5c08eabe21ea77a663ed3dbac3c41"
+  },
+  {
+    "arquivo": "scripts/relatorio.py",
+    "sha256": "d01d32c9b8ff95a65bc5c598f47acfa50450e5680642baa592ebeadf43a35d56"
+  },
+  {
+    "arquivo": "scripts/verificar.py",
+    "sha256": "893b30a44723e66d7404127e09c0de627efa33cced8ec51e13a6525418229f9d"
+  },
+  {
+    "arquivo": "scripts/README.txt",
+    "sha256": "23a9da4b98da0970dad179809d9e50c477dc038f1a3e9f7baac54fca62dfe316"
+  },
+  {
+    "arquivo": "04_estatistica/correlacoes_dentro_entre.png",
+    "sha256": "1de5ed90d387d29a17e0bc6b8378396274c13f96fef35c844b9747c75e9af1ba"
+  },
+  {
+    "arquivo": "04_estatistica/matriz_pearson_todos.png",
+    "sha256": "7222a017fdf28749def5be6ab68f4a39e8e3c7e77edb8b102123b6d831830a81"
+  },
+  {
+    "arquivo": "04_estatistica/matriz_escore_wco.png",
+    "sha256": "ee2cd094f110e8ecb9f178e2b033ae3a660786c1b5c31975488d6f03643dcbb3"
+  },
+  {
+    "arquivo": "04_estatistica/perfis_comparados.png",
+    "sha256": "d50f5f9b8d0b37cf697bca019f5b5ecd4a1f491ce8d274cce5d42a0abaacb927"
+  },
+  {
+    "arquivo": "04_estatistica/INDICE_ENSAIOS.md",
+    "sha256": "c4649038f59efc097c56bfe9bc267055e220036cde6960970d214c5b7ff1b813"
+  },
+  {
+    "arquivo": "04_estatistica/MEDIAS_POR_ENSAIO.md",
+    "sha256": "10ae1c2343f19c85d1340eb0f4768b5154d3e40d33bfbc15d22f62a71d1af277"
+  },
+  {
+    "arquivo": "04_estatistica/METODOLOGIA.md",
+    "sha256": "8c4fdabcb7564b17a32f264419d868f421253e2693c3163a8ddfa8afb1a7e246"
+  },
+  {
+    "arquivo": "05_conclusao/Resumo Executivo.md",
+    "sha256": "205ccc966e6f8799857deb0107893f1d91c222610954f6e16b72d2b63a8aa3bc"
+  },
+  {
+    "arquivo": "intermediario/apresentacao/estatistica.json",
+    "sha256": "816f882af167a0bf1fe839016c3b43d1103b8f1a5319b63cdf86c26a0a9301ec"
+  },
+  {
+    "arquivo": "intermediario/auditoria/verificacao_final.json",
+    "sha256": "7cec632b394cc202076e83a3e64c81e8ac01f8036be10e189516c2cc436efa27"
+  },
+  {
+    "arquivo": "intermediario/auditoria/manifesto_artefatos.json",
+    "sha256": "7dbc5ee8d39bbfee4a6ebd1630924f765e7ba72e721e0b9b65a682a2ac20e820"
+  },
+  {
+    "arquivo": "pipeline_v11.py",
+    "origem": "src2/pipeline_v11.py",
+    "sha256": "663b91e18bf241d9083c8db5e3c470bca5792599e7f9c5cf40655c32f1b976c6"
+  }
+]

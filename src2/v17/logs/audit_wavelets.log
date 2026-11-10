@@ -1,0 +1,15 @@
+Pair reproduced m03q05_001 m07q01_001 n=3171
+Pair reproduced m05q40_001 m06q10_001 n=7584
+Pair reproduced m03q20_001 m04q80_001 n=22636
+Crop sensitivity full_50_3000 0.06588935746570712
+Crop sensitivity full_50_1024 0.1752255336024604
+Crop sensitivity prefix_3171_50_1024 0.18724455617465074
+Crop sensitivity prefix_3171_50_3000 0.09363916874189115
+Crop sensitivity center_3171_50_1024 0.2709872183438252
+Crop sensitivity center_3171_50_3000 0.08075536804780348
+Crop sensitivity suffix_3171_50_1024 0.1474555961369186
+Crop sensitivity suffix_3171_50_3000 0.022501570731286002
+White-noise controls n 3171
+White-noise controls n 8192
+White-noise controls n 23079
+PASS wavelet audit

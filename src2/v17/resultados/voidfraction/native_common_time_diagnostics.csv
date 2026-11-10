@@ -1,0 +1,5 @@
+scope,feature,n_churn,n_annular,churn_median,annular_median,auc_churn_gt_annular,exploratory_uncorrected_p
+all26,native_full_hz,10,9,1226.785,731.5000000000001,0.6777777777777778,0.2056671796173556
+all26,common_1ms_switches_per_pixel_s,10,9,266.92857142857144,229.0,0.6555555555555556,0.2703441406547801
+eligible25,native_full_hz,10,8,1226.785,939.155,0.6375,0.35993418346359524
+eligible25,common_1ms_switches_per_pixel_s,10,8,266.92857142857144,242.92857142857142,0.6125,0.4597559303441656

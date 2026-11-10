@@ -1,0 +1,14 @@
+{
+  "pairs": 5,
+  "scales": 200,
+  "elapsed_seconds": 4.584007124998607,
+  "extraction_rows_inclusive": [
+    18,
+    71
+  ],
+  "baseline": "Implementa\u00e7\u00e3o v5 aplicada \u00e0 faixa 18\u201371: estimador, cmor e preparo antes do corte preservados. N\u00e3o \u00e9 a entrada original 20\u201359.",
+  "domain": "Todos os lags, sem COI e sem m\u00e1scara conservadora",
+  "comparison": "Mesmos pesos de alternative WPS do baseline Morlet e dom\u00ednio integral de preprocessing_confirm_pairs.csv",
+  "fixed20_59_scores": "Escores adicionais dos mesmos mapas com pesos e pisos da refer\u00eancia corrigida 20\u201359 para compara\u00e7\u00e3o entre faixas.",
+  "coordinate": "Original v5 lag sign; all summaries are at lag zero or symmetric lag searches"
+}

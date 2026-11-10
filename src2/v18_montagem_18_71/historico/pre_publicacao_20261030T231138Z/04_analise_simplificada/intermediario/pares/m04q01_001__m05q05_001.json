@@ -1,0 +1,14 @@
+{
+  "run_x": "m04q01_001",
+  "run_y": "m05q05_001",
+  "modo": "mapa compacto original reutilizado sem alteração",
+  "pearson_r": 0.8245855859782485,
+  "origem_metricas": {
+    "arquivo": "src2/v18_montagem_18_71/02_wavelet/intermediario/pares/m04q01_001__m05q05_001.json",
+    "sha256": "a3ff7773c0e80ca23c16416ecc0410629be49ef35353357ae457b70dfcf5b7dd"
+  },
+  "mapa": {
+    "arquivo": "src2/v18_montagem_18_71/04_analise_simplificada/intermediario/pares/m04q01_001__m05q05_001.npz",
+    "sha256": "0adace8eef63a1d699abc48e848362dd47e13b865b1f2ee00be51ae40f09a73f"
+  }
+}

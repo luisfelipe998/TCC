@@ -1,0 +1,252 @@
+{
+  "status": "PASS_COM_RESSALVAS_DE_ENTRADA_E_METODO",
+  "quadros": 15531,
+  "panoramas_reconstruidos": 31,
+  "equacoes": {
+    "status": "PASS",
+    "erro_correlacao_maximo": 3.608224830031759e-15,
+    "erro_cwt_temporal": 2.666834323444892e-17,
+    "erro_troca_par": 2.886579864025407e-15,
+    "erro_autocoerencia": 0.0,
+    "lag_atraso_100": [
+      -100,
+      -100,
+      -100
+    ],
+    "erro_invariancia_afim": 6.439293542825908e-14,
+    "entradas_invalidas_rejeitadas": 3,
+    "pdf_sha256": "8a052388ebb12e36611b80cd2684a813155b8f6d9c13d92ad2415b9dad9108f2",
+    "paginas_pdf_conferidas": [
+      3,
+      5,
+      6
+    ],
+    "paginas_impressas": [
+      411,
+      413,
+      414
+    ],
+    "definicoes": "32.4, 32.6, 32.8, 32.14–32.17",
+    "adaptacao": "divisor N; o artigo usa N−|m| em 32.21–32.23",
+    "ambiguidade": "32.16 média complexa versus 32.20 média de módulos; K=1 não altera a WCO"
+  },
+  "metadados": {
+    "status": "PASS",
+    "arquivos_conferidos": 62,
+    "taxas_incluidas": [
+      4000.0,
+      5000.0,
+      7000.0
+    ],
+    "exposicoes_ns_incluidas": [
+      62000,
+      127000,
+      132000
+    ],
+    "brilho_codigos_incluidos": [
+      9,
+      20
+    ],
+    "m03q40_igual_m03q20_nos_campos_verificados": true,
+    "campos_comparados": [
+      "taxa_quadros_s",
+      "exposicao_ns",
+      "profundidade_bits",
+      "SensorGain",
+      "GammaCorrection",
+      "Brightness",
+      "Contrast",
+      "PixelGain",
+      "XDRContrast"
+    ],
+    "observacao": "Valores nominais dos metadados; códigos de ajustes não foram convertidos em funções fotométricas."
+  },
+  "estatistica": {
+    "status": "PASS",
+    "erro_perfis_por_quadratura": 3.552713678800501e-15,
+    "ensaio_13": "m03q40_001",
+    "pearson_intra_m03q40": 0.7424270941290534,
+    "pearson_intra_demais_wavy": 0.9508069834616126,
+    "entrada_m03q40": {
+      "ensaio": "m03q40_001",
+      "padrao": "wavy annular",
+      "incluido": true,
+      "rotulo_manual_condicao": "wavy annular",
+      "rotulo_condicao_concordante": true,
+      "quadros": 501,
+      "intervalos": 500,
+      "deslocamentos_nao_positivos": 60,
+      "fracao_substituida": 0.12,
+      "deslocamentos_negativos": 12,
+      "deslocamentos_nulos": 48,
+      "primeiro_intervalo_substituido": 280,
+      "lag_mediano_px": 48.0,
+      "comprimento_px": 20743,
+      "intensidade_media": 157.52103967246424,
+      "fracao_pixels_255": 0.25426962420164945,
+      "fracao_quadros_pixels_255": 0.15711050194740295,
+      "fracao_quadros_pixels_ge250": 0.17662560559836873,
+      "desvio_sinal": 7.961630114045837,
+      "minimo_normalizado": -2.053471407811623,
+      "maximo_normalizado": 5.64920165626282,
+      "colunas_substituidas": 60,
+      "fracao_colunas_substituidas": 0.0028925420623824903,
+      "erro_reconstrucao": 0,
+      "erro_extracao": 0,
+      "erro_planilha": 0.0,
+      "verificacoes_literais": 63,
+      "erro_pearson_deslocamento": 2.930988785010413e-14,
+      "panorama_sha256": "ea0cb23474d5096ea52759454cb88b9c89dbdb6f7bb7c78b7927cbb93914e2d0"
+    },
+    "comparacoes_com_sem": [
+      {
+        "metrica": "pearson",
+        "conjunto": "26_originais",
+        "ensaios": 26,
+        "pares_intra": 87,
+        "pares_inter": 238,
+        "intra": 0.8697175374283626,
+        "inter": 0.8038281799626547,
+        "contraste": 0.0658893574657079,
+        "intra_balanceado": 0.8615908818493356,
+        "inter_balanceado": 0.7162908655032822,
+        "contraste_balanceado": 0.14530001634605338,
+        "wavy_annular_intra": 0.9045003413877105
+      },
+      {
+        "metrica": "pearson",
+        "conjunto": "25_sem_m03q40",
+        "ensaios": 25,
+        "pares_intra": 79,
+        "pares_inter": 221,
+        "intra": 0.8826077089017103,
+        "inter": 0.8276666773330726,
+        "contraste": 0.05494103156863761,
+        "intra_balanceado": 0.8731675423678111,
+        "inter_balanceado": 0.7329116768338683,
+        "contraste_balanceado": 0.14025586553394287,
+        "wavy_annular_intra": 0.9508069834616126
+      },
+      {
+        "metrica": "escore_wco",
+        "conjunto": "26_originais",
+        "ensaios": 26,
+        "pares_intra": 87,
+        "pares_inter": 238,
+        "intra": 0.18765060518909032,
+        "inter": 0.2635387180883639,
+        "contraste": -0.07588811289927355,
+        "intra_balanceado": 0.24900223498997898,
+        "inter_balanceado": 0.31332444634562495,
+        "contraste_balanceado": -0.06432221135564598,
+        "wavy_annular_intra": 0.12467105063857392
+      },
+      {
+        "metrica": "escore_wco",
+        "conjunto": "25_sem_m03q40",
+        "ensaios": 25,
+        "pares_intra": 79,
+        "pares_inter": 221,
+        "intra": 0.19563145696912962,
+        "inter": 0.26867176913695,
+        "contraste": -0.07304031216782039,
+        "intra_balanceado": 0.2501330461883627,
+        "inter_balanceado": 0.3161253790478521,
+        "contraste_balanceado": -0.06599233285948941,
+        "wavy_annular_intra": 0.12919429543210875
+      }
+    ],
+    "controles": [
+      {
+        "controle": "panoramas_completos_18_71",
+        "ensaios": 9,
+        "pearson_m03q40_outros": 0.7424270941290534,
+        "pearson_entre_outros": 0.9508069834616126,
+        "pico_m03q40_px": 175.4007487287317,
+        "pico_outros_min_px": 353.0499701748904,
+        "pico_outros_max_px": 480.692870038844
+      },
+      {
+        "controle": "prefixo_antes_da_primeira_substituicao",
+        "ensaios": 9,
+        "pearson_m03q40_outros": 0.8491252740573014,
+        "pearson_entre_outros": 0.9349817413099606,
+        "pico_m03q40_px": 118.64739515433104,
+        "pico_outros_min_px": 353.0499701748904,
+        "pico_outros_max_px": 490.68537491870006
+      },
+      {
+        "controle": "faixa_lambda_50_1024",
+        "ensaios": 9,
+        "pearson_m03q40_outros": 0.867467843138257,
+        "pearson_entre_outros": 0.9465066454233382,
+        "pico_m03q40_px": 173.5070076375943,
+        "pico_outros_min_px": 354.02025789816804,
+        "pico_outros_max_px": 479.5347332870666
+      },
+      {
+        "controle": "sem_remocao_tendencia_linear",
+        "ensaios": 9,
+        "pearson_m03q40_outros": 0.7405407105339848,
+        "pearson_entre_outros": 0.9508249340531609,
+        "pico_m03q40_px": 175.4007487287317,
+        "pico_outros_min_px": 353.0499701748904,
+        "pico_outros_max_px": 480.692870038844
+      },
+      {
+        "controle": "media_linhas_20_59",
+        "ensaios": 9,
+        "pearson_m03q40_outros": 0.8754197777444903,
+        "pearson_entre_outros": 0.9508201532803776,
+        "pico_m03q40_px": 171.82882071295853,
+        "pico_outros_min_px": 360.38907123024944,
+        "pico_outros_max_px": 480.692870038844
+      },
+      {
+        "controle": "equalizacao_global_histograma",
+        "ensaios": 9,
+        "pearson_m03q40_outros": 0.8762798799195118,
+        "pearson_entre_outros": 0.9248995137929599,
+        "pico_m03q40_px": 186.56825225925718,
+        "pico_outros_min_px": 198.44677404944323,
+        "pico_outros_max_px": 500.88560111084837
+      }
+    ],
+    "prefixo_sem_substituicoes_px": 14008,
+    "primeiro_intervalo_substituido": 280,
+    "janelas_m03q40": [
+      {
+        "inicio": 0,
+        "fim_exclusivo": 14008,
+        "comprimento": 14008,
+        "media": 157.27619270469782,
+        "desvio": 8.233790621037476,
+        "fracao_pixels_255": 0.2499246462338981
+      },
+      {
+        "inicio": 14008,
+        "fim_exclusivo": 20743,
+        "comprimento": 6735,
+        "media": 158.03029228188842,
+        "desvio": 7.337296662225726,
+        "fracao_pixels_255": 0.2633066622673156
+      }
+    ],
+    "ciclos_na_escala_3000_minimo": 1.057,
+    "ciclos_na_escala_3000_maximo": 7.693,
+    "suporte_deslocamento_historico": {
+      "intervalos": 500,
+      "suportados": 171,
+      "substituicoes_suportadas": 0,
+      "fonte": "_OLD/displacement/results/run_summary.csv",
+      "sha256": "acbedb58b7842d6cd6a37b6f1abea8bf01644a6fc09e01b36f00be6d9f1d3927",
+      "reexecutado_nesta_auditoria": false
+    }
+  },
+  "scripts_sha256": {
+    "wavelet_core.py": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc",
+    "estatistica.py": "bcae69735e663e6e044b8e2ad4097ce812b02466c2569938bc4b4ac23c48f5fc",
+    "auditoria_adversarial.py": "ae255cc4a1b59d508630a0c8a5944135ef213591964fb3589c4daecbb9566fa8"
+  },
+  "decisao": "Manter o conjunto original de 26 como referência; sinalizar m03q40 e apresentar sensibilidade com 25. Não excluir em função de Pearson."
+}

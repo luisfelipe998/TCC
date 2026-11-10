@@ -1,0 +1,298 @@
+{
+  "status": "PASS",
+  "stage": "panoramas",
+  "tolerance": {
+    "absolute": 1e-10,
+    "relative": 1e-10,
+    "pixels": "exact",
+    "discrete": "exact",
+    "selection": "exact"
+  },
+  "baseline": {
+    "file": "package/config/referencia_resultados.json",
+    "sha256": "431d0da3a628588963a3688036c357f42c1387be5d7652aa0ae573347f0e550f",
+    "arrays": "package/config/referencia_arrays.npz",
+    "arrays_sha256": "2935013ac7fecdadab04833f4deeb3642b4497626bd70ea4ac014a779fdc94c6"
+  },
+  "checked_files": 54,
+  "failed_checks": 0,
+  "checks": [
+    {
+      "path": "01_panoramas/manifesto.json",
+      "kind": "json",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/deslocamentos.csv",
+      "kind": "csv",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m03q05_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m03q10_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m03q20_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m03q40_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m04q01_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m04q10_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m04q20_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m04q40_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m04q80_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m05q01_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m05q05_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m05q10_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m05q20_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m05q40_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m05q80_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m06q01_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m06q05_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m06q10_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m06q20_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m06q40_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m06q80_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m07q01_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m07q05_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m07q20_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m07q40_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m07q80_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m03q05_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m03q10_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m03q20_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m03q40_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m04q01_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m04q10_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m04q20_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m04q40_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m04q80_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m05q01_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m05q05_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m05q10_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m05q20_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m05q40_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m05q80_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m06q01_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m06q05_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m06q10_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m06q20_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m06q40_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m06q80_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m07q01_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m07q05_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m07q20_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m07q40_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m07q80_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "excluded": [
+    "Pearson histórico em resíduos e comparações contra execuções anteriores.",
+    "Paths, hashes de proveniência, versões de bibliotecas, tempos e metadados de execução. Campos científicos comparados são explicitamente enumerados nos seletores JSON.",
+    "Fluxograma: alteração autorizada do rótulo para justaposição direta das tiras. Não se compara seu pixel hash.",
+    "PDFs: metadados de criação variam; verifica-se a imagem PNG correspondente."
+  ]
+}

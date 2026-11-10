@@ -1,0 +1,17 @@
+aquisicao,perfil,comprimento,costuras,repetivel_sigma,status
+m03q05_001,nativo,4096,210,False,PASS
+m03q05_001,comparavel,2048,104,False,PASS
+m03q10_001,nativo,4096,135,False,PASS
+m03q10_001,comparavel,2048,67,False,PASS
+m03q20_001,nativo,4096,85,True,PASS
+m03q20_001,comparavel,2048,44,True,PASS
+m04q01_001,nativo,2048,161,,PASS
+m04q01_001,comparavel,2048,161,,PASS
+m04q10_001,nativo,4096,234,True,PASS
+m04q10_001,comparavel,2048,110,False,PASS
+m05q01_001,nativo,2048,173,,PASS
+m05q01_001,comparavel,2048,173,,PASS
+m05q05_001,nativo,2048,167,,PASS
+m05q05_001,comparavel,2048,167,,PASS
+m06q01_001,nativo,2048,133,,PASS
+m06q01_001,comparavel,2048,133,,PASS

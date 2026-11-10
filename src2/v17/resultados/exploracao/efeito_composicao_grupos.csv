@@ -1,0 +1,97 @@
+conjunto,metrica,padrao_x,padrao_y,tipo,media
+26_todos,pearson_r,churn,churn,intra,0.8447100930543104
+26_todos,pearson_r,plug,plug,intra,0.961752769859633
+26_todos,pearson_r,slug,slug,intra,0.7354003230956886
+26_todos,pearson_r,wavy annular,wavy annular,intra,0.9045003413877105
+26_todos,pearson_r,churn,dispersed bubble,inter,0.5293139720854119
+26_todos,pearson_r,churn,plug,inter,0.8988459616924486
+26_todos,pearson_r,churn,slug,inter,0.827145151284195
+26_todos,pearson_r,churn,wavy annular,inter,0.8384863200316687
+26_todos,pearson_r,dispersed bubble,plug,inter,0.6330347723838243
+26_todos,pearson_r,dispersed bubble,slug,inter,0.5634433247446926
+26_todos,pearson_r,dispersed bubble,wavy annular,inter,0.36658442194750673
+26_todos,pearson_r,plug,slug,inter,0.8765392724504389
+26_todos,pearson_r,plug,wavy annular,inter,0.8360835503671181
+26_todos,pearson_r,slug,wavy annular,inter,0.7934319080455168
+26_todos,escore_piso05,churn,churn,intra,0.21960550382138494
+26_todos,escore_piso05,plug,plug,intra,0.28360624714752364
+26_todos,escore_piso05,slug,slug,intra,0.3681261383524334
+26_todos,escore_piso05,wavy annular,wavy annular,intra,0.12467105063857388
+26_todos,escore_piso05,churn,dispersed bubble,inter,0.37031589594657266
+26_todos,escore_piso05,churn,plug,inter,0.2669901844566334
+26_todos,escore_piso05,churn,slug,inter,0.2979870682927904
+26_todos,escore_piso05,churn,wavy annular,inter,0.21554355856534554
+26_todos,escore_piso05,dispersed bubble,plug,inter,0.35486773228684837
+26_todos,escore_piso05,dispersed bubble,slug,inter,0.4600824094922527
+26_todos,escore_piso05,dispersed bubble,wavy annular,inter,0.3154207337278946
+26_todos,escore_piso05,plug,slug,inter,0.312100817514495
+26_todos,escore_piso05,plug,wavy annular,inter,0.2564863991564605
+26_todos,escore_piso05,slug,wavy annular,inter,0.28344966401695554
+25_sem_bolha,pearson_r,churn,churn,intra,0.8447100930543104
+25_sem_bolha,pearson_r,plug,plug,intra,0.961752769859633
+25_sem_bolha,pearson_r,slug,slug,intra,0.7354003230956886
+25_sem_bolha,pearson_r,wavy annular,wavy annular,intra,0.9045003413877105
+25_sem_bolha,pearson_r,churn,plug,inter,0.8988459616924486
+25_sem_bolha,pearson_r,churn,slug,inter,0.827145151284195
+25_sem_bolha,pearson_r,churn,wavy annular,inter,0.8384863200316687
+25_sem_bolha,pearson_r,plug,slug,inter,0.8765392724504389
+25_sem_bolha,pearson_r,plug,wavy annular,inter,0.8360835503671181
+25_sem_bolha,pearson_r,slug,wavy annular,inter,0.7934319080455168
+25_sem_bolha,escore_piso05,churn,churn,intra,0.21960550382138494
+25_sem_bolha,escore_piso05,plug,plug,intra,0.28360624714752364
+25_sem_bolha,escore_piso05,slug,slug,intra,0.3681261383524334
+25_sem_bolha,escore_piso05,wavy annular,wavy annular,intra,0.12467105063857388
+25_sem_bolha,escore_piso05,churn,plug,inter,0.2669901844566334
+25_sem_bolha,escore_piso05,churn,slug,inter,0.2979870682927904
+25_sem_bolha,escore_piso05,churn,wavy annular,inter,0.21554355856534554
+25_sem_bolha,escore_piso05,plug,slug,inter,0.312100817514495
+25_sem_bolha,escore_piso05,plug,wavy annular,inter,0.2564863991564605
+25_sem_bolha,escore_piso05,slug,wavy annular,inter,0.28344966401695554
+25_sem_m03q40,pearson_r,churn,churn,intra,0.8447100930543104
+25_sem_m03q40,pearson_r,plug,plug,intra,0.961752769859633
+25_sem_m03q40,pearson_r,slug,slug,intra,0.7354003230956886
+25_sem_m03q40,pearson_r,wavy annular,wavy annular,intra,0.9508069834616126
+25_sem_m03q40,pearson_r,churn,dispersed bubble,inter,0.5293139720854119
+25_sem_m03q40,pearson_r,churn,plug,inter,0.8988459616924486
+25_sem_m03q40,pearson_r,churn,slug,inter,0.827145151284195
+25_sem_m03q40,pearson_r,churn,wavy annular,inter,0.8739101333264813
+25_sem_m03q40,pearson_r,dispersed bubble,plug,inter,0.6330347723838243
+25_sem_m03q40,pearson_r,dispersed bubble,slug,inter,0.5634433247446926
+25_sem_m03q40,pearson_r,dispersed bubble,wavy annular,inter,0.4121785098756807
+25_sem_m03q40,pearson_r,plug,slug,inter,0.8765392724504389
+25_sem_m03q40,pearson_r,plug,wavy annular,inter,0.883191078226964
+25_sem_m03q40,pearson_r,slug,wavy annular,inter,0.8315145922685444
+25_sem_m03q40,escore_piso05,churn,churn,intra,0.21960550382138494
+25_sem_m03q40,escore_piso05,plug,plug,intra,0.28360624714752364
+25_sem_m03q40,escore_piso05,slug,slug,intra,0.3681261383524334
+25_sem_m03q40,escore_piso05,wavy annular,wavy annular,intra,0.12919429543210872
+25_sem_m03q40,escore_piso05,churn,dispersed bubble,inter,0.37031589594657266
+25_sem_m03q40,escore_piso05,churn,plug,inter,0.2669901844566334
+25_sem_m03q40,escore_piso05,churn,slug,inter,0.2979870682927904
+25_sem_m03q40,escore_piso05,churn,wavy annular,inter,0.22097151403177295
+25_sem_m03q40,escore_piso05,dispersed bubble,plug,inter,0.35486773228684837
+25_sem_m03q40,escore_piso05,dispersed bubble,slug,inter,0.4600824094922527
+25_sem_m03q40,escore_piso05,dispersed bubble,wavy annular,inter,0.3298756569477378
+25_sem_m03q40,escore_piso05,plug,slug,inter,0.312100817514495
+25_sem_m03q40,escore_piso05,plug,wavy annular,inter,0.26022987017709553
+25_sem_m03q40,escore_piso05,slug,wavy annular,inter,0.2878326413323216
+24_sem_ambos,pearson_r,churn,churn,intra,0.8447100930543104
+24_sem_ambos,pearson_r,plug,plug,intra,0.961752769859633
+24_sem_ambos,pearson_r,slug,slug,intra,0.7354003230956886
+24_sem_ambos,pearson_r,wavy annular,wavy annular,intra,0.9508069834616126
+24_sem_ambos,pearson_r,churn,plug,inter,0.8988459616924486
+24_sem_ambos,pearson_r,churn,slug,inter,0.827145151284195
+24_sem_ambos,pearson_r,churn,wavy annular,inter,0.8739101333264813
+24_sem_ambos,pearson_r,plug,slug,inter,0.8765392724504389
+24_sem_ambos,pearson_r,plug,wavy annular,inter,0.883191078226964
+24_sem_ambos,pearson_r,slug,wavy annular,inter,0.8315145922685444
+24_sem_ambos,escore_piso05,churn,churn,intra,0.21960550382138494
+24_sem_ambos,escore_piso05,plug,plug,intra,0.28360624714752364
+24_sem_ambos,escore_piso05,slug,slug,intra,0.3681261383524334
+24_sem_ambos,escore_piso05,wavy annular,wavy annular,intra,0.12919429543210872
+24_sem_ambos,escore_piso05,churn,plug,inter,0.2669901844566334
+24_sem_ambos,escore_piso05,churn,slug,inter,0.2979870682927904
+24_sem_ambos,escore_piso05,churn,wavy annular,inter,0.22097151403177295
+24_sem_ambos,escore_piso05,plug,slug,inter,0.312100817514495
+24_sem_ambos,escore_piso05,plug,wavy annular,inter,0.26022987017709553
+24_sem_ambos,escore_piso05,slug,wavy annular,inter,0.2878326413323216

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "pares": 325,
+  "maior_erro_correlacao_soma_direta": 2.498001805406602e-16,
+  "maior_erro_wps_soma_direta": 3.552713678800501e-15,
+  "menor_coerencia": 5.082336049525358e-12,
+  "maior_coerencia": 0.9936204510965982,
+  "todas_200_escalas_validas": true,
+  "criterio_intra": "maior Pearson de cada padrão com pelo menos dois ensaios",
+  "criterio_inter": "maior WCO pontual entre os 238 pares interpadrões",
+  "mapas_completos_usados_em_metricas": true,
+  "compactacao_somente_para_apresentacao": true,
+  "mapas_compactos_salvos": 5,
+  "manifesto_montagem": {
+    "arquivo": "src2/v18_montagem_18_71/01_panoramas/manifesto.json",
+    "sha256": "dad45203bc7b39e4114a08944d793cf8637420dd3a2e4e7273310c231beca5e1"
+  }
+}

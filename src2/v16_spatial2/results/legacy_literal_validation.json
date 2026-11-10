@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "source": "v5 functions extracted from AST; bilateral assembly and default convolution reproduced",
+  "errors": {
+    "wxx": 3.763254989244554e-15,
+    "wyy": 4.157867980060624e-15,
+    "wxy": 1.892279691452577e-15,
+    "wco": 1.6897594434794883e-13
+  },
+  "baseline_pairs_refreshed": 87,
+  "reported_lag": "Paper convention: reflected AFTER legacy CWT"
+}

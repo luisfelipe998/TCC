@@ -1,0 +1,385 @@
+{
+  "analise": "04_analise_simplificada",
+  "script": {
+    "arquivo": "package/04_analise_simplificada/scripts/analisar.py",
+    "sha256": "4987cd9bd72fe32ddb6772a7b89f6ede3752ac2d26ff20eab322db5d2d8e1efc"
+  },
+  "criterio_intra": "maior Pearson direto de cada padrão com mais de um ensaio",
+  "criterio_inter": "maior coerência pontual entre os 238 pares interpadrões",
+  "figuras": [
+    {
+      "tipo": "intra",
+      "ensaio_x": "m05q40_001",
+      "ensaio_y": "m06q20_001",
+      "pearson_r": 0.9572096997749503,
+      "comprimento_comum": 9873,
+      "layout": {
+        "arquivo": "04_analise_simplificada/figuras/churn_m05q40_001_m06q20_001.png",
+        "largura_insercao_cm": 16,
+        "altura_inserida_cm": 22.952932934208004,
+        "fonte_minima_inserida_pt": 8.18444283853729,
+        "titulo": "Churn · m05q40_001 × m06q20_001 · 9.873 px",
+        "titulos_paineis": [
+          "A - m05q40_001 · prefixo 0–9872 px",
+          "B - m06q20_001 · prefixo 0–9872 px",
+          "Sinais preparados",
+          "Espectro de potência wavelet (WPS) · A",
+          "",
+          "Potência média",
+          "Espectro de potência wavelet (WPS) · B",
+          "",
+          "Potência média",
+          "Espectro cruzado wavelet (WCS) · módulo",
+          "",
+          "Coerência wavelet (WCO)",
+          ""
+        ],
+        "rotulos_x": [
+          "Extensão do panorama (px)",
+          "Extensão do panorama (px)",
+          "Extensão do panorama (px)",
+          "Atraso (pixels)",
+          "",
+          "u.a.",
+          "Atraso (pixels)",
+          "",
+          "u.a.",
+          "Atraso (pixels)",
+          "",
+          "Atraso (pixels)",
+          ""
+        ],
+        "rotulos_y": [
+          "Altura do\npanorama (px)",
+          "Altura do\npanorama (px)",
+          "Amplitude\npadronizada",
+          "Comprimento de onda\nλ (px)",
+          "",
+          "",
+          "Comprimento de onda\nλ (px)",
+          "",
+          "",
+          "Comprimento de onda\nλ (px)",
+          "",
+          "Comprimento de onda\nλ (px)",
+          ""
+        ]
+      },
+      "origem": {
+        "arquivo": "04_analise_simplificada/figuras/churn_m05q40_001_m06q20_001.png",
+        "sha256": "128ae506073aa796e1cd58bd2d7cf50ce2a83b9d552e9053ebed29c8d6db3653"
+      },
+      "entrada": {
+        "arquivo": "04_analise_simplificada/intermediario/pares/m05q40_001__m06q20_001.npz",
+        "sha256": "e406134086ce1e69f15ecaf61d458ee4621d3b207ae5b89325fa69a28ce31f5b"
+      }
+    },
+    {
+      "tipo": "intra",
+      "ensaio_x": "m03q20_001",
+      "ensaio_y": "m04q80_001",
+      "pearson_r": 0.9882522803968814,
+      "comprimento_comum": 22533,
+      "layout": {
+        "arquivo": "04_analise_simplificada/figuras/wavy_annular_m03q20_001_m04q80_001.png",
+        "largura_insercao_cm": 16,
+        "altura_inserida_cm": 22.952932934208004,
+        "fonte_minima_inserida_pt": 8.18444283853729,
+        "titulo": "Anular ondulado · m03q20_001 × m04q80_001 · 22.533 px",
+        "titulos_paineis": [
+          "A - m03q20_001 · prefixo 0–22532 px",
+          "B - m04q80_001 · prefixo 0–22532 px",
+          "Sinais preparados",
+          "Espectro de potência wavelet (WPS) · A",
+          "",
+          "Potência média",
+          "Espectro de potência wavelet (WPS) · B",
+          "",
+          "Potência média",
+          "Espectro cruzado wavelet (WCS) · módulo",
+          "",
+          "Coerência wavelet (WCO)",
+          ""
+        ],
+        "rotulos_x": [
+          "Extensão do panorama (px)",
+          "Extensão do panorama (px)",
+          "Extensão do panorama (px)",
+          "Atraso (pixels)",
+          "",
+          "u.a.",
+          "Atraso (pixels)",
+          "",
+          "u.a.",
+          "Atraso (pixels)",
+          "",
+          "Atraso (pixels)",
+          ""
+        ],
+        "rotulos_y": [
+          "Altura do\npanorama (px)",
+          "Altura do\npanorama (px)",
+          "Amplitude\npadronizada",
+          "Comprimento de onda\nλ (px)",
+          "",
+          "",
+          "Comprimento de onda\nλ (px)",
+          "",
+          "",
+          "Comprimento de onda\nλ (px)",
+          "",
+          "Comprimento de onda\nλ (px)",
+          ""
+        ]
+      },
+      "origem": {
+        "arquivo": "04_analise_simplificada/figuras/wavy_annular_m03q20_001_m04q80_001.png",
+        "sha256": "d1a8abeb624c675cf403b0fa7eb4c9cedad34b9f9e90371a7eb674f3be6f04bd"
+      },
+      "entrada": {
+        "arquivo": "04_analise_simplificada/intermediario/pares/m03q20_001__m04q80_001.npz",
+        "sha256": "1bdf24030c0b9db7195d9b0d28cac04cbd2e56e21eeb87c8c878426130251795"
+      }
+    },
+    {
+      "tipo": "intra",
+      "ensaio_x": "m05q01_001",
+      "ensaio_y": "m06q01_001",
+      "pearson_r": 0.9400531818172181,
+      "comprimento_comum": 5914,
+      "layout": {
+        "arquivo": "04_analise_simplificada/figuras/plug_m05q01_001_m06q01_001.png",
+        "largura_insercao_cm": 16,
+        "altura_inserida_cm": 22.952932934208004,
+        "fonte_minima_inserida_pt": 8.18444283853729,
+        "titulo": "Plug · m05q01_001 × m06q01_001 · 5.914 px",
+        "titulos_paineis": [
+          "A - m05q01_001 · prefixo 0–5913 px",
+          "B - m06q01_001 · prefixo 0–5913 px",
+          "Sinais preparados",
+          "Espectro de potência wavelet (WPS) · A",
+          "",
+          "Potência média",
+          "Espectro de potência wavelet (WPS) · B",
+          "",
+          "Potência média",
+          "Espectro cruzado wavelet (WCS) · módulo",
+          "",
+          "Coerência wavelet (WCO)",
+          ""
+        ],
+        "rotulos_x": [
+          "Extensão do panorama (px)",
+          "Extensão do panorama (px)",
+          "Extensão do panorama (px)",
+          "Atraso (pixels)",
+          "",
+          "u.a.",
+          "Atraso (pixels)",
+          "",
+          "u.a.",
+          "Atraso (pixels)",
+          "",
+          "Atraso (pixels)",
+          ""
+        ],
+        "rotulos_y": [
+          "Altura do\npanorama (px)",
+          "Altura do\npanorama (px)",
+          "Amplitude\npadronizada",
+          "Comprimento de onda\nλ (px)",
+          "",
+          "",
+          "Comprimento de onda\nλ (px)",
+          "",
+          "",
+          "Comprimento de onda\nλ (px)",
+          "",
+          "Comprimento de onda\nλ (px)",
+          ""
+        ]
+      },
+      "origem": {
+        "arquivo": "04_analise_simplificada/figuras/plug_m05q01_001_m06q01_001.png",
+        "sha256": "b31829654de6271f5fb3fc7633b9b6dfa933a0e8f760b9e67ed297f656ba2ab5"
+      },
+      "entrada": {
+        "arquivo": "04_analise_simplificada/intermediario/pares/m05q01_001__m06q01_001.npz",
+        "sha256": "5665e83201b568914ddf4261df05d160e490333f2873471b7ae876c1e1835c8e"
+      }
+    },
+    {
+      "tipo": "intra",
+      "ensaio_x": "m04q01_001",
+      "ensaio_y": "m05q05_001",
+      "pearson_r": 0.8245855859782485,
+      "comprimento_comum": 5071,
+      "layout": {
+        "arquivo": "04_analise_simplificada/figuras/slug_m04q01_001_m05q05_001.png",
+        "largura_insercao_cm": 16,
+        "altura_inserida_cm": 22.952932934208004,
+        "fonte_minima_inserida_pt": 8.18444283853729,
+        "titulo": "Slug · m04q01_001 × m05q05_001 · 5.071 px",
+        "titulos_paineis": [
+          "A - m04q01_001 · prefixo 0–5070 px",
+          "B - m05q05_001 · prefixo 0–5070 px",
+          "Sinais preparados",
+          "Espectro de potência wavelet (WPS) · A",
+          "",
+          "Potência média",
+          "Espectro de potência wavelet (WPS) · B",
+          "",
+          "Potência média",
+          "Espectro cruzado wavelet (WCS) · módulo",
+          "",
+          "Coerência wavelet (WCO)",
+          ""
+        ],
+        "rotulos_x": [
+          "Extensão do panorama (px)",
+          "Extensão do panorama (px)",
+          "Extensão do panorama (px)",
+          "Atraso (pixels)",
+          "",
+          "u.a.",
+          "Atraso (pixels)",
+          "",
+          "u.a.",
+          "Atraso (pixels)",
+          "",
+          "Atraso (pixels)",
+          ""
+        ],
+        "rotulos_y": [
+          "Altura do\npanorama (px)",
+          "Altura do\npanorama (px)",
+          "Amplitude\npadronizada",
+          "Comprimento de onda\nλ (px)",
+          "",
+          "",
+          "Comprimento de onda\nλ (px)",
+          "",
+          "",
+          "Comprimento de onda\nλ (px)",
+          "",
+          "Comprimento de onda\nλ (px)",
+          ""
+        ]
+      },
+      "origem": {
+        "arquivo": "04_analise_simplificada/figuras/slug_m04q01_001_m05q05_001.png",
+        "sha256": "2ae5a5695dc3113cd6bfbfe01503d165010937dee9de17cc80a343f7fe22d883"
+      },
+      "entrada": {
+        "arquivo": "04_analise_simplificada/intermediario/pares/m04q01_001__m05q05_001.npz",
+        "sha256": "0adace8eef63a1d699abc48e848362dd47e13b865b1f2ee00be51ae40f09a73f"
+      }
+    },
+    {
+      "tipo": "inter",
+      "ensaio_x": "m04q01_001",
+      "ensaio_y": "m05q80_001",
+      "pearson_r": 0.45138115766701475,
+      "comprimento_comum": 5071,
+      "layout": {
+        "arquivo": "04_analise_simplificada/figuras/slug_wavy_annular_m04q01_001_m05q80_001.png",
+        "largura_insercao_cm": 16,
+        "altura_inserida_cm": 22.952932934208004,
+        "fonte_minima_inserida_pt": 8.18444283853729,
+        "titulo": "Slug × anular ondulado · m04q01_001 × m05q80_001 · 5.071 px",
+        "titulos_paineis": [
+          "A - m04q01_001 · prefixo 0–5070 px",
+          "B - m05q80_001 · prefixo 0–5070 px",
+          "Sinais preparados",
+          "Espectro de potência wavelet (WPS) · A",
+          "",
+          "Potência média",
+          "Espectro de potência wavelet (WPS) · B",
+          "",
+          "Potência média",
+          "Espectro cruzado wavelet (WCS) · módulo",
+          "",
+          "Coerência wavelet (WCO)",
+          ""
+        ],
+        "rotulos_x": [
+          "Extensão do panorama (px)",
+          "Extensão do panorama (px)",
+          "Extensão do panorama (px)",
+          "Atraso (pixels)",
+          "",
+          "u.a.",
+          "Atraso (pixels)",
+          "",
+          "u.a.",
+          "Atraso (pixels)",
+          "",
+          "Atraso (pixels)",
+          ""
+        ],
+        "rotulos_y": [
+          "Altura do\npanorama (px)",
+          "Altura do\npanorama (px)",
+          "Amplitude\npadronizada",
+          "Comprimento de onda\nλ (px)",
+          "",
+          "",
+          "Comprimento de onda\nλ (px)",
+          "",
+          "",
+          "Comprimento de onda\nλ (px)",
+          "",
+          "Comprimento de onda\nλ (px)",
+          ""
+        ]
+      },
+      "origem": {
+        "arquivo": "04_analise_simplificada/figuras/slug_wavy_annular_m04q01_001_m05q80_001.png",
+        "sha256": "c5239eae96cdb475241b5c5fe892482e697db671ef7417ac8f5cfc8250e66831"
+      },
+      "entrada": {
+        "arquivo": "04_analise_simplificada/intermediario/pares/m04q01_001__m05q80_001.npz",
+        "sha256": "2e1362ecf732884dbd375c11b7399805fa20e8641c62d4fa7f8d7239758a8018"
+      }
+    },
+    {
+      "tipo": "perfis_espectrais_pearson",
+      "origem": {
+        "arquivo": "04_analise_simplificada/figuras/perfis_espectrais_pearson.png",
+        "sha256": "c80fdf137c360bbe53f63cc60abcd533ac760d022565e76bd9bf7187c9819946"
+      },
+      "entrada": {
+        "arquivo": "04_analise_simplificada/intermediario/descritores.npz",
+        "sha256": "b0393e3838f65e0b0f7134a69f90c546882ebcd5e81b87f2f29e392e776cc63c"
+      }
+    },
+    {
+      "tipo": "matriz_pearson_todos",
+      "origem": {
+        "arquivo": "04_analise_simplificada/figuras/matriz_pearson_todos.png",
+        "sha256": "9097298a12dfcb128c6e2c46ca5544691b5e6fc7a299ead6896a93003c3dccc6"
+      },
+      "entrada": {
+        "arquivo": "04_analise_simplificada/intermediario/descritores.npz",
+        "sha256": "b0393e3838f65e0b0f7134a69f90c546882ebcd5e81b87f2f29e392e776cc63c"
+      }
+    },
+    {
+      "tipo": "correlacoes_dentro_entre_pearson",
+      "origem": {
+        "arquivo": "04_analise_simplificada/figuras/correlacoes_dentro_entre_pearson.png",
+        "sha256": "22cd8dd8138c55921fd4f7a37d3a7d70367f8bad8ed298d10c8cd5bcba223970"
+      },
+      "entrada": {
+        "arquivo": "04_analise_simplificada/intermediario/descritores.npz",
+        "sha256": "b0393e3838f65e0b0f7134a69f90c546882ebcd5e81b87f2f29e392e776cc63c"
+      }
+    }
+  ],
+  "ajustes_rotulos": [
+    "Lag (px) substituído por Atraso (pixels)",
+    "Sinal (σ) substituído por Amplitude padronizada",
+    "Sinais normalizados substituído por Sinais preparados"
+  ],
+  "fonte_dos_campos": "núcleo local e entradas da etapa 02; cinco mapas calculados e conferidos contra as métricas integrais."
+}

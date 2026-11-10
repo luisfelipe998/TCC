@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "date_utc": "2026-10-31T03:54:41.871022+00:00",
+  "scope": "Síntese da conclusão conectada à Introdução e aos quatro objetivos, com principais achados e um parágrafo final breve de trabalhos futuros.",
+  "pdf": {
+    "path": "TCC/dist/main.pdf",
+    "sha256": "3e69e77fd88ad5e2578055caea3b2f6872e3248090904fbfee067ba143665d26",
+    "pages": 74
+  },
+  "source_sha256": {
+    "TCC/anexos.tex": "f1b839f0924914cbff14442b048083a34d878186a0ce389a4a89ccee047edaa6",
+    "TCC/apendices.tex": "c12438d4f16784f18b374ecc0a5b9c8a9f50d640f0d8b36d25be397dc8a187a3",
+    "TCC/conclusao.tex": "39806bd24a06838acbac9072e5be711207d4594ece5041d3dea5889341890b27",
+    "TCC/discussao.tex": "4f54320591be55fe86da61dea942dea1b0326360b9978c7e622e3d7eb86d16ba",
+    "TCC/fundamentacao.tex": "fba574a0d0160b1a16ef9c310ea573fce3c319633f8a643ab5687488cb5ab900",
+    "TCC/introducao.tex": "c7a4b0baad24e07715e6ac6ed594831f0c67aff3b08ab2a73b77905076df5898",
+    "TCC/main.tex": "998eeef74bc67af97d49873eb0be36df2e456db6320a35af6c6014c0bb0c1fcf",
+    "TCC/metodologia.tex": "07af38fe440390a43cf738f4dfab82dbac3fdbfb206004b92868e17130bc816b",
+    "TCC/pretextual.tex": "1d3cd48601f93f7246619fb69c04a21dd3c66c5615ae32b4c35a3ced3d7b920a",
+    "TCC/resultados.tex": "0990158a6790f6bf9e30c8c160325150b7cd7373fdd1f358427a1c8ce5b04640"
+  },
+  "audit_report": {
+    "path": "../../../auditorias/conclusao-sintese/verificacao-final.json",
+    "sha256": "3da14b821b2c97ba21b2902d3fbb364cc3bf12f380b79525b7bdc6497884b152"
+  },
+  "preserved": {
+    "existing_analysis_sha256": 558,
+    "stage06_sha256": 336,
+    "figure_sha256": 109,
+    "code_files": 26
+  },
+  "independent_reports_sha256": {
+    "revisao-espectral.json": "6695abf142f76cc9159affdc489232dae1df6e1dd985cd9a199fc74c6178b49a",
+    "revisao-objetivos.json": "4b36b59b80969fefd3dcdfdf61eb890907efbf748090c8f56aaa7e8979d7132c",
+    "revisao-optica.json": "50d9801198ba15ecfbfa9ee0089689ad641abc5638d10e24aeefa300a65f1778"
+  },
+  "objectives_mapped": 4
+}

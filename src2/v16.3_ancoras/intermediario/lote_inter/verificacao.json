@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "pares": 213,
+  "imagens": 213,
+  "preservados": 517,
+  "maior_erro_wcs": 3.0084585808566926e-14,
+  "maior_erro_wco": 1.7985612998927536e-14,
+  "menor_wco": 2.0574927388652162e-11,
+  "maior_wco": 0.9961936671388137,
+  "altura_maxima_cm": 22.96170755017521,
+  "fonte_minima_pt": 8.187571647523034,
+  "fonte": "Mesmos panoramas, ancoras, WPS e intra preservados; soma temporal independente para todos os pares."
+}

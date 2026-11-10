@@ -1,0 +1,379 @@
+{
+  "status": "complete",
+  "processed_acquisitions": 26,
+  "eligible_acquisitions": 25,
+  "eligible_runs": [
+    "m03q05_001",
+    "m03q10_001",
+    "m03q20_001",
+    "m04q01_001",
+    "m04q10_001",
+    "m04q20_001",
+    "m04q40_001",
+    "m04q80_001",
+    "m05q01_001",
+    "m05q05_001",
+    "m05q10_001",
+    "m05q20_001",
+    "m05q40_001",
+    "m05q80_001",
+    "m06q01_001",
+    "m06q05_001",
+    "m06q10_001",
+    "m06q20_001",
+    "m06q40_001",
+    "m06q80_001",
+    "m07q01_001",
+    "m07q05_001",
+    "m07q20_001",
+    "m07q40_001",
+    "m07q80_001"
+  ],
+  "excluded": [
+    {
+      "run": "m03q40_001",
+      "reason": "saturation above20percent in the sole ROI18:72",
+      "saturated_fraction": 0.2523316901571432
+    }
+  ],
+  "geometry": {
+    "rows": "18:72",
+    "included_rows": "18 through 71",
+    "height": 54,
+    "diameter_px": 54
+  },
+  "saturation_rows": "18:72",
+  "groups": [
+    {
+      "pattern": "dispersed bubbles",
+      "n": 1,
+      "alpha_median": 0.0022502511609265425,
+      "F1000_median": 2.562536671815689,
+      "alpha_arithmetic_mean": 0.0022502511609265425,
+      "F1000_arithmetic_mean": 2.562536671815689
+    },
+    {
+      "pattern": "plug",
+      "n": 3,
+      "alpha_median": 0.5701696037733656,
+      "F1000_median": 9.133042529989096,
+      "alpha_arithmetic_mean": 0.5428777196412038,
+      "F1000_arithmetic_mean": 8.290963898158747
+    },
+    {
+      "pattern": "slug",
+      "n": 3,
+      "alpha_median": 0.5712501569260936,
+      "F1000_median": 9.153334794360436,
+      "alpha_arithmetic_mean": 0.5849276088559594,
+      "F1000_arithmetic_mean": 10.16277939833915
+    },
+    {
+      "pattern": "churn",
+      "n": 10,
+      "alpha_median": 0.7809662141214424,
+      "F1000_median": 11.900835061986488,
+      "alpha_arithmetic_mean": 0.7893015213366847,
+      "F1000_arithmetic_mean": 10.559596697146377
+    },
+    {
+      "pattern": "wavy annular",
+      "n": 8,
+      "alpha_median": 0.9652938983492516,
+      "F1000_median": 2.1801031150501577,
+      "alpha_arithmetic_mean": 0.9525564874954524,
+      "F1000_arithmetic_mean": 3.189509978777026
+    }
+  ],
+  "previous_groups": [
+    {
+      "pattern": "dispersed bubbles",
+      "n": 1,
+      "alpha_median": 0.001679763390003041,
+      "F1000_median": 2.6463579648190056,
+      "alpha_arithmetic_mean": 0.001679763390003041,
+      "F1000_arithmetic_mean": 2.6463579648190056
+    },
+    {
+      "pattern": "plug",
+      "n": 3,
+      "alpha_median": 0.5817954969649368,
+      "F1000_median": 9.8051809034468,
+      "alpha_arithmetic_mean": 0.552345185174639,
+      "F1000_arithmetic_mean": 9.012721118973205
+    },
+    {
+      "pattern": "slug",
+      "n": 3,
+      "alpha_median": 0.5908774722831777,
+      "F1000_median": 9.900669655992186,
+      "alpha_arithmetic_mean": 0.5934073934683823,
+      "F1000_arithmetic_mean": 10.858087559185455
+    },
+    {
+      "pattern": "churn",
+      "n": 10,
+      "alpha_median": 0.8066381906719438,
+      "F1000_median": 11.50082881007609,
+      "alpha_arithmetic_mean": 0.8031822996499176,
+      "F1000_arithmetic_mean": 10.018463135026893
+    },
+    {
+      "pattern": "wavy annular",
+      "n": 8,
+      "alpha_median": 0.9710351200355903,
+      "F1000_median": 1.5071386272840945,
+      "alpha_arithmetic_mean": 0.964885049861367,
+      "F1000_arithmetic_mean": 2.487153647903688
+    }
+  ],
+  "reference": {
+    "recomputed_from_new_panoramas": true,
+    "algorithm_changed_to_single_roi": true,
+    "three_plug_runs_unchanged": true,
+    "previous_reference_shape": [
+      80
+    ],
+    "current_reference_shape": [
+      54
+    ],
+    "exactly_equal_to_previous": false,
+    "max_absolute_radial_reference_difference": 0.08709775158319177,
+    "old_selected_columns": {
+      "m05q01_001": 296,
+      "m06q01_001": 390,
+      "m07q05_001": 367
+    },
+    "new_selected_columns": {
+      "m05q01_001": 296,
+      "m06q01_001": 390,
+      "m07q05_001": 367
+    }
+  },
+  "hulls": {
+    "primary_chart_hulls": {
+      "dispersed bubbles": {
+        "eligible_runs": [
+          "m07q01_001"
+        ],
+        "polygon_vertex_runs": [],
+        "shaded": false
+      },
+      "plug": {
+        "eligible_runs": [
+          "m05q01_001",
+          "m06q01_001",
+          "m07q05_001"
+        ],
+        "polygon_vertex_runs": [
+          "m07q05_001",
+          "m05q01_001",
+          "m06q01_001"
+        ],
+        "shaded": true
+      },
+      "slug": {
+        "eligible_runs": [
+          "m04q01_001",
+          "m05q05_001",
+          "m06q05_001"
+        ],
+        "polygon_vertex_runs": [
+          "m05q05_001",
+          "m04q01_001",
+          "m06q05_001"
+        ],
+        "shaded": true
+      },
+      "churn": {
+        "eligible_runs": [
+          "m03q05_001",
+          "m04q10_001",
+          "m04q20_001",
+          "m05q10_001",
+          "m05q20_001",
+          "m05q40_001",
+          "m06q10_001",
+          "m06q20_001",
+          "m07q20_001",
+          "m07q40_001"
+        ],
+        "polygon_vertex_runs": [
+          "m04q10_001",
+          "m03q05_001",
+          "m05q40_001",
+          "m07q40_001",
+          "m07q20_001",
+          "m06q10_001"
+        ],
+        "shaded": true
+      },
+      "wavy annular": {
+        "eligible_runs": [
+          "m03q10_001",
+          "m03q20_001",
+          "m04q40_001",
+          "m04q80_001",
+          "m05q80_001",
+          "m06q40_001",
+          "m06q80_001",
+          "m07q80_001"
+        ],
+        "polygon_vertex_runs": [
+          "m04q40_001",
+          "m03q20_001",
+          "m05q80_001",
+          "m06q80_001",
+          "m06q40_001",
+          "m07q80_001"
+        ],
+        "shaded": true
+      }
+    },
+    "overlap_pairs": [
+      [
+        "plug",
+        "slug"
+      ],
+      [
+        "churn",
+        "wavy annular"
+      ]
+    ],
+    "churn_annular_intersect": true,
+    "independent_polygon_and_halfspace_tests_agree": true
+  },
+  "changes": {
+    "eligibility_changed": [],
+    "old_hull_intersections": [
+      [
+        "plug",
+        "slug"
+      ]
+    ],
+    "new_hull_intersections": [
+      [
+        "plug",
+        "slug"
+      ],
+      [
+        "churn",
+        "wavy annular"
+      ]
+    ],
+    "highest_alpha_median": "wavy annular",
+    "lowest_F1000_median": "wavy annular",
+    "spectral_selection_recomputed": false
+  },
+  "discussion_examples": [
+    {
+      "pattern": "churn",
+      "run_x": "m05q40_001",
+      "run_y": "m06q20_001",
+      "pearson_r": 0.9572096997749503,
+      "alpha_x": 0.8918913549124637,
+      "alpha_y": 0.7871086344495414,
+      "F1000_x": 7.3064859835524345,
+      "F1000_y": 12.418344122254737,
+      "eligible_x": true,
+      "eligible_y": true,
+      "selection": "maximum within-pattern Pearson across all retained spectral acquisitions"
+    },
+    {
+      "pattern": "wavy annular",
+      "run_x": "m03q20_001",
+      "run_y": "m04q80_001",
+      "pearson_r": 0.9882522803968814,
+      "alpha_x": 0.9987043823348263,
+      "alpha_y": 0.9970644639652728,
+      "F1000_x": 0.11518307619928293,
+      "F1000_y": 0.21040035242059033,
+      "eligible_x": true,
+      "eligible_y": true,
+      "selection": "maximum within-pattern Pearson across all retained spectral acquisitions"
+    }
+  ],
+  "figure_paths": [
+    "TCC/figuras/v18_optica/panorama_phase_masks.png",
+    "TCC/figuras/v18_optica/void_fraction_vs_flip_rate.png"
+  ],
+  "spectral_example_source": {
+    "selection": "src2/v18_montagem_18_71/04_analise_simplificada/dados/selecao_intrapadrao.json",
+    "pearson_matrix": "src2/v18_montagem_18_71/04_analise_simplificada/dados/matriz_pearson_todos.csv",
+    "maxima_independently_verified": true
+  },
+  "group_changes": [
+    {
+      "pattern": "dispersed bubbles",
+      "n": 0,
+      "alpha_median": 0.0005704877709235014,
+      "F1000_median": -0.08382129300331664,
+      "alpha_arithmetic_mean": 0.0005704877709235014,
+      "F1000_arithmetic_mean": -0.08382129300331664
+    },
+    {
+      "pattern": "plug",
+      "n": 0,
+      "alpha_median": -0.011625893191571257,
+      "F1000_median": -0.6721383734577042,
+      "alpha_arithmetic_mean": -0.009467465533435249,
+      "F1000_arithmetic_mean": -0.7217572208144585
+    },
+    {
+      "pattern": "slug",
+      "n": 0,
+      "alpha_median": -0.019627315357084063,
+      "F1000_median": -0.7473348616317494,
+      "alpha_arithmetic_mean": -0.008479784612422936,
+      "F1000_arithmetic_mean": -0.6953081608463041
+    },
+    {
+      "pattern": "churn",
+      "n": 0,
+      "alpha_median": -0.025671976550501352,
+      "F1000_median": 0.40000625191039774,
+      "alpha_arithmetic_mean": -0.013880778313232867,
+      "F1000_arithmetic_mean": 0.5411335621194837
+    },
+    {
+      "pattern": "wavy annular",
+      "n": 0,
+      "alpha_median": -0.005741221686338727,
+      "F1000_median": 0.6729644877660632,
+      "alpha_arithmetic_mean": -0.01232856236591462,
+      "F1000_arithmetic_mean": 0.7023563308733376
+    }
+  ],
+  "figure_manifest": {
+    "file": "TCC/figuras/v18_optica/origens.json",
+    "sha256": "8d2a105dc4b01005690505e1058c0c83d0519bf249f3b0d92f3951452e31b4f5",
+    "verification": {
+      "historical_rendering_script_unchanged": true,
+      "new_input_hashes_match_source_manifest": true,
+      "new_csv_counts_and_alpha_match_saved_masks": true,
+      "saturation_recomputed_on_rows_18_72": true,
+      "hulls_match_source_validation": true,
+      "centroids_match_source_summary": true,
+      "acquisitions": 26,
+      "displayed_acquisitions": 25,
+      "displayed_pattern_counts": {
+        "churn": 10,
+        "wavy annular": 8,
+        "slug": 3,
+        "plug": 3,
+        "dispersed bubbles": 1
+      }
+    }
+  },
+  "interpretation": [
+    "Maior mediana de fração de vazio: wavy annular.",
+    "Menor mediana de densidade de transições: wavy annular.",
+    "Interseções entre envoltórias observadas: plug / slug; churn / wavy annular.",
+    "A leitura conjunta dos dois pares permaneceu descritiva. Não foi calculada correlação entre grandezas ópticas e espectrais."
+  ],
+  "independent_verification": {
+    "file": "auditorias/optica-faixa-unica/verificacao-independente.json",
+    "sha256": "775f1818c3f73366fc099db88b61a41ca3604d5493735a6f1e08a631b6c25e96",
+    "status": "PASS"
+  }
+}

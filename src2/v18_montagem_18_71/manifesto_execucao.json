@@ -1,0 +1,179 @@
+{
+  "status": "PASS",
+  "started_utc": "20261030T230501583976Z",
+  "stages": [
+    {
+      "name": "montagem",
+      "script": "scripts/reconstruir.py",
+      "arguments": [],
+      "returncode": 0,
+      "seconds": 22.7402841669973,
+      "log": "logs/montagem.log"
+    },
+    {
+      "name": "comparar_panoramas",
+      "script": "scripts/comparar_resultados.py",
+      "arguments": [
+        "--stage",
+        "panoramas"
+      ],
+      "returncode": 0,
+      "seconds": 0.6765462500043213,
+      "log": "logs/comparar_panoramas.log"
+    },
+    {
+      "name": "wavelet",
+      "script": "scripts/recalcular_wavelet.py",
+      "arguments": [
+        "--workers",
+        "2"
+      ],
+      "returncode": 0,
+      "seconds": 85.40609875001246,
+      "log": "logs/wavelet.log"
+    },
+    {
+      "name": "comparar_wavelet",
+      "script": "scripts/comparar_resultados.py",
+      "arguments": [
+        "--stage",
+        "wavelet"
+      ],
+      "returncode": 0,
+      "seconds": 0.9059009160264395,
+      "log": "logs/comparar_wavelet.log"
+    },
+    {
+      "name": "optica",
+      "script": "scripts/process_optical.py",
+      "arguments": [],
+      "returncode": 0,
+      "seconds": 5.911501375027001,
+      "log": "logs/optica.log"
+    },
+    {
+      "name": "comparar_optica",
+      "script": "scripts/comparar_resultados.py",
+      "arguments": [
+        "--stage",
+        "optica"
+      ],
+      "returncode": 0,
+      "seconds": 0.9578187090228312,
+      "log": "logs/comparar_optica.log"
+    },
+    {
+      "name": "pearson_e_mapas",
+      "script": "04_analise_simplificada/scripts/analisar.py",
+      "arguments": [],
+      "returncode": 0,
+      "seconds": 25.98868162499275,
+      "log": "logs/pearson_e_mapas.log"
+    },
+    {
+      "name": "figuras_opticas",
+      "script": "scripts/gerar_figuras_opticas.py",
+      "arguments": [],
+      "returncode": 0,
+      "seconds": 1.392387542000506,
+      "log": "logs/figuras_opticas.log"
+    },
+    {
+      "name": "finalizar_optica",
+      "script": "scripts/finalize_optical.py",
+      "arguments": [],
+      "returncode": 0,
+      "seconds": 0.08879837498534471,
+      "log": "logs/finalizar_optica.log"
+    },
+    {
+      "name": "finalizar_wavelet",
+      "script": "scripts/finalizar_wavelet.py",
+      "arguments": [],
+      "returncode": 0,
+      "seconds": 1.1082617500214837,
+      "log": "logs/finalizar_wavelet.log"
+    },
+    {
+      "name": "figuras_panoramas",
+      "script": "scripts/gerar_panoramas.py",
+      "arguments": [],
+      "returncode": 0,
+      "seconds": 1.1814222920220345,
+      "log": "logs/figuras_panoramas.log"
+    },
+    {
+      "name": "figuras_metodologia",
+      "script": "scripts/gerar_metodologia.py",
+      "arguments": [],
+      "returncode": 0,
+      "seconds": 4.532697749964427,
+      "log": "logs/figuras_metodologia.log"
+    },
+    {
+      "name": "comparar_completo",
+      "script": "scripts/comparar_resultados.py",
+      "arguments": [
+        "--stage",
+        "completo"
+      ],
+      "returncode": 0,
+      "seconds": 2.0731048330198973,
+      "log": "logs/comparar_completo.log"
+    }
+  ],
+  "external_data": "/Users/i521862/Documents/personal/unisinos/TCC/src2/data_processed",
+  "source_sha256": {
+    "04_analise_simplificada/scripts/analisar.py": "4987cd9bd72fe32ddb6772a7b89f6ede3752ac2d26ff20eab322db5d2d8e1efc",
+    "04_analise_simplificada/scripts/atualizar_optica.py": "eaf486a0e2a4768c703cf0047659bb19fb74ef3ba47bacbef688cc201bcbade8",
+    "config/ensaios.json": "dee19c9af6fc1d5286b673eba6cd76d0c386faf68e8ac8226666b31bfff0ae22",
+    "config/referencia_arrays.npz": "2935013ac7fecdadab04833f4deeb3642b4497626bd70ea4ac014a779fdc94c6",
+    "config/referencia_resultados.json": "431d0da3a628588963a3688036c357f42c1387be5d7652aa0ae573347f0e550f",
+    "executar.py": "2d189539d6b8fa59c02290c4f424679e80cc5e9f29711fd51c4c244c95c810c1",
+    "scripts/comparar_resultados.py": "5f18f8adf5c50c093a7257798abe71d2fb80b489181504d3236b40d1085aba86",
+    "scripts/figuras_wavelet.py": "e4b16a9f793cdadf171b0e570afe52b6d2e98a8082c07f2044c54bd5c84f86a9",
+    "scripts/finalizar_wavelet.py": "b5bb4c0e177d40fe0471cb62b1667c145399e04c6a3970e45d750035d1cb27c2",
+    "scripts/finalize_optical.py": "0e8e0cf3b968ace413dedbaf94a67a644220c16e9ab8a5db944e0dee675dc550",
+    "scripts/gerar_figuras_opticas.py": "08f9824373340312b8ec665f2390faf2721ddd11bf8c053c2b88a72d1847d328",
+    "scripts/gerar_figuras_wavelet.py": "4902a07f1cc162fa2da7146b358a96905c7beb5f00fdeee80db81e0de348ce16",
+    "scripts/gerar_metodologia.py": "9c4a84d62a882f57197d73ae3228b9ee9e3972671d46a66c2847b9219d64ca72",
+    "scripts/gerar_panoramas.py": "f366976a1622a2d2b18a5c70ffb7e7f59d849b2105f924ea00dec41613755302",
+    "scripts/metodologia_exemplo_mascara.py": "8a3cafa4911495c2c3bb32e8c0cd17c574896f05ba5b1d0c0a3bfa2a3dc2dc27",
+    "scripts/metodologia_fluxograma.py": "b996b56f93822022ae1bee90a9421a47fb45232deb1a97d8fe1ce416198ce4f4",
+    "scripts/metodologia_medidas_opticas.py": "4b561e65a8d85c5e709480483ddc1458d6a9bf390e98ea50550fb5d9e56efa38",
+    "scripts/metodologia_perfis_wavelet.py": "2af2b961cb399cac3cd9f748f4226ac086289bada55f761953b917d1d855338d",
+    "scripts/optical_model.py": "58ec6de0c823208a3ac8dc49427e9854342b01e67554fef963b7dba8f6eecc2f",
+    "scripts/optical_plot.py": "fa0dce0a79509d7762cbd874b8138e31a82497b40864f0f82ec239159f8cadf6",
+    "scripts/portability_guard.py": "ed2f3363b0793c85cd84f7578c86680519a5b7b8e46b2bd8e21aa031c0a0fedf",
+    "scripts/process_optical.py": "3cb44ee95b61db9215d318848bbdede22999a4cd9062b283f221450147331a41",
+    "scripts/recalcular_wavelet.py": "edc4cc46e5ce0fc5267bfeaf023e7eb3ae1c6b298b15dc57a6d62cb7380463e8",
+    "scripts/reconstruir.py": "d94037112d0b534b87717b86e8d60fded47aaeea34300b6268e117eeb9a8d6fc",
+    "scripts/runtime.py": "c06fb4265abaec96fea4a36fb08563b94aeb252d25b6fb4033ded46068441026",
+    "scripts/verificar_portabilidade.py": "ee6c8d84f953a2076ca895e2e770e4b8a4c50fcfda6857045afdb73964c5bf83",
+    "scripts/wavelet_core.py": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc"
+  },
+  "method": "METODOLOGIA.md",
+  "workers": 2,
+  "environment": {
+    "python": "3.13.2",
+    "libraries": {
+      "numpy": "2.3.4",
+      "scipy": "1.18.0",
+      "Pillow": "12.0.0",
+      "matplotlib": "3.10.7",
+      "PyWavelets": "1.9.0"
+    }
+  },
+  "production_outputs_automatically_replaced": false,
+  "complete": true,
+  "sources_preserved": true,
+  "seconds": 153.03865658299765,
+  "publication": {
+    "status": "PASS",
+    "candidate": "execucoes/consolidacao_20261030",
+    "archive": "historico/pre_publicacao_20261030T231138Z",
+    "copied_outputs_byte_identical": true,
+    "scientific_outputs_changed": false,
+    "portable_execution_verified": true
+  }
+}

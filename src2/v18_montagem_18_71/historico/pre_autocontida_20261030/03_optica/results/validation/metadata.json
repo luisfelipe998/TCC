@@ -1,0 +1,163 @@
+{
+  "version": "v18_montagem_18_71",
+  "purpose": "All optical intensity operations and measures confined to the single ROI18:72",
+  "command": "python3 -B src2/v18_montagem_18_71/scripts/process_optical.py",
+  "source_version": "src2/v18_montagem_18_71/01_panoramas",
+  "previous_optical_version": "src2/v18_montagem_18_71/historico/before_roi_unification_20261030/03_optica",
+  "source_algorithm": "src2/v14.1_new_voidfraction",
+  "source_algorithm_sha256": "423ba8dc0fc8dd84ebe40a46b1851247689e0584b2fc95968e214ac3a53781d8",
+  "isolated_current_functions": [
+    "crop_roi",
+    "roi_saturation",
+    "normalize",
+    "make_reference",
+    "close_shadow_crop",
+    "silhouette",
+    "geometry"
+  ],
+  "historical_module_imported": false,
+  "geometry": {
+    "start": 18,
+    "stop_exclusive": 72,
+    "included_rows": "18 through 71",
+    "height": 54,
+    "diameter_px": 54
+  },
+  "geometry_default_arguments_verified": true,
+  "boundary_source": "User correction2026-10-30: all current optical operations use only rows18 through71 inclusive, Python slice18:72; H=D=54px.",
+  "segmentation": {
+    "shadow_threshold": 0.7,
+    "radial_gaussian_sigma": 1,
+    "morphological_closing_shape": [
+      3,
+      3
+    ],
+    "minimum_open_interval": 20,
+    "minimum_isolated_component_pixels": 4,
+    "upper_search_slice": [
+      18,
+      45
+    ],
+    "lower_search_slice": [
+      45,
+      72
+    ],
+    "search_partition": "equal halves derived from ROI height",
+    "smoothing_input_slice": [
+      18,
+      72
+    ],
+    "gaussian_mode": "reflect",
+    "radial_extension_can_include_row_71": true
+  },
+  "reference": {
+    "runs": [
+      "m05q01_001",
+      "m06q01_001",
+      "m07q05_001"
+    ],
+    "column_normalization_slice": [
+      18,
+      72
+    ],
+    "percentile": 75,
+    "selection_std_slice": [
+      18,
+      72
+    ],
+    "selection_quantile": 0.05,
+    "reference_height": 54,
+    "comparison": {
+      "recomputed_from_new_panoramas": true,
+      "algorithm_changed_to_single_roi": true,
+      "three_plug_runs_unchanged": true,
+      "previous_reference_shape": [
+        80
+      ],
+      "current_reference_shape": [
+        54
+      ],
+      "exactly_equal_to_previous": false,
+      "max_absolute_radial_reference_difference": 0.08709775158319177,
+      "old_selected_columns": {
+        "m05q01_001": 296,
+        "m06q01_001": 390,
+        "m07q05_001": 367
+      },
+      "new_selected_columns": {
+        "m05q01_001": 296,
+        "m06q01_001": 390,
+        "m07q05_001": 367
+      }
+    }
+  },
+  "saturation": {
+    "slice": [
+      18,
+      72
+    ],
+    "saturated_value": 255,
+    "maximum_fraction": 0.2,
+    "threshold_unchanged": true,
+    "input_rows_changed": true,
+    "values_recomputed": true,
+    "excluded_runs": [
+      "m03q40_001"
+    ],
+    "comparison": "equality to255 in8bit inputs"
+  },
+  "selected_runs": [
+    "m03q05_001",
+    "m03q10_001",
+    "m03q20_001",
+    "m03q40_001",
+    "m04q01_001",
+    "m04q10_001",
+    "m04q20_001",
+    "m04q40_001",
+    "m04q80_001",
+    "m05q01_001",
+    "m05q05_001",
+    "m05q10_001",
+    "m05q20_001",
+    "m05q40_001",
+    "m05q80_001",
+    "m06q01_001",
+    "m06q05_001",
+    "m06q10_001",
+    "m06q20_001",
+    "m06q40_001",
+    "m06q80_001",
+    "m07q01_001",
+    "m07q05_001",
+    "m07q20_001",
+    "m07q40_001",
+    "m07q80_001"
+  ],
+  "processed_acquisitions": 26,
+  "eligible_acquisitions": 25,
+  "group_counts": {
+    "dispersed bubbles": 1,
+    "plug": 3,
+    "slug": 3,
+    "churn": 10,
+    "wavy annular": 8
+  },
+  "alpha_formula": "mean_over_columns(sum_over_contiguous_radial_intervals((width/54)**2))",
+  "flip_formula": "longitudinal_neighbor_changes / (54*(panorama_width-1))",
+  "mask_encoding": "255=inferred gas silhouette, 0=unmarked; 80-row image, foreground confined to rows 18:72",
+  "table_summary": "Median across eligible acquisitions of individual spatial means and flip densities",
+  "chart_stars": "Arithmetic coordinate means with equal weight for each eligible acquisition",
+  "no_parameter_sweep": true,
+  "no_new_statistical_inference": true,
+  "no_wavelet_processing": true,
+  "independent_geometry_and_flip_arithmetic_verified": true,
+  "source_inputs_hashes_unchanged": true,
+  "runtime": {
+    "python": "3.13.2",
+    "executable": "/Users/i521862/.pyenv/versions/3.13.2/bin/python3",
+    "numpy": "2.3.4",
+    "scipy": "1.18.0",
+    "pillow": "12.0.0"
+  }
+}

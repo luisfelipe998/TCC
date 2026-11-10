@@ -1,0 +1,6 @@
+# Ambiente de referência: Python 3.13.2.
+numpy==2.3.4
+scipy==1.18.0
+Pillow==12.0.0
+matplotlib==3.10.7
+PyWavelets==1.8.0

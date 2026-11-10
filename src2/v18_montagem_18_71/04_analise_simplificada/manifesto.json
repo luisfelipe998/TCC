@@ -1,0 +1,218 @@
+{
+  "status": "complete",
+  "script": {
+    "arquivo": "package/04_analise_simplificada/scripts/analisar.py",
+    "sha256": "f2e55c216ab0fe48f8102843e26667a79f2119a49974f01bd5b5eb6c711d8f2e"
+  },
+  "inputs_preserved": true,
+  "input_sha256": {
+    "package/04_analise_simplificada/scripts/analisar.py": "f2e55c216ab0fe48f8102843e26667a79f2119a49974f01bd5b5eb6c711d8f2e",
+    "02_wavelet/intermediario/aquisicoes.json": "c4ddbc8605b8953ca8ee08d10af836876f4a4c8d1c0b03e99382811858669bd2",
+    "02_wavelet/intermediario/configuracao.json": "aece735342b3f5194ac5e51a9f5c3c99b07398b104ad87f55296243243fb029a",
+    "02_wavelet/intermediario/pares.json": "c13ec55fe42ffe3a90ba4bb3188a02d42280167a317b88ac4bc22b9bf1d992c1",
+    "02_wavelet/intermediario/individuais/m03q05_001.npz": "71ab69705bc41051de89e7e58f90a39e4d1c0340e0e6bea8bd574440daa2d759",
+    "02_wavelet/intermediario/individuais/m04q10_001.npz": "10350a06154f6000fe93f383ebcb172210d4b90f65ac259aa40781934720671d",
+    "02_wavelet/intermediario/individuais/m04q20_001.npz": "67a64d5b465e7be0e9f781ec9725b26f5f6fa7fe9e4b61e29ff7c8f4bfc20f27",
+    "02_wavelet/intermediario/individuais/m05q10_001.npz": "04f348738eacaf79cb60f05767d219f2c41ddfe365a303cbcb103bda6017bda2",
+    "02_wavelet/intermediario/individuais/m05q20_001.npz": "d3f437673209e59c2d3f96aa10f1fc6efa720543f95213ce60ce6b09c58f8896",
+    "02_wavelet/intermediario/individuais/m05q40_001.npz": "4b8efa5585d0e5bf818044a87360b1b0cf4a1f5b91f5878df4918d8d6014e721",
+    "02_wavelet/intermediario/individuais/m06q10_001.npz": "a4d09a5f7c1930bf5cd9db7ab6ac44dd43ac00bfe270bd7545aff22322133f03",
+    "02_wavelet/intermediario/individuais/m06q20_001.npz": "b25f801a4790c78888fa31bf0a58837470019569f1cfca1443f06ec8b7c2aac4",
+    "02_wavelet/intermediario/individuais/m07q20_001.npz": "f01629b97476f84aea98e7c7609c56e25fb21461c46c0914fea10e4dc5b93362",
+    "02_wavelet/intermediario/individuais/m07q40_001.npz": "38cbd6290655c9e1c9298ee9243b2b831401e075867b1b460a9b6b3aa14220bb",
+    "02_wavelet/intermediario/individuais/m03q10_001.npz": "8c65695a4bbfb252216f94385859fb81174525feeb08744ca243a7c41d6b65cd",
+    "02_wavelet/intermediario/individuais/m03q20_001.npz": "b164f61f36fa58da17eac23bd40a72129c6ef38ad6b605e2517a6f3ef608125c",
+    "02_wavelet/intermediario/individuais/m03q40_001.npz": "7016fc60368c51e15a951d18c4e8cff1925984b680f0cd59a25b7ce63e2264b4",
+    "02_wavelet/intermediario/individuais/m04q40_001.npz": "6340186f894650a2eadc0608b1172e327353ae0a976dcd4542dc0ca959c562fb",
+    "02_wavelet/intermediario/individuais/m04q80_001.npz": "8ab6018ad06f27deb84107883e25b7bdb2eddb1e3231753fcc2b4a14ece34722",
+    "02_wavelet/intermediario/individuais/m05q80_001.npz": "7ba2d79776975800005707fc11e45a1f3ff92590833526ca84aa9f3f93769a8a",
+    "02_wavelet/intermediario/individuais/m06q40_001.npz": "d68f7bbc20389e44e041677445ac85942b4cf6db6eee2cf18ad3c80c194e4dc0",
+    "02_wavelet/intermediario/individuais/m06q80_001.npz": "5418e1ad3e19d4dce8f1f2945eb4730a7cb5a87811116ed16109541722a42e24",
+    "02_wavelet/intermediario/individuais/m07q80_001.npz": "53c14d92e9ce4beed3e69bdf6771a733b03869afc7530387cf95d780744de21a",
+    "02_wavelet/intermediario/individuais/m05q01_001.npz": "b969983e463682c374a8fddbd86a69727d459467509d0e30e98fbbd1ac7eef26",
+    "02_wavelet/intermediario/individuais/m06q01_001.npz": "f2c5b5cadcd2bd860a0a573ba87ef0453f39db5f47693c9e46dd43b779731463",
+    "02_wavelet/intermediario/individuais/m07q05_001.npz": "498847804cf1e6631bf227a1339c6f170c68d744b9f614205adfe32c224a5e88",
+    "02_wavelet/intermediario/individuais/m04q01_001.npz": "8ff5b4e99bc2358125f5883192d3c8067569ee0638eb79b384ec4846df1112cd",
+    "02_wavelet/intermediario/individuais/m05q05_001.npz": "850adbd7e82ba83570213713dfc469c062ab779ff371dc680c63bfe73c423813",
+    "02_wavelet/intermediario/individuais/m06q05_001.npz": "ad7b3234229d78ac87d78c9a72629166513ff3bf87c8fa7ac53665520218de24",
+    "02_wavelet/intermediario/individuais/m07q01_001.npz": "3d9421521608ae8bc172b451172891aa73050b68ad5dc8271e431a01941e80c5",
+    "03_optica/results/void_fraction/void_fraction_flip_plot_data.csv": "d9dcb95c1f63dcfb31e66e7735a1fef868c46b886fb0759cd0310521ef5826c1",
+    "package/scripts/wavelet_core.py": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc",
+    "package/scripts/figuras_wavelet.py": "e4b16a9f793cdadf171b0e570afe52b6d2e98a8082c07f2044c54bd5c84f86a9",
+    "02_wavelet/intermediario/entradas/m05q40_001.npz": "227752c4a0751107d67706718fe54fbba8acee3619a2df206938ecb9507874ff",
+    "02_wavelet/intermediario/entradas/m06q20_001.npz": "bf318c32ced90fcd63adfe8a5877efe52d78415202d05608e445588d5b038c1b",
+    "02_wavelet/intermediario/pares/m05q40_001__m06q20_001.json": "59b36bcc2af5337e45f16e5c3cb3e8f2deb4d647cd68823b718e60e581569ec3",
+    "01_panoramas/wavelet/m05q40_001/panorama.png": "67731c2744ab0322d04d9058610d6f5d8e12f0813551fa506b140ed20661eb71",
+    "01_panoramas/wavelet/m06q20_001/panorama.png": "5bcb32171cb329efdf96b803bb6983e4c714153dad87827b7552e74abed1c86b",
+    "02_wavelet/intermediario/entradas/m03q20_001.npz": "ccc735015fddbe0010f1259bd380c597afa32e69b4f15c8e8eeb69b53c642d06",
+    "02_wavelet/intermediario/entradas/m04q80_001.npz": "fdf5450b1c8214bb6ee78bd9dd8f09dc5ad1cdbca5c79960c259248242569136",
+    "02_wavelet/intermediario/pares/m03q20_001__m04q80_001.json": "d1139608c55144a3110f126612ad6050dd02fd6e6faa1750eda6d55948b532f3",
+    "01_panoramas/wavelet/m03q20_001/panorama.png": "54f0240a89fd9127ff114c1352bca80d8bdeefe21859da24ed9c00dc324bed47",
+    "01_panoramas/wavelet/m04q80_001/panorama.png": "e9daef84d9f6992f48b9baf233a17820fcf904f050bc7e41d728470c7a25ce9b",
+    "02_wavelet/intermediario/entradas/m05q01_001.npz": "402c5f02bdf4d252b80a3a7cfbbb1bbd4aced656ece98b1344aa40b014581174",
+    "02_wavelet/intermediario/entradas/m06q01_001.npz": "74f236de5c74560e4b9009a9c40e74f0aeb6ffdd778ea627118697ac04a4fec9",
+    "02_wavelet/intermediario/pares/m05q01_001__m06q01_001.json": "b5541a2f88f75ca4ea6aa43edbaf82ff8faef52ae7a9817f1a276aed6fed30f3",
+    "01_panoramas/wavelet/m05q01_001/panorama.png": "de172fb99e7381405b8edb10a54833e39cc2ae8a3ebaf8dc2bdd82ed6ad27509",
+    "01_panoramas/wavelet/m06q01_001/panorama.png": "ce29a7d63315c98e752782343df85b5736e585e2209f91cce9aefa3886ff1875",
+    "02_wavelet/intermediario/entradas/m04q01_001.npz": "2146fc45a7835d1173b1f7483c8e8a7445321287ef34f9d6f528cc6d91311798",
+    "02_wavelet/intermediario/entradas/m05q05_001.npz": "6d263d16396bce72debc0199d6abb60f01a93919f911dcdce11d3c12cef40c8f",
+    "02_wavelet/intermediario/pares/m04q01_001__m05q05_001.json": "2c4389fd05dc0d7fdc9a6855a30295f4349b927d2fda0c20fdb6759e9f40c00e",
+    "01_panoramas/wavelet/m04q01_001/panorama.png": "393d8e37f5b977134b18a0e40612e66cbe99ebcddd6595389038b2f0ed702e54",
+    "01_panoramas/wavelet/m05q05_001/panorama.png": "d0e9e25d5d0e9393cd2fc5f73d4bb21446325b92302d8eeef2c847089c8c6adb",
+    "02_wavelet/intermediario/entradas/m05q80_001.npz": "3298113407a13f9dfa20d42689796e1691d8be321fb49200ae06e71723519372",
+    "02_wavelet/intermediario/pares/m04q01_001__m05q80_001.json": "326128357942d8a0868b754830871ce8496602e421c221599dd0e8998e2ce2f5",
+    "01_panoramas/wavelet/m05q80_001/panorama.png": "13059bd134f66b4d56e08701801dbf25e2bf819ff6db66d95134e5505e1f4a64"
+  },
+  "output_sha256": {
+    "04_analise_simplificada/dados/comparacao_optica_pares_ilustrados.csv": "63553c2ea0f02e6e98a77c60747737e55fba55e8882d98033b1785b83df72f51",
+    "04_analise_simplificada/dados/matriz_pearson_todos.csv": "6832697c6ff36e53d13f846e9123dc743de1705b76b74b474de63ff8d55227bc",
+    "04_analise_simplificada/dados/medias_por_ensaio.csv": "2a581097ab2a00ffaff227dfbdf9eca722eb1523f0d82cd8fd2844374ce5e076",
+    "04_analise_simplificada/dados/optica_por_ensaio.csv": "02db34d3c75c214fb3a0e7cca20d3b52e7ceae4bd46c70853922dfdac0366fc0",
+    "04_analise_simplificada/dados/pares_ilustrados.json": "182809d8f6a2c484105e9a52c9fde955a8cd176dbc2b40c97d8687d26a292171",
+    "04_analise_simplificada/dados/pares_pearson_wco.csv": "097897e63d1e3b8388f9f3266c9af78b3abc12c75e63b55edcacfb5a3d44b575",
+    "04_analise_simplificada/dados/perfis_espectrais.csv": "e4bb23fbe675a40a5f7bb7b90e805c016d719bf5adc2776f98ce66156e06e69c",
+    "04_analise_simplificada/dados/perfis_exibidos.json": "cf9f9c35f82f5ce9e080beaad460fa64be47cbb6c8ee6f30ee75ef808c58454d",
+    "04_analise_simplificada/dados/resumo_intra_inter.csv": "3416e7b039f8b77e13d96f2f871ba3d80df4dea9eccc148e452b52145fa081c3",
+    "04_analise_simplificada/dados/resumo_por_padrao.csv": "4c807fab102c8944e20caa1eb0dee41c9c279d2da86767dae0d8994d78a6ce11",
+    "04_analise_simplificada/dados/selecao_intrapadrao.json": "05058b8abfbe98d0a66bed8796f0895dd62b17e9310291ef4e5ecf4b15fee50f",
+    "04_analise_simplificada/figuras/churn_m05q40_001_m06q20_001.png": "128ae506073aa796e1cd58bd2d7cf50ce2a83b9d552e9053ebed29c8d6db3653",
+    "04_analise_simplificada/figuras/correlacoes_dentro_entre_pearson.png": "22cd8dd8138c55921fd4f7a37d3a7d70367f8bad8ed298d10c8cd5bcba223970",
+    "04_analise_simplificada/figuras/matriz_pearson_todos.png": "1b7fedfcda9f58f2b2e9e51e0f12f698cafd8a2509a31d0828aeb97ec3fd8d60",
+    "04_analise_simplificada/figuras/origens.json": "3d5359d3af5a5e9c32eeeb3fd61906b6ef69d7cad88bb0eb246f11d6e3362fd8",
+    "04_analise_simplificada/figuras/perfis_espectrais_pearson.png": "31e12285cf66a4ba2cd1f8ce32dffeddf5c671fca9f2c6d391bbf0dbcdce23bf",
+    "04_analise_simplificada/figuras/plug_m05q01_001_m06q01_001.png": "b31829654de6271f5fb3fc7633b9b6dfa933a0e8f760b9e67ed297f656ba2ab5",
+    "04_analise_simplificada/figuras/slug_m04q01_001_m05q05_001.png": "2ae5a5695dc3113cd6bfbfe01503d165010937dee9de17cc80a343f7fe22d883",
+    "04_analise_simplificada/figuras/slug_wavy_annular_m04q01_001_m05q80_001.png": "c5239eae96cdb475241b5c5fe892482e697db671ef7417ac8f5cfc8250e66831",
+    "04_analise_simplificada/figuras/wavy_annular_m03q20_001_m04q80_001.png": "d1a8abeb624c675cf403b0fa7eb4c9cedad34b9f9e90371a7eb674f3be6f04bd",
+    "04_analise_simplificada/intermediario/configuracao.json": "93093e1f892ea25275e561a4543db0aa7d497e802c2f6e5baf476f64f401313b",
+    "04_analise_simplificada/intermediario/descritores.npz": "b0393e3838f65e0b0f7134a69f90c546882ebcd5e81b87f2f29e392e776cc63c",
+    "04_analise_simplificada/intermediario/figuras.json": "3d5359d3af5a5e9c32eeeb3fd61906b6ef69d7cad88bb0eb246f11d6e3362fd8",
+    "04_analise_simplificada/intermediario/pares/m03q20_001__m04q80_001.json": "f07a08912d710ba489b55692fcc34d12a415e36928e2863cd6bb0f86798cf96a",
+    "04_analise_simplificada/intermediario/pares/m03q20_001__m04q80_001.npz": "1bdf24030c0b9db7195d9b0d28cac04cbd2e56e21eeb87c8c878426130251795",
+    "04_analise_simplificada/intermediario/pares/m04q01_001__m05q05_001.json": "a6072bc94e9c6813909282912f6555620eb62a66b3c7a9dce65c11b5df3fc6ad",
+    "04_analise_simplificada/intermediario/pares/m04q01_001__m05q05_001.npz": "0adace8eef63a1d699abc48e848362dd47e13b865b1f2ee00be51ae40f09a73f",
+    "04_analise_simplificada/intermediario/pares/m04q01_001__m05q80_001.json": "45d05752aaa21d42b01299d396e3d63bfec2468c11f005abab5eadd47b78177c",
+    "04_analise_simplificada/intermediario/pares/m04q01_001__m05q80_001.npz": "2e1362ecf732884dbd375c11b7399805fa20e8641c62d4fa7f8d7239758a8018",
+    "04_analise_simplificada/intermediario/pares/m05q01_001__m06q01_001.json": "5f35d5d88b2439b377daba5b612738a1f55d18946fccce80ade6e729518e9d52",
+    "04_analise_simplificada/intermediario/pares/m05q01_001__m06q01_001.npz": "5665e83201b568914ddf4261df05d160e490333f2873471b7ae876c1e1835c8e",
+    "04_analise_simplificada/intermediario/pares/m05q40_001__m06q20_001.json": "de636f1590ed3e3535e7de3f33651189f3c7db2a02b0a822d772f9a81d548440",
+    "04_analise_simplificada/intermediario/pares/m05q40_001__m06q20_001.npz": "e406134086ce1e69f15ecaf61d458ee4621d3b207ae5b89325fa69a28ce31f5b",
+    "04_analise_simplificada/intermediario/verificacao_pearson.json": "889ff2780c6b9cc886200adc773355da8c385053077ba6ea1ee5278644393fb4",
+    "04_analise_simplificada/resumo_tcc.json": "36b300a2f76503da676a63405b994b3c5bb12234baafcaac2e283cab3977fa28"
+  },
+  "method": "Pearson diretamente sobre WPS no atraso zero dos 26 sinais completos. Sem logaritmo ou remoção de tendência do perfil espectral.",
+  "signal_preparation": "Inversão, detrend linear e padronização do sinal de intensidade preservados.",
+  "fields_source": "02_wavelet",
+  "rows_inclusive": [
+    18,
+    71
+  ],
+  "optical_analysis_unchanged": true,
+  "revisao_visual_posterior": {
+    "data_utc": "2026-10-30T23:50:32.258959+00:00",
+    "escopo": "Inclusão de legenda dos cinco grupos, faixas coloridas e letras nos dois eixos; coeficientes e ordenação preservados.",
+    "script": {
+      "arquivo": "package/04_analise_simplificada/scripts/analisar.py",
+      "sha256": "9a499f42b0d3997bb8634091d3a272b61223e22eb9c42b79b27b56a4b31a609f"
+    },
+    "funcao": "draw_pearson_matrix",
+    "entrada": {
+      "arquivo": "04_analise_simplificada/intermediario/descritores.npz",
+      "sha256": "b0393e3838f65e0b0f7134a69f90c546882ebcd5e81b87f2f29e392e776cc63c"
+    },
+    "agrupamento": {
+      "arquivo": "02_wavelet/intermediario/aquisicoes.json",
+      "sha256": "c4ddbc8605b8953ca8ee08d10af836876f4a4c8d1c0b03e99382811858669bd2"
+    },
+    "imagem_anterior_sha256": "9097298a12dfcb128c6e2c46ca5544691b5e6fc7a299ead6896a93003c3dccc6",
+    "imagem_atual_sha256": "1b7fedfcda9f58f2b2e9e51e0f12f698cafd8a2509a31d0828aeb97ec3fd8d60",
+    "grupos": [
+      {
+        "letra": "A",
+        "padrao": "churn",
+        "legenda": "Churn",
+        "posicoes_1_based": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "letra": "B",
+        "padrao": "wavy annular",
+        "legenda": "Anular ondulado",
+        "posicoes_1_based": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      {
+        "letra": "C",
+        "padrao": "plug",
+        "legenda": "Plug",
+        "posicoes_1_based": [
+          20,
+          21,
+          22
+        ]
+      },
+      {
+        "letra": "D",
+        "padrao": "slug",
+        "legenda": "Slug",
+        "posicoes_1_based": [
+          23,
+          24,
+          25
+        ]
+      },
+      {
+        "letra": "E",
+        "padrao": "dispersed bubble",
+        "legenda": "Bolhas dispersas",
+        "posicoes_1_based": [
+          26
+        ]
+      }
+    ]
+  },
+  "atualizacao_visual_perfis": {
+    "data": "2026-11-05",
+    "escopo": "Identificação visual de m03q40 e m06q05; sem recálculo dos dados ou estatísticas.",
+    "script": {
+      "arquivo": "package/04_analise_simplificada/scripts/analisar.py",
+      "sha256": "f2e55c216ab0fe48f8102843e26667a79f2119a49974f01bd5b5eb6c711d8f2e"
+    },
+    "funcao": "draw_spectral_profiles",
+    "entrada": {
+      "arquivo": "04_analise_simplificada/intermediario/descritores.npz",
+      "sha256": "b0393e3838f65e0b0f7134a69f90c546882ebcd5e81b87f2f29e392e776cc63c"
+    },
+    "agrupamento": {
+      "arquivo": "02_wavelet/intermediario/aquisicoes.json",
+      "sha256": "c4ddbc8605b8953ca8ee08d10af836876f4a4c8d1c0b03e99382811858669bd2"
+    },
+    "imagem_anterior_sha256": "c80fdf137c360bbe53f63cc60abcd533ac760d022565e76bd9bf7187c9819946",
+    "imagem_atual_sha256": "31e12285cf66a4ba2cd1f8ce32dffeddf5c671fca9f2c6d391bbf0dbcdce23bf",
+    "perfis_identificados": [
+      "m03q40_001",
+      "m06q05_001"
+    ],
+    "estilo": "Linhas tracejadas com legendas; perfis, normalização e medianas preservados.",
+    "script_anterior_sha256": "4987cd9bd72fe32ddb6772a7b89f6ede3752ac2d26ff20eab322db5d2d8e1efc"
+  }
+}

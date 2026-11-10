@@ -1,0 +1,38 @@
+{
+  "plug": {
+    "run_x": "m05q01_001",
+    "run_y": "m06q01_001",
+    "rotulo": "favoravel",
+    "motivo_visual": "Faixas de coerencia mais alta em escalas medias e longas proximas do alinhamento; orientacao visual local.",
+    "data_utc": "2026-10-25T18:34:52.829512+00:00",
+    "natureza": "Leitura descritiva das novas previas; nao altera a selecao nem os calculos.",
+    "mapa_sha256": "83abdcdc00e1b9fd9d072a59d7f67cdc8de484bbb9163521e6438ebb53b51106"
+  },
+  "slug": {
+    "run_x": "m04q01_001",
+    "run_y": "m05q05_001",
+    "rotulo": "desfavoravel",
+    "motivo_visual": "Predomina coerencia baixa ou moderada no alinhamento; faixa mais alta concentrada nas maiores escalas e deslocada para lags positivos.",
+    "data_utc": "2026-10-25T18:34:52.858715+00:00",
+    "natureza": "Leitura descritiva das novas previas; nao altera a selecao nem os calculos.",
+    "mapa_sha256": "dd8be2417ffd997df267cced643eddf1bc307fef6cda875c211e32eb70856c7b"
+  },
+  "churn": {
+    "run_x": "m03q05_001",
+    "run_y": "m04q10_001",
+    "rotulo": "desfavoravel",
+    "motivo_visual": "Coerencia alta concentrada nas maiores escalas; a maior parte das escalas curtas e intermediarias permanece baixa ou moderada.",
+    "data_utc": "2026-10-25T18:34:52.891766+00:00",
+    "natureza": "Leitura descritiva das novas previas; nao altera a selecao nem os calculos.",
+    "mapa_sha256": "c91aebac9ce8294be83d629ab7ff0e2887b405e1b75e64f1b3f7d4609bc4b91b"
+  },
+  "wavy annular": {
+    "run_x": "m03q10_001",
+    "run_y": "m03q20_001",
+    "rotulo": "desfavoravel",
+    "motivo_visual": "Faixa mais coerente concentrada nos maiores comprimentos de onda; escalas curtas e intermediarias predominantemente baixas.",
+    "data_utc": "2026-10-25T18:34:52.961693+00:00",
+    "natureza": "Leitura descritiva das novas previas; nao altera a selecao nem os calculos.",
+    "mapa_sha256": "a3dca84f8bd5084446ce92c26583396f813f80057c3459c4d9cf6492db74e3c7"
+  }
+}

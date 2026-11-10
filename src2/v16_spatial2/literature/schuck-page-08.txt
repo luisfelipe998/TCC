@@ -1,0 +1,48 @@
+416 A. Schuck Jr. and B. E. J. Bodmann
+
+a x, [N] b y,[n]
+1 1
+0 0
+-1 -1
+0 1000 2000 0 1000 2000
+. xn] ‘ yan
+1 1
+0.5 0.5
+0 0
+-0.5 -0.5
+0 1000 2000 0 1000 2000
+: x,{] ' y,{n]
+Fi
+0.5 0.5
+0 0
+-0.5 -0.5
+0 1000 2000 0 1000 2000
+n n
+
+Fig. 32.2 Three realizations of processes x (a), (¢), and (e) and y (b), (d), and (f) for SNR = $dB
+and delay of 500 samples between events in x and y processes
+
+Now using the new definitions in the detection problem proposed in this work,
+the correlation estimators of (32.1), (32.2), and (32.3), given by
+
+K
+
+Rexlm] = : Riba. (32.24)
+k=1
+
+- 14,
+
+Rybn| = = YR tml, (32.25)
+k=1
+
+- 14,
+
+Roba) =e Ryle (32.26)
+k=1
+
+where RE,[m] , Rk,[m], and Ri, [m] of these signals were determined by Matlab
+xcorr function, were calculated. Then, the CWT of Ryx[m] , Ryylm], and Ryylm]
+of the three first realizations (the ones without other pulses randomly added) were
+calculated, providing the new definitions of WPS and WCS. The result of WCS (the
+
+bardo.bodmann@ufrgs.br

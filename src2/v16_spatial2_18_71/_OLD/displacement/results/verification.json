@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "runs": 31,
+  "intervals": 15500,
+  "temporal_checks": 15469,
+  "independent_direct_ncc_pairs": 96,
+  "maximum_independent_shift_difference": 5.186961971048731e-13,
+  "maximum_independent_peak_difference": 2.2537527399890678e-14,
+  "panorama_pairs_verified": 22,
+  "exact_old_panorama_crops": true,
+  "exact_new_panorama_reconstructions": true,
+  "exact_extraction_rows": [
+    18,
+    71
+  ],
+  "rejected_intervals_are_nan": true,
+  "parent_artifacts_unchanged": 415,
+  "same_labels_and_inclusion_as_parent": true,
+  "scope": "Implementation, saved arithmetic, construction and provenance; not physical ground-truth accuracy."
+}

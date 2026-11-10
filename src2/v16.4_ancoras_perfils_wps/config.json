@@ -1,0 +1,21 @@
+{
+  "versao": "v16.4-exploratoria-1",
+  "linhas_inclusivas": [18, 71],
+  "janela_px": 2048,
+  "lambda_min_px": 50,
+  "lambda_max_px": 1024,
+  "numero_escalas": 200,
+  "omega0": 6,
+  "estimador": "biased",
+  "K": 1,
+  "condicoes": ["ancora_2048", "inicio_2048", "centro_2048", "fim_2048", "panorama_completo", "ancora_menos16", "ancora_mais16"],
+  "deslocamento_sensibilidade_px": 16,
+  "dominio_principal": "50-1024 px, herdado da v16.3",
+  "dominio_conservador": "pontos da mesma grade com 3a <= 2048/2; comum a todas as condicoes",
+  "metrica_principal": "Hellinger entre massas trapezoidais em log(lambda) da WPS alternativa no lag zero",
+  "metrica_sensibilidade": "distancia cosseno com pesos trapezoidais em log(lambda), ancoras e panoramas completos",
+  "comparadores": ["Pearson residual v16.3", "WCO media central v16.3", "v16.1 principal restrita aos mesmos 25 ensaios"],
+  "avaliacao": ["A por par", "A balanceada por padrao e combinacao", "A por padrao", "retirada de uma aquisicao e todos os seus pares"],
+  "inferencia": "descritiva; sem acuracia, valores-p ou intervalos de confianca",
+  "selecao": "ancoras congeladas da v16.3; nenhuma nova selecao ou ajuste por resultado"
+}

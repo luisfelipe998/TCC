@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "pares": 325,
+  "maior_erro_correlacao_soma_direta": 2.498001805406602e-16,
+  "maior_erro_wps_soma_direta": 3.552713678800501e-15,
+  "menor_coerencia": 5.082336049525358e-12,
+  "maior_coerencia": 0.9936204510965982,
+  "todas_200_escalas_validas": true,
+  "mapas_completos_usados_em_metricas": true,
+  "manifesto_montagem": {
+    "arquivo": "01_panoramas/manifesto.json",
+    "sha256": "b321843d3b524fff1b333256bc070d35f44676d4f0f9412b0f9da16d4724a821"
+  }
+}

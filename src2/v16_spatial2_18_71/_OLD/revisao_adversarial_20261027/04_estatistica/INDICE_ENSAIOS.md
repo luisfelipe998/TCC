@@ -1,0 +1,32 @@
+# Índice dos ensaios
+
+A mesma ordem foi utilizada nas matrizes e nos perfis estatísticos.
+
+| Nº | Ensaio | Padrão | Extensão (px) |
+| ---: | --- | --- | ---: |
+| 1 | m03q05_001 | churn | 9586 |
+| 2 | m04q10_001 | churn | 8829 |
+| 3 | m04q20_001 | churn | 9344 |
+| 4 | m05q10_001 | churn | 7001 |
+| 5 | m05q20_001 | churn | 7391 |
+| 6 | m05q40_001 | churn | 9937 |
+| 7 | m06q10_001 | churn | 7584 |
+| 8 | m06q20_001 | churn | 10044 |
+| 9 | m07q20_001 | churn | 8255 |
+| 10 | m07q40_001 | churn | 10349 |
+| 11 | m03q10_001 | wavy annular | 14224 |
+| 12 | m03q20_001 | wavy annular | 23079 |
+| 13 | m03q40_001 | wavy annular | 20743 |
+| 14 | m04q40_001 | wavy annular | 14960 |
+| 15 | m04q80_001 | wavy annular | 22636 |
+| 16 | m05q80_001 | wavy annular | 17524 |
+| 17 | m06q40_001 | wavy annular | 14772 |
+| 18 | m06q80_001 | wavy annular | 18665 |
+| 19 | m07q80_001 | wavy annular | 16658 |
+| 20 | m05q01_001 | plug | 5940 |
+| 21 | m06q01_001 | plug | 7798 |
+| 22 | m07q05_001 | plug | 7358 |
+| 23 | m04q01_001 | slug | 5071 |
+| 24 | m05q05_001 | slug | 6323 |
+| 25 | m06q05_001 | slug | 7787 |
+| 26 | m07q01_001 | dispersed bubble | 3171 |

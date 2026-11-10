@@ -1,0 +1,27 @@
+numero,ensaio,padrao,comprimento_px
+1,m03q05_001,churn,9237
+2,m04q10_001,churn,8894
+3,m04q20_001,churn,9324
+4,m05q10_001,churn,7058
+5,m05q20_001,churn,7411
+6,m05q40_001,churn,9873
+7,m06q10_001,churn,7615
+8,m06q20_001,churn,10025
+9,m07q20_001,churn,8289
+10,m07q40_001,churn,10313
+11,m03q10_001,wavy annular,13789
+12,m03q20_001,wavy annular,22831
+13,m03q40_001,wavy annular,19204
+14,m04q40_001,wavy annular,14477
+15,m04q80_001,wavy annular,22533
+16,m05q80_001,wavy annular,17500
+17,m06q40_001,wavy annular,14722
+18,m06q80_001,wavy annular,18664
+19,m07q80_001,wavy annular,16656
+20,m05q01_001,plug,5914
+21,m06q01_001,plug,7786
+22,m07q05_001,plug,7337
+23,m04q01_001,slug,5071
+24,m05q05_001,slug,6295
+25,m06q05_001,slug,7747
+26,m07q01_001,dispersed bubble,3094

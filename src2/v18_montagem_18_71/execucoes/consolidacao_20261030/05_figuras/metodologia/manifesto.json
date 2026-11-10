@@ -1,0 +1,56 @@
+{
+  "status": "complete",
+  "figures": [
+    {
+      "name": "fluxograma",
+      "kind": "diagram",
+      "experimental_data": false,
+      "generator": "package/scripts/metodologia_fluxograma.py",
+      "generator_sha256": "b996b56f93822022ae1bee90a9421a47fb45232deb1a97d8fe1ce416198ce4f4",
+      "artifacts": {
+        "05_figuras/metodologia/fluxograma.pdf": "9b9eb425f7f22218aef4e2dc09d03fb9787433fea286c533d0457ce3999eb549",
+        "05_figuras/metodologia/fluxograma.png": "52a68405cb945f44f24cfc47b1e644979db9c454cba6e68c4e8b4756b0489096",
+        "05_figuras/metodologia/fluxograma_origem.json": "e56786754b6fd61162654f3e83ecae653068441fdfa2262e7a150d302d935d6b"
+      }
+    },
+    {
+      "name": "perfis_wavelet",
+      "kind": "synthetic_wavelet_example",
+      "experimental_data": false,
+      "generator": "package/scripts/metodologia_perfis_wavelet.py",
+      "generator_sha256": "2af2b961cb399cac3cd9f748f4226ac086289bada55f761953b917d1d855338d",
+      "artifacts": {
+        "05_figuras/metodologia/perfis_wavelet.pdf": "4c32c1b8e5fbd51524d191d47044962ea449fc9e162957bd21131ccb6eafd80b",
+        "05_figuras/metodologia/perfis_wavelet.png": "9c9b5e1475f92176ae0eadab83d82c0dd73d5318d867e7d5e1e1e0b3b363dfc0",
+        "05_figuras/metodologia/perfis_wavelet_origem.json": "37d3305071bf6fba51b3d682240913cd6d759605055e9346c4d476aa366671bf",
+        "05_figuras/metodologia/perfis_wavelet_dados.npz": "554bcc1d6202221b5a00c770d730f7cb7880c00090f27375460bfb6055873bef"
+      }
+    },
+    {
+      "name": "exemplo_mascara",
+      "kind": "experimental_crop",
+      "experimental_data": true,
+      "generator": "package/scripts/metodologia_exemplo_mascara.py",
+      "generator_sha256": "8a3cafa4911495c2c3bb32e8c0cd17c574896f05ba5b1d0c0a3bfa2a3dc2dc27",
+      "artifacts": {
+        "05_figuras/metodologia/exemplo_mascara.pdf": "82ccdfc3c066a6424c644f0ecfb8e5e38317e3844c0c3eb6bbcc99e3e62caf6d",
+        "05_figuras/metodologia/exemplo_mascara.png": "f8160da96dc05b6735b5ad8adac066788757ddd74ed6cc09b11c63e5a268fa8f",
+        "05_figuras/metodologia/exemplo_mascara_origem.json": "c8cdd637e4574841d70f04c69992c3d6e87210541b595cf2dcb2ee26451d081b",
+        "05_figuras/metodologia/exemplo_mascara_dados.npz": "697d0a728dfcef2196fceb38169ad5f7b399d3f6fa16e0f4f294dda31f32432d"
+      }
+    },
+    {
+      "name": "medidas_opticas",
+      "kind": "synthetic_mask_example",
+      "experimental_data": false,
+      "generator": "package/scripts/metodologia_medidas_opticas.py",
+      "generator_sha256": "4b561e65a8d85c5e709480483ddc1458d6a9bf390e98ea50550fb5d9e56efa38",
+      "artifacts": {
+        "05_figuras/metodologia/medidas_opticas.pdf": "4122fbd024183adc577946d5433ec79fda327d74d89985459ff08cdf9f32d1e5",
+        "05_figuras/metodologia/medidas_opticas.png": "dca04160192b71f781d5a7818c31e7dde18f6b026d0312d89a1fa02ea39db5b0",
+        "05_figuras/metodologia/medidas_opticas_origem.json": "857aff8a8657c0bdf8597d2c7deba36f6f56bbb7d7b0b88b487437ec52b450ff",
+        "05_figuras/metodologia/medidas_opticas_dados.npz": "d7f362deb9edf30211a896040d08d287d4558b6a75c7e1912759f9da73bd898b"
+      }
+    }
+  ]
+}

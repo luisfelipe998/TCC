@@ -1,0 +1,12 @@
+{
+  "seed": 32172026,
+  "scales": 200,
+  "wavelength_min": 50,
+  "wavelength_max": 3000,
+  "domain": "Todos os lags e as 200 escalas, sem COI e sem m\u00e1scara conservadora; exclu\u00eddos apenas denominadores numericamente degenerados",
+  "statistic": "maximum WCO across all included lags and scales",
+  "model": "Independent random phases preserving each record circular Fourier amplitudes before linear detrending",
+  "limitation": "Conditional diagnostic only. Does not reproduce non-Gaussian morphology, nonstationarity or stitching. No physical linkage or causality claim.",
+  "between_pair_multiple_testing": "No rejection decision; p values are unadjusted across the five prespecified examples.",
+  "elapsed_seconds": 450.3663239580055
+}

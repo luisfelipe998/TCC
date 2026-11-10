@@ -1,0 +1,1232 @@
+                                                     A Practical Guide to
+                                                       Wavelet Analysis
+                                                                   Christopher Torrence and Gilbert P. Compo
+                   Program in Atmospheric and Oceanic Sciences, University of Colorado, Boulder, Colorado
+
+
+
+      ABSTRACT
+
+          A practical step-by-step guide to wavelet analysis is given, with examples taken from time series of the El Niño–
+      Southern Oscillation (ENSO). The guide includes a comparison to the windowed Fourier transform, the choice of an
+      appropriate wavelet basis function, edge effects due to finite-length time series, and the relationship between wavelet
+      scale and Fourier frequency. New statistical significance tests for wavelet power spectra are developed by deriving theo-
+      retical wavelet spectra for white and red noise processes and using these to establish significance levels and confidence
+      intervals. It is shown that smoothing in time or scale can be used to increase the confidence of the wavelet spectrum.
+      Empirical formulas are given for the effect of smoothing on significance levels and confidence intervals. Extensions to
+      wavelet analysis such as filtering, the power Hovmöller, cross-wavelet spectra, and coherence are described.
+          The statistical significance tests are used to give a quantitative measure of changes in ENSO variance on interdecadal
+      timescales. Using new datasets that extend back to 1871, the Niño3 sea surface temperature and the Southern Oscilla-
+      tion index show significantly higher power during 1880–1920 and 1960–90, and lower power during 1920–60, as well
+      as a possible 15-yr modulation of variance. The power Hovmöller of sea level pressure shows significant variations in
+      2–8-yr wavelet power in both longitude and time.
+
+
+
+
+1. Introduction                                                     complete description of geophysical applications can
+                                                                    be found in Foufoula-Georgiou and Kumar (1995),
+    Wavelet analysis is becoming a common tool for                  while a theoretical treatment of wavelet analysis is
+analyzing localized variations of power within a time               given in Daubechies (1992).
+series. By decomposing a time series into time–fre-                    Unfortunately, many studies using wavelet analy-
+quency space, one is able to determine both the domi-               sis have suffered from an apparent lack of quantita-
+nant modes of variability and how those modes vary                  tive results. The wavelet transform has been regarded
+in time. The wavelet transform has been used for nu-                by many as an interesting diversion that produces col-
+merous studies in geophysics, including tropical con-               orful pictures, yet purely qualitative results. This mis-
+vection (Weng and Lau 1994), the El Niño–Southern                   conception is in some sense the fault of wavelet analy-
+Oscillation (ENSO; Gu and Philander 1995; Wang and                  sis itself, as it involves a transform from a one-dimen-
+Wang 1996), atmospheric cold fronts (Gamage and                     sional time series (or frequency spectrum) to a diffuse
+Blumen 1993), central England temperature (Baliunas                 two-dimensional time–frequency image. This diffuse-
+et al. 1997), the dispersion of ocean waves (Meyers et              ness has been exacerbated by the use of arbitrary nor-
+al. 1993), wave growth and breaking (Liu 1994), and                 malizations and the lack of statistical significance tests.
+coherent structures in turbulent flows (Farge 1992). A                 In Lau and Weng (1995), an excellent introduction
+                                                                    to wavelet analysis is provided. Their paper, however,
+                                                                    did not provide all of the essential details necessary
+Corresponding author address: Dr. Christopher Torrence, Ad-         for wavelet analysis and avoided the issue of statisti-
+vanced Study Program, National Center for Atmospheric Re-
+                                                                    cal significance.
+search, P.O. Box 3000, Boulder, CO 80307-3000.
+E-mail: torrence@ucar.edu                                              The purpose of this paper is to provide an easy-to-
+In final form 20 October 1997.                                      use wavelet analysis toolkit, including statistical sig-
+©1998 American Meteorological Society                               nificance testing. The consistent use of examples of
+
+Bulletin of the American Meteorological Society                                                                                    61
+                                                  a. NINO3 SST
+ENSO provides a substantive addition to              3
+the ENSO literature. In particular, the                         2
+statistical significance testing allows       (oC)
+                                                                1
+                                                                0
+greater confidence in the previous wave-
+                                                                -1
+let-based ENSO results of Wang and                              -2
+                                                                     1880      1900     1920         1940      1960     1980    2000
+Wang (1996). The use of new datasets
+                                                  b. Morlet
+with longer time series permits a more                                                                                             0.5
+robust classification of interdecadal                            1                                                                 1.0
+changes in ENSO variance.                                        2                                                                 2.0
+
+
+
+                                               Period (years)                                                                             Scale (years)
+   The first section describes the datasets                      4                                                                 4.0
+used for the examples. Section 3 de-                             8                                                                 8.0
+scribes the method of wavelet analysis                          16                                                                 16.0
+using discrete notation. This includes a                        32                                                                 32.0
+discussion of the inherent limitations of                       64                                                                 64.0
+                                                                     1880      1900     1920         1940      1960     1980    2000
+the windowed Fourier transform (WFT),                                                          Time (year)
+
+the definition of the wavelet transform,          c. DOG
+                                                                                                                                   0.125
+the choice of a wavelet basis function,                          1                                                                 0.250
+edge effects due to finite-length time se-                       2                                                                 0.500
+
+
+
+                                               Period (years)                                                                                             Scale (years)
+ries, the relationship between wavelet                           4                                                                 1.000
+scale and Fourier period, and time series                        8                                                                 2.000
+reconstruction. Section 4 presents the                          16                                                                 4.000
+theoretical wavelet spectra for both                            32                                                                 8.000
+white-noise and red-noise processes.                                                                                               16.000
+                                                                     1880      1900     1920         1940      1960     1980    2000
+These theoretical spectra are compared to                                                      Time (year)
+Monte Carlo results and are used to es-
+                                                  FIG. 1. (a) The Niño3 SST time series used for the wavelet analysis. (b) The
+tablish significance levels and confi-        local wavelet power spectrum of (a) using the Morlet wavelet, normalized by 1/
+dence intervals for the wavelet power         σ2 (σ2 = 0.54°C2). The left axis is the Fourier period (in yr) corresponding to the
+spectrum. Section 5 describes time or         wavelet scale on the right axis. The bottom axis is time (yr). The shaded contours
+scale averaging to increase significance      are at normalized variances of 1, 2, 5, and 10. The thick contour encloses regions
+levels and confidence intervals. Section      of greater than 95% confidence for a red-noise process with a lag-1 coefficient of
+                                              0.72. Cross-hatched regions on either end indicate the “cone of influence,” where
+6 describes other wavelet applications
+                                              edge effects become important. (c) Same as (b) but using the real-valued Mexican
+such as filtering, the power Hovmöller,       hat wavelet (derivative of a Gaussian; DOG m = 2). The shaded contour is at
+cross-wavelet spectra, and wavelet co-        normalized variance of 2.0.
+herence. The summary contains a step-
+by-step guide to wavelet analysis.
+                                                                            entire record have been removed to define an anomaly
+                                                                            time series. The Niño3 SST is shown in the top plot
+2. Data                                                                     of Fig. 1a.
+                                                                               Gridded sea level pressure (SLP) data is from the
+   Several time series will be used for examples of                         UKMO/CSIRO historical GMSLP2.1f (courtesy of D.
+wavelet analysis. These include the Niño3 sea surface                       Parker and T. Basnett, Hadley Centre for Climate Pre-
+temperature (SST) used as a measure of the amplitude                        diction and Research, UKMO). The data is on a 5°
+of the El Niño–Southern Oscillation (ENSO). The                             global grid, with monthly resolution from January
+Niño3 SST index is defined as the seasonal SST av-                          1871 to December 1994. Anomaly time series have
+eraged over the central Pacific (5°S–5°N, 90°–                              been constructed by removing the first three harmon-
+150°W). Data for 1871–1996 are from an area aver-                           ics of the annual cycle (periods of 365.25, 182.625, and
+age of the U.K. Meteorological Office GISST2.3                              121.75 days) using a least-squares fit.
+(Rayner et al. 1996), while data for January–June 1997                         The Southern Oscillation index is derived from the
+are from the Climate Prediction Center (CPC) opti-                          GMSLP2.1f and is defined as the seasonally averaged
+mally interpolated Niño3 SST index (courtesy of D.                          pressure difference between the eastern Pacific (20°S,
+Garrett at CPC, NOAA). The seasonal means for the                           150°W) and the western Pacific (10°S, 130°E).
+
+62                                                                                                           Vol. 79, No. 1, January 1998
+3. Wavelet analysis                                                   a. Windowed Fourier transform
+                                                                         The WFT represents one analysis tool for extract-
+   This section describes the method of wavelet analy-                ing local-frequency information from a signal. The
+sis, includes a discussion of different wavelet func-                 Fourier transform is performed on a sliding segment
+tions, and gives details for the analysis of the wavelet              of length T from a time series of time step δt and total
+power spectrum. Results in this section are adapted to                length Nδ t, thus returning frequencies from T−1 to
+discrete notation from the continuous formulas given                  (2δt)−1 at each time step. The segments can be win-
+in Daubechies (1990). Practical details in applying                   dowed with an arbitrary function such as a boxcar (no
+wavelet analysis are taken from Farge (1992), Weng                    smoothing) or a Gaussian window (Kaiser 1994).
+and Lau (1994), and Meyers et al. (1993). Each sec-                      As discussed by Kaiser (1994), the WFT represents
+tion is illustrated with examples using the Niño3 SST.                an inaccurate and inefficient method of time–fre-
+                                                                      quency localization, as it imposes a scale or “response
+                                                                      interval” T into the analysis. The inaccuracy arises
+                                                                      from the aliasing of high- and low-frequency compo-
+            ψ (t / s)                         ψ
+                                              ^
+                                                (s ω)                 nents that do not fall within the frequency range of the
+                                                                      window. The inefficiency comes from the T/(2δt) fre-
+  a. Morlet
+                                     6                                quencies, which must be analyzed at each time step,
+ 0.3
+                                                                      regardless of the window size or the dominant frequen-
+                                     4
+                                                                      cies present. In addition, several window lengths must
+ 0.0
+                                     2                                usually be analyzed to determine the most appropri-
+-0.3                                 0                                ate choice. For analyses where a predetermined scal-
+    -4     -2     0     2      4      -2     -1     0     1      2    ing may not be appropriate because of a wide range
+                                                                      of dominant frequencies, a method of time–frequency
+  b. Paul (m=4)                                                       localization that is scale independent, such as wave-
+ 0.3                                 6
+                                                                      let analysis, should be employed.
+                                     4
+ 0.0                                                                  b. Wavelet transform
+                                     2
+                                                                         The wavelet transform can be used to analyze time
+-0.3                                 0
+                                                                      series that contain nonstationary power at many dif-
+    -4     -2     0     2      4      -2     -1     0     1      2
+                                                                      ferent frequencies (Daubechies 1990). Assume that
+  c. DOG (m=2)                                                        one has a time series, xn, with equal time spacing δt
+ 0.3                                 6                                and n = 0 … N − 1. Also assume that one has a wave-
+                                     4                                let function, ψ0(η), that depends on a nondimensional
+ 0.0
+                                     2
+                                                                      “time” parameter η. To be “admissible” as a wavelet,
+                                                                      this function must have zero mean and be localized in
+-0.3                                 0                                both time and frequency space (Farge 1992). An ex-
+    -4     -2     0     2      4      -2     -1     0     1      2    ample is the Morlet wavelet, consisting of a plane
+  d. DOG (m=6)                                                        wave modulated by a Gaussian:
+ 0.3                                 6
+                                     4
+                                                                                    ψ 0 (η) = π −1 4 e iω 0η e −η 2 ,
+                                                                                                                2
+                                                                                                                          (1)
+ 0.0
+                                     2
+-0.3                                 0                                where ω0 is the nondimensional frequency, here taken
+    -4     -2     0     2      4      -2     -1     0     1      2    to be 6 to satisfy the admissibility condition (Farge
+                t/s                            s ω / (2π)             1992). This wavelet is shown in Fig. 2a.
+                                                                         The term “wavelet function” is used generically to
+    FIG. 2. Four different wavelet bases, from Table 1. The plots     refer to either orthogonal or nonorthogonal wavelets.
+on the left give the real part (solid) and imaginary part (dashed)
+                                                                      The term “wavelet basis” refers only to an orthogo-
+for the wavelets in the time domain. The plots on the right give
+the corresponding wavelets in the frequency domain. For plotting      nal set of functions. The use of an orthogonal basis
+purposes, the scale was chosen to be s = 10δt. (a) Morlet, (b) Paul   implies the use of the discrete wavelet transform,
+(m = 4), (c) Mexican hat (DOG m = 2), and (d) DOG (m = 6).            while a nonorthogonal wavelet function can be used
+
+Bulletin of the American Meteorological Society                                                                            63
+with either the discrete or the continuous wavelet
+transform (Farge 1992). In this paper, only the con-                                    ⎧ 2π k : k ≤ N
+                                                                                        ⎪⎪ Nδ t       2
+tinuous transform is used, although all of the results                            ω k = ⎨ 2π k        N.                   (5)
+for significance testing, smoothing in time and scale,                                   ⎪−      : k>
+and cross wavelets are applicable to the discrete wave-                                  ⎪⎩ Nδ t      2
+let transform.
+   The continuous wavelet transform of a discrete se-               Using (4) and a standard Fourier transform routine, one
+quence xn is defined as the convolution of xn with a                can calculate the continuous wavelet transform (for a
+scaled and translated version of ψ0(η):                             given s) at all n simultaneously and efficiently.
+
+                       N −1
+                                      ⎡ (n ′ − n)δ t ⎤              c. Normalization
+           Wn ( s) =   ∑
+                       n ′= 0
+                              x n ′ψ ∗⎢
+                                      ⎣       s      ⎥,
+                                                     ⎦
+                                                              (2)      To ensure that the wavelet transforms (4) at each
+                                                                    scale s are directly comparable to each other and to the
+                                                                    transforms of other time series, the wavelet function
+where the (*) indicates the complex conjugate. By                   at each scale s is normalized to have unit energy:
+varying the wavelet scale s and translating along the
+localized time index n, one can construct a picture                                                    12
+                                                                                             ⎛ 2π s ⎞
+showing both the amplitude of any features versus the                           ψˆ (sω k ) = ⎜      ⎟ ψˆ 0 ( sω k ) .      (6)
+scale and how this amplitude varies with time. The                                           ⎝ δt ⎠
+subscript 0 on ψ has been dropped to indicate that this
+ψ has also been normalized (see next section). Al-                  Examples of different wavelet functions are given in
+though it is possible to calculate the wavelet transform            Table 1 and illustrated in Fig. 2. Each of the unscaled
+using (2), it is considerably faster to do the calcula-             ψ$ 0 are defined in Table 1 to have
+tions in Fourier space.
+   To approximate the continuous wavelet transform,                                   +∞
+                                                                                     ∫ ψˆ (ω ′) dω ′ = 1 ;
+                                                                                                   2
+the convolution (2) should be done N times for each                                   −∞
+                                                                                              0
+
+scale, where N is the number of points in the time se-
+ries (Kaiser 1994). (The choice of doing all N convo-               that is, they have been normalized to have unit energy.
+lutions is arbitrary, and one could choose a smaller                   Using these normalizations, at each scale s one has
+number, say by skipping every other point in n.) By
+choosing N points, the convolution theorem allows us                                   N −1
+
+                                                                                       ∑ ψ̂ (sω ) = N ,
+                                                                                                        2
+do all N convolutions simultaneously in Fourier space
+                                                                                                   k                       (7)
+using a discrete Fourier transform (DFT). The DFT                                      k =0
+of xn is
+                                                                    where N is the number of points. Thus, the wavelet
+                       1 N −1 −2πikn N                              transform is weighted only by the amplitude of the
+                x̂ k =
+                       N n=0
+                              ∑
+                             xn e      ,                      (3)   Fourier coefficients x$k and not by the wavelet function.
+                                                                    If one is using the convolution formula (2), the nor-
+                                                                    malization is
+where k = 0 … N − 1 is the frequency index. In the
+continuous limit, the Fourier transform of a function
+                                                                           ⎡ (n ′ − n)δ t ⎤ ⎛ δ t ⎞ ⎡ (n ′ − n)δ t ⎤
+                                                                                                       12
+ψ(t/s) is given by ψ$ (sω). By the convolution theorem,                   ψ⎢                = ⎜ ⎟ ψ0⎢
+                                                                                          ⎥                        ⎥,      (8)
+the wavelet transform is the inverse Fourier transform                     ⎣       s      ⎦ ⎝ s⎠    ⎣       s      ⎦
+of the product:
+                                                                    where ψ0(η) is normalized to have unit energy.
+                       N −1
+           Wn ( s) =   ∑ xˆ ψ̂ ∗(sω )e
+                       k =0
+                              k          k
+                                              iω k nδ t
+                                                          ,   (4)   d. Wavelet power spectrum
+                                                                       Because the wavelet function ψ (η) is in general
+                                                                    complex, the wavelet transform Wn(s) is also complex.
+where the angular frequency is defined as                           The transform can then be divided into the real part,
+
+64                                                                                                Vol. 79, No. 1, January 1998
+   TABLE 1. Three wavelet basis functions and their properties. Constant factors for ψ0 and ψ$ 0 ensure a total energy of unity.
+
+
+                                                                                                        e-folding       Fourier
+                                                                            ∧
+      Name                              ψ0(η)                              ψ 0(sω)                       time τs      wavelength λ
+
+
+                                                                                                                            4πs
+                                                                   π −1 4 H (ω )e (
+                                                                                  − sω −ω 0 ) 2
+                                                                                            2
+
+                              π −1 4 e iω 0η e −η 2
+                                                  2
+ Morlet                                                                                                      2s       ω 0 + 2 + ω 20
+ (ω0 = frequency)
+
+
+
+
+                           2 m i m m!                               2m                                                     4π s
+ Paul                                    (1 − iη) −( m +1)                      H (ω )( sω ) e − sω
+                                                                                                m
+
+                            π ( 2 m )!                           m(2 m − 1)!                             s    2
+                                                                                                                          2m + 1
+ (m = order)
+
+
+
+
+                           ( −1) m +1
+                                    d m −η 2 2
+                                                 (           )     − im
+                                                                                (sω ) m e − ( sω ) 2                       2π s
+                                                                                                    2
+                                         e
+                                 1 dη
+                                       m
+                           Γ⎛ m + ⎞                               Γ⎛ m + ⎞
+ DOG                                                                    1                                                          1
+                                                                                                             2s            m+
+ (m = derivative)           ⎝    2⎠                                ⎝    2⎠                                                         2
+
+
+
+H(ω) = Heaviside step function, H(ω) = 1 if ω > 0, H(ω) = 0 otherwise.
+DOG = derivative of a Gaussian; m = 2 is the Marr or Mexican hat wavelet.
+
+
+
+
+ℜ{Wn(s)}, and imaginary part, ℑ{Wn(s)}, or ampli-                         ies (Trenberth 1976) and is also seen in the Fourier
+tude, |Wn(s)|, and phase, tan−1[ℑ{Wn(s)}/ℜ{Wn(s)}]. Fi-                   spectrum in Fig. 3. With wavelet analysis, one can see
+nally, one can define the wavelet power spectrum as                       variations in the frequency of occurrence and ampli-
+|Wn(s)|2. For real-valued wavelet functions such as the                   tude of El Niño (warm) and La Niña (cold) events.
+DOGs (derivatives of a Gaussian) the imaginary part                       During 1875–1920 and 1960–90 there were many
+is zero and the phase is undefined.                                       warm and cold events of large amplitude, while dur-
+   To make it easier to compare different wavelet                         ing 1920–60 there were few events (Torrence and
+power spectra, it is desirable to find a common nor-                      Webster 1997). From 1875–1910, there was a slight
+malization for the wavelet spectrum. Using the nor-                       shift from a period near 4 yr to a period closer to 2 yr,
+malization in (6), and referring to (4), the expectation                  while from 1960–90 the shift is from shorter to longer
+value for |Wn(s)|2 is equal to N times the expectation                    periods.
+value for |x$k|2. For a white-noise time series, this ex-                    These results are similar to those of Wang and
+pectation value is σ2/N, where σ2 is the variance. Thus,                  Wang (1996), who used both wavelet and waveform
+for a white-noise process, the expectation value for the                  analysis on ENSO indices derived from the Compre-
+wavelet transform is |Wn(s)|2 = σ 2 at all n and s.                       hensive Ocean–Atmosphere Data Set (COADS)
+   Figure 1b shows the normalized wavelet power                           dataset. Wang and Wang’s analysis showed reduced
+spectrum, |Wn(s)|2/σ 2, for the Niño3 SST time series.                    wavelet power before 1950, especially 1875–1920. The
+The normalization by 1/σ 2 gives a measure of the                         reduced power is possibly due to the sparseness and de-
+power relative to white noise. In Fig. 1b, most of the                    creased reliability of the pre-1950 COADS data (Folland
+power is concentrated within the ENSO band of 2–8                         et al. 1984). With the GISST2.3 data, the wavelet trans-
+yr, although there is appreciable power at longer peri-                   form of Niño3 SST in Fig. 1b shows that the pre-1920
+ods. The 2–8-yr band for ENSO agrees with other stud-                     period has equal power to the post-1960 period.
+
+Bulletin of the American Meteorological Society                                                                                        65
+                                                                      and is better adapted for capturing oscillatory be-
+                 14                                                   havior. A real wavelet function returns only a
+                                                                      single component and can be used to isolate peaks
+                 12
+                                                                      or discontinuities.
+                 10                                                3) Width. For concreteness, the width of a wavelet
+
+
+
+ Variance (σ2)
+                                                                      function is defined here as the e-folding time of the
+                 8                                                    wavelet amplitude. The resolution of a wavelet
+                                                                      function is determined by the balance between the
+                 6                                                    width in real space and the width in Fourier space.
+                                                                      A narrow (in time) function will have good time
+                 4
+                                                                      resolution but poor frequency resolution, while a
+                 2                                                    broad function will have poor time resolution, yet
+                                                                      good frequency resolution.
+                 0                                                 4) Shape. The wavelet function should reflect the type
+                  64   32   16    8    4     2    1     0.5           of features present in the time series. For time se-
+                              Period (years)                          ries with sharp jumps or steps, one would choose
+                                                                      a boxcar-like function such as the Harr, while for
+                                                                      smoothly varying time series one would choose a
+   F IG . 3. Fourier power spectrum of Niño3 SST (solid),             smooth function such as a damped cosine. If one
+normalized by N/(2σ 2). The lower dashed line is the mean red-        is primarily interested in wavelet power spectra,
+noise spectrum from (16) assuming a lag-1 of α = 0.72. The upper
+dashed line is the 95% confidence spectrum.
+                                                                      then the choice of wavelet function is not critical,
+                                                                      and one function will give the same qualitative
+                                                                      results as another (see discussion of Fig. 1 below).
+
+e. Wavelet functions                                                  Four common nonorthogonal wavelet functions are
+   One criticism of wavelet analysis is the arbitrary              given in Table 1. The Morlet and Paul wavelets are
+choice of the wavelet function, ψ0(η). (It should be               both complex, while the DOGs are real valued. Pic-
+noted that the same arbitrary choice is made in using              tures of these wavelet in both the time and frequency
+one of the more traditional transforms such as the Fou-            domain are shown in Fig. 2. Many other types of wave-
+rier, Bessel, Legendre, etc.) In choosing the wavelet              lets exist, such as the Haar and Daubechies, most of
+function, there are several factors which should be                which are used for orthogonal wavelet analysis (e.g.,
+considered (for more discussion see Farge 1992).                   Weng and Lau 1994; Mak 1995; Lindsay et al. 1996).
+                                                                   For more examples of wavelet bases and functions, see
+1) Orthogonal or nonorthogonal. In orthogonal                      Kaiser (1994).
+   wavelet analysis, the number of convolutions at                    For comparison, Fig. 1c shows the same analysis
+   each scale is proportional to the width of the wave-            as in 1b but using the Mexican hat wavelet (DOG,
+   let basis at that scale. This produces a wavelet spec-          m = 2) rather than the Morlet. The most noticeable dif-
+   trum that contains discrete “blocks” of wavelet                 ference is the fine scale structure using the Mexican
+   power and is useful for signal processing as it gives           hat. This is because the Mexican hat is real valued and
+   the most compact representation of the signal. Un-              captures both the positive and negative oscillations of
+   fortunately for time series analysis, an aperiodic              the time series as separate peaks in wavelet power. The
+   shift in the time series produces a different wave-             Morlet wavelet is both complex and contains more
+   let spectrum. Conversely, a nonorthogonal analy-                oscillations than the Mexican hat, and hence the wave-
+   sis (such as used in this study) is highly redundant            let power combines both positive and negative peaks
+   at large scales, where the wavelet spectrum at ad-              into a single broad peak. A plot of the real or imagi-
+   jacent times is highly correlated. The nonorthog-               nary part of Wn(s) using the Morlet would produce a
+   onal transform is useful for time series analysis,              plot similar to Fig. 1c. Overall, the same features ap-
+   where smooth, continuous variations in wavelet                  pear in both plots, approximately at the same locations,
+   amplitude are expected.                                         and with the same power. Comparing Figs. 2a and 2c,
+2) Complex or real. A complex wavelet function will                the Mexican hat is narrower in time-space, yet broader
+   return information about both amplitude and phase               in spectral-space than the Morlet. Thus, in Fig. 1c, the
+
+66                                                                                           Vol. 79, No. 1, January 1998
+peaks appear very sharp in the time direction, yet are
+                                                                  TABLE 2. Empirically derived factors for four wavelet bases.
+more elongated in the scale direction. Finally, the re-
+lationship between wavelet scale and Fourier period
+is very different for the two functions (see section 3h).             Name               Cδ         γ         δ j0     ψ0(0)
+
+                                                                                                                           − 1/4
+f. Choice of scales                                             Morlet (ω0 = 6)         0.776      2.32       0.60     π
+    Once a wavelet function is chosen, it is necessary
+                                                                Paul (m = 4)            1.132      1.17       1.5      1.079
+to choose a set of scales s to use in the wavelet trans-
+form (4). For an orthogonal wavelet, one is limited to          Marr (DOG m = 2)        3.541      1.43       1.4      0.867
+a discrete set of scales as given by Farge (1992). For
+nonorthogonal wavelet analysis, one can use an arbi-            DOG (m = 6)             1.966      1.37       0.97     0.884
+trary set of scales to build up a more complete picture.
+It is convenient to write the scales as fractional pow-        Cδ = reconstruction factor.
+ers of two:                                                    γ = decorrelation factor for time averaging.
+                                                               δ j0 = factor for scale averaging.
+
+               s j = s0 2 jδj ,   j = 0, 1, K, J        (9)
+
+                                                               region of the wavelet spectrum in which edge effects
+                 J = δ j −1 log 2 ( Nδ t s0 ) ,        (10)    become important and is defined here as the e-fold-
+                                                               ing time for the autocorrelation of wavelet power at
+where s0 is the smallest resolvable scale and J deter-         each scale (see Table 1). This e-folding time is cho-
+mines the largest scale. The s0 should be chosen so that       sen so that the wavelet power for a discontinuity at the
+the equivalent Fourier period (see section 3h) is ap-          edge drops by a factor e−2 and ensures that the edge
+proximately 2δ t. The choice of a sufficiently small δj        effects are negligible beyond this point. For cyclic
+depends on the width in spectral-space of the wavelet          series (such as a longitudinal strip at a fixed latitude),
+function. For the Morlet wavelet, a δ j of about 0.5 is        there is no need to pad with zeroes, and there is no COI.
+the largest value that still gives adequate sampling in            The size of the COI at each scale also gives a mea-
+scale, while for the other wavelet functions, a larger         sure of the decorrelation time for a single spike in the
+value can be used. Smaller values of δj give finer reso-       time series. By comparing the width of a peak in the
+lution.                                                        wavelet power spectrum with this decorrelation time,
+   In Fig. 1b, N = 506, δt = 1/4 yr, s0 = 2δ t, δ j = 0.125,   one can distinguish between a spike in the data (pos-
+and J = 56, giving a total of 57 scales ranging from           sibly due to random noise) and a harmonic component
+0.5 yr up to 64 yr. This value of δj appears adequate          at the equivalent Fourier frequency.
+to provide a smooth picture of wavelet power.                      The COI is indicated in Figs. 1b and 1c by the cross-
+                                                               hatched regions. The peaks within these regions have
+g. Cone of influence                                           presumably been reduced in magnitude due to the zero
+   Because one is dealing with finite-length time se-          padding. Thus, it is unclear whether the decrease in 2–
+ries, errors will occur at the beginning and end of the        8-yr power after 1990 is a true decrease in variance or
+wavelet power spectrum, as the Fourier transform in            an artifact of the padding. Note that the much narrower
+(4) assumes the data is cyclic. One solution is to pad         Mexican hat wavelet in Fig. 1c has a much smaller
+the end of the time series with zeroes before doing the        COI and is thus less affected by edge effects.
+wavelet transform and then remove them afterward
+[for other possibilities such as cosine damping, see           h. Wavelet scale and Fourier frequency
+Meyers et al. (1993)]. In this study, the time series is          An examination of the wavelets in Fig. 2 shows that
+padded with sufficient zeroes to bring the total length        the peak in ψ$ (sω) does not necessarily occur at a fre-
+N up to the next-higher power of two, thus limiting            quency of s−1. Following the method of Meyers et al.
+the edge effects and speeding up the Fourier transform.        (1993), the relationship between the equivalent Fou-
+   Padding with zeroes introduces discontinuities at           rier period and the wavelet scale can be derived ana-
+the endpoints and, as one goes to larger scales, de-           lytically for a particular wavelet function by substitut-
+creases the amplitude near the edges as more zeroes            ing a cosine wave of a known frequency into (4) and
+enter the analysis. The cone of influence (COI) is the         computing the scale s at which the wavelet power spec-
+
+Bulletin of the American Meteorological Society                                                                               67
+trum reaches its maximum. For the Morlet wavelet
+                                                                                       1 N −1
+with ω0 = 6, this gives a value of λ = 1.03s, where λ is                     Wδ ( s) =     ∑
+                                                                                       N k =0
+                                                                                              ψˆ ∗ ( sω k ) .       (12)
+the Fourier period, indicating that for the Morlet wave-
+let the wavelet scale is almost equal to the Fourier
+period. Formulas for other wavelet functions are given         The reconstruction (11) then gives
+in Table 1, while Fig. 2 gives a graphical representation.
+   In Figs. 1b,c, the ratio of Fourier period to wavelet
+                                                                                                  { ( )} .
+                                                                                  δ jδ t 1 2 J ℜ Wδ s j
+                                                                                  ψ 0 (0) ∑
+scale can be seen by a comparison of the left and right                    Cδ =                                     (13)
+axes. For the Morlet, the two are nearly identical, while                                    j =0 s1j 2
+for the Mexican hat, the Fourier period is four times
+larger than the scale. This ratio has no special signifi-
+                                                               The Cδ is scale independent and is a constant for each
+cance and is due solely to the functional form of each
+                                                               wavelet function.
+wavelet function. However, one should certainly con-
+                                                                  The total energy is conserved under the wavelet
+vert from scale to Fourier period before plotting, as
+                                                               transform, and the equivalent of Parseval’s theorem
+presumably one is interested in equating wavelet
+                                                               for wavelet analysis is
+power at a certain time and scale with a (possibly short-
+lived) Fourier mode at the equivalent Fourier period.
+                                                                                                      ( )
+                                                                                                            2
+                                                                                 δ jδ t N −1 J Wn s j
+i. Reconstruction                                                           σ2 =        ∑∑ sj
+                                                                                 Cδ N n = 0 j = 0
+                                                                                                                ,   (14)
+    Since the wavelet transform is a bandpass filter with
+a known response function (the wavelet function), it
+is possible to reconstruct the original time series us-        where σ2 is the variance and a δ function has been as-
+ing either deconvolution or the inverse filter. This is        sumed for reconstruction. Both (11) and (14) should
+straightforward for the orthogonal wavelet transform           be used to check wavelet routines for accuracy and to
+(which has an orthogonal basis), but for the continu-          ensure that sufficiently small values of s0 and δj have
+ous wavelet transform it is complicated by the redun-          been chosen.
+dancy in time and scale. However, this redundancy                 For the Niño3 SST, the reconstruction of the time
+also makes it possible to reconstruct the time series          series from the wavelet transform has a mean square
+using a completely different wavelet function, the easi-       error of 1.4% or 0.087°C.
+est of which is a delta (δ) function (Farge 1992). In
+this case, the reconstructed time series is just the sum
+of the real part of the wavelet transform over all scales:     4. Theoretical spectrum and significance
+                                                                  levels
+
+                                   { ( )} .
+                    δ jδ t 1 2 J ℜ Wn s j
+                               ∑ s1j 2
+                                                                  To determine significance levels for either Fourier
+            xn =                                       (11)
+                   Cδ ψ 0 (0) j = 0                            or wavelet spectra, one first needs to choose an appro-
+                                                               priate background spectrum. It is then assumed that
+                                                               different realizations of the geophysical process will
+The factor ψ0(0) removes the energy scaling, while the         be randomly distributed about this mean or expected
+s1/2
+  j
+     converts the wavelet transform to an energy den-          background, and the actual spectrum can be compared
+sity. The factor Cδ comes from the reconstruction of a         against this random distribution. For many geophysi-
+δ function from its wavelet transform using the func-          cal phenomena, an appropriate background spectrum
+tion ψ0(η). This Cδ is a constant for each wavelet func-       is either white noise (with a flat Fourier spectrum) or
+tion and is given in Table 2. Note that if the original        red noise (increasing power with decreasing frequency).
+time series were complex, then the sum of the com-                A previous study by Qiu and Er (1995) derived the
+plex Wn(s) would be used instead.                              mean and variance of the local wavelet power spec-
+    To derive Cδ for a new wavelet function, first as-         trum. In this section, the theoretical white- and red-
+sume a time series with a δ function at time n = 0, given      noise wavelet power spectra are derived and compared
+by xn = δn0. This time series has a Fourier transform          to Monte Carlo results. These spectra are used to es-
+x$k = N−1, constant for all k. Substituting x$k into (4), at   tablish a null hypothesis for the significance of a peak
+time n = 0 (the peak), the wavelet transform becomes           in the wavelet power spectrum.
+
+68                                                                                         Vol. 79, No. 1, January 1998
+a. Fourier red noise spectrum                                                    a. α=0.00
+                                                                             1
+   Many geophysical time series can be modeled as
+
+                                                             Period (δt)
+either white noise or red noise. A simple model for red                    10
+noise is the univariate lag-1 autoregressive [AR(1), or                                                            95%
+Markov] process:                                                           100                       95%
+
+                                                                                 0       100   200           300         400   500
+                     x n = αx n −1 + zn ,           (15)                                             Time (δt)
+                                                                                 b. α=0.70
+                                                                             1
+where α is the assumed lag-1 autocorrelation, x0 = 0,
+
+                                                             Period (δt)
+and zn is taken from Gaussian white noise. Following                       10
+
+Gilman et al. (1963), the discrete Fourier power spec-
+                                                                           100
+trum of (15), after normalizing, is
+                                                                                 0       100   200           300         400   500
+                                                                                                     Time (δt)
+                           1−α      2
+            Pk =                           ,        (16)        FIG. 4. (a) The local wavelet power spectrum for a Gaussian
+                   1 + α − 2α cos(2π k N )
+                        2
+                                                            white noise process of 512 points, one of the 100 000 used for
+                                                            the Monte Carlo simulation. The power is normalized by 1/σ 2, and
+                                                            contours are at 1, 2, and 3. The thick contour is the 95% confidence
+where k = 0 … N/2 is the frequency index. Thus, by
+                                                            level for white noise. (b) Same as (a) but for a red-noise AR(1)
+choosing an appropriate lag-1 autocorrelation, one can      process with lag-1 of 0.70. The contours are at 1, 5, and 10. The
+use (16) to model a red-noise spectrum. Note that α = 0     thick contour is the 95% confidence level for the corresponding
+in (16) gives a white-noise spectrum.                       red-noise spectrum.
+   The Fourier power spectrum for the Niño3 SST is
+shown by the thin line in Fig. 3. The spectrum has been
+normalized by N/2σ 2, where N is the number of points,         Therefore, the lower dashed curve in Fig. 3 also
+and σ 2 is the variance of the time series. Using this      corresponds to the red-noise local wavelet spectrum.
+normalization, white noise would have an expectation        A random vertical slice in Fig. 1b would be expected
+value of 1 at all frequencies. The red-noise background     to have a spectrum given by (16). As will be shown in
+spectrum for α = 0.72 is shown by the lower dashed          section 5a, the average of all the local wavelet spectra
+curve in Fig. 3. This red-noise was estimated from (α1      tends to approach the (smoothed) Fourier spectrum of
++ √⎯ α2)/2, where α1 and α2 are the lag-1 and lag-2         the time series.
+autocorrelations of the Niño3 SST. One can see the
+broad set of ENSO peaks between 2 and 8 yr, well            c. Significance levels
+above the background spectrum.                                   The null hypothesis is defined for the wavelet power
+                                                            spectrum as follows: It is assumed that the time series
+b. Wavelet red noise spectrum                               has a mean power spectrum, possibly given by (16);
+    The wavelet transform in (4) is a series of bandpass    if a peak in the wavelet power spectrum is significantly
+filters of the time series. If this time series can be      above this background spectrum, then it can be as-
+modeled as a lag-1 AR process, then it seems reason-        sumed to be a true feature with a certain percent con-
+able that the local wavelet power spectrum, defined         fidence. For definitions, “significant at the 5% level”
+as a vertical slice through Fig. 1b, is given by (16). To   is equivalent to “the 95% confidence level,” and im-
+test this hypothesis, 100 000 Gaussian white-noise          plies a test against a certain background level, while
+time series and 100 000 AR(1) time series were con-         the “95% confidence interval” refers to the range of
+structed, along with their corresponding wavelet power      confidence about a given value.
+spectra. Examples of these white- and red-noise wave-            The normalized Fourier power spectrum in Fig. 3
+let spectra are shown in Fig. 4. The local wavelet spec-    is given by N|x$k|2/2σ 2, where N is the number of points,
+tra were constructed by taking vertical slices at time      x$k is from (3), and σ 2 is the variance of the time series.
+n = 256. The lower smooth curves in Figs. 5a and 5b         If xn is a normally distributed random variable, then
+show the theoretical spectra from (16). The dots show       both the real and imaginary parts of x$k are normally
+the results from the Monte Carlo simulation. On av-         distributed (Chatfield 1989). Since the square of a
+erage, the local wavelet power spectrum is identical        normally distributed variable is chi-square distributed
+to the Fourier power spectrum given by (16).                with one degree of freedom (DOF), then |x$k|2 is chi-
+
+Bulletin of the American Meteorological Society                                                                                 69
+square distributed with two DOFs, denoted by χ22                                          a. α=0.00
+(Jenkins and Watts 1968). To determine the 95% con-                                   4
+fidence level (significant at 5%), one multiplies the
+background spectrum (16) by the 95th percentile value
+                                                                                           95%
+for χ22 (Gilman et al. 1963). The 95% Fourier confi-                                  3
+dence spectrum for the Niño3 SST is the upper dashed
+
+
+
+                                                                     Variance (σ2)
+curve in Fig. 3. Note that only a few frequencies now
+have power above the 95% line.
+                                                                                      2
+     In the previous section, it was shown that the local
+wavelet spectrum follows the mean Fourier spectrum.
+If the original Fourier components are normally dis-                                        Mean
+tributed, then the wavelet coefficients (the bandpassed                               1
+inverse Fourier components) should also be normally
+distributed. If this is true, then the wavelet power spec-
+trum, |Wn(s)|2, should be χ22 distributed. The upper                                  0
+curves in Figs. 5a and 5b show the 95% Fourier red-                                  1000          100           10           1
+noise confidence level versus the 95% level from the                                                 Period (δt)
+Monte Carlo results of the previous section. Thus, at
+each point (n, s) in Fig. 1b, assuming a red-noise pro-                                   b. α=0.70
+                                                                                     20
+cess, the distribution is χ22. Note that for a wavelet
+transform using a real-valued function, such as the                                        95%
+Mexican hat shown in Fig. 1c, there is only one de-
+gree of freedom at each point, and the distribution is                               15
+χ12.
+
+
+                                                               Variance (σ2)
+     In summary, assuming a mean background spec-
+trum, possibly red noise [(16)], the distribution for the                            10
+Fourier power spectrum is
+                                                                                            Mean
+                              2
+                   N xˆ k             1                                               5
+                                  ⇒     Pk χ 22      (17)
+                     2σ
+                    \\\   2
+                                      2
+
+at each frequency index k, and “⇒” indicates “is dis-                                 0
+tributed as.” The corresponding distribution for the                                 1000          100           10           1
+local wavelet power spectrum is                                                                      Period (δt)
+                                                                 FIG. 5. (a) Monte Carlo results for local wavelet spectra of white
+                                                             noise (α = 0.0). The lower thin line is the theoretical mean white-
+                  Wn ( s)
+                              2
+                                      1                      noise spectrum, while the black dots are the mean at each scale
+                                  ⇒     Pk χ 22      (18)    of 100 000 local wavelet spectra. The local wavelet spectra were
+                     σ   2
+                                      2                      slices taken at time n = 256 out of N = 512 points. The top thin
+                                                             line is the 95% confidence level, equal to χ22 (95%) times the mean
+at each time n and scale s. The 1/2 removes the DOF          spectrum. The black dots are the 95% level from the Monte Carlo
+factor from the χ2 distribution. (For a real wavelet the     runs. (b) Same as (a) but for red noise of α = 0.70.
+distribution on the right-hand side would be Pk χ12.) The
+value of Pk in (18) is the mean spectrum at the Fourier
+frequency k that corresponds to the wavelet scale s (see        As with Fourier analysis, smoothing the wavelet
+section 3h). Aside from the relation between k and s,        power spectrum can be used to increase the DOF and
+(18) is independent of the wavelet function. After find-     enhance confidence in regions of significant power.
+ing an appropriate background spectrum and choos-            Unlike Fourier, smoothing can be performed in either
+ing a particular confidence for χ 2 such as 95%, one can     the time or scale domain. Significance levels and
+then calculate (18) at each scale and construct 95%          DOFs for smoothing in time or scale are discussed in
+confidence contour lines.                                    section 5.
+
+70                                                                                                     Vol. 79, No. 1, January 1998
+    Inside the COI, the distribution is still χ 2, but if the   (20) one can then find confidence intervals for the
+time series has been padded with zeroes, then the mean          peaks in a wavelet power spectrum to compare against
+spectrum is reduced by a factor of (1 − ½e−2t/τs), where        either the mean background or against other peaks.
+τs is from Table 1, and t is the distance (in time) from
+either the beginning or end of the wavelet power spec-          e. Stationarity
+trum.                                                              It has been argued that wavelet analysis requires the
+    The 95% confidence level for the Niño3 SST is               use of nonstationary significance tests (Lau and Weng
+shown by the thick contours on Figs. 1b and 1c. Dur-            1995). In defense of the use of stationary tests such as
+ing 1875–1910 and 1960–90, the variance in the 2–8-             those given above, the following points are noted.
+yr band is significantly above the 95% confidence for
+red noise. During 1920–60, there are a few isolated             1) A nonarbitrary test is needed. The assumption of
+significant regions, primarily around 2 yr, and at the             stationary statistics provides a standard by which
+edge of the usual 2–8 yr ENSO band. The 95% confi-                 any nonstationarity can be detected.
+dence implies that 5% of the wavelet power should be            2) The test should be robust. It should not depend
+above this level. In Fig. 4b, approximately 5% of the              upon the wavelet function or upon the actual dis-
+points are contained within the 95% contours. For the              tribution of the time series, other than the assump-
+Niño3 wavelet spectrum, 4.9% of the points are above               tion of a background spectrum.
+95%, implying that for the Niño3 time series a test of          3) A non–Monte Carlo method is preferred. In addi-
+enclosed area cannot distinguish between noise and                 tion to the savings in computation, the chi-square
+signal. However, the spatial distribution of variance              test simplifies comparing one wavelet transform
+can also be examined for randomness. In Fig. 4b, the               with another.
+variance shows a gradual increase with period, with             4) Many wavelet transforms of real data appear simi-
+random distributions of high and low variance about                lar to transforms of red-noise processes (compare
+this mean spectrum. In Figs. 1b and 1c, the significant            Figs. 1b and 4b). It is therefore difficult to argue
+regions are clustered together in both period and time,            that large variations in wavelet power imply
+indicating less randomness of the underlying process.              nonstationarity.
+                                                                5) One needs to ask what is being tested. Is it
+d. Confidence interval                                             nonstationarity? Or low-variance versus high-vari-
+   The confidence interval is defined as the probabil-             ance periods? Or changes in amplitude of Fourier
+ity that the true wavelet power at a certain time and              modes? The chi-square test gives a standard mea-
+scale lies within a certain interval about the estimated           sure for any of these possibilities.
+wavelet power. Rewriting (18) as
+                                                                   In short, it appears wiser to assume stationarity and
+                                                                design the statistical tests accordingly. If the tests show
+                     Wn ( s)
+                               2
+                                       χ 22
+                                   ⇒        ,           (19)    large deviations, such as the changes in ENSO vari-
+                      σ 2 Pk            2                       ance seen in Figs. 1b and 1c, then further tests can be
+                                                                devised for the particular time series.
+one can then replace the theoretical wavelet power σ2Pk
+with the true wavelet power, defined as 9n2(s). The
+confidence interval for 9n2(s) is then                          5. Smoothing in time and scale
+
+       2                                 2                      a. Averaging in time (global wavelet spectrum)
+             Wn ( s) ≤ 9 2n ( s) ≤ 2            Wn ( s) ,
+                    2                                  2
+                                                                   If a vertical slice through a wavelet plot is a mea-
+  χ 2 ( p 2)
+    2
+                                  χ 2 (1 − p 2)                 sure of the local spectrum, then the time-averaged
+                                                       (20)     wavelet spectrum over a certain period is
+
+where p is the desired significance (p = 0.05 for the                                           n
+                                                                                            1 2
+95% confidence interval) and χ22(p/2) represents the                           Wn2 ( s) =      ∑      Wn ( s) ,
+                                                                                                             2
+
+                                                                                            na n = n1                 (21)
+value of χ 2 at p/2. Note that for real-valued wavelet
+functions, the right-hand side of (19) becomes χ12, and
+the factor of 2 is removed from the top of (20). Using          where the new index n is arbitrarily assigned to the
+
+Bulletin of the American Meteorological Society                                                                        71
+                                                                        sure of the background spectrum, against which peaks
+                 14                                                     in the local wavelet spectra could be tested (Kestin et
+                                                                        al. 1998).
+                 12
+                                                                            By smoothing the wavelet spectrum using (21), one
+                 10                                                     can increase the degrees of freedom of each point and
+
+
+
+ Variance (σ2)
+                                                                        increase the significance of peaks in wavelet power.
+                 8                                                      To determine the DOFs, one needs the number of in-
+                                                                        dependent points. For the Fourier spectrum (Fig. 3),
+                 6                                                      the power at each frequency is independent of the oth-
+                                                                        ers, and the average of the power at M frequencies,
+                 4                                                      each with two DOF, is χ 2 distributed with 2M degrees
+                                                                        of freedom (Spiegel 1975). For the time-averaged
+                 2                                                      wavelet spectrum, one is also averaging points that are
+                 0                                                      χ22 distributed, yet Figs. 1b and 4 suggest that these
+                                                                        points are no longer independent but are correlated in
+                  64   32       16    8    4     2     1     0.5
+                                  Period (years)                        both time and scale. Furthermore, the correlation in
+                                                                        time appears to lengthen as scale increases and the
+    FIG. 6. Fourier power spectrum from Fig. 3, smoothed with a
+five-point running average (thin solid line). The thick solid line is
+                                                                        wavelet function broadens. Designating ν as the DOFs,
+the global wavelet spectrum for the Niño3 SST. The lower dashed         one expects ν ∝ na and ν ∝ s−1. The simplest formula
+line is the mean red-noise spectrum, while the upper dashed line        to consider is to define a decorrelation length τ = γs,
+is the 95% confidence level for the global wavelet spectrum,            such that ν = 2naδ t/τ. However, Monte Carlo results
+assuming α = 0.72.                                                      show that this τ is too abrupt at small na or large scales;
+                                                                        even though one is averaging points that are highly
+                                                                        correlated, some additional information is gained.
+midpoint of n1 and n2, and na = n2 − n1 + 1 is the num-                     The Monte Carlo results are given in Fig. 7, which
+ber of points averaged over. By repeating (21) at each                  shows the mean and 95% levels for various na. These
+time step, one creates a wavelet plot smoothed by a
+certain window.
+   The extreme case of (21) is when the average is over                                   4
+all the local wavelet spectra, which gives the global
+wavelet spectrum                                                                              95%
+                                                                                          3
+                                                                                                                                 5
+                               1 N −1
+
+
+                                                                          Variance (σ2)
+                       W (s) =        ∑
+                                      Wn (s) .
+                            2               2
+                                                               (22)
+                               N n=0                                                                                             15
+                                                                                          2
+                                                                                                                                 25
+In Fig. 6, the thick solid line shows the normalized                                                                             51
+                            ⎯                                                                                                    101
+global wavelet spectrum, W 2(s)/σ 2, for the Niño3 SST.                                          Mean                            201
+                                                                                                                                 512
+The thin solid line in Fig. 6 shows the same spectrum                                     1
+as in Fig. 3, but smoothed with a five-point running
+average. Note that as the Fourier spectrum is smoothed,
+it approaches the global wavelet spectrum more and                                         0
+more closely, with the amount of necessary smooth-                                        1000          100           10               1
+ing decreasing with increasing scale. A comparison of                                                     Period (δt)
+Fourier spectra and wavelet spectra can be found in                         FIG. 7. Monte Carlo results for the time-averaged wavelet
+Hudgins et al. (1993), while a theoretical discussion                   spectra (21) of white noise using the Morlet wavelet. The numbers
+is given in Perrier et al. (1995). Percival (1995) shows                to the right of each curve indicate na, the number of times that were
+                                                                        averaged, while the black dots are the 95% level for the Monte
+that the global wavelet spectrum provides an unbiased
+                                                                        Carlo runs. The top thin lines are the 95% confidence from (23).
+and consistent estimation of the true power spectrum                    The lower thin line is the mean white-noise spectrum, while the
+of a time series. Finally, it has been suggested that the               black dots are the means of the Monte Carlo runs (all of the means
+global wavelet spectrum could provide a useful mea-                     are identical).
+
+
+72                                                                                                           Vol. 79, No. 1, January 1998
+curves are best described by the distribution Pk χν2 /ν,                Comparing (24) and (14), the scale-averaged wavelet
+where Pk is the original assumed background spectrum                    power is a time series of the average variance in a cer-
+and χν2 is the chi-square distribution with ν degrees of                tain band. Thus, the scale-averaged wavelet power can
+freedom, where                                                          be used to examine modulation of one time series by
+                                                                        another, or modulation of one frequency by another
+                                                                        within the same time series.
+                                      2
+                           ⎛ n δt ⎞                                        As an example of averaging over scale, Fig. 8 shows
+                  ν = 2 1+ ⎜ a ⎟ .                               (23)
+                           ⎝ γs ⎠                                       the average of Fig. 1b over all scales between 2 and 8
+                                                                        yr (actually 2–7.34 yr), which gives a measure of the
+                                                                        average ENSO variance versus time. The variance plot
+Note that for a real-valued function such as the Mexi-                  shows a distinct period between 1920 and 1960 when
+can hat, each point only has one DOF, and the factor                    ENSO variance was low. Also shown in Fig. 8 is the
+of 2 in (23) is removed. The decorrelation factor γ is                  variance in the Southern Oscillation index (SOI),
+determined empirically by an iterative fit of absolute                  which correlates well with the changes in Niño3 SST
+error to the 95% Monte Carlo level and
+is given in Table 2 for the four wavelet         0.8
+                                                         NINO3
+                                                         SOI                                                           2.5
+functions. The relative error (or percent
+
+                                                   NINO3 (oC2)
+                                                 0.6                                                                   2.0
+
+
+                                                                                                                             SOI (mb2)
+difference) between the Monte Carlo and                                                                                1.5
+                                                 0.4
+the χν2/ν distribution was everywhere less                                                                             1.0
+                                                 0.2
+than 7% for all scales and na values. The                                                                              0.5
+                                                 0.0                                                                   0.0
+thin lines in Fig. 7 show the results of              1880       1900     1920      1940       1960       1980       2000
+                                                                                  Year
+(23) using the Morlet wavelet. Note that
+even the white noise process has more           FIG. 8. Scale-averaged wavelet power (24) over the 2–8-yr band for the Niño3
+stringent 95% confidence levels at large SST (solid) and the SOI (dashed). The thin solid line is the 95% confidence level
+scales compared to small. As a final note, from (26) for Niño3 SST (assuming red noise α = 0.72), while the thin dashed
+if the points going into the average are line is the 95% level for the SOI (red noise α = 0.61).
+within the cone of influence, then na is re-
+duced by approximately one-half of the number within variance (0.72 correlation). Both time series show
+the COI to reflect the decreased amplitude (and infor- consistent interdecadal changes, including a possible
+mation) within that region.                                  modulation in ENSO variance with a 15-yr period. To
+    A different definition of the global wavelet spec- examine more closely the relation between Niño3 SST
+trum, involving the discrete wavelet transform and and the SOI, one could use the cross-wavelet spectrum
+including a discussion of confidence intervals, is given (see section 6c).
+by Percival (1995). An example using Percival’s defi-           As with time-averaged wavelet spectrum, the DOFs
+nition can be found in Lindsay et al. (1996).                are increased by smoothing in scale, and an analytical
+    The 95% confidence line for the Niño3 global relationship for significance levels for the scale-aver-
+wavelet spectrum is the upper dashed line in Fig. 6. aged wavelet power is desirable. Again, it is conve-
+Only the broad ENSO peak remains significant, al- nient to normalize the wavelet power by the expecta-
+though note that power at other periods can be less than tion value for a white-noise time series. From (24), this
+significant globally but still show significant peaks in expectation value is (δ j δ t σ 2)/(CδSavg), where σ 2 is the
+local wavelet power.                                         time-series variance and Savg is defined as
+
+b. Averaging in scale                                                                                        −1
+   To examine fluctuations in power over a range of                                              ⎛ j2 1 ⎞
+scales (a band), one can define the scale-averaged                                        Savg = ⎜  ∑         ⎟ .
+                                                                                                 ⎝ j = j1 s j ⎠
+                                                                                                                           (25)
+wavelet power as the weighted sum of the wavelet
+power spectrum over scales s1 to s2:
+                                                                           The black dots in Fig. 9 show the Monte Carlo re-
+                                     ( )
+                                           2
+                             j2  Wn s j                                 sults for both the mean and the 95% level of scale-
+                      δjδ t
+              Wn2 =         ∑
+                       Cδ j = j1   sj
+                                               .                 (24)   averaged wavelet power as a function of various na,
+                                                                        where na = j2 − j1 + 1 is the number of scales averaged.
+
+Bulletin of the American Meteorological Society                                                                              73
+                        4                                                                where Smid = s020.5(j1+j2)δj. The factor Savg/Smid corrects for
+                               95%                                                       the loss of DOF that arises from dividing the wavelet
+                                                                                         power spectrum by scale in (24) and is observed in the
+                                                                                         Monte Carlo results. Note that for a real-valued func-
+
+
+
+
+  Normalized Variance
+                        3                                                DOG2
+                                                                         DOG6            tion such as the Mexican hat, each point only has one
+                                                                         Paul4           DOF, and the factor of 2 in (28) is removed. The
+                                                                                         decorrelation distance δ j0 is determined empirically by
+                        2                                                Morlet
+                                                                                         an iterative fit of absolute error between (28) and the
+                                                                                         95% level of the Monte Carlo results and is given in
+                                                                                         Table 2. The thin lines in Fig. 9 show the results of
+                             Mean                                                        (28) for the Morlet, Paul (m = 4), DOG2, and DOG6
+                        1
+                                                                                         wavelet functions. For these wavelets, the relative er-
+                                                                                         ror between the χν2 distribution using (28) and the
+                                                                                         Monte Carlo results is less than 1.5%. It should be
+                        0                                                                noted that (28) is valid only for confidences of 95%
+                         0         2       4       6      8     10                       or less. At higher confidence levels, the distribution
+                             naδj (# scales in avg, compressed)                          begins to deviate significantly from χ 2, and (28) is no
+    FIG. 9. Monte Carlo results for the wavelet spectra averaged                         longer valid.
+over na scales from (24), using white noise. The average from (24)                          In Fig. 8, the thin solid and dashed lines show the
+is centered on scale s = 16δ t for convenience, but the results are
+                                                                                         95% confidence levels for the Niño3 SST and the SOI
+independent of the center scale. To make the graph independent
+of the choice for δ j, the x axis has been compressed by the Monte                       using (25)–(28). In this case, δ j = 0.125, the sum was
+Carlo δ j of 0.25. The top black dots are the 95% level for the                          between Fourier periods 2 and 8 yr (actually 2.1–7.6
+Monte Carlo runs, while the lower black dots are the means. The                          yr), na = 16, Savg = 0.221 yr, Smid = 3.83 yr, δ j0 = 0.60,
+means for all four wavelet bases are all the same, while the 95%                         and ν = 6.44. Since the two time series do not have
+level depends on the width of the basis in Fourier space, with the                       the same variance or the same red-noise background,
+Morlet being the most narrow. The top thin lines are the 95%
+confidence from (28). The lower thin line is the mean white-noise
+                                                                                         the 95% lines are not equal.
+spectrum.
+
+                                                                                         6. Extensions to wavelet analysis
+Using the normalization factor for white noise, the
+distribution can be modeled as                                                           a. Filtering
+                                                                                             As discussed in section 3i, the wavelet transform
+                                                                                         (4) is essentially a bandpass filter of uniform shape and
+                                    Cδ Savg                     χ ν2                     varying location and width. By summing over a sub-
+                                               Wn2 ⇒ P               ,            (26)
+                                    δjδ tσ   2
+                                                                ν                        set of the scales in (11), one can construct a wavelet-
+                                                                                         filtered time series:
+where the scale-averaged theoretical spectrum is now
+given by                                                                                                                      { ( )} .
+                                                                                                                δjδ t 1 2 2 ℜ Wn s j
+                                                                                                                         j
+                                                                                                      x n′ =              ∑ s1j 2
+                                                                                                               Cδ ψ 0 (0) j = j1
+                                                                                                                                                  (29)
+                                                   j2
+                                                           Pj
+                                       P = Savg   ∑s .
+                                                  j = j1    j
+                                                                                  (27)   This filter has a response function given by the sum
+                                                                                         of the wavelet functions between scales j1 and j2.
+                                                                                            This filtering can also be done on both the scale and
+Note that for white noise this spectrum is still unity
+                                                                                         time simultaneously by defining a threshold of wave-
+(due to the normalization). The degrees of freedom ν
+                                                                                         let power. This “denoising” removes any low-ampli-
+in (26) is modeled as
+                                                                                         tude regions of the wavelet transform, which are pre-
+                                                                                         sumably due to noise. This technique has the advan-
+                                      2 na Savg      ⎛ n δj ⎞
+                                                                     2                   tage over traditional filtering in that it removes noise
+                                ν=                1+ ⎜ a ⎟ ,                      (28)   at all frequencies and can be used to isolate single
+                                        Smid         ⎝ δj 0 ⎠                            events that have a broad power spectrum or multiple
+
+74                                                                                                                     Vol. 79, No. 1, January 1998
+                                                                                         (a) Power 2-8 yrs slp 5.0oS to 15.0oS        (b) Zonal Avg
+events that have varying frequency. A more complete
+                                                                                1990
+description including examples is given in Donoho
+and Johnstone (1994).                                                           1980
+
+   Another filtering technique involves the use of the                          1970
+two-dimensional wavelet transform. An example can
+                                                                                1960
+be found in Farge et al. (1992), where two-dimensional
+turbulent flows are “compressed” using an orthonor-                             1950
+
+mal wavelet packet. This compression removes the                                1940
+low-amplitude “passive” components of the flow,
+                                                                                1930
+while retaining the high-amplitude “dynamically ac-
+tive” components.                                                               1920
+
+                                                                                1910
+b. Power Hovmöller
+                                                                                1900
+   By scale-averaging the wavelet power spectra at
+multiple locations, one can assess the spatial and tem-                         1890
+
+poral variability of a field of data. Figure 10a shows a                        1880
+power Hovmöller (time–longitude diagram) of the                                 1870
+wavelet variance for sea level pressure (SLP) anoma-                                0o    60oE   120oE   180o   120oW   60oW     0o 0.30 0.15 0.00
+
+
+
+
+                                                             (c) Av.Var (mb2)
+                                                                                                                                       Av. Var. (mb2)
+                                                                                0.40
+lies in the 2–8-yr band at each longitude. The original                         0.30
+                                                                                0.20
+time series at each longitude is the average SLP be-                            0.10
+                                                                                0.00
+tween 5° and 15°S. At each longitude, the wavelet                                   0o    60oE   120oE   180o   120oW   60oW     0o
+power spectrum is computed using the Morlet wave-               FIG. 10. (a) Power Hovmöller of 2–8-yr averaged wavelet
+let, and the scale-averaged wavelet power over the 2–        power in SLP. The original time series at each longitude is the
+8-yr band is calculated from (24). The average wave-         average SLP between 5° and 15°S. The contour interval is 0.1 mb2.
+let-power time series are combined into a two-dimen-         The thick contour is the 95% confidence level, using the
+sional contour plot as shown in Fig. 10a. The 95%            corresponding red-noise spectrum at each longitude; (b) the
+                                                             average of (a) over all longitudes; (c) the average of (a) over all
+confidence level is computed using the lag-1 auto-           times.
+correlation at each longitude and (26).
+   Several features of Fig. 10 demonstrate the useful-
+ness of wavelet analysis. Fig. 10c shows the time-av-
+eraged 2–8-yr power as a function of longitude. Broad        power in the 1915–30 period. The generally low power
+local maxima at 130°E and 130°W reflect the power            observed in Figs. 1 and 8 between 1930 and 1950
+associated with the Southern Oscillation. This longi-        mainly reflects a lack of power in the Australian re-
+tudinal distribution of power is also observed in the        gion, with the eastern Pacific having some significant
+2–8-yr band for Fourier spectra at each longitude (not       fluctuations in the 1940s. The large zonal-scale fluc-
+shown). The zonal average of the power Hovmöller             tuations in both regions return in the 1950s, with the
+(Fig. 10b) gives a measure of global 2–8-yr variance         strongest amplitudes after 1970. The diminished
+in this latitude band. Comparing this to Fig. 8, one can     power after 1990 is within the COI, yet may reflect
+see that the peaks in zonal-average power are associ-        the changes in ENSO structure and evolution seen in
+ated with the peaks in Niño3 SST variance, and, hence,       recent years (Wang 1995).
+the 2–8-yr power is dominated in this latitude band by
+ENSO.                                                        c. Cross-wavelet spectrum
+   With the power Hovmöller in Fig. 10a, the tempo-             Given two time series X and Y, with wavelet trans-
+ral variations in ENSO-associated SLP fluctuations           forms WnX(s) and WnY(s), one can define the cross-wave-
+can be seen. While the low power near the date line          let spectrum as WnXY(s) = WnX(s)WnY*(s), where WnY*(s) is
+region is apparent throughout the record, the high           the complex conjugate of WnY(s). The cross-wavelet
+power regions fluctuate on interdecadal timescales.          spectrum is complex, and hence one can define the
+From the 1870s to the 1920s, strong decadal fluctua-         cross-wavelet power as |WnXY(s)|.
+tions in the 2–8-yr power are observed in the Austra-           Confidence levels for the cross-wavelet power can
+lian region. In contrast, the eastern Pacific fluctuations   be derived from the square root of the product of two
+are strong only through 1910 and appear to have little       chi-square distributions (Jenkins and Watts 1968).
+
+Bulletin of the American Meteorological Society                                                                                                   75
+Assuming both wavelet spectra are χ 2 distributed with          give a useful measure of coherence. This smoothing
+ν DOFs, the probability distribution is given by                would also seem to defeat the purpose of wavelet
+                                                                analysis by decreasing the localization in time. Liu
+                             2 2 −ν ν −1                        (1994) suggests plotting the real and imaginary parts
+               fν ( z ) =           z Κ 0 (z) ,         (30)    (the co- and quadrature-wavelet spectra) separately,
+                                  ν
+                            Γ 2⎛ ⎞                              and also plotting the coherence phase, defined as
+                               ⎝ 2⎠
+                                                                tan−1 [ℑ{WnXY(s)}/ℜ{WnXY(s)}].
+                                                                   The co- and quadrature-wavelet spectra for the
+where z is the random variable, Γ is the Gamma func-            Niño3 SST and the SOI (not shown) do not appear to
+tion, and K0(z) is the modified Bessel function of or-          give any additional information, especially in conjunc-
+der zero. The cumulative distribution function is given         tion with the coherence phase shown in Fig. 11d. The
+by the integral p = ∫0Zν(p) fν(z) dz, where Zν(p) is the con-   shaded region in Fig. 11d shows where the phase dif-
+fidence level associated with probability p. Given a            ference between Niño3 SST and the SOI is between
+probability p, this integral can be inverted to find the        160° and 200°. It is well known that the Niño3 SST
+confidence level Zν(p).                                         and the SOI are out of phase, yet this shows that the
+   If the two time series have theoretical Fourier spec-        time series are within ±20° of being 180° out of phase
+tra PkX and PkY, say from (16), then the cross-wavelet          over all periods between 2 and 8 yr. Furthermore, this
+distribution is                                                 out-of-phase behavior is consistent with changes in the
+                                                                cross-wavelet power, with periods of low variance, say
+          WnX ( s)WnY * ( s)       Zν ( p)
+                                                                between 1920 and 1960, associated with more random
+                               ⇒           PkX PkY ,    (31)    phase differences.
+               σ Xσ Y                ν
+
+where σX and σY are the respective standard deviations.         7. Summary
+For ν = 1 (real wavelets), Z1 (95%) = 2.182, while for
+ν = 2 (complex wavelets), Z2 (95%) = 3.999.                        Wavelet analysis is a useful tool for analyzing time
+   Figure 11a shows the wavelet power spectrum of               series with many different timescales or changes in
+Niño3 SST using the Paul (m = 4) wavelet, while Fig.            variance. The steps involved in using wavelet analy-
+11b shows the wavelet power for the SOI. Note that              sis are as follows:1
+the narrow width in time of the Paul gives better time
+localization than the Morlet but poorer frequency lo-           1) Find the Fourier transform of the (possibly padded)
+calization. Finally, Fig. 11c shows the cross-wavelet              time series.
+power for the Niño3 SST and the SOI and indicates               2) Choose a wavelet function and a set of scales to
+large covariance between the time series at all scales             analyze.
+between 2 and 8 yr. The 95% confidence level was                3) For each scale, construct the normalized wavelet
+derived using (31) and assuming red-noise spectra                  function using (6).
+(16) with α = 0.72 for Niño3 SST and α = 0.61 for               4) Find the wavelet transform at that scale using (4);
+the SOI.                                                        5) Determine the cone of influence and the Fourier
+                                                                   wavelength at that scale.
+d. Wavelet coherence and phase                                  6) After repeating steps 3–5 for all scales, remove any
+   Another useful quantity from Fourier analysis is the            padding and contour plot the wavelet power
+coherence, defined as the square of the cross-spectrum             spectrum.
+normalized by the individual power spectra. This                7) Assume a background Fourier power spectrum
+gives a quantity between 0 and 1, and measures the                 (e.g., white or red noise) at each scale, then use the
+cross-correlation between two time series as a func-               chi-squared distribution to find the 95% confidence
+tion of frequency. Unfortunately, as noted by Liu                  (5% significance) contour.
+(1994), this coherence is identically one at all times
+and scales. In Fourier analysis, this problem is circum-            For other methods of wavelet analysis, such as the
+vented by smoothing the cross-spectrum before nor-
+malizing. For wavelet analysis, it is unclear what sort         1
+                                                                 Software and examples are available from the authors at URL:
+of smoothing (presumably in time) should be done to             http://paos.colorado.edu/research/wavelets/.
+
+
+76                                                                                           Vol. 79, No. 1, January 1998
+orthogonal wavelet transform, see Farge                  a. NINO3 SST
+
+(1992). The results presented in section                                1
+
+
+
+                                                      Period (years)
+                                                                        2
+4 on statistical significance testing are                               4
+presumably valid for higher-dimensional                                 8
+                                                                       16
+wavelet analysis (assuming an appropri-                                32
+                                                                       64
+ate background spectrum can be chosen),
+                                                                            1880        1900       1920         1940     1960       1980       2000
+but this has not been tested and is left to                                                               Time (year)
+future research. More research is also                   b. GMSLP SOI
+needed on the properties and usefulness                                 1
+
+
+
+                                                      Period (years)
+of the cross-wavelet, wavelet coherence,                                2
+                                                                        4
+and co- and quadrature spectra.                                         8
+   In the wavelet analysis of Niño3 sea                                16
+                                                                       32
+surface temperature, the Southern Oscil-                               64
+lation index, and the sea level pressure,                                   1880        1900       1920         1940     1960       1980       2000
+                                                                                                          Time (year)
+it was found that the variance of the El
+                                                         c. NINO3 SST ✕ GMSLP SOI
+Niño–Southern Oscillation changed on
+                                                                        1
+interdecadal timescales, with a period of
+
+                                                      Period (years)
+                                                                        2
+low variance from 1920 to 1960. Using                                   4
+                                                                        8
+both the filtered 2–8-yr variance and the                              16
+cross-wavelet power, the changes in                                    32
+                                                                       64
+Niño3 SST variance appear to be well                                        1880        1900       1920         1940     1960       1980       2000
+correlated with changes in the SOI. The                                                                   Time (year)
+SLP power Hovmöller suggests that                        d. Phase difference (160o−200o)
+these changes are planetary in scale,                                   1
+
+
+
+                                                      Period (years)
+                                                                        2
+while Torrence and Webster (1997) use                                   4
+wavelet analysis to show that inter-                                    8
+                                                                       16
+decadal changes in ENSO are also related                               32
+to changes in Indian monsoon variance.                                 64
+                                                                            1880        1900       1920         1940     1960       1980       2000
+Further studies are necessary to deter-                                                                   Time (year)
+mine the extent and possible causes of
+                                                         FIG. 11. (a) The wavelet spectrum for the Niño3 SST using the Paul (m = 4)
+these interdecadal changes.
+                                                     wavelet. The contours are at normalized variances of 2, 5, and 10, while the thick
+   It is hoped that the analysis presented           contour is the 95% confidence level (red noise α = 0.72). (b) same as (a) but for
+here will prove useful in studies of                 the GMSLP SOI (red noise α = 0.61); (c) the cross-wavelet power for the Niño3
+nonstationarity in time series, and the              SST and the SOI. Contours are at 2, 5, and 10, while the thick contour is the 95%
+addition of statistical significance tests           confidence from (31), with the red noise given in (a) and (b); (d) the phase
+will improve the quantitative nature of              difference between Niño3 SST and the SOI, with the filled contour enclosing
+                                                     regions between 160° and 200°.
+wavelet analysis. Future studies using
+wavelet analysis can then concentrate on
+the results rather than simply the method.                                         References
+
+                                                                                   Baliunas, S., P. Frick, D. Sokoloff, and W. Soon, 1997: Time
+    Acknowledgments. Thanks to C. Penland, A. Siegal, R. Tomas,                       scales and trends in the central England temperature data
+and M. Wheeler for many useful discussions on statistics and                          (1659–1990): A wavelet analysis. Geophys. Res. Lett., 24,
+wavelet analysis. The UKMO GISST and UKMO/CSIRO                                       1351–54.
+GMSLP data were kindly provided by D. Rowell and the U.K.                          Chatfield, C., 1989: The Analysis of Time Series: An Introduction.
+Hadley Centre Meteorological Office. The manuscript was much                          4th Ed. Chapman and Hall, 241 pp.
+improved through the help of the anonymous reviewers. Special                      Daubechies, I., 1990: The wavelet transform time-frequency lo-
+thanks to P. Webster and G. Kiladis for insightful discussions and                    calization and signal analysis. IEEE Trans. Inform. Theory, 36,
+for providing the impetus and freedom to pursue this research.                        961–1004.
+Computing was done at the PAOS Computer Facility. This work                        ——, 1992: Ten Lectures on Wavelets. Society for Industrial and
+was funded by NOAA Office of Global Programs Grant                                    Applied Mathematics, 357 pp.
+NA56GP0230 and National Science Foundation Grants NSF                              Donoho, D. L., and I. M. Johnstone, 1994: Ideal spatial adapta-
+ATM9526030 and NSF ATM9525860.                                                        tion by wavelet shrinkage. Biometrika, 81, 425–455.
+
+
+Bulletin of the American Meteorological Society                                                                                                  77
+Farge, M., 1992: Wavelet transforms and their applications to tur-        waves. Wavelets in Geophysics, E. Foufoula-Georgiou and P.
+   bulence. Annu. Rev. Fluid Mech., 24, 395–457.                          Kumar, Eds., Academic Press, 151–166.
+——, E. Goirand, Y. Meyer, F. Pascal, and M. V. Wickerhauser,           Mak, M., 1995: Orthogonal wavelet analysis: Interannual variabil-
+   1992: Improved predictability of two-dimensional turbulent             ity in the sea surface temperature. Bull. Amer. Meteor. Soc.,
+   flows using wavelet packet compression. Fluid Dyn. Res., 10,           76, 2179–2186.
+   229–250.                                                            Meyers, S. D., B. G. Kelly, and J. J. O’Brien, 1993: An introduc-
+Folland, C. K., D. E. Parker, and F. E. Kates, 1984: Worldwide            tion to wavelet analysis in oceanography and meteorology:
+   marine temperature fluctuations 1856–1981. Nature, 310,                With application to the dispersion of Yanai waves. Mon. Wea.
+   670–673.                                                               Rev., 121, 2858–2866.
+Foufoula-Georgiou, E., and P. Kumar, Eds., 1995: Wavelets in           Percival, D. P., 1995: On estimation of the wavelet variance.
+   Geophysics. Academic Press, 373 pp.                                    Biometrika, 82, 619–631.
+Gamage, N., and W. Blumen, 1993: Comparative analysis of low-          Perrier, V., T. Philipovitch, and C. Basdevant, 1995: Wavelet spec-
+   level cold fronts: Wavelet, Fourier, and empirical orthogonal          tra compared to Fourier spectra. J. Math. Phys., 36, 1506–1519.
+   function decompositions. Mon. Wea. Rev., 121, 2867–2878.            Qiu, L.-J., and M.-H. Er, 1995: Wavelet spectrogram of noisy sig-
+Gilman, D. L., F. J. Fuglister, and J. M. Mitchell Jr., 1963: On the      nals. Int. J. Elec., 79, 665–677.
+   power spectrum of “red noise.” J. Atmos. Sci., 20, 182–184.         Rayner, N. A., E. B. Horton, D. E. Parker, C. K. Folland, and R.
+Gu, D., and S. G. H. Philander, 1995: Secular changes of annual           B. Hackett, 1996: Version 2.2 of the global sea-ice and sea
+   and interannual variability in the Tropics during the past cen-        surface temperature data set, 1903–1994. Tech. Rep., CRTN
+   tury. J. Climate, 8, 864–876.                                          74, Hadley Centre for Climate Prediction and Research, 21 pp.
+Hudgins, L., C. A. Friehe, and M. E. Mayer, 1993: Wavelet trans-          [Available from Meteorological Office, London Road,
+   forms and atmospheric turbulence. Phys. Rev. Lett., 71,                Bracknell, Berkshire RG12 2SY, United Kingdom.]
+   3279–3282.                                                          Spiegel, M. R., 1975: Schaum’s Outline of Theory and Problems
+Jenkins, G. M., and D. G. Watts, 1968: Spectral Analysis and Its          of Probability and Statistics. McGraw-Hill, 372 pp.
+   Applications. Holden-Day, 525 pp.                                   Torrence, C., and P. J. Webster, 1998: The annual cycle of per-
+Kaiser, G., 1994: A Friendly Guide to Wavelets. Birkhäuser,               sistence in the El Niño–Southern Oscillation. Quart. J. Roy.
+   300 pp.                                                                Meteor. Soc., in press.
+Kestin, T. A., D. J. Karoly, J.-I. Yano, and N. Rayner, 1998: Time–    Trenberth, K. E., 1976: Spatial and temporal variations of the South-
+   frequency variability of ENSO and stochastic simulations. J.           ern Oscillation. Quart. J. Roy. Meteor. Soc., 102, 639–653.
+   Climate, in press.                                                  Wang, B., 1995: Interdecadal changes in El Niño onset in the last
+Lau, K.-M., and H.-Y. Weng, 1995: Climate signal detection us-            four decades. J. Climate, 8, 267–285.
+   ing wavelet transform: How to make a time series sing. Bull.        ——, and Y. Wang, 1996: Temporal structure of the Southern
+   Amer. Meteor. Soc., 76, 2391–2402.                                     Oscillation as revealed by waveform and wavelet analysis. J.
+Lindsay, R. W., D. B. Percival, and D. A. Rothrock, 1996: The             Climate, 9, 1586–1598.
+   discrete wavelet transform and the scale analysis of the sur-       Weng, H., and K.-M. Lau, 1994: Wavelets, period doubling, and
+   face properties of sea ice. IEEE Trans. Geosci. Remote Sens.,          time-frequency localization with application to organization
+   34, 771–787.                                                           of convection over the tropical western Pacific. J. Atmos. Sci.,
+Liu, P. C., 1994: Wavelet spectrum analysis and ocean wind                51, 2523–2541.
+
+
+
+
+78                                                                                                     Vol. 79, No. 1, January 1998
+

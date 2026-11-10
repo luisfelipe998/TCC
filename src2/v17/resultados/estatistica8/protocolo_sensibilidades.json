@@ -1,0 +1,16 @@
+{
+  "status": "Definido antes de executar as sensibilidades v17; auditoria exploratória, sem pré-registro independente",
+  "objetivo": "Reproduzir cálculos de estatistica8 e testar se a largura WPS descreve aquisições além da âncora escolhida",
+  "unidade": "Aquisição; janelas e escalas não serão contadas como novas réplicas",
+  "amostra": "Todos os 25 ensaios de estatistica8 e os rótulos preservados; contraste prioritário churn versus wavy annular",
+  "reproducao": "Reconstruir P(a,0) por soma direta da Morlet sobre autocorrelação linear np.correlate; não importar funções dos pipelines auditados",
+  "sensibilidades": [
+    "Quantis de massas nodais originais versus integração exata do interpolante linear da WPS em log lambda",
+    "200 versus 800 escalas geométricas entre 50 e 1024 pixels, nas âncoras originais",
+    "Limitar o domínio aos pontos lambda <=512 e <=768 pixels; reportar o extremo efetivamente disponível",
+    "Cinco janelas de 2048 pixels com inícios uniformemente distribuídos de 0 até N-2048, escolhidas sem consultar rótulos, sinais ou resultados; reportar cada posição e a mediana de largura por aquisição"
+  ],
+  "resumos": "Silhueta macro, menor média por classe, delta de Cliff, medianas por classe e dispersão espacial dentro da aquisição; sem classifier, treino ou ajuste supervisionado",
+  "inferencia": "Reproduzir a permutação exata e Holm originais para largura/churn-annular; sensibilidades novas estritamente descritivas, sem escolher a melhor configuração ou fornecer novos p-valores confirmatórios",
+  "arquivos": "Escritas exclusivamente em src2/v17"
+}

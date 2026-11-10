@@ -1,0 +1,373 @@
+\chapter{Resultados}\label{cap:resultados}
+
+Neste capítulo, apresentaram-se os produtos da execução espacial com extração das linhas 18 a 71
+dos panoramas, conforme o \autoref{cap:metodologia}. Foram examinados os sinais, os campos
+wavelet e duas medidas complementares: o coeficiente de Pearson $r$ entre descritores
+espectrais individuais e o escore de coerência $S_{xy}^{(0{,}05)}$ entre pares de sinais.
+As figuras e tabelas foram obtidas dos artefatos ativos da execução
+\codigo{v16\_spatial2\_18\_71}; os resultados arquivados não integraram esta apresentação.
+
+% =========================================================
+\section{Conjunto processado}\label{sec:res-visao}
+% =========================================================
+
+Foram analisados 26 ensaios: dez de \textit{churn}, nove de anular ondulado, três de
+\textit{plug}, três de \textit{slug} e um de bolhas dispersas. Obtiveram-se 325 pares
+distintos, divididos em 87 comparações intrapadrão e 238 comparações entre padrões.
+A \autoref{tab:res-ensaios} identificou as aquisições na mesma ordem das matrizes
+apresentadas adiante. O sufixo comum \codigo{\_001} foi omitido apenas para facilitar
+a leitura. Os nomes \textit{wavy annular} e \textit{dispersed bubble}, preservados nas
+figuras originais, designaram anular ondulado e bolhas dispersas.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Ensaios incluídos e extensão dos panoramas completos.}
+  \label{tab:res-ensaios}
+  \small
+  \begin{tabular}{r l l r}
+    \hline
+    \textbf{Nº} & \textbf{Ensaio} & \textbf{Padrão} & \textbf{Extensão (px)}\\
+    \hline
+    1 & m03q05 & \textit{Churn} & 9586\\
+    2 & m04q10 & \textit{Churn} & 8829\\
+    3 & m04q20 & \textit{Churn} & 9344\\
+    4 & m05q10 & \textit{Churn} & 7001\\
+    5 & m05q20 & \textit{Churn} & 7391\\
+    6 & m05q40 & \textit{Churn} & 9937\\
+    7 & m06q10 & \textit{Churn} & 7584\\
+    8 & m06q20 & \textit{Churn} & 10044\\
+    9 & m07q20 & \textit{Churn} & 8255\\
+    10 & m07q40 & \textit{Churn} & 10349\\
+    \hline
+    11 & m03q10 & Anular ondulado & 14224\\
+    12 & m03q20 & Anular ondulado & 23079\\
+    13 & m03q40 & Anular ondulado & 20743\\
+    14 & m04q40 & Anular ondulado & 14960\\
+    15 & m04q80 & Anular ondulado & 22636\\
+    16 & m05q80 & Anular ondulado & 17524\\
+    17 & m06q40 & Anular ondulado & 14772\\
+    18 & m06q80 & Anular ondulado & 18665\\
+    19 & m07q80 & Anular ondulado & 16658\\
+    \hline
+    20 & m05q01 & \textit{Plug} & 5940\\
+    21 & m06q01 & \textit{Plug} & 7798\\
+    22 & m07q05 & \textit{Plug} & 7358\\
+    23 & m04q01 & \textit{Slug} & 5071\\
+    24 & m05q05 & \textit{Slug} & 6323\\
+    25 & m06q05 & \textit{Slug} & 7787\\
+    26 & m07q01 & Bolhas dispersas & 3171\\
+    \hline
+  \end{tabular}
+  \fonte{Elaborado pelo autor a partir do índice de ensaios da execução.}
+\end{table}
+
+Cada ensaio originou um panorama com seu sinal e um descritor espectral fixo.
+Cada par originou um conjunto de campos wavelet sobre o prefixo comum dos dois sinais,
+isto é, sobre a extensão do menor deles. A diferença entre essas duas entradas foi
+necessária para interpretar os resultados: o coeficiente de Pearson $r$ utilizou
+panoramas completos; o escore de coerência $S_{xy}^{(0{,}05)}$ utilizou os prefixos comuns.
+
+% =========================================================
+\section{Panoramas e sinais espaciais}\label{sec:res-panorama}\label{sec:res-sinais}
+% =========================================================
+
+A \autoref{fig:res-panorama-plug} apresentou a transformação da imagem em sinal:
+o painel superior mostrou o panorama completo e a faixa de extração; o central apresentou
+a intensidade média por coluna; o inferior mostrou o sinal após inversão de intensidade,
+remoção da tendência linear e padronização. No exemplo de \textit{plug}, as regiões
+alongadas da imagem corresponderam a trechos extensos do sinal, separados por mudanças
+de intensidade. Na \autoref{fig:res-panorama-bolhas}, de bolhas dispersas, observaram-se
+variações mais localizadas, que apareceram como picos após o pré-processamento.
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=\textwidth,height=0.76\textheight,keepaspectratio]{figuras/v16/plug_m05q01_001.png}
+  \caption{Panorama completo e sinais de \textit{plug}, ensaio m05q01.
+  As linhas horizontais delimitaram a faixa de extração 18--71.}
+  \label{fig:res-panorama-plug}
+  \fonte{Elaborado pelo autor, execução espacial 18--71.}
+\end{figure}
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=\textwidth,height=0.76\textheight,keepaspectratio]{figuras/v16/dispersed_bubble_m07q01_001.png}
+  \caption{Panorama completo e sinais de bolhas dispersas, ensaio m07q01.
+  A aquisição participou de 25 pares entre padrões e não teve par intrapadrão.}
+  \label{fig:res-panorama-bolhas}
+  \fonte{Elaborado pelo autor, execução espacial 18--71.}
+\end{figure}
+
+Esses painéis permitiram relacionar as variações do sinal às imagens que lhes deram
+origem. A extensão horizontal foi expressa em pixels do panorama reconstruído;
+não representou uma medição calibrada do tamanho das bolhas. A padronização conservou
+variações relativas de intensidade, sem transformar o brilho em fração de vazio.
+
+% =========================================================
+\section{Campos espectrais e exemplos intrapadrão}\label{sec:res-wps}\label{sec:res-wco}
+% =========================================================
+
+As \autoref{fig:res-wps}, \autoref{fig:res-wps-annular},
+\autoref{fig:res-wps-plug} e \autoref{fig:res-wps-slug} apresentaram um exemplo
+intrapadrão de cada grupo com pelo menos duas aquisições. Cada figura reuniu os panoramas utilizados,
+os sinais normalizados, os espectros de potência wavelet (WPS), o módulo do espectro
+cruzado wavelet (WCS) e a coerência wavelet (WCO).
+
+Nos mapas, o eixo horizontal representou o atraso da correlação, indicado por \textit{lag}
+nas figuras; o eixo vertical representou o comprimento de onda $\lambda$, em pixels.
+Diferentemente da extensão do panorama, o atraso indicou quanto um sinal foi
+deslocado em relação ao outro durante a correlação. As curvas laterais das WPS
+resumiram a potência média sobre todos os atrasos. Elas não foram os descritores usados
+no coeficiente de Pearson $r$, que foram extraídos da WPS no atraso nulo e
+transformados conforme a \autoref{eq:met-residuos}.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Métricas dos pares ilustrados. O coeficiente de Pearson $r$ utilizou
+  panoramas completos; o escore de coerência utilizou o prefixo comum.}
+  \label{tab:res-exemplos}
+  \small
+  \setlength{\tabcolsep}{5pt}
+  \begin{tabular}{l l r r r}
+    \hline
+    \textbf{Padrão} & \textbf{Par} & \textbf{Prefixo (px)} &
+    \shortstack{\textbf{Coeficiente}\\\textbf{de Pearson $r$}} &
+    \shortstack{\textbf{Escore de coerência}\\$S_{xy}^{(0{,}05)}$}\\
+    \hline
+    \textit{Churn} & m04q20 / m07q40 & 9344 & 0,9693 & 0,1799\\
+    Anular ondulado & m06q40 / m07q80 & 14772 & 0,9870 & 0,1662\\
+    \textit{Plug} & m05q01 / m06q01 & 5940 & 0,9670 & 0,2845\\
+    \textit{Slug} & m04q01 / m05q05 & 5071 & 0,9355 & 0,4821\\
+    \hline
+  \end{tabular}
+  \fonte{Elaborado pelo autor a partir da tabela de pares da execução.}
+\end{table}
+
+O exemplo anular apresentou coeficiente de Pearson $r=0{,}9870$ e escore de coerência
+$S_{xy}^{(0{,}05)}=0{,}1662$. No exemplo de \textit{slug}, o coeficiente de Pearson
+$r=0{,}9355$ permaneceu elevado, enquanto o escore de coerência
+$S_{xy}^{(0{,}05)}=0{,}4821$ foi maior. Os mapas mostraram, portanto, que valores
+semelhantes do coeficiente de Pearson $r$ puderam acompanhar campos de coerência
+distintos. As médias de todos os pares, apresentadas a seguir, permitiram avaliar
+se esse comportamento se manteve além dos exemplos.
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=\textwidth,height=0.86\textheight,keepaspectratio]{figuras/v16/churn_m04q20_001_m07q40_001.png}
+  \caption{Par intrapadrão de \textit{churn}, m04q20 e m07q40: panoramas, sinais e campos WPS, WCS e WCO.}
+  \label{fig:res-wps}
+  \fonte{Elaborado pelo autor, execução espacial 18--71.}
+\end{figure}
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=\textwidth,height=0.86\textheight,keepaspectratio]{figuras/v16/wavy_annular_m06q40_001_m07q80_001.png}
+  \caption{Par intrapadrão de anular ondulado, m06q40 e m07q80. Mesma disposição da \autoref{fig:res-wps}.}
+  \label{fig:res-wps-annular}
+  \fonte{Elaborado pelo autor, execução espacial 18--71.}
+\end{figure}
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=\textwidth,height=0.86\textheight,keepaspectratio]{figuras/v16/plug_m05q01_001_m06q01_001.png}
+  \caption{Par intrapadrão de \textit{plug}, m05q01 e m06q01. Mesma disposição da \autoref{fig:res-wps}.}
+  \label{fig:res-wps-plug}
+  \fonte{Elaborado pelo autor, execução espacial 18--71.}
+\end{figure}
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=\textwidth,height=0.86\textheight,keepaspectratio]{figuras/v16/slug_m04q01_001_m05q05_001.png}
+  \caption{Par intrapadrão de \textit{slug}, m04q01 e m05q05. Mesma disposição da \autoref{fig:res-wps}.}
+  \label{fig:res-wps-slug}
+  \fonte{Elaborado pelo autor, execução espacial 18--71.}
+\end{figure}
+
+\clearpage
+% =========================================================
+\section{Perfis individuais e semelhança intrapadrão}\label{sec:res-intra}
+% =========================================================
+
+A \autoref{fig:res-perfis} apresentou, à esquerda, as WPS no atraso nulo dos
+panoramas completos, divididas pelo máximo apenas para exibição. À direita apareceram
+os resíduos espectrais efetivamente usados no coeficiente de Pearson $r$, após
+remoção da reta ajustada ao logaritmo da WPS em função do logaritmo do comprimento
+de onda $\lambda$. Os resíduos foram centralizados e divididos pela sua norma
+euclidiana, isto é, pela raiz da soma de seus quadrados, formando a versão unitária
+exibida. Essa normalização não alterou o coeficiente de Pearson $r$.
+As linhas finas identificaram a variação entre ensaios; a linha
+espessa correspondeu à mediana em cada comprimento de onda $\lambda$.
+
+Os três descritores de \textit{plug} apresentaram formas próximas; em \textit{slug},
+uma das curvas se afastou das demais. No anular ondulado, a concentração de várias
+curvas foi acompanhada de um perfil deslocado para comprimentos de onda menores.
+Esse registro, m03q40, foi mantido e examinado na \autoref{sec:disc-qualidade}.
+A \autoref{tab:res-intra} quantificou essas observações sem reduzir cada padrão a
+um único exemplo.
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=\textwidth,height=0.83\textheight,keepaspectratio]{figuras/v16/perfis_comparados.png}
+  \caption{Perfis de WPS no atraso nulo e resíduos de norma unitária para o coeficiente de Pearson $r$.
+  Linhas finas: ensaios; linhas espessas: medianas.}
+  \label{fig:res-perfis}
+  \fonte{Elaborado pelo autor, execução espacial 18--71.}
+\end{figure}
+
+\begin{table}[htbp]
+  \centering
+  \caption{Médias intrapadrão das duas medidas.}
+  \label{tab:res-intra}
+  \begin{tabular}{l r r r r}
+    \hline
+    \textbf{Padrão} & \textbf{Ensaios} & \textbf{Pares} &
+    \shortstack{\textbf{Coeficiente de}\\\textbf{Pearson $r$ médio}} &
+    \shortstack{\textbf{Escore de coerência}\\\textbf{$S_{xy}^{(0{,}05)}$ médio}}\\
+    \hline
+    \textit{Churn} & 10 & 45 & 0,8447 & 0,2196\\
+    Anular ondulado & 9 & 36 & 0,9045 & 0,1247\\
+    \textit{Plug} & 3 & 3 & 0,9618 & 0,2836\\
+    \textit{Slug} & 3 & 3 & 0,7354 & 0,3681\\
+    Bolhas dispersas & 1 & 0 & --- & ---\\
+    \hline
+  \end{tabular}
+  \fonte{Elaborado pelo autor a partir do resumo por padrão da execução.}
+\end{table}
+
+O maior coeficiente de Pearson $r$ médio intrapadrão ocorreu em \textit{plug}
+($0{,}9618$), seguido de anular ondulado ($0{,}9045$), \textit{churn}
+($0{,}8447$) e \textit{slug} ($0{,}7354$). O escore de coerência
+$S_{xy}^{(0{,}05)}$ médio apresentou outra ordem, com o maior valor em
+\textit{slug} e o menor em anular ondulado. Para bolhas dispersas, o único
+ensaio não permitiu estimar variabilidade intrapadrão.
+
+\clearpage
+% =========================================================
+\section{Comparações entre padrões}\label{sec:res-inter}
+% =========================================================
+
+A \autoref{fig:res-pearson} reuniu os coeficientes de Pearson $r$ dos 26 ensaios.
+Os blocos sobre a diagonal corresponderam aos pares do mesmo padrão; os demais
+blocos, aos pares entre padrões. A diagonal unitária comparou cada descritor
+consigo mesmo e foi excluída das médias. Houve coeficientes de Pearson $r$
+elevados em ambos os tipos de bloco. A linha e a coluna de m03q40 e as de
+m07q01 apresentaram valores menores em diversas comparações.
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=\textwidth,height=0.80\textheight,keepaspectratio]{figuras/v16/matriz_pearson_todos.png}
+  \caption{Matriz do coeficiente de Pearson $r$ entre os descritores dos panoramas completos.
+  As linhas brancas separaram os padrões na ordem da \autoref{tab:res-ensaios}.}
+  \label{fig:res-pearson}
+  \fonte{Elaborado pelo autor, execução espacial 18--71.}
+\end{figure}
+
+A \autoref{tab:res-inter} detalhou as dez combinações entre padrões. O coeficiente
+de Pearson $r$ médio entre \textit{churn} e \textit{plug} foi $0{,}8988$,
+superior à média intrapadrão de \textit{churn}, $0{,}8447$. As comparações com
+bolhas dispersas apresentaram médias menores do coeficiente de Pearson $r$,
+mas envolveram sempre a mesma aquisição desse padrão. Assim, essa diferença
+descreveu um registro particular, sem estimar a variabilidade de bolhas dispersas.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Médias das comparações entre padrões.}
+  \label{tab:res-inter}
+  \small
+  \begin{tabular}{l r r r}
+    \hline
+    \textbf{Combinação} & \textbf{Pares} &
+    \shortstack{\textbf{Coeficiente de}\\\textbf{Pearson $r$ médio}} &
+    \shortstack{\textbf{Escore de coerência}\\\textbf{$S_{xy}^{(0{,}05)}$ médio}}\\
+    \hline
+    \textit{Churn} / anular ondulado & 90 & 0,8385 & 0,2155\\
+    \textit{Churn} / \textit{plug} & 30 & 0,8988 & 0,2670\\
+    \textit{Churn} / \textit{slug} & 30 & 0,8271 & 0,2980\\
+    \textit{Churn} / bolhas dispersas & 10 & 0,5293 & 0,3703\\
+    Anular ondulado / \textit{plug} & 27 & 0,8361 & 0,2565\\
+    Anular ondulado / \textit{slug} & 27 & 0,7934 & 0,2834\\
+    Anular ondulado / bolhas dispersas & 9 & 0,3666 & 0,3154\\
+    \textit{Plug} / \textit{slug} & 9 & 0,8765 & 0,3121\\
+    \textit{Plug} / bolhas dispersas & 3 & 0,6330 & 0,3549\\
+    \textit{Slug} / bolhas dispersas & 3 & 0,5634 & 0,4601\\
+    \hline
+  \end{tabular}
+  \fonte{Elaborado pelo autor a partir do resumo por padrão da execução.}
+\end{table}
+
+A \autoref{fig:res-escore} apresentou os escores de coerência
+$S_{xy}^{(0{,}05)}$. O bloco intrapadrão anular foi predominantemente escuro,
+enquanto vários blocos entre padrões apresentaram valores maiores. A diagonal
+cinza foi deixada sem escore porque a estatística considerou somente aquisições
+distintas. A cor representou o escore ponderado dos máximos por escala, não o
+máximo isolado de cada mapa nem uma probabilidade de os dois ensaios pertencerem
+ao mesmo padrão.
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=\textwidth,height=0.80\textheight,keepaspectratio]{figuras/v16/matriz_escore_wco.png}
+  \caption{Matriz do escore de coerência $S_{xy}^{(0{,}05)}$ calculado nos prefixos comuns.
+  A diagonal cinza não integrou as médias.}
+  \label{fig:res-escore}
+  \fonte{Elaborado pelo autor, execução espacial 18--71.}
+\end{figure}
+
+\clearpage
+% =========================================================
+\section{Contrastes globais e dispersão}\label{sec:res-limite-estat}
+% =========================================================
+
+A \autoref{tab:res-global} comparou as médias intrapadrão e entre padrões nas duas
+ponderações definidas na \autoref{sec:met-agregacao}. Na média por par, cada
+comparação teve peso igual. Na média balanceada, cada um dos quatro padrões
+com pares intrapadrão e cada uma das dez combinações entre padrões recebeu peso
+igual dentro de seu conjunto. O contraste descritivo $\Delta_h$, definido na
+\autoref{eq:met-contraste}, correspondeu à média intrapadrão menos a média entre
+padrões. Um contraste descritivo $\Delta_h$ positivo indicou maior valor da medida
+dentro dos padrões. Os valores foram arredondados a quatro casas decimais somente
+para apresentação; os contrastes descritivos $\Delta_h$ foram calculados antes do
+arredondamento.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Médias e contrastes globais das duas medidas.}
+  \label{tab:res-global}
+  \small
+  \begin{tabular}{l l r r r}
+    \hline
+    \textbf{Medida} & \textbf{Ponderação} & \textbf{Intra} & \textbf{Entre} &
+    \shortstack{\textbf{Contraste}\\\textbf{descritivo $\Delta_h$}}\\
+    \hline
+    Coeficiente de Pearson $r$ & Por par & 0,8697 & 0,8038 & 0,0659\\
+    Coeficiente de Pearson $r$ & Balanceada & 0,8616 & 0,7163 & 0,1453\\
+    Escore de coerência $S_{xy}^{(0{,}05)}$ & Por par & 0,1877 & 0,2635 & $-0{,}0759$\\
+    Escore de coerência $S_{xy}^{(0{,}05)}$ & Balanceada & 0,2490 & 0,3133 & $-0{,}0643$\\
+    \hline
+  \end{tabular}
+  \fonte{Elaborado pelo autor a partir do resumo intrapadrão e entre padrões da execução.}
+\end{table}
+
+O contraste descritivo $\Delta_h$ do coeficiente de Pearson $r$ foi positivo nas duas
+ponderações; o contraste descritivo $\Delta_h$ do escore de coerência
+$S_{xy}^{(0{,}05)}$ foi negativo. A \autoref{fig:res-distribuicoes} mostrou a
+dispersão que acompanhou essas médias. Os coeficientes de Pearson $r$ variaram
+de $0{,}5360$ a $0{,}9870$ dentro dos padrões e de $0{,}0018$ a $0{,}9891$
+entre padrões. Os escores de coerência $S_{xy}^{(0{,}05)}$ variaram de
+$0{,}0714$ a $0{,}4821$ dentro dos padrões e de $0{,}1220$ a $0{,}5554$
+entre padrões.
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=\textwidth,height=0.80\textheight,keepaspectratio]{figuras/v16/correlacoes_dentro_entre.png}
+  \caption{Distribuições do coeficiente de Pearson $r$ e do escore de coerência
+  $S_{xy}^{(0{,}05)}$. Cada ponto representou um par; o traço horizontal marcou a
+  média e a barra vertical delimitou os 50\% centrais dos valores.}
+  \label{fig:res-distribuicoes}
+  \fonte{Elaborado pelo autor, execução espacial 18--71.}
+\end{figure}
+
+As distribuições apresentaram ampla sobreposição. Os 325 pares compartilharam
+as mesmas 26 aquisições e, portanto, não constituíram 325 observações independentes.
+Os resultados foram descritivos, sem valores de significância estatística ou
+estimativa de acurácia de classificação. A interpretação desse contraste positivo
+do coeficiente de Pearson $r$ e a sensibilidade às escolhas de processamento e
+à qualidade das entradas foram desenvolvidas no \autoref{cap:discussao}.

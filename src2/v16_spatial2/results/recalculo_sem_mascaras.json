@@ -1,0 +1,29 @@
+{
+  "domain": "integral, sem COI e sem máscara conservadora",
+  "completed_stages": [
+    {
+      "stage": "preprocessing_screen",
+      "elapsed_seconds": 339.36670520799817
+    },
+    {
+      "stage": "preprocessing_screen_evaluation",
+      "elapsed_seconds": 0.9650395830103662
+    },
+    {
+      "stage": "preprocessing_confirm",
+      "elapsed_seconds": 307.0082103339955
+    },
+    {
+      "stage": "preprocessing_confirm_evaluation",
+      "elapsed_seconds": 0.680808083008742
+    },
+    {
+      "stage": "preprocessing_v5",
+      "elapsed_seconds": 182.90257874998497
+    },
+    {
+      "stage": "null_diagnostic",
+      "elapsed_seconds": 452.01731170900166
+    }
+  ]
+}

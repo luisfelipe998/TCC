@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "pares_scipy": 325,
+  "maior_erro_scipy": 1.1102230246251565e-15,
+  "menor_autovalor": 7.828937518759693e-07,
+  "funcoes_historicas": {
+    "arquivo": "src2/v16_spatial2_18_71/scripts/estatistica.py",
+    "sha256": "bcae69735e663e6e044b8e2ad4097ce812b02466c2569938bc4b4ac23c48f5fc"
+  }
+}

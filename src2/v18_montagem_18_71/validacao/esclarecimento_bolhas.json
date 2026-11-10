@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "date_utc": "2026-10-31T03:25:29.277483+00:00",
+  "scope": "Esclarecimento pontual da seção 5.1, sem alteração dos cálculos ou das demais seções do manuscrito.",
+  "pdf": {
+    "path": "TCC/dist/main.pdf",
+    "sha256": "ef97a561c34a1a8b70f8b8c79007c2d20e8cfa0f5624101554e1807450b790d0",
+    "pages": 75
+  },
+  "discussao_sha256": "604bfe4daf86bb37a25ed7e14294820b4e8b24098d404b15eab5c46ef960efd9",
+  "audit_report": {
+    "path": "../../../auditorias/discussao-didatica/bolhas-dispersas/verificacao-final.json",
+    "sha256": "012d08e64576bbd830febb3671644d97530ca0f09b659bddca63e95a74dc6e56"
+  }
+}

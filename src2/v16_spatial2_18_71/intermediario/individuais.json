@@ -1,0 +1,834 @@
+[
+  {
+    "ensaio": "m03q05_001",
+    "padrao": "churn",
+    "comprimento": 9586,
+    "pico_wps_zero_lambda_px": 407.74083980066234,
+    "pico_potencia_media_lambda_px": 424.86903461766195,
+    "erro_wps_independente": 1.7763568394002505e-15,
+    "erro_perfil_vs_original": 0.0,
+    "npz_sha256": "3774042de914989d06aff662bbf2fafde216469af0f6e309cfc97ea913cf12cc",
+    "apresentacao": {
+      "arquivo": "01_panoramas/churn_m03q05_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.174729274937608,
+      "fonte_minima_inserida_pt": 9.345199669817363,
+      "titulo": "churn · m03q05_001 · panorama de 9.586 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal normalizado"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    }
+  },
+  {
+    "ensaio": "m04q10_001",
+    "padrao": "churn",
+    "comprimento": 8829,
+    "pico_wps_zero_lambda_px": 696.1542550214758,
+    "pico_potencia_media_lambda_px": 641.1560553637185,
+    "erro_wps_independente": 1.3322676295501878e-15,
+    "erro_perfil_vs_original": 0.0,
+    "npz_sha256": "ae238eda84eebf9c2f36636ffd24691fd0e197fa89fde1a210009002d3d8f71f",
+    "apresentacao": {
+      "arquivo": "01_panoramas/churn_m04q10_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.174729274937615,
+      "fonte_minima_inserida_pt": 9.345199669817369,
+      "titulo": "churn · m04q10_001 · panorama de 8.829 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal normalizado"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    }
+  },
+  {
+    "ensaio": "m04q20_001",
+    "padrao": "churn",
+    "comprimento": 9344,
+    "pico_wps_zero_lambda_px": 555.1568646748143,
+    "pico_potencia_media_lambda_px": 641.1560553637185,
+    "erro_wps_independente": 2.220446049250313e-15,
+    "erro_perfil_vs_original": 0.0,
+    "npz_sha256": "96915a0f81038b855e36138bbed887ceb212b3a99c61e10c11a331e70aadbb78",
+    "apresentacao": {
+      "arquivo": "01_panoramas/churn_m04q20_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.174729274937615,
+      "fonte_minima_inserida_pt": 9.345199669817369,
+      "titulo": "churn · m04q20_001 · panorama de 9.344 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal normalizado"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    }
+  },
+  {
+    "ensaio": "m05q10_001",
+    "padrao": "churn",
+    "comprimento": 7001,
+    "pico_wps_zero_lambda_px": 566.6973056197781,
+    "pico_potencia_media_lambda_px": 578.4776459259483,
+    "erro_wps_independente": 1.3322676295501878e-15,
+    "erro_perfil_vs_original": 0.0,
+    "npz_sha256": "5f271a15b232283912d445536ca0401a65bd2658abd5ab92c64804f19a46128b",
+    "apresentacao": {
+      "arquivo": "01_panoramas/churn_m05q10_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.174729274937608,
+      "fonte_minima_inserida_pt": 9.345199669817363,
+      "titulo": "churn · m05q10_001 · panorama de 7.001 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal normalizado"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    }
+  },
+  {
+    "ensaio": "m05q20_001",
+    "padrao": "churn",
+    "comprimento": 7391,
+    "pico_wps_zero_lambda_px": 480.692870038844,
+    "pico_potencia_media_lambda_px": 891.1086984420214,
+    "erro_wps_independente": 8.881784197001252e-16,
+    "erro_perfil_vs_original": 0.0,
+    "npz_sha256": "a8f5a70f819bcd571520b0a129814d2ec42b85fe8186a791017860bb5758c75b",
+    "apresentacao": {
+      "arquivo": "01_panoramas/churn_m05q20_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.174729274937608,
+      "fonte_minima_inserida_pt": 9.345199669817363,
+      "titulo": "churn · m05q20_001 · panorama de 7.391 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal normalizado"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    }
+  },
+  {
+    "ensaio": "m05q40_001",
+    "padrao": "churn",
+    "comprimento": 9937,
+    "pico_wps_zero_lambda_px": 470.90385635493084,
+    "pico_potencia_media_lambda_px": 451.9198110738197,
+    "erro_wps_independente": 1.7763568394002505e-15,
+    "erro_perfil_vs_original": 0.0,
+    "npz_sha256": "ac1879098652cce6d9fc8b4ff70c3e1d9b73e5d062b13f8490d04d38aa536c3b",
+    "apresentacao": {
+      "arquivo": "01_panoramas/churn_m05q40_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.174729274937615,
+      "fonte_minima_inserida_pt": 9.345199669817369,
+      "titulo": "churn · m05q40_001 · panorama de 9.937 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal normalizado"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    }
+  },
+  {
+    "ensaio": "m06q10_001",
+    "padrao": "churn",
+    "comprimento": 7584,
+    "pico_wps_zero_lambda_px": 1238.5045821466435,
+    "pico_potencia_media_lambda_px": 1264.250258548761,
+    "erro_wps_independente": 1.3322676295501878e-15,
+    "erro_perfil_vs_original": 0.0,
+    "npz_sha256": "69b1c12d5199fe529b633adeb4bec38cb3304126cf720aa3d023a988e1776a53",
+    "apresentacao": {
+      "arquivo": "01_panoramas/churn_m06q10_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.174729274937615,
+      "fonte_minima_inserida_pt": 9.345199669817369,
+      "titulo": "churn · m06q10_001 · panorama de 7.584 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal normalizado"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    }
+  },
+  {
+    "ensaio": "m06q20_001",
+    "padrao": "churn",
+    "comprimento": 10044,
+    "pico_wps_zero_lambda_px": 442.7167429811401,
+    "pico_potencia_media_lambda_px": 416.21683889566765,
+    "erro_wps_independente": 1.7763568394002505e-15,
+    "erro_perfil_vs_original": 0.0,
+    "npz_sha256": "88b19aaae3376fe8181b80b5a4b68f91ee4798bd9dd463b0e8d1b118647bac23",
+    "apresentacao": {
+      "arquivo": "01_panoramas/churn_m06q20_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 15.717578001266075,
+      "fonte_minima_inserida_pt": 9.081073460398118,
+      "titulo": "churn · m06q20_001 · panorama de 10.044 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal normalizado"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    }
+  },
+  {
+    "ensaio": "m07q20_001",
+    "padrao": "churn",
+    "comprimento": 8255,
+    "pico_wps_zero_lambda_px": 532.7762387468695,
+    "pico_potencia_media_lambda_px": 1686.2777862675232,
+    "erro_wps_independente": 8.881784197001252e-16,
+    "erro_perfil_vs_original": 0.0,
+    "npz_sha256": "62fb7a1b405770af34ab186c3e72853432e834970d26597a713b07b77fe67a36",
+    "apresentacao": {
+      "arquivo": "01_panoramas/churn_m07q20_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.174729274937615,
+      "fonte_minima_inserida_pt": 9.345199669817369,
+      "titulo": "churn · m07q20_001 · panorama de 8.255 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal normalizado"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    }
+  },
+  {
+    "ensaio": "m07q40_001",
+    "padrao": "churn",
+    "comprimento": 10349,
+    "pico_wps_zero_lambda_px": 521.9265793975729,
+    "pico_potencia_media_lambda_px": 500.88560111084837,
+    "erro_wps_independente": 1.7763568394002505e-15,
+    "erro_perfil_vs_original": 0.0,
+    "npz_sha256": "4294ed6fa8c537dd741be8e77180708f1f90f3f3b0e10a9d4b4f7ddd60426166",
+    "apresentacao": {
+      "arquivo": "01_panoramas/churn_m07q40_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.123466039294435,
+      "fonte_minima_inserida_pt": 9.31558154362414,
+      "titulo": "churn · m07q40_001 · panorama de 10.349 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal normalizado"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    }
+  },
+  {
+    "ensaio": "m03q10_001",
+    "padrao": "wavy annular",
+    "comprimento": 14224,
+    "pico_wps_zero_lambda_px": 433.7010896913594,
+    "pico_potencia_media_lambda_px": 407.74083980066234,
+    "erro_wps_independente": 8.881784197001252e-16,
+    "erro_perfil_vs_original": 0.0,
+    "npz_sha256": "93f65bdbe27707b0f3c50d09e167a9512ea3476d4beac9cc8656220fdcaf5cf2",
+    "apresentacao": {
+      "arquivo": "01_panoramas/wavy_annular_m03q10_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.174729274937615,
+      "fonte_minima_inserida_pt": 9.345199669817369,
+      "titulo": "wavy annular · m03q10_001 · panorama de 14.224 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal normalizado"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    }
+  },
+  {
+    "ensaio": "m03q20_001",
+    "padrao": "wavy annular",
+    "comprimento": 23079,
+    "pico_wps_zero_lambda_px": 360.38907123024944,
+    "pico_potencia_media_lambda_px": 532.7762387468695,
+    "erro_wps_independente": 1.3322676295501878e-15,
+    "erro_perfil_vs_original": 0.0,
+    "npz_sha256": "ceea87233f0fc3e2b427bfc19c6fc6b8d8b8da58e165599f1cd5a9ff0c2e038e",
+    "apresentacao": {
+      "arquivo": "01_panoramas/wavy_annular_m03q20_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.174729274937615,
+      "fonte_minima_inserida_pt": 9.345199669817369,
+      "titulo": "wavy annular · m03q20_001 · panorama de 23.079 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal normalizado"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    }
+  },
+  {
+    "ensaio": "m03q40_001",
+    "padrao": "wavy annular",
+    "comprimento": 20743,
+    "pico_wps_zero_lambda_px": 175.4007487287317,
+    "pico_potencia_media_lambda_px": 338.81709327263934,
+    "erro_wps_independente": 8.881784197001252e-16,
+    "erro_perfil_vs_original": 0.0,
+    "npz_sha256": "09045c67e8b02f28fb8d584bbf6ec6c61818a87d1b2032fb55cd579659878ae1",
+    "apresentacao": {
+      "arquivo": "01_panoramas/wavy_annular_m03q40_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.153928825197617,
+      "fonte_minima_inserida_pt": 9.333181888701025,
+      "titulo": "wavy annular · m03q40_001 · panorama de 20.743 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal normalizado"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    }
+  },
+  {
+    "ensaio": "m04q40_001",
+    "padrao": "wavy annular",
+    "comprimento": 14960,
+    "pico_wps_zero_lambda_px": 433.7010896913594,
+    "pico_potencia_media_lambda_px": 555.1568646748143,
+    "erro_wps_independente": 2.6645352591003757e-15,
+    "erro_perfil_vs_original": 0.0,
+    "npz_sha256": "a29cbe754d0658037b0f3a0b7399e7f4340aa1f5f76033717d4e56ece609f553",
+    "apresentacao": {
+      "arquivo": "01_panoramas/wavy_annular_m04q40_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.174729274937615,
+      "fonte_minima_inserida_pt": 9.345199669817369,
+      "titulo": "wavy annular · m04q40_001 · panorama de 14.960 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal normalizado"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    }
+  },
+  {
+    "ensaio": "m04q80_001",
+    "padrao": "wavy annular",
+    "comprimento": 22636,
+    "pico_wps_zero_lambda_px": 353.0499701748904,
+    "pico_potencia_media_lambda_px": 353.0499701748904,
+    "erro_wps_independente": 2.220446049250313e-15,
+    "erro_perfil_vs_original": 0.0,
+    "npz_sha256": "88ef66e5e16d9a085b04f281b2b910b297967bd6d786dc505b52ea0340187333",
+    "apresentacao": {
+      "arquivo": "01_panoramas/wavy_annular_m04q80_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.174729274937608,
+      "fonte_minima_inserida_pt": 9.345199669817363,
+      "titulo": "wavy annular · m04q80_001 · panorama de 22.636 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal normalizado"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    }
+  },
+  {
+    "ensaio": "m05q80_001",
+    "padrao": "wavy annular",
+    "comprimento": 17524,
+    "pico_wps_zero_lambda_px": 407.74083980066234,
+    "pico_potencia_media_lambda_px": 416.21683889566765,
+    "erro_wps_independente": 2.6645352591003757e-15,
+    "erro_perfil_vs_original": 0.0,
+    "npz_sha256": "dc575201b2e93d25142be8ebb01a6ab5286df2fb729d956cc8c0c99ad41c2b93",
+    "apresentacao": {
+      "arquivo": "01_panoramas/wavy_annular_m05q80_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.174729274937615,
+      "fonte_minima_inserida_pt": 9.345199669817369,
+      "titulo": "wavy annular · m05q80_001 · panorama de 17.524 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal normalizado"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    }
+  },
+  {
+    "ensaio": "m06q40_001",
+    "padrao": "wavy annular",
+    "comprimento": 14772,
+    "pico_wps_zero_lambda_px": 461.3141898943208,
+    "pico_potencia_media_lambda_px": 480.692870038844,
+    "erro_wps_independente": 1.7763568394002505e-15,
+    "erro_perfil_vs_original": 0.0,
+    "npz_sha256": "9b3cbefd687ba69c3206864dfe7a2a4ecf03edded749867e676070422d9d580c",
+    "apresentacao": {
+      "arquivo": "01_panoramas/wavy_annular_m06q40_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.174729274937615,
+      "fonte_minima_inserida_pt": 9.345199669817369,
+      "titulo": "wavy annular · m06q40_001 · panorama de 14.772 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal normalizado"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    }
+  },
+  {
+    "ensaio": "m06q80_001",
+    "padrao": "wavy annular",
+    "comprimento": 18665,
+    "pico_wps_zero_lambda_px": 442.7167429811401,
+    "pico_potencia_media_lambda_px": 521.9265793975729,
+    "erro_wps_independente": 1.7763568394002505e-15,
+    "erro_perfil_vs_original": 0.0,
+    "npz_sha256": "310b0806f1184b2abd135499aa034305b205c060bb37e99d6105fe43022498b0",
+    "apresentacao": {
+      "arquivo": "01_panoramas/wavy_annular_m06q80_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.174729274937615,
+      "fonte_minima_inserida_pt": 9.345199669817369,
+      "titulo": "wavy annular · m06q80_001 · panorama de 18.665 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal normalizado"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    }
+  },
+  {
+    "ensaio": "m07q80_001",
+    "padrao": "wavy annular",
+    "comprimento": 16658,
+    "pico_wps_zero_lambda_px": 480.692870038844,
+    "pico_potencia_media_lambda_px": 490.68537491870006,
+    "erro_wps_independente": 1.7763568394002505e-15,
+    "erro_perfil_vs_original": 0.0,
+    "npz_sha256": "1016d8908525b8607e4672aafc2a2c612934e29861f68639f9e7d6142cd8c81f",
+    "apresentacao": {
+      "arquivo": "01_panoramas/wavy_annular_m07q80_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.174729274937608,
+      "fonte_minima_inserida_pt": 9.345199669817363,
+      "titulo": "wavy annular · m07q80_001 · panorama de 16.658 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal normalizado"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    }
+  },
+  {
+    "ensaio": "m05q01_001",
+    "padrao": "plug",
+    "comprimento": 5940,
+    "pico_wps_zero_lambda_px": 566.6973056197781,
+    "pico_potencia_media_lambda_px": 566.6973056197781,
+    "erro_wps_independente": 3.552713678800501e-15,
+    "erro_perfil_vs_original": 0.0,
+    "npz_sha256": "53dc4b6c974aa9d322322ce9318e12f6e6200977a0709ad483096a21ecffab41",
+    "apresentacao": {
+      "arquivo": "01_panoramas/plug_m05q01_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.174729274937608,
+      "fonte_minima_inserida_pt": 9.345199669817363,
+      "titulo": "plug · m05q01_001 · panorama de 5.940 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal normalizado"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    }
+  },
+  {
+    "ensaio": "m06q01_001",
+    "padrao": "plug",
+    "comprimento": 7798,
+    "pico_wps_zero_lambda_px": 521.9265793975729,
+    "pico_potencia_media_lambda_px": 500.88560111084837,
+    "erro_wps_independente": 1.7763568394002505e-15,
+    "erro_perfil_vs_original": 0.0,
+    "npz_sha256": "4f6116a4fb630d57cfe3e47a1b99ea088c36275f847808535d92ab2cbfa430fb",
+    "apresentacao": {
+      "arquivo": "01_panoramas/plug_m06q01_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.174729274937615,
+      "fonte_minima_inserida_pt": 9.345199669817369,
+      "titulo": "plug · m06q01_001 · panorama de 7.798 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal normalizado"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    }
+  },
+  {
+    "ensaio": "m07q05_001",
+    "padrao": "plug",
+    "comprimento": 7358,
+    "pico_wps_zero_lambda_px": 375.5281341334579,
+    "pico_potencia_media_lambda_px": 681.9775031841355,
+    "erro_wps_independente": 2.6645352591003757e-15,
+    "erro_perfil_vs_original": 0.0,
+    "npz_sha256": "ca327702d2dfda57948cc72b9bb34af3796d5bd675dbff0a3de5c4dbb5ac43d6",
+    "apresentacao": {
+      "arquivo": "01_panoramas/plug_m07q05_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.174729274937608,
+      "fonte_minima_inserida_pt": 9.345199669817363,
+      "titulo": "plug · m07q05_001 · panorama de 7.358 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal normalizado"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    }
+  },
+  {
+    "ensaio": "m04q01_001",
+    "padrao": "slug",
+    "comprimento": 5071,
+    "pico_wps_zero_lambda_px": 641.1560553637185,
+    "pico_potencia_media_lambda_px": 654.4842227056921,
+    "erro_wps_independente": 3.552713678800501e-15,
+    "erro_perfil_vs_original": 0.0,
+    "npz_sha256": "65b9d2619bdb999fed86fd56cc6d1eb5c56dfff9ebb787511e6f8546c2b42b8e",
+    "apresentacao": {
+      "arquivo": "01_panoramas/slug_m04q01_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.174729274937608,
+      "fonte_minima_inserida_pt": 9.345199669817363,
+      "titulo": "slug · m04q01_001 · panorama de 5.071 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal normalizado"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    }
+  },
+  {
+    "ensaio": "m05q05_001",
+    "padrao": "slug",
+    "comprimento": 6323,
+    "pico_wps_zero_lambda_px": 681.9775031841355,
+    "pico_potencia_media_lambda_px": 681.9775031841355,
+    "erro_wps_independente": 1.7763568394002505e-15,
+    "erro_perfil_vs_original": 0.0,
+    "npz_sha256": "f75c79b3550fa4edebd398067d11f51d2e878ef9af9766e38bfa484d2bfbbe33",
+    "apresentacao": {
+      "arquivo": "01_panoramas/slug_m05q05_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.174729274937615,
+      "fonte_minima_inserida_pt": 9.345199669817369,
+      "titulo": "slug · m05q05_001 · panorama de 6.323 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal normalizado"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    }
+  },
+  {
+    "ensaio": "m06q05_001",
+    "padrao": "slug",
+    "comprimento": 7787,
+    "pico_wps_zero_lambda_px": 1213.2832005579332,
+    "pico_potencia_media_lambda_px": 1188.5754368422695,
+    "erro_wps_independente": 2.220446049250313e-15,
+    "erro_perfil_vs_original": 0.0,
+    "npz_sha256": "03492e1b8d548aff1e7ea7924ad7fe5449cf337380f6d17d8374fbc7a2882931",
+    "apresentacao": {
+      "arquivo": "01_panoramas/slug_m06q05_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.174729274937608,
+      "fonte_minima_inserida_pt": 9.345199669817363,
+      "titulo": "slug · m06q05_001 · panorama de 7.787 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal normalizado"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    }
+  },
+  {
+    "ensaio": "m07q01_001",
+    "padrao": "dispersed bubble",
+    "comprimento": 3171,
+    "pico_wps_zero_lambda_px": 139.87550750925695,
+    "pico_potencia_media_lambda_px": 928.5419940557249,
+    "erro_wps_independente": 4.440892098500626e-16,
+    "erro_perfil_vs_original": 0.0,
+    "npz_sha256": "f2e4748a0763d6c2c7a4ca97f97d288e659a3eecc76de18078011de1f27d2e6f",
+    "apresentacao": {
+      "arquivo": "01_panoramas/dispersed_bubble_m07q01_001.png",
+      "largura_insercao_cm": 16,
+      "altura_inserida_cm": 16.174729274937615,
+      "fonte_minima_inserida_pt": 9.345199669817369,
+      "titulo": "dispersed bubble · m07q01_001 · panorama de 3.171 px",
+      "titulos_paineis": [
+        "Panorama completo · faixa 18–71",
+        "Média por coluna · linhas 18–71",
+        "Sinal normalizado"
+      ],
+      "rotulos_x": [
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)",
+        "Extensão do panorama (px)"
+      ],
+      "rotulos_y": [
+        "Altura do\npanorama (px)",
+        "Intensidade média",
+        "Sinal (σ)"
+      ]
+    }
+  }
+]

@@ -1,0 +1,49 @@
+01/26 m03q05_001: 9237 px
+02/26 m04q10_001: 8894 px
+03/26 m04q20_001: 9324 px
+04/26 m05q10_001: 7058 px
+05/26 m05q20_001: 7411 px
+06/26 m05q40_001: 9873 px
+07/26 m06q10_001: 7615 px
+08/26 m06q20_001: 10025 px
+09/26 m07q20_001: 8289 px
+10/26 m07q40_001: 10313 px
+11/26 m03q10_001: 13789 px
+12/26 m03q20_001: 22831 px
+13/26 m03q40_001: 19204 px
+14/26 m04q40_001: 14477 px
+15/26 m04q80_001: 22533 px
+16/26 m05q80_001: 17500 px
+17/26 m06q40_001: 14722 px
+18/26 m06q80_001: 18664 px
+19/26 m07q80_001: 16656 px
+20/26 m05q01_001: 5914 px
+21/26 m06q01_001: 7786 px
+22/26 m07q05_001: 7337 px
+23/26 m04q01_001: 5071 px
+24/26 m05q05_001: 6295 px
+25/26 m06q05_001: 7747 px
+26/26 m07q01_001: 3094 px
+{
+  "version": "v18_montagem_18_71",
+  "complete": true,
+  "processed_acquisitions": 26,
+  "raw_frames": 13026,
+  "alignment_rows_inclusive": [
+    18,
+    71
+  ],
+  "alignment_slice": [
+    18,
+    72
+  ],
+  "selection_source": "package/config/ensaios.json",
+  "wavelet_seams": "Last column before a seam replaced by the second column of the next strip only when both widths are at least four.",
+  "optical_seams": "Direct concatenation of the same strips without replacement.",
+  "runtime_seconds": 22.293244542030152,
+  "runtime": {
+    "python": "3.13.2",
+    "numpy": "2.3.4"
+  },
+  "reconstruction_script_sha256": "d94037112d0b534b87717b86e8d60fded47aaeea34300b6268e117eeb9a8d6fc"
+}

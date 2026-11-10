@@ -1,0 +1,51 @@
+412 A. Schuck Jr, and B. E. J. Bodmann
+
+and describes the energy distribution of the signal at a certain time t with a scale a.
+Further, the Wavelet Power Spectrum (WPS) of a process x is defined by [ToCo98,
+GrEtAl04, MaKu04]
+
+WPS,(b. a) = E{W,(b, a)Wx(b,a)} , (32.10)
+
+where E{-} denotes the expectation value operator and the overline indicates
+the complex conjugate. The same definition can be applied to process y (named
+W PS,(b, a)), substituting x by y in (32.10). Notice that WPS can be interpreted
+as the expectation value of scalograms. The Wavelet Cross Spectrum (WCS) is an
+extension of expression (32.10) and is defined by
+
+WCSyy(b, a) = E {W,(b, a)Wy(b, a)} (32.11)
+Finally, the Wavelet Coherence (WCO) is defined by
+
+[WCSxy(b, a) |?
+
+WOO, 8) = BSG, ayl|WPS, al
+
+(32.12)
+
+These definitions can appear in a slightly different form according to several
+authors, for instance, in [HuEtAl93, LaEtAl02, KIEtA106] the complex conjugate
+is applied to the first element of the expression. Also, in [HuEtAl93, Nt10], an
+integration over b is performed on expressions (32.10) and (32.11), resulting in
+functions depending only on scale, instead of scale and time. However, they
+essentially express the same ideas. If there are N realizations of processes, (32.11)
+can be estimated by
+
+N
+WCS,y(b, a) = i UACOLACHOR (32.13)
+k=1
+
+where wh, a) and Wid, a) are the CWT of realizations x,[n] and y;[n],
+respectively. WPS.(b,a) = 2M, \WE.a)P and WPS\(b,a) =
++ a |W, a)|* are performed in a similar way. If there is only one realization
+of each process, expression (32.11) could be estimated either by a local averaging
+along a time direction (smoothing), assuming the process to be stationary over a
+certain time interval, or in scale direction, assuming that neighboring scales have
+similar power [MaKu04].
+
+With respect to expression (32.12), it was mentioned that if no smoothing is
+performed in time or scale domain over both numerator and denominator estimators,
+then WCSyy (b, a) will result in a trivial unitary response because numerator and
+denominator of (32.12) will be equal [ToCo98, MaKu04, MaEtA107]. This was one
+of the reasons to suggest a smoothing separately for numerator and denominator in
+order to solve this flaw.
+
+bardo.bodmann@ufrgs.br

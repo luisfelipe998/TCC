@@ -1,0 +1,6 @@
+{"status": "PASS", "outputs": ["perfis_wavelet.pdf", "perfis_wavelet.png", "perfis_wavelet_dados.npz"], "power_shape": [200, 16383], "profile_zero_peak": 9.24498587415745, "profile_mean_peak": 4.986508656567799}
+PASS: m06q01_001, rows (18, 72), columns (0, 520); input pixels preserved.
+05_figuras/metodologia/exemplo_mascara.pdf
+05_figuras/metodologia/exemplo_mascara.png
+{"status": "PASS", "alpha_coluna": 0.12208504801097396, "transicoes_linha": 4, "pares_linha": 11}
+{"methodology_figures": 4, "destination": "05_figuras/metodologia"}

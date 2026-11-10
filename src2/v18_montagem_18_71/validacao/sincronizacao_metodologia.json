@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "manuscript": "TCC/metodologia.tex",
+  "manuscript_sha256": "e51bed7654c6dfdc972ee5e0756e973016da8fe2e107d2d2d6b74eef9ff95df8",
+  "local_methodology": "METODOLOGIA.md",
+  "local_methodology_sha256": "a679471d95864db03be982d55b7cc86f01080b68c0d3cdfba3a9157231bd2e63",
+  "scope": [
+    "3.1 etapas, fluxograma e resumos",
+    "3.2 dados, seleção e montagem",
+    "3.3 preparo antes/depois do corte",
+    "3.4 correlações, CWT, campos, perfis e quatro resumos da coerência",
+    "3.5 Pearson e estatísticas entre pares com igual peso",
+    "3.6 óptica preservada"
+  ],
+  "material_discrepancies": [],
+  "visual_correction": "Fluxograma: Justaposição direta das tiras na análise óptica.",
+  "review": "Texto atual conferido contra a implementação e contra a verificação independente dos resumos. Equações e conteúdo óptico preservados. Sem apêndice ou análise de sensibilidade.",
+  "results_validation": "validacao/comparacao_completo.json",
+  "current_review": "validacao/resumos_pearson_coerencia.json",
+  "previous_report": "../../../auditorias/resumos-pearson-coerencia/sincronizacao-metodologia-anterior.json",
+  "formatting_review": {
+    "path": "../../../auditorias/formatacao-ate-cap4/verificacao-conteudo.json",
+    "sha256": "9c8ae8c022e2783d5c561dcdf7f5fb68621d4352c078aec3cc7eeed85d8ccae9",
+    "scientific_content_preserved": true
+  },
+  "editorial_review": {
+    "path": "secoes_com_texto.json",
+    "sha256": "08efdc7c664fb775a74cd3acfe454ba0fc7c10db3ac1c43f77d328ef20ffc11b",
+    "note": "Abertura3.5 e critério3.6 reescritos sem alterarprocedimentos. Pareceres científicos anteriores mantêm escopohistórico."
+  },
+  "integral_review": {
+    "path": "revisao_integral_final.json",
+    "sha256": "2a9017f1637593f16169add90afba7e1e99658235ea8c6a2d83587b9bed85982",
+    "note": "Implementação reconferida por revisores espectral e óptico. Únicas alterações na metodologia: duas substituições de ponto e vírgula, sem mudança das operações, parâmetros ou equações. Estado anterior arquivado em auditorias/revisao-integral-final/antes/."
+  }
+}

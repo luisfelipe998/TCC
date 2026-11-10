@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "roi": [
+    18,
+    72
+  ],
+  "full_lumen_geometry_equals_one": true,
+  "row71_included_in_saturation_and_normalization": true,
+  "row71_only_saturation_fraction": 0.018518518518518517,
+  "checked_acquisitions": 26,
+  "saturation_equality_255_matches_greater_equal_for_uint8_inputs": true,
+  "saturation_equality_checked_runs": [
+    "m03q05_001",
+    "m03q10_001",
+    "m03q20_001",
+    "m03q40_001",
+    "m04q01_001",
+    "m04q10_001",
+    "m04q20_001",
+    "m04q40_001",
+    "m04q80_001",
+    "m05q01_001",
+    "m05q05_001",
+    "m05q10_001",
+    "m05q20_001",
+    "m05q40_001",
+    "m05q80_001",
+    "m06q01_001",
+    "m06q05_001",
+    "m06q10_001",
+    "m06q20_001",
+    "m06q40_001",
+    "m06q80_001",
+    "m07q01_001",
+    "m07q05_001",
+    "m07q20_001",
+    "m07q40_001",
+    "m07q80_001"
+  ],
+  "outside_roi_invariance_of_normalization_reference_candidates_segmentation_saturation": true,
+  "independent_interval_geometry_and_neighbor_counts": true
+}

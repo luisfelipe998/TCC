@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "input_image_and_workbook_hashes_verified": 62,
+  "panoramas": 31,
+  "eligible_runs": 26,
+  "extraction_rows_inclusive": [
+    18,
+    71
+  ],
+  "extraction_row_count": 54,
+  "extraction_max_error": 0.0,
+  "signal_csv_files_verified": 31,
+  "reconstruction_executed_this_run": false,
+  "predecessor_files_verified": 380,
+  "predecessor_files_unchanged": true,
+  "equation_core_identical_to_predecessor": true,
+  "primary_maps": 87,
+  "primary_maps_equation_max_error": 0.0,
+  "main_figures_verified": 136,
+  "all_png_files_verified": 152,
+  "null_replicates": 995,
+  "preprocessing_screen_pairs_per_variant": 325,
+  "preprocessing_variants": 10,
+  "preprocessing_confirm_variants": [
+    "baseline",
+    "central_band20",
+    "core_row_median"
+  ],
+  "cross_band_comparison": "PASS",
+  "fixed_control_30_49_all_scores_max_error": 0.0,
+  "broken_local_links": [],
+  "masked_columns_in_current_csv": 0,
+  "validation_scope": "Entradas 18–71 verificadas nos PNGs; Eq. 32.17 nos mapas salvos; resumos integrais cruzados. Transformadas não reexecutadas por este verificador."
+}

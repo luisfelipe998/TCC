@@ -1,0 +1,59 @@
+422 A. Schuck Jr, and B. E. J. Bodmann
+
+New Estimator WCO,,(b,a)
+
+107 0.7
+0.6
+207
+0.5
+o
+2307 0.4
+8
+3
+40} 0.3
+0.2
+50-
+0.1
+-2000 -1500 -1000 -500 0 500 1000 1500 2000
+
+b
+
+Fig. 32.11 New estimator of WCOxy, for the three realizations from processes x and y, for
+SNR = 5B and delay of 500 samples between events in x and y processes
+
+References
+
+[AnEtAl04] Antoine, J-P., Murenzi, R., Vandergheynst, P., and Ali, $.T.: Two-Dimensional
+Wavelets and their Relatives. Cambridge University Press, Cambridge (UK), 2004.
+[BePi00] Bendat, J.S., and Piersol, A.G.: Random Data: analysis and measurement procedures.
+John Wiley and Sons, Inc., 3rd edition, 2000.
+[Da92] Daubechies, I: Ten Lectures on Wavelets. SIAM, Philadelphia, 1992.
+[Nt10] Ntirwihisha, E.-E.: Corrélation des transformées en ondelettes et ondes sismiques.
+PhD thesis, Université Catholique de Louvain, Louvain-la-Neuve, BE, 2010.
+
+[GrEtAl04] Grinsted, A., Moore, J.C., and Jevrejeva, S.: Application of cross wavelet transform
+and wavelet coherence to geophysical time series. Nonlinear Processes in Geophysics,
+11, 561-566 (2004).
+
+[HeEtAl05] Herrmann, C.S., Grigutsch, M., and Bush, N.A.: EEG oscillations and wavelet
+analysis. In Event-related potentials: A methods handbook. L.L. Schumaker (Editor),
+MIT Press, Cambridge, MA, USA, 2005.
+
+[HuEtAl93] Hudgins, L., Friehe, C.A., and Mayer, M.E.: Wavelet transforms and atmospheric
+turbulence. Physical Review Letters, 71(20), 3279-3282 (1993)
+
+[KIEtA106] Klein, A., Sauer, T., Jedynak, A., and Skrandies, W.: Conventional and wavelet
+coherence applied to sensory-evoked electrical brain activity. IEEE Transactions on
+Biomedical Engineering, 53(2), 266-271 (2006).
+
+[LaEtAl02] Lachaux, J.-P., Lutz, A., Rudrauf, D., Cosmelli, D., Le Van Quyen, M., Martinerie,
+J., and Varela, F.: Estimating the time-course of coherence between single-trial brain
+signals: An introduction to wavelet coherence. Neurophysiol. Clin., 32, 2002.
+
+[Li94] Liu, P.C.: Wavelet spectrum analysis and ocean wind waves. In Wavelets in Geo-
+physics. E. Foufoula and P-Kumar (Editors), Academic Press, San Diego, CA, USA,
+1995.
+[MaKu04] Maraum, D., and Kurths, J.: Cross wavelet analysis: significance testing and pitfalls.
+Nonlinear Processes in Geophysics, 11, 505-514 (2004)
+
+bardo.bodmann @ufrgs.br

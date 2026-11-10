@@ -1,0 +1,37 @@
+{
+  "ensaios": 26,
+  "pares": 325,
+  "intra": 87,
+  "inter": 238,
+  "linhas_inclusivas": [
+    18,
+    71
+  ],
+  "wavelengths_px": [
+    50,
+    3000
+  ],
+  "escalas": 200,
+  "omega0": 6,
+  "amostragem_px": 1,
+  "autocorrelacao": "enviesada, divisor N",
+  "dominio": "todos os atrasos, sem COI ou máscara geométrica",
+  "selecao_par": "prefixo min(Na,Nb), preparado após o corte",
+  "wps": "abs(CWT(Rxx))",
+  "wcs": "CWT(Rxy)",
+  "wco": "abs(WCS)^2/(WPSx(0)*WPSy(0))",
+  "potencia_media": "média da WPS em todos os atrasos",
+  "descritor": "potência no atraso zero do sinal completo; Pearson direto na etapa 04",
+  "core": {
+    "arquivo": "package/scripts/wavelet_core.py",
+    "sha256": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc"
+  },
+  "selecao_ensaios": {
+    "arquivo": "package/config/ensaios.json",
+    "sha256": "dee19c9af6fc1d5286b673eba6cd76d0c386faf68e8ac8226666b31bfff0ae22"
+  },
+  "manifesto_montagem": {
+    "arquivo": "01_panoramas/manifesto.json",
+    "sha256": "b321843d3b524fff1b333256bc070d35f44676d4f0f9412b0f9da16d4724a821"
+  }
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "path": "04_estatistica/dados/metricas_piloto.csv",
+    "sha256": "18644fb5beb8c9c4eb6bc6ba82d6742f2487934153b2d8384350dd99ad458be5",
+    "bytes": 445
+  },
+  {
+    "path": "04_estatistica/dados/perfis_piloto.csv",
+    "sha256": "fd70055a03c40be5e56c7487f5e8888603df98d4b585f972d574a37c09cdf0b3",
+    "bytes": 27512
+  },
+  {
+    "path": "01_panoramas/plug_m05q01_001.png",
+    "sha256": "b0c59158ba1a00c687d484a665821bdd13cfc3c806baf45daf571a6d0ba9c693",
+    "bytes": 378135
+  },
+  {
+    "path": "01_panoramas/plug_m06q01_001.png",
+    "sha256": "4da942b7a5716a029015d7afbb15954c70d14f1c04a5ff95a4bb7dd017c4e7f3",
+    "bytes": 462474
+  },
+  {
+    "path": "scripts/README.txt",
+    "sha256": "1d656c86c139f2e868681d9347e7616f0f6d7593d84b1d60a91a4a104a7eea96",
+    "bytes": 1895
+  },
+  {
+    "path": "scripts/extraction_config.py",
+    "sha256": "f041658fde457efa2048ebc95f3386174b7101efd95f221797cfdf1466fb9198",
+    "bytes": 1353
+  },
+  {
+    "path": "scripts/gerar_piloto.py",
+    "sha256": "7141c34b3b99c445f49da6fd56d2e5e04fedd9c2a948b97cb40d4c3b4326d67b",
+    "bytes": 24416
+  },
+  {
+    "path": "scripts/wavelet_core.py",
+    "sha256": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc",
+    "bytes": 4410
+  },
+  {
+    "path": "intermediario/apresentacao/piloto.json",
+    "sha256": "62cd9aea2e0d46492433e669a57b5c8a88518cad8a0129bbb10cf5188682e5cb",
+    "bytes": 2594
+  },
+  {
+    "path": "intermediario/auditoria/arquivamento.json",
+    "sha256": "36b6ec76a37e17db132e7bb34849e7aed1d6ef0063e668acb38e54d88f12e591",
+    "bytes": 102798
+  },
+  {
+    "path": "intermediario/auditoria/piloto.json",
+    "sha256": "d33b24d8cfe6a7a0b97df5dc7de4ee7b6658bc8cf87f5de315f939795f4910dd",
+    "bytes": 4938
+  },
+  {
+    "path": "intermediario/entradas/m05q01_001.npz",
+    "sha256": "6a3c68f5fb86ec80000da0e2b77f9035ea4c8806bc8e8ef86e1f30a502e7f5f3",
+    "bytes": 60842
+  },
+  {
+    "path": "intermediario/entradas/m06q01_001.npz",
+    "sha256": "9fef6ba946f847b7dd9c71aee875b206355361826383ae5a6acf113e5c33ebd5",
+    "bytes": 80962
+  },
+  {
+    "path": "intermediario/individuais/descritores_piloto.npz",
+    "sha256": "86de84877ad88af11a5c322b708e4e26772c6d46418dd810ba2745124bc00d97",
+    "bytes": 8787
+  },
+  {
+    "path": "intermediario/pares/m05q01_001__m06q01_001.npz",
+    "sha256": "b59ab26782c4b416c9c3cb7525f7d1be1d91a404c6fc64bf18a7382ef8dd9fbb",
+    "bytes": 123483794
+  },
+  {
+    "path": "02_wavelets/plug_m05q01_001_m06q01_001.png",
+    "sha256": "156886079788cef15f7256430e134af39ef7c0944e213bcdb57e019f3cccdcd1",
+    "bytes": 974723
+  },
+  {
+    "path": "05_conclusao/Piloto.md",
+    "sha256": "3ecde628b60ff772e5168281082f61329e23e252325da4f0deece6d719d62090",
+    "bytes": 5122
+  }
+]

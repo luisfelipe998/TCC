@@ -1,0 +1,50 @@
+[
+  {
+    "numero_x": 3,
+    "numero_y": 10,
+    "ensaio_x": "m04q20_001",
+    "ensaio_y": "m07q40_001",
+    "padrao_x": "churn",
+    "padrao_y": "churn",
+    "tipo": "intra",
+    "comprimento_comum": 9324,
+    "pearson_r": 0.9668690352756103,
+    "arquivo": "02_wavelets/churn_m04q20_001_m07q40_001.png"
+  },
+  {
+    "numero_x": 17,
+    "numero_y": 19,
+    "ensaio_x": "m06q40_001",
+    "ensaio_y": "m07q80_001",
+    "padrao_x": "wavy annular",
+    "padrao_y": "wavy annular",
+    "tipo": "intra",
+    "comprimento_comum": 14722,
+    "pearson_r": 0.9899033795874617,
+    "arquivo": "02_wavelets/wavy_annular_m06q40_001_m07q80_001.png"
+  },
+  {
+    "numero_x": 20,
+    "numero_y": 21,
+    "ensaio_x": "m05q01_001",
+    "ensaio_y": "m06q01_001",
+    "padrao_x": "plug",
+    "padrao_y": "plug",
+    "tipo": "intra",
+    "comprimento_comum": 5914,
+    "pearson_r": 0.9670106895283039,
+    "arquivo": "02_wavelets/plug_m05q01_001_m06q01_001.png"
+  },
+  {
+    "numero_x": 23,
+    "numero_y": 24,
+    "ensaio_x": "m04q01_001",
+    "ensaio_y": "m05q05_001",
+    "padrao_x": "slug",
+    "padrao_y": "slug",
+    "tipo": "intra",
+    "comprimento_comum": 5071,
+    "pearson_r": 0.9305036779046109,
+    "arquivo": "02_wavelets/slug_m04q01_001_m05q05_001.png"
+  }
+]

@@ -1,0 +1,807 @@
+{
+  "version": "v18_montagem_18_71",
+  "complete": true,
+  "records": [
+    {
+      "ensaio": "m03q05_001",
+      "padrao": "churn",
+      "numero": 1,
+      "comprimento": 9237,
+      "old_comprimento": 9586,
+      "wavelet_path": "src2/v18_montagem_18_71/01_panoramas/wavelet/m03q05_001/panorama.png",
+      "optica_path": "src2/v18_montagem_18_71/01_panoramas/optica/m03q05_001/panorama.png",
+      "hashes": {
+        "wavelet": "596027cea034973e5cc3363cc70f3f9a378cc48bd27c32197895500f612767e4",
+        "optica": "b65a4d192c9f53262ae05d3d4de2c509e823f43ebebc28520f18e4b45f608ef7"
+      },
+      "shifts_changed_count": 306,
+      "supplied_pattern": "churn",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "strip_widths_changed_count": 306,
+      "nonpositive_raw_lags": 0,
+      "old_nonpositive_raw_lags": 0,
+      "old_hashes": {
+        "wavelet": "452eb42d75378c30656c13076cdac07a641e502e6741b07045eeb02ab73cd68e",
+        "optica": "3a35d19a4712280ec365a0eca7f6296a58f2e4ed56f72328edd8b2485e48ccc4",
+        "shift_cache": "e6c92c7cc808e82a3242c5a81090b0fe545d8ae321ea3970e836c196fc65be17"
+      }
+    },
+    {
+      "ensaio": "m04q10_001",
+      "padrao": "churn",
+      "numero": 2,
+      "comprimento": 8894,
+      "old_comprimento": 8829,
+      "wavelet_path": "src2/v18_montagem_18_71/01_panoramas/wavelet/m04q10_001/panorama.png",
+      "optica_path": "src2/v18_montagem_18_71/01_panoramas/optica/m04q10_001/panorama.png",
+      "hashes": {
+        "wavelet": "0d079ddf48f515a8274a37f5bb70724ed96d03d31a7ad99787dda53a45136c0d",
+        "optica": "b16de558345240e2f1bdab154a988dfdb60d8925b2c529a7269e9733de04dd64"
+      },
+      "shifts_changed_count": 259,
+      "supplied_pattern": "churn",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "strip_widths_changed_count": 259,
+      "nonpositive_raw_lags": 0,
+      "old_nonpositive_raw_lags": 0,
+      "old_hashes": {
+        "wavelet": "f1c5d520bfb719366a243021ff13d75906caa80158bd7bf5b951a28fc339004d",
+        "optica": "40c8cb639e5acccad0b4ad08c13d40cd940410d5dee7922072235fb7aa2f56bd",
+        "shift_cache": "496e025d488559022924c4ae40d6f2c4492e0f4cb55ca9b0026db3ac64eb0a6c"
+      }
+    },
+    {
+      "ensaio": "m04q20_001",
+      "padrao": "churn",
+      "numero": 3,
+      "comprimento": 9324,
+      "old_comprimento": 9344,
+      "wavelet_path": "src2/v18_montagem_18_71/01_panoramas/wavelet/m04q20_001/panorama.png",
+      "optica_path": "src2/v18_montagem_18_71/01_panoramas/optica/m04q20_001/panorama.png",
+      "hashes": {
+        "wavelet": "f5e73c4ea3db76bf1cb008de7244bf573fada60669c18606928dc67833caa744",
+        "optica": "53484d97520e1b872881b776a7587661dc64693d1336216fa477a8eec90a29ca"
+      },
+      "shifts_changed_count": 275,
+      "supplied_pattern": "churn",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "strip_widths_changed_count": 276,
+      "nonpositive_raw_lags": 0,
+      "old_nonpositive_raw_lags": 0,
+      "old_hashes": {
+        "wavelet": "ce54a5bfb0bb7fba3c7b584be81a1b009d334d39a630ccbf6bda8d08703f7f8b",
+        "optica": "88caf7ea44cbeeab36eb1fa3feda064312d41b791215ceb18d885ecbdc8a9576",
+        "shift_cache": "faa72d3b03dfc2f6c5df01646b2377280c313a1dd81be678e5d4082bc804a317"
+      }
+    },
+    {
+      "ensaio": "m05q10_001",
+      "padrao": "churn",
+      "numero": 4,
+      "comprimento": 7058,
+      "old_comprimento": 7001,
+      "wavelet_path": "src2/v18_montagem_18_71/01_panoramas/wavelet/m05q10_001/panorama.png",
+      "optica_path": "src2/v18_montagem_18_71/01_panoramas/optica/m05q10_001/panorama.png",
+      "hashes": {
+        "wavelet": "23478d108c47094d3ce1634828e6c9d437bcc178493243ddd730eef88dc8b9ab",
+        "optica": "f74ede2891113c58816e1bb4552e38e440507cd058bf5df702de00470cfd6606"
+      },
+      "shifts_changed_count": 182,
+      "supplied_pattern": "churn",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "strip_widths_changed_count": 183,
+      "nonpositive_raw_lags": 0,
+      "old_nonpositive_raw_lags": 0,
+      "old_hashes": {
+        "wavelet": "4849cd7a03bbb15dbde7af3ba13b52bdc131acd5db30071894e0481f9aa97c12",
+        "optica": "27c8e21f6396bac0e9a0f2d04b737b617176b9f1f9224a97c5691d7852817da2",
+        "shift_cache": "1d0327c5fa09d9966b6c254c861c96eaad2cbe5fd7e0e35f37671a53d6f5e382"
+      }
+    },
+    {
+      "ensaio": "m05q20_001",
+      "padrao": "churn",
+      "numero": 5,
+      "comprimento": 7411,
+      "old_comprimento": 7391,
+      "wavelet_path": "src2/v18_montagem_18_71/01_panoramas/wavelet/m05q20_001/panorama.png",
+      "optica_path": "src2/v18_montagem_18_71/01_panoramas/optica/m05q20_001/panorama.png",
+      "hashes": {
+        "wavelet": "1cfb9f15d826e46c392739d4e1fd684795647ff28239e3c4f6ff71ad4483508d",
+        "optica": "2d95f568ce5a7b97dd9bb9e4f68f12dd9c5156ef3c9e899e08102949e7225f0e"
+      },
+      "shifts_changed_count": 173,
+      "supplied_pattern": "churn",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "strip_widths_changed_count": 173,
+      "nonpositive_raw_lags": 0,
+      "old_nonpositive_raw_lags": 0,
+      "old_hashes": {
+        "wavelet": "a2bb354dde03296a589954a2b6ce6673afc19b5ffa598b21a3232bce08ff0a8e",
+        "optica": "1f5f69eb1882808a95a5fa5187307956cfd34b67c051e188206675803cdd1eb4",
+        "shift_cache": "48cb04178c899f57da216fa069822a0a3edf13ec2912d3a2499f9a5f4bf29349"
+      }
+    },
+    {
+      "ensaio": "m05q40_001",
+      "padrao": "churn",
+      "numero": 6,
+      "comprimento": 9873,
+      "old_comprimento": 9937,
+      "wavelet_path": "src2/v18_montagem_18_71/01_panoramas/wavelet/m05q40_001/panorama.png",
+      "optica_path": "src2/v18_montagem_18_71/01_panoramas/optica/m05q40_001/panorama.png",
+      "hashes": {
+        "wavelet": "67731c2744ab0322d04d9058610d6f5d8e12f0813551fa506b140ed20661eb71",
+        "optica": "f84f7c9e569ae5a30f508562dc384b9d17af524856562e7758022f238ee5fcec"
+      },
+      "shifts_changed_count": 217,
+      "supplied_pattern": "churn",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "strip_widths_changed_count": 217,
+      "nonpositive_raw_lags": 0,
+      "old_nonpositive_raw_lags": 0,
+      "old_hashes": {
+        "wavelet": "308865dfb678b5ddab408aa412e8ad0a073b27917e65d54f4c375734e7eed4d6",
+        "optica": "774b805a9ef63532edf5fb410fb5cc91ba2c88ea1e0ff5746482670a4a6681df",
+        "shift_cache": "c42a97046323ad3792c4ec3615c1b363dc281443748a03f90afecb7e2fb2b02d"
+      }
+    },
+    {
+      "ensaio": "m06q10_001",
+      "padrao": "churn",
+      "numero": 7,
+      "comprimento": 7615,
+      "old_comprimento": 7584,
+      "wavelet_path": "src2/v18_montagem_18_71/01_panoramas/wavelet/m06q10_001/panorama.png",
+      "optica_path": "src2/v18_montagem_18_71/01_panoramas/optica/m06q10_001/panorama.png",
+      "hashes": {
+        "wavelet": "8e408c47901e34e18183e54e9f87b7d4dddc338b5c159f54dfb8e12cdbd46577",
+        "optica": "438ab90fd6f5c21193f4156024089b9c2bf8eafa291a1e3ac2b9d3a01a5aba03"
+      },
+      "shifts_changed_count": 177,
+      "supplied_pattern": "churn",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "strip_widths_changed_count": 177,
+      "nonpositive_raw_lags": 0,
+      "old_nonpositive_raw_lags": 0,
+      "old_hashes": {
+        "wavelet": "9d1e6e9904fec5f40959aa1cf2b94a7327ae833a34bffed5d81c4c878888f5e1",
+        "optica": "3a33dd925c660344d9e5c307cd97a8537867c19f4e7c8cd8ebc757ab7d0baa39",
+        "shift_cache": "de891ba800674936c9877583c39870d1f1f7cc2971853fe715a9483786eec40f"
+      }
+    },
+    {
+      "ensaio": "m06q20_001",
+      "padrao": "churn",
+      "numero": 8,
+      "comprimento": 10025,
+      "old_comprimento": 10044,
+      "wavelet_path": "src2/v18_montagem_18_71/01_panoramas/wavelet/m06q20_001/panorama.png",
+      "optica_path": "src2/v18_montagem_18_71/01_panoramas/optica/m06q20_001/panorama.png",
+      "hashes": {
+        "wavelet": "5bcb32171cb329efdf96b803bb6983e4c714153dad87827b7552e74abed1c86b",
+        "optica": "2d850110492e72778f3e4a84d56a31ecfade820b237022f00246ee9eee24ada9"
+      },
+      "shifts_changed_count": 170,
+      "supplied_pattern": "churn",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "strip_widths_changed_count": 171,
+      "nonpositive_raw_lags": 0,
+      "old_nonpositive_raw_lags": 0,
+      "old_hashes": {
+        "wavelet": "b607107c8a4103910c11a0a2c251472c249f9073ef844e499795a11f4b39f1a9",
+        "optica": "85d15a46fccb1e5c96864fad17f116220ff353a3aea25b0c50cebcfa62c61a44",
+        "shift_cache": "43cd180853b2a23536b1886a4aaf2cab07adb5181c65ac6f6b2568146c8854ad"
+      }
+    },
+    {
+      "ensaio": "m07q20_001",
+      "padrao": "churn",
+      "numero": 9,
+      "comprimento": 8289,
+      "old_comprimento": 8255,
+      "wavelet_path": "src2/v18_montagem_18_71/01_panoramas/wavelet/m07q20_001/panorama.png",
+      "optica_path": "src2/v18_montagem_18_71/01_panoramas/optica/m07q20_001/panorama.png",
+      "hashes": {
+        "wavelet": "aa46a8f605e1519a9ce1c8c26ff55f057d2635499c2d6edc8403955a6f33032b",
+        "optica": "108509a0123eede16ed28f4d9bba3b653176047a806049f45ce7babe9b011080"
+      },
+      "shifts_changed_count": 180,
+      "supplied_pattern": "churn",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "strip_widths_changed_count": 181,
+      "nonpositive_raw_lags": 0,
+      "old_nonpositive_raw_lags": 0,
+      "old_hashes": {
+        "wavelet": "9a54dfda0602fd706936c07c6ac8cd55fbd940ff6b3ff3bfb91996bb77f74a2d",
+        "optica": "224c6cad251573dc9c0a91be50d4f52de6ec57f41b3271eb72af4551e7e894e3",
+        "shift_cache": "fd65f734cc175cc93a17ae23147e0a9c8e402fca9fd5fd43675a6967daa426a2"
+      }
+    },
+    {
+      "ensaio": "m07q40_001",
+      "padrao": "churn",
+      "numero": 10,
+      "comprimento": 10313,
+      "old_comprimento": 10349,
+      "wavelet_path": "src2/v18_montagem_18_71/01_panoramas/wavelet/m07q40_001/panorama.png",
+      "optica_path": "src2/v18_montagem_18_71/01_panoramas/optica/m07q40_001/panorama.png",
+      "hashes": {
+        "wavelet": "b4c124cd6979864df09eaeddf373eb3aa7c1c1d4b2b7161a089b13309cb1f549",
+        "optica": "6bd6ab1896ac3ddd88def5d846e9784488a268eb9fef8441be63c9a5d383d156"
+      },
+      "shifts_changed_count": 162,
+      "supplied_pattern": "churn",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "strip_widths_changed_count": 163,
+      "nonpositive_raw_lags": 0,
+      "old_nonpositive_raw_lags": 0,
+      "old_hashes": {
+        "wavelet": "74b2b71c73df4c15ac79ff8a3256c87f7b3e4d0c12349f6a34cc26ee3f2b1000",
+        "optica": "812fad0a38acccf63404dae2ba38a3f84d2a977d2dbcc69dc41cab3b57f61fcd",
+        "shift_cache": "bf9065def6f1fa881174a7b55a7fb03f60a40ad901f688171e0aa7bcbf67e513"
+      }
+    },
+    {
+      "ensaio": "m03q10_001",
+      "padrao": "wavy annular",
+      "numero": 11,
+      "comprimento": 13789,
+      "old_comprimento": 14224,
+      "wavelet_path": "src2/v18_montagem_18_71/01_panoramas/wavelet/m03q10_001/panorama.png",
+      "optica_path": "src2/v18_montagem_18_71/01_panoramas/optica/m03q10_001/panorama.png",
+      "hashes": {
+        "wavelet": "24262f359bf97fae065072e767591067bedef09fd3c67eb5a778621213f97a02",
+        "optica": "646daea131af86cb70f9c3f56a0f4c9b753e2503773fded81a8c38f3714633f3"
+      },
+      "shifts_changed_count": 314,
+      "supplied_pattern": "wavy annular",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "strip_widths_changed_count": 314,
+      "nonpositive_raw_lags": 0,
+      "old_nonpositive_raw_lags": 0,
+      "old_hashes": {
+        "wavelet": "7b727d6e94322567f92adcf44abe0aee97726105c33c929a999b6a5b5ff05c35",
+        "optica": "95f856910733a04c98ced0e7ea48ea534a85af0524c74f23a8d2b4fba479ef7c",
+        "shift_cache": "917f0d18bce46e5dd7ebaf0c45c1982e0ea6f1e756255f0a366c9f29d21b8df2"
+      }
+    },
+    {
+      "ensaio": "m03q20_001",
+      "padrao": "wavy annular",
+      "numero": 12,
+      "comprimento": 22831,
+      "old_comprimento": 23079,
+      "wavelet_path": "src2/v18_montagem_18_71/01_panoramas/wavelet/m03q20_001/panorama.png",
+      "optica_path": "src2/v18_montagem_18_71/01_panoramas/optica/m03q20_001/panorama.png",
+      "hashes": {
+        "wavelet": "54f0240a89fd9127ff114c1352bca80d8bdeefe21859da24ed9c00dc324bed47",
+        "optica": "acb570c9a7e8afc70b3cd06abf428d315c70040ccca929f1850edb1691d2fec7"
+      },
+      "shifts_changed_count": 295,
+      "supplied_pattern": "wavy annular",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "strip_widths_changed_count": 296,
+      "nonpositive_raw_lags": 0,
+      "old_nonpositive_raw_lags": 0,
+      "old_hashes": {
+        "wavelet": "c7ef0b1300fca7f269c40fc7f9a469a0b6c9042d9c9f4bed0706763048ffeaa0",
+        "optica": "dad6d926b8ce0a96ea314b3be6e5fc80b0cab5f295627e6913b360133f36a4ef",
+        "shift_cache": "e664dafcdcfac1e83ed5ad25eb632f8271a0a5227b8d23626ed7b6b7a7e16f35"
+      }
+    },
+    {
+      "ensaio": "m03q40_001",
+      "padrao": "wavy annular",
+      "numero": 13,
+      "comprimento": 19204,
+      "old_comprimento": 20743,
+      "wavelet_path": "src2/v18_montagem_18_71/01_panoramas/wavelet/m03q40_001/panorama.png",
+      "optica_path": "src2/v18_montagem_18_71/01_panoramas/optica/m03q40_001/panorama.png",
+      "hashes": {
+        "wavelet": "4716c7f359fbcba5d57c49b381e21bc81b3533dfe0028e347f33e13bfa993e0b",
+        "optica": "beecd421e703dc738e1bb77d7b69f29f455b30fd0b2bb616633a9aeb90011b66"
+      },
+      "shifts_changed_count": 414,
+      "supplied_pattern": "wavy annular",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "strip_widths_changed_count": 406,
+      "nonpositive_raw_lags": 82,
+      "old_nonpositive_raw_lags": 60,
+      "old_hashes": {
+        "wavelet": "ea0cb23474d5096ea52759454cb88b9c89dbdb6f7bb7c78b7927cbb93914e2d0",
+        "optica": "57a12a6a6d56de57a87d1e58dd1e90efc5d8d55c366cc5543cd26994cc7c3dcd",
+        "shift_cache": "5bffc2d54330e84f00f01fa7b37ad6bd043487939cb7480bdce56cad6afd1232"
+      }
+    },
+    {
+      "ensaio": "m04q40_001",
+      "padrao": "wavy annular",
+      "numero": 14,
+      "comprimento": 14477,
+      "old_comprimento": 14960,
+      "wavelet_path": "src2/v18_montagem_18_71/01_panoramas/wavelet/m04q40_001/panorama.png",
+      "optica_path": "src2/v18_montagem_18_71/01_panoramas/optica/m04q40_001/panorama.png",
+      "hashes": {
+        "wavelet": "2faa2ee2369ae1a7319721d8498ff2766d1b137e5023794eb30f959dcfc306de",
+        "optica": "7d1f4f9f7030bd040f1912a36cd66212132e9299fbabda537992fa66766b3b65"
+      },
+      "shifts_changed_count": 368,
+      "supplied_pattern": "wavy annular",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "strip_widths_changed_count": 369,
+      "nonpositive_raw_lags": 0,
+      "old_nonpositive_raw_lags": 0,
+      "old_hashes": {
+        "wavelet": "9ead7b01038e80a398f1dae1cccb915fa9399dff8f919dd3f64a237aad456bf8",
+        "optica": "264f391aa142be333d8bab6099f430c84a5d772aa41e559f9d1ac8c20b82441b",
+        "shift_cache": "4b1561bb9bce64bc2992d2971965989ae7d57f8e97d5b6e27a01f998ae5865a9"
+      }
+    },
+    {
+      "ensaio": "m04q80_001",
+      "padrao": "wavy annular",
+      "numero": 15,
+      "comprimento": 22533,
+      "old_comprimento": 22636,
+      "wavelet_path": "src2/v18_montagem_18_71/01_panoramas/wavelet/m04q80_001/panorama.png",
+      "optica_path": "src2/v18_montagem_18_71/01_panoramas/optica/m04q80_001/panorama.png",
+      "hashes": {
+        "wavelet": "e9daef84d9f6992f48b9baf233a17820fcf904f050bc7e41d728470c7a25ce9b",
+        "optica": "c597a08707fb9c654f8ce62c709d41169454fe6f0ee0f933dcad53c857797c4b"
+      },
+      "shifts_changed_count": 205,
+      "supplied_pattern": "wavy annular",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "strip_widths_changed_count": 206,
+      "nonpositive_raw_lags": 0,
+      "old_nonpositive_raw_lags": 0,
+      "old_hashes": {
+        "wavelet": "e2c5b2d15951159b9115af2dc1e5e123d078617965f9b951e76a7b11a172f8ba",
+        "optica": "5ef47fbbd77ceda8bf7ba1834bf7d0e7bb7ee8cdb9804b03408e9ffc0ea8875b",
+        "shift_cache": "c06ed39a3a120a0e643ca2dccc17fed88410f9feb0ea5497b6d36e16c6457d8a"
+      }
+    },
+    {
+      "ensaio": "m05q80_001",
+      "padrao": "wavy annular",
+      "numero": 16,
+      "comprimento": 17500,
+      "old_comprimento": 17524,
+      "wavelet_path": "src2/v18_montagem_18_71/01_panoramas/wavelet/m05q80_001/panorama.png",
+      "optica_path": "src2/v18_montagem_18_71/01_panoramas/optica/m05q80_001/panorama.png",
+      "hashes": {
+        "wavelet": "13059bd134f66b4d56e08701801dbf25e2bf819ff6db66d95134e5505e1f4a64",
+        "optica": "c2ddbb436015be22b132937198b8ccd00a0e2f721f7b20c56b23ad50d5a3c388"
+      },
+      "shifts_changed_count": 228,
+      "supplied_pattern": "wavy annular",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "strip_widths_changed_count": 229,
+      "nonpositive_raw_lags": 0,
+      "old_nonpositive_raw_lags": 0,
+      "old_hashes": {
+        "wavelet": "b2a262fd4341f9d42ff8c1b401ef1fbd6af1bb134d753576832d738b1ca10a51",
+        "optica": "3ce154d711bf1d11fa0ad9d44968be11a2c123a82f4d30e2e80b58955cd209a3",
+        "shift_cache": "ac0c7e24230e10efbecb7de617988afcd94fd576272e4915bea198e275fac1ad"
+      }
+    },
+    {
+      "ensaio": "m06q40_001",
+      "padrao": "wavy annular",
+      "numero": 17,
+      "comprimento": 14722,
+      "old_comprimento": 14772,
+      "wavelet_path": "src2/v18_montagem_18_71/01_panoramas/wavelet/m06q40_001/panorama.png",
+      "optica_path": "src2/v18_montagem_18_71/01_panoramas/optica/m06q40_001/panorama.png",
+      "hashes": {
+        "wavelet": "f8eaf72700063ae1361262de85d62151c9cc8845903a8002927c5a92e7289d25",
+        "optica": "38bd97fedc99f9119f81b582089f166b5253ed1dde48ab47f1a09ef7b9bc623c"
+      },
+      "shifts_changed_count": 279,
+      "supplied_pattern": "wavy annular",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "strip_widths_changed_count": 279,
+      "nonpositive_raw_lags": 0,
+      "old_nonpositive_raw_lags": 0,
+      "old_hashes": {
+        "wavelet": "9ff64b1365a3454568c5c8dc3f42deb7643f1de16285c7a359371fbb7c094577",
+        "optica": "68448734060a3ad9b8eccf8c1a937c0ac87193e4bb46ff386840b45c6260d382",
+        "shift_cache": "d18cf1259fb088654f8803ede417a125759a6ec81b0aef3a0e446b8af488f2af"
+      }
+    },
+    {
+      "ensaio": "m06q80_001",
+      "padrao": "wavy annular",
+      "numero": 18,
+      "comprimento": 18664,
+      "old_comprimento": 18665,
+      "wavelet_path": "src2/v18_montagem_18_71/01_panoramas/wavelet/m06q80_001/panorama.png",
+      "optica_path": "src2/v18_montagem_18_71/01_panoramas/optica/m06q80_001/panorama.png",
+      "hashes": {
+        "wavelet": "b7cc4bea7000c9c970e5d15232d5403e12778b094ebe77279a23845021d96632",
+        "optica": "ce1bbdb718678a8744f310311141031a0b492b0ec28e92fdfb400ef16a9a5407"
+      },
+      "shifts_changed_count": 240,
+      "supplied_pattern": "wavy annular",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "strip_widths_changed_count": 240,
+      "nonpositive_raw_lags": 0,
+      "old_nonpositive_raw_lags": 0,
+      "old_hashes": {
+        "wavelet": "8f7d439750ad07719c8f78d6e38c021835cf24fa9096517814f650e90fc43a53",
+        "optica": "d6c6946effd1161b4e26f4c70878ffa62f4ba05ce38a503cee8274488ab7b16e",
+        "shift_cache": "f7b39ce1dbd154535fc2e74dc85f5b56db000afdacd8e41723fa48494f254ed3"
+      }
+    },
+    {
+      "ensaio": "m07q80_001",
+      "padrao": "wavy annular",
+      "numero": 19,
+      "comprimento": 16656,
+      "old_comprimento": 16658,
+      "wavelet_path": "src2/v18_montagem_18_71/01_panoramas/wavelet/m07q80_001/panorama.png",
+      "optica_path": "src2/v18_montagem_18_71/01_panoramas/optica/m07q80_001/panorama.png",
+      "hashes": {
+        "wavelet": "c772958344c4234a4b54272d4e39a00d3c8d2e4784b13013ba04c76cc556890f",
+        "optica": "5158579310a536518d48aa4bcb839b9378862cf0e753923a7a2c613f4f6776e3"
+      },
+      "shifts_changed_count": 280,
+      "supplied_pattern": "wavy annular",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "strip_widths_changed_count": 280,
+      "nonpositive_raw_lags": 0,
+      "old_nonpositive_raw_lags": 0,
+      "old_hashes": {
+        "wavelet": "2eb17eb9aab3284a23e374758e2f0ce6cb0e9e4db2d5ac9e41d1585cef3125cf",
+        "optica": "77e82bd724bcf653da851cb5204d68eaa65eee2f2104f5e46bd5e108d67286d9",
+        "shift_cache": "23c465cc0a634dff7956f95f9cd0c25a8649cc69c057874a4aeafc86becd70a1"
+      }
+    },
+    {
+      "ensaio": "m05q01_001",
+      "padrao": "plug",
+      "numero": 20,
+      "comprimento": 5914,
+      "old_comprimento": 5940,
+      "wavelet_path": "src2/v18_montagem_18_71/01_panoramas/wavelet/m05q01_001/panorama.png",
+      "optica_path": "src2/v18_montagem_18_71/01_panoramas/optica/m05q01_001/panorama.png",
+      "hashes": {
+        "wavelet": "de172fb99e7381405b8edb10a54833e39cc2ae8a3ebaf8dc2bdd82ed6ad27509",
+        "optica": "c5851f90ccf3ea23e930e0bc747ae41562649878687ca65b1399ce4df9ab563e"
+      },
+      "shifts_changed_count": 52,
+      "supplied_pattern": "plug",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "strip_widths_changed_count": 52,
+      "nonpositive_raw_lags": 0,
+      "old_nonpositive_raw_lags": 0,
+      "old_hashes": {
+        "wavelet": "73abc29e73728a38a2f655a0a204df944409d80228f9a3cdc50a35fddeb7eaf1",
+        "optica": "451dabc42af8cdabe9605ccfd951e90c45080d2154e8ff18249049ffba292e37",
+        "shift_cache": "ee37094daeab36ad78a6794ed0b90742f7ac2d9ced41b052f4e024d225cac6f5"
+      }
+    },
+    {
+      "ensaio": "m06q01_001",
+      "padrao": "plug",
+      "numero": 21,
+      "comprimento": 7786,
+      "old_comprimento": 7798,
+      "wavelet_path": "src2/v18_montagem_18_71/01_panoramas/wavelet/m06q01_001/panorama.png",
+      "optica_path": "src2/v18_montagem_18_71/01_panoramas/optica/m06q01_001/panorama.png",
+      "hashes": {
+        "wavelet": "ce29a7d63315c98e752782343df85b5736e585e2209f91cce9aefa3886ff1875",
+        "optica": "72956875541a66e19957920e571eb1cfe65502143cc1f26be71daf7ba635d74d"
+      },
+      "shifts_changed_count": 77,
+      "supplied_pattern": "plug",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "strip_widths_changed_count": 77,
+      "nonpositive_raw_lags": 0,
+      "old_nonpositive_raw_lags": 0,
+      "old_hashes": {
+        "wavelet": "95f2de6d129d242fb622357e9fd37b28fd112ccfa302518cc28f31a75a6b148b",
+        "optica": "06fe2cdaacb818c42765777292033d85d7bb9b3d2239794e3a9c1305e35cae32",
+        "shift_cache": "92eb09fc04b2d3f64d50fc4f66b51015c59fa496bec6c10b5477f82993d8ec5c"
+      }
+    },
+    {
+      "ensaio": "m07q05_001",
+      "padrao": "plug",
+      "numero": 22,
+      "comprimento": 7337,
+      "old_comprimento": 7358,
+      "wavelet_path": "src2/v18_montagem_18_71/01_panoramas/wavelet/m07q05_001/panorama.png",
+      "optica_path": "src2/v18_montagem_18_71/01_panoramas/optica/m07q05_001/panorama.png",
+      "hashes": {
+        "wavelet": "a97a0be22910e33a5005a3798f00166232d06580793c40f14c65a651b590edf6",
+        "optica": "6ec6780c997b758a5308a0b070f312207a8fee12476dde30866fcd7456086d6d"
+      },
+      "shifts_changed_count": 71,
+      "supplied_pattern": "plug",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "strip_widths_changed_count": 71,
+      "nonpositive_raw_lags": 0,
+      "old_nonpositive_raw_lags": 0,
+      "old_hashes": {
+        "wavelet": "585cb953f26b1bf536919d01f7e23d083008ed1b439717cbd164a2b5f70a7225",
+        "optica": "158cca6f2328e70217d73744fef6a0251310d4b7a8d178dec988a2e8ec88521d",
+        "shift_cache": "f2e694e73a6204ec34a39c4c4e49a9bcc476a2fc4fd7b22f0490c11fabd6930f"
+      }
+    },
+    {
+      "ensaio": "m04q01_001",
+      "padrao": "slug",
+      "numero": 23,
+      "comprimento": 5071,
+      "old_comprimento": 5071,
+      "wavelet_path": "src2/v18_montagem_18_71/01_panoramas/wavelet/m04q01_001/panorama.png",
+      "optica_path": "src2/v18_montagem_18_71/01_panoramas/optica/m04q01_001/panorama.png",
+      "hashes": {
+        "wavelet": "393d8e37f5b977134b18a0e40612e66cbe99ebcddd6595389038b2f0ed702e54",
+        "optica": "ef7d7593abdc47eff91870a16fe3e1a018481e9da2b23416c7873b4924929c28"
+      },
+      "shifts_changed_count": 142,
+      "supplied_pattern": "slug",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "strip_widths_changed_count": 143,
+      "nonpositive_raw_lags": 0,
+      "old_nonpositive_raw_lags": 1,
+      "old_hashes": {
+        "wavelet": "daa1561ddafaea0ee9148d62814ba60d95cdcef01143f50b1c396d61cee7b16a",
+        "optica": "7a208c2de5ac07978243e54c876dd0502224023f7f62bf4dbb507754a81eaf0e",
+        "shift_cache": "ff60de5d484b98ccd941687b84d7a3a24981d6c9fc440b55ab42d18a609e7300"
+      }
+    },
+    {
+      "ensaio": "m05q05_001",
+      "padrao": "slug",
+      "numero": 24,
+      "comprimento": 6295,
+      "old_comprimento": 6323,
+      "wavelet_path": "src2/v18_montagem_18_71/01_panoramas/wavelet/m05q05_001/panorama.png",
+      "optica_path": "src2/v18_montagem_18_71/01_panoramas/optica/m05q05_001/panorama.png",
+      "hashes": {
+        "wavelet": "d0e9e25d5d0e9393cd2fc5f73d4bb21446325b92302d8eeef2c847089c8c6adb",
+        "optica": "86abbc167b3f8119f20c5f602c58e99024bf18109f1c3c775e5a62eee1ab38b7"
+      },
+      "shifts_changed_count": 66,
+      "supplied_pattern": "slug",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "strip_widths_changed_count": 66,
+      "nonpositive_raw_lags": 0,
+      "old_nonpositive_raw_lags": 0,
+      "old_hashes": {
+        "wavelet": "84512f0b4d8834e99de38d2d55191ce2e287a1f408eeef6b1bff712527d5d6b4",
+        "optica": "ccf699aa4440d825c5e3ed1e3aac5fd3d3c61f2bce72191b78789f46f5b24cb2",
+        "shift_cache": "2b6bfdd24ed2b58815ad6363a5d3e6ad16cd374d0decc8f1000dd5b15684f170"
+      }
+    },
+    {
+      "ensaio": "m06q05_001",
+      "padrao": "slug",
+      "numero": 25,
+      "comprimento": 7747,
+      "old_comprimento": 7787,
+      "wavelet_path": "src2/v18_montagem_18_71/01_panoramas/wavelet/m06q05_001/panorama.png",
+      "optica_path": "src2/v18_montagem_18_71/01_panoramas/optica/m06q05_001/panorama.png",
+      "hashes": {
+        "wavelet": "d5611c3f80b17f48e7a6422670f34ee40a0b2f45fcc5bdfe01ea840d796fc4a3",
+        "optica": "7cd66ee797268bf90ddee40cf444e4a972c61901720c261c2cdec3c7737f690c"
+      },
+      "shifts_changed_count": 182,
+      "supplied_pattern": "slug",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "strip_widths_changed_count": 182,
+      "nonpositive_raw_lags": 0,
+      "old_nonpositive_raw_lags": 0,
+      "old_hashes": {
+        "wavelet": "999580efb8447cd31fe4ae9e5ee2cb769e00cf2ca0752aa31ddb2613fcc070dc",
+        "optica": "606e8eb20956441d21de7cb885ab62b741e24c2d9fa4eb18099518c959ee7058",
+        "shift_cache": "21792faf285410930feae92595736ad172346567363c8d27b3836e509bc0367b"
+      }
+    },
+    {
+      "ensaio": "m07q01_001",
+      "padrao": "dispersed bubble",
+      "numero": 26,
+      "comprimento": 3094,
+      "old_comprimento": 3171,
+      "wavelet_path": "src2/v18_montagem_18_71/01_panoramas/wavelet/m07q01_001/panorama.png",
+      "optica_path": "src2/v18_montagem_18_71/01_panoramas/optica/m07q01_001/panorama.png",
+      "hashes": {
+        "wavelet": "cfa09f8e1b7f95a36b33f1bde0faf3b2c005006fb24fa25c3045fdfec437fc37",
+        "optica": "fccc63b4ed6e37031ddb103ce76a50e62eec73a3fd3df69d9ff620c9b8a927d4"
+      },
+      "shifts_changed_count": 78,
+      "supplied_pattern": "dispersed bubbles",
+      "frame_count": 501,
+      "height": 80,
+      "alignment_rows_inclusive": [
+        18,
+        71
+      ],
+      "alignment_row_count": 54,
+      "strip_widths_changed_count": 78,
+      "nonpositive_raw_lags": 0,
+      "old_nonpositive_raw_lags": 0,
+      "old_hashes": {
+        "wavelet": "f0eb48efc542e5d68c8344057792226310fad9a81b5c43840c1d367269728c45",
+        "optica": "b7a6a30f7ce6a1b76da2c700707faa7fd1bb8a781df52516673d9f63c4f6c775",
+        "shift_cache": "f26f6b611f81c5056ddde3c8dd1fa0f0e0ae549ed80521edde5d40f59ec157b1"
+      }
+    }
+  ],
+  "processed_acquisitions": 26,
+  "raw_frames": 13026,
+  "alignment_rows_inclusive": [
+    18,
+    71
+  ],
+  "alignment_slice": [
+    18,
+    72
+  ],
+  "preserved_previous_inputs": true,
+  "selection_source": "src2/v16_spatial2_18_71/intermediario/aquisicoes.json",
+  "wavelet_seams": "Exact historical v11 rule, including its column overwrite.",
+  "optical_seams": "Direct concatenation, no overwrite, same strips and widths.",
+  "total_changed_pair_lags": 5392,
+  "runtime_seconds": 19.279568707977887,
+  "runtime": {
+    "python": "3.13.2",
+    "numpy": "2.3.4"
+  },
+  "reconstruction_script_sha256": "d6f071322b556b116a2f337a439a47b4cea91cd06d6614d5e6a97963ac93e55d"
+}

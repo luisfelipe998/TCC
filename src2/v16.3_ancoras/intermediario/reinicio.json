@@ -1,0 +1,33 @@
+{
+  "inicio_utc": "2026-10-25T18:24:32.634541+00:00",
+  "fim_limpeza_utc": "2026-10-25T18:24:33.110704+00:00",
+  "escopo": "piloto",
+  "pastas_limpas": [
+    {
+      "pasta": "01_ancoras",
+      "arquivos": 8,
+      "bytes": 3923468
+    },
+    {
+      "pasta": "02_wavelets",
+      "arquivos": 4,
+      "bytes": 3786496
+    },
+    {
+      "pasta": "intermediario",
+      "arquivos": 585,
+      "bytes": 2312850601
+    }
+  ],
+  "calculos_anteriores_reutilizados": 0,
+  "entradas_preservadas": [
+    "scripts",
+    "data_processed",
+    "v16.2_wco_eventos",
+    "v16_spatial2_18_71",
+    "assets"
+  ],
+  "estimador": "biased",
+  "ancoras_previstas": 8,
+  "pares_previstos": 4
+}

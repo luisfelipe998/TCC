@@ -1,0 +1,12 @@
+{
+  "status": "Pós-resultado positivo, antes destes cálculos de contraprova",
+  "checks": [
+    "Welch manual FFT versus espectros arquivados",
+    "Parseval por segmento",
+    "mistura de espectros normalizados versus pooling antes de normalizar",
+    "quantil interpolado da CDF versus integral do interpolante linear e grade 2000",
+    "segmentos 512/1024/2048 com overlap 50% e Hann periódica",
+    "remoção da média por segmento como sensibilidade"
+  ],
+  "limit": "Somente descrições, sem novos p-valores ou classificadores; não escolher a maior separação como novo resultado principal"
+}

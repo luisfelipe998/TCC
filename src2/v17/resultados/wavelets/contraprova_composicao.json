@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "maximum_error": 5.551115123125783e-16,
+  "delta_reduction_when_singleton_removed": 0.037154322484972635,
+  "relative_delta_reduction": 0.5638895857242134,
+  "macro_reduction_when_singleton_removed": 0.1287978284752822,
+  "relative_macro_reduction": 0.8864267996263064,
+  "between_group_weight_with_singleton": 0.4,
+  "between_pair_weight_with_singleton": 0.10504201680672269,
+  "method": "Rebuilt Pearson from fixed profiles; WCO from pair JSON. Independent loops over acquisition indices; no composition() call."
+}

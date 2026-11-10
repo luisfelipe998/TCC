@@ -1,0 +1,74 @@
+{
+  "tipo": "Distribuições descritivas de pares que compartilham 26 aquisições",
+  "entrada": {
+    "arquivo": "06_resumos/dados/pares_pearson_coerencia.csv",
+    "sha256": "8b536ec37c08ba5c91563d169036d37ff394de1440210fccf46115e4af107943"
+  },
+  "script": {
+    "arquivo": "scripts/figuras_resumos.py",
+    "sha256": "6d6185173df07e76b5ecfab01fccaf3e37dfde251a6aa5dfc24aff62da64039e"
+  },
+  "dimensoes_cm": [
+    16,
+    8.2
+  ],
+  "fonte_pt": 9,
+  "semente_posicoes_graficas": 20261030,
+  "pontos": "Um ponto por par, deslocamento horizontal aleatório apenas para legibilidade.",
+  "caixa": "Percentis 25 e 75, mediana na linha, média no losango, hastes do mínimo ao máximo.",
+  "inferencia": false,
+  "valores": [
+    {
+      "painel": 1,
+      "metrica": "pearson_r",
+      "tipo": "intra",
+      "pares": 87,
+      "minimo": -0.008797861127468146,
+      "media": 0.7642329553866295,
+      "mediana": 0.8187633444196417,
+      "maximo": 0.9882522803968814,
+      "q25": 0.6764606239648533,
+      "q75": 0.8976225898471433
+    },
+    {
+      "painel": 1,
+      "metrica": "pearson_r",
+      "tipo": "inter",
+      "pares": 238,
+      "minimo": -0.5129397672695829,
+      "media": 0.5814270296142461,
+      "mediana": 0.6912143849984603,
+      "maximo": 0.9776153020534272,
+      "q25": 0.42208354487327365,
+      "q75": 0.8434882443466556
+    },
+    {
+      "painel": 2,
+      "metrica": "wco_media_integral",
+      "tipo": "intra",
+      "pares": 87,
+      "minimo": 0.02811673159000498,
+      "media": 0.060739126235730474,
+      "mediana": 0.06361351578751395,
+      "maximo": 0.13879813012915002,
+      "q25": 0.03917152341904325,
+      "q75": 0.07684234795277692
+    },
+    {
+      "painel": 2,
+      "metrica": "wco_media_integral",
+      "tipo": "inter",
+      "pares": 238,
+      "minimo": 0.04571112196054588,
+      "media": 0.0873915019446622,
+      "mediana": 0.07948914035870447,
+      "maximo": 0.203652693589964,
+      "q25": 0.06900191095804525,
+      "q75": 0.09686927492399058
+    }
+  ],
+  "arquivos_sha256": {
+    "distribuicoes_pearson_coerencia.pdf": "984417dc05188507ce6d283355986265e32d007908f0b82c01ee57e271fa3d7d",
+    "distribuicoes_pearson_coerencia.png": "2a220062fe94fc6660066400983c41bfcd1191dac3473ca98b58e667f524d8e8"
+  }
+}

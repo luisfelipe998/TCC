@@ -1,0 +1,29 @@
+{
+  "spec": {
+    "tipo": "individual",
+    "schema": 2,
+    "aquisicao": "m04q01_001",
+    "ancora": 1112,
+    "comprimento": 2048,
+    "inicio": 88,
+    "fim": 2136,
+    "linhas": [
+      18,
+      71
+    ],
+    "panorama_sha256": "daa1561ddafaea0ee9148d62814ba60d95cdcef01143f50b1c396d61cee7b16a",
+    "grade": "ace5a35fc1b17fb84f9f55aeb807ef7eb36a8d68b6535088cb17258484b29920",
+    "preparo": "recorte, 255-I, detrend linear, remocao de media, desvio padrao unitario",
+    "nucleo_sha256": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc",
+    "entrada_sha256": "fd1ec6b0a4fb15d845e584ee1c97504b2d79f71f85c3a4bc8457099dc7183fa8",
+    "backend_sha256": "65a4767dc5c09631bc5c8328181e1ae63ad09eb6c109fb9afda2981f0304b0aa"
+  },
+  "arrays_sha256": {
+    "raw": "db4be91e3a4034d9d1e3eadc81553defef88b2924d6da30cf7b595760d63592f",
+    "x": "90b3c1619e160491bbee087b3fe6f2f9fc855e0e1ebeeb8510928ca8e7a4430f",
+    "rxx": "270083384b9230c01b8cc71838408103e7616bb62ff43e0f9d9f7b8500559e80",
+    "wxx": "79167a8df14cb54aaa4bd78714355508751f4791a1e5af605fa83e95c8b794d7",
+    "power_mean": "2287619d675348af2c4b4e88443303d4ea2466daa2767570438c610a64cc3357"
+  },
+  "data_utc": "2026-10-25T18:29:56.094732+00:00"
+}

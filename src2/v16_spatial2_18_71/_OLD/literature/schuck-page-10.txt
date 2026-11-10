@@ -1,0 +1,41 @@
+A. Schuck Jr. and B. E. J. Bodmann
+
+a x,In] b y,[n]
+1 1
+0.5 0.5
+0 ()
+—0.5 -0.5
+0 1000 2000 ie) 1000 2000
+x,[n] yo[n]
+c 2 d 2
+1
+0 0)
+-1 4
+0 1000 2000 ie) 1000 2000
+x,[n] y,{"]
+e 3 f 3
+0 ()
+-1 -1
+0 1000 2000 (¢) 1000 2000
+n n
+
+Fig. 32.5 Three realizations of processes x (a), (¢), and (e) and y (b), (4), and (f) for SNR = 5dB
+and delay of 500 samples between events in x and y processes and some spikes randomly added
+
+point of our interest here) is Fig. 32.8. The same procedure was repeated for the
+last three realizations (the ones with other pulses randomly added) and the WCS
+obtained is shown in Fig. 32.9.
+
+32.4 Discussion and Conclusions
+
+Comparing the results obtained with the traditional definition of WCS (Figs. 32.4
+and 32.7) and the one proposed here (Figs. 32.8 and 32.10) for the detection
+problem proposed, one can see that the latter provides a significant information
+about the frequency/scale location of the transients and the delay time between
+transients in processes x and y. With the increase of realizations the traditional
+WCS estimator suffers a degradation which is not found in the new WCS estimation,
+which is perturbed only by a reduction in the SNR. The new estimators of WCO are
+normalized versions of WCS and the results are still significant in contrast to the
+traditional version which can be identically unity if no smoothing is applied. Also,
+
+bardo.bodmann@ufrgs.br

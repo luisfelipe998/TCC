@@ -1,0 +1,10 @@
+{
+  "anchor_label_swaps_checked": 19,
+  "all_swapped_anchors_and_native_windows_identical": true,
+  "all_centers_match_archived_anchors": true,
+  "max_independent_window_statistics_error": 1.249000902703301e-16,
+  "max_independent_continuous_quantile_width_error": 2.6645352591003757e-15,
+  "local_64px_overlap_fraction": 0.96875,
+  "interpretation": "Invariância churn/anular não garante permutabilidade observacional nem valida extração entre famílias.",
+  "reviewed_report_sha256": "6cf42d64be344f748022dc23daa4be47b3d17692a3bfe760aac1caa8648c9aae"
+}

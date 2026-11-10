@@ -1,0 +1,137 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_TCC_CHANGES",
+  "verificacoes_computacionais": "PASS",
+  "preservacao_tres_pastas_analise": "PASS",
+  "arquivos_tres_pastas_analise": 2634,
+  "tcc_snapshot_inicial_identico": false,
+  "tcc_versao_final_reconferida_e_hash_estavel": true,
+  "timestamp_utc": "2026-10-27T04:28:59.822856+00:00",
+  "fontes_auditadas_sha256": 2710,
+  "fontes_modificadas": [
+    {
+      "path": "TCC/discussao.tex",
+      "sha256_antes": "283db449c9d82cf099bcfc02608e0b9a056de9b5112ea6b08b09cb8b57905b0e",
+      "sha256_agora": "4c8cd684e8d4b6d9c03986ed4cabad1dbb11a03de9b1ce96d103f8d66b45e08f"
+    },
+    {
+      "path": "TCC/dist/fundamentacao.aux",
+      "sha256_antes": "189f73a18a6e1240586c3a4928150d9e0988d37234c382b38f3421d9e691bc01",
+      "sha256_agora": "b9a0d2346dabf979c41fb0f9060af996de25274916e9af0f6034b4e3cb08a668"
+    },
+    {
+      "path": "TCC/dist/introducao.aux",
+      "sha256_antes": "f8da63b2b2353114c69766cb00669232819d45d0fdda5d074a552d876278d7ee",
+      "sha256_agora": "e445ecbc6ef9aa09766f6cb17d04cb059d202931bf7f4715a436900659a44523"
+    },
+    {
+      "path": "TCC/dist/main.aux",
+      "sha256_antes": "16c596325dada8c7958f73028ab997736b5076d348ae9b45bf33f620cbdbcb4f",
+      "sha256_agora": "92962befb1836d39b84ca8178dae0cb59219934b5ebf75d869729a8563b8bcf5"
+    },
+    {
+      "path": "TCC/dist/main.bbl",
+      "sha256_antes": "a01fe58a278e57e8254e79b18520b6595696bb84f8db9e26cad95a3f094b0edc",
+      "sha256_agora": "e7701a99f21de78a282a326fb1c4f64a33e6430f488e8998a73b02996a633923"
+    },
+    {
+      "path": "TCC/dist/main.blg",
+      "sha256_antes": "b251b81815940ac95f0b278959efa694f78bd898d62268fe78c86dab97f4bba8",
+      "sha256_agora": "092525122a3bfbff8c495605bd22f899ef08350dd8d388bc9c05f3cc9e050944"
+    },
+    {
+      "path": "TCC/dist/main.fdb_latexmk",
+      "sha256_antes": "ad684ee4dd01d1dbc17bf57ac926fd43574379967762ce9214ef0f2eee20ba00",
+      "sha256_agora": "cf775c66ba53dcc710b8c7a8eaad4ba8b21fe95b991f85da925bfae7a195d5aa"
+    },
+    {
+      "path": "TCC/dist/main.lof",
+      "sha256_antes": "43902de59604e4083b68339fb6b7d335c13b41a22355c713b25393944eead517",
+      "sha256_agora": "7b76fad99d63613b6091f6c23f1cdadf12686c5471d3619892fab53430148260"
+    },
+    {
+      "path": "TCC/dist/main.log",
+      "sha256_antes": "d51719249261a5872469b51e36399fe5d813e080fbff6a2c85e625e1d6de33d0",
+      "sha256_agora": "2126cc88cfcc180828a9bc7f73ac175491ae66ecda98fda69f2bcc69abdf6ca2"
+    },
+    {
+      "path": "TCC/dist/main.pdf",
+      "sha256_antes": "7e05437e422deda571b43dc1556ffcd29b9e781ae10b2de41fc1705fb91a5852",
+      "sha256_agora": "c191a6bb49f3c48ce54714cbf1c3bfc72f3258e79f2bd24c9f15d4e806df136f"
+    },
+    {
+      "path": "TCC/dist/main.toc",
+      "sha256_antes": "c5de70039ac2082b3ace2d8c23807f37c538f4bb57dff9b1f880c8e7e4a515a9",
+      "sha256_agora": "70c33cf38a6e0f9b7d8e9d28bfbfdb64bbf5535804c92687d9cf88e7700d71b9"
+    },
+    {
+      "path": "TCC/dist/metodologia.aux",
+      "sha256_antes": "c4523b872f9b9bd567814c179126acb783ec084f9d019991ef41909ff7865a74",
+      "sha256_agora": "20549fcae35e52dca770a9e1e25b492fa109564e9fd26d95634332f6b3277570"
+    },
+    {
+      "path": "TCC/fundamentacao.tex",
+      "sha256_antes": "6af578df25282f190436933fdec461388234d4ec3ee1f784f5ccb50a347bf28b",
+      "sha256_agora": "4b94954398d0111e700a21d7e95664f4527b6485e4c3931954125e51c6cc2e13"
+    },
+    {
+      "path": "TCC/introducao.tex",
+      "sha256_antes": "6aeb3c329c301c4852baad00f9cacf14c18c145b7d04f0967cb926ab4d1d8749",
+      "sha256_agora": "9aaee03aea08dc034c1999031bf4fd6eed6760677df8b44f8150197af6f7cf69"
+    },
+    {
+      "path": "TCC/metodologia.tex",
+      "sha256_antes": "13f0cb2ccda71e9382b54645ad9277e7d5f05c6e28b3db76a6bfad03a744c8ac",
+      "sha256_agora": "a578ad88793d670c31a26db34aad86b0e8afe2216c885256e8e0100781db6b4a"
+    },
+    {
+      "path": "TCC/referencias.bib",
+      "sha256_antes": "5a2f0adffb80cd58a77b0b633d60989282643a2cc9b70051a6d699f0e3277975",
+      "sha256_agora": "b0ff09a79ee8627abbf6967dc267413623da36d8ecbc9001cbca693a9374ecc5"
+    }
+  ],
+  "novos_arquivos_nas_fontes": [],
+  "arquivos_externos_conferidos_por_tamanho_mtime": 46379,
+  "arquivos_externos_modificados": [
+    "TCC/referencias.bib",
+    "TCC/discussao.tex",
+    "TCC/metodologia.tex",
+    "TCC/introducao.tex",
+    "TCC/fundamentacao.tex",
+    "TCC/dist/resultados.aux",
+    "TCC/dist/main.bbl",
+    "TCC/dist/metodologia.aux",
+    "TCC/dist/pretextual.aux",
+    "TCC/dist/main.pdf",
+    "TCC/dist/introducao.aux",
+    "TCC/dist/fundamentacao.aux",
+    "TCC/dist/main.idx",
+    "TCC/dist/main.toc",
+    "TCC/dist/main.loq",
+    "TCC/dist/conclusao.aux",
+    "TCC/dist/main.fdb_latexmk",
+    "TCC/dist/main.lof",
+    "TCC/dist/main.lot",
+    "TCC/dist/main.aux",
+    "TCC/dist/main.log",
+    "TCC/dist/discussao.aux",
+    "TCC/dist/main.fls",
+    "TCC/dist/main.blg"
+  ],
+  "novos_arquivos_nos_diretorios_monitorados": [],
+  "scripts_sintaticamente_validos": 11,
+  "jsons_validos": 31,
+  "links_quebrados": [],
+  "guarda_residual": {
+    "constante": true,
+    "lei_potencia": true
+  },
+  "perfis_reais_aceitos_pela_guarda": 600,
+  "git_status_identico": false,
+  "git_linhas_adicionadas": [
+    "A  assets/brunton2020-ml-fluid-mechanics-published.pdf",
+    "A  assets/hurlbert1984-pseudoreplication-experimental-design.pdf"
+  ],
+  "git_linhas_removidas": [],
+  "nota_git": "Estado observado, não atribuição de autoria. A trilha desta tarefa escreve apenas em v17. Alterações concorrentes no TCC foram reconferidas e estão documentadas; adições em assets não integram a auditoria nem a amostra.",
+  "alcance": "Verificação computacional e preservação; não validação física, causal ou preditiva."
+}

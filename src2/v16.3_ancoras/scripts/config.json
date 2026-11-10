@@ -1,0 +1,62 @@
+{
+  "versao": "v16.3-piloto-4",
+  "padroes": ["plug", "slug", "churn", "wavy annular"],
+  "pares_por_padrao": 1,
+  "ordem_aquisicoes": "identificador crescente; primeiras duas com ancora valida",
+  "linhas": [18, 71],
+  "comprimento_referencia": 2048,
+  "janelas_por_padrao": {"plug": 2048, "slug": 2048, "churn": 4096, "wavy annular": 4096},
+  "contexto": {
+    "comprimento_minimo": 1024,
+    "passo": 256,
+    "margem_evento": 256,
+    "margem_vale": 128,
+    "regra": "menor janela comum que inclui o evento ou as bases de proeminencia, com margem lateral; sem consultar wavelets"
+  },
+  "margem": 16,
+  "eventos": {
+    "limiar": 60,
+    "limiares_estabilidade": [55, 65],
+    "fracao_escura": 0.25,
+    "mediana": 5,
+    "fechamento": 13,
+    "extensao": [96, 1536],
+    "iou_correspondencia": 0.5,
+    "nitidez_faixa_px": 32,
+    "ranking": ["menor deslocamento maximo das fronteiras em 55/65", "maior contraste da extremidade mais fraca", "menor coordenada"],
+    "morfologia": "aprovacoes visuais registradas na v16.2; nao e um classificador morfologico automatico"
+  },
+  "textura": {
+    "sigma": 16,
+    "sigmas_estabilidade": [12, 20],
+    "tolerancia": 16,
+    "prominencia_minima": 3.0,
+    "fracao_amplitude_robusta": 0.25,
+    "janela_prominencia": 1025,
+    "largura": [16, 512],
+    "distancia": 128,
+    "ranking": ["maior prominencia em sigma16", "menor deslocamento maximo em relacao a sigma16", "menor coordenada"]
+  },
+  "wavelet": {
+    "comprimento_onda_minimo": 50,
+    "comprimento_onda_maximo": "N/2 por padrao",
+    "escalas": 200,
+    "lag_resumo": 32,
+    "omega0": 6,
+    "estimador": "biased",
+    "K": 1,
+    "wps": "abs(CWT(Rxx))",
+    "wcs": "CWT(Rxy), exibida em modulo",
+    "wco": "abs(WCS)^2/(WPSx(lag0)*WPSy(lag0))",
+    "potencia_media": "media do modulo da WPS por escala nos lags com suporte geometrico; sem elevar novamente ao quadrado"
+  },
+  "figuras": {
+    "ancoras_inches": [8.2, 8.8],
+    "pares_inches": [8.6, 10.6],
+    "dpi": 240,
+    "paleta_wps_wcs": "viridis",
+    "paleta_wco": "magma",
+    "sentido_cores": "paletas da referencia trocadas entre mapas; baixos escuros, altos claros",
+    "rotulo_wco": "avaliacao descritiva apos visualizar o mapa; nao interfere nas ancoras"
+  }
+}

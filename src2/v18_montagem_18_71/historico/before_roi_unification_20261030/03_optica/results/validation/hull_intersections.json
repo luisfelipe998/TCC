@@ -1,0 +1,87 @@
+{
+  "primary_chart_hulls": {
+    "dispersed bubbles": {
+      "eligible_runs": [
+        "m07q01_001"
+      ],
+      "polygon_vertex_runs": [],
+      "shaded": false
+    },
+    "plug": {
+      "eligible_runs": [
+        "m05q01_001",
+        "m06q01_001",
+        "m07q05_001"
+      ],
+      "polygon_vertex_runs": [
+        "m07q05_001",
+        "m05q01_001",
+        "m06q01_001"
+      ],
+      "shaded": true
+    },
+    "slug": {
+      "eligible_runs": [
+        "m04q01_001",
+        "m05q05_001",
+        "m06q05_001"
+      ],
+      "polygon_vertex_runs": [
+        "m05q05_001",
+        "m04q01_001",
+        "m06q05_001"
+      ],
+      "shaded": true
+    },
+    "churn": {
+      "eligible_runs": [
+        "m03q05_001",
+        "m04q10_001",
+        "m04q20_001",
+        "m05q10_001",
+        "m05q20_001",
+        "m05q40_001",
+        "m06q10_001",
+        "m06q20_001",
+        "m07q20_001",
+        "m07q40_001"
+      ],
+      "polygon_vertex_runs": [
+        "m07q40_001",
+        "m07q20_001",
+        "m06q10_001",
+        "m04q20_001",
+        "m03q05_001",
+        "m05q40_001"
+      ],
+      "shaded": true
+    },
+    "wavy annular": {
+      "eligible_runs": [
+        "m03q10_001",
+        "m03q20_001",
+        "m04q40_001",
+        "m04q80_001",
+        "m05q80_001",
+        "m06q40_001",
+        "m06q80_001",
+        "m07q80_001"
+      ],
+      "polygon_vertex_runs": [
+        "m03q20_001",
+        "m06q40_001",
+        "m07q80_001",
+        "m04q40_001"
+      ],
+      "shaded": true
+    }
+  },
+  "overlap_pairs": [
+    [
+      "plug",
+      "slug"
+    ]
+  ],
+  "churn_annular_intersect": false,
+  "independent_polygon_and_halfspace_tests_agree": true
+}

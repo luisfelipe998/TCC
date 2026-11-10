@@ -1,0 +1,29 @@
+        variant     same  different       gap  valid_pairs  delta_same  delta_different  delta_gap                      metric
+ central_band20 0.246895   0.298755 -0.051861          325   -0.002107        -0.014569   0.012462 weighted_scale_peak_power05
+core_row_median 0.258232   0.315989 -0.057757          325    0.009230         0.002665   0.006565 weighted_scale_peak_power05
+       baseline 0.249002   0.313324 -0.064322          325    0.000000         0.000000   0.000000 weighted_scale_peak_power05
+{
+  "main_metric": "weighted_scale_peak_power05",
+  "choice_on_full_dataset": "core_row_median",
+  "choices_by_metric": {
+    "weighted_scale_peak_power05": "core_row_median",
+    "weighted_scale_peak_power01": "core_row_median",
+    "weighted_scale_peak_power10": "central_band20",
+    "weighted_zero_lag_wco": "baseline",
+    "max_wco_all": "baseline"
+  },
+  "selection_rule": "Improve same-pattern mean AND improve same-minus-different gap; choose highest training gap; otherwise baseline",
+  "validation": "Leave one acquisition out of preprocessing selection; all 25 pairs involving it are withheld; no classifier",
+  "heldout_pattern_balanced_deltas": {
+    "delta_same": 0.0012467124280249834,
+    "delta_different": -0.0031915612316049937,
+    "delta_gap": 0.004438273659629977
+  },
+  "heldout_selection_counts": {
+    "core_row_median": 23,
+    "central_band20": 2,
+    "baseline": 1
+  },
+  "heldout_runs_with_same_pattern_comparator": 25,
+  "caveat": "Exploratory reuse of 26 acquisitions. Held-out pairs share training partners and folds overlap; no independent test-set or p-value claim."
+}

@@ -1,0 +1,92 @@
+mask m03q05_001 exact True
+mask m03q10_001 exact True
+mask m03q20_001 exact True
+mask m03q40_001 exact True
+mask m04q01_001 exact True
+mask m04q10_001 exact True
+mask m04q20_001 exact True
+mask m04q40_001 exact True
+mask m04q80_001 exact True
+mask m05q01_001 exact True
+mask m05q05_001 exact True
+mask m05q10_001 exact True
+mask m05q20_001 exact True
+mask m05q40_001 exact True
+mask m05q80_001 exact True
+mask m06q01_001 exact True
+mask m06q05_001 exact True
+mask m06q10_001 exact True
+mask m06q20_001 exact True
+mask m06q40_001 exact True
+mask m06q80_001 exact True
+mask m07q01_001 exact True
+mask m07q05_001 exact True
+mask m07q20_001 exact True
+mask m07q40_001 exact True
+mask m07q80_001 exact True
+raw m03q05_001 pixels True lags True
+raw m03q10_001 pixels True lags True
+raw m03q20_001 pixels True lags True
+raw m03q40_001 pixels True lags True
+raw m04q01_001 pixels True lags True
+raw m04q10_001 pixels True lags True
+raw m04q20_001 pixels True lags True
+raw m04q40_001 pixels True lags True
+raw m04q80_001 pixels True lags True
+raw m05q01_001 pixels True lags True
+raw m05q05_001 pixels True lags True
+raw m05q10_001 pixels True lags True
+raw m05q20_001 pixels True lags True
+raw m05q40_001 pixels True lags True
+raw m05q80_001 pixels True lags True
+raw m06q01_001 pixels True lags True
+raw m06q05_001 pixels True lags True
+raw m06q10_001 pixels True lags True
+raw m06q20_001 pixels True lags True
+raw m06q40_001 pixels True lags True
+raw m06q80_001 pixels True lags True
+raw m07q01_001 pixels True lags True
+raw m07q05_001 pixels True lags True
+raw m07q20_001 pixels True lags True
+raw m07q40_001 pixels True lags True
+raw m07q80_001 pixels True lags True
+{
+  "source_hashes_checked": 13105,
+  "source_hash_mismatches": 1,
+  "software": {
+    "python": "3.13.2 (main, Mar  5 2025, 16:08:11) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "numpy": "2.3.4",
+    "pandas": "2.3.3"
+  },
+  "scope": "26 aquisi\u00e7\u00f5es; 25 eleg\u00edveis no corte de satura\u00e7\u00e3o herdado; sem aprendizado de m\u00e1quina.",
+  "reference_max_error": 0.0,
+  "mask_reproduction_all_exact": true,
+  "mask_axial_reverse_all_exact": true,
+  "arithmetic_max_abs_error": {
+    "circle_alpha_error": 1.1102230246251565e-16,
+    "projected_fraction_error": 1.1102230246251565e-16,
+    "flip_rate_error": 9.627715291671279e-17
+  },
+  "threshold_nonmonotone": {
+    "comparisons": 104,
+    "comparisons_removing_pixels": 66,
+    "comparisons_lowering_alpha": 0
+  },
+  "seam_flip_share_range": [
+    0.07504078303425775,
+    0.22702943800178413
+  ],
+  "seam_flip_share_median": 0.17886500283720197,
+  "seam_comparison_share_median": 0.05284042109080965,
+  "alpha_flip_spearman_all26": -0.747008547008547,
+  "raw_reconstruction": {
+    "runs": 26,
+    "frames": 13026,
+    "all_corrected_pixels_exact": true,
+    "all_raw_lags_exact": true,
+    "all_direct_subset_lags_exact": true,
+    "all_native_5probe_counts_exact": true,
+    "all_native_otsu_thresholds_exact": true,
+    "nonpositive_lags": 61
+  }
+}

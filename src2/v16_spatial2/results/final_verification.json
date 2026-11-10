@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "input_hashes_verified": 62,
+  "panoramas": 31,
+  "eligible_runs": 26,
+  "pairs": 87,
+  "primary_maps_equation_max_error": 0.0,
+  "png_files_verified": 136,
+  "null_replicates": 995,
+  "preprocessing_screen_pairs_per_variant": 325,
+  "preprocessing_variants": 10,
+  "preprocessing_confirm_variants": [
+    "baseline",
+    "central_band20",
+    "core_row_median"
+  ],
+  "broken_local_links": [],
+  "regenerated_figures": 136,
+  "equation_functions_unchanged": true,
+  "retained_full_domain_tables_unchanged": true,
+  "cached_wavelet_arrays_unchanged": 87,
+  "masked_columns_in_current_csv": 0
+}

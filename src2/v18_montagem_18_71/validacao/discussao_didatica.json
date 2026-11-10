@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "date_utc": "2026-10-31T02:59:39.869889+00:00",
+  "scope": "Revisão didática e interpretativa. Sem alteração do processamento ou dos resultados numéricos, sem nova análise de sensibilidade, inferência ou classificação.",
+  "changed_sections": [
+    "4.6",
+    "4.7 (somente paginação)",
+    "5.1",
+    "5.2",
+    "5.3",
+    "5.4",
+    "6 (parágrafo de coerência)"
+  ],
+  "pdf": {
+    "path": "TCC/dist/main.pdf",
+    "sha256": "10252b5396e0ccbf8abffbf1ea0ccf072a715ba278c9dd28b2eb9f278db7e511",
+    "pages": 75
+  },
+  "source_sha256": {
+    "TCC/anexos.tex": "f1b839f0924914cbff14442b048083a34d878186a0ce389a4a89ccee047edaa6",
+    "TCC/apendices.tex": "c12438d4f16784f18b374ecc0a5b9c8a9f50d640f0d8b36d25be397dc8a187a3",
+    "TCC/conclusao.tex": "d4d60f64b86bf0367c7b1de37424ee0e8b88480bb3dd752310402e1e5957b525",
+    "TCC/discussao.tex": "1cfa28f3ac8bce6490207f09e049ba1891a6fbd3e273183f408b64b50b6e3fe1",
+    "TCC/fundamentacao.tex": "fba574a0d0160b1a16ef9c310ea573fce3c319633f8a643ab5687488cb5ab900",
+    "TCC/introducao.tex": "c7a4b0baad24e07715e6ac6ed594831f0c67aff3b08ab2a73b77905076df5898",
+    "TCC/main.tex": "998eeef74bc67af97d49873eb0be36df2e456db6320a35af6c6014c0bb0c1fcf",
+    "TCC/metodologia.tex": "07af38fe440390a43cf738f4dfab82dbac3fdbfb206004b92868e17130bc816b",
+    "TCC/pretextual.tex": "1d3cd48601f93f7246619fb69c04a21dd3c66c5615ae32b4c35a3ced3d7b920a",
+    "TCC/resultados.tex": "0990158a6790f6bf9e30c8c160325150b7cd7373fdd1f358427a1c8ce5b04640"
+  },
+  "audit_report": {
+    "path": "../../../auditorias/discussao-didatica/verificacao-final.json",
+    "sha256": "3e3ec62c9d171a13fedb57c5634798bed90654b4c4e69558070c0a1c9045bf38"
+  },
+  "independent_reports_sha256": {
+    "revisao-literatura-didatica.json": "6117ddbf8f2be2fdf4cacf8d4312b8d455cdde3d7fd9a581cff849a27d05d399",
+    "revisao-espectral.json": "00bf84f0a84e22c5a232a3c72e185528da5abe94aab341b4e5c72c6db7c5a595",
+    "revisao-visual-resultados.json": "74b800e57645f363ea2171ebf6beae207a6d1d5344126151b898e1bee7d51e4c",
+    "revisao-optica.json": "d9f4bda0d1faa85504f8a4a0d9910af2f498df8c41153970a6a024899f9e28c2"
+  },
+  "preserved": {
+    "existing_analysis_sha256": 558,
+    "stage06_sha256": 336,
+    "figure_sha256": 109
+  },
+  "methodology_unchanged": true,
+  "citation_commands": 115,
+  "source_note": "Os relatórios científicos anteriores permanecem históricos. Esta validação vincula os dados preservados à apresentação atual."
+}

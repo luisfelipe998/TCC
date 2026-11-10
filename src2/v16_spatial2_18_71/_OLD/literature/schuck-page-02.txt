@@ -1,0 +1,47 @@
+410 A. Schuck Jr, and B. E. J. Bodmann
+
+recommended some sort of smoothing in time or scale dimension to circumvent
+this problem. Maraun and Kurths [MaKu04] pointed out other drawbacks with
+the CWA and improved the significance tests presented in [ToCo98] by means
+of Monte Carlo simulations. These significance tests were further developed in a
+posterior work [MaEtA107]. Thereafter, the CWA definitions have been largely used
+to analyze geophysical data [GrEtA104, Nt10], electroencephalographic (EEG) and
+other biomedical signals [LaEtAl02, HeEtAl05, KIEtA106] as well as in transient
+detection [P107] among others. Today, these definitions make part of the Wavelet
+Toolbox of Matlab®R2012a.
+
+Recalling that the definitions of CWA are obtained by point-by-point multipli-
+cation of the CWT of the time series, then, if transients appear at different times
+for different realizations of processes, the estimators of WPS and WCS will be
+inconclusive, with as many local maxima as the total number of transients in the
+time series. Therefore they cannot be properly used for detection of these non-
+synchronized transients. This issue is exemplified in Sect. 32.3. Furthermore, the
+estimator of WCO has the inherent pitfall of being identically unitary as mentioned
+in [ToCo98, MaKu04].
+
+In [ScEtA113], the authors presented alternative definitions for WPS, WCS, and
+WCO to detect multi-channel synchronized transients in noise and estimate the
+delay (or lag) of the target transients present in two processes. The preliminary
+assessment of the technique was made by a very simple signal test. Therefore, the
+objective of this work is to present and discuss in a deeper way those alternative
+definitions for WPS, WCS, and WCO that solve the aforementioned issues and
+improve the assessment of the technique with alternative signals.
+
+32.2 Developments
+
+32.2.1 Classic Definitions
+
+The auto-correlation functions of stationary processes x and y and the cross-cor-
+relation function of the same stationary processes are respectively [BePi00]
+
+Ryx(t) = E {xe + 1X}, (32.1)
+Ryy(t) = Ely + yO} (32.2)
+Ryy(t) = E {x(t + t)¥()} (32.3)
+
+where t is the lag or time interval between samples of time series and the
+“overline” indicates the complex conjugate of the function. The Fourier transform
+of (32.1), (32.2), and (32.3) are the auto and cross spectral density functions,
+respectively. These functions are the traditional way to analyze and describe the
+behavior of stationary stochastic processes in time or frequency domain. Also
+
+bardo.bodmann@ufrgs.br

@@ -1,0 +1,31 @@
+{
+  "runs": 31,
+  "included": 26,
+  "extraction_rows_inclusive": [
+    18,
+    71
+  ],
+  "numpy_slice": [
+    18,
+    72
+  ],
+  "row_count": 54,
+  "all_extractions_exact": true,
+  "all_xlsx_match": true,
+  "xlsx_comparison_rows_inclusive": [
+    20,
+    59
+  ],
+  "all_reconstruction_exact": true,
+  "reconstruction_executed_this_run": false,
+  "reconstruction_evidence": "Auditoria anterior conferida por hashes dos mesmos panoramas.",
+  "literal_shift_checks": 0,
+  "source_literal_shift_checks": 93,
+  "shifts_and_seams": "Reutilizados dos caches verificados da análise 20–59; não reestimados.",
+  "raw_20_59": "Valores do cache anterior, idênticos à planilha original; utilizados somente como referência.",
+  "source_audit_sha256": "5d612b8d9c1645eef484f3e1fdd889ad4c12ee3111c292099d7a8a651bc82d03",
+  "source_files_verified": 95,
+  "source_files_unchanged": true,
+  "signal_array_hash_definition": "SHA-256 dos bytes float64 little-endian do vetor raw na ordem das posições.",
+  "signal_csv_files": 31
+}

@@ -1,0 +1,20 @@
+{
+  "common_n": 3171,
+  "placements": [
+    "prefix",
+    "center",
+    "suffix"
+  ],
+  "grid_points": 200,
+  "bands": [
+    [
+      50,
+      1024
+    ],
+    [
+      50,
+      3000
+    ]
+  ],
+  "warning": "Janelas da mesma aquisição são dependentes e frequentemente sobrepostas; não são réplicas independentes. O menor ensaio tem três janelas idênticas. Controle exploratório, sem seleção da melhor configuração."
+}

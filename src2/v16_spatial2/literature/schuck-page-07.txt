@@ -1,0 +1,47 @@
+32 On the Development of an Alternative Proposition of Cross Wavelet Analysis 415
+
+Modulated gaussian pulse s[n]
+
+08
+
+0.6
+
+0.4
+
+0.2
+
+-100 -50 0 50 100
+n
+
+Fig, 32.1 Modulated Gaussian pulse s(t) =
+
+cos 6t, sampled at a rate of 25 samples/s
+
+points. The delay between events in x and y realizations was set to 500 samples.
+Three realizations of these signals were generated as shown in Fig. 32.2, for SNR =
+5 dB, by means of averaging.
+
+Then the CWT of those realizations were calculated using the Matlab cwt
+function with Complex Morlet mother wavelet. The Scalograms of these CWTs
+are shown in Fig. 32.3. Notice the events were well detected as local maxima at
+approximately the same scales but in different positions for each realization, as
+expected. Then, using the estimator of WCS given by (32.13) for these realizations,
+the obtained result is shown in Fig. 32.4.
+
+To make things more challenging, two additional pulses with Gaussian shape
+ay = ee? cost and s2(t) = ee cos 12t were created and these two pulses
+were added in each of the former realizations at random positions, creating six
+new realizations, as shown in Fig. 32.5. Notice that the target transient still keeps
+the same delay between the realizations x and y, but the other transients do not.
+Because of the different frequencies, the new transients will appear also in different
+scales at the plane time-scale. The scalograms of these CWTs are shown in Fig. 32.6
+and the estimator of WCS for these new realizations is shown in Fig. 32.7.
+
+Although the events are still detected, one cannot define the delay between tran-
+sients in x and y processes. Also, the more realizations one has, the more local max-
+ima will appear in this estimator. Thus for a good transient detection with traditional
+CWA techniques, the events should occur always at same time for each realization
+and this feature makes this technique inappropriate for an analysis of nonsynchro-
+nized transients or if one wants to estimate the delay between two processes.
+
+bardo.bodmann@ufrgs.br

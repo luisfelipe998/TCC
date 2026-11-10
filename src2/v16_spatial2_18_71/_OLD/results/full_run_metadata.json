@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "extraction_rows_inclusive": [
+    18,
+    71
+  ],
+  "total_elapsed_seconds": 1377.1416216250218,
+  "stages": [
+    {
+      "stage": "validate_wavelets",
+      "elapsed_seconds": 1.689531166019151
+    },
+    {
+      "stage": "run_analysis",
+      "elapsed_seconds": 348.7261027920176
+    },
+    {
+      "stage": "verify_legacy_baseline",
+      "elapsed_seconds": 64.4871283340035
+    },
+    {
+      "stage": "additional_diagnostics",
+      "elapsed_seconds": 13.200505582994083
+    },
+    {
+      "stage": "precision_and_windows",
+      "elapsed_seconds": 14.609753541997634
+    },
+    {
+      "stage": "recompute_unmasked",
+      "elapsed_seconds": 1375.4513155000168
+    }
+  ],
+  "note": "Dois lotes independentes em paralelo; relatórios e verificação final executados depois."
+}

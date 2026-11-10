@@ -1,0 +1,958 @@
+{
+  "status": "PASS",
+  "stage": "completo",
+  "tolerance": {
+    "absolute": 1e-10,
+    "relative": 1e-10,
+    "pixels": "exact",
+    "discrete": "exact",
+    "selection": "exact"
+  },
+  "baseline": {
+    "file": "config/referencia_resultados.json",
+    "sha256": "4f300ef035d1a6bb83055fcce7985f0df65ad8eb1fa6106be3a294d1586c6fdb",
+    "arrays": "config/referencia_arrays.npz",
+    "arrays_sha256": "2935013ac7fecdadab04833f4deeb3642b4497626bd70ea4ac014a779fdc94c6"
+  },
+  "checked_files": 186,
+  "failed_checks": 0,
+  "checks": [
+    {
+      "path": "01_panoramas/manifesto.json",
+      "kind": "json",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/deslocamentos.csv",
+      "kind": "csv",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m03q05_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m03q10_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m03q20_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m03q40_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m04q01_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m04q10_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m04q20_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m04q40_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m04q80_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m05q01_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m05q05_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m05q10_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m05q20_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m05q40_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m05q80_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m06q01_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m06q05_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m06q10_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m06q20_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m06q40_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m06q80_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m07q01_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m07q05_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m07q20_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m07q40_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/wavelet/m07q80_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m03q05_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m03q10_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m03q20_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m03q40_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m04q01_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m04q10_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m04q20_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m04q40_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m04q80_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m05q01_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m05q05_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m05q10_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m05q20_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m05q40_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m05q80_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m06q01_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m06q05_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m06q10_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m06q20_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m06q40_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m06q80_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m07q01_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m07q05_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m07q20_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m07q40_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "01_panoramas/optica/m07q80_001/panorama.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/aquisicoes.json",
+      "kind": "json",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/configuracao.json",
+      "kind": "json",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/entradas/m03q05_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/entradas/m03q10_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/entradas/m03q20_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/entradas/m03q40_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/entradas/m04q01_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/entradas/m04q10_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/entradas/m04q20_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/entradas/m04q40_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/entradas/m04q80_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/entradas/m05q01_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/entradas/m05q05_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/entradas/m05q10_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/entradas/m05q20_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/entradas/m05q40_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/entradas/m05q80_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/entradas/m06q01_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/entradas/m06q05_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/entradas/m06q10_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/entradas/m06q20_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/entradas/m06q40_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/entradas/m06q80_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/entradas/m07q01_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/entradas/m07q05_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/entradas/m07q20_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/entradas/m07q40_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/entradas/m07q80_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/individuais/m03q05_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/individuais/m03q10_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/individuais/m03q20_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/individuais/m03q40_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/individuais/m04q01_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/individuais/m04q10_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/individuais/m04q20_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/individuais/m04q40_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/individuais/m04q80_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/individuais/m05q01_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/individuais/m05q05_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/individuais/m05q10_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/individuais/m05q20_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/individuais/m05q40_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/individuais/m05q80_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/individuais/m06q01_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/individuais/m06q05_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/individuais/m06q10_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/individuais/m06q20_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/individuais/m06q40_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/individuais/m06q80_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/individuais/m07q01_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/individuais/m07q05_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/individuais/m07q20_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/individuais/m07q40_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/individuais/m07q80_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/pares.json",
+      "kind": "json",
+      "passed": true
+    },
+    {
+      "path": "02_wavelet/intermediario/individuais.json",
+      "kind": "json",
+      "passed": true
+    },
+    {
+      "path": "03_optica/results/flip_rate/phase_mask_flip_by_pattern.csv",
+      "kind": "csv",
+      "passed": true
+    },
+    {
+      "path": "03_optica/results/flip_rate/phase_mask_flip_per_run.csv",
+      "kind": "csv",
+      "passed": true
+    },
+    {
+      "path": "03_optica/results/summary/discussion_example_pairs.csv",
+      "kind": "csv",
+      "passed": true
+    },
+    {
+      "path": "03_optica/results/summary/discussion_example_runs.csv",
+      "kind": "csv",
+      "passed": true
+    },
+    {
+      "path": "03_optica/results/summary/optical_group_summary.csv",
+      "kind": "csv",
+      "passed": true
+    },
+    {
+      "path": "03_optica/results/void_fraction/panorama_void_by_pattern.csv",
+      "kind": "csv",
+      "passed": true
+    },
+    {
+      "path": "03_optica/results/void_fraction/panorama_void_per_run.csv",
+      "kind": "csv",
+      "passed": true
+    },
+    {
+      "path": "03_optica/results/void_fraction/void_fraction_flip_plot_data.csv",
+      "kind": "csv",
+      "passed": true
+    },
+    {
+      "path": "03_optica/intermediate/phase_masks/m03q05_001_mask.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "03_optica/intermediate/phase_masks/m03q10_001_mask.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "03_optica/intermediate/phase_masks/m03q20_001_mask.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "03_optica/intermediate/phase_masks/m03q40_001_mask.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "03_optica/intermediate/phase_masks/m04q01_001_mask.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "03_optica/intermediate/phase_masks/m04q10_001_mask.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "03_optica/intermediate/phase_masks/m04q20_001_mask.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "03_optica/intermediate/phase_masks/m04q40_001_mask.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "03_optica/intermediate/phase_masks/m04q80_001_mask.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "03_optica/intermediate/phase_masks/m05q01_001_mask.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "03_optica/intermediate/phase_masks/m05q05_001_mask.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "03_optica/intermediate/phase_masks/m05q10_001_mask.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "03_optica/intermediate/phase_masks/m05q20_001_mask.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "03_optica/intermediate/phase_masks/m05q40_001_mask.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "03_optica/intermediate/phase_masks/m05q80_001_mask.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "03_optica/intermediate/phase_masks/m06q01_001_mask.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "03_optica/intermediate/phase_masks/m06q05_001_mask.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "03_optica/intermediate/phase_masks/m06q10_001_mask.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "03_optica/intermediate/phase_masks/m06q20_001_mask.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "03_optica/intermediate/phase_masks/m06q40_001_mask.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "03_optica/intermediate/phase_masks/m06q80_001_mask.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "03_optica/intermediate/phase_masks/m07q01_001_mask.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "03_optica/intermediate/phase_masks/m07q05_001_mask.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "03_optica/intermediate/phase_masks/m07q20_001_mask.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "03_optica/intermediate/phase_masks/m07q40_001_mask.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "03_optica/intermediate/phase_masks/m07q80_001_mask.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "03_optica/intermediate/features/panorama_liquid_reference.json",
+      "kind": "json",
+      "passed": true
+    },
+    {
+      "path": "03_optica/results/validation/hull_intersections.json",
+      "kind": "json",
+      "passed": true
+    },
+    {
+      "path": "03_optica/resumo_tcc.json",
+      "kind": "json",
+      "passed": true
+    },
+    {
+      "path": "03_optica/resumo_tcc.json",
+      "kind": "json",
+      "passed": true
+    },
+    {
+      "path": "04_analise_simplificada/dados/comparacao_optica_pares_ilustrados.csv",
+      "kind": "csv",
+      "passed": true
+    },
+    {
+      "path": "04_analise_simplificada/dados/matriz_pearson_todos.csv",
+      "kind": "csv",
+      "passed": true
+    },
+    {
+      "path": "04_analise_simplificada/dados/medias_por_ensaio.csv",
+      "kind": "csv",
+      "passed": true
+    },
+    {
+      "path": "04_analise_simplificada/dados/optica_por_ensaio.csv",
+      "kind": "csv",
+      "passed": true
+    },
+    {
+      "path": "04_analise_simplificada/dados/pares_pearson_wco.csv",
+      "kind": "csv",
+      "passed": true
+    },
+    {
+      "path": "04_analise_simplificada/dados/perfis_espectrais.csv",
+      "kind": "csv",
+      "passed": true
+    },
+    {
+      "path": "04_analise_simplificada/dados/resumo_intra_inter.csv",
+      "kind": "csv",
+      "passed": true
+    },
+    {
+      "path": "04_analise_simplificada/dados/resumo_por_padrao.csv",
+      "kind": "csv",
+      "passed": true
+    },
+    {
+      "path": "04_analise_simplificada/intermediario/descritores.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "04_analise_simplificada/intermediario/pares/m03q20_001__m04q80_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "04_analise_simplificada/intermediario/pares/m04q01_001__m05q05_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "04_analise_simplificada/intermediario/pares/m04q01_001__m05q80_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "04_analise_simplificada/intermediario/pares/m05q01_001__m06q01_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "04_analise_simplificada/intermediario/pares/m05q40_001__m06q20_001.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "04_analise_simplificada/dados/selecao_intrapadrao.json",
+      "kind": "json",
+      "passed": true
+    },
+    {
+      "path": "04_analise_simplificada/dados/pares_ilustrados.json",
+      "kind": "json",
+      "passed": true
+    },
+    {
+      "path": "04_analise_simplificada/dados/perfis_exibidos.json",
+      "kind": "json",
+      "passed": true
+    },
+    {
+      "path": "04_analise_simplificada/resumo_tcc.json",
+      "kind": "json",
+      "passed": true
+    },
+    {
+      "path": "04_analise_simplificada/figuras/churn_m05q40_001_m06q20_001.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "04_analise_simplificada/figuras/correlacoes_dentro_entre_pearson.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "04_analise_simplificada/figuras/matriz_pearson_todos.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "04_analise_simplificada/figuras/perfis_espectrais_pearson.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "04_analise_simplificada/figuras/plug_m05q01_001_m06q01_001.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "04_analise_simplificada/figuras/slug_m04q01_001_m05q05_001.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "04_analise_simplificada/figuras/slug_wavy_annular_m04q01_001_m05q80_001.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "04_analise_simplificada/figuras/wavy_annular_m03q20_001_m04q80_001.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "03_optica/figuras/panorama_phase_masks.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "03_optica/figuras/void_fraction_vs_flip_rate.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "05_figuras/panoramas/plug_m05q01_001.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "05_figuras/panoramas/slug_m04q01_001.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "05_figuras/panoramas/churn_m04q20_001.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "05_figuras/panoramas/wavy_annular_m06q40_001.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "05_figuras/metodologia/perfis_wavelet.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "05_figuras/metodologia/perfis_wavelet_dados.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "05_figuras/metodologia/exemplo_mascara.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "05_figuras/metodologia/exemplo_mascara_dados.npz",
+      "kind": "npz",
+      "passed": true
+    },
+    {
+      "path": "05_figuras/metodologia/medidas_opticas.png",
+      "kind": "pixels",
+      "passed": true
+    },
+    {
+      "path": "05_figuras/metodologia/medidas_opticas_dados.npz",
+      "kind": "npz",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "excluded": [
+    "Pearson histórico em resíduos e comparações contra execuções anteriores.",
+    "Paths, hashes de proveniência, versões de bibliotecas, tempos e metadados de execução. Campos científicos comparados são explicitamente enumerados nos seletores JSON.",
+    "Fluxograma: alteração autorizada do rótulo para justaposição direta das tiras. Não se compara seu pixel hash.",
+    "PDFs: metadados de criação variam; verifica-se a imagem PNG correspondente."
+  ]
+}

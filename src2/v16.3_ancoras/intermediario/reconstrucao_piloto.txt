@@ -1,0 +1,72 @@
+RECONSTRUÇÃO DO PILOTO — EXECUÇÃO ATUAL
+Data UTC: 2026-10-25T18:41:11.817180+00:00
+
+Status: PASS. Método mantido: correlação com divisor N, Morlet omega0=6, K=1.
+
+LIMPEZA
+597 arquivos gerados removidos de 01_ancoras, 02_wavelets e intermediario.
+Cálculos, caches, imagens, comparações alternativas e históricos anteriores
+foram apagados. Os scripts, panoramas e anotações usados como entradas foram
+preservados. Todos os caches e mapas atuais foram criados após a limpeza.
+
+ESCOPO CALCULADO
+Oito ensaios, oito âncoras, quatro pares do mesmo padrão e doze PNGs finais.
+Nenhum par inter padrão e nenhum ensaio fora do piloto foram calculados.
+
+plug          m05q01_001   coluna  2458 px  janela 2048 px
+plug          m06q01_001   coluna  5168 px  janela 2048 px
+slug          m04q01_001   coluna  1112 px  janela 2048 px
+slug          m05q05_001   coluna  4371 px  janela 2048 px
+churn         m03q05_001   coluna  2256 px  janela 4096 px
+churn         m04q10_001   coluna  2128 px  janela 4096 px
+wavy annular  m03q10_001   coluna  3119 px  janela 4096 px
+wavy annular  m03q20_001   coluna 18525 px  janela 4096 px
+
+PRÉ-COMPUTAÇÃO
+12 contextos individuais distintos, 16 perfis nomeados e duas grades.
+Tamanho: 294.8 MiB.
+Perfil nativo: 2048 px em plug/slug; 4096 px em churn/wavy annular.
+Perfil comparavel: 2048 px e 200 escalas de 50 a 1024 px em todos os ensaios.
+Os centros escolhidos no contexto nativo são preservados entre os perfis.
+
+Guardados: recortes originais, sinais preparados, autocorrelações, CWTs
+individuais/WPS, potência média, escalas, lags, suporte e núcleos Morlet.
+A identidade individual é independente do parceiro e do tamanho do lote.
+Os mesmos arquivos podem ser usados nas comparações intra e inter futuras,
+desde que fonte, centro, recorte, preparo e implementação sejam mantidos.
+
+A etapa completa poderá acrescentar os 17 ensaios restantes sem recalcular
+os dados individuais compatíveis já existentes. Para comparar quantitativamente
+intra e inter, usar o perfil comparavel em ambas. WCS e WCO dos pares futuros
+serão calculadas somente quando essa expansão for solicitada.
+
+CORREÇÕES APLICADAS
+Diagnósticos recalculados por janela, incluindo costuras, vizinhos e seleção
+repetida nas suavizações alternativas. Configurações não suportadas e janelas
+inválidas são rejeitadas explicitamente. Fonte, ensaio, centro, ROI, janela e
+grade são conferidos contra o congelamento, não apenas contra hashes isolados.
+Modificações nos arquivos após a primeira leitura invalidam a leitura em memória.
+
+VERIFICAÇÃO
+Conferência independente de todas as células dos 12 espectros individuais e
+dos quatro pares, usando regressão, correlação direta e Morlet temporal.
+Maior diferença individual: 1.631e-14.
+Maior diferença na WCO: 1.021e-14.
+Diferenças compatíveis com arredondamento de ponto flutuante.
+
+Foram rejeitados: estimador/omega0/K incompatíveis, janela fracionária/ímpar,
+vínculo de outro ensaio, contexto adulterado, grades de tamanhos distintos e
+array modificado depois da primeira leitura. A reutilização dos arquivos
+válidos foi testada sem reescrever ou recalcular os espectros individuais.
+
+Compatibilidade conferida somente por metadados: quatro pares intra e 24 inter
+possíveis entre os oito ensaios. Essa conferência não calculou WCS/WCO inter.
+
+As imagens foram conferidas para inserção com 16 cm de largura: altura máxima
+22.96 cm e fonte mínima 8.19 pt. Somente PNG.
+03_conclusoes permanece vazia.
+
+A conferência é computacional; coerência alta não certifica identidade física
+nem classificação de padrões. Alertas ópticos permanecem registrados por perfil.
+Instruções e reprodução: ../scripts/README.txt.
+Evidência detalhada: verificacao_reconstrucao/verificacao.json.

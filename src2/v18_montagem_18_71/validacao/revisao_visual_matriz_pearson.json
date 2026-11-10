@@ -1,0 +1,94 @@
+{
+  "data_utc": "2026-10-30T23:50:32.258959+00:00",
+  "escopo": "Inclusão de legenda dos cinco grupos, faixas coloridas e letras nos dois eixos; coeficientes e ordenação preservados.",
+  "script": {
+    "arquivo": "package/04_analise_simplificada/scripts/analisar.py",
+    "sha256": "9a499f42b0d3997bb8634091d3a272b61223e22eb9c42b79b27b56a4b31a609f"
+  },
+  "funcao": "draw_pearson_matrix",
+  "entrada": {
+    "arquivo": "04_analise_simplificada/intermediario/descritores.npz",
+    "sha256": "b0393e3838f65e0b0f7134a69f90c546882ebcd5e81b87f2f29e392e776cc63c"
+  },
+  "agrupamento": {
+    "arquivo": "02_wavelet/intermediario/aquisicoes.json",
+    "sha256": "c4ddbc8605b8953ca8ee08d10af836876f4a4c8d1c0b03e99382811858669bd2"
+  },
+  "imagem_anterior_sha256": "9097298a12dfcb128c6e2c46ca5544691b5e6fc7a299ead6896a93003c3dccc6",
+  "imagem_atual_sha256": "1b7fedfcda9f58f2b2e9e51e0f12f698cafd8a2509a31d0828aeb97ec3fd8d60",
+  "grupos": [
+    {
+      "letra": "A",
+      "padrao": "churn",
+      "legenda": "Churn",
+      "posicoes_1_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "letra": "B",
+      "padrao": "wavy annular",
+      "legenda": "Anular ondulado",
+      "posicoes_1_based": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "letra": "C",
+      "padrao": "plug",
+      "legenda": "Plug",
+      "posicoes_1_based": [
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "letra": "D",
+      "padrao": "slug",
+      "legenda": "Slug",
+      "posicoes_1_based": [
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "letra": "E",
+      "padrao": "dispersed bubble",
+      "legenda": "Bolhas dispersas",
+      "posicoes_1_based": [
+        26
+      ]
+    }
+  ],
+  "arquivos_dados_verificados": 543,
+  "dados_preservados_byte_a_byte": true,
+  "referencia_alterada": "Somente os pixels esperados da matriz; os outros 185 verificadores e referencia_arrays.npz foram preservados.",
+  "referencia_anterior_sha256": "431d0da3a628588963a3688036c357f42c1387be5d7652aa0ae573347f0e550f",
+  "referencia_atual_sha256": "4f300ef035d1a6bb83055fcce7985f0df65ad8eb1fa6106be3a294d1586c6fdb",
+  "manifesto_execucao_original_preservado": true,
+  "comparacao_completo": {
+    "status": "PASS",
+    "checked_files": 186,
+    "failures": []
+  },
+  "comparacao_completo_sha256": "a7030b60e172b0ddf70c20f2c56ec6ed254d3320eb45b05714249b6fc8e25d1b"
+}

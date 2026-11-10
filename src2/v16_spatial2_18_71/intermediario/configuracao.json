@@ -1,0 +1,28 @@
+{
+  "ensaios": 26,
+  "auditados": 31,
+  "pares": 325,
+  "intra": 87,
+  "inter": 238,
+  "linhas_inclusivas": [
+    18,
+    71
+  ],
+  "wavelengths_px": [
+    50,
+    3000
+  ],
+  "escalas": 200,
+  "autocorrelacao": "enviesada, divisor N",
+  "omega0": 6,
+  "amostragem_px": 1,
+  "selecao_par": "prefixo de comprimento min(Na,Nb); preparo após o corte",
+  "dominio": "todos os lags, sem COI ou máscara geométrica",
+  "wps": "abs(CWT(Rxx))",
+  "wcs": "CWT(Rxy)",
+  "wco": "abs(WCS)^2 / (WPSa(0)*WPSb(0))",
+  "potencia_media": "média da WPS em todos os lags",
+  "escore_principal": "máximos da WCO por escala, ponderados pela média geométrica das WPS no lag zero; piso 5%",
+  "pearson": "resíduos de log(WPS(0)+1e-12) após ajuste contra 1 e log(lambda), panoramas completos",
+  "core_sha256": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc"
+}

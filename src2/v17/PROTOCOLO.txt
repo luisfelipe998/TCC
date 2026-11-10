@@ -1,0 +1,56 @@
+Auditoria v17 — 27 de outubro de 2026
+
+Escopo autorizado
+Auditoria paralela e independente de estatistica8, v14.1_new_voidfraction e
+v16_spatial2_18_71, comparada ao TCC atual. Nenhuma alteração nas fontes, no TCC
+ou em outras análises. Findings em findings/; números, tabelas e figuras em
+resultados/; scripts em scripts/. Sem treinamento de modelos ou classificadores.
+
+Procedimento
+1. Três revisores distintos examinam as pastas antes de consultar os demais
+   relatórios. O coordenador examina as afirmações e comparações entre versões.
+2. Cada resultado adversarial deve ter evidência, impacto e tentativa de
+   refutação. Limitação reconhecida, divergência de escopo e erro são categorias
+   diferentes. Uma rotina que reproduz o código não valida a medição física.
+3. Leituras de arquivos ativos prevalecem sobre _OLD e history. Estado inicial
+   preservado em resultados/fontes_antes.json, inclusive alterações do usuário.
+4. Após as avaliações independentes, os revisores confrontam as conclusões.
+
+Exploração adicional do coordenador definida antes de calcular seus resultados
+Unidade: aquisição. Janelas dependentes não aumentam o tamanho da amostra.
+Usar as 25 aquisições das quatro classes de estatistica8, mantendo m03q40.
+Três janelas de 2048 px: prefixo, centro e sufixo, sem rótulos na escolha.
+Aplicar a mesma média radial [18:72], inversão, detrend linear e desvio padrão
+populacional. Manter os recortes originais de âncora apenas como comparação.
+
+Comparar duas bandas fixas, 50–512 e 50–1024 px, em 200 pontos logarítmicos:
+  a) módulo da Morlet sobre autocorrelação enviesada, no atraso zero;
+  b) reponderação aproximada de (a) por 1/sqrt(lambda), como sensibilidade
+     à medida espectral, sem atribuir energia física de fase;
+  c) PSD de Welch (Hann, segmentos 1024, sobreposição 512, fs=1 px^-1,
+     nfft=8192), convertida para densidade em log(lambda) por f*PSD(f).
+O zero padding interpola a grade; não aumenta resolução espectral.
+
+Descritores e comparações sem classificação: largura interquartil em log(lambda),
+distâncias Hellinger e Wasserstein entre distribuições e Pearson entre resíduos
+logarítmicos. Silhueta macro, por classe e por aquisição; contraste balanceado
+entre distâncias interclasse e intraclasse. Escopos: quatro classes,
+churn/anular e plug/slug. Relatar todas as variantes, inclusive negativas;
+nenhuma seleção de janela pelo rótulo, ajuste de pesos ou estimativa de acurácia.
+Sem valores-p para essa triagem: escolha de descritores informada pelo histórico.
+
+Experimento de composição do TCC: recalcular contrastes Pearson e WCO com 26
+aquisições, sem a única bolha dispersa, sem m03q40 e sem ambos. Quantificar a
+contribuição dos grupos, sem escolher exclusões para melhorar o resultado.
+
+Saídas não constituem validação em novas aquisições. Recomendações devem
+priorizar repetição experimental, controle óptico/operacional e descritores
+com interpretação definida. Não executar caminho de aprendizado de máquina.
+
+Adendo após observar a triagem inicial
+A largura da mistura das três distribuições Welch apresentou contraste relevante
+em churn/anular. Para tentar refutar a interpretação, acrescentaram-se para TODAS
+as bandas, métodos e janelas controles descritivos da largura por m, por q e por
+retirada de uma aquisição. Relatar a probabilidade empírica de largura maior em
+churn e a silhueta, sem valores-p ou interpretação preditiva. A motivação deste
+adendo é posterior aos resultados e não constitui pré-registro confirmatório.

@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "date_utc": "2026-10-31T02:09:08.082139+00:00",
+  "scope": "Diagramação do TCC até o capítulo 4. Nenhum recálculo científico.",
+  "pdf": {
+    "path": "TCC/dist/main.pdf",
+    "sha256": "ea9ddc8b287eaf08cad8f7455c96d39a3a915d37817da0ac4e583b196986db53",
+    "pages": 75
+  },
+  "content_report": {
+    "path": "../../../auditorias/formatacao-ate-cap4/verificacao-conteudo.json",
+    "sha256": "9c8ae8c022e2783d5c561dcdf7f5fb68621d4352c078aec3cc7eeed85d8ccae9"
+  },
+  "margin_report": {
+    "path": "../../../auditorias/formatacao-ate-cap4/verificacao-margens.json",
+    "sha256": "a19a5902f8c90dc88a0f237d36b8db5be6e5933d4540ef91c1085a11b67ac8a5"
+  },
+  "citations_report": {
+    "path": "../../../auditorias/resumos-pearson-coerencia/verificacao-citacoes.json",
+    "sha256": "8c0e8dbd786b293a0bf128de9936f0384c605017fa1a128d9c8c288af1f8a22d"
+  },
+  "prior_analysis_files_preserved": 558,
+  "stage06_files_preserved": 336,
+  "data_or_code_changed": false,
+  "methodology_sync_sha256": "8ae342757ff3fb0592315384038d265facbe08e4e9127211bcb6aeebf8092721"
+}

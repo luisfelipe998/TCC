@@ -1,0 +1,640 @@
+{
+  "source_run": "03_optica",
+  "panorama_manifest": {
+    "file": "01_panoramas/manifesto.json",
+    "sha256": "31f3a19766181ab6a83c65dab09d08d94ca326811041deace7c2a81c110a11b1"
+  },
+  "generator": {
+    "file": "package/scripts/gerar_figuras_opticas.py",
+    "sha256": "08f9824373340312b8ec665f2390faf2721ddd11bf8c053c2b88a72d1847d328"
+  },
+  "source_rendering_scripts": [
+    {
+      "file": "package/scripts/gerar_figuras_opticas.py",
+      "sha256": "08f9824373340312b8ec665f2390faf2721ddd11bf8c053c2b88a72d1847d328"
+    },
+    {
+      "file": "package/scripts/optical_plot.py",
+      "sha256": "fa0dce0a79509d7762cbd874b8138e31a82497b40864f0f82ec239159f8cadf6"
+    }
+  ],
+  "geometry": {
+    "first_row": 18,
+    "last_row_inclusive": 71,
+    "python_slice": "18:72",
+    "row_count": 54,
+    "diameter_px": 54
+  },
+  "rendering": {
+    "matplotlib": "3.10.7",
+    "numpy": "2.3.4",
+    "dpi": 180,
+    "segmentation_performed_by_this_generator": false,
+    "panel_rows": "18:72",
+    "fixed_colors_and_panel_runs": true,
+    "vertical_axis_unit": "transitions per 1000 neighboring pixel pairs",
+    "axis_label_precision_correction": "pixels replaced by neighboring pixel pairs"
+  },
+  "verification": {
+    "new_input_hashes_match_source_manifest": true,
+    "new_csv_counts_and_alpha_match_saved_masks": true,
+    "saturation_recomputed_on_rows_18_72": true,
+    "hulls_match_source_validation": true,
+    "centroids_match_source_summary": true,
+    "acquisitions": 26,
+    "displayed_acquisitions": 25,
+    "displayed_pattern_counts": {
+      "churn": 10,
+      "wavy annular": 8,
+      "slug": 3,
+      "plug": 3,
+      "dispersed bubbles": 1
+    }
+  },
+  "input_tables": [
+    {
+      "file": "03_optica/results/void_fraction/panorama_void_per_run.csv",
+      "sha256": "2c9bcb3d62f9fed784aa19952109275719b4bf8e597705ba5fb54dd96c27fdb6"
+    },
+    {
+      "file": "03_optica/results/flip_rate/phase_mask_flip_per_run.csv",
+      "sha256": "18ec6535ba294b88ad67522a35fec96e9e54c37e4689c7322d4e1e0783ad0793"
+    },
+    {
+      "file": "03_optica/results/void_fraction/void_fraction_flip_plot_data.csv",
+      "sha256": "d9dcb95c1f63dcfb31e66e7735a1fef868c46b886fb0759cd0310521ef5826c1"
+    }
+  ],
+  "mask_checks": [
+    {
+      "run": "m03q05_001",
+      "mask": {
+        "file": "03_optica/intermediate/phase_masks/m03q05_001_mask.png",
+        "sha256": "9fb3b6146663747c66a0dc59e5d90783b53f960e0379839bd88ee8ead51cb976"
+      },
+      "width": 9237,
+      "alpha_from_mask": 0.9414353216242959,
+      "saturation_rows_18_72": 0.09108697308329224,
+      "flip_count_from_mask": 1626,
+      "neighbor_comparisons": 498744,
+      "flip_rate_from_mask": 0.00326018959626582
+    },
+    {
+      "run": "m03q10_001",
+      "mask": {
+        "file": "03_optica/intermediate/phase_masks/m03q10_001_mask.png",
+        "sha256": "41e8cef1553ceb28ad422592fc07208292dcdcbff3a80d0c6f61aa36d75088bd"
+      },
+      "width": 13789,
+      "alpha_from_mask": 0.989187570339213,
+      "saturation_rows_18_72": 0.09074060644152747,
+      "flip_count_from_mask": 472,
+      "neighbor_comparisons": 744552,
+      "flip_rate_from_mask": 0.000633938260860222
+    },
+    {
+      "run": "m03q20_001",
+      "mask": {
+        "file": "03_optica/intermediate/phase_masks/m03q20_001_mask.png",
+        "sha256": "7a343c7cea0f6662daf2f47c65037da128bcd0db55fc55ee34f988a8a7a0769b"
+      },
+      "width": 22831,
+      "alpha_from_mask": 0.9987043823348263,
+      "saturation_rows_18_72": 0.10432858507844273,
+      "flip_count_from_mask": 142,
+      "neighbor_comparisons": 1232820,
+      "flip_rate_from_mask": 0.00011518307619928294
+    },
+    {
+      "run": "m03q40_001",
+      "mask": {
+        "file": "03_optica/intermediate/phase_masks/m03q40_001_mask.png",
+        "sha256": "2f249939d063eeea932b6905165db783c3157ed52bda5e743e578651c823b7d1"
+      },
+      "width": 19204,
+      "alpha_from_mask": 0.9930447696224695,
+      "saturation_rows_18_72": 0.2523316901571432,
+      "flip_count_from_mask": 722,
+      "neighbor_comparisons": 1036962,
+      "flip_rate_from_mask": 0.000696264665436149
+    },
+    {
+      "run": "m04q01_001",
+      "mask": {
+        "file": "03_optica/intermediate/phase_masks/m04q01_001_mask.png",
+        "sha256": "87af349ec9145a43c71db788ad57a11d911cd8908dde1f7c85334ffff7db90f9"
+      },
+      "width": 5071,
+      "alpha_from_mask": 0.6794331872864853,
+      "saturation_rows_18_72": 0.0,
+      "flip_count_from_mask": 2506,
+      "neighbor_comparisons": 273780,
+      "flip_rate_from_mask": 0.009153334794360436
+    },
+    {
+      "run": "m04q10_001",
+      "mask": {
+        "file": "03_optica/intermediate/phase_masks/m04q10_001_mask.png",
+        "sha256": "a48011969228a84a63a2a5b0db6b0918098ce407afa860cb09d36e49a2994090"
+      },
+      "width": 8894,
+      "alpha_from_mask": 0.8613932791114245,
+      "saturation_rows_18_72": 0.030925967568648027,
+      "flip_count_from_mask": 2562,
+      "neighbor_comparisons": 480222,
+      "flip_rate_from_mask": 0.005335032547446806
+    },
+    {
+      "run": "m04q20_001",
+      "mask": {
+        "file": "03_optica/intermediate/phase_masks/m04q20_001_mask.png",
+        "sha256": "088a070b7e332e3c59e79a8603df0e45442952039293e416a9993af073ffaa08"
+      },
+      "width": 9324,
+      "alpha_from_mask": 0.8631188875530439,
+      "saturation_rows_18_72": 0.08683485072373961,
+      "flip_count_from_mask": 2753,
+      "neighbor_comparisons": 503442,
+      "flip_rate_from_mask": 0.005468355838408397
+    },
+    {
+      "run": "m04q40_001",
+      "mask": {
+        "file": "03_optica/intermediate/phase_masks/m04q40_001_mask.png",
+        "sha256": "7ae1adb2d307c7bb853aba356f0def14545628562e72a28ce2bbf43d83fc36a3"
+      },
+      "width": 14477,
+      "alpha_from_mask": 0.9597869540569199,
+      "saturation_rows_18_72": 0.061034233100268884,
+      "flip_count_from_mask": 1332,
+      "neighbor_comparisons": 781704,
+      "flip_rate_from_mask": 0.001703969789076172
+    },
+    {
+      "run": "m04q80_001",
+      "mask": {
+        "file": "03_optica/intermediate/phase_masks/m04q80_001_mask.png",
+        "sha256": "6d07e9706d62c5e1b5125aba9e9f098373cb0e2364fda4997d9698a9c79b3053"
+      },
+      "width": 22533,
+      "alpha_from_mask": 0.9970644639652728,
+      "saturation_rows_18_72": 0.05261583422502963,
+      "flip_count_from_mask": 256,
+      "neighbor_comparisons": 1216728,
+      "flip_rate_from_mask": 0.00021040035242059031
+    },
+    {
+      "run": "m05q01_001",
+      "mask": {
+        "file": "03_optica/intermediate/phase_masks/m05q01_001_mask.png",
+        "sha256": "553d9f2f24e72a7e7332ca2e31a23cda491896f09e9cf08d61c32ea032b5d995"
+      },
+      "width": 5914,
+      "alpha_from_mask": 0.6117814996198367,
+      "saturation_rows_18_72": 0.0,
+      "flip_count_from_mask": 2078,
+      "neighbor_comparisons": 319302,
+      "flip_rate_from_mask": 0.006507945456025957
+    },
+    {
+      "run": "m05q05_001",
+      "mask": {
+        "file": "03_optica/intermediate/phase_masks/m05q05_001_mask.png",
+        "sha256": "b02c938b98117408d329c57a7bde6f5fb5a5ea2a2ab481479ebe68ec4b8ac933"
+      },
+      "width": 6295,
+      "alpha_from_mask": 0.5040994823552998,
+      "saturation_rows_18_72": 1.7650692789691997e-05,
+      "flip_count_from_mask": 2961,
+      "neighbor_comparisons": 339876,
+      "flip_rate_from_mask": 0.008712000847367864
+    },
+    {
+      "run": "m05q10_001",
+      "mask": {
+        "file": "03_optica/intermediate/phase_masks/m05q10_001_mask.png",
+        "sha256": "1083b6602b19917b0f2b01ec929e58cdf886f8ad3e348a09819181006ba56b6f"
+      },
+      "width": 7058,
+      "alpha_from_mask": 0.7304025804610904,
+      "saturation_rows_18_72": 0.0,
+      "flip_count_from_mask": 4718,
+      "neighbor_comparisons": 381078,
+      "flip_rate_from_mask": 0.012380667474900152
+    },
+    {
+      "run": "m05q20_001",
+      "mask": {
+        "file": "03_optica/intermediate/phase_masks/m05q20_001_mask.png",
+        "sha256": "cb7d45efb7ba95469886085ee13e84594d8b45c2852e030beb91b25019e869ca"
+      },
+      "width": 7411,
+      "alpha_from_mask": 0.7748237937933435,
+      "saturation_rows_18_72": 0.0,
+      "flip_count_from_mask": 4570,
+      "neighbor_comparisons": 400140,
+      "flip_rate_from_mask": 0.011421002649072825
+    },
+    {
+      "run": "m05q40_001",
+      "mask": {
+        "file": "03_optica/intermediate/phase_masks/m05q40_001_mask.png",
+        "sha256": "68bd1a25b52c4774f590b24872e0f28c6acb939fb8112eca5bb53842d04058fe"
+      },
+      "width": 9873,
+      "alpha_from_mask": 0.8918913549124637,
+      "saturation_rows_18_72": 0.0,
+      "flip_count_from_mask": 3895,
+      "neighbor_comparisons": 533088,
+      "flip_rate_from_mask": 0.0073064859835524345
+    },
+    {
+      "run": "m05q80_001",
+      "mask": {
+        "file": "03_optica/intermediate/phase_masks/m05q80_001_mask.png",
+        "sha256": "4bca4f930d08efd7fbe1b31873ab2e6977167f8ceafde25150bedd6de3b8cbd8"
+      },
+      "width": 17500,
+      "alpha_from_mask": 0.9708008426415834,
+      "saturation_rows_18_72": 0.0,
+      "flip_count_from_mask": 2510,
+      "neighbor_comparisons": 944946,
+      "flip_rate_from_mask": 0.002656236441024143
+    },
+    {
+      "run": "m06q01_001",
+      "mask": {
+        "file": "03_optica/intermediate/phase_masks/m06q01_001_mask.png",
+        "sha256": "38a6d4c34573a3cd9dbb813e5637378f88cbc5e73a0a8b8ccb4c4f38db4e22da"
+      },
+      "width": 7786,
+      "alpha_from_mask": 0.5701696037733656,
+      "saturation_rows_18_72": 1.1892190160877549e-05,
+      "flip_count_from_mask": 3881,
+      "neighbor_comparisons": 420390,
+      "flip_rate_from_mask": 0.00923190370846119
+    },
+    {
+      "run": "m06q05_001",
+      "mask": {
+        "file": "03_optica/intermediate/phase_masks/m06q05_001_mask.png",
+        "sha256": "4028c447dd501955a9cc7ee9e08c370703625f6d705e5931d399cc4223309387"
+      },
+      "width": 7747,
+      "alpha_from_mask": 0.5712501569260936,
+      "saturation_rows_18_72": 0.0,
+      "flip_count_from_mask": 5280,
+      "neighbor_comparisons": 418284,
+      "flip_rate_from_mask": 0.012623002553289154
+    },
+    {
+      "run": "m06q10_001",
+      "mask": {
+        "file": "03_optica/intermediate/phase_masks/m06q10_001_mask.png",
+        "sha256": "8605a1ea71a2233421faf6b09b6fccc756b486ca2930da907e23013943b2974a"
+      },
+      "width": 7615,
+      "alpha_from_mask": 0.6537981404472978,
+      "saturation_rows_18_72": 3.6477712117895966e-05,
+      "flip_count_from_mask": 6559,
+      "neighbor_comparisons": 411156,
+      "flip_rate_from_mask": 0.015952582474778428
+    },
+    {
+      "run": "m06q20_001",
+      "mask": {
+        "file": "03_optica/intermediate/phase_masks/m06q20_001_mask.png",
+        "sha256": "a7a52de15956dba1b40abb01cb5e6194f015c6383d094c76f7a691b26d210723"
+      },
+      "width": 10025,
+      "alpha_from_mask": 0.7871086344495415,
+      "saturation_rows_18_72": 0.0,
+      "flip_count_from_mask": 6722,
+      "neighbor_comparisons": 541296,
+      "flip_rate_from_mask": 0.012418344122254737
+    },
+    {
+      "run": "m06q40_001",
+      "mask": {
+        "file": "03_optica/intermediate/phase_masks/m06q40_001_mask.png",
+        "sha256": "8d266967cf8c2eb595862856abcbf7566529a3e16e498f0307fe5f35d17f948f"
+      },
+      "width": 14722,
+      "alpha_from_mask": 0.8831342015132211,
+      "saturation_rows_18_72": 0.0,
+      "flip_count_from_mask": 6364,
+      "neighbor_comparisons": 794934,
+      "flip_rate_from_mask": 0.00800569607036559
+    },
+    {
+      "run": "m06q80_001",
+      "mask": {
+        "file": "03_optica/intermediate/phase_masks/m06q80_001_mask.png",
+        "sha256": "d947653ef37e24740f2e5a1cbf35fd19de4101dd6c7ecf9f6746f68fdd5d926f"
+      },
+      "width": 18664,
+      "alpha_from_mask": 0.9378367985549964,
+      "saturation_rows_18_72": 0.0,
+      "flip_count_from_mask": 4806,
+      "neighbor_comparisons": 1007802,
+      "flip_rate_from_mask": 0.004768793870224508
+    },
+    {
+      "run": "m07q01_001",
+      "mask": {
+        "file": "03_optica/intermediate/phase_masks/m07q01_001_mask.png",
+        "sha256": "e3b36accb2d22efa79529ea04589342002826888e20a6147ba5775f0b1c1009f"
+      },
+      "width": 3094,
+      "alpha_from_mask": 0.002250251160926542,
+      "saturation_rows_18_72": 0.0,
+      "flip_count_from_mask": 428,
+      "neighbor_comparisons": 167022,
+      "flip_rate_from_mask": 0.002562536671815689
+    },
+    {
+      "run": "m07q05_001",
+      "mask": {
+        "file": "03_optica/intermediate/phase_masks/m07q05_001_mask.png",
+        "sha256": "d39cfb32db49e264e023041c41c4df86ec1976f7b905161a4d2e5106b2a1c021"
+      },
+      "width": 7337,
+      "alpha_from_mask": 0.44668205553040913,
+      "saturation_rows_18_72": 0.0,
+      "flip_count_from_mask": 3618,
+      "neighbor_comparisons": 396144,
+      "flip_rate_from_mask": 0.009133042529989095
+    },
+    {
+      "run": "m07q20_001",
+      "mask": {
+        "file": "03_optica/intermediate/phase_masks/m07q20_001_mask.png",
+        "sha256": "3f8593ff25a77d19b7f9b3c3811353afb6c9b9575c9ddfc92d7c14053ffe7e53"
+      },
+      "width": 8289,
+      "alpha_from_mask": 0.6228460099085158,
+      "saturation_rows_18_72": 0.0,
+      "flip_count_from_mask": 8017,
+      "neighbor_comparisons": 447552,
+      "flip_rate_from_mask": 0.01791300228800229
+    },
+    {
+      "run": "m07q40_001",
+      "mask": {
+        "file": "03_optica/intermediate/phase_masks/m07q40_001_mask.png",
+        "sha256": "05c4128ed36a634daaf418ed35cc8d28ed61364bbcc0297eb6ac1051353bc1c2"
+      },
+      "width": 10313,
+      "alpha_from_mask": 0.7661972111058306,
+      "saturation_rows_18_72": 0.0,
+      "flip_count_from_mask": 7874,
+      "neighbor_comparisons": 556848,
+      "flip_rate_from_mask": 0.014140303996781886
+    },
+    {
+      "run": "m07q80_001",
+      "mask": {
+        "file": "03_optica/intermediate/phase_masks/m07q80_001_mask.png",
+        "sha256": "b252093e3883d1019fd59715c844dbae99d44822b3c084bd8e72b77a586f26d4"
+      },
+      "width": 16656,
+      "alpha_from_mask": 0.8839366865575862,
+      "saturation_rows_18_72": 0.0,
+      "flip_count_from_mask": 6675,
+      "neighbor_comparisons": 899370,
+      "flip_rate_from_mask": 0.007421861970045698
+    }
+  ],
+  "figures": [
+    {
+      "file": "03_optica/figuras/panorama_phase_masks.png",
+      "sha256": "fea00cecade998c649155965f85fc5dca33e094257199b1f09edbb68d6bc8dc3",
+      "inputs": [
+        {
+          "run": "m07q01_001",
+          "panorama": {
+            "file": "01_panoramas/optica/m07q01_001/panorama.png",
+            "sha256": "fccc63b4ed6e37031ddb103ce76a50e62eec73a3fd3df69d9ff620c9b8a927d4"
+          },
+          "mask": {
+            "file": "03_optica/intermediate/phase_masks/m07q01_001_mask.png",
+            "sha256": "e3b36accb2d22efa79529ea04589342002826888e20a6147ba5775f0b1c1009f"
+          }
+        },
+        {
+          "run": "m06q01_001",
+          "panorama": {
+            "file": "01_panoramas/optica/m06q01_001/panorama.png",
+            "sha256": "72956875541a66e19957920e571eb1cfe65502143cc1f26be71daf7ba635d74d"
+          },
+          "mask": {
+            "file": "03_optica/intermediate/phase_masks/m06q01_001_mask.png",
+            "sha256": "38a6d4c34573a3cd9dbb813e5637378f88cbc5e73a0a8b8ccb4c4f38db4e22da"
+          }
+        },
+        {
+          "run": "m06q05_001",
+          "panorama": {
+            "file": "01_panoramas/optica/m06q05_001/panorama.png",
+            "sha256": "7cd66ee797268bf90ddee40cf444e4a972c61901720c261c2cdec3c7737f690c"
+          },
+          "mask": {
+            "file": "03_optica/intermediate/phase_masks/m06q05_001_mask.png",
+            "sha256": "4028c447dd501955a9cc7ee9e08c370703625f6d705e5931d399cc4223309387"
+          }
+        },
+        {
+          "run": "m06q20_001",
+          "panorama": {
+            "file": "01_panoramas/optica/m06q20_001/panorama.png",
+            "sha256": "2d850110492e72778f3e4a84d56a31ecfade820b237022f00246ee9eee24ada9"
+          },
+          "mask": {
+            "file": "03_optica/intermediate/phase_masks/m06q20_001_mask.png",
+            "sha256": "a7a52de15956dba1b40abb01cb5e6194f015c6383d094c76f7a691b26d210723"
+          }
+        },
+        {
+          "run": "m06q80_001",
+          "panorama": {
+            "file": "01_panoramas/optica/m06q80_001/panorama.png",
+            "sha256": "ce1bbdb718678a8744f310311141031a0b492b0ec28e92fdfb400ef16a9a5407"
+          },
+          "mask": {
+            "file": "03_optica/intermediate/phase_masks/m06q80_001_mask.png",
+            "sha256": "d947653ef37e24740f2e5a1cbf35fd19de4101dd6c7ecf9f6746f68fdd5d926f"
+          }
+        }
+      ],
+      "size_pixels": [
+        2700,
+        1800
+      ],
+      "first_columns": 2500,
+      "rows_start_stop_exclusive": [
+        18,
+        72
+      ],
+      "mask_opacity": 0.42
+    },
+    {
+      "file": "03_optica/figuras/void_fraction_vs_flip_rate.png",
+      "sha256": "190248b956f4c7f79e8f583c6029d79c66b0bebed391cbdec6cb67e969f13f1e",
+      "svg": {
+        "file": "03_optica/figuras/void_fraction_vs_flip_rate.svg",
+        "sha256": "eed269bb3cfb06c9ba71df9bb8149f6ae002b6cb5a943d414833f3942e91e214"
+      },
+      "size_pixels": [
+        2466,
+        1314
+      ],
+      "hulls": {
+        "dispersed bubbles": {
+          "eligible_runs": [
+            "m07q01_001"
+          ],
+          "polygon_vertex_runs": [],
+          "shaded": false
+        },
+        "plug": {
+          "eligible_runs": [
+            "m05q01_001",
+            "m06q01_001",
+            "m07q05_001"
+          ],
+          "polygon_vertex_runs": [
+            "m07q05_001",
+            "m05q01_001",
+            "m06q01_001"
+          ],
+          "shaded": true
+        },
+        "slug": {
+          "eligible_runs": [
+            "m04q01_001",
+            "m05q05_001",
+            "m06q05_001"
+          ],
+          "polygon_vertex_runs": [
+            "m05q05_001",
+            "m04q01_001",
+            "m06q05_001"
+          ],
+          "shaded": true
+        },
+        "churn": {
+          "eligible_runs": [
+            "m03q05_001",
+            "m04q10_001",
+            "m04q20_001",
+            "m05q10_001",
+            "m05q20_001",
+            "m05q40_001",
+            "m06q10_001",
+            "m06q20_001",
+            "m07q20_001",
+            "m07q40_001"
+          ],
+          "polygon_vertex_runs": [
+            "m07q20_001",
+            "m06q10_001",
+            "m04q10_001",
+            "m03q05_001",
+            "m05q40_001",
+            "m07q40_001"
+          ],
+          "shaded": true
+        },
+        "wavy annular": {
+          "eligible_runs": [
+            "m03q10_001",
+            "m03q20_001",
+            "m04q40_001",
+            "m04q80_001",
+            "m05q80_001",
+            "m06q40_001",
+            "m06q80_001",
+            "m07q80_001"
+          ],
+          "polygon_vertex_runs": [
+            "m06q40_001",
+            "m07q80_001",
+            "m04q40_001",
+            "m03q20_001",
+            "m05q80_001",
+            "m06q80_001"
+          ],
+          "shaded": true
+        }
+      },
+      "centroids": {
+        "dispersed bubbles": {
+          "eligible_runs": [
+            "m07q01_001"
+          ],
+          "n": 1,
+          "alpha_mean": 0.0022502511609265425,
+          "flip_rate_per1000px_mean": 2.562536671815689,
+          "weighting": "equal weight per eligible acquisition"
+        },
+        "plug": {
+          "eligible_runs": [
+            "m05q01_001",
+            "m06q01_001",
+            "m07q05_001"
+          ],
+          "n": 3,
+          "alpha_mean": 0.5428777196412038,
+          "flip_rate_per1000px_mean": 8.290963898158749,
+          "weighting": "equal weight per eligible acquisition"
+        },
+        "slug": {
+          "eligible_runs": [
+            "m04q01_001",
+            "m05q05_001",
+            "m06q05_001"
+          ],
+          "n": 3,
+          "alpha_mean": 0.5849276088559594,
+          "flip_rate_per1000px_mean": 10.162779398339152,
+          "weighting": "equal weight per eligible acquisition"
+        },
+        "churn": {
+          "eligible_runs": [
+            "m03q05_001",
+            "m04q10_001",
+            "m04q20_001",
+            "m05q10_001",
+            "m05q20_001",
+            "m05q40_001",
+            "m06q10_001",
+            "m06q20_001",
+            "m07q20_001",
+            "m07q40_001"
+          ],
+          "n": 10,
+          "alpha_mean": 0.7893015213366847,
+          "flip_rate_per1000px_mean": 10.559596697146377,
+          "weighting": "equal weight per eligible acquisition"
+        },
+        "wavy annular": {
+          "eligible_runs": [
+            "m03q10_001",
+            "m03q20_001",
+            "m04q40_001",
+            "m04q80_001",
+            "m05q80_001",
+            "m06q40_001",
+            "m06q80_001",
+            "m07q80_001"
+          ],
+          "n": 8,
+          "alpha_mean": 0.9525564874954524,
+          "flip_rate_per1000px_mean": 3.189509978777026,
+          "weighting": "equal weight per eligible acquisition"
+        }
+      },
+      "centroid_weighting": "equal weight per eligible acquisition"
+    }
+  ]
+}

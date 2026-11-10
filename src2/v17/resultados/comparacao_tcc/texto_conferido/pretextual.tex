@@ -1,0 +1,199 @@
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+% \pretextual
+
+% ---
+% Capa
+% ---
+\imprimircapa
+% ---
+
+% ---
+% Folha de rosto
+% (o * indica que haverá a ficha bibliográfica)
+% ---
+%\imprimirfolhaderosto*
+\imprimirfolhaderosto
+% ---
+
+
+
+% ---
+% Agradecimentos
+% ---
+\begin{agradecimentos}
+Agradeço aos meus pais, Simone e Joel, pelo amor incondicional, pela educação que me
+formou como pessoa e pelo apoio em cada etapa da minha trajetória acadêmica. Sem a base
+que construíram, este trabalho não seria possível.
+
+À minha namorada Karolline, pelo companheirismo constante, pela paciência nos momentos
+de ausência e pelo incentivo que nunca faltou nos momentos mais difíceis deste trabalho.
+Sua presença tornou essa jornada mais leve e significativa.
+
+Ao meu orientador, pela disponibilidade, pelas orientações precisas e pela confiança
+depositada neste trabalho.
+
+Aos professores do curso de Engenharia da Computação da UNISINOS, pelos ensinamentos que
+fundamentam esta e todas as demais etapas da minha formação.
+
+A todos que, de alguma forma, contribuíram para que eu chegasse até aqui, meu sincero
+agradecimento.
+\end{agradecimentos}
+% ---
+
+
+% ---
+% RESUMOS
+% ---
+
+% resumo em português
+\setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
+\begin{resumo}
+Investigou-se a caracterização de padrões de escoamento bifásico com isobutano em
+microtubo horizontal de 1\,mm por meio de sinais de intensidade extraídos de panoramas
+de imagens. Analisaram-se 26 ensaios de cinco padrões, formando 87 pares do mesmo padrão
+e 238 de padrões diferentes. Extraiu-se a média das linhas 18 a 71 dos panoramas,
+seguida de remoção da tendência linear e normalização. Aplicou-se a transformada
+\textit{wavelet} contínua de Morlet às funções de correlação, com 200 comprimentos de onda
+entre 50 e 3.000 pixels, para obter os espectros de potência e cruzado e a coerência
+alternativa. Compararam-se a forma dos perfis espectrais dos panoramas completos, pelo
+coeficiente de Pearson $r$ dos resíduos logarítmicos, e os máximos de coerência dos
+prefixos comuns de cada par, por um escore ponderado. O coeficiente de Pearson $r$
+apresentou média de $0{,}8697$ dentro dos padrões e de $0{,}8038$ entre padrões,
+indicando maior semelhança espectral média interna, acompanhada de sobreposição das
+distribuições. O escore de coerência apresentou comportamento oposto, com médias de
+$0{,}1877$ e $0{,}2635$, respectivamente. A auditoria identificou ressalvas de reconstrução
+e acúmulo no teto de intensidade em um ensaio anular; sua exclusão exploratória preservou a diferença positiva
+entre as médias do coeficiente de Pearson $r$, mas reduziu sua magnitude. Os resultados
+permaneceram descritivos, pois os pares compartilharam aquisições e os grupos foram
+desbalanceados. A comparação dos perfis constituiu um indício promissor para análises
+adicionais, sem demonstração de significância estatística ou de acurácia de classificação.
+
+ \textbf{Palavras-chave}: escoamento bifásico. microcanais. transformada \textit{wavelet} contínua. coerência \textit{wavelet}. domínio espacial. reconstrução panorâmica. identificação de padrões de escoamento.
+\end{resumo}
+
+% resumo em inglês
+\begin{resumo}[Abstract]
+ \begin{otherlanguage*}{english}
+Two-phase flow patterns of isobutane in a horizontal 1\,mm microtube were investigated
+using intensity signals extracted from image panoramas. Twenty-six acquisitions from
+five patterns were analyzed, yielding 87 within-pattern and 238 between-pattern pairs.
+The mean intensity of rows 18 through 71 was extracted, followed by linear detrending
+and normalization. The Morlet continuous wavelet transform was applied to correlation
+functions at 200 wavelengths from 50 to 3,000 pixels to obtain the power and cross
+spectra and alternative coherence. Spectral shape from full panoramas was compared
+using Pearson's correlation coefficient $r$ of logarithmic residuals, while coherence
+maxima from the common prefixes of each pair were summarized by a weighted score.
+Mean Pearson's correlation coefficient $r$ was 0.8697 within patterns and 0.8038 between
+patterns, indicating greater mean within-pattern spectral similarity, with overlapping
+distributions. The coherence score showed the opposite behavior, with means of 0.1877
+and 0.2635, respectively. An audit identified reconstruction concerns and intensity ceiling accumulation
+in one annular acquisition; its exploratory exclusion preserved the positive difference
+between mean Pearson's correlation coefficients $r$, while reducing its magnitude.
+The findings remained descriptive because pairs shared acquisitions and groups were
+imbalanced. Spectral profile comparison provided a promising indication for further
+analysis, without demonstrating statistical significance or classification accuracy.
+
+   \vspace{\onelineskip}
+
+   \noindent
+   \textbf{Keywords}: two-phase flow. microchannels. continuous wavelet transform. wavelet coherence. spatial domain. panorama reconstruction. flow pattern identification.
+ \end{otherlanguage*}
+\end{resumo}
+
+
+% ---
+% inserir lista de ilustrações
+% ---
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
+% ---
+
+% ---
+% inserir lista de quadros
+% ---
+\pdfbookmark[0]{\listofquadrosname}{loq}
+\listofquadros*
+\cleardoublepage
+% ---
+
+% ---
+% inserir lista de tabelas
+% ---
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\cleardoublepage
+% ---
+
+% ---
+% inserir lista de abreviaturas e siglas
+% ---
+\begin{siglas}
+  \item[CNN] Rede Neural Convolucional (\textit{Convolutional Neural Network})
+  \item[CWT] Transformada Wavelet Contínua (\textit{Continuous Wavelet Transform})
+  \item[DWT] Transformada Wavelet Discreta (\textit{Discrete Wavelet Transform})
+  \item[FFT] Transformada Rápida de Fourier (\textit{Fast Fourier Transform})
+  \item[LDR] Resistor Dependente de Luz (\textit{Light Dependent Resistor})
+  \item[LED] Diodo Emissor de Luz (\textit{Light Emitting Diode})
+  \item[LETEF] Laboratório de Estudos Térmicos e Fluidodinâmicos
+  \item[LWE] Coeficiente de Energia Wavelet Local (\textit{Local Wavelet Energy coefficient})
+  \item[ML] Aprendizado de Máquina (\textit{Machine Learning})
+  \item[OS] Sensor Óptico (\textit{Optical Sensor})
+  \item[PD] Transdutor de Pressão Diferencial
+  \item[PH] Pré-aquecedor (\textit{Pre-Heater})
+  \item[PSD] Densidade Espectral de Potência (\textit{Power Spectral Density})
+  \item[SNR] Relação Sinal-Ruído (\textit{Signal-to-Noise Ratio})
+  \item[SVM] Máquina de Vetores de Suporte (\textit{Support Vector Machine})
+  \item[TCC] Trabalho de Conclusão de Curso
+  \item[TS] Seção de Teste (\textit{Test Section})
+  \item[VS] Seção de Visualização (\textit{Visualization Section})
+  \item[WCO] Coerência Wavelet (\textit{Wavelet Coherence})
+  \item[WCS] Espectro Cruzado Wavelet (\textit{Wavelet Cross Spectrum})
+  \item[WPS] Espectro de Potência Wavelet (\textit{Wavelet Power Spectrum})
+\end{siglas}
+% ---
+
+% ---
+% inserir lista de símbolos
+% ---
+\begin{simbolos}
+  % --- Quantidades espectrais ---
+  \item[$W_x(a,b)$] Coeficiente da CWT do sinal $x$ na escala $a$ e posição $b$
+  \item[$P_x(a,b)$] Espectro de potência wavelet clássico do sinal $x$
+  \item[$C_{xy}(a,b)$] Espectro cruzado wavelet clássico entre os sinais $x$ e $y$
+  \item[$\gamma_{xy}(a,b)$] Coerência wavelet clássica entre os sinais $x$ e $y$
+  \item[$R_{xx}(\tau)$] Função de autocorrelação do sinal $x$
+  \item[$R_{xy}(\tau)$] Função de correlação cruzada entre os sinais $x$ e $y$
+  \item[$\widetilde{P}_x(a,b)$] Campo de potência wavelet alternativo do sinal $x$
+  \item[$\widetilde{C}_{xy}(a,b)$] Espectro cruzado wavelet alternativo entre $x$ e $y$
+  \item[$\widetilde{\gamma}_{xy}(a,b)$] Coerência wavelet alternativa entre $x$ e $y$
+  \item[$\lambda_k$] Comprimento de onda espacial na escala $k$ [px]
+  \item[$P_{ik}$] Potência alternativa no atraso nulo do ensaio $i$ na escala $k$
+  \item[$M_{ik}$] Potência alternativa média nos atrasos do ensaio $i$ na escala $k$
+  \item[$z_{ik}$] Resíduo do perfil logarítmico de potência após remoção da tendência
+  \item[$r_{ij}$] Coeficiente de Pearson entre os descritores dos ensaios $i$ e $j$
+  \item[$\eta$] Piso relativo de potência para o escore de coerência
+  \item[$S_{xy}^{(\eta)}$] Escore ponderado dos máximos de coerência por escala
+  \item[$\Delta_h$] Contraste descritivo entre médias intra-padrão e inter-padrão da métrica $h$
+  % --- Variáveis termofluidodinâmicas ---
+  \item[$\beta$] Parâmetro adimensional de identificação do padrão de escoamento
+  \item[$G$] Fluxo mássico [kg\,m$^{-2}$\,s$^{-1}$]
+  \item[$q''$] Fluxo de calor [kW\,m$^{-2}$]
+  \item[$Co$] Número de confinamento
+  \item[$\sigma$] Tensão superficial [N\,m$^{-1}$]
+  \item[$\rho_l$] Massa específica do líquido [kg\,m$^{-3}$]
+  \item[$\rho_v$] Massa específica do vapor [kg\,m$^{-3}$]
+  \item[$D_h$] Diâmetro hidráulico [m]
+  \item[$i_{lv}$] Calor latente de vaporização [J\,kg$^{-1}$]
+\end{simbolos}
+% ---
+
+% ---
+% inserir o sumario
+% ---
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+% ---

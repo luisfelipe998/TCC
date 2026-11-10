@@ -1,0 +1,12 @@
+{
+  "pearson_max_abs_error": 7.271960811294775e-15,
+  "residuals_max_abs_error": 6.261657858885883e-14,
+  "summary": {
+    "intra": 0.8697175374283617,
+    "inter": 0.8038281799626545,
+    "delta": 0.06588935746570712,
+    "intra_balanceado": 0.8615908818493352,
+    "inter_balanceado": 0.716290865503283,
+    "delta_balanceado": 0.14530001634605216
+  }
+}

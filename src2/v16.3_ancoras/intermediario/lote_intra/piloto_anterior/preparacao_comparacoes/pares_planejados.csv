@@ -1,0 +1,29 @@
+pair_id,run_x,run_y,pattern_x,pattern_y,escopo,perfil_comparavel,perfil_nativo_compativel,calculado_nesta_preparacao
+m03q05_001__m03q10_001,m03q05_001,m03q10_001,churn,wavy annular,inter,True,True,False
+m03q05_001__m03q20_001,m03q05_001,m03q20_001,churn,wavy annular,inter,True,True,False
+m03q05_001__m04q01_001,m03q05_001,m04q01_001,churn,slug,inter,True,False,False
+m03q05_001__m04q10_001,m03q05_001,m04q10_001,churn,churn,intra,True,True,False
+m03q05_001__m05q01_001,m03q05_001,m05q01_001,churn,plug,inter,True,False,False
+m03q05_001__m05q05_001,m03q05_001,m05q05_001,churn,slug,inter,True,False,False
+m03q05_001__m06q01_001,m03q05_001,m06q01_001,churn,plug,inter,True,False,False
+m03q10_001__m03q20_001,m03q10_001,m03q20_001,wavy annular,wavy annular,intra,True,True,False
+m03q10_001__m04q01_001,m03q10_001,m04q01_001,wavy annular,slug,inter,True,False,False
+m03q10_001__m04q10_001,m03q10_001,m04q10_001,wavy annular,churn,inter,True,True,False
+m03q10_001__m05q01_001,m03q10_001,m05q01_001,wavy annular,plug,inter,True,False,False
+m03q10_001__m05q05_001,m03q10_001,m05q05_001,wavy annular,slug,inter,True,False,False
+m03q10_001__m06q01_001,m03q10_001,m06q01_001,wavy annular,plug,inter,True,False,False
+m03q20_001__m04q01_001,m03q20_001,m04q01_001,wavy annular,slug,inter,True,False,False
+m03q20_001__m04q10_001,m03q20_001,m04q10_001,wavy annular,churn,inter,True,True,False
+m03q20_001__m05q01_001,m03q20_001,m05q01_001,wavy annular,plug,inter,True,False,False
+m03q20_001__m05q05_001,m03q20_001,m05q05_001,wavy annular,slug,inter,True,False,False
+m03q20_001__m06q01_001,m03q20_001,m06q01_001,wavy annular,plug,inter,True,False,False
+m04q01_001__m04q10_001,m04q01_001,m04q10_001,slug,churn,inter,True,False,False
+m04q01_001__m05q01_001,m04q01_001,m05q01_001,slug,plug,inter,True,True,False
+m04q01_001__m05q05_001,m04q01_001,m05q05_001,slug,slug,intra,True,True,False
+m04q01_001__m06q01_001,m04q01_001,m06q01_001,slug,plug,inter,True,True,False
+m04q10_001__m05q01_001,m04q10_001,m05q01_001,churn,plug,inter,True,False,False
+m04q10_001__m05q05_001,m04q10_001,m05q05_001,churn,slug,inter,True,False,False
+m04q10_001__m06q01_001,m04q10_001,m06q01_001,churn,plug,inter,True,False,False
+m05q01_001__m05q05_001,m05q01_001,m05q05_001,plug,slug,inter,True,True,False
+m05q01_001__m06q01_001,m05q01_001,m06q01_001,plug,plug,intra,True,True,False
+m05q05_001__m06q01_001,m05q05_001,m06q01_001,slug,plug,inter,True,True,False

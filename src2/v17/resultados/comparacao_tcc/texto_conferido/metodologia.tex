@@ -1,0 +1,412 @@
+\chapter{Metodologia}\label{cap:metodologia}
+
+Neste capítulo, descreveu-se o processamento executado sobre os panoramas de escoamento
+bifásico do LETEF, com os resultados preservados em
+\codigo{src2/v16\_spatial2\_18\_71}. Aplicou-se a formulação alternativa de
+\citeonline{schuck2019} a sinais espaciais de intensidade e compararam-se dois
+indicadores: o escore de coerência entre pares de ensaios e o coeficiente de Pearson
+entre descritores espectrais individuais. A execução foi exploratória e descritiva,
+sem treinamento de classificador ou teste de significância estatística.
+
+% =========================================================
+\section{Visão geral do método executado}\label{sec:met-visao}
+% =========================================================
+
+O processamento partiu dos panoramas existentes e releu seus pixels para extrair a
+média das linhas 18 a 71, inclusive. No \autoref{qua:met-etapas}, distinguiram-se as duas
+ramificações da análise. Essa distinção foi necessária porque o espectro individual
+foi calculado uma única vez por ensaio completo, enquanto os mapas de coerência
+usaram o comprimento comum de cada par.
+
+\begin{quadro}[htb]
+  \centering
+  \caption{Etapas do processamento efetivamente executado.}
+  \label{qua:met-etapas}
+  \begin{tabular}{p{3.1cm}p{10.5cm}}
+    \hline
+    \textbf{Etapa} & \textbf{Operação e finalidade} \\
+    \hline
+    Entrada & Conferência dos panoramas e extração da média de 54 linhas por coluna. \\
+    Preparação & Inversão da intensidade, remoção de tendência linear, centralização e padronização. \\
+    Perfil individual & Autocorrelação e CWT do panorama completo; perfil de potência no atraso nulo para o descritor de Pearson. \\
+    Comparação de pares & Corte no menor comprimento, preparação dos sinais, autocorrelações, correlação cruzada e campos WPS, WCS e WCO. \\
+    Resumos & Coeficiente de Pearson dos resíduos espectrais e escore dos máximos de WCO ponderados pela potência. \\
+    Avaliação & Comparações dentro e entre padrões, médias por ensaio e controles de sensibilidade e de qualidade. \\
+    \hline
+  \end{tabular}
+  \fonte{Elaborado pelo autor a partir dos scripts e da configuração da execução.}
+\end{quadro}
+
+% =========================================================
+\section{Dados experimentais e seleção dos ensaios}\label{sec:met-dados}
+% =========================================================
+
+Utilizaram-se sequências de imagens do arranjo de isobutano R600a em tubo horizontal
+de 1\,mm, descrito por \citeonline{deoliveira2021} e apresentado na
+\autoref{sec:arranjo}. A auditoria local compreendeu 31 registros, cada um com 501
+quadros de $1016\times80$ pixels. A seleção preservada na execução reuniu 26 ensaios:
+dez de \textit{churn}, nove de anular ondulado, três de \textit{plug}, três de
+\textit{slug} e um de bolha dispersa. Os rótulos dos 26 registros concordaram com a
+tabela manual local; não foram inferidos dos valores de coerência ou de correlação.
+
+Permaneceram fora das estatísticas os registros \codigo{m03q01\_001},
+\codigo{m03q80\_001}, \codigo{m04q05\_001}, \codigo{m05q05\_002} e
+\codigo{m07q10\_001}. A auditoria preservou sua identificação e constatou, no
+registro \codigo{m05q05\_002}, divergência entre o rótulo local de bolha dispersa e
+a classificação \textit{slug} da condição na tabela manual. Essa divergência não
+foi usada para reclassificar ou reincluir o registro.
+
+Formaram-se todas as combinações de dois ensaios distintos: $26\times25/2=325$
+pares únicos. Destes, 87 foram intrapadrão, sendo 45 de \textit{churn}, 36 de anular
+ondulado, três de \textit{plug} e três de \textit{slug}; os outros 238 foram
+interpadrões. O único ensaio de bolha dispersa participou de 25 comparações
+interpadrões, mas não permitiu avaliar repetibilidade dentro desse padrão.
+
+Os metadados das aquisições incluídas registraram taxas de 4\,000, 5\,000 e
+7\,000 quadros/s e tempos de exposição de 62, 127 e 132\,$\mu$s. Essas informações
+foram conferidas nos dois arquivos de configuração de cada aquisição. Não se
+aplicou uma correção fotométrica baseada nesses códigos, nem se converteu o eixo
+espacial em frequência temporal a partir da taxa de quadros.
+
+% ---------------------------------------------------------
+\subsection{Reconstrução e extração do sinal espacial}\label{sec:met-extracao}
+% ---------------------------------------------------------
+
+Os panoramas utilizados já haviam sido montados a partir de tiras centrais dos
+quadros. O algoritmo estimou deslocamentos entre quadros consecutivos por
+correlação dos perfis médios das linhas 20 a 59 e utilizou esses deslocamentos como
+larguras das tiras. Larguras não positivas foram substituídas por 1 pixel; na última
+tira, repetiu-se a largura estimada no último intervalo. A junção incluiu a mistura
+linear de até dois pixels nas bordas das tiras. Na auditoria posterior, essa
+montagem foi reproduzida em memória e comparada pixel a pixel com os 31 panoramas
+existentes, sem substituir as entradas da análise.
+
+Para a análise espectral desta execução, a faixa vertical foi ampliada para as
+linhas 18 a 71, inclusive, com índices iniciados em zero. O sinal bruto do ensaio
+$i$ foi definido pela média aritmética:
+
+\begin{equation}\label{eq:met-extracao}
+  I_i[n]=\frac{1}{54}\sum_{v=18}^{71} A_i[v,n],
+  \qquad n=0,\ldots,N_i-1,
+\end{equation}
+
+\noindent
+em que $A_i[v,n]$ representou a intensidade do pixel da linha $v$ e coluna $n$ do panorama,
+$I_i[n]$ representou a intensidade média dessa coluna e $N_i$, sua largura. As planilhas
+anteriores, correspondentes às linhas 20 a 59, serviram apenas à conferência de
+procedência; não forneceram o sinal da \autoref{eq:met-extracao}.
+
+As larguras dos 26 panoramas variaram de 3\,171 a 23\,079 pixels. O passo espacial
+adotado foi de 1 pixel do panorama reconstruído. Esse eixo reuniu observações de
+instantes diferentes, posicionadas pelo deslocamento óptico estimado; portanto,
+não correspondeu a uma fotografia espacial instantânea nem a uma medida calibrada
+de distância física. O maior número de colunas também não representou o mesmo
+número de observações independentes. A intensidade média permaneceu uma grandeza
+óptica, sem conversão direta em fração de vazio.
+
+% =========================================================
+\section{Preparação dos sinais}\label{sec:met-preproc}
+% =========================================================
+
+Para o perfil individual, preparou-se o sinal completo de cada ensaio. Para os
+mapas de um par $x,y$, selecionaram-se primeiro os prefixos de comprimento
+$N=\min(N_x,N_y)$, e somente depois se preparou cada prefixo. Não houve alinhamento
+de eventos ou escolha de trechos em função da semelhança obtida.
+
+A preparação consistiu nas operações:
+
+\begin{align}
+  J[n]&=255-I[n], \label{eq:met-inversao}\\
+  d[n]&=J[n]-(\widehat\alpha+\widehat\beta n), \label{eq:met-tendencia}\\
+  x[n]&=\frac{d[n]-\bar d}{s_d},\qquad
+  s_d=\sqrt{\frac{1}{N}\sum_{n=0}^{N-1}(d[n]-\bar d)^2}.
+  \label{eq:met-padronizacao}
+\end{align}
+
+\noindent
+A intensidade invertida $J[n]$ associou valores maiores aos pixels mais escuros.
+Os coeficientes $\widehat\alpha$ e $\widehat\beta$ definiram a reta ajustada por
+mínimos quadrados, isto é, a reta que minimizou a soma dos desvios quadráticos.
+O sinal sem tendência $d[n]$ foi centralizado pela média $\bar d$ e dividido pelo
+desvio padrão populacional $s_d$, calculado com divisor $N$. O sinal preparado
+$x[n]$ apresentou média nula e variância unitária, a menos de arredondamento
+numérico. Aplicou-se a mesma operação ao segundo sinal $y[n]$.
+
+Esse preparo reduziu diferenças de nível e amplitude e removeu a tendência linear
+no trecho analisado. Não comprovou estacionariedade, não recuperou informação
+perdida por saturação e não corrigiu os deslocamentos da montagem. A formulação
+baseada em funções de correlação pressupôs processos estacionários
+\cite{schuck2019}; no domínio reconstruído, a adequação dessa hipótese permaneceu
+uma condição de interpretação, e não uma consequência automática da padronização.
+
+% =========================================================
+\section{Correlações e transformada \textit{Wavelet}}\label{sec:met-wco}
+% =========================================================
+
+Para sinais de comprimento comum $N$, estimaram-se as correlações bilaterais:
+
+\begin{equation}\label{eq:crosscorr-disc}
+  \widehat R_{xy}[m]=\frac{1}{N}
+  \sum_{n=\max(0,-m)}^{\min(N-1,N-1-m)}
+  x[n+m]y^*[n],\qquad -(N-1)\leq m\leq N-1.
+\end{equation}
+
+\begin{equation}\label{eq:autocorr-disc}
+  \widehat R_{xx}[m]=\left.\widehat R_{xy}[m]\right|_{y=x},
+  \qquad
+  \widehat R_{yy}[m]=\left.\widehat R_{xy}[m]\right|_{x=y}.
+\end{equation}
+
+\noindent
+O atraso espacial $m$ foi expresso em pixels. Os limites da soma garantiram que
+ambos os índices estivessem dentro do registro, inclusive para atrasos negativos.
+O asterisco indicou conjugação complexa, sem efeito sobre os sinais reais de
+intensidade. Nessa convenção, quando $y$ foi uma cópia de $x$ deslocada para a
+direita por $d$ amostras, o pico ocorreu em atraso espacial $m=-d$.
+
+Empregou-se a normalização enviesada, com divisor $N$ em todos os atrasos. Essa
+escolha diferiu dos estimadores com divisor $N-m$, apresentados para atrasos
+não negativos nas Equações 32.21 a 32.23 de \citeonline{schuck2019}.
+Na extensão para atrasos positivos e negativos, esse divisor corresponderia a
+$N-|m|$. Tratou-se, portanto, de uma adaptação declarada da
+estimação das correlações, mantendo-se as definições alternativas de WPS, WCS e WCO.
+Nos atrasos extremos, a soma envolveu poucos produtos, mas permaneceu dividida pelo
+comprimento total do registro.
+
+% ---------------------------------------------------------
+\subsection{Parametrização e implementação da Morlet}\label{sec:met-wco-morlet}
+% ---------------------------------------------------------
+
+Utilizou-se a Morlet complexa da \autoref{eq:morlet}, com frequência angular central
+adimensional $\omega_0=6$. A grade compreendeu 200 comprimentos de onda
+$\lambda_k$, igualmente espaçados em escala logarítmica entre 50 e 3\,000 pixels.
+A conversão entre a escala $a_k$, expressa em amostras, e o comprimento de onda foi
+\cite{torrence1998,schuck2019}:
+
+\begin{equation}\label{eq:met-escala}
+  \lambda_k=\frac{4\pi}{6+\sqrt{38}}\,a_k\,\Delta s,
+  \qquad \Delta s=1\,\mathrm{px}.
+\end{equation}
+
+\noindent
+O fator $\Delta s$ representou o espaçamento de amostragem. Assim, a escala e o
+comprimento de onda não foram tratados como valores numericamente idênticos; cada
+escala correspondeu a aproximadamente $1{,}03a_k$ pixels.
+
+A CWT foi implementada no domínio de Fourier, com \textit{NumPy} e
+\textit{SciPy}, pelo multiplicador da Morlet:
+
+\begin{equation}\label{eq:met-morlet-fourier}
+  H_{a_k}(\omega)=\sqrt{2\pi a_k}\,\pi^{-1/4}
+       \exp\!\left[-\frac{(a_k\omega-6)^2}{2}\right].
+\end{equation}
+
+\noindent
+A frequência angular digital $\omega$ foi expressa em radianos por amostra.
+Para cada escala, multiplicou-se a transformada de Fourier da correlação pelo
+filtro $H_{a_k}$ e aplicou-se a transformada inversa. O comprimento da FFT foi
+estendido por $2\lceil8a_{\max}\rceil$ zeros, antes do arredondamento para um
+tamanho computacionalmente eficiente, em que $a_{\max}$ representou a maior
+escala e $\lceil\cdot\rceil$, o arredondamento para o inteiro superior.
+Essa implementação realizou a Morlet da \autoref{eq:morlet}.
+
+Como expressão discreta de referência, para uma função de correlação
+$\widehat R_{xy}$, utilizou-se:
+
+\begin{equation}\label{eq:cwt-disc}
+  W_{R_{xy}}(a_k,b)\approx\frac{1}{\sqrt{a_k}}
+     \sum_{m=-(N-1)}^{N-1}\widehat R_{xy}[m]\,
+     \psi^*\!\left(\frac{m-b}{a_k}\right).
+\end{equation}
+
+\noindent
+A coordenada $b$ indicou a posição no eixo de atrasos da correlação, também em
+amostras espaciais, e não a posição original no panorama. A soma direta com a
+Morlet serviu à verificação independente da implementação espectral.
+
+% ---------------------------------------------------------
+\subsection{Campos e perfis espectrais}\label{sec:met-analise}
+% ---------------------------------------------------------
+
+Aplicaram-se as \autoref{eq:wps-alt}, \autoref{eq:wcs-alt} e
+\autoref{eq:wco-alt} às correlações estimadas. O campo de potência alternativa
+$\widetilde P_x(a,b)$ foi o módulo da CWT da autocorrelação, sem elevar esse módulo
+novamente ao quadrado. O campo cruzado $\widetilde C_{xy}(a,b)$ permaneceu complexo;
+seu módulo foi utilizado nas figuras. O campo de coerência
+$\widetilde\gamma_{xy}(a,b)$ variou com a escala e o atraso, enquanto seu denominador
+utilizou as duas potências no atraso nulo.
+
+Os mapas compreenderam todos os atrasos de $-(N-1)$ a $N-1$, sem máscara
+geométrica. Para proteger a divisão, exigiu-se que a potência no atraso nulo de
+cada sinal superasse $10^{-10}$ do respectivo máximo. Essa verificação numérica
+não excluiu nenhuma das 200 escalas nos 325 pares. Os valores de coerência não
+foram truncados artificialmente em 1.
+
+Distinguiram-se dois perfis individuais:
+
+\begin{equation}\label{eq:met-perfis}
+  P_{ik}=\widetilde P_i(a_k,0),\qquad
+  M_{ik}=\frac{1}{2N_i-1}\sum_{b=-(N_i-1)}^{N_i-1}\widetilde P_i(a_k,b).
+\end{equation}
+
+\noindent
+A potência no atraso nulo $P_{ik}$ forneceu a entrada do descritor de Pearson.
+A potência média nos atrasos $M_{ik}$ resumiu o campo em uma curva, exibida ao lado
+dos mapas. Como essas operações foram diferentes, seus picos não precisaram
+coincidir. O comprimento de onda do pico foi obtido pelo argumento do máximo na
+grade utilizada, especificando-se em cada caso qual dos dois perfis foi analisado.
+
+% =========================================================
+\section{Escore de coerência entre ensaios}\label{sec:met-escore}
+% =========================================================
+
+Para resumir cada campo de coerência, calculou-se o máximo em atraso para cada
+escala, $c_k=\max_b\widetilde\gamma_{xy}(a_k,b)$. A importância da escala foi
+ponderada pela média geométrica das potências no atraso nulo,
+$w_k=\sqrt{\widetilde P_x(a_k,0)\widetilde P_y(a_k,0)}$. Selecionaram-se as
+escalas em que ambos os sinais apresentaram potência suficiente:
+
+\begin{equation}\label{eq:met-piso}
+  \mathcal K_\eta=\left\{k:
+  \widetilde P_x(a_k,0)\geq\eta\max_j\widetilde P_x(a_j,0),\quad
+  \widetilde P_y(a_k,0)\geq\eta\max_j\widetilde P_y(a_j,0)\right\}.
+\end{equation}
+
+\begin{equation}\label{eq:met-escore}
+  S_{xy}^{(\eta)}=
+  \frac{\sum_{k\in\mathcal K_\eta}w_kc_k}
+       {\sum_{k\in\mathcal K_\eta}w_k}.
+\end{equation}
+
+\noindent
+O piso relativo de potência $\eta$ foi 0,05 no escore principal de coerência
+$S_{xy}^{(0,05)}$. Também foram registrados os escores com pisos de 0,01 e 0,10.
+O peso $w_k$ reduziu a contribuição de escalas de pequena potência, e o conjunto
+$\mathcal K_\eta$ exigiu participação de ambos os sinais. O piso relativo de
+potência não foi um limiar de significância e não removeu regiões dos mapas.
+O escore foi um resumo adotado nesta execução, não uma equação adicional atribuída
+a \citeonline{schuck2019}.
+
+Cada máximo por escala pôde ocorrer em um atraso diferente. Assim, um escore de
+coerência elevado não correspondeu necessariamente a um único alinhamento entre os
+sinais. Registraram-se ainda o máximo integral, a média integral e a média
+ponderada da coerência no atraso nulo como medidas complementares; nenhuma delas
+substituiu o escore principal de coerência.
+
+% =========================================================
+\section{Coeficiente de Pearson dos descritores espectrais}\label{sec:met-pearson}
+% =========================================================
+
+Para cada ensaio completo, transformou-se a potência no atraso nulo $P_{ik}$ em
+logaritmo natural e removeu-se uma reta em função do logaritmo do comprimento de
+onda. Os coeficientes da reta foram calculados pela minimização:
+
+\begin{equation}\label{eq:met-ajuste}
+  (\widehat c_i,\widehat d_i)=\underset{c,d}{\arg\min}
+  \sum_{k=1}^{200}\left[\ln(P_{ik}+\varepsilon)-c-d\ln(\lambda_k)\right]^2,
+  \qquad \varepsilon=10^{-12}.
+\end{equation}
+
+\begin{equation}\label{eq:met-residuos}
+  z_{ik}=\ln(P_{ik}+\varepsilon)-\widehat c_i-\widehat d_i\ln(\lambda_k).
+\end{equation}
+
+\noindent
+O termo $\varepsilon$ evitou o logaritmo de zero. O coeficiente $\widehat c_i$
+representou o nível ajustado e o coeficiente $\widehat d_i$, a inclinação ajustada.
+O resíduo espectral $z_{ik}$ expressou quanto cada escala ficou acima ou abaixo
+dessa tendência. A operação retirou o nível e a inclinação globais do perfil,
+concentrando a comparação nas variações remanescentes. Os comprimentos de onda
+foram inseridos numericamente em pixels, com a mesma unidade em todos os ensaios.
+
+Entre os resíduos de dois ensaios $i,j$, calculou-se o coeficiente de Pearson
+$r_{ij}$, conforme sua definição centrada \cite{cunningham2020}:
+
+\begin{equation}\label{eq:met-pearson}
+  r_{ij}=\frac{\sum_{k=1}^{200}(z_{ik}-\bar z_i)(z_{jk}-\bar z_j)}
+   {\sqrt{\sum_{k=1}^{200}(z_{ik}-\bar z_i)^2}
+    \sqrt{\sum_{k=1}^{200}(z_{jk}-\bar z_j)^2}}.
+\end{equation}
+
+\noindent
+As médias $\bar z_i$ e $\bar z_j$ foram calculadas nas 200 escalas. O coeficiente
+de Pearson $r_{ij}$ próximo de 1 indicou variações residuais no mesmo sentido;
+próximo de $-1$, variações em sentidos opostos; e próximo de zero, pequena
+associação linear entre os resíduos \cite{cunningham2020}. Preservou-se o sinal
+do coeficiente de Pearson, sem tomar seu módulo.
+
+Cada descritor foi mantido fixo para todos os parceiros do ensaio. Não se calculou
+o coeficiente de Pearson diretamente entre intensidades, campos de coerência ou
+perfis de potência média nos atrasos. A semelhança medida referiu-se ao descritor
+residual e não conservou a amplitude média, a inclinação removida ou a fase dos
+sinais originais.
+
+% =========================================================
+\section{Agregações e controles de sensibilidade}\label{sec:met-agregacao}
+% =========================================================
+
+Calcularam-se médias e medianas dentro e entre padrões, além das médias de cada
+ensaio com seus parceiros. A diagonal unitária da matriz do coeficiente de
+Pearson foi excluída dessas médias. A média geral de cada ensaio reuniu seus 25
+parceiros; a média intrapadrão de bolha dispersa permaneceu indefinida.
+
+Foram utilizadas duas ponderações. A média por par atribuiu peso igual a cada
+comparação. A média balanceada calculou primeiro a média de cada grupo e depois
+atribuiu peso igual aos grupos: quatro grupos intrapadrão e dez combinações
+interpadrões. Para uma métrica $h$, representando o coeficiente de Pearson ou o
+escore de coerência, definiu-se o contraste descritivo:
+
+\begin{equation}\label{eq:met-contraste}
+  \Delta_h=\overline h_{\mathrm{intra}}-\overline h_{\mathrm{inter}}.
+\end{equation}
+
+\noindent
+O contraste descritivo $\Delta_h$ positivo indicou maior média dentro dos padrões;
+o contraste negativo indicou maior média entre padrões. As duas ponderações
+responderam a perguntas distintas: uma descreveu o conjunto de pares, e a outra
+reduziu o predomínio dos grupos mais numerosos. Nenhuma forneceu, por si só,
+uma medida de significância estatística ou de acurácia.
+
+A auditoria de qualidade motivou controles explícitos para o registro anular
+\codigo{m03q40\_001}. Compararam-se, para os nove ensaios anulares, o prefixo comum
+de 14\,008 pixels anterior à primeira substituição de deslocamento, a faixa de
+comprimentos de onda de 50 a 1\,024 pixels, a preparação sem remoção de tendência
+linear, a extração pelas linhas 20 a 59 e a equalização global do histograma.
+Cada controle aplicou a mesma regra a todos os nove ensaios. Na equalização,
+a transformação foi estimada separadamente em cada aquisição a partir do
+histograma da faixa 18 a 71; ela permaneceu um controle exploratório.
+
+Também se recalcularam as agregações sem \codigo{m03q40\_001}, preservando os
+descritores dos outros ensaios. A referência principal permaneceu com 26 ensaios;
+a variante com 25 ensaios não foi escolhida para maximizar a separação. Esses
+controles avaliaram sensibilidade e não estabeleceram uma causa única para o
+comportamento do registro.
+
+% =========================================================
+\section{Verificação e alcance da avaliação}\label{sec:met-verificacao}
+% =========================================================
+
+Confrontaram-se as correlações com somas diretas e a CWT espectral com integração
+temporal independente da Morlet. Verificaram-se a autocoerência no atraso nulo,
+a recuperação de um atraso conhecido e a reflexão do mapa ao trocar a ordem dos
+sinais. Os 325 coeficientes de Pearson foram comparados com uma rotina
+independente da biblioteca \textit{SciPy}; as matrizes e as agregações também
+foram verificadas numericamente.
+
+Os resumos integrais foram calculados antes da redução dos mapas para
+apresentação. Os arquivos usados para reproduzir as figuras conservaram cerca de
+1\,800 posições de atraso, incluindo o zero e os extremos. Por isso, os máximos
+integrais não foram recalculados apenas dos mapas reduzidos.
+
+A faixa de 50 a 3\,000 pixels foi mantida inclusive nos registros mais curtos.
+O menor panorama conteve aproximadamente 1,057 comprimentos de onda de
+3\,000 pixels, o que limitou o suporte às maiores escalas. A extensão bilateral
+da correlação não acrescentou novas observações. Além disso, os pares
+compartilharam ensaios e as escalas da CWT foram correlacionadas. Por essas
+razões, a avaliação relatou tendências descritivas, sem tratar os 325 pares ou
+as 200 escalas como réplicas independentes para calcular valores de significância
+ou intervalos de confiança. Esse cuidado foi apoiado no princípio de evitar
+pseudorreplicação, isto é, tratar medidas sem independência como réplicas
+independentes em testes inferenciais \cite{hurlbert1984}.
+Os resultados constituíram uma base para análises
+adicionais de qualidade, robustez e discriminação.

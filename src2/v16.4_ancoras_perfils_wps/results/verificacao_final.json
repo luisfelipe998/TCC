@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "data_utc": "2026-10-27T01:45:00.594407+00:00",
+  "arquivos_artefatos": 30,
+  "arquivos_fontes": 257,
+  "pares_verificados": 5700,
+  "retiradas_verificadas": 475,
+  "maior_erro_area": 1.3322676295501878e-15,
+  "maior_erro_H_por_Bhattacharyya": 2.6194324487249787e-15,
+  "maior_erro_A_e_retiradas": 6.661338147750939e-16,
+  "links_locais": 18,
+  "figuras_incorporadas": 6,
+  "conclusoes_conferidas": [
+    "desvantagem em ambos os pesos nos quatro controles principais",
+    "desvantagem persiste nas 25 retiradas pareadas",
+    "desvantagem perante completo nos quatro padrões",
+    "faixa conservadora melhora âncoras mas não supera fim/completo"
+  ],
+  "manifesto_sha256": "563795a4200c0ca6b347639a146cfd98e9cdff7148636a98b5eba291ccf6d224",
+  "codigo_sha256": "90c8505d4542894b30fa53562583daf4e1c04c6dc4efb2dce84ae129f7e0ac89",
+  "observacao": "Verificação de integridade e consistência; não é validação externa do método."
+}

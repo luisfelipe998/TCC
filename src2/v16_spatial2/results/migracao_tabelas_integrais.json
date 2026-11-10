@@ -1,0 +1,23 @@
+{
+  "removed_columns": {
+    "per_run_methods.csv": [
+      "self_wco_max_coi",
+      "self_wco_max_supported",
+      "coi_valid_fraction",
+      "supported_fraction"
+    ],
+    "profiles.csv": [
+      "lag_mean_coi",
+      "lag_mean_supported",
+      "coi_count",
+      "supported_count"
+    ],
+    "pair_methods.csv": [
+      "max_wco_coi",
+      "max_wco_supported",
+      "peak_supported_lag_px",
+      "peak_supported_wavelength_px"
+    ]
+  },
+  "retained_values": "Preservados textualmente, calculados anteriormente em resolução integral"
+}

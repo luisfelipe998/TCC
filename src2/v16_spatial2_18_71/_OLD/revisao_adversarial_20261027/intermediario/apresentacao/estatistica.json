@@ -1,0 +1,102 @@
+[
+  {
+    "arquivo": "04_estatistica/matriz_pearson_todos.png",
+    "largura_insercao_cm": 16,
+    "altura_inserida_cm": 20.872885996587435,
+    "fonte_minima_inserida_pt": 9.56092543509241,
+    "titulo": "Correlação de Pearson · panoramas completos\n26 ensaios · λ de 50 a 3.000 px",
+    "titulos_paineis": [
+      "",
+      ""
+    ],
+    "rotulos_x": [
+      "Ensaio",
+      "Pearson r"
+    ],
+    "rotulos_y": [
+      "Ensaio",
+      ""
+    ]
+  },
+  {
+    "arquivo": "04_estatistica/matriz_escore_wco.png",
+    "largura_insercao_cm": 16,
+    "altura_inserida_cm": 20.872885996587435,
+    "fonte_minima_inserida_pt": 9.56092543509241,
+    "titulo": "Escore de coerência wavelet (WCO)\nMáximos por escala · ponderação pela potência · piso de 5%",
+    "titulos_paineis": [
+      "",
+      ""
+    ],
+    "rotulos_x": [
+      "Ensaio",
+      "Escore ponderado"
+    ],
+    "rotulos_y": [
+      "Ensaio",
+      ""
+    ]
+  },
+  {
+    "arquivo": "04_estatistica/correlacoes_dentro_entre.png",
+    "largura_insercao_cm": 16,
+    "altura_inserida_cm": 18.806140530861203,
+    "fonte_minima_inserida_pt": 9.517379277992221,
+    "titulo": "Correlações dentro e entre padrões",
+    "titulos_paineis": [
+      "Pearson dos perfis espectrais",
+      "Escore de coerência wavelet (WCO)"
+    ],
+    "rotulos_x": [
+      "",
+      ""
+    ],
+    "rotulos_y": [
+      "Pearson r",
+      "Escore ponderado"
+    ]
+  },
+  {
+    "arquivo": "04_estatistica/perfis_comparados.png",
+    "largura_insercao_cm": 16,
+    "altura_inserida_cm": 22.42046721670612,
+    "fonte_minima_inserida_pt": 9.462772105580514,
+    "titulo": "Perfis espectrais e descritores de Pearson",
+    "titulos_paineis": [
+      "churn · n = 10",
+      "",
+      "wavy annular · n = 9",
+      "",
+      "plug · n = 3",
+      "",
+      "slug · n = 3",
+      "",
+      "dispersed bubble · n = 1",
+      ""
+    ],
+    "rotulos_x": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "λ (px)",
+      "λ (px)"
+    ],
+    "rotulos_y": [
+      "WPS / máximo",
+      "Resíduo",
+      "WPS / máximo",
+      "Resíduo",
+      "WPS / máximo",
+      "Resíduo",
+      "WPS / máximo",
+      "Resíduo",
+      "WPS / máximo",
+      "Resíduo"
+    ]
+  }
+]

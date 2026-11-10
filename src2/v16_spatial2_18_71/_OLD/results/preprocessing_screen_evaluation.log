@@ -1,0 +1,36 @@
+            variant     same  different       gap  valid_pairs  delta_same  delta_different  delta_gap                      metric
+     central_band20 0.246900   0.298694 -0.051794          325   -0.002202        -0.014444   0.012242 weighted_scale_peak_power05
+       rank_uniform 0.258377   0.313340 -0.054963          325    0.009275         0.000201   0.009073 weighted_scale_peak_power05
+    core_row_median 0.258262   0.315769 -0.057507          325    0.009160         0.002631   0.006529 weighted_scale_peak_power05
+core_trimmed_mean20 0.252369   0.312632 -0.060262          325    0.003267        -0.000507   0.003775 weighted_scale_peak_power05
+        demean_only 0.249918   0.313818 -0.063900          325    0.000817         0.000680   0.000137 weighted_scale_peak_power05
+           baseline 0.249102   0.313139 -0.064037          325    0.000000         0.000000   0.000000 weighted_scale_peak_power05
+  spatial_gaussian2 0.249106   0.313146 -0.064040          325    0.000004         0.000008  -0.000004 weighted_scale_peak_power05
+    spatial_median5 0.249092   0.313214 -0.064122          325   -0.000010         0.000076  -0.000085 weighted_scale_peak_power05
+        winsor_1pct 0.248830   0.314282 -0.065452          325   -0.000272         0.001143  -0.001415 weighted_scale_peak_power05
+         center_row 0.245063   0.322327 -0.077264          325   -0.004039         0.009188  -0.013227 weighted_scale_peak_power05
+{
+  "main_metric": "weighted_scale_peak_power05",
+  "choice_on_full_dataset": "rank_uniform",
+  "choices_by_metric": {
+    "weighted_scale_peak_power05": "rank_uniform",
+    "weighted_scale_peak_power01": "rank_uniform",
+    "weighted_scale_peak_power10": "central_band20",
+    "weighted_zero_lag_wco": "demean_only",
+    "max_wco_all": "spatial_gaussian2"
+  },
+  "selection_rule": "Improve same-pattern mean AND improve same-minus-different gap; choose highest training gap; otherwise baseline",
+  "validation": "Leave one acquisition out of preprocessing selection; all 25 pairs involving it are withheld; no classifier",
+  "heldout_pattern_balanced_deltas": {
+    "delta_same": -0.0005555272125443308,
+    "delta_different": -0.0032188082145756676,
+    "delta_gap": 0.002663281002031336
+  },
+  "heldout_selection_counts": {
+    "rank_uniform": 21,
+    "core_row_median": 3,
+    "central_band20": 2
+  },
+  "heldout_runs_with_same_pattern_comparator": 25,
+  "caveat": "Exploratory reuse of 26 acquisitions. Held-out pairs share training partners and folds overlap; no independent test-set or p-value claim."
+}

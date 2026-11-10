@@ -1,0 +1,44 @@
+Chapter 32 ®
+On the Development of an Alternative ees
+Proposition of Cross Wavelet Analysis
+
+for Transient Discrimination Problems
+
+Adalberto Schuck Jr. and Bardo E. J. Bodmann
+
+32.1 Introduction
+
+The wavelet transform in both continuous (CWT) and discrete (DWT) form is a
+well-established tool in many application fields for one dimensional (1-D) signals
+and for two or higher dimensional signals [Da92, AnEtAl04]. Its capability of
+describing the behavior of 1-D signals both in time and frequency/scale domains
+with time resolution intrinsically adjusted by the scales used makes this a superior
+tool to analyze nonstationary processes.
+
+Extending the use of CWT, Rioul and Flandrin [RiF192] defined the Wavelet
+Scalogram to estimate the wavelet spectrum of such processes. Hudgins et al.
+[HuEtA193] introduced the definitions of Wavelet Power Spectrum and Wavelet
+Cross Spectrum to analyze climatological data. These definitions do not include
+the time varying aspect, since they are integrated over the time variable. Liu
+[Li94] proposed later the definitions of Wavelet Spectrum, Cross Wavelet Spectrum
+(here named Wavelet Cross Spectrum, WCS) and Wavelet Coherence (WCO) to
+study the behavior of ocean wind waves. These definitions included time and
+scale as independent variables and they constitute the so-called Cross Wavelet
+Analysis (CWA), being the most used ones in the subsequent works. Torrence and
+Compo [ToCo098] presented some applications of Wavelet Power Spectrum (WPS),
+Cross Wavelet Spectrum, and Cross Wavelet Power, and were the first establishing
+their confidence levels. Furthermore, they pointed out that Liu’s definition for the
+Wavelet Coherence estimator can be identically unitary at all times and scales and
+
+A. Schuck Jr.
+Electrical Engineering Department (DELET), UFRGS, Porto Alegre, RS, Brazil
+B.E. J. Bodmann (2)
+
+Mechanical Engineering Department (DEMEC), (UFRGS), Porto Alegre, RS, Brazil
+e-mail: bardo.bodmann@ufrgs.br
+
+© Springer Nature Switzerland AG 2019 409
+C. Constanda, P. Harris (eds.), Integral Methods in Science and Engineering,
+https://doi.org/10.1007/978-3-030-16077-7_32
+
+bardo.bodmann@ufrgs.br
