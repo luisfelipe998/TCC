@@ -143,6 +143,9 @@ def pair_figure(images, x, y, maps, *, runs, pattern, destination):
     title = f"{pattern} · {runs[0]} × {runs[1]} · {n:,} px".replace(",", ".")
     if len(title) > 65:
         title = f"{pattern}\n{runs[0]} × {runs[1]} · {n:,} px".replace(",", ".")
+    italic_pattern = " × ".join(r"$\mathit{" + part.replace(" ", r"\ ") + "}$"
+                                for part in pattern.split(" × "))
+    title = title.replace(pattern, italic_pattern, 1)
     fig.suptitle(title, y=.995, fontsize=10)
     grid = fig.add_gridspec(7, 1, left=.095, right=.945, top=.925 if "\n" in title else .945, bottom=.035,
                            height_ratios=[.52, .52, .78, 1.16, 1.16, 1.12, 1.23], hspace=.87)

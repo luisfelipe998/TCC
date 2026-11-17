@@ -1,164 +1,459 @@
 {
-  "tipo": "esquema do procedimento executado, sem dados experimentais",
+  "tipo": "esquema do procedimento executado, sem novos dados experimentais",
+  "secao": "3.1 — Etapas do processamento",
   "dimensoes_cm": [
     16,
-    11.5
+    22.2
   ],
-  "fonte_pt": 9.2,
+  "fonte_pt": 9.5,
   "nos": [
     {
-      "id": "quadros",
-      "texto": "Quadros das aquisições",
-      "grupo": "input"
+      "id": "1",
+      "title": "1. Seleção dos ensaios",
+      "items": [
+        "26 aquisições de cinco padrões, com rótulos manuais do banco de imagens."
+      ],
+      "group": "input",
+      "min_height": 0.9831916666666667,
+      "content_px": 31.708333333333336,
+      "x": 0.12,
+      "y": 21.096808333333332,
+      "width": 15.76,
+      "height": 0.9831916666666667
     },
     {
-      "id": "espectral",
-      "texto": "Panoramas da análise espectral\nMédia de intensidade por coluna",
-      "grupo": "input"
+      "id": "2",
+      "title": "2. Reconstrução dos panoramas",
+      "items": [
+        "Comparação dos perfis de intensidade e estimativa dos deslocamentos.",
+        "Recorte e junção das tiras na ordem de aquisição."
+      ],
+      "group": "input",
+      "min_height": 1.4280444444444447,
+      "content_px": 49.22222222222223,
+      "x": 0.12,
+      "y": 19.423763888888885,
+      "width": 15.76,
+      "height": 1.4280444444444447
     },
     {
-      "id": "optico",
-      "texto": "Panoramas da análise óptica\nJustaposição direta das tiras",
-      "grupo": "optical"
+      "id": "3",
+      "title": "3. Entradas de análise (linhas de índices 18 a 71)",
+      "items": [
+        "Sinais espaciais de intensidade $I_i[n]$: média por coluna para os caminhos A e B.",
+        "Imagens dos panoramas para a segmentação no caminho C."
+      ],
+      "group": "input",
+      "min_height": 1.4280444444444447,
+      "content_px": 49.22222222222223,
+      "x": 0.12,
+      "y": 17.75071944444444,
+      "width": 15.76,
+      "height": 1.4280444444444447
     },
     {
-      "id": "completo",
-      "texto": "Sinal completo\nPreparação",
-      "grupo": "individual"
+      "id": "A1",
+      "title": "A1. Preparo individual",
+      "items": [
+        "Inversão da intensidade.",
+        "Remoção da tendência\nlinear.",
+        "Padronização."
+      ],
+      "group": "individual",
+      "min_height": 2.24155,
+      "content_px": 81.25000000000001,
+      "x": 0.12,
+      "y": 14.834169444444438,
+      "width": 5.0,
+      "height": 2.24155
     },
     {
-      "id": "corte",
-      "texto": "Dois sinais\nCorte no menor comprimento\nPreparação",
-      "grupo": "pair"
+      "id": "B1",
+      "title": "B1. Preparo dos pares",
+      "items": [
+        "Corte no menor\ncomprimento.",
+        "Preparo após o corte,\nconforme A1."
+      ],
+      "group": "pair",
+      "min_height": 2.16535,
+      "content_px": 78.25000000000001,
+      "x": 5.5,
+      "y": 14.834169444444438,
+      "width": 5.0,
+      "height": 2.24155
     },
     {
-      "id": "mascara",
-      "texto": "Segmentação\nMáscara de gás inferido",
-      "grupo": "optical"
+      "id": "C1",
+      "title": "C1. Brilho e referência",
+      "items": [
+        "Normalização do brilho\npor coluna.",
+        "Referência líquida dos\ntrês ensaios de plug."
+      ],
+      "group": "optical",
+      "min_height": 2.16535,
+      "content_px": 78.25000000000001,
+      "x": 10.88,
+      "y": 14.834169444444438,
+      "width": 5.0,
+      "height": 2.24155
     },
     {
-      "id": "auto_cwt",
-      "texto": "Autocorrelação\nCWT",
-      "grupo": "individual"
+      "id": "A2",
+      "title": "A2. Correlação e CWT",
+      "items": [
+        "Autocorrelação estimada\n$\\widehat R_{xx}[m]$.",
+        "CWT de Morlet sobre\ntodos os atrasos."
+      ],
+      "group": "individual",
+      "min_height": 2.16535,
+      "content_px": 78.25000000000001,
+      "x": 0.12,
+      "y": 12.423819444444437,
+      "width": 5.0,
+      "height": 2.16535
     },
     {
-      "id": "correlacoes_cwt",
-      "texto": "Duas autocorrelações\nCorrelação cruzada\nCWT",
-      "grupo": "pair"
+      "id": "B2",
+      "title": "B2. CWT de Morlet",
+      "items": [
+        "Autocorrelações\n$\\widehat R_{xx}[m]$ e $\\widehat R_{yy}[m]$.",
+        "Correlação cruzada\nestimada $\\widehat R_{xy}[m]$."
+      ],
+      "group": "pair",
+      "min_height": 2.16535,
+      "content_px": 78.25000000000001,
+      "x": 5.5,
+      "y": 12.423819444444437,
+      "width": 5.0,
+      "height": 2.16535
     },
     {
-      "id": "optica_medidas",
-      "texto": "Fração de vazio estimada\nDensidade de transições",
-      "grupo": "optical"
+      "id": "C2",
+      "title": "C2. Detecção de sombras",
+      "items": [
+        "Suavização da imagem\ne da referência líquida.",
+        "Detecção pela razão\nde intensidades."
+      ],
+      "group": "optical",
+      "min_height": 2.16535,
+      "content_px": 78.25000000000001,
+      "x": 10.88,
+      "y": 12.423819444444437,
+      "width": 5.0,
+      "height": 2.16535
     },
     {
-      "id": "perfil",
-      "texto": "Perfil de potência\nno atraso zero",
-      "grupo": "individual"
+      "id": "A3",
+      "title": "A3. Extração do descritor",
+      "items": [
+        "Perfil de potência no\natraso zero $P_{ik}$.",
+        "200 valores, um por\nescala, após a CWT."
+      ],
+      "group": "individual",
+      "min_height": 2.16535,
+      "content_px": 78.25000000000001,
+      "x": 0.12,
+      "y": 9.19996388888888,
+      "width": 5.0,
+      "height": 2.978855555555556
     },
     {
-      "id": "mapas",
-      "texto": "Mapas de potência,\nespectro cruzado e coerência",
-      "grupo": "pair"
+      "id": "B3",
+      "title": "B3. Mapas e curvas",
+      "items": [
+        "Potências alternativas\n$\\widetilde P_x(a,b)$ e $\\widetilde P_y(a,b)$.",
+        "Espectro cruzado\n$\\widetilde C_{xy}(a,b)$.",
+        "Perfis de potência\nmédia $M_{ik}$."
+      ],
+      "group": "pair",
+      "min_height": 2.978855555555556,
+      "content_px": 110.2777777777778,
+      "x": 5.5,
+      "y": 9.19996388888888,
+      "width": 5.0,
+      "height": 2.978855555555556
     },
     {
-      "id": "optica_resumos",
-      "texto": "Resumos por ensaio\ne padrão",
-      "grupo": "optical"
+      "id": "C3",
+      "title": "C3. Segmentação",
+      "items": [
+        "Fechamento de contornos.",
+        "Preenchimento das áreas\npara formar a máscara\nde gás inferido."
+      ],
+      "group": "optical",
+      "min_height": 2.16535,
+      "content_px": 78.25,
+      "x": 10.88,
+      "y": 9.19996388888888,
+      "width": 5.0,
+      "height": 2.978855555555556
     },
     {
-      "id": "pearson",
-      "texto": "Coeficiente de Pearson\nResumos dentro\ne entre padrões",
-      "grupo": "individual"
+      "id": "A4",
+      "title": "A4. Forma dos perfis",
+      "items": [
+        "Coeficiente de Pearson\n$r_{ij}$ dos perfis completos.",
+        "325 pares distintos."
+      ],
+      "group": "individual",
+      "min_height": 1.7966972222222222,
+      "content_px": 63.73611111111112,
+      "x": 0.12,
+      "y": 6.78961388888888,
+      "width": 5.0,
+      "height": 2.16535
     },
     {
-      "id": "leitura_mapas",
-      "texto": "Leitura dos mapas\nResumos da coerência",
-      "grupo": "pair"
+      "id": "B4",
+      "title": "B4. Resumos de cada par",
+      "items": [
+        "Coerência alternativa\n$\\widetilde\\gamma_{xy}(a,b)$.",
+        "Mapa completo: mínimo,\nmédia, mediana, máximo."
+      ],
+      "group": "pair",
+      "min_height": 2.16535,
+      "content_px": 78.25000000000001,
+      "x": 5.5,
+      "y": 6.78961388888888,
+      "width": 5.0,
+      "height": 2.16535
     },
     {
-      "id": "interpretacao",
-      "texto": "Interpretação conjunta dos resultados",
-      "grupo": "output"
+      "id": "C4",
+      "title": "C4. Medidas por ensaio",
+      "items": [
+        "Fração de vazio estimada\n$\\widehat\\alpha_{\\mathrm{opt}}$: seções circulares.",
+        "Densidade de transições\n$F$: alternância horizontal."
+      ],
+      "group": "optical",
+      "min_height": 2.16535,
+      "content_px": 78.25000000000001,
+      "x": 10.88,
+      "y": 6.78961388888888,
+      "width": 5.0,
+      "height": 2.16535
+    },
+    {
+      "id": "4",
+      "title": "4. Comparação por grupo",
+      "items": [
+        "Coeficiente de Pearson\n$r_{ij}$ e médias dos mapas\nde coerência alternativa\n$\\widetilde\\gamma_{xy}(a,b)$.",
+        "Resumos e distribuições\ndentro e entre padrões."
+      ],
+      "group": "output",
+      "min_height": 2.9026555555555555,
+      "content_px": 107.27777777777779,
+      "x": 0.12,
+      "y": 1.9689138888888795,
+      "width": 5.0,
+      "height": 4.265700000000001
+    },
+    {
+      "id": "5",
+      "title": "5. Seleção dos exemplos",
+      "items": [
+        "Quatro pares intrapadrão:\nmaior coeficiente de\nPearson $r_{ij}$ em cada\ngrupo com ≥2 ensaios.",
+        "Um par entre padrões:\nmaior valor pontual da\ncoerência alternativa\n$\\widetilde\\gamma_{xy}(a,b)$."
+      ],
+      "group": "output",
+      "min_height": 3.6399611111111105,
+      "content_px": 136.30555555555554,
+      "x": 5.5,
+      "y": 1.9689138888888795,
+      "width": 5.0,
+      "height": 4.265700000000001
+    },
+    {
+      "id": "C5",
+      "title": "C5. Critério de saturação",
+      "items": [
+        "Até 20% de pixels com\nintensidade 255 no\npanorama original.",
+        "25 ensaios nos resumos."
+      ],
+      "group": "optical",
+      "min_height": 2.16535,
+      "content_px": 78.25,
+      "x": 10.88,
+      "y": 4.37926388888888,
+      "width": 5.0,
+      "height": 2.16535
+    },
+    {
+      "id": "C6",
+      "title": "C6. Resumos e gráficos",
+      "items": [
+        "Médias, medianas e\ngráficos por padrão.",
+        "Contornos (≥3 ensaios)\ne suas sobreposições."
+      ],
+      "group": "optical",
+      "min_height": 2.16535,
+      "content_px": 78.25000000000001,
+      "x": 10.88,
+      "y": 1.9689138888888795,
+      "width": 5.0,
+      "height": 2.16535
+    },
+    {
+      "id": "6",
+      "title": "6. Interpretação conjunta",
+      "items": [
+        "Comparação descritiva dos resultados espectrais e ópticos.",
+        "Discussão das semelhanças, diferenças e limitações do método."
+      ],
+      "group": "output",
+      "min_height": 1.4280444444444447,
+      "content_px": 49.22222222222223,
+      "x": 0.12,
+      "y": 0.12086944444443493,
+      "width": 15.76,
+      "height": 1.4280444444444447
     }
   ],
   "arestas": [
     [
-      "quadros",
-      "espectral"
+      "1",
+      "2"
     ],
     [
-      "quadros",
-      "optico"
+      "2",
+      "3"
     ],
     [
-      "espectral",
-      "completo"
+      "3",
+      "A1"
     ],
     [
-      "espectral",
-      "corte"
+      "3",
+      "B1"
     ],
     [
-      "optico",
-      "mascara"
+      "3",
+      "C1"
     ],
     [
-      "completo",
-      "auto_cwt"
+      "A1",
+      "A2"
     ],
     [
-      "corte",
-      "correlacoes_cwt"
+      "A2",
+      "A3"
     ],
     [
-      "mascara",
-      "optica_medidas"
+      "A3",
+      "A4"
     ],
     [
-      "auto_cwt",
-      "perfil"
+      "B1",
+      "B2"
     ],
     [
-      "correlacoes_cwt",
-      "mapas"
+      "B2",
+      "B3"
     ],
     [
-      "optica_medidas",
-      "optica_resumos"
+      "B3",
+      "B4"
     ],
     [
-      "perfil",
-      "pearson"
+      "C1",
+      "C2"
     ],
     [
-      "mapas",
-      "leitura_mapas"
+      "C2",
+      "C3"
     ],
     [
-      "pearson",
-      "interpretacao"
+      "C3",
+      "C4"
     ],
     [
-      "leitura_mapas",
-      "interpretacao"
+      "C4",
+      "C5"
     ],
     [
-      "optica_resumos",
-      "interpretacao"
+      "C5",
+      "C6"
+    ],
+    [
+      "A4",
+      "J"
+    ],
+    [
+      "B4",
+      "J"
+    ],
+    [
+      "J",
+      "4"
+    ],
+    [
+      "J",
+      "5"
+    ],
+    [
+      "4",
+      "6"
+    ],
+    [
+      "5",
+      "6"
+    ],
+    [
+      "C6",
+      "6"
     ]
   ],
+  "juncoes": {
+    "J": "Resultados A4 e B4 fornecidos às etapas 4 e 5."
+  },
+  "fontes_execucao_sha256": {
+    "src2/v18_montagem_18_71/METODOLOGIA.md": "a679471d95864db03be982d55b7cc86f01080b68c0d3cdfba3a9157231bd2e63",
+    "src2/v18_montagem_18_71/config/ensaios.json": "dee19c9af6fc1d5286b673eba6cd76d0c386faf68e8ac8226666b31bfff0ae22",
+    "src2/v18_montagem_18_71/scripts/reconstruir.py": "d94037112d0b534b87717b86e8d60fded47aaeea34300b6268e117eeb9a8d6fc",
+    "src2/v18_montagem_18_71/scripts/wavelet_core.py": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc",
+    "src2/v18_montagem_18_71/scripts/resumir_pares.py": "77f4fb42354191fa8d708d7f250ac9155f9be1ca08022a88fbf7cfa240e3aa73",
+    "src2/v18_montagem_18_71/scripts/optical_model.py": "58ec6de0c823208a3ac8dc49427e9854342b01e67554fef963b7dba8f6eecc2f",
+    "src2/v18_montagem_18_71/scripts/process_optical.py": "3cb44ee95b61db9215d318848bbdede22999a4cd9062b283f221450147331a41",
+    "src2/v18_montagem_18_71/04_analise_simplificada/scripts/analisar.py": "ecebcbb077f66bd8ba0e47fe35c08f644fc36585292f33164ae3dbc1bcb8ca31"
+  },
   "criterios": [
-    "Panoramas espectrais e ópticos são versões distintas da mesma montagem.",
-    "Nos pares, o corte antecede a preparação.",
-    "A CWT é aplicada às correlações.",
-    "Pearson usa perfis dos sinais completos.",
-    "WCO usa as correlações dos trechos comuns, sem receber o descritor completo de Pearson.",
-    "A análise óptica parte da máscara de gás inferido."
+    "O bloco 3 reúne as entradas de análise; as diferenças de montagem permanecem descritas no texto.",
+    "Todas as análises usam as linhas 18 a 71.",
+    "Cada operação ou resultado do bloco possui um marcador; continuações têm recuo alinhado.",
+    "Os conectores indicam o fluxo; os textos dos blocos não usam setas como separadores.",
+    "Pearson usa os perfis das autocorrelações dos sinais completos, após a CWT.",
+    "Nos pares, o corte antecede o preparo e a CWT é aplicada às correlações.",
+    "As quatro estatísticas por mapa usam todas as células válidas.",
+    "Os resumos entre pares usam um Pearson e uma média de coerência por par, com igual peso.",
+    "A seleção dos exemplos usa resultados individuais dos pares, não os resumos de grupo.",
+    "As 26 máscaras e medidas precedem a seleção dos 25 ensaios dos resumos ópticos.",
+    "A interpretação conjunta é descritiva; os pares específicos são detalhados no texto."
   ],
-  "script_sha256": "ca917e82211be358963c27b08b09282c4f99cdabde5191cfd9abd83be832d4b3",
+  "verificacao_texto_contido_nas_caixas": [
+    "1",
+    "2",
+    "3",
+    "A1",
+    "B1",
+    "C1",
+    "A2",
+    "B2",
+    "C2",
+    "A3",
+    "B3",
+    "C3",
+    "A4",
+    "B4",
+    "C4",
+    "4",
+    "5",
+    "C5",
+    "C6",
+    "6"
+  ],
+  "script_sha256": "72182818c34c572ee52271ae66b500ec0a6cbbfe3bea130b8a439b5b1c1c47ca",
   "arquivos_sha256": {
-    "fluxograma.pdf": "857823164ecb749fac967d9001209d8a8bd9b1eb9a5daa00fb3e527b37717f2d",
-    "fluxograma.png": "6eb71a0268ee1f799e8b7f31c9c1acf4fd582a502217bd4e737e6c9f75cd6126"
+    "fluxograma.pdf": "32301e93b58a6741cf9482439253e80ceaf106db27f5969604e24e1f15b35072",
+    "fluxograma.png": "4863c41dcebbaf18f190d4b4bd301579e0ec962600bdc73b97d01afa29dd4d90"
   }
 }

@@ -3,14 +3,14 @@
 A dissipação de calor em dispositivos eletrônicos compactos motiva o
 desenvolvimento de tecnologias de resfriamento eficientes. O escoamento
 bifásico com mudança de fase em microcanais é uma alternativa para essa
-aplicação: permite dissipar elevados fluxos de calor em pequenas
-áreas \cite{cheng2023}, e o fluido refrigerante absorve grandes quantidades de
-calor por unidade de área enquanto percorre o canal e passa do estado líquido para o vapor.
+aplicação, pois permite dissipar elevados fluxos de calor em pequenas
+áreas \cite{cheng2023}. Nesse processo, o fluido refrigerante absorve calor
+ao percorrer o canal e passar do estado líquido para o vapor.
 
 Para o controle e a otimização desses sistemas, é necessário identificar o padrão de
 escoamento, isto é, a configuração geométrica assumida pelas fases líquida e vapor dentro
-do canal. Padrões como bolha dispersa, \textit{plug}, \textit{slug}, \textit{churn} e
-anular ondulado apresentam comportamentos térmicos e hidrodinâmicos distintos, relevantes
+do canal. Padrões como \textit{dispersed bubbles}, \textit{plug}, \textit{slug}, \textit{churn} e
+\textit{wavy annular} apresentam comportamentos térmicos e hidrodinâmicos distintos, relevantes
 para avaliar a transferência de calor e a queda de pressão \cite{cheng2023,deoliveira2021}. A identificação dos padrões por
 inspeção visual de imagens de câmera de alta velocidade é subjetiva e depende
 do observador \cite{dias2025knn}, o que motiva o desenvolvimento de métodos
@@ -24,20 +24,13 @@ temporais de pressão diferencial e do sensor óptico. \citeonline{dias2025knn} 
 de visualização. Esses estudos motivam a investigação de descritores que permitem examinar quais
 características das imagens se repetem entre ensaios de um mesmo padrão.
 
-Neste trabalho, adota-se o domínio espacial reconstruído para investigar a organização
-das variações de intensidade ao longo dos panoramas e comparar suas escalas entre ensaios.
-Um panorama é uma imagem alongada formada pela junção de tiras verticais retiradas
-do centro de quadros consecutivos da câmera. A largura de cada tira depende da
-defasagem estimada entre as imagens. Desse modo, reúnem-se partes de vários
-instantes em uma única imagem, detalhada na \autoref{sec:met-extracao}.
-Do panorama, extrai-se um sinal unidimensional: cada amostra representa a
-intensidade média das linhas 18 a 71 de uma coluna. Assim, descrevem-se variações
-em função da posição em pixels, enquanto uma
-análise temporal descreve variações em função do tempo. A montagem reúne observações
-feitas em instantes distintos. Portanto, o panorama não representa uma fotografia
-instantânea do escoamento. O eixo reconstruído não é calibrado em unidades físicas,
-e seus comprimentos de onda não são convertidos em frequências temporais ou dimensões
-de bolhas. A câmera permanece necessária para a aquisição.
+Neste trabalho, compararam-se as escalas das variações de intensidade entre
+ensaios a partir de panoramas. Cada panorama foi construído pela junção de
+partes de quadros consecutivos da câmera, formando uma imagem alongada.
+Dessa imagem, extraiu-se um sinal unidimensional de intensidade em função da
+posição em pixels. Como reuniu-se registros de instantes distintos, o panorama
+não correspondeu a uma fotografia instantânea do escoamento. Sua construção
+e a extração do sinal foram detalhadas na \autoref{sec:met-extracao}.
 
 \citeonline{schuck2019} apresentam uma formulação alternativa para o cálculo da
 coerência \textit{Wavelet} (WCO) em
@@ -51,14 +44,17 @@ entre sinais em função da escala e do atraso e por resumos numéricos de cada 
 A avaliação é descritiva e não pressupõe que
 correlação elevada demonstre identidade do padrão.
 
-Como complemento, examinam-se a fração de vazio estimada a partir de máscaras de
+Como complemento, examinaram-se a fração de vazio estimada a partir de máscaras de
 gás e a densidade de transições dessas máscaras ao longo dos panoramas. A primeira
-resume a ocupação geométrica estimada, enquanto a segunda registra a alternância espacial
-entre regiões segmentadas. Essas informações auxiliam a interpretação dos perfis
-wavelet, que descrevem as escalas das variações de intensidade. A combinação de
+indicou a ocupação estimada por gás, enquanto a segunda registrou a alternância espacial
+entre regiões segmentadas. Essas informações auxiliaram a interpretação dos perfis
+\textit{Wavelet}, que descrevem as escalas das variações de intensidade. A combinação de
 informações espectrais e de fração de vazio encontra um antecedente em
-\citeonline{nguyen2010}. Neste trabalho, a estimativa óptica depende de hipóteses
-geométricas e da segmentação, sem constituir uma medição volumétrica calibrada.
+\citeonline{nguyen2010}. Neste trabalho, estimou-se a ocupação por gás a partir
+das regiões identificadas como gás nas imagens, supondo seções gasosas circulares.
+A estimativa dependeu, portanto, da identificação dessas regiões e da forma
+geométrica assumida. Não se realizou uma calibração por comparação com uma
+medição independente do volume real de gás.
 
 % =========================================================
 \section{Objetivo Geral}
@@ -69,8 +65,8 @@ ensaios de um mesmo padrão de escoamento bifásico e de padrões distintos no
 arranjo experimental do LETEF, a partir da representação \textit{Wavelet} dos
 sinais espaciais extraídos dos panoramas. A análise se concentra na comparação
 dos perfis de potência pelo coeficiente de Pearson $r$, na interpretação dos
-mapas e nos resumos de coerência, com apoio das medidas ópticas de ocupação estimada
-e alternância espacial das fases.
+mapas e nos resumos de coerência, com apoio das medidas ópticas de fração de vazio
+estimada e alternância espacial das fases.
 
 % =========================================================
 \section{Objetivos Específicos}
@@ -79,12 +75,15 @@ e alternância espacial das fases.
 \begin{itemize}
   \item Interpretar os mapas de potência, espectro cruzado e coerência
   \textit{Wavelet} em exemplos de pares do mesmo padrão e de padrões distintos,
-  considerando o comprimento de onda e o atraso em pixels, e quantificar
-  a coerência wavelet de cada par por seus valores mínimos, médios, medianos e máximos.
+  considerando o comprimento de onda e o atraso em pixels.
+  \item Resumir os valores de coerência \textit{Wavelet} nos mapas de cada par de
+  ensaios, considerando todas as escalas e atrasos analisados, utilizando o
+  mínimo e o máximo para identificar os extremos e a média e a mediana para
+  descrever os valores centrais.
   \item Comparar a semelhança da forma dos perfis espectrais dentro de cada padrão
   e entre padrões distintos pelo coeficiente de Pearson $r$, considerando
   mínimos, médias, medianas, máximos e a sobreposição das distribuições.
-  \item Examinar a complementaridade entre os resultados wavelet, a estimativa
+  \item Examinar a complementaridade entre os resultados \textit{Wavelet}, a estimativa
   óptica de fração de vazio e a densidade espacial de transições das máscaras
   de gás, comparando as medidas dos mesmos ensaios.
   \item Delimitar a interpretação dos resultados a partir da qualidade dos

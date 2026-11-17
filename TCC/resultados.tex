@@ -2,8 +2,8 @@
 
 Neste capítulo, apresentaram-se os resultados da análise espacial dos panoramas,
 conforme o \autoref{cap:metodologia}. Foram examinados os sinais, os campos
-wavelet e o coeficiente de Pearson $r$ entre descritores espectrais individuais.
-As comparações reuniram os perfis individuais e os resumos dos mapas de coerência wavelet.
+\textit{Wavelet} e o coeficiente de Pearson $r$ entre descritores espectrais individuais.
+As comparações reuniram os perfis individuais e os resumos dos mapas de coerência \textit{Wavelet}.
 Na \autoref{sec:res-void}, acrescentaram-se os resultados ópticos complementares,
 com a estimativa condicional de fração de vazio e a densidade espacial de transições.
 
@@ -11,8 +11,8 @@ com a estimativa condicional de fração de vazio e a densidade espacial de tran
 \section{Caracterização dos ensaios analisados}\label{sec:res-visao}
 % =========================================================
 
-Analisaram-se 26 ensaios: dez de \textit{churn}, nove de anular ondulado, três de
-\textit{plug}, três de \textit{slug} e um de bolhas dispersas.
+Analisaram-se 26 ensaios: dez de \textit{churn}, nove de \textit{wavy annular}, três de
+\textit{plug}, três de \textit{slug} e um de \textit{dispersed bubbles}.
 A \autoref{tab:res-ensaios} reuniu a identificação e a extensão dos panoramas.
 
 \begin{table}[!htbp]
@@ -26,62 +26,60 @@ A \autoref{tab:res-ensaios} reuniu a identificação e a extensão dos panoramas
     \hline
     \textbf{Nº} & \textbf{Ensaio} & \textbf{Padrão} & \textbf{Extensão (px)}\\
     \hline
-    1 & m03q05 & \textit{Churn} & 9237\\
-    2 & m04q10 & \textit{Churn} & 8894\\
-    3 & m04q20 & \textit{Churn} & 9324\\
-    4 & m05q10 & \textit{Churn} & 7058\\
-    5 & m05q20 & \textit{Churn} & 7411\\
-    6 & m05q40 & \textit{Churn} & 9873\\
-    7 & m06q10 & \textit{Churn} & 7615\\
-    8 & m06q20 & \textit{Churn} & 10025\\
-    9 & m07q20 & \textit{Churn} & 8289\\
-    10 & m07q40 & \textit{Churn} & 10313\\
+    1 & m03q05 & \textit{churn} & 9237\\
+    2 & m04q10 & \textit{churn} & 8894\\
+    3 & m04q20 & \textit{churn} & 9324\\
+    4 & m05q10 & \textit{churn} & 7058\\
+    5 & m05q20 & \textit{churn} & 7411\\
+    6 & m05q40 & \textit{churn} & 9873\\
+    7 & m06q10 & \textit{churn} & 7615\\
+    8 & m06q20 & \textit{churn} & 10025\\
+    9 & m07q20 & \textit{churn} & 8289\\
+    10 & m07q40 & \textit{churn} & 10313\\
     \hline
-    11 & m03q10 & Anular ondulado & 13789\\
-    12 & m03q20 & Anular ondulado & 22831\\
-    13 & m03q40 & Anular ondulado & 19204\\
-    14 & m04q40 & Anular ondulado & 14477\\
-    15 & m04q80 & Anular ondulado & 22533\\
-    16 & m05q80 & Anular ondulado & 17500\\
-    17 & m06q40 & Anular ondulado & 14722\\
-    18 & m06q80 & Anular ondulado & 18664\\
-    19 & m07q80 & Anular ondulado & 16656\\
+    11 & m03q10 & \textit{wavy annular} & 13789\\
+    12 & m03q20 & \textit{wavy annular} & 22831\\
+    13 & m03q40 & \textit{wavy annular} & 19204\\
+    14 & m04q40 & \textit{wavy annular} & 14477\\
+    15 & m04q80 & \textit{wavy annular} & 22533\\
+    16 & m05q80 & \textit{wavy annular} & 17500\\
+    17 & m06q40 & \textit{wavy annular} & 14722\\
+    18 & m06q80 & \textit{wavy annular} & 18664\\
+    19 & m07q80 & \textit{wavy annular} & 16656\\
     \hline
-    20 & m05q01 & \textit{Plug} & 5914\\
-    21 & m06q01 & \textit{Plug} & 7786\\
-    22 & m07q05 & \textit{Plug} & 7337\\
-    23 & m04q01 & \textit{Slug} & 5071\\
-    24 & m05q05 & \textit{Slug} & 6295\\
-    25 & m06q05 & \textit{Slug} & 7747\\
-    26 & m07q01 & Bolhas dispersas & 3094\\
+    20 & m05q01 & \textit{plug} & 5914\\
+    21 & m06q01 & \textit{plug} & 7786\\
+    22 & m07q05 & \textit{plug} & 7337\\
+    23 & m04q01 & \textit{slug} & 5071\\
+    24 & m05q05 & \textit{slug} & 6295\\
+    25 & m06q05 & \textit{slug} & 7747\\
+    26 & m07q01 & \textit{dispersed bubbles} & 3094\\
     \hline
   \end{tabular*}
-  \fonte{Elaborado pelo autor a partir dos ensaios analisados.}
+  \fonte{Elaborada pelo autor (2026).}
   \end{threeparttable}
 \end{table}
 
 As combinações entre ensaios totalizaram 325 pares, sendo 87 do mesmo padrão
 e 238 de padrões diferentes. A numeração da tabela seguiu a ordem dos ensaios
 na matriz do coeficiente de Pearson $r$.
-
 O coeficiente de Pearson $r$ comparou descritores calculados com os panoramas
-completos. Nos mapas wavelet de cada par, utilizaram-se os trechos iniciais
+completos. Nos mapas \textit{Wavelet} de cada par, utilizaram-se os trechos iniciais
 dos dois sinais, limitados ao comprimento do menor.
 
-\FloatBarrier
 % =========================================================
 \section{Panoramas e sinais espaciais}\label{sec:res-panorama}\label{sec:res-sinais}
 % =========================================================
 
 A sequência da \autoref{fig:res-panorama-plug} à
 \autoref{fig:res-panorama-anular} apresentou exemplos de \textit{plug},
-\textit{slug}, \textit{churn} e anular ondulado. Em cada figura, os três painéis
+\textit{slug}, \textit{churn} e \textit{wavy annular}. Em cada figura, os três painéis
 compartilharam a posição horizontal, expressa em pixels do panorama.
 As linhas sobre a imagem delimitaram a faixa de extração, entre as linhas
 18 e 71. O painel central mostrou a intensidade média de cada coluna dessa
 faixa, com valores menores nos trechos mais escuros.
 
-O painel inferior apresentou o sinal preparado para a análise wavelet.
+O painel inferior apresentou o sinal preparado para a análise \textit{Wavelet}.
 A inversão da intensidade, a remoção da tendência linear e a padronização
 colocaram o sinal em torno de zero, com desvio padrão unitário, conforme a
 \autoref{sec:met-preproc}. Assim, a curva inferior mostrou as variações de
@@ -94,7 +92,7 @@ intensidade na escala adotada para a comparação entre ensaios.
   \caption{Panorama completo e sinais de \textit{plug}, ensaio m05q01.}
   \label{fig:res-panorama-plug}
   \usebox{\tccfigurebox}
-  \fonte{Elaborado pelo autor.}
+  \fonte{Elaborada pelo autor (2026).}
   \end{minipage}
 \end{figure}
 
@@ -105,7 +103,7 @@ intensidade na escala adotada para a comparação entre ensaios.
   \caption{Panorama completo e sinais de \textit{slug}, ensaio m04q01.}
   \label{fig:res-panorama-slug}
   \usebox{\tccfigurebox}
-  \fonte{Elaborado pelo autor.}
+  \fonte{Elaborada pelo autor (2026).}
   \end{minipage}
 \end{figure}
 
@@ -116,7 +114,7 @@ intensidade na escala adotada para a comparação entre ensaios.
   \caption{Panorama completo e sinais de \textit{churn}, ensaio m04q20.}
   \label{fig:res-panorama-churn}
   \usebox{\tccfigurebox}
-  \fonte{Elaborado pelo autor.}
+  \fonte{Elaborada pelo autor (2026).}
   \end{minipage}
 \end{figure}
 
@@ -124,10 +122,10 @@ intensidade na escala adotada para a comparação entre ensaios.
   \centering
   \sbox{\tccfigurebox}{\includegraphics[width=\textwidth,height=0.39\textheight,keepaspectratio]{figuras/v18_panoramas/wavy_annular_m06q40_001.png}}
   \begin{minipage}{\wd\tccfigurebox}
-  \caption{Panorama completo e sinais de anular ondulado, ensaio m06q40.}
+  \caption{Panorama completo e sinais de \textit{wavy annular}, ensaio m06q40.}
   \label{fig:res-panorama-anular}
   \usebox{\tccfigurebox}
-  \fonte{Elaborado pelo autor.}
+  \fonte{Elaborada pelo autor (2026).}
   \end{minipage}
 \end{figure}
 
@@ -136,7 +134,7 @@ intervalos claros, formando patamares na curva de intensidade média.
 No ensaio de \textit{slug}, observaram-se intervalos de extensões desiguais e
 variações dentro dos trechos alongados. O exemplo de \textit{churn} apresentou
 textura irregular, acompanhada por oscilações de alturas e espaçamentos variados.
-No ensaio anular, a região central permaneceu contínua, com ondulações ao longo
+No ensaio de \textit{wavy annular}, a região central permaneceu contínua, com ondulações ao longo
 do panorama e picos recorrentes no sinal preparado.
 
 % =========================================================
@@ -166,34 +164,39 @@ com os descritores dos panoramas completos.
     \shortstack{\textbf{Trecho usado nos}\\\textbf{mapas (pixels)}} &
     \shortstack{\textbf{Coeficiente}\\\textbf{de Pearson $r$}}\\
     \hline
-    \textit{Churn} & m05q40 / m06q20 & 9873 & 0,9572\\
-    Anular ondulado & m03q20 / m04q80 & 22533 & 0,9883\\
-    \textit{Plug} & m05q01 / m06q01 & 5914 & 0,9401\\
-    \textit{Slug} & m04q01 / m05q05 & 5071 & 0,8246\\
+    \textit{churn} & m05q40 / m06q20 & 9873 & 0,9572\\
+    \textit{wavy annular} & m03q20 / m04q80 & 22533 & 0,9883\\
+    \textit{plug} & m05q01 / m06q01 & 5914 & 0,9401\\
+    \textit{slug} & m04q01 / m05q05 & 5071 & 0,8246\\
     \hline
   \end{tabular*}
-  \fonte{Elaborado pelo autor.}
+  \fonte{Elaborada pelo autor (2026).}
   \end{threeparttable}
 \end{table}
 
 A \autoref{fig:res-wps}, a \autoref{fig:res-wps-annular},
 a \autoref{fig:res-wps-plug} e a \autoref{fig:res-wps-slug} reuniram os panoramas,
-os sinais preparados, os espectros de potência wavelet (WPS), o módulo do
-espectro cruzado wavelet (WCS) e a coerência wavelet (WCO) de cada par.
+os sinais preparados, os espectros de potência \textit{Wavelet} (WPS), o módulo do
+espectro cruzado \textit{Wavelet} (WCS) e a coerência \textit{Wavelet} (WCO) de cada par.
 Nos mapas, o eixo horizontal indicou o atraso da correlação, ou seja, o
 deslocamento usado para comparar os sinais. O eixo vertical indicou o
 comprimento de onda $\lambda$, em pixels. As cores mais claras indicaram
 valores maiores, conforme a escala ao lado de cada mapa.
-Para apresentação, reduziu-se o número de colunas exibidas, preservando as
-200 escalas, o atraso zero e as extremidades dos mapas. Os resumos de
-potência e de coerência wavelet foram calculados nos campos completos.
+A abreviatura u.a. indicou unidades arbitrárias: valores da análise dos
+sinais de imagem, sem calibração em potência física, como watts.
+
+Para exibir os mapas nas figuras, selecionaram-se colunas espaçadas ao
+longo do eixo horizontal, omitindo as intermediárias. Cada coluna
+correspondeu a uma posição de atraso $b$, e a seleção manteve as 200
+escalas $a_k$, a coluna do atraso zero $b=0$ e as duas extremidades dos
+mapas. Os resumos dos mapas foram calculados com todos os valores,
+incluindo os das colunas omitidas nas figuras.
 
 As curvas laterais resumiram a potência média sobre todos os atrasos dos
 trechos comparados.
 Os descritores do coeficiente de Pearson $r$, apresentados na
 \autoref{sec:res-intra}, foram extraídos no atraso zero dos mapas de potência
 calculados com os panoramas completos.
-
 A \autoref{tab:res-intra}, na seção seguinte, reuniu as estatísticas do
 coeficiente de Pearson $r$ de todos os pares de cada padrão. Os resumos
 da coerência dos mapas foram apresentados na \autoref{sec:res-wco}.
@@ -203,11 +206,11 @@ da coerência dos mapas foram apresentados na \autoref{sec:res-wco}.
   \sbox{\tccfigurebox}{\includegraphics[width=\textwidth,height=0.87\textheight,keepaspectratio]{figuras/v18_pearson_direto/churn_m05q40_001_m06q20_001.png}}
   \begin{minipage}{\wd\tccfigurebox}
   \caption[Par intrapadrão de \textit{churn}, m05q40 e m06q20, com coeficiente de Pearson $r=0{,}9572$.]{Par intrapadrão de \textit{churn}, m05q40 e m06q20, com coeficiente de Pearson $r=0{,}9572$.
-  Coerência wavelet: mínima $1{,}46\times10^{-9}$, média $0{,}0632$,
+  Coerência \textit{Wavelet}: mínima $1{,}46\times10^{-9}$, média $0{,}0632$,
   mediana $0{,}0154$ e máxima $0{,}8326$.}
   \label{fig:res-wps}
   \usebox{\tccfigurebox}
-  \fonte{Elaborado pelo autor.}
+  \fonte{Elaborada pelo autor (2026).}
   \end{minipage}
 \end{figure}
 
@@ -215,12 +218,12 @@ da coerência dos mapas foram apresentados na \autoref{sec:res-wco}.
   \centering
   \sbox{\tccfigurebox}{\includegraphics[width=\textwidth,height=0.87\textheight,keepaspectratio]{figuras/v18_pearson_direto/wavy_annular_m03q20_001_m04q80_001.png}}
   \begin{minipage}{\wd\tccfigurebox}
-  \caption[Par intrapadrão de anular ondulado, m03q20 e m04q80, com coeficiente de Pearson $r=0{,}9883$.]{Par intrapadrão de anular ondulado, m03q20 e m04q80, com coeficiente de Pearson $r=0{,}9883$.
-  Coerência wavelet: mínima $1{,}78\times10^{-11}$, média $0{,}0282$,
+  \caption[Par intrapadrão de \textit{wavy annular}, m03q20 e m04q80, com coeficiente de Pearson $r=0{,}9883$.]{Par intrapadrão de \textit{wavy annular}, m03q20 e m04q80, com coeficiente de Pearson $r=0{,}9883$.
+  Coerência \textit{Wavelet}: mínima $1{,}78\times10^{-11}$, média $0{,}0282$,
   mediana $0{,}0075$ e máxima $0{,}3660$.}
   \label{fig:res-wps-annular}
   \usebox{\tccfigurebox}
-  \fonte{Elaborado pelo autor.}
+  \fonte{Elaborada pelo autor (2026).}
   \end{minipage}
 \end{figure}
 
@@ -229,11 +232,11 @@ da coerência dos mapas foram apresentados na \autoref{sec:res-wco}.
   \sbox{\tccfigurebox}{\includegraphics[width=\textwidth,height=0.87\textheight,keepaspectratio]{figuras/v18_pearson_direto/plug_m05q01_001_m06q01_001.png}}
   \begin{minipage}{\wd\tccfigurebox}
   \caption[Par intrapadrão de \textit{plug}, m05q01 e m06q01, com coeficiente de Pearson $r=0{,}9401$.]{Par intrapadrão de \textit{plug}, m05q01 e m06q01, com coeficiente de Pearson $r=0{,}9401$.
-  Coerência wavelet: mínima $1{,}86\times10^{-8}$, média $0{,}0926$,
+  Coerência \textit{Wavelet}: mínima $1{,}86\times10^{-8}$, média $0{,}0926$,
   mediana $0{,}0309$ e máxima $0{,}7676$.}
   \label{fig:res-wps-plug}
   \usebox{\tccfigurebox}
-  \fonte{Elaborado pelo autor.}
+  \fonte{Elaborada pelo autor (2026).}
   \end{minipage}
 \end{figure}
 
@@ -242,20 +245,19 @@ da coerência dos mapas foram apresentados na \autoref{sec:res-wco}.
   \sbox{\tccfigurebox}{\includegraphics[width=\textwidth,height=0.87\textheight,keepaspectratio]{figuras/v18_pearson_direto/slug_m04q01_001_m05q05_001.png}}
   \begin{minipage}{\wd\tccfigurebox}
   \caption[Par intrapadrão de \textit{slug}, m04q01 e m05q05, com coeficiente de Pearson $r=0{,}8246$.]{Par intrapadrão de \textit{slug}, m04q01 e m05q05, com coeficiente de Pearson $r=0{,}8246$.
-  Coerência wavelet: mínima $1{,}10\times10^{-9}$, média $0{,}1388$,
+  Coerência \textit{Wavelet}: mínima $1{,}10\times10^{-9}$, média $0{,}1388$,
   mediana $0{,}0421$ e máxima $0{,}9109$.}
   \label{fig:res-wps-slug}
   \usebox{\tccfigurebox}
-  \fonte{Elaborado pelo autor.}
+  \fonte{Elaborada pelo autor (2026).}
   \end{minipage}
 \end{figure}
 
 % =========================================================
-\FloatBarrier
 \section{Perfis espectrais e similaridade intrapadrão}\label{sec:res-intra}
 % =========================================================
 
-A \autoref{fig:res-perfis} apresentou os perfis de potência wavelet no atraso
+A \autoref{fig:res-perfis} apresentou os perfis de potência \textit{Wavelet} no atraso
 zero dos 26 ensaios, agrupados por padrão. Cada perfil reuniu a potência nos
 mesmos 200 comprimentos de onda, distribuídos logaritmicamente entre 50 e
 3\,000 pixels, a partir do sinal do panorama completo.
@@ -263,20 +265,39 @@ Os picos indicaram os comprimentos de onda com maior resposta espectral.
 Esses foram os perfis comparados diretamente pelo coeficiente de Pearson $r$,
 conforme a \autoref{sec:met-pearson}.
 
-Para facilitar a comparação visual das formas, dividiu-se cada perfil pelo
-próprio máximo. Em cada painel, as linhas finas representaram esses perfis
-normalizados, e a linha espessa mostrou sua mediana em cada comprimento de
-onda. Essa mudança de escala preservou a posição dos picos e o coeficiente
-de Pearson $r$, calculado diretamente com os valores originais de potência.
+\begin{figure}[p]
+  \centering
+  \sbox{\tccfigurebox}{\includegraphics[width=\textwidth,height=0.78\textheight,keepaspectratio]{figuras/v18_pearson_direto/perfis_espectrais_pearson.png}}
+  \begin{minipage}{\wd\tccfigurebox}
+  \caption[Perfis de potência \textit{Wavelet} no atraso zero por padrão de escoamento.]{Perfis
+  de potência \textit{Wavelet} no atraso zero por padrão de escoamento. As curvas finas
+  representam os perfis individuais, normalizados pelo próprio máximo.
+  As espessas representam a mediana em cada comprimento de onda. Os tracejados destacam
+  m03q40 e m06q05. Em \textit{dispersed bubbles}, a mediana coincide com o único perfil.}
+  \label{fig:res-perfis}
+  \usebox{\tccfigurebox}
+  \fonte{Elaborada pelo autor (2026).}
+  \end{minipage}
+\end{figure}
+
+Para comparar visualmente as formas, dividiu-se cada valor do perfil pelo
+máximo da própria curva. Assim, o máximo passou a 1 e um valor igual à sua
+metade, por exemplo, passou a $0{,}5$.
+
+Essa mudança de escala preservou a posição dos picos e o coeficiente de
+Pearson $r$, calculado diretamente com os valores originais de potência.
+Em cada painel, as linhas finas representaram os perfis normalizados,
+e a linha espessa mostrou sua mediana em cada comprimento de onda.
 Os perfis de m03q40 e m06q05 foram identificados por linhas tracejadas e
-legendas nos respectivos painéis.
+legendas nos respectivos painéis para destacar as diferenças espectrais
+explicadas a seguir.
 
 Os três perfis de \textit{plug} apresentaram formas próximas. Em \textit{slug},
 o perfil de m06q05 concentrou sua maior resposta em comprimentos de onda mais
-longos que os dos outros dois ensaios. No anular ondulado, o perfil de m03q40
+longos que os dos outros dois ensaios. No \textit{wavy annular}, o perfil de m03q40
 se destacou no sentido oposto, com maior resposta em comprimentos de onda
 menores. Esse ensaio apresentou a menor média do coeficiente de Pearson $r$
-com os demais anulares, $0{,}3275$. A saturação observada nessa aquisição
+com os demais ensaios de \textit{wavy annular}, $0{,}3275$. A saturação observada nessa aquisição
 foi uma ressalva de qualidade, sem estabelecer uma causa única para a
 diferença espectral.
 
@@ -284,21 +305,12 @@ A \autoref{tab:res-intra} reuniu o mínimo, a média, a mediana e o máximo
 dos coeficientes de Pearson $r$ dentro de cada padrão. Cada par contribuiu
 com um único coeficiente.
 
-\begin{figure}[p]
-  \centering
-  \sbox{\tccfigurebox}{\includegraphics[width=\textwidth,height=0.90\textheight,keepaspectratio]{figuras/v18_pearson_direto/perfis_espectrais_pearson.png}}
-  \begin{minipage}{\wd\tccfigurebox}
-  \caption{Perfis de potência wavelet no atraso zero por padrão de escoamento.}
-  \label{fig:res-perfis}
-  \usebox{\tccfigurebox}
-  \fonte{Elaborado pelo autor.}
-  \end{minipage}
-\end{figure}
-
-\begin{table}[htbp]
+\begin{table}[!htbp]
   \centering
   \begin{threeparttable}
-  \caption{Estatísticas intrapadrão do coeficiente de Pearson $r$.}
+  \caption[Estatísticas intrapadrão do coeficiente de Pearson $r$.]{Estatísticas
+  intrapadrão do coeficiente de Pearson $r$, calculadas a partir das comparações
+  entre os ensaios de cada padrão de escoamento.}
   \label{tab:res-intra}
   \small
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l r r r r r r@{}}
@@ -306,27 +318,26 @@ com um único coeficiente.
     \textbf{Padrão} & \textbf{Ensaios} & \textbf{Pares} &
     \textbf{Mínimo} & \textbf{Média} & \textbf{Mediana} & \textbf{Máximo}\\
     \hline
-    \textit{Churn} & 10 & 45 & 0,3746 & 0,7684 & 0,7974 & 0,9572\\
-    Anular ondulado & 9 & 36 & $-0{,}0088$ & 0,7651 & 0,8811 & 0,9883\\
-    \textit{Plug} & 3 & 3 & 0,8703 & 0,9020 & 0,8955 & 0,9401\\
-    \textit{Slug} & 3 & 3 & 0,4049 & 0,5540 & 0,4325 & 0,8246\\
-    Bolhas dispersas & 1 & 0 & --- & --- & --- & ---\\
+    \textit{churn} & 10 & 45 & 0,3746 & 0,7684 & 0,7974 & 0,9572\\
+    \textit{wavy annular} & 9 & 36 & $-0{,}0088$ & 0,7651 & 0,8811 & 0,9883\\
+    \textit{plug} & 3 & 3 & 0,8703 & 0,9020 & 0,8955 & 0,9401\\
+    \textit{slug} & 3 & 3 & 0,4049 & 0,5540 & 0,4325 & 0,8246\\
+    \textit{dispersed bubbles} & 1 & 0 & --- & --- & --- & ---\\
     \hline
   \end{tabular*}
-  \fonte{Elaborado pelo autor a partir das comparações por padrão de escoamento.}
+  \fonte{Elaborada pelo autor (2026).}
   \end{threeparttable}
 \end{table}
 
 O maior coeficiente de Pearson $r$ médio ocorreu em \textit{plug}, em acordo
-com a proximidade das três curvas. \textit{Churn} e anular ondulado apresentaram
-médias próximas, mas a mediana foi maior no anular. Nesse grupo, os
+com a proximidade das três curvas. Os padrões \textit{churn} e \textit{wavy annular} apresentaram
+médias próximas, mas a mediana foi maior no \textit{wavy annular}. Nesse grupo, os
 coeficientes variaram de $-0{,}0088$ a $0{,}9883$, mostrando diferenças
-entre seus pares. \textit{Slug} teve a menor média e a menor mediana entre
-os padrões com mais de um ensaio. Para bolhas dispersas, o único registro
+entre seus pares. O padrão \textit{slug} teve a menor média e a menor mediana entre
+os padrões com mais de um ensaio. Para \textit{dispersed bubbles}, o único registro
 não permitiu calcular estatísticas intrapadrão.
 
 % =========================================================
-\FloatBarrier
 \section{Similaridade espectral entre padrões}\label{sec:res-inter}
 % =========================================================
 
@@ -347,7 +358,7 @@ m07q01 apresentaram valores menores em diversas comparações.
   \caption{Matriz do coeficiente de Pearson $r$ entre os descritores dos panoramas completos.}
   \label{fig:res-pearson}
   \usebox{\tccfigurebox}
-  \fonte{Elaborado pelo autor.}
+  \fonte{Elaborada pelo autor (2026).}
   \end{minipage}
 \end{figure}
 
@@ -355,14 +366,16 @@ A \autoref{tab:res-inter} detalhou as quatro estatísticas do coeficiente de
 Pearson $r$ nas dez combinações entre padrões. O coeficiente
 de Pearson $r$ médio entre \textit{churn} e \textit{plug} foi $0{,}8117$,
 superior à média intrapadrão de \textit{churn}, $0{,}7684$. As comparações com
-bolhas dispersas apresentaram médias negativas do coeficiente de Pearson $r$,
+\textit{dispersed bubbles} apresentaram médias negativas do coeficiente de Pearson $r$,
 mas envolveram sempre a mesma aquisição desse padrão. Assim, essa diferença
-descreveu um registro particular, sem estimar a variabilidade de bolhas dispersas.
+descreveu um registro particular, sem estimar a variabilidade de \textit{dispersed bubbles}.
 
-\begin{table}[htbp]
+\begin{table}[!htbp]
   \centering
   \begin{threeparttable}
-  \caption{Estatísticas do coeficiente de Pearson $r$ nas comparações entre padrões.}
+  \caption[Estatísticas do coeficiente de Pearson $r$ nas comparações entre padrões.]{Estatísticas
+  do coeficiente de Pearson $r$ nas comparações entre padrões, agrupadas por
+  combinação de padrões de escoamento.}
   \label{tab:res-inter}
   \small
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l r r r r r@{}}
@@ -370,66 +383,79 @@ descreveu um registro particular, sem estimar a variabilidade de bolhas dispersa
     \textbf{Combinação} & \textbf{Pares} &
     \textbf{Mínimo} & \textbf{Média} & \textbf{Mediana} & \textbf{Máximo}\\
     \hline
-    \textit{Churn} / anular ondulado & 90 & $-0{,}0614$ & 0,7240 & 0,7841 & 0,9770\\
-    \textit{Churn} / \textit{plug} & 30 & 0,5124 & 0,8117 & 0,8253 & 0,9776\\
-    \textit{Churn} / \textit{slug} & 30 & 0,1458 & 0,5417 & 0,5569 & 0,9036\\
-    \textit{Churn} / bolhas dispersas & 10 & $-0{,}2041$ & $-0{,}0056$ & $-0{,}0875$ & 0,3121\\
-    Anular ondulado / \textit{plug} & 27 & $-0{,}1823$ & 0,6800 & 0,7844 & 0,9716\\
-    Anular ondulado / \textit{slug} & 27 & $-0{,}4968$ & 0,3577 & 0,4168 & 0,7770\\
-    Anular ondulado / bolhas dispersas & 9 & $-0{,}2668$ & $-0{,}0334$ & $-0{,}1606$ & 0,6255\\
-    \textit{Plug} / \textit{slug} & 9 & 0,4019 & 0,7023 & 0,6802 & 0,9338\\
-    \textit{Plug} / bolhas dispersas & 3 & $-0{,}1787$ & $-0{,}1568$ & $-0{,}1532$ & $-0{,}1384$\\
-    \textit{Slug} / bolhas dispersas & 3 & $-0{,}5129$ & $-0{,}2962$ & $-0{,}3220$ & $-0{,}0536$\\
+    \textit{churn} / \textit{wavy annular} & 90 & $-0{,}0614$ & 0,7240 & 0,7841 & 0,9770\\
+    \textit{churn} / \textit{plug} & 30 & 0,5124 & 0,8117 & 0,8253 & 0,9776\\
+    \textit{churn} / \textit{slug} & 30 & 0,1458 & 0,5417 & 0,5569 & 0,9036\\
+    \textit{churn} / \textit{dispersed bubbles} & 10 & $-0{,}2041$ & $-0{,}0056$ & $-0{,}0875$ & 0,3121\\
+    \textit{wavy annular} / \textit{plug} & 27 & $-0{,}1823$ & 0,6800 & 0,7844 & 0,9716\\
+    \textit{wavy annular} / \textit{slug} & 27 & $-0{,}4968$ & 0,3577 & 0,4168 & 0,7770\\
+    \textit{wavy annular} / \textit{dispersed bubbles} & 9 & $-0{,}2668$ & $-0{,}0334$ & $-0{,}1606$ & 0,6255\\
+    \textit{plug} / \textit{slug} & 9 & 0,4019 & 0,7023 & 0,6802 & 0,9338\\
+    \textit{plug} / \textit{dispersed bubbles} & 3 & $-0{,}1787$ & $-0{,}1568$ & $-0{,}1532$ & $-0{,}1384$\\
+    \textit{slug} / \textit{dispersed bubbles} & 3 & $-0{,}5129$ & $-0{,}2962$ & $-0{,}3220$ & $-0{,}0536$\\
     \hline
   \end{tabular*}
-  \fonte{Elaborado pelo autor a partir das comparações por padrão de escoamento.}
+  \fonte{Elaborada pelo autor (2026).}
   \end{threeparttable}
 \end{table}
 
 % =========================================================
-\section{Coerência wavelet entre os ensaios}\label{sec:res-wco}
+\section{Coerência \textit{Wavelet} entre os ensaios}\label{sec:res-wco}
 % =========================================================
 
 Para cada um dos 325 pares, obtiveram-se o mínimo, a média, a mediana e o
-máximo da coerência wavelet no mapa completo, considerando todas as escalas
+máximo da coerência \textit{Wavelet} no mapa completo, considerando todas as escalas
 e todos os atrasos. Esses quatro resumos acompanharam as legendas dos pares
 intrapadrão ilustrados na \autoref{sec:res-wps} e do exemplo interpadrões
 da \autoref{fig:res-inter}.
 
-No par anular, o coeficiente de Pearson $r$
-foi de $0{,}9883$, enquanto a coerência wavelet média foi de $0{,}0282$ e a máxima,
-de $0{,}3660$. A semelhança entre as formas dos perfis de potência não foi
-acompanhada por coerência elevada no mapa desse par.
+No par m03q20 e m04q80, de \textit{wavy annular}, o coeficiente de
+Pearson $r=0{,}9883$ indicou que os perfis dos panoramas completos
+apresentaram variações de potência muito semelhantes ao longo dos
+comprimentos de onda. Nos trechos de comprimento comum, a coerência
+\textit{Wavelet} alternativa $\widetilde\gamma_{xy}(a_k,b)$ teve média de
+$0{,}0282$, considerando todas as escalas $a_k$ e atrasos $b$, e máximo de
+$0{,}3660$. Assim, a semelhança da distribuição de potência entre os
+comprimentos de onda não correspondeu a uma associação elevada entre
+os trechos dos sinais nas escalas $a_k$ e atrasos $b$ avaliados.
 
-O par interpadrões m04q01, de \textit{slug}, e m05q80, de anular ondulado,
-foi escolhido pelo maior máximo de coerência entre os 238 pares de padrões
-diferentes. Na \autoref{fig:res-inter}, esse máximo atingiu $0{,}9936$,
-e a média do mapa foi de $0{,}1320$.
+O par interpadrões m04q01, de \textit{slug}, e m05q80, de \textit{wavy annular},
+foi escolhido pelo maior máximo da coerência \textit{Wavelet} alternativa
+$\widetilde\gamma_{xy}(a_k,b)$ entre os 238 pares de padrões diferentes.
+Na \autoref{fig:res-inter}, esse máximo atingiu $0{,}9936$. A média dos
+valores de coerência \textit{Wavelet} alternativa $\widetilde\gamma_{xy}(a_k,b)$
+foi de $0{,}1320$, considerando as 200 escalas $a_k$ e todos os atrasos $b$
+do mapa completo, com igual peso para cada ponto.
 O coeficiente de Pearson $r$ entre os perfis completos foi de $0{,}4514$.
 
 \begin{figure}[p]
   \centering
   \sbox{\tccfigurebox}{\includegraphics[width=\textwidth,height=0.87\textheight,keepaspectratio]{figuras/v18_pearson_direto/slug_wavy_annular_m04q01_001_m05q80_001.png}}
   \begin{minipage}{\wd\tccfigurebox}
-  \caption[Comparação pontual entre \textit{slug}, m04q01, e anular ondulado, m05q80.]{Comparação pontual entre \textit{slug}, m04q01, e anular ondulado, m05q80.
-  Coerência wavelet: mínima $3{,}34\times10^{-10}$, média $0{,}1320$,
+  \caption[Comparação pontual entre \textit{slug}, m04q01, e \textit{wavy annular}, m05q80.]{Comparação pontual entre \textit{slug}, m04q01, e \textit{wavy annular}, m05q80.
+  Coerência \textit{Wavelet}: mínima $3{,}34\times10^{-10}$, média $0{,}1320$,
   mediana $0{,}0437$ e máxima $0{,}9936$.}
   \label{fig:res-inter}
   \usebox{\tccfigurebox}
-  \fonte{Elaborado pelo autor.}
+  \fonte{Elaborada pelo autor (2026).}
   \end{minipage}
 \end{figure}
 
-Para comparar todos os pares, utilizou-se a coerência wavelet média de cada
-mapa. A \autoref{tab:res-wco-combinacoes} apresentou a distribuição dessas
-médias nas 14 combinações com dados, com o mesmo peso para cada par.
-Assim, o máximo nessa tabela correspondeu à maior média de um mapa
-dentro da combinação, e não ao maior valor pontual de coerência.
+Cada par de ensaios contribuiu para a \autoref{tab:res-wco-combinacoes}
+com a média da coerência \textit{Wavelet} de seu mapa completo. Essas médias
+foram agrupadas nas 14 combinações de padrões, com igual peso para cada
+par, para calcular o mínimo, a média, a mediana e o máximo apresentados.
 
-\begin{table}[htbp]
+Por exemplo, os três pares de \textit{plug} tiveram médias de $0{,}0773$,
+$0{,}0823$ e $0{,}0926$. Assim, o máximo dessa combinação foi $0{,}0926$,
+selecionado entre as médias dos mapas, e não entre seus pontos individuais.
+
+\begin{table}[!htbp]
   \centering
   \begin{threeparttable}
-  \caption{Distribuição da coerência wavelet média por combinação de padrões.}
+  \caption[Distribuição da coerência \textit{Wavelet} média por combinação de padrões.]{Distribuição
+  da coerência \textit{Wavelet} média por combinação de padrões. Cada par de ensaios
+  contribuiu com uma média de coerência.}
   \label{tab:res-wco-combinacoes}
   \small
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l r r r r r@{}}
@@ -437,30 +463,30 @@ dentro da combinação, e não ao maior valor pontual de coerência.
     \textbf{Combinação} & \textbf{Pares} & \textbf{Mínimo} &
     \textbf{Média} & \textbf{Mediana} & \textbf{Máximo}\\
     \hline
-    \textit{Churn} / \textit{churn} & 45 & 0,0470 & 0,0742 & 0,0742 & 0,0988\\
-    Anular ondulado / anular ondulado & 36 & 0,0281 & 0,0376 & 0,0373 & 0,0459\\
-    \textit{Plug} / \textit{plug} & 3 & 0,0773 & 0,0841 & 0,0823 & 0,0926\\
-    \textit{Slug} / \textit{slug} & 3 & 0,0932 & 0,1137 & 0,1091 & 0,1388\\
+    \textit{churn} / \textit{churn} & 45 & 0,0470 & 0,0742 & 0,0742 & 0,0988\\
+    \textit{wavy annular} / \textit{wavy annular} & 36 & 0,0281 & 0,0376 & 0,0373 & 0,0459\\
+    \textit{plug} / \textit{plug} & 3 & 0,0773 & 0,0841 & 0,0823 & 0,0926\\
+    \textit{slug} / \textit{slug} & 3 & 0,0932 & 0,1137 & 0,1091 & 0,1388\\
     \hline
-    \textit{Churn} / anular ondulado & 90 & 0,0457 & 0,0686 & 0,0679 & 0,1101\\
-    \textit{Churn} / \textit{plug} & 30 & 0,0602 & 0,0811 & 0,0784 & 0,1140\\
-    \textit{Churn} / \textit{slug} & 30 & 0,0707 & 0,0912 & 0,0899 & 0,1292\\
-    \textit{Churn} / bolhas dispersas & 10 & 0,1324 & 0,1676 & 0,1671 & 0,2037\\
-    Anular ondulado / \textit{plug} & 27 & 0,0490 & 0,0845 & 0,0822 & 0,1211\\
-    Anular ondulado / \textit{slug} & 27 & 0,0646 & 0,0931 & 0,0880 & 0,1320\\
-    Anular ondulado / bolhas dispersas & 9 & 0,1189 & 0,1428 & 0,1386 & 0,1741\\
-    \textit{Plug} / \textit{slug} & 9 & 0,0689 & 0,0917 & 0,0866 & 0,1244\\
-    \textit{Plug} / bolhas dispersas & 3 & 0,1333 & 0,1448 & 0,1489 & 0,1524\\
-    \textit{Slug} / bolhas dispersas & 3 & 0,1339 & 0,1477 & 0,1386 & 0,1707\\
+    \textit{churn} / \textit{wavy annular} & 90 & 0,0457 & 0,0686 & 0,0679 & 0,1101\\
+    \textit{churn} / \textit{plug} & 30 & 0,0602 & 0,0811 & 0,0784 & 0,1140\\
+    \textit{churn} / \textit{slug} & 30 & 0,0707 & 0,0912 & 0,0899 & 0,1292\\
+    \textit{churn} / \textit{dispersed bubbles} & 10 & 0,1324 & 0,1676 & 0,1671 & 0,2037\\
+    \textit{wavy annular} / \textit{plug} & 27 & 0,0490 & 0,0845 & 0,0822 & 0,1211\\
+    \textit{wavy annular} / \textit{slug} & 27 & 0,0646 & 0,0931 & 0,0880 & 0,1320\\
+    \textit{wavy annular} / \textit{dispersed bubbles} & 9 & 0,1189 & 0,1428 & 0,1386 & 0,1741\\
+    \textit{plug} / \textit{slug} & 9 & 0,0689 & 0,0917 & 0,0866 & 0,1244\\
+    \textit{plug} / \textit{dispersed bubbles} & 3 & 0,1333 & 0,1448 & 0,1489 & 0,1524\\
+    \textit{slug} / \textit{dispersed bubbles} & 3 & 0,1339 & 0,1477 & 0,1386 & 0,1707\\
     \hline
   \end{tabular*}
-  \fonte{Elaborado pelo autor a partir de uma média de coerência por par.}
+  \fonte{Elaborada pelo autor (2026).}
   \end{threeparttable}
 \end{table}
 
 Entre as comparações intrapadrão, \textit{slug} apresentou a maior média
-de coerência, $0{,}1137$, e anular ondulado, a menor, $0{,}0376$.
-As quatro combinações com bolhas dispersas tiveram médias superiores às
+de coerência, $0{,}1137$, e \textit{wavy annular}, a menor, $0{,}0376$.
+As quatro combinações com \textit{dispersed bubbles} tiveram médias superiores às
 das demais combinações, mas envolveram sempre o único ensaio desse padrão.
 Essas medidas resumiram os mapas completos, cuja extensão de atrasos
 dependeu do comprimento dos sinais comparados.
@@ -471,12 +497,14 @@ dependeu do comprimento dos sinais comparados.
 
 A \autoref{tab:res-global} reuniu os 87 pares do mesmo padrão e os 238
 pares de padrões diferentes. Cada par contribuiu com um coeficiente de
-Pearson $r$ e uma média de coerência wavelet, com peso igual nos resumos.
+Pearson $r$ e uma média de coerência \textit{Wavelet}, com peso igual nos resumos.
 
-\begin{table}[htbp]
+\begin{table}[!htbp]
   \centering
   \begin{threeparttable}
-  \caption{Estatísticas globais do coeficiente de Pearson e da coerência wavelet média dos pares.}
+  \caption[Estatísticas globais do coeficiente de Pearson e da coerência \textit{Wavelet} média dos pares.]{Estatísticas
+  globais do coeficiente de Pearson e da coerência \textit{Wavelet} média, calculadas
+  a partir dos 325 pares de ensaios.}
   \label{tab:res-global}
   \small
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l l r r r r r@{}}
@@ -490,31 +518,29 @@ Pearson $r$ e uma média de coerência wavelet, com peso igual nos resumos.
     Coerência média & Interpadrões & 238 & 0,0457 & 0,0874 & 0,0795 & 0,2037\\
     \hline
   \end{tabular*}
-  \fonte{Elaborado pelo autor a partir dos 325 pares de ensaios.}
+  \fonte{Elaborada pelo autor (2026).}
   \end{threeparttable}
 \end{table}
 
-\begin{samepage}
 A média do coeficiente de Pearson $r$ foi maior nos pares do mesmo padrão,
 com diferença de $0{,}1828$. Sua mediana também foi maior nesse grupo.
-Para a coerência wavelet média dos mapas, ocorreu o sentido oposto: tanto a média
+Para a coerência \textit{Wavelet} média dos mapas, ocorreu o sentido oposto: tanto a média
 quanto a mediana foram maiores nos pares de padrões diferentes.
+
 A \autoref{fig:res-distribuicoes} apresentou as duas distribuições,
 com um ponto por par. As caixas delimitaram os 50\% centrais dos valores,
 a linha interna indicou a mediana e o losango, a média. As hastes se
 estenderam do mínimo ao máximo. Os valores das tabelas foram arredondados
 somente para apresentação.
 
-\end{samepage}
-
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
   \centering
   \sbox{\tccfigurebox}{\includegraphics[width=\textwidth]{figuras/v18_resumos/distribuicoes_pearson_coerencia.pdf}}
   \begin{minipage}{\wd\tccfigurebox}
-  \caption{Distribuições do coeficiente de Pearson e da coerência wavelet média dos pares.}
+  \caption{Distribuições do coeficiente de Pearson e da coerência \textit{Wavelet} média dos pares.}
   \label{fig:res-distribuicoes}
   \usebox{\tccfigurebox}
-  \fonte{Elaborado pelo autor.}
+  \fonte{Elaborada pelo autor (2026).}
   \end{minipage}
 \end{figure}
 
@@ -522,8 +548,7 @@ As distribuições intrapadrão e interpadrões apresentaram sobreposição nas
 duas medidas. Valores elevados do coeficiente de Pearson $r$ também
 ocorreram entre padrões diferentes, e as maiores médias de coerência não
 se restringiram aos pares do mesmo padrão.
-
-Os resultados wavelet foram descritivos, sem valores de significância estatística ou
+Os resultados \textit{Wavelet} foram descritivos, sem valores de significância estatística ou
 estimativa de acurácia de classificação. Os 325 pares da análise principal
 compartilharam as mesmas 26 aquisições, sem constituir observações independentes.
 
@@ -533,29 +558,29 @@ compartilharam as mesmas 26 aquisições, sem constituir observações independe
 
 Na análise óptica, utilizaram-se exclusivamente as linhas 18 a 71 dos
 panoramas, conforme a \autoref{sec:met-void}. Dos 26 registros
-selecionados, 25 atenderam ao critério de saturação. O ensaio anular
+selecionados, 25 atenderam ao critério de saturação. O ensaio de \textit{wavy annular}
 \codigo{m03q40\_001} apresentou $25{,}23\%$ dos pixels com intensidade 255
-nessa faixa, acima do limite de $20\%$. Ele permaneceu na análise wavelet,
+nessa faixa, acima do limite de $20\%$. Ele permaneceu na análise \textit{Wavelet},
 mas foi excluído das estatísticas ópticas. Essa distinção explicou a presença
-de oito ensaios anulares na \autoref{tab:res-void}, em comparação com nove na
+de oito ensaios de \textit{wavy annular} na \autoref{tab:res-void}, em comparação com nove na
 análise principal.
 
-A \autoref{fig:res-mascaras-void} apresentou, de cima para baixo, bolhas dispersas
+A \autoref{fig:res-mascaras-void} apresentou, de cima para baixo, \textit{dispersed bubbles}
 (m07q01), \textit{plug} (m06q01), \textit{slug} (m06q05), \textit{churn} (m06q20)
-e anular ondulado (m06q80). À esquerda, mostraram-se os panoramas.
+e \textit{wavy annular} (m06q80). À esquerda, mostraram-se os panoramas.
 À direita, as regiões azuis identificaram o gás inferido pela segmentação,
 incluindo o interior dos contornos preenchidos, sem constituir medição independente
 do volume de vapor. Os recortes mostraram apenas os primeiros 2\,500 pixels.
 As medidas utilizaram a extensão completa de cada panorama elegível.
 
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
   \centering
   \sbox{\tccfigurebox}{\includegraphics[width=\textwidth,height=0.78\textheight,keepaspectratio]{figuras/v18_optica/panorama_phase_masks.png}}
   \begin{minipage}{\wd\tccfigurebox}
   \caption{Panoramas e máscaras de gás inferido nos cinco padrões.}
   \label{fig:res-mascaras-void}
   \usebox{\tccfigurebox}
-  \fonte{Elaborado pelo autor a partir dos panoramas e das máscaras.}
+  \fonte{Elaborada pelo autor (2026).}
   \end{minipage}
 \end{figure}
 
@@ -565,10 +590,11 @@ de vazio $\widehat\alpha_{\mathrm{opt}}$ e da densidade de transições $1\,000F
 um valor de cada medida, com igual peso nos resumos por padrão. A densidade
 de transições $1\,000F$ foi apresentada por mil pares de pixels vizinhos.
 
-\begin{table}[htbp]
+\begin{table}[!htbp]
   \centering
   \begin{threeparttable}
-  \caption{Medianas das medidas ópticas no limiar de segmentação 0,70.}
+  \caption[Medianas das medidas ópticas no limiar de segmentação 0,70.]{Medianas
+  das medidas ópticas por padrão de escoamento, no limiar de segmentação 0,70.}
   \label{tab:res-void}
   \small
   \begin{tabular}{l c c c}
@@ -577,21 +603,20 @@ de transições $1\,000F$ foi apresentada por mil pares de pixels vizinhos.
     \shortstack{\textbf{Estimativa condicional}\\\textbf{de fração de vazio $\widehat\alpha_{\mathrm{opt}}$}} &
     \shortstack{\textbf{Densidade de}\\\textbf{transições $1\,000F$}}\\
     \hline
-    Bolhas dispersas & 1 & 0,0023 & 2,563\\
-    \textit{Plug} & 3 & 0,5702 & 9,133\\
-    \textit{Slug} & 3 & 0,5713 & 9,153\\
-    \textit{Churn} & 10 & 0,7810 & 11,901\\
-    Anular ondulado & 8 & 0,9653 & 2,180\\
+    \textit{dispersed bubbles} & 1 & 0,0023 & 2,563\\
+    \textit{plug} & 3 & 0,5702 & 9,133\\
+    \textit{slug} & 3 & 0,5713 & 9,153\\
+    \textit{churn} & 10 & 0,7810 & 11,901\\
+    \textit{wavy annular} & 8 & 0,9653 & 2,180\\
     \hline
   \end{tabular}
-  \fonte{Elaborado pelo autor a partir dos resumos por padrão da análise óptica.}
+  \fonte{Elaborada pelo autor (2026).}
   \end{threeparttable}
 \end{table}
 
-\FloatBarrier
 As medianas de \textit{plug} e \textit{slug} ficaram próximas nas duas medidas.
-\textit{Churn} apresentou a maior mediana da densidade de transições
-$1\,000F$, enquanto o anular ondulado apresentou a maior mediana da fração
+O padrão \textit{churn} apresentou a maior mediana da densidade de transições
+$1\,000F$, enquanto o \textit{wavy annular} apresentou a maior mediana da fração
 de vazio estimada $\widehat\alpha_{\mathrm{opt}}$ e a menor mediana de
 transições entre os grupos analisados.
 
@@ -603,21 +628,23 @@ Essas regiões descreveram a amostra, sem representar fronteiras de classificaç
 Os eixos reuniram a estimativa condicional de fração de vazio
 $\widehat\alpha_{\mathrm{opt}}$ e a densidade de transições $1\,000F$ (\textit{flip-rate}),
 expressa por 1\,000 pares de pixels vizinhos.
-As envoltórias de \textit{plug} e \textit{slug} apresentaram interseção,
-assim como as de \textit{churn} e anular ondulado.
-O único ponto de bolhas dispersas não permitiu estimar a variabilidade desse padrão.
 
-\begin{figure}[htbp]
+As envoltórias de \textit{plug} e \textit{slug} apresentaram interseção,
+assim como as de \textit{churn} e \textit{wavy annular}.
+O único ponto de \textit{dispersed bubbles} não permitiu estimar a variabilidade desse padrão.
+A interpretação conjunta das medidas ópticas e espectrais e das limitações
+das entradas foi desenvolvida no \autoref{cap:discussao}.
+
+\begin{figure}[!htbp]
   \centering
   \sbox{\tccfigurebox}{\includegraphics[width=\textwidth]{figuras/v18_optica/void_fraction_vs_flip_rate.png}}
   \begin{minipage}{\wd\tccfigurebox}
-  \caption{Estimativa condicional de fração de vazio e densidade espacial de transições.}
+  \caption[Estimativa condicional de fração de vazio e densidade espacial de transições.]{Estimativa
+  condicional de fração de vazio e densidade espacial de transições
+  (segmentação óptica, limiar 0,70).}
   \label{fig:res-void-transicoes}
   \usebox{\tccfigurebox}
-  \fonte{Elaborado pelo autor, análise óptica com limiar de segmentação 0,70.}
+  \fonte{Elaborada pelo autor (2026).}
   \end{minipage}
 \end{figure}
 
-\FloatBarrier
-A interpretação conjunta das medidas ópticas e espectrais e das limitações
-das entradas foi desenvolvida no \autoref{cap:discussao}.

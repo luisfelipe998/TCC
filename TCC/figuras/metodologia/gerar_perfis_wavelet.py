@@ -101,7 +101,7 @@ def main():
     mean_color = "#087f8c"
     ax_map.axvline(0, color="white", linewidth=2.6, alpha=0.9)
     ax_map.axvline(0, color=zero_color, linewidth=1.25)
-    ax_map.set_title("Potência wavelet\nda autocorrelação", pad=9)
+    ax_map.set_title("Potência $\\mathit{Wavelet}$\nda autocorrelação", pad=9)
     ax_map.set_xlabel("Atraso (pixels)", labelpad=3)
     ax_map.set_ylabel("Comprimento de onda (pixels)", labelpad=3)
     ax_map.set_xticks([-8000, 0, 8000], ["−8000", "0", "8000"])

@@ -2099,11 +2099,19 @@
   },
   "source_core": "src2/v16_spatial2_18_71/scripts/wavelet_core.py",
   "source_core_sha256": "57fa5baede545fb50e648e4db40dd266a5e5b76fe232e1702d43e8e4c66073dc",
-  "script_sha256": "683509acfd0ea67bb73d79f721b5094e509ca56b0123a3cc1e8fef208f5e137a",
+  "script_sha256": "86a2566ba30d69852cf6323c96e93285c77db58a0fd80610cd8acb88296cb028",
   "files_sha256": {
-    "perfis_wavelet.pdf": "2371087f5a069c36ba4419cda462967d8575e9eae4cf16f508a746368d680941",
-    "perfis_wavelet.png": "9c9b5e1475f92176ae0eadab83d82c0dd73d5318d867e7d5e1e1e0b3b363dfc0",
+    "perfis_wavelet.pdf": "1923242a2990be567071ce57a83aa86c7f7b5bca71db6fa583f8e2744683e542",
+    "perfis_wavelet.png": "4f37c330be543e5e82187cc3b388a318227700a72e3c2785787bf91fa43652fe",
     "perfis_wavelet_dados.npz": "554bcc1d6202221b5a00c770d730f7cb7880c00090f27375460bfb6055873bef"
   },
-  "status": "PASS"
+  "status": "PASS",
+  "editorial_export": {
+    "date": "2026-11-10",
+    "scope": "Título: Wavelet com inicial maiúscula e itálico. Dados e geometria preservados.",
+    "input": "perfis_wavelet_dados.npz",
+    "input_sha256": "554bcc1d6202221b5a00c770d730f7cb7880c00090f27375460bfb6055873bef",
+    "method": "Trecho de desenho do gerador executado sobre os arrays existentes, sem recalcular a análise.",
+    "matplotlib": "3.10.7"
+  }
 }

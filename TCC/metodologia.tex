@@ -11,84 +11,78 @@ transições complementaram a avaliação descritiva dos ensaios.
 \section{Etapas do processamento}\label{sec:met-visao}
 % =========================================================
 
-A \autoref{fig:met-etapas} resumiu os caminhos do processamento. Os sinais
-completos forneceram os perfis comparados pelo coeficiente de Pearson $r$.
-Os trechos de comprimento comum forneceram os mapas e os resumos de coerência
-de cada par, e as
-máscaras dos panoramas ópticos forneceram as medidas complementares.
+A \autoref{fig:met-etapas} resumiu o procedimento em três partes:
+preparação das entradas (1 a 3), análises espectrais e ópticas (caminhos
+A, B e C) e comparação e interpretação dos resultados (4 a 6).
+Os caminhos A e B utilizaram sinais espaciais de intensidade $I_i[n]$
+extraídos dos panoramas, enquanto o caminho C preservou as duas dimensões
+das imagens para identificar regiões interpretadas como gás.
 
-\begin{figure}[!htbp]
+\begin{figure}[p]
   \centering
   \begin{minipage}{\textwidth}
-  \caption{Visão geral das análises espectral e óptica.}
+  \caption{Etapas do processamento e integração das análises espectral e óptica.}
   \label{fig:met-etapas}
   \includegraphics[width=\linewidth]{figuras/metodologia/fluxograma.pdf}
-  \fonte{Elaborado pelo autor.}
+  \fonte{Elaborada pelo autor (2026).}
   \end{minipage}
 \end{figure}
 
+\textbf{Seleção e reconstrução das entradas (1 a 3).} Selecionaram-se
+ensaios com padrões definidos pela classificação manual do banco de imagens
+e montaram-se panoramas pela união de recortes de quadros consecutivos.
+Deles, extraíram-se os sinais espaciais de intensidade $I_i[n]$ para a
+análise espectral. Os critérios de seleção foram apresentados na
+\autoref{sec:met-dados}, e a montagem e a extração, na
+\autoref{sec:met-extracao}.
 
-Os blocos do fluxograma corresponderam às seguintes operações:
+\textbf{Comparação dos perfis dos sinais completos (A1 a A4).} Após o
+preparo descrito na \autoref{sec:met-preproc}, aplicou-se a transformada
+\textit{Wavelet} contínua (CWT) à autocorrelação estimada
+$\widehat R_{xx}[m]$ de cada sinal completo. Desse resultado, extraiu-se
+o perfil de potência no atraso zero $P_{ik}$, cuja forma foi comparada
+entre ensaios pelo coeficiente de Pearson $r_{ij}$. A extração foi
+detalhada na \autoref{sec:met-analise}, e a comparação, na
+\autoref{sec:met-pearson-perfis}.
 
-\begin{itemize}
-  \setlength{\itemsep}{0pt}
-  \setlength{\parsep}{0pt}
-  \item \textbf{Quadros das aquisições.} As imagens consecutivas de cada
-  gravação forneceram os recortes para montar o panorama.
+\textbf{Análise dos mapas de cada par (B1 a B4).} Utilizaram-se trechos de
+mesmo comprimento, preparados conforme a \autoref{sec:met-preproc}, para
+obter mapas espectrais de cada par. Esses mapas descreveram a distribuição
+espectral e a associação entre os sinais. A aplicação da CWT às
+correlações foi detalhada na \autoref{sec:met-wco-morlet}. A
+\autoref{sec:met-analise} apresentou a obtenção dos mapas, dos perfis de
+potência média $M_{ik}$ e dos resumos da coerência alternativa
+$\widetilde\gamma_{xy}(a,b)$.
 
-  \item \textbf{Panoramas da análise espectral.} Uniram-se tiras dos quadros.
-  A média de intensidade na faixa analisada de cada coluna formou o sinal espacial.
+\textbf{Segmentação e medidas ópticas (C1 a C6).} A segmentação
+identificou regiões interpretadas como gás, conforme a
+\autoref{sec:met-mascara}. Dessas regiões, calcularam-se a fração de vazio
+estimada $\widehat\alpha_{\mathrm{opt}}$ e a densidade de transições
+espaciais $F$, para descrever a ocupação estimada por gás e sua alternância
+na imagem. Os cálculos e as comparações por padrão foram detalhados na
+\autoref{sec:met-geometria-optica} e na \autoref{sec:met-transicoes}.
+Os resumos ópticos incluíram apenas ensaios que atenderam ao critério
+de saturação da \autoref{sec:met-void}.
 
-  \item \textbf{Panoramas da análise óptica.} Montaram-se as mesmas tiras,
-  preservando os pixels originais nas emendas, para estimar as regiões de gás.
+\textbf{Comparação dentro e entre padrões (4).} Agruparam-se os pares de
+ensaios para comparar os coeficientes de Pearson $r_{ij}$ e as médias dos
+mapas de coerência alternativa $\widetilde\gamma_{xy}(a,b)$ dentro e entre
+padrões. A \autoref{sec:met-resumos} detalhou os agrupamentos, as medidas
+descritivas e as distribuições examinadas.
 
-  \item \textbf{Sinal completo e preparação.} Preparou-se o sinal inteiro
-  pela inversão da intensidade,
-  remoção da tendência linear e padronização da amplitude.
+\textbf{Seleção dos exemplos (5).} Em cada padrão com pelo menos dois
+ensaios, selecionou-se o par de maior coeficiente de Pearson $r_{ij}$.
+Entre padrões diferentes, escolheu-se o par com o maior valor pontual de
+coerência alternativa $\widetilde\gamma_{xy}(a,b)$. Os critérios de
+seleção, detalhados na \autoref{sec:met-resumos}, definiram os pares
+ilustrados no \autoref{cap:resultados}.
 
-  \item \textbf{Autocorrelação e CWT.} Comparou-se o sinal com cópias
-  deslocadas de si mesmo. A transformada wavelet contínua (CWT) dessa
-  autocorrelação avaliou suas oscilações em diferentes escalas.
-
-  \item \textbf{Perfil de potência no atraso zero.} A potência nessa coluna
-  do mapa formou o descritor de cada ensaio, com um valor por escala.
-
-  \item \textbf{Coeficiente de Pearson.} O coeficiente de Pearson $r$
-  comparou a forma dos descritores de ensaios do mesmo padrão e de padrões diferentes.
-  Os valores dos pares foram reunidos em resumos para cada comparação.
-
-  \item \textbf{Dois sinais, corte e preparação.} Mantiveram-se os trechos
-  iniciais dos sinais, limitados ao comprimento do menor. Depois,
-  aplicou-se o mesmo preparo da análise individual.
-
-  \item \textbf{Autocorrelações, correlação cruzada e CWT.} Calcularam-se
-  as autocorrelações dos dois trechos e a correlação entre eles sob diferentes
-  deslocamentos. Aplicou-se a CWT a cada uma dessas três funções.
-
-  \item \textbf{Mapas de potência, espectro cruzado e coerência.}
-  As transformadas forneceram as potências individuais e o espectro
-  cruzado, combinados no cálculo da coerência wavelet entre os dois sinais.
-
-  \item \textbf{Leitura dos mapas e resumos da coerência.} Examinaram-se as
-  regiões de maior potência e coerência por escala e atraso, o deslocamento
-  usado na comparação. Os valores de cada mapa de coerência também foram
-  resumidos para comparar os pares.
-
-  \item \textbf{Segmentação.} Produziu-se uma máscara binária que separou
-  as regiões interpretadas como gás dos demais pixels.
-
-  \item \textbf{Fração de vazio estimada e densidade de transições.}
-  Estimou-se a ocupação da seção do tubo tratando as larguras de gás como
-  diâmetros de seções circulares. A densidade de transições quantificou
-  a alternância horizontal entre gás e demais pixels.
-
-  \item \textbf{Resumos por ensaio e padrão.} Obtiveram-se valores das
-  duas medidas ópticas por ensaio e médias e medianas por padrão de escoamento.
-
-  \item \textbf{Interpretação conjunta.} Nos pares discutidos, examinou-se
-  se a semelhança espectral acompanhou valores próximos de fração de vazio
-  estimada e de densidade de transições.
-\end{itemize}
+\textbf{Interpretação conjunta (6).} Compararam-se os resultados
+espectrais e ópticos de pares selecionados para examinar se a semelhança
+espectral também se refletiu nas medidas ópticas. A comparação descritiva
+foi apresentada na \autoref{sec:met-transicoes}. A interpretação e as
+limitações foram discutidas na \autoref{sec:disc-void} e na
+\autoref{sec:disc-limitacoes}, respectivamente.
 
 % =========================================================
 \section{Dados experimentais e seleção dos ensaios}\label{sec:met-dados}
@@ -102,10 +96,9 @@ e tempos de exposição de 62, 127 e 132\,$\mu$s.
 
 Adotou-se a classificação manual fornecida com o banco de imagens, baseada
 na inspeção visual das aquisições. O conjunto analisado reuniu 26 ensaios:
-dez de \textit{churn}, nove de anular ondulado, três de \textit{plug}, três de
-\textit{slug} e um de bolha dispersa. Registros com rótulos compostos ou de
-anular liso ficaram fora desse recorte.
-
+dez de \textit{churn}, nove de \textit{wavy annular}, três de \textit{plug}, três de
+\textit{slug} e um de \textit{dispersed bubbles}. Registros com rótulos compostos ou de
+\textit{smooth annular} ficaram fora desse recorte.
 As combinações entre ensaios distintos totalizaram 325 pares: 87 do mesmo
 padrão e 238 de padrões diferentes.
 
@@ -113,54 +106,71 @@ padrão e 238 de padrões diferentes.
 \subsection{Reconstrução e extração do sinal espacial}\label{sec:met-extracao}
 % ---------------------------------------------------------
 
-O panorama reuniu tiras verticais centrais de quadros consecutivos em uma
-imagem alongada. A sobreposição foi usada na comparação dos perfis de
-intensidade para estimar o deslocamento entre quadros. Essa estimativa
-determinou a largura das tiras, posteriormente unidas lado a lado na ordem
-de aquisição. O procedimento compreendeu quatro etapas:
+Para cada ensaio, construiu-se um panorama pela união de recortes verticais
+extraídos do centro de quadros consecutivos. A largura de cada recorte foi
+definida a partir do deslocamento que melhor alinhou os perfis de intensidade
+dos quadros. Os recortes foram unidos lado a lado, na ordem de aquisição,
+formando uma imagem alongada da qual se extraiu o sinal espacial de intensidade.
+A reconstrução compreendeu quatro etapas:
 
 \begin{enumerate}
-  \item \textbf{Obtenção dos perfis.} Os quadros foram ordenados e convertidos
-  para níveis de cinza de 0 a 255. Em cada coluna, calculou-se a média de
-  intensidade das 54 linhas de 18 a 71, obtendo-se um perfil horizontal
-  para cada quadro.
-  \item \textbf{Comparação das regiões sobrepostas.} Para cada par de quadros
-  consecutivos, deslocou-se um perfil em relação ao outro, testando defasagens
-  inteiras de $-200$ a $200$ pixels. Em cada tentativa, compararam-se somente
-  as posições em que os dois perfis ainda se sobrepunham. A defasagem com
-  maior coeficiente de Pearson $r$ entre os perfis de intensidade sobrepostos
-  foi adotada como estimativa de deslocamento.
-  \item \textbf{Recorte das tiras.} Retirou-se do centro de cada quadro uma
-  tira com as 80 linhas originais e largura igual à defasagem selecionada.
-  Para defasagens nulas ou negativas, adotou-se a largura mínima de 1 pixel
-  como regra do algoritmo. No último quadro, repetiu-se a largura anterior.
-  \item \textbf{Junção das tiras.} Os recortes foram concatenados na ordem dos
-  quadros, com largura total igual à soma de suas larguras. Quando ambas as
-  tiras de uma emenda tinham pelo menos quatro colunas, a última coluna da
-  tira anterior foi substituída pela segunda coluna da tira seguinte.
-  Para tiras menores, os pixels permaneceram inalterados.
+  \item \textbf{Obtenção dos perfis por quadro.} Os quadros foram ordenados
+  e convertidos para níveis de cinza de 0 a 255. Em cada coluna, calculou-se
+  a média de intensidade das 54 linhas de 18 a 71. O perfil horizontal de
+  cada quadro serviu à estimativa do deslocamento entre quadros.
+  \item \textbf{Estimativa do deslocamento.} Compararam-se os
+  perfis de cada par de quadros consecutivos sob deslocamentos inteiros de
+  $-200$ a $200$ pixels. Em cada tentativa, consideraram-se apenas as
+  posições sobrepostas. Escolheu-se o deslocamento com maior coeficiente
+  de Pearson $r$ entre os perfis nessas posições.
+  \item \textbf{Extração dos recortes.} Retirou-se do centro de cada quadro
+  um recorte com as 80 linhas originais. A largura correspondeu ao
+  deslocamento selecionado, adotando-se o mínimo de 1 pixel para resultados
+  nulos ou negativos. No último quadro, repetiu-se a largura anterior.
+  \item \textbf{Junção dos recortes.} Uniram-se os recortes na ordem dos
+  quadros, com largura total igual à soma de suas larguras. No panorama
+  da análise espectral, quando os dois recortes de uma junção tinham pelo
+  menos quatro colunas, a última coluna do recorte anterior foi substituída
+  pela segunda coluna do recorte seguinte. Para recortes menores, os pixels
+  permaneceram inalterados. Na versão destinada à análise óptica
+  (\autoref{sec:met-void}), preservaram-se todos os pixels originais dos recortes.
 \end{enumerate}
 
-Após a montagem, extraiu-se o sinal espacial de intensidade pela média das 54 linhas entre
-18 e 71. Para cada ensaio $i$, calculou-se:\nopagebreak[4]
+Após a montagem, extraiu-se o sinal de intensidade do panorama da análise
+espectral. Em cada coluna, somaram-se os níveis de cinza dos 54 pixels
+das linhas 18 a 71 e dividiu-se essa soma por 54. Assim, cada coluna foi
+representada por uma única média. A sequência dessas médias formou o
+sinal unidimensional:\nopagebreak[4]
 
 \begin{equation}\label{eq:met-extracao}
-  I_i[n]=\frac{1}{54}\sum_{v=18}^{71} A_i[v,n],
+  I_i[n]=\frac{A_i[18,n]+A_i[19,n]+\cdots+A_i[71,n]}{54},
   \qquad n=0,\ldots,N_i-1,
 \end{equation}
 
 \noindent
-A intensidade $A_i[v,n]$ correspondeu ao pixel da linha $v$ e coluna $n$.
-Cada uma das $N_i$ colunas do panorama forneceu uma amostra $I_i[n]$,
-formando uma sequência de intensidades médias.
+A intensidade do pixel $A_i[v,n]$ representou o nível de cinza na linha $v$
+e na coluna $n$ do panorama do ensaio $i$. A intensidade média $I_i[n]$
+representou a amostra obtida para a coluna $n$. O número de amostras $N_i$
+foi igual ao total de colunas do panorama.
 
-Os 26 panoramas tiveram larguras de 3\,094 a 22\,831 pixels e passo de 1 pixel.
-A defasagem estimou o alinhamento dos perfis de brilho, sem medir diretamente
-o deslocamento das interfaces ou a velocidade do escoamento. Como a montagem
-reuniu instantes distintos, o panorama não constituiu uma imagem instantânea
-nem uma medida calibrada de distância, e suas colunas não representaram
-observações independentes. O sinal permaneceu uma medida óptica, sem conversão
-direta em fração de vazio.
+Os 26 panoramas tiveram larguras de 3\,094 a 22\,831 pixels, com espaçamento
+de 1 pixel entre amostras. O termo espacial referiu-se à posição no panorama
+reconstruído, expressa em pixels.
+
+Por reunir recortes capturados em momentos diferentes, o panorama não
+representou o escoamento em um único instante. O deslocamento usado na
+montagem serviu para alinhar os perfis de intensidade, sem medir diretamente
+o movimento das interfaces entre líquido e vapor ou a velocidade do escoamento.
+As posições permaneceram expressas em pixels, sem conversão para distâncias
+físicas. Cada coluna correspondeu a uma amostra do mesmo ensaio, e não a
+uma nova repetição experimental. O sinal de intensidade $I_i[n]$ descreveu
+variações de brilho, sem medir diretamente a fração de vazio.
+
+Após a extração, o sinal de intensidade $I_i[n]$ foi preparado para a análise
+espectral por inversão, remoção da tendência linear e padronização, conforme
+a \autoref{sec:met-preproc}. Nas equações dessa etapa, o sinal de intensidade
+$I[n]$ representou o sinal completo ou o trecho inicial utilizado para comparar
+dois ensaios. O índice do ensaio $i$ foi omitido apenas para simplificar a notação.
 
 % =========================================================
 \section{Pré-processamento dos sinais}\label{sec:met-preproc}
@@ -168,9 +178,10 @@ direta em fração de vazio.
 
 Para obter o perfil espectral individual, utilizou-se o sinal completo de cada
 ensaio. Nos mapas de comparação entre dois sinais, utilizaram-se os trechos
-iniciais de ambos, com comprimento comum $N$ igual ao número de amostras do
-menor sinal. Esse corte foi realizado antes do preparo, sem alinhar
-eventos ou selecionar trechos pela semelhança.
+iniciais de ambos, com comprimento igual ao do menor sinal. Esse corte
+garantiu que os dois trechos tivessem o mesmo número de amostras $N$ e foi
+realizado antes do preparo, sem alinhar eventos ou selecionar trechos pela
+semelhança.
 
 Cada sinal foi preparado pela inversão da intensidade, remoção da tendência
 linear e padronização:
@@ -187,36 +198,43 @@ linear e padronização:
 Primeiro, inverteu-se a intensidade $I[n]$, subtraindo-a de 255. No sinal
 resultante $J[n]$, regiões mais escuras passaram a ter valores maiores.
 
-Em seguida, ajustou-se uma reta por mínimos quadrados, com nível
-$\widehat\alpha$ e inclinação $\widehat\beta$. A subtração dessa reta removeu
-o aumento ou a redução linear da intensidade ao longo do trecho, produzindo
+Em seguida, ajustou-se uma reta por mínimos quadrados, definida pelo valor
+inicial da reta $\widehat\alpha$ e pela inclinação $\widehat\beta$, que
+representou a variação da reta por pixel. A subtração dessa reta removeu o
+aumento ou a redução linear da intensidade ao longo do trecho, produzindo
 o sinal sem tendência $d[n]$.
 
-Por fim, subtraiu-se a média do sinal sem tendência $\bar d$ e dividiu-se o
-resultado pelo desvio padrão populacional $s_d$, calculado com o total de
-amostras $N$ no divisor. Essa padronização colocou
-o sinal $x[n]$ em uma escala de média nula e variância unitária, a menos de
-arredondamento numérico. As mesmas operações foram aplicadas ao sinal $y[n]$.
+Por fim, subtraiu-se a média do sinal sem tendência $\bar d$, centralizando
+os valores em torno de zero. O resultado foi dividido pelo desvio padrão
+populacional $s_d$, calculado com o número de amostras $N$ no divisor.
+Essa divisão colocou as variações dos sinais em uma escala comum. O resultado
+teve média nula e variância unitária, a menos de arredondamento numérico.
+Nas comparações entre dois ensaios, aplicaram-se essas operações a cada
+sinal separadamente, obtendo-se o sinal preparado $x[n]$ para o primeiro
+ensaio e o sinal preparado $y[n]$ para o segundo.
 
 O preparo reduziu diferenças de nível e amplitude entre os sinais, mas não
 recuperou informação perdida por saturação nem corrigiu os deslocamentos da
 montagem. A formulação baseada em correlações pressupôs processos estacionários
-\cite{schuck2019}. Essa condição não foi garantida pelas operações de preparo.
+\cite{schuck2019}.
 
 % =========================================================
 \section{Correlações e transformada \textit{Wavelet}}\label{sec:met-wco}
 % =========================================================
 
-Após o pré-processamento, calcularam-se três funções para cada par de sinais:
-as autocorrelações $\widehat R_{xx}$ e $\widehat R_{yy}$, que compararam cada
-sinal com versões deslocadas de si mesmo, e a correlação cruzada
-$\widehat R_{xy}$, que comparou os dois sinais sob diferentes deslocamentos.
-As três funções foram utilizadas na análise wavelet. Para obter o perfil
-individual, utilizou-se apenas a autocorrelação do sinal completo de cada ensaio.
+Após o pré-processamento, estimaram-se as autocorrelações
+$\widehat R_{xx}[m]$ e $\widehat R_{yy}[m]$, que compararam cada sinal com
+versões deslocadas de si mesmo, e a correlação cruzada $\widehat R_{xy}[m]$,
+que comparou os dois sinais sob diferentes deslocamentos. O acento
+circunflexo identificou essas estimativas, calculadas a partir de um
+conjunto finito de amostras. As três funções foram utilizadas na análise
+\textit{Wavelet}. Para o perfil individual, utilizou-se apenas a
+autocorrelação do sinal completo de cada ensaio.
 
-Para os sinais $x[n]$ e $y[n]$, cada um com $N$ amostras, utilizou-se a função
-\texttt{correlate} da \textit{SciPy}. O código dividiu os resultados pelo
-número de amostras $N$, obtendo-se:
+Para os sinais $x[n]$ e $y[n]$, com o mesmo número de amostras $N$,
+multiplicaram-se as amostras sobrepostas em cada deslocamento e somaram-se
+esses produtos. Essa soma foi obtida pela função \texttt{correlate} da
+\textit{SciPy} e, em seguida, dividida pelo número total de amostras $N$:
 \nopagebreak[4]
 
 \begin{equation}\label{eq:crosscorr-disc}
@@ -232,11 +250,15 @@ número de amostras $N$, obtendo-se:
 \end{equation}
 
 \noindent
-O atraso $m$, expresso em pixels, definiu o deslocamento usado na comparação.
-A soma reuniu os produtos das amostras sobrepostas em cada atraso.
-As autocorrelações utilizaram esse mesmo cálculo, tomando duas cópias do
-próprio sinal.
+O atraso $m$, expresso em pixels, definiu o deslocamento usado na comparação
+entre os sinais $x[n]$ e $y[n]$. Para cada atraso $m$, a correlação cruzada
+$\widehat R_{xy}[m]$ foi calculada apenas com as amostras que permaneceram
+sobrepostas, conforme os limites da soma na \autoref{eq:crosscorr-disc}.
+Nas autocorrelações $\widehat R_{xx}[m]$ e $\widehat R_{yy}[m]$, o mesmo
+cálculo comparou cada sinal com uma versão deslocada de si mesmo, como
+expresso na \autoref{eq:autocorr-disc}.
 
+O número de pares sobrepostos $N-|m|$ variou com o atraso $m$.
 Manteve-se o número total de amostras $N$ como divisor em todos os atrasos,
 mesmo quando houve menos amostras sobrepostas. Essa normalização, denominada
 enviesada, adaptou os estimadores de
@@ -244,50 +266,63 @@ enviesada, adaptou os estimadores de
 divisor.
 
 % ---------------------------------------------------------
-\subsection{Parametrização e implementação da wavelet de Morlet}\label{sec:met-wco-morlet}
+\subsection{Parametrização e implementação da \textit{Wavelet} de Morlet}\label{sec:met-wco-morlet}
 % ---------------------------------------------------------
 
-A \autoref{eq:cwt} forneceu a regra de cálculo da transformada, que avaliou
-a correspondência entre a entrada e uma função de análise $\psi$ em diferentes
-escalas e posições. A \autoref{eq:morlet} definiu a função $\psi$ escolhida
-para esse cálculo, a Morlet complexa, utilizada com frequência angular central
-adimensional $\omega_0=6$.
+Para interpretar as oscilações analisadas pela CWT, utilizou-se o comprimento
+de onda equivalente $\lambda_k$, que indicou a extensão de um ciclo na
+coordenada espacial reconstruída. Em um exemplo didático, o comprimento de
+onda equivalente $\lambda_k=100$ pixels representou uma oscilação senoidal
+com máximos consecutivos separados por 100 pixels. Quanto mais espaçadas
+as oscilações, maior o comprimento de onda equivalente $\lambda_k$.
 
-Para calcular a CWT, adotou-se uma grade de 200 escalas $a_k$, correspondentes
-a comprimentos de onda $\lambda_k$ entre 50 e 3\,000 pixels, igualmente
-espaçados em escala logarítmica. O número 200 definiu a quantidade de pontos
-utilizados para amostrar essa faixa. Os menores comprimentos de onda corresponderam a oscilações
-mais próximas entre si no perfil espacial, e os maiores, a oscilações
-mais espaçadas.
+Para selecionar as oscilações examinadas, a CWT da \autoref{eq:cwt} utilizou
+a escala $a_k$, expressa em amostras, que controlou o alongamento da função
+de análise $\psi(t)$. Escolheu-se a Morlet complexa da \autoref{eq:morlet},
+com frequência angular central adimensional $\omega_0=6$. A frequência
+angular central $\omega_0$ definiu a oscilação da função de análise $\psi(t)$, sem representar
+uma frequência temporal medida no escoamento.
 
-A faixa foi escolhida considerando a extensão dos panoramas, de 3\,094 a
-22\,831 pixels, para manter um intervalo comum de comparação entre os ensaios.
-O limite superior de 3\,000 pixels permaneceu abaixo da extensão do menor
-panorama, enquanto o limite inferior de 50 pixels delimitou as variações
-mais curtas incluídas na análise. No panorama mais curto, um comprimento de
-onda de 3\,000 pixels ocupou quase toda a extensão disponível, limitando a
-análise das variações mais longas. Calcular a correlação com deslocamentos
-positivos e negativos não aumentou a quantidade de dados do panorama.
-Essa limitação foi discutida na \autoref{sec:disc-limitacoes}.
-
-Para relacionar a escala $a_k$ da CWT ao comprimento de onda equivalente
-$\lambda_k$, empregou-se a relação específica da Morlet apresentada por
-\citeonline{torrence1998} e \citeonline{schuck2019}. Com frequência angular central $\omega_0=6$ e
-espaçamento de um pixel entre amostras, obteve-se:
+A conversão do comprimento de onda equivalente $\lambda_k$ em escala $a_k$
+utilizou a relação da Morlet apresentada por \citeonline{torrence1998} e
+\citeonline{schuck2019}. Com o espaçamento entre amostras $\Delta s=1$ pixel,
+correspondente à amostragem dos sinais espaciais, calculou-se:
+\nopagebreak[4]
 
 \begin{equation}\label{eq:met-escala}
-  \lambda_k=\frac{4\pi}{6+\sqrt{38}}\,a_k\,\Delta s,
+  a_k=\frac{\lambda_k}{\Delta s}\,\frac{6+\sqrt{38}}{4\pi},
   \qquad \Delta s=1\,\mathrm{px}.
 \end{equation}
 
 \noindent
-A escala $a_k$, expressa em amostras, controlou a dilatação da wavelet.
-O espaçamento $\Delta s=1$ pixel permitiu expressar o comprimento de onda
-$\lambda_k$ em pixels, unidade adotada na apresentação dos resultados.
+A divisão pelo espaçamento entre amostras $\Delta s$ forneceu o número de
+amostras por ciclo, e o fator da Morlet $(6+\sqrt{38})/(4\pi)$ converteu
+esse número na escala $a_k$. No exemplo didático, o comprimento de onda
+equivalente $\lambda_k=100$ pixels correspondeu a 100 amostras por ciclo
+e à escala $a_k\approx96{,}8$. Essa relação associou o tamanho de oscilação
+escolhido ao parâmetro de cálculo da CWT, mantendo a coordenada de análise
+espacial, já expressa em pixels.
 
-Aplicou-se a mesma CWT, com a Morlet e as escalas escolhidas, separadamente às
-três correlações, conforme a formulação alternativa de
-\citeonline{schuck2019}:
+Na implementação, selecionaram-se 200 comprimentos de onda equivalentes
+$\lambda_k$ entre 50 e 3\,000 pixels, distribuídos em escala logarítmica,
+com a mesma razão entre valores consecutivos. A \autoref{eq:met-escala}
+converteu essa grade nas 200 escalas $a_k$ utilizadas no cálculo da CWT.
+Assim, o número 200 definiu quantos pontos da faixa foram analisados.
+
+A faixa foi escolhida considerando a extensão dos panoramas, de 3\,094 a
+22\,831 pixels, para manter um intervalo comum de comparação entre os ensaios.
+O comprimento de onda equivalente mínimo $\lambda_k=50$ pixels delimitou
+as variações mais curtas incluídas na análise. O comprimento de onda
+equivalente máximo $\lambda_k=3\,000$ pixels permaneceu abaixo da extensão
+do menor panorama, mas ocupou quase todo esse registro, limitando a análise
+das variações mais longas. Calcular a correlação com deslocamentos positivos
+e negativos não aumentou a quantidade de dados do panorama, conforme a
+limitação discutida na \autoref{sec:disc-limitacoes}.
+
+Aplicou-se a mesma CWT de Morlet, com as escalas $a_k$ calculadas, às
+autocorrelações $\widehat R_{xx}[m]$ e $\widehat R_{yy}[m]$ e à correlação
+cruzada $\widehat R_{xy}[m]$. Cada transformação foi realizada separadamente,
+conforme a formulação alternativa de \citeonline{schuck2019}:
 \nopagebreak[4]
 
 \begin{equation}\label{eq:met-cwt-correlacoes}
@@ -303,45 +338,39 @@ três correlações, conforme a formulação alternativa de
 
 \noindent
 Cada transformada produziu um mapa com 200 linhas, uma para cada escala
-analisada. No eixo vertical, essas escalas foram representadas pelos
-comprimentos de onda equivalentes $\lambda_k$. As colunas corresponderam aos
-atrasos espaciais $b$, apresentados no eixo horizontal. O atraso nulo $b=0$
-correspondeu à comparação sem deslocamento.
+$a_k$, representada no eixo vertical pelo comprimento de onda equivalente
+$\lambda_k$. As colunas corresponderam às posições de análise sobre a
+correlação, identificadas pelos atrasos espaciais $b$ no eixo horizontal.
+A posição de atraso nulo $b=0$ identificou o centro desse eixo.
 
-A CWT foi implementada em uma rotina própria, com o filtro de Morlet definido
-no código, operações do \textit{NumPy} e transformadas de Fourier direta e
-inversa da \textit{SciPy}. Nesse cálculo, as correlações foram prolongadas
-com zeros para reduzir a interferência entre suas extremidades.
+Para obter esses mapas, utilizou-se uma rotina própria em Python, com o
+filtro de Morlet definido no código e operações do \textit{NumPy} e da
+\textit{SciPy}. Antes da transformação, acrescentaram-se zeros ao final
+das correlações para reduzir a interferência numérica entre suas
+extremidades durante o cálculo da CWT.
 
 % ---------------------------------------------------------
 \subsection{Campos, perfis e resumos espectrais}\label{sec:met-analise}
 % ---------------------------------------------------------
 
-As transformadas das autocorrelações forneceram as potências individuais
-$\widetilde P_x$ e $\widetilde P_y$, calculadas pelo módulo dos coeficientes,
-conforme a \autoref{eq:wps-alt}. A transformada da correlação cruzada forneceu
-o espectro cruzado complexo $\widetilde C_{xy}$ da \autoref{eq:wcs-alt}, cujo módulo foi
-exibido nas figuras. A coerência wavelet entre os dois sinais de cada par foi
-obtida pela \autoref{eq:wco-alt}: dividiu-se o módulo ao quadrado do campo
-cruzado pelo produto das potências individuais no atraso zero, em cada escala.
+Obtiveram-se os mapas de potência individual $\widetilde P_x(a_k,b)$ e
+$\widetilde P_y(a_k,b)$, de espectro cruzado $\widetilde C_{xy}(a_k,b)$
+e de coerência alternativa $\widetilde\gamma_{xy}(a_k,b)$, conforme as
+Equações~\ref{eq:wps-alt}, \ref{eq:wcs-alt} e \ref{eq:wco-alt}.
+Os mapas foram organizados por escala $a_k$ e atraso $b$.
+O espectro cruzado complexo $\widetilde C_{xy}(a_k,b)$ foi apresentado em módulo.
 
-Para sinais com $N$ amostras, os mapas cobriram os atrasos de $-(N-1)$ a
-$N-1$. Os perfis e os demais resumos numéricos foram calculados sobre os
-campos completos, incluindo os atrasos próximos às extremidades.
+Os mapas abrangeram os atrasos $b$ de $-(N-1)$ a $N-1$ para cada par de
+sinais com número de amostras $N$, incluindo as extremidades.
+De cada mapa de coerência alternativa $\widetilde\gamma_{xy}(a_k,b)$,
+obtiveram-se o mínimo, a média, a mediana e o máximo. Essas quatro medidas
+foram calculadas sobre o mapa completo, considerando os valores válidos das
+200 escalas e de todos os atrasos, com igual peso para cada ponto.
 
-Para cada par, calcularam-se a coerência mínima, média, mediana e máxima
-com funções do \textit{NumPy}. Consideraram-se os valores válidos de todas
-as 200 escalas e de todos os atrasos, com igual peso para cada ponto da
-grade. O mínimo e o máximo registraram os extremos do mapa. A média
-resumiu o conjunto dos valores, e a mediana correspondeu ao centro de sua
-distribuição ordenada. Assim, um pico de coerência elevado pôde ser
-comparado com o comportamento do restante do mapa. Cada mapa forneceu
-um valor de cada medida. A coerência média de todo o mapa foi distinta
-da potência média por escala descrita a seguir.
-
-Para resumir cada campo de potência em curvas, extraíram-se dois perfis:
-o valor no atraso zero e a média sobre todos os atrasos. Para um sinal $i$
-com $N_i$ amostras e cada escala $a_k$, correspondente ao comprimento de onda $\lambda_k$, esses
+Para resumir os mapas de potência em curvas, extraíram-se o perfil de
+potência no atraso zero $P_{ik}$ e o perfil de potência média $M_{ik}$.
+Para o ensaio $i$, com número de amostras $N_i$, e cada escala $a_k$,
+correspondente ao comprimento de onda equivalente $\lambda_k$, esses
 perfis foram definidos por:
 
 \begin{equation}\label{eq:met-perfis}
@@ -350,25 +379,24 @@ perfis foram definidos por:
 \end{equation}
 
 \noindent
-O perfil de potência no atraso zero $P_{ik}$ foi extraído da coluna de atraso
-nulo do mapa calculado para cada ensaio completo. Primeiro, aplicou-se a CWT
-à autocorrelação ao longo de todos os atrasos disponíveis. Depois, selecionou-se
-a coluna correspondente a $b=0$. Cada valor dessa coluna resultou, portanto,
-do módulo de uma soma dos valores da autocorrelação, ponderados pela wavelet na escala
-analisada. O atraso zero indicou a posição de extração no campo transformado,
-e não a utilização isolada da autocorrelação em zero.
-Adotou-se esse perfil como descritor porque, com o estimador de autocorrelação
-e a Morlet utilizados, o atraso nulo correspondeu ao máximo da potência em cada
-escala e forneceu a referência de normalização da coerência alternativa na
-\autoref{eq:wco-alt} \cite{schuck2019}.
+O perfil de potência no atraso zero $P_{ik}$ foi extraído da coluna do
+atraso $b=0$, após a CWT da autocorrelação completa do ensaio. Essa escolha
+se apoiou no máximo de potência no atraso $b=0$ em cada escala $a_k$,
+obtido com o estimador de autocorrelação e a Morlet utilizados. O atraso
+$b=0$ também definiu a referência de normalização da coerência alternativa
+$\widetilde\gamma_{xy}(a_k,b)$ na \autoref{eq:wco-alt} \cite{schuck2019}.
 
-O perfil de potência média $M_{ik}$ reuniu, em cada escala, a média das
-potências nos $2N_i-1$ atrasos. Essa redução incorporou também a distribuição
-da potência ao longo dos deslocamentos.
-A \autoref{fig:met-perfis} ilustrou as duas reduções com um sinal sintético.
-Nos ensaios, o perfil no atraso zero forneceu o descritor de Pearson.
-As potências médias dos trechos de comprimento comum, preparados conforme
-a \autoref{sec:met-preproc}, formaram as curvas laterais dos mapas dos pares.
+O perfil de potência média $M_{ik}$ foi obtido pela média das potências
+em cada escala $a_k$, considerando todos os atrasos $b$. O divisor
+$2N_i-1$ correspondeu ao total de atrasos negativos, nulo e positivos.
+
+A \autoref{fig:met-perfis} ilustrou a extração dos dois perfis em um sinal
+sintético. No caminho A do fluxograma da \autoref{sec:met-visao}, o perfil
+de potência no atraso zero $P_{ik}$ dos ensaios completos foi utilizado na
+comparação pelo coeficiente de Pearson $r_{ij}$. No caminho B, a mesma
+operação de média foi aplicada aos trechos de comprimento comum, preparados
+conforme a \autoref{sec:met-preproc}, para obter os perfis de potência média
+$M_{ik}$ exibidos nas curvas laterais dos mapas de cada par.
 
 \begin{figure}[!htbp]
   \centering
@@ -379,12 +407,11 @@ a \autoref{sec:met-preproc}, formaram as curvas laterais dos mapas dos pares.
   \label{fig:met-perfis}
   \centering
   \includegraphics[width=0.96\linewidth]{figuras/metodologia/perfis_wavelet.pdf}
-  \fonte{Elaborado pelo autor.}
+  \fonte{Elaborada pelo autor (2026).}
   \end{minipage}
 \end{figure}
 
 
-\FloatBarrier
 % =========================================================
 \section{Comparação dos ensaios pela análise espectral}\label{sec:met-pearson}
 % =========================================================
@@ -392,10 +419,11 @@ a \autoref{sec:met-preproc}, formaram as curvas laterais dos mapas dos pares.
 Comparou-se a forma dos perfis espectrais para avaliar se ensaios do mesmo
 padrão apresentaram distribuições de potência entre escalas mais semelhantes
 que ensaios de padrões distintos. A comparação reuniu o coeficiente de
-Pearson $r$ dos perfis e a coerência wavelet média dos pares em resumos
+Pearson $r$ dos perfis e a coerência \textit{Wavelet} média dos pares em resumos
 dentro e entre padrões.
 
-\subsection{Coeficiente de Pearson dos perfis}
+\FloatBarrier
+\subsection{Coeficiente de Pearson dos perfis}\label{sec:met-pearson-perfis}
 
 Para cada ensaio $i$, utilizou-se o perfil
 de potência no atraso zero $P_{ik}$, extraído do mapa de seu sinal completo.
@@ -428,7 +456,7 @@ Um valor do coeficiente de Pearson $r_{ij}$ próximo de 1 indicou variações no
 mesmo sentido, próximo de $-1$, variações opostas, e próximo de zero, pequena associação linear
 \cite{cunningham2020}.
 
-\subsection{Resumos dentro e entre padrões}
+\subsection{Resumos dentro e entre padrões}\label{sec:met-resumos}
 
 Os 325 pares foram agrupados dentro de cada padrão e nas combinações entre
 padrões diferentes. Em cada grupo, calcularam-se o mínimo, a média, a
@@ -438,7 +466,7 @@ Cada par recebeu o mesmo peso, excluindo-se as comparações de um ensaio
 consigo mesmo. Mantiveram-se ainda as médias por ensaio, obtidas com os
 pares dos quais ele participou.
 
-Na comparação entre grupos, utilizou-se a coerência wavelet média do mapa
+Na comparação entre grupos, utilizou-se a coerência \textit{Wavelet} média do mapa
 de cada par, definida na \autoref{sec:met-analise}. Calcularam-se então
 o mínimo, a média, a mediana e o máximo dessas médias entre os pares
 de cada grupo. Esse procedimento deu igual peso a cada par, sem aumentar
@@ -447,13 +475,12 @@ também foram apresentadas para os exemplos ilustrados.
 
 Nas figuras, apresentaram-se os pares de maior coeficiente de Pearson $r$
 de cada padrão com pelo menos dois ensaios e o par entre padrões diferentes
-com o maior valor pontual de coerência wavelet.
+com o maior valor pontual de coerência \textit{Wavelet}.
 
 A avaliação descreveu as semelhanças e diferenças observadas nos 26 ensaios.
 Os 325 pares reutilizaram esses registros: por exemplo, as comparações de
 A com B e de A com C compartilharam os dados de A. Em cada ensaio, os valores
-obtidos nas 200 escalas da CWT também vieram do mesmo sinal, com informação
-parcialmente sobreposta.
+obtidos nas 200 escalas $a_k$ da CWT também vieram do mesmo sinal.
 
 Esses pares e escalas, portanto, não representaram novas repetições
 independentes do experimento. Considerá-los independentes em testes
@@ -469,44 +496,54 @@ independentes para calcular significância estatística ou intervalos de confian
 % =========================================================
 
 A análise óptica estimou a ocupação por gás e a alternância das fases nos
-panoramas, formados pelas tiras originais dos quadros na ordem de aquisição.
+panoramas, formados pelos recortes originais dos quadros na ordem de aquisição.
 Todas as etapas utilizaram exclusivamente as 54 linhas de 18 a 71,
-correspondentes ao interior do tubo e à faixa da análise wavelet na
+correspondentes ao interior do tubo e à faixa da análise \textit{Wavelet} na
 \autoref{eq:met-extracao}. As imagens foram convertidas em máscaras binárias,
 com valor 1 para o gás inferido e 0 para os demais pixels.
 
-Para os resumos ópticos, excluíram-se panoramas com mais de 20\% dos pixels
+Obtiveram-se máscaras e medidas para os 26 ensaios. Para os resumos
+ópticos, excluíram-se panoramas com mais de 20\% dos pixels
 com intensidade máxima de 255 na faixa analisada. Esse critério excluiu apenas
-o ensaio \mbox{\codigo{m03q40\_001}}, mantendo 25 dos 26 ensaios na análise
-óptica. O ensaio excluído permaneceu na análise espectral.
+o ensaio \mbox{\codigo{m03q40\_001}}, mantendo 25 dos 26 ensaios nesses resumos.
+O ensaio excluído permaneceu na análise espectral.
 
 % ---------------------------------------------------------
 \subsection{Construção da máscara binária}\label{sec:met-mascara}
 % ---------------------------------------------------------
 
 A máscara foi construída em Python, com operações do \textit{NumPy} e do
-\textit{SciPy}. Primeiro, dividiu-se a intensidade de cada coluna por seu
-percentil 75 para reduzir diferenças de brilho. Nos três ensaios de
-\textit{plug}, selecionaram-se colunas com menor variação radial da
-intensidade normalizada, com desvio padrão até o percentil 5. Calculou-se
-um perfil mediano por ensaio e, depois, a mediana dos três perfis para
-representar a intensidade de referência do líquido.
+\textit{SciPy}. Primeiro, normalizou-se a intensidade de cada coluna,
+dividindo seus valores pelo percentil 75 da própria coluna, usado como
+referência de brilho para reduzir diferenças entre colunas.
+
+Nos três ensaios de \textit{plug}, selecionaram-se colunas com menor variação
+radial da intensidade normalizada, com desvio padrão até o percentil 5.
+Esse critério privilegiou colunas com intensidade mais uniforme entre as
+linhas, tomadas como candidatas a representar o líquido. Calculou-se a
+mediana das colunas selecionadas em cada linha, obtendo-se um perfil por
+ensaio. A mediana dos três perfis, também calculada em cada linha, forneceu
+a intensidade de referência do líquido.
 
 Suavizaram-se a imagem normalizada e a referência com um filtro gaussiano
-radial de desvio padrão de um pixel. A divisão da imagem pela referência
-forneceu razões de intensidade. Valores inferiores a 0,70 marcaram
-sombras das interfaces.
-Em cada coluna, procurou-se uma sombra em cada metade do tubo.
-Uniram-se pequenas interrupções dos contornos com um fechamento
-morfológico de $3\times3$ pixels.
+radial de desvio padrão de um pixel, para atenuar pequenas variações de
+brilho entre linhas vizinhas. A divisão da imagem suavizada pela referência
+forneceu razões de intensidade. A limiarização em 0,70 marcou como sombras
+das interfaces os pixels cuja razão ficou abaixo desse valor, indicando
+menor intensidade em relação à referência do líquido.
 
-Preencheu-se a região entre as sombras superior e inferior quando elas
-estavam conectadas ou apareciam juntas em pelo menos 20 colunas consecutivas.
-Também se incorporaram regiões com pelo menos quatro pixels, sem contato
-com as bordas superior e inferior, preenchendo seu interior.
-A \autoref{fig:met-mascara} comparou um trecho real com sua máscara
-binária resultante. Os mesmos critérios foram
-aplicados a todos os ensaios.
+Em cada coluna, procurou-se a menor razão de intensidade em cada metade
+do tubo para localizar as sombras superior e inferior. Aplicou-se um
+fechamento morfológico de $3\times3$ pixels para unir pequenas interrupções
+nos contornos de sombra.
+
+Preencheu-se a região entre as bordas externas das sombras, incluindo-as,
+quando estavam conectadas ou presentes em pelo menos 20 colunas consecutivas,
+marcando essa região como gás inferido. Também se incorporaram regiões
+conectadas de sombra com pelo menos quatro pixels, sem contato com as bordas
+superior e inferior, preenchendo seu interior. A \autoref{fig:met-mascara}
+comparou um recorte real com sua máscara binária resultante. Os mesmos
+critérios foram aplicados a todos os ensaios.
 
 \begin{figure}[!htbp]
   \centering
@@ -516,7 +553,7 @@ aplicados a todos os ensaios.
   (\textit{plug}), nas linhas 18 a 71 e colunas 0 a 519.}
   \label{fig:met-mascara}
   \includegraphics[width=\linewidth]{figuras/metodologia/exemplo_mascara.pdf}
-  \fonte{Elaborado pelo autor a partir do panorama e da máscara do ensaio.}
+  \fonte{Elaborada pelo autor (2026).}
   \end{minipage}
 \end{figure}
 
@@ -528,14 +565,15 @@ aplicados a todos os ensaios.
 Considerou-se o tubo circular de diâmetro interno de 1\,mm, descrito na
 \autoref{sec:arranjo}, representado pelo diâmetro na imagem
 $D_{\mathrm{px}}=54$ pixels. Em cada coluna, mediram-se as larguras dos
-intervalos de gás $d_{ij}$, com o índice de intervalo $i$ e o índice de
-coluna $j$. Cada largura foi usada como diâmetro de uma seção circular de
-gás, sem sobreposição em profundidade.
+intervalos contínuos de gás $d_{ij}$ no sentido radial, com o índice de
+intervalo $i$ e o índice de coluna $j$. Cada largura do intervalo de gás
+$d_{ij}$ foi usada como diâmetro de uma seção circular de gás, sem
+sobreposição em profundidade.
 
 A razão entre a soma das áreas de gás e a área interna do tubo forneceu
 a fração de vazio estimada na coluna $\widehat\alpha_{\mathrm{opt},j}$.
-A média das colunas forneceu a fração de vazio estimada no panorama
-$\widehat\alpha_{\mathrm{opt}}$:
+A média dessas estimativas forneceu a fração de vazio estimada no panorama
+$\widehat\alpha_{\mathrm{opt}}$:\nopagebreak[4]
 
 \begin{equation}\label{eq:met-void}
  \begin{aligned}
@@ -547,36 +585,19 @@ $\widehat\alpha_{\mathrm{opt}}$:
 \end{equation}
 
 \noindent
-O número de colunas $W$ correspondeu à largura do panorama. A soma por
-intervalo reuniu as áreas de gás em cada coluna, e a soma por coluna
-calculou a média do panorama. As larguras dos intervalos de gás $d_{ij}$
-e o diâmetro do tubo na imagem $D_{\mathrm{px}}$ foram medidos em pixels.
-O quadrado decorreu da razão entre áreas circulares. A
-\autoref{fig:met-optica}(a) ilustrou esse cálculo.
+As larguras dos intervalos de gás $d_{ij}$ e o diâmetro do tubo na imagem
+$D_{\mathrm{px}}$ foram medidos em pixels. A razão de áreas
+$(d_{ij}/D_{\mathrm{px}})^2$ comparou a seção gasosa estimada à seção interna
+do tubo, pois a área circular é proporcional ao quadrado do diâmetro.
+A soma reuniu essas contribuições
+na fração de vazio estimada na coluna $\widehat\alpha_{\mathrm{opt},j}$.
 
-% ---------------------------------------------------------
-\subsection{Transições espaciais e comparação dos ensaios}\label{sec:met-transicoes}
-% ---------------------------------------------------------
-
-Para descrever a alternância longitudinal da máscara, calculou-se a densidade
-de transições espaciais $F$:
-\nopagebreak[4]
-
-\begin{equation}\label{eq:met-flips}
- F=\frac{N_{\mathrm{trans}}}{H(W-1)},\qquad H=54.
-\end{equation}
-
-\noindent
-O número de transições $N_{\mathrm{trans}}$ contou as mudanças entre 0 e 1
-em pixels vizinhos da mesma linha. O número de linhas $H=54$ e o número
-de colunas $W$ definiram o total de pares vizinhos $H(W-1)$. Assim, a
-densidade de transições espaciais $F$ representou a proporção desses pares
-com mudança de valor. A \autoref{fig:met-optica}(b) mostrou a
-contagem em uma linha e sua soma na máscara completa.
-
-Apresentou-se a densidade de transições por mil pares de pixels
-$1\,000F$, sem conversão em frequência temporal. Um valor maior indicou
-maior alternância espacial na máscara.
+O número de colunas $W$ correspondeu à largura do panorama. A soma das
+frações de vazio estimadas nas colunas $\widehat\alpha_{\mathrm{opt},j}$,
+dividida pelo número de colunas $W$, forneceu a fração de vazio estimada no
+panorama $\widehat\alpha_{\mathrm{opt}}$, dando o mesmo peso a cada coluna.
+A estimativa dependeu das regiões marcadas na máscara e da hipótese de
+seções circulares, ilustrada na \autoref{fig:met-optica}(a).
 
 \begin{figure}[!htbp]
   \centering
@@ -586,20 +607,47 @@ maior alternância espacial na máscara.
   (b) transições entre pixels vizinhos de uma linha.}
   \label{fig:met-optica}
   \includegraphics[width=\linewidth]{figuras/metodologia/medidas_opticas.pdf}
-  \fonte{Elaborado pelo autor.}
+  \fonte{Elaborada pelo autor (2026).}
   \end{minipage}
 \end{figure}
 
+% ---------------------------------------------------------
+\subsection{Transições espaciais e comparação dos ensaios}\label{sec:met-transicoes}
+% ---------------------------------------------------------
 
-\FloatBarrier
+Para descrever a alternância longitudinal da máscara, calculou-se a densidade
+de transições espaciais $F$. A normalização pelo total de pares de pixels
+vizinhos permitiu comparar panoramas com diferentes números de colunas $W$:
+\nopagebreak[4]
+
+\begin{equation}\label{eq:met-flips}
+ F=\frac{N_{\mathrm{trans}}}{H(W-1)},\qquad H=54.
+\end{equation}
+
+\noindent
+O número de transições $N_{\mathrm{trans}}$ contou as mudanças de 0 para 1
+e de 1 para 0 entre pixels vizinhos da mesma linha. O número de pares
+vizinhos por linha $W-1$ decorreu de comparar cada pixel com o seguinte.
+A multiplicação pelo número de linhas $H=54$ forneceu o total de pares
+comparados $H(W-1)$.
+
+Assim, a densidade de transições espaciais $F$ representou a proporção
+de pares vizinhos com mudança de valor, conforme ilustrado na
+\autoref{fig:met-optica}(b). Multiplicou-se a densidade de transições
+espaciais $F$ por 1\,000 para apresentar a densidade de transições por mil
+pares de pixels $1\,000F$,
+sem conversão em frequência temporal. Um valor maior indicou maior
+alternância espacial na máscara.
+
 Cada ensaio foi representado pela fração de vazio estimada
 $\widehat\alpha_{\mathrm{opt}}$ e pela densidade de transições por mil pares
 $1\,000F$ no gráfico da \autoref{fig:res-void-transicoes}. As tabelas
 apresentaram as medianas por padrão, e as estrelas no gráfico, as médias.
-Para grupos com pelo menos três ensaios, contornos calculados pela função
-\texttt{ConvexHull} da \textit{SciPy} delimitaram os pontos mais externos,
-permitindo visualizar as regiões ocupadas e suas sobreposições.
 
-Nos pares de \textit{churn} e anular ondulado dos Resultados, compararam-se
+Para grupos com pelo menos três ensaios, calcularam-se envoltórias convexas
+com a função \texttt{ConvexHull} da \textit{SciPy}. Esses contornos uniram os
+pontos mais externos de cada grupo, permitindo visualizar as regiões
+ocupadas e suas sobreposições.
+Nos pares de \textit{churn} e \textit{wavy annular} dos Resultados, compararam-se
 essas medidas ópticas com a semelhança espectral, conforme discutido na
 \autoref{sec:disc-void}.

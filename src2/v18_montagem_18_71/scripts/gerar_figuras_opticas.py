@@ -33,7 +33,7 @@ PANORAMA_MANIFEST = OUTPUT_ROOT / "01_panoramas/manifesto.json"
 SCATTER_SCRIPT = SCRIPTS_ROOT / "optical_plot.py"
 RUNS = ("m07q01_001", "m06q01_001", "m06q05_001", "m06q20_001", "m06q80_001")
 PATTERNS = ("dispersed bubbles", "plug", "slug", "churn", "wavy annular")
-PANEL_LABELS = dict(zip(RUNS, ("Bolhas dispersas", "Plug", "Slug", "Churn", "Anular ondulado")))
+PANEL_LABELS = dict(zip(RUNS, PATTERNS))
 CSV_NAMES = (
     "results/void_fraction/panorama_void_per_run.csv",
     "results/flip_rate/phase_mask_flip_per_run.csv",
@@ -111,7 +111,8 @@ def render_panel(images):
         color[..., :3] = (.1, .8, 1)
         color[..., 3] = gas * .42
         pair[1].imshow(color, aspect="auto", interpolation="nearest", extent=extent)
-        pair[0].set_ylabel(f"{PANEL_LABELS[run]}\n{run.removesuffix('_001')}", fontsize=16,
+        label = r"$\mathit{" + PANEL_LABELS[run].replace(" ", r"\ ") + "}$"
+        pair[0].set_ylabel(f"{label}\n{run.removesuffix('_001')}", fontsize=16,
                            rotation=0, ha="right", va="center", labelpad=10)
     axes[0, 0].set_title(TITLE)
     axes[0, 1].set_title("Gás inferido em azul (mesma região)")

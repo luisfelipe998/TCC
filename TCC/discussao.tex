@@ -1,9 +1,9 @@
 \chapter{Análise e Discussão}\label{cap:discussao}
 
-Neste capítulo, interpretaram-se a similaridade espectral medida pelo coeficiente
-de Pearson $r$ e os campos de coerência wavelet, considerando as limitações das
-entradas e sua relação com a literatura. A análise wavelet tomou como referência as
-26 aquisições e todos os 325 pares do \autoref{cap:resultados}. Incorporou-se,
+Neste capítulo, interpretaram-se os resultados espectrais e ópticos,
+considerando as limitações das entradas e a relação com a literatura.
+Na análise espectral, examinaram-se as 26 aquisições e todos os
+325 pares do \autoref{cap:resultados}. Incorporou-se,
 de forma complementar, a interpretação das máscaras e das medidas ópticas
 dos 25 ensaios elegíveis.
 
@@ -11,225 +11,389 @@ dos 25 ensaios elegíveis.
 \section{Interpretação da similaridade espectral e dos campos de coerência}\label{sec:disc-interpretacao}
 % =========================================================
 
-Os ensaios do mesmo padrão apresentaram, em média, perfis espectrais mais
-semelhantes. O coeficiente de Pearson $r$ comparou a forma dos perfis de
-potência no atraso zero, conforme a \autoref{eq:met-pearson}. Um coeficiente
-elevado indicou que os aumentos e as reduções de potência ocorreram em
-comprimentos de onda semelhantes, sem exigir a mesma amplitude de potência.
-Como cada perfil resumiu o sinal completo, essa semelhança também não
-exigiu estruturas nas mesmas posições dos panoramas.
+Cada perfil de potência no atraso zero
+$P_{ik}$ reuniu, em uma curva, a resposta espectral para cada comprimento
+de onda equivalente $\lambda_k$, que expressou a extensão de um ciclo de
+oscilação em pixels do panorama reconstruído. O coeficiente de Pearson
+$r_{ij}$ comparou a forma dessas curvas, conforme a \autoref{eq:met-pearson}.
 
 A média do coeficiente de Pearson $r$ foi de $0{,}7642$ dentro dos padrões
-e de $0{,}5814$ entre padrões, conforme a \autoref{sec:res-limite-estat}.
+e de $0{,}5814$ entre padrões. Essa diferença indicou, em média, maior concordância
+entre as regiões de valores relativamente altos e baixos dos perfis de
+potência no atraso zero $P_{ik}$ dentro dos padrões.
+As medianas do coeficiente de Pearson $r$
+seguiram a mesma tendência, conforme a \autoref{tab:res-global}.
+Cada par recebeu o mesmo peso, mas os padrões não tiveram o mesmo peso
+nesses resumos: \textit{churn} e \textit{wavy annular} responderam por 81
+dos 87 pares intrapadrão.
+
+Além dessa diferença de participação, os conjuntos não abrangeram os
+mesmos ensaios. Os pares intrapadrão reuniram 25 ensaios de quatro padrões,
+enquanto os pares interpadrões incluíram os 26 ensaios dos cinco padrões.
+O único ensaio de \textit{dispersed bubbles} participou apenas das comparações
+entre padrões.
+
 Essa tendência não se repetiu em todas as combinações:
-a média entre \textit{churn} e \textit{plug}, $0{,}8117$, superou a média
-interna de \textit{churn}, $0{,}7684$. A proximidade entre as formas dos
-perfis também ocorreu entre padrões diferentes, em acordo com a
-sobreposição das distribuições apresentada nos Resultados.
+a média do coeficiente de Pearson $r$ entre \textit{churn} e \textit{plug},
+$0{,}8117$, superou a média do coeficiente de Pearson $r$ dentro de
+\textit{churn}, $0{,}7684$. A semelhança entre os perfis de potência no
+atraso zero $P_{ik}$ também foi alta entre padrões diferentes.
+Assim, um coeficiente de Pearson $r_{ij}$ elevado, isoladamente, não
+bastou para concluir que dois ensaios pertenceram ao mesmo padrão.
+Essa leitura foi consistente com a sobreposição das distribuições
+apresentadas nos Resultados.
 
-A coerência wavelet acrescentou a comparação dos dois sinais por
-comprimento de onda e atraso, isto é, pelo deslocamento relativo usado
-na comparação. Seus mapas permitiram observar em quais escalas e
-deslocamentos houve maior associação entre os trechos analisados.
+Dentro dos padrões, observaram-se comportamentos distintos. Em \textit{plug},
+a proximidade dos três perfis de potência no atraso zero $P_{ik}$ acompanhou
+a maior média do coeficiente de Pearson $r$, conforme a \autoref{tab:res-intra}.
+Essa regularidade se restringiu aos três ensaios disponíveis. Em \textit{slug},
+o perfil de potência no atraso zero $P_{ik}$ de m06q05 concentrou sua maior
+resposta em comprimentos de onda equivalentes $\lambda_k$ mais longos,
+conforme a \autoref{fig:res-perfis}. As comparações que envolveram
+esse ensaio foram menos semelhantes que a comparação entre os outros dois
+ensaios do grupo. Assim, o mesmo rótulo não implicou uma forma espectral uniforme.
 
-No par anular da \autoref{fig:res-wps-annular}, o coeficiente de Pearson
-$r=0{,}9883$ coexistiu com coerência wavelet máxima de $0{,}3660$.
-Assim, perfis de forma próxima não implicaram valores de coerência
-próximos de um entre os trechos comparados. Os procedimentos examinaram
-propriedades distintas e também utilizaram entradas de extensões diferentes:
-panoramas completos para os perfis e trechos de comprimento comum para os
-mapas, conforme a \autoref{sec:met-preproc}.
+Em \textit{wavy annular}, m03q40 apresentou média interna do coeficiente de
+Pearson $r$ de $0{,}3275$ e maior resposta em comprimentos de onda equivalentes
+$\lambda_k$ menores que os dos demais ensaios do grupo. A saturação de
+$25{,}23\%$ indicou a parcela de pixels que atingiu o nível máximo de
+intensidade na faixa óptica analisada. Não se determinou quanto a saturação
+contribuiu para a diferença espectral. Conforme a \autoref{sec:res-void},
+manteve-se esse ensaio na análise espectral e excluiu-se apenas dos resumos ópticos.
 
-Para comparar os grupos, cada par contribuiu com a média de seu mapa de
-coerência wavelet, reunindo todas as escalas e todos os atrasos. A média
-desses valores foi maior entre padrões, $0{,}0874$, que dentro deles,
-$0{,}0607$. Portanto, a coerência wavelet média não acompanhou a maior
-semelhança intrapadrão observada pelo coeficiente de Pearson $r$.
-Essa comparação incluiu mapas com diferentes extensões de atraso,
-determinadas pelo comprimento dos sinais. Dar o mesmo peso a cada par
-não igualou esses intervalos. O resultado descreveu os mapas na configuração
-adotada. Não se determinou se a extensão dos sinais contribuiu para essa diferença.
+O \autoref{quad:disc-medidas-espectrais} sintetizou as diferenças entre
+as medidas espectrais. Para o coeficiente de Pearson $r_{ij}$, utilizaram-se
+os perfis de potência no atraso zero $P_{ik}$ dos sinais completos,
+enquanto os mapas utilizaram trechos iniciais de comprimento comum,
+conforme a \autoref{sec:met-preproc}.
 
-O único ensaio de bolhas dispersas foi comparado individualmente com os
-25 ensaios dos demais padrões. As quatro combinações entre bolhas dispersas
-e os demais padrões apresentaram as maiores médias de coerência wavelet e
+\begin{quadro}[!htbp]
+  \centering
+  \begin{threeparttable}
+  \caption{Síntese interpretativa das medidas espectrais.}
+  \label{quad:disc-medidas-espectrais}
+  \small
+  \begin{tabular}{>{\raggedright\arraybackslash}p{0.24\textwidth} >{\raggedright\arraybackslash}p{0.36\textwidth} >{\raggedright\arraybackslash}p{0.30\textwidth}}
+    \hline
+    \textbf{Medida} & \textbf{Informação sintetizada} & \textbf{Leitura do resultado}\\
+    \hline
+    Coeficiente de Pearson $r_{ij}$ &
+    Comparou-se a forma dos perfis de potência no atraso zero $P_{ik}$
+    dos sinais completos. &
+    Valores elevados indicaram formas semelhantes, sem exigir amplitudes
+    iguais ou identidade de padrão.\\
+    \hline
+    Módulo do espectro cruzado alternativo $\widetilde C_{xy}(a_k,b)$ &
+    Examinou-se a intensidade da resposta cruzada em cada escala $a_k$
+    e atraso relativo $b$. &
+    Regiões de maior módulo não coincidiram necessariamente com as de
+    maior coerência alternativa $\widetilde\gamma_{xy}(a_k,b)$.\\
+    \hline
+    Coerência alternativa $\widetilde\gamma_{xy}(a_k,b)$ &
+    Normalizou-se o módulo ao quadrado do espectro cruzado alternativo
+    $\widetilde C_{xy}(a_k,b)$ pelo produto das potências alternativas
+    $\widetilde P_x(a_k,0)$ e $\widetilde P_y(a_k,0)$. &
+    O máximo destacou a maior resposta do mapa. A média considerou todos
+    os valores válidos. Assim, um máximo elevado pôde coexistir com uma
+    média baixa.\\
+    \hline
+  \end{tabular}
+  \fonte{Elaborada pelo autor (2026).}
+  \end{threeparttable}
+\end{quadro}
+
+Nos mapas, o atraso relativo $b$ indicou um deslocamento na comparação,
+sem localizar a posição original de um evento ou o trânsito da mesma bolha
+entre aquisições. As curvas laterais apresentaram o perfil de potência
+média $M_{ik}$, obtido pela
+média sobre os atrasos relativos $b$ de cada linha dos mapas de potência
+alternativa $\widetilde P_x(a_k,b)$ e $\widetilde P_y(a_k,b)$.
+Esse resumo diferiu do perfil de potência no atraso zero $P_{ik}$,
+extraído apenas da coluna do atraso relativo $b=0$, conforme a
+\autoref{fig:met-perfis}.
+
+No par de \textit{wavy annular} da \autoref{fig:res-wps-annular}, o coeficiente de Pearson
+$r_{ij}=0{,}9883$ coexistiu com máximo da coerência alternativa
+$\widetilde\gamma_{xy}(a_k,b)$ de $0{,}3660$.
+A proximidade dos perfis de potência no atraso zero $P_{ik}$ não bastou,
+portanto, para indicar correspondência elevada entre as variações de
+intensidade dos trechos comparados.
+
+Nos mapas desse par anular, as maiores respostas das potências alternativas
+$\widetilde P_x(a_k,b)$ e $\widetilde P_y(a_k,b)$ ocorreram no atraso
+relativo $b=0$, enquanto o módulo do espectro cruzado alternativo
+$\widetilde C_{xy}(a_k,b)$ apresentou regiões de maior resposta afastadas
+desse centro. Essas regiões se situaram em comprimentos de onda equivalentes
+$\lambda_k$ menores que os de maior coerência alternativa
+$\widetilde\gamma_{xy}(a_k,b)$.
+
+A normalização da \autoref{eq:wco-alt} utilizou uma referência que variou
+entre as escalas $a_k$, alterando o destaque relativo das regiões dos
+mapas. A coerência alternativa $\widetilde\gamma_{xy}(a_k,b)$ representou,
+assim, uma leitura normalizada do espectro cruzado alternativo
+$\widetilde C_{xy}(a_k,b)$, sem constituir evidência independente da
+associação entre os sinais.
+
+No par entre \textit{slug} e \textit{wavy annular} da \autoref{fig:res-inter},
+o máximo da coerência alternativa $\widetilde\gamma_{xy}(a_k,b)$, de
+$0{,}9936$, coexistiu com média de $0{,}1320$, mediana de $0{,}0437$ e
+mínimo próximo de zero. Pelo menos metade dos valores válidos da grade
+ficou, portanto, até aproximadamente $0{,}0437$. Houve, assim, associação
+elevada em determinadas combinações de escala $a_k$ e atraso relativo $b$,
+ao lado de muitas respostas pequenas, mesmo entre ensaios de padrões
+diferentes.
+O exemplo foi selecionado pelo maior máximo entre os 238 pares interpadrões
+e não para representar o comportamento típico dessas comparações.
+
+Nesse exemplo interpadrões, a região de maior módulo do espectro cruzado
+alternativo $\widetilde C_{xy}(a_k,b)$ apareceu em atraso relativo $b$
+negativo e em comprimentos de onda equivalentes $\lambda_k$ intermediários
+da faixa analisada. Já a região de maior coerência alternativa
+$\widetilde\gamma_{xy}(a_k,b)$ ocorreu em comprimentos de onda equivalentes
+$\lambda_k$ mais longos e atraso relativo $b$ positivo, próximo ao centro
+do mapa.
+
+Cada mapa de coerência alternativa $\widetilde\gamma_{xy}(a_k,b)$ foi
+resumido pela média dos pontos válidos em todas as escalas $a_k$ e atrasos
+relativos $b$. A média desses valores, um por par, foi de $0{,}0874$ entre
+padrões e de $0{,}0607$ dentro deles. Assim, ao considerar todo o mapa,
+os pares de padrões diferentes apresentaram maior associação normalizada,
+em média, entre os trechos comparados. A mediana seguiu a mesma ordem:
+$0{,}0795$ e $0{,}0636$, respectivamente. Essas medianas resumiram valores
+por par, enquanto a mediana de $0{,}0437$ do exemplo anterior resumiu os
+pontos de um único mapa.
+
+Na comparação global, a maior semelhança dentro dos padrões apareceu nos
+perfis de potência no atraso zero $P_{ik}$, mas não na média dos mapas de
+coerência alternativa $\widetilde\gamma_{xy}(a_k,b)$. A conclusão dependeu,
+portanto, da medida espectral utilizada. Essa inversão entre os grupos
+não demonstrou que, em cada par, um aumento do coeficiente de
+Pearson $r_{ij}$ fosse acompanhado por uma redução da média de coerência
+alternativa $\widetilde\gamma_{xy}(a_k,b)$.
+
+Sinais mais longos permitiram intervalos mais amplos de atrasos relativos
+$b$. Quanto maior foi o deslocamento, menor foi o trecho com amostras dos
+dois sinais disponíveis para comparação. No cálculo das correlações,
+utilizou-se a normalização enviesada da \autoref{eq:crosscorr-disc}:
+dividiu-se a soma dos produtos pelo número total de amostras $N$, fixo para
+cada par, e não pela quantidade de amostras sobrepostas.
+Dar o mesmo peso a cada mapa não eliminou essas diferenças de intervalo
+e de sobreposição. Não se determinou se elas contribuíram para os
+contrastes entre os grupos.
+
+O único ensaio de \textit{dispersed bubbles} foi comparado individualmente com os
+25 ensaios dos demais padrões. As quatro combinações entre \textit{dispersed bubbles}
+e os demais padrões apresentaram as maiores médias das médias da coerência
+alternativa $\widetilde\gamma_{xy}(a_k,b)$ e
 médias negativas do coeficiente de Pearson $r$. Como todas envolveram a
-mesma aquisição de bolhas dispersas, esse comportamento não pôde ser
-generalizado para o padrão.
-
-No par entre \textit{slug} e anular ondulado da \autoref{fig:res-inter},
-observou-se coerência wavelet elevada em determinadas combinações de
-comprimento de onda e atraso. Essa associação também ocorreu, portanto,
-entre ensaios classificados em padrões diferentes. O exemplo foi selecionado
-pelo maior máximo entre os 238 pares interpadrões e ilustrou uma ocorrência
-da amostra, sem representar o comportamento típico dessas comparações.
+mesma aquisição de \textit{dispersed bubbles}, esse comportamento não pôde ser
+generalizado para o padrão. Além disso, os 25 pares utilizaram comprimento
+comum de $3\,094$ pixels, próximo ao maior comprimento de onda equivalente
+$\lambda_k=3\,000$ pixels da grade. A extensão disponível abrangeu, portanto,
+pouco mais de um comprimento de onda equivalente $\lambda_k$ no limite
+superior da faixa. Essa limitação reforçou a cautela
+na leitura das maiores escalas $a_k$, sem demonstrar a causa das médias mais
+altas.
 
 % =========================================================
 \section{Complementaridade entre as medidas ópticas e espectrais}\label{sec:disc-void}
 % =========================================================
 
-A estimativa condicional de fração de vazio $\widehat\alpha_{\mathrm{opt}}$
-descreveu a parcela da seção do tubo atribuída ao gás, em média ao longo
-do panorama. Essa estimativa utilizou as larguras identificadas na máscara
-e a hipótese de seções gasosas circulares, conforme a \autoref{sec:met-geometria-optica}.
-A densidade de transições $F$ descreveu as mudanças entre pixels marcados
-como gás e os demais pixels ao longo das linhas da máscara. Essas duas
-medidas acrescentaram informações de ocupação estimada e alternância
-espacial à comparação espectral.
+As medidas ópticas partiram das máscaras, imagens nas quais se marcaram
+as regiões atribuídas ao gás. A estimativa condicional de fração de vazio
+$\widehat\alpha_{\mathrm{opt}}$ descreveu a parcela média da seção do tubo
+atribuída ao gás ao longo do panorama. Para essa estimativa, tomou-se cada
+largura de intervalo de gás $d_{ij}$ como o diâmetro de uma seção gasosa
+circular, conforme a \autoref{fig:met-optica}.
+Seu caráter condicional decorreu tanto da identificação dessas regiões
+quanto da hipótese circular.
 
-Os exemplos da \autoref{tab:disc-void-wavelet} retomaram os pares já apresentados
-na \autoref{fig:res-wps} e na \autoref{fig:res-wps-annular}, selecionados pelo
-maior coeficiente de Pearson $r$ de cada padrão. A tabela reuniu esse
-coeficiente e as medidas ópticas dos dois ensaios de cada par.
+A densidade de transições $F$ descreveu outra característica da máscara:
+a proporção de pares de pixels vizinhos com mudança entre a marcação de
+gás e a dos demais pixels, ao longo das linhas. Essa medida descreveu a
+alternância espacial, sem medir a frequência temporal de passagem de bolhas.
 
-\begin{table}[htbp]
+A \autoref{tab:disc-void-wavelet} reuniu as medidas dos pares apresentados
+na \autoref{fig:res-wps} e na \autoref{fig:res-wps-annular}.
+Esses pares foram selecionados pelo maior coeficiente de Pearson $r_{ij}$
+de cada padrão.
+
+\begin{table}[!htbp]
   \centering
   \begin{threeparttable}
-  \caption{Comparação complementar de medidas ópticas e espectrais nos mesmos pares de aquisições.}
+  \caption[Comparação complementar de medidas ópticas e espectrais nos mesmos pares de aquisições.]{Medidas
+  ópticas e espectrais dos mesmos pares de ensaios. Valores ópticos na ordem
+  dos ensaios. Densidade de transições por mil pares de pixels vizinhos $1\,000F$.}
   \label{tab:disc-void-wavelet}
   \small
   \begin{tabular}{p{3.1cm} c c c}
     \hline
     \textbf{Padrão e par} &
-    \shortstack{\textbf{Coeficiente de}\\\textbf{Pearson $r$}} &
+    \shortstack{\textbf{Coeficiente de}\\\textbf{Pearson $r_{ij}$}} &
     \shortstack{\textbf{Estimativa condicional}\\\textbf{de fração de vazio $\widehat\alpha_{\mathrm{opt}}$}} &
-    \shortstack{\textbf{Densidade de}\\\textbf{transições $1\,000F$}}\\
+    \shortstack{\textbf{Densidade de}\\\textbf{transições por mil}\\\textbf{pares de pixels $1\,000F$}}\\
     \hline
-    \textit{Churn}: m05q40 / m06q20 & 0,9572 & 0,8919 / 0,7871 & 7,306 / 12,418\\
-    Anular ondulado: m03q20 / m04q80 & 0,9883 & 0,9987 / 0,9971 & 0,115 / 0,210\\
+    \textit{churn}: m05q40 / m06q20 & 0,9572 & 0,8919 / 0,7871 & 7,306 / 12,418\\
+    \textit{wavy annular}: m03q20 / m04q80 & 0,9883 & 0,9987 / 0,9971 & 0,115 / 0,210\\
     \hline
   \end{tabular}
-  \fonte{Elaborado pelo autor a partir dos resultados das duas análises.
-  Os valores ópticos seguiram a ordem dos ensaios indicada em cada par.
-  A densidade de transições $1\,000F$ foi expressa por mil pares de pixels vizinhos.}
+  \fonte{Elaborada pelo autor (2026).}
   \end{threeparttable}
 \end{table}
 
-No par de \textit{churn}, a elevada semelhança entre os perfis espectrais
+No par de \textit{churn}, a elevada semelhança entre os perfis de potência
+no atraso zero $P_{ik}$
 coexistiu com diferenças na fração de vazio estimada
 $\widehat\alpha_{\mathrm{opt}}$ e na densidade de transições $F$.
-Assim, a proximidade dos perfis não significou igualdade nas medidas ópticas.
-A leitura conjunta acrescentou informações sobre os ensaios que o
-coeficiente de Pearson $r$, isoladamente, não expressou. No par anular,
+A leitura conjunta acrescentou, assim, informações de ocupação e alternância
+que a semelhança dos perfis de potência no atraso zero $P_{ik}$ não expressou.
+No par de \textit{wavy annular},
 a elevada semelhança espectral acompanhou estimativas condicionais de fração
 de vazio $\widehat\alpha_{\mathrm{opt}}$ próximas de um e baixas densidades
 de transições $F$.
 
-A leitura conjunta das duas medidas ópticas também foi importante.
-Na \autoref{tab:res-void}, o único ensaio de bolhas dispersas apresentou
-fração de vazio estimada de $0{,}0023$ e densidade de transições por mil
-pares de pixels de $2{,}563$. Nos oito ensaios anulares elegíveis, as medianas foram de
-$0{,}9653$ e $2{,}180$, respectivamente. Poucas transições coexistiram,
-assim, com ocupações estimadas muito diferentes. A densidade de transições
-$F$ descreveu a alternância da máscara, enquanto a fração de vazio estimada
-$\widehat\alpha_{\mathrm{opt}}$ descreveu a ocupação segundo o modelo geométrico.
+Essa complementaridade foi interpretada considerando as informações
+preservadas em cada representação. No caminho espectral, utilizou-se a
+intensidade média por coluna $I_i[n]$, com preparo que reduziu diferenças de nível e amplitude,
+conforme a \autoref{sec:met-preproc}. No caminho óptico, as larguras dos
+intervalos de gás $d_{ij}$ sustentaram a estimativa geométrica de fração
+de vazio $\widehat\alpha_{\mathrm{opt}}$. Não se isolou a contribuição de
+cada transformação para os contrastes observados.
 
-Na análise por máscaras, a elevada estimativa condicional de fração de vazio
-$\widehat\alpha_{\mathrm{opt}}$ e a baixa densidade de transições $F$ do grupo anular foram
-compatíveis com longas regiões marcadas como gás. Valores próximos de um
-também puderam incluir filmes líquidos não resolvidos ou sombras
-incorporadas à máscara. Como os dois eixos da
+Na \autoref{tab:res-void}, o único ensaio de \textit{dispersed bubbles} apresentou
+estimativa de fração de vazio $\widehat\alpha_{\mathrm{opt}}=0{,}0023$
+e densidade de transições por mil pares de pixels $1\,000F=2{,}563$.
+Nos oito ensaios de \textit{wavy annular} elegíveis, as medianas foram de
+$0{,}9653$ e $2{,}180$, respectivamente. Poucas transições coexistiram,
+assim, com ocupações estimadas muito diferentes.
+
+As medidas ópticas também mantiveram ambiguidades entre padrões.
+Em \textit{plug} e \textit{slug}, foram próximas tanto as medianas da
+estimativa de fração de vazio $\widehat\alpha_{\mathrm{opt}}$ quanto as
+da densidade de transições por mil pares de pixels $1\,000F$, conforme a
+\autoref{tab:res-void}. Na \autoref{fig:res-void-transicoes}, as envoltórias,
+contornos das regiões ocupadas por cada grupo, se intersectaram entre
+\textit{plug} e \textit{slug} e entre \textit{churn} e \textit{wavy annular}.
+A sobreposição dessas regiões no gráfico descreveu a amostra, sem constituir fronteiras de
+classificação ou demonstrar igualdade entre distribuições.
+
+Em relação a \textit{churn}, o grupo \textit{wavy annular} apresentou maior mediana
+da estimativa condicional de fração de vazio $\widehat\alpha_{\mathrm{opt}}$
+e menor mediana da densidade de transições $F$.
+Essa combinação foi compatível com longas regiões marcadas como gás.
+A interpretação permaneceu
+condicionada à possibilidade de filmes líquidos finos demais para serem
+distinguidos nas imagens e de sombras incorporadas à máscara como gás.
+Como os dois eixos da
 \autoref{fig:res-void-transicoes} derivaram da mesma máscara, o gráfico não
 constituiu validação independente da fração volumétrica real.
 
 O uso de uma referência líquida e da detecção de contornos encontrou
-apoio metodológico em \citeonline{schepperle2024}. Nesse estudo, a referência
-foi uma imagem obtida em condição adiabática com apenas líquido. Aqui, ela foi
-inferida de trechos dos próprios panoramas. Além disso, a geometria retangular
-daquele canal diferiu do tubo circular deste trabalho. A semelhança de
-procedimentos sustentou a exploração da segmentação, mas não forneceu uma
-calibração volumétrica para estas imagens nem eliminou as hipóteses geométricas
-da estimativa condicional.
+apoio metodológico em \citeonline{schepperle2024}. Nesse estudo, adquiriu-se
+uma imagem com apenas líquido em condição adiabática e calculou-se a proporção
+de pixels classificados como vapor no canal retangular. Aqui, inferiu-se
+uma referência compartilhada a partir dos três ensaios de \textit{plug} e
+estimaram-se áreas de seções gasosas circulares pelas larguras dos intervalos
+de gás $d_{ij}$. O antecedente apoiou a segmentação, mas não forneceu uma
+calibração da estimativa condicional de fração de vazio
+$\widehat\alpha_{\mathrm{opt}}$ para estas imagens.
 
 % =========================================================
 \section{Comparação com a literatura}\label{sec:disc-literatura}
 % =========================================================
 
-O \autoref{quad:disc-literatura} comparou os procedimentos e as informações
-obtidas neste estudo com os de trabalhos que utilizaram transformadas wavelet
-ou classificação por imagens. As diferenças entre os sinais analisados e os
-objetivos de avaliação impediram comparar diretamente seus valores numéricos.
+O \autoref{quad:disc-literatura} comparou esta análise com estudos que
+utilizaram transformadas \textit{Wavelet} ou classificação por imagens.
+As diferenças entre os sinais e os objetivos de avaliação impediram comparar
+diretamente seus valores numéricos.
 
-\begin{quadro}[htbp]
+\begin{quadro}[!htbp]
   \centering
   \begin{threeparttable}
   \caption{Relação entre os antecedentes bibliográficos e a análise executada.}
   \label{quad:disc-literatura}
   \small
-  \begin{tabular}{p{0.22\textwidth} p{0.33\textwidth} p{0.35\textwidth}}
+  \begin{tabular}{>{\raggedright\arraybackslash}p{0.12\textwidth} >{\raggedright\arraybackslash}p{0.40\textwidth} >{\raggedright\arraybackslash}p{0.40\textwidth}}
     \hline
     \textbf{Referência} & \textbf{Procedimento reportado} & \textbf{Relação com este trabalho}\\
     \hline
     \citeonline{nguyen2010} &
-    Combinaram descritores da CWT, fração de vazio média e razão entre o
-    comprimento estimado das estruturas gasosas e o diâmetro do tubo. &
-    Motivaram a leitura conjunta de informações espectrais e de ocupação.
-    Neste trabalho, os exemplos mostraram que perfis de potência semelhantes
-    puderam acompanhar medidas ópticas distintas.\\
+    Combinaram-se descritores da CWT de sinais temporais de fração de vazio,
+    fração de vazio média e comprimento gasoso estimado relativo ao diâmetro
+    do tubo. &
+    Reuniu-se informação espectral e de ocupação. Aqui, analisou-se a
+    intensidade das imagens e obteve-se a estimativa de fração de vazio
+    $\widehat\alpha_{\mathrm{opt}}$ por segmentação e geometria.\\
     \hline
-    \citeonline{sun2012} &
-    Relacionaram a entropia de norma da pressão à vazão mássica total ou à
-    fração volumétrica de gás calculada das vazões das fases. &
-    Relacionaram descritores wavelet aos padrões de escoamento, com outra
-    grandeza medida e outro descritor.\\
+    \citeonline{schuck2019} &
+    Propôs-se uma formulação com CWT das correlações e avaliaram-se
+    transientes sintéticos, eventos de curta duração em sinais artificiais,
+    com atraso conhecido. &
+    Aplicou-se essa formulação a aquisições distintas para examinar a
+    associação por escala $a_k$ e atraso relativo $b$, sem identificar
+    um mesmo evento entre panoramas.\\
     \hline
     \citeonline{deoliveira2021} &
-    Analisaram por CWT séries temporais do sensor óptico e de pressão diferencial. &
-    Ofereceram um antecedente no mesmo arranjo experimental. Aqui, as escalas
-    descreveram variações na coordenada reconstruída dos panoramas.\\
+    Analisaram-se por CWT sinais temporais dos sensores. No caso anular examinado,
+    identificaram-se frequências características no sinal óptico, mas não
+    nas flutuações de pressão. &
+    Observou-se dependência da resposta em relação à grandeza medida.
+    Aqui, analisou-se a coordenada reconstruída pelo comprimento de onda
+    equivalente $\lambda_k$, sem comparação numérica com frequências temporais.\\
     \hline
     \citeonline{dias2025knn} e \citeonline{dias2025cnn} &
-    Classificaram imagens com kNN e atributos que incluíram DWT, e com
+    Classificaram-se imagens com kNN e atributos que incluíram DWT, e com
     ResNet50, respectivamente. &
-    Avaliaram a previsão dos padrões. Neste trabalho, caracterizaram-se
-    as semelhanças e diferenças entre ensaios já rotulados.\\
+    Avaliou-se a identificação automática dos padrões nas imagens.
+    Neste trabalho, caracterizaram-se as semelhanças e diferenças entre
+    ensaios com padrões já identificados.\\
     \hline
   \end{tabular}
-  \fonte{Elaborado pelo autor a partir das referências indicadas.}
+  \fonte{Elaborada pelo autor (2026).}
   \end{threeparttable}
 \end{quadro}
 
-No par anular, a elevada semelhança dos perfis de potência não foi acompanhada
-por valores de coerência wavelet próximos de um. As medidas ópticas também
-revelaram diferenças de ocupação estimada e de alternância espacial no par
-de \textit{churn}, que também apresentou elevada semelhança espectral. A contribuição dessa leitura conjunta
-foi explicitar essas diferenças nos ensaios analisados, além da proximidade
-entre as formas dos perfis.
+A leitura conjunta das medidas espectrais e ópticas ampliou a descrição
+das semelhanças e diferenças entre os ensaios. Essa combinação não foi
+avaliada como método de identificação automática dos padrões. Sua contribuição
+permaneceu descritiva e condicionada às aquisições e às representações utilizadas.
+
+\FloatBarrier
 
 % =========================================================
 \section{Limitações do estudo}\label{sec:disc-limitacoes}
 % =========================================================
 
-O \autoref{quad:disc-limites} reuniu as limitações da análise. Os pares de
-\textit{churn} e anular ondulado somaram 81 das 87 comparações intrapadrão,
-de modo que a média desse conjunto refletiu principalmente esses dois grupos.
-Além disso, cada aquisição participou de vários pares, que não constituíram
-observações independentes. A avaliação permaneceu descritiva, sem testes de
-significância estatística ou estimativa de acurácia de classificação.
+O \autoref{quad:disc-limites} reuniu as limitações da amostra, da reconstrução
+e das medidas utilizadas. Não se realizaram testes de significância
+estatística, e a interpretação das diferenças observadas ficou sujeita
+a essas condições.
 
-\begin{quadro}[htbp]
+\begin{quadro}[!htbp]
   \centering
   \begin{threeparttable}
-  \caption{Limitações observadas e consequências para a interpretação.}
+  \caption[Limitações observadas e consequências para a interpretação.]{Limitações
+  observadas e consequências para a interpretação, com base nas condições
+  de aquisição e nos procedimentos de análise.}
   \label{quad:disc-limites}
   \small
-  \begin{tabular}{p{0.40\textwidth} p{0.52\textwidth}}
+  \begin{tabular}{>{\raggedright\arraybackslash}p{0.40\textwidth} >{\raggedright\arraybackslash}p{0.52\textwidth}}
     \hline
     \textbf{Condição observada} & \textbf{Consequência}\\
     \hline
-    Três ensaios de \textit{plug}, três de \textit{slug} e um de bolhas dispersas &
+    Três ensaios de \textit{plug}, três de \textit{slug} e um de \textit{dispersed bubbles} &
     As médias dos grupos pequenos dependeram de poucas aquisições.
-    O único ensaio de bolhas dispersas não permitiu estimar a variabilidade
+    O único ensaio de \textit{dispersed bubbles} não permitiu estimar a variabilidade
     entre aquisições desse padrão.\\
     \hline
-    Pares com aquisições compartilhadas e escalas correlacionadas &
-    Nem os 325 pares nem as 200 escalas corresponderam a réplicas independentes.\\
+    Pares com aquisições compartilhadas e respostas espectrais obtidas dos mesmos sinais &
+    A reutilização dos mesmos ensaios fez com que os 325 pares compartilhassem
+    informações. Nem esses pares nem as respostas nas 200 escalas $a_k$
+    corresponderam a réplicas independentes.\\
     \hline
-    Extensões de 3094 a 22831 px e faixa espectral fixa de 50 a 3000 px &
-    A extensão do menor panorama equivaleu a apenas 1,03 vezes o maior
-    comprimento de onda analisado, limitando a leitura das maiores escalas.
-    As médias de coerência wavelet também incluíram atrasos com pequena
-    sobreposição dos sinais.\\
+    Condições operacionais distintas entre aquisições &
+    Não se isolou experimentalmente o efeito do padrão dos efeitos
+    das condições de operação e aquisição.\\
     \hline
     Montagem por deslocamentos ópticos e ausência de calibração longitudinal do panorama &
     Os pixels descreveram a coordenada reconstruída. Não se mediram
@@ -239,33 +403,33 @@ significância estatística ou estimativa de acurácia de classificação.
     A padronização de intensidade não eliminou possíveis diferenças
     de borramento, resposta óptica e saturação dos níveis de cinza.\\
     \hline
-    Condições operacionais distintas entre aquisições &
-    Não se isolou experimentalmente o efeito do padrão dos efeitos
-    das condições de operação e aquisição.\\
+    Extensões de 3094 a 22831 px e faixa espectral fixa de 50 a 3000 px &
+    O menor panorama comportou pouco mais de um ciclo no maior comprimento
+    de onda equivalente $\lambda_k$, limitando a análise de oscilações longas.
+    As médias da coerência alternativa $\widetilde\gamma_{xy}(a_k,b)$ também
+    incluíram atrasos relativos $b$ com poucos pares de amostras disponíveis
+    para comparação.\\
     \hline
     Máscaras e geometria sem calibração volumétrica independente &
-    A estimativa condicional de fração de vazio $\widehat\alpha_{\mathrm{opt}}$ dependeu
-    da segmentação, da refração e da hipótese de seções circulares.
-    O limite de 20\% de pixels saturados foi um critério de exclusão dos
-    resumos ópticos, sem validar a estimativa dos panoramas admitidos.\\
+    A estimativa condicional de fração de vazio $\widehat\alpha_{\mathrm{opt}}$
+    dependeu das regiões marcadas como gás e da hipótese de seções circulares.
+    Admitir apenas ensaios com até 20\% de pixels saturados não confirmou
+    que os valores correspondessem à proporção real de gás no tubo.\\
     \hline
   \end{tabular}
-  \fonte{Elaborado pelo autor a partir das condições de aquisição e dos procedimentos de análise.}
+  \fonte{Elaborada pelo autor (2026).}
   \end{threeparttable}
 \end{quadro}
-
 \FloatBarrier
-Os achados espectrais se referiram à faixa de extração e ao preparo dos
-sinais adotados na análise principal. O preparo não garantiu a estacionariedade,
-isto é, a manutenção das propriedades estatísticas ao longo do sinal,
-pressuposta pela formulação baseada em correlações na
-\autoref{sec:met-preproc}.
+
+O preparo dos sinais não garantiu a estacionariedade, isto é,
+a manutenção das propriedades estatísticas, como a média e a variabilidade,
+ao longo do sinal, pressuposta na \autoref{sec:met-preproc}.
+O acréscimo de zeros às correlações não acrescentou observações ao registro
+nem compensou a menor quantidade de amostras sobrepostas nos atrasos
+relativos $b$ mais afastados do centro, também incluídos nos resumos dos mapas.
 
 A análise não comparou o desempenho das representações espacial e temporal
-nem demonstrou superioridade do domínio espacial ou independência em relação
-à velocidade do escoamento. Também não se compararam os descritores wavelet
-entre as duas formas de montagem: os panoramas espectrais utilizaram a
-substituição de coluna nas emendas, nas condições da \autoref{sec:met-extracao},
-e os ópticos preservaram os pixels das tiras originais. O efeito dessa
-diferença permaneceu sem quantificação.
+do escoamento. Por isso, os resultados não demonstraram superioridade do
+domínio espacial ou independência em relação à velocidade do escoamento.
 

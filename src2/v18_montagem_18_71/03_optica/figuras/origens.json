@@ -5,17 +5,17 @@
     "sha256": "31f3a19766181ab6a83c65dab09d08d94ca326811041deace7c2a81c110a11b1"
   },
   "generator": {
-    "file": "package/scripts/gerar_figuras_opticas.py",
-    "sha256": "08f9824373340312b8ec665f2390faf2721ddd11bf8c053c2b88a72d1847d328"
+    "file": "scripts/gerar_figuras_opticas.py",
+    "sha256": "673daec4313eb93558c2c2574914cb49964fd7c2483ab8d6922c717e5ef320ab"
   },
   "source_rendering_scripts": [
     {
-      "file": "package/scripts/gerar_figuras_opticas.py",
-      "sha256": "08f9824373340312b8ec665f2390faf2721ddd11bf8c053c2b88a72d1847d328"
+      "file": "scripts/gerar_figuras_opticas.py",
+      "sha256": "673daec4313eb93558c2c2574914cb49964fd7c2483ab8d6922c717e5ef320ab"
     },
     {
-      "file": "package/scripts/optical_plot.py",
-      "sha256": "fa0dce0a79509d7762cbd874b8138e31a82497b40864f0f82ec239159f8cadf6"
+      "file": "scripts/optical_plot.py",
+      "sha256": "33229537064cf776515c51c011e62f0eeeb09b4aaa7947f1bde108a1a3bc6d12"
     }
   ],
   "geometry": {
@@ -408,7 +408,7 @@
   "figures": [
     {
       "file": "03_optica/figuras/panorama_phase_masks.png",
-      "sha256": "01b34da9b0f8ffeeb98192e9959f52b0a6eac7cfc9eca4b03783b718a8cecb48",
+      "sha256": "219e3007c843e4e11cefb30b5a5ddf1a6e3cefc6c7d8d41dcd60ad97da653b18",
       "inputs": [
         {
           "run": "m07q01_001",
@@ -466,19 +466,9 @@
           }
         }
       ],
-      "size_pixels": [
-        2700,
-        1800
-      ],
-      "first_columns": 2500,
-      "rows_start_stop_exclusive": [
-        18,
-        72
-      ],
-      "mask_opacity": 0.42,
       "generator": {
         "file": "scripts/gerar_figuras_opticas.py",
-        "sha256": "9046966f93d080083fe4ac81232d8c71d78b4076340a1fe0baf5d8b1d3a8e417"
+        "sha256": "673daec4313eb93558c2c2574914cb49964fd7c2483ab8d6922c717e5ef320ab"
       },
       "panorama_manifest": {
         "file": "01_panoramas/manifesto.json",
@@ -488,43 +478,46 @@
         {
           "run": "m07q01_001",
           "displayed_run": "m07q01",
-          "pattern": "Bolhas dispersas"
+          "pattern": "dispersed bubbles"
         },
         {
           "run": "m06q01_001",
           "displayed_run": "m06q01",
-          "pattern": "Plug"
+          "pattern": "plug"
         },
         {
           "run": "m06q05_001",
           "displayed_run": "m06q05",
-          "pattern": "Slug"
+          "pattern": "slug"
         },
         {
           "run": "m06q20_001",
           "displayed_run": "m06q20",
-          "pattern": "Churn"
+          "pattern": "churn"
         },
         {
           "run": "m06q80_001",
           "displayed_run": "m06q80",
-          "pattern": "Anular ondulado"
+          "pattern": "wavy annular"
         }
       ],
-      "rendering": {
-        "matplotlib": "3.10.7",
-        "numpy": "2.3.4",
-        "dpi": 180,
-        "segmentation_performed_by_this_generator": false,
-        "row_label_fontsize_pt": 16
-      }
+      "size_pixels": [
+        2700,
+        1800
+      ],
+      "first_columns": 2500,
+      "rows_start_stop_exclusive": [
+        18,
+        72
+      ],
+      "mask_opacity": 0.42
     },
     {
       "file": "03_optica/figuras/void_fraction_vs_flip_rate.png",
-      "sha256": "190248b956f4c7f79e8f583c6029d79c66b0bebed391cbdec6cb67e969f13f1e",
+      "sha256": "084d95b00665f2a7bbb433df69c86bdd487e4685d17adf354e82769e5f8911f8",
       "svg": {
         "file": "03_optica/figuras/void_fraction_vs_flip_rate.svg",
-        "sha256": "eed269bb3cfb06c9ba71df9bb8149f6ae002b6cb5a943d414833f3942e91e214"
+        "sha256": "093b012651e722902dc6e7fb85737b8ca31aa107f5b26d649d0916db81934649"
       },
       "size_pixels": [
         2466,

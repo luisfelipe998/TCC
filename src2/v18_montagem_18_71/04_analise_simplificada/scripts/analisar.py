@@ -37,8 +37,8 @@ FIGURES = OUT / 'figuras'
 CORE = SCRIPTS_ROOT / 'wavelet_core.py'
 PLOT = SCRIPTS_ROOT / 'figuras_wavelet.py'
 PATTERNS = ['churn', 'wavy annular', 'plug', 'slug', 'dispersed bubble']
-PT = {'churn':'Churn', 'wavy annular':'Anular ondulado', 'plug':'Plug',
-      'slug':'Slug', 'dispersed bubble':'Bolhas dispersas'}
+PATTERN_LABELS = {'churn':'churn', 'wavy annular':'wavy annular', 'plug':'plug',
+                  'slug':'slug', 'dispersed bubble':'dispersed bubbles'}
 INPUTS = {}
 INPUT_PATHS = {}
 
@@ -252,6 +252,9 @@ def save(fig,path):
     fig.savefig(path,dpi=300,bbox_inches='tight',pad_inches=.08)
     plt.close(fig)
 
+def pattern_label(pattern):
+    return r'$\mathit{' + PATTERN_LABELS[pattern].replace(' ', r'\ ') + '}$'
+
 def draw_pearson_matrix(records,matrix):
     """Preserve the matrix style regardless of previously imported renderers."""
     with plt.rc_context(matplotlib.rcParamsDefault):
@@ -283,7 +286,7 @@ def _draw_pearson_matrix(records,matrix):
                 fontweight='bold',color='#243842',clip_on=False)
         ax.text(len(records)+.25,center,letter,ha='center',va='center',fontsize=9.5,
                 fontweight='bold',color='#243842',clip_on=False)
-        label=f'{letter} · {PT[pattern]} ({len(indices)} ensaio'+('s)' if len(indices)>1 else ')')
+        label=f'{letter} · {pattern_label(pattern)} ({len(indices)} ensaio'+('s)' if len(indices)>1 else ')')
         handles.append(Patch(facecolor=color,edgecolor='none',label=label))
         if start:
             ax.axhline(start-.5,color='white',lw=1.4)
@@ -324,7 +327,7 @@ def draw_spectral_profiles(records,waves,power):
         ax.plot(waves,median,color=color,lw=1.8)
         if legend_location:
             ax.legend(loc=legend_location,frameon=False,fontsize=8.5,handlelength=2.3)
-        ax.set_title(f'{PT[pattern]} · {len(indices)} ensaio'+('s' if len(indices)>1 else ''),loc='left',fontsize=10)
+        ax.set_title(f'{pattern_label(pattern)} · {len(indices)} ensaio'+('s' if len(indices)>1 else ''),loc='left',fontsize=10)
         ax.set(xscale='log',xlim=(50,3000),ylim=(0,1.05),ylabel='Potência relativa')
         ax.set_yticks([0,.5,1]);ax.yaxis.set_major_formatter(FuncFormatter(lambda x,_:f'{x:g}'.replace('.',',')))
         ax.set_xticks([50,100,300,1000,3000],['50','100','300','1000','3000'])
@@ -379,10 +382,10 @@ def figures(records,waves,power,matrix,rows,summary):
             with Image.open(track(artifact_path(by_id[run]['wavelet_path']))) as im:
                 images.append(np.asarray(im.convert('L')))
         destination=artifact_path(pair['arquivo'])
-        if pair['padrao'] in PT:
-            title=PT[pair['padrao']]
+        if pair['padrao'] in PATTERN_LABELS:
+            title=PATTERN_LABELS[pair['padrao']]
         else:
-            title='Slug × anular ondulado'
+            title='slug × wavy annular'
         layout=plots.pair_figure(images,maps['x'],maps['y'],maps,runs=(a,b),pattern=title,destination=destination)
         entries.append(dict(tipo=pair['tipo'],ensaio_x=a,ensaio_y=b,pearson_r=pair['pearson_r'],
                             comprimento_comum=pair['comprimento'],layout=layout,

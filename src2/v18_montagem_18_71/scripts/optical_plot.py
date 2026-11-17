@@ -23,9 +23,10 @@ COLORS = {
 }
 
 
-PATTERN_LABELS_PT = {
-    "dispersed bubbles": "Bolhas dispersas", "plug": "Plug",
-    "slug": "Slug", "churn": "Churn", "wavy annular": "Anular ondulado",
+PATTERN_LABELS = {
+    "dispersed bubbles": r"$\mathit{dispersed\ bubbles}$", "plug": r"$\mathit{plug}$",
+    "slug": r"$\mathit{slug}$", "churn": r"$\mathit{churn}$",
+    "wavy annular": r"$\mathit{wavy\ annular}$",
 }
 
 
@@ -129,7 +130,7 @@ def alternation_chart(rows, metric, basename, center=False, show_centroids=False
         n = sum(r["supplied_pattern"] == pattern for r in displayed)
         handles.append(Line2D([], [], color="none", marker=MARKERS[pattern],
                               markerfacecolor=COLORS[pattern], markeredgecolor="#222222",
-                              markersize=8, label=f"{PATTERN_LABELS_PT[pattern]} (n={n})"))
+                              markersize=8, label=f"{PATTERN_LABELS[pattern]} (n={n})"))
     if show_centroids:
         handles.append(Line2D([], [], color="none", marker="*",
                               markerfacecolor="#bbbbbb", markeredgecolor="#222222",

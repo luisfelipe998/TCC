@@ -44,79 +44,46 @@ agradecimento.
 
 
 % ---
-% RESUMOS
+% RESUMO
 % ---
 
 % resumo em português
 \setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
 \begin{resumo}
-Investigou-se a caracterização de padrões de escoamento bifásico com isobutano em
-microtubo horizontal de 1\,mm por meio de sinais de intensidade extraídos de panoramas
-de imagens. Analisaram-se 26 ensaios de cinco padrões, formando 87 pares do mesmo padrão
-e 238 de padrões diferentes. Extraiu-se a intensidade média por coluna em uma faixa dos panoramas.
-Os sinais foram invertidos, tiveram a tendência linear removida e foram normalizados. Aplicou-se a transformada
-\textit{wavelet} contínua de Morlet às funções de correlação para obter os
-espectros de potência e cruzado e a coerência
-wavelet alternativa. Comparou-se diretamente a forma dos perfis de potência no atraso
-zero dos panoramas completos pelo coeficiente de Pearson $r$. Os mapas de coerência wavelet
-utilizaram os trechos iniciais de comprimento comum dos sinais.
-Examinaram-se visualmente exemplos selecionados e resumiu-se cada mapa por seus
-valores mínimos, médios, medianos e máximos.
-Compararam-se também as coerências wavelet médias dos pares dentro e entre padrões.
-O coeficiente de Pearson $r$
-apresentou média de $0{,}7642$ dentro dos padrões e de $0{,}5814$ entre padrões,
-indicando maior semelhança espectral média interna, acompanhada de sobreposição das
-distribuições. A média das coerências médias dos pares foi de $0{,}0607$
-dentro dos padrões e de $0{,}0874$ entre padrões, apresentando comportamento
-distinto de Pearson. Em análise complementar, estimaram-se a
-fração de vazio e a densidade espacial de transições a partir de máscaras de gás,
-nas mesmas 54 linhas utilizadas na análise wavelet. Foram elegíveis 25 ensaios, após a exclusão
-de um registro saturado. O anular apresentou a maior mediana da fração de vazio
-estimada e a menor mediana da densidade de transições. Essas medidas apoiaram a interpretação
-dos descritores espectrais. A estimativa de fração de vazio permaneceu sem calibração
-volumétrica independente. Os pares compartilharam aquisições e os grupos tiveram números
-diferentes de ensaios. A avaliação permaneceu descritiva, sem testes de
-significância estatística ou estimativa de acurácia de classificação.
+Analisaram-se as semelhanças e diferenças entre ensaios de um mesmo padrão de
+escoamento bifásico e de padrões distintos, com isobutano em microtubo horizontal
+de 1\,mm. Compararam-se 26 ensaios de cinco padrões, em 325 pares.
+Aplicou-se a transformada \textit{Wavelet} contínua de Morlet às correlações dos
+sinais espaciais de intensidade extraídos de panoramas reconstruídos pela união
+de recortes de quadros consecutivos. Comparou-se a forma dos perfis de potência
+no atraso zero $P_{ik}$ dos sinais completos pelo coeficiente de Pearson $r$.
+Os mapas utilizaram trechos de comprimento comum por par e foram examinados por
+escala $a_k$ e atraso relativo $b$. A média do coeficiente de Pearson $r$ foi de
+$0{,}7642$ dentro dos padrões e de $0{,}5814$ entre padrões. As distribuições
+se sobrepuseram, com semelhanças também entre padrões distintos.
+A média das médias dos mapas de coerência alternativa
+$\widetilde\gamma_{xy}(a_k,b)$ foi de $0{,}0607$ e $0{,}0874$, respectivamente.
+Assim, a maior semelhança dentro dos padrões não se estendeu a todas as medidas
+espectrais. No exemplo entre padrões distintos, um máximo elevado coexistiu
+com média e mediana baixas, sem resumir o mapa inteiro.
+A análise das máscaras de gás forneceu a estimativa condicional de fração de
+vazio $\widehat\alpha_{\mathrm{opt}}$ e a densidade de transições $F$, que
+descreveram a ocupação estimada por gás e a alternância espacial, respectivamente.
+Os resumos ópticos incluíram 25 ensaios elegíveis pelo critério de saturação.
+Em relação a \textit{churn}, \textit{wavy annular} apresentou maior mediana da
+estimativa condicional de fração de vazio $\widehat\alpha_{\mathrm{opt}}$ e
+menor mediana da densidade de transições $F$, embora houvesse sobreposições
+entre grupos. No par de \textit{churn} examinado, diferenças ópticas coexistiram
+com elevada semelhança espectral. A estimativa condicional de fração de vazio
+$\widehat\alpha_{\mathrm{opt}}$ dependeu da segmentação e da hipótese de seções
+circulares, sem calibração volumétrica independente. Os pares compartilharam
+aquisições e os padrões tiveram participação desigual. A avaliação permaneceu
+descritiva, sem testes de significância estatística ou avaliação de classificação.
+A leitura conjunta ampliou a caracterização dos ensaios ao descrever diferenças
+de ocupação estimada e alternância espacial que a semelhança espectral não expressou.
 
- \textbf{Palavras-chave}: escoamento bifásico. microcanais. transformada \textit{wavelet} contínua. coerência \textit{wavelet}. fração de vazio. identificação de padrões de escoamento.
+ \textbf{Palavras-chave}: escoamento bifásico. microcanais. transformada \textit{Wavelet} contínua. coerência \textit{Wavelet}. fração de vazio. identificação de padrões de escoamento.
 \end{resumo}
-
-% resumo em inglês
-\begin{resumo}[Abstract]
- \begin{otherlanguage*}{english}
-Two-phase flow patterns of isobutane in a horizontal 1\,mm microtube were investigated
-using intensity signals extracted from image panoramas. Twenty-six acquisitions from
-five patterns were analyzed, yielding 87 within-pattern and 238 between-pattern pairs.
-The mean intensity per column within a panorama band was extracted, followed by intensity inversion,
-linear detrending and normalization. The Morlet continuous wavelet transform was applied to correlation
-functions to obtain the power and cross
-spectra and alternative wavelet coherence. The shapes of zero-lag power profiles from full
-panoramas were compared directly using Pearson's correlation coefficient $r$. Wavelet
-coherence maps used equal-length initial segments of the signals.
-Selected examples were examined visually, and every map was summarized by its
-minimum, mean, median, and maximum values.
-Mean wavelet coherence per pair was also compared within and between patterns.
-Mean Pearson's correlation coefficient $r$ was 0.7642 within patterns and 0.5814 between
-patterns, indicating greater mean within-pattern spectral similarity, with overlapping
-distributions. The average of pairwise mean coherence values was 0.0607 within
-patterns and 0.0874 between patterns, showing a different pattern from Pearson's
-correlation. A complementary analysis estimated void fraction and
-spatial transition density from gas masks over the same 54 rows used in the wavelet analysis.
-Twenty-five acquisitions were eligible after excluding one saturated record.
-The annular pattern exhibited the highest median estimated void fraction and the lowest
-median transition density. These measures supported the interpretation of
-spectral descriptors. The void fraction estimate lacked independent volumetric calibration.
-Pairs shared acquisitions, and groups had different numbers of acquisitions.
-The evaluation remained descriptive, without statistical significance testing
-or estimation of classification accuracy.
-
-   \vspace{\onelineskip}
-
-   \noindent
-   \textbf{Keywords}: two-phase flow. microchannels. continuous wavelet transform. wavelet coherence. void fraction. flow pattern identification.
- \end{otherlanguage*}
-\end{resumo}
-
 
 % ---
 % inserir lista de ilustrações
@@ -146,24 +113,27 @@ or estimation of classification accuracy.
 % inserir lista de abreviaturas e siglas
 % ---
 \begin{siglas}
-  \item[CNN] Rede Neural Convolucional (\textit{Convolutional Neural Network})
-  \item[CWT] Transformada Wavelet Contínua (\textit{Continuous Wavelet Transform})
-  \item[DWT] Transformada Wavelet Discreta (\textit{Discrete Wavelet Transform})
-  \item[FFT] Transformada Rápida de Fourier (\textit{Fast Fourier Transform})
-  \item[LDR] Resistor Dependente de Luz (\textit{Light Dependent Resistor})
-  \item[LED] Diodo Emissor de Luz (\textit{Light Emitting Diode})
+  \item[CNN] Rede neural convolucional (\textit{Convolutional Neural Network})
+  \item[CWT] Transformada \textit{Wavelet} contínua (\textit{Continuous Wavelet Transform})
+  \item[DWT] Transformada \textit{Wavelet} discreta (\textit{Discrete Wavelet Transform})
+  \item[KAERI] Instituto Coreano de Pesquisa em Energia Atômica
+  (\textit{Korea Atomic Energy Research Institute})
+  \item[$k$NN] $k$-vizinhos mais próximos (\textit{$k$-Nearest Neighbors})
+  \item[LDR] Resistor dependente de luz (\textit{Light-Dependent Resistor})
+  \item[LED] Diodo emissor de luz (\textit{Light-Emitting Diode})
   \item[LETEF] Laboratório de Estudos Térmicos e Fluidodinâmicos
-  \item[LWE] Coeficiente de Energia Wavelet Local (\textit{Local Wavelet Energy coefficient})
-  \item[OS] Sensor Óptico (\textit{Optical Sensor})
-  \item[PD] Transdutor de Pressão Diferencial
-  \item[PH] Pré-aquecedor (\textit{Pre-Heater})
-  \item[PSD] Densidade Espectral de Potência (\textit{Power Spectral Density})
-  \item[SNR] Relação Sinal-Ruído (\textit{Signal-to-Noise Ratio})
-  \item[TS] Seção de Teste (\textit{Test Section})
-  \item[VS] Seção de Visualização (\textit{Visualization Section})
-  \item[WCO] Coerência Wavelet (\textit{Wavelet Coherence})
-  \item[WCS] Espectro Cruzado Wavelet (\textit{Wavelet Cross Spectrum})
-  \item[WPS] Espectro de Potência Wavelet (\textit{Wavelet Power Spectrum})
+  \item[LWE] Energia \textit{Wavelet} local (\textit{Local Wavelet Energy})
+  \item[NI] National Instruments
+  \item[OS] Sensor óptico (\textit{Optical Sensor})
+  \item[PD] Queda de pressão (\textit{Pressure Drop}), medida pelo transdutor
+  de pressão diferencial
+  \item[PH] Pré-aquecedor (\textit{Preheater})
+  \item[TS] Seção de teste (\textit{Test Section})
+  \item[UNISINOS] Universidade do Vale do Rio dos Sinos
+  \item[VS] Seção de visualização (\textit{Visualization Section})
+  \item[WCO] Coerência \textit{Wavelet} (\textit{Wavelet Coherence})
+  \item[WCS] Espectro cruzado \textit{Wavelet} (\textit{Wavelet Cross Spectrum})
+  \item[WPS] Espectro de potência \textit{Wavelet} (\textit{Wavelet Power Spectrum})
 \end{siglas}
 % ---
 
@@ -171,41 +141,87 @@ or estimation of classification accuracy.
 % inserir lista de símbolos
 % ---
 \begin{simbolos}
-  % --- Quantidades espectrais ---
-  \item[$W_x(a,b)$] Coeficiente da CWT do sinal $x$ na escala $a$ e posição $b$
-  \item[$P_x(a,b)$] Espectro de potência wavelet clássico do sinal $x$
-  \item[$C_{xy}(a,b)$] Espectro cruzado wavelet clássico entre os sinais $x$ e $y$
-  \item[$\gamma_{xy}(a,b)$] Coerência wavelet clássica quadrática entre os sinais $x$ e $y$
-  \item[$R_{xx}(\tau)$] Função de autocorrelação do sinal $x$
-  \item[$R_{xy}(\tau)$] Função de correlação cruzada entre os sinais $x$ e $y$
-  \item[$\widetilde{P}_x(a,b)$] Campo de potência wavelet alternativo do sinal $x$
-  \item[$\widetilde{C}_{xy}(a,b)$] Espectro cruzado wavelet alternativo entre os sinais $x$ e $y$
-  \item[$\widetilde{\gamma}_{xy}(a,b)$] Coerência wavelet alternativa entre os sinais $x$ e $y$
-  \item[$\lambda_k$] Comprimento de onda espacial na escala $k$ [px]
-  \item[$P_{ik}$] Potência alternativa no atraso nulo do ensaio $i$ na escala $k$
-  \item[$M_{ik}$] Potência alternativa média nos atrasos do ensaio $i$ na escala $k$
-  \item[$r_{ij}$] Coeficiente de Pearson entre os perfis de potência dos ensaios $i$ e $j$
-  % --- Descritores ópticos complementares ---
+  % --- Variáveis termofluidodinâmicas ---
+  \item[$x$] Título de vapor, razão entre a vazão mássica de vapor e a vazão
+  mássica total
   \item[$\alpha$] Fração volumétrica de vazio
+  \item[$G$] Fluxo mássico [kg\,m$^{-2}$\,s$^{-1}$]
+  \item[$q''$] Fluxo de calor por unidade de área [kW\,m$^{-2}$]
+  \item[$V_v$, $V_l$] Volumes de vapor e de líquido, respectivamente [m$^3$]
+  % --- Sinais, wavelet e funções de correlação ---
+  \item[$x(t)$, $y(t)$] Sinais contínuos utilizados nas definições da CWT e
+  das funções de correlação
+  \item[$t$] Coordenada temporal dos sinais, adimensional na definição
+  da \textit{Wavelet} mãe de Morlet
+  \item[$\psi(t)$] Função \textit{Wavelet} mãe de Morlet complexa
+  \item[$a$, $a_k$] Escala da \textit{Wavelet} e seu valor na grade discreta,
+  respectivamente, expressos em amostras na análise espacial
+  \item[$b$] Posição na CWT do sinal ou atraso na CWT das correlações
+  [px na análise espacial]
+  \item[$\omega_0$] Frequência angular central adimensional da \textit{Wavelet} de Morlet
+  \item[$(\cdot)^*$] Operação de conjugação complexa
+  \item[$W(a,b)$] Coeficiente da CWT na escala $a$ e posição $b$.
+  Os coeficientes $W_x$ e $W_y$ identificam os sinais transformados
+  \item[$P_x(a,b)$] Espectro de potência \textit{Wavelet} clássico do sinal $x$,
+  com notação análoga para $P_y(a,b)$
+  \item[$C_{xy}(a,b)$] Espectro cruzado \textit{Wavelet} clássico entre os sinais $x$ e $y$
+  \item[$\gamma_{xy}(a,b)$] Coerência \textit{Wavelet} clássica quadrática entre os sinais $x$ e $y$
+  \item[{$S[\cdot]$}] Operador de suavização em tempo e escala da coerência clássica
+  \item[$\tau$] Atraso entre os sinais nas funções de correlação
+  \item[$\operatorname{E}\{\cdot\}$] Operador de esperança matemática
+  \item[$R_{xx}$, $R_{yy}$] Funções de autocorrelação dos sinais $x$ e $y$,
+  respectivamente
+  \item[$R_{xy}(\tau)$] Função de correlação cruzada entre os sinais $x$ e $y$
+  \item[$\widehat R_{xx}$, $\widehat R_{yy}$] Autocorrelações estimadas dos sinais
+  $x$ e $y$, respectivamente
+  \item[{$\widehat R_{xy}[m]$}] Correlação cruzada estimada entre os sinais $x$ e $y$
+  no atraso discreto $m$
+  \item[$W_{\widehat R_{xx}}$] CWT da autocorrelação estimada de $x$,
+  com notação análoga para $W_{\widehat R_{yy}}$
+  \item[$W_{\widehat R_{xy}}$] CWT da correlação cruzada estimada entre $x$ e $y$
+  \item[$\widetilde{P}_x(a,b)$] Campo de potência \textit{Wavelet} alternativo do sinal $x$,
+  com notação análoga para $\widetilde P_y(a,b)$
+  \item[$\widetilde{C}_{xy}(a,b)$] Espectro cruzado \textit{Wavelet} alternativo entre os sinais $x$ e $y$
+  \item[$\widetilde{\gamma}_{xy}(a,b)$] Coerência \textit{Wavelet} alternativa entre os sinais $x$ e $y$
+  % --- Extração e preparação dos sinais espaciais ---
+  \item[{$A_i[v,n]$}] Intensidade do pixel da linha $v$ e coluna $n$
+  do panorama do ensaio $i$
+  \item[{$I_i[n]$, $I[n]$}] Intensidade média da faixa analisada na coluna $n$.
+  O índice $i$ identifica o ensaio
+  \item[{$J[n]$}] Sinal de intensidade invertida
+  \item[{$d[n]$}] Sinal após a remoção da tendência linear
+  \item[$\widehat\alpha$, $\widehat\beta$] Nível e inclinação da reta ajustada
+  para remover a tendência, respectivamente
+  \item[$\bar d$, $s_d$] Média e desvio padrão populacional do sinal sem tendência,
+  respectivamente
+  \item[{$x[n]$, $y[n]$}] Sinais discretos preparados, com média nula e
+  variância unitária
+  \item[$N_i$, $N$] Número de amostras do sinal do ensaio $i$ e comprimento
+  do trecho analisado, respectivamente
+  \item[$n$, $v$] Índices de coluna e linha do panorama, respectivamente
+  \item[$m$] Atraso discreto das correlações [px]
+  \item[$\Delta s$] Espaçamento entre amostras do sinal espacial [px]
+  % --- Perfis e comparação espectral ---
+  \item[$\lambda$, $\lambda_k$] Comprimento de onda espacial e seu valor
+  na escala $k$, respectivamente [px]
+  \item[$P_{ik}$] Potência alternativa no atraso nulo do ensaio $i$, na escala $k$
+  \item[$M_{ik}$] Potência alternativa média sobre os atrasos do ensaio $i$, na escala $k$
+  \item[$\bar P_i$, $\bar P_j$] Médias dos perfis de potência dos ensaios $i$ e $j$
+  sobre as escalas, respectivamente
+  \item[$r$, $r_{ij}$] Coeficiente de Pearson. O coeficiente de Pearson $r_{ij}$ compara os perfis de
+  potência dos ensaios $i$ e $j$
+  \item[$i$, $j$] Índices de ensaio na análise espectral. Na máscara óptica,
+  $i$ identifica o intervalo de gás e $j$, a coluna
+  % --- Descritores ópticos ---
   \item[$\widehat\alpha_{\mathrm{opt}}$] Estimativa óptica condicional de fração de vazio, média nas colunas
-  \item[$\widehat\alpha_{\mathrm{opt},j}$] Fração de vazio estimada na coluna $j$
+  \item[$\widehat\alpha_{\mathrm{opt},j}$] Estimativa óptica condicional de fração de vazio
+  na coluna $j$
   \item[$d_{ij}$] Largura radial do intervalo de gás $i$ na coluna $j$ [px]
   \item[$D_{\mathrm{px}}$] Diâmetro interno adotado na análise das máscaras [px]
   \item[$H$, $W$] Número de linhas e número de colunas da máscara, respectivamente
   \item[$N_{\mathrm{trans}}$] Número de mudanças de valor entre pixels vizinhos na mesma linha da máscara
-  \item[$F$] Densidade espacial de transições da máscara por par de pixels vizinhos
-  % --- Variáveis termofluidodinâmicas ---
-  \item[$x$] Título de vapor, razão entre a vazão mássica de vapor e a vazão mássica total
-  \item[$S$] Razão de deslizamento entre as velocidades médias do vapor e do líquido
-  \item[$\beta$] Parâmetro adimensional de identificação do padrão de escoamento
-  \item[$G$] Fluxo mássico [kg\,m$^{-2}$\,s$^{-1}$]
-  \item[$q''$] Fluxo de calor [kW\,m$^{-2}$]
-  \item[$Co$] Número de confinamento
-  \item[$\sigma$] Tensão superficial [N\,m$^{-1}$]
-  \item[$\rho_l$] Massa específica do líquido [kg\,m$^{-3}$]
-  \item[$\rho_v$] Massa específica do vapor [kg\,m$^{-3}$]
-  \item[$D_h$] Diâmetro hidráulico [m]
-  \item[$i_{lv}$] Calor latente de vaporização [J\,kg$^{-1}$]
+  \item[$F$, $1\,000F$] Densidade espacial de transições por par de pixels
+  vizinhos da mesma linha e por mil pares, respectivamente
 \end{simbolos}
 % ---
 

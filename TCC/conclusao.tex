@@ -1,44 +1,75 @@
 \chapter{Conclusão}\label{cap:conclusao}
 
-Este trabalho comparou ensaios de um mesmo padrão de escoamento e de padrões
-distintos por meio da análise wavelet dos sinais espaciais dos panoramas.
-Foram analisados 26 ensaios de cinco padrões do LETEF, em 325 pares.
+Neste trabalho, analisaram-se as semelhanças e diferenças entre 26 ensaios de cinco
+padrões de escoamento do LETEF, comparados em 325 pares. Para isso, aplicou-se
+a transformada \textit{Wavelet} às correlações dos sinais espaciais extraídos
+dos panoramas. A comparação espectral e a análise óptica das imagens
+permitiram examinar aspectos complementares dos mesmos ensaios.
 
-No conjunto analisado, os perfis de potência wavelet foram mais semelhantes,
-em média, entre ensaios do mesmo padrão. A média do coeficiente de Pearson
-$r$ foi de $0{,}7642$ dentro dos padrões e de $0{,}5814$ entre padrões.
-Entretanto, a sobreposição das distribuições e os coeficientes elevados
-entre padrões diferentes mostraram que essa semelhança não foi exclusiva
-dos ensaios de um mesmo padrão.
+No conjunto analisado, os perfis de potência no atraso zero
+$P_{ik}$ foram mais semelhantes, em média, entre ensaios do mesmo padrão.
+A média do coeficiente de Pearson $r$ foi de $0{,}7642$ dentro dos padrões
+e de $0{,}5814$ entre padrões. Essa comparação deu maior peso aos padrões
+que formaram mais pares. A sobreposição das distribuições mostrou que
+a semelhança espectral não foi exclusiva de um mesmo padrão.
 
-O mapa do exemplo entre padrões distintos também mostrou coerência wavelet
-elevada em determinadas escalas e atrasos. Para cada par, calculou-se a
-coerência wavelet média em todas as escalas e atrasos do mapa. A média desses
-valores, com igual peso por par, foi de $0{,}0874$ entre padrões e de
-$0{,}0607$ dentro do mesmo padrão. Assim, a maior semelhança dos perfis dentro
-dos padrões não se repetiu nas médias de coerência wavelet. Os mapas
-utilizaram trechos de igual comprimento dentro de cada par, mas os intervalos
-de atraso variaram entre pares. O coeficiente de Pearson $r$ comparou
-perfis dos panoramas completos.
+A interpretação dos mapas mostrou que as regiões de maior módulo do
+espectro cruzado alternativo $\widetilde C_{xy}(a_k,b)$ não coincidiram
+necessariamente com as de maior coerência alternativa
+$\widetilde\gamma_{xy}(a_k,b)$, por efeito da normalização.
+No exemplo entre padrões distintos, o máximo
+elevado coexistiu com média e mediana baixas. Assim, um pico não resumiu
+o mapa nem estabeleceu identidade de padrão.
 
-A análise óptica complementou a comparação espectral nos 25 ensaios
-elegíveis pelo critério de saturação. No par de
-\textit{churn}, perfis semelhantes coexistiram com diferenças na fração de
-vazio estimada e na densidade de transições. Esta descreveu a alternância
-entre regiões marcadas como gás e os demais pixels da imagem. O único ensaio
-de bolhas dispersas e as medianas do grupo anular mostraram que poucas transições
-puderam acompanhar frações de vazio estimadas muito diferentes.
+Nos resumos globais, a média das médias dos mapas de coerência alternativa
+$\widetilde\gamma_{xy}(a_k,b)$ foi de $0{,}0607$ dentro dos padrões e de
+$0{,}0874$ entre padrões, com igual peso por par. A maior semelhança
+intrapadrão observada pelo coeficiente de Pearson $r$ não se estendeu,
+portanto, a todas as medidas espectrais. A comparação também envolveu
+entradas distintas: sinais completos para os perfis de potência no atraso
+zero $P_{ik}$ e trechos de comprimento comum em cada par para os mapas.
 
-A avaliação permaneceu descritiva, sem testes de significância estatística
-ou avaliação de classificação. Cada ensaio participou de várias comparações,
-e alguns padrões tiveram poucos registros. A análise não separou os efeitos
-do padrão de escoamento daqueles ligados às condições de operação e aquisição.
-A fração de vazio estimada dependeu da segmentação e da
-hipótese de seções gasosas circulares, sem calibração volumétrica independente.
-O efeito das diferenças de montagem entre as análises não foi quantificado.
+As medidas ópticas evidenciaram contrastes entre padrões nos 25 ensaios
+elegíveis pelo critério de saturação. A mediana da estimativa condicional
+de fração de vazio $\widehat\alpha_{\mathrm{opt}}$ foi de $0{,}9653$ em
+\textit{wavy annular} e de $0{,}7810$ em \textit{churn}. Já a mediana da
+densidade de transições por mil pares de pixels $1\,000F$ foi de $2{,}180$
+e $11{,}901$, respectivamente. Esses resumos indicaram maior ocupação
+estimada por gás e menor alternância espacial nas máscaras do grupo anular
+em comparação com \textit{churn}.
+
+Esses contrastes coexistiram com medianas próximas de \textit{plug} e
+\textit{slug} nas duas medidas e com sobreposições no gráfico óptico entre
+esses grupos e entre \textit{churn} e \textit{wavy annular}.
+No par de \textit{churn} examinado, observaram-se diferenças na estimativa
+condicional de fração de vazio $\widehat\alpha_{\mathrm{opt}}$ e na densidade
+de transições $F$ mesmo com elevada semelhança espectral. A análise óptica
+acrescentou, assim, informações tanto sobre os contrastes entre padrões
+quanto sobre diferenças entre ensaios de um mesmo padrão.
+
+A contribuição do trabalho foi integrar as informações espectrais e
+ópticas para caracterizar os ensaios. A leitura conjunta permitiu descrever
+diferenças de ocupação estimada por gás e de alternância espacial que a
+comparação isolada dos perfis espectrais não expressou. Dessa forma,
+atendeu-se ao objetivo de analisar semelhanças e diferenças, com alcance
+descritivo, sem testes de significância estatística ou avaliação de classificação.
+
+O alcance dos resultados ficou limitado pela quantidade desigual de
+aquisições e pela reutilização dos ensaios nos pares, que não constituíram
+observações independentes. Não se separaram os efeitos do padrão daqueles
+ligados às condições de operação e aquisição. A estimativa condicional de
+fração de vazio $\widehat\alpha_{\mathrm{opt}}$ permaneceu dependente da
+segmentação e da hipótese de seções gasosas circulares, sem calibração
+volumétrica independente.
 
 Como trabalhos futuros, recomenda-se ampliar o conjunto de aquisições
-independentes, controlar as condições de operação e aquisição, uniformizar
-a montagem dos panoramas nas duas análises e validar a fração de vazio
-estimada com medições independentes. A combinação dos descritores poderá
-ser avaliada em classificadores, separando os ensaios de treinamento e teste.
+independentes, sobretudo dos padrões menos representados, e controlar as
+condições de operação e aquisição. Recomenda-se também avaliar a
+estabilidade dos resultados diante de mudanças nos comprimentos dos trechos,
+nos intervalos de atraso relativo
+$b$ e nos parâmetros de segmentação.
+
+A estimativa condicional de fração de vazio $\widehat\alpha_{\mathrm{opt}}$
+deverá ser confrontada com medições independentes. Após essas verificações,
+a combinação dos descritores poderá ser avaliada em classificadores,
+sem compartilhar dados de um mesmo ensaio entre treinamento e teste.
